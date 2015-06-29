@@ -1,4 +1,4 @@
-// Generated on 2015-06-10 using
+// Generated on 2015-06-29 using
 // generator-webapp 0.5.1
 'use strict';
 
@@ -145,32 +145,6 @@ module.exports = function (grunt) {
       }
     },
 
-    // Compiles Sass to CSS and generates necessary files if requested
-    sass: {
-      options: {
-        sourceMap: true,
-        includePaths: ['bower_components']
-        },
-      dist: {
-        files: [{
-          expand: true,
-          cwd: '<%= config.app %>/styles',
-          src: ['*.{scss,sass}'],
-          dest: '.tmp/styles',
-          ext: '.css'
-        }]
-      },
-      server: {
-        files: [{
-          expand: true,
-          cwd: '<%= config.app %>/styles',
-          src: ['*.{scss,sass}'],
-          dest: '.tmp/styles',
-          ext: '.css'
-        }]
-      }
-    },
-
     // Add vendor prefixed styles
     autoprefixer: {
       options: {
@@ -191,7 +165,7 @@ module.exports = function (grunt) {
       app: {
         ignorePath: /^\/|\.\.\//,
         src: ['<%= config.app %>/index.html'],
-        exclude: ['bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js']
+        exclude: ['bower_components/bootstrap/dist/js/bootstrap.js']
       }
     },
 
@@ -324,8 +298,8 @@ module.exports = function (grunt) {
         }, {
           expand: true,
           dot: true,
-          cwd: '.',
-          src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
+          cwd: 'bower_components/bootstrap/dist',
+          src: 'fonts/*',
           dest: '<%= config.dist %>'
         }]
       },
