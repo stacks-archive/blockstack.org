@@ -30,9 +30,11 @@
   <body style="">
 
   <!-- header for mobile and tablet -->
-  <header class="hero nav-animation-element container visible-sm-block visible-xs-block" style="height: 650px;">
+  <header class="hero nav-animation-element container" style="height: 650px;">
+   <!-- style="height: 860px;" -->
+ 
 
-    <nav class="navbar navbar-fixed-top bst-navbar">
+    <nav class="navbar navbar-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -57,11 +59,12 @@
         <div class="inner-col">
           <div class="text">
             <div><a href="#"><img src="/images/blockstack-logo.svg" width="123px" height="40px"></a></div>
-            <h1>Blockstack. The Open Source Blockchain Community</h1>
+            <h1>Blockstack. </br>The Open Source Blockchain Community</h1>
             <p class="lead">
-              Welcoming all developers to come join the Blockstack consortium. The world’s largest Open Source Blockchain community. Our mission is to build the highest quality Blockchain protocols, apps and tools for all to use.
+              Welcoming all developers to come join the Blockstack consortium. Our mission is to build the highest quality Blockchain protocols, apps and tools for all to use.
             </p>
-            <p class="button-group"><a href="#" class="button default"><span>Join the Community</span></a></p>
+            <p class="button-group"><a href="http://forum.blockstack.org" target="_blank" class="button default"><span>Join the Community</span></a></p>
+            <p class="button-group"><a href="http://chat.blockstack.org" target="_blank" class="button default"><span><img src="/images/slack-bug.svg" width="123px" height="40px">Get invited to Slack!</span></a></p>
           </div>
           <div class="img"></div>
         </div>
@@ -74,44 +77,65 @@
 
   </header>
 
-  <!-- header for desktop -->
-  <header class="hero nav-animation-element visible-md-block visible-lg-block" style="height: 860px;">
-
-    <nav class="navbar navbar-fixed-top bst-navbar">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Project name</a>
+  <section>
+    <div class="bs-docs-featurette" id="learnmore">
+      <div class="container col-centered">
+        <div class="row works col-md-10 col-lg-6 col-centered">
+          <div class="col-sm-4 feature-panel">
+            <div class="container wrap-mob-feat">
+              <img ng-src="/images/icon-decentralized.png" class="img-responsive col-centered" alt="Responsive image">
+            </div>
+              <h3>Decentralized</h3>
+              <p class="lead">Applications can be built without trusted third parties.</p>
+          </div>
+          <div class="col-sm-4 feature-panel">
+            <div class="container wrap-mob-feat">
+              <img ng-src="/images/icon-open-source.png" class="img-responsive col-centered" alt="Responsive image">
+            </div>
+            <h3>Open Source</h3>
+            <p class="lead">Blockstack code is free to inspect, modify, and reuse.</p>
+          </div>
+          <div class="col-sm-4 feature-panel">
+            <div class="container wrap-mob-feat">
+              <img ng-src="/images/icon-blockchain-secured.png" class="img-responsive col-centered" alt="Responsive image">
+            </div>
+            <h3>Community</h3>
+            <p class="lead">We are developers united around a common software stack.</p>
+          </div>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
       </div>
-    </nav>
-
-    <div class="slides">
-      <section class="hero" style="display: block;">
-        <div class="inner-col">
-          <div class="text">
-              <h1>Blockstack. The Open Source Blockchain Community</h1>
-              <p class="lead">
-                 Welcoming all developers to come join the Blockstack consortium. The world’s largest Open Source Blockchain community. Our mission is to build the highest quality Blockchain protocols, apps and tools for all to use.
-              </p>
-            <p class="button-group"><a href="#" class="button default"><span>Join the Community</span></a></p>
+    </div>
+  </section>
+  <section>
+    <div class="bs-docs-featurette" id="learnmore">
+      <div class="container col-centered">
+        <h2 class="displayed">Use Blockstack to build applications faster and with less deployment costs.</h2>
+        <div class="row works col-md-10 col-lg-6 col-centered">
+          <div class="col-sm-4 feature-panel">
+              <h3>Messaging</h3>
+              <p class="lead">Using p2p protocols for sending and receiving messages</p>
           </div>
-          <div class="img"></div>
+          <div class="col-sm-4 feature-panel">
+            <h3>Naming</h3>
+            <p class="lead">Using the Bitcoin blockchain to create secure identifiers</p>
+          </div>
+          <div class="col-sm-4 feature-panel">
+            <h3>Storage</h3>
+            <p class="lead">Using the blockchain and a DHT or HTTPS for data storage and retrieval</p>
+          </div>
+          <div class="col-sm-4 feature-panel">
+            <h3>Consensus</h3>
+            <p class="lead">Using the Bitcoin protocol for global state verification</p>
+          </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </div>  
+  </section>
+  <section></section>
+  <section></section>
+  <section></section>
 
-    <div class="backgrounds">
-      <div class="mobile-background"></div>
-    </div>
 
-  </header>
 
       <div class="footer">
         <p>

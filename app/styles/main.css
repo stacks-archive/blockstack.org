@@ -2,13 +2,17 @@
  * Blockstack v1.0.0 (http://blockstack.org)
  */
 
-/* --------  SNOWFLAKE   --------  ::selection{background:rgba(242,242,242,1);}::-moz-selection{background:rgba(242,242,242,1);} */
-
-.browsehappy {margin:0.2em 0; background:#ccc; color:#000; padding:0.2em 0;}
-
-/* Space out content a bit */
+/* Base structure */
+body, div, h1, h2, h3, h4, h5, h6, p {font-family:"raleway",sans-serif;}
 body {padding-top:0; padding-bottom:20px;}
 
+
+/* Globals */
+h3 {margin-bottom:15px; font-size:23px;}
+h4 {font-size:15px; margin:20px 0;}
+
+/* Links */
+.bst-navbar {background-color: #fff;}
 
 .nav-animation-element{background: rgba(0,0,0,1);
 background: -moz-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(4,0,7,1) 7%, rgba(24,13,31,1) 40%, rgba(36,19,47,1) 53%, rgba(54,22,72,1) 67%, rgba(60,23,79,1) 75%, rgba(72,25,93,1) 86%, rgba(83,32,111,1) 98%, rgba(83,32,111,1) 100%);
@@ -19,12 +23,60 @@ background: -ms-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(4,0,7,1) 7%, rgba
 background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(4,0,7,1) 7%, rgba(24,13,31,1) 40%, rgba(36,19,47,1) 53%, rgba(54,22,72,1) 67%, rgba(60,23,79,1) 75%, rgba(72,25,93,1) 86%, rgba(83,32,111,1) 98%, rgba(83,32,111,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#53206f', GradientType=1 );
 }
-.hero {color:rgba(255,255,255,1); padding-right:20px; padding-left:20px;}
+.hero {color:rgba(255,255,255,1);}
+
+/* Menu button */
+.navbar .navbar-toggle, .navbar .navbar-toggle:active, .navbar .navbar-toggle:focus, .navbar .navbar-toggle:hover { float:left; padding:9px 11px; border-color:transparent; margin:18px 10px; background:0 0;}
+.navbar-toggle .icon-bar {display:block; width:12px; height:1px; border-radius:1px; background-color:rgba(255,2555,255,1);}
+
+.slides {padding-left:40px; padding-right:40px;}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.marketing, .footer {padding-left:20px; padding-right:20px;}
+
+/* Custom page header */
+.header {border-bottom:1px solid #e5e5e5;}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {margin-top:0; margin-bottom:0; line-height:40px; padding-bottom:19px;}
+
+/* Custom page footer */
+.footer {padding-top:19px; color:#777; border-top:1px solid #e5e5e5;}
+.container-narrow > hr {margin:30px 0;}
+
+/* Main marketing message and sign up button */
+.jumbotron {text-align:center; border-bottom:1px solid #e5e5e5;}
+.jumbotron .btn {font-size:21px; padding:14px 24px;}
+
+/* Supporting marketing content */
+.marketing {margin:40px 0;}
+.marketing p, .marketing h4 {margin-top:28px;}
 
 
 
-body, div, h1, h2, h3, h4, h5, h6, p {font-family:"raleway",sans-serif;}
-h3 {margin-bottom:15px; font-size:23px;}
-h4 {font-size:15px; margin:20px 0;}
 
-.bst-navbar {background-color: #fff;}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+
