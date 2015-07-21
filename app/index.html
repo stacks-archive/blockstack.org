@@ -32,55 +32,72 @@
     <div id="st-container" class="st-container">
       <div class="cover-container">
 
-        <!-- Sidebar-transition "Push effect 3" is under the push wrapper -->
-        <div class="st-pusher">
-          
-          <!-- Sidebar -->
-          <nav id="menu3" class="st-menu st-effect-3 menu slideout-menu" ng-controller="NavCtrl">
-            <a href="/" >
-              <div class="menu-header">
-                <span class="menu-header-title">
-                  <span><a href="/"><img src="/images/blockstack-logo.svg" width="123px"></a></span>
-                  <span class="pull-right"><a href="https://github.com/openname/specifications/wiki"><img src="/images/github-logo.svg" width="25px" height="25px"></a></span>
-                </span>
-              </div>
-            </a>
-            <section class="menu-section">
-              <h3 class="menu-section-title">Community</h3>
-              <ul class="menu-section-list">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Forum</a></li>
-                <li><a href="#">Chat</a></li>
-                <li><a href="#">Events</a></li>
-              </ul>
-            </section>
-            <section class="menu-section">
-              <h3 class="menu-section-title">Blockstack</h3>
-              <ul class="menu-section-list">
-                <li><a href="#">Messaging</a></li>
-                <li><a href="#">Naming</a></li>
-                <li><a href="#">Storage</a></li>
-                <li><a href="#">Consensus</a></li>
-              </ul>
-            </section>
-            <section class="menu-section">
-              <h3 class="menu-section-title">Social</h3>
-              <ul class="menu-section-list">
-                <li><a href="#">Press</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">YouTube</a></li>
-              </ul>
-            </section>
-            <section class="menu-section">
-              <h3 class="menu-section-title">Resources</h3>
-              <ul class="menu-section-list">
-                <li><a href="#">Github</a></li>
-                <li><a href="#">Wiki</a></li>
-                <li><a href="#">Whitepapers</a></li>
-              </ul>
-            </section>
-          </nav>
+  <!-- Sidebar-transition "Push effect 3" is under the push wrapper -->
+  <div class="st-pusher">
 
+    <!-- Sidebar -->
+    <nav id="menu3" class="st-menu st-effect-3 menu slideout-menu" ng-controller="NavCtrl">
+      <a href="/" >
+        <div class="menu-header">
+          <span class="menu-header-title">
+            <span><a href="/"><img src="/images/blockstack-logo.svg" width="123px"></a></span>
+            <span class="pull-right"><a href="https://github.com/openname/specifications/wiki"><img src="/images/github-logo.svg" width="25px" height="25px"></a></span>
+          </span>
+        </div>
+      </a>
+      <section class="menu-section">
+        <h3 class="menu-section-title">Community</h3>
+        <ul class="menu-section-list">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Forum</a></li>
+          <li><a href="#">Chat</a></li>
+          <li><a href="#">Events</a></li>
+        </ul>
+      </section>
+      <section class="menu-section">
+        <h3 class="menu-section-title">Blockstack</h3>
+        <ul class="menu-section-list">
+          <li><a href="#">Messaging</a></li>
+          <li><a href="#">Naming</a></li>
+          <li><a href="#">Storage</a></li>
+          <li><a href="#">Consensus</a></li>
+        </ul>
+      </section>
+      <section class="menu-section">
+        <h3 class="menu-section-title">Social</h3>
+        <ul class="menu-section-list">
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </section>
+      <section class="menu-section">
+        <h3 class="menu-section-title">Resources</h3>
+        <ul class="menu-section-list">
+          <li><a href="#">Github</a></li>
+          <li><a href="#">Wiki</a></li>
+          <li><a href="#">Whitepapers</a></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+
+    <div class="slides">
+      <section class="hero" style="display: block;">
+        <div class="inner-col">
+          <div class="text">
+            <div><a href="#"><img src="/images/blockstack-logo.svg" width="123px" height="40px"></a></div>
+            <h1>Blockstack. </br>The Open Source Blockchain Community</h1>
+            <p class="lead">
+              Our mission is to create common tools for building decentralized applications. We welcome all developers to join the Blockstack community and contribute to open source application and infrastructure development.
+            </p>
+            <p class="button-group"><a href="http://forum.blockstack.org" target="_blank" class="button default"><span>Join the Community</span></a></p>
+            <p class="button-group"><a href="http://chat.blockstack.org" target="_blank" class="button default"><span><img src="/images/slack-bug.svg" width="123px" height="40px">Get invited to Slack!</span></a></p>
+          </div>
+          <div class="img"></div>
+        </div>
+      </section>
+    </div>
 
           <!-- / Sidebar -->
 
@@ -244,7 +261,102 @@
               </div>
 
             </div>
+              <h3>Decentralized</h3>
+              <p class="lead">Applications can be built without central points of failure.</p>
           </div>
+          <div class="col-sm-4 feature-panel">
+            <div class="container wrap-mob-feat">
+              <img ng-src="/images/icon-open-source.png" class="img-responsive col-centered" alt="Responsive image">
+            </div>
+            <h3>Open Source</h3>
+            <p class="lead">Blockstack code is free to inspect, modify, and reuse.</p>
+          </div>
+          <div class="col-sm-4 feature-panel">
+            <div class="container wrap-mob-feat">
+              <img ng-src="/images/icon-blockchain-secured.png" class="img-responsive col-centered" alt="Responsive image">
+            </div>
+            <h3>Community</h3>
+            <p class="lead">We are developers united around a common software stack.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="bs-docs-featurette" id="learnmore">
+      <div class="container col-centered">
+        <h2 class="displayed">Use Blockstack to build applications faster and with less deployment costs.</h2>
+        <div class="row works col-md-10 col-lg-6 col-centered">
+          <div class="col-sm-4 feature-panel">
+              <h3>Messaging</h3>
+              <p class="lead">Use p2p protocols to send and receive messages.</p>
+          </div>
+          <div class="col-sm-4 feature-panel">
+            <h3>Naming</h3>
+            <p class="lead">Use the Bitcoin blockchain to create secure identifiers.</p>
+          </div>
+          <div class="col-sm-4 feature-panel">
+            <h3>Storage</h3>
+            <p class="lead">Use the blockchain and a DHT or HTTPS for data storage and retrieval.</p>
+          </div>
+          <div class="col-sm-4 feature-panel">
+            <h3>Consensus</h3>
+            <p class="lead">Use the Bitcoin protocol to keep clients in sync.</p>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+  <section class="feature-action">
+    <div class="container">
+      <div class="row">
+        <div class="container col-xs-11 col-centered">
+          <hgroup>
+            <h2 class="action-title">Build Something Bigger Than Yourself!</h2>
+          </hgroup>
+          <p class="button-group"><a href="http://forum.blockstack.org" target="_blank" class="button default"><span>Join the Community</span></a></p>
+          <p class="button-group"><a href="http://chat.blockstack.org" target="_blank" class="button default"><span><img src="/images/slack-bug.svg" width="123px" height="40px">Get invited to Slack!</span></a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div>
+      <div>
+        <ul>
+          <li>Community</li>
+          <li>About</li>
+          <li>Forum</li>
+          <li>Chat</li>
+          <li>Events</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>Blockstack</li>
+          <li>Messaging</li>
+          <li>Naming</li>
+          <li>Storage</li>
+          <li>Consensus</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>Social</li>
+          <li>Press</li>
+          <li>Twitter</li>
+          <li>YouTube</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>Resources</li>
+          <li>Github</li>
+          <li>Wiki</li>
+          <li>Whitepapers</li>
+        </ul>
+      </div>
+    </div>
 
       </div><!-- /.st-pusher -->
     </div><!-- /.cover-container -->
