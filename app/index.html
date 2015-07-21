@@ -29,7 +29,8 @@
   </head>
   <body style="">
 
-  <header class="hero nav-animation-element" style="height: 860px;">
+  <!-- header for mobile and tablet -->
+  <header class="hero nav-animation-element container visible-sm-block visible-xs-block" style="height: 650px;">
 
     <nav class="navbar navbar-fixed-top bst-navbar">
       <div class="container">
@@ -40,6 +41,45 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="slides">
+      <section class="hero" style="display: block;">
+        <div class="inner-col">
+          <div class="text">
+            <div><a href="#"><img src="/images/blockstack-logo.svg" width="123px" height="40px"></a></div>
+            <h1>Blockstack. The Open Source Blockchain Community</h1>
+            <p class="lead">
+              Welcoming all developers to come join the Blockstack consortium. The world’s largest Open Source Blockchain community. Our mission is to build the highest quality Blockchain protocols, apps and tools for all to use.
+            </p>
+            <p class="button-group"><a href="#" class="button default"><span>Join the Community</span></a></p>
+          </div>
+          <div class="img"></div>
+        </div>
+      </section>
+    </div>
+
+    <div class="backgrounds">
+      <div class="mobile-background"></div>
+    </div>
+
+  </header>
+
+  <!-- header for desktop -->
+  <header class="hero nav-animation-element visible-md-block visible-lg-block" style="height: 860px;">
+
+    <nav class="navbar navbar-fixed-top bst-navbar">
+      <div class="container">
+        <div class="navbar-header">
           <a class="navbar-brand" href="#">Project name</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
