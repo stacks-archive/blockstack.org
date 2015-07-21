@@ -1,0 +1,26 @@
+html {background-color:rgb(248, 248, 248);}
+input.text, input.search, textarea.textarea {padding: 15px 25px !important; padding-left: 15px !important; margin:0 !important; border:1px solid #ddd; background:rgba(255,255,255,1); box-shadow:0 1px 0px 0 rgba(0,0,0,0.02) inset;}
+input.text:focus, input.search:focus, textarea.textarea:focus {box-shadow: none !important; border-color: #68a4da; outline:none;}
+form.wufoo>li .focused, form li.focused {background-color:rgba(255,255,255,1) !important;}
+#container {box-shadow:none; border: 1px solid rgba(0,0,0,0.05); padding:25px; border-radius: 4px;}
+.wufoo label.desc, .wufoo legend.desc {color:rgb(140, 147, 154);}
+
+.wufoo input.btTxt {
+  color: #fff;
+  padding: 1em 2em;
+  background-color: #1d90cb;
+  background-image: -webkit-linear-gradient(#1d90cb, #0e86c4);
+  background-image: -moz-linear-gradient(#1d90cb, #0e86c4);
+  background-image: linear, false, #1d90cb, #0e86c4;
+  border: 1px solid #137dba;
+  font-size: 11px;
+  text-transform: uppercase;
+  height: 42px;
+  letter-spacing: 0.05em;
+  border-radius: 2px;
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+  margin: 0;
+}
+.wufoo input.btTxt:hover, .wufoo input.btTxt:focus {background:#2b71b1; cursor:pointer; outline:none;}
