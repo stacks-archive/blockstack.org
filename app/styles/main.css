@@ -8,8 +8,8 @@ body {padding-top:0; padding-bottom:20px;}
 
 /* Globals */
 h1 {font-size:30px; line-height:38px;}
-h2 {font-size:22px; line-height:32px;}
-h3 {margin-bottom:15px; font-size:23px;}
+h2 {font-size:24px; line-height:32px;}
+h3 {margin-bottom:15px; font-size:20px;}
 h4 {font-size:15px; margin:20px 0;}
 
 /* Links */
@@ -38,7 +38,7 @@ h1.hero-head {font-size:26px; line-height:34px; margin-bottom:15px; font-weight:
 .lead {font-size:14px; line-height:24px; margin-bottom:30px;}
 
 /* Buttons */
-.btn-primary {background-color:rgba(151,59,174,1); border-radius:4px; border: 1px solid rgba(151,59,174,1); font-size:13px; font-weight:500; padding:12px 65px;}
+.btn-primary {background-color:rgba(151,59,174,1); border-radius:4px; border: 1px solid rgba(175,72,193,1); font-size:13px; font-weight:500; padding:12px 30px;}
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {background-color:rgba(121,47,139,1)!important; border:1px solid rgba(121,47,139,1); outline:none;}
 .btn-special {background-color:transparent; color:rgba(255,255,255,1); font-size:13px; font-weight:500; border:transparent; padding-left:2px;}
 .btn-special:hover, .btn-special:focus, .btn-special:active {text-decoration:underline; color:rgba(255,255,255,1); outline:none;}
@@ -66,12 +66,12 @@ padding-bottom:90px;
 .wrap-mob-feat {max-width:240px;}
 .feature-panel {margin:40px 0; text-align:center;}
 .feature-panel > img {margin:0 auto; padding:0 15%;}
-.feature-panel > h3 {margin-bottom:10px; display:block; font-size:1.35em;}
+.feature-panel > h3 {margin-bottom:10px; display:block;}
 .col-centered {float:none; margin:15px auto;}
 .sec-hook {background-color:rgba(248,249,251,1);}
 .works {padding-bottom:50px;}
-.displayed {text-align:center; margin-top:50px; margin-bottom:50px;}
-.works:before {border-bottom:1px solid rgba(230,230,230,1); width:200px; margin:0 auto;}
+.displayed {text-align:center; margin-top:100px; margin-bottom:100px;}
+div.displayed-wrap.container::after {border-bottom:1px solid rgba(230,230,230,1); width:65%; margin:0 auto;}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .marketing, .footer {padding-left:20px; padding-right:20px;}
@@ -97,28 +97,53 @@ padding-bottom:90px;
 
 
 
+/* Media queries */
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
 
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+/* Small devices (tablets, 768px and up) */
+@media (min-width:768px) {
 
   /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
+  .header, .marketing, .footer {padding-left:0; padding-right:0;}
 
   /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
+  .header {margin-bottom:30px;}
 
   /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+  .jumbotron {border-bottom:0;}
+
 }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width:992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:1200px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
