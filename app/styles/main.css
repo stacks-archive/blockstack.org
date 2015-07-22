@@ -53,8 +53,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 
 
 
-
-
+.btn-primary {background-color:rgba(151,59,174,1); border-radius:4px; border: 1px solid rgba(151,59,174,1); font-size:13px; font-weight:500; padding:12px 65px;}
+.btn-primary:hover {background-color:rgba(121,47,139,1); border:1px solid rgba(121,47,139,1);}
+.btn-special {background-color:transparent; color:rgba(255,255,255,1); font-size:13px; font-weight:500; padding:12px 65px; border:transparent;}
 
 
 
