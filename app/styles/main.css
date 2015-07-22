@@ -8,8 +8,10 @@ body {padding-top:0; padding-bottom:20px;}
 
 
 /* Globals */
+h1 {font-size:30px; line-height:38px;}
 h3 {margin-bottom:15px; font-size:23px;}
 h4 {font-size:15px; margin:20px 0;}
+
 
 /* Links */
 .bst-navbar {background-color: #fff;}
@@ -26,7 +28,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 .hero {color:rgba(255,255,255,1);}
 
 
-
+h1.hero-head {font-size:30px; line-height:38px; margin-bottom:30px;}
 
 
 
@@ -55,8 +57,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 
 .btn-primary {background-color:rgba(151,59,174,1); border-radius:4px; border: 1px solid rgba(151,59,174,1); font-size:13px; font-weight:500; padding:12px 65px;}
 .btn-primary:hover {background-color:rgba(121,47,139,1); border:1px solid rgba(121,47,139,1);}
-.btn-special {background-color:transparent; color:rgba(255,255,255,1); font-size:13px; font-weight:500; padding:12px 65px; border:transparent;}
-
+.btn-special {background-color:transparent; color:rgba(255,255,255,1); font-size:13px; font-weight:500; border:transparent; padding-left:2px;}
+.btn-special:hover {text-decoration:underline; color:rgba(255,255,255,1);}
+.bt-special-space {padding-right:10px;}
 
 
 
