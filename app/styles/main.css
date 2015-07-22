@@ -8,6 +8,7 @@ body {padding-top:0; padding-bottom:20px;}
 
 /* Globals */
 h1 {font-size:30px; line-height:38px;}
+h2 {font-size:22px; line-height:32px;}
 h3 {margin-bottom:15px; font-size:23px;}
 h4 {font-size:15px; margin:20px 0;}
 
@@ -69,6 +70,8 @@ padding-bottom:90px;
 .col-centered {float:none; margin:15px auto;}
 .sec-hook {background-color:rgba(248,249,251,1);}
 .works {padding-bottom:50px;}
+.displayed {text-align:center; margin-top:50px; margin-bottom:50px;}
+.works:before {border-bottom:1px solid rgba(230,230,230,1); width:200px; margin:0 auto;}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .marketing, .footer {padding-left:20px; padding-right:20px;}
