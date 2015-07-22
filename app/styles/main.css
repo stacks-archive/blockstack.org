@@ -46,7 +46,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 .menu-header {border-bottom:1px solid #2a2d2f; padding:24px 0 24px 20px; background-size:32px;}
 .menu-section-title {text-transform:uppercase; color:#85888d; font-size:10px; letter-spacing:1px; padding:0 20px; margin:0;}
 .menu-header-title {margin:0 0 0 10px; list-style:none;}
-.githublink-sidebar {fill:rgba(140,140,140,1);}
+.githublink-sidebar {padding-right:15px;}
 
 
 
