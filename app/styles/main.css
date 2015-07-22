@@ -6,15 +6,43 @@
 body, div, h1, h2, h3, h4, h5, h6, p {font-family:"raleway",sans-serif;}
 body {padding-top:0; padding-bottom:20px;}
 
-
 /* Globals */
 h1 {font-size:30px; line-height:38px;}
 h3 {margin-bottom:15px; font-size:23px;}
 h4 {font-size:15px; margin:20px 0;}
 
-
 /* Links */
 .bst-navbar {background-color: #fff;}
+
+/* -- Sidebar -- */
+.st-container, {min-height:100%;}
+.no-csstransforms3d .st-pusher, .no-js .st-pusher { padding-left:0px;}
+.st-menu ul {margin-bottom:10px;}
+.st-menu {background-color:rgba(33,33,33,1); width:256px; text-align:left;}
+.st-menu ul li a:hover, .st-menu ul li:first-child a:focus {color:rgba(255,255,255,1); text-decoration:none; background-color:rgba(255,255,255,.1);transition:none;}
+.st-menu ul li a, .st-menu ul li:first-child a {box-shadow:none; line-height:20px; color:#fff; display:block; padding:8px 20px; text-transform:none; font-size:13px;}
+.st-menu ul li a {letter-spacing:0;}
+.st-menu h2 {color:rgba(255,255,255,0.75); font-size:17px; margin:10px 0px;}
+.st-effect-3.st-menu-open .st-pusher {transform:translate3d(256px,0,0);}
+.menu-section-list {padding:0; margin:10px 0!important; list-style:none;}
+.menu-section {margin:20px 0;}
+.menu a {color:rgba(255,255,255,1);}
+.menu-header {border-bottom:1px solid #2a2d2f; padding:16px 20px 16px 19px; background-size:32px;}
+.menu-section-title {text-transform:uppercase; color:#85888d; font-size:10px; letter-spacing:1px; padding:0 20px; margin:0;}
+.menu-header-title {list-style:none;}
+.githublink-sidebar {margin-top:3px;}
+
+/* Buttons */
+.btn-primary {background-color:rgba(151,59,174,1); border-radius:4px; border: 1px solid rgba(151,59,174,1); font-size:13px; font-weight:500; padding:12px 65px;}
+.btn-primary:hover {background-color:rgba(121,47,139,1); border:1px solid rgba(121,47,139,1);}
+.btn-special {background-color:transparent; color:rgba(255,255,255,1); font-size:13px; font-weight:500; border:transparent; padding-left:2px;}
+.btn-special:hover {text-decoration:underline; color:rgba(255,255,255,1);}
+.bt-special-space {padding-right:10px;}
+
+/* Menu button */
+.navbar .navbar-toggle, .navbar .navbar-toggle:active, .navbar .navbar-toggle:focus, .navbar .navbar-toggle:hover { float:left; padding:9px 11px; border-color:transparent; margin:10px 10px; background:0 0;}
+.navbar-toggle .icon-bar {display:block; width:12px; height:1px; border-radius:1px; background-color:rgba(255,2555,255,1);}
+.navbar-toggle .icon-bar + .icon-bar {margin-top:3px;}
 
 .nav-animation-element{background: rgba(0,0,0,1);
 background: -moz-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(4,0,7,1) 7%, rgba(24,13,31,1) 40%, rgba(36,19,47,1) 53%, rgba(54,22,72,1) 67%, rgba(60,23,79,1) 75%, rgba(72,25,93,1) 86%, rgba(83,32,111,1) 98%, rgba(83,32,111,1) 100%);
@@ -26,48 +54,9 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(4,0,7,1) 7%, rgba(24,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#53206f', GradientType=1 );
 }
 .hero {color:rgba(255,255,255,1);}
-
-
-h1.hero-head {font-size:30px; line-height:38px; margin-bottom:30px;}
+h1.hero-head {font-size:26px; line-height:34px; margin-bottom:30px; font-weight:400;}
 .lead {font-size:14px; line-height:24px;}
-
-
-
-/* -- Sidebar Transitions -- */
-.st-container, {min-height:100%;}
-.no-csstransforms3d .st-pusher, .no-js .st-pusher { padding-left:0px;}
-.st-menu ul {margin-bottom:10px;}
-.st-menu {background-color:rgba(33,33,33,1); width:256px; text-align:left;}
-.st-menu ul li a:hover, .st-menu ul li:first-child a:focus {color:rgba(255,255,255,1); text-decoration:none; background-color:rgba(255,255,255,.1);transition:none;}
-.st-menu ul li a, .st-menu ul li:first-child a {box-shadow:none; line-height:20px; color:#fff; display:block; padding:8px 20px; text-transform:none; font-size:13px;}
-.st-menu ul li a {letter-spacing:0;}
-.st-menu h2 {color:rgba(255,255,255,0.75); font-size:17px; margin:10px 0px;}
-.st-effect-3.st-menu-open .st-pusher {transform:translate3d(256px,0,0);}
-
-.menu-section-list {padding:0; margin:10px 0!important; list-style:none;}
-.menu-section {margin:20px 0;}
-.menu a {color:rgba(255,255,255,1);}
-.menu-header {border-bottom:1px solid #2a2d2f; padding:16px 20px 16px 19px; background-size:32px;}
-.menu-section-title {text-transform:uppercase; color:#85888d; font-size:10px; letter-spacing:1px; padding:0 20px; margin:0;}
-.menu-header-title {list-style:none;}
-.githublink-sidebar {margin-top:3px;}
-
-
-
-
-
-.btn-primary {background-color:rgba(151,59,174,1); border-radius:4px; border: 1px solid rgba(151,59,174,1); font-size:13px; font-weight:500; padding:12px 65px;}
-.btn-primary:hover {background-color:rgba(121,47,139,1); border:1px solid rgba(121,47,139,1);}
-.btn-special {background-color:transparent; color:rgba(255,255,255,1); font-size:13px; font-weight:500; border:transparent; padding-left:2px;}
-.btn-special:hover {text-decoration:underline; color:rgba(255,255,255,1);}
-.bt-special-space {padding-right:10px;}
-
-
-
-/* Menu button */
-.navbar .navbar-toggle, .navbar .navbar-toggle:active, .navbar .navbar-toggle:focus, .navbar .navbar-toggle:hover { float:left; padding:9px 11px; border-color:transparent; margin:18px 10px; background:0 0;}
-.navbar-toggle .icon-bar {display:block; width:12px; height:1px; border-radius:1px; background-color:rgba(255,2555,255,1);}
-
+.hero-logo {margin-bottom:40px;}
 .slides {padding-left:40px; padding-right:40px;}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
