@@ -2,6 +2,7 @@
   "name": "blockstack-site",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "~3.2.0"
+    "bootstrap-sass-official": "~3.2.0",
+    "components-font-awesome": "~4.3.0"
   }
 }

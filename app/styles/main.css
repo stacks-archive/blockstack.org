@@ -77,10 +77,10 @@ h2.action-title {font-size:30px; line-height:42px; margin-bottom:35px;}
 
 
 /* Footer */
-footer {background-color:red; padding-top:100px; padding-bottom:100px; color:rgba(255,255,255,1); font-size:13px;}
+footer {background-color:rgba(26,26,26,1); padding-top:100px; padding-bottom:100px; color:rgba(255,255,255,1); font-size:13px;}
 footer>ul>li {list-style:none;}
 
-.sm-social li {padding:8px 20px; display:inline-block; color:rgba(255,255,255,1);}
+.sm-social li {padding:8px 20px; display:inline-block; color:rgba(255,255,255,1); font-size:24px;}
 a {color:rgba(255,255,255,1);}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
