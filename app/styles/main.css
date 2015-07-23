@@ -4,7 +4,7 @@
 
 /* Base structure */
 body, div, h1, h2, h3, h4, h5, h6, p {font-family:"raleway",sans-serif;}
-body {padding-top:0; padding-bottom:20px;}
+body {padding-top:0; padding-bottom:0;}
 
 /* Globals */
 h1 {font-size:30px; line-height:38px;}
@@ -72,6 +72,15 @@ padding-bottom:90px;
 .works {padding-bottom:50px;}
 .displayed {text-align:center; margin-top:100px; margin-bottom:100px;}
 div.displayed-wrap.container::after {border-bottom:1px solid rgba(230,230,230,1); width:65%; margin:0 auto;}
+.feature-action {background-color:rgba(84,32,111,1); color:rgba(255,255,255,1); text-align:center; padding-top:150px; padding-bottom:150px; margin:0;}
+h2.action-title {font-size:30px; line-height:42px; margin-bottom:35px;}
+
+
+/* Footer */
+footer {background-color:rgba(26,26,26,1); padding-top:100px; padding-bottom:100px; color:rgba(255,255,255,1); font-size:13px;}
+footer>ul>li {list-style:none;}
+
+.sm-social li {padding:8px 20px; display:inline-block;}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .marketing, .footer {padding-left:20px; padding-right:20px;}
