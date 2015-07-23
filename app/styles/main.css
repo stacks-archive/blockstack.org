@@ -81,31 +81,27 @@ h2.action-title {font-size:30px; line-height:42px; margin-bottom:35px;}
 footer {background-color:rgba(26,26,26,1); padding-top:60px; padding-bottom:80px; color:rgba(255,255,255,1); font-size:13px;}
 footer > li {list-style:none;}
 .foot-menu {padding-top:20px;}
-.foot-menu > li a {color:rgba(255,255,255,1);}
+.foot-menu > li {padding:4px 15px;}
+.foot-menu > li:first-child {color:rgba(204,204,204,1);}
+.foot-menu > li a {color:rgba(255,255,255,1); display:block;}
 .foot-menu > li a:hover {color:rgba(204,204,204,1); text-decoration:none;}
-.copy-foot {padding-right:30px; padding-left:30px; padding-top:60px;}
+.copy-foot {padding-top:60px;}
 .sm-social {margin-left:-10px;}
 .sm-social li {padding:8px 10px; display:inline-block; font-size:18px;}
 .sm-social li a {color:rgba(255,255,255,1);}
 .sm-social > li a:hover {color:rgba(204,204,204,1);}
-.base-foot {padding-top:40px;}
+.base-foot {padding-top:20px;}
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.marketing, .footer {padding-left:20px; padding-right:20px;}
+.midfoot li {display:inline-block; list-style:none;}
+.midfoot, .base-push-left {padding-left:30px;}
 
-/* Custom page header */
-.header {border-bottom:1px solid #e5e5e5;}
+
 
 /* Make the masthead heading the same height as the navigation */
 .header h3 {margin-top:0; margin-bottom:0; line-height:40px; padding-bottom:19px;}
 
 /* Custom page footer */
-.footer {padding-top:19px; color:#777; border-top:1px solid #e5e5e5;}
 .container-narrow > hr {margin:30px 0;}
-
-/* Main marketing message and sign up button */
-.jumbotron {text-align:center; border-bottom:1px solid #e5e5e5;}
-.jumbotron .btn {font-size:21px; padding:14px 24px;}
 
 /* Supporting marketing content */
 .marketing {margin:40px 0;}
@@ -136,7 +132,12 @@ footer > li {list-style:none;}
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width:992px) {
-
+	.foot-left-col {width:22.3%}
+	.foot-menu {padding-top:0px;}
+	.col-xs-15 {width:20%;}
+	.copyright-push-left, .base-push-left {margin-left:25%; max-width:55%}
+	.midfoot, .base-push-left {padding-left:0;}
+	.social {margin-top:-8px;}
 }
 
 /* Large devices (large desktops, 1200px and up) */
