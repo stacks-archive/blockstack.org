@@ -43,13 +43,14 @@ h1.hero-head {font-size:26px; line-height:34px; margin-bottom:15px; font-weight:
 .btn-special {background-color:transparent; color:rgba(255,255,255,1); font-size:13px; font-weight:500; border:transparent; padding-left:2px;}
 .btn-special:hover, .btn-special:focus, .btn-special:active {text-decoration:underline; color:rgba(255,255,255,1); outline:none;}
 .bt-special-space {padding-right:10px;}
+.btn-lg {font-size:16px; padding:15px 30px;}
 
 /* Menu button */
 .navbar .navbar-toggle, .navbar .navbar-toggle:active, .navbar .navbar-toggle:focus, .navbar .navbar-toggle:hover {float:left; padding:9px 11px; border-color:transparent; margin:10px 13px; background:0 0;}
 .navbar-toggle .icon-bar {display:block; width:11px; height:1px; border-radius:1px; background-color:rgba(255,2555,255,1);}
 .navbar-toggle .icon-bar + .icon-bar {margin-top:3px;}
 
-.nav-animation-element{background: rgba(0,0,0,1);
+.head-wrap{background: rgba(0,0,0,1);
 background: -moz-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(4,0,7,1) 7%, rgba(24,13,31,1) 40%, rgba(36,19,47,1) 53%, rgba(54,22,72,1) 67%, rgba(60,23,79,1) 75%, rgba(72,25,93,1) 86%, rgba(83,32,111,1) 98%, rgba(83,32,111,1) 100%);
 background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(7%, rgba(4,0,7,1)), color-stop(40%, rgba(24,13,31,1)), color-stop(53%, rgba(36,19,47,1)), color-stop(67%, rgba(54,22,72,1)), color-stop(75%, rgba(60,23,79,1)), color-stop(86%, rgba(72,25,93,1)), color-stop(98%, rgba(83,32,111,1)), color-stop(100%, rgba(83,32,111,1)));
 background: -webkit-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(4,0,7,1) 7%, rgba(24,13,31,1) 40%, rgba(36,19,47,1) 53%, rgba(54,22,72,1) 67%, rgba(60,23,79,1) 75%, rgba(72,25,93,1) 86%, rgba(83,32,111,1) 98%, rgba(83,32,111,1) 100%);
@@ -82,14 +83,12 @@ footer > li {list-style:none;}
 .foot-menu {padding-top:20px;}
 .foot-menu > li a {color:rgba(255,255,255,1);}
 .foot-menu > li a:hover {color:rgba(204,204,204,1); text-decoration:none;}
-.copy-foot {padding-right:30px; padding-left:30px; padding-top:70px;}
-.base-foot {padding-top:40px;}
-
-
-.sm-social {position:absolute; margin-left:-10px; margin-top:-80px;}
+.copy-foot {padding-right:30px; padding-left:30px; padding-top:60px;}
+.sm-social {margin-left:-10px;}
 .sm-social li {padding:8px 10px; display:inline-block; font-size:18px;}
 .sm-social li a {color:rgba(255,255,255,1);}
 .sm-social > li a:hover {color:rgba(204,204,204,1);}
+.base-foot {padding-top:40px;}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .marketing, .footer {padding-left:20px; padding-right:20px;}
@@ -142,7 +141,7 @@ footer > li {list-style:none;}
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width:1200px) {
-
+	.nav-animation-element {width:1170px;}
 }
 
 
