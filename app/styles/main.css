@@ -40,17 +40,17 @@ h1.hero-head {font-size:26px; line-height:34px; margin-bottom:15px; font-weight:
 /* Buttons */
 .btn-primary {background-color:rgba(151,59,174,1); border-radius:4px; border: 1px solid rgba(175,72,193,1); font-size:13px; font-weight:500; padding:12px 30px;}
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {background-color:rgba(121,47,139,1)!important; border:1px solid rgba(121,47,139,1); outline:none;}
-.btn-special {background-color:transparent; color:rgba(255,255,255,1); font-size:13px; font-weight:500; border:transparent; padding-left:2px;}
-.btn-special:hover, .btn-special:focus, .btn-special:active {text-decoration:underline; color:rgba(255,255,255,1); outline:none;}
+.btn-special, .btn-special-rev {background-color:transparent; color:rgba(255,255,255,1); font-size:13px; font-weight:500; border:transparent; padding-left:2px;}
+.btn-special:hover, .btn-special:focus, .btn-special:active, .btn-special-rev:hover, .btn-special-rev:focus, .btn-special-rev:active {color:rgba(255,255,255,1); outline:none;}
 .bt-special-space {padding-right:10px;}
-.btn-lg {font-size:16px; padding:15px 30px;}
+.btn-lg {font-size:17px; padding:15px 30px;}
 
 /* Menu button */
 .navbar .navbar-toggle, .navbar .navbar-toggle:active, .navbar .navbar-toggle:focus, .navbar .navbar-toggle:hover {float:left; padding:9px 11px; border-color:transparent; margin:10px 13px; background:0 0;}
 .navbar-toggle .icon-bar {display:block; width:11px; height:1px; border-radius:1px; background-color:rgba(255,2555,255,1);}
 .navbar-toggle .icon-bar + .icon-bar {margin-top:3px;}
 
-.head-wrap{background: rgba(0,0,0,1);
+.head-wrap {background: rgba(0,0,0,1);
 background: -moz-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(4,0,7,1) 7%, rgba(24,13,31,1) 40%, rgba(36,19,47,1) 53%, rgba(54,22,72,1) 67%, rgba(60,23,79,1) 75%, rgba(72,25,93,1) 86%, rgba(83,32,111,1) 98%, rgba(83,32,111,1) 100%);
 background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(7%, rgba(4,0,7,1)), color-stop(40%, rgba(24,13,31,1)), color-stop(53%, rgba(36,19,47,1)), color-stop(67%, rgba(54,22,72,1)), color-stop(75%, rgba(60,23,79,1)), color-stop(86%, rgba(72,25,93,1)), color-stop(98%, rgba(83,32,111,1)), color-stop(100%, rgba(83,32,111,1)));
 background: -webkit-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(4,0,7,1) 7%, rgba(24,13,31,1) 40%, rgba(36,19,47,1) 53%, rgba(54,22,72,1) 67%, rgba(60,23,79,1) 75%, rgba(72,25,93,1) 86%, rgba(83,32,111,1) 98%, rgba(83,32,111,1) 100%);
@@ -91,10 +91,8 @@ footer > li {list-style:none;}
 .sm-social li a {color:rgba(255,255,255,1);}
 .sm-social > li a:hover {color:rgba(204,204,204,1);}
 .base-foot {padding-top:20px;}
-
 .midfoot li {display:inline-block; list-style:none;}
 .midfoot, .base-push-left {padding-left:30px;}
-
 
 
 /* Make the masthead heading the same height as the navigation */
@@ -102,10 +100,6 @@ footer > li {list-style:none;}
 
 /* Custom page footer */
 .container-narrow > hr {margin:30px 0;}
-
-/* Supporting marketing content */
-.marketing {margin:40px 0;}
-.marketing p, .marketing h4 {margin-top:28px;}
 
 
 
@@ -132,12 +126,27 @@ footer > li {list-style:none;}
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width:992px) {
+
+	/* Hero */
+	h1.hero-head {font-size:48px; line-height:64px; margin-bottom:15px; font-weight:400; width:50%;}
+	.btn-special-rev {background-color:rgba(255,255,255,0.05); padding:15px 60px;}
+	.btn-special-rev:hover {text-decoration:none; background-color:rgba(0,0,0,0.25);}
+
+
+	/* Feature action */
+	h2.action-title {font-size:48px; line-height:64px;}
+	.feature-action {padding-top:200px; padding-bottom:200px; margin:0;}
+	.btn-special {background-color:rgba(0,0,0,0.15); padding:15px 60px;}
+	.btn-special:hover {text-decoration:none; background-color:rgba(255,255,255,0.05);}
+
+	/* Footer */
 	.foot-left-col {width:22.3%}
 	.foot-menu {padding-top:0px;}
 	.col-xs-15 {width:20%;}
 	.copyright-push-left, .base-push-left {margin-left:25%; max-width:55%}
 	.midfoot, .base-push-left {padding-left:0;}
 	.social {margin-top:-8px;}
+
 }
 
 /* Large devices (large desktops, 1200px and up) */
