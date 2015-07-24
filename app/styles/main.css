@@ -126,9 +126,11 @@ footer > li {list-style:none;}
 	.btn-lg {font-size:17px; padding:15px 60px;}
 
 	/* Navbar */
+	.head-right-list {list-style:none; padding-left:0;}
+	.head-right-list li {display:inline-block;}
 	.navbar-brand {width:150px; margin-top:-5px;}
-	.github-header {font-size:25px; margin-right:10px;}
-	.gitword {padding-bottom:2px;}
+	.github-header {font-size:25px; margin-right:10px; margin:-4px;}
+	.gitword {margin-top:0; margin-left:20px;}
 
 	/* Hero */
 	h1.hero-head {font-size:48px; line-height:64px; margin-bottom:15px; font-weight:400;}
