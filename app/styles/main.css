@@ -37,8 +37,12 @@ h1.hero-head {font-size:26px; line-height:34px; margin-bottom:15px; font-weight:
 /* Buttons */
 .btn-primary {background-color:rgba(151,59,174,1); border-radius:4px; border: 1px solid rgba(175,72,193,1); font-size:13px; font-weight:500; padding:12px 30px;}
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {background-color:rgba(121,47,139,1)!important; border:1px solid rgba(121,47,139,1); outline:none;}
+.btn-special {background-color:rgba(0,0,0,0.15);}
+.btn-special:hover {text-decoration:none; background-color:rgba(0,0,0,0.25);}
 .btn-special, .btn-special-rev {background-color:transparent; color:rgba(255,255,255,1); font-size:13px; font-weight:500; border:transparent; padding-left:2px;}
 .btn-special:hover, .btn-special:focus, .btn-special:active, .btn-special-rev:hover, .btn-special-rev:focus, .btn-special-rev:active {color:rgba(255,255,255,1); outline:none;}
+.btn-special-rev {background-color:rgba(121,47,139,0.3);}
+.btn-special-rev:hover {text-decoration:none; background-color:rgba(121,47,139,0.2);}
 .bt-special-space {padding-right:10px;}
 .btn-lg {font-size:14px; padding:11px 40px;}
 
@@ -46,6 +50,8 @@ h1.hero-head {font-size:26px; line-height:34px; margin-bottom:15px; font-weight:
 .navbar .navbar-toggle, .navbar .navbar-toggle:active, .navbar .navbar-toggle:focus, .navbar .navbar-toggle:hover {float:left; padding:9px 11px; border-color:transparent; margin:10px 13px; background:0 0;}
 .navbar-toggle .icon-bar {display:block; width:11px; height:1px; border-radius:1px; background-color:rgba(255,2555,255,1);}
 .navbar-toggle .icon-bar + .icon-bar {margin-top:3px;}
+.navbar-nav li a {color:rgba(255,255,255,0.75); font-size:14px;}
+.navbar-nav li a:hover, .navbar-nav li a:focus, .navbar-nav li a:active {background-color:transparent;}
 
 .head-wrap {background: rgba(0,0,0,1);
 background: -moz-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(4,0,7,1) 7%, rgba(24,13,31,1) 40%, rgba(36,19,47,1) 53%, rgba(54,22,72,1) 67%, rgba(60,23,79,1) 75%, rgba(72,25,93,1) 86%, rgba(83,32,111,1) 98%, rgba(83,32,111,1) 100%);
@@ -99,10 +105,7 @@ footer > li {list-style:none;}
 /* Custom page footer */
 .container-narrow > hr {margin:30px 0;}
 
-	.btn-special-rev {background-color:rgba(121,47,139,0.3);}
-	.btn-special-rev:hover {text-decoration:none; background-color:rgba(121,47,139,0.2);}
-	.btn-special {background-color:rgba(0,0,0,0.15);}
-	.btn-special:hover {text-decoration:none; background-color:rgba(0,0,0,0.25);}
+
 
 
 /* Media queries */
@@ -119,16 +122,18 @@ footer > li {list-style:none;}
 /* Medium devices (desktops, 992px and up) */
 @media (min-width:992px) {
 
+	/* Globals */
 	.btn-lg {font-size:17px; padding:15px 60px;}
 
 	/* Navbar */
-	.navbar-nav li a:hover {background-color:transparent;}
+	.navbar-brand {width:150px; margin-top:-5px;}
+	.github-header {font-size:25px; margin-right:10px;}
+	.gitword {padding-bottom:2px;}
 
 	/* Hero */
 	h1.hero-head {font-size:48px; line-height:64px; margin-bottom:15px; font-weight:400;}
 	.hero-head {padding-left:0;}
 	.slides {padding-left:40px; padding-right:40px; padding-top:80px;}
-	.hero-logo {width:150px;}
 	.lead {font-size:17px; line-height:30px; margin-bottom:60px;}
 
 	/* Feature action */
