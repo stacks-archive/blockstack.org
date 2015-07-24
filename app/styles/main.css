@@ -61,6 +61,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 padding-bottom:90px;
 }
 .hero {color:rgba(255,255,255,1);}
+.hero-wrap {margin-top:0;}
 .hero-logo {margin-bottom:45px; margin-left:-2px;}
 .slides {padding-left:40px; padding-right:40px;}
 .navbar {margin-bottom:19px;}
@@ -68,7 +69,7 @@ padding-bottom:90px;
 .feature-panel {margin:40px 0; text-align:center;}
 .feature-panel > img {margin:0 auto; padding:0 15%;}
 .feature-panel > h3 {margin-bottom:10px; display:block;}
-.col-centered {float:none; margin:15px auto;}
+.col-centered {float:none; margin:0 auto;}
 .sec-hook {background-color:rgba(248,249,251,1);}
 .works {padding-bottom:50px;}
 .displayed {text-align:center; margin-top:100px; margin-bottom:100px;}
@@ -113,37 +114,30 @@ footer > li {list-style:none;}
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
 
-  /* Remove the padding we set earlier */
-  .header, .marketing, .footer {padding-left:0; padding-right:0;}
-
-  /* Space out the masthead */
-  .header {margin-bottom:30px;}
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {border-bottom:0;}
-
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width:992px) {
 
 	/* Hero */
-	h1.hero-head {font-size:48px; line-height:64px; margin-bottom:15px; font-weight:400; width:50%;}
-	.btn-special-rev {background-color:rgba(255,255,255,0.05); padding:15px 60px;}
-	.btn-special-rev:hover {text-decoration:none; background-color:rgba(0,0,0,0.25);}
-
+	h1.hero-head {font-size:48px; line-height:64px; margin-bottom:15px; font-weight:400;}
+	.hero-head {padding-left:0;}
+	.btn-special-rev {background-color:rgba(121,47,139,0.5); padding:15px 60px;}
+	.btn-special-rev:hover {text-decoration:none; background-color:rgba(121,47,139,0.5); /*background-color:rgba(255,255,255,1);*/}
+	.slides {padding-left:40px; padding-right:40px; padding-top:80px;}
+	.hero-logo {width:200px;}
+	.lead {font-size:17px; line-height:30px; margin-bottom:60px;}
 
 	/* Feature action */
-	h2.action-title {font-size:48px; line-height:64px;}
+	h2.action-title {font-size:48px; line-height:64px; margin-bottom:55px;}
 	.feature-action {padding-top:200px; padding-bottom:200px; margin:0;}
 	.btn-special {background-color:rgba(0,0,0,0.15); padding:15px 60px;}
-	.btn-special:hover {text-decoration:none; background-color:rgba(255,255,255,0.05);}
+	.btn-special:hover {text-decoration:none; background-color:rgba(0,0,0,0.25);}
 
 	/* Footer */
 	.foot-left-col {width:22.3%}
 	.foot-menu {padding-top:0px;}
-	.col-xs-15 {width:20%;}
-	.copyright-push-left, .base-push-left {margin-left:25%; max-width:55%}
+	.copyright-push-left, .base-push-left {margin-left:30%; max-width:55%}
 	.midfoot, .base-push-left {padding-left:0;}
 	.social {margin-top:-8px;}
 
@@ -151,7 +145,7 @@ footer > li {list-style:none;}
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width:1200px) {
-	.nav-animation-element {width:1170px;}
+	/*.nav-animation-element {width:1170px;*/}
 }
 
 
