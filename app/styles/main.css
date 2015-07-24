@@ -47,10 +47,11 @@ h1.hero-head {font-size:26px; line-height:34px; margin-bottom:15px; font-weight:
 .btn-lg {font-size:14px; padding:11px 40px;}
 
 /* Menu button */
+.navbar-top {padding-right:0; padding-left:0;}
 .navbar .navbar-toggle, .navbar .navbar-toggle:active, .navbar .navbar-toggle:focus, .navbar .navbar-toggle:hover {float:left; padding:9px 11px; border-color:transparent; margin:10px 13px; background:0 0;}
 .navbar-toggle .icon-bar {display:block; width:11px; height:1px; border-radius:1px; background-color:rgba(255,2555,255,1);}
 .navbar-toggle .icon-bar + .icon-bar {margin-top:3px;}
-.navbar-nav li a {color:rgba(255,255,255,0.75); font-size:14px;}
+.navbar-nav li a {color:rgba(255,255,255,0.75); font-size:13px;}
 .navbar-nav li a:hover, .navbar-nav li a:focus, .navbar-nav li a:active {background-color:transparent;}
 
 .head-wrap {background: rgba(0,0,0,1);
@@ -63,7 +64,7 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(4,0,7,1) 7%, rgba(24,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#53206f', GradientType=1 );
 padding-bottom:90px;
 }
-.hero {color:rgba(255,255,255,1);}
+.hero {max-width:850px; color:rgba(255,255,255,1);}
 .hero-wrap {margin-top:0;}
 .hero-logo {width:120px; margin-bottom:45px; margin-left:-2px;}
 .slides {padding-left:40px; padding-right:40px;}
@@ -124,18 +125,25 @@ footer > li {list-style:none;}
 
 	/* Globals */
 	.btn-lg {font-size:17px; padding:15px 60px;}
+	.nav-animation-element {max-width:1170px;}
 
 	/* Navbar */
 	.head-right-list {list-style:none; padding-left:0;}
 	.head-right-list li {display:inline-block;}
+	.navbar-top {padding-top:10px;}
 	.navbar-brand {width:150px; margin-top:-5px;}
 	.github-header {font-size:25px; margin-right:10px; margin:-4px;}
 	.gitword {margin-top:0; margin-left:20px;}
+	.btn-head {border:1px solid rgba(255,255,255,0.25); padding:0;}
+	.nav-btn-head > li:nth-child(4) {margin-top:10px; margin-left:50px;}
+	.nav-btn-head > li:nth-child(1) {margin-left:50px;}
+	.nav-btn-head > li:nth-child(4) > a {padding:4px 25px;}
+
 
 	/* Hero */
 	h1.hero-head {font-size:48px; line-height:64px; margin-bottom:15px; font-weight:400;}
 	.hero-head {padding-left:0;}
-	.slides {padding-left:40px; padding-right:40px; padding-top:80px;}
+	.slides {padding-left:0; padding-right:0; padding-top:80px;}
 	.lead {font-size:17px; line-height:30px; margin-bottom:60px;}
 
 	/* Feature action */
@@ -153,7 +161,7 @@ footer > li {list-style:none;}
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width:1200px) {
-	/*.nav-animation-element {width:1170px;}*/
+	/*.nav-animation-element {max-width:1170px!important;}*/
 }
 
 
