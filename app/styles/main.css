@@ -12,9 +12,6 @@ h2 {font-size:24px; line-height:32px;}
 h3 {margin-bottom:15px; font-size:20px;}
 h4 {font-size:15px; margin:20px 0;}
 
-/* Links */
-.bst-navbar {background-color: #fff;}
-
 /* -- Sidebar -- */
 .st-container, {min-height:100%;}
 .no-csstransforms3d .st-pusher, .no-js .st-pusher { padding-left:0px;}
@@ -43,7 +40,7 @@ h1.hero-head {font-size:26px; line-height:34px; margin-bottom:15px; font-weight:
 .btn-special, .btn-special-rev {background-color:transparent; color:rgba(255,255,255,1); font-size:13px; font-weight:500; border:transparent; padding-left:2px;}
 .btn-special:hover, .btn-special:focus, .btn-special:active, .btn-special-rev:hover, .btn-special-rev:focus, .btn-special-rev:active {color:rgba(255,255,255,1); outline:none;}
 .bt-special-space {padding-right:10px;}
-.btn-lg {font-size:17px; padding:15px 30px;}
+.btn-lg {font-size:14px; padding:11px 40px;}
 
 /* Menu button */
 .navbar .navbar-toggle, .navbar .navbar-toggle:active, .navbar .navbar-toggle:focus, .navbar .navbar-toggle:hover {float:left; padding:9px 11px; border-color:transparent; margin:10px 13px; background:0 0;}
@@ -62,7 +59,7 @@ padding-bottom:90px;
 }
 .hero {color:rgba(255,255,255,1);}
 .hero-wrap {margin-top:0;}
-.hero-logo {margin-bottom:45px; margin-left:-2px;}
+.hero-logo {width:120px; margin-bottom:45px; margin-left:-2px;}
 .slides {padding-left:40px; padding-right:40px;}
 .navbar {margin-bottom:19px;}
 .wrap-mob-feat {max-width:240px;}
@@ -102,7 +99,10 @@ footer > li {list-style:none;}
 /* Custom page footer */
 .container-narrow > hr {margin:30px 0;}
 
-
+	.btn-special-rev {background-color:rgba(121,47,139,0.3);}
+	.btn-special-rev:hover {text-decoration:none; background-color:rgba(121,47,139,0.2);}
+	.btn-special {background-color:rgba(0,0,0,0.15);}
+	.btn-special:hover {text-decoration:none; background-color:rgba(0,0,0,0.25);}
 
 
 /* Media queries */
@@ -119,20 +119,21 @@ footer > li {list-style:none;}
 /* Medium devices (desktops, 992px and up) */
 @media (min-width:992px) {
 
+	.btn-lg {font-size:17px; padding:15px 60px;}
+
+	/* Navbar */
+	.navbar-nav a:hover {background-color:transparent;}
+
 	/* Hero */
 	h1.hero-head {font-size:48px; line-height:64px; margin-bottom:15px; font-weight:400;}
 	.hero-head {padding-left:0;}
-	.btn-special-rev {background-color:rgba(121,47,139,0.5); padding:15px 60px;}
-	.btn-special-rev:hover {text-decoration:none; background-color:rgba(121,47,139,0.5); /*background-color:rgba(255,255,255,1);*/}
 	.slides {padding-left:40px; padding-right:40px; padding-top:80px;}
-	.hero-logo {width:200px;}
+	.hero-logo {width:150px;}
 	.lead {font-size:17px; line-height:30px; margin-bottom:60px;}
 
 	/* Feature action */
 	h2.action-title {font-size:48px; line-height:64px; margin-bottom:55px;}
 	.feature-action {padding-top:200px; padding-bottom:200px; margin:0;}
-	.btn-special {background-color:rgba(0,0,0,0.15); padding:15px 60px;}
-	.btn-special:hover {text-decoration:none; background-color:rgba(0,0,0,0.25);}
 
 	/* Footer */
 	.foot-left-col {width:22.3%}
@@ -145,7 +146,7 @@ footer > li {list-style:none;}
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width:1200px) {
-	/*.nav-animation-element {width:1170px;*/}
+	/*.nav-animation-element {width:1170px;}*/
 }
 
 
