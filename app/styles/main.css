@@ -122,7 +122,7 @@ footer > li {list-style:none;}
 	.btn-lg {font-size:17px; padding:15px 60px;}
 
 	/* Navbar */
-	.navbar-nav a:hover {background-color:transparent;}
+	.navbar-nav li a:hover {background-color:transparent;}
 
 	/* Hero */
 	h1.hero-head {font-size:48px; line-height:64px; margin-bottom:15px; font-weight:400;}
