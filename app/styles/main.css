@@ -4,17 +4,57 @@
 
 /* Base structure */
 body, div, h1, h2, h3, h4, h5, h6, p {font-family:"raleway",sans-serif;}
-body {padding-top:0; padding-bottom:20px;}
-
+body {padding-top:0; padding-bottom:0;}
 
 /* Globals */
-h3 {margin-bottom:15px; font-size:23px;}
+h1 {font-size:30px; line-height:38px;}
+h2 {font-size:24px; line-height:32px;}
+h3 {font-size:20px; margin-bottom:15px;}
 h4 {font-size:15px; margin:20px 0;}
 
-/* Links */
-.bst-navbar {background-color: #fff;}
+/* -- Sidebar -- */
+.st-container, {min-height:100%;}
+.no-csstransforms3d .st-pusher, .no-js .st-pusher { padding-left:0px;}
+.st-menu ul {margin-bottom:10px;}
+.st-menu {background-color:rgba(33,33,33,1); width:256px; text-align:left;}
+.st-menu ul li a:hover, .st-menu ul li:first-child a:focus {color:rgba(255,255,255,1); text-decoration:none; background-color:rgba(255,255,255,.1);transition:none;}
+.st-menu ul li a, .st-menu ul li:first-child a {box-shadow:none; line-height:20px; color:#fff; display:block; padding:8px 20px; text-transform:none; font-size:13px;}
+.st-menu ul li a {letter-spacing:0;}
+.st-menu h2 {color:rgba(255,255,255,0.75); font-size:17px; margin:10px 0px;}
+.st-effect-3.st-menu-open .st-pusher {transform:translate3d(256px,0,0);}
+.menu-section-list {padding:0; margin:10px 0!important; list-style:none;}
+.menu-section {margin:20px 0;}
+.menu a {color:rgba(255,255,255,1);}
+.menu-header {border-bottom:1px solid #2a2d2f; padding:16px 20px 16px 19px; background-size:32px;}
+.menu-section-title {text-transform:uppercase; color:#85888d; font-size:10px; letter-spacing:1px; padding:0 20px; margin:0;}
+.menu-header-title {list-style:none;}
+.githublink-sidebar {margin-top:3px;}
 
-.nav-animation-element{background: rgba(0,0,0,1);
+/* Typography */
+h1.hero-head {font-size:28px; line-height:36px; margin-bottom:15px; font-weight:400;}
+.lead {font-size:14px; line-height:24px; margin-bottom:40px;}
+
+/* Buttons */
+.btn-primary {background-color:rgba(151,59,174,1); border-radius:4px; border: 1px solid rgba(175,72,193,1); font-size:13px; font-weight:500; padding:12px 30px;}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {background-color:rgba(121,47,139,1)!important; border:1px solid rgba(121,47,139,1); outline:none;}
+.btn-special {background-color:rgba(0,0,0,0.2); border:1px solid rgba(255,255,255,0.05); -webkit-transition: all 175ms linear; -moz-transition: all 175ms linear; -ms-transition: all 175ms linear; -o-transition: all 175ms linear; transition: all 175ms linear;}
+.btn-special:hover {text-decoration:none; background-color:rgba(0,0,0,0.1); border:1px solid rgba(255,255,255,0.05);}
+.btn-special, .btn-special-rev {color:rgba(255,255,255,1); font-size:13px; font-weight:500; padding-left:2px;}
+.btn-special:hover, .btn-special:focus, .btn-special:active, .btn-special-rev:hover, .btn-special-rev:focus, .btn-special-rev:active {color:rgba(255,255,255,1); outline:none;}
+.btn-special-rev {background-color:rgba(121,47,139,0.3); -webkit-transition: all 175ms linear; -moz-transition: all 175ms linear; -ms-transition: all 175ms linear; -o-transition: all 175ms linear; transition: all 175ms linear;}
+.btn-special-rev:hover {text-decoration:none; background-color:rgba(121,47,139,0.5);}
+.bt-special-space {padding-right:10px;}
+.btn-lg {font-size:14px; padding:11px 40px;}
+
+/* Menu button */
+.navbar-top {padding-right:0; padding-left:0;}
+.navbar .navbar-toggle, .navbar .navbar-toggle:active, .navbar .navbar-toggle:focus, .navbar .navbar-toggle:hover {float:left; padding:9px 11px; border-color:transparent; margin:10px 13px; background:0 0;}
+.navbar-toggle .icon-bar {display:block; width:11px; height:1px; border-radius:1px; background-color:rgba(255,2555,255,1);}
+.navbar-toggle .icon-bar + .icon-bar {margin-top:3px;}
+.navbar-nav li a {color:rgba(255,255,255,0.65); font-size:13px; -webkit-transition: all 175ms linear; -moz-transition: all 175ms linear; -ms-transition: all 175ms linear; -o-transition: all 175ms linear; transition: all 175ms linear;}
+.navbar-nav li a:hover, .navbar-nav li a:focus, .navbar-nav li a:active {background-color:transparent;}
+
+.head-wrap {padding-bottom:90px; background: rgba(0,0,0,1);
 background: -moz-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(4,0,7,1) 7%, rgba(24,13,31,1) 40%, rgba(36,19,47,1) 53%, rgba(54,22,72,1) 67%, rgba(60,23,79,1) 75%, rgba(72,25,93,1) 86%, rgba(83,32,111,1) 98%, rgba(83,32,111,1) 100%);
 background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(7%, rgba(4,0,7,1)), color-stop(40%, rgba(24,13,31,1)), color-stop(53%, rgba(36,19,47,1)), color-stop(67%, rgba(54,22,72,1)), color-stop(75%, rgba(60,23,79,1)), color-stop(86%, rgba(72,25,93,1)), color-stop(98%, rgba(83,32,111,1)), color-stop(100%, rgba(83,32,111,1)));
 background: -webkit-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(4,0,7,1) 7%, rgba(24,13,31,1) 40%, rgba(36,19,47,1) 53%, rgba(54,22,72,1) 67%, rgba(60,23,79,1) 75%, rgba(72,25,93,1) 86%, rgba(83,32,111,1) 98%, rgba(83,32,111,1) 100%);
@@ -23,95 +63,153 @@ background: -ms-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(4,0,7,1) 7%, rgba
 background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(4,0,7,1) 7%, rgba(24,13,31,1) 40%, rgba(36,19,47,1) 53%, rgba(54,22,72,1) 67%, rgba(60,23,79,1) 75%, rgba(72,25,93,1) 86%, rgba(83,32,111,1) 98%, rgba(83,32,111,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#53206f', GradientType=1 );
 }
-.hero {color:rgba(255,255,255,1);}
+.hero {max-width:850px; padding-top:40px; color:rgba(255,255,255,1);}
+.hero-wrap {margin-top:0;}
+.hero-logo {width:120px; margin-bottom:45px; margin-left:-2px;}
+.slides {padding-left:10px; padding-right:10px;}
+.navbar {margin-bottom:19px;}
+.wrap-mob-feat {max-width:195px;}
+.feature-panel {margin:40px 0; text-align:center;}
+.feature-panel > img {margin:0 auto; padding:0 15%;}
+.feature-panel > h3 {margin-bottom:10px; display:block;}
+.col-centered {float:none; margin:0 auto;}
+.sec-hook {padding-bottom:50px; background-color:rgba(248,249,251,1);}
+.displayed {text-align:center; margin-top:100px; margin-bottom:100px;}
+div.displayed-wrap.container::after {border-bottom:1px solid rgba(230,230,230,1); width:65%; margin:0 auto;}
+.feature-action {background-color:rgba(84,32,111,1); color:rgba(255,255,255,1); text-align:center; padding-top:150px; padding-bottom:150px; margin:0;}
+h2.action-title {font-size:30px; line-height:42px; margin-bottom:35px;}
+.works {margin-top:50px; margin-bottom:50px;}
 
 
+/* Footer */
+footer {background-color:rgba(26,26,26,1); padding-top:60px; padding-bottom:80px; color:rgba(255,255,255,1); font-size:13px;}
+footer > li {list-style:none;}
+.foot-menu {padding-top:20px;}
+.foot-menu > li {padding:4px 15px;}
+.foot-menu > li:first-child {color:rgba(255,255,255,1);}
+.foot-menu > li a {color:rgba(255,255,255,0.65); display:block;}
+.foot-menu > li a:hover {color:rgba(255,255,255,1); text-decoration:none;}
+.copy-foot {padding-top:60px;}
+.sm-social {margin-left:-25px;}
+.sm-social li {padding:8px 10px; display:inline-block; font-size:18px;}
+.sm-social li a {color:rgba(255,255,255,0.65);}
+.sm-social > li a:hover {color:rgba(255,255,255,1);}
+.base-foot {padding-top:20px;}
+.midfoot li {display:inline-block; list-style:none;}
+.midfoot, .base-push-left {padding-left:30px;}
 
-
-
-
-/* -- Sidebar Transitions -- */
-.st-container, {min-height:100%;}
-.no-csstransforms3d .st-pusher, .no-js .st-pusher { padding-left:0px;}
-.st-menu ul {margin-bottom:10px;}
-.st-menu {background-color:rgba(33,33,33,1); width:256px; text-align:left;}
-.st-menu ul li a:hover, .st-menu ul li:first-child a:focus {color:rgba(255,255,255,1); text-decoration:none; background-color:rgba(255,255,255,.1);transition:none;}
-.st-menu ul li a, .st-menu ul li:first-child a {box-shadow:none; line-height:20px; color:#fff; display:block; padding:10px 20px; text-transform:none; font-size:14px;}
-.st-menu ul li a {letter-spacing:0;}
-.menu-header-title {font-size:14px;}
-.st-menu h2 {color:rgba(255,255,255,0.75); font-size:17px; margin:10px 0px;}
-.st-effect-3.st-menu-open .st-pusher {transform:translate3d(256px,0,0);}
-.menu-section-list {padding:0; margin:10px 0!important; list-style:none;}
-.menu-section {margin:25px 0;}
-.menu a {color:#fff;}
-.menu-header {border-bottom:1px solid #2a2d2f; padding:24px 0 24px 20px; background-size:32px;}
-.menu-section-title {text-transform:uppercase; color:#85888d; font-size:10px; letter-spacing:1px; padding:0 20px; margin:0;}
-.menu-header-title {margin:0 0 0 10px; list-style:none;}
-.twitter-hashtag-button {margin-left:20px;}
-.githublink-sidebar {fill:rgba(140,140,140,1);}
-
-
-
-
-
-
-
-
-
-
-
-/* Menu button */
-.navbar .navbar-toggle, .navbar .navbar-toggle:active, .navbar .navbar-toggle:focus, .navbar .navbar-toggle:hover { float:left; padding:9px 11px; border-color:transparent; margin:18px 10px; background:0 0;}
-.navbar-toggle .icon-bar {display:block; width:12px; height:1px; border-radius:1px; background-color:rgba(255,2555,255,1);}
-
-.slides {padding-left:40px; padding-right:40px;}
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.marketing, .footer {padding-left:20px; padding-right:20px;}
-
-/* Custom page header */
-.header {border-bottom:1px solid #e5e5e5;}
 
 /* Make the masthead heading the same height as the navigation */
 .header h3 {margin-top:0; margin-bottom:0; line-height:40px; padding-bottom:19px;}
 
 /* Custom page footer */
-.footer {padding-top:19px; color:#777; border-top:1px solid #e5e5e5;}
 .container-narrow > hr {margin:30px 0;}
 
-/* Main marketing message and sign up button */
-.jumbotron {text-align:center; border-bottom:1px solid #e5e5e5;}
-.jumbotron .btn {font-size:21px; padding:14px 24px;}
-
-/* Supporting marketing content */
-.marketing {margin:40px 0;}
-.marketing p, .marketing h4 {margin-top:28px;}
 
 
 
+/* Media queries */
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
 
 
+/* Small devices (tablets, 768px and up) */
+@media (min-width:768px) {
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+	/* Globals */
+	h2 {font-size:30px; line-height:38px;}
+	h3 {font-size:24px; margin-bottom:15px;}
+	.hero {padding-top:0;}
 
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
+	/* Navbar */
+	.head-right-list {list-style:none; padding-left:0;}
+	.head-right-list li {display:inline-block;}
+	.navbar-top {padding-top:10px;}
+	.navbar-brand {width:150px; margin-top:-6px;}
+	.github-header {font-size:25px; margin-right:10px; margin:-4px;}
+	.gitword {margin-top:0; margin-left:20px;}
+	.nav-btn-head > li:nth-child(1) {margin-left:5px;}
+	.nav-btn-head > li:nth-child(4) {margin-top:10px; margin-left:5px;}
+	.nav-btn-head > li:nth-child(4) > a {padding:4px 25px; -webkit-transition: all 175ms linear; -moz-transition: all 175ms linear; -ms-transition: all 175ms linear; -o-transition: all 175ms linear; transition: all 175ms linear;}
+	.nav-btn-head > li:nth-child(4) > a:hover {background-color:rgba(121,47,139,0.5); color:rgba(255,255,255,1);}
+	.btn-head {border:1px solid rgba(255,255,255,0.25); padding:0; -webkit-transition: all 175ms linear; -moz-transition: all 175ms linear; -ms-transition: all 175ms linear; -o-transition: all 175ms linear; transition: all 175ms linear;}
+	.btn-head:hover {border:1px solid rgba(121,47,139,0.6); padding:0;}
+	.navbar-nav li a:hover {color:rgba(255,255,255,1);}
 
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
+	.sec-hook {padding-top:30px; padding-bottom:30px;}
+	h2.action-title {font-size:40px; line-height:50px; margin-bottom:35px;}
 
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+	/* Hero */
+	.head-wrap {padding-bottom:120px;}
+	h1.hero-head {font-size:38px; line-height:48px; margin-bottom:20px; font-weight:400;}
+	.hero-head {padding-left:0;}
+	.slides {padding-left:0; padding-right:0; padding-top:80px;}
+	.lead {font-size:17px; line-height:30px; margin-bottom:60px;}
+
 }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width:992px) {
+
+	/* Globals */
+	h2 {font-size:32px; line-height:40px;}
+	.btn-lg {font-size:17px; padding:15px 60px;}
+	.nav-animation-element {max-width:1170px;}
+	.bs-docs-featurette {max-width:1170px;}
+
+	/* Navbar */
+	.navbar-brand {width:160px; margin-top:-8px;}
+	.nav-btn-head > li:nth-child(1) {margin-left:50px;}
+	.nav-btn-head > li:nth-child(4) {margin-top:10px; margin-left:50px;}
+
+	/* Hero */
+	.head-wrap {padding-bottom:225px;}
+	h1.hero-head {font-size:48px; line-height:64px; margin-bottom:25px; font-weight:400;}
+	.hero-head {padding-left:0;}
+	.slides {padding-left:0; padding-right:0; padding-top:80px;}
+	.lead {font-size:17px; line-height:30px; margin-bottom:60px;}
+
+	.sec-hook {padding-top:50px; padding-bottom:50px;}
+	.feat-pan {font-size:26px;}
+	.wrap-mob-feat {max-width:230px;}
+
+	/* Feature action */
+	h2.action-title {font-size:48px; line-height:64px; margin-bottom:55px;}
+	.feature-action {padding-top:200px; padding-bottom:200px; margin:0;}
+
+	/* Footer */
+	.foot-left-col {width:22.3%}
+	.foot-menu {padding-top:0px;}
+	.copyright-push-left, .base-push-left {margin-left:30%; max-width:55%}
+	.midfoot, .base-push-left {padding-left:0;}
+	.social {margin-top:-8px;}
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:1200px) {
+	/*div.col-sm-4.feature-panel {padding-right:25px; padding-left:25px;}*/
+	/*.nav-animation-element {max-width:1170px!important;}*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
