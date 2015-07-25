@@ -97,6 +97,7 @@ footer > li {list-style:none;}
 .base-foot {padding-top:20px;}
 .midfoot li {display:inline-block; list-style:none;}
 .midfoot, .base-push-left {padding-left:30px;}
+.foot-logo {width:115px;}
 
 
 /* Make the masthead heading the same height as the navigation */
@@ -184,6 +185,7 @@ footer > li {list-style:none;}
 	.copyright-push-left, .base-push-left {margin-left:30%; max-width:55%}
 	.midfoot, .base-push-left {padding-left:0;}
 	.social {margin-top:-8px;}
+	.foot-logo {max-width:190px;}
 
 }
 
