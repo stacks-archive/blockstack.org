@@ -19,6 +19,9 @@
     <!-- build:css(.) styles/vendor.css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="bower_components/sidebar-transitions/dist/css/sidebar-transitions.min.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -29,214 +32,269 @@
   </head>
   <body style="">
 
-  <!-- header for mobile and tablet -->
-  <header class="hero nav-animation-element container" style="height: 650px;">
-   <!-- style="height: 860px;" -->
+    <div id="st-container" class="st-container">
+      <div class="cover-container">
 
-  <!-- Sidebar-transition "Push effect 3" is under the push wrapper -->
-  <div class="st-pusher">
-    <!-- Sidebar -->
-    <nav id="menu3" class="st-menu st-effect-3 menu slideout-menu" ng-controller="NavCtrl">
-      <a href="/" >
-        <div class="menu-header">
-          <span class="menu-header-title">
-            <span><a href="/"><img src="/images/blockstack-logo.svg" width="123px"></a></span>
-            <span class="float-right"><a href="https://github.com/openname/specifications/wiki"><img src="/images/github-logo.svg" width="25px" height="25px"></a></span>
-          </span>
-        </div>
-      </a>
-      <section class="menu-section">
-        <h3 class="menu-section-title">Community</h3>
-        <ul class="menu-section-list">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Forum</a></li>
-          <li><a href="#">Chat</a></li>
-          <li><a href="#">Events</a></li>
-        </ul>
-      </section>
-      <section class="menu-section">
-        <h3 class="menu-section-title">Blockstack</h3>
-        <ul class="menu-section-list">
-          <li><a href="#">Messaging</a></li>
-          <li><a href="#">Naming</a></li>
-          <li><a href="#">Storage</a></li>
-          <li><a href="#">Consensus</a></li>
-        </ul>
-      </section>
-      <section class="menu-section">
-        <h3 class="menu-section-title">Social</h3>
-        <ul class="menu-section-list">
-          <li><a href="#">Press</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">YouTube</a></li>
-        </ul>
-      </section>
-      <section class="menu-section">
-        <h3 class="menu-section-title">Resources</h3>
-        <ul class="menu-section-list">
-          <li><a href="#">Github</a></li>
-          <li><a href="#">Wiki</a></li>
-          <li><a href="#">Whitepapers</a></li>
-        </ul>
-      </section>
-    </nav>
-  </div>
+        <!-- Sidebar-transition "Push effect 3" is under the push wrapper -->
+        <div class="st-pusher">
 
-    <div class="slides">
-      <section class="hero" style="display: block;">
-        <div class="inner-col">
-          <div class="text">
-            <div><a href="#"><img src="/images/blockstack-logo.svg" width="123px" height="40px"></a></div>
-            <h1>Blockstack. </br>The Open Source Blockchain Community</h1>
-            <p class="lead">
-              Our mission is to create common tools for building decentralized applications. We welcome all developers to join the Blockstack community and contribute to open source application and infrastructure development.
-            </p>
-            <p class="button-group"><a href="http://forum.blockstack.org" target="_blank" class="button default"><span>Join the Community</span></a></p>
-            <p class="button-group"><a href="http://chat.blockstack.org" target="_blank" class="button default"><span><img src="/images/slack-bug.svg" width="123px" height="40px">Get invited to Slack!</span></a></p>
-          </div>
-          <div class="img"></div>
-        </div>
-      </section>
-    </div>
+          <!-- Sidebar -->
+          <nav id="menu3" class="st-menu st-effect-3 menu slideout-menu">
+              <div class="menu-header">
+                <span class="menu-header-title">
+                  <span><a href="/"><img src="/images/blockstack-logo.svg" width="115px"></a></span>
+                  <span class="githublink-sidebar pull-right"><a href="https://github.com/openname/specifications/wiki"><img src="/images/github-logo.svg" width="20px" height="20px"></a></span>
+                </span>
+              </div>
+            <section class="menu-section">
+              <h3 class="menu-section-title">Community</h3>
+              <ul class="menu-section-list">
+                <li><a href="https://forum.blockstack.org/t/welcome-to-the-blockstack-community/8" target="_blank">About</a></li>
+                <li><a href="https://forum.blockstack.org/" target="_blank">Forum</a></li>
+                <li><a href="http://chat.blockstack.org" target="_blank">Chat</a></li>
+                <li><a href="#">Events</a></li>
+              </ul>
+            </section>
+            <section class="menu-section">
+              <h3 class="menu-section-title">Blockstack</h3>
+              <ul class="menu-section-list">
+                <li><a href="#">Messaging</a></li>
+                <li><a href="#">Naming</a></li>
+                <li><a href="#">Storage</a></li>
+                <li><a href="#">Consensus</a></li>
+              </ul>
+            </section>
+            <section class="menu-section">
+              <h3 class="menu-section-title">Social</h3>
+              <ul class="menu-section-list">
+                <li><a href="#">Press</a></li>
+                <li><a href="https://www.twitter.com/blockstackorg" target="_blank">Twitter</a></li>
+                <li><a href="https://www.youtube.com/channel/UCvDtRhHLNDyKiY-iwhneNbw" target="_blank">YouTube</a></li>
+              </ul>
+            </section>
+            <section class="menu-section">
+              <h3 class="menu-section-title">Resources</h3>
+              <ul class="menu-section-list">
+                <li><a href="https://github.com/blockstack/blockstack" target="_blank">Github</a></li>
+                <li><a href="https://github.com/blockstack/blockstack/wiki" target="_blank">Wiki</a></li>
+                <li><a href="#">Whitepapers</a></li>
+              </ul>
+            </section>
+          </nav>
 
-    <div class="backgrounds">
-      <div class="mobile-background"></div>
-    </div>
+          <!-- / Sidebar -->
 
-  </header>
+          <div class="st-content"><!--  ...  This is the wrapper for the content  ...  -->
+            <div class="st-content-inner"><!--  ...  Extra div for emulating position:fixed of the menu  ...  -->
+              
+              <!-- Top Navigation -->
+              <div class="main clearfix" id="main">
+                <div class="container-fluid col-centered head-wrap">
+                  <header class="nav-animation-element col-centered">
 
-  <section>
-    <div class="bs-docs-featurette" id="learnmore">
-      <div class="container col-centered">
-        <div class="row works col-md-10 col-lg-6 col-centered">
-          <div class="col-sm-4 feature-panel">
-            <div class="container wrap-mob-feat">
-              <img ng-src="/images/icon-decentralized.png" class="img-responsive col-centered" alt="Responsive image">
+                    <nav class="navbar navbar-top col-sm-10 col-centered">
+                      <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div id="st-trigger-effects" class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" data-effect="st-effect-3">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                          <a class="navbar-brand" href="#"><img src="/images/blockstack-logo.svg"></a>
+                        </div>
+                    
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse"> <!-- id="bs-example-navbar-collapse-1" -->
+                          <ul class="nav navbar-nav nav-btn-head">
+                            <li><a href="https://forum.blockstack.org/t/welcome-to-the-blockstack-community/8" target="_blank">About</a></li>
+                            <li><a href="http://forum.blockstack.org" target="_blank">Forum</a></li>
+                            <li><a href="https://blockstack.slack.com/" target="_blank">Slack</a></li>
+                            <li class="btn btn-head"><a href="http://chat.blockstack.org" target="_blank">Get Invited!</a></li>
+                          </ul>
+                          <ul class="nav navbar-nav navbar-right">
+                            <li>
+                              <a href="https://github.com/blockstack/blockstack" target="_blank">
+                                <div class="pull-left"><i class="fa fa-github github-header"></i></div>
+                                <div class="pull-right gitword">Github</div>
+                              </a>
+                            </li>
+                          </ul>
+                        </div><!-- /.navbar-collapse -->
+                      </div><!-- /.container-fluid -->
+                    </nav>
+
+                    <div class="slides col-sm-10 col-centered">
+                      <section class="hero">
+                        <div>
+                          <div class="col-xs-11 col-sm-10">
+                            <div class="hero-logo hidden-sm hidden-md hidden-lg"><a href="/"><img src="/images/blockstack-logo.svg"></a></div>
+                            <h1 class="hero-head">Blockstack. </br>The Open Source </br>Blockchain Community</h1>
+                            <p class="lead">Welcoming all developers to join the Blockstack community. Our mission is to create common infrastructure for developing decentralized applications.
+                            </p>
+                            <p><a href="http://chat.blockstack.org" target="_blank" class="btn btn-special-rev btn-lg"><span class="bt-special-space"><img src="/images/slack-logo-bug-rgb.png" width="30px" height="30px"></span>Get invited to Slack!</a></p>
+                          </div>
+                          <div class="img"></div>
+                        </div>
+                      </section>
+                    </div>
+                  </header>
+                </div>
+                <section class="container-fluid sec-hook">
+                  <div class="bs-docs-featurette col-centered" id="learnmore">
+                    <div class="col-centered">
+                      <div class="row col-sm-11 col-md-11 col-centered">
+                        <div class="col-sm-4 feature-panel">
+                          <div class="container wrap-mob-feat">
+                            <img src="/images/icon-decentralized.svg" class="img-responsive" alt="Decentralized icon">
+                          </div>
+                            <h3>Decentralized</h3>
+                            <p class="lead">Applications can be built without central points of failure.</p>
+                        </div>
+                        <div class="col-sm-4 feature-panel">
+                          <div class="container wrap-mob-feat">
+                            <img src="/images/icon-open-source.svg" class="img-responsive" alt="Open source icon">
+                          </div>
+                          <h3>Open Source</h3>
+                          <p class="lead">Blockstack code is free to inspect, modify, and reuse.</p>
+                        </div>
+                        <div class="col-sm-4 feature-panel">
+                          <div class="container wrap-mob-feat">
+                            <img src="/images/icon-community-globe.svg" class="img-responsive" alt="Community globe icon">
+                          </div>
+                          <h3>Community</h3>
+                          <p class="lead">We are developers united around a common software stack.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <div class="bs-docs-featurette col-centered" id="learnmore">
+                    <div class="container col-centered">
+                      <div class="displayed-wrap container col-md-8 col-lg-8 col-centered"><h2 class="displayed">Use Blockstack to build applications faster and with less deployment costs.</h2></div>
+                      <div class="row works col-md-10 col-lg-8 col-centered">
+                        <div class="col-sm-10 feature-panel col-centered">
+                            <h3 class="feat-pan">Messaging</h3>
+                            <p class="lead">Use p2p protocols to send and receive messages.</p>
+                        </div>
+                        <div class="col-sm-10 feature-panel col-centered">
+                          <h3 class="feat-pan">Naming</h3>
+                          <p class="lead">Use the Bitcoin blockchain to create secure identifiers.</p>
+                        </div>
+                        <div class="col-sm-10 feature-panel col-centered">
+                          <h3 class="feat-pan">Storage</h3>
+                          <p class="lead">Use the blockchain and a DHT or HTTPS for data storage and retrieval.</p>
+                        </div>
+                        <div class="col-sm-10 feature-panel col-centered">
+                          <h3 class="feat-pan">Consensus</h3>
+                          <p class="lead">Use the Bitcoin protocol to keep clients in sync.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>  
+                </section>
+                <section class="feature-action col-centered">
+                  <div class="container">
+                    <div class="row">
+                      <div class="container col-xs-11 col-centered">
+                        <hgroup>
+                          <h2 class="col-md-8 col-lg-6 col-centered action-title">Build Something Bigger Than Yourself!</h2>
+                        </hgroup>
+                        <p><a href="http://chat.blockstack.org" target="_blank" class="btn btn-special btn-lg"><span class="bt-special-space"><img src="/images/slack-logo-bug-rgb.png" width="30px" height="30px"></span>Get invited to Slack!</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <footer>
+                  <div class="container">
+                    <!-- <div class="row"> -->
+                      <div class="col-md-2 foot-left-col hidden-xs hidden-sm">
+                        <ul class="list-unstyled">
+                          <li><span><a href="/"><img src="/images/blockstack-logo.svg" width="115px"></a></span></li>
+                        </ul>
+                      </div>
+                      <div class="col-xs-6 col-md-2">
+                        <ul class="foot-menu list-unstyled">
+                          <li>Community</li>
+                          <li><a href="https://forum.blockstack.org/t/welcome-to-the-blockstack-community/8" target="_blank">About</a></li>
+                          <li><a href="https://forum.blockstack.org/" target="_blank">Forum</a></li>
+                          <li><a href="http://chat.blockstack.org" target="_blank">Chat</a></li>
+                          <li><a href="#">Events</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-xs-6 col-md-2">
+                        <ul class="foot-menu list-unstyled">
+                          <li>Blockstack</li>
+                          <li><a href="#">Messaging</a></li>
+                          <li><a href="#">Naming</a></li>
+                          <li><a href="#">Storage</a></li>
+                          <li><a href="#">Consensus</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-xs-6 col-md-2">
+                        <ul class="foot-menu list-unstyled">
+                          <li>Social</li>
+                          <li><a href="#">Press</a></li>
+                          <li><a href="https://www.twitter.com/blockstackorg" target="_blank">Twitter</a></li>
+                          <li><a href="https://www.youtube.com/channel/UCvDtRhHLNDyKiY-iwhneNbw" target="_blank">YouTube</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-xs-6 col-md-2">
+                        <ul class="foot-menu list-unstyled">
+                          <li>Resources</li>
+                          <li><a href="https://github.com/blockstack/blockstack" target="_blank">Github</a></li>
+                          <li><a href="https://github.com/blockstack/blockstack/wiki" target="_blank">Wiki</a></li>
+                          <li><a href="#">Whitepapers</a></li>
+                        </ul>
+                      </div>
+                    <!-- </div> -->
+                  </div>
+                  <div class="container copy-foot">
+                    <ul class="midfoot">
+                      <li>
+                        <div class="social hidden-md hidden-lg container">
+                          <ul class="sm-social list-unstyled">
+                            <li><a href="https://www.twitter.com/blockstackorg" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCvDtRhHLNDyKiY-iwhneNbw" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                            <li><a href="https://github.com/blockstack/blockstack" target="_blank"><i class="fa fa-github"></i></a></li>
+                          </ul>
+                        </div>
+                      <li class="copyright-push-left">
+                        <div class="copyright">This is an open sourced site hosted on GitHub. Patches, suggestions and comments are welcome.</div>
+                      </li>
+                      <li class="pull-right">
+                        <div class="social hidden-xs hidden-sm">
+                          <ul class="sm-social list-unstyled">
+                            <li><a href="https://www.twitter.com/blockstackorg" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCvDtRhHLNDyKiY-iwhneNbw" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                            <li><a href="https://github.com/blockstack/blockstack" target="_blank"><i class="fa fa-github"></i></a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="container base-foot">
+                      <p class="base-push-left">Made with <span class="glyphicon glyphicon-heart"></span> by the Blockstack community</p>
+                  </div>
+                </footer>
+
+              </div>
+              
             </div>
-              <h3>Decentralized</h3>
-              <p class="lead">Applications can be built without central points of failure.</p>
           </div>
-          <div class="col-sm-4 feature-panel">
-            <div class="container wrap-mob-feat">
-              <img ng-src="/images/icon-open-source.png" class="img-responsive col-centered" alt="Responsive image">
-            </div>
-            <h3>Open Source</h3>
-            <p class="lead">Blockstack code is free to inspect, modify, and reuse.</p>
-          </div>
-          <div class="col-sm-4 feature-panel">
-            <div class="container wrap-mob-feat">
-              <img ng-src="/images/icon-blockchain-secured.png" class="img-responsive col-centered" alt="Responsive image">
-            </div>
-            <h3>Community</h3>
-            <p class="lead">We are developers united around a common software stack.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="bs-docs-featurette" id="learnmore">
-      <div class="container col-centered">
-        <h2 class="displayed">Use Blockstack to build applications faster and with less deployment costs.</h2>
-        <div class="row works col-md-10 col-lg-6 col-centered">
-          <div class="col-sm-4 feature-panel">
-              <h3>Messaging</h3>
-              <p class="lead">Use p2p protocols to send and receive messages.</p>
-          </div>
-          <div class="col-sm-4 feature-panel">
-            <h3>Naming</h3>
-            <p class="lead">Use the Bitcoin blockchain to create secure identifiers.</p>
-          </div>
-          <div class="col-sm-4 feature-panel">
-            <h3>Storage</h3>
-            <p class="lead">Use the blockchain and a DHT or HTTPS for data storage and retrieval.</p>
-          </div>
-          <div class="col-sm-4 feature-panel">
-            <h3>Consensus</h3>
-            <p class="lead">Use the Bitcoin protocol to keep clients in sync.</p>
-          </div>
-        </div>
-      </div>
-    </div>  
-  </section>
-  <section class="feature-action">
-    <div class="container">
-      <div class="row">
-        <div class="container col-xs-11 col-centered">
-          <hgroup>
-            <h2 class="action-title">Build Something Bigger Than Yourself!</h2>
-          </hgroup>
-          <p class="button-group"><a href="http://forum.blockstack.org" target="_blank" class="button default"><span>Join the Community</span></a></p>
-          <p class="button-group"><a href="http://chat.blockstack.org" target="_blank" class="button default"><span><img src="/images/slack-bug.svg" width="123px" height="40px">Get invited to Slack!</span></a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <div>
-      <div>
-        <ul>
-          <li>Community</li>
-          <li>About</li>
-          <li>Forum</li>
-          <li>Chat</li>
-          <li>Events</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>Blockstack</li>
-          <li>Messaging</li>
-          <li>Naming</li>
-          <li>Storage</li>
-          <li>Consensus</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>Social</li>
-          <li>Press</li>
-          <li>Twitter</li>
-          <li>YouTube</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>Resources</li>
-          <li>Github</li>
-          <li>Wiki</li>
-          <li>Whitepapers</li>
-        </ul>
-      </div>
-    </div>
+    
 
-    <div>
-      <div class="copyright">This is an open sourced site hosted on GitHub. Patches, suggestions and comments are welcome.</div>
-      <div class="social"></div>
-    </div>
-
-    <div>
-      <p>Made with <span class="glyphicon glyphicon-heart"></span> by the Blockstack community</p>
-    </div>
-
-  </footer>
-</div>
+      </div><!-- /.st-pusher -->
+    </div><!-- /.cover-container -->
+  </div><!-- /st-container -->
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="bower_components/classie/classie.js"></script>
+    <script src="bower_components/sidebar-transitions/dist/js/sidebar-transitions.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
