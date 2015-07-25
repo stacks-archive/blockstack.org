@@ -1,5 +1,6 @@
 /* Sidebar Transitions - Sidebar */
 html, body {height:100%; margin:0; -webkit-overflow-scrolling: touch;}
+.st-content {background:none;}
 .st-container, {min-height:100%;}
 .st-inner-container {margin-right:auto; margin-left:auto; height:100%;}
 .no-csstransforms3d .st-pusher, .no-js .st-pusher { padding-left:0px;}
