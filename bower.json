@@ -2,7 +2,7 @@
   "name": "blockstack-site",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "~3.2.0",
-    "components-font-awesome": "~4.3.0"
+    "components-font-awesome": "~4.3.0",
+    "sidebar-transitions": "https://github.com/shea256/SidebarTransitions.git#03137a1b400e64fd46725d518b9e5d3b4e5d0814"
   }
 }

@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="bower_components/sidebar-transitions/dist/css/sidebar-transitions.min.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -37,7 +39,7 @@
         <div class="st-pusher">
 
           <!-- Sidebar -->
-          <!-- <nav id="menu3" class="st-menu st-effect-3 menu slideout-menu" ng-controller="NavCtrl">
+          <nav id="menu3" class="st-menu st-effect-3 menu slideout-menu">
               <div class="menu-header">
                 <span class="menu-header-title">
                   <span><a href="/"><img src="/images/blockstack-logo.svg" width="115px"></a></span>
@@ -78,7 +80,7 @@
                 <li><a href="#">Whitepapers</a></li>
               </ul>
             </section>
-          </nav> -->
+          </nav>
 
           <!-- / Sidebar -->
 
@@ -93,8 +95,8 @@
                     <nav class="navbar navbar-top col-sm-10 col-centered">
                       <div class="container-fluid">
                         <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <div id="st-trigger-effects" class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" data-effect="st-effect-3">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -291,18 +293,8 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="bower_components/classie/classie.js"></script>
+    <script src="bower_components/sidebar-transitions/dist/js/sidebar-transitions.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
