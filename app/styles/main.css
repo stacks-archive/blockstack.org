@@ -86,14 +86,14 @@ footer {background-color:rgba(26,26,26,1); padding-top:60px; padding-bottom:80px
 footer > li {list-style:none;}
 .foot-menu {padding-top:20px;}
 .foot-menu > li {padding:4px 15px;}
-.foot-menu > li:first-child {color:rgba(204,204,204,1);}
-.foot-menu > li a {color:rgba(255,255,255,1); display:block;}
-.foot-menu > li a:hover {color:rgba(204,204,204,1); text-decoration:none;}
+.foot-menu > li:first-child {color:rgba(255,255,255,1);}
+.foot-menu > li a {color:rgba(255,255,255,0.65); display:block;}
+.foot-menu > li a:hover {color:rgba(255,255,255,1); text-decoration:none;}
 .copy-foot {padding-top:60px;}
 .sm-social {margin-left:-25px;}
 .sm-social li {padding:8px 10px; display:inline-block; font-size:18px;}
-.sm-social li a {color:rgba(255,255,255,1);}
-.sm-social > li a:hover {color:rgba(204,204,204,1);}
+.sm-social li a {color:rgba(255,255,255,0.65);}
+.sm-social > li a:hover {color:rgba(255,255,255,1);}
 .base-foot {padding-top:20px;}
 .midfoot li {display:inline-block; list-style:none;}
 .midfoot, .base-push-left {padding-left:30px;}
