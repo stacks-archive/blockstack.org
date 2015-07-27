@@ -114,9 +114,9 @@ footer > li {list-style:none;}
 	.github-header {font-size:25px; margin-right:10px; margin:-4px;}
 	.gitword {margin-top:0; margin-left:20px;}
 	.nav-btn-head > li:nth-child(1) {margin-left:5px;}
-	.nav-btn-head > li:nth-child(4) {margin-top:10px; margin-left:5px;}
-	.nav-btn-head > li:nth-child(4) > a {padding:4px 25px; -webkit-transition: all 175ms linear; -moz-transition: all 175ms linear; -ms-transition: all 175ms linear; -o-transition: all 175ms linear; transition: all 175ms linear;}
-	.nav-btn-head > li:nth-child(4) > a:hover {background-color:rgba(121,47,139,0.5); color:rgba(255,255,255,1);}
+	.nav-btn-head > li:nth-child(3) {margin-top:10px; margin-left:5px;}
+	.nav-btn-head > li:nth-child(3) > a {padding:4px 25px; -webkit-transition: all 175ms linear; -moz-transition: all 175ms linear; -ms-transition: all 175ms linear; -o-transition: all 175ms linear; transition: all 175ms linear;}
+	.nav-btn-head > li:nth-child(3) > a:hover {background-color:rgba(121,47,139,0.5); color:rgba(255,255,255,1);}
 	.btn-head {border:1px solid rgba(255,255,255,0.25); padding:0; -webkit-transition: all 175ms linear; -moz-transition: all 175ms linear; -ms-transition: all 175ms linear; -o-transition: all 175ms linear; transition: all 175ms linear;}
 	.btn-head:hover {border:1px solid rgba(121,47,139,0.6); padding:0;}
 	.navbar-nav li a:hover {color:rgba(255,255,255,1);}
@@ -145,7 +145,7 @@ footer > li {list-style:none;}
 	/* Navbar */
 	.navbar-brand {width:160px; margin-top:-8px;}
 	.nav-btn-head > li:nth-child(1) {margin-left:50px;}
-	.nav-btn-head > li:nth-child(4) {margin-top:10px; margin-left:50px;}
+	.nav-btn-head > li:nth-child(3) {margin-top:10px; margin-left:50px;}
 
 	/* Hero */
 	.head-wrap {padding-bottom:225px;}
