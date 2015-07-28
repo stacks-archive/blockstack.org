@@ -1,0 +1,22 @@
+{
+  "name": "font-awesome",
+  "description": "Font Awesome",
+  "version": "4.4.0",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "SIL, MIT, CC BY 3.0",
+  "styles": [
+    "css/font-awesome.css"
+  ],
+  "fonts": [
+    "fonts/fontawesome-webfont.eot",
+    "fonts/fontawesome-webfont.svg",
+    "fonts/fontawesome-webfont.ttf",
+    "fonts/fontawesome-webfont.woff",
+    "fonts/fontawesome-webfont.woff2",
+    "fonts/FontAwesome.otf"
+  ],
+  "repository": "FortAwesome/Font-Awesome",
+  "resolved": "e554555d73a44e0a7d11b0361ad7a5325a5f551c"
+}
