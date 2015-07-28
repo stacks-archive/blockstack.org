@@ -58,10 +58,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 .col-centered {float:none; margin:0 auto;}
 .sec-hook {padding-bottom:50px; background-color:rgba(248,249,251,1);}
 .displayed {text-align:center; margin-top:100px; margin-bottom:100px;}
-div.displayed-wrap.container::after {border-bottom:1px solid rgba(230,230,230,1); width:65%; margin:0 auto;}
 .feature-action {background-color:rgba(84,32,111,1); color:rgba(255,255,255,1); text-align:center; padding-top:150px; padding-bottom:150px; margin:0;}
 h2.action-title {font-size:30px; line-height:42px; margin-bottom:35px;}
-.works {margin-top:50px; margin-bottom:50px;}
 
 
 /* Footer */
@@ -88,7 +86,8 @@ footer > li {list-style:none;}
 
 /* Custom page footer */
 .container-narrow > hr {margin:30px 0;}
-
+.row.works.col-md-10.col-lg-8.col-centered::before {content:"";display:block; border-top:1px solid rgba(230,230,230,1); width:50%; margin:0 auto 75px auto;}
+.row.works.col-md-10.col-lg-8.col-centered::after {content:"";display:block; border-top:1px solid rgba(230,230,230,1); width:50%; margin:75px auto 0 auto;}
 
 
 
