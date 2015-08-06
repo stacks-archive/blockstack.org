@@ -32,9 +32,9 @@ h1.hero-head {font-size:28px; line-height:36px; margin-bottom:15px; font-weight:
 .btn-lg {font-size:14px; padding:11px 40px;}
 
 /* Banner */
-.banner-wrap {background-color:rgba(0,0,0,1); border-bottom:1px solid rgba(34,34,34,1); padding-bottom:20px;}
+.banner-wrap {background-color:rgba(0,0,0,1); border-bottom:1px solid rgba(34,34,34,1); height:80px; padding-bottom:20px;}
 .banner {color:rgba(255,255,255,1);}
-.btn-banner {color:rgba(255,255,255,1); font-size:13px; font-weight:500; padding:9px 40px; margin-left:15px; background-color:rgba(96,46,114,1); -webkit-transition: all 175ms linear; -moz-transition: all 175ms linear; -ms-transition: all 175ms linear; -o-transition: all 175ms linear; transition: all 175ms linear;}
+.btn-banner {color:rgba(255,255,255,1); font-size:12px; font-weight:300; padding:6px 38px 6px 36px; margin-left:35px; background-color:rgba(96,46,114,1); -webkit-transition: all 175ms linear; -moz-transition: all 175ms linear; -ms-transition: all 175ms linear; -o-transition: all 175ms linear; transition: all 175ms linear;}
 .btn-banner:hover, .btn-banner:focus, .btn-banner:active {color:rgba(255,255,255,1); outline:none;}
 .btn-banner:hover {text-decoration:none; background-color:rgba(121,47,139,0.5);}
 .ban-event-date {font-size:13px; font-weight:300; margin-left:15px; vertical-align:middle;}
@@ -140,13 +140,13 @@ footer > li {list-style:none;}
 	/* Hero */
 	.head-wrap {padding-bottom:120px;}
 	h1.hero-head {font-size:38px; line-height:48px; margin-bottom:20px; font-weight:400;}
-	.hero-head {padding-left:0;}
+
 	.summ-head {text-align:center;}
 	.slides {padding-left:0; padding-right:0; padding-top:80px;}
 	.lead {font-size:17px; line-height:30px; margin-bottom:60px;}
 
 	.banner {width:700px;}
-	.banner-wrap {padding-bottom:14px;}
+	.banner-wrap {padding-bottom:0px;}
 	.close {top:20px; right:20px;}
 
 }
