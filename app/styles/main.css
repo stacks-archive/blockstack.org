@@ -29,6 +29,9 @@ h1.hero-head {font-size:28px; line-height:36px; margin-bottom:15px; font-weight:
 .bt-special-space {padding-right:10px;}
 .btn-lg {font-size:14px; padding:11px 40px;}
 
+/* Banner */
+.banner {background-color:rgba(0,0,0,1); border-bottom:1px solid rgba(34,34,34,1);}
+
 /* Menu button */
 .navbar-top {padding-right:0; padding-left:0;}
 .navbar .navbar-toggle, .navbar .navbar-toggle:active, .navbar .navbar-toggle:focus, .navbar .navbar-toggle:hover {float:left; padding:9px 11px; border-color:transparent; margin:10px 13px; background:0 0;}
