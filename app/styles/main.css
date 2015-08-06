@@ -32,7 +32,7 @@ h1.hero-head {font-size:28px; line-height:36px; margin-bottom:15px; font-weight:
 .btn-lg {font-size:14px; padding:11px 40px;}
 
 /* Banner */
-.banner-wrap {background-color:rgba(0,0,0,1); border-bottom:1px solid rgba(34,34,34,1); height:80px; padding-bottom:20px;}
+.banner-wrap {border-bottom:1px solid rgba(34,34,34,1); height:80px; padding-bottom:20px; background-color:#53206f;}
 .banner {color:rgba(255,255,255,1);}
 .btn-banner {color:rgba(255,255,255,1); font-size:12px; font-weight:300; padding:6px 38px 6px 36px; margin-left:35px; background-color:rgba(96,46,114,1); -webkit-transition: all 175ms linear; -moz-transition: all 175ms linear; -ms-transition: all 175ms linear; -o-transition: all 175ms linear; transition: all 175ms linear;}
 .btn-banner:hover, .btn-banner:focus, .btn-banner:active {color:rgba(255,255,255,1); outline:none;}
@@ -59,7 +59,7 @@ background: -ms-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(4,0,7,1) 7%, rgba
 background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(4,0,7,1) 7%, rgba(24,13,31,1) 40%, rgba(36,19,47,1) 53%, rgba(54,22,72,1) 67%, rgba(60,23,79,1) 75%, rgba(72,25,93,1) 86%, rgba(83,32,111,1) 98%, rgba(83,32,111,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#53206f', GradientType=1 );
 }
-.summit-head-wrap {padding-bottom:90px; background: url(/images/summ-dht.png) no-repeat center center fixed; background-size: cover; background-color:#53206f; }
+.summit-head-wrap {padding-bottom:90px; background: url(/images/summ-dht.png) no-repeat center center fixed; background-size: cover; background-color:#53206f;}
 
 .hero {max-width:850px; padding-top:40px; color:rgba(255,255,255,1);}
 .hero-wrap {margin-top:0;}
@@ -146,7 +146,7 @@ footer > li {list-style:none;}
 	.lead {font-size:17px; line-height:30px; margin-bottom:60px;}
 
 	.banner {width:700px;}
-	.banner-wrap {padding-bottom:0px;}
+	.banner-wrap {padding-bottom:0px; background:url(/images/summ-banner-dht.png) no-repeat 35% 0%; background-color:rgba(0,0,0,1);}}
 	.close {top:20px; right:20px;}
 
 }
