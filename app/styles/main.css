@@ -102,7 +102,8 @@ footer > li {list-style:none;}
 .container-narrow > hr {margin:30px 0;}
 .row.works.col-md-10.col-lg-8.col-centered::before {content:"";display:block; border-top:1px solid rgba(230,230,230,1); width:50%; margin:0 auto 75px auto;}
 .row.works.col-md-10.col-lg-8.col-centered::after {content:"";display:block; border-top:1px solid rgba(230,230,230,1); width:50%; margin:75px auto 0 auto;}
-
+.hero-comm-des {margin-bottom:10px;}
+.hall {margin-bottom:35px;}
 
 
 /* Media queries */
@@ -140,10 +141,12 @@ footer > li {list-style:none;}
 	/* Hero */
 	.head-wrap {padding-bottom:120px;}
 	h1.hero-head {font-size:38px; line-height:48px; margin-bottom:20px; font-weight:400;}
-
-	.summ-head {text-align:center;}
+	
 	.slides {padding-left:0; padding-right:0; padding-top:80px;}
 	.lead {font-size:17px; line-height:30px; margin-bottom:60px;}
+	.summ-head, .hero-reg-btn, .date, .hero-comm-des, .hall {text-align:center;}
+	.hero-comm-des {margin-bottom:20px;}
+	.hall {margin-bottom:60px;}
 
 	.banner {width:700px;}
 	.banner-wrap {height:74px; padding-bottom:0px; background:url(/images/summ-banner-dht.png) no-repeat 35% 0%; background-color:rgba(0,0,0,1);}
@@ -171,6 +174,8 @@ footer > li {list-style:none;}
 	.hero-head {padding-left:0;}
 	.slides {padding-left:0; padding-right:0; padding-top:50px;}
 	.lead {font-size:17px; line-height:30px; margin-bottom:60px;}
+	.hero-comm-des {margin-bottom:20px;}
+	.hall {margin-bottom:60px;}
 
 	.sec-hook {padding-top:50px; padding-bottom:50px;}
 	.feat-pan {font-size:26px;}
