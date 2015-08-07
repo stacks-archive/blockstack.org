@@ -32,7 +32,7 @@ h1.hero-head {font-size:28px; line-height:36px; margin-bottom:15px; font-weight:
 .btn-lg {font-size:14px; padding:11px 40px;}
 
 /* Banner */
-.banner-wrap {border-bottom:1px solid rgba(34,34,34,1); height:74px; padding-bottom:20px; background-color:#301540;}
+.banner-wrap {border-bottom:1px solid rgba(34,34,34,1); padding-bottom:20px; background-color:#301540;}
 .banner {color:rgba(255,255,255,1);}
 .btn-banner {color:rgba(255,255,255,1); font-size:12px; font-weight:300; padding:7px 34px 7px 32px; margin-top:-6px; margin-left:35px; background-color:rgba(96,46,114,1); -webkit-transition: all 175ms linear; -moz-transition: all 175ms linear; -ms-transition: all 175ms linear; -o-transition: all 175ms linear; transition: all 175ms linear;}
 .btn-banner:hover, .btn-banner:focus, .btn-banner:active {color:rgba(255,255,255,1); outline:none;}
@@ -61,9 +61,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 }
 .summit-head-wrap {padding-bottom:90px; background: url(/images/summ-dht.png) no-repeat center center fixed; background-size: cover; background-color:#53206f;}
 
-.hero {max-width:850px; padding-top:40px; color:rgba(255,255,255,1);}
+.hero {max-width:850px; padding-top:20px; color:rgba(255,255,255,1);}
 .hero-wrap {margin-top:0;}
-.hero-logo {width:120px; margin-bottom:45px; margin-left:-2px;}
+.hero-logo {width:100px; margin-bottom:45px; margin-left:-2px;}
 .slides {padding-left:10px; padding-right:10px;}
 .navbar {margin-bottom:19px;}
 .wrap-mob-feat {max-width:195px;}
@@ -123,7 +123,7 @@ footer > li {list-style:none;}
 	.head-right-list {list-style:none; padding-left:0;}
 	.head-right-list li {display:inline-block;}
 	.navbar-top {padding-top:10px;}
-	.navbar-brand {width:150px; margin-top:-6px;}
+	.navbar-brand {width:125px; margin-top:-7px;}
 	.github-header {font-size:25px; margin-right:10px; margin:-4px;}
 	.gitword {margin-top:0; margin-left:20px;}
 	.nav-btn-head > li:nth-child(1) {margin-left:5px;}
@@ -146,7 +146,7 @@ footer > li {list-style:none;}
 	.lead {font-size:17px; line-height:30px; margin-bottom:60px;}
 
 	.banner {width:700px;}
-	.banner-wrap {padding-bottom:0px; background:url(/images/summ-banner-dht.png) no-repeat 35% 0%; background-color:rgba(0,0,0,1);}
+	.banner-wrap {height:74px; padding-bottom:0px; background:url(/images/summ-banner-dht.png) no-repeat 35% 0%; background-color:rgba(0,0,0,1);}
 	.close {top:20px; right:20px;}
 
 }
@@ -161,7 +161,7 @@ footer > li {list-style:none;}
 	.bs-docs-featurette {max-width:1170px;}
 
 	/* Navbar */
-	.navbar-brand {width:160px; margin-top:-8px;}
+	.navbar-brand {width:130px; margin-top:-8px;}
 	.nav-btn-head > li:nth-child(1) {margin-left:50px;}
 	.nav-btn-head > li:nth-child(4) {margin-top:10px; margin-left:50px;}
 
