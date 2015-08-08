@@ -60,6 +60,7 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(4,0,7,1) 7%, rgba(24,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#53206f', GradientType=1 );
 }
 .summit-head-wrap {padding-bottom:90px; background: url(/images/summ-dht.png) no-repeat center center fixed; background-size: cover; background-color:#53206f;}
+.about-head-wrap {padding-bottom:30px; background: url(/images/blockchain-timeline.png) no-repeat center top; background-color:#53206f;}
 
 .hero {max-width:850px; padding-top:20px; color:rgba(255,255,255,1);}
 .hero-wrap {margin-top:0;}
@@ -141,13 +142,12 @@ footer > li {list-style:none;}
 	/* Hero */
 	.head-wrap {padding-bottom:120px;}
 	h1.hero-head {font-size:38px; line-height:48px; margin-bottom:20px; font-weight:400;}
-	
+	.about-head {margin-top:350px;}
 	.slides {padding-left:0; padding-right:0; padding-top:80px;}
 	.lead {font-size:17px; line-height:30px; margin-bottom:60px;}
-	.summ-head, .hero-reg-btn, .date, .hero-comm-des, .hall {text-align:center;}
+	.summ-head, .about-head, .hero-reg-btn, .date, .hero-comm-des, .hall {text-align:center;}
 	.hero-comm-des {margin-bottom:20px;}
 	.hall {margin-bottom:60px;}
-
 	.banner {width:700px;}
 	.banner-wrap {height:74px; padding-bottom:0px; background:url(/images/summ-banner-dht.png) no-repeat 35% 0%; background-color:rgba(0,0,0,1);}
 	.close {top:20px; right:20px;}
