@@ -61,6 +61,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 }
 .summit-head-wrap {padding-bottom:90px; background: url(/images/summ-dht.png) no-repeat center center fixed; background-size: cover; background-color:#53206f;}
 .about-head-wrap {padding-bottom:30px; background: url(/images/blockchain-timeline.png) no-repeat center top; background-color:#53206f;}
+.highlight-box {background-color:#831ca8; padding-top:120px; padding-bottom:80px; color:rgba(255,255,255,1);}
 
 .hero {max-width:850px; padding-top:20px; color:rgba(255,255,255,1);}
 .hero-wrap {margin-top:0;}
