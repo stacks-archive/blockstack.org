@@ -4,6 +4,8 @@
   "clean_urls": true,
   "cache_control": {},
   "routes": {
-    "**": "index.html"
+    "/": "index.html",
+    "/summit": "summit.html",
+    "**": "404.html"
   }
 }
