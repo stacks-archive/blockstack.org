@@ -12,6 +12,8 @@ h2 {font-size:24px; line-height:32px;}
 h3 {font-size:20px; margin-bottom:15px;}
 h4 {font-size:15px; margin:20px 0;}
 .col-centered {float:none; margin:0 auto;}
+a {color:rgba(131,28,168,1);}
+a:hover {color:rgba(144,51,177,1);}
 
 /* Typography */
 h1.hero-head {font-size:28px; line-height:36px; margin-bottom:15px; font-weight:400;}
