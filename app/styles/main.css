@@ -32,13 +32,13 @@ h1.hero-head {font-size:28px; line-height:36px; margin-bottom:15px; font-weight:
 .bt-special-space {padding-right:10px;}
 
 /* Banner */
-.banner-wrap {border-bottom:1px solid rgba(34,34,34,1); padding-bottom:20px; background-color:rgba(83,32,111,1);}
+.banner-wrap {border-bottom:1px solid rgba(34,34,34,1); padding-bottom:15px; background-color:rgba(83,32,111,1);}
 .banner {color:rgba(255,255,255,1);}
-h3.banner-head {font-size:20px; margin-top:15px; text-align:center;}
+h3.banner-head {font-size:20px; margin-top:13px; text-align:center;}
 .btn-banner {display:block; padding:7px 35px; background-color:rgba(131,28,168,1); color:rgba(255,255,255,0.8); font-size:13px; font-weight:400; -webkit-transition: all 160ms linear; -moz-transition: all 160ms linear; -ms-transition: all 160ms linear; -o-transition: all 160ms linear; transition: all 160ms linear;}
 .btn-banner:hover, .btn-banner:focus, .btn-banner:active {background-color:rgba(144,51,177,1); color:rgba(255,255,255,1); outline:none;}
 .ban-event-date {font-size:13px; font-weight:300; margin-left:15px; vertical-align:middle;}
-.close {position:absolute; top:15px; right:20px; color:rgba(255,255,255,0.6); font-size:28px; line-height:16px; font-weight:400; opacity:1; text-shadow:none;}
+.close {position:absolute; top:10px; right:20px; color:rgba(255,255,255,0.6); font-size:28px; line-height:16px; font-weight:400; opacity:1; text-shadow:none;}
 .close:hover, .close:focus, .close:active {color:rgba(255,255,255,0.3); opacity:1; outline:none;}
 button.close {padding:8px;}
 
@@ -49,7 +49,6 @@ button.close {padding:8px;}
 .navbar-toggle .icon-bar + .icon-bar {margin-top:3px;}
 .navbar-nav li a {color:rgba(255,255,255,0.65); font-size:13px; -webkit-transition: all 160ms linear; -moz-transition: all 160ms linear; -ms-transition: all 160ms linear; -o-transition: all 160ms linear; transition: all 160ms linear;}
 .navbar-nav li a:hover, .navbar-nav li a:focus, .navbar-nav li a:active {background-color:transparent;}
-
 .head-wrap {padding-bottom:90px; padding-right:0px; padding-left:0px; background: rgba(0,0,0,1);
 background: -moz-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(4,0,7,1) 7%, rgba(24,13,31,1) 40%, rgba(36,19,47,1) 53%, rgba(54,22,72,1) 67%, rgba(60,23,79,1) 75%, rgba(72,25,93,1) 86%, rgba(83,32,111,1) 98%, rgba(83,32,111,1) 100%);
 background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(7%, rgba(4,0,7,1)), color-stop(40%, rgba(24,13,31,1)), color-stop(53%, rgba(36,19,47,1)), color-stop(67%, rgba(54,22,72,1)), color-stop(75%, rgba(60,23,79,1)), color-stop(86%, rgba(72,25,93,1)), color-stop(98%, rgba(83,32,111,1)), color-stop(100%, rgba(83,32,111,1)));
@@ -59,10 +58,10 @@ background: -ms-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(4,0,7,1) 7%, rgba
 background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(4,0,7,1) 7%, rgba(24,13,31,1) 40%, rgba(36,19,47,1) 53%, rgba(54,22,72,1) 67%, rgba(60,23,79,1) 75%, rgba(72,25,93,1) 86%, rgba(83,32,111,1) 98%, rgba(83,32,111,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#53206f', GradientType=1 );
 }
+
 .summit-head-wrap {padding-bottom:90px; background: url(/images/summ-dht.png) no-repeat center center fixed; background-size: cover; background-color:#53206f;}
 .about-head-wrap {padding-bottom:30px; background: url(/images/blockchain-timeline.png) no-repeat center top; background-color:#53206f;}
 .highlight-box {background-color:#831ca8; padding-top:120px; padding-bottom:80px; color:rgba(255,255,255,1);}
-
 .hero {max-width:850px; padding-top:20px; color:rgba(255,255,255,1);}
 .hero-wrap {margin-top:0;}
 .hero-logo {width:100px; margin-bottom:45px; margin-left:-2px;}
@@ -95,7 +94,6 @@ footer > li {list-style:none;}
 .midfoot, .base-push-left {padding-left:30px;}
 .foot-logo {width:115px;}
 
-
 /* Make the masthead heading the same height as the navigation */
 .header h3 {margin-top:0; margin-bottom:0; line-height:40px; padding-bottom:19px;}
 
@@ -121,9 +119,6 @@ footer > li {list-style:none;}
 	h3 {font-size:24px; margin-bottom:15px;}
 	.hero {padding-top:0;}
 
-	/* Buttons */
-
-
 	/* Navbar */
 	.head-right-list {list-style:none; padding-left:0;}
 	.head-right-list li {display:inline-block;}
@@ -132,11 +127,8 @@ footer > li {list-style:none;}
 	.github-header {font-size:23px; margin-right:10px; margin:-4px;}
 	.gitword {margin-top:0; margin-left:20px;}
 	.nav-btn-head > li:nth-child(1) {margin-left:5px;}
-	.nav-btn-head > li:nth-child(4) {margin-top:10px; margin-left:5px;}
-	.nav-btn-head > li:nth-child(4) > a {padding:4px 25px; -webkit-transition: all 160ms linear; -moz-transition: all 160ms linear; -ms-transition: all 160ms linear; -o-transition: all 160ms linear; transition: all 160ms linear;}
-	.nav-btn-head > li:nth-child(4) > a:hover {background-color:rgba(121,47,139,0.5); color:rgba(255,255,255,1);}
-	.btn-head {border:1px solid rgba(255,255,255,0.25); padding:0; -webkit-transition: all 160ms linear; -moz-transition: all 160ms linear; -ms-transition: all 160ms linear; -o-transition: all 160ms linear; transition: all 160ms linear;}
-	.btn-head:hover {border:1px solid rgba(121,47,139,0.6); padding:0;}
+	li.btn-head > a {padding:8px 30px; border:1px solid rgba(255,255,255,0.25); border-radius:4px; -webkit-transition: all 160ms linear; -moz-transition: all 160ms linear; -ms-transition: all 160ms linear; -o-transition: all 160ms linear; transition: all 160ms linear;}
+	li.btn-head > a:hover {background-color:rgba(144,51,177,1); border:1px solid rgba(144,51,177,1); color:rgba(255,255,255,1);}
 	.navbar-nav li a:hover {color:rgba(255,255,255,1);}
 	.sec-hook {padding-top:30px; padding-bottom:30px;}
 	h2.action-title {font-size:40px; line-height:50px; margin-bottom:35px;}
@@ -154,7 +146,6 @@ footer > li {list-style:none;}
 	.banner-wrap {height:90px; padding-bottom:0px; background:url(/images/summ-banner-dht.png) no-repeat 35% 0%; background-color:rgba(0,0,0,1);}
 	.btn-banner {margin-left:35px;}
 	.close {top:25px; right:25px;}
-
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -171,7 +162,7 @@ footer > li {list-style:none;}
 	/* Navbar */
 	.navbar-brand {width:130px; margin-top:-8px;}
 	.nav-btn-head > li:nth-child(1) {margin-left:50px;}
-	.nav-btn-head > li:nth-child(4) {margin-top:10px; margin-left:50px;}
+	li.btn-head > a {margin-left:30px;}
 
 	/* Hero */
 	.head-wrap {padding-bottom:180px;}
@@ -184,7 +175,6 @@ footer > li {list-style:none;}
 	.sec-hook {padding-top:50px; padding-bottom:50px;}
 	.feat-pan {font-size:26px;}
 	.wrap-mob-feat {max-width:230px;}
-
 
 	/* Feature action */
 	h2.action-title {font-size:48px; line-height:64px; margin-bottom:55px;}
