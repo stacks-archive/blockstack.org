@@ -26,7 +26,7 @@ h1.hero-head {font-size:28px; line-height:36px; margin-bottom:15px; font-weight:
 /* Banner */
 .banner-wrap {border-bottom:1px solid rgba(34,34,34,1); padding-bottom:20px; background-color:rgba(48,21,64,1);}
 .banner {color:rgba(255,255,255,1);}
-.btn-banner {color:rgba(255,255,255,1); font-size:12px; font-weight:300; padding:7px 34px 7px 32px; margin-top:-6px; margin-left:35px; background-color:rgba(96,46,114,1); -webkit-transition: all 175ms linear; -moz-transition: all 175ms linear; -ms-transition: all 175ms linear; -o-transition: all 175ms linear; transition: all 175ms linear;}
+.btn-banner {color:rgba(255,255,255,1); font-size:12px; font-weight:300; padding:7px 34px 7px 32px; margin-top:-6px; margin-left:35px; background-color:rgba(96,46,114,1); -webkit-transition: all 160ms linear; -moz-transition: all 160ms linear; -ms-transition: all 160ms linear; -o-transition: all 160ms linear; transition: all 160ms linear;}
 .btn-banner:hover, .btn-banner:focus, .btn-banner:active {color:rgba(255,255,255,1); outline:none;}
 .btn-banner:hover {text-decoration:none; background-color:rgba(121,47,139,0.5);}
 .ban-event-date {font-size:13px; font-weight:300; margin-left:15px; vertical-align:middle;}
@@ -39,7 +39,7 @@ button.close {padding:8px;}
 .navbar .navbar-toggle, .navbar .navbar-toggle:active, .navbar .navbar-toggle:focus, .navbar .navbar-toggle:hover {float:left; padding:9px 11px; border-color:transparent; margin:10px 13px; background:0 0;}
 .navbar-toggle .icon-bar {display:block; width:11px; height:1px; border-radius:1px; background-color:rgba(255,2555,255,1);}
 .navbar-toggle .icon-bar + .icon-bar {margin-top:3px;}
-.navbar-nav li a {color:rgba(255,255,255,0.65); font-size:13px; -webkit-transition: all 175ms linear; -moz-transition: all 175ms linear; -ms-transition: all 175ms linear; -o-transition: all 175ms linear; transition: all 175ms linear;}
+.navbar-nav li a {color:rgba(255,255,255,0.65); font-size:13px; -webkit-transition: all 160ms linear; -moz-transition: all 160ms linear; -ms-transition: all 160ms linear; -o-transition: all 160ms linear; transition: all 160ms linear;}
 .navbar-nav li a:hover, .navbar-nav li a:focus, .navbar-nav li a:active {background-color:transparent;}
 
 .head-wrap {padding-bottom:90px; background: rgba(0,0,0,1);
@@ -122,9 +122,9 @@ footer > li {list-style:none;}
 	.gitword {margin-top:0; margin-left:20px;}
 	.nav-btn-head > li:nth-child(1) {margin-left:5px;}
 	.nav-btn-head > li:nth-child(4) {margin-top:10px; margin-left:5px;}
-	.nav-btn-head > li:nth-child(4) > a {padding:4px 25px; -webkit-transition: all 175ms linear; -moz-transition: all 175ms linear; -ms-transition: all 175ms linear; -o-transition: all 175ms linear; transition: all 175ms linear;}
+	.nav-btn-head > li:nth-child(4) > a {padding:4px 25px; -webkit-transition: all 160ms linear; -moz-transition: all 160ms linear; -ms-transition: all 160ms linear; -o-transition: all 160ms linear; transition: all 160ms linear;}
 	.nav-btn-head > li:nth-child(4) > a:hover {background-color:rgba(121,47,139,0.5); color:rgba(255,255,255,1);}
-	.btn-head {border:1px solid rgba(255,255,255,0.25); padding:0; -webkit-transition: all 175ms linear; -moz-transition: all 175ms linear; -ms-transition: all 175ms linear; -o-transition: all 175ms linear; transition: all 175ms linear;}
+	.btn-head {border:1px solid rgba(255,255,255,0.25); padding:0; -webkit-transition: all 160ms linear; -moz-transition: all 160ms linear; -ms-transition: all 160ms linear; -o-transition: all 160ms linear; transition: all 160ms linear;}
 	.btn-head:hover {border:1px solid rgba(121,47,139,0.6); padding:0;}
 	.navbar-nav li a:hover {color:rgba(255,255,255,1);}
 
@@ -177,64 +177,68 @@ footer > li {list-style:none;}
 
 	/* Buttons */
 
-	.btn-lg {font-size:17px; font-weght:500; padding:16px 60px;}
+	.btn-lg {font-size:17px; font-weight:500; padding:18px 60px;}
 
 .btn-primary {
 	background-color:rgba(131,28,168,1); 
 	border:1px solid rgba(131,28,168,1); 
 	color:rgba(255,255,255,1); 
 	border-radius:4px; 
-	-webkit-transition: all 175ms linear; 
-	-moz-transition: all 175ms linear; 
-	-ms-transition: all 175ms linear; 
-	-o-transition: all 175ms linear; 
-	transition: all 175ms linear;
+	-webkit-transition: all 160ms linear; 
+	-moz-transition: all 160ms linear; 
+	-ms-transition: all 160ms linear; 
+	-o-transition: all 160ms linear; 
+	transition: all 160ms linear;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
 	background-color:rgba(144,51,177,1); 
 	border:1px solid rgba(144,51,177,1); 
 	color:rgba(255,255,255,1); 
+	box-shadow:none;
 	outline:none;
 }
 
 .btn-primary-hero {
-	padding-right:35px;
-	padding-left:35px;
+	padding-right:30px;
+	padding-left:30px;
 	background-color:rgba(83,32,111,1); 
 	border:1px solid rgba(83,32,111,1); 
 	color:rgba(255,255,255,1); 
 	border-radius:4px; 
-	-webkit-transition: all 175ms linear; 
-	-moz-transition: all 175ms linear; 
-	-ms-transition: all 175ms linear; 
-	-o-transition: all 175ms linear; 
-	transition: all 175ms linear;
+	-webkit-transition: all 160ms linear; 
+	-moz-transition: all 160ms linear; 
+	-ms-transition: all 160ms linear; 
+	-o-transition: all 160ms linear; 
+	transition: all 160ms linear;
 }
 .btn-primary-hero:hover, .btn-primary-hero:focus, .btn-primary-hero:active {
 	background-color:rgba(101,55,126,1); 
 	border:1px solid rgba(101,55,126,1); 
 	color:rgba(255,255,255,1); 
+	box-shadow:none;
 	outline:none;
 }
 
-
-
 .btn-special-rev {
-	background:url(/images/slack-logo-bug-rgb.png) no-repeat left 35px center;
+	margin-left:25px;
+	padding-left:80px;
+	background:url(/images/slack-logo-bug-rgb.png) no-repeat left 45px center;
 	background-size:30px 30px;
-	background-color:rgba(121,47,139,0.3); 
+	background-color:rgba(101,55,126,0.3); 
+	border:1px solid rgba(101,55,126,0); 
 	color:rgba(255,255,255,1); 
 	border-radius:4px; 
-	-webkit-transition: all 175ms linear; 
-	-moz-transition: all 175ms linear; 
-	-ms-transition: all 175ms linear; 
-	-o-transition: all 175ms linear; 
-	transition: all 175ms linear; 
+	-webkit-transition: all 160ms linear; 
+	-moz-transition: all 160ms linear; 
+	-ms-transition: all 160ms linear; 
+	-o-transition: all 160ms linear; 
+	transition: all 160ms linear; 
 }
-
 .btn-special-rev:hover, .btn-special-rev:focus, .btn-special-rev:active {
-	background-color:rgba(121,47,139,0.5);
+	background-color:rgba(101,55,126,0.5); 
+	border:1px solid rgba(101,55,126,0); 
 	color:rgba(255,255,255,1); 
+	box-shadow:none;
 	outline:none;
 }
 
@@ -249,11 +253,11 @@ footer > li {list-style:none;}
 	border:1px solid rgba(66,26,89,1); 
 	color:rgba(255,255,255,1);
 	padding:14px 53px 14px 45px;
-	-webkit-transition: all 175ms linear; 
-	-moz-transition: all 175ms linear; 
-	-ms-transition: all 175ms linear; 
-	-o-transition: all 175ms linear; 
-	transition: all 175ms linear;
+	-webkit-transition: all 160ms linear; 
+	-moz-transition: all 160ms linear; 
+	-ms-transition: all 160ms linear; 
+	-o-transition: all 160ms linear; 
+	transition: all 160ms linear;
 }
 .btn-special:hover, .btn-special:focus, .btn-special:active, {
 	background-color:rgba(0,0,0,0.1); 
