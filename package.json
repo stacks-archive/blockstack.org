@@ -1,5 +1,8 @@
 {
   "name": "blockstack-site",
+  "description": "",
+  "license": "",
+  "repository": "https://github.com/blockstack/blockstack-site",
   "devDependencies": {
     "apache-server-configs": "^2.7.1",
     "grunt": "^0.4.5",
