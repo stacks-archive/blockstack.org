@@ -137,10 +137,10 @@ footer > li {list-style:none;}
 	.hero {padding-top:0;}
 
 	/* Buttons */
-	.btn-lg {font-size:17px; font-weight:500; padding:18px 60px;}
-	.btn-primary {display:inline-block; max-width:none; background-color:rgba(131,28,168,1); border:1px solid rgba(131,28,168,1); color:rgba(255,255,255,1); border-radius:4px; -webkit-transition: all 160ms linear; -moz-transition: all 160ms linear; -ms-transition: all 160ms linear; -o-transition: all 160ms linear; transition: all 160ms linear;}
-	.btn-special {display:inline-block; max-width:none; margin-left:0px; padding-left:85px; background:url(/images/slack-logo-bug-rgb.png) no-repeat left 45px center; background-size:30px 30px; background-color:rgba(66,26,89,1); border:1px solid rgba(66,26,89,1); color:rgba(255,255,255,1); border-radius:4px; -webkit-transition: all 160ms linear; -moz-transition: all 160ms linear; -ms-transition: all 160ms linear; -o-transition: all 160ms linear; transition: all 160ms linear;}
-	.btn-special-rev {display:inline-block; max-width:none; margin-left:25px; padding-left:85px; background:url(/images/slack-logo-bug-rgb.png) no-repeat left 45px center; background-size:30px 30px; background-color:rgba(101,55,126,0.3); border:1px solid rgba(101,55,126,0); color:rgba(255,255,255,1); border-radius:4px; -webkit-transition: all 160ms linear; -moz-transition: all 160ms linear; -ms-transition: all 160ms linear; -o-transition: all 160ms linear; transition: all 160ms linear;}
+	.btn-lg {font-size:17px; padding:18px 55px;}
+	.btn-primary {display:inline-block; max-width:none;}
+	.btn-special {display:inline-block; max-width:none; margin-left:0px; padding-left:85px; background:url(/images/slack-logo-bug-rgb.png) no-repeat left 45px center; background-size:30px 30px;}
+	.btn-special-rev {display:inline-block; max-width:none; padding-left:85px; background:url(/images/slack-logo-bug-rgb.png) no-repeat left 45px center; background-size:30px 30px;}
 
 	/* Navbar */
 	.head-right-list {list-style:none; padding-left:0;}
@@ -184,7 +184,7 @@ footer > li {list-style:none;}
 	.bs-docs-featurette {max-width:1170px;}
 
 	/* Buttons */
-
+	.btn-special-rev {margin-left:25px;}
 
 	/* Navbar */
 	.navbar-brand {width:130px; margin-top:-8px;}
