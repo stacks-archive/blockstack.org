@@ -12,7 +12,7 @@ h2 {font-size:24px; line-height:32px;}
 h3 {font-size:20px; margin-bottom:15px;}
 h4 {font-size:15px; margin:20px 0;}
 .col-centered {float:none; margin:0 auto;}
-a {color:rgba(131,28,168,1);}
+a {color:rgba(131,28,168,1); font-weight:500;}
 a:hover {color:rgba(144,51,177,1);}
 
 /* Typography */
@@ -59,20 +59,12 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(4,0,7,1) 7%, rgba(24,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#53206f', GradientType=1 );
 }
 .panel {padding-top:25px; padding-bottom:75px;}
-.profile1, .profile2, .profile3, .profile4, .profile5 {
-    margin: 0 auto;
-    width: 160px;
-    height: 160px;
-    background-size: cover;
-    display: block;
-    border-radius: 80px;
-    -webkit-border-radius: 80px;
-    -moz-border-radius: 80px;
-    background-position: center;
-}
-.profile1 {background-image:url('/images/albert-wenger.jpg');}
-.profile2 {background-image:url('/images/jalak-jobanputra.jpg');}
-.profile3 {background-image:url('/images/jp-singh.jpg');}
+.profile1, .profile2, .profile3, .profile4, .profile5 {margin:0 auto 28px auto; width:160px; height:160px; background-size:cover; display:block; border-radius:80px; -webkit-border-radius:80px; -moz-border-radius:80px; background-position:center;}
+.profile-wrap {text-align:center; padding-bottom:40px;}
+.profile6 {margin:0 auto 0 -50px; width:180px; height: 180px; background-size:cover; padding:10px; background-color: rgba(255,255,255,1); border:1px solid rgba(240,240,240,1); background-position:center;}
+.profile1 {background-image:url('/images/jp-singh.jpg');}
+.profile2 {background-image:url('/images/albert-wenger.jpg');}
+.profile3 {background-image:url('/images/jalak-jobanputra.jpg');}
 .profile4 {background-image:url('/images/naval-ravikant.jpg');}
 .profile5 {background-image:url('/images/william-mougayar.jpg');}
 
@@ -90,6 +82,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 .feature-panel > img {margin:0 auto; padding:0 15%;}
 .feature-panel > h3 {margin-bottom:10px; display:block;}
 .sec-hook {padding-bottom:50px; background-color:rgba(248,249,251,1);}
+.gallery-contain {padding-top:30px; padding-bottom:30px; background-color:rgba(248,249,251,1);}
 .displayed {text-align:center; margin-top:100px; margin-bottom:100px;}
 .feature-action {background-color:rgba(83,32,111,1); color:rgba(255,255,255,1); text-align:center; padding-top:150px; padding-bottom:150px; margin:0;}
 h2.action-title {font-size:30px; line-height:42px; margin-bottom:35px;}
@@ -158,8 +151,6 @@ footer > li {list-style:none;}
 	.sec-hook {padding-top:30px; padding-bottom:30px;}
 	h2.action-title {font-size:40px; line-height:50px; margin-bottom:35px;}
 	h3.banner-head {font-size:20px; font-weight:500; margin-top:13px;}
-	.panel {padding-bottom:255px;}
-
 
 	/* Hero */
 	.head-wrap {padding-bottom:120px;}
@@ -201,6 +192,7 @@ footer > li {list-style:none;}
 	.hero-comm-des {margin-bottom:20px;}
 	.hall {margin-bottom:60px;}
 	.sec-hook {padding-top:50px; padding-bottom:50px;}
+	.gallery-contain {padding-top:50px; padding-bottom:50px;}
 	.feat-pan {font-size:26px;}
 	.wrap-mob-feat {max-width:230px;}
 
