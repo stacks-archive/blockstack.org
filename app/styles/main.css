@@ -140,8 +140,8 @@ footer > li {list-style:none;}
 	/* Buttons */
 	.btn-lg {font-size:17px; padding:18px 55px;}
 	.btn-primary {display:inline-block; max-width:none;}
-	.btn-special {display:inline-block; max-width:none; margin-left:0px; padding-left:85px; background:url(/images/slack-logo-bug-rgb.png) no-repeat left 45px center; background-size:30px 30px;}
-	.btn-special-rev {display:inline-block; max-width:none; padding-left:85px; background:url(/images/slack-logo-bug-rgb.png) no-repeat left 45px center; background-size:30px 30px;}
+	.btn-special {display:inline-block; max-width:none; margin-left:0px; padding-left:85px; background:url(/images/slack-logo-bug-rgb.png) no-repeat left 45px center; background-size:30px 30px; background-color:rgba(66,26,89,1);}
+	.btn-special-rev {display:inline-block; max-width:none; padding-left:85px; background:url(/images/slack-logo-bug-rgb.png) no-repeat left 45px center; background-size:30px 30px; background-color:rgba(101,55,126,0.3);}
 
 	/* Navbar */
 	.head-right-list {list-style:none; padding-left:0;}
