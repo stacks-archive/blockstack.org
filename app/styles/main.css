@@ -33,13 +33,13 @@ h1.hero-head {font-size:28px; line-height:36px; margin-bottom:15px; font-weight:
 .center-btn {margin-right:auto; margin-left:auto;}
 
 /* Banner */
-.banner-wrap {border-bottom:1px solid rgba(34,34,34,1); padding-bottom:15px; background-color:rgba(83,32,111,1);}
+.banner-wrap {height:75px; border-bottom:1px solid rgba(34,34,34,1); padding-bottom:15px; background-color:rgba(83,32,111,1);}
 .banner {color:rgba(255,255,255,1);}
-h3.banner-head {font-size:18px; font-weight:400; margin-top:13px; text-align:center;}
-.btn-banner {display:block; padding:6px 30px; background-color:rgba(131,28,168,1); color:rgba(255,255,255,0.8); border-radius:4px; font-size:13px; font-weight:400; -webkit-transition: all 160ms linear; -moz-transition: all 160ms linear; -ms-transition: all 160ms linear; -o-transition: all 160ms linear; transition: all 160ms linear;}
+h3.banner-head {font-size:15px; font-weight:400; margin-top:12px; margin-bottom:9px; text-align:center;}
+.btn-banner {display:block; padding:5px 30px; background-color:rgba(131,28,168,1); color:rgba(255,255,255,0.8); border-radius:4px; font-size:12px; font-weight:400; -webkit-transition: all 160ms linear; -moz-transition: all 160ms linear; -ms-transition: all 160ms linear; -o-transition: all 160ms linear; transition: all 160ms linear;}
 .btn-banner:hover, .btn-banner:focus, .btn-banner:active {background-color:rgba(144,51,177,1); color:rgba(255,255,255,1); outline:none;}
 .ban-event-date {font-size:13px; font-weight:300; margin-left:15px; vertical-align:middle;}
-.close {position:absolute; top:10px; right:20px; color:rgba(255,255,255,0.6); font-size:28px; line-height:16px; font-weight:400; opacity:1; text-shadow:none;}
+.close {position:absolute; top:19px; right:25px; color:rgba(255,255,255,0.6); font-size:28px; line-height:16px; font-weight:400; opacity:1; text-shadow:none;}
 .close:hover, .close:focus, .close:active {color:rgba(255,255,255,0.3); opacity:1; outline:none;}
 button.close {padding:8px;}
 
@@ -92,6 +92,7 @@ div.col-sm-4.feature-panel.feat-block {padding-top:1px; padding-bottom:5px; marg
 h2.action-title {font-size:30px; line-height:42px; margin-bottom:35px;}
 .btn-wrap {max-width:400;}
 .wrap-mob-feat {max-width:195px;}
+.mobbanner {max-width:180px;}
 
 /* Footer */
 footer {background-color:rgba(26,26,26,1); padding-top:60px; padding-bottom:80px; color:rgba(255,255,255,1); font-size:13px;}
@@ -173,6 +174,7 @@ footer > li {list-style:none;}
 	div.col-sm-4.feature-panel.wrap-mob-feat {padding-top:20px;}
 	.highlight-box {padding-top:120px; padding-bottom:80px;}
 	.feat-lead {margin-bottom:1px;}
+	.mobbanner {max-width:none;}
 }
 
 /* Medium devices (desktops, 992px and up) */
