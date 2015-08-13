@@ -8,7 +8,7 @@ body {padding-top:0; padding-bottom:0;}
 
 /* Globals */
 h1 {font-size:30px; line-height:38px;}
-h2 {font-size:24px; line-height:32px;}
+h2 {font-size:24px; line-height:32px; font-weight:400;}
 h3 {font-size:20px; margin-bottom:15px;}
 h4 {font-size:15px; margin:20px 0;}
 .col-centered {float:none; margin:0 auto;}
@@ -68,16 +68,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 .profile4 {background-image:url('/images/naval-ravikant.jpg');}
 .profile5 {background-image:url('/images/william-mougayar.jpg');}
 
-
 .summit-head-wrap {padding-bottom:90px; background: url(/images/summ-dht.png) no-repeat center center fixed; background-size: cover; background-color:#53206f;}
 .about-head-wrap {padding-bottom:30px; background: url(/images/blockchain-timeline.png) no-repeat center top; background-color:#53206f;}
-.highlight-box {background-color:#831ca8; padding-top:120px; padding-bottom:80px; color:rgba(255,255,255,1);}
+.highlight-box {background-color:#831ca8; padding-top:50px; padding-bottom:50px; color:rgba(255,255,255,1);}
 .hero {max-width:850px; padding-top:20px; color:rgba(255,255,255,1);}
 .hero-wrap {margin-top:0;}
 .hero-logo {width:100px; margin-bottom:45px; margin-left:-2px;}
 .slides {padding-left:10px; padding-right:10px;}
 .navbar {margin-bottom:19px;}
-.wrap-mob-feat {max-width:195px;}
+div.col-sm-4.feature-panel.feat-block:hover, div.col-sm-4.feature-panel.feat-block:focus, div.col-sm-4.feature-panel.feat-block:active, div.col-sm-4.feature-panel.feat-blockt:visited {background-color:rgba(255,255,255,0.1); border-radius:6px; outline:none; text-decoration:none;}
+div.col-sm-4.feature-panel.feat-block {padding-top:1px; padding-bottom:5px; margin-top:15px; margin-bottom:15px;}
+.feat-block a, .feat-block h3 {color:rgba(255,255,255,1); font-weight:400!important;}
+.feat-block a:hover, .feat-block h3:hover {text-decoration:none;}
+.feat-lead {margin-bottom:15px;}
 .feature-panel {margin-top:40px; margin-bottom:40px; text-align:center;}
 .feature-panel > img {margin:0 auto; padding:0 15%;}
 .feature-panel > h3 {margin-bottom:10px; display:block;}
@@ -87,6 +90,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 .feature-action {background-color:rgba(83,32,111,1); color:rgba(255,255,255,1); text-align:center; padding-top:150px; padding-bottom:150px; margin:0;}
 h2.action-title {font-size:30px; line-height:42px; margin-bottom:35px;}
 .btn-wrap {max-width:400;}
+.wrap-mob-feat {max-width:195px;}
 
 /* Footer */
 footer {background-color:rgba(26,26,26,1); padding-top:60px; padding-bottom:80px; color:rgba(255,255,255,1); font-size:13px;}
@@ -152,12 +156,12 @@ footer > li {list-style:none;}
 	h2.action-title {font-size:40px; line-height:50px; margin-bottom:35px;}
 	h3.banner-head {font-size:20px; font-weight:500; margin-top:13px;}
 
-	/* Hero */
+	/* Content */
 	.head-wrap {padding-bottom:120px;}
 	h1.hero-head {font-size:38px; line-height:48px; margin-bottom:20px; font-weight:400;}
 	.about-head {margin-top:350px;}
 	.slides {padding-left:0; padding-right:0; padding-top:80px;}
-	.lead {font-size:17px; line-height:30px; margin-bottom:60px;}
+	.lead {font-size:17px; line-height:30px;}
 	.summ-head, .about-head, .hero-reg-btn, .date, .hero-comm-des, .hall {text-align:center;}
 	.hero-comm-des {margin-bottom:20px;}
 	.hall {margin-bottom:60px;}
@@ -165,6 +169,9 @@ footer > li {list-style:none;}
 	.banner-wrap {height:90px; padding-bottom:0px; background:url(/images/summ-banner-dht.png) no-repeat 35% 0%; background-color:rgba(0,0,0,1);}
 	.btn-banner {margin-left:35px;}
 	.close {top:25px; right:25px;}
+	div.col-sm-4.feature-panel.wrap-mob-feat {padding-top:20px;}
+	.highlight-box {padding-top:120px; padding-bottom:80px;}
+	.feat-lead {margin-bottom:1px;}
 }
 
 /* Medium devices (desktops, 992px and up) */
