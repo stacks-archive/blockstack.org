@@ -93,7 +93,8 @@ h2.action-title {font-size:30px; line-height:42px; margin-bottom:35px;}
 .btn-wrap {max-width:400;}
 .wrap-mob-feat {max-width:195px;}
 .mobbanner {max-width:180px;}
-.topic {margin-bottom:5px;}
+.topic {margin-bottom:5px; text-align:left;}
+.topic-wrap {max-width:275px;}
 
 /* Footer */
 footer {background-color:rgba(26,26,26,1); padding-top:60px; padding-bottom:80px; color:rgba(255,255,255,1); font-size:13px;}
