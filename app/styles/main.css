@@ -93,6 +93,7 @@ h2.action-title {font-size:30px; line-height:42px; margin-bottom:35px;}
 .btn-wrap {max-width:400;}
 .wrap-mob-feat {max-width:195px;}
 .mobbanner {max-width:180px;}
+.topic {margin-bottom:5px;}
 
 /* Footer */
 footer {background-color:rgba(26,26,26,1); padding-top:60px; padding-bottom:80px; color:rgba(255,255,255,1); font-size:13px;}
@@ -121,6 +122,7 @@ footer > li {list-style:none;}
 .row.works.col-md-10.col-lg-8.col-centered::after {content:"";display:block; border-top:1px solid rgba(230,230,230,1); width:50%; margin:75px auto 0 auto;}
 .hero-comm-des {margin-bottom:10px;}
 .hall {margin-bottom:35px;}
+
 
 
 /* Media queries */
@@ -175,6 +177,8 @@ footer > li {list-style:none;}
 	.highlight-box {padding-top:120px; padding-bottom:80px;}
 	.feat-lead {margin-bottom:1px;}
 	.mobbanner {max-width:none;}
+	.mobbanner {max-width:180px;}
+	.topic {margin-bottom:5px;}
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -205,6 +209,8 @@ footer > li {list-style:none;}
 	.gallery-contain {padding-top:50px; padding-bottom:50px;}
 	.feat-pan {font-size:26px;}
 	.wrap-mob-feat {max-width:230px;}
+	.mobbanner {max-width:180px;}
+	.topic {margin-bottom:5px;}
 
 	/* Feature action */
 	h2.action-title {font-size:48px; line-height:64px; margin-bottom:55px;}
@@ -217,6 +223,7 @@ footer > li {list-style:none;}
 	.midfoot, .base-push-left {padding-left:0;}
 	.social {margin-top:-8px;}
 	.foot-logo {max-width:190px;}
+
 
 }
 
