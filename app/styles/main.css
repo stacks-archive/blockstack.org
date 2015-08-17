@@ -22,7 +22,7 @@ h1.hero-head {font-size:28px; line-height:36px; margin-bottom:15px; font-weight:
 /* Buttons */
 .btn-lg {font-size:14px; font-weight:500; padding:15px 25px;}
 .btn-primary {display:block; max-width:290px; overflow:hidden; padding:15px 15px; background-color:rgba(131,28,168,1); border:1px solid rgba(131,28,168,1); color:rgba(255,255,255,1); border-radius:4px; -webkit-transition: all 160ms linear; -moz-transition: all 160ms linear; -ms-transition: all 160ms linear; -o-transition: all 160ms linear; transition: all 160ms linear;}
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {background-color:rgba(144,51,177,1); border:1px solid rgba(144,51,177,1); color:rgba(255,255,255,1); box-shadow:none; outline:none;}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active:focus {background-color:rgba(144,51,177,1); border:1px solid rgba(144,51,177,1); color:rgba(255,255,255,1); box-shadow:none; outline:none;}
 .btn-primary-hero {padding-right:30px; padding-left:30px; background-color:rgba(83,32,111,1); border:1px solid rgba(83,32,111,1); color:rgba(255,255,255,1); border-radius:4px; -webkit-transition: all 160ms linear; -moz-transition: all 160ms linear; -ms-transition: all 160ms linear; -o-transition: all 160ms linear; transition: all 160ms linear;}
 .btn-primary-hero:hover, .btn-primary-hero:focus, .btn-primary-hero:active {background-color:rgba(101,55,126,1); border:1px solid rgba(101,55,126,1); color:rgba(255,255,255,1); box-shadow:none; outline:none;}
 .btn-special {display:block; max-width:225px; overflow:hidden; margin-left:25px; padding-left:45px; background:url(/images/slack-logo-bug-rgb.png) no-repeat left 25px center; background-size:25px 25px; background-color:rgba(66,26,89,1); border:1px solid rgba(66,26,89,1); color:rgba(255,255,255,1); border-radius:4px; -webkit-transition: all 160ms linear; -moz-transition: all 160ms linear; -ms-transition: all 160ms linear; -o-transition: all 160ms linear; transition: all 160ms linear;}
@@ -144,6 +144,7 @@ footer > li {list-style:none;}
 	/* Buttons */
 	.btn-lg {font-size:17px; padding:18px 55px;}
 	.btn-primary {display:inline-block; max-width:none;}
+	.btn-primary:hover, .btn-primary:focus, .btn-primary:active {background-color:rgba(144,51,177,1); border:1px solid rgba(144,51,177,1); color:rgba(255,255,255,1); box-shadow:none; outline:none;}
 	.btn-special {display:inline-block; max-width:none; margin-left:0px; padding-left:85px; background:url(/images/slack-logo-bug-rgb.png) no-repeat left 45px center; background-size:30px 30px; background-color:rgba(66,26,89,1);}
 	.btn-special-rev {display:inline-block; max-width:none; padding-left:85px; background:url(/images/slack-logo-bug-rgb.png) no-repeat left 45px center; background-size:30px 30px; background-color:rgba(101,55,126,0.3);}
 
