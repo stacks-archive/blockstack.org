@@ -97,6 +97,7 @@ h2.action-title {font-size:30px; line-height:42px; margin-bottom:35px;}
 .topic-wrap {max-width:275px;}
 .gallery-spcl-txt {font-size:16px;}
 .table-wrap {max-width:700px;}
+.table-striped > thead > tr > th {text-align:center;}
 
 /* Footer */
 footer {background-color:rgba(26,26,26,1); padding-top:60px; padding-bottom:80px; color:rgba(255,255,255,1); font-size:13px;}
