@@ -31,5 +31,8 @@
   },
   "engines": {
     "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "divshot-push": "^1.4.2"
   }
 }
