@@ -92,6 +92,13 @@ div.col-sm-4.feature-panel.feat-block {padding-top:1px; padding-bottom:5px; marg
 h2.action-title {font-size:30px; line-height:42px; margin-bottom:35px;}
 .btn-wrap {max-width:400;}
 .wrap-mob-feat {max-width:195px;}
+.featpan-1 {margin-top:0px;}
+.featpan-2 {margin-top:0px;}
+.featpan-3 {margin-top:0px;}
+.featpan-4 {margin-top:0px;}
+.featpan-5 {margin-top:0px;}
+.featpan-6 {margin-top:0px;}
+
 .mobbanner {max-width:180px;}
 .topic {margin-bottom:5px; text-align:left;}
 .topic-wrap {max-width:275px;}
@@ -164,6 +171,12 @@ footer > li {list-style:none;}
 	.sec-hook {padding-top:30px; padding-bottom:30px;}
 	h2.action-title {font-size:40px; line-height:50px; margin-bottom:35px;}
 	h3.banner-head {font-size:20px; font-weight:500; margin-top:13px;}
+	.featpan-1 {margin-top:18px;}
+	.featpan-2 {margin-top:-25px;}
+	.featpan-3 {margin-top:8px;}
+	.featpan-4 {margin-top:10px;}
+	.featpan-5 {margin-top:28px;}
+	.featpan-6 {margin-top:35px;}
 
 	/* Content */
 	.head-wrap {padding-bottom:120px;}
