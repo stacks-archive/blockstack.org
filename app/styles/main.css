@@ -92,12 +92,15 @@ div.col-sm-4.feature-panel.feat-block {padding-top:1px; padding-bottom:5px; marg
 h2.action-title {font-size:30px; line-height:42px; margin-bottom:35px;}
 .btn-wrap {max-width:400;}
 .wrap-mob-feat {max-width:195px;}
-.featpan-1 {margin-top:0px;}
-.featpan-2 {margin-top:0px;}
-.featpan-3 {margin-top:0px;}
-.featpan-4 {margin-top:0px;}
-.featpan-5 {margin-top:0px;}
-.featpan-6 {margin-top:0px;}
+.featpan-g1 {margin-top:10px;}
+.featpan-g2 {margin-top:10px;}
+.featpan-1 {padding-top:20px;}
+.featpan-2 {padding-top:20px;}
+.featpan-3 {padding-top:20px;}
+.featpan-4 {padding-top:20px; margin-top:0px;}
+.featpan-5 {padding-top:20px;}
+section.container-fluid.sec-hook.sponsor-divide:after {display:block; margin:40px auto 0 auto; max-width:250px; border-top:1px solid rgba(229,229,229,1);}
+.lead-sponsors {font-size:16px;}
 
 .mobbanner {max-width:180px;}
 .topic {margin-bottom:5px; text-align:left;}
@@ -171,12 +174,14 @@ footer > li {list-style:none;}
 	.sec-hook {padding-top:30px; padding-bottom:30px;}
 	h2.action-title {font-size:40px; line-height:50px; margin-bottom:35px;}
 	h3.banner-head {font-size:20px; font-weight:500; margin-top:13px;}
+	.featpan-g1 {margin-top:0px;}
+	.featpan-g2 {margin-top:35px;}
 	.featpan-1 {margin-top:18px;}
-	.featpan-2 {margin-top:-25px;}
+	.featpan-2 {margin-top:4px;}
 	.featpan-3 {margin-top:8px;}
 	.featpan-4 {margin-top:10px;}
-	.featpan-5 {margin-top:28px;}
-	.featpan-6 {margin-top:35px;}
+	.featpan-5 {margin-top:35px;}
+	section.container-fluid.sec-hook.sponsor-divide:after {display:block; margin:0 auto; max-width:350px; border-top:1px solid rgba(229,229,229,1);}
 
 	/* Content */
 	.head-wrap {padding-bottom:120px;}
