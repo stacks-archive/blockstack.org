@@ -8,9 +8,6 @@ import glob from 'glob';
 import { join } from 'path';
 
 var manualRoutes = [
-  ['/dns', 'index.js'],
-  ['/pki', 'index.js'],
-  ['/sdp', 'index.js']
 ];
 
 export default function(source) {
