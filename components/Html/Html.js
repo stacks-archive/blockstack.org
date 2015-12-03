@@ -56,13 +56,9 @@ class Html extends Component {
         {appleTouchIcons}
 
         <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="/normalize.css/normalize.css" />
-        <link rel="stylesheet" href="/sidebar-transitions/dist/css/sidebar-transitions.min.css" />
         <link rel="stylesheet" href="/components-font-awesome/css/font-awesome.css" />
 
         <script src="/jquery/dist/jquery.js"></script>
-        <script src="/classie/classie.js"></script>
-        <script src="/sidebar-transitions/dist/js/sidebar-transitions.js"></script>
 
         <script src={'/app.js?' + new Date().getTime()}></script>
       </head>
