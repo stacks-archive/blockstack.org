@@ -14,8 +14,8 @@ export default class extends Component {
     return (
       <nav className="navbar navbar-top col-sm-10 col-centered">
         <div className="container-fluid">
-          <div id="st-trigger-effects" className="navbar-header">
-            <button type="button" className="navbar-toggle collapsed" data-effect="st-effect-3">
+          <div className="navbar-header">
+            <button type="button" className="navbar-toggle collapsed">
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
