@@ -24,7 +24,7 @@ export default class extends Component {
                 <div>
                   <div className="col-xs-11 col-sm-10">
                     <div className="hero-logo hidden-sm hidden-md hidden-lg">
-                      <a href="/">
+                      <a href="/" onClick={Link.handleClick}>
                         <img src="/images/blockstack-logo.svg"/>
                       </a>
                     </div>
@@ -35,10 +35,10 @@ export default class extends Component {
                       Welcoming all developers to join the Blockstack community. Our mission is to create common infrastructure for developing decentralized applications.
                     </p>
                     <p>
-                      <a href="http://forum.blockstack.org" target="_blank" className="btn btn-lg btn-primary-hero hidden-xs hidden-sm" role="button">
+                      <a href="http://forum.blockstack.org" target="_blank" className="btn btn-lg btn-primary-hero hidden-xs hidden-sm" role="button" onClick={Link.handleClick}>
                         Join the Blockstack Forum
                       </a>
-                      <a href="http://chat.blockstack.org" target="_blank" className="btn btn-lg btn-special-rev" role="button">
+                      <a href="http://chat.blockstack.org" target="_blank" className="btn btn-lg btn-special-rev" role="button" onClick={Link.handleClick}>
                         Get invited to Slack!
                       </a>
                     </p>
@@ -108,7 +108,7 @@ export default class extends Component {
                   </h2>
                 </hgroup>
                 <div className="btn-wrap">
-                  <a href="http://chat.blockstack.org" target="_blank" className="btn btn-lg btn-special center-btn" role="button">
+                  <a href="http://chat.blockstack.org" target="_blank" className="btn btn-lg btn-special center-btn" role="button" onClick={Link.handleClick}>
                     Get invited to Slack!
                   </a>
                 </div>

@@ -6,6 +6,7 @@
 
 import React, { Component, PropTypes } from 'react';
 import Navigation from '../components/Navigation';
+import Link from '../components/Link';
 
 export default class extends Component {
 
@@ -21,7 +22,7 @@ export default class extends Component {
               <div>
                 <div className="col-xs-11 col-sm-10 col-sm-offset-1">
                   <div className="hero-logo hidden-sm hidden-md hidden-lg">
-                    <a href="/">
+                    <a href="/" onClick={Link.handleClick}>
                       <img src="/images/blockstack-logo.svg"/>
                     </a>
                   </div>
@@ -30,7 +31,7 @@ export default class extends Component {
                   <p className="date">September 12, 2015 - 9am-5pm</p>
                   <p className="hall">{"D'Agostino Hall, NYU, 108 W 3rd St, New York, NY"}</p>
                   <p className="hero-reg-btn">
-                    <a href="http://blockstacksummit2015.eventbrite.com" target="_blank" className="btn btn-primary btn-lg">
+                    <a href="http://blockstacksummit2015.eventbrite.com" target="_blank" className="btn btn-primary btn-lg" onClick={Link.handleClick}>
                       Register for Blockstack Summit
                     </a>
                   </p>

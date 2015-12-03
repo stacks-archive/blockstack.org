@@ -20,7 +20,7 @@ export default class extends Component {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <a className="navbar-brand" href="/">
+            <a className="navbar-brand" href="/" onClick={Link.handleClick}>
               <img src="/images/blockstack-logo.svg" />
             </a>
           </div>
@@ -28,21 +28,21 @@ export default class extends Component {
           <div className="collapse navbar-collapse"> 
             <ul className="nav navbar-nav nav-btn-head">
               <li>
-                <a href="/about.html">About</a>
+                <a href="/about" onClick={Link.handleClick}>About</a>
               </li>
               <li>
-                <a href="http://forum.blockstack.org" target="_blank">Forum</a>
+                <a href="http://forum.blockstack.org" target="_blank" onClick={Link.handleClick}>Forum</a>
               </li>
               <li>
-                <a href="https://blockstack.slack.com/" target="_blank">Slack</a>
+                <a href="https://blockstack.slack.com/" target="_blank" onClick={Link.handleClick}>Slack</a>
               </li>
               <li className="btn btn-head">
-                <a href="http://chat.blockstack.org" target="_blank">Get Invited!</a>
+                <a href="http://chat.blockstack.org" target="_blank" onClick={Link.handleClick}>Get Invited!</a>
               </li>
             </ul>
             <ul className="nav navbar-nav navbar-right">
               <li>
-                <a href="https://github.com/blockstack" target="_blank">
+                <a href="https://github.com/blockstack" target="_blank" onClick={Link.handleClick}>
                   <div className="pull-left">
                     <i className="fa fa-github github-header"></i>
                   </div>

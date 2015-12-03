@@ -6,6 +6,7 @@
 
 import React, { Component } from 'react';
 import Navigation from '../components/Navigation';
+import Link from '../components/Link';
 
 export default class extends Component {
 
@@ -26,7 +27,7 @@ export default class extends Component {
                     Page Does not Exist!
                   </h2>
                 </hgroup>
-                <a href="/" className="btn btn-lg btn-special" role="button">
+                <a href="/" className="btn btn-lg btn-special" role="button" onClick={Link.handleClick}>
                   Go Home
                 </a>
               </div>

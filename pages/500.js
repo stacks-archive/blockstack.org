@@ -6,6 +6,7 @@
 
 import React, { Component, PropTypes } from 'react';
 import Navigation from '../components/Navigation';
+import Link from '../components/Link';
 
 export default class extends Component {
 
