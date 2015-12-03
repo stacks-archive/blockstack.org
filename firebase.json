@@ -5,7 +5,11 @@
     "firebase.json",
     "**/.*",
     "**/node_modules/**",
-    "**/bower_components/**"
-    "**/unused/**"
+    "**/bower_components/**",
+    "./unused/**",
+    "./static/**",
+    "./tools/**",
+    "./components/**",
+    "./pages/**"
   ]
 }
