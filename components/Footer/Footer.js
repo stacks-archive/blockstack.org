@@ -18,7 +18,7 @@ export default class extends Component {
               <ul className="list-unstyled">
                 <li>
                   <div className="foot-logo">
-                    <a href="/">
+                    <a href="/" onClick={Link.handleClick}>
                       <img src="/images/blockstack-logo.svg" />
                     </a>
                   </div>
@@ -29,16 +29,16 @@ export default class extends Component {
               <ul className="foot-menu list-unstyled">
                 <li>Community</li>
                 <li>
-                  <a href="/about.html">About</a>
+                  <a href="/about" onClick={Link.handleClick}>About</a>
                 </li>
                 <li>
-                  <a href="https://forum.blockstack.org/" target="_blank">Forum</a>
+                  <a href="https://forum.blockstack.org/" target="_blank" onClick={Link.handleClick}>Forum</a>
                 </li>
                 <li>
-                  <a href="http://chat.blockstack.org" target="_blank">Chat</a>
+                  <a href="http://chat.blockstack.org" target="_blank" onClick={Link.handleClick}>Chat</a>
                 </li>
                 <li>
-                  <a href="/summit.html">Events</a>
+                  <a href="/summit" onClick={Link.handleClick}>Events</a>
                 </li>
               </ul>
             </div>
@@ -46,13 +46,13 @@ export default class extends Component {
               <ul className="foot-menu list-unstyled">
                 <li>Social</li>
                 <li>
-                  <a href="#">Press</a>
+                  <a href="#" onClick={Link.handleClick}>Press</a>
                 </li>
                 <li>
-                  <a href="https://www.twitter.com/blockstackorg" target="_blank">Twitter</a>
+                  <a href="https://www.twitter.com/blockstackorg" target="_blank" onClick={Link.handleClick}>Twitter</a>
                 </li>
                 <li>
-                  <a href="https://www.youtube.com/channel/UCvDtRhHLNDyKiY-iwhneNbw" target="_blank">YouTube</a>
+                  <a href="https://www.youtube.com/channel/UCvDtRhHLNDyKiY-iwhneNbw" target="_blank" onClick={Link.handleClick}>YouTube</a>
                 </li>
               </ul>
             </div>
@@ -60,10 +60,10 @@ export default class extends Component {
               <ul className="foot-menu list-unstyled">
                 <li>Resources</li>
                 <li>
-                  <a href="https://github.com/blockstack" target="_blank">Github</a>
+                  <a href="https://github.com/blockstack" target="_blank" onClick={Link.handleClick}>Github</a>
                 </li>
                 <li>
-                  <a href="https://github.com/blockstack/wiki" target="_blank">Wiki</a>
+                  <a href="https://github.com/blockstack/wiki" target="_blank" onClick={Link.handleClick}>Wiki</a>
                 </li>
               </ul>
             </div>
@@ -74,17 +74,17 @@ export default class extends Component {
               <div className="social hidden-md hidden-lg container">
                 <ul className="sm-social list-unstyled">
                   <li>
-                    <a href="https://www.twitter.com/blockstackorg" target="_blank">
+                    <a href="https://www.twitter.com/blockstackorg" target="_blank" onClick={Link.handleClick}>
                       <i className="fa fa-twitter"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.youtube.com/channel/UCvDtRhHLNDyKiY-iwhneNbw" target="_blank">
+                    <a href="https://www.youtube.com/channel/UCvDtRhHLNDyKiY-iwhneNbw" target="_blank" onClick={Link.handleClick}>
                       <i className="fa fa-youtube-play"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://github.com/blockstack" target="_blank">
+                    <a href="https://github.com/blockstack" target="_blank" onClick={Link.handleClick}>
                       <i className="fa fa-github"></i>
                     </a>
                   </li>
@@ -100,17 +100,17 @@ export default class extends Component {
               <div className="social hidden-xs hidden-sm">
                 <ul className="sm-social list-unstyled">
                   <li>
-                    <a href="https://www.twitter.com/blockstackorg" target="_blank">
+                    <a href="https://www.twitter.com/blockstackorg" target="_blank" onClick={Link.handleClick}>
                       <i className="fa fa-twitter"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.youtube.com/channel/UCvDtRhHLNDyKiY-iwhneNbw" target="_blank">
+                    <a href="https://www.youtube.com/channel/UCvDtRhHLNDyKiY-iwhneNbw" target="_blank" onClick={Link.handleClick}>
                       <i className="fa fa-youtube-play">
                     </i></a>
                   </li>
                   <li>
-                    <a href="https://github.com/blockstack" target="_blank">
+                    <a href="https://github.com/blockstack" target="_blank" onClick={Link.handleClick}>
                       <i className="fa fa-github"></i>
                     </a>
                   </li>
