@@ -4,8 +4,8 @@
  * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
  */
 
-import Link from '../components/Link';
 import React, { Component, PropTypes } from 'react';
+import { Link } from 'react-router';
 import Navigation from '../components/Navigation';
 
 export default class extends Component {

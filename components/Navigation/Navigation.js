@@ -5,8 +5,8 @@
  */
 
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import './Navigation.scss';
-import Link from '../Link';
 
 export default class extends Component {
 

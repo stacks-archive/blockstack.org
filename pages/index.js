@@ -5,7 +5,7 @@
  */
 
 import React, { Component } from 'react';
-import Link from '../components/Link';
+import { Link } from 'react-router';
 import Navigation from '../components/Navigation';
 
 export default class extends Component {
