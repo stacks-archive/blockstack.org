@@ -11,6 +11,7 @@ import { canUseDOM } from 'fbjs/lib/ExecutionEnvironment';
 import Location from './lib/Location';
 import Layout from './components/Layout';
 import { googleAnalyticsId } from './config';
+import ga from 'react-ga';
 
 const routes = {}; // Auto-generated on build. See tools/lib/routes-loader.js
 
@@ -19,14 +20,6 @@ const route = async (path, callback) => {
   const component = await handler();
   await callback(<Layout>{React.createElement(component)}</Layout>);
 };
-
-var ga = require('react-ga');
-
-try {
-  ga.initialize(googleAnalyticsId);
-} catch(err) {
-  console.log(err);
-}
 
 function logPageView(pathname) {
   try {
@@ -46,8 +39,14 @@ function run() {
 }
 
 if (canUseDOM) {
-// Run the application when both DOM is ready
-// and page content is loaded
+  try {
+    ga.initialize(googleAnalyticsId);
+  } catch(err) {
+    console.log(err)
+  }
+
+  // Run the application when both DOM is ready
+  // and page content is loaded
   if (window.addEventListener) {
     window.addEventListener('DOMContentLoaded', run);
   } else {
