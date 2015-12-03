@@ -55,8 +55,8 @@ class Html extends Component {
         <link rel="shortcut icon" href="/favicon.ico" />
         {appleTouchIcons}
 
-        <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="/components-font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="/bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="/font-awesome/css/font-awesome.css" />
 
         <script src="/jquery/dist/jquery.js"></script>
 
