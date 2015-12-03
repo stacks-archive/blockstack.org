@@ -58,7 +58,7 @@ class Html extends Component {
         <link rel="stylesheet" href="/bootstrap/css/bootstrap.css" />
         <link rel="stylesheet" href="/font-awesome/css/font-awesome.css" />
 
-        <script src="/jquery/dist/jquery.js"></script>
+        <script src="/jquery/jquery.js"></script>
 
         <script src={'/app.js?' + new Date().getTime()}></script>
       </head>

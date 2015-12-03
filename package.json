@@ -1,4 +1,35 @@
 {
+  "name": "blockstack-site",
+  "version": "0.0.0",
+  "description": "The site for blockstack.org",
+  "author": "Blockstack",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blockstack/blockstack-site"
+  },
+  "keywords": [
+    "blockstack",
+    "blockchain",
+    "technology"
+  ],
+  "license" : "GPL-3.0",
+  "scripts": {
+    "lint": "eslint src tools test",
+    "test": "mocha --compilers js:babel/register --watch",
+    "clean": "babel-node --eval \"require('./tools/clean')().catch(err => console.log(err.stack))\"",
+    "build": "babel-node --eval \"require('./tools/build')().catch(err => console.log(err.stack))\"",
+    "start": "babel-node --eval \"require('./tools/start')().catch(err => console.log(err.stack))\"",
+    "deploy": "babel-node --eval \"require('./tools/deploy')().catch(err => console.log(err.stack))\""
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.5",
+    "font-awesome": "^4.4.0",
+    "mkdirp": "^0.5.1",
+    "react-bootstrap": "^0.28.1",
+    "react-ga": "^1.2.0",
+    "react-router": "^1.0.0"
+  },
   "devDependencies": {
     "autoprefixer": "^6.0.3",
     "babel": "^5.8.23",
@@ -40,20 +71,5 @@
     "webpack": "^1.12.2",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-hot-middleware": "^2.4.1"
-  },
-  "scripts": {
-    "lint": "eslint src tools test",
-    "test": "mocha --compilers js:babel/register --watch",
-    "clean": "babel-node --eval \"require('./tools/clean')().catch(err => console.log(err.stack))\"",
-    "build": "babel-node --eval \"require('./tools/build')().catch(err => console.log(err.stack))\"",
-    "start": "babel-node --eval \"require('./tools/start')().catch(err => console.log(err.stack))\"",
-    "deploy": "babel-node --eval \"require('./tools/deploy')().catch(err => console.log(err.stack))\""
-  },
-  "dependencies": {
-    "bootstrap": "^3.3.5",
-    "font-awesome": "^4.4.0",
-    "react-bootstrap": "^0.28.1",
-    "react-ga": "^1.2.0",
-    "react-router": "^1.0.0"
   }
 }

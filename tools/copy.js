@@ -6,6 +6,7 @@
 
 import task from './lib/task';
 import cp from './lib/copy';
+import mkdirp from 'mkdirp';
 
 /**
  * Copies static files such as robots.txt, favicon.ico to the
@@ -16,7 +17,8 @@ export default task(async function copy() {
 
   await cp('bower_components/bootstrap/dist', 'build/bootstrap');
   await cp('bower_components/bootstrap/dist', 'build/bootstrap');
-  await cp('bower_components/components-font-awesome/bower.json', 'build/font-awesome');
+
+  mkdirp('build/font-awesome');
   await cp('bower_components/components-font-awesome/css', 'build/font-awesome/css');
   await cp('bower_components/components-font-awesome/fonts', 'build/font-awesome/fonts');
   await cp('bower_components/jquery/dist', 'build/jquery');
