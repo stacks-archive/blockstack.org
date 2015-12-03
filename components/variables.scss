@@ -1,0 +1,92 @@
+/**
+ * React Static Boilerplate
+ * https://github.com/koistya/react-static-boilerplate
+ * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
+ */
+
+/*
+ * Colors
+ * -------------------------------------------------------------------------- */
+
+$body-bg: #f7f7f7;
+$text-color: #333;
+$brand-color: #21ce99;
+
+$dark-bg-color: #000000;
+$light-bg-color: #f7f7f7;
+$light-text-color: #fff;
+$dark-text-color: #333;
+
+/* Google Design Colors */
+$color-blue-500: rgba(33,150,243,1); /* 2196F3 */
+$color-blue-600: rgba(30,136,229,1); /* 1E88E5 */
+$color-blue-700: rgba(25,118,210,1); /* 1976D2 */
+$color-blue-800: rgba(21,101,192,1); /* 1565C0 */
+$color-blue-900: rgba(13,71,161,1); /* 0D47A1 */
+
+/* Hyperbelt Colors */
+$color-white: rgba(255,255,255,1); /* ffffff */
+$color-greyblue: rgba(62,60,66,1); /* 3E3C42 */
+
+
+/*
+ * Typography
+ * -------------------------------------------------------------------------- */
+
+$font-family-base: 'Source Code Pro', sans-serif;
+
+/*
+ * Media queries breakpoints
+ * -------------------------------------------------------------------------- */
+
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+/**
+ * React Starter Kit
+ * http://www.reactstarterkit.com/
+ * MIT license
+ */
+
+:root {
+
+  /*
+   * Colors
+   * ======================================================================== */
+
+  --white-base:            hsl(255, 255, 255);
+  --gray-darker:           color(black lightness(+13.5%)); /* #222 */
+  --gray-dark:             color(black lightness(+25%));   /* #404040 */
+  --gray:                  color(black lightness(+33.5%)); /* #555 */
+  --gray-light:            color(black lightness(+46.7%)); /* #777 */
+  --gray-lighter:          color(black lightness(+93.5%)); /* #eee */
+
+  /*
+   * Typography
+   * ======================================================================== */
+
+  --font-family-base: 'Source Code Pro', sans-serif;
+
+  /*
+   * Layout
+   * ======================================================================== */
+
+  --max-content-width:     1000px;
+
+  /*
+   * Media queries breakpoints
+   * ======================================================================== */
+
+  --screen-xs-min:         480px;  /* Extra small screen / phone */
+  --screen-sm-min:         768px;  /* Small screen / tablet */
+  --screen-md-min:         992px;  /* Medium screen / desktop */
+  --screen-lg-min:         1200px; /* Large screen / wide desktop */
+
+  /*
+   * Animations
+   * ======================================================================== */
+
+  --animation-swift-out:   .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;
+
+}
