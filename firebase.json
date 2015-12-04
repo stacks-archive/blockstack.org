@@ -1,15 +1,17 @@
 {
-  "firebase": "blockstack",
+  "firebase": "blockstack-site",
   "public": "build",
   "ignore": [
     "firebase.json",
     "**/.*",
     "**/node_modules/**",
-    "**/bower_components/**",
     "./unused/**",
-    "./static/**",
-    "./tools/**",
-    "./components/**",
-    "./pages/**"
-  ]
+    "./__tests__/**",
+    "./app/**",
+    "./gulp/**"
+  ],
+  "rewrites": [{
+    "source": "**",
+    "destination": "/index.html"
+  }]
 }
