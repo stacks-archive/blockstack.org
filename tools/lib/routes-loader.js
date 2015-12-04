@@ -7,9 +7,6 @@
 import glob from 'glob';
 import { join } from 'path';
 
-var manualRoutes = [
-];
-
 export default function(source) {
   this.cacheable();
   const target = this.target;
@@ -24,14 +21,19 @@ export default function(source) {
       return callback(err);
     }
 
+    const subDirectories = [];
+
     const lines = files.map(file => {
       let path = '/' + file;
+      let dir = false;
 
       if (path === '/index.js' || path === '/index.jsx') {
         path = '/';
       } else if (path.endsWith('/index.js')) {
+        dir = true;
         path = path.substr(0, path.length - 9);
       } else if (path.endsWith('/index.jsx')) {
+        dir = true;
         path = path.substr(0, path.length - 10);
       } else if (path.endsWith('.js')) {
         path = path.substr(0, path.length - 3);
@@ -43,17 +45,19 @@ export default function(source) {
         return `  '${path}': () => require('./pages/${file}'),`;
       }
 
+      if (dir) {
+        let dirpath = path + '/';
+        subDirectories.push(`  '${dirpath}': () => new Promise(resolve => require(['./pages/${file}'], resolve)),`);
+      }
+
       return `  '${path}': () => new Promise(resolve => require(['./pages/${file}'], resolve)),`;
     });
 
-    var manualLines = manualRoutes.map(route => {
-      let path = route[0];
-      let file = route[1];
-      return `  '${path}': () => new Promise(resolve => require(['./pages/${file}'], resolve)),`;
-    });
+    // Add the sub directories to the list of routes
+    Array.prototype.push.apply(lines, subDirectories);
 
     if (lines.length) {
-      return callback(null, source.replace(' routes = {', ' routes = {\n' + lines.join('') + manualLines.join('')));
+      return callback(null, source.replace(' routes = {', ' routes = {\n' + lines.join('')));
     }
 
     return callback(new Error('Cannot find any routes.'));
