@@ -1,5 +1,5 @@
 {
-  "firebase": "blockstack-site",
+  "firebase": "blockstack",
   "public": "build",
   "ignore": [
     "firebase.json",
