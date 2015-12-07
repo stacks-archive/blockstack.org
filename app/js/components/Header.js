@@ -15,11 +15,6 @@ class Header extends React.Component {
         <nav className="navbar navbar-top col-sm-10 col-centered">
           <div className="container-fluid">
             <div className="navbar-header">
-              <button type="button" className="navbar-toggle collapsed">
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
-              </button>
               <Link className="navbar-brand" to="/">
                 <img src="/images/blockstack-logo.svg" />
               </Link>
