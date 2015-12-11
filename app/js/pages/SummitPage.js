@@ -1,18 +1,19 @@
 'use strict';
 
-import React            from 'react';
-import {Link}           from 'react-router';
-import DocumentTitle    from 'react-document-title';
-import Header           from '../components/Header';
+import React            from 'react'
+import {Link}           from 'react-router'
+import DocumentTitle    from 'react-document-title'
+
+import Header           from '../components/Header'
+import Footer           from '../components/Footer'
 
 const propTypes = {
-  currentUser: React.PropTypes.object
-};
+}
 
 class SummitPage extends React.Component {
 
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
@@ -340,13 +341,14 @@ class SummitPage extends React.Component {
               </div>
             </div>
           </section>
+          <Footer />
         </div>
       </DocumentTitle>
-    );
+    )
   }
 
 }
 
-SummitPage.propTypes = propTypes;
+SummitPage.propTypes = propTypes
 
-export default SummitPage;
+export default SummitPage

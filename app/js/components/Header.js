@@ -31,9 +31,6 @@ class Header extends React.Component {
                 <li>
                   <Link to="https://blockstack.slack.com/" target="_blank">Slack</Link>
                 </li>
-                <li className="btn btn-head">
-                  <Link to="http://chat.blockstack.org" target="_blank">Get Invited!</Link>
-                </li>
               </ul>
               <ul className="nav navbar-nav navbar-right">
                 <li>

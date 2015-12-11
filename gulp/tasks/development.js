@@ -10,6 +10,9 @@ gulp.task('dev', ['clean'], function(cb) {
   global.isProd = false;
 
   // Run all tasks once
-  return runSequence(['sass', 'copyStyles', 'imagemin', 'browserify', 'copyFonts', 'copyIndex', 'copyIcons'], 'watch', cb);
+  return runSequence([
+    'sass', 'copyStyles', 'imagemin', 'browserify', 'copyFonts',
+    'copyIndex', 'copyIcons'
+  ], 'watch', cb);
 
 });
