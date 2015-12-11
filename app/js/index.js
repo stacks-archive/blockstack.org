@@ -1,13 +1,13 @@
 'use strict';
 
-import React     from 'react';
-import ReactDOM  from 'react-dom';
+import React     from 'react'
+import ReactDOM  from 'react-dom'
 
-import Routes    from './Routes';
+import Routes    from './Routes'
 
 if ( process.env.NODE_ENV !== 'production' ) {
   // Enable React devtools
-  window.React = React;
+  window.React = React
 }
 
-ReactDOM.render(Routes, document.getElementById('app'));
+ReactDOM.render(Routes, document.getElementById('app'))
