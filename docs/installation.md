@@ -2,7 +2,7 @@
 
 This page is meant to walk you through installing and starting up Blockstore for the first time.
 
-**Requirements**
+### Requirements
 
 - [x] Acccess to a bitcoin node with a full transaction index (i.e. txindex is
 enabled). You need to be able to connect to a specific bitcoin node that stores
@@ -15,7 +15,7 @@ this feature enabled.
 as it is not always installed with Python)
 - [x] [Python pip](https://pypi.python.org/pypi/pip)
 
-**Installing with pip**
+### Installing with pip
 
 To install Blockstore from the (Python Package Index)[https://pypi.python.org/pypi], you can use the following command:
 
@@ -25,7 +25,7 @@ $ pip install blockstore
 
 This will install Blockstore, and all of its dependencies.
 
-**Installing from Source**
+### Installing from Source
 
 We use distutils to package Blockstore, and provide a setup.py script to pull in additional dependencies.  The package is built with:
 
@@ -39,7 +39,7 @@ To install blockstored and all of its dependent packages, run:
 $ sudo python setup.py install
 ```
 
-**Running Blockstore for the First Time**
+### Running Blockstore for the First Time
 
 When you run Blockstore for the first time, you will be prompted for some basic configuration information.  In particular, Blockstore will need to know how to connect to your bitcoin node, and how to connect to a Bitcoin API provider.  By default, Blockstore will connect to the Bitcoin node fleet that Onename maintains.
 
@@ -62,7 +62,7 @@ You will be prompted to select one of the four.  In the case of chain.com, Block
 
 Once you have chosen your API provider and have an API token, Blockstore will prompt you for them.  After you have entered all of the requisite information, Blockstore will save its configuration to `~/.blockstore/blockstore.ini` for future use.  
 
-***Example***
+#### Example
 
 Below is an example trace of running `blockstored` for the first time.  The user selected the default options for connecting to the Bitcoin network, and selected Chain.com as the API provider.  The API token is redacted.
 
@@ -96,7 +96,7 @@ api_key_id: *********
 api_key_secret: ********
 ```
 
-**Administrating Blockstore**
+### Administrating Blockstore
 
 Once you have configured blockstore, you will subsequently be able to start it with:
 

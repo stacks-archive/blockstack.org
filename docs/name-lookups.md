@@ -24,7 +24,7 @@ If the name was since updated, it will also have a `modified` field in addition 
 
 On error, the command will print out a JSON object with an `error` field.
 
-**Example**
+#### Example
 
 In this example, we look up the data associated with the name `judecn.id`.  The associated data just happens to be a JSON document in this case, but the data can be anything at all in practice.
 
@@ -100,7 +100,7 @@ On success, the command prints out a JSON object that contains all the informati
 
 If this command fails, it prints out a JSON object with an `error` key, as well as an associated error message.
 
-**Example**
+#### Example
 
 In this example, we look up the blockchain metadata for the name `judecn.id`
 

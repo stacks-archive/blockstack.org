@@ -16,13 +16,6 @@ class DocsPage extends React.Component {
 
   constructor(props) {
     super(props)
-
-    console.log(this.props)
-    console.log('constructor called')
-  }
-
-  componentDidMount() {
-    console.log('component mounted')
   }
 
   render() {
@@ -37,8 +30,9 @@ class DocsPage extends React.Component {
       {path: '/docs/installation',       name: 'Installation'},
       {path: '/docs/name-lookups',       name: 'Name Lookups'},
       {path: '/docs/name-registrations', name: 'Name Registrations'},
-      {path: '/docs/zonefile-updates',   name: 'Zonefile Updates'},
+      {path: '/docs/name-records',       name: 'Name Records'},
       {path: '/docs/name-transfers',     name: 'Name Transfers'},
+      {path: '/docs/name-renewals',      name: 'Name Renewals'},
       {path: '/docs/namespaces',         name: 'Namespaces'},
       {path: '/docs/name-pricing',       name: 'Name Pricing'},
 
@@ -48,10 +42,9 @@ class DocsPage extends React.Component {
       {path: '/docs/light-nodes',        name: 'Light Nodes'},
       {path: '/docs/bootstrapping',      name: 'Bootstrapping'},
       {path: '/docs/fork-detection',     name: 'Fork Detection'},
-      {path: '/docs/faq',                name: 'FAQ'}
+      {path: '/docs/troubleshooting',    name: 'Troubleshooting'},
+      {path: '/docs/faq',                name: 'FAQ'},
     ]
-
-    var _this = this
 
     return (
       <DocumentTitle title="Docs">
@@ -64,9 +57,9 @@ class DocsPage extends React.Component {
               <div className="col-md-3">
                 <div className="list-group">
                   {
-                    menuItems.map(function(menuItem) {
+                    menuItems.map((menuItem) => {
                       var className = 'list-group-item'
-                      if (menuItem.path === _this.props.location.pathname) {
+                      if (menuItem.path === this.props.location.pathname) {
                         className += ' active'
                       }
                       return (
