@@ -33,10 +33,22 @@ class DocsPage extends React.Component {
     var markdown = docs[pageName]
 
     var menuItems = [
-      {path: '/docs', name: 'Overview'},
-      {path: '/docs/blockstore', name: 'Blockstore'},
-      {path: '/docs/blockchain-profile', name: 'Blockchain Profile'},
-      {path: '/docs/blockchain-auth', name: 'Blockchain Auth'}
+      {path: '/docs',                    name: 'Overview'},
+      {path: '/docs/installation',       name: 'Installation'},
+      {path: '/docs/name-lookups',       name: 'Name Lookups'},
+      {path: '/docs/name-registrations', name: 'Name Registrations'},
+      {path: '/docs/zonefile-updates',   name: 'Zonefile Updates'},
+      {path: '/docs/name-transfers',     name: 'Name Transfers'},
+      {path: '/docs/namespaces',         name: 'Namespaces'},
+      {path: '/docs/name-pricing',       name: 'Name Pricing'},
+
+      {path: '/docs/virtual-blockchain', name: 'Virtual Blockchain'},
+      {path: '/docs/data-storage',       name: 'Data Storage'},
+      {path: '/docs/consensus-rules',    name: 'Consensus Rules'},
+      {path: '/docs/light-nodes',        name: 'Light Nodes'},
+      {path: '/docs/bootstrapping',      name: 'Bootstrapping'},
+      {path: '/docs/fork-detection',     name: 'Fork Detection'},
+      {path: '/docs/faq',                name: 'FAQ'}
     ]
 
     var _this = this
@@ -49,7 +61,7 @@ class DocsPage extends React.Component {
           </div>
           <section className="container-fluid sec-hook">
             <div className="bs-docs-featurette col-centered">
-              <div className="col-md-4">
+              <div className="col-md-3">
                 <div className="list-group">
                   {
                     menuItems.map(function(menuItem) {
@@ -69,7 +81,7 @@ class DocsPage extends React.Component {
                   }
                 </div>
               </div>
-              <div className="col-md-8">
+              <div className="col-md-9">
                 { markdown ?
                 <Markdown source={markdown} />
                 : null }

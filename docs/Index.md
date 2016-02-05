@@ -1,3 +1,3 @@
-# Blockstack Docs
+# Blockstack
 
-Here you'll find documentation on everything from blockstore to blockchain ID to blockchain auth.
+Blockstack provides decentralized DNS for blockchain applications.
