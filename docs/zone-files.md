@@ -1,4 +1,4 @@
-# Name Records
+# Zone Files
 
 Updating a profile from `blockstore-cli` is a matter of giving Blockstore the JSON document that represents the new profile information.  Blockstore will put the new profile hash into the blockchain, and upload the JSON document to the DHT and all other storage providers the `blockstore-cli` tool has been configured to use.
 

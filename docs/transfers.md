@@ -1,4 +1,4 @@
-# Name Transfers
+# Transfers
 
 This page shows how to transfer a name to a new owner.  You will need to have installed the [blockstore-client](https://github.com/blockstack/blockstore) package, and will need access to a full Blockstore node.
 

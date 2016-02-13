@@ -1,4 +1,4 @@
-# Name Renewals
+# Renewals
 
 In most namespaces, names have finite lifetimes and will eventually expire.  Exactly when is determined by the rules of the namespace, but a name is be said to have expired by a certain block number.  After this point, the name can be preordered and registered by someone else.  If the name owner wants to avoid this, the name must be *renewed*.
 

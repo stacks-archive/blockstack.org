@@ -1,4 +1,4 @@
-# Name Registrations
+# Registrations
 
 Registering a new name is a two-step process:  it must first be *preordered*, and then *registered.*  Only the principal who preordered the name can register it.  This is done as an anti-squatting measure, in order to stop someone from stealing a name while it is being propagated through the network.
 

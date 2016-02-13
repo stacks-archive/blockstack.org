@@ -1,6 +1,6 @@
 'use strict';
 
-import React            from 'react'
+import {Component}      from 'react'
 import {Link}           from 'react-router'
 import DocumentTitle    from 'react-document-title'
 
@@ -10,7 +10,7 @@ import Footer           from '../components/Footer'
 const propTypes = {
 }
 
-class SummitPage extends React.Component {
+class SummitPage extends Component {
 
   constructor(props) {
     super(props)

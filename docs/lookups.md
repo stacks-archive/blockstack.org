@@ -1,4 +1,4 @@
-# Name Lookups
+# Lookups
 
 This page describes how to look up information on a name.  You will need to have installed [blockstore-client](https://github.com/blockstack/blockstore-client), and have access to a full Blockstore node.
 

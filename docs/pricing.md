@@ -1,4 +1,4 @@
-# Name Pricing
+# Pricing
 
 Namespaces exist to set fees and lifetimes for the sets of names they contain.  Namespace prices are characterized by orders of magnitude, determined by the namespace's creator.  To price names, each namespace defines a set of 16 price "buckets" that characterize the order of magnitude of the price of of 1-character names, 2-character names, etc., with the 16th bucket serving as a catch-all for names with at least 16 characters.  The absense of vowels and the presence of non-alpha characters add multiplicative discounts to the name's price.  The price is calculated as follows:
 
