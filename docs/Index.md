@@ -8,8 +8,6 @@ In this registry, each of the names has an owner, represented by a cryptographic
 
 As with the traditional domain name system, the Blockstack domain name system allows users to lookup names, register, renew, and transfer names, as well as manage name resolution information.
 
-## Blockstack DNS vs. ICANN DNS
-
 Blockstack DNS differs in a few fundamental ways from traditional DNS:
 
 1. While the traditional domain name system is run by an international organization called ICANN, the Blockstack name registry is maintained in a completely decentralized way. It is run by everyone and it is controlled by no one, giving Blockstack DNS incredible and unprecedented technical and sociopolitical resilience.

@@ -69,7 +69,9 @@ class DocsPage extends Component {
               </div>
               <div className="col-md-9">
                 { markdown ?
-                <Markdown source={markdown} />
+                <Markdown>
+                  {markdown}
+                </Markdown>
                 : null }
               </div>
             </div>
