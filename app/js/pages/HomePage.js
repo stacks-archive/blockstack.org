@@ -1,6 +1,6 @@
 'use strict';
 
-import React         from 'react'
+import {Component}   from 'react'
 import {Link}        from 'react-router'
 import DocumentTitle from 'react-document-title'
 
@@ -10,7 +10,7 @@ import Footer        from '../components/Footer'
 const propTypes = {
 }
 
-class HomePage extends React.Component {
+class HomePage extends Component {
 
   constructor(props) {
     super(props)
@@ -18,7 +18,7 @@ class HomePage extends React.Component {
 
   render() {
     return (
-      <DocumentTitle title="Home">
+      <DocumentTitle title="Blockstack - Decentralized DNS for Blockchain Applications">
         <div>
           <div className="container-fluid col-centered head-wrap">
             <Header />

@@ -1,6 +1,6 @@
 'use strict';
 
-import React            from 'react'
+import {Component}      from 'react'
 import {Link}           from 'react-router'
 import DocumentTitle    from 'react-document-title'
 
@@ -8,9 +8,9 @@ import Header           from '../components/Header'
 import Footer           from '../components/Footer'
 
 const propTypes = {
-};
+}
 
-class AboutPage extends React.Component {
+class AboutPage extends Component {
 
   constructor(props) {
     super(props);
@@ -18,7 +18,7 @@ class AboutPage extends React.Component {
 
   render() {
     return (
-      <DocumentTitle title="About">
+      <DocumentTitle title="Blockstack - About">
         <div>
           <div className="container-fluid col-centered about-head-wrap">
             <Header />

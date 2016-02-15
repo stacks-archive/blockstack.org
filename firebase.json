@@ -2,13 +2,13 @@
   "firebase": "blockstack",
   "public": "build",
   "ignore": [
-    "firebase.json",
     "**/.*",
-    "**/node_modules/**",
-    "./unused/**",
     "./__tests__/**",
     "./app/**",
-    "./gulp/**"
+    "./gulp/**",
+    "**/node_modules/**",
+    "./unused/**",
+    "firebase.json"
   ],
   "rewrites": [{
     "source": "**",

@@ -1,24 +1,24 @@
 'use strict';
 
-import React         from 'react';
-import {Link}        from 'react-router';
-import DocumentTitle from 'react-document-title';
+import {Component}   from 'react'
+import {Link}        from 'react-router'
+import DocumentTitle from 'react-document-title'
 
-import Header        from '../components/Header';
+import Header        from '../components/Header'
 import Footer        from '../components/Footer'
 
 const propTypes = {
-};
+}
 
-class NotFoundPage extends React.Component {
+class NotFoundPage extends Component {
 
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
     return (
-      <DocumentTitle title="Page Not Found">
+      <DocumentTitle title="Blockstack - Page Not Found">
         <div className="container-fluid col-centered about-head-wrap">
           <Header />
         </div>
@@ -31,7 +31,8 @@ class NotFoundPage extends React.Component {
                     Page Does not Exist!
                   </h2>
                 </hgroup>
-                <a href="/" className="btn btn-lg btn-special" role="button" onClick={Link.handleClick}>
+                <a href="/" className="btn btn-lg btn-special" role="button"
+                    onClick={Link.handleClick}>
                   Go Home
                 </a>
               </div>
@@ -45,6 +46,6 @@ class NotFoundPage extends React.Component {
 
 }
 
-NotFoundPage.propTypes = propTypes;
+NotFoundPage.propTypes = propTypes
 
-export default NotFoundPage;
+export default NotFoundPage
