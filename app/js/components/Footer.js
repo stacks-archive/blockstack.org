@@ -1,12 +1,12 @@
-'use strict';
+'use strict'
 
-import React  from 'react';
-import {Link} from 'react-router';
+import {Component}  from 'react'
+import {Link} from 'react-router'
 
-class Footer extends React.Component{
+class Footer extends Component{
 
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
@@ -124,9 +124,9 @@ class Footer extends React.Component{
             </p>
         </div>
       </footer>
-    );
+    )
   }
 
 }
 
-export default Footer;
+export default Footer

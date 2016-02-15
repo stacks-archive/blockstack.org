@@ -136,6 +136,7 @@ footer > li {list-style:none;}
 @media (min-width:768px) {
 
   /* Globals */
+  h1 {font-size:40px; line-height:48px;}
   h2 {font-size:30px; line-height:38px;}
   h3 {font-size:24px; margin-bottom:15px;}
   .hero {padding-top:0;}
@@ -187,6 +188,7 @@ footer > li {list-style:none;}
 @media (min-width:992px) {
 
   /* Globals */
+  h1 {font-size:40px; line-height:48px;}
   h2 {font-size:32px; line-height:40px;}
   .nav-animation-element {max-width:1170px;}
   .bs-docs-featurette {max-width:1170px;}

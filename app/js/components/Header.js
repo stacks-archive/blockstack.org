@@ -1,12 +1,12 @@
-'use strict';
+'use strict'
 
-import React  from 'react';
-import {Link} from 'react-router';
+import {Component}  from 'react'
+import {Link} from 'react-router'
 
-class Header extends React.Component {
+class Header extends Component {
 
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
@@ -46,9 +46,9 @@ class Header extends React.Component {
           </div>
         </nav>
       </header>
-    );
+    )
   }
 
 }
 
-export default Header;
+export default Header
