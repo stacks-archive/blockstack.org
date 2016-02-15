@@ -27,11 +27,6 @@ class HomePage extends Component {
                 <section className="hero">
                   <div>
                     <div className="col-xs-11 col-sm-10">
-                      <div className="hero-logo hidden-sm hidden-md hidden-lg">
-                        <Link to="/">
-                          <img src="/images/blockstack-logo.svg"/>
-                        </Link>
-                      </div>
                       <h1 className="hero-head">
                         Blockstack.<br/>The Open Source<br/>Blockchain Community
                       </h1>
