@@ -18,7 +18,7 @@ class HomePage extends React.Component {
 
   render() {
     return (
-      <DocumentTitle title="Home">
+      <DocumentTitle title="Blockstack - Decentralized DNS for Blockchain Applications">
         <div>
           <div className="container-fluid col-centered head-wrap">
             <Header />

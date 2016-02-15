@@ -18,7 +18,7 @@ class NotFoundPage extends React.Component {
 
   render() {
     return (
-      <DocumentTitle title="Page Not Found">
+      <DocumentTitle title="Blockstack - Page Not Found">
         <div className="container-fluid col-centered about-head-wrap">
           <Header />
         </div>

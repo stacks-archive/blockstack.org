@@ -18,7 +18,7 @@ class SummitPage extends React.Component {
 
   render() {
     return (
-      <DocumentTitle title="Blockstack Summit">
+      <DocumentTitle title="Blockstack - Blockstack Summit">
         <div>
          <div className="container-fluid col-centered summit-head-wrap">
             <Header />

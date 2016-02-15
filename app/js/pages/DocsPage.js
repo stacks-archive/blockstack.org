@@ -42,7 +42,7 @@ class DocsPage extends React.Component {
     var _this = this
 
     return (
-      <DocumentTitle title="Docs">
+      <DocumentTitle title="Blockstack - Documentation">
         <div>
           <div className="container-fluid col-centered about-head-wrap">
             <Header />
