@@ -11,7 +11,7 @@ h4 {font-size:15px; margin:20px 0; font-weight:400;}
 .col-centered {float:none; margin:0 auto;}
 a {color:rgba(131,28,168,1); font-weight:500;}
 a:hover {color:rgba(144,51,177,1);}
-p {font-size: 14px; line-height: 28px;}
+p, ul, li {font-size: 14px; line-height: 28px;}
 
 /* Typography */
 h1.hero-head {font-size:28px; line-height:36px; margin-bottom:15px; font-weight:400;}
@@ -155,7 +155,7 @@ a.list-group-item, a.list-group-item:focus
       /* Force color to inherit for custom content */
 .list-group-item-heading, .list-group-item-heading > small, .list-group-item-heading > .small {color: inherit;}
 .list-group-shift {margin-left: -15px;}
-pre {background-color: rgba(32,35,39,1); border-color: rgba(32,35,39,1); color: #fff; padding: 20px;}
+pre {font-size: 12px; margin-top: 30px; margin-bottom: 30px; background-color: rgba(32,35,39,1); border-color: rgba(32,35,39,1); color: #fff; padding: 30px 20px;}
 
 
 /* Media queries */
@@ -239,6 +239,7 @@ pre {background-color: rgba(32,35,39,1); border-color: rgba(32,35,39,1); color: 
         /* Force color to inherit for custom content */
   .list-group-item-heading, .list-group-item-heading > small, .list-group-item-heading > .small {color: inherit;}
   .list-group-shift {margin-left: -30px;}
+  .docs-extend {min-height: 70vh;}
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -246,8 +247,8 @@ pre {background-color: rgba(32,35,39,1); border-color: rgba(32,35,39,1); color: 
 
   /* Globals */
   h1 {font-size:42px; line-height:38px; font-weight:400;}
-  h2 {font-size:32px; line-height:40px; font-weight:400;}
-  h3 {font-size:24px; margin-bottom:15px; font-weight:400;}
+  h2 {font-size:32px; line-height:40px; font-weight:400; margin-top: 25px; margin-bottom: 15px;}
+  h3 {font-size:24px; margin-bottom:15px; font-weight:400; margin-top: 25px; margin-bottom: 15px;}
   h4 {font-size:17px; margin:20px 0; font-weight:400;}
   
   .nav-animation-element {max-width:1170px;}

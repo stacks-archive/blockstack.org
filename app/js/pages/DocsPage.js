@@ -47,7 +47,7 @@ class DocsPage extends React.Component {
           <div className="container-fluid col-centered about-head-wrap">
             <Header />
           </div>
-          <section className="container-fluid sec-hook">
+          <section className="container-fluid sec-hook docs-extend">
             <div className="bs-docs-featurette col-centered">
               <div className="col-sm-10 col-centered">
                 <div className="col-sm-4 list-group-shift">
