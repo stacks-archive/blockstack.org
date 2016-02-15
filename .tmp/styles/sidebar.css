@@ -1,0 +1,20 @@
+/* Sidebar Transitions - Sidebar */
+html, body {height:100%; margin:0; -webkit-overflow-scrolling: touch;}
+.st-content {background:none;}
+.st-container, {min-height:100%;}
+.st-inner-container {margin-right:auto; margin-left:auto; height:100%;}
+.no-csstransforms3d .st-pusher, .no-js .st-pusher { padding-left:0px;}
+.st-menu ul {margin-bottom:10px;}
+.st-menu {background-color:rgba(33,33,33,1); width:256px; text-align:left;}
+.st-menu ul li a:hover, .st-menu ul li:first-child a:focus {color:rgba(255,255,255,1); text-decoration:none; background-color:rgba(255,255,255,.1);transition:none;}
+.st-menu ul li a, .st-menu ul li:first-child a {box-shadow:none; line-height:20px; color:#fff; display:block; padding:8px 20px; text-transform:none; font-size:13px;}
+.st-menu ul li a {letter-spacing:0;}
+.st-menu h2 {color:rgba(255,255,255,0.75); font-size:17px; margin:10px 0px;}
+.st-effect-3.st-menu-open .st-pusher {-webkit-transform:translate3d(256px,0,0);transform:translate3d(256px,0,0);}
+.menu-section-list {padding:0; margin:10px 0!important; list-style:none;}
+.menu-section {margin:20px 0;}
+.menu a {color:rgba(255,255,255,1);}
+.menu-header {border-bottom:1px solid #2a2d2f; padding:16px 20px 16px 19px; background-size:32px;}
+.menu-section-title {text-transform:uppercase; color:#85888d; font-size:10px; letter-spacing:1px; padding:0 20px; margin:0;}
+.menu-header-title {list-style:none;}
+.githublink-sidebar {margin-top:3px;}

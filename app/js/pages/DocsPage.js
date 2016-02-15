@@ -40,7 +40,7 @@ class DocsPage extends Component {
     ]
 
     return (
-      <DocumentTitle title="Docs">
+      <DocumentTitle title="Blockstack - Documentation">
         <div>
           <div className="container-fluid col-centered about-head-wrap">
             <Header />

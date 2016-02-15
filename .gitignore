@@ -29,3 +29,9 @@ __coverage__
 .elasticbeanstalk/
 
 unused
+
+# Divshot
+.divshot-cache
+
+# Dist
+dist

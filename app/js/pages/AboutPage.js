@@ -18,7 +18,7 @@ class AboutPage extends Component {
 
   render() {
     return (
-      <DocumentTitle title="About">
+      <DocumentTitle title="Blockstack - About">
         <div>
           <div className="container-fluid col-centered about-head-wrap">
             <Header />
