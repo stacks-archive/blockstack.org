@@ -49,30 +49,32 @@ class DocsPage extends React.Component {
           </div>
           <section className="container-fluid sec-hook">
             <div className="bs-docs-featurette col-centered">
-              <div className="col-md-4">
-                <div className="list-group">
-                  {
-                    menuItems.map(function(menuItem) {
-                      var className = 'list-group-item'
-                      if (menuItem.path === _this.props.location.pathname) {
-                        className += ' active'
-                      }
-                      return (
-                        <Link
-                          key={menuItem.path}
-                          to={menuItem.path}
-                          className={className}>
-                          {menuItem.name}
-                        </Link>
-                      )
-                    })
-                  }
+              <div className="col-sm-10 col-centered">
+                <div className="col-sm-4 list-group-shift">
+                  <div className="list-group">
+                    {
+                      menuItems.map(function(menuItem) {
+                        var className = 'list-group-item'
+                        if (menuItem.path === _this.props.location.pathname) {
+                          className += ' active'
+                        }
+                        return (
+                          <Link
+                            key={menuItem.path}
+                            to={menuItem.path}
+                            className={className}>
+                            {menuItem.name}
+                          </Link>
+                        )
+                      })
+                    }
+                  </div>
                 </div>
-              </div>
-              <div className="col-md-8">
-                { markdown ?
-                <Markdown source={markdown} />
-                : null }
+                <div className="col-sm-8">
+                  { markdown ?
+                  <Markdown source={markdown} />
+                  : null }
+                </div>
               </div>
             </div>
           </section>

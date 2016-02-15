@@ -151,6 +151,11 @@ footer > li {list-style:none;}
 .hero-comm-des {margin-bottom:10px;}
 .hall {margin-bottom:35px;}
 
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+.list-group-shift {margin-left: -30px;}
 
 
 /* Media queries */
@@ -257,7 +262,6 @@ footer > li {list-style:none;}
   .midfoot, .base-push-left {padding-left:0;}
   .social {margin-top:-8px;}
   .foot-logo {max-width:190px;}
-
 
 }
 
