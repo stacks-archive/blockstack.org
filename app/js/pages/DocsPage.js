@@ -3,11 +3,22 @@
 import { Component }    from 'react'
 import {Link}           from 'react-router'
 import DocumentTitle    from 'react-document-title'
-import Markdown         from 'react-remarkable'
+import marked           from 'marked'
 
 import Header           from '../components/Header'
 import Footer           from '../components/Footer'
 import docs             from '../../docs.json'
+
+marked.setOptions({
+  renderer: new marked.Renderer(),
+  gfm: true,
+  tables: true,
+  breaks: false,
+  pedantic: false,
+  sanitize: false,
+  smartLists: true,
+  smartypants: false
+})
 
 const propTypes = {
 }
@@ -16,6 +27,8 @@ class DocsPage extends Component {
 
   constructor(props) {
     super(props)
+
+    this.state = {}
   }
 
   render() {
@@ -24,6 +37,11 @@ class DocsPage extends Component {
       pageName = this.props.routeParams.docSection
     }
     let markdown = docs[pageName]
+    let createMarkup = function() {
+      return {
+        __html: marked(markdown)
+      }
+    }
 
     let menuItems = [
       {path: '/docs',                    name: 'Overview'},
@@ -68,10 +86,9 @@ class DocsPage extends Component {
                 </div>
               </div>
               <div className="col-md-9">
-                { markdown ?
-                <Markdown>
-                  {markdown}
-                </Markdown>
+                { createMarkup ?
+                  <div dangerouslySetInnerHTML={createMarkup()}>
+                  </div>
                 : null }
               </div>
             </div>

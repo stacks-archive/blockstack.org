@@ -30,7 +30,7 @@ Linux
 
 See the installation docs for more:
 
-[Installation](/docs/installation)
+<a href="/docs/installation" class="btn btn-primary">Installation</a>
 
 ## Lookups
 
@@ -56,7 +56,7 @@ You should get a response like this:
       }
     }
 
-[Lookups](/docs/lookups)
+<a href="/docs/lookups" class="btn btn-primary">Lookups</a>
 
 ## Registrations
 
@@ -75,12 +75,20 @@ If the name hasn’t been registered yet, you’ll get a confirmation that your 
 
 After a few hours, your registration should go through and you’ll be able to update your DNS records for the name.
 
-[Registrations](/docs/registrations)
+<a href="/docs/registrations" class="btn btn-primary">Registrations</a>
 
 ## More
 
 See the usage section for more information, as well as all the other articles in the sidebar.
 
-If you’re an application developer, check out the app developer guide; if you’re a systems developer, check out the contributor guide; and if you just want to see how Blockstack works in deeper detail, head over to the technical writeup section.
+If you’re an application developer, check out the app developer guide:
+
+<a href="/docs/apps" class="btn btn-primary">App Developer Guide</a>
+
+If you’re a systems developer, check out the contributor guide:
+
+<a href="/docs/contributions" class="btn btn-primary">Contributor Guide</a>
+
+If you just want to see how Blockstack works in deeper detail, head over to the technical writeup section.
 
 Enjoy using Blockstack and we can’t wait to see what you build on it and where it takes you.
