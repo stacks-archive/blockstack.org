@@ -97,32 +97,6 @@ h2.action-title {font-size:30px; line-height:42px; margin-bottom:35px;}
 .table-wrap {max-width:800px;}
 .table-striped > thead > tr > th {text-align:center;}
 
-/* List group */
-
-.list-group-item {position: relative; display: block; padding: .75rem 1.25rem; margin-bottom: 1px; background-color: transparent; border: 0px solid #949494;}
-/* Round the first and last items */
-.list-group-item::first-child {border-radius: 0;}
-.list-group-item::last-child {margin-bottom: 0; border-radius: 0;}
-
-a.list-group-item, a.list-group-item:focus
-{width: 100%; color: rgba(51,51,51,1); text-align: inherit;}
-  /* Hover state */
-  a.list-group-item:hover, a.list-group-item:focus, button.list-group-item:hover, button.list-group-item:focus {color: rgba(131,28,168,1); text-decoration: none; background-color: transparent;}
-
-/* Active class on item itself, not parent */
-  .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
-
-      z-index: 2; /* Place active items above their siblings for proper border styling */
-      color: rgba(131,28,168,1);
-      background-color: transparent;
-      background-repeat: no-repeat;
-      background-position: center left;
-      border-color: 0;}
-
-      /* Force color to inherit for custom content */
-.list-group-item-heading, .list-group-item-heading > small, .list-group-item-heading > .small {color: inherit;}
-
-
 /* Footer */
 footer {background-color:rgba(26,26,26,1); padding-top:60px; padding-bottom:80px; color:rgba(255,255,255,1); font-size:13px;}
 footer > li {list-style:none;}
@@ -155,7 +129,33 @@ footer > li {list-style:none;}
    padding: 0 !important;
    margin: 0 !important;
 }
-.list-group-shift {margin-left: -30px;}
+
+/* Docs */
+/* List group */
+.list-group-item {position: relative; display: block; padding: .75rem 1.25rem; margin-bottom: 1px; background-color: transparent; border: 0px solid #949494;}
+/* Round the first and last items */
+.list-group-item:first-child {margin-top: 30px;border-radius: 0;}
+.list-group-item:last-child {margin-bottom: 40px; border-radius: 0;}
+
+a.list-group-item, a.list-group-item:focus
+{width: 100%; color: rgba(51,51,51,1); text-align: inherit;}
+  /* Hover state */
+  a.list-group-item:hover, a.list-group-item:focus, button.list-group-item:hover, button.list-group-item:focus {color: rgba(131,28,168,1); text-decoration: none; background-color: transparent;}
+
+/* Active class on item itself, not parent */
+  .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+
+      z-index: 2; /* Place active items above their siblings for proper border styling */
+      color: #ffffff;
+      background-color: rgba(131,28,168,1);
+      background-repeat: no-repeat;
+      background-position: center left;
+      border-color: 0;}
+
+      /* Force color to inherit for custom content */
+.list-group-item-heading, .list-group-item-heading > small, .list-group-item-heading > .small {color: inherit;}
+.list-group-shift {margin-left: -15px;}
+pre {background-color: rgba(32,35,39,1); border-color: rgba(32,35,39,1); color: #fff; padding: 20px;}
 
 
 /* Media queries */
@@ -213,6 +213,32 @@ footer > li {list-style:none;}
   .mobbanner {max-width:none;}
   .mobbanner {max-width:180px;}
   .topic {margin-bottom:5px;}
+
+  /* Docs */
+  /* List group */
+  .list-group-item {position: relative; display: block; padding: .75rem 1.25rem; margin-bottom: 1px; background-color: transparent; border: 0px solid #949494;}
+  /* Round the first and last items */
+  .list-group-item:first-child {margin-top: 0; border-radius: 0;}
+  .list-group-item:last-child {margin-bottom: 0; border-radius: 0;}
+  
+  a.list-group-item, a.list-group-item:focus
+  {width: 100%; color: rgba(51,51,51,1); text-align: inherit;}
+    /* Hover state */
+    a.list-group-item:hover, a.list-group-item:focus, button.list-group-item:hover, button.list-group-item:focus {color: rgba(131,28,168,1); text-decoration: none; background-color: transparent;}
+  
+  /* Active class on item itself, not parent */
+    .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+  
+        z-index: 2; /* Place active items above their siblings for proper border styling */
+        color: rgba(131,28,168,1);
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center left;
+        border-color: 0;}
+  
+        /* Force color to inherit for custom content */
+  .list-group-item-heading, .list-group-item-heading > small, .list-group-item-heading > .small {color: inherit;}
+  .list-group-shift {margin-left: -30px;}
 }
 
 /* Medium devices (desktops, 992px and up) */
