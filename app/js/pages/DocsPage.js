@@ -1,6 +1,6 @@
-'use strict';
+'use strict'
 
-import { Component }    from 'react'
+import {Component}      from 'react'
 import {Link}           from 'react-router'
 import DocumentTitle    from 'react-document-title'
 import marked           from 'marked'
@@ -87,29 +87,35 @@ class DocsPage extends Component {
                 <div style={{ marginTop: '40px' }}>
                   <div className="row">
                     <div className="col-md-4">
-                      <CardLink href="/docs/installation" title="Installation" body="Get started by installing and configuring Blockstack."
+                      <CardLink href="/docs/installation" title="Installation"
+                        body="Get started by installing and configuring Blockstack."
                         imageSrc="https://images.unsplash.com/photo-1454165205744-3b78555e5572?crop=entropy&fit=crop&fm=jpg&h=1250&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1650" />
                     </div>
                     <div className="col-md-4">
-                      <CardLink href="/docs/usage" title="Usage" body="Explore the basic usage of Blockstack, including looking up and registering names."
+                      <CardLink href="/docs/usage" title="Usage"
+                        body="Explore the basic usage of Blockstack, including looking up and registering names."
                         imageSrc="https://images.unsplash.com/photo-1454165205744-3b78555e5572?crop=entropy&fit=crop&fm=jpg&h=1250&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1650" />
                     </div>
                     <div className="col-md-4">
-                      <CardLink href="/docs/app-developer-guide" title="App Developer Guide" body="Explore the possibilities of apps you can build on the Blockstack system."
+                      <CardLink href="/docs/app-developer-guide" title="App Developer Guide"
+                        body="Explore the possibilities of apps you can build on the Blockstack system."
                         imageSrc="https://images.unsplash.com/photo-1454165205744-3b78555e5572?crop=entropy&fit=crop&fm=jpg&h=1250&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1650" />
                     </div>
                   </div>
                   <div className="row">
                     <div className="col-md-4">
-                      <CardLink href="/docs/namespaces" title="Namespaces" body="Learn how namespaces work and how you can create your own."
+                      <CardLink href="/docs/namespaces" title="Namespaces"
+                        body="Learn how namespaces work and how you can create your own."
                         imageSrc="https://images.unsplash.com/photo-1454165205744-3b78555e5572?crop=entropy&fit=crop&fm=jpg&h=1250&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1650" />
                     </div>
                     <div className="col-md-4">
-                      <CardLink href="/docs/contributor-guide" title="Contributor Guide" body="Find out how you can contribute to Blockstack development."
+                      <CardLink href="/docs/contributor-guide" title="Contributor Guide"
+                        body="Find out how you can contribute to Blockstack development."
                         imageSrc="https://images.unsplash.com/photo-1454165205744-3b78555e5572?crop=entropy&fit=crop&fm=jpg&h=1250&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1650" />
                     </div>
                     <div className="col-md-4">
-                      <CardLink href="/docs/technology" title="Technology" body="Learn about how Blockstack works under the hood."
+                      <CardLink href="/docs/technology" title="Technology"
+                        body="Learn about how Blockstack works under the hood."
                         imageSrc="https://images.unsplash.com/photo-1454165205744-3b78555e5572?crop=entropy&fit=crop&fm=jpg&h=1250&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1650" />
                     </div>
                   </div>

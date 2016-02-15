@@ -60,3 +60,9 @@ class Header extends Component {
 }
 
 export default Header
+
+/*
+<div className="pull-left">
+  <i className="fa fa-github github-header"></i>
+</div>
+*/

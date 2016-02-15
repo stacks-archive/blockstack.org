@@ -3,7 +3,7 @@
 import {Component}  from 'react'
 import {Link} from 'react-router'
 
-class Footer extends Component{
+class Footer extends Component {
 
   constructor(props) {
     super(props)

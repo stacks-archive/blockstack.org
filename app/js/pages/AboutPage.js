@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 import {Component}      from 'react'
 import {Link}           from 'react-router'
@@ -115,11 +115,11 @@ class AboutPage extends Component {
           <Footer />
         </div>
       </DocumentTitle>
-    );
+    )
   }
 
 }
 
-AboutPage.propTypes = propTypes;
+AboutPage.propTypes = propTypes
 
-export default AboutPage;
+export default AboutPage
