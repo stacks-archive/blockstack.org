@@ -147,6 +147,45 @@ export default DocsPage
       {path: '/docs/faq',                name: 'FAQ'}
     ]
 
+<<<<<<< HEAD
+=======
+    return (
+      <DocumentTitle title="Blockstack - Documentation">
+        <div>
+          <div className="container-fluid col-centered about-head-wrap">
+            <Header />
+          </div>
+          <section className="container-fluid sec-hook docs-extend">
+            <div className="bs-docs-featurette col-centered">
+<<<<<<< HEAD
+              <div className="col-sm-10 col-centered">
+                <div className="col-sm-4 list-group-shift">
+                  <div className="list-group">
+                    {
+                      menuItems.map(function(menuItem) {
+                        var className = 'list-group-item'
+                        if (menuItem.path === _this.props.location.pathname) {
+                          className += ' active'
+                        }
+                        return (
+                          <Link
+                            key={menuItem.path}
+                            to={menuItem.path}
+                            className={className}>
+                            {menuItem.name}
+                          </Link>
+                        )
+                      })
+                    }
+                  </div>
+                </div>
+                <div className="col-sm-8">
+                  { markdown ?
+                  <Markdown source={markdown} />
+                  : null }
+                </div>
+=======
+>>>>>>> 2dc55711e98b837aba81737a1954ab2d7cfbcaad
               <div className="col-md-3">
                 <div className="list-group">
                   {
@@ -167,6 +206,29 @@ export default DocsPage
                   }
                 </div>
               </div>
+<<<<<<< HEAD
+=======
+              <div className="col-md-9">
+                { createMarkup ?
+                  <div dangerouslySetInnerHTML={createMarkup()}>
+                  </div>
+                : null }
+>>>>>>> 1e22e48234cb948c886d131cb2a14fac455c97c1
+              </div>
+            </div>
+          </section>
+          <Footer />
+        </div>
+      </DocumentTitle>
+    )
+  }
+
+}
+
+DocsPage.propTypes = propTypes
+
+export default DocsPage
+>>>>>>> 2dc55711e98b837aba81737a1954ab2d7cfbcaad
 
 let menuItems2 = [
   {path: '/docs/virtual-blockchain', name: 'Virtual Blockchain'},
