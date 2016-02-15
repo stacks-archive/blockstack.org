@@ -26,11 +26,6 @@ class AboutPage extends Component {
               <section className="hero col-centered">
                 <div>
                   <div className="col-xs-11 col-sm-10 col-sm-offset-1">
-                    <div className="hero-logo hidden-sm hidden-md hidden-lg">
-                      <Link to="/">
-                        <img src="/images/blockstack-logo.svg"/>
-                      </Link>
-                    </div>
                     <h1 className="hero-head about-head">What is Blockstack?</h1>
                   </div>
                   <div className="img"></div>

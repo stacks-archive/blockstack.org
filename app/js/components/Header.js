@@ -20,25 +20,33 @@ class Header extends Component {
               </Link>
             </div>
                 
-            <div className="collapse navbar-collapse"> 
+            <div className="collapse navbar-toggleable-xs"> 
               <ul className="nav navbar-nav nav-btn-head">
-                <li>
-                  <Link to="/about">About</Link>
+                <li className="nav-item">
+                  <Link to="/docs" className="nav-link">Docs</Link>
                 </li>
-                <li>
-                  <Link to="http://forum.blockstack.org" target="_blank">Forum</Link>
-                </li>
-                <li>
-                  <Link to="https://blockstack.slack.com/" target="_blank">Slack</Link>
+                <li className="nav-item">
+                  <Link to="/about" className="nav-link">About</Link>
                 </li>
               </ul>
-              <ul className="nav navbar-nav navbar-right">
-                <li>
-                  <Link to="https://github.com/blockstack" target="_blank">
-                    <div className="pull-left">
-                      <i className="fa fa-github github-header"></i>
-                    </div>
+
+              <ul className="nav navbar-nav pull-xs-right">
+                <li className="nav-item">
+                  <Link to="https://github.com/blockstack" className="nav-link"
+                    target="_blank">
                     <div className="pull-right gitword">Github</div>
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="http://forum.blockstack.org" className="nav-link"
+                    target="_blank">
+                    Forum
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="https://blockstack.slack.com/" className="nav-link"
+                    target="_blank">
+                    Slack
                   </Link>
                 </li>
               </ul>
