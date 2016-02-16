@@ -28,17 +28,15 @@ class HomePage extends Component {
                   <div>
                     <div className="col-xs-11 col-sm-10">
                       <h1 className="hero-head">
-                        Blockstack.<br/>The Open Source<br/>Blockchain Community
+                        Decentralized DNS<br/>for Blockchain Applications
                       </h1>
                       <p className="lead">
-                        Welcoming all developers to join the Blockstack community. Our mission is to create common infrastructure for developing decentralized applications.
+                        Blockstack gives you fast, secure, and easy-to-use DNS, PKI, and identity management on the blockchain.
                       </p>
                       <p>
-                        <Link to="http://forum.blockstack.org" target="_blank" className="btn btn-lg btn-primary-hero hidden-xs hidden-sm" role="button">
-                          Join the Blockstack Forum
-                        </Link>
-                        <Link to="http://chat.blockstack.org" target="_blank" className="btn btn-lg btn-special-rev" role="button">
-                          Get invited to Slack!
+                        <Link to="/docs" role="button"
+                          className="btn btn-lg btn-primary-hero hidden-xs hidden-sm">
+                          Get Started
                         </Link>
                       </p>
                     </div>
