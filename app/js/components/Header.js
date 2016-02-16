@@ -11,50 +11,46 @@ class Header extends Component {
 
   render() {
     return (
-      <header className="nav-animation-element col-centered">
-        <nav className="navbar navbar-top col-sm-10 col-centered">
-          <div className="container-fluid">
-            <div className="navbar-header">
-              <Link className="navbar-brand" to="/">
-                <img src="/images/blockstack-logo.svg" />
-              </Link>
-            </div>
-                
-            <div className="collapse navbar-toggleable-xs"> 
-              <ul className="nav navbar-nav nav-btn-head">
-                <li className="nav-item">
-                  <Link to="/docs" className="nav-link">Docs</Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/docs/installation" className="nav-link">Installation</Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/docs/usage" className="nav-link">Usage</Link>
-                </li>
-              </ul>
-
-              <ul className="nav navbar-nav pull-xs-right">
-                <li className="nav-item">
-                  <Link to="https://github.com/blockstack" className="nav-link"
-                    target="_blank">
-                    <div className="pull-right gitword">Github</div>
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="http://forum.blockstack.org" className="nav-link"
-                    target="_blank">
-                    Forum
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="https://blockstack.slack.com/" className="nav-link"
-                    target="_blank">
-                    Slack
-                  </Link>
-                </li>
-              </ul>
-            </div>
+      <header className="container">
+        <nav className="navbar">
+          <div>
+            <Link className="navbar-brand" to="/">
+              <img src="/images/blockstack-logo.svg" />
+            </Link>
           </div>
+                
+          <ul className="nav navbar-nav nav-btn-head">
+            <li className="nav-item">
+              <Link to="/docs" className="nav-link">Docs</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/docs/installation" className="nav-link">Installation</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/docs/usage" className="nav-link">Usage</Link>
+            </li>
+          </ul>
+
+          <ul className="nav navbar-nav pull-xs-right">
+            <li className="nav-item">
+              <Link to="https://github.com/blockstack" className="nav-link"
+                target="_blank">
+                <div className="pull-right gitword">Github</div>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="http://forum.blockstack.org" className="nav-link"
+                target="_blank">
+                Forum
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="https://blockstack.slack.com/" className="nav-link"
+                target="_blank">
+                Slack
+              </Link>
+            </li>
+          </ul>
         </nav>
       </header>
     )
