@@ -9,6 +9,7 @@ import HomePage                    from './pages/HomePage'
 import AboutPage                   from './pages/AboutPage'
 import SummitPage                  from './pages/SummitPage'
 import DocsPage                    from './pages/DocsPage'
+import DocsIndexPage               from './pages/DocsIndexPage'
 import NotFoundPage                from './pages/NotFoundPage'
 import docs                        from '../docs.json'
 
@@ -21,7 +22,7 @@ export default (
       <Route path="/" component={HomePage} />
       <Route path="/about" component={AboutPage} />
       <Route path="/summit" component={SummitPage} />
-      <Route path="/docs" component={DocsPage} />
+      <Route path="/docs" component={DocsIndexPage} />
       <Route path="/docs/:docSection" component={DocsPage} />
 
       <Route path="*" component={NotFoundPage} />

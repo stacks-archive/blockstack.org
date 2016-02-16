@@ -26,7 +26,10 @@ class Header extends Component {
                   <Link to="/docs" className="nav-link">Docs</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/about" className="nav-link">About</Link>
+                  <Link to="/docs/installation" className="nav-link">Installation</Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/docs/usage" className="nav-link">Usage</Link>
                 </li>
               </ul>
 
@@ -62,6 +65,10 @@ class Header extends Component {
 export default Header
 
 /*
+                <li className="nav-item">
+                  <Link to="/about" className="nav-link">About</Link>
+                </li>
+
 <div className="pull-left">
   <i className="fa fa-github github-header"></i>
 </div>

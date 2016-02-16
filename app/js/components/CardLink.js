@@ -5,7 +5,7 @@ import {Link} from 'react-router'
 
 const propTypes = {
   title: PropTypes.string.isRequired,
-  body: PropTypes.string.isRequired,
+  body: PropTypes.string,
   imageSrc: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired
 }
@@ -28,9 +28,11 @@ class CardLink extends Component {
               <h3 className="card-title">
                 {this.props.title}
               </h3>
+              {this.props.body ?
               <p className="card-text">
                 {this.props.body}
               </p>
+              : null }
             </div>
           </Link>
         </div>
