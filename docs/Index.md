@@ -1,4 +1,4 @@
-# Blockstack Docs
+# Intro to Blockstack
 
 Blockstack is decentralized DNS.
 
@@ -13,3 +13,5 @@ Blockstack gives you:
 - immunity to DNS cache poisoning
 - robust certificate pinning capabilities
 - resistence to censorship of name registration and resolution
+
+To get started with Blockstack, read the installation and usage guides below.

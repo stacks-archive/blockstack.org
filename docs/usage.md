@@ -1,3 +1,10 @@
+---
+title: Usage
+nextUrl: /docs/advanced-usage
+nextLabel: Advanced Usage
+nextDescription: Dig deeper with Blockstack usage. Learn how to create new namespaces and more.
+---
+
 # Usage
 
 ## Lookups

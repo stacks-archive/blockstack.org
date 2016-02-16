@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 import React                       from 'react'
 import {Router, Route, IndexRoute} from 'react-router'
@@ -9,11 +9,12 @@ import HomePage                    from './pages/HomePage'
 import AboutPage                   from './pages/AboutPage'
 import SummitPage                  from './pages/SummitPage'
 import DocsPage                    from './pages/DocsPage'
+import DocsIndexPage               from './pages/DocsIndexPage'
 import NotFoundPage                from './pages/NotFoundPage'
 import docs                        from '../docs.json'
 
 export default (
-  <Router history={CreateBrowserHistory()}>
+  <Router history={CreateBrowserHistory()} onUpdate={() => window.scrollTo(0, 0)}>
     <Route path="/" component={App}>
 
       <IndexRoute component={HomePage} />
@@ -21,11 +22,11 @@ export default (
       <Route path="/" component={HomePage} />
       <Route path="/about" component={AboutPage} />
       <Route path="/summit" component={SummitPage} />
-      <Route path="/docs" component={DocsPage} />
+      <Route path="/docs" component={DocsIndexPage} />
       <Route path="/docs/:docSection" component={DocsPage} />
 
       <Route path="*" component={NotFoundPage} />
 
     </Route>
   </Router>
-);
+)

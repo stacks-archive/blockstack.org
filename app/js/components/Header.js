@@ -17,22 +17,40 @@ class Header extends Component {
             <Link className="navbar-brand" to="/">
               <img src="/images/blockstack-logo.svg" />
             </Link>
-            <ul className="nav navbar-nav">
-              <li className="nav-item">
-                <Link to="/docs" className="nav-link">Docs</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/about" className="nav-link">About</Link>
-              </li>
-              <li className="nav-item pull-xs-right">
-                <Link to="https://github.com/blockstack" className="nav-link"
-                  target="_blank">
-                  <i className="fa fa-github"></i>
-                  <span>Github</span>
-                </Link>
-              </li>
-            </ul>
           </div>
+                
+          <ul className="nav navbar-nav nav-btn-head">
+            <li className="nav-item">
+              <Link to="/docs" className="nav-link">Docs</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/docs/installation" className="nav-link">Installation</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/docs/usage" className="nav-link">Usage</Link>
+            </li>
+          </ul>
+
+          <ul className="nav navbar-nav pull-xs-right">
+            <li className="nav-item">
+              <Link to="https://github.com/blockstack" className="nav-link"
+                target="_blank">
+                <div className="pull-right gitword">Github</div>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="http://forum.blockstack.org" className="nav-link"
+                target="_blank">
+                Forum
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="https://blockstack.slack.com/" className="nav-link"
+                target="_blank">
+                Slack
+              </Link>
+            </li>
+          </ul>
         </nav>
       </header>
     )
@@ -41,3 +59,13 @@ class Header extends Component {
 }
 
 export default Header
+
+/*
+                <li className="nav-item">
+                  <Link to="/about" className="nav-link">About</Link>
+                </li>
+
+<div className="pull-left">
+  <i className="fa fa-github github-header"></i>
+</div>
+*/

@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 import {Component}   from 'react'
 import {Link}        from 'react-router'
@@ -25,24 +25,22 @@ class HomePage extends Component {
             <Header />
             <div className="container">
               <section className="hero">
-                <div>
-                  <div className="col-md-6">
-                    <h2 className="hero-head">
-                      Decentralized DNS  for Blockchain Applications
-                    </h2>
-                    <p className="lead">
-                      Welcoming all developers to join the Blockstack community. Our mission is to create common infrastructure for developing decentralized applications.
-                    </p>
-                    <p>
-                      <Link to="http://forum.blockstack.org" target="_blank" className="btn btn-lg btn-primary-hero hidden-xs hidden-sm" role="button">
-                        Join the Blockstack Forum
-                      </Link>
-                      <Link to="http://chat.blockstack.org" target="_blank" className="btn btn-lg btn-special-rev" role="button">
-                        Get invited to Slack!
-                      </Link>
-                    </p>
-                  </div>
-                  <div className="col-md-6"><img src="/images/hero-pip-install-blockstack.svg" /></div>
+                <div className="col-md-6">
+                  <h2 className="hero-head">
+                    Decentralized DNS  for Blockchain Applications
+                  </h2>
+                  <p className="lead">
+                    Blockstack gives you fast, secure, and easy-to-use DNS, PKI, and identity management on the blockchain.
+                  </p>
+                  <p>
+                    <Link to="/docs" role="button"
+                      className="btn btn-lg btn-primary-hero">
+                      Get Started
+                    </Link>
+                  </p>
+                </div>
+                <div className="col-md-6">
+                  <img src="/images/hero-pip-install-blockstack.svg" />
                 </div>
               </section>
             </div>
