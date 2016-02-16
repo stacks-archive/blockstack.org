@@ -3,14 +3,13 @@
 import {Component, PropTypes}  from 'react'
 import {Link} from 'react-router'
 
-const propTypes = {
-  title: PropTypes.string.isRequired,
-  body: PropTypes.string,
-  imageSrc: PropTypes.string,
-  href: PropTypes.string.isRequired
-}
-
 class CardLink extends Component {  
+  static propTypes: {
+    title: PropTypes.string.isRequired,
+    body: PropTypes.string,
+    imageSrc: PropTypes.string,
+    href: PropTypes.string.isRequired
+  }
 
   constructor(props) {
     super(props)
@@ -43,7 +42,5 @@ class CardLink extends Component {
   }
 
 }
-
-CardLink.propTypes = propTypes
 
 export default CardLink
