@@ -14,7 +14,7 @@ import NotFoundPage                from './pages/NotFoundPage'
 import docs                        from '../docs.json'
 
 export default (
-  <Router history={CreateBrowserHistory()}>
+  <Router history={CreateBrowserHistory()} onUpdate={() => window.scrollTo(0, 0)}>
     <Route path="/" component={App}>
 
       <IndexRoute component={HomePage} />
