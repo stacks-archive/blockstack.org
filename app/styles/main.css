@@ -12,6 +12,7 @@ h4 {font-size:15px; margin:20px 0; font-weight:400;}
 a {color:rgba(131,28,168,1); font-weight:500;}
 a:hover {color:rgba(144,51,177,1);}
 p, ul, li {font-size: 14px; line-height: 28px;}
+.nopadding {padding-left: 0; padding-right: 0;}
 
 /* Typography */
 h1.hero-head {font-size:28px; line-height:36px; margin-bottom:15px; font-weight:400;}
@@ -61,7 +62,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 
 .about-head-wrap {padding-bottom:30px; background: url(/images/blockchain-timeline.png) no-repeat center top; background-color:#53206f;}
 .highlight-box {background-color:#831ca8; padding-top:50px; padding-bottom:50px; color:rgba(255,255,255,1);}
-.hero {max-width:850px; padding-top:20px; color:rgba(255,255,255,1);}
+.hero {color:rgba(255,255,255,1);}
 .hero-wrap {margin-top:0;}
 .slides {padding-left:10px; padding-right:10px;}
 div.col-sm-4.feature-panel.feat-block:hover, div.col-sm-4.feature-panel.feat-block:focus, div.col-sm-4.feature-panel.feat-block:active, div.col-sm-4.feature-panel.feat-blockt:visited {background-color:rgba(255,255,255,0.1); border-radius:6px; outline:none; text-decoration:none;}
@@ -160,6 +161,8 @@ pre {font-size: 12px; margin-top: 30px; margin-bottom: 30px; background-color: r
   h3 {font-size:24px; margin-bottom:15px;}
   .hero {padding-top:0;}
 
+  .container {width: 975px;}
+
   /* Buttons */
   .btn-lg {font-size:17px; padding:18px 55px;}
   .btn-primary {display:inline-block; max-width:none;}
@@ -168,7 +171,6 @@ pre {font-size: 12px; margin-top: 30px; margin-bottom: 30px; background-color: r
   .btn-special-rev {display:inline-block; max-width:none; padding-left:85px; background:url(/images/slack-logo-bug-rgb.png) no-repeat left 45px center; background-size:30px 30px; background-color:rgba(101,55,126,0.3);}
   
   /* Navbar */
-  .navbar {padding-left: 0;}
   .navbar-brand {margin-right: 5.75rem;}
   .nav-item:first-child {margin-left: .875rem;}
   .navbar-nav .nav-item+.nav-item {margin-left: 1.375rem;}
@@ -178,7 +180,7 @@ pre {font-size: 12px; margin-top: 30px; margin-bottom: 30px; background-color: r
 
   /* Content */
   .head-wrap {padding-bottom:120px;}
-  h1.hero-head {font-size:38px; line-height:48px; margin-bottom:20px; font-weight:400;}
+  h2.hero-head {font-size:36px; line-height:48px; margin-bottom:20px; font-weight:300;}
   .about-head {margin-top:350px;}
   .slides {padding-left:0; padding-right:0; padding-top:80px;}
   .lead {font-size:17px; line-height:30px;}
@@ -239,9 +241,7 @@ pre {font-size: 12px; margin-top: 30px; margin-bottom: 30px; background-color: r
   /* Max widths */
   .container {width: 975px;}
   
-  .nav-animation-element {max-width:1170px;}
   .bs-docs-featurette {max-width:1170px;}
-  .second-header-element {max-width:1170px;}
 
   /* Buttons */
   .btn-special-rev {margin-left:25px;}

@@ -19,33 +19,32 @@ class HomePage extends Component {
   render() {
     return (
       <DocumentTitle title="Blockstack - Decentralized DNS for Blockchain Applications">
+        
         <div>
           <div className="container-fluid col-centered head-wrap">
             <Header />
-            <div className="second-header-element col-centered">
-              <div className="slides col-sm-10 col-sm-offset-1">
-                <section className="hero">
-                  <div>
-                    <div className="col-xs-11 col-sm-10">
-                      <h1 className="hero-head">
-                        Blockstack.<br/>The Open Source<br/>Blockchain Community
-                      </h1>
-                      <p className="lead">
-                        Welcoming all developers to join the Blockstack community. Our mission is to create common infrastructure for developing decentralized applications.
-                      </p>
-                      <p>
-                        <Link to="http://forum.blockstack.org" target="_blank" className="btn btn-lg btn-primary-hero hidden-xs hidden-sm" role="button">
-                          Join the Blockstack Forum
-                        </Link>
-                        <Link to="http://chat.blockstack.org" target="_blank" className="btn btn-lg btn-special-rev" role="button">
-                          Get invited to Slack!
-                        </Link>
-                      </p>
-                    </div>
-                    <div className="img"></div>
+            <div className="container">
+              <section className="hero">
+                <div>
+                  <div className="col-md-6">
+                    <h2 className="hero-head">
+                      Decentralized DNS  for Blockchain Applications
+                    </h2>
+                    <p className="lead">
+                      Welcoming all developers to join the Blockstack community. Our mission is to create common infrastructure for developing decentralized applications.
+                    </p>
+                    <p>
+                      <Link to="http://forum.blockstack.org" target="_blank" className="btn btn-lg btn-primary-hero hidden-xs hidden-sm" role="button">
+                        Join the Blockstack Forum
+                      </Link>
+                      <Link to="http://chat.blockstack.org" target="_blank" className="btn btn-lg btn-special-rev" role="button">
+                        Get invited to Slack!
+                      </Link>
+                    </p>
                   </div>
-                </section>
-              </div>
+                  <div className="col-md-6"><img src="/images/hero-pip-install-blockstack.svg" /></div>
+                </div>
+              </section>
             </div>
           </div>
           <section className="container-fluid sec-hook">
