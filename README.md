@@ -3,11 +3,11 @@ Blockstack Site
 
 A live version of this site can be found online at https://blockstack.org.
 
----
 
 ### Installation
 
 ```
+$ git clone git@github.com:blockstack/blockstack-site.git
 $ npm install
 ```
 
@@ -27,6 +27,7 @@ Now that `gulp dev` is running, the server is up as well and serving files from 
 
 ```
 $ gulp prod
+$ firebase deploy
 ```
 
 To prepare assets for production, run `gulp prod`. This will fill the `/build` directory with the full site.
@@ -39,7 +40,7 @@ Once the build has been produced, deploy the site to firebase by running `fireba
 
 - ReactJS (along with React Router and RefluxJS)
 - SASS
-- Gulp (using best practices from [Gulp Starter](https://github.com/greypants/gulp-starter))
+- Gulp (using best practices from Gulp Starter)
 - Browserify
 
 ### More Info
