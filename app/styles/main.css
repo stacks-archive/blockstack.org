@@ -17,6 +17,7 @@ p,ul,li{font-size:14px;line-height:28px;}
 h1.hero-head{margin-bottom:15px;font-weight:400;font-size:28px;line-height:36px;}
 h2.hero-head{text-align: center;}
 .lead{margin-bottom:40px;font-size:14px;line-height:24px;}
+.hero-lead{text-align:center;}
 
 /* Buttons */
 .btn-lg{padding:15px 25px;font-weight:500;font-size:14px;}
@@ -123,8 +124,10 @@ pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35
   /* Globals */
   h1{font-size:40px;line-height:48px;}
   h2{font-size:30px;line-height:38px;}
+  h2.hero-head{text-align:left;}
   h3{margin-bottom:15px;font-size:24px;}
   .hero{padding-top:0;}
+  .hero-lead{text-align:left;}
 
   /* Buttons */
   .btn-lg{padding:18px 55px;font-size:17px;}
