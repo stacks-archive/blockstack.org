@@ -21,10 +21,10 @@ class Header extends Component {
               <li className="nav-item">
                 <Link to="/docs" className="nav-link">Docs</Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item hidden-sm-down">
                 <Link to="/docs/installation" className="nav-link">Installation</Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item hidden-sm-down">
                 <Link to="/docs/usage" className="nav-link">Usage</Link>
               </li>
               <li className="nav-item pull-xs-right hidden-sm-down">

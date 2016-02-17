@@ -23,7 +23,7 @@ class HomePage extends Component {
         <div>
           <div className="container-fluid col-centered head-wrap">
             <Header />
-            <div className="container m-t-3 p-t-3 m-b-3">
+            <div className="container m-t-3 p-t-2 m-b-2">
               <section className="hero">
                 <div className="col-xs-12 col-sm-12 col-md-6">
                   <h2 className="hero-head">
