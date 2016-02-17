@@ -89,10 +89,10 @@ class DocsPage extends Component {
     return (
       <DocumentTitle title="Blockstack - Documentation">
         <div>
-          <div className="container-fluid col-centered about-head-wrap">
+          <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
           </div>
-          <section className="container-fluid sec-hook">
+          <section className="container-fluid spacing-container">
             <div className="bs-docs-featurette col-centered">
               <div className="col-md-8 col-md-offset-2">
                 <p>
@@ -105,7 +105,7 @@ class DocsPage extends Component {
                 { pageProperties.hasOwnProperty('nextUrl') && pageProperties.hasOwnProperty('nextLabel') ?
                 <div className="row">
                   <div className="col-md-4">
-                    <h4>Next Article</h4>
+                    <h3>Next Article</h3>
                     <CardLink href={pageProperties.nextUrl} title={pageProperties.nextLabel}
                       body={pageProperties.nextDescription}
                       imageSrc="https://images.unsplash.com/photo-1454165205744-3b78555e5572?crop=entropy&fit=crop&fm=jpg&h=1250&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1650" />
@@ -127,23 +127,3 @@ class DocsPage extends Component {
 DocsPage.propTypes = propTypes
 
 export default DocsPage
-
-/*
-<div className="row">
-  <div className="col-md-4">
-    <CardLink href="/docs/namespaces" title="Namespaces"
-      body="Learn how namespaces work and how you can create your own."
-      imageSrc="https://images.unsplash.com/photo-1454165205744-3b78555e5572?crop=entropy&fit=crop&fm=jpg&h=1250&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1650" />
-  </div>
-  <div className="col-md-4">
-    <CardLink href="/docs/contributor-guide" title="Contributor Guide"
-      body="Find out how you can contribute to Blockstack development."
-      imageSrc="https://images.unsplash.com/photo-1454165205744-3b78555e5572?crop=entropy&fit=crop&fm=jpg&h=1250&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1650" />
-  </div>
-  <div className="col-md-4">
-    <CardLink href="/docs/technology" title="Technology"
-      body="Learn about how Blockstack works under the hood."
-      imageSrc="https://images.unsplash.com/photo-1454165205744-3b78555e5572?crop=entropy&fit=crop&fm=jpg&h=1250&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1650" />
-  </div>
-</div>
-*/

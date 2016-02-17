@@ -44,13 +44,3 @@ class Header extends Component {
 }
 
 export default Header
-
-/*
-                <li className="nav-item">
-                  <Link to="/about" className="nav-link">About</Link>
-                </li>
-
-<div className="pull-left">
-  <i className="fa fa-github github-header"></i>
-</div>
-*/
