@@ -21,7 +21,7 @@ class HomePage extends Component {
       <DocumentTitle title="Blockstack - Decentralized DNS for Blockchain Applications">
         
         <div>
-          <div className="container-fluid col-centered head-wrap">
+          <div className="container-fluid col-centered bg-info">
             <Header />
             <div className="container m-t-5 p-t-2 m-b-5">
               <section className="hero">

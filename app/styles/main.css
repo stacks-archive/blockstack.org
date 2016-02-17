@@ -1,5 +1,13 @@
+/* Guide */
+/* - Hero section is special */
+/* - All other headings are to be 400 weight */
+/* - Y-axis margins are to be added in via media quieries with class names */
+/* - Max-width of site is to be set via `container` */
+/* - All sections utilize `containter` */
+
+
 /* Base structure */
-body{padding-top:0;padding-bottom:0;}
+body{padding-top:0;padding-bottom:0;} /* Reviewed */
 
 /* Globals */
 h3{margin-bottom:15px;}
@@ -29,11 +37,11 @@ h2.hero-head{text-align: center;}
 .center-btn{margin-right:auto;margin-left:auto;}
 
 /* Navbar */
-.navbar-brand{width:5.75rem;}
-a.nav-link{color:rgba(255,255,255,0.65);font-size:.8125rem;transition:all .15s ease-in-out;}
-a.nav-link:hover,a.nav-link:focus{color:rgba(255,255,255,1);}
-.nav-item:first-child{margin-left:.625rem;}
-.fa-github{margin-top:-.1875rem;margin-right:.5rem;vertical-align:middle;font-size:1.375rem;}
+/* Reviewed */.navbar-brand{width:5.75rem;}
+/* Reviewed */a.nav-link{color:rgba(255,255,255,0.65);font-size:.8125rem;transition:all .15s ease-in-out;}
+/* Reviewed */a.nav-link:hover,a.nav-link:focus{color:rgba(255,255,255,1);}
+/* Reviewed */.nav-item:first-child{margin-left:.625rem;}
+/* Reviewed */.fa-github{margin-top:-.1875rem;margin-right:.5rem;vertical-align:middle;font-size:1.375rem;}
 
 /* Menu button */
 .head-wrap{padding-right:0px;padding-bottom:90px;padding-left:0px;background:rgba(0,0,0,1);background:-moz-linear-gradient(-45deg,rgba(0,0,0,1) 0%,rgba(4,0,7,1) 7%,rgba(24,13,31,1) 40%,rgba(36,19,47,1) 53%,rgba(54,22,72,1) 67%,rgba(60,23,79,1) 75%,rgba(72,25,93,1) 86%,rgba(83,32,111,1) 98%,rgba(83,32,111,1) 100%);background:-webkit-gradient(left top,right bottom,color-stop(0%,rgba(0,0,0,1)),color-stop(7%,rgba(4,0,7,1)),color-stop(40%,rgba(24,13,31,1)),color-stop(53%,rgba(36,19,47,1)),color-stop(67%,rgba(54,22,72,1)),color-stop(75%,rgba(60,23,79,1)),color-stop(86%,rgba(72,25,93,1)),color-stop(98%,rgba(83,32,111,1)),color-stop(100%,rgba(83,32,111,1)));background:-webkit-linear-gradient(-45deg,rgba(0,0,0,1) 0%,rgba(4,0,7,1) 7%,rgba(24,13,31,1) 40%,rgba(36,19,47,1) 53%,rgba(54,22,72,1) 67%,rgba(60,23,79,1) 75%,rgba(72,25,93,1) 86%,rgba(83,32,111,1) 98%,rgba(83,32,111,1) 100%);background:-o-linear-gradient(-45deg,rgba(0,0,0,1) 0%,rgba(4,0,7,1) 7%,rgba(24,13,31,1) 40%,rgba(36,19,47,1) 53%,rgba(54,22,72,1) 67%,rgba(60,23,79,1) 75%,rgba(72,25,93,1) 86%,rgba(83,32,111,1) 98%,rgba(83,32,111,1) 100%);background:-ms-linear-gradient(-45deg,rgba(0,0,0,1) 0%,rgba(4,0,7,1) 7%,rgba(24,13,31,1) 40%,rgba(36,19,47,1) 53%,rgba(54,22,72,1) 67%,rgba(60,23,79,1) 75%,rgba(72,25,93,1) 86%,rgba(83,32,111,1) 98%,rgba(83,32,111,1) 100%);background:linear-gradient(135deg,rgba(0,0,0,1) 0%,rgba(4,0,7,1) 7%,rgba(24,13,31,1) 40%,rgba(36,19,47,1) 53%,rgba(54,22,72,1) 67%,rgba(60,23,79,1) 75%,rgba(72,25,93,1) 86%,rgba(83,32,111,1) 98%,rgba(83,32,111,1) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#53206f',GradientType=1);}
@@ -92,9 +100,6 @@ footer > li{list-style:none;}
 .midfoot,.base-push-left{padding-left:30px;}
 .foot-logo{width:115px;}
 
-/* Make the masthead heading the same height as the navigation */
-.header h3{margin-top:0;margin-bottom:0;padding-bottom:19px;line-height:40px;} /* Good */
-
 /* Custom page footer */
 .container-narrow > hr{margin:30px 0;}
 .row.works.col-md-10.col-lg-8.col-centered::before{display:block;margin:0 auto 75px auto;width:50%;border-top:1px solid rgba(230,230,230,1);content:"";}
@@ -103,8 +108,8 @@ footer > li{list-style:none;}
 .hall{margin-bottom:35px;}
 
 /* Docs */
-pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35,39,1);background-color:rgba(32,35,39,1);color:#fff;font-size:12px;border-radius:4px;} /* Good */
-.hljs {background-color: transparent;} /* Good */
+/* Reviewed */pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35,39,1);background-color:rgba(32,35,39,1);color:#fff;font-size:12px;border-radius:4px;}
+/* Reviewed */.hljs {background-color: transparent;}
 
 
 
@@ -118,11 +123,11 @@ pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35
 @media (min-width:768px){
 
   /* Max widths */
-  .container{width:975px;}  /* Good */
+  /* Reviewed */.container{width:975px;}
 
   /* Globals */
-  h2.hero-head{text-align:left;} /* Good */
-  .hero-lead{text-align:left;} /* Good */
+  /* Reviewed */h2.hero-head{text-align:left;}
+  /* Reviewed */.hero-lead{text-align:left;}
   h3{margin-bottom:15px;}
 
   /* Buttons */
@@ -130,14 +135,14 @@ pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35
   .btn-special{display:inline-block;margin-left:0px;padding-left:85px;max-width:none;background:url(/images/slack-logo-bug-rgb.png) no-repeat left 45px center;background-color:rgba(66,26,89,1);background-size:30px 30px;}
   .btn-special-rev{display:inline-block;padding-left:85px;max-width:none;background:url(/images/slack-logo-bug-rgb.png) no-repeat left 45px center;background-color:rgba(101,55,126,0.3);background-size:30px 30px;}
   
-  .hero-btn {padding-left: 0;} /* Good */
+  /* Reviewed */.hero-btn {padding-left: 0;}
 
   /* Navbar */
-  .navbar-brand{margin-right:5.75rem;} /* Good */
-  .nav-item:first-child{margin-left:.875rem;} /* Good */
-  .navbar-nav .nav-item+.nav-item{margin-left:1.375rem;} /* Good */
-  a.nav-link{padding-right:5px;padding-left:5px;} /* Good */
-  .sec-hook{padding-top:30px;padding-bottom:30px;} /* Good */
+  /* Reviewed */.navbar-brand{margin-right:5.75rem;}
+  /* Reviewed */.nav-item:first-child{margin-left:.875rem;}
+  /* Reviewed */.navbar-nav .nav-item+.nav-item{margin-left:1.375rem;}
+  /* Reviewed */a.nav-link{padding-right:5px;padding-left:5px;}
+  .sec-hook{padding-top:30px;padding-bottom:30px;}
 
   /* Content */
   .head-wrap{padding-bottom:120px;}
@@ -165,7 +170,7 @@ pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35
 @media (min-width:992px){
 
   /* Max widths */
-  .container{width:975px;}
+  /* Reviewed */.container{width:975px;}
   .bs-docs-featurette{max-width:1170px;}
 
   /* Globals */
