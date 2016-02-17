@@ -19,31 +19,30 @@ class HomePage extends Component {
   render() {
     return (
       <DocumentTitle title="Blockstack - Decentralized DNS for Blockchain Applications">
+        
         <div>
           <div className="container-fluid col-centered head-wrap">
             <Header />
-            <div className="second-header-element col-centered">
-              <div className="slides col-sm-10 col-sm-offset-1">
-                <section className="hero">
-                  <div>
-                    <div className="col-xs-11 col-sm-10">
-                      <h1 className="hero-head">
-                        Decentralized DNS<br/>for Blockchain Applications
-                      </h1>
-                      <p className="lead">
-                        Blockstack gives you fast, secure, and easy-to-use DNS, PKI, and identity management on the blockchain.
-                      </p>
-                      <p>
-                        <Link to="/docs" role="button"
-                          className="btn btn-lg btn-primary-hero hidden-xs hidden-sm">
-                          Get Started
-                        </Link>
-                      </p>
-                    </div>
-                    <div className="img"></div>
-                  </div>
-                </section>
-              </div>
+            <div className="container m-t-3 p-t-2 m-b-2">
+              <section className="hero">
+                <div className="col-xs-12 col-sm-12 col-md-6">
+                  <h2 className="hero-head">
+                    Decentralized DNS  for Blockchain Applications
+                  </h2>
+                  <p className="lead hero-lead">
+                    Blockstack gives you fast, secure, and easy-to-use DNS, PKI, and identity management on the blockchain.
+                  </p>
+                  <p className="hero-btn col-md-8">
+                    <Link to="/docs" role="button"
+                      className="btn btn-lg btn-primary-hero btn-block">
+                      Get Started
+                    </Link>
+                  </p>
+                </div>
+                <div className="col-xs-10 offset-xs-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0 m-t-1">
+                  <img src="/images/hero-pip-install-blockstack.svg" />
+                </div>
+              </section>
             </div>
           </div>
           <section className="container-fluid sec-hook">
