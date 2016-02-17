@@ -23,7 +23,7 @@ class HomePage extends Component {
         <div>
           <div className="container-fluid col-centered head-wrap">
             <Header />
-            <div className="container m-t-3 p-t-2 m-b-2">
+            <div className="container m-t-5 p-t-2 m-b-5">
               <section className="hero">
                 <div className="col-xs-12 col-sm-12 col-md-6">
                   <h2 className="hero-head">
@@ -53,21 +53,21 @@ class HomePage extends Component {
                     <div className="container wrap-mob-feat">
                       <img src="/images/icon-decentralized.svg" className="img-responsive" alt="Decentralized icon" />
                     </div>
-                      <h3>Decentralized</h3>
+                      <h4>Decentralized</h4>
                       <p className="lead">Applications can be built without central points of failure.</p>
                   </div>
                   <div className="col-sm-4 feature-panel">
                     <div className="container wrap-mob-feat">
                       <img src="/images/icon-open-source.svg" className="img-responsive" alt="Open source icon" />
                     </div>
-                    <h3>Open Source</h3>
+                    <h4>Open Source</h4>
                     <p className="lead">Blockstack code is free to inspect, modify, and reuse.</p>
                   </div>
                   <div className="col-sm-4 feature-panel">
                     <div className="container wrap-mob-feat">
                       <img src="/images/icon-community-globe.svg" className="img-responsive" alt="Community globe icon" />
                     </div>
-                    <h3>Community</h3>
+                    <h4>Community</h4>
                     <p className="lead">We are developers united around a common software stack.</p>
                   </div>
                 </div>
@@ -77,19 +77,17 @@ class HomePage extends Component {
           <section>
             <div className="bs-docs-featurette col-centered" id="learnmore">
               <div className="container col-centered">
-                <div className="displayed-wrap container col-md-8 col-lg-8 col-centered"><h2 className="displayed">Our mission is to create common infrastructure for developing decentralized applications.</h2></div>
+                <div className="displayed-wrap container col-md-8 col-lg-8 col-centered"><h3 className="displayed">Our mission is to create common infrastructure for developing decentralized applications.</h3></div>
                 <div className="row works col-md-10 col-lg-8 col-centered">
                   <div className="col-sm-11 feature-panel col-centered">
-                      <h3 className="feat-pan">Community Overview</h3>
+                      <h4 className="feat-pan">Community Overview</h4>
                       <p className="lead">
                         The Blockstack community is a group of blockchain companies and nonprofits coming together to define and develop a set of software protocols and tools to serve as a common backend for blockchain-powered decentralized applications. We are opening membership to the public, welcoming all developers and companies that are interested in joining the consortium and contributing to Blockstack development.
                       </p>
                   </div>
                 </div>
                 <div className="displayed-wrap container col-md-8 col-lg-8 col-centered">
-                  <h2 className="displayed">
-                    With Blockstack, you will be able to build applications faster and with lower deployment costs.
-                  </h2>
+                  <h3 className="displayed">With Blockstack, you will be able to build applications faster and with lower deployment costs.</h3>
                 </div>
               </div>
             </div>  
