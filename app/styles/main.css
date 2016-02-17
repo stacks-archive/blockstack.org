@@ -15,6 +15,7 @@ p,ul,li{font-size:14px;line-height:28px;}
 
 /* Typography */
 h1.hero-head{margin-bottom:15px;font-weight:400;font-size:28px;line-height:36px;}
+h2.hero-head{text-align: center;}
 .lead{margin-bottom:40px;font-size:14px;line-height:24px;}
 
 /* Buttons */
@@ -74,6 +75,7 @@ h2.action-title{margin-bottom:35px;font-size:30px;line-height:42px;}
 .gallery-spcl-txt{font-size:16px;}
 .table-wrap{max-width:800px;}
 .table-striped > thead > tr > th{text-align:center;}
+.home-hero-img {max-width: 400px;}
 
 /* Footer */
 footer{padding-top:60px;padding-bottom:80px;background-color:rgba(26,26,26,1);color:rgba(255,255,255,1);font-size:13px;}
@@ -130,6 +132,7 @@ pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35
   .btn-primary:hover,.btn-primary:focus,.btn-primary:active{outline:none;border:1px solid rgba(144,51,177,1);background-color:rgba(144,51,177,1);box-shadow:none;color:rgba(255,255,255,1);}
   .btn-special{display:inline-block;margin-left:0px;padding-left:85px;max-width:none;background:url(/images/slack-logo-bug-rgb.png) no-repeat left 45px center;background-color:rgba(66,26,89,1);background-size:30px 30px;}
   .btn-special-rev{display:inline-block;padding-left:85px;max-width:none;background:url(/images/slack-logo-bug-rgb.png) no-repeat left 45px center;background-color:rgba(101,55,126,0.3);background-size:30px 30px;}
+  .hero-btn {padding-left: 0;}
 
   /* Navbar */
   .navbar-brand{margin-right:5.75rem;}

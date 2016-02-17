@@ -23,23 +23,23 @@ class HomePage extends Component {
         <div>
           <div className="container-fluid col-centered head-wrap">
             <Header />
-            <div className="container">
+            <div className="container m-t-3">
               <section className="hero">
-                <div className="col-md-6">
-                  <h2 className="hero-head">
+                <div className="col-xs-12 col-sm-12 col-md-6">
+                  <h2 className="hero-head ">
                     Decentralized DNS  for Blockchain Applications
                   </h2>
                   <p className="lead">
                     Blockstack gives you fast, secure, and easy-to-use DNS, PKI, and identity management on the blockchain.
                   </p>
-                  <p>
+                  <p className="hero-btn col-md-8">
                     <Link to="/docs" role="button"
-                      className="btn btn-lg btn-primary-hero">
+                      className="btn btn-lg btn-primary-hero btn-block">
                       Get Started
                     </Link>
                   </p>
                 </div>
-                <div className="col-md-6">
+                <div className="col-xs-10 offset-xs-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0">
                   <img src="/images/hero-pip-install-blockstack.svg" />
                 </div>
               </section>
