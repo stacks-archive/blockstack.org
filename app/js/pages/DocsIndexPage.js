@@ -13,7 +13,7 @@ class DocsIndexPage extends Component {
     return (
       <DocumentTitle title="Blockstack - Documentation">
         <div>
-          <div className="container-fluid col-centered about-head-wrap">
+          <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
           </div>
           <section className="container-fluid sec-hook">

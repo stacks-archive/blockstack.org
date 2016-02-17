@@ -89,10 +89,10 @@ class DocsPage extends Component {
     return (
       <DocumentTitle title="Blockstack - Documentation">
         <div>
-          <div className="container-fluid col-centered about-head-wrap">
+          <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
           </div>
-          <section className="container-fluid sec-hook">
+          <section className="container-fluid spacing-container">
             <div className="bs-docs-featurette col-centered">
               <div className="col-md-8 col-md-offset-2">
                 <p>
@@ -105,7 +105,7 @@ class DocsPage extends Component {
                 { pageProperties.hasOwnProperty('nextUrl') && pageProperties.hasOwnProperty('nextLabel') ?
                 <div className="row">
                   <div className="col-md-4">
-                    <h2>Next Article</h2>
+                    <h3>Next Article</h3>
                     <CardLink href={pageProperties.nextUrl} title={pageProperties.nextLabel}
                       body={pageProperties.nextDescription}
                       imageSrc="https://images.unsplash.com/photo-1454165205744-3b78555e5572?crop=entropy&fit=crop&fm=jpg&h=1250&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1650" />
