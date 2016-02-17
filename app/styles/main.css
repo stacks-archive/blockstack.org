@@ -13,7 +13,6 @@ p,ul,li{font-size:14px;line-height:28px;}
 /* Typography */
 h1.hero-head{margin-bottom:15px;}
 h2.hero-head{text-align: center;}
-.lead{margin-bottom:40px;}
 .hero-lead{text-align:center;}
 
 /* Buttons */
@@ -94,7 +93,7 @@ footer > li{list-style:none;}
 .foot-logo{width:115px;}
 
 /* Make the masthead heading the same height as the navigation */
-.header h3{margin-top:0;margin-bottom:0;padding-bottom:19px;line-height:40px;}
+.header h3{margin-top:0;margin-bottom:0;padding-bottom:19px;line-height:40px;} /* Good */
 
 /* Custom page footer */
 .container-narrow > hr{margin:30px 0;}
@@ -104,48 +103,47 @@ footer > li{list-style:none;}
 .hall{margin-bottom:35px;}
 
 /* Docs */
-pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35,39,1);background-color:rgba(32,35,39,1);color:#fff;font-size:12px;}
+pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35,39,1);background-color:rgba(32,35,39,1);color:#fff;font-size:12px;border-radius:4px;} /* Good */
+.hljs {background-color: transparent;} /* Good */
+
+
 
 /* Media queries */
-
 /* Extra small devices (phones, less than 768px) */
-
 /* No media query since this is the default in Bootstrap */
+
+
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px){
 
   /* Max widths */
-  .container{width:975px;}
+  .container{width:975px;}  /* Good */
 
   /* Globals */
-  h2.hero-head{text-align:left;}
+  h2.hero-head{text-align:left;} /* Good */
+  .hero-lead{text-align:left;} /* Good */
   h3{margin-bottom:15px;}
-  .hero{padding-top:0;}
-  .hero-lead{text-align:left;}
 
   /* Buttons */
-  .btn-lg{padding:18px 55px;font-size:17px;}
-  .btn-primary{display:inline-block;max-width:none;}
   .btn-primary:hover,.btn-primary:focus,.btn-primary:active{outline:none;border:1px solid rgba(144,51,177,1);background-color:rgba(144,51,177,1);box-shadow:none;color:rgba(255,255,255,1);}
   .btn-special{display:inline-block;margin-left:0px;padding-left:85px;max-width:none;background:url(/images/slack-logo-bug-rgb.png) no-repeat left 45px center;background-color:rgba(66,26,89,1);background-size:30px 30px;}
   .btn-special-rev{display:inline-block;padding-left:85px;max-width:none;background:url(/images/slack-logo-bug-rgb.png) no-repeat left 45px center;background-color:rgba(101,55,126,0.3);background-size:30px 30px;}
-  .hero-btn {padding-left: 0;}
+  
+  .hero-btn {padding-left: 0;} /* Good */
 
   /* Navbar */
-  .navbar-brand{margin-right:5.75rem;}
-  .nav-item:first-child{margin-left:.875rem;}
-  .navbar-nav .nav-item+.nav-item{margin-left:1.375rem;}
-  a.nav-link{padding-right:5px;padding-left:5px;}
-  .sec-hook{padding-top:30px;padding-bottom:30px;}
+  .navbar-brand{margin-right:5.75rem;} /* Good */
+  .nav-item:first-child{margin-left:.875rem;} /* Good */
+  .navbar-nav .nav-item+.nav-item{margin-left:1.375rem;} /* Good */
+  a.nav-link{padding-right:5px;padding-left:5px;} /* Good */
+  .sec-hook{padding-top:30px;padding-bottom:30px;} /* Good */
 
   /* Content */
   .head-wrap{padding-bottom:120px;}
-  .hero{height:500px;}
   h2.hero-head{margin-bottom:20px;}
   .about-head{margin-top:350px;}
   .slides{padding-top:80px;padding-right:0;padding-left:0;}
-  .lead{font-size:17px;line-height:30px;}
   .summ-head,.about-head,.hero-reg-btn,.date,.hero-comm-des,.hall{text-align:center;}
   .hero-comm-des{margin-bottom:20px;}
   .hall{margin-bottom:60px;}
@@ -161,6 +159,8 @@ pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35
   .topic{margin-bottom:5px;}
 }
 
+
+
 /* Medium devices (desktops, 992px and up) */
 @media (min-width:992px){
 
@@ -169,7 +169,6 @@ pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35
   .bs-docs-featurette{max-width:1170px;}
 
   /* Globals */
-  h2{margin-top:25px;margin-bottom:15px;}
   h3{margin-top:25px;margin-bottom:15px;margin-bottom:15px;}
   h4{margin:20px 0;}
 
@@ -181,7 +180,7 @@ pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35
   h1.hero-head{margin-bottom:25px;font-weight:400;font-size:48px;line-height:64px;}
   .hero-head{padding-left:0;}
   .slides{padding-top:50px;padding-right:0;padding-left:0;}
-  .lead{margin-bottom:50px;font-size:17px;line-height:30px;}
+  .hero-lead{margin-bottom:50px;}
   .hero-comm-des{margin-bottom:20px;}
   .hall{margin-bottom:60px;}
   .sec-hook{padding-top:50px;padding-bottom:50px;}
@@ -203,6 +202,9 @@ pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35
   .social{margin-top:-8px;}
   .foot-logo{max-width:190px;}
 }
+
+
+
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width:1200px){
