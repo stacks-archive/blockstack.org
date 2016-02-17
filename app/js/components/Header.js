@@ -25,7 +25,7 @@ class Header extends Component {
                 <Link to="/docs/installation" className="nav-link">Installation</Link>
               </li>
               <li className="nav-item hidden-sm-down">
-                <Link to="/docs/usage" className="nav-link">Usage</Link>
+                <Link to="/docs/basic-usage" className="nav-link">Usage</Link>
               </li>
               <li className="nav-item pull-xs-right hidden-sm-down">
                 <Link to="https://github.com/blockstack" className="nav-link hidden-xs hidden-sm"
