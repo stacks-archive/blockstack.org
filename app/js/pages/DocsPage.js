@@ -105,7 +105,7 @@ class DocsPage extends Component {
                 { pageProperties.hasOwnProperty('nextUrl') && pageProperties.hasOwnProperty('nextLabel') ?
                 <div className="row">
                   <div className="col-md-4">
-                    <h2>Next Article</h2>
+                    <h4>Next Article</h4>
                     <CardLink href={pageProperties.nextUrl} title={pageProperties.nextLabel}
                       body={pageProperties.nextDescription}
                       imageSrc="https://images.unsplash.com/photo-1454165205744-3b78555e5572?crop=entropy&fit=crop&fm=jpg&h=1250&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1650" />
