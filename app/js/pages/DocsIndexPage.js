@@ -16,8 +16,8 @@ class DocsIndexPage extends Component {
           <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
           </div>
-          <section className="container-fluid sec-hook">
-            <div className="bs-docs-featurette col-centered">
+          <section className="container-fluid spacing-container">
+            <div className="container col-centered">
               <div className="container">
                 <h1>Blockstack Docs</h1>
                 <div style={{ marginTop: '40px' }}>
