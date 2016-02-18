@@ -24,7 +24,6 @@ h2.hero-head{}
 .hero-lead{font-size:.9375rem;text-align:center;margin-bottom:2rem;}
 
 /* Buttons */
-.btn-lg{padding:15px 25px;font-weight:500;font-size:14px;}
 .btn-primary{display:block;overflow:hidden;padding:15px 15px;max-width:290px;border:1px solid rgba(131,28,168,1);border-radius:4px;background-color:rgba(131,28,168,1);color:rgba(255,255,255,1);-webkit-transition:all 160ms linear;-moz-transition:all 160ms linear;-ms-transition:all 160ms linear;-o-transition:all 160ms linear;transition:all 160ms linear;}
 .btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary:active:focus{outline:none;border:1px solid rgba(144,51,177,1);background-color:rgba(144,51,177,1);box-shadow:none;color:rgba(255,255,255,1);}
 .btn-primary-hero{padding-right:30px;padding-left:30px;border:1px solid rgba(83,32,111,1);border-radius:4px;background-color:rgba(83,32,111,1);color:rgba(255,255,255,1);-webkit-transition:all 160ms linear;-moz-transition:all 160ms linear;-ms-transition:all 160ms linear;-o-transition:all 160ms linear;transition:all 160ms linear;}
@@ -38,7 +37,7 @@ h2.hero-head{}
 
 /* Navbar */
 /* Reviewed */.navbar-brand{width:5.75rem;}
-/* Reviewed */a.nav-link{color:rgba(255,255,255,0.65);font-size:.8125rem;transition:all .15s ease-in-out;}
+/* Reviewed */a.nav-link{color:rgba(255,255,255,0.65);font-size:.8125rem;}
 /* Reviewed */a.nav-link:hover,a.nav-link:focus{color:rgba(255,255,255,1);}
 /* Reviewed */.nav-item:first-child{margin-left:.625rem;}
 /* Reviewed */.fa-github{margin-top:-.1875rem;margin-right:.5rem;vertical-align:middle;font-size:1.375rem;}

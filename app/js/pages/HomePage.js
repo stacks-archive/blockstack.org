@@ -34,7 +34,7 @@ class HomePage extends Component {
                   </p>
                   <p className="hero-btn col-md-8">
                     <Link to="/docs" role="button"
-                      className="btn btn-lg btn-primary-hero btn-block">
+                      className="btn btn-lg btn-primary">
                       Get Started
                     </Link>
                   </p>
