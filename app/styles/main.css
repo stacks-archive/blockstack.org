@@ -20,8 +20,8 @@ p,ul,li{font-size:14px;line-height:28px;}
 .nopadding{padding-right:0;padding-left:0;}
 
 /* Typography */
-h1.hero-head{margin-bottom:15px;}
-h2.hero-head{font-weight:300;text-align:center;margin-bottom:1.5rem;}
+h1.hero-head{font-weight:300;text-align:center;margin-bottom:1.5rem;}
+h2.hero-head{}
 .hero-lead{font-size:.9375rem;text-align:center;margin-bottom:2rem;}
 
 /* Buttons */
@@ -127,7 +127,7 @@ footer > li{list-style:none;}
   /* Reviewed */.container{max-width:975px;}
 
   /* Globals */
-  /* Reviewed */h2.hero-head{text-align:left;margin-bottom:2rem;}
+  /* Reviewed */h1.hero-head{text-align:left;margin-bottom:2rem;font-weight:300;}
   /* Reviewed */.hero-lead{text-align:left;}
   /* Reviewed */.col-3-section{padding-bottom:50px;}
   h3{margin-bottom:15px;}
@@ -146,8 +146,7 @@ footer > li{list-style:none;}
   /* Reviewed */a.nav-link{padding-right:5px;padding-left:5px;}
 
   /* Content */
-  /* Reviewed */h2.hero-head{margin-bottom:20px;}
-  /* Reviewed */.hero-wrap{margin-top:7rem;margin-bottom:10rem;}
+  /* Reviewed */.hero-wrap{display:block;margin-top:7rem;margin-bottom:10rem;}
   .about-head{margin-top:350px;}
   .slides{padding-top:80px;padding-right:0;padding-left:0;}
   .summ-head,.about-head,.hero-reg-btn,.date,.hero-comm-des,.hall{text-align:center;}
@@ -182,9 +181,8 @@ footer > li{list-style:none;}
   .btn-special-rev{margin-left:25px;}
 
   /* Hero */
-  h1.hero-head{margin-bottom:25px;font-weight:400;font-size:48px;line-height:64px;}
-   /* Reviewed */.hero-wrap{margin-top:9rem;margin-bottom:12rem;}
- .hero-head{padding-left:0;}
+  /* Reviewed */.hero-wrap{margin-top:8rem;margin-bottom:14rem;}
+  .hero-head{padding-left:0;}
   .slides{padding-top:50px;padding-right:0;padding-left:0;}
   .hero-comm-des{margin-bottom:20px;}
   .hall{margin-bottom:60px;}

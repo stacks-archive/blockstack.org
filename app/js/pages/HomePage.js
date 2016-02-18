@@ -21,14 +21,14 @@ class HomePage extends Component {
       <DocumentTitle title="Blockstack - Decentralized DNS for Blockchain Applications">
         
         <div>
-          <div className="container-fluid col-centered bg-primary-gradient">
+          <div className="container-fluid col-centered bg-primary-gradient block">
             <Header />
             <div className="container hero-wrap">
               <section className="hero">
                 <div className="col-xs-12 col-sm-12 col-md-6">
-                  <h2 className="hero-head">
+                  <h1 className="hero-head">
                     Decentralized DNS  for Blockchain Applications
-                  </h2>
+                  </h1>
                   <p className="lead hero-lead">
                     Blockstack gives you fast, secure, and easy-to-use DNS, PKI, and identity management on the blockchain.
                   </p>
