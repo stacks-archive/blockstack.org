@@ -87,7 +87,7 @@ class DocsPage extends Component {
     const pageProperties = this.getPageProperties()
 
     return (
-      <DocumentTitle title="Blockstack - Documentation">
+      <DocumentTitle title={`Blockstack - ${pageProperties.title}`}>
         <div>
           <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
