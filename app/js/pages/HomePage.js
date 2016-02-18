@@ -23,7 +23,7 @@ class HomePage extends Component {
         <div>
           <div className="container-fluid col-centered bg-primary-gradient">
             <Header />
-            <div className="container m-t-5 p-t-2 m-b-5">
+            <div className="container hero-wrap">
               <section className="hero">
                 <div className="col-xs-12 col-sm-12 col-md-6">
                   <h2 className="hero-head">
@@ -39,7 +39,7 @@ class HomePage extends Component {
                     </Link>
                   </p>
                 </div>
-                <div className="col-xs-10 offset-xs-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0 m-t-1">
+                <div className="col-xs-10 offset-xs-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0">
                   <img src="/images/hero-pip-install-blockstack.svg" />
                 </div>
               </section>

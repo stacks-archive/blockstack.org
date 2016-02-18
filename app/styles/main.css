@@ -20,8 +20,8 @@ p,ul,li{font-size:14px;line-height:28px;}
 
 /* Typography */
 h1.hero-head{margin-bottom:15px;}
-h2.hero-head{text-align: center;}
-.hero-lead{text-align:center;}
+h2.hero-head{font-weight:300;text-align:center;margin-bottom:1.5rem;}
+.hero-lead{font-size:.9375rem;text-align:center;margin-bottom:2rem;}
 
 /* Buttons */
 .btn-lg{padding:15px 25px;font-weight:500;font-size:14px;}
@@ -55,8 +55,8 @@ h2.hero-head{text-align: center;}
 .profile5{background-image:url('/images/william-mougayar.jpg');}
 /* Reviewed */.about-head-wrap{padding-bottom:30px;background:url(/images/blockchain-timeline.png) no-repeat center top;background-color:#53206f;}
 .highlight-box{padding-top:50px;padding-bottom:50px;background-color:#831ca8;color:rgba(255,255,255,1);}
-.hero{color:rgba(255,255,255,1);}
-.hero-wrap{margin-top:0;}
+/* Reviewed */.hero{color:rgba(255,255,255,1);}
+/* Reviewed */.hero-wrap{margin-top:1rem;margin-bottom:3rem;}
 .slides{padding-right:10px;padding-left:10px;}
 div.col-sm-4.feature-panel.feat-block:hover,div.col-sm-4.feature-panel.feat-block:focus,div.col-sm-4.feature-panel.feat-block:active,div.col-sm-4.feature-panel.feat-blockt:visited{outline:none;border-radius:6px;background-color:rgba(255,255,255,0.1);text-decoration:none;}
 div.col-sm-4.feature-panel.feat-block{margin-top:15px;margin-bottom:15px;padding-top:1px;padding-bottom:5px;}
@@ -125,7 +125,7 @@ footer > li{list-style:none;}
   /* Reviewed */.container{max-width:975px;}
 
   /* Globals */
-  /* Reviewed */h2.hero-head{text-align:left;}
+  /* Reviewed */h2.hero-head{text-align:left;margin-bottom:2rem;}
   /* Reviewed */.hero-lead{text-align:left;}
   h3{margin-bottom:15px;}
 
@@ -143,7 +143,8 @@ footer > li{list-style:none;}
   /* Reviewed */a.nav-link{padding-right:5px;padding-left:5px;}
 
   /* Content */
-  h2.hero-head{margin-bottom:20px;}
+  /* Reviewed */h2.hero-head{margin-bottom:20px;}
+  /* Reviewed */.hero-wrap{margin-top:7rem;margin-bottom:10rem;}
   .about-head{margin-top:350px;}
   .slides{padding-top:80px;padding-right:0;padding-left:0;}
   .summ-head,.about-head,.hero-reg-btn,.date,.hero-comm-des,.hall{text-align:center;}
@@ -179,9 +180,9 @@ footer > li{list-style:none;}
 
   /* Hero */
   h1.hero-head{margin-bottom:25px;font-weight:400;font-size:48px;line-height:64px;}
-  .hero-head{padding-left:0;}
+   /* Reviewed */.hero-wrap{margin-top:9rem;margin-bottom:12rem;}
+ .hero-head{padding-left:0;}
   .slides{padding-top:50px;padding-right:0;padding-left:0;}
-  .hero-lead{margin-bottom:50px;}
   .hero-comm-des{margin-bottom:20px;}
   .hall{margin-bottom:60px;}
   
