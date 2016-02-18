@@ -101,8 +101,8 @@ class HomePage extends Component {
                       Build Something Bigger Than Yourself!
                     </h2>
                   </hgroup>
-                  <div className="btn-wrap">
-                    <Link to="http://chat.blockstack.org" target="_blank" className="btn btn-lg btn-special center-btn" role="button">
+                  <div>
+                    <Link to="http://chat.blockstack.org" target="_blank" className="btn btn-lg btn-special btn-slack" role="button">
                       Get invited to Slack!
                     </Link>
                   </div>
