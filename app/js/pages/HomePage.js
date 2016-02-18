@@ -7,10 +7,9 @@ import DocumentTitle from 'react-document-title'
 import Header        from '../components/Header'
 import Footer        from '../components/Footer'
 
-const propTypes = {
-}
-
 class HomePage extends Component {
+  static propTypes: {
+  }
 
   constructor(props) {
     super(props)
@@ -19,7 +18,6 @@ class HomePage extends Component {
   render() {
     return (
       <DocumentTitle title="Blockstack - Decentralized DNS for Blockchain Applications">
-        
         <div>
           <div className="container-fluid col-centered bg-primary-gradient block">
             <Header />
@@ -30,7 +28,8 @@ class HomePage extends Component {
                     Decentralized DNS  for Blockchain Applications
                   </h1>
                   <p className="lead hero-lead">
-                    Blockstack gives you fast, secure, and easy-to-use DNS, PKI, and identity management on the blockchain.
+                    Blockstack gives you fast, secure, and easy-to-use DNS, PKI,
+                    and identity management on the blockchain.
                   </p>
                   <p className="hero-btn col-md-8">
                     <Link to="/docs" role="button"
@@ -51,24 +50,33 @@ class HomePage extends Component {
                 <div className="row col-sm-11 col-md-11 col-centered">
                   <div className="col-sm-4 feature-panel">
                     <div className="container wrap-mob-feat">
-                      <img src="/images/icon-decentralized.svg" className="img-responsive" alt="Decentralized icon" />
+                      <img src="/images/icon-decentralized.svg"
+                        className="img-responsive" alt="Decentralized icon" />
                     </div>
                       <h4>Decentralized</h4>
-                      <p className="lead">Applications can be built without central points of failure.</p>
+                      <p className="lead">
+                        Enables applications without any central points of failure.
+                      </p>
                   </div>
                   <div className="col-sm-4 feature-panel">
                     <div className="container wrap-mob-feat">
-                      <img src="/images/icon-open-source.svg" className="img-responsive" alt="Open source icon" />
+                      <img src="/images/icon-open-source.svg"
+                        className="img-responsive" alt="Open source icon" />
                     </div>
                     <h4>Open Source</h4>
-                    <p className="lead">Blockstack code is free to inspect, modify, and reuse.</p>
+                    <p className="lead">
+                      Built with code that is free to inspect, modify, and reuse.
+                    </p>
                   </div>
                   <div className="col-sm-4 feature-panel">
                     <div className="container wrap-mob-feat">
-                      <img src="/images/icon-community-globe.svg" className="img-responsive" alt="Community globe icon" />
+                      <img src="/images/icon-community-globe.svg"
+                        className="img-responsive" alt="Community globe icon" />
                     </div>
-                    <h4>Community</h4>
-                    <p className="lead">We are developers united around a common software stack.</p>
+                    <h4>Community-centric</h4>
+                    <p className="lead">
+                      Maintained by developers united around a common software stack.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -77,17 +85,30 @@ class HomePage extends Component {
           <section>
             <div className="bs-docs-featurette col-centered" id="learnmore">
               <div className="container col-centered">
-                <div className="displayed-wrap container col-md-8 col-lg-8 col-centered"><h3 className="displayed">Our mission is to create common infrastructure for developing decentralized applications.</h3></div>
+                <div className="displayed-wrap container col-md-8 col-lg-8 col-centered">
+                  <h3 className="displayed">
+                    Our mission is to create common infrastructure for
+                    developing decentralized applications.
+                  </h3>
+                </div>
                 <div className="row works col-md-10 col-lg-8 col-centered">
                   <div className="col-sm-11 feature-panel col-centered">
                       <h4 className="feat-pan">Community Overview</h4>
                       <p className="lead">
-                        The Blockstack community is a group of blockchain companies and nonprofits coming together to define and develop a set of software protocols and tools to serve as a common backend for blockchain-powered decentralized applications. We are opening membership to the public, welcoming all developers and companies that are interested in joining the consortium and contributing to Blockstack development.
+                        The Blockstack community is a group of blockchain developers,
+                        companies and organizations coming together to define and
+                        develop a set of software protocols and tools to serve as a
+                        common backend for blockchain-powered decentralized applications.
+                        We welcome all developers and companies that are interested
+                        in joining the consortium and contributing to Blockstack development.
                       </p>
                   </div>
                 </div>
                 <div className="displayed-wrap container col-md-8 col-lg-8 col-centered">
-                  <h3 className="displayed">With Blockstack, you will be able to build applications faster and with lower deployment costs.</h3>
+                  <h3 className="displayed">
+                    With Blockstack, you'll be able to build apps with decentralized DNS,
+                    identity, and data storage.
+                  </h3>
                 </div>
               </div>
             </div>  
@@ -96,13 +117,14 @@ class HomePage extends Component {
             <div className="container">
               <div className="row">
                 <div className="container col-xs-11 col-centered">
-                  <hgroup>
-                    <h2 className="col-md-8 col-lg-6 col-centered action-title">
-                      Build Something Bigger Than Yourself!
+                  <hgroup className="push-40">
+                    <h2 className="col-md-10 col-lg-8 col-centered">
+                      Get Started with Decentralized Applications
                     </h2>
                   </hgroup>
                   <div>
-                    <Link to="http://chat.blockstack.org" target="_blank" className="btn btn-lg btn-special btn-slack" role="button">
+                    <Link to="http://chat.blockstack.org" target="_blank" 
+                      className="btn btn-lg btn-special btn-slack" role="button">
                       Get invited to Slack!
                     </Link>
                   </div>
@@ -115,9 +137,6 @@ class HomePage extends Component {
       </DocumentTitle>
     )
   }
-
 }
-
-HomePage.propTypes = propTypes
 
 export default HomePage

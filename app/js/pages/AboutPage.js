@@ -22,12 +22,10 @@ class AboutPage extends Component {
         <div>
           <div className="container-fluid col-centered about-head-wrap">
             <Header />
-            <div className="slides col-sm-10 col-sm-offset-1 padding-top-20">
+            <div className="slides col-sm-12 padding-top-20">
               <section className="hero col-centered">
                 <div>
-                  <div className="col-xs-11 col-sm-10 col-sm-offset-1">
-                    <h1 className="hero-head about-head">What is Blockstack?</h1>
-                  </div>
+                  <h1 className="hero-head about-head">About</h1>
                   <div className="img"></div>
                 </div>
               </section>
@@ -61,56 +59,6 @@ class AboutPage extends Component {
                 </div>
               </div>
             </div>  
-          </section>
-          <section className="container-fluid highlight-box">
-            <div className="bs-docs-featurette col-centered" id="learnmore">
-              <div className="col-centered">
-                <div className="container-fluid col-sm-12 center-block">
-                  <div className="container col-sm-4 feature-panel feat-block">
-                    <Link to="http://chat.blockstack.org/" target="_blank">
-                      <h3>Chat on Slack</h3>
-                      <p className="lead feat-lead">
-                        Chat with devs about Blockstack projects
-                      </p>
-                    </Link>
-                  </div>
-                  <div className="container col-sm-4 feature-panel feat-block">
-                    <Link to="https://forum.blockstack.org/" target="_blank">
-                      <h3>Join our forum</h3>
-                      <p className="lead feat-lead">
-                        Share Blockstack news with the community
-                      </p>
-                    </Link>
-                  </div>
-                  <div className="container col-sm-4 feature-panel feat-block">
-                    <Link to="https://github.com/blockstack/" target="_blank">
-                      <h3>Star on Github</h3>
-                      <p className="lead feat-lead">
-                        Contribute to open source Blockstack code on GitHub
-                      </p>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section className="feature-action col-centered">
-            <div className="container">
-              <div className="row">
-                <div className="container col-xs-11 col-centered">
-                  <hgroup>
-                    <h2 className="col-md-8 col-lg-6 col-centered action-title">
-                      Build Something Bigger Than Yourself!
-                    </h2>
-                  </hgroup>
-                  <div className="container-fluid btn-wrap">
-                    <Link to="http://chat.blockstack.org" target="_blank" className="btn btn-lg btn-special center-btn" role="button">
-                      Get invited to Slack!
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
           </section>
           <Footer />
         </div>

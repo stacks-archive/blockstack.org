@@ -47,12 +47,6 @@ class DocsPage extends Component {
     this.initHighlighting()
   }
 
-  createMarkup(markdown) {
-    return {
-      __html: marked(markdown)
-    }
-  }
-
   getDocPage() {
     let pageName = '404'
     if (docs.hasOwnProperty(this.props.routeParams.docSection)) {
@@ -80,6 +74,12 @@ class DocsPage extends Component {
       })
     }
 
+    let markup = marked(pageProperties.markdown)
+    markup = markup.replace('<a href="', '<a target="_blank" href="')
+    pageProperties.markupInnerHTML = {
+      __html: markup
+    }
+
     return pageProperties
   }
 
@@ -100,7 +100,7 @@ class DocsPage extends Component {
                    &lt; Back to Docs
                   </Link>
                 </p>
-                <div dangerouslySetInnerHTML={this.createMarkup(pageProperties.markdown)}>
+                <div dangerouslySetInnerHTML={pageProperties.markupInnerHTML}>
                 </div>
                 { pageProperties.hasOwnProperty('nextUrl') && pageProperties.hasOwnProperty('nextLabel') ?
                 <div className="row">
@@ -127,23 +127,3 @@ class DocsPage extends Component {
 DocsPage.propTypes = propTypes
 
 export default DocsPage
-
-/*
-<div className="row">
-  <div className="col-md-4">
-    <CardLink href="/docs/namespaces" title="Namespaces"
-      body="Learn how namespaces work and how you can create your own."
-      imageSrc="https://images.unsplash.com/photo-1454165205744-3b78555e5572?crop=entropy&fit=crop&fm=jpg&h=1250&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1650" />
-  </div>
-  <div className="col-md-4">
-    <CardLink href="/docs/contributor-guide" title="Contributor Guide"
-      body="Find out how you can contribute to Blockstack development."
-      imageSrc="https://images.unsplash.com/photo-1454165205744-3b78555e5572?crop=entropy&fit=crop&fm=jpg&h=1250&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1650" />
-  </div>
-  <div className="col-md-4">
-    <CardLink href="/docs/technology" title="Technology"
-      body="Learn about how Blockstack works under the hood."
-      imageSrc="https://images.unsplash.com/photo-1454165205744-3b78555e5572?crop=entropy&fit=crop&fm=jpg&h=1250&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1650" />
-  </div>
-</div>
-*/
