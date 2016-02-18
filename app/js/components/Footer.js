@@ -13,7 +13,7 @@ class Footer extends Component {
     return (
       <footer>
         <div className="container">
-            <div className="col-md-2 foot-left-col hidden-xs hidden-sm">
+            <div className="col-md-2 foot-left-col hidden-md-down">
               <ul className="list-unstyled">
                 <li>
                   <div className="foot-logo">
@@ -24,7 +24,7 @@ class Footer extends Component {
                 </li>
               </ul>
             </div>
-            <div className="col-xs-6 col-md-2">
+            <div className="col-xs-6 col-lg-2">
               <ul className="foot-menu list-unstyled">
                 <li>Community</li>
                 <li>
@@ -41,7 +41,7 @@ class Footer extends Component {
                 </li>
               </ul>
             </div>
-            <div className="col-xs-6 col-md-2">
+            <div className="col-xs-6 col-lg-2">
               <ul className="foot-menu list-unstyled">
                 <li>Social</li>
                 <li>
@@ -55,7 +55,7 @@ class Footer extends Component {
                 </li>
               </ul>
             </div>
-            <div className="col-xs-6 col-md-2">
+            <div className="col-xs-6 col-lg-2">
               <ul className="foot-menu list-unstyled">
                 <li>Resources</li>
                 <li>
@@ -70,7 +70,7 @@ class Footer extends Component {
         <div className="container copy-foot">
           <ul className="midfoot">
             <li>
-              <div className="social hidden-md hidden-lg container">
+              <div className="social hidden-lg-up container">
                 <ul className="sm-social list-unstyled">
                   <li>
                     <Link to="https://www.twitter.com/blockstackorg" target="_blank">
@@ -96,7 +96,7 @@ class Footer extends Component {
               </div>
             </li>
             <li className="pull-right">
-              <div className="social hidden-xs hidden-sm">
+              <div className="social hidden-md-down">
                 <ul className="sm-social list-unstyled">
                   <li>
                     <Link to="https://www.twitter.com/blockstackorg" target="_blank">
