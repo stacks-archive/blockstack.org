@@ -18,7 +18,7 @@ class DocsIndexPage extends Component {
           </div>
           <section className="container-fluid sec-hook">
             <div className="bs-docs-featurette col-centered">
-              <div className="col-md-8 col-md-offset-2">
+              <div className="container">
                 <h1>Blockstack Docs</h1>
                 <div style={{ marginTop: '40px' }}>
                   <div className="row">
