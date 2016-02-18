@@ -36,9 +36,6 @@ class Footer extends Component {
                 <li>
                   <Link to="http://chat.blockstack.org" target="_blank">Chat</Link>
                 </li>
-                <li>
-                  <Link to="/summit">Events</Link>
-                </li>
               </ul>
             </div>
             <div className="col-xs-6 col-lg-2">
