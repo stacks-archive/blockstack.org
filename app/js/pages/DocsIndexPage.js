@@ -49,6 +49,11 @@ class DocsIndexPage extends Component {
                         body="Learn about how Blockstack DNS differs from Namecoin."
                         imageSrc="https://images.unsplash.com/photo-1454165205744-3b78555e5572?crop=entropy&fit=crop&fm=jpg&h=1250&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1650" />
                     </div>
+                    <div className="col-md-4">
+                      <CardLink href="/docs/faq" title="FAQ"
+                        body="A list of questions frequently asked about Blockstack."
+                        imageSrc="https://images.unsplash.com/photo-1454165205744-3b78555e5572?crop=entropy&fit=crop&fm=jpg&h=1250&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1650" />
+                    </div>
                   </div>
                 </div>
               </div>

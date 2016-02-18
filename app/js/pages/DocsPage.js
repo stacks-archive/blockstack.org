@@ -47,12 +47,6 @@ class DocsPage extends Component {
     this.initHighlighting()
   }
 
-  createMarkup(markdown) {
-    return {
-      __html: marked(markdown)
-    }
-  }
-
   getDocPage() {
     let pageName = '404'
     if (docs.hasOwnProperty(this.props.routeParams.docSection)) {
@@ -80,6 +74,12 @@ class DocsPage extends Component {
       })
     }
 
+    let markup = marked(pageProperties.markdown)
+    markup = markup.replace('<a href="', '<a target="_blank" href="')
+    pageProperties.markupInnerHTML = {
+      __html: markup
+    }
+
     return pageProperties
   }
 
@@ -100,7 +100,7 @@ class DocsPage extends Component {
                    &lt; Back to Docs
                   </Link>
                 </p>
-                <div dangerouslySetInnerHTML={this.createMarkup(pageProperties.markdown)}>
+                <div dangerouslySetInnerHTML={pageProperties.markupInnerHTML}>
                 </div>
                 { pageProperties.hasOwnProperty('nextUrl') && pageProperties.hasOwnProperty('nextLabel') ?
                 <div className="row">
