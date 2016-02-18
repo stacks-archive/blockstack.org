@@ -10,18 +10,17 @@
 body{padding-top:0;padding-bottom:0;} /* Reviewed */
 
 /* Globals */
-.push-40{margin-bottom:40px;}
 h3{margin-bottom:15px;}
 h4{margin:20px 0;}
+a{font-weight:500;}
 .col-centered{float:none;margin:0 auto;}
-a{color:rgba(131,28,168,1);font-weight:500;}
-a:hover{color:rgba(144,51,177,1);}
-p,ul,li{font-size:14px;line-height:28px;}
-.nopadding{padding-right:0;padding-left:0;}
+.no-padding{padding-right:0;padding-left:0;}
+
+/* Spacing */
+.push-40{margin-bottom:40px;}
 
 /* Typography */
 h1.hero-head{font-weight:300;text-align:center;margin-bottom:1.5rem;}
-h2.hero-head{}
 .hero-lead{font-size:.9375rem;text-align:center;margin-bottom:2rem;}
 
 /* Navbar */
@@ -35,21 +34,12 @@ h2.hero-head{}
 .btn-primary{max-width:290px;transition:all 160ms linear;}
 .btn-slack{max-width:225px;background-image:url(/images/slack-logo-bug-rgb.png); background-repeat: no-repeat; background-position: left 25px center;background-size:25px 25px;}
 
-/* Menu button */
-.panel{padding-top:25px;padding-bottom:75px;}
-.profile1,.profile2,.profile3,.profile4,.profile5{display:block;margin:0 auto 28px auto;width:160px;height:160px;border-radius:80px;-webkit-border-radius:80px;-moz-border-radius:80px;background-position:center;background-size:cover;}
-.profile-wrap{padding-bottom:40px;text-align:center;}
-.profile6{margin:0 auto 0 -50px;padding:10px;width:180px;height:180px;border:1px solid rgba(240,240,240,1);background-color:rgba(255,255,255,1);background-position:center;background-size:cover;}
-.profile1{background-image:url('/images/jp-singh.jpg');}
-.profile2{background-image:url('/images/albert-wenger.jpg');}
-.profile3{background-image:url('/images/jalak-jobanputra.jpg');}
-.profile4{background-image:url('/images/naval-ravikant.jpg');}
-.profile5{background-image:url('/images/william-mougayar.jpg');}
-/* Reviewed */.about-head-wrap{padding-bottom:30px;background:url(/images/blockchain-timeline.png) no-repeat center top;background-color:#53206f;}
-.highlight-box{padding-top:50px;padding-bottom:50px;background-color:#831ca8;color:rgba(255,255,255,1);}
+/* Other */
 /* Reviewed */.hero{color:rgba(255,255,255,1);}
 /* Reviewed */.hero-wrap{margin-top:1rem;margin-bottom:3rem;}
 /* Reviewed */.col-3-section{margin-top:-50px;padding-top:50px;padding-bottom:50px;background-color:rgba(248,249,251,1);}
+/* Reviewed */.about-head-wrap{padding-bottom:30px;background:url(/images/blockchain-timeline.png);background-repeat:no-repeat;background-position:center top;background-color:#53206f;}
+.highlight-box{padding-top:50px;padding-bottom:50px;background-color:#831ca8;color:rgba(255,255,255,1);}
 .slides{padding-right:10px;padding-left:10px;}
 div.col-sm-4.feature-panel.feat-block:hover,div.col-sm-4.feature-panel.feat-block:focus,div.col-sm-4.feature-panel.feat-block:active,div.col-sm-4.feature-panel.feat-blockt:visited{outline:none;border-radius:6px;background-color:rgba(255,255,255,0.1);text-decoration:none;}
 div.col-sm-4.feature-panel.feat-block{margin-top:15px;margin-bottom:15px;padding-top:1px;padding-bottom:5px;}
@@ -71,7 +61,6 @@ h2.action-title{margin-bottom:35px;font-size:30px;line-height:42px;}
 .gallery-spcl-txt{font-size:16px;}
 .table-wrap{max-width:800px;}
 .table-striped > thead > tr > th{text-align:center;}
-.home-hero-img {max-width: 400px;}
 
 /* Footer */
 footer{padding-top:60px;padding-bottom:80px;background-color:rgba(26,26,26,1);color:rgba(255,255,255,1);font-size:13px;}
@@ -99,8 +88,8 @@ footer > li{list-style:none;}
 .hall{margin-bottom:35px;}
 
 /* Docs */
-/* Reviewed */pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35,39,1);background-color:rgba(32,35,39,1);color:#fff;font-size:12px;border-radius:4px;}
-/* Reviewed */.hljs {background-color: transparent;}
+/* Reviewed */pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35,39,1);background-color:rgba(32,35,39,1);color:#fff;font-size:14px;border-radius:4px;}
+/* Reviewed */.hljs {background-color:transparent;}
 
 
 
