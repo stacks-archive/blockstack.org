@@ -40,8 +40,8 @@ class DocsIndexPage extends Component {
                   </div>
                   <div className="row">
                     <div className="col-md-4">
-                      <CardLink href="/docs/blockstack-vs-dns" title="Blockstack vs Traditional DNS"
-                        body="Learn about how Blockstack DNS differs from traditional DNS."
+                      <CardLink href="/docs/blockstack-vs-dns" title="Blockstack vs ICANN DNS"
+                        body="Learn about how Blockstack DNS differs from traditional ICANN DNS."
                         imageSrc="https://images.unsplash.com/photo-1454165205744-3b78555e5572?crop=entropy&fit=crop&fm=jpg&h=1250&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1650" />
                     </div>
                     <div className="col-md-4">

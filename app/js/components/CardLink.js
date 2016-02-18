@@ -18,7 +18,7 @@ class CardLink extends Component {
   render() {
     return (
       <div>
-        <div className="card col-centered" style={{ maxWidth: '20rem', minWidth: '15rem' }}>
+        <div className="card col-centered" style={{ maxWidth: '20rem', minWidth: '15rem', marginBottom: '20px' }}>
           <Link to={this.props.href} style={{ color: 'black', textDecoration: 'none' }}>
             { this.props.imageSrc ?
             <img src={this.props.imageSrc}
