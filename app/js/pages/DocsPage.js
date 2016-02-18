@@ -93,8 +93,8 @@ class DocsPage extends Component {
             <Header />
           </div>
           <section className="container-fluid spacing-container">
-            <div className="bs-docs-featurette col-centered">
-              <div className="col-md-8 col-md-offset-2">
+            <div className="container col-centered">
+              <div className="container">
                 <p>
                   <Link to="/docs" className="btn btn-secondary btn-sm">
                    &lt; Back to Docs
