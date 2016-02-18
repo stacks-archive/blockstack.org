@@ -54,21 +54,21 @@ class HomePage extends Component {
                       <img src="/images/icon-decentralized.svg" className="img-responsive" alt="Decentralized icon" />
                     </div>
                       <h4>Decentralized</h4>
-                      <p className="lead">Applications can be built without central points of failure.</p>
+                      <p className="lead">Enables applications without any central points of failure.</p>
                   </div>
                   <div className="col-sm-4 feature-panel">
                     <div className="container wrap-mob-feat">
                       <img src="/images/icon-open-source.svg" className="img-responsive" alt="Open source icon" />
                     </div>
                     <h4>Open Source</h4>
-                    <p className="lead">Blockstack code is free to inspect, modify, and reuse.</p>
+                    <p className="lead">Built with code that is free to inspect, modify, and reuse.</p>
                   </div>
                   <div className="col-sm-4 feature-panel">
                     <div className="container wrap-mob-feat">
                       <img src="/images/icon-community-globe.svg" className="img-responsive" alt="Community globe icon" />
                     </div>
-                    <h4>Community</h4>
-                    <p className="lead">We are developers united around a common software stack.</p>
+                    <h4>Community-centric</h4>
+                    <p className="lead">Maintained by developers united around a common software stack.</p>
                   </div>
                 </div>
               </div>
@@ -82,12 +82,12 @@ class HomePage extends Component {
                   <div className="col-sm-11 feature-panel col-centered">
                       <h4 className="feat-pan">Community Overview</h4>
                       <p className="lead">
-                        The Blockstack community is a group of blockchain companies and nonprofits coming together to define and develop a set of software protocols and tools to serve as a common backend for blockchain-powered decentralized applications. We are opening membership to the public, welcoming all developers and companies that are interested in joining the consortium and contributing to Blockstack development.
+                        The Blockstack community is a group of blockchain developers, companies and organizations coming together to define and develop a set of software protocols and tools to serve as a common backend for blockchain-powered decentralized applications. We welcome all developers and companies that are interested in joining the consortium and contributing to Blockstack development.
                       </p>
                   </div>
                 </div>
                 <div className="displayed-wrap container col-md-8 col-lg-8 col-centered">
-                  <h3 className="displayed">With Blockstack, you will be able to build applications faster and with lower deployment costs.</h3>
+                  <h3 className="displayed">With Blockstack, you'll be able to build apps with decentralized DNS, identity, and data storage.</h3>
                 </div>
               </div>
             </div>  
@@ -96,9 +96,9 @@ class HomePage extends Component {
             <div className="container">
               <div className="row">
                 <div className="container col-xs-11 col-centered">
-                  <hgroup>
-                    <h2 className="col-md-8 col-lg-6 col-centered action-title">
-                      Build Something Bigger Than Yourself!
+                  <hgroup className="push-40">
+                    <h2 className="col-md-10 col-lg-8 col-centered">
+                      Get Started with Decentralized Applications
                     </h2>
                   </hgroup>
                   <div className="btn-wrap">

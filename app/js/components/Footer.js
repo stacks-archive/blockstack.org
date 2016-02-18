@@ -117,7 +117,7 @@ class Footer extends Component {
         </div>
         <div className="container base-foot">
             <p className="base-push-left">
-              Made with <span className="glyphicon glyphicon-heart"></span> by the Blockstack community
+              Made with &lt;3 by the Blockstack community
             </p>
         </div>
       </footer>
