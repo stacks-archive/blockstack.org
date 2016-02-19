@@ -21,18 +21,19 @@ a{font-weight:500;}
 
 /* Typography */
 h1.hero-head{font-weight:300;text-align:center;margin-bottom:1.5rem;}
-.hero-lead{font-size:.9375rem;text-align:center;margin-bottom:2rem;}
+.hero-lead{font-size:1rem;text-align:center;margin-bottom:2rem;}
 
 /* Navbar */
+/* Reviewed */.navbar{padding-top:.375rem;padding-bottom:.625rem}
 /* Reviewed */.navbar-brand{width:5.75rem;}
-/* Reviewed */a.nav-link{color:rgba(255,255,255,0.65);font-size:.8125rem;}
+/* Reviewed */a.nav-link{color:rgba(255,255,255,0.65);font-size:.8125rem;margin-top:.25rem;}
 /* Reviewed */a.nav-link:hover,a.nav-link:focus{color:rgba(255,255,255,1);}
 /* Reviewed */.nav-item:first-child{margin-left:.625rem;}
 /* Reviewed */.fa-github{margin-top:-.1875rem;margin-right:.5rem;vertical-align:middle;font-size:1.375rem;}
 
 /* Buttons */
 .btn-primary{max-width:290px;transition:all 160ms linear;}
-.btn-slack{max-width:225px;background-image:url(/images/slack-logo-bug-rgb.png); background-repeat: no-repeat; background-position: left 25px center;background-size:25px 25px;}
+.btn-footer-max-width{max-width:225px;}
 
 /* Other */
 /* Reviewed */.hero{color:rgba(255,255,255,1);}
@@ -107,17 +108,14 @@ footer > li{list-style:none;}
 
   /* Globals */
   /* Reviewed */h1.hero-head{text-align:left;margin-bottom:2rem;font-weight:300;}
-  /* Reviewed */.hero-lead{text-align:left;}
+  /* Reviewed */.hero-lead{font-size:1.125rem;text-align:left;}
   /* Reviewed */.col-3-section{padding-bottom:50px;}
   h3{margin-bottom:15px;}
-
-  /* Buttons */
-  .btn-special{display:inline-block;margin-left:0px;padding-left:85px;max-width:none;background:url(/images/slack-logo-bug-rgb.png) no-repeat left 45px center;background-color:rgba(66,26,89,1);background-size:30px 30px;}
   
   /* Reviewed */.hero-btn {padding-left: 0;}
 
   /* Navbar */
-  /* Reviewed */.navbar-brand{margin-right:5.75rem;}
+  /* Reviewed */.navbar-brand{margin-right:5.5rem;}
   /* Reviewed */.nav-item:first-child{margin-left:.875rem;}
   /* Reviewed */.navbar-nav .nav-item+.nav-item{margin-left:1.375rem;}
   /* Reviewed */a.nav-link{padding-right:5px;padding-left:5px;}
@@ -154,11 +152,8 @@ footer > li{list-style:none;}
   h3{margin-top:25px;margin-bottom:15px;margin-bottom:15px;}
   h4{margin:20px 0;}
 
-  /* Buttons */
-  /* .btn-special-rev{margin-left:25px;} */
-
   /* Hero */
-  /* Reviewed */.hero-wrap{margin-top:8rem;margin-bottom:14rem;}
+  /* Reviewed */.hero-wrap{margin-top:7rem;margin-bottom:15rem;}
   .hero-head{padding-left:0;}
   .slides{padding-top:50px;padding-right:0;padding-left:0;}
   .hero-comm-des{margin-bottom:20px;}
