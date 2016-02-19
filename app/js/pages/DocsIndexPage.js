@@ -27,7 +27,7 @@ class DocsIndexPage extends Component {
             <div className="container col-centered">
               <div className="container">
                 <h1>Blockstack Docs</h1>
-                <div style={{ marginTop: '40px' }}>
+                <div>
                   {docPageRows.map((docPageRow, rowIndex) => {
                     return (
                       <div className="row" key={rowIndex}>
