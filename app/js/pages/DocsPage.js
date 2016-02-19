@@ -74,7 +74,7 @@ class DocsPage extends Component {
             <div className="container col-centered">
               <div className="container">
                 <p>
-                  <Link to="/docs" className="btn btn-secondary btn-sm">
+                  <Link to="/docs">
                    &lt; Back to Docs
                   </Link>
                 </p>
