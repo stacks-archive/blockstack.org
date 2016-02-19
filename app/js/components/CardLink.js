@@ -17,13 +17,12 @@ class CardLink extends Component {
 
   render() {
     return (
-      <div class="row">
-        <div class="col-sm-4">
-          <div className="card m-b-5">
-            <Link to={this.props.href} style={{ color: 'black', textDecoration: 'none' }}>
-              { this.props.imageSrc ?
+      <div className"card-deck-wrapper">
+        <div className"card-deck">
+          <div className"card m-b-5">
+            <Link to={this.props.href} >
+            { this.props.imageSrc ?
               <img src={this.props.imageSrc}
-                style={{ width: '100%', display: 'block' }}
                 className="card-img-top" alt="Card image cap" />
               : null }
               <div className="card-block">
