@@ -92,8 +92,8 @@ class DocsPage extends Component {
                   <div className="row">
                     <div className="col-md-4">
                       <h3>Next Article</h3>
-                      <CardLink href={`/docs/${nextSlug}`} title={nextPage.title}
-                        body={nextPage.description}
+                      <CardLink href={`/docs/${nextSlug}`}
+                        title={nextPage.title} body={nextPage.description}
                         imageSrc={nextPage.image} />
                     </div>
                   </div>
