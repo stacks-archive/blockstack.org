@@ -45,10 +45,15 @@ class DocsPage extends Component {
 
   getPageProperties() {
     let pageName = '404'
-    if (docs.hasOwnProperty(this.props.routeParams.docSection)) {
-      pageName = this.props.routeParams.docSection
+    if (this.props.route.path === '/about') {
+      pageName = 'about'
+    } else if (this.props.routeParams.hasOwnProperty('docSection')) {
+      if (docs.hasOwnProperty(this.props.routeParams.docSection)) {
+        pageName = this.props.routeParams.docSection
+      }
     }
     let pageProperties = docs[pageName]
+    pageProperties.pageName = pageName
 
     let markup = marked(pageProperties.markdown)
     markup = markup.replace('<a href="', '<a target="_blank" href="')
@@ -73,11 +78,13 @@ class DocsPage extends Component {
           <section className="container-fluid spacing-container">
             <div className="container col-centered">
               <div className="container">
+                { pageProperties.pageName !== 'about' ?
                 <p>
                   <Link to="/docs">
                    &lt; Back to Docs
                   </Link>
                 </p>
+                : null }
                 <div dangerouslySetInnerHTML={pageProperties.markupInnerHTML}>
                 </div>
                 {nextPage ?

@@ -28,7 +28,7 @@ class Footer extends Component {
               <ul className="foot-menu list-unstyled">
                 <li>Pages</li>
                 <li>
-                  <Link to="/docs/about">About</Link>
+                  <Link to="/about">About</Link>
                 </li>
                 <li>
                   <Link to="/docs">Docs</Link>
