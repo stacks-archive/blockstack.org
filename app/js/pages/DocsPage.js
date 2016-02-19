@@ -85,6 +85,7 @@ class DocsPage extends Component {
                   </Link>
                 </p>
                 : null }
+                <h1>{pageProperties.title}</h1>
                 <div dangerouslySetInnerHTML={pageProperties.markupInnerHTML}>
                 </div>
                 {nextPage ?
