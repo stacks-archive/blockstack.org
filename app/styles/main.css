@@ -169,8 +169,8 @@ footer > li{list-style:none;}
   .topic{margin-bottom:5px;}
   
   /* Feature action */
-  /* Reviewed */h2.action-title{margin-bottom:3.125rem;font-size:3rem;line-height:4rem;}
-  /* Reviewed */.foot-feature{margin:0;padding-top:12.5rem;padding-bottom:15.63rem;}
+  /* Reviewed */h2.action-title{margin-bottom:3rem;font-size:2.5rem;line-height:3.5rem;}
+  /* Reviewed */.foot-feature{margin:0;padding-top:12.5rem;padding-bottom:15rem;}
 
   /* Footer */
   .foot-left-col{width:22.3%}
