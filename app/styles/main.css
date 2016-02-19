@@ -7,21 +7,20 @@
 
 
 /* Base structure */
-body{padding-top:0;padding-bottom:0;} /* Reviewed */
+/* Reviewed */body{padding-top:0;padding-bottom:0;}
 
 /* Globals */
-h3{margin-bottom:15px;}
-h4{margin:20px 0;}
-a{font-weight:500;}
-.col-centered{float:none;margin:0 auto;}
-.no-padding{padding-right:0;padding-left:0;}
+/* Reviewed */h3{margin-bottom:15px;}
+/* Reviewed */h4{margin:20px 0;}
+/* Reviewed */a{font-weight:500;}
+/* Reviewed */.col-centered{float:none;margin:0 auto;}
+/* Reviewed */.no-padding{padding-right:0;padding-left:0;}
 
 /* Spacing */
-.push-40{margin-bottom:40px;}
 
 /* Typography */
-h1.hero-head{margin-bottom:1.5rem;font-size:2rem;font-weight:300;text-align:center;margin-top:1rem;}
-.hero-lead{font-size:1rem;text-align:center;margin-bottom:2rem;}
+/* Reviewed */h1.hero-head{margin-bottom:1.5rem;font-size:2rem;font-weight:300;text-align:center;margin-top:1rem;}
+/* Reviewed */.hero-lead{font-size:1rem;text-align:center;margin-bottom:2rem;}
 
 /* Navbar */
 /* Reviewed */.navbar{padding-top:.375rem;padding-bottom:.625rem}
@@ -32,8 +31,7 @@ h1.hero-head{margin-bottom:1.5rem;font-size:2rem;font-weight:300;text-align:cent
 /* Reviewed */.fa-github{margin-top:-.1875rem;margin-right:.5rem;vertical-align:middle;font-size:1.375rem;}
 
 /* Buttons */
-.btn-primary{max-width:290px;transition:all 160ms linear;}
-.btn-footer-max-width{max-width:225px;}
+/* Reviewed */.btn-footer-max-width{max-width:225px;}
 
 /* Other */
 /* Reviewed */.hero{color:rgba(255,255,255,1);}
@@ -42,27 +40,24 @@ h1.hero-head{margin-bottom:1.5rem;font-size:2rem;font-weight:300;text-align:cent
 /* Reviewed */.about-head-wrap{padding-bottom:30px;background:url(/images/blockchain-timeline.png);background-repeat:no-repeat;background-position:center top;background-color:#53206f;}
 .highlight-box{padding-top:50px;padding-bottom:50px;background-color:#831ca8;color:rgba(255,255,255,1);}
 .slides{padding-right:10px;padding-left:10px;}
-div.col-sm-4.feature-panel.feat-block:hover,div.col-sm-4.feature-panel.feat-block:focus,div.col-sm-4.feature-panel.feat-block:active,div.col-sm-4.feature-panel.feat-blockt:visited{outline:none;border-radius:6px;background-color:rgba(255,255,255,0.1);text-decoration:none;}
-div.col-sm-4.feature-panel.feat-block{margin-top:15px;margin-bottom:15px;padding-top:1px;padding-bottom:5px;}
-.feat-block a,.feat-block h3{color:rgba(255,255,255,1);font-weight:400!important;}
-.feat-block a:hover,.feat-block h3:hover{text-decoration:none;}
 .feat-lead{margin-bottom:15px;}
-.feature-panel{margin-top:40px;margin-bottom:40px;text-align:center;}
-.feature-panel > img{margin:0 auto;padding:0 15%;}
-.feature-panel > h3{display:block;margin-bottom:10px;}
+/* Reviewed */.feature-panel{margin-top:40px;margin-bottom:40px;text-align:center;}
+/* Reviewed */.feature-panel > img{margin:0 auto;padding:0 15%;}
+/* Reviewed */.feature-panel > h3{display:block;margin-bottom:10px;}
 /* Reviewed */.spacing-container{padding-top:102px;padding-bottom:50px;background-color:rgba(248,249,251,1);}
-.gallery-contain{padding-top:30px;padding-bottom:30px;background-color:rgba(248,249,251,1);}
 .displayed{margin-top:100px;margin-bottom:100px;text-align:center;}
 /* Reviewed */.foot-feature{margin:0;padding-top:150px;padding-bottom:150px;background-color:rgba(83,32,111,1);color:rgba(255,255,255,1);text-align:center;}
 /* Reviewed */h2.action-title{margin-bottom:35px;font-size:30px;line-height:42px;font-weight:300;}
 .wrap-mob-feat{max-width:195px;}
-.mobbanner{max-width:180px;}
 .topic{margin-bottom:5px;text-align:left;}
 .topic-wrap{max-width:275px;}
-.gallery-spcl-txt{font-size:16px;}
 .table-wrap{max-width:800px;}
 .table-striped > thead > tr > th{text-align:center;}
 .hero-img{visibility:hidden;max-width:12rem;}
+
+/* Docs */
+/* Reviewed */pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35,39,1);background-color:rgba(32,35,39,1);color:#fff;font-size:14px;border-radius:4px;}
+/* Reviewed */.hljs {background-color:transparent;}
 
 /* Footer */
 footer{padding-top:60px;padding-bottom:80px;background-color:rgba(26,26,26,1);color:rgba(255,255,255,1);font-size:13px;}
@@ -82,19 +77,6 @@ footer > li{list-style:none;}
 .midfoot,.base-push-left{padding-left:30px;}
 .foot-logo{width:115px;}
 
-/* Custom page footer */
-.container-narrow > hr{margin:30px 0;}
-.row.works.col-md-10.col-lg-8.col-centered::before{display:block;margin:0 auto 75px auto;width:50%;border-top:1px solid rgba(230,230,230,1);content:"";}
-.row.works.col-md-10.col-lg-8.col-centered::after{display:block;margin:75px auto 0 auto;width:50%;border-top:1px solid rgba(230,230,230,1);content:"";}
-.hero-comm-des{margin-bottom:10px;}
-.hall{margin-bottom:35px;}
-
-/* Docs */
-/* Reviewed */pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35,39,1);background-color:rgba(32,35,39,1);color:#fff;font-size:14px;border-radius:4px;}
-/* Reviewed */.hljs {background-color:transparent;}
-
-
-
 /* Media queries */
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
@@ -106,37 +88,36 @@ footer > li{list-style:none;}
 
   /* Max widths */
   /* Reviewed */.container{max-width:975px;}
-
+  
   /* Globals */
   /* Reviewed */h1.hero-head{font-size:2.25rem;text-align:left;margin-top:0;}
   /* Reviewed */.hero-lead{font-size:1.125rem;text-align:left;}
   /* Reviewed */.col-3-section{padding-bottom:50px;}
-  h3{margin-bottom:15px;}
   
-  /* Reviewed */.hero-btn {padding-left: 0;}
+  /* Reviewed */.hero-btn{padding-left:0;}
 
   /* Navbar */
   /* Reviewed */.navbar-brand{margin-right:5.5rem;}
   /* Reviewed */.nav-item:first-child{margin-left:.875rem;}
   /* Reviewed */.navbar-nav .nav-item+.nav-item{margin-left:1.375rem;}
   /* Reviewed */a.nav-link{padding-right:5px;padding-left:5px;}
-
+  
   /* Content */
   /* Reviewed */.hero-wrap{display:block;padding-top:8rem;padding-bottom:12rem;}
+  
+  /* About page */
   .about-head{margin-top:350px;}
-  .slides{padding-top:80px;padding-right:0;padding-left:0;}
-  .summ-head,.about-head,.hero-reg-btn,.date,.hero-comm-des,.hall{text-align:center;}
-  .hero-comm-des{margin-bottom:20px;}
-  .hall{margin-bottom:60px;}
-  .banner{margin-top:17px;width:700px;}
-  .banner-wrap{padding-bottom:0px;height:90px;background:url(/images/summ-banner-dht.png) no-repeat 35% 0%;background-color:rgba(0,0,0,1);}
-  .btn-banner{margin-left:35px;}
-  .close{top:25px;right:25px;}
-  div.col-sm-4.feature-panel.wrap-mob-feat{padding-top:20px;}
+  
+  /* Summit page */
+  /* Reviewed */.summ-head,.about-head,.hero-reg-btn,.date,.hero-comm-des,.hall{text-align:center;}
+  /* Reviewed */.hero-comm-des{margin-bottom:20px;}
+  /* Reviewed */.hall{margin-bottom:60px;}
+
+  /* Other */
+  /* Reviewed */.slides{padding-top:80px;padding-right:0;padding-left:0;}  
+  /* Reviewed */div.col-sm-4.feature-panel.wrap-mob-feat{padding-top:20px;}
   .highlight-box{padding-top:120px;padding-bottom:80px;}
   .feat-lead{margin-bottom:1px;}
-  .mobbanner{max-width:none;}
-  .mobbanner{max-width:180px;}
   .topic{margin-bottom:5px;}
   .hero-img{visibility:visible;max-width:none;}
 }
@@ -159,13 +140,10 @@ footer > li{list-style:none;}
   /* Reviewed */.hero-wrap{padding-top:7rem;padding-bottom:15rem;}
   .hero-head{padding-left:0;}
   .slides{padding-top:50px;padding-right:0;padding-left:0;}
-  .hero-comm-des{margin-bottom:20px;}
-  .hall{margin-bottom:60px;}
   
   .gallery-contain{padding-top:50px;padding-bottom:50px;}
   .feat-pan{font-size:26px;}
   .wrap-mob-feat{max-width:230px;}
-  .mobbanner{max-width:180px;}
   .topic{margin-bottom:5px;}
   
   /* Feature action */
