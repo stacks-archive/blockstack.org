@@ -34,7 +34,7 @@ class DocsPage extends Component {
   }
 
   initHighlighting() {
-    let blocks = document.querySelectorAll('pre code')
+    const blocks = document.querySelectorAll('pre code')
     Array.prototype.forEach.call(blocks, hljs.highlightBlock)
   }
 
@@ -63,9 +63,9 @@ class DocsPage extends Component {
   }
 
   render() {
-    const pageProperties = this.getPageProperties()
-    let nextSlug = pageProperties.hasOwnProperty('next') ? pageProperties.next : null
-    let nextPage = nextSlug ? docs[nextSlug] : null
+    const pageProperties = this.getPageProperties(),
+          nextSlug = pageProperties.hasOwnProperty('next') ? pageProperties.next : null,
+          nextPage = nextSlug ? docs[nextSlug] : null
 
     return (
       <DocumentTitle title={`Blockstack - ${pageProperties.title}`}>

@@ -11,7 +11,7 @@ import docs             from '../../docs.json'
 
 class DocsIndexPage extends Component {
   render() {
-    let docPageRows = [
+    const docPageRows = [
       ['installation', 'basic-usage', 'extended-usage'],
       ['what-is-blockstack', 'blockstack-vs-dns', 'blockstack-vs-namecoin'],
       ['faq']
@@ -32,7 +32,7 @@ class DocsIndexPage extends Component {
                     return (
                       <div className="row" key={rowIndex}>
                       {docPageRow.map((slug, columnIndex) => {
-                        let docPage = docs[slug]
+                        const docPage = docs[slug]
                         return (
                           <div className="col-md-4" key={columnIndex}>
                             <CardLink href={`/docs/${slug}`} title={docPage.title}

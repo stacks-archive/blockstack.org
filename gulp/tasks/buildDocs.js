@@ -16,7 +16,6 @@ gulp.task('buildDocs', function() {
       docProperties.markdown = pageSections[2]
       var propertyLines = pageSections[1].split('\n')
       propertyLines.map(function(propertyLine) {
-        console.log(propertyLine)
         if (propertyLine.split(': ').length === 2) {
           var parts = propertyLine.split(': ')
           var propertyName = parts[0],
