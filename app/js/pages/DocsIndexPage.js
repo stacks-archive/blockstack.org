@@ -27,23 +27,24 @@ class DocsIndexPage extends Component {
             <div className="container col-centered">
               <div className="container">
                 <h1>Blockstack Docs</h1>
-                <div>
+
+                <div className="card-deck-wrapper">
                   {docPageRows.map((docPageRow, rowIndex) => {
                     return (
-                      <div className="row" key={rowIndex}>
+                      <div className="card-deck m-b-3" key={rowIndex}>
                       {docPageRow.map((slug, columnIndex) => {
                         const docPage = docs[slug]
                         return (
-                          <div className="col-md-4" key={columnIndex}>
-                            <CardLink href={`/docs/${slug}`} title={docPage.title}
-                              body={docPage.description} imageSrc={docPage.image} />
-                          </div>
+                          <CardLink key={columnIndex} href={`/docs/${slug}`}
+                            title={docPage.title} body={docPage.description}
+                            imageSrc={docPage.image} cardsPerRow={3} />
                         )
                       })}
                       </div>
                     )
                   })}
                 </div>
+
               </div>
             </div>
           </section>
