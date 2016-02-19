@@ -7,13 +7,10 @@ import DocumentTitle    from 'react-document-title'
 import Header           from '../components/Header'
 import Footer           from '../components/Footer'
 
-const propTypes = {
-}
-
 class AboutPage extends Component {
 
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
@@ -65,9 +62,6 @@ class AboutPage extends Component {
       </DocumentTitle>
     )
   }
-
 }
-
-AboutPage.propTypes = propTypes
 
 export default AboutPage

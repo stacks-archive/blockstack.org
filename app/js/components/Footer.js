@@ -26,10 +26,18 @@ class Footer extends Component {
             </div>
             <div className="col-xs-6 col-lg-2">
               <ul className="foot-menu list-unstyled">
-                <li>Community</li>
+                <li>Pages</li>
                 <li>
                   <Link to="/about">About</Link>
                 </li>
+                <li>
+                  <Link to="/docs">Docs</Link>
+                </li>
+              </ul>
+            </div>
+            <div className="col-xs-6 col-lg-2">
+              <ul className="foot-menu list-unstyled">
+                <li>Community</li>
                 <li>
                   <Link to="https://forum.blockstack.org/" target="_blank">Forum</Link>
                 </li>
@@ -42,24 +50,10 @@ class Footer extends Component {
               <ul className="foot-menu list-unstyled">
                 <li>Social</li>
                 <li>
-                  <Link to="#">Press</Link>
-                </li>
-                <li>
-                  <Link to="https://www.twitter.com/blockstackorg" target="_blank">Twitter</Link>
-                </li>
-                <li>
-                  <Link to="https://www.youtube.com/channel/UCvDtRhHLNDyKiY-iwhneNbw" target="_blank">YouTube</Link>
-                </li>
-              </ul>
-            </div>
-            <div className="col-xs-6 col-lg-2">
-              <ul className="foot-menu list-unstyled">
-                <li>Resources</li>
-                <li>
                   <Link to="https://github.com/blockstack" target="_blank">Github</Link>
                 </li>
                 <li>
-                  <Link to="https://github.com/blockstack/wiki" target="_blank">Wiki</Link>
+                  <Link to="https://www.twitter.com/blockstackorg" target="_blank">Twitter</Link>
                 </li>
               </ul>
             </div>

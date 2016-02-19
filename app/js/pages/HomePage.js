@@ -8,8 +8,6 @@ import Header        from '../components/Header'
 import Footer        from '../components/Footer'
 
 class HomePage extends Component {
-  static propTypes: {
-  }
 
   constructor(props) {
     super(props)

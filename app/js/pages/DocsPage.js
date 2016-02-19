@@ -21,9 +21,6 @@ marked.setOptions({
   smartypants: false
 })
 
-const propTypes = {
-}
-
 class DocsPage extends Component {
 
   constructor(props) {
@@ -101,9 +98,6 @@ class DocsPage extends Component {
       </DocumentTitle>
     )
   }
-
 }
-
-DocsPage.propTypes = propTypes
 
 export default DocsPage
