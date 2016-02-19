@@ -20,7 +20,7 @@ a{font-weight:500;}
 .push-40{margin-bottom:40px;}
 
 /* Typography */
-h1.hero-head{font-weight:300;text-align:center;margin-bottom:1.5rem;}
+h1.hero-head{margin-bottom:1.5rem;font-size:2rem;font-weight:300;text-align:center;margin-top:1rem;}
 .hero-lead{font-size:1rem;text-align:center;margin-bottom:2rem;}
 
 /* Navbar */
@@ -37,7 +37,7 @@ h1.hero-head{font-weight:300;text-align:center;margin-bottom:1.5rem;}
 
 /* Other */
 /* Reviewed */.hero{color:rgba(255,255,255,1);}
-/* Reviewed */.hero-wrap{margin-top:1rem;margin-bottom:3rem;}
+/* Reviewed */.hero-wrap{padding-top:1rem;padding-bottom:3rem;}
 /* Reviewed */.col-3-section{margin-top:-50px;padding-top:50px;padding-bottom:50px;background-color:rgba(248,249,251,1);}
 /* Reviewed */.about-head-wrap{padding-bottom:30px;background:url(/images/blockchain-timeline.png);background-repeat:no-repeat;background-position:center top;background-color:#53206f;}
 .highlight-box{padding-top:50px;padding-bottom:50px;background-color:#831ca8;color:rgba(255,255,255,1);}
@@ -53,8 +53,8 @@ div.col-sm-4.feature-panel.feat-block{margin-top:15px;margin-bottom:15px;padding
 /* Reviewed */.spacing-container{padding-top:102px;padding-bottom:50px;background-color:rgba(248,249,251,1);}
 .gallery-contain{padding-top:30px;padding-bottom:30px;background-color:rgba(248,249,251,1);}
 .displayed{margin-top:100px;margin-bottom:100px;text-align:center;}
-.feature-action{margin:0;padding-top:150px;padding-bottom:150px;background-color:rgba(83,32,111,1);color:rgba(255,255,255,1);text-align:center;}
-h2.action-title{margin-bottom:35px;font-size:30px;line-height:42px;}
+/* Reviewed */.foot-feature{margin:0;padding-top:150px;padding-bottom:150px;background-color:rgba(83,32,111,1);color:rgba(255,255,255,1);text-align:center;}
+/* Reviewed */h2.action-title{margin-bottom:35px;font-size:30px;line-height:42px;font-weight:300;}
 .wrap-mob-feat{max-width:195px;}
 .mobbanner{max-width:180px;}
 .topic{margin-bottom:5px;text-align:left;}
@@ -62,6 +62,7 @@ h2.action-title{margin-bottom:35px;font-size:30px;line-height:42px;}
 .gallery-spcl-txt{font-size:16px;}
 .table-wrap{max-width:800px;}
 .table-striped > thead > tr > th{text-align:center;}
+.hero-img{visibility:hidden;max-width:12rem;}
 
 /* Footer */
 footer{padding-top:60px;padding-bottom:80px;background-color:rgba(26,26,26,1);color:rgba(255,255,255,1);font-size:13px;}
@@ -107,7 +108,7 @@ footer > li{list-style:none;}
   /* Reviewed */.container{max-width:975px;}
 
   /* Globals */
-  /* Reviewed */h1.hero-head{text-align:left;margin-bottom:2rem;font-weight:300;}
+  /* Reviewed */h1.hero-head{font-size:2.25rem;text-align:left;margin-top:0;}
   /* Reviewed */.hero-lead{font-size:1.125rem;text-align:left;}
   /* Reviewed */.col-3-section{padding-bottom:50px;}
   h3{margin-bottom:15px;}
@@ -121,7 +122,7 @@ footer > li{list-style:none;}
   /* Reviewed */a.nav-link{padding-right:5px;padding-left:5px;}
 
   /* Content */
-  /* Reviewed */.hero-wrap{display:block;margin-top:7rem;margin-bottom:10rem;}
+  /* Reviewed */.hero-wrap{display:block;padding-top:8rem;padding-bottom:12rem;}
   .about-head{margin-top:350px;}
   .slides{padding-top:80px;padding-right:0;padding-left:0;}
   .summ-head,.about-head,.hero-reg-btn,.date,.hero-comm-des,.hall{text-align:center;}
@@ -137,6 +138,7 @@ footer > li{list-style:none;}
   .mobbanner{max-width:none;}
   .mobbanner{max-width:180px;}
   .topic{margin-bottom:5px;}
+  .hero-img{visibility:visible;max-width:none;}
 }
 
 
@@ -149,11 +151,12 @@ footer > li{list-style:none;}
   .bs-docs-featurette{max-width:1170px;}
 
   /* Globals */
-  h3{margin-top:25px;margin-bottom:15px;margin-bottom:15px;}
+  /* Reviewed */h1.hero-head{font-size:2.5rem;}
+  h3{margin-top:25px;margin-bottom:15px;margin-bottom:20px;}
   h4{margin:20px 0;}
 
   /* Hero */
-  /* Reviewed */.hero-wrap{margin-top:7rem;margin-bottom:15rem;}
+  /* Reviewed */.hero-wrap{padding-top:7rem;padding-bottom:15rem;}
   .hero-head{padding-left:0;}
   .slides{padding-top:50px;padding-right:0;padding-left:0;}
   .hero-comm-des{margin-bottom:20px;}
@@ -166,8 +169,8 @@ footer > li{list-style:none;}
   .topic{margin-bottom:5px;}
   
   /* Feature action */
-  h2.action-title{margin-bottom:55px;font-size:48px;line-height:64px;}
-  .feature-action{margin:0;padding-top:200px;padding-bottom:200px;}
+  /* Reviewed */h2.action-title{margin-bottom:3.125rem;font-size:3rem;line-height:4rem;}
+  /* Reviewed */.foot-feature{margin:0;padding-top:12.5rem;padding-bottom:15.63rem;}
 
   /* Footer */
   .foot-left-col{width:22.3%}
