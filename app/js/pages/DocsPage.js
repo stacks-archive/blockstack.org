@@ -30,7 +30,6 @@ class DocsPage extends Component {
     super(props)
 
     this.initHighlighting = this.initHighlighting.bind(this)
-    this.getDocPage = this.getDocPage.bind(this)
     this.getPageProperties = this.getPageProperties.bind(this)
   }
 
@@ -47,44 +46,26 @@ class DocsPage extends Component {
     this.initHighlighting()
   }
 
-  getDocPage() {
+  getPageProperties() {
     let pageName = '404'
     if (docs.hasOwnProperty(this.props.routeParams.docSection)) {
       pageName = this.props.routeParams.docSection
     }
-    return docs[pageName]
-  }
-
-  getPageProperties() {
-    let docPage = this.getDocPage()
-
-    let pageProperties = {
-      markdown: ''
-    }
-
-    let pageSections = docPage.split('---')
-    if (pageSections.length === 3) {
-      pageProperties.markdown = pageSections[2]
-      let propertyLines = pageSections[1].split('\n')
-      propertyLines.map((propertyLine) => {
-        if (propertyLine.split(':').length === 2) {
-          let [propertyName, propertyValue] = propertyLine.split(':')
-          pageProperties[propertyName] = propertyValue.trim()
-        }
-      })
-    }
+    let pageProperties = docs[pageName]
 
     let markup = marked(pageProperties.markdown)
     markup = markup.replace('<a href="', '<a target="_blank" href="')
     pageProperties.markupInnerHTML = {
       __html: markup
     }
-
+    
     return pageProperties
   }
 
   render() {
     const pageProperties = this.getPageProperties()
+    let nextSlug = pageProperties.hasOwnProperty('next') ? pageProperties.next : null
+    let nextPage = nextSlug ? docs[nextSlug] : null
 
     return (
       <DocumentTitle title={`Blockstack - ${pageProperties.title}`}>
@@ -102,17 +83,16 @@ class DocsPage extends Component {
                 </p>
                 <div dangerouslySetInnerHTML={pageProperties.markupInnerHTML}>
                 </div>
-                { pageProperties.hasOwnProperty('nextUrl') && pageProperties.hasOwnProperty('nextLabel') ?
-                <div className="row">
-                  <div className="col-md-4">
-                    <h3>Next Article</h3>
-                    <CardLink href={pageProperties.nextUrl} title={pageProperties.nextLabel}
-                      body={pageProperties.nextDescription}
-                      imageSrc="https://images.unsplash.com/photo-1454165205744-3b78555e5572?crop=entropy&fit=crop&fm=jpg&h=1250&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1650" />
+                {nextPage ?
+                  <div className="row">
+                    <div className="col-md-4">
+                      <h3>Next Article</h3>
+                      <CardLink href={`/docs/${nextSlug}`} title={nextPage.title}
+                        body={nextPage.description}
+                        imageSrc={nextPage.image} />
+                    </div>
                   </div>
-                </div>
-                : null
-                }
+                : null }
               </div>
             </div>
           </section>
