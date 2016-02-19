@@ -123,9 +123,8 @@ class HomePage extends Component {
                     </h2>
                   </hgroup>
                   <div>
-                    <Link to="http://chat.blockstack.org" target="_blank" 
-                      className="btn btn-lg btn-special btn-slack" role="button">
-                      Get invited to Slack!
+                    <Link className="btn btn-lg btn-special btn-footer-max-width" to="/docs" role="button">
+                      Getting Started
                     </Link>
                   </div>
                 </div>
