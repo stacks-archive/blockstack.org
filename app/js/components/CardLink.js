@@ -17,25 +17,29 @@ class CardLink extends Component {
 
   render() {
     return (
-      <div>
-        <div className="card col-centered" style={{ maxWidth: '20rem', minWidth: '15rem', marginBottom: '20px' }}>
-          <Link to={this.props.href} style={{ color: 'black', textDecoration: 'none' }}>
-            { this.props.imageSrc ?
-            <img src={this.props.imageSrc}
-              style={{ height: '180px', width: '100%', display: 'block' }}
-              className="card-img-top" alt="Card image cap" />
-            : null }
-            <div className="card-block">
-              <h4 className="card-title">
-                {this.props.title}
-              </h4>
-              {this.props.body ?
-              <p className="card-text">
-                {this.props.body}
-              </p>
+      <div class="row">
+        <div class="col-sm-4">
+          <div className="card m-b-5">
+            <Link to={this.props.href} style={{ color: 'black', textDecoration: 'none' }}>
+              { this.props.imageSrc ?
+              <img src={this.props.imageSrc}
+                style={{ width: '100%', display: 'block' }}
+                className="card-img-top" alt="Card image cap" />
               : null }
-            </div>
-          </Link>
+              <div className="card-block">
+                <div className="card-block">
+                  <h4 className="card-title">
+                    {this.props.title}
+                  </h4>
+                  {this.props.body ?
+                  <p className="card-text">
+                    {this.props.body}
+                  </p>
+                  : null }
+                </div>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     )

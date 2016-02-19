@@ -35,3 +35,6 @@ unused
 
 # Dist
 dist
+
+# Doc File
+app/docs.json
