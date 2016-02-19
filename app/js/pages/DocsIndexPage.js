@@ -12,9 +12,9 @@ import docs             from '../../docs.json'
 class DocsIndexPage extends Component {
   render() {
     const docPageRows = [
-      ['what-is-blockstack', 'installation', 'basic-usage'],
-      ['extended-usage', 'blockstack-vs-dns', 'blockstack-vs-namecoin'],
-      ['namespaces', 'faq']
+      ['what-is-blockstack', 'installation'],
+      ['basic-usage', 'extended-usage', 'blockstack-vs-dns'],
+      ['blockstack-vs-namecoin', 'namespaces', 'faq']
     ]
 
     return (
