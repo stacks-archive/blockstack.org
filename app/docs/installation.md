@@ -1,11 +1,9 @@
 ---
 title: Installation
-nextUrl: /docs/basic-usage
-nextLabel: Basic Usage
-nextDescription: Explore the basic usage of Blockstack, including looking up and registering names.
+description: Get started by installing and configuring Blockstack.
+image: https://images.unsplash.com/photo-1420310414923-bf3651a89816?crop=entropy&fit=crop&fm=jpg&h=1100&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1500
+next: basic-usage
 ---
-
-# Installation
 
 The quickest way to get started with Blockstack and get a glimpse of what it can do is to download the command line interface and perform a name lookup.
 

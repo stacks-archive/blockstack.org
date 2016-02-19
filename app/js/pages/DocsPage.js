@@ -21,21 +21,17 @@ marked.setOptions({
   smartypants: false
 })
 
-const propTypes = {
-}
-
 class DocsPage extends Component {
 
   constructor(props) {
     super(props)
 
     this.initHighlighting = this.initHighlighting.bind(this)
-    this.getDocPage = this.getDocPage.bind(this)
     this.getPageProperties = this.getPageProperties.bind(this)
   }
 
   initHighlighting() {
-    let blocks = document.querySelectorAll('pre code')
+    const blocks = document.querySelectorAll('pre code')
     Array.prototype.forEach.call(blocks, hljs.highlightBlock)
   }
 
@@ -47,47 +43,34 @@ class DocsPage extends Component {
     this.initHighlighting()
   }
 
-  getDocPage() {
-    let pageName = '404'
-    if (docs.hasOwnProperty(this.props.routeParams.docSection)) {
-      pageName = this.props.routeParams.docSection
-    }
-    return docs[pageName]
-  }
-
   getPageProperties() {
-    let docPage = this.getDocPage()
-
-    let pageProperties = {
-      markdown: ''
+    let pageName = '404'
+    if (this.props.route.path === '/about') {
+      pageName = 'about'
+    } else if (this.props.routeParams.hasOwnProperty('docSection')) {
+      if (docs.hasOwnProperty(this.props.routeParams.docSection)) {
+        pageName = this.props.routeParams.docSection
+      }
     }
-
-    let pageSections = docPage.split('---')
-    if (pageSections.length === 3) {
-      pageProperties.markdown = pageSections[2]
-      let propertyLines = pageSections[1].split('\n')
-      propertyLines.map((propertyLine) => {
-        if (propertyLine.split(':').length === 2) {
-          let [propertyName, propertyValue] = propertyLine.split(':')
-          pageProperties[propertyName] = propertyValue.trim()
-        }
-      })
-    }
+    let pageProperties = docs[pageName]
+    pageProperties.pageName = pageName
 
     let markup = marked(pageProperties.markdown)
     markup = markup.replace('<a href="', '<a target="_blank" href="')
     pageProperties.markupInnerHTML = {
       __html: markup
     }
-
+    
     return pageProperties
   }
 
   render() {
-    const pageProperties = this.getPageProperties()
+    const pageProperties = this.getPageProperties(),
+          nextSlug = pageProperties.hasOwnProperty('next') ? pageProperties.next : null,
+          nextPage = nextSlug ? docs[nextSlug] : null
 
     return (
-      <DocumentTitle title="Blockstack - Documentation">
+      <DocumentTitle title={`Blockstack - ${pageProperties.title}`}>
         <div>
           <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
@@ -95,24 +78,26 @@ class DocsPage extends Component {
           <section className="container-fluid spacing-container">
             <div className="container col-centered">
               <div className="container">
+                { pageProperties.pageName !== 'about' ?
                 <p>
-                  <Link to="/docs" className="btn btn-secondary btn-sm">
+                  <Link to="/docs">
                    &lt; Back to Docs
                   </Link>
                 </p>
+                : null }
+                <h1>{pageProperties.title}</h1>
                 <div dangerouslySetInnerHTML={pageProperties.markupInnerHTML}>
                 </div>
-                { pageProperties.hasOwnProperty('nextUrl') && pageProperties.hasOwnProperty('nextLabel') ?
-                <div className="row">
-                  <div className="col-md-4">
-                    <h3>Next Article</h3>
-                    <CardLink href={pageProperties.nextUrl} title={pageProperties.nextLabel}
-                      body={pageProperties.nextDescription}
-                      imageSrc="https://images.unsplash.com/photo-1454165205744-3b78555e5572?crop=entropy&fit=crop&fm=jpg&h=1250&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1650" />
+                {nextPage ?
+                  <div className="row">
+                    <div className="col-md-4">
+                      <h3>Next Article</h3>
+                      <CardLink href={`/docs/${nextSlug}`} title={nextPage.title}
+                        body={nextPage.description}
+                        imageSrc={nextPage.image} />
+                    </div>
                   </div>
-                </div>
-                : null
-                }
+                : null }
               </div>
             </div>
           </section>
@@ -121,9 +106,6 @@ class DocsPage extends Component {
       </DocumentTitle>
     )
   }
-
 }
-
-DocsPage.propTypes = propTypes
 
 export default DocsPage
