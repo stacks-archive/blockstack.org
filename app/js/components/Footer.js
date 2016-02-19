@@ -42,7 +42,7 @@ class Footer extends Component {
                   <Link to="https://forum.blockstack.org/" target="_blank">Forum</Link>
                 </li>
                 <li>
-                  <Link to="http://chat.blockstack.org" target="_blank">Chat</Link>
+                  <Link to="http://chat.blockstack.org" target="_blank">Slack Group</Link>
                 </li>
               </ul>
             </div>
