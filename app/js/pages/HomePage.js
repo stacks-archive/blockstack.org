@@ -38,8 +38,8 @@ class HomePage extends Component {
                     </Link>
                   </p>
                 </div>
-                <div className="col-xs-10 offset-xs-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0">
-                  <img src="/images/hero-pip-install-blockstack.svg" />
+                <div className="col-sm-8 offset-sm-2 col-md-6 offset-md-0">
+                  <img className="hero-img" src="/images/hero-pip-install-blockstack.svg" />
                 </div>
               </section>
             </div>
@@ -113,12 +113,12 @@ class HomePage extends Component {
               </div>
             </div>  
           </section>
-          <section className="feature-action col-centered">
+          <section className="foot-feature col-centered">
             <div className="container">
               <div className="row">
                 <div className="container col-xs-11 col-centered">
                   <hgroup className="push-40">
-                    <h2 className="col-md-10 col-lg-8 col-centered">
+                    <h2 className="col-md-10 col-lg-8 col-centered action-title">
                       Get Started with Decentralized Applications
                     </h2>
                   </hgroup>
