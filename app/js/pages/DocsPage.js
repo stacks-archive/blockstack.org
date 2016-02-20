@@ -75,16 +75,25 @@ class DocsPage extends Component {
           <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
           </div>
+          { pageProperties.pageName !== 'about' ?
           <section className="container-fluid spacing-container">
             <div className="container col-centered">
               <div className="container">
-                { pageProperties.pageName !== 'about' ?
                 <p>
                   <Link to="/docs">
                    &lt; Back to Docs
                   </Link>
                 </p>
-                : null }
+              </div>
+            </div>
+          </section>
+          : null }
+          <div className="m-b-3 docs-header-image-wrapper">
+            <img src={pageProperties.image} className="img-fluid docs-header-image" />
+          </div>
+          <section className="m-b-5">
+            <div className="container col-centered">
+              <div>
                 <h1>{pageProperties.title}</h1>
                 <div dangerouslySetInnerHTML={pageProperties.markupInnerHTML}>
                 </div>

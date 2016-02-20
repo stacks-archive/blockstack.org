@@ -159,7 +159,19 @@ footer > li{list-style:none;}
   .foot-logo{max-width:190px;}
 }
 
-
+.docs-header-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 425px;
+}
+.docs-header-image {
+  position: absolute;
+  margin: auto;
+  top: -100%;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+}
 
 
 /* Large devices (large desktops, 1200px and up) */
