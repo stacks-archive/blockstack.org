@@ -76,6 +76,14 @@ class HomePage extends Component {
                       Maintained by developers united around a common software stack.
                     </p>
                   </div>
+                  <div className="row col-sm-11 col-md-11 col-centered">
+                    <div className="col-sm-12 feature-panel">
+                      <h3>Star Blockstack on GitHub:</h3>
+                      <iframe src="https://ghbtns.com/github-btn.html?user=blockstack&repo=blockstack-server&type=star&count=true&size=large"
+                      frameborder="0" scrolling="0" width="160px" height="30px">
+                      </iframe>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
