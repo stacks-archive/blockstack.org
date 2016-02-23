@@ -11,10 +11,18 @@ import docs             from '../../docs.json'
 
 class DocsIndexPage extends Component {
   render() {
-    const docPageRows = [
-      ['what-is-blockstack', 'installation', 'basic-usage'],
-      ['extended-usage', 'blockstack-vs-dns', 'blockstack-vs-namecoin'],
-      ['how-blockstack-works', 'namespaces', 'faq']
+    const pageRows = [
+      {
+        title: 'Getting Started',
+        items: ['what-is-blockstack', 'installation', 'basic-usage']
+      },
+      {
+        title: 'Blockstack Articles',
+        items: ['extended-usage', 'blockstack-vs-dns', 'blockstack-vs-namecoin']
+      },
+      {
+        items: ['how-blockstack-works', 'namespaces', 'faq']
+      }
     ]
 
     return (
@@ -26,25 +34,27 @@ class DocsIndexPage extends Component {
           <section className="container-fluid spacing-container">
             <div className="container col-centered">
               <div className="container">
-                <h1>Blockstack Docs</h1>
-
-                <div className="card-deck-wrapper">
-                  {docPageRows.map((docPageRow, rowIndex) => {
-                    return (
-                      <div className="card-deck m-b-3" key={rowIndex}>
-                      {docPageRow.map((slug, columnIndex) => {
-                        const docPage = docs[slug]
-                        return (
-                          <CardLink key={columnIndex} href={`/docs/${slug}`}
-                            title={docPage.title} body={docPage.description}
-                            imageSrc={docPage.image} cardsPerRow={3} />
-                        )
-                      })}
+                {pageRows.map((pageRow, rowIndex) => {
+                  return (
+                    <div key={rowIndex}>
+                      {pageRow.title ?
+                      <h1>{pageRow.title}</h1>
+                      : null }
+                      <div className="card-deck-wrapper">
+                        <div className="card-deck m-b-3">
+                        {pageRow.items.map((slug, columnIndex) => {
+                          const page = docs[slug]
+                          return (
+                            <CardLink key={columnIndex} href={`/docs/${slug}`}
+                              title={page.title} body={page.description}
+                              imageSrc={page.image} cardsPerRow={3} />
+                          )
+                        })}
+                        </div>
                       </div>
-                    )
-                  })}
-                </div>
-
+                    </div>
+                  )
+                })}
               </div>
             </div>
           </section>
