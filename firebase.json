@@ -1,5 +1,5 @@
 {
-  "firebase": "blockstack",
+  "firebase": "blockstack-staging",
   "public": "build",
   "ignore": [
     "**/.*",
