@@ -1,20 +1,20 @@
 'use strict';
 
-import React              from 'react'
+import {Component, PropTypes, cloneElement} from 'react'
 
 import Header             from './components/Header'
 import Footer             from './components/Footer'
 
 const propTypes = {
-  params: React.PropTypes.object,
-  query: React.PropTypes.object,
-  children: React.PropTypes.oneOfType([
-    React.PropTypes.array,
-    React.PropTypes.object
+  params: PropTypes.object,
+  query: PropTypes.object,
+  children: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.object
   ])
 }
 
-class App extends React.Component {
+class App extends Component {
 
   constructor(props) {
     super(props)
@@ -22,7 +22,7 @@ class App extends React.Component {
   }
 
   renderChildren() {
-    return React.cloneElement(this.props.children, {
+    return cloneElement(this.props.children, {
       params: this.props.params,
       query: this.props.query
     })

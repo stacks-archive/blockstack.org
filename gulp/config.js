@@ -20,6 +20,11 @@ const config = {
     dest: './build/css/'
   },
 
+  docs: {
+    src: './app/docs/*.md',
+    dest: './build/docs/'
+  },
+
   sourceDir: './app/',
 
   buildDir: './build/',

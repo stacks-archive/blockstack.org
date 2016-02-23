@@ -1,77 +1,111 @@
-'use strict';
+'use strict'
 
-import React            from 'react'
+import {Component}      from 'react'
 import {Link}           from 'react-router'
 import DocumentTitle    from 'react-document-title'
-import Markdown         from 'react-remarkable'
+import marked           from 'marked'
 
 import Header           from '../components/Header'
 import Footer           from '../components/Footer'
+import CardLink         from '../components/CardLink'
 import docs             from '../../docs.json'
 
-const propTypes = {
-}
+marked.setOptions({
+  renderer: new marked.Renderer(),
+  gfm: true,
+  tables: true,
+  breaks: false,
+  pedantic: false,
+  sanitize: false,
+  smartLists: true,
+  smartypants: false
+})
 
-class DocsPage extends React.Component {
+class DocsPage extends Component {
 
   constructor(props) {
     super(props)
 
-    console.log(this.props)
-    console.log('constructor called')
+    this.initHighlighting = this.initHighlighting.bind(this)
+    this.getPageProperties = this.getPageProperties.bind(this)
+  }
+
+  initHighlighting() {
+    const blocks = document.querySelectorAll('pre code')
+    Array.prototype.forEach.call(blocks, hljs.highlightBlock)
   }
 
   componentDidMount() {
-    console.log('component mounted')
+    this.initHighlighting()
+  }
+
+  componentDidUpdate() {
+    this.initHighlighting()
+  }
+
+  getPageProperties() {
+    let pageName = '404'
+    if (this.props.route.path === '/about') {
+      pageName = 'about'
+    } else if (this.props.routeParams.hasOwnProperty('docSection')) {
+      if (docs.hasOwnProperty(this.props.routeParams.docSection)) {
+        pageName = this.props.routeParams.docSection
+      }
+    }
+    let pageProperties = docs[pageName]
+    pageProperties.pageName = pageName
+
+    let markup = marked(pageProperties.markdown)
+    markup = markup.replace('<a href="', '<a target="_blank" href="')
+    pageProperties.markupInnerHTML = {
+      __html: markup
+    }
+    
+    return pageProperties
   }
 
   render() {
-    var pageName = 'index'
-    if (this.props.route.path !== '/docs') {
-      pageName = this.props.routeParams.docSection
-    }
-    var markdown = docs[pageName]
-
-    var menuItems = [
-      {path: '/docs', name: 'Overview'},
-      {path: '/docs/blockstore', name: 'Blockstore'},
-      {path: '/docs/blockchain-profile', name: 'Blockchain Profile'},
-      {path: '/docs/blockchain-auth', name: 'Blockchain Auth'}
-    ]
-
-    var _this = this
+    const pageProperties = this.getPageProperties(),
+          nextSlug = pageProperties.hasOwnProperty('next') ? pageProperties.next : null,
+          nextPage = nextSlug ? docs[nextSlug] : null
 
     return (
-      <DocumentTitle title="Blockstack - Documentation">
+      <DocumentTitle title={`Blockstack - ${pageProperties.title}`}>
         <div>
-          <div className="container-fluid col-centered about-head-wrap">
+          <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
           </div>
-          <section className="container-fluid sec-hook">
-            <div className="bs-docs-featurette col-centered">
-              <div className="col-md-4">
-                <div className="list-group">
-                  {
-                    menuItems.map(function(menuItem) {
-                      var className = 'list-group-item'
-                      if (menuItem.path === _this.props.location.pathname) {
-                        className += ' active'
-                      }
-                      return (
-                        <Link
-                          key={menuItem.path}
-                          to={menuItem.path}
-                          className={className}>
-                          {menuItem.name}
-                        </Link>
-                      )
-                    })
-                  }
-                </div>
+          { pageProperties.pageName !== 'about' ?
+          <section className="container-fluid spacing-container">
+            <div className="container col-centered">
+              <div className="container">
+                <p>
+                  <Link to="/docs">
+                   &lt; Back to Docs
+                  </Link>
+                </p>
               </div>
-              <div className="col-md-8">
-                { markdown ?
-                <Markdown source={markdown} />
+            </div>
+          </section>
+          : null }
+          <div className="m-b-3 docs-header-image-wrapper">
+            <img src={pageProperties.image} className="img-fluid docs-header-image" />
+          </div>
+          <section className="m-b-5">
+            <div className="container col-centered">
+              <div>
+                <h1>{pageProperties.title}</h1>
+                <div dangerouslySetInnerHTML={pageProperties.markupInnerHTML}>
+                </div>
+                {nextPage ?
+                  <div className="row">
+                    <div className="col-md-4">
+                      <h3>Next Article</h3>
+                      <CardLink href={`/docs/${nextSlug}`}
+                        title={nextPage.title} body={nextPage.description}
+                        imageSrc={nextPage.image} />
+                    </div>
+                  </div>
                 : null }
               </div>
             </div>
@@ -81,9 +115,6 @@ class DocsPage extends React.Component {
       </DocumentTitle>
     )
   }
-
 }
-
-DocsPage.propTypes = propTypes
 
 export default DocsPage

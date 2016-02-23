@@ -8,7 +8,7 @@ import config      from '../config';
 gulp.task('browserSync', function() {
 
   const DEFAULT_FILE = 'index.html';
-  const ASSET_EXTENSIONS = ['js', 'css', 'png', 'jpg', 'jpeg', 'gif', 'svg', 'ico'];
+  const ASSET_EXTENSIONS = ['js', 'css', 'png', 'jpg', 'jpeg', 'gif', 'svg', 'ico', 'md'];
 
   browserSync.init({
     server: {

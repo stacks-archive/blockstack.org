@@ -1,19 +1,19 @@
-'use strict';
+'use strict'
 
-import React  from 'react';
-import {Link} from 'react-router';
+import {Component}  from 'react'
+import {Link} from 'react-router'
 
-class Footer extends React.Component{
+class Footer extends Component {
 
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
     return (
       <footer>
         <div className="container">
-            <div className="col-md-2 foot-left-col hidden-xs hidden-sm">
+            <div className="col-md-2 foot-left-col hidden-md-down">
               <ul className="list-unstyled">
                 <li>
                   <div className="foot-logo">
@@ -24,45 +24,36 @@ class Footer extends React.Component{
                 </li>
               </ul>
             </div>
-            <div className="col-xs-6 col-md-2">
+            <div className="col-xs-6 col-lg-2">
               <ul className="foot-menu list-unstyled">
-                <li>Community</li>
+                <li>Pages</li>
                 <li>
                   <Link to="/about">About</Link>
                 </li>
                 <li>
+                  <Link to="/docs">Docs</Link>
+                </li>
+              </ul>
+            </div>
+            <div className="col-xs-6 col-lg-2">
+              <ul className="foot-menu list-unstyled">
+                <li>Community</li>
+                <li>
                   <Link to="https://forum.blockstack.org/" target="_blank">Forum</Link>
                 </li>
                 <li>
-                  <Link to="http://chat.blockstack.org" target="_blank">Chat</Link>
-                </li>
-                <li>
-                  <Link to="/summit">Events</Link>
+                  <Link to="http://chat.blockstack.org" target="_blank">Slack Group</Link>
                 </li>
               </ul>
             </div>
-            <div className="col-xs-6 col-md-2">
+            <div className="col-xs-6 col-lg-2">
               <ul className="foot-menu list-unstyled">
                 <li>Social</li>
-                <li>
-                  <Link to="#">Press</Link>
-                </li>
-                <li>
-                  <Link to="https://www.twitter.com/blockstackorg" target="_blank">Twitter</Link>
-                </li>
-                <li>
-                  <Link to="https://www.youtube.com/channel/UCvDtRhHLNDyKiY-iwhneNbw" target="_blank">YouTube</Link>
-                </li>
-              </ul>
-            </div>
-            <div className="col-xs-6 col-md-2">
-              <ul className="foot-menu list-unstyled">
-                <li>Resources</li>
                 <li>
                   <Link to="https://github.com/blockstack" target="_blank">Github</Link>
                 </li>
                 <li>
-                  <Link to="https://github.com/blockstack/wiki" target="_blank">Wiki</Link>
+                  <Link to="https://www.twitter.com/blockstackorg" target="_blank">Twitter</Link>
                 </li>
               </ul>
             </div>
@@ -70,7 +61,7 @@ class Footer extends React.Component{
         <div className="container copy-foot">
           <ul className="midfoot">
             <li>
-              <div className="social hidden-md hidden-lg container">
+              <div className="social hidden-lg-up container">
                 <ul className="sm-social list-unstyled">
                   <li>
                     <Link to="https://www.twitter.com/blockstackorg" target="_blank">
@@ -96,7 +87,7 @@ class Footer extends React.Component{
               </div>
             </li>
             <li className="pull-right">
-              <div className="social hidden-xs hidden-sm">
+              <div className="social hidden-md-down">
                 <ul className="sm-social list-unstyled">
                   <li>
                     <Link to="https://www.twitter.com/blockstackorg" target="_blank">
@@ -120,13 +111,13 @@ class Footer extends React.Component{
         </div>
         <div className="container base-foot">
             <p className="base-push-left">
-              Made with <span className="glyphicon glyphicon-heart"></span> by the Blockstack community
+              Made with &lt;3 by the Blockstack community
             </p>
         </div>
       </footer>
-    );
+    )
   }
 
 }
 
-export default Footer;
+export default Footer
