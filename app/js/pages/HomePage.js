@@ -80,6 +80,50 @@ class HomePage extends Component {
               </div>
             </div>
           </section>
+          <section className="container-fluid inverse-3col-section">
+            <div className="bs-docs-featurette col-centered" id="learnmore">
+              <div className="col-centered">
+                <div className="row col-sm-11 col-md-11 col-centered">
+                  <div className="col-sm-4 feature-panel">
+                    <h4>Forum</h4>
+                    <p className="inverse-lead m-b-2">
+                      Learn from others on the forum
+                    </p>
+                    <p className="">
+                      <Link to="/docs" role="button"
+                        className="btn btn-sm btn-outline-secondary m-b-2">
+                        Join the community
+                      </Link>
+                    </p>
+                  </div>
+                  <div className="col-sm-4 feature-panel">
+                    <h4>Slack</h4>
+                    <p className="inverse-lead m-b-2">
+                      Live chat with other Blockstackers
+                    </p>
+                    <p className="">
+                      <Link to="/docs" role="button"
+                        className="btn btn-sm btn-outline-secondary m-b-2">
+                        Get invited to Slack
+                      </Link>
+                    </p>
+                  </div>
+                  <div className="col-sm-4 feature-panel">
+                    <h4>Blog</h4>
+                    <p className="inverse-lead m-b-2">
+                      Read articles posted by the community
+                    </p>
+                    <p className="">
+                      <Link to="/docs" role="button"
+                        className="btn btn-sm btn-outline-secondary m-b-2">
+                        Visit the blog
+                      </Link>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
           <section>
             <div className="bs-docs-featurette col-centered" id="learnmore">
               <div className="container col-centered">

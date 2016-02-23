@@ -55,6 +55,8 @@
 .table-striped > thead > tr > th{text-align:center;}
 .hero-img{visibility:hidden;max-width:12rem;}
 /* Reviewed */.card{width:100%;}
+/* Reviewed */.inverse-3col-section{background-color:#9A21C5;color:#fff;}
+/* Reviewed */.inverse-lead{font-weight:300;}
 
 .card {border: 1px solid #e5e5e5 !important;}
 .card.card-1-of-1{width: 100% !important;}
