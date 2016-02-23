@@ -24,7 +24,7 @@
 
 /* Navbar */
 /* Reviewed */.navbar{padding-top:.375rem;padding-bottom:.625rem}
-/* Reviewed */.navbar-brand{width:5rem;}
+/* Reviewed */.navbar-brand{width:5.75rem;}
 /* Reviewed */a.nav-link{color:rgba(255,255,255,0.65);font-size:.8125rem;margin-top:.25rem;}
 /* Reviewed */a.nav-link:hover,a.nav-link:focus{color:rgba(255,255,255,1);}
 /* Reviewed */.nav-item:first-child{margin-left:.625rem;}
@@ -36,7 +36,7 @@
 /* Other */
 /* Reviewed */.hero{color:rgba(255,255,255,1);}
 /* Reviewed */.hero-wrap{padding-top:1rem;padding-bottom:3rem;}
-/* Reviewed */.col-3-section{margin-top:-50px;padding-top:50px;padding-bottom:50px;background-color:rgba(248,249,251,1);}
+/* Reviewed */.col-3-section{padding-top:50px;padding-bottom:50px;background-color:rgba(248,249,251,1);}
 /* Reviewed */.about-head-wrap{padding-bottom:30px;background:url(/images/blockchain-timeline.png);background-repeat:no-repeat;background-position:center top;background-color:#53206f;}
 .highlight-box{padding-top:50px;padding-bottom:50px;background-color:#831ca8;color:rgba(255,255,255,1);}
 .slides{padding-right:10px;padding-left:10px;}
@@ -55,6 +55,8 @@
 .table-striped > thead > tr > th{text-align:center;}
 .hero-img{visibility:hidden;max-width:12rem;}
 /* Reviewed */.card{width:100%;}
+/* Reviewed */.inverse-3col-section{background-color:#9A21C5;color:#fff;padding-top:30px;padding-bottom:25px;}
+/* Reviewed */.inverse-lead{font-weight:300;}
 
 .card {border: 1px solid #e5e5e5 !important;}
 .card.card-1-of-1{width: 100% !important;}
@@ -102,7 +104,7 @@ footer > li{list-style:none;}
   
   /* Globals */
   /* Reviewed */h1.hero-head{font-size:2.25rem;text-align:left;margin-top:0;}
-  /* Reviewed */.hero-lead{font-size:1.125rem;text-align:left;}
+  /* Reviewed */.hero-lead{font-size:1.063rem;text-align:left;padding-left:0;padding-right:0;}
   /* Reviewed */.col-3-section{padding-bottom:50px;}
   
   /* Reviewed */.hero-btn{padding-left:0;}
@@ -134,6 +136,8 @@ footer > li{list-style:none;}
   /* Reviewed */.card.card-1-of-1{width: 100% !important;}
   /* Reviewed */.card.card-1-of-2{width: 50% !important;}
   /* Reviewed */.card.card-1-of-3{width: 33.3333% !important;}
+  /* Reviewed */.btn-hero{width:195px;}
+  /* Reviewed */.inverse-3col-section{padding-top:0;padding-bottom:0;}
 }
 
 
@@ -151,7 +155,7 @@ footer > li{list-style:none;}
   h4{margin:20px 0;}
 
   /* Hero */
-  /* Reviewed */.hero-wrap{padding-top:7rem;padding-bottom:15rem;}
+  /* Reviewed */.hero-wrap{padding-top:8.5rem;padding-bottom:15rem;}
   .hero-head{padding-left:0;}
   .slides{padding-top:50px;padding-right:0;padding-left:0;}
   

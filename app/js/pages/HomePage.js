@@ -25,13 +25,13 @@ class HomePage extends Component {
                   <h1 className="hero-head">
                     Decentralized DNS  for Blockchain Applications
                   </h1>
-                  <p className="lead hero-lead">
+                  <p className="lead hero-lead col-md-11">
                     Blockstack gives you fast, secure, and easy-to-use DNS, PKI,
                     and identity management on the blockchain.
                   </p>
-                  <p className="no-padding col-md-8">
+                  <p className="no-padding col-md-6">
                     <Link to="/docs" role="button"
-                      className="btn btn-lg btn-primary btn-block">
+                      className="btn btn-lg btn-primary btn-block btn-hero">
                       Get Started
                     </Link>
                   </p>
@@ -43,10 +43,10 @@ class HomePage extends Component {
             </div>
           </div>
           <section className="container-fluid col-3-section">
-            <div className="bs-docs-featurette col-centered" id="learnmore">
+            <div className="container bs-docs-featurette col-centered" id="learnmore">
               <div className="col-centered">
-                <div className="row col-sm-11 col-md-11 col-centered">
-                  <div className="col-sm-4 feature-panel">
+                <div className="row col-centered">
+                  <div className="col-md-4 feature-panel">
                     <div className="container wrap-mob-feat">
                       <img src="/images/icon-mini-decentralized.svg"
                         className="img-responsive" alt="Decentralized icon" />
@@ -56,7 +56,7 @@ class HomePage extends Component {
                         Enables applications without any central points of failure.
                       </p>
                   </div>
-                  <div className="col-sm-4 feature-panel">
+                  <div className="col-md-4 feature-panel">
                     <div className="container wrap-mob-feat">
                       <img src="/images/icon-open-source.svg"
                         className="img-responsive" alt="Open source icon" />
@@ -66,7 +66,7 @@ class HomePage extends Component {
                       Built with code that is free to inspect, modify, and reuse.
                     </p>
                   </div>
-                  <div className="col-sm-4 feature-panel">
+                  <div className="col-md-4 feature-panel">
                     <div className="container wrap-mob-feat">
                       <img src="/images/icon-community-globe.svg"
                         className="img-responsive" alt="Community globe icon" />
@@ -83,6 +83,50 @@ class HomePage extends Component {
                       frameborder="0" scrolling="0" width="160px" height="30px">
                       </iframe>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className="container-fluid inverse-3col-section">
+            <div className="bs-docs-featurette col-centered" id="learnmore">
+              <div className="col-centered">
+                <div className="row col-centered">
+                  <div className="col-md-4 feature-panel">
+                    <h4>Forum</h4>
+                    <p className="inverse-lead m-b-2">
+                      Learn from others on the forum
+                    </p>
+                    <p className="">
+                      <Link to="/docs" role="button"
+                        className="btn btn-sm btn-outline-secondary m-b-2">
+                        Join the community
+                      </Link>
+                    </p>
+                  </div>
+                  <div className="col-md-4 feature-panel">
+                    <h4>Slack</h4>
+                    <p className="inverse-lead m-b-2">
+                      Live chat with other Blockstackers
+                    </p>
+                    <p className="">
+                      <Link to="/docs" role="button"
+                        className="btn btn-sm btn-outline-secondary m-b-2">
+                        Get invited to Slack
+                      </Link>
+                    </p>
+                  </div>
+                  <div className="col-md-4 feature-panel">
+                    <h4>Blog</h4>
+                    <p className="inverse-lead m-b-2">
+                      Read articles posted by the community
+                    </p>
+                    <p className="">
+                      <Link to="/docs" role="button"
+                        className="btn btn-sm btn-outline-secondary m-b-2">
+                        Visit the blog
+                      </Link>
+                    </p>
                   </div>
                 </div>
               </div>
