@@ -36,7 +36,7 @@
 /* Other */
 /* Reviewed */.hero{color:rgba(255,255,255,1);}
 /* Reviewed */.hero-wrap{padding-top:1rem;padding-bottom:3rem;}
-/* Reviewed */.col-3-section{margin-top:-50px;padding-top:50px;padding-bottom:50px;background-color:rgba(248,249,251,1);}
+/* Reviewed */.col-3-section{padding-top:50px;padding-bottom:50px;background-color:rgba(248,249,251,1);}
 /* Reviewed */.about-head-wrap{padding-bottom:30px;background:url(/images/blockchain-timeline.png);background-repeat:no-repeat;background-position:center top;background-color:#53206f;}
 .highlight-box{padding-top:50px;padding-bottom:50px;background-color:#831ca8;color:rgba(255,255,255,1);}
 .slides{padding-right:10px;padding-left:10px;}
@@ -100,7 +100,7 @@ footer > li{list-style:none;}
   
   /* Globals */
   /* Reviewed */h1.hero-head{font-size:2.25rem;text-align:left;margin-top:0;}
-  /* Reviewed */.hero-lead{font-size:1.125rem;text-align:left;}
+  /* Reviewed */.hero-lead{text-align:left;}
   /* Reviewed */.col-3-section{padding-bottom:50px;}
   
   /* Reviewed */.hero-btn{padding-left:0;}
@@ -132,6 +132,7 @@ footer > li{list-style:none;}
   /* Reviewed */.card.card-1-of-1{width: 100% !important;}
   /* Reviewed */.card.card-1-of-2{width: 50% !important;}
   /* Reviewed */.card.card-1-of-3{width: 33.3333% !important;}
+  /* Reviewed */.btn-hero{width:195px;}
 }
 
 

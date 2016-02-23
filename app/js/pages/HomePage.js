@@ -29,9 +29,9 @@ class HomePage extends Component {
                     Blockstack gives you fast, secure, and easy-to-use DNS, PKI,
                     and identity management on the blockchain.
                   </p>
-                  <p className="no-padding col-md-8">
+                  <p className="no-padding col-md-6">
                     <Link to="/docs" role="button"
-                      className="btn btn-lg btn-primary btn-block">
+                      className="btn btn-lg btn-primary btn-block btn-hero">
                       Get Started
                     </Link>
                   </p>
