@@ -21,7 +21,7 @@ class DocsIndexPage extends Component {
         items: ['extended-usage', 'blockstack-vs-dns', 'blockstack-vs-namecoin']
       },
       {
-        items: ['how-blockstack-works', 'namespaces', 'faq']
+        items: ['namespaces', 'how-blockstack-works', 'faq']
       }
     ]
 

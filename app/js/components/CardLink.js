@@ -16,37 +16,36 @@ class CardLink extends Component {
   constructor(props) {
     super(props)
 
-    this.getCardStyle = this.getCardStyle.bind(this)
+    this.getCardClass = this.getCardClass.bind(this)
   }
 
-  getCardStyle() {
-    let cardStyle = {}
+  getCardClass() {
+    let cardClass = {}
     switch (this.props.cardsPerRow) {
       case 1:
-        cardStyle = {width: '100%'}
+        cardClass = 'card-1-of-1'
         break
       case 2:
-        cardStyle = {width: '50%'}
+        cardClass = 'card-1-of-2'
         break
       case 3:
-        cardStyle = {width: '33%'}
+        cardClass = 'card-1-of-3'
         break
       default:
         break
     }
-    return cardStyle
+    return cardClass
   }
 
   render() {
     return (
-      <div className="card" style={this.getCardStyle()}>
-        <Link to={this.props.href} style={{ textDecoration: 'none', color: 'black' }}>
+      <div className={`card ${this.getCardClass()}`}>
+        <Link to={this.props.href} className="card-link">
           { this.props.imageSrc ?
-          <img src={this.props.imageSrc} className="card-img-top"
-            style={{maxWidth: '100%', display: 'block'}} />
+          <img src={this.props.imageSrc} className="card-img-top card-link-image" />
           : null }
           <div className="card-block">
-            <h4 className="card-title" style={{maxWidth: '180px' }}>
+            <h4 className="card-title card-title-wrapped">
               {this.props.title}
             </h4>
             { this.props.body ?
