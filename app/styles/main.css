@@ -24,7 +24,7 @@
 
 /* Navbar */
 /* Reviewed */.navbar{padding-top:.375rem;padding-bottom:.625rem}
-/* Reviewed */.navbar-brand{width:5rem;}
+/* Reviewed */.navbar-brand{width:5.75rem;}
 /* Reviewed */a.nav-link{color:rgba(255,255,255,0.65);font-size:.8125rem;margin-top:.25rem;}
 /* Reviewed */a.nav-link:hover,a.nav-link:focus{color:rgba(255,255,255,1);}
 /* Reviewed */.nav-item:first-child{margin-left:.625rem;}
@@ -98,7 +98,7 @@ footer > li{list-style:none;}
   /* Reviewed */.hero-btn{padding-left:0;}
 
   /* Navbar */
-  /* Reviewed */.navbar-brand{margin-right:5.5rem;}
+  /* Reviewed */.navbar-brand{margin-right:4.25rem;}
   /* Reviewed */.nav-item:first-child{margin-left:.875rem;}
   /* Reviewed */.navbar-nav .nav-item+.nav-item{margin-left:1.375rem;}
   /* Reviewed */a.nav-link{padding-right:5px;padding-left:5px;}
