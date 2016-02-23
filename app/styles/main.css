@@ -24,7 +24,7 @@
 
 /* Navbar */
 /* Reviewed */.navbar{padding-top:.375rem;padding-bottom:.625rem}
-/* Reviewed */.navbar-brand{width:5.75rem;}
+/* Reviewed */.navbar-brand{width:5rem;}
 /* Reviewed */a.nav-link{color:rgba(255,255,255,0.65);font-size:.8125rem;margin-top:.25rem;}
 /* Reviewed */a.nav-link:hover,a.nav-link:focus{color:rgba(255,255,255,1);}
 /* Reviewed */.nav-item:first-child{margin-left:.625rem;}
@@ -55,6 +55,14 @@
 .table-striped > thead > tr > th{text-align:center;}
 .hero-img{visibility:hidden;max-width:12rem;}
 /* Reviewed */.card{width:100%;}
+
+.card {border: 1px solid #e5e5e5 !important;}
+.card.card-1-of-1{width: 100% !important;}
+.card.card-1-of-2{width: 100% !important;}
+.card.card-1-of-3{width: 100% !important;}
+.card .card-link{text-decoration: none; color: black;}
+.card .card-link-image{max-width: 100%; display: block;}
+.card .card-title-wrapped{max-width: 180px;}
 
 /* Docs */
 /* Reviewed */pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35,39,1);background-color:rgba(32,35,39,1);color:#fff;font-size:14px;border-radius:4px;}
@@ -121,7 +129,9 @@ footer > li{list-style:none;}
   .feat-lead{margin-bottom:1px;}
   .topic{margin-bottom:5px;}
   .hero-img{visibility:visible;max-width:none;}
-  /* Reviewed */.card{width:33.333%;}
+  /* Reviewed */.card.card-1-of-1{width: 100% !important;}
+  /* Reviewed */.card.card-1-of-2{width: 50% !important;}
+  /* Reviewed */.card.card-1-of-3{width: 33.3333% !important;}
 }
 
 
@@ -159,6 +169,9 @@ footer > li{list-style:none;}
   .midfoot,.base-push-left{padding-left:0;}
   .social{margin-top:-8px;}
   .foot-logo{max-width:190px;}
+  .card.card-1-of-1{width: 100% !important;}
+  .card.card-1-of-2{width: 50% !important;}
+  .card.card-1-of-3{width: 33.3333% !important;}
 }
 
 .docs-header-image-wrapper {

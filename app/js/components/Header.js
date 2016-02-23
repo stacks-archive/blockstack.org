@@ -19,7 +19,7 @@ class Header extends Component {
             </Link>
             <ul className="nav navbar-nav">
               <li className="nav-item">
-                <Link to="/docs" className="nav-link">Docs</Link>
+                <Link to="/docs" className="nav-link">Get Started</Link>
               </li>
               <li className="nav-item hidden-sm-down">
                 <Link to="/docs/what-is-blockstack" className="nav-link">Overview</Link>
