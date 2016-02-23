@@ -48,7 +48,7 @@ class HomePage extends Component {
                 <div className="row col-sm-11 col-md-11 col-centered">
                   <div className="col-sm-4 feature-panel">
                     <div className="container wrap-mob-feat">
-                      <img src="/images/icon-decentralized.svg"
+                      <img src="/images/icon-mini-decentralized.svg"
                         className="img-responsive" alt="Decentralized icon" />
                     </div>
                       <h4>Decentralized</h4>
