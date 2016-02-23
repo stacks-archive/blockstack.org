@@ -54,6 +54,7 @@
 .table-wrap{max-width:800px;}
 .table-striped > thead > tr > th{text-align:center;}
 .hero-img{visibility:hidden;max-width:12rem;}
+/* Reviewed */.card{width:100%;}
 
 /* Docs */
 /* Reviewed */pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35,39,1);background-color:rgba(32,35,39,1);color:#fff;font-size:14px;border-radius:4px;}
@@ -120,6 +121,7 @@ footer > li{list-style:none;}
   .feat-lead{margin-bottom:1px;}
   .topic{margin-bottom:5px;}
   .hero-img{visibility:visible;max-width:none;}
+  /* Reviewed */.card{width:33.333%;}
 }
 
 
