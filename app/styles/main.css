@@ -100,7 +100,7 @@ footer > li{list-style:none;}
   
   /* Globals */
   /* Reviewed */h1.hero-head{font-size:2.25rem;text-align:left;margin-top:0;}
-  /* Reviewed */.hero-lead{text-align:left;}
+  /* Reviewed */.hero-lead{font-size:1.063rem;text-align:left;padding-left:0;padding-right:0;}
   /* Reviewed */.col-3-section{padding-bottom:50px;}
   
   /* Reviewed */.hero-btn{padding-left:0;}
@@ -150,7 +150,7 @@ footer > li{list-style:none;}
   h4{margin:20px 0;}
 
   /* Hero */
-  /* Reviewed */.hero-wrap{padding-top:7rem;padding-bottom:15rem;}
+  /* Reviewed */.hero-wrap{padding-top:8.5rem;padding-bottom:15rem;}
   .hero-head{padding-left:0;}
   .slides{padding-top:50px;padding-right:0;padding-left:0;}
   

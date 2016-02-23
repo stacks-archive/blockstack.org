@@ -25,7 +25,7 @@ class HomePage extends Component {
                   <h1 className="hero-head">
                     Decentralized DNS  for Blockchain Applications
                   </h1>
-                  <p className="lead hero-lead">
+                  <p className="lead hero-lead col-md-11">
                     Blockstack gives you fast, secure, and easy-to-use DNS, PKI,
                     and identity management on the blockchain.
                   </p>
