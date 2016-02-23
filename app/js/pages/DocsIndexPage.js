@@ -14,7 +14,7 @@ class DocsIndexPage extends Component {
     const docPageRows = [
       ['what-is-blockstack', 'installation', 'basic-usage'],
       ['extended-usage', 'blockstack-vs-dns', 'blockstack-vs-namecoin'],
-      ['technology', 'namespaces', 'faq']
+      ['how-blockstack-works', 'namespaces', 'faq']
     ]
 
     return (
