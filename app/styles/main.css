@@ -55,7 +55,7 @@
 .table-striped > thead > tr > th{text-align:center;}
 .hero-img{visibility:hidden;max-width:12rem;}
 /* Reviewed */.card{width:100%;}
-/* Reviewed */.inverse-3col-section{background-color:#9A21C5;color:#fff;}
+/* Reviewed */.inverse-3col-section{background-color:#9A21C5;color:#fff;padding-top:30px;padding-bottom:25px;}
 /* Reviewed */.inverse-lead{font-weight:300;}
 
 .card {border: 1px solid #e5e5e5 !important;}
@@ -135,6 +135,7 @@ footer > li{list-style:none;}
   /* Reviewed */.card.card-1-of-2{width: 50% !important;}
   /* Reviewed */.card.card-1-of-3{width: 33.3333% !important;}
   /* Reviewed */.btn-hero{width:195px;}
+  /* Reviewed */.inverse-3col-section{padding-top:0;padding-bottom:0;}
 }
 
 

@@ -43,10 +43,10 @@ class HomePage extends Component {
             </div>
           </div>
           <section className="container-fluid col-3-section">
-            <div className="bs-docs-featurette col-centered" id="learnmore">
+            <div className="container bs-docs-featurette col-centered" id="learnmore">
               <div className="col-centered">
-                <div className="row col-sm-11 col-md-11 col-centered">
-                  <div className="col-sm-4 feature-panel">
+                <div className="row col-centered">
+                  <div className="col-md-4 feature-panel">
                     <div className="container wrap-mob-feat">
                       <img src="/images/icon-mini-decentralized.svg"
                         className="img-responsive" alt="Decentralized icon" />
@@ -56,7 +56,7 @@ class HomePage extends Component {
                         Enables applications without any central points of failure.
                       </p>
                   </div>
-                  <div className="col-sm-4 feature-panel">
+                  <div className="col-md-4 feature-panel">
                     <div className="container wrap-mob-feat">
                       <img src="/images/icon-open-source.svg"
                         className="img-responsive" alt="Open source icon" />
@@ -66,7 +66,7 @@ class HomePage extends Component {
                       Built with code that is free to inspect, modify, and reuse.
                     </p>
                   </div>
-                  <div className="col-sm-4 feature-panel">
+                  <div className="col-md-4 feature-panel">
                     <div className="container wrap-mob-feat">
                       <img src="/images/icon-community-globe.svg"
                         className="img-responsive" alt="Community globe icon" />
@@ -83,8 +83,8 @@ class HomePage extends Component {
           <section className="container-fluid inverse-3col-section">
             <div className="bs-docs-featurette col-centered" id="learnmore">
               <div className="col-centered">
-                <div className="row col-sm-11 col-md-11 col-centered">
-                  <div className="col-sm-4 feature-panel">
+                <div className="row col-centered">
+                  <div className="col-md-4 feature-panel">
                     <h4>Forum</h4>
                     <p className="inverse-lead m-b-2">
                       Learn from others on the forum
@@ -96,7 +96,7 @@ class HomePage extends Component {
                       </Link>
                     </p>
                   </div>
-                  <div className="col-sm-4 feature-panel">
+                  <div className="col-md-4 feature-panel">
                     <h4>Slack</h4>
                     <p className="inverse-lead m-b-2">
                       Live chat with other Blockstackers
@@ -108,7 +108,7 @@ class HomePage extends Component {
                       </Link>
                     </p>
                   </div>
-                  <div className="col-sm-4 feature-panel">
+                  <div className="col-md-4 feature-panel">
                     <h4>Blog</h4>
                     <p className="inverse-lead m-b-2">
                       Read articles posted by the community
