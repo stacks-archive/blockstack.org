@@ -81,7 +81,7 @@ class HomePage extends Component {
             </div>
           </section>
           <section className="container-fluid inverse-3col-section">
-            <div className="bs-docs-featurette col-centered" id="learnmore">
+            <div className="container bs-docs-featurette col-centered" id="learnmore">
               <div className="col-centered">
                 <div className="row col-centered">
                   <div className="col-md-4 feature-panel">
