@@ -75,22 +75,21 @@ class DocsPage extends Component {
           <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
           </div>
-          { pageProperties.pageName !== 'about' ?
-          <section className="container-fluid spacing-container">
-            <div className="container col-centered">
-              <div className="container">
-                <p>
-                  <Link to="/docs">
-                   &lt; Back to Docs
-                  </Link>
-                </p>
-              </div>
-            </div>
-          </section>
-          : null }
           <div className="m-b-3 docs-header-image-wrapper">
             <img src={pageProperties.image} className="img-fluid docs-header-image" />
           </div>
+          { pageProperties.pageName !== 'about' ?
+          <nav className="container-fluid m-b-1 back-docs">
+            <ul className="pagination">
+              <li className="page-item">
+                <Link className="page-link" to="/docs" aria-label="Back">
+                  <span aria-hidden="true">&laquo; Back to Docs</span>
+                  <span className="sr-only">Back</span>
+                </Link>
+              </li>
+            </ul>
+          </nav>
+          : null }
           <section className="m-b-5">
             <div className="container col-centered">
               <div>
