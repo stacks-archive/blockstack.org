@@ -48,7 +48,7 @@ class HomePage extends Component {
                 <div className="row col-centered">
                   <div className="col-md-6 feature-panel">
                     <p className="lead bs-lead">
-                      Domains registered
+                      Names registered
                     </p>
                     <h1 className="stats-count">44,000</h1>
                   </div>
@@ -100,10 +100,17 @@ class HomePage extends Component {
               </div>
             </div>
           </section>
-          <section className="container stats-section">
-            <div className="container-fluid center-block">
-              <div className="row">
-                <div className="container-fluid">
+
+          <section className="container-fluid stats-section">
+            <div className="container bs-docs-featurette col-centered" id="learnmore">
+              <div className="col-centered col-md-8">
+                <div className="col-md-6 paper-wrap">
+                  <Link to="/docs" role="button"
+                      className="btn btn-sm btn-primary btn-block btn-hero">
+                      Read the paper
+                    </Link>
+                </div>
+                <div className="col-md-6">
                   <p className="social-text"><span className="social-type">Star Blockstack on GitHub:</span>
                   <iframe className="social-count" src="https://ghbtns.com/github-btn.html?user=blockstack&repo=blockstack-server&type=star&count=true"
                   frameborder="0" scrolling="0" width="95px" height="20px">
@@ -113,6 +120,7 @@ class HomePage extends Component {
               </div>
             </div>
           </section>
+
           <section className="container-fluid inverse-3col-section">
             <div className="container bs-docs-featurette col-centered" id="learnmore">
               <div className="col-centered">

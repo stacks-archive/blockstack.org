@@ -59,12 +59,12 @@
 /* Reviewed */.inverse-3col-section{background-color:#9A21C5;color:#fff;padding-top:30px;padding-bottom:25px;}
 /* Reviewed */.inverse-lead{font-weight:300;margin-bottom:35px;}
 /* Reviewed */.inverse-heading{font-weight:300;}
-.stats-section{border-bottom:1px solid #E6E6E6;padding-top:15px;padding-bottom:5px;}
+.stats-section{border-bottom:1px solid #E6E6E6;padding-top:45px;padding-bottom:45px;}
 .bs-lead{font-size:1rem;}
 .stats-count{font-size:60px;color:#831CA8;font-weight:400;margin-top:-15px;}
-.social-count{position:relative;margin-left:auto;margin-right:auto;text-align:center;margin-top:8px;display:block;}
-.social-text{text-align:center;vertical-align:middle;margin-top:8px;}
-.social-type{margin-left:0;margin-top:-10px;}
+.social-count{position:relative;margin-left:auto;margin-right:auto;text-align:center;margin-top:12px;display:block;}
+.social-text{text-align:center;vertical-align:middle;margin-top:15px;}
+.social-type{margin-left:0;margin-top:-20px;}
 .back-docs{margin-left:-20px;}
 
 .card.card-1-of-1{width: 100% !important;}
@@ -80,6 +80,7 @@
 .pager{padding-left:0;margin-top:1rem;margin-bottom:1rem;text-align:center;list-style:none;}
 .page-link{background-color:#53206f;color:#fff;padding:15px 30px;border:1px solid #53206f;}
 .page-link:hover{text-decoration:none;}
+.paper-wrap{margin-top:10px;}
 
 .pull-l-padding{padding-left:0;}
 
