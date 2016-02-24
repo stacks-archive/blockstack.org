@@ -42,6 +42,26 @@ class HomePage extends Component {
               </section>
             </div>
           </div>
+          <section className="container-fluid stats-section">
+            <div className="container bs-docs-featurette col-centered" id="learnmore">
+              <div className="col-centered">
+                <div className="row col-centered">
+                  <div className="col-md-6 feature-panel">
+                    <p className="lead bs-lead">
+                      Domains registered
+                    </p>
+                    <h1 className="stats-count">44,000</h1>
+                  </div>
+                  <div className="col-md-6 feature-panel">
+                    <p className="lead bs-lead">
+                      Community members
+                    </p>
+                    <h1 className="stats-count">599</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
           <section className="container-fluid col-3-section">
             <div className="container bs-docs-featurette col-centered" id="learnmore">
               <div className="col-centered">
@@ -52,7 +72,7 @@ class HomePage extends Component {
                         className="img-responsive" alt="Decentralized icon" />
                     </div>
                       <h4>Decentralized</h4>
-                      <p className="lead">
+                      <p className="lead bs-lead">
                         Enables applications without any central points of failure.
                       </p>
                   </div>
@@ -62,7 +82,7 @@ class HomePage extends Component {
                         className="img-responsive" alt="Open source icon" />
                     </div>
                     <h4>Open Source</h4>
-                    <p className="lead">
+                    <p className="lead bs-lead">
                       Built with code that is free to inspect, modify, and reuse.
                     </p>
                   </div>
@@ -72,7 +92,7 @@ class HomePage extends Component {
                         className="img-responsive" alt="Community globe icon" />
                     </div>
                     <h4>Community-centric</h4>
-                    <p className="lead">
+                    <p className="lead bs-lead">
                       Maintained by developers united around a common software stack.
                     </p>
                   </div>
@@ -85,8 +105,8 @@ class HomePage extends Component {
               <div className="col-centered">
                 <div className="row col-centered">
                   <div className="col-md-4 feature-panel">
-                    <h4>Forum</h4>
-                    <p className="inverse-lead m-b-2">
+                    <h4 className="inverse-heading">Forum</h4>
+                    <p className="inverse-lead">
                       Learn from others on the forum
                     </p>
                     <p className="">
@@ -97,8 +117,8 @@ class HomePage extends Component {
                     </p>
                   </div>
                   <div className="col-md-4 feature-panel">
-                    <h4>Slack</h4>
-                    <p className="inverse-lead m-b-2">
+                    <h4 className="inverse-heading">Slack</h4>
+                    <p className="inverse-lead">
                       Live chat with other Blockstackers
                     </p>
                     <p className="">
@@ -109,8 +129,8 @@ class HomePage extends Component {
                     </p>
                   </div>
                   <div className="col-md-4 feature-panel">
-                    <h4>Blog</h4>
-                    <p className="inverse-lead m-b-2">
+                    <h4 className="inverse-heading">Blog</h4>
+                    <p className="inverse-lead">
                       Read articles posted by the community
                     </p>
                     <p className="">
