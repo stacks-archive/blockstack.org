@@ -103,13 +103,12 @@ class DocsPage extends Component {
   getHeaderImageSrc() {
     let headerImageSrc = null
     if (this.state.currentPage !== null) {
-      headerImageSrc = `/images/article-photos/800x600/${this.state.currentPage.image}`
+      headerImageSrc = `/images/article-photos/full/${this.state.currentPage.image}`
     }
     return headerImageSrc
   }
 
   onImageLoad() {
-    console.log('image loaded')
     this.setState({
       imageLoading: false
     })
@@ -121,8 +120,6 @@ class DocsPage extends Component {
           title = currentPage ? `Blockstack - ${currentPage.title}` : "Blockstack"
 
     const headerImageSrc = this.getHeaderImageSrc()
-
-    console.log(headerImageSrc)
 
     return (
       <DocumentTitle title={title}>

@@ -20,7 +20,6 @@ class Image extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log('component receiving props')
     if (this.props !== nextProps) {
       this.setState({
         src: nextProps.src
@@ -35,7 +34,6 @@ class Image extends Component {
   }
 
   render() {
-    console.log(this.state.src)
     return (
       <img src={this.state.src}
         style={this.props.style}
