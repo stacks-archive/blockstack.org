@@ -103,7 +103,7 @@ class DocsPage extends Component {
   getHeaderImageSrc() {
     let headerImageSrc = null
     if (this.state.currentPage !== null) {
-      headerImageSrc = `/images/article-photos/full/${this.state.currentPage.image}`
+      headerImageSrc = `/images/article-photos/800x600/${this.state.currentPage.image}`
     }
     return headerImageSrc
   }
@@ -133,7 +133,7 @@ class DocsPage extends Component {
           <div className="m-b-3 docs-header-image-wrapper">
             { currentPage !== null && this.state.imageLoading !== true ?
             <Image src={headerImageSrc}
-              fallbackSrc="/images/article-photos/full/road.jpg"
+              fallbackSrc="/images/article-photos/800x600/road.jpg"
               className="img-fluid docs-header-image" />
             : null }
           </div>
