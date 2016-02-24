@@ -100,7 +100,6 @@ class HomePage extends Component {
               </div>
             </div>
           </section>
-
           <section className="container-fluid paper-section">
             <div className="container bs-docs-featurette col-centered" id="learnmore">
               <div className="col-centered col-md-8">
@@ -120,7 +119,6 @@ class HomePage extends Component {
               </div>
             </div>
           </section>
-
           <section className="container-fluid inverse-3col-section">
             <div className="container bs-docs-featurette col-centered" id="learnmore">
               <div className="col-centered">
