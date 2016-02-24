@@ -149,27 +149,15 @@ class DocsPage extends Component {
             </ul>
           </nav>
           : null }
-<<<<<<< HEAD
           <section className="m-b-5 m-t-5">
             <div className="container p-b-5 col-centered">
               <div className="container">
-                <h1>{pageProperties.title}</h1>
-                <div dangerouslySetInnerHTML={pageProperties.markupInnerHTML}>
+                <h1>{currentPage.title}</h1>
+                <div dangerouslySetInnerHTML={{ __html: currentPage.markup }}>
                 </div>
                 {nextPage ?
                   <div>
                     <div className="col-md-4 pull-l-padding">
-=======
-          <section className="m-b-5">
-            <div className="container col-centered">
-              <div>
-                <h1>{currentPage.title}</h1>
-                <div dangerouslySetInnerHTML={{ __html: currentPage.markup }}>
-                </div>
-                { nextPage ?
-                  <div className="row">
-                    <div className="col-md-4">
->>>>>>> 4a07c4060b9a22fc65386412f5d404a9382df551
                       <h3>Next Article</h3>
                       <CardLink href={`/docs/${nextPage.pageName}`}
                         title={nextPage.title} body={nextPage.description}
