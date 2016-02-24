@@ -92,7 +92,7 @@ class DocsPage extends Component {
           : null }
           <section className="m-b-5">
             <div className="container col-centered">
-              <div>
+              <div className="container">
                 <h1>{pageProperties.title}</h1>
                 <div dangerouslySetInnerHTML={pageProperties.markupInnerHTML}>
                 </div>
