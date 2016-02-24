@@ -44,7 +44,7 @@ class HomePage extends Component {
           </div>
           <section className="container-fluid stats-section">
             <div className="container bs-docs-featurette col-centered" id="learnmore">
-              <div className="col-centered">
+              <div className="col-centered col-md-10">
                 <div className="row col-centered">
                   <div className="col-md-6 feature-panel">
                     <p className="lead bs-lead">
@@ -96,14 +96,19 @@ class HomePage extends Component {
                       Maintained by developers united around a common software stack.
                     </p>
                   </div>
-                  <div className="row col-sm-11 col-md-11 col-centered">
-                    <div className="col-sm-12 feature-panel">
-                      <h3>Star Blockstack on GitHub:</h3>
-                      <iframe src="https://ghbtns.com/github-btn.html?user=blockstack&repo=blockstack-server&type=star&count=true&size=large"
-                      frameborder="0" scrolling="0" width="160px" height="30px">
-                      </iframe>
-                    </div>
-                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className="container stats-section">
+            <div className="container-fluid center-block">
+              <div className="row">
+                <div className="container-fluid">
+                  <p className="social-text"><span className="social-type">Star Blockstack on GitHub:</span>
+                  <iframe className="social-count" src="https://ghbtns.com/github-btn.html?user=blockstack&repo=blockstack-server&type=star&count=true"
+                  frameborder="0" scrolling="0" width="95px" height="20px">
+                  </iframe>
+                  </p>
                 </div>
               </div>
             </div>
