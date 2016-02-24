@@ -37,7 +37,7 @@ class HomePage extends Component {
                   </p>
                 </div>
                 <div className="col-sm-8 offset-sm-2 col-md-6 offset-md-0">
-                  <img className="hero-img" src="/images/hero-pip-install-blockstack.svg" />
+                  <img className="hero-img" src="/images/visuals/hero-pip-install-blockstack.svg" />
                 </div>
               </section>
             </div>
@@ -68,7 +68,7 @@ class HomePage extends Component {
                 <div className="row col-centered">
                   <div className="col-md-4 feature-panel">
                     <div className="container wrap-mob-feat">
-                      <img src="/images/icon-mini-decentralized.svg"
+                      <img src="/images/icons/mini-decentralized.svg"
                         className="img-responsive" alt="Decentralized icon" />
                     </div>
                       <h4>Decentralized</h4>
@@ -78,7 +78,7 @@ class HomePage extends Component {
                   </div>
                   <div className="col-md-4 feature-panel">
                     <div className="container wrap-mob-feat">
-                      <img src="/images/icon-open-source.svg"
+                      <img src="/images/icons/open-source.svg"
                         className="img-responsive" alt="Open source icon" />
                     </div>
                     <h4>Open Source</h4>
@@ -88,7 +88,7 @@ class HomePage extends Component {
                   </div>
                   <div className="col-md-4 feature-panel">
                     <div className="container wrap-mob-feat">
-                      <img src="/images/icon-community-globe.svg"
+                      <img src="/images/icons/community-globe.svg"
                         className="img-responsive" alt="Community globe icon" />
                     </div>
                     <h4>Community-centric</h4>

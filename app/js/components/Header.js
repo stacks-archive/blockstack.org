@@ -15,7 +15,7 @@ class Header extends Component {
         <nav className="navbar">
           <div>
             <Link className="navbar-brand" to="/">
-              <img src="/images/blockstack-logo.svg" />
+              <img src="/images/logos/blockstack.svg" />
             </Link>
             <ul className="nav navbar-nav">
               <li className="nav-item">
