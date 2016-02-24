@@ -103,9 +103,9 @@ class HomePage extends Component {
           <section className="container stats-section">
             <div className="container-fluid center-block">
               <div className="row">
-                <div className="container-fluid m-l-2">
+                <div className="container-fluid">
                   <p className="social-text"><span className="social-type">Star Blockstack on GitHub:</span>
-                  <iframe className="social-count m-l-2" src="https://ghbtns.com/github-btn.html?user=blockstack&repo=blockstack-server&type=star&count=true"
+                  <iframe className="social-count" src="https://ghbtns.com/github-btn.html?user=blockstack&repo=blockstack-server&type=star&count=true"
                   frameborder="0" scrolling="0" width="110px" height="20px">
                   </iframe>
                   </p>
