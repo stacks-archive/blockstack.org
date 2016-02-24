@@ -59,9 +59,9 @@
 /* Reviewed */.inverse-3col-section{background-color:#9A21C5;color:#fff;padding-top:30px;padding-bottom:25px;}
 /* Reviewed */.inverse-lead{font-weight:300;margin-bottom:35px;}
 /* Reviewed */.inverse-heading{font-weight:300;}
-.stats-section{border-bottom:1px solid #E6E6E6;}
+.stats-section{border-bottom:1px solid #E6E6E6;padding-top:15px;padding-bottom:10px;}
 .bs-lead{font-size:1rem;}
-.stats-count{font-size:54px;color:#831CA8;}
+.stats-count{font-size:54px;color:#831CA8;font-weight:400;margin-top:-15px;}
 
 .card {border: 1px solid #e5e5e5 !important;}
 .card.card-1-of-1{width: 100% !important;}
@@ -141,7 +141,7 @@ footer > li{list-style:none;}
   /* Reviewed */.card.card-1-of-3{width: 33.3333% !important;}
   /* Reviewed */.btn-hero{width:195px;}
   /* Reviewed */.inverse-3col-section{padding-top:10px;padding-bottom:10px;}
-  .stats-count{font-size:64px;}
+  .stats-count{font-size:74px;}
 }
 
 

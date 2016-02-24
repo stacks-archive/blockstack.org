@@ -44,7 +44,7 @@ class HomePage extends Component {
           </div>
           <section className="container-fluid stats-section">
             <div className="container bs-docs-featurette col-centered" id="learnmore">
-              <div className="col-centered">
+              <div className="col-centered col-md-10">
                 <div className="row col-centered">
                   <div className="col-md-6 feature-panel">
                     <p className="lead bs-lead">
