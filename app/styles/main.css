@@ -69,16 +69,19 @@
 
 .card.card-1-of-1{width: 100% !important;}
 .card.card-1-of-2{width: 100% !important;}
-.card.card-1-of-3{width: 100% !important;}
+.card.card-1-of-3{width: 100% !important;margin-bottom:35px;}
 .card .card-link{text-decoration: none; color: black;}
 .card .card-link-image{width: 100%; display: block;}
 .card-block{padding:25px 30px 65px 30px;}
 .card-text{font-weight:400;line-height:1.625rem;}
 .card{border:1px solid #e5e5e5;box-shadow:none;}
+.card-deck-wrapper{margin-bottom:55px;}
 
 .pager{padding-left:0;margin-top:1rem;margin-bottom:1rem;text-align:center;list-style:none;}
 .page-link{background-color:#53206f;color:#fff;padding:15px 30px;border:1px solid #53206f;}
 .page-link:hover{text-decoration:none;}
+
+.pull-l-padding{padding-left:0;}
 
 iframe {border: none;}
 
@@ -120,6 +123,7 @@ footer > li{list-style:none;}
   /* Reviewed */h1.hero-head{font-size:2.25rem;text-align:left;margin-top:0;}
   /* Reviewed */.hero-lead{font-size:1.063rem;text-align:left;padding-left:0;padding-right:0;}
   /* Reviewed */.col-3-section{padding-bottom:50px;}
+  /* Reviewed */h3{margin-top:35px;}
   
   /* Reviewed */.hero-btn{padding-left:0;}
 
@@ -155,6 +159,8 @@ footer > li{list-style:none;}
   .stats-count{font-size:74px;}
   .social-count{position:absolute;margin-top:0;display:inline-block;margin-left:25px;}
   .social-type{margin-left:-45px;}
+  .card.card-1-of-3{margin-bottom:15px;}
+  .card-deck-wrapper{margin-bottom:35px;}
 }
 
 
@@ -168,7 +174,7 @@ footer > li{list-style:none;}
 
   /* Globals */
   /* Reviewed */h1.hero-head{font-size:2.5rem;}
-  h3{margin-top:25px;margin-bottom:15px;margin-bottom:20px;}
+  h3{margin-top:45px;margin-bottom:15px;margin-bottom:20px;}
   h4{margin:20px 0;}
 
   /* Hero */

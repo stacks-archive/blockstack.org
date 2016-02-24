@@ -97,8 +97,8 @@ class DocsPage extends Component {
                 <div dangerouslySetInnerHTML={pageProperties.markupInnerHTML}>
                 </div>
                 {nextPage ?
-                  <div className="row">
-                    <div className="col-md-4">
+                  <div>
+                    <div className="col-md-4 pull-l-padding">
                       <h3>Next Article</h3>
                       <CardLink href={`/docs/${nextSlug}`}
                         title={nextPage.title} body={nextPage.description}
