@@ -101,7 +101,7 @@ class HomePage extends Component {
             </div>
           </section>
 
-          <section className="container-fluid stats-section">
+          <section className="container-fluid paper-section">
             <div className="container bs-docs-featurette col-centered" id="learnmore">
               <div className="col-centered col-md-8">
                 <div className="col-md-6 paper-wrap">
