@@ -37,7 +37,7 @@
 /* Other */
 /* Reviewed */.hero{color:rgba(255,255,255,1);}
 /* Reviewed */.hero-wrap{padding-top:1rem;padding-bottom:3rem;}
-/* Reviewed */.col-3-section{padding-top:50px;padding-bottom:50px;background-color:rgba(248,249,251,1);}
+/* Reviewed */.col-3-section{padding-top:50px;padding-bottom:50px;background-color:rgba(248,249,251,1);border-bottom:1px solid #E6E6E6;}
 /* Reviewed */.about-head-wrap{padding-bottom:30px;background:url(/images/blockchain-timeline.png);background-repeat:no-repeat;background-position:center top;background-color:#53206f;}
 .highlight-box{padding-top:50px;padding-bottom:50px;background-color:#831ca8;color:rgba(255,255,255,1);}
 .slides{padding-right:10px;padding-left:10px;}
@@ -62,6 +62,9 @@
 .stats-section{border-bottom:1px solid #E6E6E6;padding-top:15px;padding-bottom:5px;}
 .bs-lead{font-size:1rem;}
 .stats-count{font-size:60px;color:#831CA8;font-weight:400;margin-top:-15px;}
+.social-count{position:relative;margin-left:auto;margin-right:auto;text-align:center;margin-top:8px;}
+.social-text{text-align:center;vertical-align:middle;margin-top:8px;}
+.social-type{margin-top:-10px;}
 
 .card {border: 1px solid #e5e5e5 !important;}
 .card.card-1-of-1{width: 100% !important;}
@@ -144,6 +147,7 @@ footer > li{list-style:none;}
   /* Reviewed */.btn-hero{width:195px;}
   /* Reviewed */.inverse-3col-section{padding-top:10px;padding-bottom:10px;}
   .stats-count{font-size:74px;}
+  .social-count{position:absolute;margin-top:0;}
 }
 
 

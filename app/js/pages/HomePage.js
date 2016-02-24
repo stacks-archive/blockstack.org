@@ -100,16 +100,15 @@ class HomePage extends Component {
               </div>
             </div>
           </section>
-           <section className="container-fluid stats-section">
-            <div className="container bs-docs-featurette col-centered">
-              <div className="col-centered">
-                <div className="row col-centered">
-                  <div className="col-sm-8 col-centered">
-                    <p className="lead inline">Star Blockstack on GitHub: 
-                    <iframe src="https://ghbtns.com/github-btn.html?user=blockstack&repo=blockstack-server&type=star&count=true"
-                    frameborder="0" scrolling="0" width="170px" height="20px">
-                    </iframe></p>
-                  </div>
+          <section className="container stats-section">
+            <div className="container-fluid center-block">
+              <div className="row">
+                <div className="container-fluid m-l-2">
+                  <p className="social-text"><span className="social-type">Star Blockstack on GitHub:</span>
+                  <iframe className="social-count m-l-2" src="https://ghbtns.com/github-btn.html?user=blockstack&repo=blockstack-server&type=star&count=true"
+                  frameborder="0" scrolling="0" width="110px" height="20px">
+                  </iframe>
+                  </p>
                 </div>
               </div>
             </div>
