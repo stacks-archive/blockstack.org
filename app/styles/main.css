@@ -66,7 +66,7 @@
 .social-count{position:relative;margin-left:auto;margin-right:auto;text-align:center;margin-top:12px;display:block;}
 .social-text{text-align:center;vertical-align:middle;margin-top:15px;}
 .social-type{font-size:1.125rem;margin-left:0;margin-top:-20px;}
-.back-docs{margin-left:-20px;}
+.back-docs{position:absolute;margin-left:-20px; margin-top:-55px;}
 
 .card.card-1-of-1{width: 100% !important;}
 .card.card-1-of-2{width: 100% !important;}
@@ -78,12 +78,12 @@
 .card{border:1px solid #e5e5e5;box-shadow:none;}
 .card-deck-wrapper{margin-bottom:55px;}
 
-.pager{padding-left:0;margin-top:1rem;margin-bottom:1rem;text-align:center;list-style:none;}
-.page-link{background-color:#53206f;color:#fff;padding:15px 30px;border:1px solid #53206f;}
+.page-link{background-color:#53206f;color:#fff;padding:8px 15px;border:1px solid #53206f;}
 .page-link:hover{text-decoration:none;}
 .paper-wrap{margin-top:10px;}
 
 .pull-l-padding{padding-left:0;}
+.no-padding{padding-left:0;padding-right:0;}
 
 iframe {border: none;}
 
@@ -163,6 +163,7 @@ footer > li{list-style:none;}
   .card.card-1-of-3{margin-bottom:15px;}
   .card-deck-wrapper{margin-bottom:35px;}
   .paper-section{padding-top:65px;padding-bottom:65px;}
+  .nav-header{padding-left:15px;padding-right:15px;}
 }
 
 

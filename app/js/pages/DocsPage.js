@@ -90,8 +90,8 @@ class DocsPage extends Component {
             </ul>
           </nav>
           : null }
-          <section className="m-b-5">
-            <div className="container col-centered">
+          <section className="m-b-5 m-t-5">
+            <div className="container p-b-5 col-centered">
               <div className="container">
                 <h1>{pageProperties.title}</h1>
                 <div dangerouslySetInnerHTML={pageProperties.markupInnerHTML}>
