@@ -77,8 +77,8 @@
 .card{border:1px solid #e5e5e5;box-shadow:none;}
 
 .pager{padding-left:0;margin-top:1rem;margin-bottom:1rem;text-align:center;list-style:none;}
-.page-link{background-color:#53206f;color:#fff;padding:15px 30px;}
-.page-link:hover,.page-link:focus{background-color:#53206f;color:#fff;padding:15px 30px;}
+.page-link{background-color:#53206f;color:#fff;padding:15px 30px;border:1px solid #53206f;}
+.page-link:hover{text-decoration:none;}
 
 iframe {border: none;}
 
