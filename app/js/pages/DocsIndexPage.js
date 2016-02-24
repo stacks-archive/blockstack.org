@@ -47,7 +47,7 @@ class DocsIndexPage extends Component {
                           return (
                             <CardLink key={columnIndex} href={`/docs/${slug}`}
                               title={page.title} body={page.description}
-                              imageSrc={page.image} cardsPerRow={3} />
+                              imageSrc={`/images/article-photos/800x600/${page.image}`} cardsPerRow={3} />
                           )
                         })}
                         </div>

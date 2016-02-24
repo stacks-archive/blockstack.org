@@ -10,7 +10,8 @@ class CardLink extends Component {
     body: PropTypes.string,
     imageSrc: PropTypes.string,
     footnote: PropTypes.string,
-    cardsPerRow: PropTypes.number
+    cardsPerRow: PropTypes.number,
+    onClick: PropTypes.func
   }
 
   constructor(props) {

@@ -80,6 +80,7 @@
     "highlight.js": "git+ssh://git@github.com/isagalaev/highlight.js.git",
     "marked": "^0.3.5",
     "react-remarkable": "^1.1.1",
+    "react-retina-image": "^2.0.0",
     "react-router": "^1.0.0"
   }
 }

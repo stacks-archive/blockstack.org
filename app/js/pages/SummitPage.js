@@ -28,7 +28,7 @@ class SummitPage extends Component {
                   <div className="col-xs-11 col-sm-10 col-sm-offset-1">
                     <div className="hero-logo hidden-sm hidden-md hidden-lg">
                       <Link to="/">
-                        <img src="/images/blockstack-logo.svg"/>
+                        <img src="/images/logos/blockstack.svg"/>
                       </Link>
                     </div>
                     <h1 className="hero-head summ-head">Blockstack<br/>Summit 2015</h1>
@@ -256,21 +256,21 @@ class SummitPage extends Component {
                   <div className="col-sm-4 feature-panel featpan-g1">
                     <div className="container wrap-mob-feat">
                       <Link to="http://chain.com/">
-                        <img src="/images/chain-logo.svg" alt="Chain logo" width="138px"/>
+                        <img src="/images/logos/chain.svg" alt="Chain logo" width="138px"/>
                       </Link>
                     </div>
                   </div>
                   <div className="col-sm-4 feature-panel featpan-g2">
                     <div className="container wrap-mob-feat">
                       <Link to="https://www.itbit.com/">
-                        <img src="/images/itbit-type-gray-logo.svg" alt="itBit logo" width="100px"/>
+                        <img src="/images/logos/itbit.svg" alt="itBit logo" width="100px"/>
                       </Link>
                     </div>
                   </div>
                   <div className="col-sm-4 feature-panel featpan-g3">
                     <div className="container wrap-mob-feat">
                       <Link to="https://www.blockchain.info/">
-                        <img src="/images/blockchain-info-blue.svg" alt="itBit logo" width="205px"/>
+                        <img src="/images/logos/blockchain-info-blue.svg" alt="itBit logo" width="205px"/>
                       </Link>
                     </div>
                   </div>
@@ -285,21 +285,21 @@ class SummitPage extends Component {
                   <div className="col-sm-4 feature-panel featpan-1">
                     <div className="container wrap-mob-feat">
                       <Link to="http://onename.com/">
-                        <img src="/images/onename-0609-logo.svg" alt="Onename Blockchain ID" width="130px"/>
+                        <img src="/images/logos/onename.svg" alt="Onename Blockchain ID" width="130px"/>
                       </Link>
                     </div>
                   </div>
                   <div className="col-sm-4 feature-panel featpan-2">
                     <div className="container wrap-mob-feat">
                       <Link to="http://ob1.io/">
-                        <img src="/images/ob1-logo.svg" alt="OB1 logo" width="90px"/>
+                        <img src="/images/logos/ob1.svg" alt="OB1 logo" width="90px"/>
                       </Link>
                     </div>
                   </div>
                   <div className="col-sm-4 feature-panel featpan-3">
                     <div className="container wrap-mob-feat">
                       <Link to="https://tierion.com/">
-                        <img src="/images/tierion-logo.svg" alt="Tierion is the fastest way to record data in the blockchain and generate a blockchain receipt" width="160px"/>
+                        <img src="/images/logos/tierion.svg" alt="Tierion is the fastest way to record data in the blockchain and generate a blockchain receipt" width="160px"/>
                       </Link>
                     </div>
                   </div>
@@ -308,14 +308,14 @@ class SummitPage extends Component {
                   <div className="col-sm-6 feature-panel featpan-4">
                     <div className="container wrap-mob-feat">
                       <Link to="http://bitseed.org/">
-                        <img src="/images/bitseed-logo.svg" alt="Bitseed, decentralized blockchain technology hardware company" width="128px"/>
+                        <img src="/images/logos/bitseed.svg" alt="Bitseed, decentralized blockchain technology hardware company" width="128px"/>
                       </Link>
                     </div>
                   </div>
                   <div className="col-sm-6 feature-panel featpan-5">
                     <div className="container wrap-mob-feat">
                       <Link to="http://trychord.com/">
-                        <img src="/images/chord-logo.svg" alt="Chord logo" width="110px"/>
+                        <img src="/images/logos/chord.svg" alt="Chord logo" width="110px"/>
                       </Link>
                     </div>
                   </div>
