@@ -64,7 +64,7 @@
 .stats-count{font-size:60px;color:#831CA8;font-weight:400;margin-top:-15px;}
 .social-count{position:relative;margin-left:auto;margin-right:auto;text-align:center;margin-top:8px;display:block;}
 .social-text{text-align:center;vertical-align:middle;margin-top:8px;}
-.social-type{margin-top:-10px;}
+.social-type{margin-left:0;margin-top:-10px;}
 
 .card {border: 1px solid #e5e5e5 !important;}
 .card.card-1-of-1{width: 100% !important;}
@@ -148,6 +148,7 @@ footer > li{list-style:none;}
   /* Reviewed */.inverse-3col-section{padding-top:10px;padding-bottom:10px;}
   .stats-count{font-size:74px;}
   .social-count{position:absolute;margin-top:0;display:inline-block;margin-left:25px;}
+  .social-type{margin-left:-45px;}
 }
 
 

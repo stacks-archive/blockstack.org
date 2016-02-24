@@ -106,7 +106,7 @@ class HomePage extends Component {
                 <div className="container-fluid">
                   <p className="social-text"><span className="social-type">Star Blockstack on GitHub:</span>
                   <iframe className="social-count" src="https://ghbtns.com/github-btn.html?user=blockstack&repo=blockstack-server&type=star&count=true"
-                  frameborder="0" scrolling="0" width="110px" height="20px">
+                  frameborder="0" scrolling="0" width="95px" height="20px">
                   </iframe>
                   </p>
                 </div>
