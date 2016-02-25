@@ -32,7 +32,7 @@
 
 /* Buttons */
 /* Reviewed */.btn-footer-max-width{max-width:225px;}
-/* Reviewed */.btn-outline-secondary:hover{color:#9A21C5;}
+/* Reviewed */.btn-outline-secondary:hover, .btn-outline-secondary:focus, .btn-outline-secondary:active{color:#9A21C5;}
 
 /* Other */
 /* Reviewed */.hero{color:rgba(255,255,255,1);}
