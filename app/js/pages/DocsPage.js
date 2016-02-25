@@ -4,7 +4,6 @@ import {Component}      from 'react'
 import {Link}           from 'react-router'
 import DocumentTitle    from 'react-document-title'
 import marked           from 'marked'
-import RetinaImage      from 'react-retina-image'
 
 import Image            from '../components/Image'
 import Header           from '../components/Header'
@@ -38,7 +37,6 @@ class DocsPage extends Component {
     this.getPageName = this.getPageName.bind(this)
     this.setPage = this.setPage.bind(this)
     this.filterMarkup = this.filterMarkup.bind(this)
-    this.getHeaderImageSrc = this.getHeaderImageSrc.bind(this)
     this.onImageLoad = this.onImageLoad.bind(this)
   }
 
@@ -100,14 +98,6 @@ class DocsPage extends Component {
     })
   }
 
-  getHeaderImageSrc() {
-    let headerImageSrc = null
-    if (this.state.currentPage !== null) {
-      headerImageSrc = `/images/article-photos/800x600/${this.state.currentPage.image}`
-    }
-    return headerImageSrc
-  }
-
   onImageLoad() {
     this.setState({
       imageLoading: false
@@ -119,7 +109,7 @@ class DocsPage extends Component {
           nextPage = this.state.nextPage,
           title = currentPage ? `Blockstack - ${currentPage.title}` : "Blockstack"
 
-    const headerImageSrc = this.getHeaderImageSrc()
+    const headerImageSrc = this.state.currentPage ? `/images/article-photos/full/${this.state.currentPage.image}` : null
 
     return (
       <DocumentTitle title={title}>
@@ -133,7 +123,7 @@ class DocsPage extends Component {
           <div className="m-b-3 docs-header-image-wrapper">
             { currentPage !== null && this.state.imageLoading !== true ?
             <Image src={headerImageSrc}
-              fallbackSrc="/images/article-photos/800x600/road.jpg"
+              fallbackSrc="/images/article-photos/full/road.jpg"
               className="img-fluid docs-header-image" />
             : null }
           </div>
@@ -161,7 +151,7 @@ class DocsPage extends Component {
                       <h3>Next Article</h3>
                       <CardLink href={`/docs/${nextPage.pageName}`}
                         title={nextPage.title} body={nextPage.description}
-                        imageSrc={`/images/article-photos/800x600/${nextPage.image}`} />
+                        imageSrc={`/images/article-photos/full/${nextPage.image}`} />
                     </div>
                   </div>
                 : null }
