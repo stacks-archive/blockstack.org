@@ -11,7 +11,7 @@ gulp.task('prod', ['clean'], function(cb) {
 
   runSequence([
     'sass', 'copyStyles', 'imagemin', 'browserify', 'copyFonts', 'copyIndex',
-    'copyIcons'
+    'copyIcons', 'copyFiles', 'buildDocs'
   ], cb);
 
 });

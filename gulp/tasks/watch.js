@@ -10,5 +10,4 @@ gulp.task('watch', ['browserSync'], function() {
   gulp.watch(config.images.src,                 ['imagemin']);
   gulp.watch(config.docs.src,                   ['buildDocs']);
   gulp.watch(config.sourceDir + 'index.html',   ['copyIndex']);
-
 });
