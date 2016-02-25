@@ -72,26 +72,3 @@ class CardLink extends Component {
 }
 
 export default CardLink
-
-/*
-      <div className="card m-b-5">
-        { this.props.imageSrc ?
-          <img src={this.props.imageSrc}
-            style={{ width: '100%', display: 'block' }}
-            className="card-img-top" alt="Card image cap" />
-          : null }
-          <div className="card-block">
-            <div className="card-block">
-              <h4 className="card-title">
-                {this.props.title}
-              </h4>
-              {this.props.body ?
-              <p className="card-text">
-                {this.props.body}
-              </p>
-              : null }
-            </div>
-          </div>
-        </Link>
-      </div>
-*/
