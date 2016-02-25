@@ -28,7 +28,6 @@ class HomePage extends Component {
     request(requestOptions, (error, response, body) => {
       if (!error && response.statusCode == 200) {
         this.updateNameCount(body)
-        //console.log(body) // Show the HTML for the Google homepage.
       } else {
         console.log(error)
       }

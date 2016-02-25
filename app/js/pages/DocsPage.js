@@ -109,7 +109,7 @@ class DocsPage extends Component {
           nextPage = this.state.nextPage,
           title = currentPage ? `Blockstack - ${currentPage.title}` : "Blockstack"
 
-    const headerImageSrc = this.state.currentPage ? `/images/article-photos/full/${this.state.currentPage.image}` : null
+    const headerImageSrc = this.state.currentPage ? this.state.currentPage.image : null
 
     return (
       <DocumentTitle title={title}>
@@ -123,7 +123,7 @@ class DocsPage extends Component {
           <div className="m-b-3 docs-header-image-wrapper">
             { currentPage !== null && this.state.imageLoading !== true ?
             <Image src={headerImageSrc}
-              fallbackSrc="/images/article-photos/full/road.jpg"
+              fallbackSrc="/images/article-photos/road.jpg"
               className="img-fluid docs-header-image" />
             : null }
           </div>
@@ -151,7 +151,7 @@ class DocsPage extends Component {
                       <h3>Next Article</h3>
                       <CardLink href={`/docs/${nextPage.pageName}`}
                         title={nextPage.title} body={nextPage.description}
-                        imageSrc={`/images/article-photos/full/${nextPage.image}`} />
+                        imageSrc={nextPage.image} />
                     </div>
                   </div>
                 : null }
