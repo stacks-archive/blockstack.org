@@ -18,6 +18,10 @@ You should get a response like this:
 ```json
 {
     "data_record": {
+        "name": "Fred Wilson",
+        "bio": "I am a VC",
+        "website": "http://avc.com"
+        ...
     }
 }
 ```

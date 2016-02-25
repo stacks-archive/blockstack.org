@@ -70,7 +70,7 @@ class HomePage extends Component {
                     </Link>
                   </p>
                 </div>
-                <div className="col-sm-8 offset-sm-2 col-md-6 offset-md-0">
+                <div className="col-sm-8 offset-sm-2 col-md-6 offset-md-0 hidden-sm-down">
                   <img className="hero-img"
                     src="/images/visuals/hero-pip-install-blockstack.svg" />
                 </div>
@@ -143,7 +143,7 @@ class HomePage extends Component {
               <div className="col-centered col-md-8">
                 <div className="col-md-6 paper-wrap">
                     <Link to="/blockstack.pdf" role="button" target="_blank"
-                      className="btn btn-sm btn-primary btn-block btn-hero">
+                      className="btn btn-outline-primary btn-block btn-hero">
                       Read the paper
                     </Link>
                 </div>

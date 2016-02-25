@@ -32,11 +32,11 @@
 
 /* Buttons */
 /* Reviewed */.btn-footer-max-width{max-width:225px;}
-/* Reviewed */.btn-outline-secondary:hover{color:#9A21C5;}
+/* Reviewed */.btn-outline-secondary:hover, .btn-outline-secondary:focus, .btn-outline-secondary:active{color:#9A21C5;}
 
 /* Other */
 /* Reviewed */.hero{color:rgba(255,255,255,1);}
-/* Reviewed */.hero-wrap{padding-top:1rem;padding-bottom:3rem;}
+/* Reviewed */.hero-wrap{padding-top:1rem;padding-top:3.5rem;padding-bottom:8rem;}
 /* Reviewed */.col-3-section{padding-top:50px;padding-bottom:50px;background-color:rgba(248,249,251,1);border-bottom:1px solid #E6E6E6;}
 /* Reviewed */.about-head-wrap{padding-bottom:30px;background:url(/images/visuals/blockchain-timeline.png);background-repeat:no-repeat;background-position:center top;background-color:#53206f;}
 .highlight-box{padding-top:50px;padding-bottom:50px;background-color:#831ca8;color:rgba(255,255,255,1);}
@@ -54,7 +54,7 @@
 .topic-wrap{max-width:275px;}
 .table-wrap{max-width:800px;}
 .table-striped > thead > tr > th{text-align:center;}
-.hero-img{visibility:hidden;max-width:12rem;}
+.hero-img{max-width:12rem;}
 /* Reviewed */.card{width:100%;}
 /* Reviewed */.inverse-3col-section{background-color:#9A21C5;color:#fff;padding-top:30px;padding-bottom:25px;}
 /* Reviewed */.inverse-lead{font-weight:300;margin-bottom:35px;}
