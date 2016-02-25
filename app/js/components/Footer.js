@@ -18,7 +18,7 @@ class Footer extends Component {
                 <li>
                   <div className="foot-logo">
                     <Link to="/">
-                      <img src="/images/blockstack-logo.svg" />
+                      <img src="/images/logos/blockstack.svg" />
                     </Link>
                   </div>
                 </li>

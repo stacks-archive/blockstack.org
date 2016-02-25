@@ -21,7 +21,7 @@ class DocsIndexPage extends Component {
         items: ['extended-usage', 'blockstack-vs-dns', 'blockstack-vs-namecoin']
       },
       {
-        items: ['namespaces', 'how-blockstack-works', 'faq']
+        items: ['namespaces', 'how-blockstack-works', 'light-clients']
       }
     ]
 
@@ -33,7 +33,7 @@ class DocsIndexPage extends Component {
           </div>
           <section className="container-fluid spacing-container">
             <div className="container col-centered">
-              <div className="container">
+              <div className="container m-b-5">
                 {pageRows.map((pageRow, rowIndex) => {
                   return (
                     <div key={rowIndex}>

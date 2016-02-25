@@ -1,7 +1,7 @@
 ---
 title: Installation
 description: Get started by installing and configuring Blockstack.
-image: https://images.unsplash.com/photo-1417733403748-83bbc7c05140?crop=entropy&fit=crop&fm=jpg&h=1100&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1500
+image: /images/article-photos/computer.jpg
 next: basic-usage
 ---
 
@@ -17,7 +17,7 @@ $ pip install blockstack
 
 #### Mac Users
 
-If you're a mac user and would like an alternative to installing through pip, you can also install Blockstack with brew, as seen below.
+If you're a Mac user and would like an alternative to installing through pip, you can also install Blockstack with brew, as seen below.
 
 ```bash
 $ brew install blockstack
@@ -25,7 +25,7 @@ $ brew install blockstack
 
 #### Linux Users
 
-If you're a linux user and would like an alternative to installing through pip, you can also install via apt-get.
+If you're a Linux user and would like an alternative to installing through pip, you can also install via apt-get.
 
 First, though, you'll need to add packages.blockstack.org to your sources list to tell apt-get where to get the blockstack package:
 

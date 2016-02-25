@@ -5,6 +5,7 @@ import {Link}           from 'react-router'
 import DocumentTitle    from 'react-document-title'
 import marked           from 'marked'
 
+import Image            from '../components/Image'
 import Header           from '../components/Header'
 import Footer           from '../components/Footer'
 import CardLink         from '../components/CardLink'
@@ -26,8 +27,17 @@ class DocsPage extends Component {
   constructor(props) {
     super(props)
 
+    this.state = {
+      currentPage: null,
+      nextPage: null,
+      imageLoading: false
+    }
+
     this.initHighlighting = this.initHighlighting.bind(this)
-    this.getPageProperties = this.getPageProperties.bind(this)
+    this.getPageName = this.getPageName.bind(this)
+    this.setPage = this.setPage.bind(this)
+    this.filterMarkup = this.filterMarkup.bind(this)
+    this.onImageLoad = this.onImageLoad.bind(this)
   }
 
   initHighlighting() {
@@ -35,73 +45,111 @@ class DocsPage extends Component {
     Array.prototype.forEach.call(blocks, hljs.highlightBlock)
   }
 
-  componentDidMount() {
-    this.initHighlighting()
+  componentWillMount() {
+    this.setPage(this.props)
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.setState({
+      imageLoading: true
+    })
+    if (this.props !== nextProps) {
+      this.setPage(nextProps)
+    }
   }
 
   componentDidUpdate() {
     this.initHighlighting()
   }
 
-  getPageProperties() {
+  getPageName(props) {
     let pageName = '404'
-    if (this.props.route.path === '/about') {
+    if (props.route.path === '/about') {
       pageName = 'about'
-    } else if (this.props.routeParams.hasOwnProperty('docSection')) {
-      if (docs.hasOwnProperty(this.props.routeParams.docSection)) {
-        pageName = this.props.routeParams.docSection
+    } else if (props.routeParams.hasOwnProperty('docSection')) {
+      if (docs.hasOwnProperty(props.routeParams.docSection)) {
+        pageName = props.routeParams.docSection
       }
     }
-    let pageProperties = docs[pageName]
-    pageProperties.pageName = pageName
+    return pageName
+  }
 
-    let markup = marked(pageProperties.markdown)
-    markup = markup.replace('<a href="', '<a target="_blank" href="')
-    pageProperties.markupInnerHTML = {
-      __html: markup
+  filterMarkup(markup) {
+    return markup.replace('<a href="', '<a target="_blank" href="')
+  }
+
+  setPage(props) {
+    let pageName = this.getPageName(props)
+    let currentPage = Object.assign({}, docs[pageName], {
+      pageName: pageName,
+      markup: this.filterMarkup(marked(docs[pageName].markdown))
+    })
+
+    let nextPage = null
+    if (currentPage.hasOwnProperty('next')) {
+      nextPage = Object.assign({}, docs[currentPage.next], {
+        pageName: currentPage.next
+      })
     }
-    
-    return pageProperties
+
+    this.setState({
+      currentPage: currentPage,
+      nextPage: nextPage
+    })
+  }
+
+  onImageLoad() {
+    this.setState({
+      imageLoading: false
+    })
   }
 
   render() {
-    const pageProperties = this.getPageProperties(),
-          nextSlug = pageProperties.hasOwnProperty('next') ? pageProperties.next : null,
-          nextPage = nextSlug ? docs[nextSlug] : null
+    const currentPage = this.state.currentPage,
+          nextPage = this.state.nextPage,
+          title = currentPage ? `Blockstack - ${currentPage.title}` : "Blockstack"
+
+    const headerImageSrc = this.state.currentPage ? this.state.currentPage.image : null
 
     return (
-      <DocumentTitle title={`Blockstack - ${pageProperties.title}`}>
+      <DocumentTitle title={title}>
         <div>
           <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
           </div>
-          { pageProperties.pageName !== 'about' ?
-          <section className="container-fluid spacing-container">
-            <div className="container col-centered">
-              <div className="container">
-                <p>
-                  <Link to="/docs">
-                   &lt; Back to Docs
-                  </Link>
-                </p>
-              </div>
-            </div>
-          </section>
-          : null }
-          <div className="m-b-3 docs-header-image-wrapper">
-            <img src={pageProperties.image} className="img-fluid docs-header-image" />
+          <div className="hidden-image">
+            <Image src={headerImageSrc} onLoad={this.onImageLoad} />
           </div>
-          <section className="m-b-5">
-            <div className="container col-centered">
-              <div>
-                <h1>{pageProperties.title}</h1>
-                <div dangerouslySetInnerHTML={pageProperties.markupInnerHTML}>
+          <div className="m-b-3 docs-header-image-wrapper">
+            { currentPage !== null && this.state.imageLoading !== true ?
+            <Image src={headerImageSrc}
+              fallbackSrc="/images/article-photos/road.jpg"
+              className="img-fluid docs-header-image" />
+            : null }
+          </div>
+          { currentPage.pageName !== 'about' ?
+          <nav className="container-fluid m-b-1 back-docs">
+            <ul className="pagination">
+              <li className="page-item">
+                <Link className="page-link" to="/docs" aria-label="Back">
+                  <span aria-hidden="true">&laquo; Back to Docs</span>
+                  <span className="sr-only">Back</span>
+                </Link>
+              </li>
+            </ul>
+          </nav>
+          : null }
+          <section className="m-b-5 m-t-5">
+            <div className="container p-b-5 col-centered">
+              <div className="container">
+                <h1>{currentPage.title}</h1>
+                <div dangerouslySetInnerHTML={{ __html: currentPage.markup }}>
                 </div>
                 {nextPage ?
-                  <div className="row">
-                    <div className="col-md-4">
+                  <div>
+                    <div className="col-md-4 pull-l-padding">
                       <h3>Next Article</h3>
-                      <CardLink href={`/docs/${nextSlug}`}
+                      <CardLink href={`/docs/${nextPage.pageName}`}
                         title={nextPage.title} body={nextPage.description}
                         imageSrc={nextPage.image} />
                     </div>

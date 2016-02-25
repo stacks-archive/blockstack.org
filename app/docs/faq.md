@@ -1,7 +1,7 @@
 ---
 title: FAQ
 description: Review the questions most frequently asked about Blockstack.
-image: https://images.unsplash.com/photo-1453733190371-0a9bedd82893?crop=entropy&fit=crop&fm=jpg&h=1100&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1500
+image: /images/article-photos/chalkboard.jpg
 ---
 
 ### How is Blockstack DNS different from ICANN DNS?
@@ -18,7 +18,7 @@ See this article for a full explanation:
 
 ### What blockchain is Blockstack DNS built on?
 
-Blockstack DNS, meanwhile, is operated by nodes that read data from and write data to an underlying blockchain, which can be any blockchain that they are configured to operate on top of. The logic for operating the domain name system is decoupled from the logic of the underlying blockchain. This allows a Blockstack network to be configured to operate on any Blockchain in particular, and the main Blockstack network is currently operating on the most secure blockchain - the Bitcoin blockchain.
+Blockstack DNS is operated by nodes that read and write data to an underlying blockchain. The Blockstack DNS architecture is portable--the domain name system's logic is fully decoupled from the blockchain's logic. This lets Blockstack DNS leverage the most secure blockchain. This is the Bitcoin blockchain today but may be any other blockchain at some point in the future.
 
 ### Why isn't there a Blockstack network on a blockchain other than the Bitcoin blockchain?
 

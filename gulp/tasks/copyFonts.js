@@ -4,6 +4,10 @@ import gulp   from 'gulp';
 import config from '../config';
 
 gulp.task('copyFonts', function() {
-  return gulp.src([config.sourceDir + 'fonts/**/*'])
-    .pipe(gulp.dest(config.buildDir + 'fonts/'));
+  return gulp.src(
+    [
+      config.sourceDir + 'fonts/**/*',
+      config.sourceDir + '../node_modules/font-awesome/fonts/**/*'
+    ]
+  ).pipe(gulp.dest(config.buildDir + 'fonts/'));
 });
