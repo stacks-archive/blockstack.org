@@ -43,7 +43,9 @@ class CardLink extends Component {
       <div className={`card ${this.getCardClass()}`}>
         <Link to={this.props.href} className="card-link">
           { this.props.imageSrc ?
-          <img src={this.props.imageSrc} className="card-img-top card-link-image" />
+          <div className="card-link-image-wrapper">
+            <img src={this.props.imageSrc} className="card-img-top card-link-image" />
+          </div>
           : null }
           <div className="card-block">
             <h4 className="card-title card-title-wrapped">
