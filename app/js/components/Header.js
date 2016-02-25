@@ -11,7 +11,7 @@ class Header extends Component {
 
   render() {
     return (
-      <header className="container">
+      <header className="container no-padding nav-header">
         <nav className="navbar">
           <div>
             <Link className="navbar-brand" to="/">
