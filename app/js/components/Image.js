@@ -1,4 +1,5 @@
 import { Component, PropTypes } from 'react'
+import isRetina from 'is-retina'
 
 class Image extends Component {
   static propTypes: {
@@ -12,8 +13,12 @@ class Image extends Component {
   constructor(props) {
     super(props)
 
+    let src = this.props.src
+    if (isRetina()) {
+      src = src.replace('.jpg', '@2x.jpg')
+    }
     this.state = {
-      src: this.props.src
+      src: src
     }
 
     this.onError = this.onError.bind(this)
@@ -21,8 +26,12 @@ class Image extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (this.props !== nextProps) {
+      let nextSrc = nextProps.src
+      if (isRetina()) {
+        nextSrc = nextSrc.replace('.jpg', '@2x.jpg')
+      }
       this.setState({
-        src: nextProps.src
+        src: nextSrc
       })
     }
   }
@@ -34,6 +43,12 @@ class Image extends Component {
   }
 
   render() {
+    if (isRetina()) {
+      console.log('this is retina!')
+    } else {
+      console.log('this is not retina')
+    }
+
     return (
       <img src={this.state.src}
         style={this.props.style}

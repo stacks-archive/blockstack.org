@@ -3,6 +3,7 @@
 import {Component}   from 'react'
 import {Link}        from 'react-router'
 import DocumentTitle from 'react-document-title'
+import request       from 'request'
 
 import Header        from '../components/Header'
 import Footer        from '../components/Footer'
@@ -11,6 +12,39 @@ class HomePage extends Component {
 
   constructor(props) {
     super(props)
+
+    this.state = {
+      nameCount: 46000
+    }
+
+    this.updateNameCount = this.updateNameCount.bind(this)
+  }
+
+  componentDidMount() {
+    const requestOptions = {
+      url: 'https://resolver.onename.com/v2/namespaces',
+      withCredentials: false
+    }
+    request(requestOptions, (error, response, body) => {
+      if (!error && response.statusCode == 200) {
+        this.updateNameCount(body)
+      } else {
+        console.log(error)
+      }
+    })
+  }
+
+  updateNameCount(response) {
+    const jsonResponse = JSON.parse(response)
+    if (jsonResponse.hasOwnProperty("namespaces")) {
+      const namespaceData = jsonResponse.namespaces[0]
+      if (namespaceData.hasOwnProperty("registrations")) {
+        const nameCount = namespaceData.registrations
+        this.setState({
+          nameCount: nameCount
+        })
+      }
+    }
   }
 
   render() {
@@ -37,33 +71,37 @@ class HomePage extends Component {
                   </p>
                 </div>
                 <div className="col-sm-8 offset-sm-2 col-md-6 offset-md-0">
-                  <img className="hero-img" src="/images/visuals/hero-pip-install-blockstack.svg" />
+                  <img className="hero-img"
+                    src="/images/visuals/hero-pip-install-blockstack.svg" />
                 </div>
               </section>
             </div>
           </div>
           <section className="container-fluid stats-section">
-            <div className="container bs-docs-featurette col-centered" id="learnmore">
+            <div className="container bs-docs-featurette col-centered">
               <div className="col-centered col-md-10">
                 <div className="row col-centered">
                   <div className="col-md-6 feature-panel">
                     <p className="lead bs-lead">
                       Names registered
                     </p>
-                    <h1 className="stats-count">44,000</h1>
+                    <Link to="https://resolver.onename.com/v2/namespaces"
+                      target="_blank" className="simple-link">
+                      <h1 className="stats-count">{this.state.nameCount}</h1>
+                    </Link>
                   </div>
                   <div className="col-md-6 feature-panel">
                     <p className="lead bs-lead">
                       Community members
                     </p>
-                    <h1 className="stats-count">599</h1>
+                    <h1 className="stats-count">602</h1>
                   </div>
                 </div>
               </div>
             </div>
           </section>
           <section className="container-fluid col-3-section">
-            <div className="container bs-docs-featurette col-centered" id="learnmore">
+            <div className="container bs-docs-featurette col-centered">
               <div className="col-centered">
                 <div className="row col-centered">
                   <div className="col-md-4 feature-panel">
@@ -101,26 +139,28 @@ class HomePage extends Component {
             </div>
           </section>
           <section className="container-fluid paper-section">
-            <div className="container bs-docs-featurette col-centered" id="learnmore">
+            <div className="container bs-docs-featurette col-centered">
               <div className="col-centered col-md-8">
                 <div className="col-md-6 paper-wrap">
-                  <Link to="/docs" role="button"
+                    <Link to="/blockstack.pdf" role="button" target="_blank"
                       className="btn btn-sm btn-primary btn-block btn-hero">
                       Read the paper
                     </Link>
                 </div>
                 <div className="col-md-6">
-                  <p className="social-text"><span className="social-type">Star Blockstack on GitHub:</span>
-                  <iframe className="social-count" src="https://ghbtns.com/github-btn.html?user=blockstack&repo=blockstack-server&type=star&count=true"
-                  frameborder="0" scrolling="0" width="95px" height="20px">
-                  </iframe>
+                  <p className="social-text">
+                    <span className="social-type">Star Blockstack on GitHub:</span>
+                    <iframe className="social-count"
+                      src="https://ghbtns.com/github-btn.html?user=blockstack&repo=blockstack-server&type=star&count=true"
+                      scrolling="0" width="95px" height="20px">
+                    </iframe>
                   </p>
                 </div>
               </div>
             </div>
           </section>
           <section className="container-fluid inverse-3col-section">
-            <div className="container bs-docs-featurette col-centered" id="learnmore">
+            <div className="container bs-docs-featurette col-centered">
               <div className="col-centered">
                 <div className="row col-centered">
                   <div className="col-md-4 feature-panel">
@@ -128,10 +168,10 @@ class HomePage extends Component {
                     <p className="inverse-lead">
                       Learn from others on the forum
                     </p>
-                    <p className="">
-                      <Link to="/docs" role="button"
+                    <p>
+                      <Link to="https://forum.blockstack.org/" role="button" target="_blank"
                         className="btn btn-sm btn-outline-secondary m-b-2">
-                        Join the community
+                        Join the Forum
                       </Link>
                     </p>
                   </div>
@@ -140,10 +180,10 @@ class HomePage extends Component {
                     <p className="inverse-lead">
                       Live chat with other Blockstackers
                     </p>
-                    <p className="">
-                      <Link to="/docs" role="button"
+                    <p>
+                      <Link to="http://chat.blockstack.org/" role="button" target="_blank"
                         className="btn btn-sm btn-outline-secondary m-b-2">
-                        Get invited to Slack
+                        Join the Slack Group
                       </Link>
                     </p>
                   </div>
@@ -152,10 +192,10 @@ class HomePage extends Component {
                     <p className="inverse-lead">
                       Read articles posted by the community
                     </p>
-                    <p className="">
-                      <Link to="/docs" role="button"
+                    <p>
+                      <Link to="https://medium.com/blockstack-review" role="button" target="_blank"
                         className="btn btn-sm btn-outline-secondary m-b-2">
-                        Visit the blog
+                        Read the Blog
                       </Link>
                     </p>
                   </div>
@@ -164,7 +204,7 @@ class HomePage extends Component {
             </div>
           </section>
           <section>
-            <div className="bs-docs-featurette col-centered" id="learnmore">
+            <div className="bs-docs-featurette col-centered">
               <div className="container col-centered">
                 <div className="displayed-wrap container col-md-8 col-lg-8 col-centered">
                   <h3 className="displayed">
@@ -204,7 +244,8 @@ class HomePage extends Component {
                     </h2>
                   </hgroup>
                   <div>
-                    <Link className="btn btn-lg btn-special btn-footer-max-width" to="/docs" role="button">
+                    <Link to="/docs" role="button"
+                      className="btn btn-lg btn-special btn-footer-max-width">
                       Getting Started
                     </Link>
                   </div>

@@ -21,7 +21,7 @@ class DocsIndexPage extends Component {
         items: ['extended-usage', 'blockstack-vs-dns', 'blockstack-vs-namecoin']
       },
       {
-        items: ['namespaces', 'how-blockstack-works', 'faq']
+        items: ['namespaces', 'how-blockstack-works', 'light-clients']
       }
     ]
 
@@ -47,7 +47,7 @@ class DocsIndexPage extends Component {
                           return (
                             <CardLink key={columnIndex} href={`/docs/${slug}`}
                               title={page.title} body={page.description}
-                              imageSrc={`/images/article-photos/800x600/${page.image}`} cardsPerRow={3} />
+                              imageSrc={page.image} cardsPerRow={3} />
                           )
                         })}
                         </div>
