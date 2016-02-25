@@ -3,6 +3,7 @@
 import {Component}   from 'react'
 import {Link}        from 'react-router'
 import DocumentTitle from 'react-document-title'
+import request       from 'request'
 
 import Header        from '../components/Header'
 import Footer        from '../components/Footer'
@@ -11,6 +12,40 @@ class HomePage extends Component {
 
   constructor(props) {
     super(props)
+
+    this.state = {
+      nameCount: 46000
+    }
+
+    this.updateNameCount = this.updateNameCount.bind(this)
+  }
+
+  componentDidMount() {
+    const requestOptions = {
+      url: 'https://resolver.onename.com/v2/namespaces',
+      withCredentials: false
+    }
+    request(requestOptions, (error, response, body) => {
+      if (!error && response.statusCode == 200) {
+        this.updateNameCount(body)
+        //console.log(body) // Show the HTML for the Google homepage.
+      } else {
+        console.log(error)
+      }
+    })
+  }
+
+  updateNameCount(response) {
+    const jsonResponse = JSON.parse(response)
+    if (jsonResponse.hasOwnProperty("namespaces")) {
+      const namespaceData = jsonResponse.namespaces[0]
+      if (namespaceData.hasOwnProperty("registrations")) {
+        const nameCount = namespaceData.registrations
+        this.setState({
+          nameCount: nameCount
+        })
+      }
+    }
   }
 
   render() {
@@ -53,7 +88,7 @@ class HomePage extends Component {
                     </p>
                     <Link to="https://resolver.onename.com/v2/namespaces"
                       target="_blank" className="simple-link">
-                      <h1 className="stats-count">44,000</h1>
+                      <h1 className="stats-count">{this.state.nameCount}</h1>
                     </Link>
                   </div>
                   <div className="col-md-6 feature-panel">

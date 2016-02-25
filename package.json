@@ -82,6 +82,7 @@
     "marked": "^0.3.5",
     "react-remarkable": "^1.1.1",
     "react-retina-image": "^2.0.0",
-    "react-router": "^1.0.0"
+    "react-router": "^1.0.0",
+    "request": "^2.69.0"
   }
 }
