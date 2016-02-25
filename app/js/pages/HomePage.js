@@ -70,7 +70,7 @@ class HomePage extends Component {
                     </Link>
                   </p>
                 </div>
-                <div className="col-sm-8 offset-sm-2 col-md-6 offset-md-0">
+                <div className="col-sm-8 offset-sm-2 col-md-6 offset-md-0 hidden-sm-down">
                   <img className="hero-img"
                     src="/images/visuals/hero-pip-install-blockstack.svg" />
                 </div>
