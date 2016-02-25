@@ -143,7 +143,7 @@ class HomePage extends Component {
               <div className="col-centered col-md-8">
                 <div className="col-md-6 paper-wrap">
                     <Link to="/blockstack.pdf" role="button" target="_blank"
-                      className="btn btn-sm btn-primary btn-block btn-hero">
+                      className="btn btn-outline-primary btn-block btn-hero">
                       Read the paper
                     </Link>
                 </div>
