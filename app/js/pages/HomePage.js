@@ -142,7 +142,7 @@ class HomePage extends Component {
             <div className="container bs-docs-featurette col-centered">
               <div className="col-centered col-md-8">
                 <div className="col-md-6 paper-wrap">
-                    <Link to="https://github.com/blockstack/blockstack-papers" role="button" target="_blank"
+                    <Link to="/blockstack.pdf" role="button" target="_blank"
                       className="btn btn-sm btn-primary btn-block btn-hero">
                       Read the paper
                     </Link>
@@ -152,7 +152,7 @@ class HomePage extends Component {
                     <span className="social-type">Star Blockstack on GitHub:</span>
                     <iframe className="social-count"
                       src="https://ghbtns.com/github-btn.html?user=blockstack&repo=blockstack-server&type=star&count=true"
-                      frameborder="0" scrolling="0" width="95px" height="20px">
+                      scrolling="0" width="95px" height="20px">
                     </iframe>
                   </p>
                 </div>

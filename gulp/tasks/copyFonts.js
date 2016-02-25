@@ -7,7 +7,7 @@ gulp.task('copyFonts', function() {
   return gulp.src(
     [
       config.sourceDir + 'fonts/**/*',
-      config.sourceDir + '../node_modules/font-awesome/fonts/*.{eot,svg,ttf,woff,woff2}'
+      config.sourceDir + '../node_modules/font-awesome/fonts/**/*'
     ]
   ).pipe(gulp.dest(config.buildDir + 'fonts/'));
 });
