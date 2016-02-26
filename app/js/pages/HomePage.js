@@ -245,8 +245,8 @@ class HomePage extends Component {
                   </hgroup>
                   <div>
                     <Link to="/docs" role="button"
-                      className="btn btn-lg btn-special btn-footer-max-width">
-                      Getting Started
+                      className="btn btn-lg btn-special">
+                      View the Documentation
                     </Link>
                   </div>
                 </div>
