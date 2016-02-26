@@ -33,6 +33,9 @@ class Footer extends Component {
                 <li>
                   <Link to="/docs">Docs</Link>
                 </li>
+                <li>
+                  <Link to="http://brandfolder.com/blockstack">Branding</Link>
+                </li>
               </ul>
             </div>
             <div className="col-xs-6 col-lg-2">
