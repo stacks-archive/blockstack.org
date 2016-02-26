@@ -2,7 +2,6 @@
 
 import {Component}      from 'react'
 import {Link}           from 'react-router'
-import DocumentTitle    from 'react-document-title'
 import marked           from 'marked'
 import Helmet           from 'react-helmet'
 
