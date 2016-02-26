@@ -7,6 +7,7 @@
 
 
 /* Base structure */
+html, body {overflow-y:scroll; /* has to be scroll, not auto */ -webkit-overflow-scrolling:touch;}
 /* Reviewed */body{padding-top:0;padding-bottom:0;}
 
 /* Globals */
