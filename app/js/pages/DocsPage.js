@@ -4,6 +4,7 @@ import {Component}      from 'react'
 import {Link}           from 'react-router'
 import DocumentTitle    from 'react-document-title'
 import marked           from 'marked'
+import Helmet           from 'react-helmet'
 
 import Image            from '../components/Image'
 import Header           from '../components/Header'
@@ -107,60 +108,78 @@ class DocsPage extends Component {
   render() {
     const currentPage = this.state.currentPage,
           nextPage = this.state.nextPage,
-          title = currentPage ? `Blockstack - ${currentPage.title}` : "Blockstack"
+          title = currentPage ? currentPage.title : "Docs"
 
     const headerImageSrc = this.state.currentPage ? this.state.currentPage.image : null
 
     return (
-      <DocumentTitle title={title}>
-        <div>
-          <div className="container-fluid col-centered navbar-fixed-top bg-primary">
-            <Header />
-          </div>
-          <div className="hidden-image">
-            <Image src={headerImageSrc} onLoad={this.onImageLoad} />
-          </div>
-          <div className="m-b-3 docs-header-image-wrapper">
-            { currentPage !== null && this.state.imageLoading !== true ?
-            <Image src={headerImageSrc}
-              fallbackSrc="/images/article-photos/road.jpg"
-              className="img-fluid docs-header-image" />
-            : null }
-          </div>
-          { currentPage.pageName !== 'about' ?
-          <nav className="container-fluid m-b-1 back-docs">
-            <ul className="pagination">
-              <li className="page-item">
-                <Link className="page-link" to="/docs" aria-label="Back">
-                  <span aria-hidden="true">&laquo; Back to Docs</span>
-                  <span className="sr-only">Back</span>
-                </Link>
-              </li>
-            </ul>
-          </nav>
-          : null }
-          <section className="m-b-5 m-t-5">
-            <div className="container p-b-5 col-centered">
-              <div className="container">
-                <h1>{currentPage.title}</h1>
-                <div dangerouslySetInnerHTML={{ __html: currentPage.markup }}>
-                </div>
-                {nextPage ?
-                  <div>
-                    <div className="col-md-4 pull-l-padding">
-                      <h3>Next Article</h3>
-                      <CardLink href={`/docs/${nextPage.pageName}`}
-                        title={nextPage.title} body={nextPage.description}
-                        imageSrc={nextPage.image} />
-                    </div>
-                  </div>
-                : null }
-              </div>
-            </div>
-          </section>
-          <Footer />
+      <div>
+        { currentPage ?
+        <Helmet
+          title={`Blockstack- ${currentPage.title}`}
+          meta={[
+            {"name": "description", "content": currentPage.description },
+
+            {"property": "og:type", "content": "article"},
+            {"property": "og:url", "content": `https://blockstack.org/docs/${currentPage.pageName}`},
+            {"property": "og:title", "content": `Blockstack - ${currentPage.title}` },
+            {"property": "og:description", "content": `${currentPage.description}`},
+            {"property": "og:image", "content": `${currentPage.image}`},
+
+            {"property": "twitter:card", "content": "summary"},
+            {"property": "twitter:site", "content": "@blockstackorg"},
+            {"property": "twitter:title", "content": `Blockstack - ${currentPage.title}`},
+            {"property": "twitter:description", "content": `${currentPage.description}`},
+            {"property": "twitter:image", "content": `${currentPage.image}` }
+          ]}
+        />
+        : null }
+        <div className="container-fluid col-centered navbar-fixed-top bg-primary">
+          <Header />
         </div>
-      </DocumentTitle>
+        <div className="hidden-image">
+          <Image src={headerImageSrc} onLoad={this.onImageLoad} />
+        </div>
+        <div className="m-b-3 docs-header-image-wrapper">
+          { currentPage !== null && this.state.imageLoading !== true ?
+          <Image src={headerImageSrc}
+            fallbackSrc="/images/article-photos/road.jpg"
+            className="img-fluid docs-header-image" />
+          : null }
+        </div>
+        { currentPage.pageName !== 'about' ?
+        <nav className="container-fluid m-b-1 back-docs">
+          <ul className="pagination">
+            <li className="page-item">
+              <Link className="page-link" to="/docs" aria-label="Back">
+                <span aria-hidden="true">&laquo; Back to Docs</span>
+                <span className="sr-only">Back</span>
+              </Link>
+            </li>
+          </ul>
+        </nav>
+        : null }
+        <section className="m-b-5 m-t-5">
+          <div className="container p-b-5 col-centered">
+            <div className="container">
+              <h1>{currentPage.title}</h1>
+              <div dangerouslySetInnerHTML={{ __html: currentPage.markup }}>
+              </div>
+              {nextPage ?
+                <div>
+                  <div className="col-md-4 pull-l-padding">
+                    <h3>Next Article</h3>
+                    <CardLink href={`/docs/${nextPage.pageName}`}
+                      title={nextPage.title} body={nextPage.description}
+                      imageSrc={nextPage.image} />
+                  </div>
+                </div>
+              : null }
+            </div>
+          </div>
+        </section>
+        <Footer />
+      </div>
     )
   }
 }

@@ -92,7 +92,8 @@ class Footer extends Component {
             </li>
             <li className="copyright-push-left">
               <div className="copyright">
-                This is an open sourced site hosted on GitHub. Patches, suggestions and comments are welcome.
+                This is an open sourced site hosted on GitHub.
+                Patches, suggestions and comments are welcome.
               </div>
             </li>
             <li className="pull-right">
@@ -105,8 +106,8 @@ class Footer extends Component {
                   </li>
                   <li>
                     <Link to="https://www.youtube.com/channel/UCvDtRhHLNDyKiY-iwhneNbw" target="_blank">
-                      <i className="fa fa-youtube-play">
-                    </i></Link>
+                      <i className="fa fa-youtube-play"></i>
+                    </Link>
                   </li>
                   <li>
                     <Link to="https://github.com/blockstack" target="_blank">
