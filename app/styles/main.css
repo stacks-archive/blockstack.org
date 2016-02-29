@@ -43,7 +43,7 @@ html, body {overflow-y:scroll; /* has to be scroll, not auto */ -webkit-overflow
 .highlight-box{padding-top:50px;padding-bottom:50px;background-color:#831ca8;color:rgba(255,255,255,1);}
 .slides{padding-right:10px;padding-left:10px;}
 .feat-lead{margin-bottom:15px;}
-/* Reviewed */.feature-panel{margin-top:40px;margin-bottom:40px;text-align:center;}
+/* Reviewed */.feature-panel{margin-top:20px;margin-bottom:40px;text-align:center;padding-top:25px;}
 /* Reviewed */.feature-panel > img{margin:0 auto;padding:0 15%;}
 /* Reviewed */.feature-panel > h3{display:block;margin-bottom:10px;}
 /* Reviewed */.spacing-container{padding-top:102px;padding-bottom:50px;background-color:rgba(248,249,251,1);}
@@ -68,6 +68,7 @@ html, body {overflow-y:scroll; /* has to be scroll, not auto */ -webkit-overflow
 .social-text{text-align:center;vertical-align:middle;margin-top:15px;}
 .social-type{font-size:1.125rem;margin-left:0;margin-top:-20px;}
 .back-docs{position:absolute;margin-left:-20px; margin-top:-55px;}
+a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 
 .card.card-1-of-1{width: 100% !important;}
 .card.card-1-of-2{width: 100% !important;}
@@ -195,6 +196,7 @@ footer > li{list-style:none;}
   .stats-count{font-size:64px;}
   .social-count{position:absolute;margin-top:0;display:inline-block;margin-left:25px;margin-top:5px;}
   .social-type{margin-left:-45px;}
+  a > div.col-md-4.feature-panel:hover{background-color:rgba(248,249,251,1);}
 
   .docs-header-image-wrapper {
     height: 400px;
