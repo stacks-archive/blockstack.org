@@ -14,20 +14,34 @@ class HomePage extends Component {
     super(props)
 
     this.state = {
-      nameCount: 46000
+      nameCount: 46500,
+      slackUserCount: 600,
+      contributorCount: 19,
+      slackApiToken: 'xoxp-7065337762-7070902146-23553546161-d3cebb9c2b'
     }
 
     this.updateNameCount = this.updateNameCount.bind(this)
   }
 
   componentDidMount() {
-    const requestOptions = {
-      url: 'https://resolver.onename.com/v2/namespaces',
+    // Get the number of names registered
+    request({
+      url: "https://resolver.onename.com/v2/namespaces",
       withCredentials: false
-    }
-    request(requestOptions, (error, response, body) => {
-      if (!error && response.statusCode == 200) {
+    }, (error, response, body) => {
+      if (!error && response.statusCode === 200) {
         this.updateNameCount(body)
+      } else {
+        console.log(error)
+      }
+    })
+    // Get the number of Slack users
+    request({
+      url: "https://api.onename.com/v1/slack/blockstack",
+      withCredentials: false
+    }, (error, response, body) => {
+      if (!error && response.statusCode === 200) {
+        this.updateSlackCount(body)
       } else {
         console.log(error)
       }
@@ -44,6 +58,17 @@ class HomePage extends Component {
           nameCount: nameCount
         })
       }
+    }
+  }
+
+  updateSlackCount(response) {
+    const jsonResponse = JSON.parse(response)
+    console.log(jsonResponse)
+    if (jsonResponse.hasOwnProperty("user_count")) {
+      const slackUserCount = jsonResponse.user_count
+      this.setState({
+        slackUserCount: slackUserCount
+      })
     }
   }
 
@@ -80,20 +105,35 @@ class HomePage extends Component {
           <div className="container bs-docs-featurette col-centered">
             <div className="col-centered col-md-10">
               <div className="row col-centered">
-                <div className="col-md-6 feature-panel">
+                <div className="col-md-4 feature-panel">
                   <p className="lead bs-lead">
                     Names registered
                   </p>
+                  <h1 className="stats-count">{this.state.nameCount}</h1>
                   <Link to="https://resolver.onename.com/v2/namespaces"
-                    target="_blank" className="simple-link">
-                    <h1 className="stats-count">{this.state.nameCount}</h1>
+                    target="_blank" className="btn btn-sm btn-outline-primary m-b-2">
+                    View
                   </Link>
                 </div>
-                <div className="col-md-6 feature-panel">
+                <div className="col-md-4 feature-panel">
                   <p className="lead bs-lead">
                     Community members
                   </p>
-                  <h1 className="stats-count">602</h1>
+                  <h1 className="stats-count">{this.state.slackUserCount}</h1>
+                  <Link to="http://blockstack.slackarchive.io/lounge/"
+                    target="_blank" className="btn btn-sm btn-outline-primary m-b-2">
+                    View
+                  </Link>
+                </div>
+                <div className="col-md-4 feature-panel">
+                  <p className="lead bs-lead">
+                    Code contributors
+                  </p>
+                  <h1 className="stats-count">{this.state.contributorCount}</h1>
+                  <Link to="https://github.com/blockstack/blockstack/blob/master/code-overview.md#contributors"
+                    target="_blank" className="btn btn-sm btn-outline-primary m-b-2">
+                    View
+                  </Link>
                 </div>
               </div>
             </div>
