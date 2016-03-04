@@ -13,15 +13,19 @@ class DocsIndexPage extends Component {
   render() {
     const pageRows = [
       {
-        title: 'Getting Started',
-        items: ['what-is-blockstack', 'installation', 'basic-usage']
+        title: 'Overview',
+        items: ['what-is-blockstack', 'how-blockstack-works', '']
       },
       {
-        title: 'Blockstack Articles',
-        items: ['extended-usage', 'blockstack-vs-dns', 'blockstack-vs-namecoin']
+        title: 'Client Library',
+        items: ['installation', 'basic-usage', 'extended-usage']
       },
       {
-        items: ['namespaces', 'how-blockstack-works', 'light-clients']
+        title: 'Articles',
+        items: ['blockstack-vs-dns', 'blockstack-vs-namecoin', 'namespaces']
+      },
+      {
+        items: ['light-clients', 'faq', '']
       }
     ]
 
@@ -43,12 +47,18 @@ class DocsIndexPage extends Component {
                       <div className="card-deck-wrapper">
                         <div className="card-deck m-b-3">
                         {pageRow.items.map((slug, columnIndex) => {
-                          const page = docs[slug]
-                          return (
-                            <CardLink key={columnIndex} href={`/docs/${slug}`}
-                              title={page.title} body={page.description}
-                              imageSrc={page.image} cardsPerRow={3} />
-                          )
+                          if (slug === '') {
+                            return (
+                              <div class="card-2-of-3"></div>
+                            )
+                          } else {
+                            const page = docs[slug]
+                            return (
+                              <CardLink key={columnIndex} href={`/docs/${slug}`}
+                                title={page.title} body={page.description}
+                                imageSrc={page.image} cardsPerRow={3} />
+                            )
+                          }
                         })}
                         </div>
                       </div>

@@ -20,8 +20,8 @@ export default (
 
       <Route path="/" component={HomePage} />
       <Route path="/docs" component={DocsIndexPage} />
-      <Route path="/about" component={DocsPage} />
       <Route path="/docs/:docSection" component={DocsPage} />
+      <Route path="/about" component={DocsPage} />
       <Route path="/summit" component={SummitPage} />
 
       <Route path="*" component={NotFoundPage} />
