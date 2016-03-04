@@ -21,8 +21,14 @@ class Header extends Component {
               <li className="nav-item">
                 <Link to="/docs" className="nav-link">Overview</Link>
               </li>
+              <li className="nav-item">
+                <Link to="/docs/how-blockstack-works" className="nav-link">How it Works</Link>
+              </li>
               <li className="nav-item hidden-sm-down">
-                <Link to="/docs#client-library" className="nav-link">Client Installation</Link>
+                <Link to="/docs/installation" className="nav-link">Installation</Link>
+              </li>
+              <li className="nav-item hidden-sm-down">
+                <Link to="/docs/basic-usage" className="nav-link">Usage</Link>
               </li>
               <li className="nav-item pull-xs-right hidden-sm-down">
                 <Link to="https://github.com/blockstack" className="nav-link hidden-xs hidden-sm"
