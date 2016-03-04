@@ -103,38 +103,32 @@ class HomePage extends Component {
         </div>
         <section className="container-fluid stats-section">
           <div className="container bs-docs-featurette col-centered">
-            <div className="col-centered col-md-10">
+            <div className="col-centered">
               <div className="row col-centered">
-                <div className="col-md-4 feature-panel">
-                  <p className="lead bs-lead">
-                    Names registered
-                  </p>
-                  <h1 className="stats-count">{this.state.nameCount}</h1>
-                  <Link to="https://resolver.onename.com/v2/namespaces"
-                    target="_blank" className="btn btn-sm btn-outline-primary m-b-2">
-                    View
-                  </Link>
-                </div>
-                <div className="col-md-4 feature-panel">
-                  <p className="lead bs-lead">
-                    Community members
-                  </p>
-                  <h1 className="stats-count">{this.state.slackUserCount}</h1>
-                  <Link to="http://blockstack.slackarchive.io/lounge/"
-                    target="_blank" className="btn btn-sm btn-outline-primary m-b-2">
-                    View
-                  </Link>
-                </div>
-                <div className="col-md-4 feature-panel">
-                  <p className="lead bs-lead">
-                    Code contributors
-                  </p>
-                  <h1 className="stats-count">{this.state.contributorCount}</h1>
-                  <Link to="https://github.com/blockstack/blockstack/blob/master/code-overview.md#contributors"
-                    target="_blank" className="btn btn-sm btn-outline-primary m-b-2">
-                    View
-                  </Link>
-                </div>
+                <Link to="https://resolver.onename.com/v2/namespaces" target="_blank">
+                  <div className="col-md-4 feature-panel">
+                    <p className="lead bs-lead">
+                      Names registered
+                    </p>
+                    <h1 className="stats-count">{this.state.nameCount}</h1>
+                  </div>
+                </Link>
+                <Link to="http://blockstack.slackarchive.io/lounge/" target="_blank">
+                  <div className="col-md-4 feature-panel">
+                    <p className="lead bs-lead">
+                      Community members
+                    </p>
+                    <h1 className="stats-count">{this.state.slackUserCount}</h1>
+                  </div>
+                </Link>
+                <Link to="https://github.com/blockstack/blockstack/blob/master/code-overview.md#contributors" target="_blank">
+                  <div className="col-md-4 feature-panel">
+                    <p className="lead bs-lead">
+                      Code contributors
+                    </p>
+                    <h1 className="stats-count">{this.state.contributorCount}</h1>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
