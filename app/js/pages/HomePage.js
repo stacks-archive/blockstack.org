@@ -14,8 +14,8 @@ class HomePage extends Component {
     super(props)
 
     this.state = {
-      nameCount: 46500,
-      slackUserCount: 600,
+      nameCount: 47500,
+      slackUserCount: 620,
       contributorCount: 19,
       slackApiToken: 'xoxp-7065337762-7070902146-23553546161-d3cebb9c2b'
     }
@@ -105,7 +105,7 @@ class HomePage extends Component {
           <div className="container bs-docs-featurette col-centered">
             <div className="col-centered">
               <div className="row col-centered">
-                <Link to="https://resolver.onename.com/v2/namespaces" target="_blank">
+                <Link to="https://blockstackstats.com" target="_blank">
                   <div className="col-md-4 feature-panel">
                     <p className="lead bs-lead">
                       Names registered
@@ -121,7 +121,7 @@ class HomePage extends Component {
                     <h1 className="stats-count">{this.state.slackUserCount}</h1>
                   </div>
                 </Link>
-                <Link to="https://github.com/blockstack/blockstack/blob/master/code-overview.md#contributors" target="_blank">
+                <Link to="https://github.com/blockstack/blockstack/blob/master/overview.md#contributors" target="_blank">
                   <div className="col-md-4 feature-panel">
                     <p className="lead bs-lead">
                       Code contributors
