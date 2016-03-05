@@ -16,8 +16,7 @@ class HomePage extends Component {
     this.state = {
       nameCount: 47500,
       slackUserCount: 620,
-      contributorCount: 19,
-      slackApiToken: 'xoxp-7065337762-7070902146-23553546161-d3cebb9c2b'
+      contributorCount: 19
     }
 
     this.updateNameCount = this.updateNameCount.bind(this)
