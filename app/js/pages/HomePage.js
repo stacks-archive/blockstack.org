@@ -63,7 +63,6 @@ class HomePage extends Component {
 
   updateSlackCount(response) {
     const jsonResponse = JSON.parse(response)
-    console.log(jsonResponse)
     if (jsonResponse.hasOwnProperty("user_count")) {
       const slackUserCount = jsonResponse.user_count
       this.setState({

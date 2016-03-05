@@ -7,7 +7,8 @@ class Image extends Component {
     fallbackSrc: PropTypes.string.isRequired,
     style: PropTypes.object,
     className: PropTypes.string,
-    onLoad: PropTypes.func
+    onLoad: PropTypes.func,
+    retinaSupport: PropTypes.bool
   }
 
   constructor(props) {
@@ -27,7 +28,7 @@ class Image extends Component {
   componentWillReceiveProps(nextProps) {
     if (this.props !== nextProps) {
       let nextSrc = nextProps.src
-      if (isRetina()) {
+      if (this.props.retinaSupport && isRetina()) {
         nextSrc = nextSrc.replace('.jpg', '@2x.jpg')
       }
       this.setState({
@@ -43,12 +44,6 @@ class Image extends Component {
   }
 
   render() {
-    if (isRetina()) {
-      console.log('this is retina!')
-    } else {
-      console.log('this is not retina')
-    }
-
     return (
       <img src={this.state.src}
         style={this.props.style}

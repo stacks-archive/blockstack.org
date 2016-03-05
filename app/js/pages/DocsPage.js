@@ -137,13 +137,14 @@ class DocsPage extends Component {
           <Header />
         </div>
         <div className="hidden-image">
-          <Image src={headerImageSrc} onLoad={this.onImageLoad} />
+          <Image src={headerImageSrc} onLoad={this.onImageLoad} retinaSupport={true} />
         </div>
         <div className="m-b-3 docs-header-image-wrapper">
           { currentPage !== null && this.state.imageLoading !== true ?
           <Image src={headerImageSrc}
             fallbackSrc="/images/article-photos/road.jpg"
-            className="img-fluid docs-header-image" />
+            className="img-fluid docs-header-image"
+            retinaSupport={true} />
           : null }
         </div>
         { currentPage.pageName !== 'about' ?

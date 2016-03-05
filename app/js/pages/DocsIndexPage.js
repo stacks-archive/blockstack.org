@@ -49,7 +49,7 @@ class DocsIndexPage extends Component {
                         {pageRow.items.map((slug, columnIndex) => {
                           if (slug === '') {
                             return (
-                              <div class="card-2-of-3"></div>
+                              <div key={columnIndex} className="card-2-of-3"></div>
                             )
                           } else {
                             const page = docs[slug]
