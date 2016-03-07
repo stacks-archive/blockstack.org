@@ -22,24 +22,9 @@ class SummitPage extends Component {
         <div>
          <div className="container-fluid col-centered summit-head-wrap">
             <Header />
-            <div className="slides col-sm-10 col-sm-offset-1 padding-top-20">
-              <section className="hero col-centered">
-                <div>
-                  <div className="col-xs-11 col-sm-10 col-sm-offset-1">
-                    <h1 className="hero-head summ-head">Blockstack<br/>Summit 2015</h1>
-                    <p className="lead hero-comm-des">The Open Source Blockchain Community</p>
-                    <p className="date">September 12, 2015 - 9am-5pm</p>
-                    <p className="hall">{"D'Agostino Hall, NYU, 108 W 3rd St, New York, NY"}</p>
-                    <p className="hero-reg-btn">
-                      <Link to="http://blockstacksummit2015.eventbrite.com" target="_blank" className="btn btn-primary btn-lg">
-                        Register for Blockstack Summit
-                      </Link>
-                    </p>
-                  </div>
-                  <div className="img"></div>
-                </div>
-              </section>
+            <div className="m-b-3 docs-header-image-wrapper">
             </div>
+            
           </div>
           <section className="container-fluid gallery-contain summit-section">
           <div className="bs-docs-featurette col-centered" id="learnmore">

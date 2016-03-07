@@ -70,6 +70,9 @@ html, body {overflow-y:scroll; /* has to be scroll, not auto */ -webkit-overflow
 .back-docs{position:absolute;margin-left:-20px; margin-top:-55px;}
 a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 
+/* Summit page */
+/* Reviewed */.summit-head-wrap {background: url(/images/visuals/summ-dht.png) no-repeat center center fixed; background-size: cover; background-color:#53206f;}
+
 .card.card-1-of-1{width: 100% !important;}
 .card.card-1-of-2{width: 100% !important;}
 .card.card-1-of-3{width: 100% !important;margin-bottom:35px;}
