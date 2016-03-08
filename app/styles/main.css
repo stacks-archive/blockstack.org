@@ -71,7 +71,16 @@ html, body {overflow-y:scroll; /* has to be scroll, not auto */ -webkit-overflow
 a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 
 /* Summit page */
-/* Reviewed */.summit-head-wrap {background: url(/images/visuals/summ-dht.png) no-repeat center center fixed; background-size: cover; background-color:#53206f;}
+/* Reviewed */.summit-head-wrap{background: url(/images/visuals/summ-dht.png) no-repeat center center fixed; background-size: cover; background-color:#53206f;}
+/* Reviewed */.profile-wrap{text-align:center;padding-bottom:40px;}
+
+.profile1, .profile2, .profile3, .profile4, .profile5 {margin:0 auto 28px auto; width:160px; height:160px; background-size:cover; display:block; border-radius:80px; -webkit-border-radius:80px; -moz-border-radius:80px; background-position:center;}
+.profile6 {margin:0 auto 0 -50px; width:180px; height: 180px; background-size:cover; padding:10px; background-color: rgba(255,255,255,1); border:1px solid rgba(240,240,240,1); background-position:center;}
+.profile1 {background-image:url('/images/avatars/jp-singh.jpg');}
+.profile2 {background-image:url('/images/avatars/albert-wenger.jpg');}
+.profile3 {background-image:url('/images/avatars/jalak-jobanputra.jpg');}
+.profile4 {background-image:url('/images/avatars/naval-ravikant.jpg');}
+.profile5 {background-image:url('/images/avatars/william-mougayar.jpg');}
 
 .card.card-1-of-1{width:100%!important;}
 .card.card-1-of-2{width:100%!important;}

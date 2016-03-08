@@ -169,43 +169,41 @@ class SummitPage extends Component {
               </div>
             </div>
           </section>
-          <section className="container-fluid gallery-contain">
-            <div className="bs-docs-featurette col-centered" id="learnmore">
-              <div className="col-centered profile-gallery">
-                <h2 className="centered padding-bottom-40">Blockstack Summit Q&A Panel Guests</h2>
-                <div className="container-fluid col-md-12">
-                  <ul className="container-fluid col-md-12 list-unstyled">
-                    <li className="col-md-3 profile-wrap">
-                      <div className="profile2" alt="Albert Wenger, Partner at Union Square Ventures (USV)"></div>
-                      <h3>Albert Wenger</h3>
-                      <p>Partner at Union Square Ventures (USV)</p>
-                    </li>
-                    <li className="col-md-3 profile-wrap">
-                      <div className="profile3" alt="Jalak Jobanputra, Founder of Future/Perfect Ventures"></div>
-                      <h3>Jalak Jobanputra</h3>
-                      <p>Founder of Future/Perfect Ventures</p>
-                    </li>
-                    <li className="col-md-3 profile-wrap">
-                      <div className="profile4" alt="Naval Ravikant, Co-founder AngelList & Angel Investor"></div>
-                      <h3>Naval Ravikant</h3>
-                      <p>Co-founder AngelList & Angel Investor</p>
-                    </li>
-                    <li className="col-md-3 profile-wrap">
-                      <div className="profile5" alt="William Mougayar, Angel Investor"></div>
-                      <h3>William Mougayar</h3>
-                      <p>Angel Investor</p>
-                    </li>
-                  </ul>
+          <section className="container-fluid stats-section">
+            <div className="container bs-docs-featurette col-centered">
+              <h2 className="centered padding-bottom-40">Blockstack Summit Q&A Panel Guests</h2>
+              <div className="col-centered">
+                <div className="row col-centered">
+                  <div className="col-md-3 profile-wrap">
+                    <div className="profile2" alt="Albert Wenger, Partner at Union Square Ventures (USV)"></div>
+                    <h3>Albert Wenger</h3>
+                    <p>Partner at Union Square Ventures (USV)</p>
+                  </div>
+                  <div className="col-md-3 profile-wrap">
+                    <div className="profile3" alt="Jalak Jobanputra, Founder of Future/Perfect Ventures"></div>
+                    <h3>Jalak Jobanputra</h3>
+                    <p>Founder of Future/Perfect Ventures</p>
+                  </div>
+                  <div className="col-md-3 profile-wrap">
+                    <div className="profile4" alt="Naval Ravikant, Co-founder AngelList & Angel Investor"></div>
+                    <h3>Naval Ravikant</h3>
+                    <p>Co-founder AngelList & Angel Investor</p>
+                  </div>
+                  <div className="col-md-3 profile-wrap">
+                    <div className="profile5" alt="William Mougayar, Angel Investor"></div>
+                    <h3>William Mougayar</h3>
+                    <p>Angel Investor</p>
+                  </div>
                 </div>
-                <div className="container-fluid col-md-12">
-                  <ul className="col-md-12 list-unstyled">
-                    <li className="container col-md-3 col-centered profile-wrap">
-                      <div className="profile1" alt="JP Singh, Professor, Princeton University"></div>
-                      <h3>JP Singh, <span className="gallery-spcl-txt">Ph.D,</span></h3>
-                      <p>Panel Moderator,</p>
-                      <p>Professor, Computer Science, Princeton University</p>
-                    </li>
-                  </ul>
+              </div>
+              <div className="col-centered">
+                <div className="row col-centered">
+                  <div className="col-md-3 col-centered profile-wrap">
+                    <div className="profile1" alt="JP Singh, Professor, Princeton University"></div>
+                    <h3>JP Singh, <span className="gallery-spcl-txt">Ph.D,</span></h3>
+                    <p>Panel Moderator,</p>
+                    <p>Professor, Computer Science, Princeton University</p>
+                  </div>
                 </div>
               </div>
             </div>
