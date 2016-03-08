@@ -259,3 +259,8 @@ footer > li{list-style:none;}
 .simple-link, .simple-link:hover, .simple-link:focus {
   text-decoration: none;
 }
+
+.card-rectangular {
+  border: none;
+  border-radius: 0rem;
+}
