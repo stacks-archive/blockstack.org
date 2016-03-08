@@ -73,28 +73,12 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 /* Summit page */
 /* Reviewed */.summit-head-wrap {background: url(/images/visuals/summ-dht.png) no-repeat center center fixed; background-size: cover; background-color:#53206f;}
 
-.card.card-1-of-1{width: 100% !important;}
-.card.card-1-of-2{width: 100% !important;}
-.card.card-1-of-3{width: 100% !important;margin-bottom:35px;}
-.card .card-link{text-decoration: none; color: black;}
-.card .card-link-image-wrapper {
-  position: relative;
-  overflow: hidden;
-  height: 200px;
-  width: 100%;
-}
-.card .card-link-image {
-  height: 100%;
-  display: block;
-
-  position: absolute;
-  margin: auto;
-  top: -100%;
-  left: -100%;
-  right: -100%;
-  bottom: -100%;
-  min-width: 100%;
-}
+.card.card-1-of-1{width:100%!important;}
+.card.card-1-of-2{width:100%!important;}
+.card.card-1-of-3{width:100%!important;margin-bottom:35px;}
+.card.card-link{text-decoration: none; color: black;}
+.card.card-link-image-wrapper{position:relative;overflow:hidden;height:200px;width:100%;}
+.card.card-link-image{height:100%;display:block;position:absolute;margin:auto;top:-100%;left:-100%;right:-100%;bottom:-100%;min-width:100%;}
 .card-block{padding:25px 30px 65px 30px;}
 .card-text{font-weight:400;line-height:1.625rem;}
 .card{border:1px solid #e5e5e5;box-shadow:none;}
@@ -103,32 +87,16 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .page-link{background-color:#53206f;color:#fff;padding:8px 15px;border:1px solid #53206f;}
 .page-link:hover{text-decoration:none;}
 .paper-wrap{margin-top:10px;}
-
 .pull-l-padding{padding-left:0;}
 .no-padding{padding-left:0;padding-right:0;}
-
-iframe {border: none;}
-
-.hidden-image{display: none;}
+iframe{border:none;}
+.hidden-image{display:none;}
 
 /* Docs */
 /* Reviewed */pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35,39,1);background-color:rgba(32,35,39,1);color:#fff;font-size:14px;border-radius:4px;}
-/* Reviewed */.hljs {background-color:transparent;}
-
-.docs-header-image-wrapper {
-  position: relative;
-  overflow: hidden;
-  height: 300px;
-}
-.docs-header-image {
-  position: absolute;
-  margin: auto;
-  top: -100%;
-  left: 0;
-  right: 0;
-  bottom: -100%;
-  min-width: 100%;
-}
+/* Reviewed */.hljs{background-color:transparent;}
+/* Reviewed */.docs-header-image-wrapper{position:relative;overflow:hidden;height:300px;color:#fff;}
+/* Reviewed */.docs-header-image{position:absolute;margin:auto;top:-100%;left:0;right:0;bottom:-100%;min-width:100%;}
 
 /* Footer */
 footer{padding-top:60px;padding-bottom:80px;background-color:rgba(26,26,26,1);color:rgba(255,255,255,1);font-size:13px;}
