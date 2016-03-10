@@ -25,7 +25,7 @@ class SummitPage extends Component {
             <div className="m-b-3 docs-header-image-wrapper">
               <section>
                 <div>
-                  <div className="col-xs-11 col-sm-10 col-sm-offset-1">
+                  <div className="col-xs-11 col-sm-10 col-centered">
                     <h1 className="hero-head summ-head">Blockstack<br/>Summit 2015</h1>
                     <p className="lead hero-comm-des">The Open Source Blockchain Community</p>
                     <p className="date">September 12, 2015 - 9am-5pm</p>
