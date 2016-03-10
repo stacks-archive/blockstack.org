@@ -22,7 +22,7 @@ class SummitPage extends Component {
         <div>
          <div className="container-fluid col-centered summit-head-wrap">
             <Header />
-            <div className="m-b-3 docs-header-image-wrapper">
+            <div className="m-t-2 m-b-3 docs-header-image-wrapper">
               <section>
                 <div>
                   <div className="col-xs-11 col-sm-10 col-centered">
@@ -316,18 +316,19 @@ class SummitPage extends Component {
               </div>
             </div>
           </section>
-          <section className="feature-action col-centered">
+          <section className="foot-feature col-centered">
             <div className="container">
               <div className="row">
                 <div className="container col-xs-11 col-centered">
                   <hgroup>
-                    <h2 className="col-md-8 col-lg-6 col-centered action-title">
-                      Build Something Bigger Than Yourself!
+                    <h2 className="col-md-10 col-lg-8 col-centered action-title">
+                      Get Started with Decentralized Applications
                     </h2>
                   </hgroup>
-                  <div className="btn-wrap">
-                    <Link to="http://chat.blockstack.org" target="_blank" className="btn btn-lg btn-special center-btn" role="button">
-                      Get invited to Slack!
+                  <div>
+                    <Link to="/docs" role="button"
+                      className="btn btn-lg btn-special">
+                      View the Documentation
                     </Link>
                   </div>
                 </div>
