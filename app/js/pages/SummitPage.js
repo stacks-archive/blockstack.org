@@ -41,10 +41,10 @@ class SummitPage extends Component {
               </section>
             </div>
           </div>
-          <section className="container-fluid gallery-contain summit-section">
+          <section className="container-fluid gallery-contain">
           <div className="bs-docs-featurette col-centered" id="learnmore">
-            <div className="col-centered profile-gallery">
-              <h2 className="centered padding-bottom-20">Lightning Talks</h2>
+            <div className="col-centered">
+              <h2 className="padding-bottom-20">Lightning Talks</h2>
               <div className="col-sm-11 feature-panel col-centered">
                 <div className="col-centered table-wrap">
                   <div className="table-responsive ">
@@ -144,7 +144,7 @@ class SummitPage extends Component {
             </div>
           </div>
         </section>
-          <section className="container-fluid gallery-contain summit-section">
+          <section className="container-fluid gallery-contain">
             <div className="bs-docs-featurette col-centered" id="learnmore">
               <div className="col-centered profile-gallery">
                 <h2 className="centered padding-bottom-20">Workshop topics</h2>

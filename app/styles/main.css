@@ -207,11 +207,12 @@ footer > li{list-style:none;}
   /* Reviewed */.hero-wrap{padding-top:8.5rem;padding-bottom:15rem;}
   .hero-head{padding-left:0;}
   .slides{padding-top:50px;padding-right:0;padding-left:0;}
-  
-  .gallery-contain{padding-top:50px;padding-bottom:50px;}
   .feat-pan{font-size:26px;}
   .wrap-mob-feat{max-width:230px;}
   .topic{margin-bottom:5px;}
+
+  /* Summit page */
+  /* Reviewed */.gallery-contain{padding-top:50px;padding-bottom:50px;}
   
   /* Feature action */
   /* Reviewed */h2.action-title{margin-bottom:3rem;font-size:2.5rem;line-height:3.5rem;}
