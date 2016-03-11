@@ -22,22 +22,17 @@ class SummitPage extends Component {
         <div>
          <div className="container-fluid col-centered summit-head-wrap">
             <Header />
-            <div className="slides col-sm-10 col-sm-offset-1 padding-top-20">
-              <section className="hero col-centered">
+            <div className="m-t-2 m-b-3 page-header-image-wrapper">
+              <section>
                 <div>
-                  <div className="col-xs-11 col-sm-10 col-sm-offset-1">
-                    <div className="hero-logo hidden-sm hidden-md hidden-lg">
-                      <Link to="/">
-                        <img src="/images/logos/blockstack.svg"/>
-                      </Link>
-                    </div>
+                  <div className="col-xs-11 col-sm-10 col-centered">
                     <h1 className="hero-head summ-head">Blockstack<br/>Summit 2015</h1>
                     <p className="lead hero-comm-des">The Open Source Blockchain Community</p>
-                    <p className="date">September 12, 2015 - 9am-5pm</p>
-                    <p className="hall">{"D'Agostino Hall, NYU, 108 W 3rd St, New York, NY"}</p>
-                    <p className="hero-reg-btn">
-                      <Link to="http://blockstacksummit2015.eventbrite.com" target="_blank" className="btn btn-primary btn-lg">
-                        Register for Blockstack Summit
+                    <p className="date m-b-0">September 12, 2015 - 9am-5pm</p>
+                    <p className="hall m-b-3">{"D'Agostino Hall, NYU, 108 W 3rd St, New York, NY"}</p>
+                    <p className="text-xs-center m-t-2 m-b-5">
+                      <Link to="http://blockstacksummit2015.eventbrite.com" target="_blank" className="btn btn-special btn-lg">
+                        Register for the Summit
                       </Link>
                     </p>
                   </div>
@@ -46,10 +41,10 @@ class SummitPage extends Component {
               </section>
             </div>
           </div>
-          <section className="container-fluid gallery-contain summit-section">
+          <section className="container-fluid gallery-contain sponsor-divide">
           <div className="bs-docs-featurette col-centered" id="learnmore">
-            <div className="col-centered profile-gallery">
-              <h2 className="centered padding-bottom-20">Lightning Talks</h2>
+            <div className="col-centered">
+              <h2 className="text-xs-center m-t-3 m-b-3">Lightning Talks</h2>
               <div className="col-sm-11 feature-panel col-centered">
                 <div className="col-centered table-wrap">
                   <div className="table-responsive ">
@@ -149,10 +144,10 @@ class SummitPage extends Component {
             </div>
           </div>
         </section>
-          <section className="container-fluid gallery-contain summit-section">
+          <section className="container-fluid gallery-contain sponsor-divide m-t-4 p-b-4">
             <div className="bs-docs-featurette col-centered" id="learnmore">
-              <div className="col-centered profile-gallery">
-                <h2 className="centered padding-bottom-20">Workshop topics</h2>
+              <div className="col-centered">
+                <h2 className="text-xs-center m-b-3">Workshop topics</h2>
                 <div className="col-sm-11 feature-panel col-centered">
                   <div className="col-centered topic-wrap">
                     <ul>
@@ -174,51 +169,51 @@ class SummitPage extends Component {
               </div>
             </div>
           </section>
-          <section className="container-fluid gallery-contain">
-            <div className="bs-docs-featurette col-centered" id="learnmore">
-              <div className="col-centered profile-gallery">
-                <h2 className="centered padding-bottom-40">Blockstack Summit Q&A Panel Guests</h2>
-                <div className="container-fluid col-md-12">
-                  <ul className="container-fluid col-md-12 list-unstyled">
-                    <li className="col-md-3 profile-wrap">
-                      <div className="profile2" alt="Albert Wenger, Partner at Union Square Ventures (USV)"></div>
-                      <h3>Albert Wenger</h3>
-                      <p>Partner at Union Square Ventures (USV)</p>
-                    </li>
-                    <li className="col-md-3 profile-wrap">
-                      <div className="profile3" alt="Jalak Jobanputra, Founder of Future/Perfect Ventures"></div>
-                      <h3>Jalak Jobanputra</h3>
-                      <p>Founder of Future/Perfect Ventures</p>
-                    </li>
-                    <li className="col-md-3 profile-wrap">
-                      <div className="profile4" alt="Naval Ravikant, Co-founder AngelList & Angel Investor"></div>
-                      <h3>Naval Ravikant</h3>
-                      <p>Co-founder AngelList & Angel Investor</p>
-                    </li>
-                    <li className="col-md-3 profile-wrap">
-                      <div className="profile5" alt="William Mougayar, Angel Investor"></div>
-                      <h3>William Mougayar</h3>
-                      <p>Angel Investor</p>
-                    </li>
-                  </ul>
+          <section className="container-fluid stats-section gallery-contain p-t-5 m-t-3">
+            <div className="container bs-docs-featurette col-centered">
+              <h2 className="text-xs-center m-b-4">Blockstack Summit Q&A Panel Guests</h2>
+              <div className="col-centered">
+                <div className="row col-centered">
+                  <div className="col-md-3 profile-wrap">
+                    <div className="profile2" alt="Albert Wenger, Partner at Union Square Ventures (USV)"></div>
+                    <h3>Albert Wenger</h3>
+                    <p>Partner at Union Square Ventures (USV)</p>
+                  </div>
+                  <div className="col-md-3 profile-wrap">
+                    <div className="profile3" alt="Jalak Jobanputra, Founder of Future/Perfect Ventures"></div>
+                    <h3>Jalak Jobanputra</h3>
+                    <p>Founder of Future/Perfect Ventures</p>
+                  </div>
+                  <div className="col-md-3 profile-wrap">
+                    <div className="profile4" alt="Naval Ravikant, Co-founder AngelList & Angel Investor"></div>
+                    <h3>Naval Ravikant</h3>
+                    <p>Co-founder AngelList & Angel Investor</p>
+                  </div>
+                  <div className="col-md-3 profile-wrap">
+                    <div className="profile5" alt="William Mougayar, Angel Investor"></div>
+                    <h3>William Mougayar</h3>
+                    <p>Angel Investor</p>
+                  </div>
                 </div>
-                <div className="container-fluid col-md-12">
-                  <ul className="col-md-12 list-unstyled">
-                    <li className="container col-md-3 col-centered profile-wrap">
-                      <div className="profile1" alt="JP Singh, Professor, Princeton University"></div>
-                      <h3>JP Singh, <span className="gallery-spcl-txt">Ph.D,</span></h3>
-                      <p>Panel Moderator,</p>
-                      <p>Professor, Computer Science, Princeton University</p>
-                    </li>
-                  </ul>
+              </div>
+              <div className="col-centered">
+                <div className="row col-centered">
+                  <div className="col-md-3 col-centered profile-wrap">
+                    <div className="profile1" alt="JP Singh, Professor, Princeton University"></div>
+                    <h3>JP Singh, <span className="gallery-spcl-txt">Ph.D,</span></h3>
+                    <p>Panel Moderator,</p>
+                    <p>Professor, Computer Science, Princeton University</p>
+                  </div>
                 </div>
               </div>
             </div>
           </section>
-          <section>
+          <section className="sponsor-divide p-b-4">
             <div className="bs-docs-featurette col-centered" id="learnmore">
               <div className="container col-centered">
-                <div className="displayed-wrap container col-md-7 col-centered"><h2 className="displayed margin-bottom-20">We are excited to invite you to join us at our first community event, Blockstack Summit!</h2></div>
+                <div className="container col-md-7 col-centered">
+                  <h2 className="text-xs-center p-t-3 m-t-5 m-b-1">We are excited to invite you to join us at our first community event, Blockstack Summit!</h2>
+                </div>
                 <div className="row col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 col-centered margin-bottom-80">
                   <div className="col-sm-11 feature-panel col-centered">
                       <p className="lead">
@@ -234,7 +229,7 @@ class SummitPage extends Component {
                         <Link to="https://twitter.com/naval" target="_blank">Naval Ravikant</Link>, Co-founder AngelList & Angel Investor<br/>
                         <Link to="https://twitter.com/wmougayar" target="_blank">William Mougayar</Link>, Angel Investor<br/><br/>
                         <Link to="http://www.cs.princeton.edu/~jps/" target="_blank">JP Singh</Link>, Panel Moderator, Professor, Princeton University</p>
-                      <p className="lead margin-bottom-80">
+                      <p className="lead m-b-4">
                         Tickets for Blockstack Summit are limited, register today to reserve your spot.
                       </p>
                       <p className="centered margin-bottom-80">
@@ -247,11 +242,11 @@ class SummitPage extends Component {
               </div>
             </div>  
           </section>
-          <section className="container-fluid sec-hook sponsor-divide summit-hook-section">
-            <div className="bs-docs-featurette col-centered sponsors-subection" id="learnmore">
+          <section className="container-fluid sec-hook summit-hook-section">
+            <div className="bs-docs-featurette col-centered sponsor-divide sponsors-subection" id="learnmore">
               <div className="col-centered">
-                <h3 className="centered padding-bottom-60">Thanks to our sponsors</h3>
-                <p className="lead lead-sponsors centered">Gold Sponsors</p>
+                <h3 className="text-xs-center m-b-4">Thanks to our sponsors</h3>
+                <p className="lead lead-sponsors text-xs-center">Gold Sponsors</p>
                 <div className="row col-sm-12 col-centered">
                   <div className="col-sm-4 feature-panel featpan-g1">
                     <div className="container wrap-mob-feat">
@@ -270,7 +265,7 @@ class SummitPage extends Component {
                   <div className="col-sm-4 feature-panel featpan-g3">
                     <div className="container wrap-mob-feat">
                       <Link to="https://www.blockchain.info/">
-                        <img src="/images/logos/blockchain-info-blue.svg" alt="itBit logo" width="205px"/>
+                        <img src="/images/logos/blockchain-info.svg" alt="itBit logo" width="200px"/>
                       </Link>
                     </div>
                   </div>
@@ -323,18 +318,19 @@ class SummitPage extends Component {
               </div>
             </div>
           </section>
-          <section className="feature-action col-centered">
+          <section className="foot-feature col-centered">
             <div className="container">
               <div className="row">
                 <div className="container col-xs-11 col-centered">
                   <hgroup>
-                    <h2 className="col-md-8 col-lg-6 col-centered action-title">
-                      Build Something Bigger Than Yourself!
+                    <h2 className="col-md-10 col-lg-8 col-centered action-title">
+                      Get Started with Decentralized Applications
                     </h2>
                   </hgroup>
-                  <div className="btn-wrap">
-                    <Link to="http://chat.blockstack.org" target="_blank" className="btn btn-lg btn-special center-btn" role="button">
-                      Get invited to Slack!
+                  <div>
+                    <Link to="/docs" role="button"
+                      className="btn btn-lg btn-special">
+                      View the Documentation
                     </Link>
                   </div>
                 </div>
