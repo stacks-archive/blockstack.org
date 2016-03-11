@@ -28,11 +28,11 @@ class SummitPage extends Component {
                   <div className="col-xs-11 col-sm-10 col-centered">
                     <h1 className="hero-head summ-head">Blockstack<br/>Summit 2015</h1>
                     <p className="lead hero-comm-des">The Open Source Blockchain Community</p>
-                    <p className="date">September 12, 2015 - 9am-5pm</p>
-                    <p className="hall">{"D'Agostino Hall, NYU, 108 W 3rd St, New York, NY"}</p>
-                    <p className="hero-reg-btn">
+                    <p className="date m-b-0">September 12, 2015 - 9am-5pm</p>
+                    <p className="hall m-b-3">{"D'Agostino Hall, NYU, 108 W 3rd St, New York, NY"}</p>
+                    <p className="text-xs-center m-t-2 m-b-5">
                       <Link to="http://blockstacksummit2015.eventbrite.com" target="_blank" className="btn btn-special btn-lg">
-                        Register for Blockstack Summit
+                        Register for the Summit
                       </Link>
                     </p>
                   </div>
