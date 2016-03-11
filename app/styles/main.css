@@ -72,6 +72,7 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 /* Summit page */
 /* Reviewed */.summit-head-wrap{background:url(/images/visuals/summ-dht.png)no-repeat center -50px;background-color:#53206f;}
 /* Reviewed */h1.hero-head.summ-head,.summ-head,.about-head,.hero-reg-btn,.date,.hero-comm-des,.hall{text-align:center;}
+/* Reviewed */.hero-head.summ-head{font-weight:400;font-size:36px;}
 /* Reviewed */.profile-wrap{text-align:center;padding-bottom:40px;}
 /* Reviewed */.featpan-g1{margin-top:10px;}
 /* Reviewed */.featpan-g2{padding:0;}
@@ -152,7 +153,7 @@ footer > li{list-style:none;}
   /* Reviewed */h1.hero-head{font-size:2.25rem;text-align:left;margin-top:0;}
   /* Reviewed */.hero-lead{font-size:1.063rem;text-align:left;padding-left:0;padding-right:0;}
   /* Reviewed */.col-3-section{padding-bottom:50px;}
-  
+  /* Reviewed */.hero-head.summ-head{font-size:40px;}
   /* Reviewed */.hero-btn{padding-left:0;}
 
   /* Navbar */
@@ -224,6 +225,7 @@ footer > li{list-style:none;}
   .slides{padding-top:50px;padding-right:0;padding-left:0;}
   .wrap-mob-feat{max-width:230px;}
   .topic{margin-bottom:5px;}
+  /* Reviewed */.hero-head.summ-head{font-size:54px;}
 
   /* Summit page */
   /* Reviewed */.gallery-contain{padding-top:50px;padding-bottom:50px;}
