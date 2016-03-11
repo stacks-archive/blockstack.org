@@ -144,7 +144,7 @@ class SummitPage extends Component {
             </div>
           </div>
         </section>
-          <section className="container-fluid gallery-contain">
+          <section className="container-fluid gallery-contain sponsor-divide p-b-4">
             <div className="bs-docs-featurette col-centered" id="learnmore">
               <div className="col-centered">
                 <h2 className="text-xs-center m-b-3">Workshop topics</h2>
@@ -169,9 +169,9 @@ class SummitPage extends Component {
               </div>
             </div>
           </section>
-          <section className="container-fluid stats-section gallery-contain">
+          <section className="container-fluid stats-section gallery-contain p-t-5 m-t-3">
             <div className="container bs-docs-featurette col-centered">
-              <h2 className="centered padding-bottom-40">Blockstack Summit Q&A Panel Guests</h2>
+              <h2 className="text-xs-center m-b-4">Blockstack Summit Q&A Panel Guests</h2>
               <div className="col-centered">
                 <div className="row col-centered">
                   <div className="col-md-3 profile-wrap">
@@ -208,10 +208,12 @@ class SummitPage extends Component {
               </div>
             </div>
           </section>
-          <section>
+          <section className="sponsor-divide p-b-4">
             <div className="bs-docs-featurette col-centered" id="learnmore">
               <div className="container col-centered">
-                <div className="displayed-wrap container col-md-7 col-centered"><h2 className="displayed margin-bottom-20">We are excited to invite you to join us at our first community event, Blockstack Summit!</h2></div>
+                <div className="displayed-wrap container col-md-7 col-centered">
+                  <h2 className="displayed text-xs-center m-b-4">We are excited to invite you to join us at our first community event, Blockstack Summit!</h2>
+                </div>
                 <div className="row col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 col-centered margin-bottom-80">
                   <div className="col-sm-11 feature-panel col-centered">
                       <p className="lead">
@@ -240,8 +242,8 @@ class SummitPage extends Component {
               </div>
             </div>  
           </section>
-          <section className="container-fluid sec-hook sponsor-divide summit-hook-section">
-            <div className="bs-docs-featurette col-centered sponsors-subection" id="learnmore">
+          <section className="container-fluid sec-hook summit-hook-section">
+            <div className="bs-docs-featurette col-centered sponsor-divide sponsors-subection" id="learnmore">
               <div className="col-centered">
                 <h3 className="text-xs-center m-b-4">Thanks to our sponsors</h3>
                 <p className="lead lead-sponsors text-xs-center">Gold Sponsors</p>
@@ -263,7 +265,7 @@ class SummitPage extends Component {
                   <div className="col-sm-4 feature-panel featpan-g3">
                     <div className="container wrap-mob-feat">
                       <Link to="https://www.blockchain.info/">
-                        <img src="/images/logos/blockchain-info-blue.svg" alt="itBit logo" width="205px"/>
+                        <img src="/images/logos/blockchain-info.svg" alt="itBit logo" width="200px"/>
                       </Link>
                     </div>
                   </div>
