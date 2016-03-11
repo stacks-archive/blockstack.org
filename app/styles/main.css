@@ -47,7 +47,6 @@ html, body {overflow-y:scroll; /* has to be scroll, not auto */ -webkit-overflow
 /* Reviewed */.feature-panel > img{margin:0 auto;padding:0 15%;}
 /* Reviewed */.feature-panel > h3{display:block;margin-bottom:10px;}
 /* Reviewed */.spacing-container{padding-top:102px;padding-bottom:50px;background-color:rgba(248,249,251,1);}
-/* Reviewed */.displayed{margin-top:100px;margin-bottom:100px;}
 /* Reviewed */.foot-feature{margin:0;padding-top:150px;padding-bottom:150px;background-color:rgba(83,32,111,1);color:rgba(255,255,255,1);text-align:center;}
 /* Reviewed */h2.action-title{margin-bottom:35px;font-size:30px;line-height:42px;font-weight:300;}
 .wrap-mob-feat{max-width:195px;}
@@ -82,7 +81,8 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 /* Reviewed */.featpan-3{padding-top:20px;}
 /* Reviewed */.featpan-4{padding-top:20px;margin-top:0px;}
 /* Reviewed */.featpan-5{padding-top:20px;}
-.sponsor-divide{display:block;margin:0 auto;min-width:350px;border-bottom:1px solid rgba(229,229,229,1);}
+/* Reviewed */.sponsor-divide{display:block;margin:0 auto;min-width:350px;border-bottom:1px solid rgba(229,229,229,1);}
+/* Reviewed */.page-header-image-wrapper{position:relative;overflow:hidden;color:#fff;}
 
 
 .profile1, .profile2, .profile3, .profile4, .profile5 {margin:0 auto 28px auto; width:160px; height:160px; background-size:cover; display:block; border-radius:80px; -webkit-border-radius:80px; -moz-border-radius:80px; background-position:center;}
@@ -196,10 +196,7 @@ footer > li{list-style:none;}
   .social-count{position:absolute;margin-top:0;display:inline-block;margin-left:25px;margin-top:5px;}
   .social-type{margin-left:-45px;}
   a > div.col-md-4.feature-panel:hover{background-color:rgba(248,249,251,1);}
-
-  .docs-header-image-wrapper {
-    height: 400px;
-  }
+  /* Reviewed */.docs-header-image-wrapper{height:400px;}
 
   .card.card-1-of-3{margin-bottom:15px;}
   .card-deck-wrapper{margin-bottom:35px;}
@@ -230,7 +227,8 @@ footer > li{list-style:none;}
 
   /* Summit page */
   /* Reviewed */.gallery-contain{padding-top:50px;padding-bottom:50px;}
-  
+  /* Reviewed */.page-header-image-wrapper{height:500px;margin-top:5rem!important;}
+
   /* Feature action */
   /* Reviewed */h2.action-title{margin-bottom:3rem;font-size:2.5rem;line-height:3.5rem;}
   /* Reviewed */.foot-feature{margin:0;padding-top:12.5rem;padding-bottom:15rem;}
@@ -239,6 +237,7 @@ footer > li{list-style:none;}
   /* Reviewed */.sec-hook{padding-top:50px;padding-bottom:50px;}
   /* Reviewed */.gallery-contain{padding-top:50px;padding-bottom:50px;}
   /* Reviewed */.feat-pan{font-size:26px;}  
+  /* Reviewed */.docs-header-image-wrapper{height:500px;}
 
   /* Footer */
   .foot-left-col{width:22.3%}
@@ -250,10 +249,6 @@ footer > li{list-style:none;}
   .card.card-1-of-1{width: 100% !important;}
   .card.card-1-of-2{width: 50% !important;}
   .card.card-1-of-3{width: 33.3333% !important;}
-
-  .docs-header-image-wrapper {
-    height: 500px;
-  }
 }
 
 /* Large devices (large desktops, 1200px and up) */

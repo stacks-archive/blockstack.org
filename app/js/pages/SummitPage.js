@@ -22,7 +22,7 @@ class SummitPage extends Component {
         <div>
          <div className="container-fluid col-centered summit-head-wrap">
             <Header />
-            <div className="m-t-2 m-b-3 docs-header-image-wrapper">
+            <div className="m-t-2 m-b-3 page-header-image-wrapper">
               <section>
                 <div>
                   <div className="col-xs-11 col-sm-10 col-centered">
@@ -41,10 +41,10 @@ class SummitPage extends Component {
               </section>
             </div>
           </div>
-          <section className="container-fluid gallery-contain">
+          <section className="container-fluid gallery-contain sponsor-divide">
           <div className="bs-docs-featurette col-centered" id="learnmore">
             <div className="col-centered">
-              <h2 className="text-xs-center m-b-3">Lightning Talks</h2>
+              <h2 className="text-xs-center m-t-3 m-b-3">Lightning Talks</h2>
               <div className="col-sm-11 feature-panel col-centered">
                 <div className="col-centered table-wrap">
                   <div className="table-responsive ">
@@ -144,7 +144,7 @@ class SummitPage extends Component {
             </div>
           </div>
         </section>
-          <section className="container-fluid gallery-contain sponsor-divide p-b-4">
+          <section className="container-fluid gallery-contain sponsor-divide m-t-4 p-b-4">
             <div className="bs-docs-featurette col-centered" id="learnmore">
               <div className="col-centered">
                 <h2 className="text-xs-center m-b-3">Workshop topics</h2>
@@ -211,8 +211,8 @@ class SummitPage extends Component {
           <section className="sponsor-divide p-b-4">
             <div className="bs-docs-featurette col-centered" id="learnmore">
               <div className="container col-centered">
-                <div className="displayed-wrap container col-md-7 col-centered">
-                  <h2 className="displayed text-xs-center m-b-4">We are excited to invite you to join us at our first community event, Blockstack Summit!</h2>
+                <div className="container col-md-7 col-centered">
+                  <h2 className="text-xs-center p-t-3 m-t-5 m-b-1">We are excited to invite you to join us at our first community event, Blockstack Summit!</h2>
                 </div>
                 <div className="row col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 col-centered margin-bottom-80">
                   <div className="col-sm-11 feature-panel col-centered">
@@ -229,7 +229,7 @@ class SummitPage extends Component {
                         <Link to="https://twitter.com/naval" target="_blank">Naval Ravikant</Link>, Co-founder AngelList & Angel Investor<br/>
                         <Link to="https://twitter.com/wmougayar" target="_blank">William Mougayar</Link>, Angel Investor<br/><br/>
                         <Link to="http://www.cs.princeton.edu/~jps/" target="_blank">JP Singh</Link>, Panel Moderator, Professor, Princeton University</p>
-                      <p className="lead margin-bottom-80">
+                      <p className="lead m-b-4">
                         Tickets for Blockstack Summit are limited, register today to reserve your spot.
                       </p>
                       <p className="centered margin-bottom-80">
