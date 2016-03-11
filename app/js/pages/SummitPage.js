@@ -44,7 +44,7 @@ class SummitPage extends Component {
           <section className="container-fluid gallery-contain">
           <div className="bs-docs-featurette col-centered" id="learnmore">
             <div className="col-centered">
-              <h2 className="padding-bottom-20">Lightning Talks</h2>
+              <h2 className="text-xs-center m-b-3">Lightning Talks</h2>
               <div className="col-sm-11 feature-panel col-centered">
                 <div className="col-centered table-wrap">
                   <div className="table-responsive ">
@@ -146,8 +146,8 @@ class SummitPage extends Component {
         </section>
           <section className="container-fluid gallery-contain">
             <div className="bs-docs-featurette col-centered" id="learnmore">
-              <div className="col-centered profile-gallery">
-                <h2 className="centered padding-bottom-20">Workshop topics</h2>
+              <div className="col-centered">
+                <h2 className="text-xs-center m-b-3">Workshop topics</h2>
                 <div className="col-sm-11 feature-panel col-centered">
                   <div className="col-centered topic-wrap">
                     <ul>
@@ -169,7 +169,7 @@ class SummitPage extends Component {
               </div>
             </div>
           </section>
-          <section className="container-fluid stats-section">
+          <section className="container-fluid stats-section gallery-contain">
             <div className="container bs-docs-featurette col-centered">
               <h2 className="centered padding-bottom-40">Blockstack Summit Q&A Panel Guests</h2>
               <div className="col-centered">
@@ -243,8 +243,8 @@ class SummitPage extends Component {
           <section className="container-fluid sec-hook sponsor-divide summit-hook-section">
             <div className="bs-docs-featurette col-centered sponsors-subection" id="learnmore">
               <div className="col-centered">
-                <h3 className="centered padding-bottom-60">Thanks to our sponsors</h3>
-                <p className="lead lead-sponsors centered">Gold Sponsors</p>
+                <h3 className="text-xs-center m-b-4">Thanks to our sponsors</h3>
+                <p className="lead lead-sponsors text-xs-center">Gold Sponsors</p>
                 <div className="row col-sm-12 col-centered">
                   <div className="col-sm-4 feature-panel featpan-g1">
                     <div className="container wrap-mob-feat">

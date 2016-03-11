@@ -74,6 +74,14 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 /* Reviewed */.summit-head-wrap{background:url(/images/visuals/summ-dht.png)no-repeat center -50px;background-color:#53206f;}
 /* Reviewed */h1.hero-head.summ-head,.summ-head,.about-head,.hero-reg-btn,.date,.hero-comm-des,.hall{text-align:center;}
 /* Reviewed */.profile-wrap{text-align:center;padding-bottom:40px;}
+/* Reviewed */.featpan-g1{margin-top:10px;}
+/* Reviewed */.featpan-g2{margin-top:10px;}
+/* Reviewed */.featpan-g3{padding-top:20px;}
+/* Reviewed */.featpan-1{padding-top:20px;}
+/* Reviewed */.featpan-2{padding-top:20px;}
+/* Reviewed */.featpan-3{padding-top:20px;}
+/* Reviewed */.featpan-4{padding-top:20px;margin-top:0px;}
+/* Reviewed */.featpan-5{padding-top:20px;}
 
 .profile1, .profile2, .profile3, .profile4, .profile5 {margin:0 auto 28px auto; width:160px; height:160px; background-size:cover; display:block; border-radius:80px; -webkit-border-radius:80px; -moz-border-radius:80px; background-position:center;}
 .profile6 {margin:0 auto 0 -50px; width:180px; height: 180px; background-size:cover; padding:10px; background-color: rgba(255,255,255,1); border:1px solid rgba(240,240,240,1); background-position:center;}
