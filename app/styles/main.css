@@ -93,11 +93,11 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .profile4 {background-image:url('/images/avatars/naval-ravikant.jpg');}
 .profile5 {background-image:url('/images/avatars/william-mougayar.jpg');}
 
-.card.card-1-of-1{width:100%!important;}
-.card.card-1-of-2{width:100%!important;}
-.card.card-1-of-3{width:100%!important;margin-bottom:35px;}
-.card.card-link{text-decoration:none;color:black;}
-.card.card-link-image-wrapper{position:relative;overflow:hidden;height:200px;width:100%;}
+.card .card-1-of-1{width:100%!important;}
+.card .card-1-of-2{width:100%!important;}
+.card .card-1-of-3{width:100%!important;margin-bottom:35px;}
+.card .card-link{text-decoration:none;color:black;}
+.card .card-link-image-wrapper{position:relative;overflow:hidden;height:200px;width:100%;}
 .card .card-link-image{height:100%;display:block;position:absolute;margin:auto;top:-100%;left:-100%;right:-100%;bottom:-100%;min-width:100%;}
 .card-block{padding:25px 30px 65px 30px;}
 .card-text{font-weight:400;line-height:1.625rem;}
