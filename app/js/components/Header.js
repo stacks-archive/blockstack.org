@@ -19,16 +19,66 @@ class Header extends Component {
             </Link>
             <ul className="nav navbar-nav">
               <li className="nav-item">
-                <Link to="/docs" className="nav-link">Overview</Link>
+                <Link to="/docs" className="nav-link">
+                  Docs
+                </Link>
               </li>
-              <li className="nav-item">
-                <Link to="/docs/how-blockstack-works" className="nav-link">How it Works</Link>
+              <li className="nav-item dropdown hidden-sm-down">
+                <a href="#" className="nav-link dropdown-toggle"
+                   data-toggle="dropdown" role="button"
+                   aria-haspopup="true" aria-expanded="false">
+                  Overview
+                </a>
+                <div className="dropdown-menu">
+                  <Link to="/docs/what-is-blockstack" className="dropdown-item">
+                    What is Blockstack
+                  </Link>
+                  <Link to="/docs/how-blockstack-works" className="dropdown-item">
+                    How Blockstack Works
+                  </Link>
+                </div>
               </li>
-              <li className="nav-item hidden-sm-down">
-                <Link to="/docs/installation" className="nav-link">Installation</Link>
+              <li className="nav-item dropdown hidden-sm-down">
+                <a href="#" className="nav-link dropdown-toggle"
+                   data-toggle="dropdown" role="button"
+                   aria-haspopup="true" aria-expanded="false">
+                  Client Library
+                </a>
+                <div className="dropdown-menu">
+                  <Link to="/docs/installation" className="dropdown-item">
+                    Installation
+                  </Link>
+                  <Link to="/docs/basic-usage" className="dropdown-item">
+                    Basic Usage
+                  </Link>
+                  <Link to="/docs/extended-usage" className="dropdown-item">
+                    Extended Usage
+                  </Link>
+                </div>
               </li>
-              <li className="nav-item hidden-sm-down">
-                <Link to="/docs/basic-usage" className="nav-link">Usage</Link>
+              <li className="nav-item dropdown hidden-sm-down">
+                <a href="#" className="nav-link dropdown-toggle"
+                   data-toggle="dropdown" role="button"
+                   aria-haspopup="true" aria-expanded="false">
+                  Client Library
+                </a>
+                <div className="dropdown-menu">
+                  <Link to="/docs/blockstack-vs-dns" className="dropdown-item">
+                    Blockstack vs DNS
+                  </Link>
+                  <Link to="/docs/blockstack-vs-namecoin" className="dropdown-item">
+                    Blockstack vs Namecoin
+                  </Link>
+                  <Link to="/docs/extended-usage" className="dropdown-item">
+                    Namespaces
+                  </Link>
+                  <Link to="/docs/light-clients" className="dropdown-item">
+                    Light Clients
+                  </Link>
+                  <Link to="/docs/faq" className="dropdown-item">
+                    FAQ
+                  </Link>
+                </div>
               </li>
               <li className="nav-item pull-xs-right hidden-sm-down">
                 <Link to="https://github.com/blockstack" className="nav-link hidden-xs hidden-sm"
