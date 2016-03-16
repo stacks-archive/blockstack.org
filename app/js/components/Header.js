@@ -60,7 +60,7 @@ class Header extends Component {
                 <a href="#" className="nav-link dropdown-toggle"
                    data-toggle="dropdown" role="button"
                    aria-haspopup="true" aria-expanded="false">
-                  Client Library
+                  Articles
                 </a>
                 <div className="dropdown-menu">
                   <Link to="/docs/blockstack-vs-dns" className="dropdown-item">
