@@ -36,6 +36,9 @@ class Header extends Component {
                   <Link to="/docs/how-blockstack-works" className="dropdown-item">
                     How Blockstack Works
                   </Link>
+                  <Link to="/docs/blockstack-papers" className="dropdown-item">
+                    Blockstack Papers
+                  </Link>
                 </div>
               </li>
               <li className="nav-item dropdown hidden-sm-down">

@@ -264,3 +264,11 @@ footer > li{list-style:none;}
   border: none;
   border-radius: 0rem;
 }
+
+.embedded-pdf {
+  width: 100%;
+  height: 600px;
+}
+
+
+
