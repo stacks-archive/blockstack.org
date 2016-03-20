@@ -14,7 +14,7 @@ class DocsIndexPage extends Component {
     const pageRows = [
       {
         title: 'Overview',
-        items: ['what-is-blockstack', 'how-blockstack-works', '']
+        items: ['what-is-blockstack', 'how-blockstack-works', 'blockstack-papers']
       },
       {
         title: 'Client Library',

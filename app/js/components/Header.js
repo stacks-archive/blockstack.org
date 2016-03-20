@@ -36,6 +36,9 @@ class Header extends Component {
                   <Link to="/docs/how-blockstack-works" className="dropdown-item">
                     How Blockstack Works
                   </Link>
+                  <Link to="/docs/blockstack-papers" className="dropdown-item">
+                    Blockstack Papers
+                  </Link>
                 </div>
               </li>
               <li className="nav-item dropdown hidden-sm-down">
@@ -60,7 +63,7 @@ class Header extends Component {
                 <a href="#" className="nav-link dropdown-toggle"
                    data-toggle="dropdown" role="button"
                    aria-haspopup="true" aria-expanded="false">
-                  Client Library
+                  Articles
                 </a>
                 <div className="dropdown-menu">
                   <Link to="/docs/blockstack-vs-dns" className="dropdown-item">
