@@ -45,7 +45,7 @@ class Header extends Component {
                 <a href="#" className="nav-link dropdown-toggle"
                    data-toggle="dropdown" role="button"
                    aria-haspopup="true" aria-expanded="false">
-                  Client Library
+                  CLI
                 </a>
                 <div className="dropdown-menu">
                   <Link to="/docs/installation" className="dropdown-item">
@@ -56,6 +56,24 @@ class Header extends Component {
                   </Link>
                   <Link to="/docs/extended-usage" className="dropdown-item">
                     Extended Usage
+                  </Link>
+                </div>
+              </li>
+              <li className="nav-item dropdown hidden-sm-down">
+                <a href="#" className="nav-link dropdown-toggle"
+                   data-toggle="dropdown" role="button"
+                   aria-haspopup="true" aria-expanded="false">
+                  Libraries
+                </a>
+                <div className="dropdown-menu">
+                  <Link to="/docs/blockstack-profiles-js" className="dropdown-item">
+                    Blockstack Profiles Javascript
+                  </Link>
+                  <Link to="/docs/blockstack-profiles-py" className="dropdown-item">
+                    Blockstack Profiles Python
+                  </Link>
+                  <Link to="/docs/pybitcoin" className="dropdown-item">
+                    Pybitcoin
                   </Link>
                 </div>
               </li>

@@ -17,15 +17,19 @@ class DocsIndexPage extends Component {
         items: ['what-is-blockstack', 'how-blockstack-works', 'blockstack-papers']
       },
       {
-        title: 'Client Library',
+        title: 'Command Line Interface',
         items: ['installation', 'basic-usage', 'extended-usage']
+      },
+      {
+        title: 'Developer Libraries',
+        items: ['blockstack-profiles-py', 'blockstack-profiles-js', 'pybitcoin']
       },
       {
         title: 'Articles',
         items: ['blockstack-vs-dns', 'blockstack-vs-namecoin', 'namespaces']
       },
       {
-        items: ['light-clients', 'faq', '']
+        items: ['light-clients', 'blockchain-id', 'faq']
       }
     ]
 

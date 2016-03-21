@@ -14,7 +14,7 @@ class HomePage extends Component {
     super(props)
 
     this.state = {
-      nameCount: 47500,
+      nameCount: 48500,
       slackUserCount: 620,
       contributorCount: 19
     }
