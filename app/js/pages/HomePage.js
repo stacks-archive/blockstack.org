@@ -15,7 +15,7 @@ class HomePage extends Component {
 
     this.state = {
       nameCount: 48500,
-      slackUserCount: 620,
+      slackUserCount: 650,
       contributorCount: 19
     }
 

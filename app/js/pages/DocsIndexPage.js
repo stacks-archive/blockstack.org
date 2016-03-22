@@ -21,10 +21,6 @@ class DocsIndexPage extends Component {
         items: ['installation', 'basic-usage', 'extended-usage']
       },
       {
-        title: 'Developer Libraries',
-        items: ['blockstack-profiles-py', 'blockstack-profiles-js', 'pybitcoin']
-      },
-      {
         title: 'Articles',
         items: ['blockstack-vs-dns', 'blockstack-vs-namecoin', 'namespaces']
       },
@@ -32,6 +28,13 @@ class DocsIndexPage extends Component {
         items: ['light-clients', 'blockchain-id', 'faq']
       }
     ]
+
+    /*
+      {
+        title: 'Developer Libraries',
+        items: ['blockstack-profiles-js', 'blockstack-profiles-py', 'pybitcoin']
+      },
+    */
 
     return (
       <DocumentTitle title="Blockstack - Documentation">
