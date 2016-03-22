@@ -72,7 +72,7 @@ class Header extends Component {
                   <Link to="/docs/blockstack-vs-namecoin" className="dropdown-item">
                     Blockstack vs Namecoin
                   </Link>
-                  <Link to="/docs/extended-usage" className="dropdown-item">
+                  <Link to="/docs/namespaces" className="dropdown-item">
                     Namespaces
                   </Link>
                   <Link to="/docs/light-clients" className="dropdown-item">
