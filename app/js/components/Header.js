@@ -75,6 +75,9 @@ class Header extends Component {
                   <Link to="/docs/namespaces" className="dropdown-item">
                     Namespaces
                   </Link>
+                  <Link to="/docs/blockchain-id" className="dropdown-item">
+                    Blockchain IDs
+                  </Link>
                   <Link to="/docs/light-clients" className="dropdown-item">
                     Light Clients
                   </Link>
