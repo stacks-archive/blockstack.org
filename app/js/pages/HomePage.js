@@ -79,11 +79,11 @@ class HomePage extends Component {
             <section className="hero">
               <div className="col-xs-12 col-sm-12 col-md-6">
                 <h1 className="hero-head">
-                  Decentralized DNS  for Blockchain Applications
+                  The Global Identity Database
                 </h1>
                 <p className="lead hero-lead col-md-11">
-                  Blockstack gives you fast, secure, and easy-to-use DNS, PKI,
-                  and identity management on the blockchain.
+                  A global identity database for people, companies, websites and more,
+                  all blockchain-secured.
                 </p>
                 <p className="no-padding col-md-6">
                   <Link to="/docs" role="button"
@@ -235,12 +235,13 @@ class HomePage extends Component {
           </div>
         </section>
         <section>
-          <div className="bs-docs-featurette col-centered">
+          <div className="bs-docs-featurette col-centered m-b-2">
             <div className="container col-centered">
               <div className="displayed-wrap container col-md-8 col-lg-8 col-centered">
                 <h3 className="displayed">
-                  Our mission is to create common infrastructure for
-                  developing decentralized applications.
+                  Blockstack enables you to build applications
+                  in a more secure and resilient way by utilizing
+                  a global identity registry and decentralized DNS.
                 </h3>
               </div>
               <div className="row works col-md-10 col-lg-8 col-centered">
@@ -250,7 +251,7 @@ class HomePage extends Component {
                       The Blockstack community is a group of blockchain developers,
                       companies and organizations coming together to define and
                       develop a set of software protocols and tools to serve as a
-                      common backend for blockchain-powered decentralized applications.
+                      common identity and naming backend for blockchain-powered applications.
                       We welcome all developers and companies that are interested
                       in joining the consortium and contributing to Blockstack development.
                     </p>
@@ -258,8 +259,10 @@ class HomePage extends Component {
               </div>
               <div className="displayed-wrap container col-md-8 col-lg-8 col-centered">
                 <h3 className="displayed">
-                  With Blockstack, you'll be able to build apps with decentralized DNS,
-                  identity, and data storage.
+                  Our mission is to enable apps to
+                  remove central points of failure,
+                  increase security and reliability,
+                  and be more respectful of user data.
                 </h3>
               </div>
             </div>
@@ -271,7 +274,7 @@ class HomePage extends Component {
               <div className="container col-xs-11 col-centered">
                 <hgroup>
                   <h2 className="col-md-10 col-lg-8 col-centered action-title">
-                    Get Started with Decentralized Applications
+                    Start Using the Global Identity Database
                   </h2>
                 </hgroup>
                 <div>
