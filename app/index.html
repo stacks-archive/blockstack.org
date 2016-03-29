@@ -1,109 +1,90 @@
 <!doctype html>
 <html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8" />
-    <title>Blockstack - Decentralized DNS for Blockchain Applications</title>
+<head>
+<meta charset="utf-8" />
 
-    <meta name="description" content="Blockstack is a community of developers building decentralized applications, and a software stack around decentralized DNS, identity and more for blockchain applications." />
-    <meta name="google-site-verification" content="U-V1sDR9guEOpzUdVlVGsBJuxfJd6c0SPRjeU8-_chk" />
-    <meta name="viewport" content="width=device-width" />
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="29x29" href="/images/apple-touch-icons/29.png" />
+<link rel="apple-touch-icon" sizes="40x40" href="/images/apple-touch-icons/40.png" />
+<link rel="apple-touch-icon" sizes="58x58" href="/images/apple-touch-icons/58.png" />
+<link rel="apple-touch-icon" sizes="60x60" href="/images/apple-touch-icons/60.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/images/apple-touch-icons/76.png" />
+<link rel="apple-touch-icon" sizes="80x80" href="/images/apple-touch-icons/80.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/images/apple-touch-icons/120.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/images/apple-touch-icons/152.png" />
 
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@blockstackorg" />
-    <meta name="twitter:title" content="Blockstack" />
-    <meta name="twitter:description" content="Blockstack is a community of developers building decentralized applications, and a software stack around decentralized DNS, identity and more for blockchain applications." />
-    <meta name="twitter:image" content="https://blockstack.org/images/metatags/blockstack-screenshot.png" />
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic,800italic,800,700italic,700,600,600italic,500italic,500' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/font-awesome.css" />
+<link rel="stylesheet" href="/css/sunburst.css" />
+<link rel="stylesheet" href="/css/main.css" />
 
-    <!-- Open Graph data -->
-    <meta property="og:title" content="Blockstack" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://blockstack.org/" />
-    <meta property="og:image" content="https://blockstack.org/images/metatags/blockstack-screenshot.png" />
-    <meta property="og:description" content="Blockstack is a community of developers building decentralized applications, and a software stack around decentralized DNS, identity and more for blockchain applications." />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-74646510-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" sizes="29x29" href="/images/apple-touch-icons/29.png" />
-    <link rel="apple-touch-icon" sizes="40x40" href="/images/apple-touch-icons/40.png" />
-    <link rel="apple-touch-icon" sizes="58x58" href="/images/apple-touch-icons/58.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-touch-icons/60.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/images/apple-touch-icons/76.png" />
-    <link rel="apple-touch-icon" sizes="80x80" href="/images/apple-touch-icons/80.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-touch-icons/120.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-touch-icons/152.png" />
+</head>
+<body>
 
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic,800italic,800,700italic,700,600,600italic,500italic,500' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/font-awesome.css" />
-    <link rel="stylesheet" href="/css/sunburst.css" />
-    <link rel="stylesheet" href="/css/main.css" />
+<div id="app"></div>
+<script src="/js/main.js"></script>
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-74646510-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
-
-  </head>
-  <body>
-
-    <div id="app"></div>
-    <script src="/js/main.js"></script>
-
-    <noscript>
-      <div class="container-fluid col-centered bg-primary-gradient block">
-        <header class="container no-padding nav-header">
-          <nav class="navbar">
-            <a href="/" class="navbar-brand">
-              <img src="/images/logos/blockstack.svg" />
-            </a>
-          </nav>
-        </header>
-        <div class="container hero-wrap">
-          <section class="hero">
-            <div class="col-xs-12 col-sm-12 col-md-6">
-              <h1 class="hero-head">
-                Decentralized DNS  for Blockchain Applications
-              </h1>
-              <p class="lead hero-lead col-md-11">
-                Blockstack gives you fast, secure, and easy-to-use DNS, PKI,
-                and identity management on the blockchain.
-              </p>
-            </div>
-            <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-0 hidden-sm-down">
-              <img class="hero-img"
-                src="/images/visuals/hero-pip-install-blockstack.svg" />
-            </div>
-          </section>
+<noscript>
+  <div class="container-fluid col-centered bg-primary-gradient block">
+    <header class="container no-padding nav-header">
+      <nav class="navbar">
+        <a href="/" class="navbar-brand">
+          <img src="/images/logos/blockstack.svg" />
+        </a>
+      </nav>
+    </header>
+    <div class="container hero-wrap">
+      <section class="hero">
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <h1 class="hero-head">
+            Decentralized DNS  for Blockchain Applications
+          </h1>
+          <p class="lead hero-lead col-md-11">
+            Blockstack gives you fast, secure, and easy-to-use DNS, PKI,
+            and identity management on the blockchain.
+          </p>
         </div>
-      </div>
-      <section className="container-fluid paper-section">
-        <div className="container bs-docs-featurette col-centered">
-          <div className="col-centered col-md-8">
-            <div className="col-md-6 paper-wrap">
-              <div class="card card-inverse card-danger text-xs-center card-rectangular">
-                <div class="card-block">
-                  <h3 class="card-title">Javascript Required</h3>
-                  <blockquote class="card-blockquote">
-                    <p>
-                      <strong>Oh snap!</strong> Your browser doesn't support JavaScript. Please enable it to view this site.
-                    </p>
-                  </blockquote>
-                </div>
-              </div>
+        <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-0 hidden-sm-down">
+          <img class="hero-img"
+            src="/images/visuals/hero-pip-install-blockstack.svg" />
+        </div>
+      </section>
+    </div>
+  </div>
+  <section className="container-fluid paper-section">
+    <div className="container bs-docs-featurette col-centered">
+      <div className="col-centered col-md-8">
+        <div className="col-md-6 paper-wrap">
+          <div class="card card-inverse card-danger text-xs-center card-rectangular">
+            <div class="card-block">
+              <h3 class="card-title">Javascript Required</h3>
+              <blockquote class="card-blockquote">
+                <p>
+                  <strong>Oh snap!</strong> Your browser doesn't support JavaScript. Please enable it to view this site.
+                </p>
+              </blockquote>
             </div>
           </div>
         </div>
-      </section>
-    </noscript>
+      </div>
+    </div>
+  </section>
+</noscript>
 
-  </body>
+</body>
 </html>

@@ -10,7 +10,7 @@ gulp.task('prod', ['clean'], function(cb) {
   global.isProd = true;
 
   runSequence([
-    'sass', 'copyStyles', 'imagemin', 'browserify', 'copyFonts',
+    'makeBuildDir', 'sass', 'copyStyles', 'imagemin', 'browserify', 'copyFonts',
     'copyIndex', 'copyIcons', 'copyFiles', 'buildDocs'
   ], cb);
 

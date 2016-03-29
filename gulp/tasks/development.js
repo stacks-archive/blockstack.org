@@ -11,7 +11,7 @@ gulp.task('dev', ['clean'], function(cb) {
 
   // Run all tasks once
   return runSequence([
-    'sass', 'copyStyles', 'imagemin', 'browserify', 'copyFonts',
+    'makeBuildDir', 'sass', 'copyStyles', 'imagemin', 'browserify', 'copyFonts',
     'copyIndex', 'copyIcons', 'copyFiles', 'buildDocs'
   ], 'watch', cb);
 
