@@ -8,6 +8,7 @@ gulp.task('configFirebase', () => {
   let firebaseJson = JSON.parse(fs.readFileSync('firebase.json'))
 
   let rewrites = []
+  let redirects = []
 
   fs.readdirSync('app/docs/').forEach((docFilename) => {
     const key = docFilename.split('.')[0].toLowerCase()
@@ -22,13 +23,15 @@ gulp.task('configFirebase', () => {
     "source": "**",
     "destination": "/index.html"
   })
-  rewrites.push({
+  
+  redirects.push({
     "source": "/docs/blockchain-id",
     "destination": "/docs/blockchain-identity",
     "type": 301
   })
 
   firebaseJson.rewrites = rewrites
+  firebaseJson.redirects = redirects
 
   fs.writeFileSync('firebase.json', JSON.stringify(firebaseJson, null, 2))
 });

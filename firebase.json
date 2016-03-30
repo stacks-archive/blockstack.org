@@ -83,5 +83,12 @@
       "source": "**",
       "destination": "/index.html"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/docs/blockchain-id",
+      "destination": "/docs/blockchain-identity",
+      "type": 301
+    }
   ]
 }
