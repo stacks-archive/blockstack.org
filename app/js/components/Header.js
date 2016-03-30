@@ -63,7 +63,7 @@ class Header extends Component {
                 <a href="#" className="nav-link dropdown-toggle"
                    data-toggle="dropdown" role="button"
                    aria-haspopup="true" aria-expanded="false">
-                  Articles
+                  Naming
                 </a>
                 <div className="dropdown-menu">
                   <Link to="/docs/blockstack-vs-dns" className="dropdown-item">
@@ -75,17 +75,26 @@ class Header extends Component {
                   <Link to="/docs/namespaces" className="dropdown-item">
                     Namespaces
                   </Link>
-                  <Link to="/docs/blockchain-id" className="dropdown-item">
-                    Blockchain IDs
-                  </Link>
-                  <Link to="/docs/identity-attestations" className="dropdown-item">
-                    Identity Attestations
-                  </Link>
                   <Link to="/docs/light-clients" className="dropdown-item">
                     Light Clients
                   </Link>
-                  <Link to="/docs/faq" className="dropdown-item">
-                    FAQ
+                </div>
+              </li>
+              <li className="nav-item dropdown hidden-sm-down">
+                <a href="#" className="nav-link dropdown-toggle"
+                   data-toggle="dropdown" role="button"
+                   aria-haspopup="true" aria-expanded="false">
+                  Identity
+                </a>
+                <div className="dropdown-menu">
+                  <Link to="/docs/blockchain-identity" className="dropdown-item">
+                    Blockchain Identity
+                  </Link>
+                  <Link to="/docs/blockstack-profiles" className="dropdown-item">
+                    Blockstack Profiles
+                  </Link>
+                  <Link to="/docs/identity-attestation" className="dropdown-item">
+                    Identity Attestation
                   </Link>
                 </div>
               </li>

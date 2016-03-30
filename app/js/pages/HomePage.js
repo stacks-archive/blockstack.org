@@ -14,7 +14,7 @@ class HomePage extends Component {
     super(props)
 
     this.state = {
-      nameCount: 48500,
+      nameCount: 49500,
       slackUserCount: 650,
       contributorCount: 19
     }
@@ -79,11 +79,11 @@ class HomePage extends Component {
             <section className="hero">
               <div className="col-xs-12 col-sm-12 col-md-6">
                 <h1 className="hero-head">
-                  The Global Identity Database
+                  The Global Internet Database
                 </h1>
                 <p className="lead hero-lead col-md-11">
-                  A global identity database for people, companies, websites and more,
-                  all blockchain-secured.
+                  A global database for people, companies, websites and more.
+                  Decentralized, privacy-centric, and blockchain-secured.
                 </p>
                 <p className="no-padding col-md-6">
                   <Link to="/docs" role="button"
@@ -106,7 +106,7 @@ class HomePage extends Component {
                 <Link to="https://blockstackstats.com" target="_blank">
                   <div className="col-md-4 feature-panel">
                     <p className="lead bs-lead">
-                      Names registered
+                      Records registered
                     </p>
                     <h1 className="stats-count">{this.state.nameCount}</h1>
                   </div>
@@ -160,9 +160,9 @@ class HomePage extends Component {
                     <img src="/images/icons/community-globe.svg"
                       className="img-responsive" alt="Community globe icon" />
                   </div>
-                  <h4>Community-centric</h4>
+                  <h4>Privacy-centric</h4>
                   <p className="lead bs-lead">
-                    Maintained by developers united around a common software stack.
+                    User information is tightly controlled by the user.
                   </p>
                 </div>
               </div>
@@ -239,9 +239,9 @@ class HomePage extends Component {
             <div className="container col-centered">
               <div className="displayed-wrap container col-md-8 col-lg-8 col-centered">
                 <h3 className="displayed">
-                  Blockstack enables you to build applications
+                  Blockstack enables application building
                   in a more secure and resilient way by utilizing
-                  a global identity registry and decentralized DNS.
+                  a global database, with built-in identity services and DNS.
                 </h3>
               </div>
               <div className="row works col-md-10 col-lg-8 col-centered">
@@ -274,7 +274,7 @@ class HomePage extends Component {
               <div className="container col-xs-11 col-centered">
                 <hgroup>
                   <h2 className="col-md-10 col-lg-8 col-centered action-title">
-                    Start Using the Global Identity Database
+                    Start Using the Global Internet Database
                   </h2>
                 </hgroup>
                 <div>
