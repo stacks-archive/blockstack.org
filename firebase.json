@@ -12,8 +12,8 @@
   ],
   "rewrites": [
     {
-      "source": "**",
-      "destination": "/index.html"
+      "source": "/docs/404",
+      "destination": "/docs-404.html"
     },
     {
       "source": "/docs/about",
@@ -82,6 +82,10 @@
     {
       "source": "/docs/what-is-blockstack",
       "destination": "/docs-what-is-blockstack.html"
+    },
+    {
+      "source": "**",
+      "destination": "/index.html"
     }
   ]
 }

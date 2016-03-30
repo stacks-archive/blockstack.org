@@ -18,10 +18,12 @@ gulp.task('configFirebase', () => {
     })
   })
 
-  firebaseJson.rewrites = Object.assign([], rewrites, [{
+  rewrites.push({
     "source": "**",
     "destination": "/index.html"
-  }])
+  })
+
+  firebaseJson.rewrites = rewrites
 
   fs.writeFileSync('firebase.json', JSON.stringify(firebaseJson, null, 2))
 });

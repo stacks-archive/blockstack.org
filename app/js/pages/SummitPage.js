@@ -7,9 +7,6 @@ import DocumentTitle    from 'react-document-title'
 import Header           from '../components/Header'
 import Footer           from '../components/Footer'
 
-const propTypes = {
-}
-
 class SummitPage extends Component {
 
   constructor(props) {
@@ -344,7 +341,5 @@ class SummitPage extends Component {
   }
 
 }
-
-SummitPage.propTypes = propTypes
 
 export default SummitPage
