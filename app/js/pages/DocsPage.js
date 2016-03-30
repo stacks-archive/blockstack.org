@@ -26,7 +26,7 @@ class DocsPage extends Component {
       },
       {
         title:'Identity',
-        items: ['blockchain-id', 'identity-attestations', '']
+        items: ['blockchain-identity', 'blockstack-profiles', 'identity-attestation']
       },
       {
         title: 'Misc',
@@ -59,6 +59,9 @@ class DocsPage extends Component {
                       <div className="card-deck-wrapper">
                         <div className="card-deck m-b-3">
                         {pageRow.items.map((slug, columnIndex) => {
+                          if (!docs.hasOwnProperty(slug)) {
+                            slug = ''
+                          }
                           if (slug === '') {
                             return (
                               <div key={columnIndex} className="card-2-of-3"></div>

@@ -22,6 +22,11 @@ gulp.task('configFirebase', () => {
     "source": "**",
     "destination": "/index.html"
   })
+  rewrites.push({
+    "source": "/docs/blockchain-id",
+    "destination": "/docs/blockchain-identity",
+    "type": 301
+  })
 
   firebaseJson.rewrites = rewrites
 

@@ -24,20 +24,16 @@
       "destination": "/docs-basic-usage.html"
     },
     {
-      "source": "/docs/blockchain-id",
-      "destination": "/docs-blockchain-id.html"
+      "source": "/docs/blockchain-identity",
+      "destination": "/docs-blockchain-identity.html"
     },
     {
       "source": "/docs/blockstack-papers",
       "destination": "/docs-blockstack-papers.html"
     },
     {
-      "source": "/docs/blockstack-profiles-js",
-      "destination": "/docs-blockstack-profiles-js.html"
-    },
-    {
-      "source": "/docs/blockstack-profiles-py",
-      "destination": "/docs-blockstack-profiles-py.html"
+      "source": "/docs/blockstack-profiles",
+      "destination": "/docs-blockstack-profiles.html"
     },
     {
       "source": "/docs/blockstack-vs-dns",
@@ -60,8 +56,8 @@
       "destination": "/docs-how-blockstack-works.html"
     },
     {
-      "source": "/docs/identity-attestations",
-      "destination": "/docs-identity-attestations.html"
+      "source": "/docs/identity-attestation",
+      "destination": "/docs-identity-attestation.html"
     },
     {
       "source": "/docs/installation",
