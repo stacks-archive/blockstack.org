@@ -10,8 +10,8 @@ gulp.task('prod', ['clean'], function(cb) {
   global.isProd = true;
 
   runSequence([
-    'sass', 'copyStyles', 'imagemin', 'browserify', 'copyFonts',
-    'copyIndex', 'copyIcons', 'copyFiles', 'buildDocs'
+    'makeBuildDir', 'sass', 'copyStyles', 'imagemin', 'browserify', 'copyFonts',
+    'copyIndex', 'copyIcons', 'copyFiles', 'buildDocs', 'configFirebase'
   ], cb);
 
 });

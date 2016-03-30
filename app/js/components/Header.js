@@ -45,7 +45,7 @@ class Header extends Component {
                 <a href="#" className="nav-link dropdown-toggle"
                    data-toggle="dropdown" role="button"
                    aria-haspopup="true" aria-expanded="false">
-                  Client Library
+                  CLI
                 </a>
                 <div className="dropdown-menu">
                   <Link to="/docs/installation" className="dropdown-item">
@@ -75,6 +75,12 @@ class Header extends Component {
                   <Link to="/docs/namespaces" className="dropdown-item">
                     Namespaces
                   </Link>
+                  <Link to="/docs/blockchain-id" className="dropdown-item">
+                    Blockchain IDs
+                  </Link>
+                  <Link to="/docs/identity-attestations" className="dropdown-item">
+                    Identity Attestations
+                  </Link>
                   <Link to="/docs/light-clients" className="dropdown-item">
                     Light Clients
                   </Link>
@@ -100,3 +106,24 @@ class Header extends Component {
 }
 
 export default Header
+
+/*
+<li className="nav-item dropdown hidden-sm-down">
+  <a href="#" className="nav-link dropdown-toggle"
+     data-toggle="dropdown" role="button"
+     aria-haspopup="true" aria-expanded="false">
+    Libraries
+  </a>
+  <div className="dropdown-menu">
+    <Link to="/docs/blockstack-profiles-js" className="dropdown-item">
+      Blockstack Profiles Javascript
+    </Link>
+    <Link to="/docs/blockstack-profiles-py" className="dropdown-item">
+      Blockstack Profiles Python
+    </Link>
+    <Link to="/docs/pybitcoin" className="dropdown-item">
+      Pybitcoin
+    </Link>
+  </div>
+</li>
+*/

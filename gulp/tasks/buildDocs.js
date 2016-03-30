@@ -3,35 +3,88 @@
 import gulp   from 'gulp'
 import config from '../config'
 import fs     from 'fs'
+import metaData from 'meta-tag-data'
 
-gulp.task('buildDocs', function() {
-  var allDocs = {}
+const googleSiteVerification = 'U-V1sDR9guEOpzUdVlVGsBJuxfJd6c0SPRjeU8-_chk'
 
-  fs.readdirSync('app/docs/').forEach(function(docFilename) {
-    var key = docFilename.split('.')[0].toLowerCase()
-    var docProperties = {}
-    var docPage = fs.readFileSync('app/docs/' + docFilename, 'utf8')
-    var pageSections = docPage.split('---')
+function createMetatagMarkup(url, title, description, image) {
+  let metatagMarkup = '<meta charset="utf-8" />\n'
+  metatagMarkup += `<title>Blockstack - ${title}</title>\n`
+
+  let metadata = metaData('name', {
+    'description': description,
+    'viewport': 'width=device-width',
+    'google-site-verification': googleSiteVerification,
+    'twitter:card': 'summary',
+    'twitter:site': '@blockstackorg',
+    'twitter:title': title,
+    'twitter:description': description,
+    'twitter:image': image
+  })
+  metadata.forEach((datum) => {
+    metatagMarkup += `<meta name="${datum.name}" content="${datum.content}" />\n`
+  })
+  let metadata2 = metaData('property', {
+    'og:title': title,
+    'og:type': 'website',
+    'og:url': url,
+    'og:image': image,
+    'og:description': description
+  })
+  metadata2.forEach((datum) => {
+    metatagMarkup += `<meta property="${datum.property}" content="${datum.content}" />\n`
+  })
+
+  return metatagMarkup
+}
+
+gulp.task('buildDocs', () => {
+  let allDocs = {}
+
+  let indexHtml = fs.readFileSync('app/index.html', 'utf8')
+
+  fs.readdirSync('app/docs/').forEach((docFilename) => {
+    let key = docFilename.split('.')[0].toLowerCase(),
+        docProperties = {},
+        docPage = fs.readFileSync('app/docs/' + docFilename, 'utf8'),
+        pageSections = docPage.split('---')
+    
+    let description = '',
+        image = '',
+        title = '',
+        url = 'https://blockstack.org/docs/' + key
+
     if (pageSections.length === 3) {
       docProperties.markdown = pageSections[2]
-      var propertyLines = pageSections[1].split('\n')
-      propertyLines.map(function(propertyLine) {
+      let propertyLines = pageSections[1].split('\n')
+      propertyLines.map((propertyLine) => {
         if (propertyLine.split(': ').length === 2) {
-          var parts = propertyLine.split(': ')
-          var propertyName = parts[0],
+          let parts = propertyLine.split(': ')
+          let propertyName = parts[0],
               propertyValue = parts[1]
+          if (propertyName === 'description') {
+            description = propertyValue
+          }
+          if (propertyName === 'image') {
+            image = 'https://blockstack.org' + propertyValue
+          }
+          if (propertyName === 'title') {
+            title = propertyValue
+          }
           docProperties[propertyName] = propertyValue.trim()
         }
       })
     }
     allDocs[key] = docProperties
+
+    let metatagMarkup = createMetatagMarkup(url, title, description, image)
+    let modifiedIndex = indexHtml.replace('<meta charset="utf-8" />', metatagMarkup)
+    fs.writeFileSync('build/docs-' + key + '.html', modifiedIndex)
   })
 
-  fs.writeFile('app/docs.json', JSON.stringify(allDocs), function(err) {
+  fs.writeFile('app/docs.json', JSON.stringify(allDocs), (err) => {
     if (err) {
       throw err
     }
-    console.log('data saved')
   })
-
 })

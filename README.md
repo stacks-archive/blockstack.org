@@ -3,7 +3,6 @@ Blockstack Site
 
 A live version of this site can be found online at https://blockstack.org.
 
-
 ### Installation
 
 ```

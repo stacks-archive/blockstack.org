@@ -1,7 +1,7 @@
 ---
 title: Blockstack Papers
 description: Explore the Blockstack academic papers.
-image: https://images.unsplash.com/photo-1444427169197-de497742b62d
+image: /images/article-photos/glasses.jpg
 next: installation
 ---
 

@@ -23,6 +23,7 @@ export default (
       <Route path="/docs/:docSection" component={DocsPage} />
       <Route path="/about" component={DocsPage} />
       <Route path="/summit" component={SummitPage} />
+      <Route path="/asdf" component={NotFoundPage} />
 
       <Route path="*" component={NotFoundPage} />
 
