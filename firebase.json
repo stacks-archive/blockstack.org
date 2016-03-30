@@ -10,8 +10,82 @@
     "./unused/**",
     "firebase.json"
   ],
-  "rewrites": [{
-    "source": "**",
-    "destination": "/index.html"
-  }]
+  "rewrites": [
+    {
+      "source": "**",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/docs/404",
+      "destination": "/docs-404.html"
+    },
+    {
+      "source": "/docs/about",
+      "destination": "/docs-about.html"
+    },
+    {
+      "source": "/docs/basic-usage",
+      "destination": "/docs-basic-usage.html"
+    },
+    {
+      "source": "/docs/blockchain-id",
+      "destination": "/docs-blockchain-id.html"
+    },
+    {
+      "source": "/docs/blockstack-papers",
+      "destination": "/docs-blockstack-papers.html"
+    },
+    {
+      "source": "/docs/blockstack-profiles-js",
+      "destination": "/docs-blockstack-profiles-js.html"
+    },
+    {
+      "source": "/docs/blockstack-profiles-py",
+      "destination": "/docs-blockstack-profiles-py.html"
+    },
+    {
+      "source": "/docs/blockstack-vs-dns",
+      "destination": "/docs-blockstack-vs-dns.html"
+    },
+    {
+      "source": "/docs/blockstack-vs-namecoin",
+      "destination": "/docs-blockstack-vs-namecoin.html"
+    },
+    {
+      "source": "/docs/extended-usage",
+      "destination": "/docs-extended-usage.html"
+    },
+    {
+      "source": "/docs/faq",
+      "destination": "/docs-faq.html"
+    },
+    {
+      "source": "/docs/how-blockstack-works",
+      "destination": "/docs-how-blockstack-works.html"
+    },
+    {
+      "source": "/docs/identity-attestations",
+      "destination": "/docs-identity-attestations.html"
+    },
+    {
+      "source": "/docs/installation",
+      "destination": "/docs-installation.html"
+    },
+    {
+      "source": "/docs/light-clients",
+      "destination": "/docs-light-clients.html"
+    },
+    {
+      "source": "/docs/namespaces",
+      "destination": "/docs-namespaces.html"
+    },
+    {
+      "source": "/docs/pybitcoin",
+      "destination": "/docs-pybitcoin.html"
+    },
+    {
+      "source": "/docs/what-is-blockstack",
+      "destination": "/docs-what-is-blockstack.html"
+    }
+  ]
 }

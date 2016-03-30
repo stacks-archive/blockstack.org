@@ -12,7 +12,7 @@ gulp.task('dev', ['clean'], function(cb) {
   // Run all tasks once
   return runSequence([
     'makeBuildDir', 'sass', 'copyStyles', 'imagemin', 'browserify', 'copyFonts',
-    'copyIndex', 'copyIcons', 'copyFiles', 'buildDocs'
+    'copyIndex', 'copyIcons', 'copyFiles', 'buildDocs', 'configFirebase'
   ], 'watch', cb);
 
 });
