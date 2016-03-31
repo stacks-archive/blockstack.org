@@ -137,14 +137,14 @@ class ArticlePage extends Component {
           <Header />
         </div>
         <div className="hidden-image">
-          <Image src={headerImageSrc} onLoad={this.onImageLoad} retinaSupport={true} />
+          <Image src={headerImageSrc} onLoad={this.onImageLoad} retinaSupport={false} />
         </div>
         <div className="m-b-3 docs-header-image-wrapper">
           { currentPage !== null && this.state.imageLoading !== true ?
           <Image src={headerImageSrc}
             fallbackSrc="/images/article-photos/road.jpg"
             className="img-fluid docs-header-image"
-            retinaSupport={true} />
+            retinaSupport={false} />
           : null }
         </div>
         { currentPage.pageName !== 'about' ?
