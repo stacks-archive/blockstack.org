@@ -15,7 +15,7 @@ class Image extends Component {
     super(props)
 
     let src = this.props.src
-    if (isRetina()) {
+    if (this.props.retinaSupport && isRetina()) {
       src = src.replace('.jpg', '@2x.jpg')
     }
     this.state = {

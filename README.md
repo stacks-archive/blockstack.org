@@ -1,5 +1,6 @@
-Blockstack Site
-============
+# Blockstack Site
+
+[![Slack](http://slack.blockstack.org/badge.svg)](http://slack.blockstack.org/)
 
 A live version of this site can be found online at https://blockstack.org.
 
