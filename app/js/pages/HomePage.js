@@ -14,7 +14,7 @@ class HomePage extends Component {
     super(props)
 
     this.state = {
-      nameCount: 49500,
+      nameCount: 55000,
       slackUserCount: 650,
       contributorCount: 19
     }
@@ -103,7 +103,7 @@ class HomePage extends Component {
           <div className="container bs-docs-featurette col-centered">
             <div className="col-centered">
               <div className="row col-centered">
-                <Link to="https://blockstackstats.com" target="_blank">
+                <Link to="http://stats.blockstack.org" target="_blank">
                   <div className="col-md-4 feature-panel">
                     <p className="lead bs-lead">
                       Records registered
@@ -195,18 +195,6 @@ class HomePage extends Component {
             <div className="col-centered">
               <div className="row col-centered">
                 <div className="col-md-4 feature-panel">
-                  <h4 className="inverse-heading">Forum</h4>
-                  <p className="inverse-lead">
-                    Learn from others on the forum
-                  </p>
-                  <p>
-                    <Link to="https://forum.blockstack.org/" role="button" target="_blank"
-                      className="btn btn-sm btn-outline-secondary m-b-2">
-                      Join the Forum
-                    </Link>
-                  </p>
-                </div>
-                <div className="col-md-4 feature-panel">
                   <h4 className="inverse-heading">Slack</h4>
                   <p className="inverse-lead">
                     Live chat with other Blockstackers
@@ -219,14 +207,26 @@ class HomePage extends Component {
                   </p>
                 </div>
                 <div className="col-md-4 feature-panel">
-                  <h4 className="inverse-heading">Blog</h4>
+                  <h4 className="inverse-heading">Reddit</h4>
                   <p className="inverse-lead">
-                    Read articles posted by the community
+                    Post on the subreddit
+                  </p>
+                  <p>
+                    <Link to="http://reddit.com/r/blockstack" role="button" target="_blank"
+                      className="btn btn-sm btn-outline-secondary m-b-2">
+                      Join the Subreddit
+                    </Link>
+                  </p>
+                </div>
+                <div className="col-md-4 feature-panel">
+                  <h4 className="inverse-heading">Medium</h4>
+                  <p className="inverse-lead">
+                    Read posts by community members
                   </p>
                   <p>
                     <Link to="https://medium.com/blockstack-review" role="button" target="_blank"
                       className="btn btn-sm btn-outline-secondary m-b-2">
-                      Read the Blog
+                      Follow the Medium Blog
                     </Link>
                   </p>
                 </div>
