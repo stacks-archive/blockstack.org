@@ -42,7 +42,7 @@ class Footer extends Component {
               <ul className="foot-menu list-unstyled">
                 <li>Community</li>
                 <li>
-                  <Link to="https://forum.blockstack.org/" target="_blank">Forum</Link>
+                  <Link to="https://www.reddit.com/r/blockstack" target="_blank">Subreddit</Link>
                 </li>
                 <li>
                   <Link to="http://chat.blockstack.org" target="_blank">Slack Group</Link>
