@@ -75,9 +75,6 @@ class Header extends Component {
                   <Link to="/docs/namespaces" className="dropdown-item">
                     Namespaces
                   </Link>
-                  <Link to="/docs/light-clients" className="dropdown-item">
-                    Light Clients
-                  </Link>
                 </div>
               </li>
               <li className="nav-item dropdown hidden-sm-down">
