@@ -25,7 +25,7 @@ html, body {overflow-y:scroll; /* has to be scroll, not auto */ -webkit-overflow
 
 /* Navbar */
 /* Reviewed */.navbar{padding-top:.375rem;padding-bottom:.625rem}
-/* Reviewed */.navbar-brand{width:5.75rem;}
+/* Reviewed */.navbar-brand{width:5.938rem;}
 /* Reviewed */a.nav-link{color:rgba(255,255,255,0.65);font-size:.8125rem;margin-top:.25rem;}
 /* Reviewed */a.nav-link:hover,a.nav-link:focus{color:rgba(255,255,255,1);}
 /* Reviewed */.nav-item:first-child{margin-left:.625rem;}
