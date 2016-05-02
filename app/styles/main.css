@@ -68,6 +68,7 @@ html, body {-webkit-overflow-scrolling:touch;}
 .social-type{font-size:1.125rem;margin-left:0;margin-top:-20px;}
 .back-docs{position:absolute;margin-left:-20px; margin-top:-55px;}
 a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
+/* Reviewed */.link-stats{text-decoration:none;}
 
 /* Summit page */
 /* Reviewed */.summit-head-wrap{background:url(/images/visuals/summ-dht.png)no-repeat center -50px;background-color:#53206f;}

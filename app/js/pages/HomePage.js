@@ -103,7 +103,7 @@ class HomePage extends Component {
           <div className="container bs-docs-featurette col-centered">
             <div className="col-centered">
               <div className="row col-centered">
-                <Link to="http://stats.blockstack.org" target="_blank">
+                <Link className="link-stats" to="http://stats.blockstack.org" target="_blank">
                   <div className="col-md-4 feature-panel">
                     <p className="lead bs-lead">
                       Records registered
@@ -111,7 +111,7 @@ class HomePage extends Component {
                     <h1 className="stats-count">{this.state.nameCount}</h1>
                   </div>
                 </Link>
-                <Link to="http://blockstack.slackarchive.io/lounge/" target="_blank">
+                <Link className="link-stats" to="http://blockstack.slackarchive.io/lounge/" target="_blank">
                   <div className="col-md-4 feature-panel">
                     <p className="lead bs-lead">
                       Community members
@@ -119,7 +119,7 @@ class HomePage extends Component {
                     <h1 className="stats-count">{this.state.slackUserCount}</h1>
                   </div>
                 </Link>
-                <Link to="https://github.com/blockstack/blockstack/blob/master/overview.md#contributors" target="_blank">
+                <Link className="link-stats" to="https://github.com/blockstack/blockstack/blob/master/overview.md#contributors" target="_blank">
                   <div className="col-md-4 feature-panel">
                     <p className="lead bs-lead">
                       Code contributors
