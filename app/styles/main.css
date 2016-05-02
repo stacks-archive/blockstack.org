@@ -7,7 +7,7 @@
 
 
 /* Base structure */
-html, body {overflow-y:scroll; /* has to be scroll, not auto */ -webkit-overflow-scrolling:touch;}
+html, body {-webkit-overflow-scrolling:touch;}
 /* Reviewed */body{padding-top:0;padding-bottom:0;}
 
 /* Globals */
@@ -203,6 +203,7 @@ footer > li{list-style:none;}
   .paper-section{padding-top:65px;padding-bottom:65px;}
   .nav-header{padding-left:15px;padding-right:15px;}
 }
+.dropdown-toggle::after{background-image:}
 
 
 
