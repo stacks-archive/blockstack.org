@@ -91,7 +91,7 @@ class HomePage extends Component {
                     className="btn btn-lg btn-primary btn-block">
                     Read the Docs
                   </Link>
-                  <Link to="http://chat.blockstack.org/" role="button"
+                  <Link to="http://chat.blockstack.org/" target="_blank" role="button"
                     className="btn btn-lg btn-secondary btn-block">
                     Join the Slack
                   </Link>
