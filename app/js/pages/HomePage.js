@@ -14,8 +14,8 @@ class HomePage extends Component {
     super(props)
 
     this.state = {
-      nameCount: 55000,
-      slackUserCount: 650,
+      nameCount: 56000,
+      slackUserCount: 720,
       contributorCount: 19
     }
 
@@ -79,16 +79,21 @@ class HomePage extends Component {
             <section className="hero">
               <div className="col-xs-12 col-sm-12 col-md-6">
                 <h1 className="hero-head">
-                  The Global Internet Database
+                  The Blockchain Application Stack
                 </h1>
                 <p className="lead hero-lead col-md-11">
-                  A global database for people, companies, websites and more.
-                  Decentralized, privacy-centric, and blockchain-secured.
+                  Build decentralized, server-less apps by plugging into
+                  Blockstack's services for
+                  identity, naming, storage, and authentication.
                 </p>
                 <p className="no-padding col-md-6">
                   <Link to="/docs" role="button"
-                    className="btn btn-lg btn-primary btn-block btn-hero">
-                    Get Started
+                    className="btn btn-lg btn-primary btn-block">
+                    Read the Docs
+                  </Link>
+                  <Link to="http://chat.blockstack.org/" role="button"
+                    className="btn btn-lg btn-secondary btn-block">
+                    Join the Slack
                   </Link>
                 </p>
               </div>
@@ -274,7 +279,7 @@ class HomePage extends Component {
               <div className="container col-xs-11 col-centered">
                 <hgroup>
                   <h2 className="col-md-10 col-lg-8 col-centered action-title">
-                    Start Using the Global Internet Database
+                    Start Using the Blockchain Application Stack
                   </h2>
                 </hgroup>
                 <div>
