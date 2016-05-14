@@ -254,11 +254,11 @@ class HomePage extends Component {
                     <h4 className="feat-pan">Community Overview</h4>
                     <p className="lead">
                       The Blockstack community is a group of blockchain developers,
-                      companies and organizations coming together to define and
+                      companies, and organizations coming together to define and
                       develop a set of software protocols and tools to serve as a
-                      common identity and naming backend for blockchain-powered applications.
-                      We welcome all developers and companies that are interested
-                      in joining the consortium and contributing to Blockstack development.
+                      common identity and naming infrastructure for blockchain-powered applications.
+                      We welcome all developers who are interested
+                      in joining the community and contributing to Blockstack development.
                     </p>
                 </div>
               </div>
