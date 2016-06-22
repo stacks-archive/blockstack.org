@@ -7,7 +7,7 @@
 
 
 /* Base structure */
-html, body {overflow-y:scroll; /* has to be scroll, not auto */ -webkit-overflow-scrolling:touch;}
+html, body {-webkit-overflow-scrolling:touch;}
 /* Reviewed */body{padding-top:0;padding-bottom:0;}
 
 /* Globals */
@@ -25,7 +25,7 @@ html, body {overflow-y:scroll; /* has to be scroll, not auto */ -webkit-overflow
 
 /* Navbar */
 /* Reviewed */.navbar{padding-top:.375rem;padding-bottom:.625rem}
-/* Reviewed */.navbar-brand{width:5.75rem;}
+/* Reviewed */.navbar-brand{width:5.938rem;}
 /* Reviewed */a.nav-link{color:rgba(255,255,255,0.65);font-size:.8125rem;margin-top:.25rem;}
 /* Reviewed */a.nav-link:hover,a.nav-link:focus{color:rgba(255,255,255,1);}
 /* Reviewed */.nav-item:first-child{margin-left:.625rem;}
@@ -68,6 +68,7 @@ html, body {overflow-y:scroll; /* has to be scroll, not auto */ -webkit-overflow
 .social-type{font-size:1.125rem;margin-left:0;margin-top:-20px;}
 .back-docs{position:absolute;margin-left:-20px; margin-top:-55px;}
 a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
+/* Reviewed */.link-stats{text-decoration:none;}
 
 /* Summit page */
 /* Reviewed */.summit-head-wrap{background:url(/images/visuals/summ-dht.png)no-repeat center -50px;background-color:#53206f;}
@@ -203,6 +204,7 @@ footer > li{list-style:none;}
   .paper-section{padding-top:65px;padding-bottom:65px;}
   .nav-header{padding-left:15px;padding-right:15px;}
 }
+.dropdown-toggle::after{background-image:}
 
 
 
