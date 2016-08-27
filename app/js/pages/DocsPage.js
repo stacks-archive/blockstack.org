@@ -14,7 +14,11 @@ class DocsPage extends Component {
     const pageRows = [
       {
         title: 'Overview',
-        items: ['what-is-blockstack', 'how-blockstack-works', 'blockstack-papers']
+        items: ['what-is-blockstack', 'how-blockstack-works', '']
+      },
+      {
+        title: 'Papers',
+        items: ['blockstack-papers', 'virtualchain-paper', 'login-paper']
       },
       {
         title: 'Command Line Interface',
