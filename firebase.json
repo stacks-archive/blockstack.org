@@ -68,12 +68,20 @@
       "destination": "/docs-light-clients.html"
     },
     {
+      "source": "/docs/login-paper",
+      "destination": "/docs-login-paper.html"
+    },
+    {
       "source": "/docs/namespaces",
       "destination": "/docs-namespaces.html"
     },
     {
       "source": "/docs/pybitcoin",
       "destination": "/docs-pybitcoin.html"
+    },
+    {
+      "source": "/docs/virtualchain-paper",
+      "destination": "/docs-virtualchain-paper.html"
     },
     {
       "source": "/docs/what-is-blockstack",

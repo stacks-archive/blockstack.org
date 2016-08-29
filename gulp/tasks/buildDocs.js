@@ -58,10 +58,10 @@ gulp.task('buildDocs', () => {
       docProperties.markdown = pageSections[2]
       let propertyLines = pageSections[1].split('\n')
       propertyLines.map((propertyLine) => {
-        if (propertyLine.split(': ').length === 2) {
+        if (propertyLine.split(': ').length >= 2) {
           let parts = propertyLine.split(': ')
           let propertyName = parts[0],
-              propertyValue = parts[1]
+              propertyValue = parts.slice(1).join(': ')
           if (propertyName === 'description') {
             description = propertyValue
           }
