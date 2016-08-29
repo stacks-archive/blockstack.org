@@ -12,10 +12,6 @@
   ],
   "rewrites": [
     {
-      "source": "/docs/",
-      "destination": "/docs-.html"
-    },
-    {
       "source": "/docs/404",
       "destination": "/docs-404.html"
     },
