@@ -23,15 +23,15 @@ class CommunityMember extends Component {
           <Image src={this.props.avatar} className="avatar-lg" />
         </Link>
         <h3 className="center">{this.props.name}</h3>
-        { this.props.github ?
-        <Link to={"https://angel.co/" + this.props.github} target="_blank">
-          <i className="fa fa-github fa-lg">
-          </i>
-        </Link>
-        : null }
         { this.props.twitter ?
         <Link to={"https://twitter.com/" + this.props.twitter} target="_blank">
           <i className="fa fa-twitter fa-lg">
+          </i>
+        </Link>
+        : null }
+        { this.props.github ?
+        <Link to={"https://github.com/" + this.props.github} target="_blank">
+          <i className="fa fa-github fa-lg">
           </i>
         </Link>
         : null }
