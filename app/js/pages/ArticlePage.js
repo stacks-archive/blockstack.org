@@ -115,7 +115,7 @@ class ArticlePage extends Component {
       <div>
         { currentPage ?
         <Helmet
-          title={`Blockstack- ${currentPage.title}`}
+          title={`Blockstack - ${currentPage.title}`}
           meta={[
             {"name": "description", "content": currentPage.description },
 
