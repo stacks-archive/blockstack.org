@@ -88,7 +88,12 @@ class HomePage extends Component {
                 <p className="no-padding col-md-8">
                   <Link to="/docs" role="button"
                     className="btn btn-lg btn-primary btn-block">
-                    Join the New Web
+                    Join Waiting List
+                  </Link>
+                </p>
+                <p className="no-padding col-md-8" style={{ display: 'none' }}>
+                  <Link to="/docs" className="nav-link">
+                    Read the Docs
                   </Link>
                 </p>
               </div>
@@ -99,6 +104,124 @@ class HomePage extends Component {
             </section>
           </div>
         </div>
+        <section className="container-fluid stats-section">
+          <div className="bs-docs-featurette col-centered m-b-5">
+            <div className="container col-centered">
+              <div className="row col-centered">
+               <div className="col-md-12 feature-panel">
+                  <h2 className="displayed">
+                    Blockstack is Making the Decentralized Web Possible
+                  </h2>
+                </div>
+              </div>
+              <div className="row works col-centered">
+                <div className="col-sm-6">
+                    <div className="container wrap-mob-feat">
+                      <img src="/images/icons/mini-decentralized.svg"
+                        className="img-responsive" alt="Decentralized icon" />
+                    </div>
+                    <h4>The web, once open, has been hijacked by the powerful few</h4>
+                    <p className="lead">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <div className="col-sm-6">
+                    <div className="container wrap-mob-feat">
+                      <img src="/images/icons/mini-decentralized.svg"
+                        className="img-responsive" alt="Decentralized icon" />
+                    </div>
+                    <h4>Decentralization enables greater developer inclusion, freedom, and innovation</h4>
+                    <p className="lead">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+              </div>
+              <div className="row works col-centered">
+                <div className="col-sm-6">
+                    <div className="container wrap-mob-feat">
+                      <img src="/images/icons/mini-decentralized.svg"
+                        className="img-responsive" alt="Decentralized icon" />
+                    </div>
+                    <h4>Users benefit from more options, availability, savings, & info security</h4>
+                    <p className="lead">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <div className="col-sm-6">
+                    <div className="container wrap-mob-feat">
+                      <img src="/images/icons/mini-decentralized.svg"
+                        className="img-responsive" alt="Decentralized icon" />
+                    </div>
+                    <h4>Building great products shouldn't require managing servers, databases & ID systems</h4>
+                    <p className="lead">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </section>
+        <section className="foot-feature col-centered"
+          style={{ paddingTop: '50px', paddingBottom: '50px' }}>
+          <div className="container-fluid bs-docs-featurette col-centered">
+            <div className="col-centered m-b-5">
+              <div className="row col-centered">
+                <h2 className="col-md-10 col-lg-8 col-centered m-b-2">
+                  How Blockstack Works
+                </h2>
+                <div className="container">
+                  <img src="/images/visuals/layer-diagram.png"
+                    className="img-responsive" alt="Blockstack layer diagram" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="container-fluid col-3-section">
+          <div className="container bs-docs-featurette col-centered">
+            <div className="col-centered">
+              <div className="row col-centered">
+                <div className="col-md-12 feature-panel">
+                  <h2 className="displayed">
+                    How to Build on Blockstack
+                  </h2>
+                </div>
+              </div>
+              <div className="row col-centered">
+                <div className="col-md-4 feature-panel">
+                  <div className="container wrap-mob-feat">
+                    <img src="/images/icons/community-globe.svg"
+                      className="img-responsive" alt="Community globe icon" />
+                  </div>
+                  <h4>1. Create a single-page web app w/ HTML, JS + CSS</h4>
+                </div>
+                <div className="col-md-4 feature-panel">
+                  <div className="container wrap-mob-feat">
+                    <img src="/images/icons/community-globe.svg"
+                      className="img-responsive" alt="Community globe icon" />
+                  </div>
+                  <h4>2. Install blockstack.js & plug into auth & storage functions</h4>
+                </div>
+                <div className="col-md-4 feature-panel">
+                  <div className="container wrap-mob-feat">
+                    <img src="/images/icons/community-globe.svg"
+                      className="img-responsive" alt="Community globe icon" />
+                  </div>
+                  <h4>3. Register a domain for the app, adding it to the directory</h4>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
         <section className="container-fluid stats-section">
           <div className="container bs-docs-featurette col-centered">
             <div className="col-centered">
@@ -131,64 +254,38 @@ class HomePage extends Component {
             </div>
           </div>
         </section>
-        <section className="container-fluid col-3-section">
-          <div className="container bs-docs-featurette col-centered">
-            <div className="col-centered">
-              <div className="row col-centered">
-                <div className="col-md-4 feature-panel">
-                  <div className="container wrap-mob-feat">
-                    <img src="/images/icons/mini-decentralized.svg"
-                      className="img-responsive" alt="Decentralized icon" />
-                  </div>
-                    <h4>Decentralized</h4>
-                    <p className="lead bs-lead">
-                      Enables applications without any central points of failure.
-                    </p>
-                </div>
-                <div className="col-md-4 feature-panel">
-                  <div className="container wrap-mob-feat">
-                    <img src="/images/icons/open-source.svg"
-                      className="img-responsive" alt="Open source icon" />
-                  </div>
-                  <h4>Open Source</h4>
-                  <p className="lead bs-lead">
-                    Built with code that is free to inspect, modify, and reuse.
-                  </p>
-                </div>
-                <div className="col-md-4 feature-panel">
-                  <div className="container wrap-mob-feat">
-                    <img src="/images/icons/community-globe.svg"
-                      className="img-responsive" alt="Community globe icon" />
-                  </div>
-                  <h4>Privacy-centric</h4>
-                  <p className="lead bs-lead">
-                    User information is tightly controlled by the user.
-                  </p>
-                </div>
+        <section className="foot-feature col-centered">
+          <div className="container">
+            <div className="row">
+              <div className="container col-xs-11 col-centered">
+                <hgroup>
+                  <h2 className="col-md-10 col-lg-8 col-centered action-title">
+                    Apps Using Blockstack
+                  </h2>
+                </hgroup>
+                
               </div>
             </div>
           </div>
         </section>
-        <section className="container-fluid paper-section">
-          <div className="container bs-docs-featurette col-centered">
-            <div className="col-centered col-md-8">
-              <div className="col-md-6 paper-wrap">
-                  <Link to="/blockstack.pdf" role="button" target="_blank"
-                    className="btn btn-outline-primary btn-block btn-hero">
-                    Read the paper
-                  </Link>
-              </div>
-              <div className="col-md-6">
-                <p className="social-text">
-                  <span className="social-type">Star Blockstack on GitHub:</span>
-                  <iframe className="social-count"
-                    src="https://ghbtns.com/github-btn.html?user=blockstack&repo=blockstack-server&type=star&count=true"
-                    scrolling="0" width="95px" height="20px">
-                  </iframe>
-                </p>
+        <section>
+          <div className="bs-docs-featurette col-centered m-b-2">
+            <div className="container col-centered">
+              <div className="row works col-md-10 col-lg-8 col-centered">
+                <div className="col-sm-11 feature-panel col-centered"
+                  style={{ textAlign: 'left' }}>
+                    <h4 className="feat-pan">Building a Hello World App</h4>
+                    <p className="lead">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
               </div>
             </div>
-          </div>
+          </div>  
         </section>
         <section className="container-fluid inverse-3col-section">
           <div className="container bs-docs-featurette col-centered">
@@ -229,59 +326,6 @@ class HomePage extends Component {
                       Follow the Medium Blog
                     </Link>
                   </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div className="bs-docs-featurette col-centered m-b-2">
-            <div className="container col-centered">
-              <div className="displayed-wrap container col-md-8 col-lg-8 col-centered">
-                <h3 className="displayed">
-                  Blockstack enables application building
-                  in a more secure and resilient way by utilizing
-                  a global database, with built-in identity services and DNS.
-                </h3>
-              </div>
-              <div className="row works col-md-10 col-lg-8 col-centered">
-                <div className="col-sm-11 feature-panel col-centered">
-                    <h4 className="feat-pan">Community Overview</h4>
-                    <p className="lead">
-                      The Blockstack community is a group of blockchain developers,
-                      companies and organizations coming together to define and
-                      develop a set of software protocols and tools to serve as a
-                      common identity and naming backend for blockchain-powered applications.
-                      We welcome all developers and companies that are interested
-                      in joining the consortium and contributing to Blockstack development.
-                    </p>
-                </div>
-              </div>
-              <div className="displayed-wrap container col-md-8 col-lg-8 col-centered">
-                <h3 className="displayed">
-                  Our mission is to enable apps to
-                  remove central points of failure,
-                  increase security and reliability,
-                  and be more respectful of user data.
-                </h3>
-              </div>
-            </div>
-          </div>  
-        </section>
-        <section className="foot-feature col-centered">
-          <div className="container">
-            <div className="row">
-              <div className="container col-xs-11 col-centered">
-                <hgroup>
-                  <h2 className="col-md-10 col-lg-8 col-centered action-title">
-                    Start Using the Blockchain Application Stack
-                  </h2>
-                </hgroup>
-                <div>
-                  <Link to="/docs" role="button"
-                    className="btn btn-lg btn-special">
-                    View the Documentation
-                  </Link>
                 </div>
               </div>
             </div>

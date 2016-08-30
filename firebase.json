@@ -16,10 +16,6 @@
       "destination": "/docs-404.html"
     },
     {
-      "source": "/docs/about",
-      "destination": "/docs-about.html"
-    },
-    {
       "source": "/docs/basic-usage",
       "destination": "/docs-basic-usage.html"
     },
