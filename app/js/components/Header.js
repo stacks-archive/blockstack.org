@@ -76,7 +76,7 @@ class Header extends Component {
                 <Link to="https://github.com/blockstack" className="nav-link hidden-xs hidden-sm"
                   target="_blank">
                   <i className="fa fa-github"></i>
-                  <span>Github</span>
+                  <span>GitHub</span>
                 </Link>
               </li>
             </ul>
