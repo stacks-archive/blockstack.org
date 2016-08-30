@@ -79,27 +79,22 @@ class HomePage extends Component {
             <section className="hero">
               <div className="col-xs-12 col-sm-12 col-md-6">
                 <h1 className="hero-head">
-                  The Blockchain Application Stack
+                  The New <br/> Decentralized Web
                 </h1>
                 <p className="lead hero-lead col-md-11">
-                  Build decentralized, server-less apps by plugging into
-                  Blockstack's services for
-                  identity, naming, storage, and authentication.
+                  Build decentralized apps that run on user devices and
+                  put them in control of their data.
                 </p>
-                <p className="no-padding col-md-6">
+                <p className="no-padding col-md-8">
                   <Link to="/docs" role="button"
                     className="btn btn-lg btn-primary btn-block">
-                    Read the Docs
-                  </Link>
-                  <Link to="http://chat.blockstack.org/" target="_blank" role="button"
-                    className="btn btn-lg btn-secondary btn-block">
-                    Join the Slack
+                    Join the New Web
                   </Link>
                 </p>
               </div>
               <div className="col-sm-8 offset-sm-2 col-md-6 offset-md-0 hidden-sm-down">
                 <img className="hero-img"
-                  src="/images/visuals/hero-pip-install-blockstack.svg" />
+                  src="" />
               </div>
             </section>
           </div>
