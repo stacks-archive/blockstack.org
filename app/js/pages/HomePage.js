@@ -88,7 +88,7 @@ class HomePage extends Component {
                 <p className="no-padding col-md-8">
                   <Link to="/docs" role="button"
                     className="btn btn-lg btn-primary btn-block">
-                    Join Waiting List
+                    Get Access!
                   </Link>
                 </p>
                 <p className="no-padding col-md-8" style={{ display: 'none' }}>

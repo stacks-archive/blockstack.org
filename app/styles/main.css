@@ -7,7 +7,7 @@
 
 
 /* Base structure */
-html, body {-webkit-overflow-scrolling:touch;font-family: 'Source Code Pro', monospace;}
+html, body {-webkit-overflow-scrolling:touch;}
 /* Reviewed */body{padding-top:0;padding-bottom:0;}
 
 /* Spacing */
