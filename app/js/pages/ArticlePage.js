@@ -111,6 +111,8 @@ class ArticlePage extends Component {
 
     const headerImageSrc = this.state.currentPage ? this.state.currentPage.image : null
 
+    const pathPrefix = '/' + location.pathname.split('/')[1]
+
     return (
       <div>
         { currentPage ?
@@ -169,7 +171,7 @@ class ArticlePage extends Component {
                 <div>
                   <div className="col-md-4 pull-l-padding">
                     <h3>Next Article</h3>
-                    <CardLink href={`/docs/${nextPage.pageName}`}
+                    <CardLink href={`${pathPrefix}/${nextPage.pageName}`}
                       title={nextPage.title} body={nextPage.description}
                       imageSrc={nextPage.image} />
                   </div>
