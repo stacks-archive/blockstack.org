@@ -40,7 +40,7 @@ class ArticlesIndexPage extends Component {
           <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
           </div>
-          <ArticleIndex pageRows={pageRows} docs={docs} pathPrefix='/articles' />
+          <ArticleIndex pageRows={pageRows} docs={docs} pathPrefix='/learn' />
           <Footer />
         </div>
       </DocumentTitle>

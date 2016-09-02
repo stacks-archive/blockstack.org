@@ -152,8 +152,8 @@ class ArticlePage extends Component {
         <nav className="container-fluid m-b-1 back-docs">
           <ul className="pagination">
             <li className="page-item">
-              <Link className="page-link" to="/docs" aria-label="Back">
-                <span aria-hidden="true">&laquo; Back to Docs</span>
+              <Link className="page-link" to={pathPrefix} aria-label="Back">
+                <span aria-hidden="true">&laquo; Back</span>
                 <span className="sr-only">Back</span>
               </Link>
             </li>
