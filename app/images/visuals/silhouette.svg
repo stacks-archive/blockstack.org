@@ -31,11 +31,11 @@
                     <g id="silhouette" filter="url(#filter-1)">
                         <rect id="window-copy" fill="#151515" x="1" y="0" width="339" height="239" rx="6"></rect>
                         <use id="window" stroke="#FFFFFF" mask="url(#mask-3)" stroke-width="7.5" stroke-dasharray="12,7.5" opacity="0.304477612" xlink:href="#path-2"></use>
-                        <g id="line" opacity="0.304477612">
+                        <g id="line" opacity="0.25">
                             <use fill="#151515" fill-rule="evenodd" xlink:href="#path-4"></use>
                             <use stroke="#FFFFFF" mask="url(#mask-5)" stroke-width="4.5" stroke-dasharray="12,7.5" xlink:href="#path-4"></use>
                         </g>
-                        <text id="?" opacity="0.304477612" font-family="Raleway-SemiBold, Raleway" font-size="75" font-weight="500" fill="#FFFFFF">
+                        <text id="?" opacity="0.75" font-family="Raleway-SemiBold, Raleway" font-size="75" font-weight="500" fill="#FFFFFF">
                             <tspan x="156.275" y="160">?</tspan>
                         </text>
                     </g>
