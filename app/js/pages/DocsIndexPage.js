@@ -15,6 +15,14 @@ class DocsIndexPage extends Component {
       {
         title: 'Command Line Interface',
         items: ['installation', 'basic-usage', 'extended-usage']
+      },
+      {
+        title: 'Tutorials',
+        items: ['tutorial-hello-world', 'tutorial-blogging', 'tutorial-package-manager']
+      },
+      {
+        title: '',
+        items: ['tutorial-filesharing', 'tutorial-social-networking', 'tutorial-crowdfunding']
       }
     ]
 
@@ -33,3 +41,10 @@ class DocsIndexPage extends Component {
 }
 
 export default DocsIndexPage
+
+/*
+      {
+        title: '',
+        items: ['tutorial-video-sharing', 'tutorial-doc-signing', 'tutorial-messaging']
+      }
+*/

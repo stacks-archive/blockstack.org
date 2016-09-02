@@ -24,9 +24,9 @@ export default (
 
       <Route path="/" component={HomePage} />
 
-      <Route path="/articles" component={ArticlesIndexPage} />
+      <Route path="/learn" component={ArticlesIndexPage} />
       <Route path="/docs" component={DocsIndexPage} />
-      <Route path="/articles/:docSection" component={ArticlePage} />
+      <Route path="/learn/:docSection" component={ArticlePage} />
       <Route path="/docs/:docSection" component={ArticlePage} />
 
       <Route path="/about" component={AboutPage} />

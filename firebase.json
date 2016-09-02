@@ -76,6 +76,42 @@
       "destination": "/docs-pybitcoin.html"
     },
     {
+      "source": "/docs/tutorial-blogging",
+      "destination": "/docs-tutorial-blogging.html"
+    },
+    {
+      "source": "/docs/tutorial-crowdfunding",
+      "destination": "/docs-tutorial-crowdfunding.html"
+    },
+    {
+      "source": "/docs/tutorial-doc-signing",
+      "destination": "/docs-tutorial-doc-signing.html"
+    },
+    {
+      "source": "/docs/tutorial-filesharing",
+      "destination": "/docs-tutorial-filesharing.html"
+    },
+    {
+      "source": "/docs/tutorial-hello-world",
+      "destination": "/docs-tutorial-hello-world.html"
+    },
+    {
+      "source": "/docs/tutorial-messaging",
+      "destination": "/docs-tutorial-messaging.html"
+    },
+    {
+      "source": "/docs/tutorial-package-manager",
+      "destination": "/docs-tutorial-package-manager.html"
+    },
+    {
+      "source": "/docs/tutorial-social-networking",
+      "destination": "/docs-tutorial-social-networking.html"
+    },
+    {
+      "source": "/docs/tutorial-video-sharing",
+      "destination": "/docs-tutorial-video-sharing.html"
+    },
+    {
       "source": "/docs/virtualchain-paper",
       "destination": "/docs-virtualchain-paper.html"
     },
