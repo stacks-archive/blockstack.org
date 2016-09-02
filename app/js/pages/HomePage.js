@@ -99,7 +99,7 @@ class HomePage extends Component {
               </div>
               <div className="col-sm-8 offset-sm-2 col-md-6 offset-md-0 hidden-sm-down">
                 <img className="hero-img"
-                  src="" />
+                  src="images/visuals/silhouette.svg" />
               </div>
             </section>
           </div>
