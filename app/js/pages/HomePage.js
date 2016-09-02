@@ -355,8 +355,8 @@ class HomePage extends Component {
               <div className="row works col-md-10 col-lg-8 col-centered">
                 <div className="col-sm-11 feature-panel col-centered"
                   style={{ textAlign: 'left' }}>
-                    <h4 className="feat-pan">Building a Hello World App</h4>
-                    <p className="lead">
+                    <h4 className="feat-pan text-xs-center">Building a Hello World App</h4>
+                    <p className="lead text-xs-center">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
