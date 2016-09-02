@@ -99,7 +99,7 @@ class HomePage extends Component {
               </div>
               <div className="col-sm-8 offset-sm-2 col-md-6 offset-md-0 hidden-sm-down">
                 <img className="hero-img"
-                  src="" />
+                  src="images/visuals/silhouette.svg" />
               </div>
             </section>
           </div>
@@ -177,9 +177,9 @@ class HomePage extends Component {
                 <h2 className="col-md-10 col-lg-8 col-centered m-b-2">
                   How Blockstack Works
                 </h2>
-                <div className="container">
-                  <img src="/images/visuals/layer-diagram.png"
-                    className="img-responsive" alt="Blockstack layer diagram" />
+                <div className="text-xs-center">
+                  <img src="/images/visuals/blockstack-diagram.svg"
+                    className="img-fluid col-centered" alt="Blockstack layer diagram" />
                 </div>
               </div>
             </div>
@@ -355,8 +355,8 @@ class HomePage extends Component {
               <div className="row works col-md-10 col-lg-8 col-centered">
                 <div className="col-sm-11 feature-panel col-centered"
                   style={{ textAlign: 'left' }}>
-                    <h4 className="feat-pan">Building a Hello World App</h4>
-                    <p className="lead">
+                    <h4 className="feat-pan text-xs-center">Building a Hello World App</h4>
+                    <p className="lead text-xs-center">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
