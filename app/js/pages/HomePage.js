@@ -391,6 +391,18 @@ class HomePage extends Component {
                   </p>
                 </div>
                 <div className="col-md-4 feature-panel">
+                  <h4 className="inverse-heading">Meetup</h4>
+                  <p className="inverse-lead">
+                    Join Meetup groups around the world
+                  </p>
+                  <p>
+                    <Link to="http://www.meetup.com/topics/blockstack/" role="button" target="_blank"
+                      className="btn btn-sm btn-outline-secondary m-b-2">
+                      Find a Meetup Group
+                    </Link>
+                  </p>
+                </div>
+                <div className="col-md-4 feature-panel">
                   <h4 className="inverse-heading">Reddit</h4>
                   <p className="inverse-lead">
                     Post on the subreddit
@@ -402,7 +414,10 @@ class HomePage extends Component {
                     </Link>
                   </p>
                 </div>
-                <div className="col-md-4 feature-panel">
+              </div>
+
+              <div className="row col-centered">
+                <div className="col-md-6 feature-panel">
                   <h4 className="inverse-heading">Medium</h4>
                   <p className="inverse-lead">
                     Read posts by community members
@@ -414,7 +429,20 @@ class HomePage extends Component {
                     </Link>
                   </p>
                 </div>
+                <div className="col-md-6 feature-panel">
+                  <h4 className="inverse-heading">YouTube</h4>
+                  <p className="inverse-lead">
+                    Watch videos on the YouTube channel
+                  </p>
+                  <p>
+                    <Link to="https://www.youtube.com/channel/UC3J2iHnyt2JtOvtGVf_jpHQ" role="button" target="_blank"
+                      className="btn btn-sm btn-outline-secondary m-b-2">
+                      Subscribe on YouTube
+                    </Link>
+                  </p>
+                </div>
               </div>
+
             </div>
           </div>
         </section>
