@@ -254,17 +254,98 @@ class HomePage extends Component {
             </div>
           </div>
         </section>
-        <section className="foot-feature col-centered">
-          <div className="container">
-            <div className="row">
-              <div className="container col-xs-11 col-centered">
-                <hgroup>
-                  <h2 className="col-md-10 col-lg-8 col-centered action-title">
-                    Apps Using Blockstack
+        <section className="container-fluid stats-section">
+          <div className="bs-docs-featurette col-centered sponsors-2-subsection" id="learnmore">
+            <div className="col-centered">
+              <div className="row col-centered">
+               <div className="col-md-12 feature-panel">
+                  <h2 className="displayed">
+                    Who's on Blockstack?
                   </h2>
-                </hgroup>
-                
+                </div>
               </div>
+              <div className="row col-sm-12 col-centered">
+                <div className="col-sm-4 feature-panel featpan-1">
+                  <div className="container wrap-mob-feat">
+                    <Link to="http://democracyos.org/">
+                      <img src="/images/logos/democracyos.svg" alt="DemocracyOS logo" width="240px"/>
+                    </Link>
+                  </div>
+                </div>
+                <div className="col-sm-4 feature-panel featpan-2">
+                  <div className="container wrap-mob-feat">
+                    <Link to="http://openbazaar.org/">
+                      <img src="/images/logos/openbazaar.svg" alt="OpenBazaar logo" width="180px"/>
+                    </Link>
+                  </div>
+                </div>
+                <div className="col-sm-4 feature-panel featpan-3">
+                  <div className="container wrap-mob-feat">
+                    <Link to="https://tierion.com/">
+                      <img src="/images/logos/tierion.svg"
+                      alt="Tierion logo" width="160px"/>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="row col-sm-12 col-centered">
+                <div className="col-sm-6 feature-panel featpan-4">
+                  <div className="container wrap-mob-feat">
+                    <Link to="http://bitseed.org/">
+                      <img src="/images/logos/bitseed.svg" alt="Bitseed logo" width="128px"/>
+                    </Link>
+                  </div>
+                </div>
+                <div className="col-sm-6 feature-panel featpan-5">
+                  <div className="container wrap-mob-feat">
+                    <Link to="http://trychord.com/">
+                      <img src="/images/logos/chord.svg" alt="Chord logo" width="110px"/>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <div className="row col-sm-12 col-centered">
+                <div className="col-sm-4 feature-panel featpan-1">
+                  <div className="container wrap-mob-feat">
+                    <Link to="http://anyshare.coop/">
+                      <img src="/images/logos/anyshare.svg" alt="Anyshare logo" width="180px"/>
+                    </Link>
+                  </div>
+                </div>
+                <div className="col-sm-4 feature-panel featpan-2">
+                  <div className="container wrap-mob-feat">
+                    <Link to="https://www.microsoft.com/">
+                      <img src="/images/logos/microsoft.png" alt="Microsoft logo" width="180px"/>
+                    </Link>
+                  </div>
+                </div>
+                <div className="col-sm-4 feature-panel featpan-3">
+                  <div className="container wrap-mob-feat">
+                    <Link to="http://consent.global">
+                      <img src="/images/logos/consent.svg" alt="Consent logo" width="120px"/>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <div className="row col-sm-12 col-centered">
+                <div className="col-sm-6 feature-panel featpan-4">
+                  <div className="container wrap-mob-feat">
+                    <Link to="http://arcade.city/">
+                      <img src="/images/logos/arcade-city.svg" alt="Arcade City logo" width="110px"/>
+                    </Link>
+                  </div>
+                </div>
+                <div className="col-sm-6 feature-panel featpan-4">
+                  <div className="container wrap-mob-feat">
+                    <Link to="https://www.yours.network/">
+                      <img src="/images/logos/yours-network.svg" alt="Yours Network logo" width="110px"/>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </section>
