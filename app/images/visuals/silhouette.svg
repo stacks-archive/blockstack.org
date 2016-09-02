@@ -13,30 +13,44 @@
                 <feMergeNode in="SourceGraphic"></feMergeNode>
             </feMerge>
         </filter>
-        <rect id="path-2" x="1" y="0" width="339" height="239" rx="6"></rect>
+        <rect id="path-2" x="0" y="0" width="339" height="239" rx="6"></rect>
         <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-3.75" y="-3.75" width="346.5" height="246.5">
-            <rect x="-2.75" y="-3.75" width="346.5" height="246.5" fill="white"></rect>
+            <rect x="-3.75" y="-3.75" width="346.5" height="246.5" fill="white"></rect>
             <use xlink:href="#path-2" fill="black"></use>
-        </mask>
-        <path d="M1,62.5595612 L339.655006,62.5595611" id="path-4"></path>
-        <mask id="mask-5" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2.25" y="-2.25" width="343.5" height="7.5">
-            <rect x="-1.5" y="59.1857367" width="343.5" height="7.5" fill="white"></rect>
-            <use xlink:href="#path-4" fill="black"></use>
         </mask>
     </defs>
     <g id="website-(blockstack)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="blockstack-v2-Home" transform="translate(-945.000000, -387.000000)">
             <g id="hero" transform="translate(335.000000, 183.000000)">
-                <g id="hero-pip-install-blockstack" transform="translate(636.000000, 228.000000)">
+                <g id="hero-pip-install-blockstack" transform="translate(637.000000, 228.000000)">
                     <g id="silhouette" filter="url(#filter-1)">
-                        <rect id="window-copy" fill="#151515" x="1" y="0" width="339" height="239" rx="6"></rect>
+                        <rect id="window-copy" fill="#151515" x="0" y="0" width="339" height="239" rx="6"></rect>
                         <use id="window" stroke="#FFFFFF" mask="url(#mask-3)" stroke-width="7.5" stroke-dasharray="12,7.5" opacity="0.304477612" xlink:href="#path-2"></use>
-                        <g id="line" opacity="0.25">
-                            <use fill="#151515" fill-rule="evenodd" xlink:href="#path-4"></use>
-                            <use stroke="#FFFFFF" mask="url(#mask-5)" stroke-width="4.5" stroke-dasharray="12,7.5" xlink:href="#path-4"></use>
+                        <g id="line" opacity="0.35" transform="translate(0.000000, 60.000000)" fill="#FFFFFF">
+                            <rect id="Rectangle" x="0" y="0" width="10" height="4"></rect>
+                            <rect id="Rectangle-Copy" x="16" y="0" width="10" height="4"></rect>
+                            <rect id="Rectangle-Copy-2" x="33" y="0" width="10" height="4"></rect>
+                            <rect id="Rectangle-Copy-3" x="49" y="0" width="10" height="4"></rect>
+                            <rect id="Rectangle-Copy-4" x="66" y="0" width="10" height="4"></rect>
+                            <rect id="Rectangle-Copy-5" x="82" y="0" width="10" height="4"></rect>
+                            <rect id="Rectangle-Copy-6" x="99" y="0" width="10" height="4"></rect>
+                            <rect id="Rectangle-Copy-7" x="115" y="0" width="10" height="4"></rect>
+                            <rect id="Rectangle-Copy-8" x="132" y="0" width="10" height="4"></rect>
+                            <rect id="Rectangle-Copy-9" x="148" y="0" width="10" height="4"></rect>
+                            <rect id="Rectangle-Copy-10" x="165" y="0" width="10" height="4"></rect>
+                            <rect id="Rectangle-Copy-11" x="181" y="0" width="10" height="4"></rect>
+                            <rect id="Rectangle-Copy-12" x="197" y="0" width="10" height="4"></rect>
+                            <rect id="Rectangle-Copy-13" x="214" y="0" width="10" height="4"></rect>
+                            <rect id="Rectangle-Copy-14" x="230" y="0" width="10" height="4"></rect>
+                            <rect id="Rectangle-Copy-15" x="247" y="0" width="10" height="4"></rect>
+                            <rect id="Rectangle-Copy-16" x="263" y="0" width="10" height="4"></rect>
+                            <rect id="Rectangle-Copy-17" x="280" y="0" width="10" height="4"></rect>
+                            <rect id="Rectangle-Copy-18" x="296" y="0" width="10" height="4"></rect>
+                            <rect id="Rectangle-Copy-19" x="313" y="0" width="10" height="4"></rect>
+                            <rect id="Rectangle-Copy-20" x="329" y="0" width="10" height="4"></rect>
                         </g>
                         <text id="?" opacity="0.75" font-family="Raleway-SemiBold, Raleway" font-size="75" font-weight="500" fill="#FFFFFF">
-                            <tspan x="156.275" y="160">?</tspan>
+                            <tspan x="155.275" y="160">?</tspan>
                         </text>
                     </g>
                 </g>
