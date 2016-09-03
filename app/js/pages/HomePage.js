@@ -198,22 +198,16 @@ class HomePage extends Component {
               <div className="row col-centered">
                 <div className="col-md-4 feature-panel">
                   <div className="container wrap-mob-feat">
-                    <img src="/images/icons/community-globe.svg"
-                      className="img-responsive" alt="Community globe icon" />
                   </div>
                   <h4>1. Create a single-page web app w/ HTML, JS + CSS</h4>
                 </div>
                 <div className="col-md-4 feature-panel">
                   <div className="container wrap-mob-feat">
-                    <img src="/images/icons/community-globe.svg"
-                      className="img-responsive" alt="Community globe icon" />
                   </div>
                   <h4>2. Install blockstack.js & plug into auth & storage functions</h4>
                 </div>
                 <div className="col-md-4 feature-panel">
                   <div className="container wrap-mob-feat">
-                    <img src="/images/icons/community-globe.svg"
-                      className="img-responsive" alt="Community globe icon" />
                   </div>
                   <h4>3. Register a domain for the app, adding it to the directory</h4>
                 </div>
