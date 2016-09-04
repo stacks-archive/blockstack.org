@@ -73,39 +73,41 @@ class HomePage extends Component {
   render() {
     return (
       <div>
-        <div className="container-fluid col-centered bg-primary-gradient block no-padding">
+        <div className="col-centered bg-primary-gradient block">
           <Header />
-          <div className="container hero-wrap">
-            <section className="hero">
-              <div className="col-xs-12 col-sm-12 col-md-5 no-padding">
-                <h1 className="hero-head">
-                  The New <br/>
-                  Decentralized Web
-                </h1>
-                <div className="container col-sm-8 offset-sm-2 col-md-7 offset-md-0 hidden-md-up">
-                  <img className="hero-img img-fluid pull-md-right"
-                    src="images/visuals/silhouette-sm.svg" />
+          <div className="container">
+            <div className="container hero-wrap">
+              <section className="hero">
+                <div className="col-xs-12 col-sm-12 col-md-5 no-padding">
+                  <h1 className="hero-head">
+                    The New <br/>
+                    Decentralized Web
+                  </h1>
+                  <div className="container col-sm-8 offset-sm-2 col-md-7 offset-md-0 hidden-md-up">
+                    <img className="hero-img img-fluid"
+                      src="images/visuals/silhouette-sm.svg" />
+                  </div>
+                  <p className="lead hero-lead col-md-11">
+                    Build decentralized apps that run on user devices and put them in control of their data.
+                  </p>
+                  <p className="no-padding col-md-8">
+                    <Link to="/docs" role="button"
+                      className="btn btn-lg btn-primary btn-block">
+                      Beta v0.1.0 Access!
+                    </Link>
+                  </p>
+                  <p className="no-padding col-md-8" style={{ display: 'none' }}>
+                    <Link to="/docs" className="nav-link">
+                      Read the Docs
+                    </Link>
+                  </p>
                 </div>
-                <p className="lead hero-lead col-md-11">
-                  Build decentralized apps that run on user devices and put them in control of their data.
-                </p>
-                <p className="no-padding col-md-8">
-                  <Link to="/docs" role="button"
-                    className="btn btn-lg btn-primary btn-block">
-                    Beta v0.1.0 Access!
-                  </Link>
-                </p>
-                <p className="no-padding col-md-8" style={{ display: 'none' }}>
-                  <Link to="/docs" className="nav-link">
-                    Read the Docs
-                  </Link>
-                </p>
-              </div>
-              <div className="container col-sm-8 offset-sm-2 col-md-7 offset-md-0 hidden-sm-down">
-                <img className="hero-img img-fluid pull-md-right"
-                  src="images/visuals/silhouette.svg" />
-              </div>
-            </section>
+                <div className="container-fluid col-sm-8 offset-sm-2 col-md-7 offset-md-0 hidden-sm-down">
+                  <img className="hero-img img-fluid pull-md-right"
+                    src="images/visuals/silhouette.svg" />
+                </div>
+              </section>
+            </div>
           </div>
         </div>
         <section className="container-fluid stats-section">
