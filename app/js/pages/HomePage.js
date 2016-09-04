@@ -98,7 +98,7 @@ class HomePage extends Component {
                 </p>
               </div>
               <div className="col-sm-8 offset-sm-2 col-md-7 offset-md-0 hidden-sm-down">
-                <img className="hero-img"
+                <img className="hero-img pull-right"
                   src="images/visuals/silhouette.svg" />
               </div>
             </section>
