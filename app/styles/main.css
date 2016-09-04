@@ -98,7 +98,7 @@ html, body {-webkit-overflow-scrolling:touch;}
 /* Spacing */
 
 /* Typography */
-/* Reviewed */h1.hero-head{margin-bottom:1.5rem;font-size:2rem;font-weight:300;text-align:center;margin-top:1rem;}
+/* Reviewed */h1.hero-head{margin-bottom:1.5rem;font-size:1.75rem;font-weight:300;text-align:center;margin-top:1rem;}
 /* Reviewed */.hero-lead{font-size:1rem;text-align:center;margin-bottom:2rem;}
 
 /* Navbar */
@@ -115,7 +115,7 @@ html, body {-webkit-overflow-scrolling:touch;}
 
 /* Other */
 /* Reviewed */.hero{color:rgba(255,255,255,1);}
-/* Reviewed */.hero-wrap{padding-top:1rem;padding-top:3.5rem;padding-bottom:8rem;}
+/* Reviewed */.hero-wrap{padding-top:.5rem;padding-bottom:6rem;}
 /* Reviewed */.col-3-section{padding-top:50px;padding-bottom:50px;background-color:rgba(248,249,251,1);border-bottom:1px solid #E6E6E6;}
 /* Reviewed */.about-head-wrap{padding-bottom:30px;background:url(/images/visuals/blockchain-timeline.png);background-repeat:no-repeat;background-position:center top;background-color:#53206f;}
 .highlight-box{padding-top:50px;padding-bottom:50px;background-color:#831ca8;color:rgba(255,255,255,1);}
@@ -132,7 +132,7 @@ html, body {-webkit-overflow-scrolling:touch;}
 .topic-wrap{max-width:275px;}
 .table-wrap{max-width:800px;}
 .table-striped > thead > tr > th{text-align:center;}
-.hero-img{max-width:13rem;margin-top:-35px;margin-right:-10px;}
+/* Reviewed */.hero-img{margin-top:-10px;}
 /* Reviewed */.card{width:100%;}
 /* Reviewed */.inverse-3col-section{background-color:#9A21C5;color:#fff;padding-top:30px;padding-bottom:25px;}
 /* Reviewed */.inverse-lead{font-weight:300;margin-bottom:35px;}
@@ -265,7 +265,6 @@ footer > li{list-style:none;}
   .highlight-box{padding-top:120px;padding-bottom:80px;}
   .feat-lead{margin-bottom:1px;}
   .topic{margin-bottom:5px;}
-  .hero-img{visibility:visible;max-width:none;}
   /* Reviewed */.card.card-1-of-1{width: 100% !important;}
   /* Reviewed */.card.card-1-of-2{width: 50% !important;}
   /* Reviewed */.card.card-1-of-3{width: 33.3333% !important;}
@@ -300,6 +299,7 @@ footer > li{list-style:none;}
   /* Hero */
   /* Reviewed */.hero-wrap{padding-top:11.5rem;padding-bottom:12.5rem;}
   .hero-head{padding-left:0;}
+  .hero-img{margin-top:-25px;margin-right:-10px;}
   .slides{padding-top:50px;padding-right:0;padding-left:0;}
   .wrap-mob-feat{max-width:230px;}
   .topic{margin-bottom:5px;}

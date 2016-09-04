@@ -73,7 +73,7 @@ class HomePage extends Component {
   render() {
     return (
       <div>
-        <div className="container-fluid col-centered bg-primary-gradient block">
+        <div className="container-fluid col-centered bg-primary-gradient block no-padding">
           <Header />
           <div className="container hero-wrap">
             <section className="hero">
@@ -82,13 +82,17 @@ class HomePage extends Component {
                   The New <br/>
                   Decentralized Web
                 </h1>
+                <div className="container col-sm-8 offset-sm-2 col-md-7 offset-md-0 hidden-md-up">
+                  <img className="hero-img img-fluid pull-md-right"
+                    src="images/visuals/silhouette-sm.svg" />
+                </div>
                 <p className="lead hero-lead col-md-11">
                   Build decentralized apps that run on user devices and put them in control of their data.
                 </p>
                 <p className="no-padding col-md-8">
                   <Link to="/docs" role="button"
                     className="btn btn-lg btn-primary btn-block">
-                    Get Early Access
+                    Beta v0.1.0 Access!
                   </Link>
                 </p>
                 <p className="no-padding col-md-8" style={{ display: 'none' }}>
@@ -97,8 +101,8 @@ class HomePage extends Component {
                   </Link>
                 </p>
               </div>
-              <div className="col-sm-8 offset-sm-2 col-md-7 offset-md-0 hidden-sm-down">
-                <img className="hero-img pull-right"
+              <div className="container col-sm-8 offset-sm-2 col-md-7 offset-md-0 hidden-sm-down">
+                <img className="hero-img img-fluid pull-md-right"
                   src="images/visuals/silhouette.svg" />
               </div>
             </section>
