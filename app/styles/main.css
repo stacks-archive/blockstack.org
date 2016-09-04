@@ -229,7 +229,7 @@ footer > li{list-style:none;}
   
   /* Globals */
   /* Reviewed */h1.hero-head{font-size:2.25rem;text-align:left;margin-top:0;}
-  /* Reviewed */.hero-lead{text-align:left;padding-left:0;padding-right:0;}
+  /* Reviewed */.hero-lead{text-align:left;padding-left:0;padding-right:0;margin-bottom:3rem;}
   /* Reviewed */.col-3-section{padding-bottom:50px;}
   /* Reviewed */.hero-head.summ-head{font-size:40px;}
   /* Reviewed */.hero-btn{padding-left:0;}

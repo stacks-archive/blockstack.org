@@ -78,13 +78,13 @@ class HomePage extends Component {
           <div className="container">
             <div className="container hero-wrap">
               <section className="hero">
-                <div className="col-md-5 no-padding">
+                <div className="col-md-6 col-lg-5 no-padding">
                   <h1 className="hero-head">
                     The New <br/>
                     Decentralized Web
                   </h1>
                   <div className="container no-padding">
-                    <div className="col-md-8 offset-md-2 col-md-7 offset-md-0 hidden-md-up">
+                    <div className="col-md-8 offset-md-2 col-md-7 offset-md-0 m-b-1 hidden-md-up">
                       <img className="container-fluid hero-img img-fluid"
                         src="images/visuals/silhouette-sm.svg" />
                     </div>
@@ -95,7 +95,7 @@ class HomePage extends Component {
                   <p className="no-padding col-md-8">
                     <Link to="/docs" role="button"
                       className="btn btn-lg btn-primary btn-block">
-                      Beta v0.1.0 Access!
+                      Get Beta v0.1.0 Access!
                     </Link>
                   </p>
                   <p className="no-padding col-md-8" style={{ display: 'none' }}>
@@ -104,7 +104,7 @@ class HomePage extends Component {
                     </Link>
                   </p>
                 </div>
-                <div className="container-fluid col-sm-8 offset-sm-2 col-md-7 offset-md-0 hidden-sm-down">
+                <div className="container-fluid col-md-6 col-lg-7 hidden-sm-down">
                   <img className="hero-img img-fluid pull-md-right"
                     src="images/visuals/silhouette.svg" />
                 </div>
