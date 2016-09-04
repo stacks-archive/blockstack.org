@@ -77,13 +77,13 @@ class HomePage extends Component {
           <Header />
           <div className="container hero-wrap">
             <section className="hero">
-              <div className="col-xs-12 col-sm-12 col-md-6">
+              <div className="col-xs-12 col-sm-12 col-md-5">
                 <h1 className="hero-head">
-                  The New <br/> Decentralized Web
+                  The New <br/>
+                  Decentralized Web
                 </h1>
                 <p className="lead hero-lead col-md-11">
-                  Build decentralized apps that run on user <br/>
-                  devices and put them in control of their data.
+                  Build decentralized apps that run on user devices and put them in control of their data.
                 </p>
                 <p className="no-padding col-md-8">
                   <Link to="/docs" role="button"
@@ -97,7 +97,7 @@ class HomePage extends Component {
                   </Link>
                 </p>
               </div>
-              <div className="col-sm-8 offset-sm-2 col-md-6 offset-md-0 hidden-sm-down">
+              <div className="col-sm-8 offset-sm-2 col-md-7 offset-md-0 hidden-sm-down">
                 <img className="hero-img"
                   src="images/visuals/silhouette.svg" />
               </div>
