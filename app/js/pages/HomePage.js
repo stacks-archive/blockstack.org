@@ -77,7 +77,7 @@ class HomePage extends Component {
           <Header />
           <div className="container hero-wrap">
             <section className="hero">
-              <div className="col-xs-12 col-sm-12 col-md-5">
+              <div className="col-xs-12 col-sm-12 col-md-5 no-padding">
                 <h1 className="hero-head">
                   The New <br/>
                   Decentralized Web
