@@ -82,8 +82,8 @@ class HomePage extends Component {
                   The New <br/> Decentralized Web
                 </h1>
                 <p className="lead hero-lead col-md-11">
-                  Build decentralized apps that run on user devices and
-                  put them in control of their data.
+                  Build decentralized apps that run on user <br/>
+                  devices and put them in control of their data.
                 </p>
                 <p className="no-padding col-md-8">
                   <Link to="/docs" role="button"
