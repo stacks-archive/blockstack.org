@@ -78,14 +78,16 @@ class HomePage extends Component {
           <div className="container">
             <div className="container hero-wrap">
               <section className="hero">
-                <div className="col-xs-12 col-sm-12 col-md-5 no-padding">
+                <div className="col-md-5 no-padding">
                   <h1 className="hero-head">
                     The New <br/>
                     Decentralized Web
                   </h1>
-                  <div className="container col-sm-8 offset-sm-2 col-md-7 offset-md-0 hidden-md-up">
-                    <img className="hero-img img-fluid"
-                      src="images/visuals/silhouette-sm.svg" />
+                  <div className="container no-padding">
+                    <div className="col-md-8 offset-md-2 col-md-7 offset-md-0 hidden-md-up">
+                      <img className="container-fluid hero-img img-fluid"
+                        src="images/visuals/silhouette-sm.svg" />
+                    </div>
                   </div>
                   <p className="lead hero-lead col-md-11">
                     Build decentralized apps that run on user devices and put them in control of their data.
