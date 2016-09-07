@@ -122,6 +122,7 @@ html, body {-webkit-overflow-scrolling:touch;}
 .slides{padding-right:10px;padding-left:10px;}
 .feat-lead{margin-bottom:15px;}
 /* Reviewed */.feature-panel{margin-top:20px;margin-bottom:40px;text-align:center;padding-top:25px;}
+/* Reviewed */.feature-panel-2{margin-top:0px;margin-bottom:0px;text-align:center;padding-top:0px;}
 /* Reviewed */.feature-panel > img{margin:0 auto;padding:0 15%;}
 /* Reviewed */.feature-panel > h3{display:block;margin-bottom:10px;}
 /* Reviewed */.spacing-container{padding-top:102px;padding-bottom:50px;background-color:rgba(248,249,251,1);}

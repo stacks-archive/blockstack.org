@@ -95,7 +95,7 @@ class HomePage extends Component {
                   <p className="no-padding col-md-8">
                     <Link to="/docs" role="button"
                       className="btn btn-lg btn-primary btn-block">
-                      Get Beta v0.1.0 Access!
+                      Get Early Access
                     </Link>
                   </p>
                   <p className="no-padding col-md-8" style={{ display: 'none' }}>
@@ -377,10 +377,10 @@ class HomePage extends Component {
           </div>  
         </section>
         <section className="container-fluid inverse-3col-section">
-          <div className="container bs-docs-featurette col-centered">
+          <div className="container bs-docs-featurette col-centered m-t-2 m-b-2">
             <div className="col-centered">
               <div className="row col-centered">
-                <div className="col-md-4 feature-panel">
+                <div className="col-md-4 feature-panel-2">
                   <h4 className="inverse-heading">Slack</h4>
                   <p className="inverse-lead">
                     Live chat with other Blockstackers
@@ -392,7 +392,7 @@ class HomePage extends Component {
                     </Link>
                   </p>
                 </div>
-                <div className="col-md-4 feature-panel">
+                <div className="col-md-4 feature-panel-2">
                   <h4 className="inverse-heading">Meetup</h4>
                   <p className="inverse-lead">
                     Join Meetup groups around the world
@@ -404,10 +404,10 @@ class HomePage extends Component {
                     </Link>
                   </p>
                 </div>
-                <div className="col-md-4 feature-panel">
+                <div className="col-md-4 feature-panel-2">
                   <h4 className="inverse-heading">Reddit</h4>
                   <p className="inverse-lead">
-                    Post on the subreddit
+                    Share and discuss on the subreddit
                   </p>
                   <p>
                     <Link to="http://reddit.com/r/blockstack" role="button" target="_blank"
@@ -419,7 +419,7 @@ class HomePage extends Component {
               </div>
 
               <div className="row col-centered">
-                <div className="col-md-6 feature-panel">
+                <div className="col-md-4 offset-md-2 feature-panel-2">
                   <h4 className="inverse-heading">Medium</h4>
                   <p className="inverse-lead">
                     Read posts by community members
@@ -431,7 +431,7 @@ class HomePage extends Component {
                     </Link>
                   </p>
                 </div>
-                <div className="col-md-6 feature-panel">
+                <div className="col-md-4 feature-panel-2">
                   <h4 className="inverse-heading">YouTube</h4>
                   <p className="inverse-lead">
                     Watch videos on the YouTube channel
