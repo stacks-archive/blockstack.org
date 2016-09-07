@@ -16,7 +16,7 @@ class HomePage extends Component {
     this.state = {
       nameCount: 60000,
       slackUserCount: 1100,
-      meetupUserCount: 1407
+      meetupUserCount: 1465
     }
 
     this.updateNameCount = this.updateNameCount.bind(this)

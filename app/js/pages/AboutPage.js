@@ -16,6 +16,7 @@ class AboutPage extends Component {
   }
 
   render() {
+
     return (
       <DocumentTitle title="Blockstack - About">
         <div>
@@ -31,26 +32,27 @@ class AboutPage extends Component {
                   </h2>
                 </hgroup>
                 <p>
-                  First and foremost, Blockstack is a community.
-                  It is a group of developers who are deeply committed to building decentralized applications and building out their underlying infrastructure.
+                  Blockstack is a movement to build the decentralized web.
+                  This movement is made of hackers, designers, and entrepreneurs from around the world
+                  deeply committed to the future of the Internet and the World Wide Web as
+                  bastions of innovation, freedom, and economic inclusion.
+                  Blockstack is about pushing power to the edges with decentralized applications
+                  and allowing users to be in control of their data, identities and software.
                 </p>
                 <p>
-                  Second, Blockstack is a software stack that provides applications with decentralized services, many of which are enabled by and are built on top of blockchain technology.
-                  These services include decentralized naming, directories, identity, data storage, authentication, and more.
-                </p>
-                <p>
-                  Decentralized naming and decentralized directories could be thought of as the unifying fabric for decentralized services.
-                  This is why it is at the core of Blockstack software.
-                </p>
-                <p>
-                  We have started and continued important discussions both in [the Blockstack Forum](http://forum.blockstack.org) and [the Blockstack Slack group](http://chat.blockstack.org) about the future of decentralized application development and the role Blockstack will play in this space going forward.
-                  Progress is being made and issues are being resolved, and we are invite all who support the Blockstack mission to join the community and contribute.
+                  Blockstack has protocols and software projects that when used together
+                  are a powerful way for developers to build decentralized applications.
+                  Blockstack Core provides decentralized naming, public key infrastructure, and storage.
+                  Blockstack Auth provides support for decentralized identity and authentication.
+                  Blockstack clients like the Blockstack CLI, Onename, and the Blockstack Browser
+                  provide complete packages that hook into Blockstack Core and Blockstack Auth.
                 </p>
                 <hgroup>
                   <h2 className="action-title">
-                    Core Contributors
+                    Main Contributors
                   </h2>
                 </hgroup>
+                <div>
                 {communityMembers.map((communityMember) => {
                   return (
                     <CommunityMember
@@ -58,9 +60,11 @@ class AboutPage extends Component {
                       name={communityMember.name}
                       avatar={communityMember.avatar}
                       twitter={communityMember.twitter}
-                      github={communityMember.github} />
+                      github={communityMember.github}
+                      facebook={communityMember.facebook} />
                   )
                 })}
+                </div>
               </div>
             </div>
             <Footer />

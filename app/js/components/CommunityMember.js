@@ -35,6 +35,12 @@ class CommunityMember extends Component {
           </i>
         </Link>
         : null }
+        { this.props.facebook ?
+        <Link to={"https://facebook.com/" + this.props.facebook} target="_blank">
+          <i className="fa fa-facebook fa-lg">
+          </i>
+        </Link>
+        : null }
       </div>
     )
   }
