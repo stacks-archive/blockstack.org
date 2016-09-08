@@ -23,21 +23,21 @@ To run the site in development mode, run `gulp dev` (this may require installing
 
 Now that `gulp dev` is running, the server is up as well and serving files from the `/build` directory. Any changes in the `/app` directory will be automatically processed by Gulp and the changes will be injected to any open browsers pointed at the proxy address.
 
-### Install Blockstack Bootstrap
+#### Upgrading Blockstack Bootstrap
 
-Push your edits to your chosen `$ push origin [branch name]`.
+Periodically you may need to update to the latest version of Blockstack's Bootstrap fork.
 
-Then create your pull request by clicking the "Pull Request" button and selecting `base fork: blockstack/blockstack-bootstrap`. This will take you to the "Comparing changes" page view.
-
-You will then select the branch you want to compare your changes `base: master` to `compare [your branch]` and click the create pull request button.
-
-Once you've created your pull request you'll need to merge it into master by clicking `merge`
-
-Finally you'll need to install the latest version of `blockstack-bootstrap` by running;
+Install the latest version of `blockstack-bootstrap` by running the following:
 
 ```
 $ npm install bootstrap
 ```
+
+#### Contributing to Blockstack Bootstrap
+
+If you'd like to update the UI framework for Blockstack, you can do so by visiting the [Blockstack Bootstrap](https://github.com/blockstack/blockstack-bootstrap) repo and submitting pull requests there.
+
+*Note: when you submit pull requests from your fork, make sure you select `blockstack/blockstack-bootstrap` as the base fork.*
 
 ### Deployment
 
