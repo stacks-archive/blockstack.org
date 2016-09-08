@@ -18,7 +18,7 @@ class Footer extends Component {
       reddit: 'https://www.reddit.com/r/blockstack',
       blog: 'http://blog.blockstack.org',
       github: 'https://github.com/blockstack',
-      branding: 'http://brandfolder.com/blockstack'
+      branding: 'https://projects.invisionapp.com/boards/Z52J1R29G8MYH'
     }
 
     return (
@@ -42,10 +42,10 @@ class Footer extends Component {
                   <Link to="/about">About</Link>
                 </li>
                 <li>
-                  <Link to="/learn">Learn</Link>
+                  <Link to="/articles">Articles</Link>
                 </li>
                 <li>
-                  <Link to="/docs">Docs</Link>
+                  <Link to="/tutorials">Tutorials</Link>
                 </li>
               </ul>
             </div>
