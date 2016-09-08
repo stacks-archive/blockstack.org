@@ -50,8 +50,8 @@ gulp.task('configFirebase', () => {
     })
   })
 
-  firebaseJson.rewrites = rewrites
-  firebaseJson.redirects = redirects
+  firebaseJson.hosting.rewrites = rewrites
+  firebaseJson.hosting.redirects = redirects
 
   fs.writeFileSync('firebase.json', JSON.stringify(firebaseJson, null, 2))
 });

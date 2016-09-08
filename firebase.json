@@ -1,138 +1,145 @@
 {
-  "public": "build",
-  "ignore": [
-    "**/.*",
-    "./__tests__/**",
-    "./app/**",
-    "./gulp/**",
-    "**/node_modules/**",
-    "./unused/**",
-    "firebase.json"
-  ],
-  "rewrites": [
-    {
-      "source": "/docs/articles/404",
-      "destination": "/docs-articles-404.html"
-    },
-    {
-      "source": "/docs/articles/basic-usage",
-      "destination": "/docs-articles-basic-usage.html"
-    },
-    {
-      "source": "/docs/articles/blockchain-identity",
-      "destination": "/docs-articles-blockchain-identity.html"
-    },
-    {
-      "source": "/docs/articles/blockstack-core",
-      "destination": "/docs-articles-blockstack-core.html"
-    },
-    {
-      "source": "/docs/articles/blockstack-papers",
-      "destination": "/docs-articles-blockstack-papers.html"
-    },
-    {
-      "source": "/docs/articles/blockstack-profiles",
-      "destination": "/docs-articles-blockstack-profiles.html"
-    },
-    {
-      "source": "/docs/articles/blockstack-vs-dns",
-      "destination": "/docs-articles-blockstack-vs-dns.html"
-    },
-    {
-      "source": "/docs/articles/blockstack-vs-namecoin",
-      "destination": "/docs-articles-blockstack-vs-namecoin.html"
-    },
-    {
-      "source": "/docs/articles/extended-usage",
-      "destination": "/docs-articles-extended-usage.html"
-    },
-    {
-      "source": "/docs/articles/faq",
-      "destination": "/docs-articles-faq.html"
-    },
-    {
-      "source": "/docs/articles/how-blockstack-works",
-      "destination": "/docs-articles-how-blockstack-works.html"
-    },
-    {
-      "source": "/docs/articles/identity-attestation",
-      "destination": "/docs-articles-identity-attestation.html"
-    },
-    {
-      "source": "/docs/articles/installation",
-      "destination": "/docs-articles-installation.html"
-    },
-    {
-      "source": "/docs/articles/light-clients",
-      "destination": "/docs-articles-light-clients.html"
-    },
-    {
-      "source": "/docs/articles/login-paper",
-      "destination": "/docs-articles-login-paper.html"
-    },
-    {
-      "source": "/docs/articles/namespaces",
-      "destination": "/docs-articles-namespaces.html"
-    },
-    {
-      "source": "/docs/articles/pybitcoin",
-      "destination": "/docs-articles-pybitcoin.html"
-    },
-    {
-      "source": "/docs/articles/virtualchain-paper",
-      "destination": "/docs-articles-virtualchain-paper.html"
-    },
-    {
-      "source": "/docs/tutorials/blogging",
-      "destination": "/docs-tutorials-blogging.html"
-    },
-    {
-      "source": "/docs/tutorials/crowdfunding",
-      "destination": "/docs-tutorials-crowdfunding.html"
-    },
-    {
-      "source": "/docs/tutorials/document-signing",
-      "destination": "/docs-tutorials-document-signing.html"
-    },
-    {
-      "source": "/docs/tutorials/filesharing",
-      "destination": "/docs-tutorials-filesharing.html"
-    },
-    {
-      "source": "/docs/tutorials/hello-world",
-      "destination": "/docs-tutorials-hello-world.html"
-    },
-    {
-      "source": "/docs/tutorials/messaging",
-      "destination": "/docs-tutorials-messaging.html"
-    },
-    {
-      "source": "/docs/tutorials/package-manager",
-      "destination": "/docs-tutorials-package-manager.html"
-    },
-    {
-      "source": "/docs/tutorials/social-networking",
-      "destination": "/docs-tutorials-social-networking.html"
-    },
-    {
-      "source": "/docs/tutorials/video-sharing",
-      "destination": "/docs-tutorials-video-sharing.html"
-    },
-    {
-      "source": "**",
-      "destination": "/index.html"
-    }
-  ],
-  "redirects": [
-    {
-      "source": "/docs/blockchain-id",
-      "destination": "/docs/blockchain-identity",
-      "type": 301
-    },
-    {
-      "source": "/docs/what-is-blockstack",
-      "destination": "/articles/blockstack-core",
-      "type": 301
-    }
-  ]
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "**/.*",
+      "./__tests__/**",
+      "./app/**",
+      "./gulp/**",
+      "**/node_modules/**",
+      "./unused/**",
+      "firebase.json"
+    ],
+    "rewrites": [
+      {
+        "source": "/docs/articles/404",
+        "destination": "/docs-articles-404.html"
+      },
+      {
+        "source": "/docs/articles/basic-usage",
+        "destination": "/docs-articles-basic-usage.html"
+      },
+      {
+        "source": "/docs/articles/blockchain-identity",
+        "destination": "/docs-articles-blockchain-identity.html"
+      },
+      {
+        "source": "/docs/articles/blockstack-core",
+        "destination": "/docs-articles-blockstack-core.html"
+      },
+      {
+        "source": "/docs/articles/blockstack-papers",
+        "destination": "/docs-articles-blockstack-papers.html"
+      },
+      {
+        "source": "/docs/articles/blockstack-profiles",
+        "destination": "/docs-articles-blockstack-profiles.html"
+      },
+      {
+        "source": "/docs/articles/blockstack-vs-dns",
+        "destination": "/docs-articles-blockstack-vs-dns.html"
+      },
+      {
+        "source": "/docs/articles/blockstack-vs-namecoin",
+        "destination": "/docs-articles-blockstack-vs-namecoin.html"
+      },
+      {
+        "source": "/docs/articles/extended-usage",
+        "destination": "/docs-articles-extended-usage.html"
+      },
+      {
+        "source": "/docs/articles/faq",
+        "destination": "/docs-articles-faq.html"
+      },
+      {
+        "source": "/docs/articles/how-blockstack-works",
+        "destination": "/docs-articles-how-blockstack-works.html"
+      },
+      {
+        "source": "/docs/articles/identity-attestation",
+        "destination": "/docs-articles-identity-attestation.html"
+      },
+      {
+        "source": "/docs/articles/installation",
+        "destination": "/docs-articles-installation.html"
+      },
+      {
+        "source": "/docs/articles/light-clients",
+        "destination": "/docs-articles-light-clients.html"
+      },
+      {
+        "source": "/docs/articles/login-paper",
+        "destination": "/docs-articles-login-paper.html"
+      },
+      {
+        "source": "/docs/articles/namespaces",
+        "destination": "/docs-articles-namespaces.html"
+      },
+      {
+        "source": "/docs/articles/pybitcoin",
+        "destination": "/docs-articles-pybitcoin.html"
+      },
+      {
+        "source": "/docs/articles/virtualchain-paper",
+        "destination": "/docs-articles-virtualchain-paper.html"
+      },
+      {
+        "source": "/docs/tutorials/blogging",
+        "destination": "/docs-tutorials-blogging.html"
+      },
+      {
+        "source": "/docs/tutorials/crowdfunding",
+        "destination": "/docs-tutorials-crowdfunding.html"
+      },
+      {
+        "source": "/docs/tutorials/document-signing",
+        "destination": "/docs-tutorials-document-signing.html"
+      },
+      {
+        "source": "/docs/tutorials/filesharing",
+        "destination": "/docs-tutorials-filesharing.html"
+      },
+      {
+        "source": "/docs/tutorials/hello-world",
+        "destination": "/docs-tutorials-hello-world.html"
+      },
+      {
+        "source": "/docs/tutorials/messaging",
+        "destination": "/docs-tutorials-messaging.html"
+      },
+      {
+        "source": "/docs/tutorials/package-manager",
+        "destination": "/docs-tutorials-package-manager.html"
+      },
+      {
+        "source": "/docs/tutorials/social-networking",
+        "destination": "/docs-tutorials-social-networking.html"
+      },
+      {
+        "source": "/docs/tutorials/video-sharing",
+        "destination": "/docs-tutorials-video-sharing.html"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/docs/blockchain-id",
+        "destination": "/docs/blockchain-identity",
+        "type": 301
+      },
+      {
+        "source": "/docs/what-is-blockstack",
+        "destination": "/articles/blockstack-core",
+        "type": 301
+      },
+      {
+        "source": "/docs",
+        "destination": "/articles",
+        "type": 301
+      }
+    ]
+  }
 }
