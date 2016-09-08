@@ -20,7 +20,7 @@ class AboutPage extends Component {
     return (
       <DocumentTitle title="Blockstack - About">
         <div>
-          <div className="container-fluid col-centered about-head-wrap">
+          <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
           </div>
           <section className="m-b-5 m-t-5">
