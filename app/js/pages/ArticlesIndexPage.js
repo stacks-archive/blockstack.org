@@ -13,19 +13,19 @@ class ArticlesIndexPage extends Component {
   render() {
     const pageRows = [
       {
-        title: 'Overview',
-        items: ['what-is-blockstack', 'how-blockstack-works', '']
+        title: 'Blockstack Core',
+        items: ['blockstack-core', 'how-blockstack-works', '']
       },
       {
         title: 'Papers',
         items: ['blockstack-papers', 'virtualchain-paper', 'login-paper']
       },
       {
-        title: 'Naming',
+        title: 'Blockstack DNS',
         items: ['blockstack-vs-dns', 'blockstack-vs-namecoin', 'namespaces']
       },
       {
-        title: 'Identity',
+        title: 'Blockstack Identity',
         items: ['blockchain-identity', 'blockstack-profiles', 'identity-attestation']
       },
       {
@@ -40,7 +40,7 @@ class ArticlesIndexPage extends Component {
           <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
           </div>
-          <ArticleIndex pageRows={pageRows} docs={docs} pathPrefix='/learn' />
+          <ArticleIndex pageRows={pageRows} docs={docs} pathPrefix='/articles' />
           <Footer />
         </div>
       </DocumentTitle>

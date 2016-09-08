@@ -21,7 +21,7 @@ const config = {
   },
 
   docs: {
-    src: './app/docs/*.md',
+    src: './app/docs/**/*.md',
     dest: './build/docs/'
   },
 

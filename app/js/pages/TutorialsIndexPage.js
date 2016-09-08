@@ -17,12 +17,8 @@ class DocsIndexPage extends Component {
         items: ['installation', 'basic-usage', 'extended-usage']
       },
       {
-        title: 'Tutorials',
-        items: ['tutorial-hello-world', 'tutorial-blogging', 'tutorial-package-manager']
-      },
-      {
-        title: '',
-        items: ['tutorial-filesharing', 'tutorial-social-networking', 'tutorial-crowdfunding']
+        title: 'Decentralized Applications',
+        items: ['hello-world', '', '']
       }
     ]
 
@@ -32,7 +28,7 @@ class DocsIndexPage extends Component {
           <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
           </div>
-          <ArticleIndex pageRows={pageRows} docs={docs} pathPrefix='/docs' />
+          <ArticleIndex pageRows={pageRows} docs={docs} pathPrefix='/tutorials' />
           <Footer />
         </div>
       </DocumentTitle>
@@ -43,6 +39,15 @@ class DocsIndexPage extends Component {
 export default DocsIndexPage
 
 /*
+
+      {
+        title: 'Apps',
+        items: ['hello-world', 'blogging', 'package-manager']
+      },
+      {
+        title: '',
+        items: ['filesharing', 'social-networking', 'crowdfunding']
+      },
       {
         title: '',
         items: ['tutorial-video-sharing', 'tutorial-doc-signing', 'tutorial-messaging']

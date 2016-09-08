@@ -8,7 +8,7 @@ import App                         from './App'
 import HomePage                    from './pages/HomePage'
 import SummitPage                  from './pages/SummitPage'
 
-import DocsIndexPage                    from './pages/DocsIndexPage'
+import TutorialsIndexPage          from './pages/TutorialsIndexPage'
 import ArticlesIndexPage           from './pages/ArticlesIndexPage'
 
 import ArticlePage                 from './pages/ArticlePage'
@@ -24,9 +24,10 @@ export default (
 
       <Route path="/" component={HomePage} />
 
-      <Route path="/learn" component={ArticlesIndexPage} />
-      <Route path="/docs" component={DocsIndexPage} />
-      <Route path="/learn/:docSection" component={ArticlePage} />
+      <Route path="/articles" component={ArticlesIndexPage} />
+      <Route path="/tutorials" component={TutorialsIndexPage} />
+      <Route path="/articles/:docSection" component={ArticlePage} />
+      <Route path="/tutorials/:docSection" component={ArticlePage} />
       <Route path="/docs/:docSection" component={ArticlePage} />
 
       <Route path="/about" component={AboutPage} />
