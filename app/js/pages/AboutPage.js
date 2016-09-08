@@ -23,22 +23,23 @@ class AboutPage extends Component {
           <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
           </div>
-          <section className="m-t-5">
+          <section className="m-b-5 m-t-5">
             <div className="container p-b-5 col-centered">
               <div className="container">
                 <hgroup>
-                  <h3 className="action-title p-t-5">
+                  <h2 className="action-title">
                     About
-                  </h3>
+                  </h2>
                 </hgroup>
                 <p>
-                  Blockstack is a movement to build the decentralized web -
-                  a movement of hackers, designers, and entrepreneurs from around the world deeply
-                  committed to the future of the Internet as a bastion of innovation, freedom, and economic inclusion.
+                  Blockstack is a movement to build the decentralized web.
+                  This movement is made of hackers, designers, and entrepreneurs from around the world
+                  deeply committed to the future of the Internet and the World Wide Web as
+                  bastions of innovation, freedom, and economic inclusion.
                   Blockstack is about pushing power to the edges with decentralized applications
                   and allowing users to be in control of their data, identities and software.
                 </p>
-                <p className="m-b-5">
+                <p>
                   Blockstack has protocols and software projects that when used together
                   are a powerful way for developers to build decentralized applications.
                   Blockstack Core provides decentralized naming, public key infrastructure, and storage.
@@ -47,9 +48,9 @@ class AboutPage extends Component {
                   provide complete packages that hook into Blockstack Core and Blockstack Auth.
                 </p>
                 <hgroup>
-                  <h4 className="action-title m-b-3">
+                  <h2 className="action-title">
                     Main Contributors
-                  </h4>
+                  </h2>
                 </hgroup>
                 <div>
                 {communityMembers.map((communityMember) => {
