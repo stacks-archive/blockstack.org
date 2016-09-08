@@ -18,11 +18,11 @@ class CommunityMember extends Component {
 
   render() {
     return (
-      <div className="col-md-3 text-xs-center m-b-30 no-padding">
+      <div className="col-md-3 text-xs-center m-b-60 no-padding">
         <Link to={"https://onename.com/" + this.props.blockstackId} target="_blank">
           <Image src={this.props.avatar} className="avatar-lg" />
         </Link>
-        <h3 className="center">{this.props.name}</h3>
+        <h5 className="center m-b-1">{this.props.name}</h5>
         { this.props.twitter ?
         <Link to={"https://twitter.com/" + this.props.twitter} target="_blank">
           <i className="fa fa-twitter fa-lg">

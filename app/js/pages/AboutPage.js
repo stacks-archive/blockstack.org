@@ -23,13 +23,13 @@ class AboutPage extends Component {
           <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
           </div>
-          <section className="m-b-5 m-t-5">
+          <section className="m-t-5">
             <div className="container p-b-5 col-centered">
               <div className="container">
                 <hgroup>
-                  <h2 className="action-title">
+                  <h3 className="action-title p-t-5">
                     About
-                  </h2>
+                  </h3>
                 </hgroup>
                 <p>
                   Blockstack is a movement to build the decentralized web -
@@ -38,7 +38,7 @@ class AboutPage extends Component {
                   Blockstack is about pushing power to the edges with decentralized applications
                   and allowing users to be in control of their data, identities and software.
                 </p>
-                <p>
+                <p className="m-b-5">
                   Blockstack has protocols and software projects that when used together
                   are a powerful way for developers to build decentralized applications.
                   Blockstack Core provides decentralized naming, public key infrastructure, and storage.
@@ -47,9 +47,9 @@ class AboutPage extends Component {
                   provide complete packages that hook into Blockstack Core and Blockstack Auth.
                 </p>
                 <hgroup>
-                  <h2 className="action-title">
+                  <h4 className="action-title m-b-3">
                     Main Contributors
-                  </h2>
+                  </h4>
                 </hgroup>
                 <div>
                 {communityMembers.map((communityMember) => {
