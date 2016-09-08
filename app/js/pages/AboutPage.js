@@ -48,7 +48,7 @@ class AboutPage extends Component {
                   provide complete packages that hook into Blockstack Core and Blockstack Auth.
                 </p>
                 <hgroup>
-                  <h4 className="action-title">
+                  <h4 className="action-title m-b-3">
                     Main Contributors
                   </h4>
                 </hgroup>
