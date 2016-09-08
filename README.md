@@ -23,6 +23,22 @@ To run the site in development mode, run `gulp dev` (this may require installing
 
 Now that `gulp dev` is running, the server is up as well and serving files from the `/build` directory. Any changes in the `/app` directory will be automatically processed by Gulp and the changes will be injected to any open browsers pointed at the proxy address.
 
+### Install Blockstack Bootstrap
+
+Push your edits to your chosen `$ push origin [branch name]`.
+
+Then create your pull request by clicking the "Pull Request" button and selecting `base fork: blockstack/blockstack-bootstrap`. This will take you to the "Comparing changes" page view.
+
+You will then select the branch you want to compare your changes `base: master` to `compare [your branch]` and click the create pull request button.
+
+Once you've created your pull request you'll need to merge it into master by clicking `merge`
+
+Finally you'll need to install the latest version of `blockstack-bootstrap` by running;
+
+```
+$ npm install bootstrap
+```
+
 ### Deployment
 
 ```
