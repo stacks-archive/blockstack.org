@@ -122,26 +122,26 @@ class HomePage extends Component {
                   </h2>
                 </div>
               </div>
-              <div className="row works col-centered">
-                <div className="col-sm-6">
-                    <div className="container wrap-mob-feat">
-                      <img src="/images/icons/mini-decentralized.svg"
-                        className="img-responsive" alt="Decentralized icon" />
+              <div className="row works col-centered deck-wrap-top">
+                <div className="feat-img-top col-sm-6 p-b-2">
+                    <div className="container wrap-mob-feat m-b-3">
+                      <img src="/images/icons/icon-white-house-lrg.svg"
+                        className="img-fluid m-x-auto" alt="control icon" />
                     </div>
-                    <h4>The web, once open, has been hijacked by the powerful few</h4>
-                    <p className="lead">
+                    <h4 className="text-xs-center">The web, once open, has been hijacked by the powerful few</h4>
+                    <p className="lead text-xs-center">
                       The Internet was created as an open, permission-less, egalitarian frontier. It was a bastion of freedom and innovation.
                       But over time, power on the Internet started consolidating and a few large companies gained control.
                       This is not how it was meant to be.
                     </p>
                 </div>
-                <div className="col-sm-6">
-                    <div className="container wrap-mob-feat">
-                      <img src="/images/icons/mini-decentralized.svg"
-                        className="img-responsive" alt="Decentralized icon" />
+                <div className="feat-img-top col-sm-6 p-b-2">
+                    <div className="container wrap-mob-feat m-b-3">
+                      <img src="/images/icons/icon-decentralized.svg"
+                        className="img-fluid m-x-auto" alt="Decentralized icon" />
                     </div>
-                    <h4>Decentralization leads to innovation, freedom and economic inclusion</h4>
-                    <p className="lead">
+                    <h4 className="text-xs-center">Decentralization leads to innovation, freedom and economic inclusion</h4>
+                    <p className="lead text-xs-center">
                       Decentralization means more experimentation and permission-less innovation.                      
                       It means fewer control points & greater freedom for network participants.
                       It means more developers can bring products to market & compete with the giants.
@@ -149,13 +149,13 @@ class HomePage extends Component {
                 </div>
               </div>
               <div className="row works col-centered">
-                <div className="col-sm-6">
-                    <div className="container wrap-mob-feat">
-                      <img src="/images/icons/mini-decentralized.svg"
-                        className="img-responsive" alt="Decentralized icon" />
+                <div className="feat-img-top col-sm-6 p-b-2">
+                    <div className="container wrap-mob-feat m-b-3">
+                      <img src="/images/icons/icon-info-hex.svg"
+                        className="img-fluid m-x-auto" alt="Info security icon" />
                     </div>
-                    <h4>Users benefit from more options, availability, savings, & info security</h4>
-                    <p className="lead">
+                    <h4 className="text-xs-center">Users benefit from more options, availability, savings, & info security</h4>
+                    <p className="lead text-xs-center">
                       Decentralization means more developers & competition,
                       yielding more options, better software, & lower prices.
                       It means owning software that runs on your device,
@@ -163,13 +163,13 @@ class HomePage extends Component {
                       availability beyond any company's lifetime.
                     </p>
                 </div>
-                <div className="col-sm-6">
-                    <div className="container wrap-mob-feat">
-                      <img src="/images/icons/mini-decentralized.svg"
-                        className="img-responsive" alt="Decentralized icon" />
+                <div className="feat-img-top col-sm-6 p-b-2">
+                    <div className="container wrap-mob-feat m-b-3">
+                      <img src="/images/icons/icon-data-server-browse.svg"
+                        className="img-fluid m-x-auto" alt="No database server icon" />
                     </div>
-                    <h4>Building great products shouldn't require managing servers, databases & ID systems</h4>
-                    <p className="lead">
+                    <h4 className="text-xs-center">Building great products shouldn't require managing servers, databases & ID systems</h4>
+                    <p className="lead text-xs-center">
                       Building software should be simple.
                       With the decentralized app model,
                       developers don't have to manage servers or databases or build out user management systems.
@@ -270,21 +270,21 @@ class HomePage extends Component {
                 </div>
               </div>
               <div className="row col-sm-12 col-centered">
-                <div className="col-sm-4 feature-panel featpan-1">
+                <div className="col-sm-4 feature-panel feature-logo-1">
                   <div className="container wrap-mob-feat">
                     <Link to="http://democracyos.org/">
                       <img src="/images/logos/democracyos.svg" alt="DemocracyOS logo" width="240px"/>
                     </Link>
                   </div>
                 </div>
-                <div className="col-sm-4 feature-panel featpan-2">
+                <div className="col-sm-4 feature-panel feature-logo-2">
                   <div className="container wrap-mob-feat">
                     <Link to="http://openbazaar.org/">
                       <img src="/images/logos/openbazaar.svg" alt="OpenBazaar logo" width="180px"/>
                     </Link>
                   </div>
                 </div>
-                <div className="col-sm-4 feature-panel featpan-3">
+                <div className="col-sm-4 feature-panel feature-logo-3">
                   <div className="container wrap-mob-feat">
                     <Link to="https://tierion.com/">
                       <img src="/images/logos/tierion.svg"
@@ -294,14 +294,14 @@ class HomePage extends Component {
                 </div>
               </div>
               <div className="row col-sm-12 col-centered">
-                <div className="col-sm-6 feature-panel featpan-4">
+                <div className="col-sm-6 feature-panel feature-logo-4">
                   <div className="container wrap-mob-feat">
                     <Link to="http://bitseed.org/">
                       <img src="/images/logos/bitseed.svg" alt="Bitseed logo" width="128px"/>
                     </Link>
                   </div>
                 </div>
-                <div className="col-sm-6 feature-panel featpan-5">
+                <div className="col-sm-6 feature-panel feature-logo-5">
                   <div className="container wrap-mob-feat">
                     <Link to="http://trychord.com/">
                       <img src="/images/logos/chord.svg" alt="Chord logo" width="110px"/>
@@ -311,21 +311,21 @@ class HomePage extends Component {
               </div>
 
               <div className="row col-sm-12 col-centered">
-                <div className="col-sm-4 feature-panel featpan-1">
+                <div className="col-sm-4 feature-panel feature-logo-1">
                   <div className="container wrap-mob-feat">
                     <Link to="http://anyshare.coop/">
                       <img src="/images/logos/anyshare.svg" alt="Anyshare logo" width="180px"/>
                     </Link>
                   </div>
                 </div>
-                <div className="col-sm-4 feature-panel featpan-2">
+                <div className="col-sm-4 feature-panel feature-logo-2">
                   <div className="container wrap-mob-feat">
                     <Link to="https://www.microsoft.com/">
                       <img src="/images/logos/microsoft.png" alt="Microsoft logo" width="180px"/>
                     </Link>
                   </div>
                 </div>
-                <div className="col-sm-4 feature-panel featpan-3">
+                <div className="col-sm-4 feature-panel feature-logo-3">
                   <div className="container wrap-mob-feat">
                     <Link to="http://consent.global">
                       <img src="/images/logos/consent.svg" alt="Consent logo" width="120px"/>
@@ -335,14 +335,14 @@ class HomePage extends Component {
               </div>
 
               <div className="row col-sm-12 col-centered">
-                <div className="col-sm-6 feature-panel featpan-4">
+                <div className="col-sm-6 feature-panel feature-logo-4">
                   <div className="container wrap-mob-feat">
                     <Link to="http://arcade.city/">
                       <img src="/images/logos/arcade-city.svg" alt="Arcade City logo" width="110px"/>
                     </Link>
                   </div>
                 </div>
-                <div className="col-sm-6 feature-panel featpan-4">
+                <div className="col-sm-6 feature-panel feature-logo-4">
                   <div className="container wrap-mob-feat">
                     <Link to="https://www.yours.network/">
                       <img src="/images/logos/yours-network.svg" alt="Yours Network logo" width="110px"/>
