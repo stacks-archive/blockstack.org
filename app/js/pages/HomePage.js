@@ -93,7 +93,7 @@ class HomePage extends Component {
                     Build decentralized apps that run on user devices and put them in control of their data.
                   </p>
                   <p className="no-padding col-md-8">
-                    <Link to="/docs" role="button"
+                    <Link to="http://chat.blockstack.org" role="button"
                       className="btn btn-lg btn-primary btn-block">
                       Get Early Access
                     </Link>

@@ -16,6 +16,10 @@ gulp.task('configFirebase', () => {
     {
       "source": "/docs/what-is-blockstack",
       "destination": "/articles/blockstack-core",
+    },
+    {
+      "source": "/docs",
+      "destination": "/articles"
     }
   ]
 
