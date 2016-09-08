@@ -32,10 +32,9 @@ class AboutPage extends Component {
                   </h2>
                 </hgroup>
                 <p>
-                  Blockstack is a movement to build the decentralized web.
-                  This movement is made of hackers, designers, and entrepreneurs from around the world
-                  deeply committed to the future of the Internet and the World Wide Web as
-                  bastions of innovation, freedom, and economic inclusion.
+                  Blockstack is a movement to build the decentralized web -
+                  a movement of hackers, designers, and entrepreneurs from around the world deeply
+                  committed to the future of the Internet as a bastion of innovation, freedom, and economic inclusion.
                   Blockstack is about pushing power to the edges with decentralized applications
                   and allowing users to be in control of their data, identities and software.
                 </p>
