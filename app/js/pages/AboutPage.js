@@ -23,7 +23,7 @@ class AboutPage extends Component {
           <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
           </div>
-          <section className="m-b-5 m-t-5">
+          <section className="m-t-5">
             <div className="container p-b-5 col-centered">
               <div className="container">
                 <hgroup>
