@@ -130,9 +130,9 @@ class HomePage extends Component {
                     </div>
                     <h4>The web, once open, has been hijacked by the powerful few</h4>
                     <p className="lead">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      The Internet was created as an open, permission-less, egalitarian frontier. It was a bastion of freedom and innovation.
+                      But over time, power on the Internet started consolidating and a few large companies gained control.
+                      This is not how it was meant to be.
                     </p>
                 </div>
                 <div className="col-sm-6">
@@ -140,11 +140,11 @@ class HomePage extends Component {
                       <img src="/images/icons/mini-decentralized.svg"
                         className="img-responsive" alt="Decentralized icon" />
                     </div>
-                    <h4>Decentralization enables greater developer inclusion, freedom, and innovation</h4>
+                    <h4>Decentralization leads to innovation, freedom and economic inclusion</h4>
                     <p className="lead">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Decentralization means more experimentation and permission-less innovation.                      
+                      It means fewer control points & greater freedom for network participants.
+                      It means more developers can bring products to market & compete with the giants.
                     </p>
                 </div>
               </div>
@@ -156,9 +156,11 @@ class HomePage extends Component {
                     </div>
                     <h4>Users benefit from more options, availability, savings, & info security</h4>
                     <p className="lead">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Decentralization means more developers & competition,
+                      yielding more options, better software, & lower prices.
+                      It means owning software that runs on your device,
+                      yielding more security/privacy & 
+                      availability beyond any company's lifetime.
                     </p>
                 </div>
                 <div className="col-sm-6">
@@ -168,9 +170,10 @@ class HomePage extends Component {
                     </div>
                     <h4>Building great products shouldn't require managing servers, databases & ID systems</h4>
                     <p className="lead">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Building software should be simple.
+                      With the decentralized app model,
+                      developers don't have to manage servers or databases or build out user management systems.
+                      Software runs on user devices & clients exchange information.
                     </p>
                 </div>
               </div>
@@ -359,16 +362,19 @@ class HomePage extends Component {
                   style={{ textAlign: 'left' }}>
                     <h4 className="feat-pan text-xs-center">Building a Hello World App</h4>
                     <p className="lead text-xs-center">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      In this first Blockstack app tutorial, we'll take you through the process of building
+                      the simplest Blockstack app where users login and are shown
+                      a welcome message with their name and avatar.
+
+                      You'll learn how to
+                      (1) create a simple frontend web app with HTML, JS and CSS
+                      (2) integrate blockstack.js for identity and authentication
+                      (3) register a domain name for the app, listing it in the app directory.
                     </p>
                     <p className="lead text-xs-center">
                       <Link to="/docs/tutorial-hello-world" role="button"
-                        className="btn btn-sm btn-outline-primary m-b-2">
-                        Get Started
+                        className="btn btn-sm btn-outline-primary m-b-2 disabled">
+                        Tutorial coming soon
                       </Link>
                     </p>
                 </div>
