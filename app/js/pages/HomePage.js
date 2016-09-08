@@ -165,7 +165,7 @@ class HomePage extends Component {
                 </div>
                 <div className="feat-img-top col-sm-6">
                     <div className="container wrap-mob-feat m-b-3">
-                      <img src="/images/icons/mini-decentralized.svg"
+                      <img src="/images/icons/icon-data-server-browse.svg"
                         className="img-responsive" alt="Decentralized icon" />
                     </div>
                     <h4 className="text-xs-center">Building great products shouldn't require managing servers, databases & ID systems</h4>

@@ -235,7 +235,7 @@ footer > li{list-style:none;}
   /* Reviewed */.hero-btn{padding-left:0;}
 
   /* Feature Image Top */
-  /* Reviewed */.feat-img-top{font-size:14px;}
+  /* Reviewed */.feat-img-top > p{font-size:14px;}
   /* Reviewed */.feat-img-top > h4{font-size:18px;}
 
   /* Navbar */
