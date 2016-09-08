@@ -16,7 +16,7 @@ class Image extends Component {
 
     let src = this.props.src
     if (this.props.retinaSupport && isRetina()) {
-      src = src.replace('.jpg', '@2x.jpg')
+      src = src.replace('.jpg', '@2x.jpg').replace('.png', '@2x.png')
     }
     this.state = {
       src: src
@@ -29,7 +29,7 @@ class Image extends Component {
     if (this.props !== nextProps) {
       let nextSrc = nextProps.src
       if (this.props.retinaSupport && isRetina()) {
-        nextSrc = nextSrc.replace('.jpg', '@2x.jpg')
+        nextSrc = nextSrc.replace('.jpg', '@2x.jpg').replace('.png', '@2x.png')
       }
       this.setState({
         src: nextSrc

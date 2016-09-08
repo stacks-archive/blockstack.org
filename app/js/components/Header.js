@@ -19,87 +19,26 @@ class Header extends Component {
             </Link>
             <ul className="nav navbar-nav">
               <li className="nav-item">
-                <Link to="/docs" className="nav-link">
-                  Docs
+                <Link to="/about" className="nav-link">
+                  About
                 </Link>
               </li>
-              <li className="nav-item dropdown hidden-sm-down">
-                <a href="#" className="nav-link dropdown-toggle"
-                   data-toggle="dropdown" role="button"
-                   aria-haspopup="true" aria-expanded="false">
-                  Overview
-                </a>
-                <div className="dropdown-menu">
-                  <Link to="/docs/what-is-blockstack" className="dropdown-item">
-                    What is Blockstack
-                  </Link>
-                  <Link to="/docs/how-blockstack-works" className="dropdown-item">
-                    How Blockstack Works
-                  </Link>
-                  <Link to="/docs/blockstack-papers" className="dropdown-item">
-                    Blockstack Papers
-                  </Link>
-                </div>
+              <li className="nav-item">
+                <Link to="/articles" className="nav-link">
+                  Articles
+                </Link>
               </li>
-              <li className="nav-item dropdown hidden-sm-down">
-                <a href="#" className="nav-link dropdown-toggle"
-                   data-toggle="dropdown" role="button"
-                   aria-haspopup="true" aria-expanded="false">
-                  CLI
-                </a>
-                <div className="dropdown-menu">
-                  <Link to="/docs/installation" className="dropdown-item">
-                    Installation
-                  </Link>
-                  <Link to="/docs/basic-usage" className="dropdown-item">
-                    Basic Usage
-                  </Link>
-                  <Link to="/docs/extended-usage" className="dropdown-item">
-                    Extended Usage
-                  </Link>
-                </div>
+              <li className="nav-item">
+                <Link to="/tutorials" className="nav-link">
+                  Tutorials
+                </Link>
               </li>
-              <li className="nav-item dropdown hidden-sm-down">
-                <a href="#" className="nav-link dropdown-toggle"
-                   data-toggle="dropdown" role="button"
-                   aria-haspopup="true" aria-expanded="false">
-                  Naming
-                </a>
-                <div className="dropdown-menu">
-                  <Link to="/docs/blockstack-vs-dns" className="dropdown-item">
-                    Blockstack vs DNS
-                  </Link>
-                  <Link to="/docs/blockstack-vs-namecoin" className="dropdown-item">
-                    Blockstack vs Namecoin
-                  </Link>
-                  <Link to="/docs/namespaces" className="dropdown-item">
-                    Namespaces
-                  </Link>
-                </div>
-              </li>
-              <li className="nav-item dropdown hidden-sm-down">
-                <a href="#" className="nav-link dropdown-toggle"
-                   data-toggle="dropdown" role="button"
-                   aria-haspopup="true" aria-expanded="false">
-                  Identity
-                </a>
-                <div className="dropdown-menu">
-                  <Link to="/docs/blockchain-identity" className="dropdown-item">
-                    Blockchain Identity
-                  </Link>
-                  <Link to="/docs/blockstack-profiles" className="dropdown-item">
-                    Blockstack Profiles
-                  </Link>
-                  <Link to="/docs/identity-attestation" className="dropdown-item">
-                    Identity Attestation
-                  </Link>
-                </div>
-              </li>
+
               <li className="nav-item pull-xs-right hidden-sm-down">
                 <Link to="https://github.com/blockstack" className="nav-link hidden-xs hidden-sm"
                   target="_blank">
                   <i className="fa fa-github"></i>
-                  <span>Github</span>
+                  <span>GitHub</span>
                 </Link>
               </li>
             </ul>
@@ -114,6 +53,49 @@ class Header extends Component {
 export default Header
 
 /*
+<li className="nav-item dropdown hidden-sm-down">
+  <a href="#" className="nav-link dropdown-toggle"
+     data-toggle="dropdown" role="button"
+     aria-haspopup="true" aria-expanded="false">
+    Articles & Papers
+  </a>
+  <div className="dropdown-menu">
+    <Link to="/docs/what-is-blockstack" className="dropdown-item">
+      What is Blockstack
+    </Link>
+    <Link to="/docs/how-blockstack-works" className="dropdown-item">
+      How Blockstack Works
+    </Link>
+    <Link to="/docs/blockstack-papers" className="dropdown-item">
+      Blockstack USENIX Paper
+    </Link>
+    <Link to="/docs/virtualchain-paper" className="dropdown-item">
+      Virtualchain Paper
+    </Link>
+    <Link to="/docs/login-paper" className="dropdown-item">
+      ;login: Magazine Paper
+    </Link>
+  </div>
+</li>
+<li className="nav-item dropdown hidden-sm-down">
+  <a href="#" className="nav-link dropdown-toggle"
+     data-toggle="dropdown" role="button"
+     aria-haspopup="true" aria-expanded="false">
+    Developer Docs
+  </a>
+  <div className="dropdown-menu">
+    <Link to="/docs/installation" className="dropdown-item">
+      Installation
+    </Link>
+    <Link to="/docs/basic-usage" className="dropdown-item">
+      Basic Usage
+    </Link>
+    <Link to="/docs/extended-usage" className="dropdown-item">
+      Extended Usage
+    </Link>
+  </div>
+</li>
+
 <li className="nav-item dropdown hidden-sm-down">
   <a href="#" className="nav-link dropdown-toggle"
      data-toggle="dropdown" role="button"

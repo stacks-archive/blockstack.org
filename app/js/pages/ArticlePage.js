@@ -108,14 +108,15 @@ class ArticlePage extends Component {
     const currentPage = this.state.currentPage,
           nextPage = this.state.nextPage,
           title = currentPage ? currentPage.title : "Docs"
-
     const headerImageSrc = this.state.currentPage ? this.state.currentPage.image : null
+    const pathPrefix = '/' + location.pathname.split('/')[1]
+    const githubFileUrlRoot = "https://github.com/blockstack/blockstack-site/blob/master/app/docs/"
 
     return (
       <div>
         { currentPage ?
         <Helmet
-          title={`Blockstack- ${currentPage.title}`}
+          title={`Blockstack - ${currentPage.title}`}
           meta={[
             {"name": "description", "content": currentPage.description },
 
@@ -151,8 +152,8 @@ class ArticlePage extends Component {
         <nav className="container-fluid m-b-1 back-docs">
           <ul className="pagination">
             <li className="page-item">
-              <Link className="page-link" to="/docs" aria-label="Back">
-                <span aria-hidden="true">&laquo; Back to Docs</span>
+              <Link className="page-link" to={pathPrefix} aria-label="Back">
+                <span aria-hidden="true">&laquo; Back</span>
                 <span className="sr-only">Back</span>
               </Link>
             </li>
@@ -165,11 +166,18 @@ class ArticlePage extends Component {
               <h1>{currentPage.title}</h1>
               <div dangerouslySetInnerHTML={{ __html: currentPage.markup }}>
               </div>
+              <div className="m-t-4">
+                <Link to={githubFileUrlRoot + currentPage.pageName + ".md"}
+                  role="button" target="_blank"
+                  className="btn btn-sm btn-outline-primary m-b-2">
+                  Edit this article on GitHub
+                </Link>
+              </div>
               {nextPage ?
                 <div>
                   <div className="col-md-4 pull-l-padding">
                     <h3>Next Article</h3>
-                    <CardLink href={`/docs/${nextPage.pageName}`}
+                    <CardLink href={`${pathPrefix}/${nextPage.pageName}`}
                       title={nextPage.title} body={nextPage.description}
                       imageSrc={nextPage.image} />
                   </div>

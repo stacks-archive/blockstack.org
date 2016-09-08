@@ -7,9 +7,13 @@ import CreateBrowserHistory        from 'history/lib/createBrowserHistory'
 import App                         from './App'
 import HomePage                    from './pages/HomePage'
 import SummitPage                  from './pages/SummitPage'
-import DocsPage                    from './pages/DocsPage'
+
+import TutorialsIndexPage          from './pages/TutorialsIndexPage'
+import ArticlesIndexPage           from './pages/ArticlesIndexPage'
+
 import ArticlePage                 from './pages/ArticlePage'
 import NotFoundPage                from './pages/NotFoundPage'
+import AboutPage                   from './pages/AboutPage'
 import docs                        from '../docs.json'
 
 export default (
@@ -19,9 +23,14 @@ export default (
       <IndexRoute component={HomePage} />
 
       <Route path="/" component={HomePage} />
-      <Route path="/docs" component={DocsPage} />
+
+      <Route path="/articles" component={ArticlesIndexPage} />
+      <Route path="/tutorials" component={TutorialsIndexPage} />
+      <Route path="/articles/:docSection" component={ArticlePage} />
+      <Route path="/tutorials/:docSection" component={ArticlePage} />
       <Route path="/docs/:docSection" component={ArticlePage} />
-      <Route path="/about" component={ArticlePage} />
+
+      <Route path="/about" component={AboutPage} />
       <Route path="/summit" component={SummitPage} />
 
       <Route path="*" component={NotFoundPage} />

@@ -7,15 +7,33 @@ import config from '../config';
 gulp.task('configFirebase', () => {
   let firebaseJson = JSON.parse(fs.readFileSync('firebase.json'))
 
+  let folderNames = ['articles', 'tutorials']
+  let redirectRules = [
+    {
+      "source": "/docs/blockchain-id",
+      "destination": "/docs/blockchain-identity",
+    },
+    {
+      "source": "/docs/what-is-blockstack",
+      "destination": "/articles/blockstack-core",
+    },
+    {
+      "source": "/docs",
+      "destination": "/articles"
+    }
+  ]
+
   let rewrites = []
   let redirects = []
 
-  fs.readdirSync('app/docs/').forEach((docFilename) => {
-    const key = docFilename.split('.')[0].toLowerCase()
+  folderNames.forEach((folderName) => {
+    fs.readdirSync('app/docs/' + folderName + '/').forEach((docFilename) => {
+      const key = docFilename.split('.')[0].toLowerCase()
 
-    rewrites.push({
-      "source": `/docs/${key}`,
-      "destination": `/docs-${key}.html`
+      rewrites.push({
+        "source": `/docs/${folderName}/${key}`,
+        "destination": `/docs-${folderName}-${key}.html`
+      })
     })
   })
 
@@ -23,11 +41,13 @@ gulp.task('configFirebase', () => {
     "source": "**",
     "destination": "/index.html"
   })
-  
-  redirects.push({
-    "source": "/docs/blockchain-id",
-    "destination": "/docs/blockchain-identity",
-    "type": 301
+
+  redirectRules.forEach((rule) => {
+    redirects.push({
+      "source": rule.source,
+      "destination": rule.destination,
+      "type": 301
+    })
   })
 
   firebaseJson.rewrites = rewrites

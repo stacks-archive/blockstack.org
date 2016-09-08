@@ -10,6 +10,17 @@ class Footer extends Component {
   }
 
   render() {
+    const links = {
+      twitter: 'https://www.twitter.com/blockstackorg',
+      youtube: 'https://www.youtube.com/channel/UC3J2iHnyt2JtOvtGVf_jpHQ',
+      slack: 'http://chat.blockstack.org',
+      meetup: 'http://www.meetup.com/topics/blockstack/',
+      reddit: 'https://www.reddit.com/r/blockstack',
+      blog: 'http://blog.blockstack.org',
+      github: 'https://github.com/blockstack',
+      branding: 'http://brandfolder.com/blockstack'
+    }
+
     return (
       <footer>
         <div className="container">
@@ -31,10 +42,10 @@ class Footer extends Component {
                   <Link to="/about">About</Link>
                 </li>
                 <li>
-                  <Link to="/docs">Docs</Link>
+                  <Link to="/learn">Learn</Link>
                 </li>
                 <li>
-                  <Link to="/docs/installation">Installation</Link>
+                  <Link to="/docs">Docs</Link>
                 </li>
               </ul>
             </div>
@@ -42,13 +53,19 @@ class Footer extends Component {
               <ul className="foot-menu list-unstyled">
                 <li>Community</li>
                 <li>
-                  <Link to="https://www.reddit.com/r/blockstack" target="_blank">Subreddit</Link>
+                  <Link to={links.slack} target="_blank">Slack</Link>
                 </li>
                 <li>
-                  <Link to="http://chat.blockstack.org" target="_blank">Slack Group</Link>
+                  <Link to={links.meetup} target="_blank">Meetup</Link>
                 </li>
                 <li>
-                  <Link to="https://medium.com/blockstack-review" target="_blank">Blog</Link>
+                  <Link to={links.reddit} target="_blank">Reddit</Link>
+                </li>
+                <li>
+                  <Link to={links.blog} target="_blank">Blog</Link>
+                </li>
+                <li>
+                  <Link to={links.youtube} target="_blank">YouTube</Link>
                 </li>
               </ul>
             </div>
@@ -56,13 +73,13 @@ class Footer extends Component {
               <ul className="foot-menu list-unstyled">
                 <li>Resources</li>
                 <li>
-                  <Link to="https://github.com/blockstack" target="_blank">Github</Link>
+                  <Link to={links.github} target="_blank">Github</Link>
                 </li>
                 <li>
-                  <Link to="https://www.twitter.com/blockstackorg" target="_blank">Twitter</Link>
+                  <Link to={links.twitter} target="_blank">Twitter</Link>
                 </li>
                 <li>
-                  <Link to="http://brandfolder.com/blockstack" target="_blank">Branding</Link>
+                  <Link to={links.branding} target="_blank">Branding</Link>
                 </li>
               </ul>
             </div>
@@ -73,17 +90,17 @@ class Footer extends Component {
               <div className="social hidden-lg-up container">
                 <ul className="sm-social list-unstyled">
                   <li>
-                    <Link to="https://www.twitter.com/blockstackorg" target="_blank">
+                    <Link to={links.twitter} target="_blank">
                       <i className="fa fa-twitter"></i>
                     </Link>
                   </li>
                   <li>
-                    <Link to="https://www.youtube.com/channel/UCvDtRhHLNDyKiY-iwhneNbw" target="_blank">
+                    <Link to={links.youtube} target="_blank">
                       <i className="fa fa-youtube-play"></i>
                     </Link>
                   </li>
                   <li>
-                    <Link to="https://github.com/blockstack" target="_blank">
+                    <Link to={links.github} target="_blank">
                       <i className="fa fa-github"></i>
                     </Link>
                   </li>
@@ -100,17 +117,17 @@ class Footer extends Component {
               <div className="social hidden-md-down">
                 <ul className="sm-social list-unstyled">
                   <li>
-                    <Link to="https://www.twitter.com/blockstackorg" target="_blank">
+                    <Link to={links.youtube} target="_blank">
                       <i className="fa fa-twitter"></i>
                     </Link>
                   </li>
                   <li>
-                    <Link to="https://www.youtube.com/channel/UCvDtRhHLNDyKiY-iwhneNbw" target="_blank">
+                    <Link to={links.youtube} target="_blank">
                       <i className="fa fa-youtube-play"></i>
                     </Link>
                   </li>
                   <li>
-                    <Link to="https://github.com/blockstack" target="_blank">
+                    <Link to={links.github} target="_blank">
                       <i className="fa fa-github"></i>
                     </Link>
                   </li>
