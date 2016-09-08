@@ -122,39 +122,37 @@ class HomePage extends Component {
                   </h2>
                 </div>
               </div>
-              <div className="row works col-centered">
-                <div className="row m-b-2">
-                  <div className="feat-img-top col-sm-6">
-                      <div className="container wrap-mob-feat m-b-3">
-                        <img src="/images/icons/icon-white-house-lrg.svg"
-                          className="img-responsive" alt="Decentralized icon" />
-                      </div>
-                      <h4 className="text-xs-center">The web, once open, has been hijacked by the powerful few</h4>
-                      <p className="lead text-xs-center">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      </p>
-                  </div>
-                  <div className="feat-img-top col-sm-6">
-                      <div className="container wrap-mob-feat m-b-3">
-                        <img src="/images/icons/icon-decentralized.svg"
-                          className="img-responsive" alt="Decentralized icon" />
-                      </div>
-                      <h4 className="text-xs-center">Decentralization enables greater developer inclusion, freedom, and innovation</h4>
-                      <p className="lead text-xs-center">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      </p>
-                  </div>
+              <div className="row works col-centered deck-wrap-top">
+                <div className="feat-img-top col-sm-6 p-b-2">
+                    <div className="container wrap-mob-feat m-b-3">
+                      <img src="/images/icons/icon-white-house-lrg.svg"
+                        className="img-fluid m-x-auto" alt="control icon" />
+                    </div>
+                    <h4 className="text-xs-center">The web, once open, has been hijacked by the powerful few</h4>
+                    <p className="lead text-xs-center">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <div className="feat-img-top col-sm-6 p-b-2">
+                    <div className="container wrap-mob-feat m-b-3">
+                      <img src="/images/icons/icon-decentralized.svg"
+                        className="img-fluid m-x-auto" alt="Decentralized icon" />
+                    </div>
+                    <h4 className="text-xs-center">Decentralization enables greater developer inclusion, freedom, and innovation</h4>
+                    <p className="lead text-xs-center">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
                 </div>
               </div>
               <div className="row works col-centered">
-                <div className="feat-img-top col-sm-6">
+                <div className="feat-img-top col-sm-6 p-b-2">
                     <div className="container wrap-mob-feat m-b-3">
                       <img src="/images/icons/icon-info-hex.svg"
-                        className="img-responsive" alt="Decentralized icon" />
+                        className="img-fluid m-x-auto" alt="Info security icon" />
                     </div>
                     <h4 className="text-xs-center">Users benefit from more options, availability, savings, & info security</h4>
                     <p className="lead text-xs-center">
@@ -163,10 +161,10 @@ class HomePage extends Component {
                       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
                 </div>
-                <div className="feat-img-top col-sm-6">
+                <div className="feat-img-top col-sm-6 p-b-2">
                     <div className="container wrap-mob-feat m-b-3">
                       <img src="/images/icons/icon-data-server-browse.svg"
-                        className="img-responsive" alt="Decentralized icon" />
+                        className="img-fluid m-x-auto" alt="No database server icon" />
                     </div>
                     <h4 className="text-xs-center">Building great products shouldn't require managing servers, databases & ID systems</h4>
                     <p className="lead text-xs-center">

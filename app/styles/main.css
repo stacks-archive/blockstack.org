@@ -305,8 +305,9 @@ footer > li{list-style:none;}
   .hero-head{padding-left:0;}
   .hero-img{margin-top:-25px;margin-right:-10px;}
   .slides{padding-top:50px;padding-right:0;padding-left:0;}
-  .wrap-mob-feat{max-width:230px;}
+  .wrap-mob-feat{max-width:240px;}
   .topic{margin-bottom:5px;}
+  /* Reviewed */.deck-wrap-top{padding-bottom:25px;}
   /* Reviewed */.hero-head.summ-head{font-size:54px;}
 
   /* Summit page */
