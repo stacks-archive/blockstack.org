@@ -128,7 +128,7 @@ class HomePage extends Component {
                       <img src="/images/icons/mini-decentralized.svg"
                         className="img-responsive" alt="Decentralized icon" />
                     </div>
-                    <h4>The web, once open, has been hijacked by the powerful few</h4>
+                    <h4 className="text-xs-center">The web, once open, has been hijacked by the powerful few</h4>
                     <p className="lead">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -140,7 +140,7 @@ class HomePage extends Component {
                       <img src="/images/icons/mini-decentralized.svg"
                         className="img-responsive" alt="Decentralized icon" />
                     </div>
-                    <h4>Decentralization enables greater developer inclusion, freedom, and innovation</h4>
+                    <h4 className="text-xs-center">Decentralization enables greater developer inclusion, freedom, and innovation</h4>
                     <p className="lead">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -154,7 +154,7 @@ class HomePage extends Component {
                       <img src="/images/icons/mini-decentralized.svg"
                         className="img-responsive" alt="Decentralized icon" />
                     </div>
-                    <h4>Users benefit from more options, availability, savings, & info security</h4>
+                    <h4 className="text-xs-center">Users benefit from more options, availability, savings, & info security</h4>
                     <p className="lead">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -166,7 +166,7 @@ class HomePage extends Component {
                       <img src="/images/icons/mini-decentralized.svg"
                         className="img-responsive" alt="Decentralized icon" />
                     </div>
-                    <h4>Building great products shouldn't require managing servers, databases & ID systems</h4>
+                    <h4 className="text-xs-center">Building great products shouldn't require managing servers, databases & ID systems</h4>
                     <p className="lead">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
