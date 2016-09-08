@@ -124,8 +124,8 @@ class HomePage extends Component {
               </div>
               <div className="row works col-centered">
                 <div className="col-sm-6">
-                    <div className="container wrap-mob-feat">
-                      <img src="/images/icons/mini-decentralized.svg"
+                    <div className="container wrap-mob-feat m-b-3">
+                      <img src="/images/icons/icon-white-house-lrg.svg"
                         className="img-responsive" alt="Decentralized icon" />
                     </div>
                     <h4 className="text-xs-center">The web, once open, has been hijacked by the powerful few</h4>
@@ -136,8 +136,8 @@ class HomePage extends Component {
                     </p>
                 </div>
                 <div className="col-sm-6">
-                    <div className="container wrap-mob-feat">
-                      <img src="/images/icons/mini-decentralized.svg"
+                    <div className="container wrap-mob-feat m-b-3">
+                      <img src="/images/icons/icon-decentralized.svg"
                         className="img-responsive" alt="Decentralized icon" />
                     </div>
                     <h4 className="text-xs-center">Decentralization enables greater developer inclusion, freedom, and innovation</h4>
@@ -150,7 +150,7 @@ class HomePage extends Component {
               </div>
               <div className="row works col-centered">
                 <div className="col-sm-6">
-                    <div className="container wrap-mob-feat">
+                    <div className="container wrap-mob-feat m-b-3">
                       <img src="/images/icons/mini-decentralized.svg"
                         className="img-responsive" alt="Decentralized icon" />
                     </div>
@@ -162,7 +162,7 @@ class HomePage extends Component {
                     </p>
                 </div>
                 <div className="col-sm-6">
-                    <div className="container wrap-mob-feat">
+                    <div className="container wrap-mob-feat m-b-3">
                       <img src="/images/icons/mini-decentralized.svg"
                         className="img-responsive" alt="Decentralized icon" />
                     </div>
