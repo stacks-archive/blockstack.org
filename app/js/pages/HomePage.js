@@ -125,7 +125,7 @@ class HomePage extends Component {
               <div className="row works col-centered deck-wrap-top">
                 <div className="feat-img-top col-sm-6 p-b-2">
                     <div className="container wrap-mob-feat m-b-3">
-                      <img src="/images/icons/icon-white-house-lrg.svg"
+                      <img src="/images/icons/icon-bank.svg"
                         className="img-fluid m-x-auto" alt="control icon" />
                     </div>
                     <h4 className="text-xs-center">The web, once open, has been hijacked by the powerful few</h4>
