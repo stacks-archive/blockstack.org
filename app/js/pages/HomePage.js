@@ -272,21 +272,21 @@ class HomePage extends Component {
               <div className="row col-sm-12 col-centered">
                 <div className="col-sm-4 feature-panel feature-logo-1">
                   <div className="container wrap-mob-feat">
-                    <Link to="http://democracyos.org/">
+                    <Link to="http://democracyos.org/" target="_blank">
                       <img src="/images/logos/democracyos.svg" alt="DemocracyOS logo" width="240px"/>
                     </Link>
                   </div>
                 </div>
                 <div className="col-sm-4 feature-panel feature-logo-2">
                   <div className="container wrap-mob-feat">
-                    <Link to="http://openbazaar.org/">
+                    <Link to="http://openbazaar.org/" target="_blank">
                       <img src="/images/logos/openbazaar.svg" alt="OpenBazaar logo" width="180px"/>
                     </Link>
                   </div>
                 </div>
                 <div className="col-sm-4 feature-panel feature-logo-3">
                   <div className="container wrap-mob-feat">
-                    <Link to="https://tierion.com/">
+                    <Link to="https://tierion.com/" target="_blank">
                       <img src="/images/logos/tierion.svg"
                       alt="Tierion logo" width="160px"/>
                     </Link>
@@ -296,14 +296,14 @@ class HomePage extends Component {
               <div className="row col-sm-12 col-centered">
                 <div className="col-sm-6 feature-panel feature-logo-4">
                   <div className="container wrap-mob-feat">
-                    <Link to="http://bitseed.org/">
+                    <Link to="http://bitseed.org/" target="_blank">
                       <img src="/images/logos/bitseed.svg" alt="Bitseed logo" width="128px"/>
                     </Link>
                   </div>
                 </div>
                 <div className="col-sm-6 feature-panel feature-logo-5">
                   <div className="container wrap-mob-feat">
-                    <Link to="http://trychord.com/">
+                    <Link to="http://trychord.com/" target="_blank">
                       <img src="/images/logos/chord.svg" alt="Chord logo" width="110px"/>
                     </Link>
                   </div>
@@ -313,36 +313,22 @@ class HomePage extends Component {
               <div className="row col-sm-12 col-centered">
                 <div className="col-sm-4 feature-panel feature-logo-1">
                   <div className="container wrap-mob-feat">
-                    <Link to="http://anyshare.coop/">
+                    <Link to="http://anyshare.coop/" target="_blank">
                       <img src="/images/logos/anyshare.svg" alt="Anyshare logo" width="180px"/>
                     </Link>
                   </div>
                 </div>
                 <div className="col-sm-4 feature-panel feature-logo-2">
                   <div className="container wrap-mob-feat">
+                    <Link to="https://www.yours.network/" target="_blank">
+                      <img src="/images/logos/yours-network.svg" alt="Yours Network logo" width="110px"/>
+                    </Link>
                   </div>
                 </div>
                 <div className="col-sm-4 feature-panel feature-logo-3">
                   <div className="container wrap-mob-feat">
-                    <Link to="http://consent.global">
+                    <Link to="http://consent.global" target="_blank">
                       <img src="/images/logos/consent.svg" alt="Consent logo" width="120px"/>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-
-              <div className="row col-sm-12 col-centered">
-                <div className="col-sm-6 feature-panel feature-logo-4">
-                  <div className="container wrap-mob-feat">
-                    <Link to="http://arcade.city/">
-                      <img src="/images/logos/arcade-city.svg" alt="Arcade City logo" width="110px"/>
-                    </Link>
-                  </div>
-                </div>
-                <div className="col-sm-6 feature-panel feature-logo-4">
-                  <div className="container wrap-mob-feat">
-                    <Link to="https://www.yours.network/">
-                      <img src="/images/logos/yours-network.svg" alt="Yours Network logo" width="110px"/>
                     </Link>
                   </div>
                 </div>
