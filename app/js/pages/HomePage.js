@@ -81,7 +81,7 @@ class HomePage extends Component {
                 <div className="col-md-6 col-lg-5 no-padding">
                   <h1 className="hero-head">
                     The New <br/>
-                    Decentralized Web
+                    Decentralized Internet
                   </h1>
                   <div className="container no-padding">
                     <div className="col-md-8 offset-md-2 col-md-7 offset-md-0 m-b-1 hidden-md-up">
@@ -118,7 +118,7 @@ class HomePage extends Component {
               <div className="row col-centered">
                <div className="col-md-12 feature-panel">
                   <h2 className="displayed">
-                    Blockstack is Making the Decentralized Web Possible
+                    Blockstack is Making the Decentralized Internet Possible
                   </h2>
                 </div>
               </div>
@@ -320,9 +320,6 @@ class HomePage extends Component {
                 </div>
                 <div className="col-sm-4 feature-panel feature-logo-2">
                   <div className="container wrap-mob-feat">
-                    <Link to="https://www.microsoft.com/">
-                      <img src="/images/logos/microsoft.png" alt="Microsoft logo" width="180px"/>
-                    </Link>
                   </div>
                 </div>
                 <div className="col-sm-4 feature-panel feature-logo-3">
