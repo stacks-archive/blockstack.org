@@ -121,7 +121,7 @@ class ArticlePage extends Component {
             {"name": "description", "content": currentPage.description },
 
             {"property": "og:type", "content": "article"},
-            {"property": "og:url", "content": `https://blockstack.org/docs/${currentPage.pageName}`},
+            {"property": "og:url", "content": `https://blockstack.org${pathPrefix}/${currentPage.pageName}`},
             {"property": "og:title", "content": `Blockstack - ${currentPage.title}` },
             {"property": "og:description", "content": `${currentPage.description}`},
             {"property": "og:image", "content": `${currentPage.image}`},
@@ -167,7 +167,7 @@ class ArticlePage extends Component {
               <div dangerouslySetInnerHTML={{ __html: currentPage.markup }}>
               </div>
               <div className="m-t-4">
-                <Link to={githubFileUrlRoot + currentPage.pageName + ".md"}
+                <Link to={githubFileUrlRoot + pathPrefix + '/' + currentPage.pageName + ".md"}
                   role="button" target="_blank"
                   className="btn btn-sm btn-outline-primary m-b-2">
                   Edit this article on GitHub
