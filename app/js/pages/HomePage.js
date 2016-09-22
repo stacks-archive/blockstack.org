@@ -321,7 +321,7 @@ class HomePage extends Component {
                 <div className="col-sm-4 feature-panel feature-logo-2">
                   <div className="container wrap-mob-feat">
                     <Link to="https://www.yours.network/" target="_blank">
-                      <img src="/images/logos/yours-network.svg" alt="Yours Network logo" width="110px"/>
+                      <img src="/images/logos/yours_logo-transparent-01.png" alt="Yours Network logo" width="208px"/>
                     </Link>
                   </div>
                 </div>
