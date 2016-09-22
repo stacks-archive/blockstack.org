@@ -95,12 +95,13 @@ class HomePage extends Component {
                   <p className="no-padding col-md-8">
                     <Link to="http://chat.blockstack.org" target="_blank" role="button"
                       className="btn btn-lg btn-primary btn-block">
-                      Get Early Access
+                      Get the Browser
                     </Link>
                   </p>
-                  <p className="no-padding col-md-8" style={{ display: 'none' }}>
-                    <Link to="/docs" className="nav-link">
-                      Read the Docs
+                  <p className="no-padding col-md-8">
+                    <Link to="/tutorials" className="nav-link"
+                      className="btn btn-sm btn-outline-secondary btn-block">
+                      Try the Tutorials
                     </Link>
                   </p>
                 </div>
