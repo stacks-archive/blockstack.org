@@ -44,6 +44,10 @@
         "destination": "/docs-articles-blockstack-vs-namecoin.html"
       },
       {
+        "source": "/docs/articles/browser-beta",
+        "destination": "/docs-articles-browser-beta.html"
+      },
+      {
         "source": "/docs/articles/extended-usage",
         "destination": "/docs-articles-extended-usage.html"
       },
