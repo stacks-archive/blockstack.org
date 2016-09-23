@@ -271,21 +271,14 @@ class HomePage extends Component {
                 </div>
               </div>
               <div className="row col-sm-12 col-centered">
-                <div className="col-sm-4 feature-panel feature-logo-1">
+                <div className="col-sm-4 feature-panel" style={{ marginTop: '15px' }}>
                   <div className="container wrap-mob-feat">
                     <Link to="http://democracyos.org/" target="_blank">
                       <img src="/images/logos/democracyos.svg" alt="DemocracyOS logo" width="240px"/>
                     </Link>
                   </div>
                 </div>
-                <div className="col-sm-4 feature-panel feature-logo-2">
-                  <div className="container wrap-mob-feat">
-                    <Link to="http://openbazaar.org/" target="_blank">
-                      <img src="/images/logos/openbazaar.svg" alt="OpenBazaar logo" width="180px"/>
-                    </Link>
-                  </div>
-                </div>
-                <div className="col-sm-4 feature-panel feature-logo-3">
+                <div className="col-sm-4 feature-panel" style={{ marginTop: '15px' }}>
                   <div className="container wrap-mob-feat">
                     <Link to="https://microsoft.com/" target="_blank">
                       <img src="/images/logos/microsoft-logo.svg"
@@ -293,23 +286,31 @@ class HomePage extends Component {
                     </Link>
                   </div>
                 </div>
+                <div className="col-sm-4 feature-panel" style={{ marginTop: '0px' }}>
+                  <div className="container wrap-mob-feat">
+                    <Link to="http://openbazaar.org/" target="_blank">
+                      <img src="/images/logos/openbazaar.svg" alt="OpenBazaar logo" width="180px"/>
+                    </Link>
+                  </div>
+                </div>
+
               </div>
               <div className="row col-sm-12 col-centered">
-                <div className="col-sm-4 feature-panel feature-logo-4">
+                <div className="col-sm-4 feature-panel" style={{ marginTop: '0px' }}>
                   <div className="container wrap-mob-feat">
                     <Link to="http://bitseed.org/" target="_blank">
                       <img src="/images/logos/bitseed.svg" alt="Bitseed logo" width="128px"/>
                     </Link>
                   </div>
                 </div>
-                <div className="col-sm-4 feature-panel feature-logo-5">
+                <div className="col-sm-4 feature-panel" style={{ marginTop: '30px' }}>
                   <div className="container wrap-mob-feat">
                     <Link to="http://trychord.com/" target="_blank">
                       <img src="/images/logos/chord.svg" alt="Chord logo" width="110px"/>
                     </Link>
                   </div>
                 </div>
-                <div className="col-sm-4 feature-panel feature-logo-3">
+                <div className="col-sm-4 feature-panel" style={{ marginTop: '25px' }}>
                   <div className="container wrap-mob-feat">
                     <Link to="https://tierion.com/" target="_blank">
                       <img src="/images/logos/tierion.svg"
@@ -320,21 +321,21 @@ class HomePage extends Component {
               </div>
 
               <div className="row col-sm-12 col-centered">
-                <div className="col-sm-4 feature-panel feature-logo-1">
+                <div className="col-sm-4 feature-panel" style={{ marginTop: '30px' }}>
                   <div className="container wrap-mob-feat">
                     <Link to="http://anyshare.coop/" target="_blank">
                       <img src="/images/logos/anyshare.svg" alt="Anyshare logo" width="180px"/>
                     </Link>
                   </div>
                 </div>
-                <div className="col-sm-4 feature-panel feature-logo-2">
+                <div className="col-sm-4 feature-panel" style={{ marginTop: '-50px' }}>
                   <div className="container wrap-mob-feat">
                     <Link to="https://www.yours.network/" target="_blank">
                       <img src="/images/logos/yours_logo-transparent-01.png" alt="Yours Network logo" width="208px"/>
                     </Link>
                   </div>
                 </div>
-                <div className="col-sm-4 feature-panel feature-logo-3">
+                <div className="col-sm-4 feature-panel" style={{ marginTop: '30px' }}>
                   <div className="container wrap-mob-feat">
                     <Link to="http://consent.global" target="_blank">
                       <img src="/images/logos/consent.svg" alt="Consent logo" width="120px"/>
