@@ -286,25 +286,33 @@ class HomePage extends Component {
                 </div>
                 <div className="col-sm-4 feature-panel feature-logo-3">
                   <div className="container wrap-mob-feat">
-                    <Link to="https://tierion.com/" target="_blank">
-                      <img src="/images/logos/tierion.svg"
-                      alt="Tierion logo" width="160px"/>
+                    <Link to="https://microsoft.com/" target="_blank">
+                      <img src="/images/logos/microsoft-logo.svg"
+                      alt="Microsoft logo" width="160px"/>
                     </Link>
                   </div>
                 </div>
               </div>
               <div className="row col-sm-12 col-centered">
-                <div className="col-sm-6 feature-panel feature-logo-4">
+                <div className="col-sm-4 feature-panel feature-logo-4">
                   <div className="container wrap-mob-feat">
                     <Link to="http://bitseed.org/" target="_blank">
                       <img src="/images/logos/bitseed.svg" alt="Bitseed logo" width="128px"/>
                     </Link>
                   </div>
                 </div>
-                <div className="col-sm-6 feature-panel feature-logo-5">
+                <div className="col-sm-4 feature-panel feature-logo-5">
                   <div className="container wrap-mob-feat">
                     <Link to="http://trychord.com/" target="_blank">
                       <img src="/images/logos/chord.svg" alt="Chord logo" width="110px"/>
+                    </Link>
+                  </div>
+                </div>
+                <div className="col-sm-4 feature-panel feature-logo-3">
+                  <div className="container wrap-mob-feat">
+                    <Link to="https://tierion.com/" target="_blank">
+                      <img src="/images/logos/tierion.svg"
+                      alt="Tierion logo" width="160px"/>
                     </Link>
                   </div>
                 </div>
