@@ -16,10 +16,6 @@
         "destination": "/docs-articles-404.html"
       },
       {
-        "source": "/docs/articles/basic-usage",
-        "destination": "/docs-articles-basic-usage.html"
-      },
-      {
         "source": "/docs/articles/blockchain-identity",
         "destination": "/docs-articles-blockchain-identity.html"
       },
@@ -48,10 +44,6 @@
         "destination": "/docs-articles-browser-beta.html"
       },
       {
-        "source": "/docs/articles/extended-usage",
-        "destination": "/docs-articles-extended-usage.html"
-      },
-      {
         "source": "/docs/articles/faq",
         "destination": "/docs-articles-faq.html"
       },
@@ -62,10 +54,6 @@
       {
         "source": "/docs/articles/identity-attestation",
         "destination": "/docs-articles-identity-attestation.html"
-      },
-      {
-        "source": "/docs/articles/installation",
-        "destination": "/docs-articles-installation.html"
       },
       {
         "source": "/docs/articles/light-clients",
@@ -80,12 +68,12 @@
         "destination": "/docs-articles-namespaces.html"
       },
       {
-        "source": "/docs/articles/pybitcoin",
-        "destination": "/docs-articles-pybitcoin.html"
-      },
-      {
         "source": "/docs/articles/virtualchain-paper",
         "destination": "/docs-articles-virtualchain-paper.html"
+      },
+      {
+        "source": "/docs/tutorials/basic-usage",
+        "destination": "/docs-tutorials-basic-usage.html"
       },
       {
         "source": "/docs/tutorials/blogging",
@@ -100,6 +88,10 @@
         "destination": "/docs-tutorials-document-signing.html"
       },
       {
+        "source": "/docs/tutorials/extended-usage",
+        "destination": "/docs-tutorials-extended-usage.html"
+      },
+      {
         "source": "/docs/tutorials/filesharing",
         "destination": "/docs-tutorials-filesharing.html"
       },
@@ -108,12 +100,20 @@
         "destination": "/docs-tutorials-hello-world.html"
       },
       {
+        "source": "/docs/tutorials/installation",
+        "destination": "/docs-tutorials-installation.html"
+      },
+      {
         "source": "/docs/tutorials/messaging",
         "destination": "/docs-tutorials-messaging.html"
       },
       {
         "source": "/docs/tutorials/package-manager",
         "destination": "/docs-tutorials-package-manager.html"
+      },
+      {
+        "source": "/docs/tutorials/pybitcoin",
+        "destination": "/docs-tutorials-pybitcoin.html"
       },
       {
         "source": "/docs/tutorials/social-networking",
