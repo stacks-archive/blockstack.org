@@ -26,26 +26,33 @@ class AboutPage extends Component {
           <section className="m-t-5">
             <div className="container p-b-5 col-centered">
               <div className="container">
-                <div className="m-b-5 p-t-1">
+                <div className="m-b-3 p-t-1">
                   <hgroup>
-                    <h3 className="action-title">
+                    <h1 className="action-title">
                       About
-                    </h3>
+                    </h1>
+                  </hgroup>
+                </div>
+                <div className="m-b-3">
+                  <hgroup>
+                    <h4 className="action-title">
+                      The Movement 
+                    </h4>
                   </hgroup>
                   <p>
-                    Blockstack is a movement to build the decentralized web - a movement of
-                    hackers, designers, and entrepreneurs from around the world deeply committed to the
-                    future of the Internet as a bastion of innovation, freedom, and economic inclusion.
-                    Blockstack is about pushing power to the edges with decentralized applications
-                    and allowing users to be in control of their data, identities and software.
+                    Blockstack is a movement to build the decentralized internet - a movement of
+                    engineers, designers, and entrepreneurs from around the world deeply committed to the
+                    future of the internet as a bastion of innovation, freedom, and economic inclusion.
                   </p>
+                </div>
+                <div className="m-b-3">
+                  <hgroup>
+                    <h4 className="action-title">
+                      The Platform 
+                    </h4>
+                  </hgroup>
                   <p>
-                    Blockstack has protocols and software projects that when used together
-                    are a powerful way for developers to build decentralized applications.
-                    Blockstack Core provides decentralized naming, public key infrastructure, and storage.
-                    Blockstack Auth provides support for decentralized identity and authentication.
-                    Blockstack clients like the Blockstack CLI, Onename, and the Blockstack Browser
-                    provide complete packages that hook into Blockstack Core and Blockstack Auth.
+                    Blockstack is a platform for decentralized, server-less applications. Building on Blockstack starts with single-page applications built in Javascript that are downloaded onto user devices. Developers plug into blockstack.js, which provides API’s for authenticating the user, grabbing application data from the user, and storing new application data with the user (encrypted and backed up to cloud storage). The blockchain is utilized to maintain a cross-application identity system, securely mapping user IDs to usernames, public keys, and data storage URIs. Developers don’t have to worry about running servers, maintaining databases, or building out user management systems, and decentralized, server-less applications can be built more simply than their traditional counterparts.
                   </p>
                 </div>
                 <div>
