@@ -91,7 +91,7 @@ class HomePage extends Component {
                     </div>
                   </div>
                   <p className="lead hero-lead col-md-11">
-                    Build decentralized apps that run on user devices and put them in control of their data.
+                    Build decentralized, server-less apps that put users in control of their data.
                   </p>
                   <p className="no-padding col-md-8">
                     <Link to="/articles/browser-beta" role="button"
