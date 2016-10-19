@@ -17,22 +17,21 @@ class NotFoundPage extends Component {
     return (
       <DocumentTitle title="Blockstack - Page Not Found">
         <div>
-          <div className="container-fluid col-centered about-head-wrap">
+          <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
           </div>
-          <section className="feature-action col-centered">
-            <div className="container">
-              <div className="row">
-                <div className="container col-xs-11 col-centered">
+          <section className="m-t-5">
+            <div className="container p-b-5 col-centered">
+              <div className="container">
+                <div className="m-b-3 p-t-1">
                   <hgroup>
-                    <h2 className="col-md-8 col-lg-6 col-centered action-title">
-                      Page Does not Exist!
-                    </h2>
+                    <h1 className="action-title">
+                      Page Does Not Exist
+                    </h1>
                   </hgroup>
-                  <a href="/" className="btn btn-lg btn-special" role="button"
-                      onClick={Link.handleClick}>
+                  <Link className="btn btn-lg btn-special" to="/">
                     Go Home
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

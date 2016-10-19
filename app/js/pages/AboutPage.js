@@ -36,7 +36,7 @@ class AboutPage extends Component {
                 <div className="m-b-3">
                   <hgroup>
                     <h4 className="action-title">
-                      The Movement 
+                      Community 
                     </h4>
                   </hgroup>
                   <p>
@@ -48,12 +48,73 @@ class AboutPage extends Component {
                 <div className="m-b-3">
                   <hgroup>
                     <h4 className="action-title">
-                      The Platform 
+                      Platform
                     </h4>
                   </hgroup>
                   <p>
-                    Blockstack is a platform for decentralized, server-less applications. Building on Blockstack starts with single-page applications built in Javascript that are downloaded onto user devices. Developers plug into blockstack.js, which provides API’s for authenticating the user, grabbing application data from the user, and storing new application data with the user (encrypted and backed up to cloud storage). The blockchain is utilized to maintain a cross-application identity system, securely mapping user IDs to usernames, public keys, and data storage URIs. Developers don’t have to worry about running servers, maintaining databases, or building out user management systems, and decentralized, server-less applications can be built more simply than their traditional counterparts.
+                    Blockstack is a new internet for decentralized, server-less applications.
+                    Building on Blockstack starts with single-page applications built in Javascript that
+                    are downloaded onto user devices.
+                    Developers plug into blockstack.js, which provides API’s for authenticating the user,
+                    grabbing application data from the user, and storing new application data with the
+                    user (encrypted and backed up to cloud storage).
+                    The blockchain is utilized to maintain a cross-application identity system, securely
+                    mapping user IDs to usernames, public keys, and data storage URIs.
+                    Developers don’t have to worry about running servers, maintaining databases, or
+                    building out user management systems, and decentralized, server-less applications
+                    can be built more simply than their traditional counterparts.
                   </p>
+                </div>
+                <div className="m-b-3">
+                  <hgroup>
+                    <h4 className="action-title">
+                      Code
+                    </h4>
+                  </hgroup>
+                  <ul>
+                    <li>
+                      <Link to="https://github.com/blockstack/blockstack-core"
+                            target="_blank">
+                        Blockstack Core
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="https://github.com/blockstack/blockstack-cli"
+                            target="_blank">
+                        Blockstack CLI
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="https://github.com/blockstack/blockstack-browser"
+                            target="_blank">
+                        Blockstack Browser
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="https://github.com/blockstack/blockstack-explorer"
+                            target="_blank">
+                        Blockstack Explorer
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="https://github.com/blockstack/blockstack-auth-js"
+                            target="_blank">
+                        Blockstack Auth
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="https://github.com/blockstack/blockstack-profiles-js"
+                            target="_blank">
+                        Blockstack Profiles
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="https://github.com/blockstack/virtualchain"
+                            target="_blank">
+                        Virtualchain
+                      </Link>                      
+                    </li>
+                  </ul>
                 </div>
                 <div>
                   <hgroup>

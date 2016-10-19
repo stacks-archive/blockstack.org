@@ -24,10 +24,6 @@
         "destination": "/docs-articles-blockstack-core.html"
       },
       {
-        "source": "/docs/articles/blockstack-papers",
-        "destination": "/docs-articles-blockstack-papers.html"
-      },
-      {
         "source": "/docs/articles/blockstack-profiles",
         "destination": "/docs-articles-blockstack-profiles.html"
       },
@@ -60,68 +56,12 @@
         "destination": "/docs-articles-light-clients.html"
       },
       {
-        "source": "/docs/articles/login-paper",
-        "destination": "/docs-articles-login-paper.html"
-      },
-      {
         "source": "/docs/articles/namespaces",
         "destination": "/docs-articles-namespaces.html"
       },
       {
-        "source": "/docs/articles/virtualchain-paper",
-        "destination": "/docs-articles-virtualchain-paper.html"
-      },
-      {
-        "source": "/docs/tutorials/basic-usage",
-        "destination": "/docs-tutorials-basic-usage.html"
-      },
-      {
-        "source": "/docs/tutorials/blogging",
-        "destination": "/docs-tutorials-blogging.html"
-      },
-      {
-        "source": "/docs/tutorials/crowdfunding",
-        "destination": "/docs-tutorials-crowdfunding.html"
-      },
-      {
-        "source": "/docs/tutorials/document-signing",
-        "destination": "/docs-tutorials-document-signing.html"
-      },
-      {
-        "source": "/docs/tutorials/extended-usage",
-        "destination": "/docs-tutorials-extended-usage.html"
-      },
-      {
-        "source": "/docs/tutorials/filesharing",
-        "destination": "/docs-tutorials-filesharing.html"
-      },
-      {
         "source": "/docs/tutorials/hello-world",
         "destination": "/docs-tutorials-hello-world.html"
-      },
-      {
-        "source": "/docs/tutorials/installation",
-        "destination": "/docs-tutorials-installation.html"
-      },
-      {
-        "source": "/docs/tutorials/messaging",
-        "destination": "/docs-tutorials-messaging.html"
-      },
-      {
-        "source": "/docs/tutorials/package-manager",
-        "destination": "/docs-tutorials-package-manager.html"
-      },
-      {
-        "source": "/docs/tutorials/pybitcoin",
-        "destination": "/docs-tutorials-pybitcoin.html"
-      },
-      {
-        "source": "/docs/tutorials/social-networking",
-        "destination": "/docs-tutorials-social-networking.html"
-      },
-      {
-        "source": "/docs/tutorials/video-sharing",
-        "destination": "/docs-tutorials-video-sharing.html"
       },
       {
         "source": "**",

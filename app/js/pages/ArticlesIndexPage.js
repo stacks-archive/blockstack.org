@@ -17,11 +17,6 @@ class ArticlesIndexPage extends Component {
         items: ['blockstack-core', 'how-blockstack-works', '']
       },
       {
-        title: 'Papers',
-        items: ['blockstack-papers', 'virtualchain-paper', 'login-paper']
-      },
-      {
-        title: 'Blockstack DNS',
         items: ['blockstack-vs-dns', 'blockstack-vs-namecoin', 'namespaces']
       },
       {
