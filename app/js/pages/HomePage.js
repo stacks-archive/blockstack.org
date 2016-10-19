@@ -20,6 +20,7 @@ class HomePage extends Component {
     }
 
     this.updateNameCount = this.updateNameCount.bind(this)
+    this.updateSlackCount = this.updateSlackCount.bind(this)
   }
 
   componentDidMount() {
@@ -99,7 +100,7 @@ class HomePage extends Component {
                     </Link>
                   </p>
                   <p className="no-padding col-md-8">
-                    <Link to="/docs/cli-installation" className="nav-link"
+                    <Link to="/docs" className="nav-link"
                       className="btn btn-sm btn-outline-secondary btn-block">
                       Install the CLI
                     </Link>

@@ -36,7 +36,7 @@ class AboutPage extends Component {
                 <div className="m-b-3">
                   <hgroup>
                     <h4 className="action-title">
-                      Community 
+                      Movement
                     </h4>
                   </hgroup>
                   <p>
@@ -65,57 +65,6 @@ class AboutPage extends Component {
                     can be built more simply than their traditional counterparts.
                   </p>
                 </div>
-                <div className="m-b-3">
-                  <hgroup>
-                    <h4 className="action-title">
-                      Code
-                    </h4>
-                  </hgroup>
-                  <ul>
-                    <li>
-                      <Link to="https://github.com/blockstack/blockstack-core"
-                            target="_blank">
-                        Blockstack Core
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="https://github.com/blockstack/blockstack-cli"
-                            target="_blank">
-                        Blockstack CLI
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="https://github.com/blockstack/blockstack-browser"
-                            target="_blank">
-                        Blockstack Browser
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="https://github.com/blockstack/blockstack-explorer"
-                            target="_blank">
-                        Blockstack Explorer
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="https://github.com/blockstack/blockstack-auth-js"
-                            target="_blank">
-                        Blockstack Auth
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="https://github.com/blockstack/blockstack-profiles-js"
-                            target="_blank">
-                        Blockstack Profiles
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="https://github.com/blockstack/virtualchain"
-                            target="_blank">
-                        Virtualchain
-                      </Link>                      
-                    </li>
-                  </ul>
-                </div>
                 <div>
                   <hgroup>
                     <h4 className="action-title m-b-3">
@@ -123,9 +72,10 @@ class AboutPage extends Component {
                     </h4>
                   </hgroup>
                   <div>
-                  {communityMembers.map((communityMember) => {
+                  {communityMembers.map((communityMember, index) => {
                     return (
                       <CommunityMember
+                        key={index}
                         blockstackId={communityMember.blockstackId}
                         name={communityMember.name}
                         avatar={communityMember.avatar}

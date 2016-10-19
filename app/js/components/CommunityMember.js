@@ -3,14 +3,15 @@ import { Link }                 from 'react-router'
 
 import Image                    from '../components/Image'
 
+const propTypes = {
+  blockstackId: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  github: PropTypes.string,
+  twitter: PropTypes.string
+}
+
 class CommunityMember extends Component {
-  static propTypes: {
-    blockstackId: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    avatar: PropTypes.string.isRequired,
-    github: PropTypes.string,
-    twitter: PropTypes.string
-  }
 
   constructor(props) {
     super(props)
@@ -20,7 +21,10 @@ class CommunityMember extends Component {
     return (
       <div className="col-md-3 text-xs-center m-b-60 no-padding">
         <Link to={"https://onename.com/" + this.props.blockstackId} target="_blank">
-          <Image src={this.props.avatar} className="avatar-lg" />
+          <Image
+            src={this.props.avatar}
+            fallbackSrc="https://s3.amazonaws.com/onename/avatar-placeholder.png"
+            className="avatar-lg" />
         </Link>
         <h5 className="center" style={{ marginBottom: '5px' }}>{this.props.name}</h5>
         { this.props.twitter ?
@@ -46,4 +50,5 @@ class CommunityMember extends Component {
   }
 }
 
+CommunityMember.propTypes = propTypes
 export default CommunityMember

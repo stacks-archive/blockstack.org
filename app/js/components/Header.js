@@ -32,7 +32,7 @@ class Header extends Component {
 
               <li className="nav-item">
                 <Link to="/docs" className="nav-link">
-                  CLI Docs
+                  Docs
                 </Link>
               </li>
 
@@ -61,10 +61,6 @@ class Header extends Component {
                   <Link to="https://github.com/blockstack/blockstack-cli"
                         className="dropdown-item" target="_blank">
                     Blockstack CLI
-                  </Link>
-                  <Link to="https://github.com/blockstack/blockstack-browser"
-                        className="dropdown-item" target="_blank">
-                    Blockstack Browser
                   </Link>
                   <Link to="https://github.com/blockstack/blockstack-explorer"
                         className="dropdown-item" target="_blank">

@@ -10,6 +10,7 @@ import ArticleIndex     from '../components/ArticleIndex'
 import docs             from '../../docs.json'
 
 class PapersIndexPage extends Component {
+
   constructor(props) {
     super(props)
 
@@ -44,9 +45,6 @@ class PapersIndexPage extends Component {
   }
 
   render() {
-
-    console.log(this.state.papers)
-
     return (
       <DocumentTitle title="Blockstack - Documentation">
         <div>
@@ -85,6 +83,7 @@ class PapersIndexPage extends Component {
       </DocumentTitle>
     )
   }
+
 }
 
 export default PapersIndexPage
