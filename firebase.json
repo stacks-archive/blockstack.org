@@ -52,8 +52,8 @@
         "type": 301
       },
       {
-        "source": "/docs",
-        "destination": "/articles",
+        "source": "/articles",
+        "destination": "/docs",
         "type": 301
       }
     ]

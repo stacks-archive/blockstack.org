@@ -18,8 +18,8 @@ gulp.task('configFirebase', () => {
       "destination": "/articles/blockstack-core",
     },
     {
-      "source": "/docs",
-      "destination": "/articles"
+      "source": "/articles",
+      "destination": "/docs"
     }
   ]
 
