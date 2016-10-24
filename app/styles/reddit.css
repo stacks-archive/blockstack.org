@@ -1,24 +1,12 @@
 /* Reddit Styles */
-
-#header{
-	background-color:#2C113A;
-}
-#sr-header-area{
-	background-color:rgba(255,255,255,0);
-	border-bottom:0px;
-}
-.dropdown.srdrop .selected{
-	color:#fff;
-}
-.separator{
-	color:#fff;
-}
-.sr-bar a{
-	color:rgba(255,255,255,0.5);
-}
-#sr-header-area .selected a{
-	color:#fff;
-}
-.default-header{
-	background-color:#2C113A;
-}
+#header{background-color:#2C113A;}
+#sr-header-area{background-color:rgba(255,255,255,0.03);border-bottom:0px;padding-top:4px;padding-bottom:4px;}
+div#sr-header-area:hover{background-color:rgba(255,255,255,0.08);border-bottom:0px;transition:all .15s ease;}
+div#sr-header-area:hover a{color:#fff!important;transition:all .15s ease;}
+.dropdown.srdrop .selected{color:#fff;padding-left:10px;margin-right:15px;background-position:-12px right;background-size:15px 15px;}
+.separator{margin:0px 1ex 0px 1ex;}
+.sr-bar a, .separator{color:rgba(255,255,255,0.4);}
+#sr-header-area .selected a{color:#fff;}
+.default-header{background-color:#2C113A;}
+.pagename a{color:#fff;}
+.selected, .choice.primary{font-weight:normal;}
