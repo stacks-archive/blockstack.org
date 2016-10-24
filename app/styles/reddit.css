@@ -1,2 +1,24 @@
 /* Reddit Styles */
 
+#header{
+	background-color:#2C113A;
+}
+#sr-header-area{
+	background-color:rgba(255,255,255,0);
+	border-bottom:0px;
+}
+.dropdown.srdrop .selected{
+	color:#fff;
+}
+.separator{
+	color:#fff;
+}
+.sr-bar a{
+	color:rgba(255,255,255,0.5);
+}
+#sr-header-area .selected a{
+	color:#fff;
+}
+.default-header{
+	background-color:#2C113A;
+}
