@@ -1,15 +1,16 @@
 import { Component, PropTypes } from 'react'
 import isRetina from 'is-retina'
 
+const propTypes = {
+  src: PropTypes.string.isRequired,
+  fallbackSrc: PropTypes.string.isRequired,
+  style: PropTypes.object,
+  className: PropTypes.string,
+  onLoad: PropTypes.func,
+  retinaSupport: PropTypes.bool
+}
+
 class Image extends Component {
-  static propTypes: {
-    src: PropTypes.string.isRequired,
-    fallbackSrc: PropTypes.string.isRequired,
-    style: PropTypes.object,
-    className: PropTypes.string,
-    onLoad: PropTypes.func,
-    retinaSupport: PropTypes.bool
-  }
 
   constructor(props) {
     super(props)
@@ -54,4 +55,5 @@ class Image extends Component {
   }
 }
 
+Image.propTypes = propTypes
 export default Image

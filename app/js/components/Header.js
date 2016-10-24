@@ -23,24 +23,64 @@ class Header extends Component {
                   About
                 </Link>
               </li>
+
               <li className="nav-item">
-                <Link to="/articles" className="nav-link">
-                  Articles
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/tutorials" className="nav-link">
-                  Tutorials
+                <Link to="/articles/browser-beta" className="nav-link">
+                  Browser
                 </Link>
               </li>
 
-              <li className="nav-item pull-xs-right hidden-sm-down">
-                <Link to="https://github.com/blockstack" className="nav-link hidden-xs hidden-sm"
-                  target="_blank">
-                  <i className="fa fa-github"></i>
-                  <span>GitHub</span>
+              <li className="nav-item">
+                <Link to="/docs" className="nav-link">
+                  Docs
                 </Link>
               </li>
+
+              <li className="nav-item">
+                <Link to="/papers" className="nav-link">
+                  Papers
+                </Link>
+              </li>
+
+              <li className="nav-item dropdown pull-xs-right hidden-sm-down">
+                <a href="#" className="nav-link dropdown-toggle"
+                   data-toggle="dropdown" role="button"
+                   aria-haspopup="true" aria-expanded="false">
+                  <i className="fa fa-github"></i>
+                  <span>Code</span>
+                </a>
+                <div className="dropdown-menu">
+                  <Link to="https://github.com/blockstack/blockstack"
+                        className="dropdown-item" target="_blank">
+                    Overview
+                  </Link>
+                  <Link to="https://github.com/blockstack/blockstack-core"
+                        className="dropdown-item" target="_blank">
+                    Blockstack Core
+                  </Link>
+                  <Link to="https://github.com/blockstack/blockstack-cli"
+                        className="dropdown-item" target="_blank">
+                    Blockstack CLI
+                  </Link>
+                  <Link to="https://github.com/blockstack/blockstack-explorer"
+                        className="dropdown-item" target="_blank">
+                    Blockstack Explorer
+                  </Link>
+                  <Link to="https://github.com/blockstack/blockstack-auth-js"
+                        className="dropdown-item" target="_blank">
+                    Blockstack Auth
+                  </Link>
+                  <Link to="https://github.com/blockstack/blockstack-profiles-js"
+                        className="dropdown-item" target="_blank">
+                    Blockstack Profiles
+                  </Link>
+                  <Link to="https://github.com/blockstack/virtualchain"
+                        className="dropdown-item" target="_blank">
+                    Virtualchain
+                  </Link>
+                </div>
+              </li>
+
             </ul>
           </div>
         </nav>
@@ -53,6 +93,37 @@ class Header extends Component {
 export default Header
 
 /*
+              <li className="nav-item dropdown">
+                <a href="#" className="nav-link dropdown-toggle"
+                   data-toggle="dropdown" role="button"
+                   aria-haspopup="true" aria-expanded="false">
+                  Articles
+                </a>
+                <div className="dropdown-menu">
+                  <Link to="/docs/how-blockstack-works" className="dropdown-item">
+                    How Blockstack Core Works
+                  </Link>
+                  <Link to="/docs/blockstack-vs-dns" className="dropdown-item">
+                    Blockstack Core vs DNS
+                  </Link>
+                  <Link to="/docs/blockstack-vs-namecoin" className="dropdown-item">
+                    Blockstack Core vs Namecoin
+                  </Link>
+                  <Link to="/docs/light-clients" className="dropdown-item">
+                    Blockstack Light Clients
+                  </Link>
+                  <Link to="/docs/blockchain-identity" className="dropdown-item">
+                    Blockchain Identity
+                  </Link>
+                  <Link to="/docs/blockstack-profiles" className="dropdown-item">
+                    Blockstack Profiles
+                  </Link>
+                  <Link to="/docs/identity-attestation" className="dropdown-item">
+                    Identity Attestation
+                  </Link>
+                </div>
+              </li>
+
 <li className="nav-item dropdown hidden-sm-down">
   <a href="#" className="nav-link dropdown-toggle"
      data-toggle="dropdown" role="button"
