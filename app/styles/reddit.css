@@ -26,3 +26,5 @@ div#header-bottom-right > span a{color:rgba(255,255,255,0.4);}
 #sr-header-area .width-clip {
     right: 300px;
 }
+#sr-more-link{background-color:#080809;color:rgba(255,255,255,0.4);font-weight:normal;padding-top:4px;padding-bottom:4px;margin-top:-4px;}
+div.drop-choices.srdrop.inuse{color:#2C113A!important;}
