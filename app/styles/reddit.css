@@ -11,3 +11,18 @@ div#sr-header-area:hover a{color:#fff!important;transition:all .15s ease;}
 .selected, .choice.primary{font-weight:normal;}
 ul.flat-list.sr-bar.hover > a:hover{text-decoration:none;}
 #header-bottom-left{padding-top:51px;}
+#header-bottom-right{background-color:rgba(255,255,255,0.02);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    max-width: 300px;
+    height: 24px;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 11px;
+    color: rgba(255,255,255,0.45);
+    padding: 5px 8px 4px 2px;}
+div#header-bottom-right > span a{color:rgba(255,255,255,0.4);}
+#sr-header-area .width-clip {
+    right: 300px;
+}
