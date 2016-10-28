@@ -35,10 +35,8 @@ class PapersIndexPage extends Component {
         {
           title: "Bootstrapping Trust in Distributed Systems with Blockchains",
           authors: "Muneeb Ali, Jude Nelson, Ryan Shea and Michael J. Freedman:",
-          publication: "Proc. USENIX Annual Technical Conference",
-          url: "https://blockstack.org/blockstack-login.pdf",
-          location: "Denver, CO",
-          date: "June 2016"
+          publication: "USENIX ;login: issue: Fall 2016, Vol. 41, No. 3",
+          url: "https://blockstack.org/blockstack-login.pdf"
         }
       ]
     }
