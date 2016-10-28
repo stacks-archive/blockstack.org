@@ -3,16 +3,17 @@
 import {Component, PropTypes}  from 'react'
 import {Link} from 'react-router'
 
-class CardLink extends Component {  
-  static propTypes: {
-    title: PropTypes.string.isRequired,
-    href: PropTypes.string.isRequired,
-    body: PropTypes.string,
-    imageSrc: PropTypes.string,
-    footnote: PropTypes.string,
-    cardsPerRow: PropTypes.number,
-    onClick: PropTypes.func
-  }
+const propTypes = {
+  title: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired,
+  body: PropTypes.string,
+  imageSrc: PropTypes.string,
+  footnote: PropTypes.string,
+  cardsPerRow: PropTypes.number,
+  onClick: PropTypes.func
+}
+
+class CardLink extends Component {
 
   constructor(props) {
     super(props)
@@ -71,4 +72,5 @@ class CardLink extends Component {
 
 }
 
+CardLink.propTypes = propTypes
 export default CardLink

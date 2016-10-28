@@ -20,6 +20,7 @@ class HomePage extends Component {
     }
 
     this.updateNameCount = this.updateNameCount.bind(this)
+    this.updateSlackCount = this.updateSlackCount.bind(this)
   }
 
   componentDidMount() {
@@ -90,18 +91,18 @@ class HomePage extends Component {
                     </div>
                   </div>
                   <p className="lead hero-lead col-md-11">
-                    Build decentralized apps that run on user devices and put them in control of their data.
+                    Build decentralized, server-less apps that put users in control of their data.
                   </p>
                   <p className="no-padding col-md-8">
                     <Link to="/articles/browser-beta" role="button"
                       className="btn btn-lg btn-primary btn-block">
-                      Get the Browser
+                      Download the Browser
                     </Link>
                   </p>
                   <p className="no-padding col-md-8">
-                    <Link to="/tutorials" className="nav-link"
+                    <Link to="/docs" className="nav-link"
                       className="btn btn-sm btn-outline-secondary btn-block">
-                      Developer Tutorials
+                      Install the CLI
                     </Link>
                   </p>
                 </div>

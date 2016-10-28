@@ -3,12 +3,13 @@ import { Link }                 from 'react-router'
 
 import CardLink         from '../components/CardLink'
 
+const propTypes = {
+  pageRows: PropTypes.array.isRequired,
+  docs: PropTypes.object.isRequired,
+  pathPrefix: PropTypes.string.isRequired
+}
+
 class ArticleIndex extends Component {
-  static propTypes: {
-    pageRows: PropTypes.array.isRequired,
-    docs: PropTypes.object.isRequired,
-    pathPrefix: PropTypes.string.isRequired
-  }
 
   constructor(props) {
     super(props)
@@ -60,4 +61,5 @@ class ArticleIndex extends Component {
   }
 }
 
+ArticleIndex.propTypes = propTypes
 export default ArticleIndex
