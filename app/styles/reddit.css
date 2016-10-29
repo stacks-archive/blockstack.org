@@ -5,26 +5,14 @@ div#sr-header-area:hover{background-color:rgba(255,255,255,0.05);border-bottom:0
 div#sr-header-area:hover a{color:#fff!important;transition:all .15s ease;}
 .dropdown.srdrop .selected{color:#fff;padding-left:10px;margin-right:15px;background-position-x:right -15px;background-position-y:bottom 3px;background-size:15px 15px;}
 .separator{margin:0px 1ex 0px 1ex;}
-.sr-bar a, .separator{color:rgba(255,255,255,0.4);}
+.sr-bar a,.separator{color:rgba(255,255,255,0.4);}
 #sr-header-area .selected a{color:#fff;}
 .pagename a{color:#fff;}
-.selected, .choice.primary{font-weight:normal;}
+.selected,.choice.primary{font-weight:normal;}
 ul.flat-list.sr-bar.hover > a:hover{text-decoration:none;}
 #header-bottom-left{padding-top:51px;}
-#header-bottom-right{background-color:rgba(255,255,255,0.02);
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: auto;
-    max-width: 300px;
-    height: 24px;
-    background-color: rgba(0, 0, 0, 0);
-    font-size: 11px;
-    color: rgba(255,255,255,0.45);
-    padding: 5px 8px 4px 2px;}
+#header-bottom-right{background-color:rgba(255,255,255,0.02);position:absolute;top:0;right:0;width:auto;max-width:300px;height:24px;background-color:rgba(0,0,0,0);font-size:11px;color:rgba(255,255,255,0.45);padding:5px 8px 4px 2px;}
 div#header-bottom-right > span a{color:rgba(255,255,255,0.4);}
-#sr-header-area .width-clip {
-    right: 300px;
-}
+#sr-header-area .width-clip{right:300px;}
 #sr-more-link{background-color:#080809;color:rgba(255,255,255,0.4);font-weight:normal;padding-top:4px;padding-bottom:4px;margin-top:-4px;}
 div.drop-choices.srdrop.inuse{color:#2C113A!important;}
