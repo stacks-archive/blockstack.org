@@ -150,7 +150,6 @@ class DocsPage extends Component {
               </div>
               : null }
             </div>
-            <Footer />
           </section>
         </div>
       </DocumentTitle>
