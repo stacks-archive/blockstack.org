@@ -20,4 +20,10 @@ div.drop-choices.srdrop.inuse{color:#2C113A!important;}
 #modmail.nohavemail{background-image:url(%%icon-reddit%%);background-position:-0px -6px;background-size:25px 25px;width:25px;height:25px;overflow:visible;}
 #header-bottom-right a.pref-lang,.loggedin .logout a{background-image:url(%%icon-prefs%%);background-position:-0px -6px;background-size:25px 25px;width:25px;height:25px;display:inline-block;text-indent:-9999px;margin:0;position:relative;overflow:visible;}
 #header-bottom-right a.pref-lang, .loggedin .logout a{background-image:url(%%icon-logout%%);background-position:-0px -6px;background-size:25px 25px;width:25px;height:25px;display:inline-block;text-indent:-9999px;margin:0;position:relative;overflow:visible;}
-#header-bottom-right a{color:#fff;}
+a.login-required{color:#fff!important;}
+a.login-required:hover{text-decoration:underline;}
+
+
+
+
+
