@@ -1,21 +1,22 @@
 /* Reddit Styles */
-#header{height:122px;background-color:#2C113A;}
-#sr-header-area{background-color:rgba(255,255,255,0.02);border-bottom:0px;padding-top:4px;padding-bottom:4px;}
-div#sr-header-area:hover{background-color:rgba(255,255,255,0.05);border-bottom:0px;transition:all .15s ease;}
+#header{height:122px;background-color:#270F34;border-bottom:1px solid #361D44;}
+#sr-header-area{background-color:rgba(255,255,255,0.0);border-bottom:0px;padding-top:4px;padding-bottom:4px;}
+div#sr-header-area:hover{background-color:#361D44;border-bottom:0px;transition:all .15s ease;}
 div#sr-header-area:hover a{color:#fff!important;transition:all .15s ease;}
 .dropdown.srdrop .selected{color:#fff;padding-left:10px;margin-right:15px;background-position-x:right -15px;background-position-y:bottom 3px;background-size:15px 15px;}
 .separator{margin:0px 1ex 0px 1ex;}
-.sr-bar a,.separator{color:rgba(255,255,255,0.4);}
+.sr-bar a,.separator{color:#95889C;}
 #sr-header-area .selected a{color:#fff;}
 .pagename a{color:#fff;}
 .selected,.choice.primary{font-weight:normal;}
 ul.flat-list.sr-bar.hover > a:hover{text-decoration:none;}
 #header-bottom-left{padding-top:51px;}
-#header-bottom-right{background-color:rgba(255,255,255,0.02);position:absolute;top:0;right:0;width:auto;max-width:300px;height:24px;background-color:rgba(0,0,0,0);font-size:11px;color:rgba(255,255,255,0.45);padding:5px 8px 4px 2px;}
-div#header-bottom-right > span a{color:rgba(255,255,255,0.4);}
-#sr-header-area .width-clip{right:300px;}
-#sr-more-link{background-color:#080809;color:rgba(255,255,255,0.4);font-weight:normal;padding-top:4px;padding-bottom:4px;margin-top:-4px;}
-div.drop-choices.srdrop.inuse{color:#2C113A!important;}
+#header-bottom-right{position:absolute;top:0;right:0;width:auto;max-width:300px;height:24px;background-color:rgba(0,0,0,0);font-size:11px;color:#95889C;padding:5px 8px 4px 2px;}
+div#header-bottom-right > span a{color:#95889C;}
+#sr-header-area .width-clip{right:305px;}
+#sr-more-link{background-color:rgba(0,0,0,0);color:#95889C;padding:4px 20px;margin-top:-4px;right:-77px;}
+#sr-more-link:hover{background-color:#41294E;}
+div.drop-choices.srdrop.inuse{color:#361D44!important;}
 #mail.nohavemail{background-image:url(%%icon-mail%%);background-position:0 0;background-size:25px 25px;width:25px;height:25px;overflow:visible;top:-5px;}
 #modmail.nohavemail{background-image:url(%%icon-reddit%%);background-position:0 0;background-size:25px 25px;width:25px;height:25px;overflow:visible;top:-5px;}
 #header-bottom-right a.pref-lang{background-image:url(%%icon-prefs%%);background-position:0 0;background-size:25px 25px;width:25px;height:25px;display:inline-block;text-indent:-9999px;margin:0;position:relative;overflow:visible;top:-5px;}
@@ -23,5 +24,8 @@ div.drop-choices.srdrop.inuse{color:#2C113A!important;}
 a.login-required{color:#fff!important;}
 a.login-required:hover{text-decoration:underline;}
 div#header-bottom-right > span.separator{display:none;}
-div#header-bottom-right > a:hover, .loggedin .logout a:hover, #header-bottom-right a:hover{background-color:rgba(255,255,255,0.1);}
-.user{margin-right:8px;}
+div#header-bottom-right > a:hover, .loggedin .logout a:hover, #header-bottom-right a:hover{background-color:#41294E;}
+div#header-bottom-right > .user > a:hover{background-color:rgba(255,255,255,0);}
+.user{margin-right:8px;color:#95889C;}
+div#header-bottom-right > span a:hover{color:#fff;text-decoration:underline;}
+div.drop-choices.srdrop.inuse{background-color:#361D44;border:1px solid #2c113a;}
