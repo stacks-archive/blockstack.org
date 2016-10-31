@@ -88,6 +88,28 @@ html, body {-webkit-overflow-scrolling:touch;}
 .p-b-90{padding-bottom:90px;}
 .p-b-95{padding-bottom:95px;}
 
+/* Blockstack Label Colors */
+/* These label colors come from Google's Material Design Color Set [500] - Alternative shades [100 - 900] - http://materialuicolors.co/ */
+/* - Red - #F44336 - label: bug */
+/* - Pink - #E91E63 - label: high-priority */
+/* - Purple - #9C27B0 - label: html/css */
+/* - Deep Purple - #673AB7 - label: feature-request */
+/* - Indigo - #3F51B5 - label: copywriting */
+/* - Blue - #2196F3 - label: help wanted */
+/* - Light Blue - #03A9F4 - label: enhancement */
+/* - Cyan - #00BCD4 - label: refactoring */
+/* - Teal - #009688 - label: question */
+/* - Green - #4CAF50 - label: docs */
+/* - Light Green - #8BC34A - label: production */
+/* - Lime - #CDDC39 - label: wontfix */
+/* - Yellow - #FFEB3B - label: request */
+/* - Amber - #FFC107 - label: design */
+/* - Orange - #FF9800 - label: duplicate */
+/* - Deep Orange - #FF5722 - label: invalid */
+/* - Brown - #795548 - label: events */
+/* - Grey - #9E9E9E - label: fixed in the next release */
+/* - Blue Grey - #607D8B - label: strategy */
+
 /* Globals */
 /* Reviewed */h3{margin-top:35px;margin-bottom:15px;}
 /* Reviewed */h4{margin:20px 0;}

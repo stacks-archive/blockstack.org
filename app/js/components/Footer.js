@@ -18,7 +18,7 @@ class Footer extends Component {
       reddit: 'https://www.reddit.com/r/blockstack',
       blog: 'http://blog.blockstack.org',
       github: 'https://github.com/blockstack',
-      branding: 'https://projects.invisionapp.com/boards/Z52J1R29G8MYH'
+      branding: 'https://projects.invisionapp.com/boards/HE2VVROFSGB27/'
     }
 
     return (
