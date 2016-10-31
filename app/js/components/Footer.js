@@ -120,7 +120,7 @@ class Footer extends Component {
               <div className="social hidden-md-down">
                 <ul className="sm-social list-unstyled">
                   <li>
-                    <Link to={links.youtube} target="_blank">
+                    <Link to={links.twitter} target="_blank">
                       <i className="fa fa-twitter"></i>
                     </Link>
                   </li>
