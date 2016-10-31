@@ -6,8 +6,6 @@ import DocumentTitle    from 'react-document-title'
 
 import Header           from '../components/Header'
 import Footer           from '../components/Footer'
-import ArticleIndex     from '../components/ArticleIndex'
-import docs             from '../../docs.json'
 
 class TalksPage extends Component {
 

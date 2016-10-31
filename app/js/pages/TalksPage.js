@@ -6,10 +6,8 @@ import DocumentTitle    from 'react-document-title'
 
 import Header           from '../components/Header'
 import Footer           from '../components/Footer'
-import ArticleIndex     from '../components/ArticleIndex'
 import EmbedSpeakerDeck from '../components/EmbedSpeakerDeck'
 import EmbedYouTube     from '../components/EmbedYouTube'
-import docs             from '../../docs.json'
 
 class TalksPage extends Component {
 
