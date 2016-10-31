@@ -1,6 +1,6 @@
 /* Reddit Styles */
-#header{height:122px;background-color:#270F34;border-bottom:1px solid #361D44;}
-#sr-header-area{background-color:rgba(255,255,255,0.0);border-bottom:0px;padding-top:4px;padding-bottom:4px;}
+#header{height:122px;background-color:#270F34;border-bottom:1px solid #361D44;font-family:"Courier New";}
+#sr-header-area{background-color:rgba(255,255,255,0.0);border-bottom:0px;padding-top:4px;padding-bottom:4px;text-transform:capitalize;font-size:11px;}
 div#sr-header-area:hover{background-color:#361D44;border-bottom:0px;transition:all .15s ease;}
 div#sr-header-area:hover a{color:#fff!important;transition:all .15s ease;}
 .dropdown.srdrop .selected{color:#fff;padding-left:10px;margin-right:15px;background-position-x:right -15px;background-position-y:bottom 3px;background-size:15px 15px;}
@@ -10,17 +10,17 @@ div#sr-header-area:hover a{color:#fff!important;transition:all .15s ease;}
 .pagename a{color:#fff;}
 .selected,.choice.primary{font-weight:normal;}
 ul.flat-list.sr-bar.hover > a:hover{text-decoration:none;}
-#header-bottom-left{padding-top:51px;}
-#header-bottom-right{position:absolute;top:0;right:0;width:auto;max-width:300px;height:24px;background-color:rgba(0,0,0,0);font-size:11px;color:#95889C;padding:5px 8px 4px 2px;}
+#header-bottom-left{padding-top:40px;font-size:15px;}
+#header-bottom-right{position:absolute;top:0;right:0;width:auto;max-width:300px;height:24px;background-color:rgba(0,0,0,0);font-size:11px;color:#95889C;padding:6px 8px 4px 2px;}
 div#header-bottom-right > span a{color:#95889C;}
 #sr-header-area .width-clip{right:305px;}
 #sr-more-link{background-color:rgba(0,0,0,0);color:#95889C;padding:4px 20px;margin-top:-4px;right:-77px;}
 #sr-more-link:hover{background-color:#41294E;}
 div.drop-choices.srdrop.inuse{color:#361D44!important;}
-#mail.nohavemail{background-image:url(%%icon-mail%%);background-position:0 0;background-size:25px 25px;width:25px;height:25px;overflow:visible;top:-5px;}
-#modmail.nohavemail{background-image:url(%%icon-reddit%%);background-position:0 0;background-size:25px 25px;width:25px;height:25px;overflow:visible;top:-5px;}
-#header-bottom-right a.pref-lang{background-image:url(%%icon-prefs%%);background-position:0 0;background-size:25px 25px;width:25px;height:25px;display:inline-block;text-indent:-9999px;margin:0;position:relative;overflow:visible;top:-5px;}
-.loggedin .logout a{background-image:url(%%icon-logout%%);background-position:0 0;background-size:25px 25px;width:25px;height:25px;display:inline-block;text-indent:-9999px;margin:0;position:relative;overflow:visible;top:-5px;}
+#mail.nohavemail{background-image:url(%%icon-mail%%);background-position:0 0;background-size:25px 25px;width:25px;height:25px;overflow:visible;top:-6px;}
+#modmail.nohavemail{background-image:url(%%icon-reddit%%);background-position:0 0;background-size:25px 25px;width:25px;height:25px;overflow:visible;top:-6px;}
+#header-bottom-right a.pref-lang{background-image:url(%%icon-prefs%%);background-position:0 0;background-size:25px 25px;width:25px;height:25px;display:inline-block;text-indent:-9999px;margin:0;position:relative;overflow:visible;top:-6px;}
+.loggedin .logout a{background-image:url(%%icon-logout%%);background-position:0 0;background-size:25px 25px;width:25px;height:25px;display:inline-block;text-indent:-9999px;margin:0;position:relative;overflow:visible;top:-6px;}
 a.login-required{color:#fff!important;}
 a.login-required:hover{text-decoration:underline;}
 div#header-bottom-right > span.separator{display:none;}
@@ -29,3 +29,7 @@ div#header-bottom-right > .user > a:hover{background-color:rgba(255,255,255,0);}
 .user{margin-right:8px;color:#95889C;}
 div#header-bottom-right > span a:hover{color:#fff;text-decoration:underline;}
 div.drop-choices.srdrop.inuse{background-color:#361D44;border:1px solid #2c113a;}
+.listing-page .tabmenu li>a[href$="/rising/"], .wiki-page .tabmenu li>a[href$="/rising/"], .listing-page .tabmenu li>a[href$="/controversial/"], .wiki-page .tabmenu li>a[href$="/controversial/"], .listing-page .tabmenu li>a[href$="/promoted/"], .wiki-page .tabmenu li>a[href$="/promoted/"], .listing-page .tabmenu li>a[href$="/gilded/"], .wiki-page .tabmenu li>a[href$="/gilded/"]{display:none!important;}
+.tabmenu li.selected a{color:#fff;background-color:rgba(255,255,255,0.1);border:none;}
+.tabmenu li a{padding:10px 20px 5px 20px;background-color:rgba(255,255,255,0);color:#fff;font-weight:normal;}
+.tabmenu li{margin:0;}
