@@ -1,0 +1,46 @@
+import { Component, PropTypes } from 'react'
+
+const propTypes = {
+  src: PropTypes.string.isRequired,
+}
+
+class EmbedYouTube extends Component {
+
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      height: 440
+    }
+  }
+
+  componentDidMount() {
+    const ratio = 440/672
+    const domNode = this.refs.iframeWrapper.getDOMNode()
+    const width = domNode.getBoundingClientRect().width
+    const newHeight = width*ratio
+    this.setState({
+      height: newHeight
+    })
+  }
+
+  render() {
+    return (
+      <div>
+        <iframe
+          ref="iframeWrapper"
+          width="100%"
+          height={this.state.height}
+          src={this.props.src}
+          frameBorder="0"
+          allowFullScreen>
+        </iframe>
+      </div>
+    );
+  }
+}
+
+EmbedYouTube.propTypes = propTypes
+export default EmbedYouTube
+
+

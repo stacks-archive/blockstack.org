@@ -6,10 +6,8 @@ import DocumentTitle    from 'react-document-title'
 
 import Header           from '../components/Header'
 import Footer           from '../components/Footer'
-import ArticleIndex     from '../components/ArticleIndex'
-import docs             from '../../docs.json'
 
-class PapersIndexPage extends Component {
+class TalksPage extends Component {
 
   constructor(props) {
     super(props)
@@ -19,25 +17,24 @@ class PapersIndexPage extends Component {
         {
           title: "Blockstack: A Global Naming and Storage System Secured by Blockchains",
           authors: "Muneeb Ali, Jude Nelson, Ryan Shea and Michael J. Freedman",
-          publication: "Proc. USENIX Annual Technical Conference",
+          publication: "USENIX Annual Technical Conference",
           url: "https://blockstack.org/blockstack.pdf",
-          location: "Denver, CO",
-          date: "June 2016"
-        },
-        {
-          title: "Extending Existing Blockchains with Virtualchain",
-          authors: "Jude Nelson, Muneeb Ali, Ryan Shea and Michael J. Freedman",
-          publication: "Proc. Workshop on Distributed Cryptocurrencies and Consensus Ledgers",
-          url: "https://blockstack.org/virtualchain.pdf",
-          location: "Chicago, IL",
-          date: "July 2016"
+          date: "June 2016",
         },
         {
           title: "Bootstrapping Trust in Distributed Systems with Blockchains",
           authors: "Muneeb Ali, Jude Nelson, Ryan Shea and Michael J. Freedman:",
           publication: "USENIX ;login: issue: Fall 2016, Vol. 41, No. 3",
-          url: "https://blockstack.org/blockstack-login.pdf"
-        }
+          url: "https://blockstack.org/blockstack-login.pdf",
+          date: "June 2016",
+        },
+        {
+          title: "Extending Existing Blockchains with Virtualchain",
+          authors: "Jude Nelson, Muneeb Ali, Ryan Shea and Michael J. Freedman",
+          publication: "Workshop on Distributed Cryptocurrencies and Consensus Ledgers",
+          url: "https://blockstack.org/virtualchain.pdf",
+          date: "July 2016",
+        },
       ]
     }
   }
@@ -57,18 +54,21 @@ class PapersIndexPage extends Component {
                 </h1>
                 { this.state.papers.map((paper, index) => {
                   return (
-                    <div>
-                      <h4>
+                    <div className="m-b-3">
+                      <h4 className="m-b-1">
                         {index+1}. {paper.title}
                       </h4>
-                      <p>
+                      <p className="m-b-0">
                         {paper.authors}
-                        <br />
-                        {paper.publication}
-                        <br />
-                        {paper.location}, {paper.date}
-                        <br />
-                        [ <Link to={paper.url} target="_blank">PDF</Link> ]
+                      </p>
+                      <p className="m-b-1">
+                        {paper.publication} - {paper.date}
+                      </p>
+                      <p className="m-b-1">
+                        <Link to={paper.url} target="_blank"
+                              className="btn btn-sm btn-outline-primary">
+                          PDF
+                        </Link>
                       </p>
                     </div>
                   )
@@ -84,4 +84,4 @@ class PapersIndexPage extends Component {
 
 }
 
-export default PapersIndexPage
+export default TalksPage
