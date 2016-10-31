@@ -9,6 +9,7 @@ import HomePage                    from './pages/HomePage'
 import SummitPage                  from './pages/SummitPage'
 
 import PapersPage                  from './pages/PapersPage'
+import TalksPage                   from './pages/TalksPage'
 import ArticlePage                 from './pages/ArticlePage'
 import NotFoundPage                from './pages/NotFoundPage'
 import AboutPage                   from './pages/AboutPage'
@@ -26,6 +27,7 @@ export default (
       <Route path="/about" component={AboutPage} />
       <Route path="/docs" component={DocsPage} />
       <Route path="/papers" component={PapersPage} />
+      <Route path="/talks" component={TalksPage} />
       <Route path="/summit" component={SummitPage} />
 
       <Route path="/articles/:docSection" component={ArticlePage} />

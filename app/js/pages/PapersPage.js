@@ -9,7 +9,7 @@ import Footer           from '../components/Footer'
 import ArticleIndex     from '../components/ArticleIndex'
 import docs             from '../../docs.json'
 
-class PapersIndexPage extends Component {
+class TalksPage extends Component {
 
   constructor(props) {
     super(props)
@@ -86,4 +86,4 @@ class PapersIndexPage extends Component {
 
 }
 
-export default PapersIndexPage
+export default TalksPage
