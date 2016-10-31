@@ -17,11 +17,11 @@ div#header-bottom-right > span a{color:rgba(255,255,255,0.4);}
 #sr-more-link{background-color:#080809;color:rgba(255,255,255,0.4);font-weight:normal;padding-top:4px;padding-bottom:4px;margin-top:-4px;}
 div.drop-choices.srdrop.inuse{color:#2C113A!important;}
 #mail.nohavemail{background-image:url(%%icon-mail%%);background-position:0 0;background-size:25px 25px;width:25px;height:25px;overflow:visible;top:-5px;}
-#modmail.nohavemail{background-image:url(%%icon-reddit%%);background-position:-0px -6px;background-size:25px 25px;width:25px;height:25px;overflow:visible;}
-#header-bottom-right a.pref-lang{background-image:url(%%icon-prefs%%);background-position:-0px -6px;background-size:25px 25px;width:25px;height:25px;display:inline-block;text-indent:-9999px;margin:0;position:relative;overflow:visible;}
-.loggedin .logout a{background-image:url(%%icon-logout%%);background-position:-0px -6px;background-size:25px 25px;width:25px;height:25px;display:inline-block;text-indent:-9999px;margin:0;position:relative;overflow:visible;}
-
+#modmail.nohavemail{background-image:url(%%icon-reddit%%);background-position:0 0;background-size:25px 25px;width:25px;height:25px;overflow:visible;top:-5px;}
+#header-bottom-right a.pref-lang{background-image:url(%%icon-prefs%%);background-position:0 0;background-size:25px 25px;width:25px;height:25px;display:inline-block;text-indent:-9999px;margin:0;position:relative;overflow:visible;top:-5px;}
+.loggedin .logout a{background-image:url(%%icon-logout%%);background-position:0 0;background-size:25px 25px;width:25px;height:25px;display:inline-block;text-indent:-9999px;margin:0;position:relative;overflow:visible;top:-5px;}
 a.login-required{color:#fff!important;}
 a.login-required:hover{text-decoration:underline;}
 div#header-bottom-right > span.separator{display:none;}
 div#header-bottom-right > a:hover, .loggedin .logout a:hover, #header-bottom-right a:hover{background-color:rgba(255,255,255,0.1);}
+.user{margin-right:8px;}
