@@ -174,19 +174,9 @@ class ArticlePage extends Component {
                 <Link to={githubFileUrlRoot + pathPrefix + '/' + currentPage.pageName + ".md"}
                   role="button" target="_blank"
                   className="btn btn-sm btn-outline-primary m-b-2">
-                  Edit this article on GitHub
+                  Edit this post on GitHub
                 </Link>
               </div>
-              {nextPage ?
-                <div>
-                  <div className="col-md-4 pull-l-padding">
-                    <h3>Next Article</h3>
-                    <CardLink href={`${pathPrefix}/${nextPage.pageName}`}
-                      title={nextPage.title} body={nextPage.description}
-                      imageSrc={nextPage.image} />
-                  </div>
-                </div>
-              : null }
             </div>
           </div>
         </section>
@@ -197,3 +187,16 @@ class ArticlePage extends Component {
 }
 
 export default ArticlePage
+
+/*
+{nextPage ?
+                <div>
+                  <div className="col-md-4 pull-l-padding">
+                    <h3>Next Article</h3>
+                    <CardLink href={`${pathPrefix}/${nextPage.pageName}`}
+                      title={nextPage.title} body={nextPage.description}
+                      imageSrc={nextPage.image} />
+                  </div>
+                </div>
+              : null }
+*/

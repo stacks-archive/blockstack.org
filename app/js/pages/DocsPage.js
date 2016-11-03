@@ -48,14 +48,6 @@ class DocsPage extends Component {
       {
         title: 'Blockstack CLI',
         pageNames: ['cli-installation', 'cli-basic-usage', 'cli-extended-usage'],
-      },
-      {
-        title: 'Blockstack Core',
-        pageNames: ['how-blockstack-works', 'blockstack-vs-dns', 'blockstack-vs-namecoin', 'namespaces'],
-      },
-      {
-        title: 'Blockstack Identity',
-        pageNames: ['blockstack-profiles', 'identity-attestation'],
       }
     ]
 

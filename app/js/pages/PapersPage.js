@@ -7,7 +7,7 @@ import DocumentTitle    from 'react-document-title'
 import Header           from '../components/Header'
 import Footer           from '../components/Footer'
 
-class TalksPage extends Component {
+class PapersPage extends Component {
 
   constructor(props) {
     super(props)
@@ -84,4 +84,4 @@ class TalksPage extends Component {
 
 }
 
-export default TalksPage
+export default PapersPage
