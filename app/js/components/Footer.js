@@ -42,13 +42,16 @@ class Footer extends Component {
                   <Link to="/about">About</Link>
                 </li>
                 <li>
-                  <Link to="/articles/browser-beta">Browser</Link>
+                  <Link to="/docs">Docs</Link>
                 </li>
                 <li>
-                  <Link to="/docs">CLI Docs</Link>
+                  <Link to="/browser">Browser</Link>
                 </li>
                 <li>
                   <Link to="/papers">Papers</Link>
+                </li>
+                <li>
+                  <Link to="/posts">Posts</Link>
                 </li>
               </ul>
             </div>

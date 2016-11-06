@@ -130,24 +130,18 @@ class HomePage extends Component {
                       <img src="/images/icons/icon-bank.svg"
                         className="img-fluid m-x-auto" alt="control icon" />
                     </div>
-                    <h4 className="text-xs-center">The web, once open, has been hijacked by the powerful few</h4>
-                    <p className="lead text-xs-center">
-                      The Internet was created as an open, permission-less, egalitarian frontier. It was a bastion of freedom and innovation.
-                      But over time, power on the Internet started consolidating and a few large companies gained control.
-                      This is not how it was meant to be.
-                    </p>
+                    <h4 className="text-xs-center">
+                      The web, once open, has been hijacked by the powerful few
+                    </h4>
                 </div>
                 <div className="feat-img-top col-sm-6 p-b-2">
                     <div className="container wrap-mob-feat m-b-3">
                       <img src="/images/icons/icon-decentralized.svg"
                         className="img-fluid m-x-auto" alt="Decentralized icon" />
                     </div>
-                    <h4 className="text-xs-center">Decentralization leads to innovation, freedom and economic inclusion</h4>
-                    <p className="lead text-xs-center">
-                      Decentralization means more experimentation and permission-less innovation.                      
-                      It means fewer control points & greater freedom for network participants.
-                      It means more developers can bring products to market & compete with the giants.
-                    </p>
+                    <h4 className="text-xs-center">
+                      Decentralization leads to innovation, freedom and economic inclusion
+                    </h4>
                 </div>
               </div>
               <div className="row works col-centered">
@@ -156,27 +150,18 @@ class HomePage extends Component {
                       <img src="/images/icons/icon-info-hex.svg"
                         className="img-fluid m-x-auto" alt="Info security icon" />
                     </div>
-                    <h4 className="text-xs-center">Users benefit from more options, availability, savings, & info security</h4>
-                    <p className="lead text-xs-center">
-                      Decentralization means more developers & competition,
-                      yielding more options, better software, & lower prices.
-                      It means owning software that runs on your device,
-                      yielding more security/privacy & 
-                      availability beyond any company's lifetime.
-                    </p>
+                    <h4 className="text-xs-center">
+                      Users benefit from more options, availability, savings, & info security
+                    </h4>
                 </div>
                 <div className="feat-img-top col-sm-6 p-b-2">
                     <div className="container wrap-mob-feat m-b-3">
                       <img src="/images/icons/icon-data-server-browse.svg"
                         className="img-fluid m-x-auto" alt="No database server icon" />
                     </div>
-                    <h4 className="text-xs-center">Building great products shouldn't require managing servers, databases & ID systems</h4>
-                    <p className="lead text-xs-center">
-                      Building software should be simple.
-                      With the decentralized app model,
-                      developers don't have to manage servers or databases or build out user management systems.
-                      Software runs on user devices & clients exchange information.
-                    </p>
+                    <h4 className="text-xs-center">
+                      Building great products shouldn't require managing servers, databases & ID systems
+                    </h4>
                 </div>
               </div>
             </div>

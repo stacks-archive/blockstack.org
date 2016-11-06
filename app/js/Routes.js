@@ -14,6 +14,9 @@ import ArticlePage                 from './pages/ArticlePage'
 import NotFoundPage                from './pages/NotFoundPage'
 import AboutPage                   from './pages/AboutPage'
 import DocsPage                    from './pages/DocsPage'
+import BlogPage                    from './pages/BlogPage'
+import BrowserPage                 from './pages/BrowserPage'
+
 import docs                        from '../docs.json'
 
 export default (
@@ -29,7 +32,11 @@ export default (
       <Route path="/papers" component={PapersPage} />
       <Route path="/talks" component={TalksPage} />
       <Route path="/summit" component={SummitPage} />
+      <Route path="/summit" component={SummitPage} />
+      <Route path="/posts" component={BlogPage} />
+      <Route path="/browser" component={BrowserPage} />
 
+      <Route path="/posts/:docSection" component={ArticlePage} />
       <Route path="/articles/:docSection" component={ArticlePage} />
       <Route path="/papers/:docSection" component={ArticlePage} />
       <Route path="/tutorials/:docSection" component={ArticlePage} />
