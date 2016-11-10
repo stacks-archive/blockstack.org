@@ -10,7 +10,7 @@ gulp.task('browserSync', function() {
   const DEFAULT_FILE = 'index.html';
   const ASSET_EXTENSIONS = [
     'js', 'css', 'png', 'jpg', 'jpeg', 'gif', 'svg', 'ico', 'md', 'pdf',
-    'woff', 'woff2', 'ttf', 'eot'
+    'woff', 'woff2', 'ttf', 'eot', 'txt'
   ];
 
   browserSync.init({
