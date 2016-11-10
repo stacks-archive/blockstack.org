@@ -40,7 +40,7 @@ class TalksPage extends Component {
             embedURL: "https://www.youtube.com/embed/sBJobY0Aqt0",
           },
           speakerDeck: {
-            dataID: "8c5200f318ff4610a75cf21b37237971",
+            dataID: "e7608b083c5d4ef68a199cd4f6b74026",
             dataRatio: "1.77777777777778",
           },
         },
