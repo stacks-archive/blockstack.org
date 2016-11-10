@@ -28,6 +28,10 @@ gulp.task('configFirebase', () => {
     {
       "source": "/articles/browser-beta",
       "destination": "/browser"
+    },
+    {
+      "source": "/docs/installation",
+      "destination": "/docs"
     }
   ]
 

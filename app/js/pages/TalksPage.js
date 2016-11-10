@@ -28,22 +28,22 @@ class TalksPage extends Component {
           speakerDeck: {
             dataID: "434d4f23ad40417aadfe86643671a5bd",
             dataRatio: "1.77777777777778",
-          }
+          },
         },
         {
-          title: "Building the New Internet",
-          event: "TEDx New York",
+          title: "Experiences with Building a Global PKI with Blockchains",
+          event: "CITP Luncheon Speaker Series",
           speaker: "Muneeb Ali",
-          location: "New York, NY",
-          date: "September 10, 2016",
+          location: "Princeton, NJ",
+          date: "March 8, 2016",
           youtube: {
-            embedURL: "https://www.youtube.com/embed/zmWIMiED9cE"
+            embedURL: "https://www.youtube.com/embed/sBJobY0Aqt0",
           },
           speakerDeck: {
-            dataID: "96df091e173e4f03b2c39e79c9b37220",
+            dataID: "e7608b083c5d4ef68a199cd4f6b74026",
             dataRatio: "1.77777777777778",
-          }
-        }
+          },
+        },
       ]
     }
   }
@@ -67,11 +67,12 @@ class TalksPage extends Component {
                   return (
                     <div className="m-b-3" key={index}>
                       <div className="container">
-                        <h4 className="m-b-1">
-                          {talk.date}: {talk.event}
-                        </h4>
                         <p>
+                          <b>Date:</b> {talk.date}
+                          <br/>
                           <b>Title:</b> {talk.title}
+                          <br/>
+                          <b>Event:</b> {talk.event}
                           <br/>
                           <b>Speaker:</b> {talk.speaker}
                           <br/>
@@ -107,3 +108,20 @@ class TalksPage extends Component {
 }
 
 export default TalksPage
+
+/*
+{
+  title: "Building the New Internet",
+  event: "TEDx New York",
+  speaker: "Muneeb Ali",
+  location: "New York, NY",
+  date: "September 10, 2016",
+  youtube: {
+    embedURL: "https://www.youtube.com/embed/zmWIMiED9cE"
+  },
+  speakerDeck: {
+    dataID: "96df091e173e4f03b2c39e79c9b37220",
+    dataRatio: "1.77777777777778",
+  }
+}
+*/

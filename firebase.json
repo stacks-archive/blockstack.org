@@ -42,17 +42,32 @@
     ],
     "redirects": [
       {
+        "source": "/docs/blockchain-identity",
+        "destination": "/posts/blockchain-identity",
+        "type": 301
+      },
+      {
         "source": "/docs/blockchain-id",
-        "destination": "/docs/blockchain-identity",
+        "destination": "/posts/blockchain-identity",
         "type": 301
       },
       {
         "source": "/docs/what-is-blockstack",
-        "destination": "/articles/blockstack-core",
+        "destination": "/posts/blockstack-core",
         "type": 301
       },
       {
         "source": "/articles",
+        "destination": "/posts",
+        "type": 301
+      },
+      {
+        "source": "/articles/browser-beta",
+        "destination": "/browser",
+        "type": 301
+      },
+      {
+        "source": "/docs/installation",
         "destination": "/docs",
         "type": 301
       }
