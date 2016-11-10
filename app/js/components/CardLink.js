@@ -29,9 +29,11 @@ class CardLink extends Component {
         break
       case 2:
         cardClass = 'card-1-of-2'
+        console.log('1 of 2')
         break
       case 3:
         cardClass = 'card-1-of-3'
+        console.log('1 of 3')
         break
       default:
         break

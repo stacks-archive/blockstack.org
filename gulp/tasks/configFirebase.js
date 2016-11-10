@@ -10,15 +10,27 @@ gulp.task('configFirebase', () => {
   let folderNames = ['articles', 'tutorials']
   let redirectRules = [
     {
+      "source": "/docs/blockchain-identity",
+      "destination": "/posts/blockchain-identity",
+    },
+    {
       "source": "/docs/blockchain-id",
-      "destination": "/docs/blockchain-identity",
+      "destination": "/posts/blockchain-identity",
     },
     {
       "source": "/docs/what-is-blockstack",
-      "destination": "/articles/blockstack-core",
+      "destination": "/posts/blockstack-core",
     },
     {
       "source": "/articles",
+      "destination": "/posts"
+    },
+    {
+      "source": "/articles/browser-beta",
+      "destination": "/browser"
+    },
+    {
+      "source": "/docs/installation",
       "destination": "/docs"
     }
   ]

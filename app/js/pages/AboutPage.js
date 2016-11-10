@@ -34,23 +34,6 @@ class AboutPage extends Component {
                   </hgroup>
                 </div>
                 <div className="m-b-3">
-                  <hgroup>
-                    <h4 className="action-title">
-                      Movement
-                    </h4>
-                  </hgroup>
-                  <p>
-                    Blockstack is a movement to build the decentralized internet - a movement of
-                    engineers, designers, and entrepreneurs from around the world deeply committed to the
-                    future of the internet as a bastion of innovation, freedom, and economic inclusion.
-                  </p>
-                </div>
-                <div className="m-b-3">
-                  <hgroup>
-                    <h4 className="action-title">
-                      Platform
-                    </h4>
-                  </hgroup>
                   <p>
                     Blockstack is a new internet for decentralized, server-less applications.
                     Building on Blockstack starts with single-page applications built in Javascript that

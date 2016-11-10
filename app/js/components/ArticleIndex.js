@@ -6,7 +6,8 @@ import CardLink         from '../components/CardLink'
 const propTypes = {
   pageRows: PropTypes.array.isRequired,
   docs: PropTypes.object.isRequired,
-  pathPrefix: PropTypes.string.isRequired
+  pathPrefix: PropTypes.string.isRequired,
+  cardsPerRow: PropTypes.number.isRequired
 }
 
 class ArticleIndex extends Component {
@@ -37,7 +38,9 @@ class ArticleIndex extends Component {
                       }
                       if (slug === '') {
                         return (
-                          <div key={columnIndex} className="card-2-of-3"></div>
+                          <div key={columnIndex}
+                               className={`card-2-of-${this.props.cardsPerRow}`}>
+                          </div>
                         )
                       } else {
                         const page = docs[slug]
@@ -45,7 +48,7 @@ class ArticleIndex extends Component {
                           <CardLink key={columnIndex}
                             href={`${this.props.pathPrefix}/${slug}`}
                             title={page.title} body={page.description}
-                            imageSrc={page.image} cardsPerRow={3} />
+                            imageSrc={page.image} cardsPerRow={this.props.cardsPerRow} />
                         )
                       }
                     })}
