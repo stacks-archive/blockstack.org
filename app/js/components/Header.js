@@ -42,6 +42,12 @@ class Header extends Component {
                 </Link>
               </li>
 
+              <li className="nav-item">
+                <Link to="/talks" className="nav-link">
+                  Talks
+                </Link>
+              </li>
+
               <li className="nav-item dropdown pull-xs-right hidden-sm-down">
                 <a href="#" className="nav-link dropdown-toggle"
                    data-toggle="dropdown" role="button"
