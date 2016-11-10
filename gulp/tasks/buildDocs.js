@@ -43,7 +43,7 @@ gulp.task('buildDocs', () => {
 
   let indexHtml = fs.readFileSync('app/index.html', 'utf8')
 
-  let folderNames = ['articles', 'tutorials', 'docs', 'posts']
+  let folderNames = ['articles', 'tutorials', 'docs', 'posts', 'overview']
 
   folderNames.forEach((folderName) => {
     fs.readdirSync('app/docs/' + folderName).forEach((docFilename) => {

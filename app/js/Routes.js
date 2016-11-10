@@ -16,6 +16,7 @@ import AboutPage                   from './pages/AboutPage'
 import DocsPage                    from './pages/DocsPage'
 import BlogPage                    from './pages/BlogPage'
 import BrowserPage                 from './pages/BrowserPage'
+import OverviewPage                from './pages/OverviewPage'
 
 import docs                        from '../docs.json'
 
@@ -35,7 +36,9 @@ export default (
       <Route path="/summit" component={SummitPage} />
       <Route path="/posts" component={BlogPage} />
       <Route path="/browser" component={BrowserPage} />
+      <Route path="/overview" component={OverviewPage} />
 
+      <Route path="/overview/:docSection" component={ArticlePage} />
       <Route path="/posts/:docSection" component={ArticlePage} />
       <Route path="/articles/:docSection" component={ArticlePage} />
       <Route path="/papers/:docSection" component={ArticlePage} />

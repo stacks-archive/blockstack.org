@@ -42,12 +42,6 @@ class Header extends Component {
                 </Link>
               </li>
 
-              <li className="nav-item">
-                <Link to="/posts" className="nav-link">
-                  Posts
-                </Link>
-              </li>
-
               <li className="nav-item dropdown pull-xs-right hidden-sm-down">
                 <a href="#" className="nav-link dropdown-toggle"
                    data-toggle="dropdown" role="button"
@@ -58,7 +52,7 @@ class Header extends Component {
                 <div className="dropdown-menu">
                   <Link to="https://github.com/blockstack/blockstack"
                         className="dropdown-item" target="_blank">
-                    Overview
+                    Resources
                   </Link>
                   <Link to="https://github.com/blockstack/blockstack-core"
                         className="dropdown-item" target="_blank">
@@ -99,36 +93,36 @@ class Header extends Component {
 export default Header
 
 /*
-              <li className="nav-item dropdown">
-                <a href="#" className="nav-link dropdown-toggle"
-                   data-toggle="dropdown" role="button"
-                   aria-haspopup="true" aria-expanded="false">
-                  Articles
-                </a>
-                <div className="dropdown-menu">
-                  <Link to="/docs/how-blockstack-works" className="dropdown-item">
-                    How Blockstack Core Works
-                  </Link>
-                  <Link to="/docs/blockstack-vs-dns" className="dropdown-item">
-                    Blockstack Core vs DNS
-                  </Link>
-                  <Link to="/docs/blockstack-vs-namecoin" className="dropdown-item">
-                    Blockstack Core vs Namecoin
-                  </Link>
-                  <Link to="/docs/light-clients" className="dropdown-item">
-                    Blockstack Light Clients
-                  </Link>
-                  <Link to="/docs/blockchain-identity" className="dropdown-item">
-                    Blockchain Identity
-                  </Link>
-                  <Link to="/docs/blockstack-profiles" className="dropdown-item">
-                    Blockstack Profiles
-                  </Link>
-                  <Link to="/docs/identity-attestation" className="dropdown-item">
-                    Identity Attestation
-                  </Link>
-                </div>
-              </li>
+<li className="nav-item dropdown">
+  <a href="#" className="nav-link dropdown-toggle"
+     data-toggle="dropdown" role="button"
+     aria-haspopup="true" aria-expanded="false">
+    Articles
+  </a>
+  <div className="dropdown-menu">
+    <Link to="/docs/how-blockstack-works" className="dropdown-item">
+      How Blockstack Core Works
+    </Link>
+    <Link to="/docs/blockstack-vs-dns" className="dropdown-item">
+      Blockstack Core vs DNS
+    </Link>
+    <Link to="/docs/blockstack-vs-namecoin" className="dropdown-item">
+      Blockstack Core vs Namecoin
+    </Link>
+    <Link to="/docs/light-clients" className="dropdown-item">
+      Blockstack Light Clients
+    </Link>
+    <Link to="/docs/blockchain-identity" className="dropdown-item">
+      Blockchain Identity
+    </Link>
+    <Link to="/docs/blockstack-profiles" className="dropdown-item">
+      Blockstack Profiles
+    </Link>
+    <Link to="/docs/identity-attestation" className="dropdown-item">
+      Identity Attestation
+    </Link>
+  </div>
+</li>
 
 <li className="nav-item dropdown hidden-sm-down">
   <a href="#" className="nav-link dropdown-toggle"
