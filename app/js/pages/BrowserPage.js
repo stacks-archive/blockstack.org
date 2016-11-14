@@ -44,7 +44,7 @@ class AboutPage extends Component {
                 </hgroup>
                 <div className="m-b-3">
                   <h4>
-                    The Blockstack browser is currently in private beta.
+                    The Blockstack browser is currently in private alpha.
                   </h4>
                   <h4>
                     If you're a developer, join our Slack group to learn more.
