@@ -9,8 +9,10 @@ gulp.task('prod', ['clean'], function(cb) {
 
   global.isProd = true;
 
+  process.env.NODE_ENV = 'production';
+
   runSequence([
-    'makeBuildDir', 'sass', 'copyStyles', 'imagemin', 'browserify', 'copyFonts',
+    'makeBuildDir', 'copyStyles', 'imagemin', 'browserify', 'copyFonts',
     'copyIndex', 'copyIcons', 'copyFiles', 'buildDocs', 'configFirebase'
   ], cb);
 
