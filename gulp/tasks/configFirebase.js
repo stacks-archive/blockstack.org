@@ -30,6 +30,10 @@ gulp.task('configFirebase', () => {
       "destination": "/browser"
     },
     {
+      "source": "/articles/login-paper",
+      "destination": "/papers"
+    },
+    {
       "source": "/docs/installation",
       "destination": "/docs"
     }
