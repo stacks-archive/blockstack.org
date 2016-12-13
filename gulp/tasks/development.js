@@ -9,9 +9,11 @@ gulp.task('dev', ['clean'], function(cb) {
 
   global.isProd = false;
 
+  process.env.NODE_ENV = 'test';
+
   // Run all tasks once
   return runSequence([
-    'makeBuildDir', 'sass', 'copyStyles', 'imagemin', 'browserify', 'copyFonts',
+    'makeBuildDir', 'copyStyles', 'imagemin', 'browserify', 'copyFonts',
     'copyIndex', 'copyIcons', 'copyFiles', 'buildDocs', 'configFirebase'
   ], 'watch', cb);
 

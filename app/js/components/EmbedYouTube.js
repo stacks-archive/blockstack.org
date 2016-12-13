@@ -16,8 +16,8 @@ class EmbedYouTube extends Component {
 
   componentDidMount() {
     const ratio = 440/672
-    const domNode = this.refs.iframeWrapper.getDOMNode()
-    const width = domNode.getBoundingClientRect().width
+    const iframeWrapper = this.refs.iframeWrapper
+    const width = iframeWrapper.getBoundingClientRect().width
     const newHeight = width*ratio
     this.setState({
       height: newHeight

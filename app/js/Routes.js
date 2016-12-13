@@ -1,8 +1,10 @@
 'use strict'
 
 import React                       from 'react'
-import {Router, Route, IndexRoute} from 'react-router'
-import CreateBrowserHistory        from 'history/lib/createBrowserHistory'
+import {
+  Router, Route, IndexRoute,
+  browserHistory
+} from 'react-router'
 
 import App                         from './App'
 import HomePage                    from './pages/HomePage'
@@ -21,7 +23,7 @@ import OverviewPage                from './pages/OverviewPage'
 import docs                        from '../docs.json'
 
 export default (
-  <Router history={CreateBrowserHistory()} onUpdate={() => window.scrollTo(0, 0)}>
+  <Router history={browserHistory} onUpdate={() => window.scrollTo(0, 0)}>
     <Route path="/" component={App}>
 
       <IndexRoute component={HomePage} />

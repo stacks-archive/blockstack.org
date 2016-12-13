@@ -17,6 +17,20 @@ class TalksPage extends Component {
     this.state = {
       talks: [
         {
+          title: "Welcome to the New Internet",
+          event: "TEDxNewYork",
+          speaker: "Muneeb Ali",
+          location: "New York",
+          date: "December 1, 2016",
+          youtube: {
+            embedURL: "https://www.youtube.com/embed/qtOIh93Hvuw?list=PLvaRUGvjpFS2ciobOlOwMeVKDqO7S9ar6",
+          },
+          speakerDeck: {
+            dataID: "15d4861b7c1842bfbd7add80c99e1cf6",
+            dataRatio: "1.77777777777778",
+          },
+        },
+        {
           title: "Decentralized, Server-less Applications with Blockstack",
           event: "All Things Open",
           speaker: "Ryan Shea",
