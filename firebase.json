@@ -20,8 +20,8 @@
         "destination": "/docs-articles-blockstack-core.html"
       },
       {
-        "source": "/docs/articles/browser-beta",
-        "destination": "/docs-articles-browser-beta.html"
+        "source": "/docs/articles/browser-alpha",
+        "destination": "/docs-articles-browser-alpha.html"
       },
       {
         "source": "/docs/articles/faq",

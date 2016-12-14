@@ -94,7 +94,7 @@ class HomePage extends Component {
                     Build decentralized, server-less apps that put users in control of their data.
                   </p>
                   <p className="no-padding col-md-8">
-                    <Link to="/articles/browser-beta" role="button"
+                    <Link to="/articles/browser-alpha" role="button"
                       className="btn btn-lg btn-primary btn-block">
                       Download the Browser
                     </Link>
