@@ -67,6 +67,11 @@
         "type": 301
       },
       {
+        "source": "/articles/login-paper",
+        "destination": "/papers",
+        "type": 301
+      },
+      {
         "source": "/docs/installation",
         "destination": "/docs",
         "type": 301

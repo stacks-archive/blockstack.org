@@ -14,9 +14,9 @@ class HomePage extends Component {
     super(props)
 
     this.state = {
-      nameCount: 63000,
-      slackUserCount: 1400,
-      meetupUserCount: 1674
+      nameCount: 66000,
+      slackUserCount: 2100,
+      meetupUserCount: 4000
     }
 
     this.updateNameCount = this.updateNameCount.bind(this)
@@ -37,7 +37,7 @@ class HomePage extends Component {
     })
     // Get the number of Slack users
     request({
-      url: "https://api.onename.com/v1/slack/blockstack",
+      url: "https://blockstack-site-api.herokuapp.com/v1/slack-users",
       withCredentials: false
     }, (error, response, body) => {
       if (!error && response.statusCode === 200) {
@@ -94,7 +94,7 @@ class HomePage extends Component {
                     Build decentralized, server-less apps that put users in control of their data.
                   </p>
                   <p className="no-padding col-md-8">
-                    <Link to="/articles/browser-beta" role="button"
+                    <Link to="/articles/browser" role="button"
                       className="btn btn-lg btn-primary btn-block">
                       Download the Browser
                     </Link>
