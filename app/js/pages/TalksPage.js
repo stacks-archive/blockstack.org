@@ -64,7 +64,7 @@ class TalksPage extends Component {
 
   render() {
     return (
-      <DocumentTitle title="Blockstack - Documentation">
+      <DocumentTitle title="Blockstack - Videos">
         <div>
           <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
@@ -74,7 +74,7 @@ class TalksPage extends Component {
               <div className="container-fluid m-b-5">
                 <div className="container">
                   <h1>
-                    Blockstack Talks
+                    Blockstack Videos
                   </h1>
                 </div>
                 { this.state.talks.map((talk, index) => {

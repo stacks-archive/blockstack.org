@@ -10,6 +10,8 @@ import {parseString}   from 'xml2js'
 import Header          from '../components/Header'
 import Footer          from '../components/Footer'
 import docs            from '../../docs.json'
+import { communityMemberDict } from '../data'
+
 
 class BlogPage extends Component {
 
@@ -47,14 +49,17 @@ class BlogPage extends Component {
       channelItems.map((post) => {
         const urlSlug = post.link[0].split('ghost.io/')[1]
         const date = new Date(Date.parse(post.pubDate))
-        console.log(date)
+        const blockstackID = post["dc:creator"][0]
+        const creator = communityMemberDict[blockstackID]
+
         posts.push({
           urlSlug: urlSlug,
           title: post.title,
           date: date.toDateString(),
+          datetime: date.toISOString(),
           markdown: post["content:encoded"],
           preview: post.description,
-          creator: post["dc:creator"]
+          creator: creator
         })
       })
     })
@@ -68,13 +73,13 @@ class BlogPage extends Component {
 
   render() {
     return (
-      <DocumentTitle title="Blockstack - Documentation">
+      <DocumentTitle title="Blockstack - Blog">
         <div>
           <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
           </div>
           <section className="container-fluid spacing-container">
-            <div className="container col-centered">
+            <div className="container col-centered blog-index">
               <div className="container m-b-5">
                 <h1>
                   Blockstack Blog
@@ -83,10 +88,15 @@ class BlogPage extends Component {
                   return (
                     <div className="m-b-3" key={index}>
                       <Link to={"/blog/" + post.urlSlug}>
-                        <h4>{ post.title }</h4>
+                        <h3>{ post.title }</h3>
                       </Link>
-                      <p>{ post.date }</p>
                       <div dangerouslySetInnerHTML={{ __html: post.preview }}>
+                      </div>
+                      <div className="post-meta">
+                        <span>{post.creator.name}</span> |&nbsp;
+                        <time className="post-date" dateTime={post.datetime}>
+                          {post.date}
+                        </time>
                       </div>
                     </div>
                   )

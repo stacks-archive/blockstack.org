@@ -62,6 +62,11 @@
         "type": 301
       },
       {
+        "source": "/talks",
+        "destination": "/videos",
+        "type": 301
+      },
+      {
         "source": "/articles/browser-beta",
         "destination": "/browser",
         "type": 301

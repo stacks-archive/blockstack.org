@@ -26,6 +26,10 @@ gulp.task('configFirebase', () => {
       "destination": "/posts"
     },
     {
+      "source": "/talks",
+      "destination": "/videos"
+    },
+    {
       "source": "/articles/browser-beta",
       "destination": "/browser"
     },

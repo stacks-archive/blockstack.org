@@ -34,7 +34,7 @@ export default (
       <Route path="/about" component={AboutPage} />
       <Route path="/docs" component={DocsPage} />
       <Route path="/papers" component={PapersPage} />
-      <Route path="/talks" component={TalksPage} />
+      <Route path="/videos" component={TalksPage} />
       <Route path="/summit" component={SummitPage} />
       <Route path="/summit" component={SummitPage} />
       <Route path="/blog" component={BlogPage} />

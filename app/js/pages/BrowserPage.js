@@ -17,7 +17,7 @@ class AboutPage extends Component {
   render() {
 
     return (
-      <DocumentTitle title="Blockstack - About">
+      <DocumentTitle title="Blockstack - Browser">
         <div>
           <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />

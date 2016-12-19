@@ -2,15 +2,18 @@
 
 import {Component}      from 'react'
 import {Link}           from 'react-router'
-import Helmet           from 'react-helmet'
-import request         from 'request'
+import DocumentTitle    from 'react-document-title'
+import request          from 'request'
 import {parseString}    from 'xml2js'
 
 import Image            from '../components/Image'
 import Header           from '../components/Header'
 import Footer           from '../components/Footer'
 import CardLink         from '../components/CardLink'
+import CommunityMember  from '../components/CommunityMember'
 import docs             from '../../docs.json'
+import { communityMemberDict } from '../data'
+
 
 class ArticlePage extends Component {
 
@@ -67,7 +70,7 @@ class ArticlePage extends Component {
       } else {
         console.log(error)
       }
-    })    
+    })
   }
 
   setPage(result) {
@@ -94,15 +97,18 @@ class ArticlePage extends Component {
       const markup = post["content:encoded"][0]
       const image = markup.split('src="')[1].split('" alt="')[0]
       const markupWithoutHeaderImage = markup.replace(/<img[^>]*>/,"")
+      const blockstackId = post["dc:creator"][0]
+      const creator = communityMemberDict[blockstackId]
 
       currentPage = Object.assign({}, currentPage, {
         urlSlug: urlSlug,
         title: post.title,
         image: image,
+        datetime: date.toISOString(),
         date: date.toDateString(),
         markup: markupWithoutHeaderImage,
         preview: post.description,
-        creator: post["dc:creator"]
+        creator: creator
       })
     }
 
@@ -124,48 +130,71 @@ class ArticlePage extends Component {
     const pathPrefix = '/' + location.pathname.split('/')[1]
 
     return (
-      <div>
-        <div className="container-fluid col-centered navbar-fixed-top bg-primary">
-          <Header />
-        </div>
-        <div className="hidden-image">
-          <Image
-            src={headerImageSrc}
-            fallbackSrc="/images/article-photos/road.jpg"
-            onLoad={this.onImageLoad}
-            retinaSupport={false} />
-        </div>
-        <div className="m-b-3 docs-header-image-wrapper">
-          { currentPage !== null && this.state.imageLoading !== true ?
-          <Image src={headerImageSrc}
-            fallbackSrc="/images/article-photos/road.jpg"
-            className="img-fluid docs-header-image"
-            retinaSupport={false} />
-          : null }
-        </div>
-        <nav className="container-fluid m-b-1 back-docs">
-          <ul className="pagination">
-            <li className="page-item">
-              <Link className="page-link" to={pathPrefix} aria-label="Back">
-                <span aria-hidden="true">&laquo; Back</span>
-                <span className="sr-only">Back</span>
-              </Link>
-            </li>
-          </ul>
-        </nav>
-        { currentPage ?
-        <section className="m-b-5 m-t-5">
-          <div className="container p-b-5 col-centered">
-            <div className="container">
-              <h1>{currentPage.title}</h1>
-              <div dangerouslySetInnerHTML={{ __html: currentPage.markup }}>
+      <DocumentTitle title="Blockstack - Documentation">
+        <div>
+          <div className="container-fluid col-centered navbar-fixed-top bg-primary">
+            <Header />
+          </div>
+          <div className="hidden-image">
+            <Image
+              src={headerImageSrc}
+              fallbackSrc="/images/article-photos/road.jpg"
+              onLoad={this.onImageLoad}
+              retinaSupport={false} />
+          </div>
+          <div className="m-b-3 docs-header-image-wrapper">
+            { currentPage !== null && this.state.imageLoading !== true ?
+            <Image src={headerImageSrc}
+              fallbackSrc="/images/article-photos/road.jpg"
+              className="img-fluid docs-header-image"
+              retinaSupport={false} />
+            : null }
+          </div>
+          <nav className="container-fluid m-b-1 back-docs">
+            <ul className="pagination">
+              <li className="page-item">
+                <Link className="page-link" to={pathPrefix} aria-label="Back">
+                  <span aria-hidden="true">&laquo; Back</span>
+                  <span className="sr-only">Back</span>
+                </Link>
+              </li>
+            </ul>
+          </nav>
+          { currentPage ?
+          <section className="m-b-5 m-t-5">
+            <div className="container p-b-5 col-centered blog-post">
+              <div className="container">
+                <div className="post-header">
+                  <h1 className="post-title">
+                    {currentPage.title}
+                  </h1>
+                  <time className="post-date" dateTime={currentPage.datetime}>
+                    {currentPage.date}
+                  </time>
+                </div>
+                <div dangerouslySetInnerHTML={{ __html: currentPage.markup }}>
+                </div>
+                <hr className="m-t-70 m-b-60" />
+                <section className="author">
+                  <p>
+                    Written by:
+                  </p>
+                  <CommunityMember
+                    key={0}
+                    blockstackId={currentPage.creator.blockstackId}
+                    name={currentPage.creator.name}
+                    avatar={currentPage.creator.avatar}
+                    twitter={currentPage.creator.twitter}
+                    github={currentPage.creator.github}
+                    isCentered={false} />
+                </section>
               </div>
             </div>
-          </div>
-        </section>
-        : null }
-        <Footer />
-      </div>
+          </section>
+          : null }
+          <Footer />
+        </div>
+      </DocumentTitle>
     )
   }
 }
