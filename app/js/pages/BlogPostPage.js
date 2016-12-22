@@ -190,23 +190,3 @@ class ArticlePage extends Component {
 }
 
 export default ArticlePage
-
-      /*
-      const urlSlug = post.link[0].split('ghost.io/')[1]
-      const date = new Date(Date.parse(post.pubDate))
-      const markup = post["content:encoded"][0]
-      const image = markup.split('src="')[1].split('" alt="')[0]
-      const markupWithoutHeaderImage = markup.replace(/<img[^>]*>/,"")
-      const blockstackId = post["dc:creator"][0]
-
-      {
-        urlSlug: urlSlug,
-        title: post.title,
-        image: image,
-        datetime: date.toISOString(),
-        date: date.toDateString(),
-        markup: markupWithoutHeaderImage,
-        preview: post.description,
-        creator: creator
-      }
-      */

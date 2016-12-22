@@ -187,16 +187,3 @@ class ArticlePage extends Component {
 }
 
 export default ArticlePage
-
-/*
-{nextPage ?
-                <div>
-                  <div className="col-md-4 pull-l-padding">
-                    <h3>Next Article</h3>
-                    <CardLink href={`${pathPrefix}/${nextPage.pageName}`}
-                      title={nextPage.title} body={nextPage.description}
-                      imageSrc={nextPage.image} />
-                  </div>
-                </div>
-              : null }
-*/

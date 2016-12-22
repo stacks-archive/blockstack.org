@@ -103,34 +103,3 @@ class BlogPage extends Component {
 }
 
 export default BlogPage
-
-/*
-const postNames = [
-  'blockstack-core-v0-14',
-  'identity-attestation',
-  'blockstack-profiles',
-  'blockchain-identity',
-  'blockstack-vs-dns',
-  'blockstack-vs-namecoin',
-  'namespaces',
-  'how-blockstack-works',
-]*/
-
-
-/*
-postNames.forEach((postName) => {
-  let markdown = docs[postName].markdown
-  let plaintext = markdown
-    .replace('#### ', '').replace('####', '')
-    .replace('### ', '').replace('###', '')
-    .replace('## ', '').replace('##', '')
-  let preview = plaintext.slice(0,250) + '...'
-
-  posts.push({
-    name: postName,
-    title: docs[postName].title,
-    date: docs[postName].date,
-    markdown: markdown,
-    preview: preview
-  })
-})*/
