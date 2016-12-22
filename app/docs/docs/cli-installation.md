@@ -38,3 +38,18 @@ Next, use `pip` to install blockstack:
 ```bash
 $ sudo pip install blockstack
 ```
+
+#### Windows Subsystem for Linux
+
+Installation requires `pip` and `libssl`. First, make sure you have both:
+
+```bash
+$ sudo apt-get update && sudo apt-get install -y python-pip python-dev libssl-dev libffi-dev
+```
+
+Next, use `pip` to install functools32 and then blockstack:
+
+```bash
+$ sudo pip install functools32
+$ sudo pip install blockstack
+```
