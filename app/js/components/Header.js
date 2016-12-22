@@ -31,6 +31,12 @@ class Header extends Component {
               </li>
 
               <li className="nav-item">
+                <Link to="/blog" className="nav-link">
+                  Blog
+                </Link>
+              </li>
+
+              <li className="nav-item">
                 <Link to="/browser" className="nav-link">
                   Browser
                 </Link>
@@ -43,8 +49,8 @@ class Header extends Component {
               </li>
 
               <li className="nav-item">
-                <Link to="/talks" className="nav-link">
-                  Talks
+                <Link to="/videos" className="nav-link">
+                  Videos
                 </Link>
               </li>
 
@@ -68,6 +74,10 @@ class Header extends Component {
                         className="dropdown-item" target="_blank">
                     Blockstack CLI
                   </Link>
+                  <Link to="https://github.com/blockstack/blockstack-browser"
+                        className="dropdown-item" target="_blank">
+                    Blockstack Browser
+                  </Link>
                   <Link to="https://github.com/blockstack/blockstack-explorer"
                         className="dropdown-item" target="_blank">
                     Blockstack Explorer
@@ -78,7 +88,7 @@ class Header extends Component {
                   </Link>
                   <Link to="https://github.com/blockstack/blockstack-profiles-js"
                         className="dropdown-item" target="_blank">
-                    Blockstack Profiles
+                    Blockstack Identity
                   </Link>
                   <Link to="https://github.com/blockstack/virtualchain"
                         className="dropdown-item" target="_blank">

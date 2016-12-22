@@ -16,6 +16,7 @@ class Footer extends Component {
       slack: 'http://chat.blockstack.org',
       meetup: 'http://www.meetup.com/topics/blockstack/',
       reddit: 'https://www.reddit.com/r/blockstack',
+      forum: 'https://forum.blockstack.org',
       blog: 'http://blog.blockstack.org',
       github: 'https://github.com/blockstack',
       branding: 'https://projects.invisionapp.com/boards/HE2VVROFSGB27/'
@@ -45,13 +46,16 @@ class Footer extends Component {
                   <Link to="/docs">Docs</Link>
                 </li>
                 <li>
+                  <Link to="/blog">Blog</Link>
+                </li>
+                <li>
                   <Link to="/browser">Browser</Link>
                 </li>
                 <li>
                   <Link to="/papers">Papers</Link>
                 </li>
                 <li>
-                  <Link to="/posts">Posts</Link>
+                  <Link to="/videos">Videos</Link>
                 </li>
               </ul>
             </div>
@@ -65,10 +69,7 @@ class Footer extends Component {
                   <Link to={links.meetup} target="_blank">Meetup</Link>
                 </li>
                 <li>
-                  <Link to={links.reddit} target="_blank">Reddit</Link>
-                </li>
-                <li>
-                  <Link to={links.blog} target="_blank">Blog</Link>
+                  <Link to={links.forum} target="_blank">Forum</Link>
                 </li>
                 <li>
                   <Link to={links.youtube} target="_blank">YouTube</Link>

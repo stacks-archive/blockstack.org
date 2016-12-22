@@ -21,14 +21,18 @@ class TalksPage extends Component {
           event: "TEDxNewYork",
           speaker: "Muneeb Ali",
           location: "New York",
-          date: "December 1, 2016",
-          youtube: {
-            embedURL: "https://www.youtube.com/embed/qtOIh93Hvuw?list=PLvaRUGvjpFS2ciobOlOwMeVKDqO7S9ar6",
-          },
-          speakerDeck: {
-            dataID: "15d4861b7c1842bfbd7add80c99e1cf6",
-            dataRatio: "1.77777777777778",
-          },
+          date: "September 10, 2016",
+          youtubeURL: "https://www.youtube.com/embed/qtOIh93Hvuw?list=PLvaRUGvjpFS2ciobOlOwMeVKDqO7S9ar6",
+          speakerDeckID: "15d4861b7c1842bfbd7add80c99e1cf6",
+        },
+        {
+          title: "Innovation & Inclusion w/ Decentralized Apps",
+          event: "New Context Conference Fall 2016",
+          speaker: "Ryan Shea",
+          location: "San Francisco, CA",
+          date: "November 4, 2016",
+          youtubeURL: "https://www.youtube.com/embed/nknocjo7t00",
+          speakerDeckID: "9a0dca48d9cc4da98e0d1b3094fe4ec1",
         },
         {
           title: "Decentralized, Server-less Applications with Blockstack",
@@ -36,13 +40,8 @@ class TalksPage extends Component {
           speaker: "Ryan Shea",
           location: "Raleigh, NC",
           date: "October 27, 2016",
-          youtube: {
-            embedURL: "https://www.youtube.com/embed/WveXpldGGa8",
-          },
-          speakerDeck: {
-            dataID: "434d4f23ad40417aadfe86643671a5bd",
-            dataRatio: "1.77777777777778",
-          },
+          youtubeURL: "https://www.youtube.com/embed/WveXpldGGa8",
+          speakerDeckID: "434d4f23ad40417aadfe86643671a5bd",
         },
         {
           title: "Experiences with Building a Global PKI with Blockchains",
@@ -50,13 +49,8 @@ class TalksPage extends Component {
           speaker: "Muneeb Ali",
           location: "Princeton, NJ",
           date: "March 8, 2016",
-          youtube: {
-            embedURL: "https://www.youtube.com/embed/sBJobY0Aqt0",
-          },
-          speakerDeck: {
-            dataID: "e7608b083c5d4ef68a199cd4f6b74026",
-            dataRatio: "1.77777777777778",
-          },
+          youtubeURL: "https://www.youtube.com/embed/sBJobY0Aqt0",
+          speakerDeckID: "e7608b083c5d4ef68a199cd4f6b74026",
         },
       ]
     }
@@ -64,7 +58,7 @@ class TalksPage extends Component {
 
   render() {
     return (
-      <DocumentTitle title="Blockstack - Documentation">
+      <DocumentTitle title="Blockstack - Videos">
         <div>
           <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
@@ -74,7 +68,7 @@ class TalksPage extends Component {
               <div className="container-fluid m-b-5">
                 <div className="container">
                   <h1>
-                    Blockstack Talks
+                    Blockstack Videos
                   </h1>
                 </div>
                 { this.state.talks.map((talk, index) => {
@@ -94,16 +88,16 @@ class TalksPage extends Component {
                         </p>
                       </div>
                       <div className="row">
-                        { talk.youtube ?
+                        { talk.youtubeURL ?
                         <div className="col-md-6">
-                          <EmbedYouTube src={talk.youtube.embedURL} />
+                          <EmbedYouTube src={talk.youtubeURL} />
                         </div>
                         : null }
-                        { talk.speakerDeck ?
+                        { talk.speakerDeckID ?
                         <div className="col-md-6">
                           <EmbedSpeakerDeck
-                            dataID={talk.speakerDeck.dataID}
-                            dataRatio={talk.speakerDeck.dataRatio} />
+                            dataID={talk.speakerDeckID}
+                            dataRatio="1.77777777777778" />
                         </div>
                         : null }
                       </div>
@@ -122,20 +116,3 @@ class TalksPage extends Component {
 }
 
 export default TalksPage
-
-/*
-{
-  title: "Building the New Internet",
-  event: "TEDx New York",
-  speaker: "Muneeb Ali",
-  location: "New York, NY",
-  date: "September 10, 2016",
-  youtube: {
-    embedURL: "https://www.youtube.com/embed/zmWIMiED9cE"
-  },
-  speakerDeck: {
-    dataID: "96df091e173e4f03b2c39e79c9b37220",
-    dataRatio: "1.77777777777778",
-  }
-}
-*/

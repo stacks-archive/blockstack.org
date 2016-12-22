@@ -22,7 +22,7 @@ class OverviewPage extends Component {
     ]
 
     return (
-      <DocumentTitle title="Blockstack - Documentation">
+      <DocumentTitle title="Blockstack - Overview">
         <div>
           <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />

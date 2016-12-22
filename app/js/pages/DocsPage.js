@@ -90,7 +90,7 @@ class DocsPage extends Component {
   render() {
     const sections = this.state.sections
     return (
-      <DocumentTitle title="Blockstack - About">
+      <DocumentTitle title="Blockstack - Docs">
         <div>
           <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
