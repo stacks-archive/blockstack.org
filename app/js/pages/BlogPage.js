@@ -5,15 +5,13 @@ import {Link}          from 'react-router'
 import DocumentTitle   from 'react-document-title'
 import marked          from 'marked'
 import request         from 'request'
-import {
-  parseString as parseXML
-}                      from 'xml2js'
+import {parseString}   from 'xml2js'
 
-import Header                from '../components/Header'
-import Footer                from '../components/Footer'
-import {getPostFromRSS}      from '../utils/rssUtils'
-import docs                  from '../../docs.json'
-import {communityMemberDict} from '../data'
+import Header           from '../components/Header'
+import Footer           from '../components/Footer'
+import {getPostFromRSS} from '../utils/rssUtils'
+import docs             from '../../docs.json'
+import {blogAuthors}    from '../data'
 
 
 class BlogPage extends Component {
@@ -45,13 +43,13 @@ class BlogPage extends Component {
   setPosts(body) {
     let posts = []
 
-    parseXML(body, (err, result) => {
+    parseString(body, (err, result) => { // parse XML string
       const firstChannel = result.rss.channel[0]
       const channelItems = firstChannel.item
 
       channelItems.map((rssPost) => {
         let post = getPostFromRSS(rssPost)
-        post.creator = communityMemberDict[post.blockstackID]
+        post.creator = blogAuthors[post.blockstackID]
         posts.push(post)
       })
     })
