@@ -79,6 +79,8 @@
     "should": "^7.1.0",
     "sinon": "^1.17.1",
     "superagent": "^1.2.0",
+    "sync-request": "^3.0.1",
+    "textversionjs": "^1.0.2",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.2.x",
     "when": "^3.7.4",

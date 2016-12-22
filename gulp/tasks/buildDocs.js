@@ -1,11 +1,12 @@
 'use strict';
 
-import gulp   from 'gulp'
-import config from '../config'
-import fs     from 'fs'
-import metaData from 'meta-tag-data'
-
-const googleSiteVerification = 'U-V1sDR9guEOpzUdVlVGsBJuxfJd6c0SPRjeU8-_chk'
+import gulp                      from 'gulp'
+import config                    from '../config'
+import fs                        from 'fs'
+import metaData                  from 'meta-tag-data'
+import request                   from 'request'
+import {parseString as parseXML} from 'xml2js'
+import {getPostFromRSS}          from '../../app/js/utils/rssUtils'
 
 function createMetatagMarkup(url, title, description, image) {
   let metatagMarkup = '<meta charset="utf-8" />\n'
@@ -14,7 +15,6 @@ function createMetatagMarkup(url, title, description, image) {
   let metadata = metaData('name', {
     'description': description,
     'viewport': 'width=device-width',
-    'google-site-verification': googleSiteVerification,
     'twitter:card': 'summary',
     'twitter:site': '@blockstackorg',
     'twitter:title': title,
@@ -37,6 +37,38 @@ function createMetatagMarkup(url, title, description, image) {
 
   return metatagMarkup
 }
+
+gulp.task('buildBlog', () => {
+  function createBlogPostRecord(indexHtml, rssPost) {
+    const post = getPostFromRSS(rssPost)
+    const metatagMarkup = createMetatagMarkup(
+      post.url, post.title, post.description, post.image)
+    const modifiedIndex = indexHtml.replace('<meta charset="utf-8" />', metatagMarkup)
+    fs.writeFileSync('build/blog-' + post.urlSlug + '.html', modifiedIndex)    
+  }
+
+  function createBlogRecords(indexHtml, rssJSON) {
+    const firstChannel = rssJSON.rss.channel[0]
+    firstChannel.item.map((post) => {
+      createBlogPostRecord(indexHtml, post)
+    })
+  }
+
+  const indexHtml = fs.readFileSync('app/index.html', 'utf8')
+  const rssURL = "https://blockstack-site-api.herokuapp.com/v1/blog-rss"
+  request({
+    url: rssURL,
+    withCredentials: false
+  }, (error, response, body) => {
+    if (!error && response.statusCode === 200) {
+      parseXML(body, (err, rssJSON) => {
+        createBlogRecords(indexHtml, rssJSON)
+      })
+    } else {
+      console.log(error)
+    }
+  })
+})
 
 gulp.task('buildDocs', () => {
   let allDocs = {}

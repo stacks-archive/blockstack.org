@@ -4,15 +4,20 @@ import {Component}      from 'react'
 import {Link}           from 'react-router'
 import DocumentTitle    from 'react-document-title'
 import request          from 'request'
-import {parseString}    from 'xml2js'
+import {
+  parseString as parseXML
+}                       from 'xml2js'
 
 import Image            from '../components/Image'
 import Header           from '../components/Header'
 import Footer           from '../components/Footer'
 import CardLink         from '../components/CardLink'
 import CommunityMember  from '../components/CommunityMember'
+import {getPostFromRSS} from '../utils/rssUtils'
 import docs             from '../../docs.json'
-import { communityMemberDict } from '../data'
+import {
+  communityMemberDict
+}                       from '../data'
 
 
 class ArticlePage extends Component {
@@ -64,7 +69,7 @@ class ArticlePage extends Component {
       withCredentials: false
     }, (error, response, body) => {
       if (!error && response.statusCode === 200) {
-        parseString(body, (err, result) => {
+        parseXML(body, (err, result) => {
           this.setPage(result)
         })
       } else {
@@ -78,7 +83,7 @@ class ArticlePage extends Component {
       title: 'Page loading...',
       markup: '<p>Loading...</p>'
     }
-    let post = null
+    let rssPost = null
 
     const firstChannel = result.rss.channel[0]
     const channelItems = firstChannel.item
@@ -87,29 +92,14 @@ class ArticlePage extends Component {
       const channelItemUrlSlug = channelItem.link[0].split('ghost.io/')[1].replace(/\/$/, "")
       const currentUrlSlug = location.pathname.split('/')[2]
       if (channelItemUrlSlug === currentUrlSlug) {
-        post = channelItem
+        rssPost = channelItem
       }
     })
 
-    if (post) {
-      const urlSlug = post.link[0].split('ghost.io/')[1]
-      const date = new Date(Date.parse(post.pubDate))
-      const markup = post["content:encoded"][0]
-      const image = markup.split('src="')[1].split('" alt="')[0]
-      const markupWithoutHeaderImage = markup.replace(/<img[^>]*>/,"")
-      const blockstackId = post["dc:creator"][0]
-      const creator = communityMemberDict[blockstackId]
-
-      currentPage = Object.assign({}, currentPage, {
-        urlSlug: urlSlug,
-        title: post.title,
-        image: image,
-        datetime: date.toISOString(),
-        date: date.toDateString(),
-        markup: markupWithoutHeaderImage,
-        preview: post.description,
-        creator: creator
-      })
+    if (rssPost) {
+      let post = getPostFromRSS(rssPost)
+      post.creator = communityMemberDict[post.blockstackID]
+      currentPage = Object.assign({}, currentPage, post)
     }
 
     this.setState({
@@ -200,3 +190,23 @@ class ArticlePage extends Component {
 }
 
 export default ArticlePage
+
+      /*
+      const urlSlug = post.link[0].split('ghost.io/')[1]
+      const date = new Date(Date.parse(post.pubDate))
+      const markup = post["content:encoded"][0]
+      const image = markup.split('src="')[1].split('" alt="')[0]
+      const markupWithoutHeaderImage = markup.replace(/<img[^>]*>/,"")
+      const blockstackId = post["dc:creator"][0]
+
+      {
+        urlSlug: urlSlug,
+        title: post.title,
+        image: image,
+        datetime: date.toISOString(),
+        date: date.toDateString(),
+        markup: markupWithoutHeaderImage,
+        preview: post.description,
+        creator: creator
+      }
+      */

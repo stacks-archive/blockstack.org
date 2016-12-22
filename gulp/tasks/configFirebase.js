@@ -1,13 +1,59 @@
 'use strict';
 
-import fs     from 'fs';
-import gulp   from 'gulp';
-import config from '../config';
+import fs                        from 'fs'
+import gulp                      from 'gulp'
+import {parseString as parseXML} from 'xml2js'
+import request from 'sync-request'
+
+import config                    from '../config'
+import {getPostFromRSS}          from '../../app/js/utils/rssUtils'
 
 gulp.task('configFirebase', () => {
   let firebaseJson = JSON.parse(fs.readFileSync('firebase.json'))
 
-  let folderNames = ['articles', 'tutorials']
+  /*
+  * Configure Rewrites
+  */
+  let rewrites = []
+
+  // create rewrites for docs
+  const docFolderNames = ['articles', 'tutorials', 'posts']
+  docFolderNames.forEach((folderName) => {
+    fs.readdirSync('app/docs/' + folderName + '/').forEach((docFilename) => {
+      const key = docFilename.split('.')[0].toLowerCase()
+
+      rewrites.push({
+        "source": `/${folderName}/${key}`,
+        "destination": `/docs-${folderName}-${key}.html`
+      })
+    })
+  })
+
+  // Create rewrites for blog
+  const rssURL = "https://blockstack-site-api.herokuapp.com/v1/blog-rss"
+  const requestBody = request('GET', rssURL).body
+  parseXML(requestBody, (err, blogRSSData) => {
+    const firstChannel = blogRSSData.rss.channel[0]
+    firstChannel.item.map((rssPost) => {
+      const post = getPostFromRSS(rssPost)
+      rewrites.push({
+        "source": `/blog/${post.urlSlug}`,
+        "destination": `/blog-${post.urlSlug}.html`
+      })
+    })
+  })
+
+  // Push the main index.html rewrite
+  rewrites.push({
+    "source": "**",
+    "destination": "/index.html"
+  })
+
+  firebaseJson.hosting.rewrites = rewrites
+
+  /*
+  * Configure Redirects
+  */
   let redirectRules = [
     {
       "source": "/docs/blockchain-identity",
@@ -43,24 +89,7 @@ gulp.task('configFirebase', () => {
     }
   ]
 
-  let rewrites = []
   let redirects = []
-
-  folderNames.forEach((folderName) => {
-    fs.readdirSync('app/docs/' + folderName + '/').forEach((docFilename) => {
-      const key = docFilename.split('.')[0].toLowerCase()
-
-      rewrites.push({
-        "source": `/docs/${folderName}/${key}`,
-        "destination": `/docs-${folderName}-${key}.html`
-      })
-    })
-  })
-
-  rewrites.push({
-    "source": "**",
-    "destination": "/index.html"
-  })
 
   redirectRules.forEach((rule) => {
     redirects.push({
@@ -70,7 +99,6 @@ gulp.task('configFirebase', () => {
     })
   })
 
-  firebaseJson.hosting.rewrites = rewrites
   firebaseJson.hosting.redirects = redirects
 
   fs.writeFileSync('firebase.json', JSON.stringify(firebaseJson, null, 2))

@@ -12,28 +12,76 @@
     ],
     "rewrites": [
       {
-        "source": "/docs/articles/404",
+        "source": "/articles/404",
         "destination": "/docs-articles-404.html"
       },
       {
-        "source": "/docs/articles/blockstack-core",
+        "source": "/articles/blockstack-core",
         "destination": "/docs-articles-blockstack-core.html"
       },
       {
-        "source": "/docs/articles/browser-beta",
+        "source": "/articles/browser-beta",
         "destination": "/docs-articles-browser-beta.html"
       },
       {
-        "source": "/docs/articles/faq",
+        "source": "/articles/faq",
         "destination": "/docs-articles-faq.html"
       },
       {
-        "source": "/docs/articles/light-clients",
+        "source": "/articles/light-clients",
         "destination": "/docs-articles-light-clients.html"
       },
       {
-        "source": "/docs/tutorials/hello-world",
+        "source": "/tutorials/hello-world",
         "destination": "/docs-tutorials-hello-world.html"
+      },
+      {
+        "source": "/posts/blockchain-identity",
+        "destination": "/docs-posts-blockchain-identity.html"
+      },
+      {
+        "source": "/posts/blockstack-core-v0-14",
+        "destination": "/docs-posts-blockstack-core-v0-14.html"
+      },
+      {
+        "source": "/posts/blockstack-profiles",
+        "destination": "/docs-posts-blockstack-profiles.html"
+      },
+      {
+        "source": "/posts/blockstack-vs-dns",
+        "destination": "/docs-posts-blockstack-vs-dns.html"
+      },
+      {
+        "source": "/posts/blockstack-vs-namecoin",
+        "destination": "/docs-posts-blockstack-vs-namecoin.html"
+      },
+      {
+        "source": "/posts/how-blockstack-works",
+        "destination": "/docs-posts-how-blockstack-works.html"
+      },
+      {
+        "source": "/posts/identity-attestation",
+        "destination": "/docs-posts-identity-attestation.html"
+      },
+      {
+        "source": "/posts/namespaces",
+        "destination": "/docs-posts-namespaces.html"
+      },
+      {
+        "source": "/blog/blockstack-core-is-available-on-the-azure-marketplace",
+        "destination": "/blog-blockstack-core-is-available-on-the-azure-marketplace.html"
+      },
+      {
+        "source": "/blog/blockstack-auth",
+        "destination": "/blog-blockstack-auth.html"
+      },
+      {
+        "source": "/blog/blockstack-core-v0-14-release",
+        "destination": "/blog-blockstack-core-v0-14-release.html"
+      },
+      {
+        "source": "/blog/blockstack-research-paper-published-at-usenix-atc16-conference",
+        "destination": "/blog-blockstack-research-paper-published-at-usenix-atc16-conference.html"
       },
       {
         "source": "**",

@@ -13,7 +13,8 @@ gulp.task('prod', ['clean'], function(cb) {
 
   runSequence([
     'makeBuildDir', 'copyStyles', 'imagemin', 'browserify', 'copyFonts',
-    'copyIndex', 'copyIcons', 'copyFiles', 'buildDocs', 'configFirebase'
+    'copyIndex', 'copyIcons', 'copyFiles', 'buildDocs', 'buildBlog',
+    'configFirebase'
   ], cb);
 
 });

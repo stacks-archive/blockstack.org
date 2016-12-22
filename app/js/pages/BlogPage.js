@@ -5,12 +5,15 @@ import {Link}          from 'react-router'
 import DocumentTitle   from 'react-document-title'
 import marked          from 'marked'
 import request         from 'request'
-import {parseString}   from 'xml2js'
+import {
+  parseString as parseXML
+}                      from 'xml2js'
 
-import Header          from '../components/Header'
-import Footer          from '../components/Footer'
-import docs            from '../../docs.json'
-import { communityMemberDict } from '../data'
+import Header                from '../components/Header'
+import Footer                from '../components/Footer'
+import {getPostFromRSS}      from '../utils/rssUtils'
+import docs                  from '../../docs.json'
+import {communityMemberDict} from '../data'
 
 
 class BlogPage extends Component {
@@ -42,29 +45,16 @@ class BlogPage extends Component {
   setPosts(body) {
     let posts = []
 
-    parseString(body, (err, result) => {
+    parseXML(body, (err, result) => {
       const firstChannel = result.rss.channel[0]
       const channelItems = firstChannel.item
 
-      channelItems.map((post) => {
-        const urlSlug = post.link[0].split('ghost.io/')[1]
-        const date = new Date(Date.parse(post.pubDate))
-        const blockstackID = post["dc:creator"][0]
-        const creator = communityMemberDict[blockstackID]
-
-        posts.push({
-          urlSlug: urlSlug,
-          title: post.title,
-          date: date.toDateString(),
-          datetime: date.toISOString(),
-          markdown: post["content:encoded"],
-          preview: post.description,
-          creator: creator
-        })
+      channelItems.map((rssPost) => {
+        let post = getPostFromRSS(rssPost)
+        post.creator = communityMemberDict[post.blockstackID]
+        posts.push(post)
       })
     })
-
-    console.log(posts)
 
     this.setState({
       posts: posts
