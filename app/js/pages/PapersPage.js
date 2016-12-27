@@ -6,42 +6,17 @@ import DocumentTitle    from 'react-document-title'
 
 import Header           from '../components/Header'
 import Footer           from '../components/Footer'
+import {papers}         from '../data'
 
 class PapersPage extends Component {
 
   constructor(props) {
     super(props)
-
-    this.state = {
-      papers: [
-        {
-          title: "Blockstack: A Global Naming and Storage System Secured by Blockchains",
-          authors: "Muneeb Ali, Jude Nelson, Ryan Shea and Michael J. Freedman",
-          publication: "USENIX Annual Technical Conference",
-          url: "https://blockstack.org/blockstack.pdf",
-          date: "June 2016",
-        },
-        {
-          title: "Bootstrapping Trust in Distributed Systems with Blockchains",
-          authors: "Muneeb Ali, Jude Nelson, Ryan Shea and Michael J. Freedman:",
-          publication: "USENIX ;login: issue: Fall 2016, Vol. 41, No. 3",
-          url: "https://blockstack.org/blockstack-login.pdf",
-          date: "June 2016",
-        },
-        {
-          title: "Extending Existing Blockchains with Virtualchain",
-          authors: "Jude Nelson, Muneeb Ali, Ryan Shea and Michael J. Freedman",
-          publication: "Workshop on Distributed Cryptocurrencies and Consensus Ledgers",
-          url: "https://blockstack.org/virtualchain.pdf",
-          date: "July 2016",
-        },
-      ]
-    }
   }
 
   render() {
     return (
-      <DocumentTitle title="Blockstack - Documentation">
+      <DocumentTitle title="Blockstack - Papers">
         <div>
           <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
@@ -52,7 +27,7 @@ class PapersPage extends Component {
                 <h1>
                   Blockstack Papers
                 </h1>
-                { this.state.papers.map((paper, index) => {
+                { papers.map((paper, index) => {
                   return (
                     <div className="m-b-3">
                       <h4 className="m-b-1">

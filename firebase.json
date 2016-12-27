@@ -72,8 +72,8 @@
         "destination": "/blog-blockstack-core-is-available-on-the-azure-marketplace.html"
       },
       {
-        "source": "/blog/blockstack-auth",
-        "destination": "/blog-blockstack-auth.html"
+        "source": "/blog/blockstack-auth-v1",
+        "destination": "/blog-blockstack-auth-v1.html"
       },
       {
         "source": "/blog/blockstack-core-v0-14-release",
