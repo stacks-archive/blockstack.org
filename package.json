@@ -35,7 +35,7 @@
     "del": "^1.2.0",
     "eslint": "^2.1.0",
     "eslint-plugin-react": "^3.16.1",
-    "font-awesome": "^4.5.0",
+    "font-awesome": "^4.7.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-if": "^1.2.5",
