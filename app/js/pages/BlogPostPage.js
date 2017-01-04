@@ -76,8 +76,7 @@ class ArticlePage extends Component {
 
   setPage(result) {
     let currentPage = {
-      title: 'Page loading...',
-      markup: '<p>Loading...</p>'
+      title: 'Page Not Found',
     }
     let rssPost = null
 
@@ -110,10 +109,8 @@ class ArticlePage extends Component {
   }
 
   render() {
-    console.log(currentPage)
-
     const currentPage = this.state.currentPage,
-          title = currentPage ? currentPage.title : "Page Not Found"
+          title = currentPage ? currentPage.title : ""
     const headerImageSrc = this.state.currentPage ? this.state.currentPage.image : ''
     const pathPrefix = '/' + location.pathname.split('/')[1]
 
@@ -123,7 +120,7 @@ class ArticlePage extends Component {
           <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
           </div>
-          { currentPage ?
+          { currentPage && currentPage.preview ?
           <div>
             <div className="hidden-image">
               <Image
@@ -187,7 +184,7 @@ class ArticlePage extends Component {
               <div className="container">
                 <div className="post-header">
                   <h1 className="post-title">
-                    Page Not Found
+                    {title}
                   </h1>
                 </div>
               </div>

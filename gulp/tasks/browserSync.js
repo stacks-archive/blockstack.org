@@ -10,14 +10,15 @@ gulp.task('browserSync', function() {
   const DEFAULT_FILE = 'index.html';
   const ASSET_EXTENSIONS = [
     'js', 'css', 'png', 'jpg', 'jpeg', 'gif', 'svg', 'ico', 'md', 'pdf',
-    'woff', 'woff2', 'ttf', 'eot', 'txt'
+    'woff', 'woff2', 'ttf', 'eot', 'txt', 'map'
   ];
 
   browserSync.init({
     server: {
       baseDir: config.buildDir,
       middleware: function(req, res, next) {
-        let fileHrefArray = url.parse(req.url).href.split('.');
+        let fileHrefClean = url.parse(req.url).href.split('?')[0];
+        let fileHrefArray = fileHrefClean.split('.');
         let fileExtension = fileHrefArray[fileHrefArray.length - 1];
 
         if ( ASSET_EXTENSIONS.indexOf(fileExtension) === -1 ) {
