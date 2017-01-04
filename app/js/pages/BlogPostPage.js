@@ -129,14 +129,6 @@ class ArticlePage extends Component {
                 onLoad={this.onImageLoad}
                 retinaSupport={false} />
             </div>
-            <div className="m-b-3 docs-header-image-wrapper">
-              { currentPage !== null && this.state.imageLoading !== true ?
-              <Image src={headerImageSrc}
-                fallbackSrc="/images/article-photos/road.jpg"
-                className="img-fluid docs-header-image"
-                retinaSupport={false} />
-              : null }
-            </div>
             <nav className="container-fluid m-b-1 back-docs">
               <ul className="pagination">
                 <li className="page-item">
@@ -157,6 +149,14 @@ class ArticlePage extends Component {
                     <time className="post-date" dateTime={currentPage.datetime}>
                       {currentPage.date}
                     </time>
+                  </div>
+                  <div className="m-b-3 docs-header-image-wrapper">
+                    { currentPage !== null && this.state.imageLoading !== true ?
+                    <Image src={headerImageSrc}
+                      fallbackSrc="/images/article-photos/road.jpg"
+                      className="img-fluid docs-header-image"
+                      retinaSupport={false} />
+                    : null }
                   </div>
                   <div dangerouslySetInnerHTML={{ __html: currentPage.markup }}>
                   </div>
