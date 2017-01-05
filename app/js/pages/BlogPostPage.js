@@ -130,7 +130,7 @@ class ArticlePage extends Component {
                 onLoad={this.onImageLoad}
                 retinaSupport={false} />
             </div>
-            <section className="m-b-50 m-t-150">
+            <section className="m-b-50 m-t-100">
               <div className="container p-b-5 col-centered blog-post">
                 <div className="container">
                   <div className="post-header">
