@@ -356,6 +356,7 @@ footer > li{list-style:none;}
   .midfoot,.base-push-left{padding-left:0;}
   .social{margin-top:-8px;}
   .foot-logo{max-width:190px;}
+  .foot-logo img{width:164px;}
   .card.card-1-of-1{width: 100% !important;}
   .card.card-1-of-2{width: 50% !important;}
   .card.card-1-of-3{width: 33.3333% !important;}
