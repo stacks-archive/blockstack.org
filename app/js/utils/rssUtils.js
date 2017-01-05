@@ -1,10 +1,23 @@
 import createTextVersion from 'textversionjs'
 
+export function getSlugFromRSS(rssPost) {
+  // Handle URL
+  const url = rssPost.link[0]
+  let urlSlug = null
+  if (url) {
+    urlSlug = url.replace("https://blockstack.org/blog/", "").replace(/\/$/, "")
+  }
+  return urlSlug
+}
+
 export function getPostFromRSS(rssPost) {
   const post = rssPost
 
-  const urlSlug = post.link[0].split('ghost.io/')[1].replace(/\/$/, "")
-  const url = "https://blockstack.org/blog/" + urlSlug
+  // Handle URL
+  const url = post.link[0]
+  const urlSlug = getSlugFromRSS(rssPost)
+
+  // Handle title, description and creator
   const title = post.title[0]
   const preview = post.description[0]
   const description = createTextVersion(post.description[0])
@@ -18,9 +31,12 @@ export function getPostFromRSS(rssPost) {
   // Handle markup
   const markupFull = post["content:encoded"][0]
   const image = markupFull.split('src="')[1].split('" alt="')[0]
-  const markupCleaned = markupFull.replace(/<img[^>]*>/,"")
+  let markupCleaned = null
+  if (markupFull) {
+    markupCleaned = markupFull.replace(/<img[^>]*>/,"")
+  }
 
-  return {
+  const data = {
     urlSlug: urlSlug,
     url: url,
     title: title,
@@ -33,4 +49,6 @@ export function getPostFromRSS(rssPost) {
     date: dateString,
     datetime: datetimeString
   }
+
+  return data
 }

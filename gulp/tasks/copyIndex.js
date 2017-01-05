@@ -12,8 +12,8 @@ gulp.task('copyIndex', function() {
 
   var indexHtml = fs.readFileSync('app/index.html', 'utf8')
   var metatagsHtml = fs.readFileSync('app/metatags.html', 'utf8')
-  metatagsHtml = metatagsHtml.replace('{description}', description)
-  metatagsHtml = metatagsHtml.replace('{image}', image)
+  metatagsHtml = metatagsHtml.replace(/{description}/g, description)
+  metatagsHtml = metatagsHtml.replace(/{image}/g, image)
 
   indexHtml = indexHtml.replace('<meta charset="utf-8" />', metatagsHtml)
 
