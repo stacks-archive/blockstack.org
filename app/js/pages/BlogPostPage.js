@@ -12,6 +12,7 @@ import Footer           from '../components/Footer'
 import CardLink         from '../components/CardLink'
 import CommunityMember  from '../components/CommunityMember'
 import {getPostFromRSS} from '../utils/rssUtils'
+import {getSlugFromRSS} from '../utils/rssUtils'
 import docs             from '../../docs.json'
 import {blogAuthors}    from '../data'
 
@@ -84,7 +85,7 @@ class ArticlePage extends Component {
     const channelItems = firstChannel.item
 
     channelItems.map((channelItem) => {
-      const channelItemUrlSlug = channelItem.link[0].split('ghost.io/')[1].replace(/\/$/, "")
+      const channelItemUrlSlug = getSlugFromRSS(channelItem)
       const currentUrlSlug = location.pathname.split('/')[2]
       if (channelItemUrlSlug === currentUrlSlug) {
         rssPost = channelItem

@@ -1,15 +1,23 @@
 import createTextVersion from 'textversionjs'
 
+export function getSlugFromRSS(rssPost) {
+  // Handle URL
+  const url = rssPost.link[0]
+  let urlSlug = null
+  if (url) {
+    urlSlug = url.replace("https://blockstack.org/blog/", "").replace(/\/$/, "")
+  }
+  return urlSlug
+}
+
 export function getPostFromRSS(rssPost) {
   const post = rssPost
 
   // Handle URL
   const url = post.link[0]
-  let urlSlug = null
-  if (url) {
-    urlSlug = url.replace("https://blockstack.org/blog/", "").replace(/\/$/, "")
-  }
+  const urlSlug = getSlugFromRSS(rssPost)
 
+  // Handle title, description and creator
   const title = post.title[0]
   const preview = post.description[0]
   const description = createTextVersion(post.description[0])
