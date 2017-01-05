@@ -30,6 +30,7 @@ html, body {-webkit-overflow-scrolling:touch;}
 .m-t-85{margin-top:85px;}
 .m-t-90{margin-top:90px;}
 .m-t-95{margin-top:95px;}
+.m-t-150{margin-top:150px;}
 .m-b-0{margin-bottom:0px;}
 .m-b-10{margin-bottom:10px;}
 .m-b-15{margin-bottom:15px;}
@@ -464,7 +465,7 @@ footer > li{list-style:none;}
   margin-bottom: 0;
 }
 .post-header {
-  margin-bottom: 36px;
+  margin-bottom: 0px;
 }
 .post-date {
   display: inline-block;

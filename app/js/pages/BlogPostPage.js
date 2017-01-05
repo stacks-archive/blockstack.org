@@ -130,17 +130,7 @@ class ArticlePage extends Component {
                 onLoad={this.onImageLoad}
                 retinaSupport={false} />
             </div>
-            <nav className="container-fluid m-b-1 back-docs">
-              <ul className="pagination">
-                <li className="page-item">
-                  <Link className="page-link" to={pathPrefix} aria-label="Back">
-                    <span aria-hidden="true">&laquo; Back</span>
-                    <span className="sr-only">Back</span>
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-            <section className="m-b-5 m-t-5">
+            <section className="m-b-50 m-t-150">
               <div className="container p-b-5 col-centered blog-post">
                 <div className="container">
                   <div className="post-header">
@@ -151,11 +141,11 @@ class ArticlePage extends Component {
                       {currentPage.date}
                     </time>
                   </div>
-                  <div className="m-b-3 docs-header-image-wrapper">
+                  <div className="m-b-3 m-t-3">
                     { currentPage !== null && this.state.imageLoading !== true ?
                     <Image src={headerImageSrc}
                       fallbackSrc="/images/article-photos/road.jpg"
-                      className="img-fluid docs-header-image"
+                      className="img-fluid"
                       retinaSupport={false} />
                     : null }
                   </div>
