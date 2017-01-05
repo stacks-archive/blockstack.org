@@ -144,4 +144,9 @@ export const blogAuthors = {
     avatar: 'https://s3.amazonaws.com/kd4/ryan',
     twitter: 'ryaneshea',
     github: 'shea256' },
+  "blockstack.id": { blockstackId: 'blockstack',
+    name: 'Muneeb & Ryan',
+    avatar: 'https://s3.amazonaws.com/kd4/muneeb-and-ryan.jpg',
+    twitter: 'blockstackorg',
+    github: 'blockstack' },
 }
