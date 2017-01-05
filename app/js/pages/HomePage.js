@@ -177,7 +177,7 @@ class HomePage extends Component {
                     How Blockstack Works
                   </h2>
                   <div className="text-xs-center">
-                    <img src="/images/visuals/blockstack-diagram.svg"
+                    <img src="/images/visuals/bsk-architecture-dark.svg"
                       className="img-fluid col-centered" alt="Blockstack layer diagram" />
                   </div>
                 </div>
