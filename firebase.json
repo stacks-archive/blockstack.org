@@ -68,6 +68,10 @@
         "destination": "/docs-posts-namespaces.html"
       },
       {
+        "source": "/blog/funding-the-new-decentralized-internet",
+        "destination": "/blog-funding-the-new-decentralized-internet.html"
+      },
+      {
         "source": "/blog/blockstack-core-is-available-on-the-azure-marketplace",
         "destination": "/blog-blockstack-core-is-available-on-the-azure-marketplace.html"
       },
@@ -78,6 +82,10 @@
       {
         "source": "/blog/blockstack-core-v0-14-release",
         "destination": "/blog-blockstack-core-v0-14-release.html"
+      },
+      {
+        "source": "/blog/virtualchain-research-paper-published-at-dccl16",
+        "destination": "/blog-virtualchain-research-paper-published-at-dccl16.html"
       },
       {
         "source": "/blog/blockstack-research-paper-published-at-usenix-atc16-conference",

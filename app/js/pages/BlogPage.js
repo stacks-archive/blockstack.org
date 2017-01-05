@@ -75,16 +75,24 @@ class BlogPage extends Component {
                 { this.state.posts.map((post, index) => {
                   return (
                     <div className="m-b-3" key={index}>
+                      { post.urlSlug && post.title ?
                       <Link to={"/blog/" + post.urlSlug}>
                         <h3>{ post.title }</h3>
                       </Link>
+                      : null }
+                      { post.preview ?
                       <div dangerouslySetInnerHTML={{ __html: post.preview }}>
                       </div>
+                      : null }
                       <div className="post-meta">
-                        <span>{post.creator.name}</span> |&nbsp;
+                        { post.creator ?
+                        <span>{post.creator.name} |&nbsp;</span>
+                        : null }
+                        { post.datetime && post.date ?
                         <time className="post-date" dateTime={post.datetime}>
                           {post.date}
                         </time>
+                        : null }
                       </div>
                     </div>
                   )
