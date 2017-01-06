@@ -15,7 +15,7 @@ function createMetatagMarkup(url, title, description, image) {
   let metadata = metaData('name', {
     'description': description,
     'viewport': 'width=device-width',
-    'twitter:card': 'summary',
+    'twitter:card': 'summary_large_image',
     'twitter:site': '@blockstackorg',
     'twitter:title': title,
     'twitter:description': description,
