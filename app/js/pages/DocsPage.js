@@ -48,6 +48,10 @@ class DocsPage extends Component {
       {
         title: 'Blockstack CLI',
         pageNames: ['cli-installation', 'cli-basic-usage', 'cli-extended-usage'],
+      },
+      {
+        title: 'Blockstack Browser',
+        pageNames: ['browser-installation']
       }
     ]
 
