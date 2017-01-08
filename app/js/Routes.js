@@ -20,6 +20,7 @@ import BlogPage                    from './pages/BlogPage'
 import BrowserPage                 from './pages/BrowserPage'
 import OverviewPage                from './pages/OverviewPage'
 import BlogPostPage                from './pages/BlogPostPage'
+import JobsPage                    from './pages/JobsPage'
 
 import docs                        from '../docs.json'
 
@@ -41,6 +42,7 @@ export default (
       <Route path="/posts" component={BlogPage} />
       <Route path="/browser" component={BrowserPage} />
       <Route path="/overview" component={OverviewPage} />
+      <Route path="/jobs" component={JobsPage} />
 
       <Route path="/overview/:docSection" component={ArticlePage} />
       <Route path="/blog/:docSection" component={BlogPostPage} />
