@@ -49,9 +49,6 @@ class Footer extends Component {
                   <Link to="/blog">Blog</Link>
                 </li>
                 <li>
-                  <Link to="/browser">Browser</Link>
-                </li>
-                <li>
                   <Link to="/papers">Papers</Link>
                 </li>
                 <li>
