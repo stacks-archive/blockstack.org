@@ -46,12 +46,16 @@ class DocsPage extends Component {
   setPage() {
     const sections = [
       {
+        title: 'Blockstack Browser',
+        pageNames: ['browser-installation']
+      },
+      {
         title: 'Blockstack CLI',
         pageNames: ['cli-installation', 'cli-basic-usage', 'cli-extended-usage'],
       },
       {
-        title: 'Blockstack Browser',
-        pageNames: ['browser-installation']
+        title: 'Blockstack Explorer',
+        pageNames: ['explorer-installation']
       }
     ]
 
@@ -128,7 +132,7 @@ class DocsPage extends Component {
                 { sections.map((section, index) => {
                   return (
                     <div key={index}>
-                      <h2>{section.title}</h2>
+                      <h1>{section.title}</h1>
                       <div className="m-b-5">
                       { section.subSections.map((section, index) => {
                         return (
