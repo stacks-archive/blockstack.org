@@ -79,7 +79,7 @@ class HomePage extends Component {
               <Header />
               <div className="container">
                 <div className="container">
-                  <section className="">
+                  <section className="hero">
                     <div className="col-md-6 col-lg-5 no-padding">
                       <h1 className="hero-head">
                         Build on the New Internet
