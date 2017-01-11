@@ -138,6 +138,18 @@ a.nav-link:hover,a.nav-link:focus{color:rgba(255,255,255,1);}
 .btn-outline-secondary:hover,.btn-outline-secondary:focus,.btn-outline-secondary:active{color:#9A21C5;}
 
 /* Other */
+.body-hero {
+  background-image: url('/images/hero-image@2x.jpg');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.site-wrapper{display:table;width:100%;height:100%;background-color:#2C113A;}
+.site-wrapper-inner{vertical-align:unset;display:table-cell;}
+.site-wrapper-outer,body,html,#app,#app div{height:100%;}
+.body-hero{background-image:url('/images/hero-image@2x.jpg'); background-repeat: no-repeat; background-position-x: center; background-position-y: center; background-size: cover; background-attachment: fixed;}
 .hero{color:rgba(255,255,255,1);}
 .hero-wrap{padding-top:.5rem;padding-bottom:6rem;}
 .col-3-section{padding-top:50px;padding-bottom:50px;background-color:rgba(248,249,251,1);border-bottom:1px solid #E6E6E6;}
