@@ -74,38 +74,36 @@ class HomePage extends Component {
     return (
       <DocumentTitle title="Blockstack, building the decentralized internet">
         <div className="site-wrapper body-hero">
-          <div className="site-wrapper-inner">
-            <div className="col-centered block">
-              <Header />
+          <div className="col-centered block">
+            <Header />
+            <div className="container">
               <div className="container">
-                <div className="container">
-                  <section className="hero">
-                    <div className="col-md-6 col-lg-5 no-padding">
-                      <h1 className="hero-head">
-                        Build on the New Internet
-                      </h1>
-                      <p className="lead hero-lead col-md-11">
-                        Build decentralized, server-less apps that put users in control. Start bulding your app, download the browser and read the tutorials.
-                      </p>
-                      <p className="no-padding col-md-8">
-                        <Link to="http://eepurl.com/cv8gQ1" role="button" target="_blank"
-                          className="btn btn-lg btn-primary btn-block">
-                          Join the Community
-                        </Link>
-                      </p>
-                      <p className="no-padding col-md-8">
-                        <Link to="/docs" className="nav-link"
-                          className="btn btn-sm btn-outline-secondary btn-block">
-                          Install the CLI
-                        </Link>
-                      </p>
-                    </div>
-                    <div className="container-fluid col-md-6 col-lg-7 hidden-sm-down">
-                      <img className="hero-img img-fluid pull-md-right"
-                        src="images/visuals/silhouette.svg" />
-                    </div>
-                  </section>
-                </div>
+                <section className="hero">
+                  <div className="col-md-6 col-lg-5 no-padding">
+                    <h1 className="hero-head">
+                      Build on the New Internet
+                    </h1>
+                    <p className="lead hero-lead col-md-11">
+                      Build decentralized, server-less apps that put users in control. Start bulding your app, download the browser and read the tutorials.
+                    </p>
+                    <p className="no-padding col-md-8">
+                      <Link to="http://eepurl.com/cv8gQ1" role="button" target="_blank"
+                        className="btn btn-lg btn-primary btn-block">
+                        Join the Community
+                      </Link>
+                    </p>
+                    <p className="no-padding col-md-8">
+                      <Link to="/docs" className="nav-link"
+                        className="btn btn-sm btn-outline-secondary btn-block">
+                        Install the CLI
+                      </Link>
+                    </p>
+                  </div>
+                  <div className="container-fluid col-md-6 col-lg-7 hidden-sm-down">
+                    <img className="hero-img img-fluid pull-md-right"
+                      src="images/visuals/silhouette.svg" />
+                  </div>
+                </section>
               </div>
             </div>
           </div>
