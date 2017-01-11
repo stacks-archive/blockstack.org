@@ -75,7 +75,7 @@ class DocsPage extends Component {
         markupParts.splice(0, 1)
 
         for (var i = 0, j = markupParts.length; i < j; i += 2) {
-          let id = markupParts[i].split(/id="(.*)"/g)[1]
+          let id = section.title + '-' + markupParts[i].split(/id="(.*)"/g)[1]
           let title = markdownParts[i]
           subSections.push({
             id: id,
