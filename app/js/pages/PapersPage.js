@@ -6,6 +6,7 @@ import DocumentTitle    from 'react-document-title'
 
 import Header           from '../components/Header'
 import Footer           from '../components/Footer'
+import Paper            from '../components/Paper'
 import {papers}         from '../data'
 
 class PapersPage extends Component {
@@ -29,23 +30,10 @@ class PapersPage extends Component {
                 </h1>
                 { papers.map((paper, index) => {
                   return (
-                    <div className="m-b-3">
-                      <h4 className="m-b-1">
-                        {index+1}. {paper.title}
-                      </h4>
-                      <p className="m-b-0">
-                        {paper.authors}
-                      </p>
-                      <p className="m-b-1">
-                        {paper.publication} - {paper.date}
-                      </p>
-                      <p className="m-b-1">
-                        <Link to={paper.url} target="_blank"
-                              className="btn btn-sm btn-outline-primary">
-                          PDF
-                        </Link>
-                      </p>
-                    </div>
+                    <Paper key={index}
+                    date={paper.date} title={paper.title}
+                    publication={paper.publication} authors={paper.authors}
+                    url={paper.url} index={index} />
                   )
                 }) }
               </div>

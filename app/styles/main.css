@@ -492,3 +492,7 @@ footer > li{list-style:none;}
 .post-meta .post-date {
   font-size: 14px;
 }
+
+.talk-preview-image {
+  width: 100%;
+}
