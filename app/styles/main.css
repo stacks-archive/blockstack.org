@@ -139,7 +139,7 @@ a.nav-link:hover,a.nav-link:focus{color:rgba(255,255,255,1);}
 
 /* Other */
 .body-hero { background-image: url('/images/hero-image@2x.jpg'); background-repeat: no-repeat; background-position-x: center; background-position-y: center; background-size: cover; background-attachment: fixed; }
-body,html,#app,#app div{height:100%;}
+body,html,#app,#app div:first-child{height:100%;}
 .site-wrapper{display:flex;background-color:#270F34;flex-direction:column;height:100%;}
 .hero{color:rgba(255,255,255,1);}
 .hero-wrap{padding-top:.5rem;padding-bottom:6rem;}
