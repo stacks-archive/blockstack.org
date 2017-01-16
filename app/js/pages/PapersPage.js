@@ -26,7 +26,7 @@ class PapersPage extends Component {
             <div className="container col-centered">
               <div className="container m-b-5">
                 <h1>
-                  Blockstack Papers
+                  Papers
                 </h1>
                 { papers.map((paper, index) => {
                   return (
