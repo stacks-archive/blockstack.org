@@ -88,11 +88,11 @@ class HomePage extends Component {
                     </p>
                     <p className="no-padding col-md-8">
                       <Link to="http://eepurl.com/cv8gQ1" role="button" target="_blank"
-                        className="btn btn-lg btn-primary btn-block">
+                        className="btn btn-sm btn-secondary btn-block">
                         Join the Community
                       </Link>
                     </p>
-                    <p className="no-padding col-md-8">
+                    <p className="no-padding col-md-8 hidden-sm-down">
                       <Link to="/docs" className="nav-link"
                         className="btn btn-sm btn-outline-secondary btn-block">
                         Install the CLI
