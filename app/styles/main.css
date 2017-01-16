@@ -386,6 +386,7 @@ footer > li{list-style:none;}
 @media (min-width:768px){
   .bitcoin-protocols-main{padding-right:40px;padding-left:40px;}
 }
+<<<<<<< HEAD
 .home-main{padding-top:15px;}
 .docs-ul{margin:20px 0 0 0;}
 .docs-btn-group{width:100%!important;}
@@ -396,3 +397,9 @@ footer > li{list-style:none;}
 .post-date{display:inline-block;padding:0;margin:0;border:none;text-transform:uppercase;font-size:18px;white-space:nowrap;color:#9EABB3;font-family:"Open Sans",sans-serif;line-height:24px;}
 .post-meta{display:block;margin:18px 0 0 0;font-family:"Open Sans",sans-serif;font-size:16px;line-height:24px;color:#9EABB3;}
 .post-meta .post-date{font-size:14px;}
+=======
+
+.talk-preview-image {
+  width: 100%;
+}
+>>>>>>> 579ce0cc3f682cf781faec2e43c4f62993da9e97

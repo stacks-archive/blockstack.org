@@ -46,12 +46,16 @@ class DocsPage extends Component {
   setPage() {
     const sections = [
       {
+        title: 'Blockstack Browser',
+        pageNames: ['browser-installation']
+      },
+      {
         title: 'Blockstack CLI',
         pageNames: ['cli-installation', 'cli-basic-usage', 'cli-extended-usage'],
       },
       {
-        title: 'Blockstack Browser',
-        pageNames: ['browser-installation']
+        title: 'Blockstack Explorer',
+        pageNames: ['explorer-installation']
       }
     ]
 
@@ -71,7 +75,7 @@ class DocsPage extends Component {
         markupParts.splice(0, 1)
 
         for (var i = 0, j = markupParts.length; i < j; i += 2) {
-          let id = markupParts[i].split(/id="(.*)"/g)[1]
+          let id = section.title + '-' + markupParts[i].split(/id="(.*)"/g)[1]
           let title = markdownParts[i]
           subSections.push({
             id: id,
@@ -128,7 +132,7 @@ class DocsPage extends Component {
                 { sections.map((section, index) => {
                   return (
                     <div key={index}>
-                      <h2>{section.title}</h2>
+                      <h1>{section.title}</h1>
                       <div className="m-b-5">
                       { section.subSections.map((section, index) => {
                         return (
