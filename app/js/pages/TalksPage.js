@@ -33,7 +33,7 @@ class TalksPage extends Component {
                   return (
                     <TalkPreview
                       key={index}
-                      url={'/resources/' + talk.urlSlug}
+                      url={'/videos/' + talk.urlSlug}
                       date={talk.date}
                       title={talk.title}
                       event={talk.event}
