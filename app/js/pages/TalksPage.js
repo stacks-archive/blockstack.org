@@ -17,7 +17,7 @@ class TalksPage extends Component {
 
   render() {
     return (
-      <DocumentTitle title="Blockstack - Talks">
+      <DocumentTitle title="Blockstack - Videos">
         <div>
           <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
