@@ -6,23 +6,13 @@ import DocumentTitle    from 'react-document-title'
 
 import Header           from '../components/Header'
 import Footer           from '../components/Footer'
-import ArticleIndex     from '../components/ArticleIndex'
-import docs             from '../../docs.json'
 
-class OverviewPage extends Component {
+class IntroPage extends Component {
   
   render() {
-    const pageRows = [
-      {
-        items: ['blockstack-dns', 'blockstack-identity']
-      },
-      {
-        items: ['blockstack-auth', 'blockstack-storage']
-      }
-    ]
 
     return (
-      <DocumentTitle title="Blockstack - Overview">
+      <DocumentTitle title="Blockstack - Intro">
         <div>
           <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
@@ -105,4 +95,4 @@ class OverviewPage extends Component {
 
 }
 
-export default OverviewPage
+export default IntroPage
