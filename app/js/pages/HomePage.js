@@ -78,7 +78,7 @@ class HomePage extends Component {
             <Header />
             <div className="container">
               <section className="hero">
-                <div className="col-md-6 col-lg-5">
+                <div className="">
                   <h1 className="hero-head">
                     Build on the New Internet
                   </h1>
@@ -97,10 +97,6 @@ class HomePage extends Component {
                       Install the CLI
                     </Link>
                   </p>
-                </div>
-                <div className="container-fluid col-md-6 col-lg-7 hidden-sm-down">
-                  <img className="hero-img img-fluid pull-md-right"
-                    src="images/visuals/silhouette.svg" />
                 </div>
               </section>
             </div>
