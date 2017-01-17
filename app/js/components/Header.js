@@ -46,13 +46,11 @@ class Header extends Component {
               </Link>
             </li>
             <li className="nav-item dropdown pull-xs-right hidden-sm-down">
-              <a href="#" className="nav-link dropdown-toggle"
-                 data-toggle="dropdown" role="button"
-                 aria-haspopup="true" aria-expanded="false">
+              <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 <i className="fa fa-github"></i>
                 <span>Code</span>
               </a>
-              <div className="dropdown-menu">
+              <div className="dropdown-menu dropdown-menu-right">
                 <Link to="https://github.com/blockstack/blockstack"
                       className="dropdown-item" target="_blank">
                   Resources
