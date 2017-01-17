@@ -18,7 +18,7 @@ import AboutPage                   from './pages/AboutPage'
 import DocsPage                    from './pages/DocsPage'
 import BlogPage                    from './pages/BlogPage'
 import BrowserPage                 from './pages/BrowserPage'
-import OverviewPage                from './pages/OverviewPage'
+import IntroPage                   from './pages/IntroPage'
 import BlogPostPage                from './pages/BlogPostPage'
 import JobsPage                    from './pages/JobsPage'
 import ResourcesPage               from './pages/ResourcesPage'
@@ -42,7 +42,7 @@ export default (
       <Route path="/blog" component={BlogPage} />
       <Route path="/posts" component={BlogPage} />
       <Route path="/browser" component={BrowserPage} />
-      <Route path="/overview" component={OverviewPage} />
+      <Route path="/intro" component={IntroPage} />
       <Route path="/jobs" component={JobsPage} />
       <Route path="/resources" component={ResourcesPage} />
       <Route path="/videos/:slug" component={TalkPage} />

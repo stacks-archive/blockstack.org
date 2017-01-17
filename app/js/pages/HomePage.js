@@ -83,7 +83,7 @@ class HomePage extends Component {
                     Build on the New Internet
                   </h1>
                   <p className="lead hero-lead col-md-5 block">
-                    Build decentralized, server-less apps that put users in control of their data.
+                    Build decentralized, server-less apps where users control their data.
                   </p>
                   <p className="no-padding col-md-12">
                     <Link to="http://eepurl.com/cv8gQ1" role="button" target="_blank"
