@@ -100,7 +100,7 @@ class DocsPage extends Component {
     return (
       <DocumentTitle title="Blockstack - Docs">
         <div>
-          <div className="container-fluid col-centered navbar-fixed-top bg-primary">
+          <div className="navbar-fixed-top bg-primary">
             <Header />
           </div>
           <section className="m-t-5">

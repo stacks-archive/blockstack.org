@@ -47,7 +47,7 @@ class TalkPage extends Component {
     return (
       <DocumentTitle title={`Blockstack - ${title}`}>
         <div>
-          <div className="container-fluid col-centered navbar-fixed-top bg-primary">
+          <div className="navbar-fixed-top bg-primary">
             <Header />
           </div>
           { talk ?

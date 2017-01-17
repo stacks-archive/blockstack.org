@@ -19,7 +19,7 @@ class TalksPage extends Component {
     return (
       <DocumentTitle title="Blockstack - Videos">
         <div>
-          <div className="container-fluid col-centered navbar-fixed-top bg-primary">
+          <div className="navbar-fixed-top bg-primary">
             <Header />
           </div>
           <section className="container-fluid spacing-container">

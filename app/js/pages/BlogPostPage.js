@@ -118,7 +118,7 @@ class ArticlePage extends Component {
     return (
       <DocumentTitle title={title}>
         <div>
-          <div className="container-fluid col-centered navbar-fixed-top bg-primary">
+          <div className="navbar-fixed-top bg-primary">
             <Header />
           </div>
           { currentPage && currentPage.preview ?
