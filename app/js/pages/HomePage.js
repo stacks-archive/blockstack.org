@@ -97,6 +97,40 @@ class HomePage extends Component {
                 </div>
               </section>
             </div>
+            <div className="container">
+              <section>
+                <div className="simple-featurette">
+                  <div className="col-centered">
+                    <div className="row col-centered">
+                      <Link className="link-stats" to="http://stats.blockstack.org" target="_blank">
+                        <div className="simple-panel">
+                          <p className="lead simple-lead">
+                            Identities registered
+                          </p>
+                          <p className="stats-count"><span className="comment-hightlight">|</span>{this.state.nameCount}</p>
+                        </div>
+                      </Link>
+                      <Link className="link-stats" to="http://blockstack.slackarchive.io/lounge/" target="_blank">
+                        <div className="simple-panel">
+                          <p className="lead simple-lead">
+                            Slack group members
+                          </p>
+                          <p className="stats-count"><span className="comment-hightlight">|</span>{this.state.slackUserCount}</p>
+                        </div>
+                      </Link>
+                      <Link className="link-stats" to="http://www.meetup.com/topics/blockstack/" target="_blank">
+                        <div className="simple-panel">
+                          <p className="lead simple-lead">
+                            Meetup group members
+                          </p>
+                          <p className="stats-count"><span className="comment-hightlight">|</span>{this.state.meetupUserCount}</p>
+                        </div>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
           </div>
         </div>
       </DocumentTitle>
