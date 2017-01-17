@@ -128,7 +128,9 @@ h1.hero-head{font-family:'Source Code Pro',monospace;margin-bottom:1.5rem;font-s
 .navbar {
   font-family: 'Source Code Pro', monospace;
   padding-top: .375rem;
-  padding-bottom: .625rem
+  padding-bottom: .625rem;
+  padding-right: 0;
+  padding-left: 0;
 }
 .navbar-brand {
   margin-right: 0px;

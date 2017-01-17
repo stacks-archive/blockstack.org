@@ -78,7 +78,7 @@ class HomePage extends Component {
             <Header />
             <div className="container">
               <section className="hero">
-                <div className="">
+                <div>
                   <h1 className="hero-head">
                     Build on the New Internet
                   </h1>
