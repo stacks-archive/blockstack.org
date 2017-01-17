@@ -91,7 +91,7 @@ class HomePage extends Component {
                       Join the Community
                     </Link>
                     <Link to="/docs" className="btn btn-outline-primary hidden-sm-down">
-                      Install the CLI
+                      Install the Software
                     </Link>
                   </p>
                 </div>
