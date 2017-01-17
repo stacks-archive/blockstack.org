@@ -77,34 +77,32 @@ class HomePage extends Component {
           <div className="col-centered block">
             <Header />
             <div className="container">
-              <div className="container">
-                <section className="hero">
-                  <div className="col-md-6 col-lg-5 no-padding">
-                    <h1 className="hero-head">
-                      Build on the New Internet
-                    </h1>
-                    <p className="lead hero-lead col-md-11">
-                      Build decentralized, server-less apps that put users in control of their data.
-                    </p>
-                    <p className="no-padding col-md-8">
-                      <Link to="http://eepurl.com/cv8gQ1" role="button" target="_blank"
-                        className="btn btn-sm btn-secondary btn-block">
-                        Join the Community
-                      </Link>
-                    </p>
-                    <p className="no-padding col-md-8 hidden-sm-down">
-                      <Link to="/docs" className="nav-link"
-                        className="btn btn-sm btn-outline-secondary btn-block">
-                        Install the CLI
-                      </Link>
-                    </p>
-                  </div>
-                  <div className="container-fluid col-md-6 col-lg-7 hidden-sm-down">
-                    <img className="hero-img img-fluid pull-md-right"
-                      src="images/visuals/silhouette.svg" />
-                  </div>
-                </section>
-              </div>
+              <section className="hero">
+                <div className="col-md-6 col-lg-5">
+                  <h1 className="hero-head">
+                    Build on the New Internet
+                  </h1>
+                  <p className="lead hero-lead col-md-11">
+                    Build decentralized, server-less apps that put users in control of their data.
+                  </p>
+                  <p className="no-padding col-md-8">
+                    <Link to="http://eepurl.com/cv8gQ1" role="button" target="_blank"
+                      className="btn btn-sm btn-secondary btn-block">
+                      Join the Community
+                    </Link>
+                  </p>
+                  <p className="no-padding col-md-8 hidden-sm-down">
+                    <Link to="/docs" className="nav-link"
+                      className="btn btn-sm btn-outline-secondary btn-block">
+                      Install the CLI
+                    </Link>
+                  </p>
+                </div>
+                <div className="container-fluid col-md-6 col-lg-7 hidden-sm-down">
+                  <img className="hero-img img-fluid pull-md-right"
+                    src="images/visuals/silhouette.svg" />
+                </div>
+              </section>
             </div>
           </div>
         </div>

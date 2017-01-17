@@ -14,8 +14,11 @@ class Header extends Component {
       <header className="container no-padding nav-header">
         <nav className="navbar">
           <div>
+            <Link className="navbar-brand brand-bug" to="/">
+              <img src="/images/logos/blockstack-bug-rev.svg" />
+            </Link>
             <Link className="navbar-brand" to="/">
-              <img src="/images/logos/bsk-logo-landscape-rev.svg" />
+              <img src="/images/logos/blockstack-logo-landscape-rev.svg" />
             </Link>
             <ul className="nav navbar-nav">
               <li className="nav-item">
