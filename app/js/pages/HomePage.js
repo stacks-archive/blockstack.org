@@ -82,18 +82,15 @@ class HomePage extends Component {
                   <h1 className="hero-head">
                     Build on the New Internet
                   </h1>
-                  <p className="lead hero-lead col-md-11">
+                  <p className="lead hero-lead col-md-5 block">
                     Build decentralized, server-less apps that put users in control of their data.
                   </p>
-                  <p className="no-padding col-md-8">
+                  <p className="no-padding col-md-12">
                     <Link to="http://eepurl.com/cv8gQ1" role="button" target="_blank"
-                      className="btn btn-sm btn-secondary btn-block">
+                      className="btn btn-secondary btn-block">
                       Join the Community
                     </Link>
-                  </p>
-                  <p className="no-padding col-md-8 hidden-sm-down">
-                    <Link to="/docs" className="nav-link"
-                      className="btn btn-sm btn-outline-secondary btn-block">
+                    <Link to="/docs" className="btn btn-outline-primary hidden-sm-down">
                       Install the CLI
                     </Link>
                   </p>
