@@ -5,6 +5,8 @@
 /* - Max-width of site is to be set via `container` */
 /* - All sections utilize `containter` */
 
+::selection{background:rgba(255,255,255,0.99);color:#270F34;}::-moz-selection{background:rgba(255,255,255,0.99);color:#270F34;}
+
 /* Base structure */
 html, body {-webkit-overflow-scrolling:touch;overflow:hidden;}
 body{padding-top:0;padding-bottom:0;}
@@ -324,6 +326,7 @@ footer > li{list-style:none;}
   font-size: 0.875rem;
   padding: 0.6875rem 3.4375rem;
   line-height: 1.75rem;
+  margin-right: 1.25rem;
 }
 .btn-lg {
   font-size: 0.875rem;
