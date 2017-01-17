@@ -5,13 +5,6 @@
 /* - Max-width of site is to be set via `container` */
 /* - All sections utilize `containter` */
 
-@media (min-width:300px){
-  li.nav-item:nth-last-child(2) {
-    display: none;
-  }
-}
-
-
 /* Base structure */
 html, body {-webkit-overflow-scrolling:touch;overflow:hidden;}
 body{padding-top:0;padding-bottom:0;}
@@ -442,6 +435,6 @@ footer > li{list-style:none;}
 }
 
 /* x-Small devices (hide last child in navbar) */
-
-
-
+@media (max-width:348px){
+  li.nav-item:nth-last-child(2){display:none;}
+}
