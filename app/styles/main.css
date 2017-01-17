@@ -126,12 +126,38 @@ h1.hero-head{font-family:'Source Code Pro',monospace;margin-bottom:1.5rem;font-s
 .hero-lead{font-family:'Source Code Pro',monospace;font-size:0.8125rem;text-align:center;margin-bottom:2rem;}
 
 /* Navbar */
-.navbar{font-family:'Source Code Pro',monospace;padding-top:.375rem;padding-bottom:.625rem}
-.navbar-brand img{width:164px;position:fixed;bottom:15%;z-index:2000;margin:0 auto;left:0;right:0;}
-a.nav-link{color:rgba(255,255,255,0.65);font-size:.8125rem;margin-top:.25rem;}
-a.nav-link:hover,a.nav-link:focus{color:rgba(255,255,255,1);}
-.nav-item:first-child{margin-left:.625rem;}
-.fa-github{margin-top:-.1875rem;margin-right:.5rem;vertical-align:middle;font-size:1.375rem;}
+.navbar {
+  font-family: 'Source Code Pro', monospace;
+  padding-top: .375rem;
+  padding-bottom: .625rem
+}
+.navbar-brand img {
+  width: 164px;
+  position: fixed;
+  bottom: 15%;
+  z-index: 2000;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+a.nav-link {
+  color: #fff;
+  font-size: 0.8125rem;
+  font-weight: 300;
+  margin-top: .25rem;
+}
+a.nav-link:hover, a.nav-link:focus {
+  color: #fff;
+}
+.nav-item:first-child {
+  margin-left: .625rem;
+}
+.fa-github {
+  margin-top: -.1875rem;
+  margin-right: .5rem;
+  vertical-align: middle;
+  font-size: 1.375rem;
+}
 
 /* Buttons */
 .btn{font-family:'Source Code Pro',monospace;}
@@ -179,6 +205,25 @@ h2.action-title{margin-bottom:35px;font-size:30px;line-height:42px;font-weight:3
 .back-docs{position:absolute;margin-left:-20px;margin-top:-55px;}
 a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .link-stats{text-decoration:none;}
+.bitcoin-protocols-main{padding:20px;}
+.home-main{padding-top:15px;}
+.docs-ul{margin:20px 0 0 0;}
+.docs-btn-group{width:100%!important;}
+.blog-index .container{max-width:700px;font-size:18px;}
+.blog-post .container{max-width:700px;font-size:18px;}
+.post-title{margin-bottom:0;}
+.post-header{margin-bottom:0px;}
+.post-date{display:inline-block;padding:0;margin:0;border:none;text-transform:uppercase;font-size:18px;white-space:nowrap;color:#9EABB3;font-family:"Open Sans",sans-serif;line-height:24px;}
+.post-meta{display:block;margin:18px 0 0 0;font-family:"Open Sans",sans-serif;font-size:16px;line-height:24px;color:#9EABB3;}
+.post-meta .post-date{font-size:14px;}
+.simple-link,.simple-link:hover,.simple-link:focus{text-decoration:none;}
+.card-rectangular{border:none;border-radius:0rem;}
+.embedded-pdf{width:100%;height:600px;}
+.avatar{width:44px;height:44px;display:inline-block;border-radius:44px;-webkit-border-radius:22px;-moz-border-radius:22px;background-position:center;}
+.avatar-lg{width:72px;height:72px;display:inline-block;margin-bottom:15px;border-radius:36px;-webkit-border-radius:38px;-moz-border-radius:38px;background-position:center;}
+.fa-lg{font-size:15px;color:#484848;margin-right:10px;}
+.no-padding{padding-left:0;padding-right:0;}
+.talk-preview-image{width:100%;}
 
 /* Summit page */
 .summit-head-wrap{background:url(/images/visuals/summ-dht.png)no-repeat center -50px;background-color:#53206f;}
@@ -228,6 +273,11 @@ pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35
 
 /* Sidebar */
 .sidebar{display:none;}
+
+/* Sidebar navigation */
+.nav-sidebar{margin-right:-21px; /* 20px padding + 1px border */margin-bottom:20px;margin-left:-20px;}
+.nav-sidebar > li > a{padding-right:20px;padding-left:20px;}
+.nav-sidebar > .active > a,.nav-sidebar > .active > a:hover,.nav-sidebar > .active > a:focus{color:#fff;background-color:#428bca;}
 
 /* Footer */
 footer{padding-top:60px;padding-bottom:80px;background-color:rgba(26,26,26,1);color:rgba(255,255,255,1);font-size:13px;}
@@ -316,6 +366,7 @@ footer > li{list-style:none;}
   .paper-section{padding-top:65px;padding-bottom:65px;}
   .nav-header{padding-left:15px;padding-right:15px;}
   .sidebar{position:fixed;top:56px;bottom:0;left:0;z-index:1000;display:block;padding:0px 20px 20px 20px;overflow-x:hidden;overflow-y:auto; /* Scrollable contents if viewport is shorter than content. */background-color:#f5f5f5;border-right:1px solid #eee;}
+  .bitcoin-protocols-main{padding-right:40px;padding-left:40px;}  
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -370,40 +421,7 @@ footer > li{list-style:none;}
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width:1200px){
 }
-.simple-link,.simple-link:hover,.simple-link:focus{text-decoration:none;}
-.card-rectangular{border:none;border-radius:0rem;}
-.embedded-pdf{width:100%;height:600px;}
-.avatar{width:44px;height:44px;display:inline-block;border-radius:44px;-webkit-border-radius:22px;-moz-border-radius:22px;background-position:center;}
-.avatar-lg{width:72px;height:72px;display:inline-block;margin-bottom:15px;border-radius:36px;-webkit-border-radius:38px;-moz-border-radius:38px;background-position:center;}
-.fa-lg{font-size:15px;color:#484848;margin-right:10px;}
-.no-padding{padding-left:0;padding-right:0;}
 
-/* Sidebar navigation */
-.nav-sidebar{margin-right:-21px; /* 20px padding + 1px border */margin-bottom:20px;margin-left:-20px;}
-.nav-sidebar > li > a{padding-right:20px;padding-left:20px;}
-.nav-sidebar > .active > a,.nav-sidebar > .active > a:hover,.nav-sidebar > .active > a:focus{color:#fff;background-color:#428bca;}
 
-/*
- * Main content
- */
-.bitcoin-protocols-main{padding:20px;}
-@media (min-width:768px){
-  .bitcoin-protocols-main{padding-right:40px;padding-left:40px;}
-}
-<<<<<<< HEAD
-.home-main{padding-top:15px;}
-.docs-ul{margin:20px 0 0 0;}
-.docs-btn-group{width:100%!important;}
-.blog-index .container{max-width:700px;font-size:18px;}
-.blog-post .container{max-width:700px;font-size:18px;}
-.post-title{margin-bottom:0;}
-.post-header{margin-bottom:0px;}
-.post-date{display:inline-block;padding:0;margin:0;border:none;text-transform:uppercase;font-size:18px;white-space:nowrap;color:#9EABB3;font-family:"Open Sans",sans-serif;line-height:24px;}
-.post-meta{display:block;margin:18px 0 0 0;font-family:"Open Sans",sans-serif;font-size:16px;line-height:24px;color:#9EABB3;}
-.post-meta .post-date{font-size:14px;}
-=======
 
-.talk-preview-image {
-  width: 100%;
-}
->>>>>>> 579ce0cc3f682cf781faec2e43c4f62993da9e97
+
