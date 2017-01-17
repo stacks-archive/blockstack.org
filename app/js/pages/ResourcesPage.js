@@ -7,7 +7,8 @@ import DocumentTitle    from 'react-document-title'
 import Header           from '../components/Header'
 import Footer           from '../components/Footer'
 import TalkPreview      from '../components/TalkPreview'
-import {talks}          from '../data'
+import Paper            from '../components/Paper'
+import {talks, papers}  from '../data'
 
 class TalksPage extends Component {
 
@@ -26,14 +27,30 @@ class TalksPage extends Component {
             <div className="container-fluid col-centered">
               <div className="container m-b-1">
                 <h1>
-                  Videos
+                  Papers
+                </h1>
+                { papers.map((paper, index) => {
+                  return (
+                    <Paper key={index}
+                      date={paper.date}
+                      title={paper.title}
+                      publication={paper.publication}
+                      authors={paper.authors}
+                      url={paper.url}
+                      index={index} />
+                  )
+                }) }
+              </div>
+              <div className="container m-b-1">
+                <h1>
+                  Talks
                 </h1>
                 { Object.keys(talks).map((key, index) => {
                   const talk = talks[key]
                   return (
                     <TalkPreview
                       key={index}
-                      url={'/videos/' + talk.urlSlug}
+                      url={'/resources/' + talk.urlSlug}
                       date={talk.date}
                       title={talk.title}
                       event={talk.event}

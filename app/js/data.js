@@ -1,5 +1,54 @@
-export const talks = [
+export const companiesHiring = [
   {
+    name: "Blockstack Inc",
+    jobs: [
+      {
+        "title": "Web Product Engineer",
+        "description": "Build out the Blockstack web browser using ReactJS, Redux, Node and Blockstack APIs.",
+        "url": "https://angel.co/blockstack/jobs/150184-product-engineer"
+      },
+      {
+        "title": "Mobile Product Engineer",
+        "description": "Kickstart the development of the Blockstack mobile browser.",
+        "url": "https://angel.co/blockstack/jobs/150184-product-engineer"
+      },
+      {
+        "title": "Systems Engineer",
+        "description": "Build out Blockstack Core and the Blockstack P2P Atlas network with Python and blockchain transaction APIs",
+        "url": "https://angel.co/blockstack/jobs/151139-systems-engineer"
+      },
+      {
+        "title": "Security Engineer",
+        "description": "Scrutinize and battle-test the Blockstack protocols and consensus critical systems.",
+        "url": "https://angel.co/blockstack/jobs/151142-security-engineer"
+      },
+      {
+        "title": "Developer Evangelist",
+        "description": "Coordinate events and produce content to grow the Blockstack ecosystem.",
+        "url": "https://angel.co/blockstack/jobs/151144-community-coordinator"
+      }
+    ]
+  },
+  {
+    name: "Microsoft",
+    jobs: [
+      {
+        "title": "Systems Engineer",
+        "description": "Build self-sovereign identity software using Blockstack Core.",
+        "url": "https://microsoft.com"
+      },
+      {
+        "title": "Product Engineer",
+        "description": "Build self-sovereign identity software using Blockstack Core.",
+        "url": "https://microsoft.com"
+      }
+    ]
+  }
+]
+
+export const talks = {
+  'welcome-to-the-new-internet': {
+    urlSlug: 'welcome-to-the-new-internet',
     title: "Welcome to the New Internet",
     event: "TEDxNewYork",
     speaker: "Muneeb Ali",
@@ -7,8 +56,10 @@ export const talks = [
     date: "September 10, 2016",
     youtubeURL: "https://www.youtube.com/embed/qtOIh93Hvuw?list=PLvaRUGvjpFS2ciobOlOwMeVKDqO7S9ar6",
     speakerDeckID: "15d4861b7c1842bfbd7add80c99e1cf6",
+    image: '/images/resources/talk-tedxnewyork.png'
   },
-  {
+  'innovation-and-inclusion-with-decentralized-apps': {
+    urlSlug: 'innovation-and-inclusion-with-decentralized-apps',
     title: "Innovation & Inclusion w/ Decentralized Apps",
     event: "New Context Conference Fall 2016",
     speaker: "Ryan Shea",
@@ -16,8 +67,10 @@ export const talks = [
     date: "November 4, 2016",
     youtubeURL: "https://www.youtube.com/embed/nknocjo7t00",
     speakerDeckID: "9a0dca48d9cc4da98e0d1b3094fe4ec1",
+    image: '/images/resources/talk-ncc.png'
   },
-  {
+  'decentralized-server-less-applications-with-blockstack': {
+    urlSlug: 'decentralized-server-less-applications-with-blockstack',
     title: "Decentralized, Server-less Applications with Blockstack",
     event: "All Things Open",
     speaker: "Ryan Shea",
@@ -25,8 +78,10 @@ export const talks = [
     date: "October 27, 2016",
     youtubeURL: "https://www.youtube.com/embed/WveXpldGGa8",
     speakerDeckID: "434d4f23ad40417aadfe86643671a5bd",
+    image: '/images/resources/talk-ato.png'
   },
-  {
+  'experiences-with-building-a-global-pki-with-blockchains': {
+    urlSlug: 'experiences-with-building-a-global-pki-with-blockchains',
     title: "Experiences with Building a Global PKI with Blockchains",
     event: "CITP Luncheon Speaker Series",
     speaker: "Muneeb Ali",
@@ -34,8 +89,9 @@ export const talks = [
     date: "March 8, 2016",
     youtubeURL: "https://www.youtube.com/embed/sBJobY0Aqt0",
     speakerDeckID: "e7608b083c5d4ef68a199cd4f6b74026",
+    image: '/images/resources/talk-citp.png'
   },
-]
+}
 
 export const papers = [
   {

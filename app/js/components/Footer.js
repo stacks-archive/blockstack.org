@@ -30,7 +30,7 @@ class Footer extends Component {
                 <li>
                   <div className="foot-logo">
                     <Link to="/">
-                      <img src="/images/logos/bsk-logo-landscape-rev.svg" />
+                      <img src="/images/logos/blockstack-logo-landscape-rev.svg" />
                     </Link>
                   </div>
                 </li>
@@ -47,9 +47,6 @@ class Footer extends Component {
                 </li>
                 <li>
                   <Link to="/blog">Blog</Link>
-                </li>
-                <li>
-                  <Link to="/browser">Browser</Link>
                 </li>
                 <li>
                   <Link to="/papers">Papers</Link>
