@@ -13,59 +13,41 @@ class HomePage extends Component {
     super(props)
 
     this.state = {
-      nameCount: 68000,
+      domainCount: 68000,
       slackUserCount: 2300,
-      meetupUserCount: 4923
+      meetupUserCount: 4923,
+      forumUserCount: 250
     }
 
-    this.updateNameCount = this.updateNameCount.bind(this)
-    this.updateSlackCount = this.updateSlackCount.bind(this)
+    this.updateStats = this.updateStats.bind(this)
   }
 
   componentDidMount() {
-    // Get the number of names registered
-    request({
-      url: "https://resolver.onename.com/v2/namespaces",
-      withCredentials: false
-    }, (error, response, body) => {
-      if (!error && response.statusCode === 200) {
-        this.updateNameCount(body)
-      } else {
-        console.log(error)
-      }
-    })
     // Get the number of Slack users
     request({
-      url: "https://blockstack-site-api.herokuapp.com/v1/slack-users",
+      url: "https://blockstack-site-api.herokuapp.com/v1/stats",
       withCredentials: false
     }, (error, response, body) => {
       if (!error && response.statusCode === 200) {
-        this.updateSlackCount(body)
+        this.updateStats(body)
       } else {
         console.log(error)
       }
     })
   }
 
-  updateNameCount(response) {
+  updateStats(response) {
     const jsonResponse = JSON.parse(response)
-    if (jsonResponse.hasOwnProperty("namespaces")) {
-      const namespaceData = jsonResponse.namespaces[0]
-      if (namespaceData.hasOwnProperty("registrations")) {
-        const nameCount = namespaceData.registrations
-        this.setState({
-          nameCount: nameCount
-        })
-      }
-    }
-  }
-
-  updateSlackCount(response) {
-    const jsonResponse = JSON.parse(response)
-    if (jsonResponse.hasOwnProperty("user_count")) {
-      const slackUserCount = jsonResponse.user_count
+    if (jsonResponse.hasOwnProperty("slack_users") &&
+        jsonResponse.hasOwnProperty("meetup_users") &&
+        jsonResponse.hasOwnProperty("forum_users") &&
+        jsonResponse.hasOwnProperty("domains")) {
+      // Set the stats
       this.setState({
-        slackUserCount: slackUserCount
+        slackUserCount: jsonResponse.slack_users,
+        meetupUserCount: jsonResponse.meetup_users,
+        forumUserCount: jsonResponse.forum_users,
+        domainCount: jsonResponse.domains
       })
     }
   }
@@ -102,28 +84,48 @@ class HomePage extends Component {
                 <div className="simple-featurette">
                   <div className="col-centered">
                     <div className="row col-centered">
-                      <Link className="link-stats" to="http://stats.blockstack.org" target="_blank">
+                      <Link to="https://explorer.blockstack.org/names/id"
+                            className="link-stats" target="_blank">
                         <div className="simple-panel">
                           <p className="lead simple-lead">
                             Domains registered
                           </p>
-                          <p className="stats-count"><span className="comment-hightlight">|</span>{this.state.nameCount}</p>
+                          <p className="stats-count">
+                            <span className="comment-hightlight">|</span>{this.state.domainCount}
+                          </p>
                         </div>
                       </Link>
-                      <Link className="link-stats" to="http://blockstack.slackarchive.io/lounge/" target="_blank">
+                      <Link to="http://chat.blockstack.org"
+                            className="link-stats" target="_blank">
                         <div className="simple-panel">
                           <p className="lead simple-lead">
-                            Slack group members
+                            Slack members
                           </p>
-                          <p className="stats-count"><span className="comment-hightlight">|</span>{this.state.slackUserCount}</p>
+                          <p className="stats-count">
+                            <span className="comment-hightlight">|</span>{this.state.slackUserCount}
+                          </p>
                         </div>
                       </Link>
-                      <Link className="link-stats" to="http://www.meetup.com/topics/blockstack/" target="_blank">
+                      <Link to="http://www.meetup.com/topics/blockstack/"
+                            className="link-stats" target="_blank">
                         <div className="simple-panel">
                           <p className="lead simple-lead">
-                            Meetup group members
+                            Meetup members
                           </p>
-                          <p className="stats-count"><span className="comment-hightlight">|</span>{this.state.meetupUserCount}</p>
+                          <p className="stats-count">
+                            <span className="comment-hightlight">|</span>{this.state.meetupUserCount}
+                          </p>
+                        </div>
+                      </Link>
+                      <Link to="https://forum.blockstack.org/users?period=monthly"
+                            className="link-stats" target="_blank">
+                        <div className="simple-panel">
+                          <p className="lead simple-lead">
+                            Forum members
+                          </p>
+                          <p className="stats-count">
+                            <span className="comment-hightlight">|</span>{this.state.forumUserCount}
+                          </p>
                         </div>
                       </Link>
                     </div>
