@@ -117,7 +117,7 @@ class HomePage extends Component {
                           </p>
                         </div>
                       </Link>
-                      <Link to="https://forum.blockstack.org/users"
+                      <Link to="https://forum.blockstack.org/users?period=monthly"
                             className="link-stats" target="_blank">
                         <div className="simple-panel">
                           <p className="lead simple-lead">
