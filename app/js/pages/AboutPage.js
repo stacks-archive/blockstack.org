@@ -7,7 +7,7 @@ import DocumentTitle        from 'react-document-title'
 import Header               from '../components/Header'
 import Footer               from '../components/Footer'
 import CommunityMember      from '../components/CommunityMember'
-import { communityMembers } from '../data'
+import {communityMembers}   from '../config'
 
 class AboutPage extends Component {
 

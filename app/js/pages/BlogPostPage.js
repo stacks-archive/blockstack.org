@@ -14,7 +14,7 @@ import CommunityMember  from '../components/CommunityMember'
 import {getPostFromRSS} from '../utils/rssUtils'
 import {getSlugFromRSS} from '../utils/rssUtils'
 import docs             from '../../docs.json'
-import {blogAuthors}    from '../data'
+import {blogAuthors}    from '../config'
 
 
 class ArticlePage extends Component {

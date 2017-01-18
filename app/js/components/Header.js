@@ -21,8 +21,8 @@ class Header extends Component {
           </Link>
           <ul className="nav navbar-nav">
             <li className="nav-item">
-              <Link to="/about" className="nav-link">
-                About
+              <Link to="/intro" className="nav-link">
+                Intro
               </Link>
             </li>
             <li className="nav-item">

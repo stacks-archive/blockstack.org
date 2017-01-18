@@ -7,7 +7,7 @@ import DocumentTitle    from 'react-document-title'
 import Header           from '../components/Header'
 import Footer           from '../components/Footer'
 import Paper            from '../components/Paper'
-import {papers}         from '../data'
+import {papers}         from '../config'
 
 class PapersPage extends Component {
 
