@@ -150,7 +150,7 @@ a.nav-link:hover,a.nav-link:focus{color:#fff;}
 .btn-footer-max-width{max-width:225px;}
 
 /* Other */
-.body-hero { background-image: url('/images/hero-image@2x.jpg'); background-repeat: no-repeat; background-position-x: center; background-position-y: center; background-size: cover; background-attachment: fixed; }
+.body-hero{background-image:url('/images/hero-image@2x.jpg');background-repeat:no-repeat;background-position-x:center;background-position-y:center;background-size:cover;background-attachment:fixed;}
 body,html,#app,.app-landing{height:100%;}
 .app-common{height:auto;}
 .site-wrapper{display:flex;background-color:#270F34;flex-direction:column;height:100%;}
@@ -161,10 +161,6 @@ body,html,#app,.app-landing{height:100%;}
 .highlight-box{padding-top:50px;padding-bottom:50px;background-color:#831ca8;color:rgba(255,255,255,1);}
 .slides{padding-right:10px;padding-left:10px;}
 .feat-lead{margin-bottom:15px;}
-.feature-panel{margin-top:20px;margin-bottom:40px;text-align:center;padding-top:25px;}
-.feature-panel-2{margin-top:0px;margin-bottom:0px;text-align:center;padding-top:0px;}
-.feature-panel > img{margin:0 auto;padding:0 15%;}
-.feature-panel > h3{display:block;margin-bottom:10px;}
 .spacing-container{padding-top:102px;padding-bottom:50px;background-color:rgba(248,249,251,1);}
 .foot-feature{margin:0;padding-top:150px;padding-bottom:150px;background-color:#270F34;color:rgba(255,255,255,1);text-align:center;}
 h2.action-title{margin-bottom:35px;font-size:30px;line-height:42px;font-weight:300;}
@@ -178,10 +174,8 @@ h2.action-title{margin-bottom:35px;font-size:30px;line-height:42px;font-weight:3
 .inverse-3col-section{background-color:#41294E;color:#fff;padding-top:30px;padding-bottom:25px;}
 .inverse-lead{font-weight:300;margin-bottom:35px;}
 .inverse-heading{font-weight:300;}
-.stats-section{border-bottom:1px solid #E6E6E6;padding-top:15px;}
 .paper-section{border-bottom:1px solid #E6E6E6;padding-top:45px;padding-bottom:45px;}
 .bs-lead{font-size:1rem;}
-.stats-count{font-size:55px;color:#831CA8;font-weight:400;margin-top:-15px;}
 .social-count{position:relative;margin-left:auto;margin-right:auto;text-align:center;margin-top:12px;display:block;}
 .social-text{text-align:center;vertical-align:middle;margin-top:15px;}
 .social-type{font-size:1.125rem;margin-left:0;margin-top:-20px;}
@@ -207,6 +201,8 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .fa-lg{font-size:15px;color:#484848;margin-right:10px;}
 .no-padding{padding-left:0;padding-right:0;}
 .talk-preview-image{width:100%;}
+.simple-featurette{display:none;}
+
 
 /* Summit page */
 .summit-head-wrap{background:url(/images/visuals/summ-dht.png)no-repeat center -50px;background-color:#53206f;}
@@ -326,6 +322,14 @@ footer > li{list-style:none;}
 
   /* Content */
   .hero-wrap{display:block;padding-top:8rem;padding-bottom:12rem;}
+  .simple-featurette{display:block;margin-top:85px;}
+  .simple-panel{display:inline-block;margin-top:0;margin-bottom:0;margin-right:50px;}
+  .simple-panel-2{margin-top:0px;margin-bottom:0px;text-align:center;padding-top:0px;}
+  .simple-panel > img{margin:0 auto;padding:0 15%;}
+  .simple-panel > h3{display:block;margin-bottom:10px;}
+  .simple-lead{font-family:'Source Code Pro',monospace;color:#95889C;font-size:0.8125rem;margin-bottom:1rem;}
+  .stats-count{font-family:'Source Code Pro',monospace;font-size:1.0625rem;color:#fff;font-weight:300;}
+  .comment-hightlight{margin-right:1rem;color:#E91E63;}
 
   /* About page */
   .about-head{margin-top:350px;}
@@ -353,7 +357,6 @@ footer > li{list-style:none;}
   .card.card-1-of-2{width:50%!important;}
   .card.card-1-of-3{width:33.3333%!important;}
   .inverse-3col-section{padding-top:10px;padding-bottom:10px;}
-  .stats-count{font-size:64px;}
   .social-count{position:absolute;margin-top:0;display:inline-block;margin-left:25px;margin-top:5px;}
   .social-type{margin-left:-45px;}
   a > div.col-md-4.feature-panel:hover{background-color:rgba(248,249,251,1);}
@@ -400,6 +403,9 @@ footer > li{list-style:none;}
   .gallery-contain{padding-top:50px;padding-bottom:50px;}
   .feat-pan{font-size:26px;}
   .docs-header-image-wrapper{height:500px;}
+
+  /* Other */
+  .simple-featurette{margin-top:155px;}
 
   /* Footer */
   .foot-left-col{width:22.3%}
