@@ -13,9 +13,9 @@ class HomePage extends Component {
     super(props)
 
     this.state = {
-      nameCount: 67000,
-      slackUserCount: 2200,
-      meetupUserCount: 4512
+      nameCount: 68000,
+      slackUserCount: 2300,
+      meetupUserCount: 4923
     }
 
     this.updateNameCount = this.updateNameCount.bind(this)
@@ -105,7 +105,7 @@ class HomePage extends Component {
                       <Link className="link-stats" to="http://stats.blockstack.org" target="_blank">
                         <div className="simple-panel">
                           <p className="lead simple-lead">
-                            Identities registered
+                            Domains registered
                           </p>
                           <p className="stats-count"><span className="comment-hightlight">|</span>{this.state.nameCount}</p>
                         </div>
