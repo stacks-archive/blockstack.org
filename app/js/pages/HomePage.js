@@ -13,9 +13,9 @@ class HomePage extends Component {
     super(props)
 
     this.state = {
-      nameCount: 67000,
-      slackUserCount: 2200,
-      meetupUserCount: 4512
+      nameCount: 68000,
+      slackUserCount: 2300,
+      meetupUserCount: 4923
     }
 
     this.updateNameCount = this.updateNameCount.bind(this)
@@ -94,6 +94,40 @@ class HomePage extends Component {
                       Install the Software
                     </Link>
                   </p>
+                </div>
+              </section>
+            </div>
+            <div className="container">
+              <section>
+                <div className="simple-featurette">
+                  <div className="col-centered">
+                    <div className="row col-centered">
+                      <Link className="link-stats" to="http://stats.blockstack.org" target="_blank">
+                        <div className="simple-panel">
+                          <p className="lead simple-lead">
+                            Domains registered
+                          </p>
+                          <p className="stats-count"><span className="comment-hightlight">|</span>{this.state.nameCount}</p>
+                        </div>
+                      </Link>
+                      <Link className="link-stats" to="http://blockstack.slackarchive.io/lounge/" target="_blank">
+                        <div className="simple-panel">
+                          <p className="lead simple-lead">
+                            Slack group members
+                          </p>
+                          <p className="stats-count"><span className="comment-hightlight">|</span>{this.state.slackUserCount}</p>
+                        </div>
+                      </Link>
+                      <Link className="link-stats" to="http://www.meetup.com/topics/blockstack/" target="_blank">
+                        <div className="simple-panel">
+                          <p className="lead simple-lead">
+                            Meetup group members
+                          </p>
+                          <p className="stats-count"><span className="comment-hightlight">|</span>{this.state.meetupUserCount}</p>
+                        </div>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </section>
             </div>
