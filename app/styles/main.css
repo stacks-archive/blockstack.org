@@ -5,8 +5,6 @@
 /* - Max-width of site is to be set via `container` */
 /* - All sections utilize `containter` */
 
-::selection{background:rgba(255,255,255,0.99);color:#270F34;}::-moz-selection{background:rgba(255,255,255,0.99);color:#270F34;}
-
 /* Base structure */
 html, body {-webkit-overflow-scrolling:touch;}
 body{padding-top:0;padding-bottom:0;}
