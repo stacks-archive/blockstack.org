@@ -10,7 +10,8 @@ const propTypes = {
   imageSrc: PropTypes.string,
   footnote: PropTypes.string,
   cardsPerRow: PropTypes.number,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
+  target: PropTypes.string
 }
 
 class CardLink extends Component {
@@ -42,9 +43,14 @@ class CardLink extends Component {
   }
 
   render() {
+    let target = "_self"
+    if (this.props.target === "_blank") {
+      target = "_blank"
+    }
+
     return (
       <div className={`card ${this.getCardClass()}`}>
-        <Link to={this.props.href} className="card-link">
+        <Link to={this.props.href} className="card-link" target={target}>
           { this.props.imageSrc ?
           <div className="card-link-image-wrapper">
             <img src={this.props.imageSrc} className="card-img-top card-link-image" />

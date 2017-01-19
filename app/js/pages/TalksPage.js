@@ -7,7 +7,7 @@ import DocumentTitle    from 'react-document-title'
 import Header           from '../components/Header'
 import Footer           from '../components/Footer'
 import TalkPreview      from '../components/TalkPreview'
-import {talks}          from '../data'
+import {talks}          from '../config'
 
 class TalksPage extends Component {
 

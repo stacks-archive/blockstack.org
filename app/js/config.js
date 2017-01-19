@@ -1,3 +1,15 @@
+export const socialLinks = {
+  twitter: 'https://www.twitter.com/blockstackorg',
+  youtube: 'https://www.youtube.com/channel/UC3J2iHnyt2JtOvtGVf_jpHQ',
+  slack: 'http://chat.blockstack.org',
+  meetup: 'http://www.meetup.com/topics/blockstack/',
+  reddit: 'https://www.reddit.com/r/blockstack',
+  forum: 'https://forum.blockstack.org',
+  blog: 'http://blog.blockstack.org',
+  github: 'https://github.com/blockstack',
+  branding: 'https://projects.invisionapp.com/boards/HE2VVROFSGB27/'
+}
+
 export const companiesHiring = [
   {
     name: "Blockstack Inc",

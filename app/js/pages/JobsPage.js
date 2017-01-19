@@ -7,7 +7,7 @@ import DocumentTitle    from 'react-document-title'
 import Header           from '../components/Header'
 import Footer           from '../components/Footer'
 import JobListing       from '../components/JobListing'
-import { companiesHiring } from '../data'
+import { companiesHiring } from '../config'
 
 class JobsPage extends Component {
 

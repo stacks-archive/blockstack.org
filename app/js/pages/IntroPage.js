@@ -6,6 +6,29 @@ import DocumentTitle    from 'react-document-title'
 
 import Header           from '../components/Header'
 import Footer           from '../components/Footer'
+import CardLink         from '../components/CardLink'
+
+class ContentSection extends Component {
+  static propTypes: {
+    markup: PropTypes.string.isRequired,
+    className: PropTypes.string
+  }
+
+  render() {
+    return(
+      <section className={this.props.className}>
+        <div className="container col-centered blog-post">
+          <div className="container">
+            <div className="post-content">
+              <div dangerouslySetInnerHTML={{ __html: this.props.markup }}>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    )
+  }
+}
 
 class IntroPage extends Component {
   
@@ -17,7 +40,7 @@ class IntroPage extends Component {
           <div className="container-fluid col-centered navbar-fixed-top bg-primary">
             <Header />
           </div>
-          <section className="m-b-50 m-t-100">
+          <section className="m-t-100">
             <div className="container col-centered blog-post">
               <div className="container">
                 <div className="post-header">
@@ -25,24 +48,63 @@ class IntroPage extends Component {
                     Intro to Blockstack
                   </h1>
                 </div>
-                <div className="post-content">
-                  <p>
-                    Blockstack is a new internet for decentralized, server-less applications.
-                    Building on Blockstack starts with single-page applications built in Javascript that
-                    are downloaded onto user devices.
-                    Developers plug into blockstack.js, which provides API’s for authenticating the user,
-                    grabbing application data from the user, and storing new application data with the
-                    user (encrypted and backed up to cloud storage).
-                    The blockchain is utilized to maintain a cross-application identity system, securely
-                    mapping user IDs to usernames, public keys, and data storage URIs.
-                    Developers don’t have to worry about running servers, maintaining databases, or
-                    building out user management systems, and decentralized, server-less applications
-                    can be built more simply than their traditional counterparts.
-                  </p>
-                </div>
               </div>
             </div>
           </section>
+          <ContentSection className="m-b-50"
+            markup="<p>
+              Blockstack is a new decentralized internet.
+            </p>
+
+            <p>
+              With Blockstack, users control their data and apps run on their devices.
+              There are no middlemen, no passwords, no massive data silos to breach,
+              and no services tracking us around the internet.
+            </p>
+
+            <p>
+              The applications on blockstack are server-less and decentralized.
+
+              Developers start by building a single-page application in Javascript,
+
+              Then, instead of plugging the frontend into an API that they control,
+              they plug into an API run by the user.
+
+              Developers install a library called 'blockstack.js' and
+              don't have to worry about running servers, maintaining databases,
+              or building out user managements systems.
+            </p>
+
+            <p>
+              Personal user APIs ship with the Blockstack app and
+              handle everything from identity and authentication
+              to data storage.
+
+              Applications can request permissions from users and then
+              gain read and write access to user resources.
+            </p>
+
+            <p>
+              Data storage is simple and reliable and uses existing cloud infrastructure.
+
+              Users connect with their Dropbox, Google Drive, etc and data is synced from
+              their local device up to the cloud.
+            </p>
+
+            <p>
+              Identity is user-controlled and utilizes the blockchain for secure management
+              of keys, devices and usernames.
+
+              When users login with apps, they are anonymous by default and use an
+              app-specific key, but their full identity can be revealed and proven
+              at any time.
+
+              Keys are for signing and encryption and can be changed
+              as devices need to be added or removed.
+            </p>
+            <p>
+              Here's a diagram laying out the major components of Blockstack and showing how it works under the hood:
+            </p>" />
           <section className="foot-feature col-centered"
             style={{ paddingTop: '50px', paddingBottom: '50px' }}>
             <div className="container-fluid bs-docs-featurette col-centered">
@@ -59,182 +121,75 @@ class IntroPage extends Component {
               </div>
             </div>
           </section>
-          <section className="container-fluid col-3-section">
-            <div className="container bs-docs-featurette col-centered">
-              <div className="col-centered">
-                <div className="row col-centered">
-                  <div className="col-md-12 feature-panel">
-                    <h2 className="displayed">
-                      How to Build on Blockstack
-                    </h2>
-                  </div>
-                </div>
-                <div className="row col-centered">
-                  <div className="col-md-4 feature-panel">
-                    <div className="container wrap-mob-feat">
-                    </div>
-                    <h4>1. Create a single-page web app w/ HTML, JS + CSS</h4>
-                  </div>
-                  <div className="col-md-4 feature-panel">
-                    <div className="container wrap-mob-feat">
-                    </div>
-                    <h4>2. Install blockstack.js & plug into auth & storage functions</h4>
-                  </div>
-                  <div className="col-md-4 feature-panel">
-                    <div className="container wrap-mob-feat">
-                    </div>
-                    <h4>3. Register a domain for the app, adding it to the directory</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section className="container-fluid stats-section">
-            <div className="container bs-docs-featurette col-centered">
-              <div className="col-centered">
-                <div className="row col-centered">
-                  <Link className="link-stats" to="http://stats.blockstack.org" target="_blank">
-                    <div className="col-md-4 feature-panel">
-                      <p className="lead bs-lead">
-                        Identities registered
-                      </p>
-                      <h1 className="stats-count">68544</h1>
-                    </div>
-                  </Link>
-                  <Link className="link-stats" to="http://blockstack.slackarchive.io/lounge/" target="_blank">
-                    <div className="col-md-4 feature-panel">
-                      <p className="lead bs-lead">
-                        Slack group members
-                      </p>
-                      <h1 className="stats-count">2312</h1>
-                    </div>
-                  </Link>
-                  <Link className="link-stats" to="http://www.meetup.com/topics/blockstack/" target="_blank">
-                    <div className="col-md-4 feature-panel">
-                      <p className="lead bs-lead">
-                        Meetup group members
-                      </p>
-                      <h1 className="stats-count">4512</h1>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section className="container-fluid stats-section">
-            <div className="bs-docs-featurette col-centered sponsors-2-subsection" id="learnmore">
-              <div className="col-centered">
-                <div className="row col-centered">
-                 <div className="col-md-12 feature-panel">
-                    <h2 className="displayed">
-                      Who's on Blockstack?
-                    </h2>
-                  </div>
-                </div>
-                <div className="row col-sm-12 col-centered">
-                  <div className="col-sm-4 feature-panel" style={{ marginTop: '15px' }}>
-                    <div className="container wrap-mob-feat">
-                      <Link to="http://democracyos.org/" target="_blank">
-                        <img src="/images/logos/democracyos.svg" alt="DemocracyOS logo" width="240px"/>
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="col-sm-4 feature-panel" style={{ marginTop: '15px' }}>
-                    <div className="container wrap-mob-feat">
-                      <Link to="https://microsoft.com/" target="_blank">
-                        <img src="/images/logos/microsoft-logo.svg"
-                        alt="Microsoft logo" width="160px"/>
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="col-sm-4 feature-panel" style={{ marginTop: '0px' }}>
-                    <div className="container wrap-mob-feat">
-                      <Link to="http://openbazaar.org/" target="_blank">
-                        <img src="/images/logos/openbazaar.svg" alt="OpenBazaar logo" width="180px"/>
-                      </Link>
-                    </div>
-                  </div>
-
-                </div>
-                <div className="row col-sm-12 col-centered">
-                  <div className="col-sm-4 feature-panel" style={{ marginTop: '0px' }}>
-                    <div className="container wrap-mob-feat">
-                      <Link to="http://bitseed.org/" target="_blank">
-                        <img src="/images/logos/bitseed.svg" alt="Bitseed logo" width="128px"/>
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="col-sm-4 feature-panel" style={{ marginTop: '30px' }}>
-                    <div className="container wrap-mob-feat">
-                      <Link to="http://trychord.com/" target="_blank">
-                        <img src="/images/logos/chord.svg" alt="Chord logo" width="110px"/>
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="col-sm-4 feature-panel" style={{ marginTop: '25px' }}>
-                    <div className="container wrap-mob-feat">
-                      <Link to="https://tierion.com/" target="_blank">
-                        <img src="/images/logos/tierion.svg"
-                        alt="Tierion logo" width="160px"/>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="row col-sm-12 col-centered">
-                  <div className="col-sm-4 feature-panel" style={{ marginTop: '30px' }}>
-                    <div className="container wrap-mob-feat">
-                      <Link to="http://anyshare.coop/" target="_blank">
-                        <img src="/images/logos/anyshare.svg" alt="Anyshare logo" width="180px"/>
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="col-sm-4 feature-panel" style={{ marginTop: '-50px' }}>
-                    <div className="container wrap-mob-feat">
-                      <Link to="https://www.yours.network/" target="_blank">
-                        <img src="/images/logos/yours_logo-transparent-01.png" alt="Yours Network logo" width="208px"/>
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="col-sm-4 feature-panel" style={{ marginTop: '30px' }}>
-                    <div className="container wrap-mob-feat">
-                      <Link to="http://consent.global" target="_blank">
-                        <img src="/images/logos/consent.svg" alt="Consent logo" width="120px"/>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </section>
+          <ContentSection className="m-b-50 m-t-50"
+            markup="<p>
+              To get started building apps on Blockstack,
+              read the developer documentation,
+              setup a Blockstack Core node,
+              and preview the Blockstack Browser (in an experimantal alpha).
+            </p>" />
           <section>
             <div className="bs-docs-featurette col-centered m-b-2">
               <div className="container col-centered">
-                <div className="row works col-md-10 col-lg-8 col-centered">
-                  <div className="col-sm-11 feature-panel col-centered"
-                    style={{ textAlign: 'left' }}>
-                      <h4 className="feat-pan text-xs-center">Building a Hello World App</h4>
-                      <p className="lead text-xs-center">
-                        In this first Blockstack app tutorial, we'll take you through the process of building
-                        the simplest Blockstack app where users login and are shown
-                        a welcome message with their name and avatar.
-
-                        You'll learn how to
-                        (1) create a simple frontend web app with HTML, JS and CSS
-                        (2) integrate blockstack.js for identity and authentication
-                        (3) register a domain name for the app, listing it in the app directory.
-                      </p>
-                      <p className="lead text-xs-center">
-                        <Link to="/docs/tutorial-hello-world" role="button"
-                          className="btn btn-sm btn-outline-primary m-b-2 disabled">
-                          Tutorial coming soon
-                        </Link>
-                      </p>
+                <div className="card-deck-wrapper">
+                  <div className="card-deck m-b-3">
+                    <CardLink
+                      href='/docs'
+                      title='Docs'
+                      body="Documentation for the Blockstack Browser, Blockstack Core, and Blockstack Explorer."
+                      imageSrc="/images/article-photos/bookshelves.jpg"
+                      cardsPerRow={3} />
+                    <CardLink
+                      href='https://github.com/blockstack/blockstack-cli'
+                      title='Blockstack Core'
+                      body="A server you can run that becomes a part of the Blockstack P2P network and maintains the DNS, PKI and identity system."
+                      imageSrc="/images/article-photos/passport.jpg"
+                      target="_blank"
+                      cardsPerRow={3} />
+                    <CardLink
+                      href='https://github.com/blockstack/blockstack-browser/releases'
+                      title='Blockstack Browser'
+                      body="A desktop app you can install to upgrade your browsers and turn them into blockstack-enabled browsers."
+                      imageSrc="/images/article-photos/astronaut.jpg"
+                      target="_blank"
+                      cardsPerRow={3} />
                   </div>
                 </div>
               </div>
             </div>  
+          </section>
+          <ContentSection className="m-b-50 m-t-50"
+            markup="<p>
+                    To learn more about Blockstack, read the papers,
+                    watch the videos, and check out the Blockstack Blog.
+                  </p>" />
+          <section>
+            <div className="bs-docs-featurette col-centered m-b-2">
+              <div className="container col-centered">
+                <div className="card-deck-wrapper">
+                  <div className="card-deck m-b-3">
+                    <CardLink
+                      href='/papers'
+                      title='Papers'
+                      body="Academic papers on Blockstack's DNS/naming, storage, identity, and authentication systems."
+                      imageSrc="/images/article-photos/booklets.jpg"
+                      cardsPerRow={3} />
+                    <CardLink
+                      href='/videos'
+                      title='Videos'
+                      body="Videos of talks given about what Blockstack is, how it works, and what can be built on top of it."
+                      imageSrc="/images/article-photos/scribble.jpg"
+                      cardsPerRow={3} />
+                    <CardLink
+                      href='/blog'
+                      title='Blog'
+                      body="Blog with the latest developments about Blockstack, including product announcements and technical writeups."
+                      imageSrc="/images/article-photos/computer.jpg"
+                      cardsPerRow={3} />
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
           <Footer />
         </div>

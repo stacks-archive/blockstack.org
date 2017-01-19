@@ -21,7 +21,6 @@ import BrowserPage                 from './pages/BrowserPage'
 import IntroPage                   from './pages/IntroPage'
 import BlogPostPage                from './pages/BlogPostPage'
 import JobsPage                    from './pages/JobsPage'
-import ResourcesPage               from './pages/ResourcesPage'
 import TalkPage                    from './pages/TalkPage'
 
 import docs                        from '../docs.json'
@@ -44,7 +43,6 @@ export default (
       <Route path="/browser" component={BrowserPage} />
       <Route path="/intro" component={IntroPage} />
       <Route path="/jobs" component={JobsPage} />
-      <Route path="/resources" component={ResourcesPage} />
       <Route path="/videos/:slug" component={TalkPage} />
 
       <Route path="/overview/:docSection" component={ArticlePage} />

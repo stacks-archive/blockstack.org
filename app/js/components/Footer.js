@@ -3,6 +3,8 @@
 import {Component}  from 'react'
 import {Link} from 'react-router'
 
+import {socialLinks}   from '../config'
+
 class Footer extends Component {
 
   constructor(props) {
@@ -10,18 +12,7 @@ class Footer extends Component {
   }
 
   render() {
-    const links = {
-      twitter: 'https://www.twitter.com/blockstackorg',
-      youtube: 'https://www.youtube.com/channel/UC3J2iHnyt2JtOvtGVf_jpHQ',
-      slack: 'http://chat.blockstack.org',
-      meetup: 'http://www.meetup.com/topics/blockstack/',
-      reddit: 'https://www.reddit.com/r/blockstack',
-      forum: 'https://forum.blockstack.org',
-      blog: 'http://blog.blockstack.org',
-      github: 'https://github.com/blockstack',
-      branding: 'https://projects.invisionapp.com/boards/HE2VVROFSGB27/'
-    }
-
+    const links = socialLinks
     return (
       <footer>
         <div className="container">
