@@ -25,23 +25,9 @@ class SignUpPage extends Component {
           <div className="col-centered block">
             <Header />
             <div className="container">
-              <section className="hero">
-                <div>
-                  <h1 className="hero-head">
-                    Build on the New Internet
-                  </h1>
-                  <p className="lead hero-lead col-md-5 block">
-                    Build decentralized, server-less apps where users control their data.
-                  </p>
-                  <p className="no-padding col-md-12">
-                    <Link to="http://eepurl.com/cv8gQ1" role="button" target="_blank"
-                      className="btn btn-secondary btn-block">
-                      Join the Community
-                    </Link>
-                    <Link to="/docs" className="btn btn-outline-primary hidden-sm-down">
-                      Install the Software
-                    </Link>
-                  </p>
+              <section className="special-card">
+                <div className="card w-75">
+                  <h1>Sign up for Blocsktack newsletter</h1>
                 </div>
               </section>
             </div>            

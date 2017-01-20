@@ -201,6 +201,10 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .talk-preview-image{width:100%;}
 .simple-featurette{display:none;}
 
+/* Cards */
+.special-card{}
+.card{background-color:#fff;}
+
 
 /* Summit page */
 .summit-head-wrap{background:url(/images/visuals/summ-dht.png)no-repeat center -50px;background-color:#53206f;}
