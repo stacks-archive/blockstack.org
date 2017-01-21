@@ -102,6 +102,13 @@ class IntroPage extends Component {
               Keys are for signing and encryption and can be changed
               as devices need to be added or removed.
             </p>
+
+            <p>
+              Under the hood, Blockstack provides a decentralized domain name system (DNS),
+              decentralized public key distribution system,
+              and registry for apps and user identities.
+            </p>
+
             <p>
               Here's a diagram laying out the major components of Blockstack and showing how it works under the hood:
             </p>" />
