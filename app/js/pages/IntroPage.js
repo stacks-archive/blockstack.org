@@ -67,12 +67,12 @@ class IntroPage extends Component {
 
               Developers start by building a single-page application in Javascript,
 
-              Then, instead of plugging the frontend into an API that they control,
+              Then, instead of plugging the frontend into a centralized API,
               they plug into an API run by the user.
 
               Developers install a library called 'blockstack.js' and
               don't have to worry about running servers, maintaining databases,
-              or building out user managements systems.
+              or building out user management systems.
             </p>
 
             <p>
