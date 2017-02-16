@@ -67,12 +67,12 @@ class IntroPage extends Component {
 
               Developers start by building a single-page application in Javascript,
 
-              Then, instead of plugging the frontend into an API that they control,
+              Then, instead of plugging the frontend into a centralized API,
               they plug into an API run by the user.
 
               Developers install a library called 'blockstack.js' and
               don't have to worry about running servers, maintaining databases,
-              or building out user managements systems.
+              or building out user management systems.
             </p>
 
             <p>
@@ -102,6 +102,13 @@ class IntroPage extends Component {
               Keys are for signing and encryption and can be changed
               as devices need to be added or removed.
             </p>
+
+            <p>
+              Under the hood, Blockstack provides a decentralized domain name system (DNS),
+              decentralized public key distribution system,
+              and registry for apps and user identities.
+            </p>
+
             <p>
               Here's a diagram laying out the major components of Blockstack and showing how it works under the hood:
             </p>" />
