@@ -68,8 +68,8 @@
         "destination": "/docs-posts-namespaces.html"
       },
       {
-        "source": "/blog/announcing-blockstack-explorer-2",
-        "destination": "/blog-announcing-blockstack-explorer-2.html"
+        "source": "/blog/blockstack-explorer",
+        "destination": "/blog-blockstack-explorer.html"
       },
       {
         "source": "/blog/funding-the-new-decentralized-internet",
