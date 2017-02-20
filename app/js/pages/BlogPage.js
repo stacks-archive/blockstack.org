@@ -49,7 +49,11 @@ class BlogPage extends Component {
 
       channelItems.map((rssPost) => {
         let post = getPostFromRSS(rssPost)
-        post.creator = blogAuthors[post.blockstackID]
+        if (blogAuthors.hasOwnProperty(post.blockstackID)) {
+          post.creator = blogAuthors[post.blockstackID]
+        } else {
+          post.creator = blogAuthors["blockstack.id"]
+        }
         posts.push(post)
       })
     })
