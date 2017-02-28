@@ -73,7 +73,7 @@ class HomePage extends Component {
                       Join the Community
                     </Link>
                     <Link to="/docs" className="btn btn-outline-primary hidden-sm-down">
-                      Install the Software
+                      Install Blockstack
                     </Link>
                   </p>
                 </div>
