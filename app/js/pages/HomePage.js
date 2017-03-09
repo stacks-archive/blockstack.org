@@ -74,8 +74,8 @@ class HomePage extends Component {
                     Build decentralized, server-less apps where users control their data.
                   </p>
                   <p className="no-padding col-md-12">
-                    <Link to="http://eepurl.com/cv8gQ1" role="button"
-                      className="btn btn-secondary btn-block" target="_blank">
+                    <Link to="/join" role="button"
+                      className="btn btn-secondary btn-block">
                       Join the Community
                     </Link>
                     <Link to="/download" role="button"
