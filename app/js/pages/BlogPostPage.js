@@ -16,8 +16,7 @@ import {getSlugFromRSS} from '../utils/rssUtils'
 import docs             from '../../docs.json'
 import {blogAuthors}    from '../config'
 
-
-class ArticlePage extends Component {
+class BlogPostPage extends Component {
 
   constructor(props) {
     super(props)
@@ -94,7 +93,11 @@ class ArticlePage extends Component {
 
     if (rssPost) {
       let post = getPostFromRSS(rssPost)
-      post.creator = blogAuthors[post.blockstackID]
+      if (blogAuthors.hasOwnProperty(post.blockstackID)) {
+        post.creator = blogAuthors[post.blockstackID]
+      } else {
+        post.creator = blogAuthors["blockstack.id"]
+      }
       currentPage = Object.assign({}, currentPage, post)
     }
 
@@ -195,4 +198,4 @@ class ArticlePage extends Component {
   }
 }
 
-export default ArticlePage
+export default BlogPostPage
