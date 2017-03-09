@@ -9,7 +9,7 @@ gulp.task('dev', ['clean'], function(cb) {
 
   global.isProd = false;
 
-  process.env.NODE_ENV = 'test';
+  //process.env.NODE_ENV = 'test';
 
   // Run all tasks once
   return runSequence([

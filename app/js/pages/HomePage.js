@@ -42,9 +42,15 @@ class HomePage extends Component {
         jsonResponse.hasOwnProperty("meetup_users") &&
         jsonResponse.hasOwnProperty("forum_users") &&
         jsonResponse.hasOwnProperty("domains")) {
+      
+      let newSlackUsers = this.state.slackUserCount
+      if (jsonResponse.slack_users !== 0) {
+        newSlackUsers = jsonResponse.slack_users
+      }
+
       // Set the stats
       this.setState({
-        slackUserCount: jsonResponse.slack_users,
+        slackUserCount: newSlackUsers,
         meetupUserCount: jsonResponse.meetup_users,
         forumUserCount: jsonResponse.forum_users,
         domainCount: jsonResponse.domains
