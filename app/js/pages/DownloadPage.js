@@ -20,6 +20,7 @@ class DownloadsPage extends Component {
     const browserName = result.browser.name
     const osName = result.os.name
     const macDownloadLink = "https://github.com/blockstack/blockstack-portal/releases/download/v0.4.0/Blockstack-v0.4.app.zip"
+    const releasesLink = "https://github.com/blockstack/blockstack-portal/releases"
 
     return (
       <DocumentTitle title="Blockstack newsletter sign-up">
@@ -30,36 +31,49 @@ class DownloadsPage extends Component {
           <section className="container-fluid spacing-container">
             <div className="container col-centered">
               <div className="container m-b-5">
-                <h1>
-                  Get Blockstack
-                </h1>
-                <section className="sec-light">
-                  <div>
-                    <h3>
+                <div>
+                  <h1>
+                    Get Blockstack
+                  </h1>
+                  <p>
+                    <a href={releasesLink} role="button">
+                      View the Releases on GitHub
+                   </a>
+                  </p>
+                </div>
+                <section className="sec-light row">
+                  <div className="col-md-4">
+                    <h4>
                        Mac
-                    </h3>
-                    <a href={macDownloadLink} role="button"
-                      className="btn btn-outline-primary btn-block">
-                      Download
-                    </a>
+                    </h4>
+                    <p>
+                      <a href={macDownloadLink} role="button"
+                        className="btn btn-outline-primary btn-block">
+                        Download
+                      </a>
+                    </p>
                   </div>
-                  <div>
-                    <h3>
+                  <div className="col-md-4">
+                    <h4>
                        Windows
-                    </h3>
-                    <a href="#" role="button"
-                      className="btn btn-outline-primary-outline btn-block disabled">
-                      Coming Soon
-                    </a>
+                    </h4>
+                    <p>
+                      <a href="#" role="button"
+                        className="btn btn-outline-primary btn-block disabled">
+                        Coming Soon
+                      </a>
+                    </p>
                   </div>
-                  <div>
-                    <h3>
+                  <div className="col-md-4">
+                    <h4>
                        Linux
-                    </h3>
-                    <a href="#" role="button"
-                      className="btn btn-outline-primary-outline btn-block disabled">
-                      Coming Soon
-                    </a>
+                    </h4>
+                    <p>
+                      <a href="#" role="button"
+                        className="btn btn-outline-primary btn-block disabled">
+                        Coming Soon
+                      </a>
+                    </p>
                   </div>
                 </section>
               </div>
