@@ -10,7 +10,7 @@ gulp.task('browserSync', function() {
   const DEFAULT_FILE = 'index.html';
   const ASSET_EXTENSIONS = [
     'js', 'css', 'png', 'jpg', 'jpeg', 'gif', 'svg', 'ico', 'md', 'pdf',
-    'woff', 'woff2', 'ttf', 'eot', 'txt', 'map'
+    'woff', 'woff2', 'ttf', 'eot', 'txt', 'map', 'zip'
   ];
 
   browserSync.init({
@@ -20,8 +20,8 @@ gulp.task('browserSync', function() {
         let fileHrefClean = url.parse(req.url).href.split('?')[0];
         let fileHrefArray = fileHrefClean.split('.');
         let fileExtension = fileHrefArray[fileHrefArray.length - 1];
-
-        if ( ASSET_EXTENSIONS.indexOf(fileExtension) === -1 ) {
+        
+        if (ASSET_EXTENSIONS.indexOf(fileExtension) === -1) {
           req.url = '/' + DEFAULT_FILE;
         }
 

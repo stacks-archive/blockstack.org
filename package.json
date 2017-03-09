@@ -4,7 +4,7 @@
   "author": "Blockstack Inc <admin@blockstack.com>",
   "description": "The website for the Blockstack open source project",
   "scripts": {
-    "app": "gulp dev",
+    "dev": "gulp dev",
     "package": "gulp prod",
     "build-docs": "gulp buildDocs",
     "postinstall": "cd ./node_modules/highlight.js && npm i && node ./tools/build.js :common"
@@ -81,6 +81,7 @@
     "superagent": "^1.2.0",
     "sync-request": "^3.0.1",
     "textversionjs": "^1.0.2",
+    "ua-parser-js": "^0.7.12",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.2.x",
     "when": "^3.7.4",

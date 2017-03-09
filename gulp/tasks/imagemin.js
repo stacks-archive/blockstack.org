@@ -15,3 +15,11 @@ gulp.task('imagemin', function() {
     .pipe(gulpif(browserSync.active, browserSync.reload({ stream: true, once: true })));
 
 });
+
+gulp.task('copyimages', function() {
+
+  // Run imagemin task on all images
+  return gulp.src(config.images.src)
+    .pipe(gulp.dest(config.images.dest))
+
+});

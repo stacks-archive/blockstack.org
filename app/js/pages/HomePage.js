@@ -13,10 +13,10 @@ class HomePage extends Component {
     super(props)
 
     this.state = {
-      domainCount: 68000,
-      slackUserCount: 2300,
-      meetupUserCount: 4923,
-      forumUserCount: 250
+      domainCount: 70000,
+      slackUserCount: 2500,
+      meetupUserCount: 5000,
+      forumUserCount: 300
     }
 
     this.updateStats = this.updateStats.bind(this)
@@ -42,9 +42,15 @@ class HomePage extends Component {
         jsonResponse.hasOwnProperty("meetup_users") &&
         jsonResponse.hasOwnProperty("forum_users") &&
         jsonResponse.hasOwnProperty("domains")) {
+      
+      let newSlackUsers = this.state.slackUserCount
+      if (jsonResponse.slack_users !== 0) {
+        newSlackUsers = jsonResponse.slack_users
+      }
+
       // Set the stats
       this.setState({
-        slackUserCount: jsonResponse.slack_users,
+        slackUserCount: newSlackUsers,
         meetupUserCount: jsonResponse.meetup_users,
         forumUserCount: jsonResponse.forum_users,
         domainCount: jsonResponse.domains
@@ -68,12 +74,13 @@ class HomePage extends Component {
                     Build decentralized, server-less apps where users control their data.
                   </p>
                   <p className="no-padding col-md-12">
-                    <Link to="http://eepurl.com/cv8gQ1" role="button" target="_blank"
-                      className="btn btn-secondary btn-block">
+                    <Link to="http://eepurl.com/cv8gQ1" role="button"
+                      className="btn btn-secondary btn-block" target="_blank">
                       Join the Community
                     </Link>
-                    <Link to="/docs" className="btn btn-outline-primary hidden-sm-down">
-                      Install the Software
+                    <Link to="/download" role="button"
+                      className="btn btn-outline-primary hidden-sm-down">
+                      Install Blockstack
                     </Link>
                   </p>
                 </div>

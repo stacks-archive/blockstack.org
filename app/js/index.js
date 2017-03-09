@@ -5,7 +5,7 @@ import ReactDOM  from 'react-dom'
 
 import Routes    from './Routes'
 
-if ( process.env.NODE_ENV !== 'production' ) {
+if (process.env.NODE_ENV !== 'production') {
   // Enable React devtools
   window.React = React
 }

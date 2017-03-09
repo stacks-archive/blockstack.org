@@ -68,6 +68,10 @@
         "destination": "/docs-posts-namespaces.html"
       },
       {
+        "source": "/blog/fastsync-is-now-available-on-the-aws-marketplace",
+        "destination": "/blog-fastsync-is-now-available-on-the-aws-marketplace.html"
+      },
+      {
         "source": "/blog/blockstack-explorer",
         "destination": "/blog-blockstack-explorer.html"
       },

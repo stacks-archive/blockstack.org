@@ -7,6 +7,7 @@ gulp.task('copyFiles', function() {
   return gulp.src(
     [
       config.sourceDir + 'files/*.pdf',
+      config.sourceDir + 'files/*.zip',
       config.sourceDir + '*.txt'
     ]
   ).pipe(gulp.dest(config.buildDir));

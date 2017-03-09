@@ -148,7 +148,7 @@ a.nav-link:hover,a.nav-link:focus{color:#fff;}
 .btn-footer-max-width{max-width:225px;}
 
 /* Other */
-.body-hero{background-image:url('/images/hero-image@2x.jpg');background-repeat:no-repeat;background-position-x:center;background-position-y:center;background-size:cover;background-attachment:fixed;}
+.body-hero{background-image:url('/images/visuals/atlas-hero.svg');background-repeat:no-repeat;background-position-x:center;background-position-y:center;background-size:cover;background-attachment:fixed;}
 body,html,#app,.app-landing{height:100%;}
 .app-common{height:auto;}
 .site-wrapper{display:flex;background-color:#270F34;flex-direction:column;height:100%;}
@@ -200,6 +200,10 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .no-padding{padding-left:0;padding-right:0;}
 .talk-preview-image{width:100%;}
 .simple-featurette{display:none;}
+
+/* Cards */
+.special-card{}
+.card{background-color:#fff;}
 
 
 /* Summit page */
