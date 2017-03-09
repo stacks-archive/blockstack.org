@@ -34,6 +34,7 @@ function createMetatagMarkup(url, title, description, image) {
   metadata2.forEach((datum) => {
     metatagMarkup += `<meta property="${datum.property}" content="${datum.content}" />\n`
   })
+  metatagMarkup += '<link rel="alternate" type="application/rss+xml" title="Blockstack Blog" href="https://blockstack-site-api.herokuapp.com/v1/blog-rss" />'
 
   return metatagMarkup
 }
