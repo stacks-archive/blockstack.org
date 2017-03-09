@@ -18,7 +18,6 @@ import config       from '../config';
 
 // Based on: http://blog.avisi.nl/2014/04/25/how-to-keep-a-fast-build-with-browserify-and-reactjs/
 function buildScript(file, watch) {
-  console.log('building script...')
   var bundler = browserify({
     entries: [config.sourceDir + 'js/' + file],
     debug: !global.isProd,
@@ -28,18 +27,14 @@ function buildScript(file, watch) {
   });
 
   if (watch) {
-    console.log('watching...')
     bundler = watchify(bundler);
     bundler.on('update', rebundle);
   }
 
-  console.log('transforming with babelify...')
   bundler.transform(babelify);
-  console.log('transforming with debowerify...')
   bundler.transform(debowerify);
 
   function rebundle() {
-    console.log('rebundling...')
     let stream = bundler.bundle();
 
     gutil.log('Rebundle...');

@@ -78,8 +78,8 @@ class HomePage extends Component {
                       className="btn btn-secondary btn-block" target="_blank">
                       Join the Community
                     </Link>
-                    <Link to="https://github.com/blockstack/blockstack-portal/releases" role="button"
-                      className="btn btn-outline-primary hidden-sm-down" target="_blank">
+                    <Link to="/download" role="button"
+                      className="btn btn-outline-primary hidden-sm-down">
                       Install Blockstack
                     </Link>
                   </p>
