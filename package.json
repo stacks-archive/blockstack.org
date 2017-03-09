@@ -5,7 +5,7 @@
   "description": "The website for the Blockstack open source project",
   "scripts": {
     "dev": "gulp dev",
-    "package": "gulp prod",
+    "prod": "gulp prod",
     "build-docs": "gulp buildDocs",
     "postinstall": "cd ./node_modules/highlight.js && npm i && node ./tools/build.js :common"
   },

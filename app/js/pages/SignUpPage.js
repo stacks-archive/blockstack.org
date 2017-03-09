@@ -15,6 +15,8 @@ class SignUpPage extends Component {
     this.state = {
       email: ''
     }
+
+    this.onChange = this.onChange.bind(this)
   }
 
   onChange(event) {
