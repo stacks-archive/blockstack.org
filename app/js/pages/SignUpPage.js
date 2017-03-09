@@ -14,27 +14,30 @@ class SignUpPage extends Component {
     super(props)
   }
 
-
-
   render() {
-
     return (
       <DocumentTitle title="Blockstack newsletter sign-up">
-      <div>
-        <div className="site-wrapper body-hero">
-          <div className="col-centered block">
+        <div>
+          <div className="navbar-fixed-top bg-primary">
             <Header />
-            <div className="container">
-              <section className="special-card">
-                <div className="card w-75">
-                  <h1>Sign up for Blocsktack newsletter</h1>
-                </div>
-              </section>
-            </div>            
           </div>
+          <section className="container-fluid spacing-container">
+            <div className="container col-centered">
+              <div className="container m-b-5">
+                <h1>
+                  Join the Community
+                </h1>
+                <section className="sec-light">
+                  <Link to="http://eepurl.com/cv8gQ1" role="button" target="_blank"
+                    className="btn btn-outline-primary btn-block">
+                    Get Updates
+                  </Link>
+                </section>
+              </div>
+            </div>
+          </section>
+          <Footer />
         </div>
-        <Footer />
-      </div>
       </DocumentTitle>
     )
   }

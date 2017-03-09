@@ -4,7 +4,7 @@
   "author": "Blockstack Inc <admin@blockstack.com>",
   "description": "The website for the Blockstack open source project",
   "scripts": {
-    "app": "gulp dev",
+    "dev": "gulp dev",
     "package": "gulp prod",
     "build-docs": "gulp buildDocs",
     "postinstall": "cd ./node_modules/highlight.js && npm i && node ./tools/build.js :common"

@@ -45,7 +45,7 @@ export default (
       <Route path="/intro" component={IntroPage} />
       <Route path="/jobs" component={JobsPage} />
       <Route path="/videos/:slug" component={TalkPage} />
-      <Route path="/sign-up" component={SignUpPage} />
+      <Route path="/join" component={SignUpPage} />
 
       <Route path="/overview/:docSection" component={ArticlePage} />
       <Route path="/blog/:docSection" component={BlogPostPage} />
