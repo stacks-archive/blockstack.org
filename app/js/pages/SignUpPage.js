@@ -37,7 +37,7 @@ class SignUpPage extends Component {
           <section className="container-fluid spacing-container">
             <div className="container col-centered">
               <div className="container m-b-5">
-                <section className="sec-light">
+                <section className="sec-light" style={{ minHeight: '800px' }}>
 
                   <div className="row">
                     <div className="col-md-6 offset-md-3">
