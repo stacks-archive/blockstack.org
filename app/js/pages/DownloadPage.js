@@ -19,7 +19,7 @@ class DownloadsPage extends Component {
     const result = parser.getResult()
     const browserName = result.browser.name
     const osName = result.os.name
-    const macDownloadLink = "https://github.com/blockstack/blockstack-portal/releases/download/v0.4.0/Blockstack-v0.4.app.zip"
+    const macDownloadLink = "https://github.com/blockstack/blockstack-portal/releases/download/v0.4.1/Blockstack-v0.4.1.app.zip"
     const releasesLink = "https://github.com/blockstack/blockstack-portal/releases"
 
     return (
@@ -88,6 +88,3 @@ class DownloadsPage extends Component {
 }
 
 export default DownloadsPage
-
-
-
