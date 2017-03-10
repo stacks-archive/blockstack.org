@@ -133,7 +133,7 @@ class IntroPage extends Component {
               To get started building apps on Blockstack,
               read the developer documentation,
               setup a Blockstack Core node,
-              and preview the Blockstack Browser (in an experimantal alpha).
+              and preview the Blockstack Browser (in an experimental alpha).
             </p>" />
           <section>
             <div className="bs-docs-featurette col-centered m-b-2">
