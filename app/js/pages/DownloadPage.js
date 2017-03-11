@@ -23,7 +23,7 @@ class DownloadsPage extends Component {
     const releasesLink = "https://github.com/blockstack/blockstack-portal/releases"
 
     return (
-      <DocumentTitle title="Blockstack newsletter sign-up">
+      <DocumentTitle title="Download Blockstack">
         <div>
           <div className="navbar-fixed-top bg-primary">
             <Header />

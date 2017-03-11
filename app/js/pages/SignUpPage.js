@@ -26,10 +26,10 @@ class SignUpPage extends Component {
   }
 
   render() {
-    const subscribeURL = "//blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=0e5478ae86"
+    const subscribeURL = "https://blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=0e5478ae86"
 
     return (
-      <DocumentTitle title="Blockstack newsletter sign-up">
+      <DocumentTitle title="Join Blockstack">
         <div>
           <div className="navbar-fixed-top bg-primary">
             <Header />
