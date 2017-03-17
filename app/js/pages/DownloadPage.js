@@ -88,6 +88,3 @@ class DownloadsPage extends Component {
 }
 
 export default DownloadsPage
-
-
-
