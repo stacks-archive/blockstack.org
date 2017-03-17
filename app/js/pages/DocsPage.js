@@ -97,6 +97,7 @@ class DocsPage extends Component {
 
   render() {
     const sections = this.state.sections
+    console.log(sections);
     return (
       <DocumentTitle title="Blockstack - Docs">
         <div>
