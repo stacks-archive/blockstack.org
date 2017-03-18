@@ -56,7 +56,7 @@ class FAQpage extends Component {
 
   render () {
     const { questions } = this.state
-    console.log(questions)
+
     return(
       <DocumentTitle title="Blockstack - FAQ">
         <div>
