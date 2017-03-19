@@ -31,7 +31,7 @@ class ContentSection extends Component {
 }
 
 class IntroPage extends Component {
-  
+
   render() {
 
     return (
@@ -147,7 +147,7 @@ class IntroPage extends Component {
                       imageSrc="/images/article-photos/bookshelves.jpg"
                       cardsPerRow={3} />
                     <CardLink
-                      href='https://github.com/blockstack/blockstack-cli'
+                      href='https://github.com/blockstack/blockstack-core'
                       title='Blockstack Core'
                       body="A server you can run that becomes a part of the Blockstack P2P network and maintains the DNS, PKI and identity system."
                       imageSrc="/images/article-photos/passport.jpg"
@@ -163,7 +163,7 @@ class IntroPage extends Component {
                   </div>
                 </div>
               </div>
-            </div>  
+            </div>
           </section>
           <ContentSection className="m-b-50 m-t-50"
             markup="<p>
