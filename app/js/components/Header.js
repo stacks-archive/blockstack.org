@@ -49,11 +49,6 @@ class Header extends Component {
                 Videos
               </Link>
             </li>
-            <li className="nav-item">
-              <Link to="/faqs" className="nav-link">
-                FAQs
-              </Link>
-            </li>
             <li className="nav-item pull-xs-right hidden-sm-down">
               <Link to="https://github.com/blockstack" className="nav-link" target="_blank">
                 <i className="fa fa-github"></i>
