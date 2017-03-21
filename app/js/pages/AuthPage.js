@@ -4,7 +4,10 @@ import { Component }   from 'react'
 import { Link }        from 'react-router'
 import DocumentTitle   from 'react-document-title'
 import { decodeToken } from 'jsontokens'
-import { makeAuthResponse, makeECPrivateKey, Person } from 'blockstack'
+import {
+  makeAuthResponse, makeECPrivateKey, Person,
+  getAuthRequestFromURL, redirectUserToApp, fetchAppManifest
+} from 'blockstack'
 import queryString from 'query-string'
 
 import Header          from '../components/Header'
@@ -29,29 +32,32 @@ class AuthPage extends Component {
   }
 
   getAuthRequest() {
-    const queryDict = queryString.parse(location.search)
-    const BLOCKSTACK_HANDLER = "web+blockstack"
-
-    if (queryDict.authRequest) {
-      const authRequest = queryDict.authRequest.split(BLOCKSTACK_HANDLER + ":").join("")
-      const requestPayload = decodeToken(authRequest).payload
-      const appManifest = requestPayload.appManifest
-      const appURI = appManifest.start_url
-
+    const authRequest = getAuthRequestFromURL()
+    fetchAppManifest(authRequest).then(appManifest => {
       this.setState({
         authRequest: authRequest,
-        appURI: appURI
+        appManifest: appManifest
       })
-    } else {
-      // Do nothing      
-    }
+    }).catch((e) => {
+      console.log(e.stack)
+    })
   }
 
   signIn() {
     const privateKey = makeECPrivateKey()
-    const profile = new Person().profile()
+    const profile = {
+      '@type': 'Person',
+      'name': 'Anonymous',
+      'image': [
+        {
+          '@type': 'ImageObject',
+          'name': 'avatar',
+          'contentUrl': 'https://s3.amazonaws.com/onename/avatar-placeholder.png'
+        }
+      ]
+    }
     const authResponse = makeAuthResponse(privateKey, profile)
-    window.location = this.state.appURI + '?authResponse=' + authResponse
+    redirectUserToApp(this.state.authRequest, authResponse)
   }
 
   render() {
@@ -77,6 +83,15 @@ class AuthPage extends Component {
                       Download Blockstack
                     </Link>
                   </p>
+                  <h4>
+                    - or -
+                  </h4>
+                  <p>
+                    <Link className="btn btn-outline-primary"
+                          onClick={this.signIn}>
+                      Quick Sign In
+                    </Link>
+                  </p>
                   
                   <p><i>
                     Note: If you already have Blockstack,
@@ -97,45 +112,3 @@ class AuthPage extends Component {
 }
 
 export default AuthPage
-
-/*
-<h4>
-  - or -
-</h4>
-<p>
-  <Link className="btn btn-outline-primary" disabled>
-    Quick Sign In
-  </Link>
-</p>
-
-
-
-<p>
-  <input className="form-control" value={this.state.portalUrl}
-    onChange={this.onInputChange} />
-</p>
-
-<p>
-  2. Click below to forward the auth request to your Blockstack App:
-</p>
-
-<p>
-  <a href={`${this.state.portalUrl}/auth?authRequest=${this.state.authRequest}`}
-    className="btn btn-outline-primary">
-    Go to Blockstack App
-  </a>
-</p>
-
-
-:
-<div>
-  <p>
-    You were sent here with an invalid request.
-    To get started with Blockstack, download the app.
-  </p>
-  <Link to="/download" className="btn btn-outline-primary">
-    Downloads
-  </Link>
-</div>
-}
-*/
