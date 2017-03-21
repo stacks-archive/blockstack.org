@@ -2,6 +2,7 @@
 
 import {Component}  from 'react'
 import {Link} from 'react-router'
+import MobileNav from './MobileNav'
 
 class Header extends Component {
 
@@ -12,14 +13,17 @@ class Header extends Component {
   render() {
     return (
       <header className="container nav-header">
-        <nav className="navbar">          
+        <nav className="navbar">
           <Link className="navbar-brand brand-bug" to="/">
             <img src="/images/logos/blockstack-bug-rev.svg" />
           </Link>
           <Link className="navbar-brand" to="/">
             <img src="/images/logos/blockstack-logo-landscape-rev.svg" />
           </Link>
-          <ul className="nav navbar-nav">
+          <button type="button" className="hamburger pull-xs-right collapsed" data-toggle="collapse" data-target="#mobile-nav" aria-controls="dropdown" aria-expanded="false">
+            <i className="fa fa-bars"></i>
+          </button>
+          <ul className="nav navbar-nav desktop-nav">
             <li className="nav-item">
               <Link to="/intro" className="nav-link">
                 Intro
@@ -45,6 +49,11 @@ class Header extends Component {
                 Videos
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to="/faqs" className="nav-link">
+                FAQs
+              </Link>
+            </li>
             <li className="nav-item pull-xs-right hidden-sm-down">
               <Link to="https://github.com/blockstack" className="nav-link" target="_blank">
                 <i className="fa fa-github"></i>
@@ -53,6 +62,7 @@ class Header extends Component {
             </li>
           </ul>
         </nav>
+        <MobileNav />
       </header>
     )
   }

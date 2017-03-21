@@ -131,11 +131,14 @@ h1.hero-head{font-family:'Source Code Pro',monospace;margin-bottom:1.5rem;font-s
 .navbar-brand img{width:164px;position:fixed;bottom:13%;z-index:2000;margin:0 auto;left:0;right:0;}
 .brand-bug{margin-right:1rem;}
 .brand-bug img{width:30px;position:relative;}
+.hamburger{display:none;}
+.hamburger:focus{outline:none;}
 div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-header > nav.navbar > a.navbar-brand{display:none;}
 div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-header > nav.navbar > a.navbar-brand.brand-bug{display:block;}
 a.nav-link{color:#fff;font-size:0.8125rem;font-weight:300;margin-top:0.0625rem;}
 a.nav-link:hover,a.nav-link:focus{color:#fff;}
 .nav-item:first-child{margin-left:.625rem;}
+.nav{font-family:'Source Code Pro',monospace;}
 
 
 /* Buttons */
@@ -367,7 +370,7 @@ footer > li{list-style:none;}
   .card-deck-wrapper{margin-bottom:35px;}
   .paper-section{padding-top:65px;padding-bottom:65px;}
   .sidebar{position:fixed;top:56px;bottom:0;left:0;z-index:1000;display:block;padding:0px 20px 20px 20px;overflow-x:hidden;overflow-y:auto; /* Scrollable contents if viewport is shorter than content. */background-color:#f5f5f5;border-right:1px solid #eee;}
-  .bitcoin-protocols-main{padding-right:40px;padding-left:40px;}  
+  .bitcoin-protocols-main{padding-right:40px;padding-left:40px;}
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -426,7 +429,15 @@ footer > li{list-style:none;}
 @media (min-width:1200px){
 }
 
-/* x-Small devices (hide last child in navbar) */
-@media (max-width:348px){
-  li.nav-item:nth-last-child(2){display:none;}
+/* x-Small devices dropdown-menu */
+@media (max-width:450px){
+  .desktop-nav{display:none;}
+  .hamburger{display:inline;background-color:transparent;border:none;height:100%;line-height:35px;font-size:20px;}
+  .nav-item:first-child{margin-left:1.2rem;}
+  .nav-item{margin-left:1.325rem;}
+  .nav{text-align:left;font-size:20px;}
+}
+
+@media (min-width:450px) {
+  .mobile-nav > ul{display:none;}
 }
