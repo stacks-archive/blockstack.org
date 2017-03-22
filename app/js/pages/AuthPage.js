@@ -9,8 +9,6 @@ import {
   getAuthRequestFromURL, redirectUserToApp, fetchAppManifest,
   publicKeyToAddress, makeDIDFromAddress, makeUUID4, nextMonth
 } from 'blockstack'
-import queryString from 'query-string'
-import { ECPair, address as baddress, crypto as bcrypto } from 'bitcoinjs-lib'
 
 import Header          from '../components/Header'
 import Footer          from '../components/Footer'
@@ -38,10 +36,8 @@ class AuthPage extends Component {
     this.setState({
       authRequest: authRequest
     })
-
     /*
     fetchAppManifest(authRequest).then(appManifest => {
-
     }).catch((e) => {
       console.log(e.stack)
     })*/
@@ -60,21 +56,10 @@ class AuthPage extends Component {
         }
       ]
     }
-    const publicKey = SECP256K1Client.derivePublicKey(privateKey)
-    const publicKeyBuffer = new Buffer(publicKey, 'hex')
-    const address = baddress.toBase58Check(bcrypto.hash160(publicKeyBuffer), 0x00)
-    const payload = {
-      jti: makeUUID4(),
-      iat: Math.floor(new Date().getTime()/1000), // JWT times are in seconds
-      exp: Math.floor(nextMonth().getTime()/1000), // JWT times are in seconds
-      iss: makeDIDFromAddress(address),
-      public_keys: [publicKey],
-      profile: profile,
-      username: null
+    const authResponse = makeAuthResponse(privateKey, profile)
+    if (this.state.authRequest) {
+      redirectUserToApp(this.state.authRequest, authResponse)
     }
-    const tokenSigner = new TokenSigner('ES256k', privateKey)
-    const authResponse = tokenSigner.sign(payload)
-    redirectUserToApp(this.state.authRequest, authResponse)
   }
 
   render() {
@@ -100,16 +85,19 @@ class AuthPage extends Component {
                       Download Blockstack
                     </Link>
                   </p>
-                  <h4>
-                    - or -
-                  </h4>
-                  <p>
-                    <Link className="btn btn-outline-primary"
-                          onClick={this.signIn}>
-                      Quick Sign In
-                    </Link>
-                  </p>
-                  
+                  {this.state.authRequest ?
+                    <div>
+                      <h4>
+                        - or -
+                      </h4>
+                      <p>
+                        <Link className="btn btn-outline-primary"
+                              onClick={this.signIn}>
+                          Quick Sign In
+                        </Link>
+                      </p>
+                    </div>
+                  : null }
                   <p><i>
                     Note: If you already have Blockstack,
                     go to your settings page in Blockstack and

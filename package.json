@@ -59,7 +59,7 @@
     "yargs": "^3.27.0"
   },
   "dependencies": {
-    "blockstack": "^0.2.18",
+    "blockstack": "^0.2.20",
     "bootstrap": "git+https://github.com/blockstack/blockstack-bootstrap.git",
     "font-awesome": "^4.7.0",
     "highlight.js": "git+ssh://git@github.com/isagalaev/highlight.js.git",
