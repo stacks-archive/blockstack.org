@@ -3,12 +3,14 @@
 import { Component }   from 'react'
 import { Link }        from 'react-router'
 import DocumentTitle   from 'react-document-title'
-import { decodeToken } from 'jsontokens'
+import { decodeToken, SECP256K1Client, TokenSigner } from 'jsontokens'
 import {
   makeAuthResponse, makeECPrivateKey, Person,
-  getAuthRequestFromURL, redirectUserToApp, fetchAppManifest
+  getAuthRequestFromURL, redirectUserToApp, fetchAppManifest,
+  publicKeyToAddress, makeDIDFromAddress, makeUUID4, nextMonth
 } from 'blockstack'
 import queryString from 'query-string'
+import { ECPair, address as baddress, crypto as bcrypto } from 'bitcoinjs-lib'
 
 import Header          from '../components/Header'
 import Footer          from '../components/Footer'
@@ -28,19 +30,21 @@ class AuthPage extends Component {
   }
 
   componentWillMount() {
-    this.getAuthRequest()    
+    this.getAuthRequest()
   }
 
   getAuthRequest() {
     const authRequest = getAuthRequestFromURL()
+    this.setState({
+      authRequest: authRequest
+    })
+
+    /*
     fetchAppManifest(authRequest).then(appManifest => {
-      this.setState({
-        authRequest: authRequest,
-        appManifest: appManifest
-      })
+
     }).catch((e) => {
       console.log(e.stack)
-    })
+    })*/
   }
 
   signIn() {
@@ -56,7 +60,20 @@ class AuthPage extends Component {
         }
       ]
     }
-    const authResponse = makeAuthResponse(privateKey, profile)
+    const publicKey = SECP256K1Client.derivePublicKey(privateKey)
+    const publicKeyBuffer = new Buffer(publicKey, 'hex')
+    const address = baddress.toBase58Check(bcrypto.hash160(publicKeyBuffer), 0x00)
+    const payload = {
+      jti: makeUUID4(),
+      iat: Math.floor(new Date().getTime()/1000), // JWT times are in seconds
+      exp: Math.floor(nextMonth().getTime()/1000), // JWT times are in seconds
+      iss: makeDIDFromAddress(address),
+      public_keys: [publicKey],
+      profile: profile,
+      username: null
+    }
+    const tokenSigner = new TokenSigner('ES256k', privateKey)
+    const authResponse = tokenSigner.sign(payload)
     redirectUserToApp(this.state.authRequest, authResponse)
   }
 
@@ -95,7 +112,7 @@ class AuthPage extends Component {
                   
                   <p><i>
                     Note: If you already have Blockstack,
-                    go to your settings page in the app and
+                    go to your settings page in Blockstack and
                     enable the auth protocol handler,
                     then go to the app and try signing in again.
                   </i></p>
