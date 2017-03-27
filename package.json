@@ -59,11 +59,12 @@
     "yargs": "^3.27.0"
   },
   "dependencies": {
-    "blockstack": "^0.2.20",
+    "blockstack": "^0.2.22",
     "bootstrap": "git+https://github.com/blockstack/blockstack-bootstrap.git",
     "font-awesome": "^4.7.0",
     "highlight.js": "git+ssh://git@github.com/isagalaev/highlight.js.git",
     "is-retina": "^1.0.3",
+    "jsontokens": "^0.7.6",
     "marked": "^0.3.6",
     "query-string": "^4.3.2",
     "react": "^15.4.0",
