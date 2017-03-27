@@ -430,7 +430,7 @@ footer > li{list-style:none;}
 }
 
 /* x-Small devices dropdown-menu */
-@media (max-width:450px){
+@media (max-width:575px){
   .desktop-nav{display:none;}
   .hamburger{display:inline;background-color:transparent;border:none;height:100%;line-height:35px;font-size:20px;}
   .nav-item:first-child{margin-left:1.2rem;}
@@ -438,6 +438,6 @@ footer > li{list-style:none;}
   .nav{text-align:left;font-size:20px;}
 }
 
-@media (min-width:450px) {
+@media (min-width:576px) {
   .mobile-nav > ul{display:none;}
 }
