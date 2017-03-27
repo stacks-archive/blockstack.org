@@ -431,6 +431,6 @@ footer > li{list-style:none;}
   li.nav-item:nth-last-child(2){display:none;}
 }
 
-@media (max-width:450px){
+@media (max-width:575px){
   section{word-break:break-word;}
 }
