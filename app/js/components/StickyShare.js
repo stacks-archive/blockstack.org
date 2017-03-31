@@ -6,10 +6,15 @@ import {
 } from 'react-share';
 
 const { FacebookShareButton, TwitterShareButton } = ShareButtons;
+const FacebookIcon = generateShareIcon('facebook');
+const TwitterIcon = generateShareIcon('twitter');
 
 class StickyShare extends Component {
   static propTypes: {
+    description: PropTypes.string,
+    imgUrl: PropTypes.string.isRequired,
     shareUrl: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
   }
 
   constructor(props) {
@@ -18,16 +23,33 @@ class StickyShare extends Component {
 
   render() {
     const {
+      description,
+      imgUrl,
       shareUrl,
+      title,
     } = this.props;
 
     return (
       <div className="sticky-share">
-        <FacebookShareButton url={shareUrl}>
-
+        <FacebookShareButton
+          url={shareUrl}
+          picture={imgUrl}
+          title={title}
+          description={description}
+        >
+          <FacebookIcon
+            size="32"
+            round
+          />
         </FacebookShareButton>
-        <TwitterShareButton url={shareUrl}>
-
+        <TwitterShareButton
+          url={shareUrl}
+          title={title}
+        >
+          <TwitterIcon
+            size="32"
+            round
+          />
         </TwitterShareButton>
       </div>
     );
