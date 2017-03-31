@@ -38,16 +38,21 @@ class StickyShare extends Component {
           description={description}
         >
           <FacebookIcon
-            size="32"
+            size="30"
+            iconBgStyle={{fill: 'transparent'}}
+            logoFillColor="#fff"
             round
           />
         </FacebookShareButton>
+        <br/>
         <TwitterShareButton
           url={shareUrl}
           title={title}
         >
           <TwitterIcon
-            size="32"
+            size="30"
+            iconBgStyle={{fill: 'transparent'}}
+            logoFillColor="#fff"
             round
           />
         </TwitterShareButton>
