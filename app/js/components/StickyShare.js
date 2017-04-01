@@ -38,9 +38,9 @@ class StickyShare extends Component {
           description={description}
         >
           <FacebookIcon
-            size="50"
+            size="45"
             iconBgStyle={{fill: 'transparent'}}
-            logoFillColor="#270F34"
+            logoFillColor="#53206f"
             round
           />
         </FacebookShareButton>
@@ -50,9 +50,9 @@ class StickyShare extends Component {
           title={title}
         >
           <TwitterIcon
-            size="50"
+            size="45"
             iconBgStyle={{fill: 'transparent'}}
-            logoFillColor="#270F34"
+            logoFillColor="#53206f"
             round
           />
         </TwitterShareButton>

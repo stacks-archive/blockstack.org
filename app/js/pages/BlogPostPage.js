@@ -134,14 +134,12 @@ class BlogPostPage extends Component {
                 onLoad={this.onImageLoad}
                 retinaSupport={false} />
             </div>
-            <aside>
-              <StickyShare
-                description={currentPage.description}
-                imgUrl={headerImageSrc}
-                shareUrl={currentPage.url}
-                title={currentPage.title}
-              />
-            </aside>
+            <StickyShare
+              description={currentPage.description}
+              imgUrl={headerImageSrc}
+              shareUrl={currentPage.url}
+              title={currentPage.title}
+            />
             <section className="m-b-50 m-t-100">
               <div className="container p-b-5 col-centered blog-post">
                 <div className="container">
