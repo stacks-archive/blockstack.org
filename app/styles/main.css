@@ -200,11 +200,8 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .no-padding{padding-left:0;padding-right:0;}
 .talk-preview-image{width:100%;}
 .simple-featurette{display:none;}
-.sticky-share{display:none!important;flex-direction:column;justify-content:center;height:200px;position:fixed;top:45%;left:25px;background-color:transparent;}
+.sticky-share{display:none!important;flex-direction:column;justify-content:center;height:150px;position:fixed;top:47%;left:15px;background-color:transparent;}
 .sticky-share > div:hover{cursor:pointer;}
-.hn-button{background-color:#270F34;font-family:Monaco,sans-serif;height:31px;width:31px;text-align:center;line-height:33px;border-radius:100px;}
-.hn-button > a{color:white;font-size:16px;}
-.hn-button > a:hover{text-decoration:none;cursor:pointer;}
 
 /* Cards */
 .special-card{}
