@@ -1,9 +1,10 @@
 import { Component, PropTypes } from 'react'
 import {
   ShareButtons,
-  ShareCounts,
   generateShareIcon
-} from 'react-share';
+} from 'react-share'
+
+import hackerNewsLoad from '../utils/hackerNewsButton'
 
 const { FacebookShareButton, TwitterShareButton } = ShareButtons;
 const FacebookIcon = generateShareIcon('facebook');
@@ -31,6 +32,7 @@ class StickyShare extends Component {
 
     return (
       <div className="sticky-share">
+        {/*hackerNewsLoad()*/}
         <FacebookShareButton
           url={shareUrl}
           picture={imgUrl}
@@ -38,9 +40,9 @@ class StickyShare extends Component {
           description={description}
         >
           <FacebookIcon
-            size="45"
-            iconBgStyle={{fill: 'transparent'}}
-            logoFillColor="#53206f"
+            size="32"
+            iconBgStyle={{fill: '#270F34'}}
+            logoFillColor="white"
             round
           />
         </FacebookShareButton>
@@ -50,12 +52,23 @@ class StickyShare extends Component {
           title={title}
         >
           <TwitterIcon
-            size="45"
-            iconBgStyle={{fill: 'transparent'}}
-            logoFillColor="#53206f"
+            size="32"
+            iconBgStyle={{fill: '#270F34'}}
+            logoFillColor="white"
             round
           />
         </TwitterShareButton>
+        <br/>
+        <div>
+          <div className="hn-button">
+            <a
+              href={`https://news.ycombinator.com/submitlink?u=${shareUrl}&t=${title}`}
+              data-count="vertical"
+            >
+              Y
+            </a>
+          </div>
+        </div>
       </div>
     );
   }
