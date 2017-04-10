@@ -380,10 +380,6 @@ section{word-break:break-word;}
   .paper-section{padding-top:65px;padding-bottom:65px;}
   .sidebar{position:fixed;top:56px;bottom:0;left:0;z-index:1000;display:block;padding:0px 20px 20px 20px;overflow-x:hidden;overflow-y:auto; /* Scrollable contents if viewport is shorter than content. */background-color:#f5f5f5;border-right:1px solid #eee;}
   .bitcoin-protocols-main{padding-right:40px;padding-left:40px;}
-<<<<<<< HEAD
-=======
-  section{word-break:break-word;}
->>>>>>> 3286416ab0e0fcafb2f921b5d911f2da6c9a544e
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -442,7 +438,7 @@ section{word-break:break-word;}
 @media (min-width:1200px){
 }
 
-<<<<<<< HEAD
+
 @media (max-width:575px){
   .sticky-share{display:flex!important;flex-direction:row;justify-content:center;align-items:center;width:100%;height:50px;bottom:0!important;left:0;top:initial;z-index:20;background-color:white;border-top:1px solid #f0f0f0;}
   .sticky-share div{margin:10px 10px 10px 10px;}
@@ -451,7 +447,7 @@ section{word-break:break-word;}
 /* x-Small devices (hide last child in navbar) */
 @media (max-width:348px){
   li.nav-item:nth-last-child(2){display:none;}
-=======
+
 /* x-Small devices dropdown-menu */
 @media (max-width:575px){
   .desktop-nav{display:none;}
@@ -463,5 +459,4 @@ section{word-break:break-word;}
 
 @media (min-width:576px) {
   .mobile-nav > ul{display:none;}
->>>>>>> 3286416ab0e0fcafb2f921b5d911f2da6c9a544e
 }
