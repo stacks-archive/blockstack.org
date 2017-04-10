@@ -2,6 +2,7 @@
 
 import {Component}  from 'react'
 import {Link} from 'react-router'
+import MobileNav from './MobileNav'
 
 class Header extends Component {
 
@@ -19,7 +20,10 @@ class Header extends Component {
           <Link className="navbar-brand" to="/">
             <img src="/images/logos/blockstack-logo-landscape-rev.svg" />
           </Link>
-          <ul className="nav navbar-nav">
+          <button type="button" className="hamburger pull-xs-right collapsed" data-toggle="collapse" data-target="#mobile-nav" aria-controls="dropdown" aria-expanded="false">
+            <i className="fa fa-bars"></i>
+          </button>
+          <ul className="nav navbar-nav desktop-nav">
             <li className="nav-item">
               <Link to="/intro" className="nav-link">
                 Intro
@@ -58,6 +62,7 @@ class Header extends Component {
             </li>
           </ul>
         </nav>
+        <MobileNav />
       </header>
     )
   }
