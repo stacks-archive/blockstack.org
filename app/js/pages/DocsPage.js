@@ -37,7 +37,7 @@ class DocsPage extends Component {
   componentDidMount() {
     this.setPage()
   }
-  
+
   componentDidUpdate() {
     const codeBlocks = document.querySelectorAll('pre code')
     Array.prototype.forEach.call(codeBlocks, hljs.highlightBlock)
@@ -97,6 +97,7 @@ class DocsPage extends Component {
 
   render() {
     const sections = this.state.sections
+
     return (
       <DocumentTitle title="Blockstack - Docs">
         <div>

@@ -12,7 +12,7 @@ class Header extends Component {
   render() {
     return (
       <header className="container nav-header">
-        <nav className="navbar">          
+        <nav className="navbar">
           <Link className="navbar-brand brand-bug" to="/">
             <img src="/images/logos/blockstack-bug-rev.svg" />
           </Link>
@@ -43,6 +43,11 @@ class Header extends Component {
             <li className="nav-item">
               <Link to="/videos" className="nav-link">
                 Videos
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/faqs" className="nav-link">
+                FAQs
               </Link>
             </li>
             <li className="nav-item pull-xs-right hidden-sm-down">
