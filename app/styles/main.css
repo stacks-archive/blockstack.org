@@ -277,6 +277,7 @@ footer > li{list-style:none;}
 .midfoot li{display:inline-block;list-style:none;}
 .midfoot,.base-push-left{padding-left:30px;}
 .foot-logo{width:115px;}
+section{word-break:break-word;}
 
 /* Media queries */
 
@@ -368,8 +369,6 @@ footer > li{list-style:none;}
   .paper-section{padding-top:65px;padding-bottom:65px;}
   .sidebar{position:fixed;top:56px;bottom:0;left:0;z-index:1000;display:block;padding:0px 20px 20px 20px;overflow-x:hidden;overflow-y:auto; /* Scrollable contents if viewport is shorter than content. */background-color:#f5f5f5;border-right:1px solid #eee;}
   .bitcoin-protocols-main{padding-right:40px;padding-left:40px;}
-  section{word-break:break-word;}
-
 }
 
 /* Medium devices (desktops, 992px and up) */
