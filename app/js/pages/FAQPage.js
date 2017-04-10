@@ -66,7 +66,11 @@ class FAQpage extends Component {
           <section className="container-fluid spacing-container">
             <div className="container-fluid col-centered">
               <div className="container m-b-1">
-                <h1>Frequently Asked Questions</h1>
+                <div className="row m-t-30">
+                  <div className="col-md-12">
+                    <h1>Frequently Asked Questions</h1>
+                  </div>
+                </div>
                 { questions.map((faq, index) => {
                   return (
                     <div key={ index } className="row m-b-1">
