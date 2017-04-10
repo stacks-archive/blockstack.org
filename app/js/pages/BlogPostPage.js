@@ -15,6 +15,7 @@ import {getPostFromRSS} from '../utils/rssUtils'
 import {getSlugFromRSS} from '../utils/rssUtils'
 import docs             from '../../docs.json'
 import {blogAuthors}    from '../config'
+import StickyShare      from '../components/StickyShare'
 
 class BlogPostPage extends Component {
 
@@ -133,6 +134,12 @@ class BlogPostPage extends Component {
                 onLoad={this.onImageLoad}
                 retinaSupport={false} />
             </div>
+            <StickyShare
+              description={currentPage.description}
+              imgUrl={headerImageSrc}
+              shareUrl={currentPage.url}
+              title={currentPage.title}
+            />
             <section className="m-b-50 m-t-100">
               <div className="container p-b-5 col-centered blog-post">
                 <div className="container">
