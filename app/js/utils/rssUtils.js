@@ -22,7 +22,7 @@ export function getPostFromRSS(rssPost) {
   const preview = post.description[0]
   const description = createTextVersion(post.description[0])
   const blockstackID = post["dc:creator"][0]
-  
+
   // Handle dates
   const date = new Date(Date.parse(post.pubDate))
   const datetimeString = date.toISOString()
@@ -33,7 +33,8 @@ export function getPostFromRSS(rssPost) {
   const image = markupFull.split('src="')[1].split('" alt="')[0]
   let markupCleaned = null
   if (markupFull) {
-    markupCleaned = markupFull.replace(/<img[^>]*>/,"")
+    markupCleaned = markupFull.replace(/<img[^>]*>/,'')
+    markupCleaned = markupCleaned.replace(/<img/g, '<img class="img-fluid"')
   }
 
   const data = {
