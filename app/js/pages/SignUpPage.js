@@ -26,10 +26,10 @@ class SignUpPage extends Component {
   }
 
   render() {
-    const subscribeURL = "https://blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=0e5478ae86"
+    const subscribeURL = "//blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=0e5478ae86"
 
     return (
-      <DocumentTitle title="Join Blockstack">
+      <DocumentTitle title="Blockstack newsletter sign-up">
         <div>
           <div className="navbar-fixed-top bg-primary">
             <Header />
@@ -37,7 +37,7 @@ class SignUpPage extends Component {
           <section className="container-fluid spacing-container">
             <div className="container col-centered">
               <div className="container m-b-5">
-                <section className="sec-light" style={{ minHeight: '800px' }}>
+                <section className="sec-light">
 
                   <div className="row">
                     <div className="col-md-6 offset-md-3">

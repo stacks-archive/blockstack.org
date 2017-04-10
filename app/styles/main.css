@@ -368,7 +368,7 @@ section{word-break:break-word;}
   .card-deck-wrapper{margin-bottom:35px;}
   .paper-section{padding-top:65px;padding-bottom:65px;}
   .sidebar{position:fixed;top:56px;bottom:0;left:0;z-index:1000;display:block;padding:0px 20px 20px 20px;overflow-x:hidden;overflow-y:auto; /* Scrollable contents if viewport is shorter than content. */background-color:#f5f5f5;border-right:1px solid #eee;}
-  .bitcoin-protocols-main{padding-right:40px;padding-left:40px;}
+  .bitcoin-protocols-main{padding-right:40px;padding-left:40px;} 
 }
 
 /* Medium devices (desktops, 992px and up) */

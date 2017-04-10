@@ -23,21 +23,21 @@ class DownloadsPage extends Component {
     const releasesLink = "https://github.com/blockstack/blockstack-portal/releases"
 
     return (
-      <DocumentTitle title="Download Blockstack">
+      <DocumentTitle title="Blockstack newsletter sign-up">
         <div>
           <div className="navbar-fixed-top bg-primary">
             <Header />
           </div>
           <section className="container-fluid spacing-container">
             <div className="container col-centered">
-              <div className="container m-b-5" style={{ minHeight: '800px' }}>
+              <div className="container m-b-5">
                 <div>
                   <h1>
                     Get Blockstack
                   </h1>
                   <p>
                     <a href={releasesLink} role="button">
-                      View the Developer Releases
+                      View the Releases on GitHub
                    </a>
                   </p>
                 </div>
@@ -47,9 +47,9 @@ class DownloadsPage extends Component {
                        Mac
                     </h4>
                     <p>
-                      <a href="#" role="button"
-                        className="btn btn-outline-primary btn-block disabled">
-                        Coming Soon
+                      <a href={macDownloadLink} role="button"
+                        className="btn btn-outline-primary btn-block">
+                        Download
                       </a>
                     </p>
                   </div>
