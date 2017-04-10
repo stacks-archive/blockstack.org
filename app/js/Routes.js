@@ -24,6 +24,7 @@ import JobsPage                    from './pages/JobsPage'
 import TalkPage                    from './pages/TalkPage'
 import SignUpPage                  from './pages/SignUpPage'
 import DownloadPage                from './pages/DownloadPage'
+import FAQPage                     from './pages/FAQPage'
 
 import docs                        from '../docs.json'
 
@@ -48,7 +49,7 @@ export default (
       <Route path="/videos/:slug" component={TalkPage} />
       <Route path="/join" component={SignUpPage} />
       <Route path="/download" component={DownloadPage} />
-
+      <Route path="/faqs" component={FAQPage} />
       <Route path="/overview/:docSection" component={ArticlePage} />
       <Route path="/blog/:docSection" component={BlogPostPage} />
       <Route path="/posts/:docSection" component={ArticlePage} />
