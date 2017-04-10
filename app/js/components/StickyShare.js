@@ -30,6 +30,7 @@ class StickyShare extends Component {
 
     return (
       <div className="sticky-share">
+        {/*hackerNewsLoad()*/}
         <FacebookShareButton
           url={shareUrl}
           picture={imgUrl}
