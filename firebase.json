@@ -68,6 +68,10 @@
         "destination": "/docs-posts-namespaces.html"
       },
       {
+        "source": "/blog/hello-blockstack-tutorial",
+        "destination": "/blog-hello-blockstack-tutorial.html"
+      },
+      {
         "source": "/blog/serverless-sign-in-with-blockstack-auth",
         "destination": "/blog-serverless-sign-in-with-blockstack-auth.html"
       },
