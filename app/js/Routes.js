@@ -25,6 +25,7 @@ import TalkPage                    from './pages/TalkPage'
 import SignUpPage                  from './pages/SignUpPage'
 import DownloadPage                from './pages/DownloadPage'
 import AuthPage                    from './pages/AuthPage'
+import TutorialsPage               from './pages/TutorialsPage'
 
 import docs                        from '../docs.json'
 
@@ -40,9 +41,8 @@ export default (
       <Route path="/papers" component={PapersPage} />
       <Route path="/videos" component={TalksPage} />
       <Route path="/summit" component={SummitPage} />
-      <Route path="/summit" component={SummitPage} />
       <Route path="/blog" component={BlogPage} />
-      <Route path="/posts" component={BlogPage} />
+      <Route path="/tutorials" component={TutorialsPage} />
       <Route path="/browser" component={BrowserPage} />
       <Route path="/intro" component={IntroPage} />
       <Route path="/jobs" component={JobsPage} />

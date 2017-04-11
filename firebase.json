@@ -32,8 +32,8 @@
         "destination": "/docs-articles-light-clients.html"
       },
       {
-        "source": "/tutorials/hello-world",
-        "destination": "/docs-tutorials-hello-world.html"
+        "source": "/tutorials/hello-blockstack",
+        "destination": "/docs-tutorials-hello-blockstack.html"
       },
       {
         "source": "/posts/blockchain-identity",
@@ -104,6 +104,18 @@
         "destination": "/blog-blockstack-research-paper-published-at-usenix-atc16-conference.html"
       },
       {
+        "source": "/blog/why-blockstack-is-migrating-to-the-bitcoin-blockchain",
+        "destination": "/blog-why-blockstack-is-migrating-to-the-bitcoin-blockchain.html"
+      },
+      {
+        "source": "/blog/introducing-the-blockstack-identity-system",
+        "destination": "/blog-introducing-the-blockstack-identity-system.html"
+      },
+      {
+        "source": "/blog/initial-release-of-blockstack-core",
+        "destination": "/blog-initial-release-of-blockstack-core.html"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }
@@ -147,6 +159,11 @@
       {
         "source": "/docs/installation",
         "destination": "/docs",
+        "type": 301
+      },
+      {
+        "source": "/posts",
+        "destination": "/blog",
         "type": 301
       }
     ]

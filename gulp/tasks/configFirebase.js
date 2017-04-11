@@ -86,6 +86,10 @@ gulp.task('configFirebase', () => {
     {
       "source": "/docs/installation",
       "destination": "/docs"
+    },
+    {
+      "source": "/posts",
+      "destination": "/blog"
     }
   ]
 
