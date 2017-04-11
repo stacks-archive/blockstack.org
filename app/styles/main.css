@@ -158,13 +158,14 @@ a.nav-link:hover,a.nav-link:focus{color:#fff;}
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.5);
   background-color: #270F34;
+  -webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;
 }
 .btn-outline-primary:hover, 
 .btn-outline-primary:focus, 
 .btn-outline-primary:active {
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  background-color: #270F34;
+  color: #270F34;
+  border: 1px solid rgba(255,255,255,0.95);
+  background-color: #fff;
 }
 .btn-footer-max-width{max-width:225px;}
 
