@@ -110,7 +110,7 @@ class ArticlePage extends Component {
           title = currentPage ? currentPage.title : "Docs"
     const headerImageSrc = this.state.currentPage ? this.state.currentPage.image : null
     const pathPrefix = '/' + location.pathname.split('/')[1]
-    const githubFileUrlRoot = "https://github.com/blockstack/blockstack-site/blob/master/app/docs"
+    const githubFileUrlRoot = "https://github.com/blockstack/blockstack/blob/master"
 
     return (
       <DocumentTitle title={title}>
