@@ -142,16 +142,34 @@ a.nav-link:hover,a.nav-link:focus{color:#fff;}
 
 
 /* Buttons */
-.btn{font-family:'Source Code Pro',monospace;padding:0.375rem 2.125rem;font-size:0.8125rem;font-weight:400;line-height:1.75rem;border-radius:0;}
+.btn {
+  font-family: 'Source Code Pro', monospace;
+  padding: 0.5625rem 2.25rem;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  border-radius: 0;
+}
 .btn-sm{font-size:0.8125rem;padding:0.375rem 2.125rem;line-height:1.5rem;}
 .btn-lg{font-size:0.875rem;padding:0.6875rem 3.4375rem;line-height:1.75rem;}
 .btn-outline-secondary:hover,.btn-outline-secondary:focus,.btn-outline-secondary:active{color:#9A21C5;}
 .btn-secondary,.btn-secondary:hover,.btn-secondary:focus,.btn-secondary:active{color:#270F34;border:1px solid #fff;background-color:#fff;}
-.btn-outline-primary,.btn-outline-primary:hover,.btn-outline-primary:focus,.btn-outline-primary:active{color:#fff;border:1px solid rgba(255,255,255,0.15);background-color:#270F34;}
+.btn-outline-primary {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: #270F34;
+}
+.btn-outline-primary:hover, 
+.btn-outline-primary:focus, 
+.btn-outline-primary:active {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: #270F34;
+}
 .btn-footer-max-width{max-width:225px;}
 
 /* Other */
-.body-hero{background-image:url('/images/visuals/atlas-hero.svg');background-repeat:no-repeat;background-position-x:center;background-position-y:center;background-size:cover;background-attachment:fixed;}
+.body-hero{/*background-image:url('/images/visuals/atlas-hero.svg');*/background-repeat:no-repeat;background-position-x:center;background-position-y:center;background-size:cover;background-attachment:fixed;}
 body,html,#app,.app-landing{height:100%;}
 .app-common{height:auto;}
 .site-wrapper{display:flex;background-color:#270F34;flex-direction:column;height:100%;}
@@ -311,7 +329,9 @@ section{word-break:break-word;}
   .hero-btn{padding-left:0;}
 
   /* Buttons */
-  .btn-secondary,.btn-outline-primary{font-size:0.875rem;padding:0.6875rem 3.4375rem;line-height:1.75rem;margin-right:1.25rem;}
+.btn-secondary, .btn-outline-primary {
+  margin-right: 1.25rem;
+}
   .btn-lg{font-size:0.875rem;padding:0.6875rem 3.4375rem;line-height:1.75rem;}
   .btn-block{display:inline-block;width:initial;}
 
@@ -391,7 +411,7 @@ section{word-break:break-word;}
   .bs-docs-featurette{max-width:1170px;}
 
   /* Globals */
-  h1.hero-head{font-size:2.25rem;}
+  h1.hero-head{font-size:2.25rem; width:650px;}
   h3{margin-top:45px;margin-bottom:15px;margin-bottom:20px;}
   h4{margin:20px 0;}
 
