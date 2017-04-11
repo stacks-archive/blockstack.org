@@ -32,8 +32,8 @@
         "destination": "/docs-articles-light-clients.html"
       },
       {
-        "source": "/tutorials/hello-world",
-        "destination": "/docs-tutorials-hello-world.html"
+        "source": "/tutorials/hello-blockstack",
+        "destination": "/docs-tutorials-hello-blockstack.html"
       },
       {
         "source": "/posts/blockchain-identity",
@@ -66,6 +66,10 @@
       {
         "source": "/posts/namespaces",
         "destination": "/docs-posts-namespaces.html"
+      },
+      {
+        "source": "/blog/hello-blockstack-tutorial",
+        "destination": "/blog-hello-blockstack-tutorial.html"
       },
       {
         "source": "/blog/serverless-sign-in-with-blockstack-auth",
@@ -159,6 +163,11 @@
       {
         "source": "/docs/installation",
         "destination": "/docs",
+        "type": 301
+      },
+      {
+        "source": "/posts",
+        "destination": "/blog",
         "type": 301
       }
     ]
