@@ -25,9 +25,7 @@ import TalkPage                    from './pages/TalkPage'
 import SignUpPage                  from './pages/SignUpPage'
 import DownloadPage                from './pages/DownloadPage'
 import FAQPage                     from './pages/FAQPage'
-import AuthPage                    from './pages/AuthPage'
 import TutorialsPage               from './pages/TutorialsPage'
->>>>>>> 4ba75c1b3b8020a690c5d6e592fc81cbd1ac7172
 
 import docs                        from '../docs.json'
 
