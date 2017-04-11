@@ -32,8 +32,8 @@
         "destination": "/docs-articles-light-clients.html"
       },
       {
-        "source": "/tutorials/hello-world",
-        "destination": "/docs-tutorials-hello-world.html"
+        "source": "/tutorials/hello-blockstack",
+        "destination": "/docs-tutorials-hello-blockstack.html"
       },
       {
         "source": "/posts/blockchain-identity",
@@ -68,6 +68,14 @@
         "destination": "/docs-posts-namespaces.html"
       },
       {
+        "source": "/blog/hello-blockstack-tutorial",
+        "destination": "/blog-hello-blockstack-tutorial.html"
+      },
+      {
+        "source": "/blog/serverless-sign-in-with-blockstack-auth",
+        "destination": "/blog-serverless-sign-in-with-blockstack-auth.html"
+      },
+      {
         "source": "/blog/fastsync-is-now-available-on-the-aws-marketplace",
         "destination": "/blog-fastsync-is-now-available-on-the-aws-marketplace.html"
       },
@@ -84,8 +92,8 @@
         "destination": "/blog-blockstack-core-is-available-on-the-azure-marketplace.html"
       },
       {
-        "source": "/blog/blockstack-auth-v1",
-        "destination": "/blog-blockstack-auth-v1.html"
+        "source": "/blog/blockstack-auth-developer-preview",
+        "destination": "/blog-blockstack-auth-developer-preview.html"
       },
       {
         "source": "/blog/blockstack-core-v0-14-release",
@@ -98,6 +106,18 @@
       {
         "source": "/blog/blockstack-research-paper-published-at-usenix-atc16-conference",
         "destination": "/blog-blockstack-research-paper-published-at-usenix-atc16-conference.html"
+      },
+      {
+        "source": "/blog/why-blockstack-is-migrating-to-the-bitcoin-blockchain",
+        "destination": "/blog-why-blockstack-is-migrating-to-the-bitcoin-blockchain.html"
+      },
+      {
+        "source": "/blog/introducing-the-blockstack-identity-system",
+        "destination": "/blog-introducing-the-blockstack-identity-system.html"
+      },
+      {
+        "source": "/blog/initial-release-of-blockstack-core",
+        "destination": "/blog-initial-release-of-blockstack-core.html"
       },
       {
         "source": "**",
@@ -143,6 +163,11 @@
       {
         "source": "/docs/installation",
         "destination": "/docs",
+        "type": 301
+      },
+      {
+        "source": "/posts",
+        "destination": "/blog",
         "type": 301
       }
     ]

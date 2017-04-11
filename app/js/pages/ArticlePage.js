@@ -146,7 +146,7 @@ class ArticlePage extends Component {
           </nav>
           : null }
           <section className="m-b-5 m-t-5">
-            <div className="container p-b-5 col-centered">
+            <div className="container p-b-5 col-centered blog-post">
               <div className="container">
                 <h1>{currentPage.title}</h1>
                 <div dangerouslySetInnerHTML={{ __html: currentPage.markup }}>

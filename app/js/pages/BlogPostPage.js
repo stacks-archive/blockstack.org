@@ -152,7 +152,8 @@ class BlogPostPage extends Component {
                       retinaSupport={false} />
                     : null }
                   </div>
-                  <div dangerouslySetInnerHTML={{ __html: currentPage.markup }}>
+                  <div className="post-body"
+                    dangerouslySetInnerHTML={{ __html: currentPage.markup }}>
                   </div>
                   <hr className="m-t-70 m-b-60" />
                   <section className="author">
