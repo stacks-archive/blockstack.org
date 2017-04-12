@@ -118,12 +118,14 @@ a{font-weight:500;}
 .col-centered{float:none;margin:0 auto;}
 .no-padding{padding-right:0;padding-left:0;}
 .bg-primary{background-color:#270F34!important;}
+.text-center{text-align:center;}
 
 /* Spacing */
 
 /* Typography */
 h1.hero-head{font-family:'Source Code Pro',monospace;margin-bottom:1.5rem;font-size:1.75rem;font-weight:300;text-align:center;margin-top:1rem;}
 .hero-lead{font-family:'Source Code Pro',monospace;font-size:0.8125rem;text-align:center;margin-bottom:2rem;}
+.lead-centered{font-family:'Source Code Pro',monospace;font-size:1rem;text-align:center;margin-bottom:2rem;font-weight:400;}
 
 /* Navbar */
 .navbar{font-family:'Source Code Pro',monospace;padding-top:0.4375rem;padding-bottom:0.5625rem;padding-right:0;padding-left:0;}
@@ -170,12 +172,14 @@ a.nav-link:hover,a.nav-link:focus{color:#fff;}
 .btn-footer-max-width{max-width:225px;}
 
 /* Other */
-.body-hero{/*background-image:url('/images/visuals/atlas-hero.svg');*/background-repeat:no-repeat;background-position-x:center;background-position-y:center;background-size:cover;background-attachment:fixed;}
+.body-hero{/*background-image:url('/images/visuals/atlas-hero.svg');*/background-repeat:no-repeat;background-position-x:center;background-position-y:center;background-size:cover;background-attachment:fixed;background-color:#270F34;}
 body,html,#app,.app-landing{height:100%;}
 .app-common{height:auto;}
 .site-wrapper{display:flex;background-color:#270F34;flex-direction:column;height:100%;}
-.hero{color:#fff;margin-top:18%;}
+.hero{color:#fff;margin-top:18%;padding-bottom:400px;}
 .hero-wrap{padding-top:.5rem;padding-bottom:6rem;}
+.section-odd{color:#fff;background-color:#270F34;padding-top:150px;padding-bottom:150px;margin-right:-15px;margin-left:-15px;}
+.section-even{color:#270F34;background-color:#fff;padding-top:150px;padding-bottom:150px;margin-right:-15px;margin-left:-15px;}
 .col-3-section{padding-top:50px;padding-bottom:50px;background-color:rgba(248,249,251,1);border-bottom:1px solid #E6E6E6;}
 .about-head-wrap{padding-bottom:30px;background:url(/images/visuals/blockchain-timeline.png);background-repeat:no-repeat;background-position:center top;background-color:#53206f;}
 .highlight-box{padding-top:50px;padding-bottom:50px;background-color:#831ca8;color:rgba(255,255,255,1);}
@@ -325,14 +329,13 @@ section{word-break:break-word;}
   /* Globals */
   h1.hero-head{font-size:2.25rem;text-align:left;margin-top:0;}
   .hero-lead{text-align:left;padding-left:0;padding-right:0;margin-bottom:3rem;}
+  .lead-centered{padding-left:0;padding-right:0;text-align:center;margin-bottom:3rem;}
   .col-3-section{padding-bottom:50px;}
   .hero-head.summ-head{font-size:40px;}
   .hero-btn{padding-left:0;}
 
   /* Buttons */
-.btn-secondary, .btn-outline-primary {
-  margin-right: 1.25rem;
-}
+  .btn-secondary,.btn-outline-primary{margin-right:1.25rem;}
   .btn-lg{font-size:0.875rem;padding:0.6875rem 3.4375rem;line-height:1.75rem;}
   .btn-block{display:inline-block;width:initial;}
 

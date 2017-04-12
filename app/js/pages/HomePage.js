@@ -61,7 +61,7 @@ class HomePage extends Component {
   render() {
     return (
       <DocumentTitle title="Blockstack, building the decentralized internet">
-        <div className="site-wrapper body-hero">
+        <div className="body-hero">
           <div className="col-centered block">
             <Header />
             <div className="container">
@@ -86,59 +86,32 @@ class HomePage extends Component {
                 </div>
               </section>
             </div>
-            <div className="container">
-              <section>
-                <div className="simple-featurette">
-                  <div className="col-centered">
-                    <div className="row col-centered">
-                      <Link to="https://explorer.blockstack.org/names/id"
-                            className="link-stats" target="_blank">
-                        <div className="simple-panel">
-                          <p className="lead simple-lead">
-                            Domains registered
-                          </p>
-                          <p className="stats-count">
-                            <span className="comment-hightlight">|</span>{this.state.domainCount}
-                          </p>
-                        </div>
-                      </Link>
-                      <Link to="http://chat.blockstack.org"
-                            className="link-stats" target="_blank">
-                        <div className="simple-panel">
-                          <p className="lead simple-lead">
-                            Slack members
-                          </p>
-                          <p className="stats-count">
-                            <span className="comment-hightlight">|</span>{this.state.slackUserCount}
-                          </p>
-                        </div>
-                      </Link>
-                      <Link to="http://www.meetup.com/topics/blockstack/"
-                            className="link-stats" target="_blank">
-                        <div className="simple-panel">
-                          <p className="lead simple-lead">
-                            Meetup members
-                          </p>
-                          <p className="stats-count">
-                            <span className="comment-hightlight">|</span>{this.state.meetupUserCount}
-                          </p>
-                        </div>
-                      </Link>
-                      <Link to="https://forum.blockstack.org/users?period=monthly"
-                            className="link-stats" target="_blank">
-                        <div className="simple-panel">
-                          <p className="lead simple-lead">
-                            Forum members
-                          </p>
-                          <p className="stats-count">
-                            <span className="comment-hightlight">|</span>{this.state.forumUserCount}
-                          </p>
-                        </div>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </section>
+            <div className="section-even container-fluid">
+              <div className="container">
+                <section className="">
+                  <p className="lead lead-centered col-md-10 block col-centered text-center">
+                    The decentralized internet is powered by a technological breakthrough in consensus algorithms which allows you to take back your rights to ownership, privacy, and safety and to experience the internet as it was truly meant to be.
+                  </p>
+                  <p className="lead lead-centered col-md-10 block col-centered text-center">
+                    As a developer, you can build decentralized apps without having to set up any infrastructure or worry about hosting user data. The decentralized Blockstack network handles identity, auth, storage, and replaces DNS and TLS.
+                  </p>
+                  <p className="lead lead-centered col-md-10 block col-centered text-center">
+                    Blockstack is an open source project with [insert live number of users*] users and core developers located in New York City and Hong Kong. Learn more about what Blockstack here.
+                  </p>
+                </section>
+              </div>
+            </div>
+            <div className="section-odd container-fluid">
+              <div className="container">
+                <section className="">
+                  <h1 className="hero-head">
+                    Unlock the Decentralized Internet
+                  </h1>
+                  <p className="lead lead-centered col-md-10 block col-centered text-center">
+                    Downloading Blockstack will give you access to a decentralized internet within a regular browser. Claim your name, try out the first apps, lookup names like “werner.id”, connect storage of your user-owned data, and add universally accepted currency.
+                  </p>
+                </section>
+              </div>
             </div>
           </div>
         </div>
