@@ -6,6 +6,7 @@ import DocumentTitle from 'react-document-title'
 import request       from 'request'
 
 import Header        from '../components/Header'
+import Footer        from '../components/Footer'
 
 class HomePage extends Component {
 
@@ -104,7 +105,7 @@ class HomePage extends Component {
             <div className="section-odd container-fluid">
               <div className="container">
                 <section className="">
-                  <h1 className="hero-head">
+                  <h1 className="modern text-center">
                     Unlock the Decentralized Internet
                   </h1>
                   <p className="lead lead-centered col-md-10 block col-centered text-center">
@@ -113,7 +114,44 @@ class HomePage extends Component {
                 </section>
               </div>
             </div>
+            <div className="section-even container-fluid">
+              <div className="container">
+                <section className="">
+                  <p className="lead lead-centered col-md-10 block col-centered text-center">
+                    As a developer, what you create is no longer limited by the walled gardens of third parties or the thought of having to maintain infrastructure and user security. Build apps that live on forever using Blockstack.js and publish them to the decentralized internet where they run locally on your users' servers.
+                  </p>
+                  <h1 className="modern text-center">
+                    You can build apps like these on the Blockstack network:
+                  </h1>
+                  <p className="lead lead-centered col-md-10 block col-centered text-center">
+                    Censorship resistant social network<br />
+                    Cloud democracy with secure voting<br />
+                    Encrypted peer-to-peer marketplace
+                  </p>
+                </section>
+              </div>
+            </div>
+            <div className="section-odd container-fluid">
+              <div className="container">
+                <section className="">
+                  <p className="lead lead-centered col-md-10 block col-centered text-center">
+                    [gif showing code in terminal and then logging in]
+                  </p>
+                  <p className="lead lead-centered col-md-10 block col-centered text-center">
+                  Complete the step-by-step tutorial and see how easy it is to build an app with a decentralized identity system in a few lines of code and no servers.
+                  </p>
+                  <p className="lead lead-centered col-md-10 block col-centered text-center">
+                  ["Hello Blockstack Tutorial" button]<br />
+                  (links to blockstack.org/turorials/hello-blockstack with Hello Blockstack video)
+                  </p>
+                  <p className="lead lead-centered col-md-10 block col-centered text-center">
+                  Want to learn more about building apps on blockstack? Tutorials on building serverless apps with “get” and “put” functions are coming soon, but in the meantime check out our Github repo and join the community
+                  </p>
+                </section>
+              </div>
+            </div>
           </div>
+          <Footer />
         </div>
       </DocumentTitle>
     )
