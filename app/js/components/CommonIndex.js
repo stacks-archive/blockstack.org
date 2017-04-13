@@ -10,7 +10,7 @@ const propTypes = {
   cardsPerRow: PropTypes.number.isRequired
 }
 
-class ArticleIndex extends Component {
+class CommonIndex extends Component {
 
   constructor(props) {
     super(props)
@@ -65,4 +65,4 @@ class ArticleIndex extends Component {
 }
 
 ArticleIndex.propTypes = propTypes
-export default ArticleIndex
+export default CommonIndex

@@ -151,7 +151,7 @@ a.nav-link:hover,a.nav-link:focus{color:#fff;}
 .btn-outline-secondary:hover,.btn-outline-secondary:focus,.btn-outline-secondary:active{color:#9A21C5;}
 .btn-secondary,.btn-secondary:hover,.btn-secondary:focus,.btn-secondary:active{color:#270F34;border:1px solid #fff;background-color:#fff;}
 .btn-outline-primary{color:#fff;border:1px solid rgba(255,255,255,0.5);background-color:#270F34;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
-.btn-outline-primary:hover,.btn-outline-primary:focus,.btn-outline-primary:active{color:#270F34;border:1px solid rgba(255,255,255,0.95);background-color:#fff;}
+.btn-outline-primary:hover,.btn-outline-primary:focus,.btn-outline-primary:active{color:#270F34;border:1px solid rgba(255,255,255);background-color:#fff;}
 .btn-footer-max-width{max-width:225px;}
 
 /* Other */
