@@ -91,6 +91,9 @@ class HomePage extends Component {
             <div className="section-even container-fluid">
               <div className="container">
                 <section className="">
+                  <h1 className="modern text-center">
+                    Access the Decentralized Internet
+                  </h1>
                   <p className="lead lead-centered col-md-10 block col-centered text-center">
                     The decentralized internet is powered by a technological breakthrough in consensus algorithms that lets you take back your safety, privacy, and property rights on the internet. You're free to experience the internet as it was truly meant to be.
                   </p>
@@ -112,6 +115,16 @@ class HomePage extends Component {
                   <p className="lead lead-centered col-md-10 block col-centered text-center">
                     Downloading Blockstack will give you access to a decentralized internet within your favorite browser. Claim your name, try out the first apps, lookup people in the public directory, make payments with globally-accepted currency, and connect your storage providers to host your user-owned data.
                   </p>
+                  <div className="col-md-8 col-centered p-b-45">
+                    <p className="lead lead-centered col-centered text-center">
+                      As a developer, you can build decentralized apps without having to set up any infrastructure or worry about hosting user data. The decentralized Blockstack network handles identity, auth, storage, and replaces DNS and TLS.
+                    </p>
+                  </div>
+                  <div className="col-md-8 col-centered p-b-45">
+                    <p className="lead lead-centered col-centered text-center">
+                      Blockstack is an open source project with [insert live number of users*] users and core developers located in New York City and Hong Kong. Learn more about what Blockstack here.
+                    </p>
+                  </div>
                 </section>
               </div>
             </div>
