@@ -31,32 +31,38 @@ class DownloadsPage extends Component {
           <section className="container-fluid spacing-container">
             <div className="container col-centered">
               <div className="container m-b-5">
-                <div>
-                  <h1>
-                    Get Blockstack
-                  </h1>
-                  <p>
-                    <a href={releasesLink} role="button">
-                      View the Releases on GitHub
-                   </a>
-                  </p>
-                </div>
+                <section className="sec-light row">
+                  <div className="col-md-12">
+                    <h1>
+                      Downloads
+                    </h1>
+                    <p>Get the Blockstack browser add-on to access the decentralized internet.</p>
+                    <h3>For Developers</h3>
+                    <p>
+                      <a href={releasesLink} role="button"
+                        className="btn btn-outline-primary btn-block">
+                        Try on GitHub
+                      </a>
+                    </p>
+                    <h3>For Consumers</h3>
+                  </div>
+                </section>
                 <section className="sec-light row">
                   <div className="col-md-4">
-                    <h4>
+                    <h5>
                        Mac
-                    </h4>
+                    </h5>
                     <p>
                       <a href={macDownloadLink} role="button"
-                        className="btn btn-outline-primary btn-block">
-                        Download
+                        className="btn btn-outline-primary btn-block disabled">
+                        Coming Soon
                       </a>
                     </p>
                   </div>
                   <div className="col-md-4">
-                    <h4>
+                    <h5>
                        Windows
-                    </h4>
+                    </h5>
                     <p>
                       <a href="#" role="button"
                         className="btn btn-outline-primary btn-block disabled">
@@ -65,9 +71,9 @@ class DownloadsPage extends Component {
                     </p>
                   </div>
                   <div className="col-md-4">
-                    <h4>
+                    <h5>
                        Linux
-                    </h4>
+                    </h5>
                     <p>
                       <a href="#" role="button"
                         className="btn btn-outline-primary btn-block disabled">
