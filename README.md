@@ -7,7 +7,7 @@ A live version of this site can be found online at https://blockstack.org.
 ### Installation
 
 ```
-$ git clone git@github.com:blockstack/blockstack-site.git
+$ git clone --recursive git@github.com:blockstack/blockstack-site.git
 $ npm install
 ```
 
@@ -22,6 +22,15 @@ $ gulp dev
 To run the site in development mode, run `gulp dev` (this may require installing Gulp globally `npm install gulp -g`). Your browser will automatically be opened and directed to the browser-sync proxy address.
 
 Now that `gulp dev` is running, the server is up as well and serving files from the `/build` directory. Any changes in the `/app` directory will be automatically processed by Gulp and the changes will be injected to any open browsers pointed at the proxy address.
+
+This repo uses [Git Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) and links to the [blockstack](https://github.com/blockstack/blockstack) repo.
+You can pull new changes from the blockstack repo by:
+
+```
+$ git submodule update --remote
+```
+
+For simplicity, please make any edits to the .md files directly in the [blockstack](https://github.com/blockstack/blockstack) repo instead of the submodule linked from this repo.
 
 #### Upgrading Blockstack Bootstrap
 

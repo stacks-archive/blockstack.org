@@ -1,0 +1,3 @@
+[submodule "app/blockstack"]
+	path = app/blockstack
+	url = https://github.com/blockstack/blockstack.git
