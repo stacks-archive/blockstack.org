@@ -26,7 +26,7 @@ class Header extends Component {
           <ul className="nav navbar-nav desktop-nav">
             <li className="nav-item">
               <Link to="/intro" className="nav-link">
-                Intro
+                What is Blockstack?
               </Link>
             </li>
             <li className="nav-item">
@@ -47,11 +47,6 @@ class Header extends Component {
             <li className="nav-item">
               <Link to="/videos" className="nav-link">
                 Videos
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/faqs" className="nav-link">
-                FAQs
               </Link>
             </li>
             <li className="nav-item pull-xs-right hidden-sm-down">
