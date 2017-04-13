@@ -7,8 +7,8 @@ A live version of this site can be found online at https://blockstack.org.
 ### Installation
 
 ```
-$ git clone --recursive git@github.com:blockstack/blockstack-site.git
-$ npm install
+git clone --recursive git@github.com:blockstack/blockstack.org.git
+npm install
 ```
 
 Clone this repo locally, then run `npm install` from the root directory.
@@ -16,21 +16,28 @@ Clone this repo locally, then run `npm install` from the root directory.
 ### Development
 
 ```
-$ gulp dev
+npm run dev
 ```
 
-To run the site in development mode, run `gulp dev` (this may require installing Gulp globally `npm install gulp -g`). Your browser will automatically be opened and directed to the browser-sync proxy address.
+To run the site in development mode, run `npm run dev` (this may require installing Gulp globally `npm install gulp -g`). Your browser will automatically be opened and directed to the browser-sync proxy address.
 
-Now that `gulp dev` is running, the server is up as well and serving files from the `/build` directory. Any changes in the `/app` directory will be automatically processed by Gulp and the changes will be injected to any open browsers pointed at the proxy address.
+Now that `npm run dev` is running, the server is up as well and serving files from the `/build` directory. Any changes in the `/app` directory will be automatically processed by Gulp and the changes will be injected to any open browsers pointed at the proxy address.
 
-This repo uses [Git Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) and links to the [blockstack](https://github.com/blockstack/blockstack) repo.
-You can pull new changes from the blockstack repo by:
+#### Documentation
+
+This repo uses [Git Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) for documentation and links to the [blockstack](https://github.com/blockstack/blockstack) repo. You can pull new changes from the `github.com/blockstack/blockstack` repo with the following:
 
 ```
 $ git submodule update --remote
 ```
 
-For simplicity, please make any edits to the .md files directly in the [blockstack](https://github.com/blockstack/blockstack) repo instead of the submodule linked from this repo.
+If you are updating from a previous version, do the following first:
+
+```
+git submodule init
+```
+
+For simplicity, please make any edits to the `.md` files directly in the [/blockstack/blockstack](https://github.com/blockstack/blockstack) repo instead of the document in the included submodule.
 
 #### Upgrading Blockstack Bootstrap
 
@@ -39,7 +46,7 @@ Periodically you may need to update to the latest version of Blockstack's Bootst
 Install the latest version of `blockstack-bootstrap` by running the following:
 
 ```
-$ npm install bootstrap
+npm install bootstrap
 ```
 
 #### Contributing to Blockstack Bootstrap
@@ -51,8 +58,8 @@ If you'd like to update the UI framework for Blockstack, you can do so by visiti
 ### Deployment
 
 ```
-$ gulp prod
-$ firebase deploy
+npm run prod
+firebase deploy
 ```
 
 To prepare assets for production, run `gulp prod`. This will fill the `/build` directory with the full site.

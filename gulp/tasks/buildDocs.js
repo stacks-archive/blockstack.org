@@ -79,10 +79,10 @@ gulp.task('buildDocs', () => {
   let folderNames = ['articles', 'tutorials', 'docs', 'posts', 'overview']
 
   folderNames.forEach((folderName) => {
-    fs.readdirSync('app/blockstack/' + folderName).forEach((docFilename) => {
+    fs.readdirSync('app/docs/' + folderName).forEach((docFilename) => {
       let key = docFilename.split('.')[0].toLowerCase(),
           docProperties = {},
-          docPage = fs.readFileSync('app/blockstack/' + folderName + '/' + docFilename, 'utf8'),
+          docPage = fs.readFileSync('app/docs/' + folderName + '/' + docFilename, 'utf8'),
           pageSections = docPage.split('---')
       
       let description = '',
