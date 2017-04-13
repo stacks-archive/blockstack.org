@@ -71,16 +71,12 @@ class HomePage extends Component {
                   <h1 className="hero-head">
                     What will you build on the decentralized internet?
                   </h1>
-                  <p className="lead hero-lead col-md-5 block">
-                    Blockstack is a new decentralized internet where you own your data and your apps run locally without remote servers
+                  <p className="lead hero-lead col-md-6 block">
+                    Blockstack is a new decentralized internet that works today.
                   </p>
                   <p className="no-padding col-md-12">
-                    <Link to="/download" role="button"
-                      className="btn btn-secondary hidden-sm-down">
-                      Browser Add-on
-                    </Link>
-                    <Link to="/blog/hello-blockstack-tutorial" role="button"
-                      className="btn btn-outline-primary btn-block">
+                    <Link to="/tutorials/hello-blockstack" role="button"
+                      className="btn btn-lg btn-outline-primary btn-block">
                       Watch Tutorial
                     </Link>
                   </p>
@@ -90,14 +86,11 @@ class HomePage extends Component {
             <div className="section-even container-fluid">
               <div className="container">
                 <section className="">
+                  <h1 className="modern text-center">
+                    Access the Decentralized Internet
+                  </h1>
                   <p className="lead lead-centered col-md-10 block col-centered text-center">
-                    The decentralized internet is powered by a technological breakthrough in consensus algorithms which allows you to take back your rights to ownership, privacy, and safety and to experience the internet as it was truly meant to be.
-                  </p>
-                  <p className="lead lead-centered col-md-10 block col-centered text-center">
-                    As a developer, you can build decentralized apps without having to set up any infrastructure or worry about hosting user data. The decentralized Blockstack network handles identity, auth, storage, and replaces DNS and TLS.
-                  </p>
-                  <p className="lead lead-centered col-md-10 block col-centered text-center">
-                    Blockstack is an open source project with [insert live number of users*] users and core developers located in New York City and Hong Kong. Learn more about what Blockstack here.
+                    Downloading Blockstack will give you access to a decentralized internet within a regular browser. Claim your name, try out the first apps, lookup names like “werner.id”, connect storage of your user-owned data, and add universally accepted currency.
                   </p>
                 </section>
               </div>
@@ -105,12 +98,21 @@ class HomePage extends Component {
             <div className="section-odd container-fluid">
               <div className="container">
                 <section className="">
-                  <h1 className="modern text-center">
-                    Unlock the Decentralized Internet
-                  </h1>
-                  <p className="lead lead-centered col-md-10 block col-centered text-center">
-                    Downloading Blockstack will give you access to a decentralized internet within a regular browser. Claim your name, try out the first apps, lookup names like “werner.id”, connect storage of your user-owned data, and add universally accepted currency.
+                <div className="col-md-8 col-centered p-b-45">
+                  <p className="lead lead-centered col-centered text-center">
+                    The decentralized internet is powered by a technological breakthrough in consensus algorithms which allows you to take back your rights to ownership, privacy, and safety and to experience the internet as it was truly meant to be.
                   </p>
+                </div>
+                <div className="col-md-8 col-centered p-b-45">
+                  <p className="lead lead-centered col-centered text-center">
+                    As a developer, you can build decentralized apps without having to set up any infrastructure or worry about hosting user data. The decentralized Blockstack network handles identity, auth, storage, and replaces DNS and TLS.
+                  </p>
+                </div>
+                <div className="col-md-8 col-centered p-b-45">
+                  <p className="lead lead-centered col-centered text-center">
+                    Blockstack is an open source project with [insert live number of users*] users and core developers located in New York City and Hong Kong. Learn more about what Blockstack here.
+                  </p>
+                </div>
                 </section>
               </div>
             </div>
