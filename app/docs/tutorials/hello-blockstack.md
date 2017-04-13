@@ -4,7 +4,7 @@ description: Tutorial on building a hello world application.
 image: /images/article-photos/chalkboard.jpg
 ---
 
-<p>
+<p className="video-wrapper">
   <iframe width="100%" height="400" src="https://www.youtube.com/embed/UbZ6PlX5rF8" frameborder="0" allowfullscreen>
   </iframe>
 </p>
