@@ -28,13 +28,7 @@ Now that `npm run dev` is running, the server is up as well and serving files fr
 This repo uses [Git Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) for documentation and links to the [blockstack](https://github.com/blockstack/blockstack) repo. You can pull new changes from the `github.com/blockstack/blockstack` repo with the following:
 
 ```
-$ git submodule update --remote
-```
-
-If you are updating from a previous version, do the following first:
-
-```
-git submodule init
+npm run update-docs
 ```
 
 For simplicity, please make any edits to the `.md` files directly in the [/blockstack/blockstack](https://github.com/blockstack/blockstack) repo instead of the document in the included submodule.
