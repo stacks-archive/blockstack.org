@@ -26,6 +26,7 @@ import SignUpPage                  from './pages/SignUpPage'
 import DownloadPage                from './pages/DownloadPage'
 import FAQPage                     from './pages/FAQPage'
 import TutorialsPage               from './pages/TutorialsPage'
+import CommonPage                  from './pages/CommonPage'
 
 import docs                        from '../docs.json'
 
@@ -55,7 +56,7 @@ export default (
       <Route path="/posts/:docSection" component={ArticlePage} />
       <Route path="/articles/:docSection" component={ArticlePage} />
       <Route path="/papers/:docSection" component={ArticlePage} />
-      <Route path="/tutorials/:docSection" component={ArticlePage} />
+      <Route path="/tutorials/:docSection" component={CommonPage} />
       <Route path="/docs/:docSection" component={ArticlePage} />
 
       <Route path="*" component={NotFoundPage} />

@@ -68,24 +68,24 @@ class HomePage extends Component {
             <Header />
             <div className="container">
               <section className="hero">
-                <div>
-                  <h1 className="hero-head">
-                    What will you build on the decentralized internet?
-                  </h1>
-                  <p className="lead hero-lead col-md-5 block">
-                    Blockstack is a new decentralized internet where you own your data and apps run locally without remote servers.
-                  </p>
-                  <p className="no-padding col-md-12">
-                    <Link to="/download" role="button"
-                      className="btn btn-secondary hidden-sm-down">
-                      Download
-                    </Link>
-                    <Link to="/tutorials/hello-blockstack" role="button"
-                      className="btn btn-outline-primary btn-block">
-                      Watch Tutorial
-                    </Link>
-                  </p>
-                </div>
+                <h1 className="hero-head">
+                  What will you build on the decentralized internet?
+                </h1>
+                <p className="lead hero-lead col-md-5 block">
+                  Blockstack is a new decentralized internet where you own your data and apps run locally without remote servers.
+                </p>
+                <p className="no-padding col-md-12">
+                  <Link to="/tutorials/hello-blockstack" role="button"
+                    className="btn btn-lg btn-secondary btn-block">
+                    Watch Tutorial
+                  </Link>
+                </p>
+                <p className="no-padding col-md-12 hero-caption">
+                  <Link to="/download" className="hero-caption-text">
+                    Try the browser add-on. &nbsp; › &nbsp;
+                    <span className="hero-caption-link">Download</span>
+                  </Link>
+                </p>
               </section>
             </div>
             <div className="section-even container-fluid">
@@ -94,6 +94,15 @@ class HomePage extends Component {
                   <h1 className="modern text-center">
                     Access the Decentralized Internet
                   </h1>
+                  <p className="lead lead-centered col-md-10 block col-centered text-center">
+                    Downloading Blockstack will give you access to a decentralized internet within your favorite browser. Claim your name, try out the first apps, lookup people in the public directory, make payments with globally-accepted currency, and connect your storage providers to host your user-owned data.
+                  </p>
+                </section>
+              </div>
+            </div>
+            <div className="section-odd container-fluid">
+              <div className="container">
+                <section className="">
                   <p className="lead lead-centered col-md-10 block col-centered text-center">
                     The decentralized internet is powered by a technological breakthrough in consensus algorithms that lets you take back your safety, privacy, and property rights on the internet. You're free to experience the internet as it was truly meant to be.
                   </p>
@@ -106,41 +115,19 @@ class HomePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="section-odd container-fluid">
-              <div className="container">
-                <section className="">
-                  <h1 className="modern text-center">
-                    Unlock the Decentralized Internet
-                  </h1>
-                  <p className="lead lead-centered col-md-10 block col-centered text-center">
-                    Downloading Blockstack will give you access to a decentralized internet within your favorite browser. Claim your name, try out the first apps, lookup people in the public directory, make payments with globally-accepted currency, and connect your storage providers to host your user-owned data.
-                  </p>
-                  <div className="col-md-8 col-centered p-b-45">
-                    <p className="lead lead-centered col-centered text-center">
-                      As a developer, you can build decentralized apps without having to set up any infrastructure or worry about hosting user data. The decentralized Blockstack network handles identity, auth, storage, and replaces DNS and TLS.
-                    </p>
-                  </div>
-                  <div className="col-md-8 col-centered p-b-45">
-                    <p className="lead lead-centered col-centered text-center">
-                      Blockstack is an open source project with [insert live number of users*] users and core developers located in New York City and Hong Kong. Learn more about what Blockstack here.
-                    </p>
-                  </div>
-                </section>
-              </div>
-            </div>
             <div className="section-even container-fluid">
               <div className="container">
                 <section className="">
-                  <p className="lead lead-centered col-md-10 block col-centered text-center">
-                    As a developer, what you create is no longer limited by walled gardens, infrastructure maintainance, and concerns about user data security. Build apps that live on forever and publish them to the decentralized internet where they will run locally on your users' servers.
-                  </p>
                   <h1 className="modern text-center">
                     Build apps like these on the Blockstack network:
                   </h1>
                   <p className="lead lead-centered col-md-10 block col-centered text-center">
-                    Free and open social network<br />
+                    Censorship-resistant social network<br />
                     Cloud democracy with secure voting<br />
                     Peer-to-peer marketplace<br />
+                  </p>
+                  <p className="lead lead-centered col-md-10 block col-centered text-center">
+                    As a developer, what you create is no longer limited by walled gardens, infrastructure maintainance, and concerns about user data security. Build apps that live on forever and publish them to the decentralized internet where they will run locally on your users' servers.
                   </p>
                 </section>
               </div>
