@@ -114,7 +114,7 @@ body{padding-top:0;padding-bottom:0;}
 /* Globals */
 h3{margin-top:35px;margin-bottom:15px;}
 h4{margin:20px 0;}
-a{font-weight:500;}
+a{font-weight:400;color:#95889C;}
 .col-centered{float:none;margin:0 auto;}
 .no-padding{padding-right:0;padding-left:0;}
 .bg-primary{background-color:#270F34!important;}
@@ -217,7 +217,6 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .special-card{}
 .card{background-color:#fff;}
 
-
 /* Summit page */
 .summit-head-wrap{background:url(/images/visuals/summ-dht.png)no-repeat center -50px;background-color:#53206f;}
 h1.hero-head.summ-head,.summ-head,.about-head,.date,.hero-comm-des,.hall{text-align:center;}
@@ -259,10 +258,7 @@ iframe{border:none;}
 .hidden-image{display:none;}
 
 /* Video */
-.video-wrapper{
-  background-color:#222222;
-  width:100%;
-}
+.video-wrapper{background-color:#222222;width:100%;}
 
 /* Docs */
 pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35,39,1);background-color:rgba(32,35,39,1);color:#fff;font-size:14px;border-radius:4px;}
