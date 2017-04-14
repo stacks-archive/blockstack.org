@@ -110,7 +110,7 @@ class HomePage extends Component {
                     As a developer, you can build decentralized apps without having to set up any infrastructure or worry about hosting user data. The decentralized Blockstack network handles identity, DNS and public key distribution. You get your own private storage and authentication is between just you and your apps, with no 3rd parties.
                   </p>
                   <p className="lead lead-centered col-md-10 block col-centered text-center">
-                    Blockstack is an open source project with <b>{this.state.domainCount}</b> users and core developers located in New York City and Hong Kong. Learn more about what Blockstack <Link to="/about">here</Link>.
+                    Blockstack is an open source project with <b>{this.state.domainCount}</b> users and core developers located in New York City and Hong Kong. Learn more about what Blockstack is <Link to="/about">here</Link>.
                   </p>
                 </section>
               </div>
