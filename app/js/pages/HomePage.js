@@ -68,26 +68,22 @@ class HomePage extends Component {
             <Header />
             <div className="container">
               <section className="hero">
-                <div>
-                  <h1 className="hero-head">
-                    What will you build on the decentralized internet?
-                  </h1>
-                  <p className="lead hero-lead col-md-5 block">
-                    Blockstack is a new decentralized internet where you own your data and apps run locally without remote servers.
-                  </p>
-                  <p className="no-padding col-md-12">
-                    <Link to="/tutorials/hello-blockstack" role="button"
-                      className="btn btn-outline-primary btn-block">
-                      Watch Tutorial
-                    </Link>
-                  </p>
-                  <p className="no-padding col-md-12">
-                    <Link to="/download" role="button"
-                      className="btn btn-link btn-text hidden-sm-down">
-                      Download
-                    </Link>
-                  </p>
-                </div>
+                <h1 className="hero-head">
+                  What will you build on the decentralized internet?
+                </h1>
+                <p className="lead hero-lead col-md-5 block">
+                  Blockstack is a new decentralized internet where you own your data and apps run locally without remote servers.
+                </p>
+                <p className="no-padding col-md-12">
+                  <Link to="/tutorials/hello-blockstack" role="button"
+                    className="btn btn-lg btn-secondary btn-block">
+                    Watch Tutorial
+                  </Link>
+                </p>
+                <p className="no-padding col-md-12 hero-caption">
+                  <Link to="/download" className="hero-caption-text">Try the browser add-on. &nbsp; › &nbsp;
+                  <span className="hero-caption-link">Download</span></Link>
+                </p>
               </section>
             </div>
             <div className="section-even container-fluid">
