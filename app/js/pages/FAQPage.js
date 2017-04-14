@@ -1,12 +1,9 @@
 'use strict'
 
 import { Component }   from 'react'
-import { Link }        from 'react-router'
 import DocumentTitle   from 'react-document-title'
 import marked          from 'marked'
 
-import Header          from '../components/Header'
-import Footer          from '../components/Footer'
 import docs            from '../../docs.json'
 
 marked.setOptions({
@@ -60,9 +57,6 @@ class FAQpage extends Component {
     return(
       <DocumentTitle title="Blockstack - FAQ">
         <div>
-          <div className="navbar-fixed-top bg-primary">
-            <Header />
-          </div>
           <section className="container-fluid spacing-container">
             <div className="container-fluid col-centered">
               <div className="container m-b-1">
@@ -81,7 +75,6 @@ class FAQpage extends Component {
               </div>
             </div>
           </section>
-          <Footer />
         </div>
       </DocumentTitle>
     );

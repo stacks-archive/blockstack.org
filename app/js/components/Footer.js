@@ -31,10 +31,10 @@ class Footer extends Component {
               <ul className="foot-menu list-unstyled">
                 <li>Pages</li>
                 <li>
-                  <Link to="/about">About</Link>
+                  <Link to="/intro">Intro</Link>
                 </li>
                 <li>
-                  <Link to="/docs">Docs</Link>
+                  <Link to="/tutorials">Tutorials</Link>
                 </li>
                 <li>
                   <Link to="/blog">Blog</Link>
@@ -46,6 +46,9 @@ class Footer extends Component {
                   <Link to="/videos">Videos</Link>
                 </li>
                 <li>
+                  <Link to="/about">About</Link>
+                </li>
+                <li>
                   <Link to="/faqs">FAQs</Link>
                 </li>
               </ul>
@@ -54,13 +57,13 @@ class Footer extends Component {
               <ul className="foot-menu list-unstyled">
                 <li>Community</li>
                 <li>
+                  <Link to={links.forum} target="_blank">Forum</Link>
+                </li>
+                <li>
                   <Link to={links.slack} target="_blank">Slack</Link>
                 </li>
                 <li>
                   <Link to={links.meetup} target="_blank">Meetup</Link>
-                </li>
-                <li>
-                  <Link to={links.forum} target="_blank">Forum</Link>
                 </li>
                 <li>
                   <Link to={links.youtube} target="_blank">YouTube</Link>

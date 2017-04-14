@@ -1,11 +1,8 @@
 'use strict'
 
 import {Component}      from 'react'
-import {Link}           from 'react-router'
 import DocumentTitle    from 'react-document-title'
 
-import Header           from '../components/Header'
-import Footer           from '../components/Footer'
 import Talk             from '../components/Talk'
 import {talks}          from '../config'
 
@@ -47,9 +44,6 @@ class TalkPage extends Component {
     return (
       <DocumentTitle title={`Blockstack - ${title}`}>
         <div>
-          <div className="navbar-fixed-top bg-primary">
-            <Header />
-          </div>
           { talk ?
           <section className="container-fluid spacing-container">
             <div className="container-fluid col-centered">
@@ -73,7 +67,6 @@ class TalkPage extends Component {
             </div>
           </section>
           : null }
-          <Footer />
         </div>
       </DocumentTitle>
     )

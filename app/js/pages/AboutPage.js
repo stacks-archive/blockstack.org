@@ -1,11 +1,8 @@
 'use strict'
 
 import { Component }        from 'react'
-import { Link }             from 'react-router'
 import DocumentTitle        from 'react-document-title'
 
-import Header               from '../components/Header'
-import Footer               from '../components/Footer'
 import CommunityMember      from '../components/CommunityMember'
 import ContentSection       from '../components/ContentSection'
 import {communityMembers}   from '../config'
@@ -21,9 +18,6 @@ class AboutPage extends Component {
     return (
       <DocumentTitle title="Blockstack - About">
         <div>
-          <div className="navbar-fixed-top bg-primary">
-            <Header />
-          </div>
           <section className="m-t-5">
             <div className="container p-b-5 col-centered">
               <div className="container">
@@ -52,7 +46,7 @@ class AboutPage extends Component {
                     community and build your own app or contribute to the core software.
                   </p>
                 "/>
-                <section className={this.props.className}>
+                <section>
                   <div className="container col-centered blog-post">
                     <div className="container">
                       <div className="post-content">
@@ -74,7 +68,6 @@ class AboutPage extends Component {
                 </section>
               </div>
             </div>
-            <Footer />
           </section>
         </div>
       </DocumentTitle>

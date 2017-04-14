@@ -1,11 +1,8 @@
 'use strict'
 
 import {Component}      from 'react'
-import {Link}           from 'react-router'
 import DocumentTitle    from 'react-document-title'
 
-import Header           from '../components/Header'
-import Footer           from '../components/Footer'
 import CardLink         from '../components/CardLink'
 import ContentSection   from '../components/ContentSection'
 
@@ -15,9 +12,6 @@ class IntroPage extends Component {
     return (
       <DocumentTitle title="Blockstack - Intro">
         <div>
-          <div className="container-fluid col-centered navbar-fixed-top bg-primary">
-            <Header />
-          </div>
           <section className="m-t-100">
             <div className="container col-centered blog-post">
               <div className="container">
@@ -176,7 +170,6 @@ class IntroPage extends Component {
               </div>
             </div>
           </section>
-          <Footer />
         </div>
       </DocumentTitle>
     )

@@ -29,14 +29,13 @@ class App extends Component {
   }
 
   render() {
-    let wrapperClass = "app-common"
-    if (location.pathname === '/') {
-      wrapperClass = "app-landing"
-    }
-
     return (
-      <div className={wrapperClass}>
+      <div>
+        <div className="bg-primary">
+          <Header />
+        </div>
         {this.renderChildren()}
+        <Footer />
       </div>
     )
   }

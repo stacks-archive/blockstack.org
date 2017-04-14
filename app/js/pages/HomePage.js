@@ -6,8 +6,6 @@ import DocumentTitle from 'react-document-title'
 import request       from 'request'
 
 import Image         from '../components/Image'
-import Header        from '../components/Header'
-import Footer        from '../components/Footer'
 
 class HomePage extends Component {
 
@@ -27,7 +25,7 @@ class HomePage extends Component {
   componentDidMount() {
     // Get the number of Slack users
     request({
-      url: "https://blockstack-site-api.herokuapp.com/v1/stats",
+      url: 'https://blockstack-site-api.herokuapp.com/v1/stats',
       withCredentials: false
     }, (error, response, body) => {
       if (!error && response.statusCode === 200) {
@@ -40,10 +38,10 @@ class HomePage extends Component {
 
   updateStats(response) {
     const jsonResponse = JSON.parse(response)
-    if (jsonResponse.hasOwnProperty("slack_users") &&
-        jsonResponse.hasOwnProperty("meetup_users") &&
-        jsonResponse.hasOwnProperty("forum_users") &&
-        jsonResponse.hasOwnProperty("domains")) {
+    if (jsonResponse.hasOwnProperty('slack_users') &&
+        jsonResponse.hasOwnProperty('meetup_users') &&
+        jsonResponse.hasOwnProperty('forum_users') &&
+        jsonResponse.hasOwnProperty('domains')) {
       
       let newSlackUsers = this.state.slackUserCount
       if (jsonResponse.slack_users !== 0) {
@@ -65,7 +63,6 @@ class HomePage extends Component {
       <DocumentTitle title="Blockstack, building the decentralized internet">
         <div className="body-hero">
           <div className="col-centered block">
-            <Header />
             <div className="container">
               <section className="hero">
                 <h1 className="hero-head">
@@ -157,7 +154,6 @@ class HomePage extends Component {
               </div>
             </div>
           </div>
-          <Footer />
         </div>
       </DocumentTitle>
     )

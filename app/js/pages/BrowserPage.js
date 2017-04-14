@@ -5,8 +5,6 @@ import { Link }        from 'react-router'
 import DocumentTitle   from 'react-document-title'
 
 import Image           from '../components/Image'
-import Header          from '../components/Header'
-import Footer          from '../components/Footer'
 
 class AboutPage extends Component {
 
@@ -19,17 +17,14 @@ class AboutPage extends Component {
     return (
       <DocumentTitle title="Blockstack - Browser">
         <div>
-          <div className="navbar-fixed-top bg-primary">
-            <Header />
-          </div>
           <div className="hidden-image">
             <Image
-              src={"/images/article-photos/astronaut.jpg"}
+              src={'/images/article-photos/astronaut.jpg'}
               fallbackSrc="/images/article-photos/road.jpg"
               retinaSupport={false} />
           </div>
           <div className="m-b-3 docs-header-image-wrapper">
-            <Image src={"/images/article-photos/astronaut.jpg"}
+            <Image src={'/images/article-photos/astronaut.jpg'}
               fallbackSrc="/images/article-photos/road.jpg"
               className="img-fluid docs-header-image"
               retinaSupport={false} />
@@ -55,7 +50,6 @@ class AboutPage extends Component {
                 </div>
               </div>
             </div>
-            <Footer />
           </section>
         </div>
       </DocumentTitle>

@@ -3,14 +3,10 @@
 import {Component}     from 'react'
 import {Link}          from 'react-router'
 import DocumentTitle   from 'react-document-title'
-import marked          from 'marked'
 import request         from 'request'
 import {parseString}   from 'xml2js'
 
-import Header           from '../components/Header'
-import Footer           from '../components/Footer'
 import {getPostFromRSS} from '../utils/rssUtils'
-import docs             from '../../docs.json'
 import {blogAuthors}    from '../config'
 
 
@@ -27,7 +23,7 @@ class BlogPage extends Component {
   }
 
   componentDidMount() {
-    const url = "https://blockstack-site-api.herokuapp.com/v1/blog-rss"
+    const url = 'https://blockstack-site-api.herokuapp.com/v1/blog-rss'
     request({
       url: url,
       withCredentials: false
@@ -52,7 +48,7 @@ class BlogPage extends Component {
         if (blogAuthors.hasOwnProperty(post.blockstackID)) {
           post.creator = blogAuthors[post.blockstackID]
         } else {
-          post.creator = blogAuthors["blockstack.id"]
+          post.creator = blogAuthors['blockstack.id']
         }
         posts.push(post)
       })
@@ -67,9 +63,6 @@ class BlogPage extends Component {
     return (
       <DocumentTitle title="Blockstack - Blog">
         <div>
-          <div className="navbar-fixed-top bg-primary">
-            <Header />
-          </div>
           <section className="container-fluid spacing-container">
             <div className="container col-centered blog-index">
               <div className="container m-b-5">
@@ -80,7 +73,7 @@ class BlogPage extends Component {
                   return (
                     <div className="m-b-3" key={index}>
                       { post.urlSlug && post.title ?
-                      <Link to={"/blog/" + post.urlSlug}>
+                      <Link to={'/blog/' + post.urlSlug}>
                         <h3>{ post.title }</h3>
                       </Link>
                       : null }
@@ -104,7 +97,6 @@ class BlogPage extends Component {
               </div>
             </div>
           </section>
-          <Footer />
         </div>
       </DocumentTitle>
     )

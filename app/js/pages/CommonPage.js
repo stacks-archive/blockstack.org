@@ -5,10 +5,6 @@ import {Link}           from 'react-router'
 import DocumentTitle    from 'react-document-title'
 import marked           from 'marked'
 
-import Image            from '../components/Image'
-import Header           from '../components/Header'
-import Footer           from '../components/Footer'
-import CardLink         from '../components/CardLink'
 import docs             from '../../docs.json'
 
 marked.setOptions({
@@ -106,18 +102,13 @@ class CommonPage extends Component {
 
   render() {
     const currentPage = this.state.currentPage,
-          nextPage = this.state.nextPage,
-          title = currentPage ? currentPage.title : "Docs"
-    const headerImageSrc = this.state.currentPage ? this.state.currentPage.image : null
+          title = currentPage ? currentPage.title : 'Docs'
     const pathPrefix = '/' + location.pathname.split('/')[1]
-    const githubFileUrlRoot = "https://github.com/blockstack/blockstack-site/blob/master/app/docs"
+    const githubFileUrlRoot = 'https://github.com/blockstack/blockstack-site/blob/master/app/docs'
 
     return (
       <DocumentTitle title={title}>
         <div>
-          <div className="navbar-fixed-top bg-primary">
-            <Header />
-          </div>
           <div className="m-b-3 docs-header-image-wrapper">
             
           </div>
@@ -128,7 +119,7 @@ class CommonPage extends Component {
                 <div dangerouslySetInnerHTML={{ __html: currentPage.markup }}>
                 </div>
                 <div className="m-t-4">
-                  <Link to={githubFileUrlRoot + pathPrefix + '/' + currentPage.pageName + ".md"}
+                  <Link to={githubFileUrlRoot + pathPrefix + '/' + currentPage.pageName + '.md'}
                     role="button" target="_blank"
                     className="btn btn-sm btn-outline-primary m-b-2">
                     Edit this post on GitHub
@@ -137,7 +128,6 @@ class CommonPage extends Component {
               </div>
             </div>
           </section>
-          <Footer />
         </div>
       </DocumentTitle>
     )

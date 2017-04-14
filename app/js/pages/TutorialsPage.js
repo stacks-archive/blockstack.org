@@ -4,9 +4,6 @@ import {Component}      from 'react'
 import {Link}           from 'react-router'
 import DocumentTitle    from 'react-document-title'
 
-import Header           from '../components/Header'
-import Footer           from '../components/Footer'
-
 class TutorialsPage extends Component {
 
   constructor(props) {
@@ -15,17 +12,14 @@ class TutorialsPage extends Component {
 
   render() {
     const tutorials = {
-      "hello-blockstack": {
-        title: "Hello, Blockstack",
+      'hello-blockstack': {
+        title: 'Hello, Blockstack',
       }
     }
 
     return (
       <DocumentTitle title="Blockstack - Videos">
         <div>
-          <div className="navbar-fixed-top bg-primary">
-            <Header />
-          </div>
           <section className="container-fluid spacing-container">
             <div className="container-fluid col-centered">
               <div className="container m-b-1">
@@ -51,7 +45,6 @@ class TutorialsPage extends Component {
               </div>
             </div>
           </section>
-          <Footer />
         </div>
       </DocumentTitle>
     )

@@ -7,13 +7,9 @@ import request          from 'request'
 import {parseString}    from 'xml2js'
 
 import Image            from '../components/Image'
-import Header           from '../components/Header'
-import Footer           from '../components/Footer'
-import CardLink         from '../components/CardLink'
 import CommunityMember  from '../components/CommunityMember'
 import {getPostFromRSS} from '../utils/rssUtils'
 import {getSlugFromRSS} from '../utils/rssUtils'
-import docs             from '../../docs.json'
 import {blogAuthors}    from '../config'
 import StickyShare      from '../components/StickyShare'
 
@@ -62,7 +58,7 @@ class BlogPostPage extends Component {
 
   getRSS() {
     request({
-      url: "https://blockstack-site-api.herokuapp.com/v1/blog-rss",
+      url: 'https://blockstack-site-api.herokuapp.com/v1/blog-rss',
       withCredentials: false
     }, (error, response, body) => {
       if (!error && response.statusCode === 200) {
@@ -97,7 +93,7 @@ class BlogPostPage extends Component {
       if (blogAuthors.hasOwnProperty(post.blockstackID)) {
         post.creator = blogAuthors[post.blockstackID]
       } else {
-        post.creator = blogAuthors["blockstack.id"]
+        post.creator = blogAuthors['blockstack.id']
       }
       currentPage = Object.assign({}, currentPage, post)
     }
@@ -115,16 +111,12 @@ class BlogPostPage extends Component {
 
   render() {
     const currentPage = this.state.currentPage,
-          title = currentPage ? currentPage.title : ""
+          title = currentPage ? currentPage.title : ''
     const headerImageSrc = this.state.currentPage ? this.state.currentPage.image : ''
-    const pathPrefix = '/' + location.pathname.split('/')[1]
 
     return (
       <DocumentTitle title={title}>
         <div>
-          <div className="navbar-fixed-top bg-primary">
-            <Header />
-          </div>
           { currentPage && currentPage.preview ?
           <div>
             <div className="hidden-image">
@@ -199,7 +191,6 @@ class BlogPostPage extends Component {
             </div>
           </section>
           }
-          <Footer />
         </div>
       </DocumentTitle>
     )
