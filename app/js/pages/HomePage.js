@@ -81,8 +81,10 @@ class HomePage extends Component {
                   </Link>
                 </p>
                 <p className="no-padding col-md-12 hero-caption">
-                  <Link to="/download" className="hero-caption-text">Try the browser add-on. &nbsp; › &nbsp;
-                  <span className="hero-caption-link">Download</span></Link>
+                  <Link to="/download" className="hero-caption-text">
+                    Try the browser add-on. &nbsp; › &nbsp;
+                    <span className="hero-caption-link">Download</span>
+                  </Link>
                 </p>
               </section>
             </div>
