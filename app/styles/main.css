@@ -171,8 +171,8 @@ body,html,#app,.app-landing{height:100%;}
 .hero-caption > a:hover{color:#95889C;text-decoration:none;}
 .hero-caption > a:hover span{color:rgba(255,255,255,0.8);text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.5);padding-bottom:0px;}
 .hero-wrap{padding-top:.5rem;padding-bottom:6rem;}
-.section-odd{color:#fff;background-color:#270F34;padding-top:150px;padding-bottom:150px;margin-right:-15px;margin-left:-15px;}
-.section-even{color:#270F34;background-color:#fff;padding-top:150px;padding-bottom:150px;margin-right:-15px;margin-left:-15px;}
+.section-odd{color:#fff;background-color:#270F34;padding-top:150px;padding-bottom:150px;margin-right:0px;margin-left:0px;}
+.section-even{color:#270F34;background-color:#fff;padding-top:150px;padding-bottom:150px;margin-right:0px;margin-left:0px;}
 .col-3-section{padding-top:50px;padding-bottom:50px;background-color:rgba(248,249,251,1);border-bottom:1px solid #E6E6E6;}
 .about-head-wrap{padding-bottom:30px;background:url(/images/visuals/blockchain-timeline.png);background-repeat:no-repeat;background-position:center top;background-color:#53206f;}
 .highlight-box{padding-top:50px;padding-bottom:50px;background-color:#831ca8;color:rgba(255,255,255,1);}
