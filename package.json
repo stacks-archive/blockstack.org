@@ -27,7 +27,8 @@
   },
   "devDependencies": {
     "babel": "^6.5.2",
-    "babel-core": "^5.8.35",
+    "babel-core": "^5.8.38",
+    "babel-eslint": "^7.2.2",
     "babelify": "^6.4.0",
     "bootstrap": "git+ssh://git@github.com/blockstack/blockstack-bootstrap.git",
     "browser-sync": "^2.7.13",
