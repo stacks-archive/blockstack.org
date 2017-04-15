@@ -263,7 +263,7 @@ class HomePage extends Component {
               <div className="container">
                 <section>
                   <h1 className="modern text-center">
-                    Get started now
+                    Tutorials to get you started
                   </h1>
                   <p className="lead lead-centered col-md-10 block col-centered text-center">
                     <Link to="/tutorials/hello-blockstack">
@@ -292,7 +292,7 @@ class HomePage extends Component {
               <div className="container">
                 <section>
                   <h1 className="modern text-center">
-                    Join the many already on Blockstack
+                    A growing community
                   </h1>
                   <div>
                     <div className="col-md-3 no-padding">
@@ -333,6 +333,7 @@ class HomePage extends Component {
                   <h1 className="modern text-center">
                     News
                   </h1>
+                  <div className="row">
                   { this.state.posts.map((post, index) => {
                     return (
                       <div className="col-md-4" key={index}>
@@ -358,6 +359,13 @@ class HomePage extends Component {
                       </div>
                     )
                   }) }
+                  </div>
+                  <p className="lead-centered">
+                    <Link to="/newsletter" role="button"
+                      className="btn btn-lg btn-outline-primary btn-block">
+                      Get Updates
+                    </Link>
+                  </p>
                 </section>
               </div>
             </div>
