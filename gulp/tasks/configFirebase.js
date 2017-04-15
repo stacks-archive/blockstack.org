@@ -130,6 +130,10 @@ gulp.task('configFirebase', () => {
       'source': '/virtualchain.pdf',
       'destination': '/virtualchain_dccl16.pdf'
     },
+    {
+      'source': '/join',
+      'destination': '/newsletter'
+    },
   ]
 
   let redirects = []

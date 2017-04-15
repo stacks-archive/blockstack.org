@@ -25,8 +25,8 @@ class Header extends Component {
           </button>
           <ul className="nav navbar-nav desktop-nav">
             <li className="nav-item">
-              <Link to="/intro" className="nav-link">
-                Intro
+              <Link to="/install" className="nav-link">
+                Install
               </Link>
             </li>
             <li className="nav-item">

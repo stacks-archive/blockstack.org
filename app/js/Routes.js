@@ -35,8 +35,8 @@ export default (
       <IndexRoute component={HomePage} />
       <Route path="/" component={HomePage} />
 
-      <Route path="/join" component={SignUpPage} />
-      <Route path="/download" component={DownloadPage} />
+      <Route path="/newsletter" component={SignUpPage} />
+      <Route path="/install" component={DownloadPage} />
 
       <Route path="/intro" component={IntroPage} />
 

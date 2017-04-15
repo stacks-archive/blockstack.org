@@ -169,9 +169,9 @@ class BlogPostPage extends Component {
                       isCentered={false} />
                   </section>
                   <p className="no-padding col-md-8">
-                    <Link to="http://eepurl.com/cv8gQ1" role="button" target="_blank"
+                    <Link to="/newsletter" role="button"
                       className="btn btn-lg btn-primary btn-block">
-                      Join the Community
+                      Get Updates
                     </Link>
                   </p>
                 </div>

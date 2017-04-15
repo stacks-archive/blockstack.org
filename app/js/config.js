@@ -62,13 +62,13 @@ export const companiesHiring = [
 
 export const tutorials = {
   'hello-blockstack': {
-    image: '/images/visuals/hello-blockstack-tutorial.png',
+    image: '/images/tutorials/hello-blockstack.jpg',
     title: 'Hello, Blockstack',
     urlSlug: 'hello-blockstack',
     description: 'Build a simple single-page JavaScript application that runs completely client-side without any servers.'
   },
   'cli-basics': {
-    image: '/images/article-photos/chalkboard.jpg',
+    image: '/images/tutorials/cli-lookups.jpg',
     title: 'CLI Basics',
     urlSlug: 'cli-basics',
     description: 'Walk through the basics of the command line interface, like looking up names, getting name prices, and registering names.'
