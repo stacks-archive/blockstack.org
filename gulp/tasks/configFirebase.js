@@ -118,6 +118,18 @@ gulp.task('configFirebase', () => {
       'source': '/docs/cli-extended-usage',
       'destination': '/tutorials/cli-basics'
     },
+    {
+      'source': '/blockstack.pdf',
+      'destination': '/blockstack_usenix16.pdf'
+    },
+    {
+      'source': '/blockstack-login.pdf',
+      'destination': '/blockstack_login16.pdf'
+    },
+    {
+      'source': '/virtualchain.pdf',
+      'destination': '/virtualchain_dccl16.pdf'
+    },
   ]
 
   let redirects = []

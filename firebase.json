@@ -12,14 +12,6 @@
     ],
     "rewrites": [
       {
-        "source": "/tutorials/cli-basics",
-        "destination": "/docs-tutorials-cli-basics.html"
-      },
-      {
-        "source": "/tutorials/hello-blockstack",
-        "destination": "/docs-tutorials-hello-blockstack.html"
-      },
-      {
         "source": "/posts/blockchain-identity",
         "destination": "/docs-posts-blockchain-identity.html"
       },
@@ -50,6 +42,14 @@
       {
         "source": "/posts/namespaces",
         "destination": "/docs-posts-namespaces.html"
+      },
+      {
+        "source": "/tutorials/cli-basics",
+        "destination": "/docs-tutorials-cli-basics.html"
+      },
+      {
+        "source": "/tutorials/hello-blockstack",
+        "destination": "/docs-tutorials-hello-blockstack.html"
       },
       {
         "source": "/blog/hello-blockstack-tutorial",
