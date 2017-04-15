@@ -1,7 +1,6 @@
 'use strict';
 
 import gulp                      from 'gulp'
-import config                    from '../config'
 import fs                        from 'fs'
 import metaData                  from 'meta-tag-data'
 import request                   from 'request'
@@ -56,7 +55,7 @@ gulp.task('buildBlog', () => {
   }
 
   const indexHtml = fs.readFileSync('app/index.html', 'utf8')
-  const rssURL = "https://blockstack-site-api.herokuapp.com/v1/blog-rss"
+  const rssURL = 'https://blockstack-site-api.herokuapp.com/v1/blog-rss'
   request({
     url: rssURL,
     withCredentials: false
@@ -76,7 +75,7 @@ gulp.task('buildDocs', () => {
 
   let indexHtml = fs.readFileSync('app/index.html', 'utf8')
 
-  let folderNames = ['articles', 'tutorials', 'docs', 'posts', 'overview']
+  let folderNames = ['tutorials', 'docs', 'posts']
 
   folderNames.forEach((folderName) => {
     fs.readdirSync('app/docs/' + folderName).forEach((docFilename) => {

@@ -14,47 +14,47 @@ export const socialLinks = {
 
 export const companiesHiring = [
   {
-    name: "Blockstack Inc",
+    name: 'Blockstack Inc',
     jobs: [
       {
-        "title": "Web Product Engineer",
-        "description": "Build out the Blockstack web browser using ReactJS, Redux, Node and Blockstack APIs.",
-        "url": "https://angel.co/blockstack/jobs/150184-product-engineer"
+        'title': 'Web Product Engineer',
+        'description': 'Build out the Blockstack web browser using ReactJS, Redux, Node and Blockstack APIs.',
+        'url': 'https://angel.co/blockstack/jobs/150184-product-engineer'
       },
       {
-        "title": "Mobile Product Engineer",
-        "description": "Kickstart the development of the Blockstack mobile browser.",
-        "url": "https://angel.co/blockstack/jobs/150184-product-engineer"
+        'title': 'Mobile Product Engineer',
+        'description': 'Kickstart the development of the Blockstack mobile browser.',
+        'url': 'https://angel.co/blockstack/jobs/150184-product-engineer'
       },
       {
-        "title": "Systems Engineer",
-        "description": "Build out Blockstack Core and the Blockstack P2P Atlas network with Python and blockchain transaction APIs",
-        "url": "https://angel.co/blockstack/jobs/151139-systems-engineer"
+        'title': 'Systems Engineer',
+        'description': 'Build out Blockstack Core and the Blockstack P2P Atlas network with Python and blockchain transaction APIs',
+        'url': 'https://angel.co/blockstack/jobs/151139-systems-engineer'
       },
       {
-        "title": "Security Engineer",
-        "description": "Scrutinize and battle-test the Blockstack protocols and consensus critical systems.",
-        "url": "https://angel.co/blockstack/jobs/151142-security-engineer"
+        'title': 'Security Engineer',
+        'description': 'Scrutinize and battle-test the Blockstack protocols and consensus critical systems.',
+        'url': 'https://angel.co/blockstack/jobs/151142-security-engineer'
       },
       {
-        "title": "Developer Evangelist",
-        "description": "Coordinate events and produce content to grow the Blockstack ecosystem.",
-        "url": "https://angel.co/blockstack/jobs/151144-community-coordinator"
+        'title': 'Developer Evangelist',
+        'description': 'Coordinate events and produce content to grow the Blockstack ecosystem.',
+        'url': 'https://angel.co/blockstack/jobs/151144-community-coordinator'
       }
     ]
   },
   {
-    name: "Microsoft",
+    name: 'Microsoft',
     jobs: [
       {
-        "title": "Systems Engineer",
-        "description": "Build self-sovereign identity software using Blockstack Core.",
-        "url": "https://microsoft.com"
+        'title': 'Systems Engineer',
+        'description': 'Build self-sovereign identity software using Blockstack Core.',
+        'url': 'https://microsoft.com'
       },
       {
-        "title": "Product Engineer",
-        "description": "Build self-sovereign identity software using Blockstack Core.",
-        "url": "https://microsoft.com"
+        'title': 'Product Engineer',
+        'description': 'Build self-sovereign identity software using Blockstack Core.',
+        'url': 'https://microsoft.com'
       }
     ]
   }
@@ -78,71 +78,71 @@ export const tutorials = {
 export const talks = {
   'welcome-to-the-new-internet': {
     urlSlug: 'welcome-to-the-new-internet',
-    title: "Welcome to the New Internet",
-    event: "TEDxNewYork",
-    speaker: "Muneeb Ali",
-    location: "New York",
-    date: "September 10, 2016",
-    youtubeURL: "https://www.youtube.com/embed/qtOIh93Hvuw?list=PLvaRUGvjpFS2ciobOlOwMeVKDqO7S9ar6",
-    speakerDeckID: "15d4861b7c1842bfbd7add80c99e1cf6",
+    title: 'Welcome to the New Internet',
+    event: 'TEDxNewYork',
+    speaker: 'Muneeb Ali',
+    location: 'New York',
+    date: 'September 10, 2016',
+    youtubeURL: 'https://www.youtube.com/embed/qtOIh93Hvuw?list=PLvaRUGvjpFS2ciobOlOwMeVKDqO7S9ar6',
+    speakerDeckID: '15d4861b7c1842bfbd7add80c99e1cf6',
     image: '/images/resources/talk-tedxnewyork.png'
   },
   'innovation-and-inclusion-with-decentralized-apps': {
     urlSlug: 'innovation-and-inclusion-with-decentralized-apps',
-    title: "Innovation & Inclusion w/ Decentralized Apps",
-    event: "New Context Conference Fall 2016",
-    speaker: "Ryan Shea",
-    location: "San Francisco, CA",
-    date: "November 4, 2016",
-    youtubeURL: "https://www.youtube.com/embed/nknocjo7t00",
-    speakerDeckID: "9a0dca48d9cc4da98e0d1b3094fe4ec1",
+    title: 'Innovation & Inclusion w/ Decentralized Apps',
+    event: 'New Context Conference Fall 2016',
+    speaker: 'Ryan Shea',
+    location: 'San Francisco, CA',
+    date: 'November 4, 2016',
+    youtubeURL: 'https://www.youtube.com/embed/nknocjo7t00',
+    speakerDeckID: '9a0dca48d9cc4da98e0d1b3094fe4ec1',
     image: '/images/resources/talk-ncc.png'
   },
   'decentralized-server-less-applications-with-blockstack': {
     urlSlug: 'decentralized-server-less-applications-with-blockstack',
-    title: "Decentralized, Server-less Applications with Blockstack",
-    event: "All Things Open",
-    speaker: "Ryan Shea",
-    location: "Raleigh, NC",
-    date: "October 27, 2016",
-    youtubeURL: "https://www.youtube.com/embed/WveXpldGGa8",
-    speakerDeckID: "434d4f23ad40417aadfe86643671a5bd",
+    title: 'Decentralized, Server-less Applications with Blockstack',
+    event: 'All Things Open',
+    speaker: 'Ryan Shea',
+    location: 'Raleigh, NC',
+    date: 'October 27, 2016',
+    youtubeURL: 'https://www.youtube.com/embed/WveXpldGGa8',
+    speakerDeckID: '434d4f23ad40417aadfe86643671a5bd',
     image: '/images/resources/talk-ato.png'
   },
   'experiences-with-building-a-global-pki-with-blockchains': {
     urlSlug: 'experiences-with-building-a-global-pki-with-blockchains',
-    title: "Experiences with Building a Global PKI with Blockchains",
-    event: "CITP Luncheon Speaker Series",
-    speaker: "Muneeb Ali",
-    location: "Princeton, NJ",
-    date: "March 8, 2016",
-    youtubeURL: "https://www.youtube.com/embed/sBJobY0Aqt0",
-    speakerDeckID: "e7608b083c5d4ef68a199cd4f6b74026",
+    title: 'Experiences with Building a Global PKI with Blockchains',
+    event: 'CITP Luncheon Speaker Series',
+    speaker: 'Muneeb Ali',
+    location: 'Princeton, NJ',
+    date: 'March 8, 2016',
+    youtubeURL: 'https://www.youtube.com/embed/sBJobY0Aqt0',
+    speakerDeckID: 'e7608b083c5d4ef68a199cd4f6b74026',
     image: '/images/resources/talk-citp.png'
   },
 }
 
 export const papers = [
   {
-    title: "Blockstack: A Global Naming and Storage System Secured by Blockchains",
-    authors: "Muneeb Ali, Jude Nelson, Ryan Shea and Michael J. Freedman",
-    publication: "USENIX Annual Technical Conference",
-    url: "https://blockstack.org/blockstack.pdf",
-    date: "June 2016",
+    title: 'Blockstack: A Global Naming and Storage System Secured by Blockchains',
+    authors: 'Muneeb Ali, Jude Nelson, Ryan Shea and Michael J. Freedman',
+    publication: 'USENIX Annual Technical Conference',
+    url: 'https://blockstack.org/blockstack_usenix16.pdf',
+    date: 'June 2016',
   },
   {
-    title: "Bootstrapping Trust in Distributed Systems with Blockchains",
-    authors: "Muneeb Ali, Jude Nelson, Ryan Shea and Michael J. Freedman:",
-    publication: "USENIX ;login: issue: Fall 2016, Vol. 41, No. 3",
-    url: "https://blockstack.org/blockstack-login.pdf",
-    date: "June 2016",
+    title: 'Bootstrapping Trust in Distributed Systems with Blockchains',
+    authors: 'Muneeb Ali, Jude Nelson, Ryan Shea and Michael J. Freedman:',
+    publication: 'USENIX ;login: issue: Fall 2016, Vol. 41, No. 3',
+    url: 'https://blockstack.org/blockstack_login16.pdf',
+    date: 'June 2016',
   },
   {
-    title: "Extending Existing Blockchains with Virtualchain",
-    authors: "Jude Nelson, Muneeb Ali, Ryan Shea and Michael J. Freedman",
-    publication: "Workshop on Distributed Cryptocurrencies and Consensus Ledgers",
-    url: "https://blockstack.org/virtualchain.pdf",
-    date: "July 2016",
+    title: 'Extending Existing Blockchains with Virtualchain',
+    authors: 'Jude Nelson, Muneeb Ali, Ryan Shea and Michael J. Freedman',
+    publication: 'Workshop on Distributed Cryptocurrencies and Consensus Ledgers',
+    url: 'https://blockstack.org/virtualchain_dccl16.pdf',
+    date: 'July 2016',
   },
 ]
 
@@ -214,32 +214,32 @@ export const communityMembers = [
 ]
 
 export const blogAuthors = {
-  "larry.id": { blockstackId: 'larry',
+  'larry.id': { blockstackId: 'larry',
     name: 'Larry Salibra',
     avatar: 'https://s3.amazonaws.com/kd4/larry',
     twitter: 'larrysalibra',
     github: 'larrysalibra' },
-  "judecn.id" :{ blockstackId: 'judecn',
+  'judecn.id' :{ blockstackId: 'judecn',
     name: 'Jude Nelson',
     avatar: 'https://s3.amazonaws.com/kd4/judecn',
     twitter: 'judecnelson',
     github: 'jcnelson' },
-  "guylepage3.id": { blockstackId: 'guylepage3',
+  'guylepage3.id': { blockstackId: 'guylepage3',
     name: 'Guy Lepage',
     avatar: 'https://s3.amazonaws.com/kd4/guylepage3',
     twitter: 'guylepage3',
     github: 'guylepage3' },
-  "muneeb.id": { blockstackId: 'muneeb',
+  'muneeb.id': { blockstackId: 'muneeb',
     name: 'Muneeb Ali',
     avatar: 'https://s3.amazonaws.com/kd4/muneeb',
     twitter: 'muneeb',
     github: 'muneeb-ali' },
-  "ryan.id": { blockstackId: 'ryan',
+  'ryan.id': { blockstackId: 'ryan',
     name: 'Ryan Shea',
     avatar: 'https://s3.amazonaws.com/kd4/ryan',
     twitter: 'ryaneshea',
     github: 'shea256' },
-  "blockstack.id": { blockstackId: 'blockstack',
+  'blockstack.id': { blockstackId: 'blockstack',
     name: 'Muneeb & Ryan',
     avatar: 'https://s3.amazonaws.com/kd4/muneeb-and-ryan.jpg',
     twitter: 'blockstackorg',

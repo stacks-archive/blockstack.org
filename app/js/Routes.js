@@ -59,9 +59,7 @@ export default (
       <Route path="/summit" component={SummitPage} />
       <Route path="/browser" component={BrowserPage} />
 
-      <Route path="/overview/:docSection" component={ArticlePage} />
       <Route path="/posts/:docSection" component={ArticlePage} />
-      <Route path="/articles/:docSection" component={ArticlePage} />
       <Route path="/docs/:docSection" component={ArticlePage} />
 
       <Route path="*" component={NotFoundPage} />
