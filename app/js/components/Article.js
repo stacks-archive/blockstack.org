@@ -68,6 +68,10 @@ class Article extends Component {
     }
   }
 
+  componentDidMount() {
+    this.initHighlighting()
+  }
+
   componentDidUpdate() {
     this.initHighlighting()
   }
