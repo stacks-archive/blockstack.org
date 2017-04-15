@@ -43,7 +43,7 @@ class ArticlePage extends Component {
   render() {
     return (
       <DocumentTitle title={this.state.title}>
-        <div>
+        <div className="m-b-5 m-t-5">
           <Article urlSlug={this.state.urlSlug} />
         </div>
       </DocumentTitle>

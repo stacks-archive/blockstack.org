@@ -18,15 +18,20 @@ class TutorialPage extends Component {
   getPageInfo(props) {
     let title = '404'
     let urlSlug = '404'
+    let youtubeURL = null
     if (props.routeParams.hasOwnProperty('docSection')) {
       if (docs.hasOwnProperty(props.routeParams.docSection)) {
         urlSlug = props.routeParams.docSection
         title = docs[urlSlug].title
+        if (docs[urlSlug].hasOwnProperty('youtube')) {
+          youtubeURL = docs[urlSlug].youtube
+        }
       }
     }
     this.setState({
       urlSlug: urlSlug,
-      title: title
+      title: title,
+      youtubeURL: youtubeURL
     })
   }
 
@@ -43,9 +48,11 @@ class TutorialPage extends Component {
   render() {
     return (
       <DocumentTitle title={this.state.title}>
-        <div>
-          <Article urlSlug={this.state.urlSlug} />
-        </div>
+        <section className="container-fluid spacing-container">
+          <div className="m-b-3">
+            <Article urlSlug={this.state.urlSlug} youtubeURL={this.state.youtubeURL} />
+          </div>
+        </section>
       </DocumentTitle>
     )
   }

@@ -188,6 +188,21 @@
         "source": "/docs/cli-extended-usage",
         "destination": "/tutorials/cli-basics",
         "type": 301
+      },
+      {
+        "source": "/blockstack.pdf",
+        "destination": "/blockstack_usenix16.pdf",
+        "type": 301
+      },
+      {
+        "source": "/blockstack-login.pdf",
+        "destination": "/blockstack_login16.pdf",
+        "type": 301
+      },
+      {
+        "source": "/virtualchain.pdf",
+        "destination": "/virtualchain_dccl16.pdf",
+        "type": 301
       }
     ]
   }

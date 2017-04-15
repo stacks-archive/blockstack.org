@@ -2,9 +2,9 @@
 
 import {Component}      from 'react'
 import {Link}           from 'react-router'
-import DocumentTitle    from 'react-document-title'
 import marked           from 'marked'
 
+import EmbedYouTube     from '../components/EmbedYouTube'
 import docs             from '../../docs.json'
 import {githubFileUrlRoot} from '../config'
 
@@ -22,6 +22,7 @@ marked.setOptions({
 class Article extends Component {
   static propTypes: {
     urlSlug: PropTypes.string.isRequired,
+    youtubeURL: PropTypes.string
   }
 
   constructor(props) {
@@ -77,20 +78,23 @@ class Article extends Component {
   }
 
   render() {
-    const currentPage = this.state.currentPage
-    const title = currentPage ? currentPage.title : 'Docs'
     const pathPrefix = '/' + location.pathname.split('/')[1]
 
     return (
-      <section className="m-b-5 m-t-5">
-        <div className="container p-b-5 col-centered blog-post">
+      <section>
+        <div className="container p-b-5 col-centered" style={{ fontSize: '18px' }}>
           { this.state.title ?
           <div className="container">
             <h1>{this.state.title}</h1>
+            <div className="m-b-1">
+            { this.props.youtubeURL ?
+              <EmbedYouTube src={this.props.youtubeURL} />
+            : null }
+            </div>
             <div dangerouslySetInnerHTML={{ __html: this.state.markup }}>
             </div>
             <div className="m-t-4">
-              <Link to={githubFileUrlRoot + pathPrefix + '/' + this.state.urlSlug + '.md'}
+              <Link to={`${githubFileUrlRoot}${pathPrefix}/${this.state.urlSlug}.md`}
                 role="button" target="_blank"
                 className="btn btn-sm btn-outline-primary m-b-2">
                 Edit this post on GitHub

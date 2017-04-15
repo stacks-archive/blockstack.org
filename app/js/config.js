@@ -62,7 +62,7 @@ export const companiesHiring = [
 
 export const tutorials = {
   'hello-blockstack': {
-    image: '/images/article-photos/chalkboard.jpg',
+    image: '/images/visuals/hello-blockstack-tutorial.png',
     title: 'Hello, Blockstack',
     urlSlug: 'hello-blockstack',
     description: 'Build a simple single-page JavaScript application that runs completely client-side without any servers.'
