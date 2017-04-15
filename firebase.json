@@ -32,6 +32,10 @@
         "destination": "/docs-articles-light-clients.html"
       },
       {
+        "source": "/tutorials/cli-basics",
+        "destination": "/docs-tutorials-cli-basics.html"
+      },
+      {
         "source": "/tutorials/hello-blockstack",
         "destination": "/docs-tutorials-hello-blockstack.html"
       },

@@ -1,5 +1,4 @@
 import { Component, PropTypes } from 'react'
-import {Link}           from 'react-router'
 
 import EmbedSpeakerDeck from '../components/EmbedSpeakerDeck'
 import EmbedYouTube     from '../components/EmbedYouTube'

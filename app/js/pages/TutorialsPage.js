@@ -1,8 +1,10 @@
 'use strict'
 
 import {Component}      from 'react'
-import {Link}           from 'react-router'
 import DocumentTitle    from 'react-document-title'
+
+import TutorialPreview  from '../components/TutorialPreview'
+import {tutorials}      from '../config'
 
 class TutorialsPage extends Component {
 
@@ -11,12 +13,6 @@ class TutorialsPage extends Component {
   }
 
   render() {
-    const tutorials = {
-      'hello-blockstack': {
-        title: 'Hello, Blockstack',
-      }
-    }
-
     return (
       <DocumentTitle title="Blockstack - Videos">
         <div>
@@ -29,17 +25,12 @@ class TutorialsPage extends Component {
                 { Object.keys(tutorials).map((key, index) => {
                   const tutorial = tutorials[key]
                   return (
-                    <div key={index}>
-                      <h4 className="m-b-1">
-                        {tutorial.title}
-                      </h4>
-                      <p className="m-b-1">
-                        <Link to={`/tutorials/${key}`}
-                              className="btn btn-sm btn-outline-primary">
-                          Get Started
-                        </Link>
-                      </p>
-                    </div>
+                    <TutorialPreview
+                      key={index}
+                      url={'/tutorials/' + tutorial.urlSlug}
+                      title={tutorial.title}
+                      description={tutorial.description}
+                      image={tutorial.image} />
                   )
                 }) }
               </div>

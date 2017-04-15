@@ -6,7 +6,7 @@ import DocumentTitle    from 'react-document-title'
 import Article          from '../components/Article'
 import docs             from '../../docs.json'
 
-class ArticlePage extends Component {
+class TutorialPage extends Component {
 
   constructor(props) {
     super(props)
@@ -51,4 +51,4 @@ class ArticlePage extends Component {
   }
 }
 
-export default ArticlePage
+export default TutorialPage
