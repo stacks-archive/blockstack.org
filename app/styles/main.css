@@ -223,6 +223,9 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .sticky-share{display:none!important;flex-direction:column;justify-content:center;height:150px;position:fixed;top:47%;left:15px;background-color:transparent;}
 .sticky-share > div:hover{cursor:pointer;}
 
+/* Tutorials */
+iframe{height:530px;}
+
 /* Cards */
 .special-card{}
 .card{background-color:#fff;}
