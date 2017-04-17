@@ -5,10 +5,28 @@ import {Link}        from 'react-router'
 import DocumentTitle from 'react-document-title'
 import request       from 'request'
 import {parseString} from 'xml2js'
+import {bindActionCreators} from 'redux'
+import {connect} from 'react-redux'
 
+import {BlogActions}  from '../datastore/Blog'
+import {StatsActions} from '../datastore/Stats'
 import {getPostFromRSS} from '../utils/rssUtils'
 import {blogAuthors}    from '../config'
 import Image            from '../components/Image'
+
+function mapStateToProps(state) {
+  return {
+    posts: state.blog.posts,
+    stats: state.stats,
+  }
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(
+    Object.assign({}, BlogActions, StatsActions),
+    dispatch
+  )
+}
 
 class HomePage extends Component {
 
@@ -16,85 +34,35 @@ class HomePage extends Component {
     super(props)
 
     this.state = {
-      domainCount: 70000,
-      slackUserCount: 2500,
-      meetupUserCount: 5000,
-      forumUserCount: 300,
+      stats: {
+        domains: 70000,
+        slackUsers: 2500,
+        meetupUsers: 5000,
+        forumUsers: 300,
+      },
       posts: []
     }
-
-    this.updateStats = this.updateStats.bind(this)
-    this.setPosts = this.setPosts.bind(this)
   }
 
-  componentDidMount() {
-    // Get the number of Slack users
-    request({
-      url: 'https://blockstack-site-api.herokuapp.com/v1/stats',
-      withCredentials: false
-    }, (error, response, body) => {
-      if (!error && response.statusCode === 200) {
-        this.updateStats(body)
-      } else {
-        console.log(error)
-      }
-    })
-
-    request({
-      url: 'https://blockstack-site-api.herokuapp.com/v1/blog-rss',
-      withCredentials: false
-    }, (error, response, body) => {
-      if (!error && response.statusCode === 200) {
-        this.setPosts(body)
-      } else {
-        console.log(error)
-      }
-    })
+  componentWillMount() {
+    this.props.fetchPosts()
+    this.props.fetchStats()
   }
 
-  setPosts(body) {
-    let posts = []
-
-    parseString(body, (err, result) => { // parse XML string
-      const firstChannel = result.rss.channel[0]
-      const channelItems = firstChannel.item
-
-      channelItems.map((rssPost) => {
-        let post = getPostFromRSS(rssPost)
-        if (blogAuthors.hasOwnProperty(post.blockstackID)) {
-          post.creator = blogAuthors[post.blockstackID]
-        } else {
-          post.creator = blogAuthors['blockstack.id']
-        }
-        posts.push(post)
-      })
-    })
-
-    posts = posts.splice(0, 3)
-
-    this.setState({
-      posts: posts
-    })
-  }
-
-  updateStats(response) {
-    const jsonResponse = JSON.parse(response)
-    if (jsonResponse.hasOwnProperty('slack_users') &&
-        jsonResponse.hasOwnProperty('meetup_users') &&
-        jsonResponse.hasOwnProperty('forum_users') &&
-        jsonResponse.hasOwnProperty('domains')) {
-      
-      let newSlackUsers = this.state.slackUserCount
-      if (jsonResponse.slack_users !== 0) {
-        newSlackUsers = jsonResponse.slack_users
-      }
-
-      // Set the stats
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.stats) {
+      const stats = nextProps.stats
+      console.log(stats)
       this.setState({
-        slackUserCount: newSlackUsers,
-        meetupUserCount: jsonResponse.meetup_users,
-        forumUserCount: jsonResponse.forum_users,
-        domainCount: jsonResponse.domains
+        stats: stats,
+      })
+    }
+
+    if (nextProps.posts) {
+      const posts = nextProps.posts.splice(0, 3)
+      console.log(posts)
+      this.setState({
+        posts: posts,
       })
     }
   }
@@ -299,28 +267,28 @@ class HomePage extends Component {
                       <p className="lead lead-centered">
                         Domains registered
                         <br />
-                        {this.state.domainCount}
+                        {this.state.stats.domains}
                       </p>
                     </div>
                     <div className="col-md-3 no-padding">
                       <p className="lead lead-centered">
                         Slack members
                         <br />
-                        {this.state.slackUserCount}
+                        {this.state.stats.slackUsers}
                       </p>
                     </div>
                     <div className="col-md-3 no-padding">
                       <p className="lead lead-centered">
                         Meetup members
                         <br />
-                        {this.state.meetupUserCount}
+                        {this.state.stats.meetupUsers}
                       </p>
                     </div>
                     <div className="col-md-3 no-padding">
                       <p className="lead lead-centered">
                         Forum members
                         <br />
-                        {this.state.forumUserCount}
+                        {this.state.stats.forumUsers}
                       </p>
                     </div>
                   </div>
@@ -376,4 +344,4 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage
+export default connect(mapStateToProps, mapDispatchToProps)(HomePage)

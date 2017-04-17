@@ -1,6 +1,5 @@
-'use strict';
-
-import {Component, PropTypes, cloneElement} from 'react'
+import {Component, cloneElement} from 'react'
+import PropTypes from 'prop-types'
 
 import Header             from './components/Header'
 import Footer             from './components/Footer'

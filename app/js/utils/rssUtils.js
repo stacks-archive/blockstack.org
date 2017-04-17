@@ -1,4 +1,6 @@
 import createTextVersion from 'textversionjs'
+import {parseString} from 'xml2js'
+import {blogAuthors} from '../config'
 
 export function getSlugFromRSS(rssPost) {
   // Handle URL
@@ -52,4 +54,25 @@ export function getPostFromRSS(rssPost) {
   }
 
   return data
+}
+
+export function getAllPostsFromRSS(rssXML) {
+  let posts = []
+
+  parseString(rssXML, (err, result) => { // parse XML string
+    const firstChannel = result.rss.channel[0]
+    const channelItems = firstChannel.item
+
+    channelItems.map((rssPost) => {
+      let post = getPostFromRSS(rssPost)
+      if (blogAuthors.hasOwnProperty(post.blockstackID)) {
+        post.creator = blogAuthors[post.blockstackID]
+      } else {
+        post.creator = blogAuthors['blockstack.id']
+      }
+      posts.push(post)
+    })
+  })
+  
+  return posts
 }
