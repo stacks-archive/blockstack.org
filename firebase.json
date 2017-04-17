@@ -3,7 +3,7 @@
     "public": "build",
     "ignore": [
       "**/.*",
-      "./__tests__/**",
+      "./tests/**",
       "./app/**",
       "./gulp/**",
       "**/node_modules/**",

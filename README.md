@@ -25,10 +25,10 @@ Now that `npm run dev` is running, the server is up as well and serving files fr
 
 #### Documentation
 
-This repo uses [Git Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) for documentation and links to the [blockstack](https://github.com/blockstack/blockstack) repo. You can pull new changes from the `github.com/blockstack/blockstack` repo with the following:
+This repo uses [Git Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) for documentation and links to the [blockstack](https://github.com/blockstack/blockstack) repo. Everytime you start up the server, new changes will be pulled automatically from the `github.com/blockstack/blockstack` repo. You can force this update with the following:
 
 ```
-npm run update-docs
+npm run fetch-docs
 ```
 
 For simplicity, please make any edits to the `.md` files directly in the [/blockstack/blockstack](https://github.com/blockstack/blockstack) repo instead of the document in the included submodule.
