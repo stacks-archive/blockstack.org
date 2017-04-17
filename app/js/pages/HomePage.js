@@ -96,6 +96,32 @@ class HomePage extends Component {
               <div className="container">
                 <section>
                   <h1 className="modern text-center">
+                    The decentralized internet is already here
+                  </h1>
+                  <div>
+                    <div className="col-md-4 no-padding">
+                      <h3 className="modern text-center">
+                        In production for over 2 years
+                      </h3>
+                    </div>
+                    <div className="col-md-4 no-padding">
+                      <h3 className="modern text-center">
+                        {this.state.stats.domains} users registered
+                      </h3>
+                    </div>
+                    <div className="col-md-4 no-padding">
+                      <h3 className="modern text-center">
+                        Used by OpenBazaar, Microsoft & more
+                      </h3>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div className="section-odd container-fluid">
+              <div className="container">
+                <section>
+                  <h1 className="modern text-center">
                     The internet, evolved
                   </h1>
                   <p className="lead lead-centered col-md-10 block col-centered text-center">
@@ -113,7 +139,7 @@ class HomePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="section-odd container-fluid">
+            <div className="section-even container-fluid">
               <div className="container">
                 <section>
                   <h1 className="modern text-center">
@@ -146,7 +172,7 @@ class HomePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="section-even container-fluid">
+            <div className="section-odd container-fluid">
               <div className="container">
                 <section>
                   <h1 className="modern text-center">
@@ -189,11 +215,11 @@ class HomePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="section-odd container-fluid">
+            <div className="section-even container-fluid">
               <div className="container">
                 <section>
                   <h1 className="modern text-center">
-                    Blockstack gives you a full trust-less stack
+                    Blockstack gives you a full trustless stack
                   </h1>
                   <div className="col-md-4 no-padding">
                     <h3 className="modern text-center">
@@ -249,7 +275,7 @@ class HomePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="section-even container-fluid">
+            <div className="section-odd container-fluid">
               <div className="container">
                 <section>
                   <h1 className="modern text-center">
@@ -275,45 +301,6 @@ class HomePage extends Component {
                   <p className="lead lead-centered col-md-10 block col-centered text-center">
                     Want to learn more about building apps on blockstack? Tutorials on building serverless apps with decentralized storage are coming soon.
                   </p>
-                </section>
-              </div>
-            </div>
-            <div className="section-odd container-fluid">
-              <div className="container">
-                <section>
-                  <h1 className="modern text-center">
-                    A growing community
-                  </h1>
-                  <div>
-                    <div className="col-md-3 no-padding">
-                      <p className="lead lead-centered">
-                        Domains registered
-                        <br />
-                        {this.state.stats.domains}
-                      </p>
-                    </div>
-                    <div className="col-md-3 no-padding">
-                      <p className="lead lead-centered">
-                        Slack members
-                        <br />
-                        {this.state.stats.slackUsers}
-                      </p>
-                    </div>
-                    <div className="col-md-3 no-padding">
-                      <p className="lead lead-centered">
-                        Meetup members
-                        <br />
-                        {this.state.stats.meetupUsers}
-                      </p>
-                    </div>
-                    <div className="col-md-3 no-padding">
-                      <p className="lead lead-centered">
-                        Forum members
-                        <br />
-                        {this.state.stats.forumUsers}
-                      </p>
-                    </div>
-                  </div>
                 </section>
               </div>
             </div>
@@ -367,3 +354,13 @@ class HomePage extends Component {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomePage)
+
+/*
+                    <div className="col-md-3 no-padding">
+                      <p className="lead lead-centered">
+                        Meetup members
+                        <br />
+                        {this.state.stats.meetupUsers}
+                      </p>
+                    </div>
+*/
