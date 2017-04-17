@@ -26,15 +26,17 @@ class EmbedYouTube extends Component {
 
   render() {
     return (
-      <div>
-        <iframe
-          ref="iframeWrapper"
-          width="100%"
-          height={this.state.height}
-          src={this.props.src}
-          frameBorder="0"
-          allowFullScreen>
-        </iframe>
+      <div className="media-screen">
+        <div className="media-wrap container-fluid col-centered">
+          <iframe
+            ref="iframeWrapper"
+            width="100%"
+            height={this.state.height}
+            src={this.props.src}
+            frameBorder="0"
+            allowFullScreen>
+          </iframe>
+        </div>
       </div>
     );
   }
