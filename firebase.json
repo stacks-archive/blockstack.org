@@ -203,6 +203,11 @@
         "source": "/virtualchain.pdf",
         "destination": "/virtualchain_dccl16.pdf",
         "type": 301
+      },
+      {
+        "source": "/join",
+        "destination": "/newsletter",
+        "type": 301
       }
     ]
   }

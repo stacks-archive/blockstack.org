@@ -85,6 +85,7 @@
     "highlight.js": "git+ssh://git@github.com/isagalaev/highlight.js.git",
     "is-retina": "^1.0.3",
     "jsontokens": "^0.7.6",
+    "lodash": "^3.10.1",
     "marked": "^0.3.6",
     "query-string": "^4.3.2",
     "react": "^15.4.0",
