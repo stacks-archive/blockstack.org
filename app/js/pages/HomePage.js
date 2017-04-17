@@ -52,7 +52,6 @@ class HomePage extends Component {
   componentWillReceiveProps(nextProps) {
     if (nextProps.stats) {
       const stats = nextProps.stats
-      console.log(stats)
       this.setState({
         stats: stats,
       })
@@ -60,7 +59,6 @@ class HomePage extends Component {
 
     if (nextProps.posts) {
       const posts = nextProps.posts.splice(0, 3)
-      console.log(posts)
       this.setState({
         posts: posts,
       })
@@ -119,7 +117,7 @@ class HomePage extends Component {
               <div className="container">
                 <section>
                   <h1 className="modern text-center">
-                    The future of app development
+                    The future of app development is decentralized
                   </h1>
                   <div className="col-md-4 no-padding">
                     <h3 className="modern text-center">
@@ -195,7 +193,7 @@ class HomePage extends Component {
               <div className="container">
                 <section>
                   <h1 className="modern text-center">
-                    Decentralized services to power your app
+                    Blockstack gives you a full trust-less stack
                   </h1>
                   <div className="col-md-4 no-padding">
                     <h3 className="modern text-center">
@@ -224,6 +222,30 @@ class HomePage extends Component {
                       It is supported by the Blockstack blockchain and P2P network.
                     </p>
                   </div>
+                  <div className="col-md-4 no-padding">
+                    <h3 className="modern text-center">
+                      Payments
+                    </h3>
+                    <p className="lead lead-centered col-md-10 block col-centered text-center">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                  </div>
+                  <div className="col-md-4 no-padding">
+                    <h3 className="modern text-center">
+                      Encryption
+                    </h3>
+                    <p className="lead lead-centered col-md-10 block col-centered text-center">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                  </div>
+                  <div className="col-md-4 no-padding">
+                    <h3 className="modern text-center">
+                      Auth
+                    </h3>
+                    <p className="lead lead-centered col-md-10 block col-centered text-center">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                  </div>
                 </section>
               </div>
             </div>
@@ -231,7 +253,7 @@ class HomePage extends Component {
               <div className="container">
                 <section>
                   <h1 className="modern text-center">
-                    Tutorials to get you started
+                    Step-by-step tutorials
                   </h1>
                   <p className="lead lead-centered col-md-10 block col-centered text-center">
                     <Link to="/tutorials/hello-blockstack">
