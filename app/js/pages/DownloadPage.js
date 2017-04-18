@@ -31,7 +31,7 @@ class DownloadsPage extends Component {
                     </h1>
 
                     <div>
-                      <h3>Browser Add-on</h3>
+                      <h3>Browser Portal</h3>
                       <table className="table">
                         <tbody>
                           <tr>
@@ -75,7 +75,7 @@ class DownloadsPage extends Component {
                     </div>
 
                     <div>
-                      <h3>Command Line Interface</h3>
+                      <h3>Core Server + CLI</h3>
                       <p>
                         <a href={installationLinks.cliDevelopers} role="button"
                           className="btn btn-outline-primary btn-block">
