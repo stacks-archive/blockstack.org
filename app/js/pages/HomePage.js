@@ -8,7 +8,7 @@ import {connect} from 'react-redux'
 
 import {BlogActions}  from '../datastore/Blog'
 import {StatsActions} from '../datastore/Stats'
-import Image            from '../components/Image'
+import Image          from '../components/Image'
 
 function mapStateToProps(state) {
   return {
@@ -80,7 +80,7 @@ class HomePage extends Component {
                 </p>
                 <p className="no-padding col-md-12 hero-caption">
                   <Link to="/install" className="hero-caption-text">
-                    Try the browser add-on &nbsp; › &nbsp;
+                    Try the browser portal &nbsp; › &nbsp;
                     <span className="hero-caption-link">Install</span>
                   </Link>
                 </p>
@@ -127,7 +127,7 @@ class HomePage extends Component {
                   <p className="lead-centered">
                     <Link to="/install" role="button"
                       className="btn btn-lg btn-outline-primary btn-block">
-                      Install Browser Add-on
+                      Install Browser Portal
                     </Link>
                   </p>
                 </section>

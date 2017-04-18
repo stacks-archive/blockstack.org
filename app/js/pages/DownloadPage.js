@@ -4,16 +4,12 @@ import { Component }   from 'react'
 import DocumentTitle   from 'react-document-title'
 //import { UAParser }    from 'ua-parser-js'
 
+import {installationLinks} from '../config'
+
 class DownloadsPage extends Component {
 
   constructor(props) {
     super(props)
-
-    this.state = {
-      macDownloadLink: 'https://github.com/blockstack/blockstack-portal/releases/download/v0.4.0/Blockstack-v0.4.app.zip',
-      portalReleasesLink: 'https://github.com/blockstack/blockstack-portal/releases',
-      cliInstallationLink: 'https://github.com/blockstack/blockstack-core',
-    }
   }
 
   render() {
@@ -21,7 +17,6 @@ class DownloadsPage extends Component {
     const result = parser.getResult()
     const browserName = result.browser.name
     const osName = result.os.name*/
-
 
     return (
       <DocumentTitle title="Blockstack newsletter sign-up">
@@ -42,7 +37,7 @@ class DownloadsPage extends Component {
                           <tr>
                             <td>Developer alpha</td>
                             <td>
-                              <a href={this.state.portalReleasesLink} role="button"
+                              <a href={installationLinks.portalDevelopers} role="button"
                                 className="btn btn-sm btn-outline-primary btn-block">
                                 Releases on GitHub
                               </a>
@@ -82,7 +77,7 @@ class DownloadsPage extends Component {
                     <div>
                       <h3>Command Line Interface</h3>
                       <p>
-                        <a href={this.state.cliInstallationLink} role="button"
+                        <a href={installationLinks.cliDevelopers} role="button"
                           className="btn btn-outline-primary btn-block">
                           Instructions on GitHub
                         </a>

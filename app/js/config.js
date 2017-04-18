@@ -12,6 +12,12 @@ export const socialLinks = {
   branding: 'https://projects.invisionapp.com/boards/HE2VVROFSGB27/'
 }
 
+export const installationLinks = {
+  portalMacOS: 'https://github.com/blockstack/blockstack-portal/releases/download/v0.4.0/Blockstack-v0.4.app.zip',
+  portalDevelopers: 'https://github.com/blockstack/blockstack-portal/releases',
+  cliDevelopers: 'https://github.com/blockstack/blockstack-core',
+}
+
 export const companiesHiring = [
   {
     name: 'Blockstack Inc',
