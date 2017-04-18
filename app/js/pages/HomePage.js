@@ -3,15 +3,11 @@
 import {Component}   from 'react'
 import {Link}        from 'react-router'
 import DocumentTitle from 'react-document-title'
-import request       from 'request'
-import {parseString} from 'xml2js'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 
 import {BlogActions}  from '../datastore/Blog'
 import {StatsActions} from '../datastore/Stats'
-import {getPostFromRSS} from '../utils/rssUtils'
-import {blogAuthors}    from '../config'
 import Image            from '../components/Image'
 
 function mapStateToProps(state) {
@@ -34,38 +30,36 @@ class HomePage extends Component {
     super(props)
 
     this.state = {
-      stats: {
-        domains: 70000,
-        slackUsers: 2500,
-        meetupUsers: 5000,
-        forumUsers: 300,
-      },
-      posts: []
+      stats: this.props.stats,
+      posts: this.props.posts
     }
   }
 
   componentWillMount() {
-    this.props.fetchPosts()
+    if (this.props.posts.length === 0) {
+      this.props.fetchPosts()
+    }
     this.props.fetchStats()
   }
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.stats) {
+    if (nextProps.stats !== this.props.stats) {
       const stats = nextProps.stats
       this.setState({
         stats: stats,
       })
     }
 
-    if (nextProps.posts) {
-      const posts = nextProps.posts.splice(0, 3)
+    if (nextProps.posts !== this.props.posts) {
       this.setState({
-        posts: posts,
+        posts: nextProps.posts,
       })
     }
   }
 
   render() {
+    const firstThreePosts = this.state.posts.slice(0, 3)
+
     return (
       <DocumentTitle title="Blockstack, building the decentralized internet">
         <div className="body-hero">
@@ -311,7 +305,7 @@ class HomePage extends Component {
                     News
                   </h1>
                   <div className="row">
-                  { this.state.posts.map((post, index) => {
+                  { firstThreePosts.map((post, index) => {
                     return (
                       <div className="col-md-4" key={index}>
                         { post.urlSlug && post.title ?
@@ -354,13 +348,3 @@ class HomePage extends Component {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomePage)
-
-/*
-                    <div className="col-md-3 no-padding">
-                      <p className="lead lead-centered">
-                        Meetup members
-                        <br />
-                        {this.state.stats.meetupUsers}
-                      </p>
-                    </div>
-*/

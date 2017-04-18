@@ -3,12 +3,20 @@
 import {Component}     from 'react'
 import {Link}          from 'react-router'
 import DocumentTitle   from 'react-document-title'
-import request         from 'request'
-import {parseString}   from 'xml2js'
+import {bindActionCreators} from 'redux'
+import {connect} from 'react-redux'
 
-import {getPostFromRSS} from '../utils/rssUtils'
-import {blogAuthors}    from '../config'
+import {BlogActions}  from '../datastore/Blog'
 
+function mapStateToProps(state) {
+  return {
+    posts: state.blog.posts,
+  }
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(BlogActions, dispatch)
+}
 
 class BlogPage extends Component {
 
@@ -16,47 +24,26 @@ class BlogPage extends Component {
     super(props)
 
     this.state = {
-      posts: []
+      posts: this.props.posts
     }
-
-    this.setPosts = this.setPosts.bind(this)
   }
 
-  componentDidMount() {
-    const url = 'https://blockstack-site-api.herokuapp.com/v1/blog-rss'
-    request({
-      url: url,
-      withCredentials: false
-    }, (error, response, body) => {
-      if (!error && response.statusCode === 200) {
-        this.setPosts(body)
-      } else {
-        console.log(error)
-      }
-    })
+  componentWillMount() {
+    if (this.props.posts.length === 0) {
+      this.props.fetchPosts()
+    }
   }
 
-  setPosts(body) {
-    let posts = []
-
-    parseString(body, (err, result) => { // parse XML string
-      const firstChannel = result.rss.channel[0]
-      const channelItems = firstChannel.item
-
-      channelItems.map((rssPost) => {
-        let post = getPostFromRSS(rssPost)
-        if (blogAuthors.hasOwnProperty(post.blockstackID)) {
-          post.creator = blogAuthors[post.blockstackID]
-        } else {
-          post.creator = blogAuthors['blockstack.id']
-        }
-        posts.push(post)
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.posts !== this.props.posts) {
+      console.log(nextProps.posts)
+      console.log(this.props.posts)
+      this.setState({
+        posts: nextProps.posts,
       })
-    })
-
-    this.setState({
-      posts: posts
-    })
+    } else {
+      console.log('the same!')
+    }
   }
 
   render() {
@@ -104,4 +91,4 @@ class BlogPage extends Component {
 
 }
 
-export default BlogPage
+export default connect(mapStateToProps, mapDispatchToProps)(BlogPage)

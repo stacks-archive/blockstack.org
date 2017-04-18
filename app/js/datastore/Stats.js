@@ -1,9 +1,9 @@
 const UPDATE_STATS = 'UPDATE_STATS'
 
 function updateStats(stats) {
-  let slack_users = 2500
+  let slackUsers = 2500
   if (stats.slack_users !== 0) {
-    slack_users = stats.slack_users
+    slackUsers = stats.slack_users
   }
 
   return {
@@ -11,7 +11,7 @@ function updateStats(stats) {
     domains: stats.domains,
     forumUsers: stats.forum_users,
     meetupUsers: stats.meetup_users,
-    slackUsers: slack_users,
+    slackUsers: slackUsers,
   }
 }
 
@@ -36,10 +36,10 @@ export const StatsActions = {
 }
 
 const initialState = {
-  domains: 0,
-  forumUsers: 0,
-  meetupUsers: 0,
-  slackUsers: 0,
+  domains: 70000,
+  slackUsers: 2500,
+  meetupUsers: 5000,
+  forumUsers: 400,
 }
 
 export function StatsReducer(state = initialState, action) {
