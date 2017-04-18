@@ -16,7 +16,6 @@ class TutorialPreview extends Component {
   }
 
   render() {
-    console.log(this.props.image)
     return (
       <div className="row m-b-1">
         <div className="col-md-4">

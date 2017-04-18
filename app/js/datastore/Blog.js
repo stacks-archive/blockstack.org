@@ -2,10 +2,14 @@ import { getAllPostsFromRSS } from '../utils/rssUtils'
 
 const UPDATE_POSTS = 'UPDATE_POSTS'
 
-function updatePosts(posts) {
+function updatePosts(postData) {
+  const posts = postData.postArray
+  const postObject = postData.postObject
+
   return {
     type: UPDATE_POSTS,
-    posts: posts
+    posts: posts,
+    postObject: postObject,
   }
 }
 
@@ -15,8 +19,8 @@ function fetchPosts() {
     fetch(url)
     .then((response) => response.text())
     .then((responseText) => {
-      const posts = getAllPostsFromRSS(responseText)
-      dispatch(updatePosts(posts))
+      const postData = getAllPostsFromRSS(responseText)
+      dispatch(updatePosts(postData))
     })
     .catch((error) => {
       console.warn(error)
@@ -30,14 +34,16 @@ export const BlogActions = {
 }
 
 const initialState = {
-  posts: []
+  posts: [],
+  postObject: {}
 }
 
 export function BlogReducer(state = initialState, action) {
   switch (action.type) {
     case UPDATE_POSTS:
       return Object.assign({}, state, {
-        posts: action.posts
+        posts: action.posts,
+        postObject: action.postObject,
       })
     default:
       return state

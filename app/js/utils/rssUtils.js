@@ -7,7 +7,7 @@ export function getSlugFromRSS(rssPost) {
   const url = rssPost.link[0]
   let urlSlug = null
   if (url) {
-    urlSlug = url.replace("https://blockstack.org/blog/", "").replace(/\/$/, "")
+    urlSlug = url.replace('https://blockstack.org/blog/', '').replace(/\/$/, '')
   }
   return urlSlug
 }
@@ -23,7 +23,7 @@ export function getPostFromRSS(rssPost) {
   const title = post.title[0]
   const preview = post.description[0]
   const description = createTextVersion(post.description[0])
-  const blockstackID = post["dc:creator"][0]
+  const blockstackID = post['dc:creator'][0]
 
   // Handle dates
   const date = new Date(Date.parse(post.pubDate))
@@ -31,7 +31,7 @@ export function getPostFromRSS(rssPost) {
   const dateString = date.toDateString()
 
   // Handle markup
-  const markupFull = post["content:encoded"][0]
+  const markupFull = post['content:encoded'][0]
   const image = markupFull.split('src="')[1].split('" alt="')[0]
   let markupCleaned = null
   if (markupFull) {
@@ -58,6 +58,7 @@ export function getPostFromRSS(rssPost) {
 
 export function getAllPostsFromRSS(rssXML) {
   let posts = []
+  let postObject = {}
 
   parseString(rssXML, (err, result) => { // parse XML string
     const firstChannel = result.rss.channel[0]
@@ -71,8 +72,13 @@ export function getAllPostsFromRSS(rssXML) {
         post.creator = blogAuthors['blockstack.id']
       }
       posts.push(post)
+      postObject[post.urlSlug] = post
     })
   })
   
-  return posts
+  return {
+    postArray: posts,
+    postObject: postObject
+  }
 }
+
