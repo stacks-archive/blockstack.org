@@ -29,7 +29,7 @@ const config = {
 
   buildDir: './build/',
 
-  testFiles: './__tests__/**/*.{js,jsx}',
+  testFiles: './tests/**/*.{js,jsx}',
 
 };
 

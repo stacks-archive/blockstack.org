@@ -1,11 +1,8 @@
 'use strict'
 
 import {Component}      from 'react'
-import {Link}           from 'react-router'
 import DocumentTitle    from 'react-document-title'
 
-import Header           from '../components/Header'
-import Footer           from '../components/Footer'
 import JobListing       from '../components/JobListing'
 import { companiesHiring } from '../config'
 
@@ -19,9 +16,6 @@ class JobsPage extends Component {
     return (
       <DocumentTitle title="Blockstack - Jobs">
         <div>
-          <div className="navbar-fixed-top bg-primary">
-            <Header />
-          </div>
           <section className="container-fluid spacing-container">
             <div className="container col-centered">
               <div className="container m-b-5">
@@ -50,7 +44,6 @@ class JobsPage extends Component {
               </div>
             </div>
           </section>
-          <Footer />
         </div>
       </DocumentTitle>
     )

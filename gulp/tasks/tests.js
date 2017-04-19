@@ -15,11 +15,11 @@ gulp.task('test', () => {
     let singleFile = argv.f || argv.file;
 
     // Allow omission of directory and/or extension
-    if ( singleFile.indexOf('__tests__/') === -1 ) { singleFile = `__tests__/${singleFile}`; }
+    if ( singleFile.indexOf('tests/') === -1 ) { singleFile = `tests/${singleFile}`; }
     if ( singleFile.indexOf('.test.js') === -1 ) { singleFile += '.test.js'; }
 
     // Include top-level helper even when running specific tests
-    files = ['__tests__/helper.js', singleFile];
+    files = ['tests/helper.js', singleFile];
   } else {
     // Default to all test files
     files = [config.testFiles];
@@ -44,7 +44,7 @@ gulp.task('test', () => {
 
     istanbul: {
       coverageVariable: '__MY_TEST_COVERAGE__',
-      exclude: /node_modules|__tests__|build|gulp|testHelpers/
+      exclude: /node_modules|tests|build|gulp|testHelpers/
     },
 
     transpile: {

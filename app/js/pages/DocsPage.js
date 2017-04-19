@@ -2,13 +2,9 @@
 
 import { Component }   from 'react'
 import DocumentTitle   from 'react-document-title'
-import {
-  Link, Element, Events, scrollSpy
-}                      from 'react-scroll'
+import { Link, Element } from 'react-scroll'
 import marked          from 'marked'
 
-import Header          from '../components/Header'
-import Footer          from '../components/Footer'
 import docs            from '../../docs.json'
 
 marked.setOptions({
@@ -37,7 +33,7 @@ class DocsPage extends Component {
   componentDidMount() {
     this.setPage()
   }
-  
+
   componentDidUpdate() {
     const codeBlocks = document.querySelectorAll('pre code')
     Array.prototype.forEach.call(codeBlocks, hljs.highlightBlock)
@@ -60,7 +56,7 @@ class DocsPage extends Component {
     ]
 
     sections.forEach((section) => {
-      let markup = ""
+      let markup = ''
       let subSections = []
 
       section.pageNames.forEach((pageName) => {
@@ -97,12 +93,10 @@ class DocsPage extends Component {
 
   render() {
     const sections = this.state.sections
+
     return (
       <DocumentTitle title="Blockstack - Docs">
         <div>
-          <div className="navbar-fixed-top bg-primary">
-            <Header />
-          </div>
           <section className="m-t-5">
             <div className="container p-b-5 col-centered">
               { sections ?

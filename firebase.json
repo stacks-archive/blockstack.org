@@ -3,7 +3,7 @@
     "public": "build",
     "ignore": [
       "**/.*",
-      "./__tests__/**",
+      "./tests/**",
       "./app/**",
       "./gulp/**",
       "**/node_modules/**",
@@ -11,30 +11,6 @@
       "firebase.json"
     ],
     "rewrites": [
-      {
-        "source": "/articles/404",
-        "destination": "/docs-articles-404.html"
-      },
-      {
-        "source": "/articles/blockstack-core",
-        "destination": "/docs-articles-blockstack-core.html"
-      },
-      {
-        "source": "/articles/browser-beta",
-        "destination": "/docs-articles-browser-beta.html"
-      },
-      {
-        "source": "/articles/faq",
-        "destination": "/docs-articles-faq.html"
-      },
-      {
-        "source": "/articles/light-clients",
-        "destination": "/docs-articles-light-clients.html"
-      },
-      {
-        "source": "/tutorials/hello-blockstack",
-        "destination": "/docs-tutorials-hello-blockstack.html"
-      },
       {
         "source": "/posts/blockchain-identity",
         "destination": "/docs-posts-blockchain-identity.html"
@@ -66,6 +42,18 @@
       {
         "source": "/posts/namespaces",
         "destination": "/docs-posts-namespaces.html"
+      },
+      {
+        "source": "/tutorials/readme",
+        "destination": "/docs-tutorials-readme.html"
+      },
+      {
+        "source": "/tutorials/cli-basics",
+        "destination": "/docs-tutorials-cli-basics.html"
+      },
+      {
+        "source": "/tutorials/hello-blockstack",
+        "destination": "/docs-tutorials-hello-blockstack.html"
       },
       {
         "source": "/blog/hello-blockstack-tutorial",
@@ -142,7 +130,12 @@
       },
       {
         "source": "/articles",
-        "destination": "/posts",
+        "destination": "/blog",
+        "type": 301
+      },
+      {
+        "source": "/posts",
+        "destination": "/blog",
         "type": 301
       },
       {
@@ -151,8 +144,28 @@
         "type": 301
       },
       {
+        "source": "/browser",
+        "destination": "/download",
+        "type": 301
+      },
+      {
+        "source": "/articles/blockstack-core",
+        "destination": "/papers",
+        "type": 301
+      },
+      {
         "source": "/articles/browser-beta",
-        "destination": "/browser",
+        "destination": "/download",
+        "type": 301
+      },
+      {
+        "source": "/articles/faq",
+        "destination": "/faqs",
+        "type": 301
+      },
+      {
+        "source": "/articles/light-clients",
+        "destination": "/papers",
         "type": 301
       },
       {
@@ -162,12 +175,42 @@
       },
       {
         "source": "/docs/installation",
-        "destination": "/docs",
+        "destination": "/tutorials",
         "type": 301
       },
       {
-        "source": "/posts",
-        "destination": "/blog",
+        "source": "/tutorials/hello-world",
+        "destination": "/tutorials/hello-blockstack",
+        "type": 301
+      },
+      {
+        "source": "/docs/cli-basic-usage",
+        "destination": "/tutorials/cli-basics",
+        "type": 301
+      },
+      {
+        "source": "/docs/cli-extended-usage",
+        "destination": "/tutorials/cli-basics",
+        "type": 301
+      },
+      {
+        "source": "/blockstack.pdf",
+        "destination": "/blockstack_usenix16.pdf",
+        "type": 301
+      },
+      {
+        "source": "/blockstack-login.pdf",
+        "destination": "/blockstack_login16.pdf",
+        "type": 301
+      },
+      {
+        "source": "/virtualchain.pdf",
+        "destination": "/virtualchain_dccl16.pdf",
+        "type": 301
+      },
+      {
+        "source": "/join",
+        "destination": "/newsletter",
         "type": 301
       }
     ]

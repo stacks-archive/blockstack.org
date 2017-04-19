@@ -2,6 +2,7 @@
 
 import {Component}  from 'react'
 import {Link} from 'react-router'
+import MobileNav from './MobileNav'
 
 class Header extends Component {
 
@@ -12,22 +13,25 @@ class Header extends Component {
   render() {
     return (
       <header className="container nav-header">
-        <nav className="navbar">          
+        <nav className="navbar">
           <Link className="navbar-brand brand-bug" to="/">
             <img src="/images/logos/blockstack-bug-rev.svg" />
           </Link>
-          <Link className="navbar-brand" to="/">
+          <Link className="navbar-brand brand-logo" to="/">
             <img src="/images/logos/blockstack-logo-landscape-rev.svg" />
           </Link>
-          <ul className="nav navbar-nav">
+          <button type="button" className="hamburger pull-xs-right collapsed" data-toggle="collapse" data-target="#mobile-nav" aria-controls="dropdown" aria-expanded="false">
+            <i className="fa fa-bars"></i>
+          </button>
+          <ul className="nav navbar-nav desktop-nav">
             <li className="nav-item">
-              <Link to="/intro" className="nav-link">
-                Intro
+              <Link to="/install" className="nav-link">
+                Install
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/docs" className="nav-link">
-                Docs
+              <Link to="/tutorials" className="nav-link">
+                Tutorials
               </Link>
             </li>
             <li className="nav-item">
@@ -53,6 +57,7 @@ class Header extends Component {
             </li>
           </ul>
         </nav>
+        <MobileNav />
       </header>
     )
   }

@@ -1,7 +1,6 @@
 'use strict';
 
 import gulp                      from 'gulp'
-import config                    from '../config'
 import fs                        from 'fs'
 import metaData                  from 'meta-tag-data'
 import request                   from 'request'
@@ -56,7 +55,7 @@ gulp.task('buildBlog', () => {
   }
 
   const indexHtml = fs.readFileSync('app/index.html', 'utf8')
-  const rssURL = "https://blockstack-site-api.herokuapp.com/v1/blog-rss"
+  const rssURL = 'https://blockstack-site-api.herokuapp.com/v1/blog-rss'
   request({
     url: rssURL,
     withCredentials: false
@@ -76,7 +75,7 @@ gulp.task('buildDocs', () => {
 
   let indexHtml = fs.readFileSync('app/index.html', 'utf8')
 
-  let folderNames = ['articles', 'tutorials', 'docs', 'posts', 'overview']
+  let folderNames = ['tutorials', 'docs', 'posts']
 
   folderNames.forEach((folderName) => {
     fs.readdirSync('app/docs/' + folderName).forEach((docFilename) => {
@@ -111,6 +110,63 @@ gulp.task('buildDocs', () => {
           }
         })
       }
+      allDocs[key] = docProperties
+
+      let metatagMarkup = createMetatagMarkup(url, title, description, image)
+      let modifiedIndex = indexHtml.replace('<meta charset="utf-8" />', metatagMarkup)
+      fs.writeFileSync('build/docs-' + folderName + '-' + key + '.html', modifiedIndex)
+    })
+  })
+
+  fs.writeFile('app/docs.json', JSON.stringify(allDocs), (err) => {
+    if (err) {
+      throw err
+    }
+  })
+})
+
+gulp.task('buildWhitepaper', () => {
+  let allDocs = {}
+
+  let indexHtml = fs.readFileSync('app/index.html', 'utf8')
+
+  let folderNames = ['whitepaper']
+
+  folderNames.forEach((folderName) => {
+    fs.readdirSync('app/docs/' + folderName).forEach((docFilename) => {
+      let key = docFilename.split('.')[0].toLowerCase(),
+          docProperties = {},
+          docPage = fs.readFileSync('app/docs/' + folderName + '/' + docFilename, 'utf8'),
+          pageSections = docPage.split('<!--- -->')
+      
+      let description = '',
+          image = 'https://blockstack.org' + '/images/article-photos/chalkboard.jpg',
+          title = '',
+          url = 'https://blockstack.org/' + folderName + '/' + key
+
+      if (pageSections.length === 3) {
+        docProperties.markdown = pageSections[2]
+        let propertyLines = pageSections[1].split('\n')
+        propertyLines.map((propertyLine) => {
+          if (propertyLine.split(': ').length >= 2) {
+            let parts = propertyLine.split(': ')
+            let propertyName = parts[0],
+                propertyValue = parts.slice(1).join(': ')
+            if (propertyName === 'description') {
+              description = propertyValue
+            }
+            if (propertyName === 'image') {
+              image = 'https://blockstack.org' + propertyValue
+            }
+            if (propertyName === 'chapter') {
+              title = propertyValue
+            }
+            docProperties[propertyName] = propertyValue.trim()
+          }
+        })
+      }
+      // Just use a default image instead of specifying header images for each chapter
+      docProperties['image'] = image
       allDocs[key] = docProperties
 
       let metatagMarkup = createMetatagMarkup(url, title, description, image)

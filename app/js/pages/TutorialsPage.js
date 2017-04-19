@@ -1,11 +1,10 @@
 'use strict'
 
 import {Component}      from 'react'
-import {Link}           from 'react-router'
 import DocumentTitle    from 'react-document-title'
 
-import Header           from '../components/Header'
-import Footer           from '../components/Footer'
+import TutorialPreview  from '../components/TutorialPreview'
+import {tutorials}      from '../config'
 
 class TutorialsPage extends Component {
 
@@ -14,18 +13,9 @@ class TutorialsPage extends Component {
   }
 
   render() {
-    const tutorials = {
-      "hello-blockstack": {
-        title: "Hello, Blockstack",
-      }
-    }
-
     return (
       <DocumentTitle title="Blockstack - Videos">
         <div>
-          <div className="navbar-fixed-top bg-primary">
-            <Header />
-          </div>
           <section className="container-fluid spacing-container">
             <div className="container-fluid col-centered">
               <div className="container m-b-1">
@@ -35,23 +25,17 @@ class TutorialsPage extends Component {
                 { Object.keys(tutorials).map((key, index) => {
                   const tutorial = tutorials[key]
                   return (
-                    <div key={index}>
-                      <h4 className="m-b-1">
-                        {tutorial.title}
-                      </h4>
-                      <p className="m-b-1">
-                        <Link to={`/tutorials/${key}`}
-                              className="btn btn-sm btn-outline-primary">
-                          Get Started
-                        </Link>
-                      </p>
-                    </div>
+                    <TutorialPreview
+                      key={index}
+                      url={'/tutorials/' + tutorial.urlSlug}
+                      title={tutorial.title}
+                      description={tutorial.description}
+                      image={tutorial.image} />
                   )
                 }) }
               </div>
             </div>
           </section>
-          <Footer />
         </div>
       </DocumentTitle>
     )

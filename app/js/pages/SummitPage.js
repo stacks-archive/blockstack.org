@@ -4,9 +4,6 @@ import {Component}      from 'react'
 import {Link}           from 'react-router'
 import DocumentTitle    from 'react-document-title'
 
-import Header           from '../components/Header'
-import Footer           from '../components/Footer'
-
 class SummitPage extends Component {
 
   constructor(props) {
@@ -18,7 +15,6 @@ class SummitPage extends Component {
       <DocumentTitle title="Blockstack - Blockstack Summit">
         <div>
          <div className="container-fluid col-centered summit-head-wrap">
-            <Header />
             <div className="m-t-2 m-b-3 page-header-image-wrapper">
               <section>
                 <div>
@@ -334,7 +330,6 @@ class SummitPage extends Component {
               </div>
             </div>
           </section>
-          <Footer />
         </div>
       </DocumentTitle>
     )

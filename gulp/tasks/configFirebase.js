@@ -5,7 +5,6 @@ import gulp                      from 'gulp'
 import {parseString as parseXML} from 'xml2js'
 import request from 'sync-request'
 
-import config                    from '../config'
 import {getPostFromRSS}          from '../../app/js/utils/rssUtils'
 
 gulp.task('configFirebase', () => {
@@ -17,36 +16,36 @@ gulp.task('configFirebase', () => {
   let rewrites = []
 
   // create rewrites for docs
-  const docFolderNames = ['articles', 'tutorials', 'posts']
+  const docFolderNames = ['posts', 'tutorials']
   docFolderNames.forEach((folderName) => {
     fs.readdirSync('app/docs/' + folderName + '/').forEach((docFilename) => {
       const key = docFilename.split('.')[0].toLowerCase()
 
       rewrites.push({
-        "source": `/${folderName}/${key}`,
-        "destination": `/docs-${folderName}-${key}.html`
+        'source': `/${folderName}/${key}`,
+        'destination': `/docs-${folderName}-${key}.html`
       })
     })
   })
 
   // Create rewrites for blog
-  const rssURL = "https://blockstack-site-api.herokuapp.com/v1/blog-rss"
+  const rssURL = 'https://blockstack-site-api.herokuapp.com/v1/blog-rss'
   const requestBody = request('GET', rssURL).body
   parseXML(requestBody, (err, blogRSSData) => {
     const firstChannel = blogRSSData.rss.channel[0]
     firstChannel.item.map((rssPost) => {
       const post = getPostFromRSS(rssPost)
       rewrites.push({
-        "source": `/blog/${post.urlSlug}`,
-        "destination": `/blog-${post.urlSlug}.html`
+        'source': `/blog/${post.urlSlug}`,
+        'destination': `/blog-${post.urlSlug}.html`
       })
     })
   })
 
   // Push the main index.html rewrite
   rewrites.push({
-    "source": "**",
-    "destination": "/index.html"
+    'source': '**',
+    'destination': '/index.html'
   })
 
   firebaseJson.hosting.rewrites = rewrites
@@ -54,52 +53,96 @@ gulp.task('configFirebase', () => {
   /*
   * Configure Redirects
   */
-  let redirectRules = [
+  const redirectRules = [
     {
-      "source": "/docs/blockchain-identity",
-      "destination": "/posts/blockchain-identity",
+      'source': '/docs/blockchain-identity',
+      'destination': '/posts/blockchain-identity',
     },
     {
-      "source": "/docs/blockchain-id",
-      "destination": "/posts/blockchain-identity",
+      'source': '/docs/blockchain-id',
+      'destination': '/posts/blockchain-identity',
     },
     {
-      "source": "/docs/what-is-blockstack",
-      "destination": "/posts/blockstack-core",
+      'source': '/docs/what-is-blockstack',
+      'destination': '/posts/blockstack-core',
     },
     {
-      "source": "/articles",
-      "destination": "/posts"
+      'source': '/articles',
+      'destination': '/blog'
     },
     {
-      "source": "/talks",
-      "destination": "/videos"
+      'source': '/posts',
+      'destination': '/blog'
     },
     {
-      "source": "/articles/browser-beta",
-      "destination": "/browser"
+      'source': '/talks',
+      'destination': '/videos'
     },
     {
-      "source": "/articles/login-paper",
-      "destination": "/papers"
+      'source': '/browser',
+      'destination': '/download'
     },
     {
-      "source": "/docs/installation",
-      "destination": "/docs"
+      'source': '/articles/blockstack-core',
+      'destination': '/papers'
     },
     {
-      "source": "/posts",
-      "destination": "/blog"
-    }
+      'source': '/articles/browser-beta',
+      'destination': '/download'
+    },
+    {
+      'source': '/articles/faq',
+      'destination': '/faqs'
+    },
+    {
+      'source': '/articles/light-clients',
+      'destination': '/papers'
+    },
+    {
+      'source': '/articles/login-paper',
+      'destination': '/papers'
+    },
+    {
+      'source': '/docs/installation',
+      'destination': '/tutorials'
+    },
+    {
+      'source': '/tutorials/hello-world',
+      'destination': '/tutorials/hello-blockstack',
+    },
+    {
+      'source': '/docs/cli-basic-usage',
+      'destination': '/tutorials/cli-basics'
+    },
+    {
+      'source': '/docs/cli-extended-usage',
+      'destination': '/tutorials/cli-basics'
+    },
+    {
+      'source': '/blockstack.pdf',
+      'destination': '/blockstack_usenix16.pdf'
+    },
+    {
+      'source': '/blockstack-login.pdf',
+      'destination': '/blockstack_login16.pdf'
+    },
+    {
+      'source': '/virtualchain.pdf',
+      'destination': '/virtualchain_dccl16.pdf'
+    },
+    {
+      'source': '/join',
+      'destination': '/newsletter'
+    },
   ]
 
   let redirects = []
 
   redirectRules.forEach((rule) => {
     redirects.push({
-      "source": rule.source,
-      "destination": rule.destination,
-      "type": 301
+      'source': rule.source,
+      'destination': rule.destination,
+      'type': 301
     })
   })
 

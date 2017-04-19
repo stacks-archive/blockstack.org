@@ -3,18 +3,24 @@
 import {Component}      from 'react'
 import {Link}           from 'react-router'
 import DocumentTitle    from 'react-document-title'
-import request          from 'request'
-import {parseString}    from 'xml2js'
+import {bindActionCreators} from 'redux'
+import {connect}        from 'react-redux'
 
+import {BlogActions}    from '../datastore/Blog'
 import Image            from '../components/Image'
-import Header           from '../components/Header'
-import Footer           from '../components/Footer'
-import CardLink         from '../components/CardLink'
 import CommunityMember  from '../components/CommunityMember'
-import {getPostFromRSS} from '../utils/rssUtils'
-import {getSlugFromRSS} from '../utils/rssUtils'
-import docs             from '../../docs.json'
-import {blogAuthors}    from '../config'
+import StickyShare      from '../components/StickyShare'
+
+function mapStateToProps(state) {
+  return {
+    posts: state.blog.posts,
+    postObject: state.blog.postObject,
+  }
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(BlogActions, dispatch)
+}
 
 class BlogPostPage extends Component {
 
@@ -22,27 +28,31 @@ class BlogPostPage extends Component {
     super(props)
 
     this.state = {
-      currentPage: null,
-      imageLoading: false
+      imageLoading: false,
+      posts: this.props.posts,
+      postObject: this.props.postObject,
     }
 
     this.initHighlighting = this.initHighlighting.bind(this)
-    this.setPage = this.setPage.bind(this)
     this.filterMarkup = this.filterMarkup.bind(this)
     this.onImageLoad = this.onImageLoad.bind(this)
-    this.getRSS = this.getRSS.bind(this)
   }
 
   componentWillMount() {
-    this.getRSS(this.props)
+    if (this.props.posts.length === 0) {
+      this.props.fetchPosts()
+    }
   }
 
   componentWillReceiveProps(nextProps) {
     this.setState({
       imageLoading: true
     })
-    if (this.props !== nextProps) {
-      this.getRSS(nextProps)
+    if (this.props.posts !== nextProps.posts) {
+      this.setState({
+        posts: nextProps.posts,
+        postObject: nextProps.postObject,
+      })
     }
   }
 
@@ -59,53 +69,6 @@ class BlogPostPage extends Component {
     return markup.replace('<a href="', '<a target="_blank" href="')
   }
 
-  getRSS() {
-    request({
-      url: "https://blockstack-site-api.herokuapp.com/v1/blog-rss",
-      withCredentials: false
-    }, (error, response, body) => {
-      if (!error && response.statusCode === 200) {
-        parseString(body, (err, result) => { // parse XML string
-          this.setPage(result)
-        })
-      } else {
-        console.log(error)
-      }
-    })
-  }
-
-  setPage(result) {
-    let currentPage = {
-      title: 'Page Not Found',
-    }
-    let rssPost = null
-
-    const firstChannel = result.rss.channel[0]
-    const channelItems = firstChannel.item
-
-    channelItems.map((channelItem) => {
-      const channelItemUrlSlug = getSlugFromRSS(channelItem)
-      const currentUrlSlug = location.pathname.split('/')[2]
-      if (channelItemUrlSlug === currentUrlSlug) {
-        rssPost = channelItem
-      }
-    })
-
-    if (rssPost) {
-      let post = getPostFromRSS(rssPost)
-      if (blogAuthors.hasOwnProperty(post.blockstackID)) {
-        post.creator = blogAuthors[post.blockstackID]
-      } else {
-        post.creator = blogAuthors["blockstack.id"]
-      }
-      currentPage = Object.assign({}, currentPage, post)
-    }
-
-    this.setState({
-      currentPage: currentPage
-    })
-  }
-
   onImageLoad() {
     this.setState({
       imageLoading: false
@@ -113,17 +76,14 @@ class BlogPostPage extends Component {
   }
 
   render() {
-    const currentPage = this.state.currentPage,
-          title = currentPage ? currentPage.title : ""
-    const headerImageSrc = this.state.currentPage ? this.state.currentPage.image : ''
-    const pathPrefix = '/' + location.pathname.split('/')[1]
+    const currentUrlSlug = location.pathname.split('/')[2]
+    const currentPage = this.state.postObject[currentUrlSlug]
+    const title = currentPage ? currentPage.title : ''
+    const headerImageSrc = currentPage ? currentPage.image : ''
 
     return (
       <DocumentTitle title={title}>
         <div>
-          <div className="navbar-fixed-top bg-primary">
-            <Header />
-          </div>
           { currentPage && currentPage.preview ?
           <div>
             <div className="hidden-image">
@@ -133,6 +93,12 @@ class BlogPostPage extends Component {
                 onLoad={this.onImageLoad}
                 retinaSupport={false} />
             </div>
+            <StickyShare
+              description={currentPage.description}
+              imgUrl={headerImageSrc}
+              shareUrl={currentPage.url}
+              title={currentPage.title}
+            />
             <section className="m-b-50 m-t-100">
               <div className="container p-b-5 col-centered blog-post">
                 <div className="container">
@@ -170,9 +136,9 @@ class BlogPostPage extends Component {
                       isCentered={false} />
                   </section>
                   <p className="no-padding col-md-8">
-                    <Link to="http://eepurl.com/cv8gQ1" role="button" target="_blank"
+                    <Link to="/newsletter" role="button"
                       className="btn btn-lg btn-primary btn-block">
-                      Join the Community
+                      Get Updates
                     </Link>
                   </p>
                 </div>
@@ -192,11 +158,10 @@ class BlogPostPage extends Component {
             </div>
           </section>
           }
-          <Footer />
         </div>
       </DocumentTitle>
     )
   }
 }
 
-export default BlogPostPage
+export default connect(mapStateToProps, mapDispatchToProps)(BlogPostPage)

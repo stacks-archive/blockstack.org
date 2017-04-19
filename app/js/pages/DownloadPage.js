@@ -1,12 +1,10 @@
 'use strict'
 
 import { Component }   from 'react'
-import { Link }        from 'react-router'
 import DocumentTitle   from 'react-document-title'
-import { UAParser }    from 'ua-parser-js'
+//import { UAParser }    from 'ua-parser-js'
 
-import Header          from '../components/Header'
-import Footer          from '../components/Footer'
+import {installationLinks} from '../config'
 
 class DownloadsPage extends Component {
 
@@ -15,71 +13,82 @@ class DownloadsPage extends Component {
   }
 
   render() {
-    const parser = new UAParser()
+    /*const parser = new UAParser()
     const result = parser.getResult()
     const browserName = result.browser.name
-    const osName = result.os.name
-    const macDownloadLink = "https://github.com/blockstack/blockstack-portal/releases/download/v0.4.0/Blockstack-v0.4.app.zip"
-    const releasesLink = "https://github.com/blockstack/blockstack-portal/releases"
+    const osName = result.os.name*/
 
     return (
-      <DocumentTitle title="Download Blockstack">
+      <DocumentTitle title="Blockstack newsletter sign-up">
         <div>
-          <div className="navbar-fixed-top bg-primary">
-            <Header />
-          </div>
           <section className="container-fluid spacing-container">
             <div className="container col-centered">
-              <div className="container m-b-5" style={{ minHeight: '800px' }}>
-                <div>
-                  <h1>
-                    Get Blockstack
-                  </h1>
-                  <p>
-                    <a href={releasesLink} role="button">
-                      View the Developer Releases
-                   </a>
-                  </p>
-                </div>
+              <div className="container m-b-5">
                 <section className="sec-light row">
-                  <div className="col-md-4">
-                    <h4>
-                       Mac
-                    </h4>
-                    <p>
-                      <a href="#" role="button"
-                        className="btn btn-outline-primary btn-block disabled">
-                        Coming Soon
-                      </a>
-                    </p>
-                  </div>
-                  <div className="col-md-4">
-                    <h4>
-                       Windows
-                    </h4>
-                    <p>
-                      <a href="#" role="button"
-                        className="btn btn-outline-primary btn-block disabled">
-                        Coming Soon
-                      </a>
-                    </p>
-                  </div>
-                  <div className="col-md-4">
-                    <h4>
-                       Linux
-                    </h4>
-                    <p>
-                      <a href="#" role="button"
-                        className="btn btn-outline-primary btn-block disabled">
-                        Coming Soon
-                      </a>
-                    </p>
+                  <div className="col-md-12">
+                    <h1>
+                      Install Blockstack
+                    </h1>
+
+                    <div>
+                      <h3>Browser Portal</h3>
+                      <table className="table">
+                        <tbody>
+                          <tr>
+                            <td>Developer alpha</td>
+                            <td>
+                              <a href={installationLinks.portalDevelopers} role="button"
+                                className="btn btn-sm btn-outline-primary btn-block">
+                                Releases on GitHub
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>macOS</td>
+                            <td>
+                              <a href="#" role="button"
+                                className="btn btn-sm btn-outline-primary btn-block disabled">
+                                Coming Soon
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Linux</td>
+                            <td>
+                              <a href="#" role="button"
+                                className="btn btn-sm btn-outline-primary btn-block disabled">
+                                Coming Soon
+                              </a>
+                            </td>
+                          </tr>
+                          <tr style={{ display: 'none' }}>
+                            <td>Windows</td>
+                            <td>
+                              <a href="#" role="button"
+                                className="btn btn-sm btn-outline-primary btn-block disabled">
+                                Coming Soon
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div>
+                      <h3>Core Server + CLI</h3>
+                      <p>
+                        <a href={installationLinks.cliDevelopers} role="button"
+                          className="btn btn-outline-primary btn-block">
+                          Instructions on GitHub
+                        </a>
+                      </p>
+                    </div>
+
                   </div>
                 </section>
               </div>
             </div>
           </section>
-          <Footer />
         </div>
       </DocumentTitle>
     )
@@ -88,6 +97,3 @@ class DownloadsPage extends Component {
 }
 
 export default DownloadsPage
-
-
-

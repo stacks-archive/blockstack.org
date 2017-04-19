@@ -1,45 +1,17 @@
 'use strict'
 
 import {Component}      from 'react'
-import {Link}           from 'react-router'
 import DocumentTitle    from 'react-document-title'
 
-import Header           from '../components/Header'
-import Footer           from '../components/Footer'
 import CardLink         from '../components/CardLink'
-
-class ContentSection extends Component {
-  static propTypes: {
-    markup: PropTypes.string.isRequired,
-    className: PropTypes.string
-  }
-
-  render() {
-    return(
-      <section className={this.props.className}>
-        <div className="container col-centered blog-post">
-          <div className="container">
-            <div className="post-content">
-              <div dangerouslySetInnerHTML={{ __html: this.props.markup }}>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    )
-  }
-}
+import ContentSection   from '../components/ContentSection'
 
 class IntroPage extends Component {
 
   render() {
-
     return (
       <DocumentTitle title="Blockstack - Intro">
         <div>
-          <div className="container-fluid col-centered navbar-fixed-top bg-primary">
-            <Header />
-          </div>
           <section className="m-t-100">
             <div className="container col-centered blog-post">
               <div className="container">
@@ -133,7 +105,7 @@ class IntroPage extends Component {
               To get started building apps on Blockstack,
               read the developer documentation,
               setup a Blockstack Core node,
-              and preview the Blockstack Browser (in an experimantal alpha).
+              and preview the Blockstack Browser (in an experimental alpha).
             </p>" />
           <section>
             <div className="bs-docs-featurette col-centered m-b-2">
@@ -147,17 +119,17 @@ class IntroPage extends Component {
                       imageSrc="/images/article-photos/bookshelves.jpg"
                       cardsPerRow={3} />
                     <CardLink
+                      href='https://github.com/blockstack/blockstack-browser/releases'
+                      title='Blockstack Portal'
+                      body="A desktop app you can install to upgrade your browsers and turn them into blockstack-enabled browsers."
+                      imageSrc="/images/article-photos/astronaut.jpg"
+                      target="_blank"
+                      cardsPerRow={3} />
+                    <CardLink
                       href='https://github.com/blockstack/blockstack-core'
                       title='Blockstack Core'
                       body="A server you can run that becomes a part of the Blockstack P2P network and maintains the DNS, PKI and identity system."
                       imageSrc="/images/article-photos/passport.jpg"
-                      target="_blank"
-                      cardsPerRow={3} />
-                    <CardLink
-                      href='https://github.com/blockstack/blockstack-browser/releases'
-                      title='Blockstack Browser'
-                      body="A desktop app you can install to upgrade your browsers and turn them into blockstack-enabled browsers."
-                      imageSrc="/images/article-photos/astronaut.jpg"
                       target="_blank"
                       cardsPerRow={3} />
                   </div>
@@ -198,7 +170,6 @@ class IntroPage extends Component {
               </div>
             </div>
           </section>
-          <Footer />
         </div>
       </DocumentTitle>
     )

@@ -4,9 +4,6 @@ import {Component}   from 'react'
 import {Link}        from 'react-router'
 import DocumentTitle from 'react-document-title'
 
-import Header        from '../components/Header'
-import Footer        from '../components/Footer'
-
 class NotFoundPage extends Component {
 
   constructor(props) {
@@ -17,9 +14,6 @@ class NotFoundPage extends Component {
     return (
       <DocumentTitle title="Blockstack - Page Not Found">
         <div>
-          <div className="navbar-fixed-top bg-primary">
-            <Header />
-          </div>
           <section className="m-t-5">
             <div className="container p-b-5 col-centered">
               <div className="container">
@@ -35,7 +29,6 @@ class NotFoundPage extends Component {
                 </div>
               </div>
             </div>
-            <Footer />
           </section>
         </div>
       </DocumentTitle>
