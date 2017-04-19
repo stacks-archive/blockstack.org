@@ -7,7 +7,7 @@
 
 /* Base structure */
 html, body {-webkit-overflow-scrolling:touch;}
-body{padding-top:0;padding-bottom:0;}
+body{font-family:'Lato',sans-serif;padding-top:0;padding-bottom:0;}
 
 /* Spacing */
 .m-t-0{margin-top:0px;}
@@ -351,6 +351,7 @@ section{word-break:break-word;}
 
   /* Navbar */
   .brand-bug{display:none;}
+  .brand-logo{display:initial;}
   .navbar-brand{margin-right:2.5rem;margin-top:0.5rem;}
   .navbar-brand img{position:relative;}
   div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-header > nav.navbar > a.navbar-brand{display:block;}
