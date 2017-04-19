@@ -44,6 +44,10 @@
         "destination": "/docs-posts-namespaces.html"
       },
       {
+        "source": "/tutorials/readme",
+        "destination": "/docs-tutorials-readme.html"
+      },
+      {
         "source": "/tutorials/cli-basics",
         "destination": "/docs-tutorials-cli-basics.html"
       },

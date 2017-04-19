@@ -36,13 +36,9 @@ class BlogPage extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.posts !== this.props.posts) {
-      console.log(nextProps.posts)
-      console.log(this.props.posts)
       this.setState({
         posts: nextProps.posts,
       })
-    } else {
-      console.log('the same!')
     }
   }
 

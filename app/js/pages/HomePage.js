@@ -8,7 +8,7 @@ import {connect} from 'react-redux'
 
 import {BlogActions}  from '../datastore/Blog'
 import {StatsActions} from '../datastore/Stats'
-import Image            from '../components/Image'
+import Image          from '../components/Image'
 
 function mapStateToProps(state) {
   return {
@@ -80,7 +80,7 @@ class HomePage extends Component {
                 </p>
                 <p className="no-padding col-md-12 hero-caption">
                   <Link to="/install" className="hero-caption-text">
-                    Try the browser add-on &nbsp; › &nbsp;
+                    Try the browser portal &nbsp; › &nbsp;
                     <span className="hero-caption-link">Install</span>
                   </Link>
                 </p>
@@ -100,7 +100,7 @@ class HomePage extends Component {
                     </div>
                     <div className="col-md-4 no-padding">
                       <h3 className="modern text-center">
-                        {this.state.stats.domains} users registered
+                        {this.state.stats.domains} domains registered
                       </h3>
                     </div>
                     <div className="col-md-4 no-padding">
@@ -127,7 +127,7 @@ class HomePage extends Component {
                   <p className="lead-centered">
                     <Link to="/install" role="button"
                       className="btn btn-lg btn-outline-primary btn-block">
-                      Install Browser Add-on
+                      Install Browser Portal
                     </Link>
                   </p>
                 </section>
@@ -170,7 +170,7 @@ class HomePage extends Component {
               <div className="container">
                 <section>
                   <h1 className="modern text-center">
-                    New app possibilities to explore 
+                    Easily build apps like
                   </h1>
                   <div>
                     <div className="col-md-4 no-padding">
@@ -215,56 +215,53 @@ class HomePage extends Component {
                   <h1 className="modern text-center">
                     Blockstack gives you a full trustless stack
                   </h1>
-                  <div className="col-md-4 no-padding">
-                    <h3 className="modern text-center">
-                      Identity
-                    </h3>
-                    <p className="lead lead-centered col-md-10 block col-centered text-center">
-                      With Blockstack's identity system, users hold their own digital keys.
-                      This let's them control their data access and auth into apps without the need for identity providers.
-                    </p>
+                  <div className="row">
+                    <div className="col-md-4 no-padding">
+                      <h3 className="modern text-center">
+                        Identity & Auth
+                      </h3>
+                      <p className="lead lead-centered col-md-10 block col-centered text-center">
+                        With Blockstack, users get a set of digital keys that let them own their identity.
+                        From there, they can sign in to apps locally without remote servers or identity providers.
+                      </p>
+                    </div>
+                    <div className="col-md-4 no-padding">
+                      <h3 className="modern text-center">
+                        Storage
+                      </h3>
+                      <p className="lead lead-centered col-md-10 block col-centered text-center">
+                        Blockstack's storage system allows users to bring their own storage providers and control their data.
+                        Data is encrypted and easily shared between applications.
+                      </p>
+                    </div>
+                    <div className="col-md-4 no-padding">
+                      <h3 className="modern text-center">
+                        Naming
+                      </h3>
+                      <p className="lead lead-centered col-md-10 block col-centered text-center">
+                        Blockstack's naming system (BNS), built on Blockstack's blockchain and P2P network, is completely decentralized and securely maps names to keys and routing info.
+                      </p>
+                    </div>
                   </div>
-                  <div className="col-md-4 no-padding">
-                    <h3 className="modern text-center">
-                      Storage
-                    </h3>
-                    <p className="lead lead-centered col-md-10 block col-centered text-center">
-                      Blockstack's storage system allows users to bring their own storage providers and control their data.
-                      Data is encrypted and easily shared between applications.
-                    </p>
-                  </div>
-                  <div className="col-md-4 no-padding">
-                    <h3 className="modern text-center">
-                      Naming
-                    </h3>
-                    <p className="lead lead-centered col-md-10 block col-centered text-center">
-                      The Blockstack naming system (BNS) is completely decentralized and handles public key distribution and cache invalidation.
-                      It is supported by the Blockstack blockchain and P2P network.
-                    </p>
-                  </div>
-                  <div className="col-md-4 no-padding">
-                    <h3 className="modern text-center">
-                      Payments
-                    </h3>
-                    <p className="lead lead-centered col-md-10 block col-centered text-center">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                  </div>
-                  <div className="col-md-4 no-padding">
-                    <h3 className="modern text-center">
-                      Encryption
-                    </h3>
-                    <p className="lead lead-centered col-md-10 block col-centered text-center">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                  </div>
-                  <div className="col-md-4 no-padding">
-                    <h3 className="modern text-center">
-                      Auth
-                    </h3>
-                    <p className="lead lead-centered col-md-10 block col-centered text-center">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
+                  <div className="row">
+                    <div className="col-md-4 offset-md-2 no-padding">
+                      <h3 className="modern text-center">
+                        Payments
+                      </h3>
+                      <p className="lead lead-centered col-md-10 block col-centered text-center">
+                        With Blockstack, you can accept simple one-time payments, enable continuous micropayments, and do much more.
+                        All with a global-accepted and decentralized currency called Bitcoin.
+                      </p>
+                    </div>
+                    <div className="col-md-4 no-padding">
+                      <h3 className="modern text-center">
+                        Encryption
+                      </h3>
+                      <p className="lead lead-centered col-md-10 block col-centered text-center">
+                        With Blockstack, all files and communication is end-to-end encrypted by default.
+                        Blockstack handles key distribution and discovery so you don't have to.
+                      </p>
+                    </div>
                   </div>
                 </section>
               </div>
