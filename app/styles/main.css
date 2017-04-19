@@ -120,7 +120,7 @@ a:hover,a:focus{font-weight:400;color:#E91E63;text-decoration:underline;}
 .no-padding{padding-right:0;padding-left:0;}
 .bg-primary{background-color:#270F34!important;}
 .text-center{text-align:center!important;}
-.container{width:100%;}
+.container{width:100%;overflow: hidden;}
 
 /* Spacing */
 
