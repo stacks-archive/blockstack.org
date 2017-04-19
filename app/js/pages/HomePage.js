@@ -239,7 +239,7 @@ class HomePage extends Component {
                         Naming
                       </h3>
                       <p className="lead lead-centered col-md-10 block col-centered text-center">
-                        Blockstack naming (BNS), built on Blockstack's blockchain and P2P network, is completely decentralized and securely maps names to keys and routing info.
+                        Blockstack's naming system (BNS), built on Blockstack's blockchain and P2P network, is completely decentralized and securely maps names to keys and routing info.
                       </p>
                     </div>
                   </div>
