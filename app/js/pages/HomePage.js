@@ -100,7 +100,7 @@ class HomePage extends Component {
                     </div>
                     <div className="col-md-4 no-padding">
                       <h3 className="modern text-center">
-                        {this.state.stats.domains} users registered
+                        {this.state.stats.domains} domains registered
                       </h3>
                     </div>
                     <div className="col-md-4 no-padding">
@@ -170,7 +170,7 @@ class HomePage extends Component {
               <div className="container">
                 <section>
                   <h1 className="modern text-center">
-                    New app possibilities to explore 
+                    Easily build apps like
                   </h1>
                   <div>
                     <div className="col-md-4 no-padding">

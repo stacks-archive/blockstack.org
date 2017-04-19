@@ -61,7 +61,7 @@ class DownloadsPage extends Component {
                               </a>
                             </td>
                           </tr>
-                          <tr>
+                          <tr style={{ display: 'none' }}>
                             <td>Windows</td>
                             <td>
                               <a href="#" role="button"
