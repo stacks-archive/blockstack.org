@@ -218,7 +218,7 @@ class HomePage extends Component {
                   <div className="row">
                     <div className="col-md-4 no-padding">
                       <h3 className="modern text-center">
-                        Identity
+                        Identity & Auth
                       </h3>
                       <p className="lead lead-centered col-md-10 block col-centered text-center">
                         With Blockstack, users get a set of digital keys that let them own their identity.
