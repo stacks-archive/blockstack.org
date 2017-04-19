@@ -169,7 +169,7 @@ body,html,#app,.app-landing{height:100%;}
 .app-common{height:auto;}
 .site-wrapper{display:flex;background-color:#270F34;flex-direction:column;height:100%;}
 .hero{position:relative;display:block;color:#fff;padding-bottom:225px;padding-top:15%;}
-.hero-caption{font-family:'Lato',sans-serif;font-size:0.8125rem;font-weight:300;color:#95889C;margin-top:-5px;}
+.hero-caption{text-align:center;font-family:'Lato',sans-serif;font-size:0.8125rem;font-weight:300;color:#95889C;margin-top:-5px;}
 .hero-caption > a{color:#95889C;font-weight:300;}
 .hero-caption > a:hover{color:#95889C;text-decoration:none;}
 .hero-caption > a:hover span{color:rgba(255,255,255,0.8);text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.5);padding-bottom:0px;}
@@ -372,6 +372,7 @@ section{word-break:break-word;}
   /* Content */
   .hero-wrap{display:block;padding-top:8rem;padding-bottom:12rem;}
   .hero{padding-bottom:425px;padding-top:150px;}
+  .hero-caption {text-align: left;}
   .simple-featurette{display:block;margin-top:85px;}
   .simple-panel{display:inline-block;margin-top:0;margin-bottom:0;margin-right:50px;}
   .simple-panel-2{margin-top:0px;margin-bottom:0px;text-align:center;padding-top:0px;}
