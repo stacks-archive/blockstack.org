@@ -93,20 +93,20 @@ class HomePage extends Component {
                     The decentralized internet is already here
                   </h1>
                   <div>
-                    <div className="col-md-4 no-padding">
-                      <h1 className="modern text-center">
+                    <div className="col-md-4 no-padding feat-card">
+                      <h3 className="modern text-center">
                         In production for over 2 years
-                      </h1>
+                      </h3>
                     </div>
-                    <div className="col-md-4 no-padding">
-                      <h1 className="modern text-center">
+                    <div className="col-md-4 no-padding feat-card">
+                      <h3 className="modern text-center">
                         {this.state.stats.domains} domains registered
-                      </h1>
+                      </h3>
                     </div>
-                    <div className="col-md-4 no-padding">
-                      <h1 className="modern text-center">
+                    <div className="col-md-4 no-padding feat-card">
+                      <h3 className="modern text-center">
                         Used by OpenBazaar, Microsoft & more
-                      </h1>
+                      </h3>
                     </div>
                   </div>
                 </section>
@@ -173,37 +173,37 @@ class HomePage extends Component {
                     Easily build apps like
                   </h1>
                   <div>
-                    <div className="col-md-4 no-padding">
-                      <h1 className="modern text-center">
+                    <div className="col-md-4 no-padding feat-card">
+                      <h3 className="modern text-center">
                         Decentralized social networks
-                      </h1>
+                      </h3>
                     </div>
-                    <div className="col-md-4 no-padding">
-                      <h1 className="modern text-center">
+                    <div className="col-md-4 no-padding feat-card">
+                      <h3 className="modern text-center">
                         Liquid democracy
-                      </h1>
+                      </h3>
                     </div>
-                    <div className="col-md-4 no-padding">
-                      <h1 className="modern text-center">
+                    <div className="col-md-4 no-padding feat-card">
+                      <h3 className="modern text-center">
                         Peer-to-peer marketplaces
-                      </h1>
+                      </h3>
                     </div>
                   </div>
                   <div>
-                    <div className="col-md-4 no-padding">
-                      <h1 className="modern text-center">
+                    <div className="col-md-4 no-padding feat-card">
+                      <h3 className="modern text-center">
                         Open ridesharing
-                      </h1>
+                      </h3>
                     </div>
-                    <div className="col-md-4 no-padding">
-                      <h1 className="modern text-center">
+                    <div className="col-md-4 no-padding feat-card">
+                      <h3 className="modern text-center">
                         Verified file publishing
-                      </h1>
+                      </h3>
                     </div>
-                    <div className="col-md-4 no-padding">
-                      <h1 className="modern text-center">
+                    <div className="col-md-4 no-padding feat-card">
+                      <h3 className="modern text-center">
                         Encrypted health records
-                      </h1>
+                      </h3>
                     </div>
                   </div>
                 </section>
