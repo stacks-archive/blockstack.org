@@ -120,6 +120,7 @@ a:hover,a:focus{font-weight:400;color:#E91E63;text-decoration:underline;}
 .no-padding{padding-right:0;padding-left:0;}
 .bg-primary{background-color:#270F34!important;}
 .text-center{text-align:center!important;}
+.container{width:100%;}
 
 /* Spacing */
 
@@ -132,9 +133,10 @@ h1.hero-head{font-family:'Source Code Pro',monospace;margin-bottom:1.5rem;font-s
 /* Navbar */
 .navbar{font-family:'Source Code Pro',monospace;padding-top:0.4375rem;padding-bottom:0.5625rem;padding-right:0;padding-left:0;}
 .navbar-brand{margin-right:0px;}
-.navbar-brand img{width:164px;position:fixed;bottom:13%;z-index:2000;margin:0 auto;left:0;right:0;}
+.navbar-brand img {width:164px;}
 .brand-bug{margin-right:1rem;}
 .brand-bug img{width:30px;position:relative;}
+.brand-logo{display:none;}
 .hamburger{display:none;}
 .hamburger:focus{outline:none;}
 div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-header > nav.navbar > a.navbar-brand{display:none;}
@@ -225,6 +227,7 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .media-screen{background-color:#000;width:100%;position:absolute;left:0;top:56px;height:600px;display:flex;flex-direction:row;justify-content:center;align-items:center;}
 .media-wrap{width:975px;}
 .media-content{margin-top:625px;}
+li.nav-item:nth-last-child(2){display:none;}
 
 /* Tutorials */
 iframe{height:530px;}
