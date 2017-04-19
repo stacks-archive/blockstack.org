@@ -93,17 +93,17 @@ class HomePage extends Component {
                     The decentralized internet is already here
                   </h1>
                   <div>
-                    <div className="col-md-4 no-padding">
+                    <div className="col-md-4 no-padding feat-card">
                       <h3 className="modern text-center">
                         In production for over 2 years
                       </h3>
                     </div>
-                    <div className="col-md-4 no-padding">
+                    <div className="col-md-4 no-padding feat-card">
                       <h3 className="modern text-center">
                         {this.state.stats.domains} domains registered
                       </h3>
                     </div>
-                    <div className="col-md-4 no-padding">
+                    <div className="col-md-4 no-padding feat-card">
                       <h3 className="modern text-center">
                         Used by OpenBazaar, Microsoft & more
                       </h3>
@@ -140,25 +140,25 @@ class HomePage extends Component {
                     The future of app development is decentralized
                   </h1>
                   <div className="col-md-4 no-padding">
-                    <h3 className="modern text-center">
+                    <h1 className="modern text-center">
                       No infrastructure
-                    </h3>
+                    </h1>
                     <p className="lead lead-centered col-md-10 block col-centered text-center">
                       Build apps without databases or server maintainance. Publish apps to the decentralized internet where they will run on user devices and live forever.
                     </p>
                   </div>
                   <div className="col-md-4 no-padding">
-                    <h3 className="modern text-center">
+                    <h1 className="modern text-center">
                       Get users faster
-                    </h3>
+                    </h1>
                     <p className="lead lead-centered col-md-10 block col-centered text-center">
                       Make it easier than ever for users to switch with shared data protocols between apps and freedom from walled gardens, censorship, and middlemen.
                     </p>
                   </div>
                   <div className="col-md-4 no-padding">
-                    <h3 className="modern text-center">
+                    <h1 className="modern text-center">
                       Be paid for open source
-                    </h3>
+                    </h1>
                     <p className="lead lead-centered col-md-10 block col-centered text-center">
                       New business models enable you to get paid for open source code. Utilize micropayments, blockchain protocols, and more.
                     </p>
@@ -173,34 +173,34 @@ class HomePage extends Component {
                     Easily build apps like
                   </h1>
                   <div>
-                    <div className="col-md-4 no-padding">
+                    <div className="col-md-4 no-padding feat-card">
                       <h3 className="modern text-center">
                         Decentralized social networks
                       </h3>
                     </div>
-                    <div className="col-md-4 no-padding">
+                    <div className="col-md-4 no-padding feat-card">
                       <h3 className="modern text-center">
                         Liquid democracy
                       </h3>
                     </div>
-                    <div className="col-md-4 no-padding">
+                    <div className="col-md-4 no-padding feat-card">
                       <h3 className="modern text-center">
                         Peer-to-peer marketplaces
                       </h3>
                     </div>
                   </div>
                   <div>
-                    <div className="col-md-4 no-padding">
+                    <div className="col-md-4 no-padding feat-card">
                       <h3 className="modern text-center">
                         Open ridesharing
                       </h3>
                     </div>
-                    <div className="col-md-4 no-padding">
+                    <div className="col-md-4 no-padding feat-card">
                       <h3 className="modern text-center">
                         Verified file publishing
                       </h3>
                     </div>
-                    <div className="col-md-4 no-padding">
+                    <div className="col-md-4 no-padding feat-card">
                       <h3 className="modern text-center">
                         Encrypted health records
                       </h3>
@@ -216,43 +216,53 @@ class HomePage extends Component {
                     A full trustless stack
                   </h1>
                   <div className="row">
-                    <div className="col-md-3 no-padding">
-                      <h3 className="modern text-center">
+                    <div className="col-md-4 no-padding">
+                      <h1 className="modern text-center">
                         Identity & Auth
-                      </h3>
+                      </h1>
                       <p className="lead lead-centered col-md-10 block col-centered text-center">
                         With Blockstack, users get a set of digital keys that let them own their identity.
                         From there, they can sign in to apps locally without remote servers or identity providers.
                       </p>
                     </div>
-                    <div className="col-md-3 no-padding">
-                      <h3 className="modern text-center">
+                    <div className="col-md-4 no-padding">
+                      <h1 className="modern text-center">
                         Storage
-                      </h3>
+                      </h1>
                       <p className="lead lead-centered col-md-10 block col-centered text-center">
                         Blockstack's storage system allows users to bring their own storage providers and control their data.
                         Data is encrypted and easily shared between applications.
                       </p>
                     </div>
-                    <div className="col-md-3 no-padding">
-                      <h3 className="modern text-center">
+                    <div className="col-md-4 no-padding">
+                      <h1 className="modern text-center">
                         Naming
-                      </h3>
+                      </h1>
                       <p className="lead lead-centered col-md-10 block col-centered text-center">
                         Blockstack's naming system (BNS), built on Blockstack's blockchain and P2P network, is completely decentralized and securely maps names to keys and routing info.
                       </p>
                     </div>
-                    <div className="col-md-3 no-padding">
-                      <h3 className="modern text-center">
+                  </div>
+                  <div className="row" style={{ display: 'none' }}>
+                    <div className="col-md-4 offset-md-2 no-padding">
+                      <h1 className="modern text-center">
                         Payments
-                      </h3>
+                      </h1>
                       <p className="lead lead-centered col-md-10 block col-centered text-center">
                         With Blockstack, you can accept simple one-time payments, enable continuous micropayments, and do much more.
                         All with a global-accepted and decentralized currency called Bitcoin.
                       </p>
                     </div>
+                    <div className="col-md-4 no-padding">
+                      <h1 className="modern text-center">
+                        Encryption
+                      </h1>
+                      <p className="lead lead-centered col-md-10 block col-centered text-center">
+                        With Blockstack, all files and communication is end-to-end encrypted by default.
+                        Blockstack handles key distribution and discovery so you don't have to.
+                      </p>
+                    </div>
                   </div>
-                  
                 </section>
               </div>
             </div>
@@ -264,7 +274,7 @@ class HomePage extends Component {
                   </h1>
                   <p className="lead lead-centered col-md-10 block col-centered text-center">
                     <Link to="/tutorials/hello-blockstack">
-                      <Image
+                      <Image className="landing-feat-img"
                         src="/images/tutorials/hello-blockstack-fastforward.gif"
                         fallbackSrc="/images/tutorials/hello-blockstack-fastforward.gif"
                         retinaSupport={false} />
@@ -291,7 +301,7 @@ class HomePage extends Component {
                   <h1 className="modern text-center">
                     News
                   </h1>
-                  <div className="row">
+                  <div className="row m-b-50 no-margin">
                   { firstThreePosts.map((post, index) => {
                     return (
                       <div className="col-md-4" key={index}>
