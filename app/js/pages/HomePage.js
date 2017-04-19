@@ -213,10 +213,10 @@ class HomePage extends Component {
               <div className="container">
                 <section>
                   <h1 className="modern text-center">
-                    Blockstack gives you a full trustless stack
+                    A full trustless stack
                   </h1>
                   <div className="row">
-                    <div className="col-md-4 no-padding">
+                    <div className="col-md-3 no-padding">
                       <h3 className="modern text-center">
                         Identity & Auth
                       </h3>
@@ -225,7 +225,7 @@ class HomePage extends Component {
                         From there, they can sign in to apps locally without remote servers or identity providers.
                       </p>
                     </div>
-                    <div className="col-md-4 no-padding">
+                    <div className="col-md-3 no-padding">
                       <h3 className="modern text-center">
                         Storage
                       </h3>
@@ -234,7 +234,7 @@ class HomePage extends Component {
                         Data is encrypted and easily shared between applications.
                       </p>
                     </div>
-                    <div className="col-md-4 no-padding">
+                    <div className="col-md-3 no-padding">
                       <h3 className="modern text-center">
                         Naming
                       </h3>
@@ -242,9 +242,7 @@ class HomePage extends Component {
                         Blockstack's naming system (BNS), built on Blockstack's blockchain and P2P network, is completely decentralized and securely maps names to keys and routing info.
                       </p>
                     </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-md-4 offset-md-2 no-padding">
+                    <div className="col-md-3 no-padding">
                       <h3 className="modern text-center">
                         Payments
                       </h3>
@@ -253,16 +251,8 @@ class HomePage extends Component {
                         All with a global-accepted and decentralized currency called Bitcoin.
                       </p>
                     </div>
-                    <div className="col-md-4 no-padding">
-                      <h3 className="modern text-center">
-                        Encryption
-                      </h3>
-                      <p className="lead lead-centered col-md-10 block col-centered text-center">
-                        With Blockstack, all files and communication is end-to-end encrypted by default.
-                        Blockstack handles key distribution and discovery so you don't have to.
-                      </p>
-                    </div>
                   </div>
+                  
                 </section>
               </div>
             </div>
