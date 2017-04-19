@@ -228,6 +228,7 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .media-wrap{width:975px;}
 .media-content{margin-top:625px;}
 li.nav-item:nth-last-child(2){display:none;}
+.landing-feat-img{width:100%;}
 
 /* Tutorials */
 iframe{height:530px;}

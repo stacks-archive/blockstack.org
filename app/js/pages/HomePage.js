@@ -274,7 +274,7 @@ class HomePage extends Component {
                   </h1>
                   <p className="lead lead-centered col-md-10 block col-centered text-center">
                     <Link to="/tutorials/hello-blockstack">
-                      <Image
+                      <Image className="landing-feat-img"
                         src="/images/tutorials/hello-blockstack-fastforward.gif"
                         fallbackSrc="/images/tutorials/hello-blockstack-fastforward.gif"
                         retinaSupport={false} />
