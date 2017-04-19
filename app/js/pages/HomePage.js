@@ -301,13 +301,13 @@ class HomePage extends Component {
                   <h1 className="modern text-center">
                     News
                   </h1>
-                  <div className="row">
+                  <div className="row m-b-50 no-margin">
                   { firstThreePosts.map((post, index) => {
                     return (
                       <div className="col-md-4" key={index}>
                         { post.urlSlug && post.title ?
                         <Link to={'/blog/' + post.urlSlug}>
-                          <h1>{ post.title }</h1>
+                          <h3>{ post.title }</h3>
                         </Link>
                         : null }
                         { post.preview ?
