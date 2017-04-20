@@ -119,8 +119,7 @@ class HomePage extends Component {
                     </div>
                   </div>
                   <p className="lead lead-centered col-md-10 block col-centered text-center m-t-1">
-                    Build on a platform in production for 3+ years with {this.state.stats.domains} domains registered
-                    and open source software maintained by a well-funded community.
+                    Build on a platform in production for <b>3+ years</b> with <b>{this.state.stats.domains} domains</b> registered and open source software maintained by a well-funded community.
                   </p>
                 </section>
               </div>
