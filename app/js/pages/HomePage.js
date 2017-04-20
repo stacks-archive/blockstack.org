@@ -92,7 +92,7 @@ class HomePage extends Component {
                   <h1 className="modern text-center">
                     The Blockstack app platform is here today
                   </h1>
-                  <div>
+                  <div className="row">
                     <div className="col-md-4 no-padding feat-card">
                       <h3 className="modern text-center">
                         In production for over 3 years
@@ -109,6 +109,10 @@ class HomePage extends Component {
                       </h3>
                     </div>
                   </div>
+                  <p className="lead lead-centered col-md-10 block col-centered text-center m-t-3">
+                    Build on a decentralized platform that's been in production use for years,
+                    with open source software maintained by a well-funded team.
+                  </p>
                 </section>
               </div>
             </div>
@@ -118,6 +122,9 @@ class HomePage extends Component {
                   <h1 className="modern text-center">
                     New internet. New browser experience.
                   </h1>
+                  <p className="lead lead-centered col-md-10 block col-centered text-center">
+                    Introducing the Blockstack browser portal - your way to access the new decentralized internet.
+                  </p>
                   <div className="row">
                     <div className="col-md-4 no-padding">
                       <h3 className="modern text-center">
