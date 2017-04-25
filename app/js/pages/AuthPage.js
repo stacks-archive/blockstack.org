@@ -78,8 +78,8 @@ class AuthPage extends Component {
                     Blockstack" and you don't have the Blockstack app.
                   </h4>
                   <p>
-                    <Link to="/download" className="btn btn-outline-primary">
-                      Download Blockstack
+                    <Link to="/install" className="btn btn-outline-primary">
+                      Install Blockstack
                     </Link>
                   </p>
                   {this.state.authRequest ?
