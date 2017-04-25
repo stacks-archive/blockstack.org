@@ -1,6 +1,6 @@
 {
   "projects": {
-    "production": "firebase-blockstack",
+    "production": "blockstack",
     "staging": "blockstack-staging"
   }
 }
