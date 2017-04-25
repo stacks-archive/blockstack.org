@@ -19,7 +19,7 @@ class DownloadsPage extends Component {
     const osName = result.os.name*/
 
     return (
-      <DocumentTitle title="Blockstack newsletter sign-up">
+      <DocumentTitle title="Install Blockstack">
         <div>
           <section className="container-fluid spacing-container">
             <div className="container col-centered">
