@@ -8,11 +8,25 @@ class Header extends Component {
 
   constructor(props) {
     super(props)
+
+    this.toggleDropdown = this.toggleDropdown.bind(this);
+
+    this.state = {
+      isOpen: false,
+    };
+  }
+
+  toggleDropdown() {
+    this.setState((prevState) => {
+      return { isOpen: !prevState.isOpen };
+    });
   }
 
   render() {
+    const { isOpen } = this.state;
+
     return (
-      <header className="container nav-header">
+      <header className="container navbar-wrapper">
         <nav className="navbar">
           <Link className="navbar-brand brand-bug" to="/">
             <img src="/images/logos/blockstack-bug-rev.svg" />
@@ -20,8 +34,18 @@ class Header extends Component {
           <Link className="navbar-brand brand-logo" to="/">
             <img src="/images/logos/blockstack-logo-landscape-rev.svg" />
           </Link>
-          <button type="button" className="hamburger pull-xs-right collapsed" data-toggle="collapse" data-target="#mobile-nav" aria-controls="dropdown" aria-expanded="false">
-            <i className="fa fa-bars"></i>
+          <button
+            type="button"
+            className={isOpen ? 'navbar-toggle hamburger collapsed' : 'navbar-toggle hamburger'}
+            onClick={this.toggleDropdown}
+            data-toggle="collapse"
+            data-target="#mobile-nav"
+            aria-controls="dropdown"
+            aria-expanded={isOpen}
+          >
+            <span className="icon-bar landing-sandwich-icon"></span>
+            <span className="icon-bar landing-sandwich-icon"></span>
+            <span className="icon-bar landing-sandwich-icon"></span>
           </button>
           <ul className="nav navbar-nav desktop-nav">
             <li className="nav-item">
@@ -57,7 +81,10 @@ class Header extends Component {
             </li>
           </ul>
         </nav>
-        <MobileNav />
+        <MobileNav
+          isOpen={ isOpen }
+          toggleDropdown={this.toggleDropdown}
+        />
       </header>
     )
   }
