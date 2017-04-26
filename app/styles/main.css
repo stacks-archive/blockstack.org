@@ -500,3 +500,7 @@ section{word-break:break-word;}
 @media (min-width:576px) {
   .mobile-nav > ul{display:none;}
 }
+
+@media (max-width:575px){
+  section{word-break:break-word;}
+}
