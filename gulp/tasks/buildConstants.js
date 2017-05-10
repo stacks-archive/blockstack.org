@@ -27,10 +27,44 @@ function buildRoadmap() {
   return roadmapItems
 }
 
+function buildPapers() {
+  const papersFile = fs.readFileSync('app/docs/papers/README.md', 'utf8')
+
+  const papersFileParts = papersFile.split('\n\n### ').slice(1)
+
+  let papers = []
+
+  papersFileParts.map((part) => {
+    let paper = {}
+
+    paper.title = part.substring(0, part.indexOf('\n\n'))
+    let rest = part.substring(part.indexOf('\n\n') + 2)
+    let lines = rest.split('\n')
+    let authors, publication, url, date
+    
+    lines.map((line) => {
+      if (line.startsWith('- ')) {
+        line = line.substring(line.indexOf('- ') + 2)
+        let label = line.split(': ')[0]
+        let value = line.split(': ')[1]
+        paper[label] = value
+      }
+    })
+
+    papers.push(paper)
+  })
+
+  return papers
+}
+
 gulp.task('buildConstants', () => {
   let constants = {}
 
   constants.milestones = buildRoadmap()
+
+  constants.papers = buildPapers()
+
+  console.log(constants)
 
   fs.writeFile('app/constants.json', JSON.stringify(constants), (err) => {
     if (err) {
