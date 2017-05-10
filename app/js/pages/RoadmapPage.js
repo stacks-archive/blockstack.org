@@ -5,7 +5,7 @@ import DocumentTitle        from 'react-document-title'
 
 import Header          from '../components/Header'
 import Footer          from '../components/Footer'
-import {milestones}    from '../config'
+import {milestones}    from '../../constants.json'
 
 class RoadmapPage extends Component {
 
