@@ -3,8 +3,6 @@
 import { Component }        from 'react'
 import DocumentTitle        from 'react-document-title'
 
-import Header          from '../components/Header'
-import Footer          from '../components/Footer'
 import {milestones}    from '../../constants.json'
 
 class RoadmapPage extends Component {
@@ -17,9 +15,6 @@ class RoadmapPage extends Component {
     return (
       <DocumentTitle title="Blockstack Roadmap">
         <div>
-          <div className="navbar-fixed-top bg-primary">
-            <Header />
-          </div>
           <section className="container-fluid spacing-container">
             <div className="container col-centered">
               <div className="container m-b-5" style={{ minHeight: '800px' }}>
@@ -39,7 +34,6 @@ class RoadmapPage extends Component {
               </div>
             </div>
           </section>
-          <Footer />
         </div>
       </DocumentTitle>
     )

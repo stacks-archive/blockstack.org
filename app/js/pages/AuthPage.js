@@ -7,9 +7,6 @@ import DocumentTitle   from 'react-document-title'
 import { makeAuthResponse, makeECPrivateKey, getAuthRequestFromURL, redirectUserToApp } from 'blockstack'
 //import { Person, fetchAppManifest, publicKeyToAddress, makeDIDFromAddress, makeUUID4, nextMonth } from 'blockstack'
 
-import Header          from '../components/Header'
-import Footer          from '../components/Footer'
-
 class AuthPage extends Component {
 
   constructor(props) {
@@ -63,9 +60,6 @@ class AuthPage extends Component {
     return (
       <DocumentTitle title="Sign In with Blockstack">
         <div>
-          <div className="navbar-fixed-top bg-primary">
-            <Header />
-          </div>
           <section className="container-fluid spacing-container">
             <div className="container col-centered">
               <div className="container m-b-5" style={{ minHeight: '800px' }}>
@@ -105,7 +99,6 @@ class AuthPage extends Component {
               </div>
             </div>
           </section>
-          <Footer />
         </div>
       </DocumentTitle>
     )
