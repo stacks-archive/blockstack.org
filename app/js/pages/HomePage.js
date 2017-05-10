@@ -71,11 +71,11 @@ class HomePage extends Component {
                 </h1>
                 <p className="no-padding col-md-12">
                   <Link to="/install" role="button"
-                    className="btn btn-lg btn-secondary">
+                    className="btn btn-lg btn-secondary" style={{ marginBottom: '10px' }}>
                     Try Blockstack
                   </Link>
                   <Link to="/tutorials/hello-blockstack" role="button"
-                    className="btn btn-lg btn-secondary">
+                    className="btn btn-lg btn-secondary" style={{ marginBottom: '10px' }}>
                     Watch Tutorial
                   </Link>
                 </p>

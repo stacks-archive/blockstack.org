@@ -61,10 +61,7 @@ gulp.task('buildConstants', () => {
   let constants = {}
 
   constants.milestones = buildRoadmap()
-
   constants.papers = buildPapers()
-
-  console.log(constants)
 
   fs.writeFile('app/constants.json', JSON.stringify(constants), (err) => {
     if (err) {
