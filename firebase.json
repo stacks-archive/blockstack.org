@@ -56,6 +56,10 @@
         "destination": "/docs-tutorials-hello-blockstack.html"
       },
       {
+        "source": "/blog/blockstack-whitepaper-is-now-available",
+        "destination": "/blog-blockstack-whitepaper-is-now-available.html"
+      },
+      {
         "source": "/blog/hello-blockstack-tutorial",
         "destination": "/blog-hello-blockstack-tutorial.html"
       },

@@ -5,7 +5,7 @@ class Paper extends Component {
   static propTypes: {
     date: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    publication: PropTypes.string.isRequired,
+    publication: PropTypes.string,
     authors: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
     index: PropTypes.string.isRequired,
@@ -24,9 +24,15 @@ class Paper extends Component {
         <p className="m-b-0">
           {this.props.authors}
         </p>
+        {this.props.publication ?
         <p className="m-b-1">
           {this.props.publication} - {this.props.date}
         </p>
+        :
+        <p className="m-b-1">
+          {this.props.date}
+        </p>
+        }
         <p className="m-b-1">
           <Link to={this.props.url} target="_blank"
                 className="btn btn-sm btn-outline-primary">
