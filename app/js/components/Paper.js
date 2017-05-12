@@ -6,7 +6,7 @@ class Paper extends Component {
     date: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     publication: PropTypes.string,
-    authors: PropTypes.string.isRequired,
+    authors: PropTypes.string,
     url: PropTypes.string.isRequired,
     index: PropTypes.string.isRequired,
   }
@@ -19,11 +19,13 @@ class Paper extends Component {
     return (
       <div className="m-b-3">
         <h4 className="m-b-1">
-          {this.props.index+1}. {this.props.title}
+          {this.props.title}
         </h4>
+        {this.props.authors ?
         <p className="m-b-0">
           {this.props.authors}
         </p>
+        : null }
         {this.props.publication ?
         <p className="m-b-1">
           {this.props.publication} - {this.props.date}
