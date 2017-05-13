@@ -67,21 +67,21 @@ class HomePage extends Component {
             <div className="container">
               <section className="hero">
                 <h1 className="hero-head">
-                  Build decentralized, serverless apps
+                  Build decentralized apps
                 </h1>
                 <p className="lead hero-lead col-md-5 block">
-                  Blockstack is a new decentralized internet where you own your data and apps run locally without remote servers.
+                  Blockstack is a new decentralized internet where users own their data and where apps run locally without remote servers.
                 </p>
                 <p className="no-padding col-md-12">
-                  <Link to="/tutorials/hello-blockstack" role="button"
+                  <Link to="#" role="button"
                     className="btn btn-lg btn-secondary btn-block">
-                    Watch Tutorial
+                    Join the Waitlist
                   </Link>
                 </p>
-                <p className="no-padding col-md-12 hero-caption">
-                  <Link to="/install" className="hero-caption-text">
-                    Try the browser portal &nbsp; › &nbsp;
-                    <span className="hero-caption-link">Install</span>
+                <p className="no-padding col-md-12">
+                  <Link to="#" role="button"
+                    className="btn btn-lg btn-secondary btn-block">
+                    Get the Developer Kit
                   </Link>
                 </p>
               </section>
