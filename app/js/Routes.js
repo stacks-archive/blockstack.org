@@ -27,6 +27,8 @@ import DownloadPage                from './pages/DownloadPage'
 import FAQPage                     from './pages/FAQPage'
 import TutorialsPage               from './pages/TutorialsPage'
 import TutorialPage                from './pages/TutorialPage'
+import AuthPage                    from './pages/AuthPage'
+import RoadmapPage                 from './pages/RoadmapPage'
 
 export default (
   <Router history={browserHistory} onUpdate={() => window.scrollTo(0, 0)}>
@@ -61,6 +63,10 @@ export default (
 
       <Route path="/posts/:docSection" component={ArticlePage} />
       <Route path="/docs/:docSection" component={ArticlePage} />
+
+      <Route path="/auth" component={AuthPage} />
+
+      <Route path="/roadmap" component={RoadmapPage} />
 
       <Route path="*" component={NotFoundPage} />
     </Route>

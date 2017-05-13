@@ -14,7 +14,7 @@ gulp.task('prod', ['clean'], function(cb) {
   runSequence([
     'makeBuildDir', 'copyStyles', 'copyimages', 'browserify', 'copyFonts',
     'copyIndex', 'copyIcons', 'copyFiles', 'buildDocs', 'buildBlog',
-    'configFirebase'
+    'buildConstants', 'configFirebase'
   ], cb);
 
 });
