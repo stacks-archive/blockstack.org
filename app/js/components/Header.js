@@ -36,7 +36,7 @@ class Header extends Component {
           </Link>
           <button
             type="button"
-            className={isOpen ? 'navbar-toggle hamburger collapsed' : 'navbar-toggle hamburger'}
+            className={isOpen ? 'navbar-toggle collapsed' : 'navbar-toggle'}
             onClick={this.toggleDropdown}
             data-toggle="collapse"
             data-target="#mobile-nav"
