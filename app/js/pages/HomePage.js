@@ -72,13 +72,13 @@ class HomePage extends Component {
                 <p className="lead hero-lead col-md-5 block">
                   Blockstack is a new decentralized internet where users own their data and where apps run locally without remote servers.
                 </p>
-                <p className="no-padding col-md-12 hidden-sm-down">
+                <p className="no-padding col-md-6 hidden-sm-down">
                   <Link to="#" role="button"
                     className="btn btn-lg btn-secondary btn-block">
                     Join the Waitlist
                   </Link>
                 </p>
-                <p className="no-padding col-md-12 hidden-sm-down">
+                <p className="no-padding col-md-6 hidden-sm-down">
                   <Link to="#" role="button"
                     className="btn btn-lg btn-secondary btn-block">
                     Get the Developer Kit
@@ -87,7 +87,7 @@ class HomePage extends Component {
                 <p className="no-padding col-md-12 hidden-md-up">
                   <Link to="#" role="button"
                     className="btn btn-lg btn-secondary btn-block">
-                    Get invited
+                    Get invited!
                   </Link>
                 </p>
                 <p className="no-padding col-md-12">
