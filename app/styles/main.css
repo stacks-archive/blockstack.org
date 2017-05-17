@@ -128,7 +128,7 @@ a:hover,a:focus{font-weight:400;color:#E91E63;text-decoration:underline;}
 /* Typography */
 h1.modern{font-family:'Source Code Pro',monospace;font-size:1.75rem;font-weight:300;}
 h1.hero-head{font-family:'Source Code Pro',monospace;margin-bottom:1.5rem;font-size:1.75rem;font-weight:300;margin-top:1rem;}
-.hero-lead{font-family:'Source Code Pro',monospace;font-size:0.875rem;margin-bottom:2rem;color:#95889C;line-height:1.625rem;}
+.hero-lead{font-family:'Source Code Pro',monospace;font-size:0.8125rem;margin-bottom:0.8125rem;color:#95889C;line-height:1.125rem;}
 .lead-centered{font-family:'Source Code Pro',monospace;font-size:1rem;text-align:center;margin-bottom:2rem;font-weight:400;}
 
 /* Navbar */
@@ -168,15 +168,25 @@ a.nav-link:hover,a.nav-link:focus{color:#fff;}
 body,html,#app,.app-landing{height:100%;}
 .app-common{height:auto;}
 .site-wrapper{display:flex;background-color:#270F34;flex-direction:column;height:100%;}
-.hero{position:relative;display:block;color:#fff;padding-bottom:225px;padding-top:10%;}
+.hero{position:relative;display:block;color:#fff;padding-bottom:75px;padding-top:5%;}
 .hero-caption{text-align:center;font-family:'Lato',sans-serif;font-size:0.8125rem;font-weight:300;color:#95889C;margin-top:-5px;}
 .hero-caption > a{color:#95889C;font-weight:300;}
 .hero-caption > a:hover{color:#95889C;text-decoration:none;}
 .hero-caption > a:hover span{color:rgba(255,255,255,0.8);text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.5);padding-bottom:0px;}
 .hero-wrap{padding-top:.5rem;padding-bottom:6rem;}
-.hero-btn-title{text-align: center;font-family:'Source Code Pro',monospace;font-weight: 300;font-size: 0.875rem;margin-bottom: 0.75rem;}
+.hero-btn-title{font-family:'Source Code Pro',monospace;font-weight:300;font-size:0.8125rem;margin-bottom:0.5rem;}
 .section-odd{color:#fff;background-color:#270F34;padding-top:150px;padding-bottom:150px;margin-right:0px;margin-left:0px;}
-.section-even{color:#270F34;background-color:#fff;padding-top:150px;padding-bottom:150px;margin-right:0px;margin-left:0px;}
+.section-even {
+  color: #270F34;
+  background-color: #fff;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.section-proof{
+  background-color: #E91E63;
+}
 .col-3-section{padding-top:50px;padding-bottom:50px;background-color:rgba(248,249,251,1);border-bottom:1px solid #E6E6E6;}
 .about-head-wrap{padding-bottom:30px;background:url(/images/visuals/blockchain-timeline.png);background-repeat:no-repeat;background-position:center top;background-color:#53206f;}
 .highlight-box{padding-top:50px;padding-bottom:50px;background-color:#831ca8;color:rgba(255,255,255,1);}

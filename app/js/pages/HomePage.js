@@ -75,9 +75,9 @@ class HomePage extends Component {
                 <p className="no-padding col-md-6 hero-btn-title">
                   Users
                 </p>
-                <p className="no-padding col-md-6">
+                <p className="no-padding col-md-6 m-b-10">
                   <Link to="#" role="button"
-                    className="btn btn-lg btn-secondary btn-block">
+                    className="btn btn-sm btn-secondary btn-block">
                     Join the Waitlist
                   </Link>
                 </p>
@@ -86,14 +86,20 @@ class HomePage extends Component {
                 </p>
                 <p className="no-padding col-md-6">
                   <Link to="#" role="button"
-                    className="btn btn-lg btn-secondary btn-block">
+                    className="btn btn-sm btn-secondary btn-block">
                     Get the Developer Kit
                   </Link>
-                </p>
-                <p className="no-padding col-md-12">
-                  In production for 3+ years &#183; {this.state.stats.domains} domains registered
-                </p>
+                </p>                
               </section>
+            </div>
+            <div className="section-proof container-fluid">
+              <div className="container">
+                <section>
+                  <p className="no-padding col-md-12">
+                    In production for 3+ years &#183; {this.state.stats.domains} domains registered
+                  </p>
+                </section>
+              </div>
             </div>
             <div className="section-even container-fluid">
               <div className="container">
