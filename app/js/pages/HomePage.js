@@ -67,26 +67,70 @@ class HomePage extends Component {
             <div className="container">
               <section className="hero">
                 <h1 className="hero-head">
-                  Build decentralized, serverless apps
+                  A full stack for building decentralized apps
                 </h1>
-                <p className="lead hero-lead col-md-5 block">
-                  Blockstack is a new decentralized internet where you own your data and apps run locally without remote servers.
-                </p>
                 <p className="no-padding col-md-12">
+                  <Link to="/install" role="button"
+                    className="btn btn-lg btn-secondary" style={{ marginBottom: '10px' }}>
+                    Try Blockstack
+                  </Link>
                   <Link to="/tutorials/hello-blockstack" role="button"
-                    className="btn btn-lg btn-secondary btn-block">
+                    className="btn btn-lg btn-secondary" style={{ marginBottom: '10px' }}>
                     Watch Tutorial
                   </Link>
                 </p>
-                <p className="no-padding col-md-12 hero-caption">
-                  <Link to="/install" className="hero-caption-text">
-                    Try the browser portal &nbsp; › &nbsp;
-                    <span className="hero-caption-link">Install</span>
-                  </Link>
+                <p className="no-padding col-md-12">
+                  In production for <b>3+ years</b> &#183; <b>{this.state.stats.domains} domains</b> registered
                 </p>
               </section>
             </div>
             <div className="section-even container-fluid">
+              <div className="container">
+                <section>
+                  <h1 className="modern text-center">
+                    The old internet is broken
+                  </h1>
+                  <div className="row">
+                    <div className="col-md-4 no-padding">
+                      <h3 className="modern text-center">
+                        Mass data breaches
+                      </h3>
+                    </div>
+                    <div className="col-md-4 no-padding">
+                      <h3 className="modern text-center">
+                        Identity theft
+                      </h3>
+                    </div>
+                    <div className="col-md-4 no-padding">
+                      <h3 className="modern text-center">
+                        Walled gardens
+                      </h3>
+                    </div>
+                  </div>
+                  <h1 className="modern text-center m-t-5">
+                    The new internet is here
+                  </h1>
+                  <div className="row">
+                    <div className="col-md-4 no-padding">
+                      <h3 className="modern text-center">
+                        Own your data
+                      </h3>
+                    </div>
+                    <div className="col-md-4 no-padding">
+                      <h3 className="modern text-center">
+                        Own your identity
+                      </h3>
+                    </div>
+                    <div className="col-md-4 no-padding">
+                      <h3 className="modern text-center">
+                        Own your apps
+                      </h3>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div className="section-odd container-fluid">
               <div className="container">
                 <section>
                   <h1 className="modern text-center">
@@ -95,18 +139,18 @@ class HomePage extends Component {
                   <div className="row">
                     <div className="col-md-4 no-padding">
                       <h3 className="modern text-center">
-                        No infrastructure
+                        User empowerment
                       </h3>
                       <p className="lead lead-centered col-md-10 block col-centered text-center">
-                        Build apps without databases or server maintainance. Publish apps to the decentralized internet where they will run on user devices and live forever.
+                        Build apps that put users in control of their identity and data. Remove data as a liability. Attract users who value their freedom and security.
                       </p>
                     </div>
                     <div className="col-md-4 no-padding">
                       <h3 className="modern text-center">
-                        Get users faster
+                        No infrastructure
                       </h3>
                       <p className="lead lead-centered col-md-10 block col-centered text-center">
-                        Make it easier than ever for users to switch with shared data protocols between apps and freedom from walled gardens, censorship, and middlemen.
+                        Build apps without databases or server maintainance. Publish apps to the decentralized internet where they will run on user devices and live forever.
                       </p>
                     </div>
                     <div className="col-md-4 no-padding">
@@ -118,44 +162,6 @@ class HomePage extends Component {
                       </p>
                     </div>
                   </div>
-                  <p className="lead lead-centered col-md-10 block col-centered text-center m-t-1">
-                    Build on a platform in production for <b>3+ years</b> with <b>{this.state.stats.domains} domains</b> registered and open source software maintained by a well-funded community.
-                  </p>
-                </section>
-              </div>
-            </div>
-            <div className="section-odd container-fluid">
-              <div className="container">
-                <section>
-                  <h1 className="modern text-center">
-                    New internet. New browser experience.
-                  </h1>
-                  <p className="lead lead-centered col-md-10 block col-centered text-center">
-                    Introducing the Blockstack browser portal - your way to access the new decentralized internet.
-                  </p>
-                  <div className="row">
-                    <div className="col-md-4 no-padding">
-                      <h3 className="modern text-center">
-                        Free yourself from platform lock-in
-                      </h3>
-                    </div>
-                    <div className="col-md-4 no-padding">
-                      <h3 className="modern text-center">
-                        Be safe from tracking & mass breaches
-                      </h3>
-                    </div>
-                    <div className="col-md-4 no-padding">
-                      <h3 className="modern text-center">
-                        Powered by blockchain technology
-                      </h3>
-                    </div>
-                  </div>
-                  <p className="lead-centered m-t-3">
-                    <Link to="/install" role="button"
-                      className="btn btn-lg btn-outline-primary btn-block">
-                      Install Browser Portal
-                    </Link>
-                  </p>
                 </section>
               </div>
             </div>
@@ -168,11 +174,11 @@ class HomePage extends Component {
                   <div className="row">
                     <div className="col-md-4 no-padding">
                       <h3 className="modern text-center">
-                        Identity & Auth
+                        Identity
                       </h3>
                       <p className="lead lead-centered col-md-10 block col-centered text-center">
-                        With Blockstack, users get a set of digital keys that let them own their identity.
-                        From there, they can sign in to apps locally without remote servers or identity providers.
+                        With Blockstack, users get digital keys that let them own their identity.
+                        They sign in to apps locally without remote servers or identity providers.
                       </p>
                     </div>
                     <div className="col-md-4 no-padding">
@@ -186,11 +192,11 @@ class HomePage extends Component {
                     </div>
                     <div className="col-md-4 no-padding">
                       <h3 className="modern text-center">
-                        Naming
+                        Payments
                       </h3>
                       <p className="lead lead-centered col-md-10 block col-centered text-center">
-                        Blockstack's naming system (BNS) is completely decentralized, securely maps names to keys and routing info,
-                        and can be run on any blockchain.
+                        Blockstack uses Bitcoin and other crypto-currencies for simple peer-to-peer payments.
+                        Developers can charge for downloads, subscriptions, and more.
                       </p>
                     </div>
                   </div>
@@ -341,6 +347,43 @@ class HomePage extends Component {
 export default connect(mapStateToProps, mapDispatchToProps)(HomePage)
 
 /*
+            <div className="section-even container-fluid">
+              <div className="container">
+                <section>
+                  <h1 className="modern text-center">
+                    New internet. New browser experience.
+                  </h1>
+                  <p className="lead lead-centered col-md-10 block col-centered text-center">
+                    Introducing the Blockstack browser portal - your way to access the new decentralized internet.
+                  </p>
+                  <div className="row">
+                    <div className="col-md-4 no-padding">
+                      <h3 className="modern text-center">
+                        Free yourself from platform lock-in
+                      </h3>
+                    </div>
+                    <div className="col-md-4 no-padding">
+                      <h3 className="modern text-center">
+                        Be safe from tracking & mass breaches
+                      </h3>
+                    </div>
+                    <div className="col-md-4 no-padding">
+                      <h3 className="modern text-center">
+                        Powered by blockchain technology
+                      </h3>
+                    </div>
+                  </div>
+                  <p className="lead-centered m-t-3">
+                    <Link to="/install" role="button"
+                      className="btn btn-lg btn-outline-primary btn-block">
+                      Install Browser Portal
+                    </Link>
+                  </p>
+                </section>
+              </div>
+            </div>
+
+
             <div className="section-even container-fluid">
               <div className="container">
                 <section>

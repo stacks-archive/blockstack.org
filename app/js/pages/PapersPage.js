@@ -4,7 +4,7 @@ import {Component}      from 'react'
 import DocumentTitle    from 'react-document-title'
 
 import Paper            from '../components/Paper'
-import {papers}         from '../config'
+import {papers}         from '../../constants.json'
 
 class PapersPage extends Component {
 

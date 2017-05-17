@@ -128,30 +128,6 @@ export const talks = {
   },
 }
 
-export const papers = [
-  {
-    title: 'Blockstack: A Global Naming and Storage System Secured by Blockchains',
-    authors: 'Muneeb Ali, Jude Nelson, Ryan Shea and Michael J. Freedman',
-    publication: 'USENIX Annual Technical Conference',
-    url: '/blockstack_usenix16.pdf',
-    date: 'June 2016',
-  },
-  {
-    title: 'Bootstrapping Trust in Distributed Systems with Blockchains',
-    authors: 'Muneeb Ali, Jude Nelson, Ryan Shea and Michael J. Freedman:',
-    publication: 'USENIX ;login: issue: Fall 2016, Vol. 41, No. 3',
-    url: '/blockstack_login16.pdf',
-    date: 'June 2016',
-  },
-  {
-    title: 'Extending Existing Blockchains with Virtualchain',
-    authors: 'Jude Nelson, Muneeb Ali, Ryan Shea and Michael J. Freedman',
-    publication: 'Workshop on Distributed Cryptocurrencies and Consensus Ledgers',
-    url: '/virtualchain_dccl16.pdf',
-    date: 'July 2016',
-  },
-]
-
 export const communityMembers = [
   { blockstackId: 'larry',
     name: 'Larry Salibra',
