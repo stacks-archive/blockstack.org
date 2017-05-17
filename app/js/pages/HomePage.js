@@ -72,7 +72,7 @@ class HomePage extends Component {
                 <p className="lead hero-lead col-md-5 block">
                   Blockstack is a new decentralized internet where users own their data and apps run locally. A browser portal is all that’s needed to get started.
                 </p>
-                <p className="no-padding col-md-6">
+                <p className="no-padding col-md-6 hero-btn-title">
                   Users
                 </p>
                 <p className="no-padding col-md-6">
@@ -81,7 +81,7 @@ class HomePage extends Component {
                     Join the Waitlist
                   </Link>
                 </p>
-                <p className="no-padding col-md-6">
+                <p className="no-padding col-md-6 hero-btn-title">
                   Developers
                 </p>
                 <p className="no-padding col-md-6">
