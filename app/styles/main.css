@@ -134,7 +134,7 @@ h1.hero-head{font-family:'Source Code Pro',monospace;margin-bottom:1.5rem;font-s
 
 /* Navbar */
 .navbar{font-family:'Source Code Pro',monospace;padding-top:0.4375rem;padding-bottom:0.5625rem;}
-.navbar-brand{margin-right:0px;}
+.navbar-brand{margin-right:0px;margin-top:6px;}
 .navbar-brand img {width:164px;}
 .brand-bug{margin-right:1rem;}
 .brand-bug img{width:30px;position:relative;}
@@ -142,7 +142,8 @@ h1.hero-head{font-family:'Source Code Pro',monospace;margin-bottom:1.5rem;font-s
 div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-header > nav.navbar > a.navbar-brand{display:none;}
 div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-header > nav.navbar > a.navbar-brand.brand-bug{display:block;}
 .nav{font-family:'Source Code Pro',monospace;text-align:left;font-size:20px;padding-top:10px;padding-bottom:20px;}
-.navbar-nav{display:none;}
+.navbar-nav{display:initial;}
+/*.navbar-nav{display:none;}*/
 a.nav-link{color:#fff;font-size:0.8125rem;font-weight:300;margin-top:0.0625rem;}
 a.nav-link:hover,a.nav-link:focus{color:#fff;}
 .nav-item{margin-left:0.5rem;line-height:36px;}
@@ -170,17 +171,17 @@ a.nav-link > i.fa.fa-github{display:none;}
 .btn-footer-max-width{max-width:225px;}
 
 /* Other */
-.body-hero{background-color:#270F34;margin-top:-75px;}
+.body-hero{background-color:#270F34;}
 body,html,#app,.app-landing{height:100%;}
 .app-common{height:auto;}
 .site-wrapper{display:flex;background-color:#270F34;flex-direction:column;height:100%;}
-.hero{display:block;color:#fff;padding-bottom:125px;padding-top:10%;padding-left:0.5rem;padding-right:0.5rem;}
+.hero{display:block;color:#fff;padding-bottom:125px;padding-top:50px;padding-left:0.5rem;padding-right:0.5rem;}
 .hero-caption{text-align:center;font-family:'Lato',sans-serif;font-size:0.8125rem;font-weight:300;color:#95889C;margin-top:-5px;}
 .hero-caption > a{color:#95889C;font-weight:300;}
 .hero-caption > a:hover{color:#95889C;text-decoration:none;}
 .hero-caption > a:hover span{color:rgba(255,255,255,0.8);text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.5);padding-bottom:0px;}
 .hero-wrap{padding-top:.5rem;padding-bottom:6rem;}
-.hero-btn-title{font-family:'Source Code Pro',monospace;font-weight:300;font-size:0.8125rem;margin-bottom:0.5rem;}
+.hero-btn-title{font-family:'Source Code Pro',monospace;font-weight:300;font-size:0.8125rem;margin-bottom:0.5rem;margin-top:0.5rem;}
 .section-odd{color:#fff;background-color:#270F34;padding-top:150px;padding-bottom:150px;margin-right:0px;margin-left:0px;}
 .section-even{color:#270F34;background-color:#fff;padding-top:150px;padding-bottom:150px;margin-right:0px;margin-left:0px;}
 .section-stats{background-color:#270F34;padding-top:25px;padding-bottom:25px;}
@@ -241,6 +242,7 @@ li.nav-item:nth-last-child(2){display:none;}
 .feat-card{height:75px;display:block;}
 .feat-card > h3{font-weight:300;}
 .text-stats{font-family:'Source Code Pro',monospace;font-size:0.8125rem;font-weight:300;}
+.landing-hero-img{display:none;}
 
 /* Tutorials */
 iframe{height:530px;}
@@ -352,7 +354,7 @@ section{word-break:break-word;}
 
   /* Globals */
   h1.hero-head{font-size:2.25rem;text-align:center;margin-top:0;}
-  .hero-lead{text-align:center;padding-left:0;padding-right:0;margin-bottom:2.5rem;}
+  .hero-lead{text-align:center;padding-left:0;padding-right:0;margin-bottom:2rem;}
   .lead-centered{padding-left:0;padding-right:0;text-align:center;margin-bottom:3rem;}
   .col-3-section{padding-bottom:50px;}
   .hero-head.summ-head{font-size:40px;}
@@ -362,7 +364,7 @@ section{word-break:break-word;}
   .btn-lg{font-size:0.875rem;padding:0.6875rem 3.4375rem;line-height:1.75rem;}
   .btn-block{display:block;width:initial;}
   .btn-text{padding-right: 0; padding-left: 0;margin-ttop: 0;padding: 0}
-  .btn-hero{padding:0.5625rem 2.25rem;font-size:0.8125rem;font-weight:400;line-height:1.75rem;}
+  .btn-hero{padding:0.5625rem 2.25rem;font-size:0.8125rem;font-weight:400;line-height:1.75rem;margin-right:15px;margin-left:15px;}
 
   /* Feature Image Top */
   .feat-img-top > p{font-size:14px;}
@@ -437,6 +439,7 @@ section{word-break:break-word;}
   .feat-card{height:140px;display:block;}
   .feat-card > h3{font-weight:300;}
   .hero-btn-title{text-align:center;}
+  .landing-hero-img{display:initial;}
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -502,7 +505,7 @@ section{word-break:break-word;}
 
 /* x-Small devices */
 @media (max-width:348px){
-  li.nav-item:nth-last-child(2){display:none;}
+  li.nav-item:nth-last-child(5){display:none;}
   h1.hero-head{font-size:1.65rem;}
   .hero{padding-top:3%;padding-bottom:75px;}
   .hero-lead{line-height:1.125rem;}
