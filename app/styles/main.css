@@ -148,6 +148,13 @@ a.nav-link:hover,a.nav-link:focus{color:#fff;}
 .nav{font-family:'Source Code Pro',monospace;}
 
 
+/* Sandwich menu (landing page) */
+.navbar .navbar-toggle,.navbar .navbar-toggle:active,.navbar .navbar-toggle:focus,.navbar .navbar-toggle:hover{padding:9px 11px;border-color:transparent;margin:12px 15px;background:0 0;}
+.navbar-toggle .icon-bar{display:block;width:15px;height:1px;border-radius:1px;background-color:rgba(255,2555,255,1);}
+.landing-sandwich-icon{background-color:rgba(255,255,255,1)!important;}
+.use-count-rounding{margin-top:50px;margin-bottom:80px;}
+
+
 /* Buttons */
 .btn{font-family:'Source Code Pro',monospace;padding:0.5625rem 2.25rem;font-size:0.8125rem;font-weight:400;line-height:1.75rem;border-radius:0;}
 .btn-sm{font-size:0.8125rem;padding:0.375rem 2.125rem;line-height:1.5rem;}
