@@ -261,9 +261,9 @@ class HomePage extends Component {
                     Complete the step-by-step tutorial and see how easy it is to build an app with a decentralized identity system in a few lines of code and no servers.
                   </p>
                   <p className="lead lead-centered col-md-10 block col-centered text-center">
-                    <Link to="/tutorials/hello-blockstack" role="button"
+                    <Link to="/tutorials" role="button"
                       className="btn btn-outline-primary btn-block">
-                      Hello Blockstack Tutorial
+                      Try the Tutorials
                     </Link>
                   </p>
                   <p className="lead lead-centered col-md-10 block col-centered text-center">
