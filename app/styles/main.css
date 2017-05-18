@@ -237,7 +237,7 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .media-wrap{width:975px;}
 .media-content{margin-top:35px;}
 li.nav-item:nth-last-child(2){display:none;}
-.landing-feat-img{width:100%;}
+.landing-feat-img{width:100%;max-width:365px;}
 .feat-card{height:75px;display:block;}
 .feat-card > h3{font-weight:300;}
 .text-stats{font-family:'Source Code Pro',monospace;font-size:0.8125rem;font-weight:300;}

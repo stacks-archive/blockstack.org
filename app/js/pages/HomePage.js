@@ -72,35 +72,31 @@ class HomePage extends Component {
                 <p className="lead hero-lead col-md-8 col-centered">
                   Blockstack is a new decentralized internet where users own their data and apps run locally. A browser portal is all that’s needed to get started.
                 </p>
-                <div className="row">
-                  <div className="col-md-6 col-centered">
-                    <p className="no-padding col-md-12 hero-btn-title">
-                      Developers
-                    </p>
-                    <p className="no-padding col-md-12 m-b-20">
-                      <Link to="/developers" role="button"
-                        className="btn btn-sm btn-secondary btn-block btn-hero">
-                        Developer Kit
-                      </Link>
-                    </p>
-                    <p className="no-padding col-md-12 hero-btn-title">
-                      Users
-                    </p>
-                    <p className="no-padding col-md-12">
-                      <Link to="/users" role="button"
-                        className="btn btn-sm btn-secondary btn-block">
-                        Join the Waitlist
-                      </Link>
-                    </p>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-md-8 col-centered" style={{ paddingTop: '40px' }}>
+                <div className="col-md-6 col-centered">
+                  <div className="col-sm-12 text-center">
                     <Image className="landing-feat-img"
                       src="/images/resources/portal-home-screen.png"
                       fallbackSrc="/images/tutorials/portal-home-screen.png"
                       retinaSupport={false} />
                   </div>
+                  <p className="no-padding col-md-12 hero-btn-title">
+                    Developers
+                  </p>
+                  <p className="no-padding col-md-12 m-b-20">
+                    <Link to="/developers" role="button"
+                      className="btn btn-sm btn-secondary btn-block btn-hero">
+                      Developer Kit
+                    </Link>
+                  </p>
+                  <p className="no-padding col-md-12 hero-btn-title">
+                    Users
+                  </p>
+                  <p className="no-padding col-md-12">
+                    <Link to="/users" role="button"
+                      className="btn btn-sm btn-secondary btn-block">
+                      Join the Waitlist
+                    </Link>
+                  </p>
                 </div>
               </section>
             </div>
