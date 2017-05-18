@@ -129,7 +129,7 @@ a:hover,a:focus{font-weight:400;color:#E91E63;text-decoration:underline;}
 /* Typography */
 h1.modern{font-family:'Source Code Pro',monospace;font-size:1.75rem;font-weight:300;}
 h1.hero-head{font-family:'Source Code Pro',monospace;margin-bottom:1.5rem;font-size:1.75rem;font-weight:300;margin-top:1rem;}
-.hero-lead{font-family:'Source Code Pro',monospace;font-size:0.8125rem;margin-bottom:1.5rem;color:#95889C;line-height:1.25rem;}
+.hero-lead{font-family:'Source Code Pro',monospace;font-size:0.8125rem;margin-bottom:0.75rem;color:#95889C;line-height:1.25rem;}
 .lead-centered{font-family:'Source Code Pro',monospace;font-size:1rem;text-align:center;margin-bottom:2rem;font-weight:400;}
 
 /* Navbar */
@@ -364,7 +364,7 @@ section{word-break:break-word;}
   .btn-lg{font-size:0.875rem;padding:0.6875rem 3.4375rem;line-height:1.75rem;}
   .btn-block{display:block;width:initial;}
   .btn-text{padding-right: 0; padding-left: 0;margin-ttop: 0;padding: 0}
-  .btn-hero{padding:0.5625rem 2.25rem;font-size:0.8125rem;font-weight:400;line-height:1.75rem;margin-right:15px;margin-left:15px;}
+  .btn-hero{padding:0.5625rem 2.25rem;font-size:0.8125rem;font-weight:400;line-height:1.75rem;}
 
   /* Feature Image Top */
   .feat-img-top > p{font-size:14px;}
@@ -390,7 +390,7 @@ section{word-break:break-word;}
 
   /* Content */
   .hero-wrap{display:block;padding-top:8rem;padding-bottom:12rem;}
-  .hero{padding-bottom:150px;padding-top:150px;}
+  .hero{padding-bottom:200px;padding-top:75px;}z
   .hero-caption {text-align: left;}
   .simple-featurette{display:block;margin-top:85px;}
   .simple-panel{display:inline-block;margin-top:0;margin-bottom:0;margin-right:50px;}
@@ -438,7 +438,7 @@ section{word-break:break-word;}
   .bitcoin-protocols-main{padding-right:40px;padding-left:40px;}
   .feat-card{height:140px;display:block;}
   .feat-card > h3{font-weight:300;}
-  .hero-btn-title{text-align:center;}
+  .hero-btn-title{text-align:center;margin-top:1.5rem;}
   .landing-hero-img{display:initial;}
 }
 
