@@ -12,6 +12,7 @@ class TransparentHeader extends Component {
 
   render() {
     return (
+    <div className="bg-transparent">
       <header className="container nav-header no-padding">
         <nav className="navbar">
           <Link className="navbar-brand brand-bug" to="/">
@@ -59,6 +60,7 @@ class TransparentHeader extends Component {
         </nav>
         <MobileNav />
       </header>
+    </div>
     )
   }
 

@@ -122,7 +122,7 @@ a:hover,a:focus{font-weight:400;color:#E91E63;text-decoration:underline;}
 .bg-primary{background-color:#270F34!important;}
 .text-center{text-align:center!important;}
 .text-white{color:#fff;}
-.container{width:100%;overflow: hidden;}
+.container{width:100%;}
 
 /* Spacing */
 
@@ -170,11 +170,18 @@ a.nav-link > i.fa.fa-github{display:none;}
 .btn-footer-max-width{max-width:225px;}
 
 /* Other */
-.body-hero{background-color:#270F34;}
+.body-hero{background-color:#270F34;margin-top:-75px;}
 body,html,#app,.app-landing{height:100%;}
 .app-common{height:auto;}
 .site-wrapper{display:flex;background-color:#270F34;flex-direction:column;height:100%;}
-.hero{position:relative;display:block;color:#fff;padding-bottom:125px;padding-top:10%;padding-left:0.5rem;padding-right:0.5rem;}
+.hero {
+  display: block;
+  color: #fff;
+  padding-bottom: 125px;
+  padding-top: 10%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 .hero-caption{text-align:center;font-family:'Lato',sans-serif;font-size:0.8125rem;font-weight:300;color:#95889C;margin-top:-5px;}
 .hero-caption > a{color:#95889C;font-weight:300;}
 .hero-caption > a:hover{color:#95889C;text-decoration:none;}
