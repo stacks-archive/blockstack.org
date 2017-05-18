@@ -349,7 +349,7 @@ section{word-break:break-word;}
   .container{max-width:975px;}
 
   /* Globals */
-h1.hero-head{font-size:2.25rem;text-align:left;margin-top:0;}
+  h1.hero-head{font-size:2.25rem;text-align:center;margin-top:0;}
   .hero-lead{text-align:left;padding-left:0;padding-right:0;margin-bottom:2.5rem;}
   .lead-centered{padding-left:0;padding-right:0;text-align:center;margin-bottom:3rem;}
   .col-3-section{padding-bottom:50px;}
@@ -444,7 +444,7 @@ h1.hero-head{font-size:2.25rem;text-align:left;margin-top:0;}
   .bs-docs-featurette{max-width:1170px;}
 
   /* Globals */
-  h1.hero-head{font-size:2.25rem; width:650px;}
+
   h3{margin-top:45px;margin-bottom:15px;margin-bottom:20px;}
   h4{margin:20px 0;}
 
