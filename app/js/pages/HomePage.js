@@ -104,7 +104,7 @@ class HomePage extends Component {
                     ——›&nbsp;In production for 3+ years
                   </div>
                   <div className="no-padding col-sm-12 col-md-4 text-center text-white text-stats">
-                    ——›&nbsp;2716 community devs
+                    ——›&nbsp;{this.state.stats.slackUsers} community devs
                   </div>
                 </section>
               </div>
