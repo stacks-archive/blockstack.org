@@ -69,27 +69,29 @@ class HomePage extends Component {
                 <h1 className="hero-head">
                  A New Internet for Decentralized Apps
                 </h1>
-                <p className="lead hero-lead col-md-5 block">
+                <p className="lead hero-lead col-md-8 col-centered">
                   Blockstack is a new decentralized internet where users own their data and apps run locally. A browser portal is all that’s needed to get started.
                 </p>
-                <p className="no-padding col-md-6 hero-btn-title">
-                  Users
-                </p>
-                <p className="no-padding col-md-6 m-b-10">
-                  <Link to="#" role="button"
-                    className="btn btn-sm btn-secondary btn-block">
-                    Join the Waitlist
-                  </Link>
-                </p>
-                <p className="no-padding col-md-6 hero-btn-title">
-                  Developers
-                </p>
-                <p className="no-padding col-md-6">
-                  <Link to="#" role="button"
-                    className="btn btn-sm btn-secondary btn-block">
-                    Developer Toolkit
-                  </Link>
-                </p>                
+                <div className="col-md-6 col-centered">
+                  <p className="no-padding col-md-12 hero-btn-title">
+                    Developers
+                  </p>
+                  <p className="no-padding col-md-12 m-b-10">
+                    <Link to="#" role="button"
+                      className="btn btn-sm btn-secondary btn-block btn-hero">
+                      Developer Toolkit
+                    </Link>
+                  </p>
+                  <p className="no-padding col-md-12 hero-btn-title">
+                    Users
+                  </p>
+                  <p className="no-padding col-md-12">
+                    <Link to="#" role="button"
+                      className="btn btn-sm btn-secondary btn-block">
+                      Join the Waitlist
+                    </Link>
+                  </p>
+                </div>    
               </section>
             </div>
             <div className="section-proof container-fluid">

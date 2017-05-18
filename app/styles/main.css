@@ -350,17 +350,17 @@ section{word-break:break-word;}
 
   /* Globals */
   h1.hero-head{font-size:2.25rem;text-align:center;margin-top:0;}
-  .hero-lead{text-align:left;padding-left:0;padding-right:0;margin-bottom:2.5rem;}
+  .hero-lead{text-align:center;padding-left:0;padding-right:0;margin-bottom:2.5rem;}
   .lead-centered{padding-left:0;padding-right:0;text-align:center;margin-bottom:3rem;}
   .col-3-section{padding-bottom:50px;}
   .hero-head.summ-head{font-size:40px;}
   .hero-btn{padding-left:0;}
 
   /* Buttons */
-  .btn-secondary,.btn-outline-primary{margin-right:1.25rem;}
   .btn-lg{font-size:0.875rem;padding:0.6875rem 3.4375rem;line-height:1.75rem;}
-  .btn-block{display:inline-block;width:initial;}
+  .btn-block{display:block;width:initial;}
   .btn-text{padding-right: 0; padding-left: 0;margin-ttop: 0;padding: 0}
+  .btn-hero{padding:0.5625rem 2.25rem;font-size:0.8125rem;font-weight:400;line-height:1.75rem;}
 
   /* Feature Image Top */
   .feat-img-top > p{font-size:14px;}
@@ -434,6 +434,7 @@ section{word-break:break-word;}
   .bitcoin-protocols-main{padding-right:40px;padding-left:40px;}
   .feat-card{height:140px;display:block;}
   .feat-card > h3{font-weight:300;}
+  .hero-btn-title{text-align:center;}
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -455,6 +456,7 @@ section{word-break:break-word;}
   /* Hero */
   .hero-wrap{padding-top:11.5rem;padding-bottom:12.5rem;}
   .hero-head{padding-left:0;}
+  .hero-lead{font-size:0.875rem;}
   .hero-img{margin-top:-25px;margin-right:-10px;}
   .slides{padding-top:50px;padding-right:0;padding-left:0;}
   .wrap-mob-feat{max-width:240px;}
