@@ -5,14 +5,14 @@ import DocumentTitle   from 'react-document-title'
 
 import MailchimpForm from '../components/MailchimpForm'
 
-class SignUpPage extends Component {
+class DevSignUpPage extends Component {
 
   constructor(props) {
     super(props)
   }
 
   render() {
-    const subscribeURL = '//blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=0e5478ae86'
+    const subscribeURL = '//blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&id=696cc92791'
 
     return (
       <DocumentTitle title="Blockstack newsletter sign-up">
@@ -23,7 +23,7 @@ class SignUpPage extends Component {
                 <section className="sec-light" style={{ minHeight: '600px' }}>
                   <div className="col-md-6 offset-md-3">
                     <h1>
-                      User Waitlist
+                      Developer Sign Up
                     </h1>
                     <MailchimpForm subscribeURL={subscribeURL} />
                   </div>
@@ -38,4 +38,4 @@ class SignUpPage extends Component {
 
 }
 
-export default SignUpPage
+export default DevSignUpPage
