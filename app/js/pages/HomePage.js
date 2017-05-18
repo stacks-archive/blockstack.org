@@ -76,7 +76,7 @@ class HomePage extends Component {
                   <p className="no-padding col-md-12 hero-btn-title">
                     Developers
                   </p>
-                  <p className="no-padding col-md-12 m-b-10">
+                  <p className="no-padding col-md-12 m-b-20">
                     <Link to="#" role="button"
                       className="btn btn-sm btn-secondary btn-block btn-hero">
                       Developer Toolkit
