@@ -144,23 +144,15 @@ div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-he
 div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-header > nav.navbar > a.navbar-brand.brand-bug{display:block;}
 a.nav-link{color:#fff;font-size:0.8125rem;font-weight:300;margin-top:0.0625rem;}
 a.nav-link:hover,a.nav-link:focus{color:#fff;}
-.nav-item{margin-left:.625rem;}
+.nav-item{margin-left:0.5rem;line-height:36px;}
+.nav-item:first-child{padding-top:8px;}
 .nav{font-family:'Source Code Pro',monospace;}
 
-
 /* Sandwich menu (landing page) */
-.navbar-toggler-icon {
-  background-image: url(../images/icons/icon-menu-bar.svg);
-  width:15px!important;
-  height: 11px;
-  display: inline-block;
-}
-.navbar-toggler:focus, .navbar-toggler:hover {
-  outline: none;
-}
-.navbar-toggler, .navbar-toggler.collapsed {
-  float: right;
-}
+.navbar-toggler,.navbar-toggler.collapsed{float:right;margin-right:-5px;}
+.navbar-toggler:focus,.navbar-toggler:hover{outline:none;}
+.navbar-toggler-icon{background-image:url(../images/icons/icon-menu-bar.svg);width:15px!important;height:11px;display:inline-block;}
+.mobile-nav.collapsing,.mobile-nav.collapse.in{background-color:#200c2b;padding-left:15px;margin-left:-15px;margin-right:-15px;padding-bottom:2px;}
 
 /* Buttons */
 .btn{font-family:'Source Code Pro',monospace;padding:0.5625rem 2.25rem;font-size:0.8125rem;font-weight:400;line-height:1.75rem;border-radius:0;}
@@ -182,7 +174,7 @@ a.nav-link:hover,a.nav-link:focus{color:#fff;}
 body,html,#app,.app-landing{height:100%;}
 .app-common{height:auto;}
 .site-wrapper{display:flex;background-color:#270F34;flex-direction:column;height:100%;}
-.hero{position:relative;display:block;color:#fff;padding-bottom:75px;padding-top:5%;}
+.hero{position:relative;display:block;color:#fff;padding-bottom:75px;padding-top:3%;padding-left:0.5rem;padding-right:0.5rem;}
 .hero-caption{text-align:center;font-family:'Lato',sans-serif;font-size:0.8125rem;font-weight:300;color:#95889C;margin-top:-5px;}
 .hero-caption > a{color:#95889C;font-weight:300;}
 .hero-caption > a:hover{color:#95889C;text-decoration:none;}
@@ -190,17 +182,8 @@ body,html,#app,.app-landing{height:100%;}
 .hero-wrap{padding-top:.5rem;padding-bottom:6rem;}
 .hero-btn-title{font-family:'Source Code Pro',monospace;font-weight:300;font-size:0.8125rem;margin-bottom:0.5rem;}
 .section-odd{color:#fff;background-color:#270F34;padding-top:150px;padding-bottom:150px;margin-right:0px;margin-left:0px;}
-.section-even {
-  color: #270F34;
-  background-color: #fff;
-  padding-top: 150px;
-  padding-bottom: 150px;
-  margin-right: 0px;
-  margin-left: 0px;
-}
-.section-proof{
-  background-color: #E91E63;
-}
+.section-even{color:#270F34;background-color:#fff;padding-top:150px;padding-bottom:150px;margin-right:0px;margin-left:0px;}
+.section-proof{background-color:#E91E63;}
 .col-3-section{padding-top:50px;padding-bottom:50px;background-color:rgba(248,249,251,1);border-bottom:1px solid #E6E6E6;}
 .about-head-wrap{padding-bottom:30px;background:url(/images/visuals/blockchain-timeline.png);background-repeat:no-repeat;background-position:center top;background-color:#53206f;}
 .highlight-box{padding-top:50px;padding-bottom:50px;background-color:#831ca8;color:rgba(255,255,255,1);}
@@ -516,7 +499,6 @@ h1.hero-head{font-size:2.25rem;text-align:left;margin-top:0;}
 /* x-Small devices dropdown-menu */
 @media (max-width:575px){
   .desktop-nav{display:none;}
-  
   .nav{text-align:left;font-size:20px;}
 }
 
