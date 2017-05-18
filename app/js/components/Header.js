@@ -20,8 +20,8 @@ class Header extends Component {
           <Link className="navbar-brand brand-logo" to="/">
             <img src="/images/logos/blockstack-logo-landscape-rev.svg" />
           </Link>
-          <button type="button" className="hamburger pull-xs-right collapsed" data-toggle="collapse" data-target="#mobile-nav" aria-controls="dropdown" aria-expanded="false">
-            <i className="fa fa-bars"></i>
+          <button type="button" className="navbar-toggler collapsed" data-toggle="collapse" data-target="#mobile-nav" aria-controls="dropdown" aria-expanded="false">
+            <span className="navbar-toggler-icon"></span>
           </button>
           <ul className="nav navbar-nav desktop-nav">
             <li className="nav-item">
