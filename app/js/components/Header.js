@@ -26,11 +26,6 @@ class Header extends Component {
           </button>
           <ul className="nav navbar-nav">
             <li className="nav-item">
-              <Link to="/install" className="nav-link">
-                Install
-              </Link>
-            </li>
-            <li className="nav-item">
               <Link to="/tutorials" className="nav-link">
                 Tutorials
               </Link>
@@ -48,6 +43,11 @@ class Header extends Component {
             <li className="nav-item">
               <Link to="/videos" className="nav-link">
                 Videos
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/install" className="nav-link">
+                Install
               </Link>
             </li>
             <li className="nav-item pull-xs-right hidden-sm-down">
