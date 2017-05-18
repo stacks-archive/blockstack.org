@@ -12,6 +12,7 @@ class Header extends Component {
 
   render() {
     return (
+    <div className="bg-primary">
       <header className="container nav-header no-padding">
         <nav className="navbar">
           <Link className="navbar-brand brand-bug" to="/">
@@ -59,6 +60,7 @@ class Header extends Component {
         </nav>
         <MobileNav />
       </header>
+    </div>
     )
   }
 
