@@ -103,6 +103,10 @@ gulp.task('configFirebase', () => {
       'destination': '/papers'
     },
     {
+      'source': '/docs/login-paper',
+      'destination': '/papers'
+    },
+    {
       'source': '/docs/installation',
       'destination': '/tutorials'
     },
