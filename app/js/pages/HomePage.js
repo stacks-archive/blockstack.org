@@ -94,12 +94,18 @@ class HomePage extends Component {
                 </div>    
               </section>
             </div>
-            <div className="section-proof container-fluid">
+            <div className="section-stats container-fluid">
               <div className="container">
                 <section>
-                  <p className="no-padding col-md-12">
-                    In production for 3+ years &#183; {this.state.stats.domains} domains registered
-                  </p>
+                  <div className="no-padding col-sm-12 col-md-4 text-center text-white text-stats">
+                    ——›&nbsp;{this.state.stats.domains} domains registered
+                  </div>
+                  <div className="no-padding col-sm-12 col-md-4 text-center text-white text-stats">
+                    ——›&nbsp;In production for 3+ years
+                  </div>
+                  <div className="no-padding col-sm-12 col-md-4 text-center text-white text-stats">
+                    ——›&nbsp;2716 community devs
+                  </div>
                 </section>
               </div>
             </div>
