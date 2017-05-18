@@ -146,14 +146,13 @@ div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-he
 a.nav-link{color:#fff;font-size:0.8125rem;font-weight:300;margin-top:0.0625rem;}
 a.nav-link:hover,a.nav-link:focus{color:#fff;}
 .nav-item{margin-left:0.5rem;line-height:36px;}
-.nav-item:first-child{padding-top:8px;}
 
 
 /* Sandwich menu (landing page) */
 .navbar-toggler,.navbar-toggler.collapsed{float:right;margin-right:-5px;margin-top:-1px;}
 .navbar-toggler:focus,.navbar-toggler:hover{outline:none;}
 .navbar-toggler-icon{background-image:url(../images/icons/icon-menu-bar.svg);width:15px!important;height:11px;display:inline-block;}
-.mobile-nav.collapsing,.mobile-nav.collapse.in{background-color:#200c2b;padding-left:15px;margin-left:-15px;margin-right:-15px;padding-bottom:2px;}
+.mobile-nav.collapsing,.mobile-nav.collapse.in{background-color:#200c2b;padding-left:15px;margin-left:-15px;margin-right:-15px;padding-top:8px;padding-bottom:20px;}
 
 /* Buttons */
 .btn{font-family:'Source Code Pro',monospace;padding:0.5625rem 2.25rem;font-size:0.8125rem;font-weight:400;line-height:1.75rem;border-radius:0;}
@@ -488,12 +487,6 @@ h1.hero-head{font-size:2.25rem;text-align:left;margin-top:0;}
 @media (min-width:1200px){
 }
 
-
-@media (max-width:575px){
-  .sticky-share{display:flex!important;flex-direction:row;justify-content:center;align-items:center;width:100%;height:50px;bottom:0!important;left:0;top:initial;z-index:20;background-color:white;border-top:1px solid #f0f0f0;}
-  .sticky-share div{margin:10px 10px 10px 10px;}
-}
-
 /* x-Small devices */
 @media (max-width:348px){
   li.nav-item:nth-last-child(2){display:none;}
@@ -501,9 +494,8 @@ h1.hero-head{font-size:2.25rem;text-align:left;margin-top:0;}
   .hero{padding-top:3%;}
 }
 
-/* ——————————————  Kill below styles  —————————— */
-
-/* x-Small devices dropdown-menu */
-@media (min-width:576px) {
-  .mobile-nav > ul{display:none;}
+/* Unresolved media queries - Discovered by GL - */
+@media (max-width:575px){
+  .sticky-share{display:flex!important;flex-direction:row;justify-content:center;align-items:center;width:100%;height:50px;bottom:0!important;left:0;top:initial;z-index:20;background-color:white;border-top:1px solid #f0f0f0;}
+  .sticky-share div{margin:10px 10px 10px 10px;}
 }
