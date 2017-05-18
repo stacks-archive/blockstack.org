@@ -140,8 +140,7 @@ h1.hero-head{font-family:'Source Code Pro',monospace;margin-bottom:1.5rem;font-s
 .brand-logo{display:none;}
 div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-header > nav.navbar > a.navbar-brand{display:none;}
 div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-header > nav.navbar > a.navbar-brand.brand-bug{display:block;}
-.nav{font-family:'Source Code Pro',monospace;}
-.nav{text-align:left;font-size:20px;}
+.nav{font-family:'Source Code Pro',monospace;text-align:left;font-size:20px;padding-top:10px;padding-bottom:20px;}
 .navbar-nav{display:none;}
 a.nav-link{color:#fff;font-size:0.8125rem;font-weight:300;margin-top:0.0625rem;}
 a.nav-link:hover,a.nav-link:focus{color:#fff;}
@@ -151,7 +150,7 @@ a.nav-link:hover,a.nav-link:focus{color:#fff;}
 .navbar-toggler,.navbar-toggler.collapsed{float:right;margin-right:-5px;margin-top:-1px;}
 .navbar-toggler:focus,.navbar-toggler:hover{outline:none;}
 .navbar-toggler-icon{background-image:url(../images/icons/icon-menu-bar.svg);width:15px!important;height:11px;display:inline-block;}
-.mobile-nav.collapsing,.mobile-nav.collapse.in{background-color:#200c2b;padding-left:15px;margin-left:-15px;margin-right:-15px;padding-top:8px;padding-bottom:20px;}
+.mobile-nav{background-color:#200c2b;padding-left:15px;margin-left:-15px;margin-right:-15px;}
 a.nav-link > i.fa.fa-github{display:none;}
 
 /* Buttons */
