@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 import Header             from './components/Header'
 import Footer             from './components/Footer'
+import TransparentHeader  from './components/TransparentHeader'
 
 const propTypes = {
   params: PropTypes.object,
@@ -31,7 +32,11 @@ class App extends Component {
     return (
       <div>
         <div className="bg-primary">
-          <Header />
+          { location.pathname === '/' ?
+            <TransparentHeader />
+          :
+            <Header />
+          }
         </div>
         {this.renderChildren()}
         <Footer />
