@@ -128,7 +128,7 @@ a:hover,a:focus{font-weight:400;color:#E91E63;text-decoration:underline;}
 /* Typography */
 h1.modern{font-family:'Source Code Pro',monospace;font-size:1.75rem;font-weight:300;}
 h1.hero-head{font-family:'Source Code Pro',monospace;margin-bottom:1.5rem;font-size:1.75rem;font-weight:300;margin-top:1rem;}
-.hero-lead{font-family:'Source Code Pro',monospace;font-size:0.8125rem;margin-bottom:0.8125rem;color:#95889C;line-height:1.125rem;}
+.hero-lead{font-family:'Source Code Pro',monospace;font-size:0.8125rem;margin-bottom:1.5rem;color:#95889C;line-height:1.125rem;}
 .lead-centered{font-family:'Source Code Pro',monospace;font-size:1rem;text-align:center;margin-bottom:2rem;font-weight:400;}
 
 /* Navbar */
@@ -150,7 +150,7 @@ a.nav-link:hover,a.nav-link:focus{color:#fff;}
 
 
 /* Sandwich menu (landing page) */
-.navbar-toggler,.navbar-toggler.collapsed{float:right;margin-right:-5px;}
+.navbar-toggler,.navbar-toggler.collapsed{float:right;margin-right:-5px;margin-top:-1px;}
 .navbar-toggler:focus,.navbar-toggler:hover{outline:none;}
 .navbar-toggler-icon{background-image:url(../images/icons/icon-menu-bar.svg);width:15px!important;height:11px;display:inline-block;}
 .mobile-nav.collapsing,.mobile-nav.collapse.in{background-color:#200c2b;padding-left:15px;margin-left:-15px;margin-right:-15px;padding-bottom:2px;}
@@ -175,7 +175,7 @@ a.nav-link:hover,a.nav-link:focus{color:#fff;}
 body,html,#app,.app-landing{height:100%;}
 .app-common{height:auto;}
 .site-wrapper{display:flex;background-color:#270F34;flex-direction:column;height:100%;}
-.hero{position:relative;display:block;color:#fff;padding-bottom:75px;padding-top:3%;padding-left:0.5rem;padding-right:0.5rem;}
+.hero{position:relative;display:block;color:#fff;padding-bottom:75px;padding-top:10%;padding-left:0.5rem;padding-right:0.5rem;}
 .hero-caption{text-align:center;font-family:'Lato',sans-serif;font-size:0.8125rem;font-weight:300;color:#95889C;margin-top:-5px;}
 .hero-caption > a{color:#95889C;font-weight:300;}
 .hero-caption > a:hover{color:#95889C;text-decoration:none;}
@@ -494,16 +494,16 @@ h1.hero-head{font-size:2.25rem;text-align:left;margin-top:0;}
   .sticky-share div{margin:10px 10px 10px 10px;}
 }
 
-/* x-Small devices (hide last child in navbar) */
+/* x-Small devices */
 @media (max-width:348px){
   li.nav-item:nth-last-child(2){display:none;}
+  h1.hero-head{font-size:1.65rem;}
+  .hero{padding-top:3%;}
 }
+
+/* ——————————————  Kill below styles  —————————— */
 
 /* x-Small devices dropdown-menu */
-@media (max-width:575px){
-  
-}
-
 @media (min-width:576px) {
   .mobile-nav > ul{display:none;}
 }

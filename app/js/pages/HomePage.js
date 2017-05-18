@@ -87,7 +87,7 @@ class HomePage extends Component {
                 <p className="no-padding col-md-6">
                   <Link to="#" role="button"
                     className="btn btn-sm btn-secondary btn-block">
-                    Get the Developer Kit
+                    Developer Toolkit
                   </Link>
                 </p>                
               </section>
