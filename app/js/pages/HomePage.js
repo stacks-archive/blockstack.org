@@ -6,11 +6,11 @@ import DocumentTitle from 'react-document-title'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 
-import {BlogActions}  from '../datastore/Blog'
-import {StatsActions} from '../datastore/Stats'
-import Image          from '../components/Image'
-import TransparentHeader         from '../components/TransparentHeader'
-import Footer         from '../components/Footer'
+import {BlogActions}       from '../datastore/Blog'
+import {StatsActions}      from '../datastore/Stats'
+import Image               from '../components/Image'
+import TransparentHeader   from '../components/TransparentHeader'
+import Footer              from '../components/Footer'
 
 function mapStateToProps(state) {
   return {
@@ -142,7 +142,7 @@ class HomePage extends Component {
                       retinaSupport={false} />
                   </div>
                 </div>
-                <div className="col-md-9 col-centered">
+                <div className="no-padding container-fluid col-md-9 col-lg-7 col-centered">
                   <div className="col-md-6">
                     <p className="no-padding hero-btn-title">
                       Developers
