@@ -21,7 +21,9 @@ class Header extends Component {
           <Link className="navbar-brand brand-logo" to="/">
             <img src="/images/logos/blockstack-logo-landscape-rev.svg" />
           </Link>
-          
+          <button type="button" className="navbar-toggler collapsed hidden-md-up" data-toggle="collapse" data-target="#mobile-nav" aria-controls="dropdown" aria-expanded="false">
+            <span className="navbar-toggler-icon"></span>
+          </button>
           <ul className="nav navbar-nav">
             <li className="nav-item">
               <Link to="/tutorials" className="nav-link">
@@ -66,8 +68,3 @@ class Header extends Component {
 
 export default Header
 
-          /*
-          <button type="button" className="navbar-toggler collapsed hidden-md-up" data-toggle="collapse" data-target="#mobile-nav" aria-controls="dropdown" aria-expanded="false">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          */
