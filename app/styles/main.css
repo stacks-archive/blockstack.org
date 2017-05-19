@@ -134,7 +134,7 @@ h1.hero-head{font-family:'Source Code Pro',monospace;margin-bottom:1.5rem;font-s
 
 /* Navbar */
 .navbar{font-family:'Source Code Pro',monospace;padding-top:0.4375rem;padding-bottom:0.5625rem;}
-.navbar-brand{margin-right:0px;margin-top:6px;}
+.navbar-brand{margin-right:0px;}
 .navbar-brand img {width:164px;}
 .brand-bug{margin-right:1rem;}
 .brand-bug img{width:30px;position:relative;}
@@ -143,7 +143,7 @@ div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-he
 div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-header > nav.navbar > a.navbar-brand.brand-bug{display:block;}
 .nav{font-family:'Source Code Pro',monospace;text-align:left;font-size:20px;padding-top:10px;padding-bottom:20px;}
 .navbar-nav{display:initial;}
-/*.navbar-nav{display:none;}*/
+.navbar-nav{display:none;}
 a.nav-link{color:#fff;font-size:0.8125rem;font-weight:300;margin-top:0.0625rem;}
 a.nav-link:hover,a.nav-link:focus{color:#fff;}
 .nav-item{margin-left:0.5rem;line-height:36px;}
@@ -171,7 +171,8 @@ a.nav-link > i.fa.fa-github{display:none;}
 .btn-footer-max-width{max-width:225px;}
 
 /* Other */
-.body-hero{background-color:#270F34;background:url(../images/visuals/earth-internet.jpg) no-repeat center center fixed;}
+.body-hero{background-color:#270F34;background:url(../images/visuals/earth-internet.jpg) no-repeat;
+background-position: top -400px center;}
 body,html,#app,.app-landing{height:100%;}
 .app-common{height:auto;}
 .site-wrapper{display:flex;background-color:#270F34;flex-direction:column;height:100%;}
@@ -505,7 +506,7 @@ section{word-break:break-word;}
 
 /* x-Small devices */
 @media (max-width:348px){
-  li.nav-item:nth-last-child(5){display:none;}
+  li.nav-item:nth-last-child(2){display:none;}
   h1.hero-head{font-size:1.65rem;}
   .hero{padding-top:3%;padding-bottom:75px;}
   .hero-lead{line-height:1.125rem;}

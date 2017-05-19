@@ -1,9 +1,9 @@
-import {Component, cloneElement} from 'react'
-import PropTypes from 'prop-types'
+'use strict';
+
+import {Component, PropTypes, cloneElement} from 'react'
 
 import Header             from './components/Header'
 import Footer             from './components/Footer'
-import TransparentHeader  from './components/TransparentHeader'
 
 const propTypes = {
   params: PropTypes.object,
@@ -29,15 +29,16 @@ class App extends Component {
   }
 
   render() {
+    let wrapperClass = "app-common"
+    if (location.pathname === '/') {
+      wrapperClass = "app-landing"
+    }
+
     return (
-      <div>
-        <div>
-          { location.pathname === '/' ?
-            <TransparentHeader />
-          :
-            <Header />
-          }
-        </div>
+      <div className={wrapperClass}>
+        { location.pathname !== '/' ?
+          <Header />
+        : null }
         {this.renderChildren()}
         <Footer />
       </div>

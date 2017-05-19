@@ -9,6 +9,8 @@ import {connect} from 'react-redux'
 import {BlogActions}  from '../datastore/Blog'
 import {StatsActions} from '../datastore/Stats'
 import Image          from '../components/Image'
+import TransparentHeader         from '../components/TransparentHeader'
+import Footer         from '../components/Footer'
 
 function mapStateToProps(state) {
   return {
@@ -64,6 +66,7 @@ class HomePage extends Component {
       <DocumentTitle title="Blockstack, building the decentralized internet">
         <div className="body-hero">
           <div className="col-centered block">
+            <TransparentHeader />
             <div className="container">
               <section className="hero">
                 <h1 className="hero-head">

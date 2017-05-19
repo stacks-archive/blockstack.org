@@ -12,7 +12,7 @@ class TransparentHeader extends Component {
 
   render() {
     return (
-    <div className="bg-primary">
+    <div className="bg-transparent">
       <header className="container nav-header no-padding">
         <nav className="navbar">
           <Link className="navbar-brand brand-bug" to="/">
@@ -21,12 +21,10 @@ class TransparentHeader extends Component {
           <Link className="navbar-brand brand-logo" to="/">
             <img src="/images/logos/blockstack-logo-landscape-rev.svg" />
           </Link>
+          <button type="button" className="navbar-toggler collapsed hidden-md-up" data-toggle="collapse" data-target="#mobile-nav" aria-controls="dropdown" aria-expanded="false">
+            <span className="navbar-toggler-icon"></span>
+          </button>
           <ul className="nav navbar-nav">
-            <li className="nav-item">
-              <Link to="/install" className="nav-link">
-                Install
-              </Link>
-            </li>
             <li className="nav-item">
               <Link to="/tutorials" className="nav-link">
                 Tutorials
@@ -45,6 +43,11 @@ class TransparentHeader extends Component {
             <li className="nav-item">
               <Link to="/videos" className="nav-link">
                 Videos
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/install" className="nav-link">
+                Install
               </Link>
             </li>
             <li className="nav-item pull-xs-right hidden-sm-down">
