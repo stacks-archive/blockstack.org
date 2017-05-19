@@ -391,7 +391,7 @@ section{word-break:break-word;}
 
   /* Content */
   .hero-wrap{display:block;padding-top:8rem;padding-bottom:12rem;}
-  .hero{padding-bottom:125px;padding-top:50px;}
+  .hero{padding-bottom:125px;padding-top:75px;}
   .hero-caption {text-align: left;}
   .simple-featurette{display:block;margin-top:85px;}
   .simple-panel{display:inline-block;margin-top:0;margin-bottom:0;margin-right:50px;}
