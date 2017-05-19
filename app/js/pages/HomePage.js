@@ -249,26 +249,30 @@ class HomePage extends Component {
                   <h1 className="modern text-center">
                     Step-by-step tutorials
                   </h1>
-                  <p className="lead lead-centered col-md-10 block col-centered text-center">
-                    <Link to="/tutorials/hello-blockstack">
-                      <Image className="landing-feat-img"
-                        src="/images/tutorials/hello-blockstack-fastforward.gif"
-                        fallbackSrc="/images/tutorials/hello-blockstack-fastforward.gif"
-                        retinaSupport={false} />
-                    </Link>
-                  </p>
-                  <p className="lead lead-centered col-md-10 block col-centered text-center">
-                    Complete the step-by-step tutorial and see how easy it is to build an app with a decentralized identity system in a few lines of code and no servers.
-                  </p>
-                  <p className="lead lead-centered col-md-10 block col-centered text-center">
-                    <Link to="/tutorials" role="button"
-                      className="btn btn-outline-primary btn-block">
-                      Try the Tutorials
-                    </Link>
-                  </p>
-                  <p className="lead lead-centered col-md-10 block col-centered text-center">
-                    Want to learn more about building apps on blockstack? Tutorials on building serverless apps with decentralized storage are coming soon.
-                  </p>
+                  <div className="row">
+                    <div className="col-md-8 col-centered">
+                      <p className="modern text-center">
+                        Complete the step-by-step tutorial and see how easy it is to build an app with a decentralized identity system in a few lines of code and no servers.
+                      </p>
+                      <p className="modern text-center">
+                        <Link to="/tutorials/hello-blockstack">
+                          <Image className="landing-feat-img"
+                            src="/images/tutorials/hello-blockstack-fastforward.gif"
+                            fallbackSrc="/images/tutorials/hello-blockstack-fastforward.gif"
+                            retinaSupport={false} />
+                        </Link>
+                      </p>
+                      <p className="modern text-center">
+                        Want to learn more about building apps on blockstack? Tutorials on building serverless apps with decentralized storage are coming soon.
+                      </p>
+                      <p className="modern text-center">
+                        <Link to="/tutorials" role="button"
+                          className="btn btn-outline-primary btn-block">
+                          Try the Tutorials
+                        </Link>
+                      </p>
+                    </div>
+                  </div>
                 </section>
               </div>
             </div>
