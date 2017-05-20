@@ -10,7 +10,6 @@ import {BlogActions}       from '../datastore/Blog'
 import {StatsActions}      from '../datastore/Stats'
 import Image               from '../components/Image'
 import TransparentHeader   from '../components/TransparentHeader'
-import Footer              from '../components/Footer'
 
 function mapStateToProps(state) {
   return {
@@ -150,7 +149,7 @@ class HomePage extends Component {
                     <p className="no-padding m-b-10">
                       <Link to="/developers" role="button"
                         className="btn btn-sm btn-secondary btn-block btn-hero">
-                        Developer Kit
+                        Browser Kit
                       </Link>
                     </p>
                   </div>
@@ -352,7 +351,7 @@ class HomePage extends Component {
                       <p className="no-padding m-b-10">
                         <Link to="/developers" role="button"
                           className="btn btn-sm btn-secondary btn-block btn-hero">
-                          Developer Kit
+                          Browser Kit
                         </Link>
                       </p>
                     </div>
