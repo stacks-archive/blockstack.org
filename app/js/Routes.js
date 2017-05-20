@@ -23,6 +23,7 @@ import BlogPostPage                from './pages/BlogPostPage'
 import JobsPage                    from './pages/JobsPage'
 import TalkPage                    from './pages/TalkPage'
 import SignUpPage                  from './pages/SignUpPage'
+import DevSignUpPage               from './pages/DevSignUpPage'
 import DownloadPage                from './pages/DownloadPage'
 import FAQPage                     from './pages/FAQPage'
 import TutorialsPage               from './pages/TutorialsPage'
@@ -37,7 +38,8 @@ export default (
       <IndexRoute component={HomePage} />
       <Route path="/" component={HomePage} />
 
-      <Route path="/newsletter" component={SignUpPage} />
+      <Route path="/users" component={SignUpPage} />
+      <Route path="/developers" component={DevSignUpPage} />
       <Route path="/install" component={DownloadPage} />
 
       <Route path="/intro" component={IntroPage} />

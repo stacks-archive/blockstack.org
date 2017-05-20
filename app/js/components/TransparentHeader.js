@@ -4,7 +4,7 @@ import {Component}  from 'react'
 import {Link} from 'react-router'
 import MobileNav from './MobileNav'
 
-class Header extends Component {
+class TransparentHeader extends Component {
 
   constructor(props) {
     super(props)
@@ -12,7 +12,7 @@ class Header extends Component {
 
   render() {
     return (
-    <div className="bg-primary">
+    <div className="bg-transparent">
       <header className="container nav-header no-padding">
         <nav className="navbar">
           <Link className="navbar-brand brand-bug" to="/">
@@ -66,5 +66,10 @@ class Header extends Component {
 
 }
 
-export default Header
+export default TransparentHeader
 
+          /*
+          <button type="button" className="navbar-toggler collapsed hidden-md-up" data-toggle="collapse" data-target="#mobile-nav" aria-controls="dropdown" aria-expanded="false">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          */

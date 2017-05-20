@@ -1,5 +1,6 @@
-import {Component, cloneElement} from 'react'
-import PropTypes from 'prop-types'
+'use strict';
+
+import {Component, PropTypes, cloneElement} from 'react'
 
 import Header             from './components/Header'
 import Footer             from './components/Footer'
@@ -28,11 +29,16 @@ class App extends Component {
   }
 
   render() {
+    let wrapperClass = "app-common"
+    if (location.pathname === '/') {
+      wrapperClass = "app-landing"
+    }
+
     return (
-      <div>
-        <div className="bg-primary">
+      <div className={wrapperClass}>
+        { location.pathname !== '/' ?
           <Header />
-        </div>
+        : null }
         {this.renderChildren()}
         <Footer />
       </div>
