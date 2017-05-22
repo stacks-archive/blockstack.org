@@ -45,7 +45,10 @@ class HomePage extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.stats !== this.props.stats) {
-      const stats = nextProps.stats
+      let stats = nextProps.stats
+      if (stats.domains === 0) {
+        stats.domains = 72000
+      }
       this.setState({
         stats: stats,
       })
@@ -177,7 +180,7 @@ class HomePage extends Component {
                     ——›&nbsp;In production for 3+ years
                   </div>
                   <div className="no-padding col-sm-12 col-md-4 text-center text-white text-stats">
-                    ——›&nbsp;{this.state.stats.slackUsers} community devs
+                    ——›&nbsp;{this.state.stats.meetupUsers} community devs
                   </div>
                 </section>
               </div>
