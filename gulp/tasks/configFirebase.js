@@ -92,7 +92,11 @@ gulp.task('configFirebase', () => {
     },
     {
       'source': '/articles/faq',
-      'destination': '/faqs'
+      'destination': '/faq'
+    },
+    {
+      'source': '/faqs',
+      'destination': '/faq'
     },
     {
       'source': '/articles/light-clients',
