@@ -77,7 +77,6 @@ function buildDocFile(indexHtml, folderName, docFilename) {
     folderName = ''
   }
   let pathname = 'app/docs' + folderName + '/' + docFilename
-  console.log(pathname)
   let docPage = fs.readFileSync(pathname, 'utf8')
   let pageSections = docPage.split('---')
   
@@ -125,7 +124,6 @@ gulp.task('buildDocs', () => {
   folderNames.forEach((folderName) => {
     fs.readdirSync('app/docs' + folderName).forEach((docFilename) => {
       if (docFilename.endsWith('.md')) {
-        console.log(docFilename)
         let docFilenameKey = docFilename.split('.')[0].toLowerCase()
         allDocs[docFilenameKey] = buildDocFile(indexHtml, folderName, docFilename)
       }
