@@ -171,7 +171,7 @@ a.nav-link > i.fa.fa-github{display:none;}
 .btn-footer-max-width{max-width:225px;}
 
 /* Other */
-.body-hero{background-color:#270F34;background:url(../images/visuals/earth-internet.jpg) no-repeat;
+.body-hero{background-color:#280f36!important;background:url(../images/visuals/earth-internet.jpg) no-repeat;
 background-position: top -400px center;}
 body,html,#app,.app-landing{height:100%;}
 .app-common{height:auto;}
