@@ -64,7 +64,7 @@
     "postcss-modules-values": "^1.1.1"
   },
   "dependencies": {
-    "blockstack": "^0.2.22",
+    "blockstack": "0.3.10",
     "bootstrap": "git+https://github.com/blockstack/blockstack-bootstrap.git",
     "font-awesome": "^4.7.0",
     "highlight.js": "git+ssh://git@github.com/isagalaev/highlight.js.git",
