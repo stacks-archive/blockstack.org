@@ -13,8 +13,8 @@ export const socialLinks = {
 }
 
 export const installationLinks = {
-  portalMacOS: 'https://github.com/blockstack/blockstack-portal/releases/download/v0.4.0/Blockstack-v0.4.app.zip',
-  portalDevelopers: 'https://github.com/blockstack/blockstack-portal/releases',
+  portalMacOS: 'https://github.com/blockstack/blockstack-browser/releases/download/v0.9.0/Blockstack-v0.9.app.zip',
+  portalDevelopers: 'https://github.com/blockstack/blockstack-browser/releases',
   cliDevelopers: 'https://github.com/blockstack/blockstack-core',
 }
 

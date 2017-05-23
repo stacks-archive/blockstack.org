@@ -56,6 +56,10 @@
         "destination": "/docs-tutorials-hello-blockstack.html"
       },
       {
+        "source": "/blog/introducing-the-blockstack-browser-a-gateway-to-a-new-decentralized-internet",
+        "destination": "/blog-introducing-the-blockstack-browser-a-gateway-to-a-new-decentralized-internet.html"
+      },
+      {
         "source": "/blog/blockstack-whitepaper-part-1",
         "destination": "/blog-blockstack-whitepaper-part-1.html"
       },
@@ -130,6 +134,11 @@
       {
         "source": "/docs/what-is-blockstack",
         "destination": "/posts/blockstack-core",
+        "type": 301
+      },
+      {
+        "source": "/docs/how-blockstack-works",
+        "destination": "/whitepaper.pdf",
         "type": 301
       },
       {
@@ -224,7 +233,12 @@
       },
       {
         "source": "/join",
-        "destination": "/newsletter",
+        "destination": "/users",
+        "type": 301
+      },
+      {
+        "source": "/newsletter",
+        "destination": "/users",
         "type": 301
       }
     ]

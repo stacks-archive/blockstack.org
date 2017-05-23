@@ -67,6 +67,10 @@ gulp.task('configFirebase', () => {
       'destination': '/posts/blockstack-core',
     },
     {
+      'source': '/docs/how-blockstack-works',
+      'destination': '/whitepaper.pdf'
+    },
+    {
       'source': '/articles',
       'destination': '/blog'
     },
