@@ -140,7 +140,11 @@ gulp.task('configFirebase', () => {
     },
     {
       'source': '/join',
-      'destination': '/newsletter'
+      'destination': '/users'
+    },
+    {
+      'source': '/newsletter',
+      'destination': '/users'
     },
   ]
 
