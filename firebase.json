@@ -56,6 +56,10 @@
         "destination": "/docs-tutorials-hello-blockstack.html"
       },
       {
+        "source": "/blog/introducing-the-blockstack-browser-a-gateway-to-a-new-decentralized-internet",
+        "destination": "/blog-introducing-the-blockstack-browser-a-gateway-to-a-new-decentralized-internet.html"
+      },
+      {
         "source": "/blog/blockstack-whitepaper-part-1",
         "destination": "/blog-blockstack-whitepaper-part-1.html"
       },

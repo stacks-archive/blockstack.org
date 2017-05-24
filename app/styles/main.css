@@ -456,9 +456,14 @@ section{word-break:break-word;}
   h4{margin:20px 0;}
 
   /* Navbar */
+.navbar {
+  font-family: 'Source Code Pro', monospace;
+  padding-top: 1.0625rem;
+  padding-bottom: 1.5rem;
+}
   .brand-bug{display:none;}
   .brand-logo{display:initial;}
-
+  
   /* Hero */
   .hero-wrap{padding-top:11.5rem;padding-bottom:12.5rem;}
   .hero-head{padding-left:0;}
