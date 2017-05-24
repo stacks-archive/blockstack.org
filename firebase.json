@@ -137,6 +137,11 @@
         "type": 301
       },
       {
+        "source": "/docs/how-blockstack-works",
+        "destination": "/whitepaper.pdf",
+        "type": 301
+      },
+      {
         "source": "/articles",
         "destination": "/blog",
         "type": 301
@@ -168,7 +173,12 @@
       },
       {
         "source": "/articles/faq",
-        "destination": "/faqs",
+        "destination": "/faq",
+        "type": 301
+      },
+      {
+        "source": "/faqs",
+        "destination": "/faq",
         "type": 301
       },
       {
@@ -223,7 +233,12 @@
       },
       {
         "source": "/join",
-        "destination": "/newsletter",
+        "destination": "/users",
+        "type": 301
+      },
+      {
+        "source": "/newsletter",
+        "destination": "/users",
         "type": 301
       }
     ]

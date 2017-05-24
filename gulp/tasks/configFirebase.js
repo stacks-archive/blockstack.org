@@ -67,6 +67,14 @@ gulp.task('configFirebase', () => {
       'destination': '/posts/blockstack-core',
     },
     {
+      'source': '/docs/how-blockstack-works',
+      'destination': '/whitepaper.pdf'
+    },
+    {
+      'source': '/blockstack_whitepaper.pdf',
+      'destination': '/whitepaper.pdf'
+    },
+    {
       'source': '/articles',
       'destination': '/blog'
     },
@@ -92,7 +100,11 @@ gulp.task('configFirebase', () => {
     },
     {
       'source': '/articles/faq',
-      'destination': '/faqs'
+      'destination': '/faq'
+    },
+    {
+      'source': '/faqs',
+      'destination': '/faq'
     },
     {
       'source': '/articles/light-clients',
@@ -136,7 +148,11 @@ gulp.task('configFirebase', () => {
     },
     {
       'source': '/join',
-      'destination': '/newsletter'
+      'destination': '/users'
+    },
+    {
+      'source': '/newsletter',
+      'destination': '/users'
     },
   ]
 

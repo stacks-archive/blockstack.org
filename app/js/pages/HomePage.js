@@ -10,7 +10,6 @@ import {BlogActions}       from '../datastore/Blog'
 import {StatsActions}      from '../datastore/Stats'
 import Image               from '../components/Image'
 import TransparentHeader   from '../components/TransparentHeader'
-import Footer              from '../components/Footer'
 
 function mapStateToProps(state) {
   return {
@@ -46,7 +45,10 @@ class HomePage extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.stats !== this.props.stats) {
-      const stats = nextProps.stats
+      let stats = nextProps.stats
+      if (stats.domains === 0) {
+        stats.domains = 72000
+      }
       this.setState({
         stats: stats,
       })
@@ -150,7 +152,7 @@ class HomePage extends Component {
                     <p className="no-padding m-b-10">
                       <Link to="/developers" role="button"
                         className="btn btn-sm btn-secondary btn-block btn-hero">
-                        Developer Kit
+                        Browser Kit
                       </Link>
                     </p>
                   </div>
@@ -178,7 +180,7 @@ class HomePage extends Component {
                     ——›&nbsp;In production for 3+ years
                   </div>
                   <div className="no-padding col-sm-12 col-md-4 text-center text-white text-stats">
-                    ——›&nbsp;{this.state.stats.slackUsers} community devs
+                    ——›&nbsp;{this.state.stats.meetupUsers} community devs
                   </div>
                 </section>
               </div>
@@ -352,7 +354,7 @@ class HomePage extends Component {
                       <p className="no-padding m-b-10">
                         <Link to="/developers" role="button"
                           className="btn btn-sm btn-secondary btn-block btn-hero">
-                          Developer Kit
+                          Browser Kit
                         </Link>
                       </p>
                     </div>
