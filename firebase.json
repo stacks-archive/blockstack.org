@@ -142,6 +142,11 @@
         "type": 301
       },
       {
+        "source": "/blockstack_whitepaper.pdf",
+        "destination": "/whitepaper.pdf",
+        "type": 301
+      },
+      {
         "source": "/articles",
         "destination": "/blog",
         "type": 301

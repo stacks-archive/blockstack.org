@@ -128,7 +128,7 @@ a:hover,a:focus{font-weight:400;color:#E91E63;text-decoration:underline;}
 
 /* Typography */
 h1.modern{font-family:'Source Code Pro',monospace;font-size:1.75rem;font-weight:300;}
-h1.hero-head{font-family:'Source Code Pro',monospace;margin-bottom:1.5rem;font-size:1.75rem;font-weight:300;margin-top:1rem;}
+h1.hero-head{font-family:'Source Code Pro',monospace;margin-bottom:0.875rem;font-size:1.75rem;font-weight:300;margin-top:1rem;}
 .hero-lead{font-family:'Source Code Pro',monospace;font-size:0.8125rem;margin-bottom:0.75rem;color:#D4CFD7;line-height:1.25rem;}
 .lead-centered{font-family:'Source Code Pro',monospace;font-size:1rem;text-align:center;margin-bottom:2rem;font-weight:400;}
 
@@ -239,7 +239,7 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .media-wrap{width:975px;}
 .media-content{margin-top:35px;}
 li.nav-item:nth-last-child(2){display:none;}
-.landing-feat-img{width:100%;max-width:365px;}
+.landing-feat-img{width:100%;max-width:367px;}
 .feat-card{height:75px;display:block;}
 .feat-card > h3{font-weight:300;}
 .text-stats{font-family:'Source Code Pro',monospace;font-size:0.8125rem;font-weight:300;}
@@ -355,7 +355,7 @@ section{word-break:break-word;}
 
   /* Globals */
   h1.hero-head{font-size:2.25rem;text-align:center;margin-top:0;}
-  .hero-lead{text-align:center;padding-left:0;padding-right:0;margin-bottom:2.5rem;line-height:1.625rem}
+  .hero-lead{text-align:center;padding-left:0;padding-right:0;margin-bottom:2.5rem;line-height:1.5rem}
   .lead-centered{padding-left:0;padding-right:0;text-align:center;margin-bottom:3rem;}
   .col-3-section{padding-bottom:50px;}
   .hero-head.summ-head{font-size:40px;}
@@ -391,7 +391,7 @@ section{word-break:break-word;}
 
   /* Content */
   .hero-wrap{display:block;padding-top:8rem;padding-bottom:12rem;}
-  .hero{padding-bottom:125px;padding-top:75px;}
+  .hero{padding-bottom:65px;padding-top:27px;}
   .hero-caption {text-align: left;}
   .simple-featurette{display:block;margin-top:85px;}
   .simple-panel{display:inline-block;margin-top:0;margin-bottom:0;margin-right:50px;}
@@ -439,7 +439,7 @@ section{word-break:break-word;}
   .bitcoin-protocols-main{padding-right:40px;padding-left:40px;}
   .feat-card{height:140px;display:block;}
   .feat-card > h3{font-weight:300;}
-  .hero-btn-title{text-align:center;margin-top:2.75rem;}
+  .hero-btn-title{text-align:center;margin-top:4.9375rem;}
   .landing-hero-img{display:initial;}
 }
 

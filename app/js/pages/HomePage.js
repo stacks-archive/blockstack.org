@@ -139,31 +139,31 @@ class HomePage extends Component {
                 <div className="no-padding container-fluid col-md-9 col-centered">
                   <div className="col-sm-12 text-center landing-hero-img">
                     <Image className="landing-feat-img"
-                      src="/images/resources/portal-home-screen.png"
+                      src="/images/resources/portal-home-screen@2x.png"
                       fallbackSrc="/images/tutorials/portal-home-screen.png"
                       retinaSupport={false} />
                   </div>
                 </div>
-                <div className="no-padding container-fluid col-md-9 col-lg-7 col-centered">
-                  <div className="col-md-6">
+                <div className="no-padding container-fluid col-md-10 col-lg-10 col-centered">
+                  <div className="no-padding col-md-6" style={{ paddingRight: '1px' }}>
                     <p className="no-padding hero-btn-title">
                       Developers
                     </p>
                     <p className="no-padding m-b-10">
                       <Link to="/developers" role="button"
                         className="btn btn-sm btn-secondary btn-block btn-hero">
-                        Browser Kit
+                        › Browser Kit
                       </Link>
                     </p>
                   </div>
-                  <div className="col-md-6">
+                  <div className="no-padding col-md-6">
                     <p className="no-padding hero-btn-title">
                       Users
                     </p>
                     <p className="no-padding">
                       <Link to="/users" role="button"
                         className="btn btn-sm btn-secondary btn-block btn-hero">
-                        Join the Waitlist
+                        › Join the Waitlist
                       </Link>
                     </p>
                   </div>
