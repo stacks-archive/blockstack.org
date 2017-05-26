@@ -8,9 +8,23 @@ class Header extends Component {
 
   constructor(props) {
     super(props)
+
+    this.toggleDropdown = this.toggleDropdown.bind(this);
+
+    this.state = {
+      isOpen: false,
+    };
+  }
+
+  toggleDropdown() {
+    this.setState((prevState) => {
+      return { isOpen: !prevState.isOpen };
+    });
   }
 
   render() {
+    const { isOpen } = this.state;
+
     return (
     <div className="bg-primary">
       <header className="container nav-header no-padding">
@@ -58,7 +72,10 @@ class Header extends Component {
             </li>
           </ul>
         </nav>
-        <MobileNav />
+        <MobileNav
+          isOpen={ isOpen }
+          toggleDropdown={this.toggleDropdown}
+        />
       </header>
     </div>
     )
