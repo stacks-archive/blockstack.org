@@ -29,9 +29,8 @@ class DownloadsPage extends Component {
                     <h1>
                       Install Blockstack
                     </h1>
-
+                    <h3>Browser Portal</h3>
                     <div>
-                      <h3>Browser Portal</h3>
                       <table className="table">
                         <tbody>
                           <tr>
@@ -73,7 +72,6 @@ class DownloadsPage extends Component {
                         </tbody>
                       </table>
                     </div>
-
                     <div>
                       <h3>Core Server + CLI</h3>
                       <p>
@@ -83,7 +81,6 @@ class DownloadsPage extends Component {
                         </a>
                       </p>
                     </div>
-
                   </div>
                 </section>
               </div>

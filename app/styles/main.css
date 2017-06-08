@@ -189,6 +189,7 @@ h2.action-title{margin-bottom:35px;font-size:30px;line-height:42px;font-weight:3
 .topic-wrap{max-width:275px;}
 .table-wrap{max-width:800px;}
 .table-striped > thead > tr > th{text-align:center;}
+.table td{border-top:none;}
 .hero-img{margin-top:-10px;}
 .card{width:100%;}
 .inverse-3col-section{background-color:#41294E;color:#fff;padding-top:30px;padding-bottom:25px;}
