@@ -188,34 +188,34 @@ class HomePage extends Component {
             <div className="section-even container-fluid">
               <div className="container">
                 <section>
-                  <h1 className="modern text-center">
+                  <h1 className="type-beauty text-center">
                     The Old Internet is Broken
                   </h1>
-                  <div className="row">
+                  <div>
                     {content.oldInternet.map((item) => {
                       return (
                         <div className="col-md-4">
-                          <h3 className="modern text-center">
+                          <h3 className="text-center">
                             {item.title}
                           </h3>
-                          <p>
+                          <p className="text-center">
                             {item.body}
                           </p>
                         </div>
                       )
                     })}
                   </div>
-                  <h1 className="modern text-center m-t-5">
+                  <h1 className="type-beauty text-center m-t-5">
                     The New Internet is Here
                   </h1>
                   <div className="row">
                     {content.newInternet.map((item) => {
                       return (
                         <div className="col-md-4">
-                          <h3 className="modern text-center">
+                          <h3 className="text-center">
                             {item.title}
                           </h3>
-                          <p>
+                          <p className="text-center">
                             {item.body}
                           </p>
                         </div>

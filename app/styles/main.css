@@ -7,7 +7,21 @@
 
 /* Base structure */
 html, body {-webkit-overflow-scrolling:touch;}
-body{font-family:'Lato',sans-serif;padding-top:0;padding-bottom:0;}
+body{font-family:'Lato',sans-serif;font-size:1rem;font-weight:400;font-style:normal;color:#949494;padding-top:0;padding-bottom:0;}
+
+/* Globals */
+h1{color:#080809;font-size:1.5rem;font-weight:700;}
+h3{color:#080809;font-size:1.5rem;font-weight:700;margin-top:35px;margin-bottom:15px;}
+h4{color:#080809;margin:20px 0;}
+a{font-weight:400;color:#E91E63;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
+a:hover,a:focus{font-weight:400;color:#E91E63;text-decoration:underline;}
+.col-centered{float:none;margin:0 auto;}
+.no-padding{padding-right:0;padding-left:0;}
+.no-margin{margin-right:0;margin-left:0;}
+.bg-primary{background-color:#270F34!important;}
+.text-center{text-align:center!important;}
+.text-white{color:#fff;}
+.container{width:100%;}
 
 /* Spacing */
 .m-t-0{margin-top:0px;}
@@ -111,23 +125,11 @@ body{font-family:'Lato',sans-serif;padding-top:0;padding-bottom:0;}
 /* - Grey - #9E9E9E - label: fixed in the next release */
 /* - Blue Grey - #607D8B - label: strategy */
 
-/* Globals */
-h3{margin-top:35px;margin-bottom:15px;}
-h4{margin:20px 0;}
-a{font-weight:400;color:#E91E63;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
-a:hover,a:focus{font-weight:400;color:#E91E63;text-decoration:underline;}
-.col-centered{float:none;margin:0 auto;}
-.no-padding{padding-right:0;padding-left:0;}
-.no-margin{margin-right:0;margin-left:0;}
-.bg-primary{background-color:#270F34!important;}
-.text-center{text-align:center!important;}
-.text-white{color:#fff;}
-.container{width:100%;}
-
 /* Spacing */
 
 /* Typography */
-h1.modern{font-family:'Source Code Pro',monospace;font-size:1.75rem;font-weight:300;}
+/* Depricated Type */ h1.modern{font-family:'Source Code Pro',monospace;font-size:1.75rem;font-weight:300;}
+h1.type-beauty{font-family:'Lato',sans-serif;font-size:1.5rem;font-weight:700;}
 h1.hero-head{font-family:'Source Code Pro',monospace;margin-bottom:0.875rem;font-size:1.75rem;font-weight:300;margin-top:1rem;}
 .hero-lead{font-family:'Source Code Pro',monospace;font-size:0.8125rem;margin-bottom:0.75rem;color:#D4CFD7;line-height:1.25rem;}
 .lead-centered{font-family:'Source Code Pro',monospace;font-size:1rem;text-align:center;margin-bottom:2rem;font-weight:400;}
@@ -184,7 +186,7 @@ body,html,#app,.app-landing{height:100%;}
 .hero-wrap{padding-top:.5rem;padding-bottom:6rem;}
 .hero-btn-title{font-family:'Source Code Pro',monospace;font-weight:300;font-size:0.8125rem;margin-bottom:0.5rem;margin-top:0.5rem;}
 .section-odd{color:#fff;background-color:#270F34;padding-top:150px;padding-bottom:150px;margin-right:0px;margin-left:0px;}
-.section-even{color:#270F34;background-color:#fff;padding-top:150px;padding-bottom:150px;margin-right:0px;margin-left:0px;}
+.section-even{background-color:#fff;padding-top:150px;padding-bottom:150px;margin-right:0px;margin-left:0px;}
 .section-stats{background-color:#270F34;padding-top:25px;padding-bottom:25px;}
 .col-3-section{padding-top:50px;padding-bottom:50px;background-color:rgba(248,249,251,1);border-bottom:1px solid #E6E6E6;}
 .about-head-wrap{padding-bottom:30px;background:url(/images/visuals/blockchain-timeline.png);background-repeat:no-repeat;background-position:center top;background-color:#53206f;}
