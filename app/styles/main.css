@@ -44,21 +44,6 @@
 /* 36. Status Bars */
 /* 37. Misc */
 
-
-/* Globals */
-h1{color:#080809;font-size:1.5rem;font-weight:700;}
-h3{color:#080809;font-size:1.5rem;font-weight:700;margin-top:35px;margin-bottom:15px;}
-h4{color:#080809;margin:20px 0;}
-a{font-weight:400;color:#E91E63;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
-a:hover,a:focus{font-weight:400;color:#E91E63;text-decoration:underline;}
-.col-centered{float:none;margin:0 auto;}
-.no-padding{padding-right:0;padding-left:0;}
-.no-margin{margin-right:0;margin-left:0;}
-.bg-primary{background-color:#270F34!important;}
-.text-center{text-align:center!important;}
-.text-white{color:#fff;}
-.container{width:100%;}
-
 /* 1. Colors */
 /* Blockstack Label Colors - https://projects.invisionapp.com/boards/HE2VVROFSGB27/ */
 /* These label colors come from Google's Material Design Color Set [500] - Alternative shades [100 - 900] - http://materialuicolors.co/ */
@@ -85,16 +70,63 @@ a:hover,a:focus{font-weight:400;color:#E91E63;text-decoration:underline;}
 /* - Grey - #9E9E9E - label: fixed in the next release */
 /* - Blue Grey - #607D8B - label: strategy */
 
+/* 2. Options */
+.col-centered{float:none;margin:0 auto;}
+.no-padding{padding-right:0;padding-left:0;}
+.no-margin{margin-right:0;margin-left:0;}
+.bg-primary{background-color:#270F34!important;}
+.text-center{text-align:center!important;}
+.text-white{color:#fff;}
+.container{width:100%;}
+
 /* 3. Spacing */
 /* Custom spacing classes to be removed */
 .m-t-0{margin-top:0px}.m-t-10{margin-top:10px}.m-t-15{margin-top:15px}.m-t-20{margin-top:20px}.m-t-25{margin-top:25px}.m-t-30{margin-top:30px}.m-t-35{margin-top:35px}.m-t-40{margin-top:40px}.m-t-45{margin-top:45px}.m-t-50{margin-top:50px}.m-t-55{margin-top:55px}.m-t-60{margin-top:60px}.m-t-65{margin-top:65px}.m-t-70{margin-top:70px}.m-t-75{margin-top:75px}.m-t-80{margin-top:80px}.m-t-85{margin-top:85px}.m-t-90{margin-top:90px}.m-t-95{margin-top:95px}.m-t-100{margin-top:100px}.m-t-150{margin-top:150px}.m-b-0{margin-bottom:0px}.m-b-10{margin-bottom:10px}.m-b-15{margin-bottom:15px}.m-b-20{margin-bottom:20px}.m-b-25{margin-bottom:25px}.m-b-30{margin-bottom:30px}.m-b-35{margin-bottom:35px}.m-b-40{margin-bottom:40px}.m-b-45{margin-bottom:45px}.m-b-50{margin-bottom:50px}.m-b-55{margin-bottom:55px}.m-b-60{margin-bottom:60px}.m-b-65{margin-bottom:65px}.m-b-70{margin-bottom:70px}.m-b-75{margin-bottom:75px}.m-b-80{margin-bottom:80px}.m-b-85{margin-bottom:85px}.m-b-90{margin-bottom:90px}.m-b-95{margin-bottom:95px}.p-t-0{padding-top:0px}.p-t-10{padding-top:10px}.p-t-15{padding-top:15px}.p-t-20{padding-top:20px}.p-t-25{padding-top:25px}.p-t-30{padding-top:30px}.p-t-35{padding-top:35px}.p-t-40{padding-top:40px}.p-t-45{padding-top:45px}.p-t-50{padding-top:50px}.p-t-55{padding-top:55px}.p-t-60{padding-top:60px}.p-t-65{padding-top:65px}.p-t-70{padding-top:70px}.p-t-75{padding-top:75px}.p-t-80{padding-top:80px}.p-t-85{padding-top:85px}.p-t-90{padding-top:90px}.p-t-95{padding-top:95px}.p-b-0{padding-bottom:0px}.p-b-10{padding-bottom:10px}.p-b-15{padding-bottom:15px}.p-b-20{padding-bottom:20px}.p-b-25{padding-bottom:25px}.p-b-30{padding-bottom:30px}.p-b-35{padding-bottom:35px}.p-b-40{padding-bottom:40px}.p-b-45{padding-bottom:45px}.p-b-50{padding-bottom:50px}.p-b-55{padding-bottom:55px}.p-b-60{padding-bottom:60px}.p-b-65{padding-bottom:65px}.p-b-70{padding-bottom:70px}.p-b-75{padding-bottom:75px}.p-b-80{padding-bottom:80px}.p-b-85{padding-bottom:85px}.p-b-90{padding-bottom:90px}.p-b-95{padding-bottom:95px}
 
 /*  4. Body */
 html, body {-webkit-overflow-scrolling:touch;}
-body{font-family:'Lato',sans-serif;font-size:1rem;font-weight:400;font-style:normal;color:#949494;padding-top:0;padding-bottom:0;}
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  color:#080809;
+  line-height:1.75rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
 /* Typography */
-/* Depricated Type */ h1.modern{font-family:'Source Code Pro',monospace;font-size:1.75rem;font-weight:300;}
+/* Typography spacing has no margin-top */
+
+h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:0.5rem;}
+h1{font-size:2.25rem;}
+h2{font-size:1.875rem;}
+h3{font-size:1.625rem;}
+h4{font-size:1.375rem;}
+h5{font-size:1.125rem;}
+h6{font-size:1rem;}
+p{font-size:1rem;line-height:1.75rem;margin-bottom:1rem;}
+p-grey{color: #616161;}
+.h-primary {
+  font-weight: 700;
+}
+.h-secondary {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 500!important;
+}
+/* Revisit Type */
+a{font-weight:400;color:#E91E63;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
+a:hover,a:focus{font-weight:400;color:#E91E63;text-decoration:underline;}
+
+/* Depricated Type */
+h1.modern {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
 h1.type-beauty{font-family:'Lato',sans-serif;font-size:1.5rem;font-weight:700;}
 h1.hero-head{font-family:'Source Code Pro',monospace;margin-bottom:0.875rem;font-size:1.75rem;font-weight:300;margin-top:1rem;}
 .hero-lead{font-family:'Source Code Pro',monospace;font-size:0.8125rem;margin-bottom:0.75rem;color:#D4CFD7;line-height:1.25rem;}
@@ -493,3 +525,15 @@ section{word-break:break-word;}
 
 
 
+body {
+  -webkit-animation-duration: 0.1s;
+  -webkit-animation-name: fontfix;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0.1s;
+}
+
+@-webkit-keyframes fontfix {
+  from { opacity: 1; }
+  to { opacity: 1; }
+}

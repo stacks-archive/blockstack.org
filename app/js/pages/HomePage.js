@@ -130,7 +130,7 @@ class HomePage extends Component {
             <TransparentHeader />
             <div className="container">
               <section className="hero">
-                <h1 className="hero-head">
+                <h1 className="h-secondary hero-head">
                  A New Internet for Decentralized Apps
                 </h1>
                 <p className="lead hero-lead col-md-9 col-centered">
@@ -188,7 +188,7 @@ class HomePage extends Component {
             <div className="section-even container-fluid">
               <div className="container">
                 <section>
-                  <h1 className="type-beauty text-center">
+                  <h1 className="h-secondary ">
                     The Old Internet is Broken
                   </h1>
                   <div>
