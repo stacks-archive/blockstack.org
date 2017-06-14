@@ -188,16 +188,16 @@ class HomePage extends Component {
             <div className="section-even container-fluid">
               <div className="container">
                 <section>
-                  <h1 className="h-secondary ">
+                  <h3 className="h-primary text-center">
                     The Old Internet is Broken
-                  </h1>
+                  </h3>
                   <div>
                     {content.oldInternet.map((item) => {
                       return (
                         <div className="col-md-4">
-                          <h3 className="text-center">
+                          <h4 className="text-center">
                             {item.title}
-                          </h3>
+                          </h4>
                           <p className="text-center">
                             {item.body}
                           </p>

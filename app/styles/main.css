@@ -97,9 +97,12 @@ body {
   padding-bottom: 0;
 }
 
-/* Typography */
-/* Typography spacing has no margin-top */
 
+/*  9. Fonts */
+
+/* Font spacing has no margin-top */
+
+/* Heading styles */
 h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:0.5rem;}
 h1{font-size:2.25rem;}
 h2{font-size:1.875rem;}
@@ -107,32 +110,41 @@ h3{font-size:1.625rem;}
 h4{font-size:1.375rem;}
 h5{font-size:1.125rem;}
 h6{font-size:1rem;}
+.h-primary{font-weight:700;}
+.h-secondary{font-family:'Source Code Pro',monospace;font-weight:400!important;}
+
+/* Paragraph styles */
 p{font-size:1rem;line-height:1.75rem;margin-bottom:1rem;}
-p-grey{color: #616161;}
-.h-primary {
-  font-weight: 700;
-}
-.h-secondary {
-  font-family: 'Source Code Pro', monospace;
-  font-weight: 400!important;
-}
+p-grey{color:#616161;}
+
+/* Display Heading styles – Display headings are used When you need a heading 
+to stand out, consider using a display heading—a larger, slightly more 
+opinionated heading style.*/
+display-1,display-2,display-3,display-4,display-5,display-6{margin-top:0;margin-bottom:0.5rem;}
+display-1{font-size:2.25rem;}
+display-2{font-size:1.875rem;}
+display-3{font-size:1.625rem;}
+display-4{font-size:1.375rem;}
+display-5{font-size:1.125rem;}
+display-6{font-size:1rem;}
+
 /* Revisit Type */
 a{font-weight:400;color:#E91E63;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
 a:hover,a:focus{font-weight:400;color:#E91E63;text-decoration:underline;}
 
-/* Depricated Type */
-h1.modern {
-  font-family: 'Source Code Pro', monospace;
-  font-size: 1.75rem;
-  font-weight:400;
-}
+/* Depricated Type */ h1.modern{font-family:'Source Code Pro',monospace;font-size:1.75rem;font-weight:400;}
 
-h1.type-beauty{font-family:'Lato',sans-serif;font-size:1.5rem;font-weight:700;}
+/* Revisit Type */
+h1.type-beauty {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 h1.hero-head{font-family:'Source Code Pro',monospace;margin-bottom:0.875rem;font-size:1.75rem;font-weight:400;margin-top:1rem;}
 .hero-lead{font-family:'Source Code Pro',monospace;font-size:0.8125rem;margin-bottom:0.75rem;color:#D4CFD7;line-height:1.25rem;font-weight:400;}
 .lead-centered{font-family:'Source Code Pro',monospace;font-size:1rem;text-align:center;margin-bottom:2rem;font-weight:400;}
 
-/* Navbar */
+/* 16. Navbar */
 .navbar{font-family:'Source Code Pro',monospace;padding-top:0.4375rem;padding-bottom:0.5625rem;}
 .navbar-brand{margin-right:0px;}
 .navbar-brand img {width:164px;}
