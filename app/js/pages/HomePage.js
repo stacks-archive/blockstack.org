@@ -185,65 +185,71 @@ class HomePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="sectionContainer container-fluid">
-              <div className="container">
+            <div className="sectionContainerLight container-fluid">
+              <div className="container sectionWrap">
                 <section>
-                  <h3 className="h-primary">
-                    The Old Internet is Broken
-                  </h3>
-                  <div>
-                    {content.oldInternet.map((item) => {
-                      return (
-                        <div className="col-md-4">
-                          <h5 className="h-primary">
-                            {item.title}
-                          </h5>
-                          <p className="text-center">
-                            {item.body}
-                          </p>
-                        </div>
-                      )
-                    })}
+                  <div className="containWrap">
+                    <h3 className="h-primary m-b-25">
+                      The <span className="electric-magenta">Old Internet</span> is Broken
+                    </h3>
+                    <div>
+                      {content.oldInternet.map((item) => {
+                        return (
+                          <div className="col-md-4">
+                            <h5 className="h-primary">
+                              {item.title}
+                            </h5>
+                            <p>
+                              {item.body}
+                            </p>
+                          </div>
+                        )
+                      })}
+                    </div>
                   </div>
-                  <h1 className="type-beauty text-center m-t-5">
-                    The New Internet is Here
-                  </h1>
-                  <div className="row">
-                    {content.newInternet.map((item) => {
-                      return (
-                        <div className="col-md-4">
-                          <h3 className="text-center">
-                            {item.title}
-                          </h3>
-                          <p className="text-center">
-                            {item.body}
-                          </p>
-                        </div>
-                      )
-                    })}
+                  <div className="containWrap">
+                    <h3 className="h-primary m-b-25">
+                      The <span className="electric-blue">New Internet</span> is Here
+                    </h3>
+                    <div>
+                      {content.newInternet.map((item) => {
+                        return (
+                          <div className="col-md-4">
+                            <h5 className="h-primary">
+                              {item.title}
+                            </h5>
+                            <p>
+                              {item.body}
+                            </p>
+                          </div>
+                        )
+                      })}
+                    </div>
                   </div>
                 </section>
               </div>
             </div>
-            <div className="section-odd container-fluid">
-              <div className="container">
+            <div className="sectionContainerDark container-fluid">
+              <div className="container sectionWrap">
                 <section>
-                  <h1 className="modern text-center">
-                    A Full Stack for Decentralized Apps
-                  </h1>
-                  <div className="row">
-                    {content.fullStack.map((item) => {
-                      return (
-                        <div className="col-md-4">
-                          <h3 className="modern text-center">
-                            {item.title}
-                          </h3>
-                          <p>
-                            {item.body}
-                          </p>
-                        </div>
-                      )
-                    })}
+                  <div className="containWrap">
+                    <h3 className="h-primary m-b-25">
+                      A Full Stack for Decentralized Apps
+                    </h3>
+                    <div className="row">
+                      {content.fullStack.map((item) => {
+                        return (
+                          <div className="col-md-4">
+                            <h3 className="modern text-center">
+                              {item.title}
+                            </h3>
+                            <p>
+                              {item.body}
+                            </p>
+                          </div>
+                        )
+                      })}
+                    </div>
                   </div>
                 </section>
               </div>
