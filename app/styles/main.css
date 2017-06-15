@@ -171,7 +171,7 @@ body {
   font-weight: 400;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
-  color:#080809;
+  color:#484848;
   line-height:1.75rem;
   padding-top: 0;
   padding-bottom: 0;
@@ -186,16 +186,16 @@ body {
 h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:1rem;}
 h1{font-size:2.25rem;}
 h2{font-size:1.875rem;}
-h3{font-size:1.625rem;color:#484848;}
-h4{font-size:1.375rem;color:#484848;}
-h5{font-size:1.125rem;color:#484848;}
+h3{font-size:1.625rem;}
+h4{font-size:1.375rem;}
+h5{font-size:1.125rem;}
 h6{font-size:1rem;}
 .h-primary{font-weight:700;}
 .h-secondary{font-family:'Source Code Pro',monospace;font-weight:400!important;}
 
 /* Paragraph styles */
-p{font-size:1rem;line-height:1.75rem;margin-bottom:1rem;}
-p-grey{color:#484848;}
+p{font-size:1rem;line-height:1.6875rem;margin-bottom:1rem;}
+p-dark{color:#080809;}
 
 /* Display Heading styles – Display headings are used When you need a heading 
 to stand out, consider using a display heading—a larger, slightly more 
@@ -293,10 +293,14 @@ body,html,#app,.app-landing{height:100%;}
 .sectionWrap{
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 .containWrap {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .section-stats{background-color:#270F34;padding-top:25px;padding-bottom:25px;}
 .col-3-section{padding-top:50px;padding-bottom:50px;background-color:rgba(248,249,251,1);border-bottom:1px solid #E6E6E6;}

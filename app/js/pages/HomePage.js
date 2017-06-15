@@ -195,7 +195,7 @@ class HomePage extends Component {
                     <div>
                       {content.oldInternet.map((item) => {
                         return (
-                          <div className="col-md-4">
+                          <div className="col-md-4 m-b-30">
                             <h5 className="h-primary">
                               {item.title}
                             </h5>
@@ -214,7 +214,7 @@ class HomePage extends Component {
                     <div>
                       {content.newInternet.map((item) => {
                         return (
-                          <div className="col-md-4">
+                          <div className="col-md-4 m-b-30">
                             <h5 className="h-primary">
                               {item.title}
                             </h5>
@@ -233,17 +233,17 @@ class HomePage extends Component {
               <div className="container sectionWrap">
                 <section>
                   <div className="containWrap">
-                    <h3 className="h-primary m-b-25">
+                    <h3 className="h-primary text-center m-b-25">
                       A Full Stack for Decentralized Apps
                     </h3>
-                    <div className="row">
+                    <div>
                       {content.fullStack.map((item) => {
                         return (
                           <div className="col-md-4">
-                            <h3 className="modern text-center">
+                            <h5 className="inverse text-center">
                               {item.title}
-                            </h3>
-                            <p>
+                            </h5>
+                            <p className="inverse text-center">
                               {item.body}
                             </p>
                           </div>
