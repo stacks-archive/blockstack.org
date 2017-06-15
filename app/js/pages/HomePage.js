@@ -185,19 +185,19 @@ class HomePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="section-even container-fluid">
+            <div className="sectionContainer container-fluid">
               <div className="container">
                 <section>
-                  <h3 className="h-primary text-center">
+                  <h3 className="h-primary">
                     The Old Internet is Broken
                   </h3>
                   <div>
                     {content.oldInternet.map((item) => {
                       return (
                         <div className="col-md-4">
-                          <h4 className="text-center">
+                          <h5 className="h-primary">
                             {item.title}
-                          </h4>
+                          </h5>
                           <p className="text-center">
                             {item.body}
                           </p>

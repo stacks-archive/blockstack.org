@@ -103,19 +103,19 @@ body {
 /* Font spacing has no margin-top */
 
 /* Heading styles */
-h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:0.5rem;}
+h1,h2,h3,h4,h5,h6{margin-top:0;/*margin-bottom:0.5rem;*/}
 h1{font-size:2.25rem;}
 h2{font-size:1.875rem;}
-h3{font-size:1.625rem;}
-h4{font-size:1.375rem;}
-h5{font-size:1.125rem;}
+h3{font-size:1.625rem;color:#484848;}
+h4{font-size:1.375rem;color:#484848;}
+h5{font-size:1.125rem;color:#484848;}
 h6{font-size:1rem;}
 .h-primary{font-weight:700;}
 .h-secondary{font-family:'Source Code Pro',monospace;font-weight:400!important;}
 
 /* Paragraph styles */
 p{font-size:1rem;line-height:1.75rem;margin-bottom:1rem;}
-p-grey{color:#616161;}
+p-grey{color:#484848;}
 
 /* Display Heading styles – Display headings are used When you need a heading 
 to stand out, consider using a display heading—a larger, slightly more 
@@ -182,7 +182,7 @@ a.nav-link > i.fa.fa-github{display:none;}
 .btn-highlight-magenta:hover,.btn-highlight-magenta:focus,.btn-highlight-magenta:active{color:#270F34;border:1px solid rgba(255,255,255);background-color:#fff;}
 .btn-footer-max-width{max-width:225px;}
 
-/* Other */
+/* 37. Misc */
 .body-hero{background-color:#280f36!important;background:url(../images/visuals/earth-internet.jpg) no-repeat;
 background-position: top -400px center;}
 body,html,#app,.app-landing{height:100%;}
@@ -196,7 +196,17 @@ body,html,#app,.app-landing{height:100%;}
 .hero-wrap{padding-top:.5rem;padding-bottom:6rem;}
 .hero-btn-title{font-family:'Source Code Pro',monospace;font-weight:400;font-size:0.8125rem;margin-bottom:0.5rem;margin-top:0.5rem;}
 .section-odd{color:#fff;background-color:#270F34;padding-top:150px;padding-bottom:150px;margin-right:0px;margin-left:0px;}
-.section-even{background-color:#fff;padding-top:150px;padding-bottom:150px;margin-right:0px;margin-left:0px;}
+.sectionContainer {
+  background-color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.sectionWrap{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .section-stats{background-color:#270F34;padding-top:25px;padding-bottom:25px;}
 .col-3-section{padding-top:50px;padding-bottom:50px;background-color:rgba(248,249,251,1);border-bottom:1px solid #E6E6E6;}
 .about-head-wrap{padding-bottom:30px;background:url(/images/visuals/blockchain-timeline.png);background-repeat:no-repeat;background-position:center top;background-color:#53206f;}
