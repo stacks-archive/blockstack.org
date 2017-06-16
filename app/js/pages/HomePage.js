@@ -136,7 +136,7 @@ class HomePage extends Component {
                 <p className="lead hero-lead col-md-9 col-centered">
                   Blockstack is a new decentralized internet where users own their data and apps run locally. A browser portal is all that’s needed to get started.
                 </p>
-                <div className="no-padding container-fluid col-md-9 col-centered m-b-35">
+                <div className="no-padding container-fluid col-md-9 col-centered m-b-65">
                   <div className="col-sm-12 text-center landing-hero-img">
                     <Image className="landing-feat-img"
                       src="/images/resources/portal-home-screen@2x.png"
