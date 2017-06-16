@@ -247,7 +247,7 @@ class HomePage extends Component {
               <div className="container sectionWrap">
                 <section>
                   <div className="containWrap">
-                    <h3 className="container h-primary text-center m-b-25">
+                    <h3 className="h-primary text-center m-b-25">
                       A Full Stack for Decentralized Apps
                     </h3>
                     <div>
