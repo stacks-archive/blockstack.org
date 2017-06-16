@@ -274,7 +274,7 @@ body,html,#app,.app-landing{height:100%;}
 .hero-caption > a:hover{color:#95889C;text-decoration:none;}
 .hero-caption > a:hover span{color:rgba(255,255,255,0.8);text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.5);padding-bottom:0px;}
 .hero-wrap{padding-top:.5rem;padding-bottom:6rem;}
-.hero-btn-title{font-family:'Source Code Pro',monospace;font-weight:400;font-size:0.8125rem;margin-bottom:0.5rem;margin-top:0.5rem;}
+.hero-btn-title{font-family:'Source Code Pro',monospace;font-weight:400;font-size:0.875rem;margin-bottom:0.5rem;margin-top:0.5rem;}
 .sectionContainerDark {
   color: #fff;
   background-color: #270F34;
@@ -290,17 +290,19 @@ body,html,#app,.app-landing{height:100%;}
   padding-right: 0px;
   padding-left: 0px;
 }
+.section-spacing {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
 .sectionWrap{
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-right: 25px;
-  padding-left: 25px;
 }
 .containWrap {
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 .section-stats{background-color:#270F34;padding-top:25px;padding-bottom:25px;}
 .col-3-section{padding-top:50px;padding-bottom:50px;background-color:rgba(248,249,251,1);border-bottom:1px solid #E6E6E6;}
@@ -361,6 +363,7 @@ li.nav-item:nth-last-child(2){display:none;}
 .feat-card > h3{font-weight:400;}
 .text-stats{font-family:'Source Code Pro',monospace;font-size:0.8125rem;font-weight:400;}
 .landing-hero-img{display:none;}
+.no-padding-sm{padding-right:0;padding-left:0;}
 
 /* Tutorials */
 iframe{height:530px;}
@@ -427,7 +430,7 @@ pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35
 .nav-sidebar > .active > a,.nav-sidebar > .active > a:hover,.nav-sidebar > .active > a:focus{color:#fff;background-color:#428bca;}
 
 /* Footer */
-footer{position:relative;padding-top:60px;padding-bottom:80px;background-color:rgba(26,26,26,1);color:rgba(255,255,255,1);font-size:13px;z-index:999;}
+footer{position:relative;padding-top:60px;padding-bottom:80px;background-color:rgba(26,26,26,1);color:rgba(255,255,255,1);font-size:15px;z-index:999;}
 footer > li{list-style:none;}
 .foot-menu{padding-top:20px;}
 .foot-menu > li{padding:4px 15px;}
@@ -535,7 +538,7 @@ section{word-break:break-word;}
   .feature-logo-4{margin-top:10px;}
   .feature-logo-5{margin-top:35px;}
 
-  /* Other */
+  /* 37. Misc */
   .slides{padding-top:80px;padding-right:0;padding-left:0;}
   div.col-sm-4.feature-panel.wrap-mob-feat{padding-top:20px;}
   .highlight-box{padding-top:120px;padding-bottom:80px;}
@@ -547,6 +550,7 @@ section{word-break:break-word;}
   .inverse-3col-section{padding-top:10px;padding-bottom:10px;}
   .social-count{position:absolute;margin-top:0;display:inline-block;margin-left:25px;margin-top:5px;}
   .social-type{margin-left:-45px;}
+  .sectionWrap{padding-top:30px;padding-bottom:30px;padding-right:15px;padding-left:15px;}
   a > div.col-md-4.feature-panel:hover{background-color:rgba(248,249,251,1);}
   .docs-header-image-wrapper{height:400px;}
   .card.card-1-of-3{margin-bottom:15px;}
@@ -556,8 +560,10 @@ section{word-break:break-word;}
   .bitcoin-protocols-main{padding-right:40px;padding-left:40px;}
   .feat-card{height:140px;display:block;}
   .feat-card > h3{font-weight:400;}
-  .hero-btn-title{text-align:center;margin-top:4.9375rem;}
+  .hero-btn-title{text-align:center;}
   .landing-hero-img{display:initial;}
+  .text-center-md{text-align:center;}
+  .no-padding-sm{padding-right:15px;padding-left:15px;}
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -568,16 +574,18 @@ section{word-break:break-word;}
   .bs-docs-featurette{max-width:1170px;}
 
   /* Globals */
-
-  h3{margin-top:45px;margin-bottom:15px;margin-bottom:20px;}
+  h3{margin-bottom:15px;margin-bottom:20px;}
   h4{margin:20px 0;}
 
+  /* 9. Fonts */
+  .h-primary
+
   /* Navbar */
-.navbar {
-  font-family: 'Source Code Pro', monospace;
-  padding-top: 1.0625rem;
-  padding-bottom: 1.5rem;
-}
+  .navbar {
+    font-family: 'Source Code Pro', monospace;
+    padding-top: 1.0625rem;
+    padding-bottom: 1.5rem;
+  }
   .brand-bug{display:none;}
   .brand-logo{display:initial;}
   
@@ -606,8 +614,9 @@ section{word-break:break-word;}
   .feat-pan{font-size:26px;}
   .docs-header-image-wrapper{height:500px;}
 
-  /* Other */
+  /* 37. Misc */
   .simple-featurette{margin-top:155px;}
+  .sectionWrap{padding-right:15px;padding-left:15px;}
 
   /* Footer */
   .foot-left-col{width:22.3%}

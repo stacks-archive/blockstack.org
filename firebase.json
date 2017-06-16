@@ -56,6 +56,10 @@
         "destination": "/docs-tutorials-hello-blockstack.html"
       },
       {
+        "source": "/blog/blockstack-summit-2017-freedom-to-innovate",
+        "destination": "/blog-blockstack-summit-2017-freedom-to-innovate.html"
+      },
+      {
         "source": "/blog/introducing-the-blockstack-browser-a-gateway-to-a-new-decentralized-internet",
         "destination": "/blog-introducing-the-blockstack-browser-a-gateway-to-a-new-decentralized-internet.html"
       },
@@ -110,10 +114,6 @@
       {
         "source": "/blog/introducing-the-blockstack-identity-system",
         "destination": "/blog-introducing-the-blockstack-identity-system.html"
-      },
-      {
-        "source": "/blog/initial-release-of-blockstack-core",
-        "destination": "/blog-initial-release-of-blockstack-core.html"
       },
       {
         "source": "**",
