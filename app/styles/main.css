@@ -290,6 +290,13 @@ body,html,#app,.app-landing{height:100%;}
   padding-right: 0px;
   padding-left: 0px;
 }
+.sectionContainerLightGray {
+  background-color: #FAFAFA;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
 .section-spacing {
   padding-top: 150px;
   padding-bottom: 150px;

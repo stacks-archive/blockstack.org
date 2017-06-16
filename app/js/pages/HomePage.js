@@ -243,13 +243,19 @@ class HomePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="sectionContainerDark section-spacing container-fluid">
+            <div className="sectionContainerLightGray section-spacing container-fluid">
               <div className="container sectionWrap">
                 <section>
                   <div className="containWrap">
                     <h3 className="h-primary text-center m-b-25">
                       A Full Stack for Decentralized Apps
                     </h3>
+                    <div className="col-sm-12 text-center landing-hero-img">
+                      <Image className="landing-feat-img"
+                        src="/images/images/blockstack-stack-diagram.svg"
+                        fallbackSrc="/images/tutorials/portal-home-screen.png"
+                        retinaSupport={false} />
+                    </div>
                     <div>
                       {content.fullStack.map((item) => {
                         return (
