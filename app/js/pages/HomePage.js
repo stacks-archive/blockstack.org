@@ -252,7 +252,7 @@ class HomePage extends Component {
                     </h3>
                     <div className="col-sm-12 text-center landing-hero-img">
                       <Image className="landing-feat-img"
-                        src="/images/images/blockstack-stack-diagram.svg"
+                        src="/images/visuals/blockstack-stack-diagram.svg"
                         fallbackSrc="/images/tutorials/portal-home-screen.png"
                         retinaSupport={false} />
                     </div>
