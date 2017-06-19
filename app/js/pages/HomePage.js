@@ -277,29 +277,48 @@ class HomePage extends Component {
             <div className="sectionContainerLight section-spacing container-fluid">
               <div className="container">
                 <section>
-                  <div className="containWrap">
+                  <div className="container containWrap">
                     <h2 className="h-primary text-center">
                       Step-by-step tutorials
                     </h2>
                   </div>
-                  <div className="col-md-8 col-centered">
-                    <p className="text-center">
-                      Complete the step-by-step tutorial and see how easy it is to build an app with a decentralized identity system in a few lines of code and no servers.
-                    </p>
-                    <p className="text-center">
-                      <Link to="/tutorials/hello-blockstack">
-                        <Image className="landing-feat-img"
-                          src="/images/tutorials/hello-blockstack-fastforward.gif"
-                          fallbackSrc="/images/tutorials/hello-blockstack-fastforward.gif"
-                          retinaSupport={false} />
-                      </Link>
-                    </p>
-                    <p className="text-center">
-                      Want to learn more about building apps on blockstack? Tutorials on building serverless apps with decentralized storage are coming soon.
-                    </p>
+                  <div className="container m-b-35">
+                    <div className="col-md-4">
+                      <h4 className="inverse text-center">
+                        Identity
+                      </h4>
+                      <pre className="inverse">
+                        blockstack.redirectUserToSignIn()
+                        blockstack.signUserIn(user) => {})
+                      </pre>
+                    </div>
+                    <div className="col-md-4">
+                      <h4 className="inverse text-center">
+                        Storage
+                      </h4>
+                      <pre className="inverse">
+                        blockstack.putFile("settings.txt", {})
+                          .then(success => {})
+                        blockstack.getFile("settings.txt")
+                          .then(data => {})
+                      </pre>
+                    </div>
+                    <div className="col-md-4">
+                      <h4 className="inverse text-center">
+                        Payments
+                      </h4>
+                      <pre className="inverse">
+                        blockstack.getPaymentInfo("werner.id")
+                          .then(data => {})
+                        blockstack.sendMoney("werner.id")
+                          .then(success => {})
+                      </pre>
+                    </div>
+                  </div>
+                  <div className="container">
                     <p className="text-center">
                       <Link to="/tutorials" role="button"
-                        className="btn btn-outline-primary btn-block">
+                        className="btn btn-outline-primary">
                         Try the Tutorials
                       </Link>
                     </p>
