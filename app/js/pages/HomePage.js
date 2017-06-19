@@ -185,7 +185,7 @@ class HomePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="sectionContainerLight container-fluid">
+            <div className="sectionContainerLight section-spacing container-fluid">
               <div className="sectionWrap">
                 <section>
                   <div className="container no-padding">
@@ -275,7 +275,7 @@ class HomePage extends Component {
               </div>
             </div>
             <div className="sectionContainerLight section-spacing container-fluid">
-              <div className="container">
+              <div className="container sectionWrap">
                 <section>
                   <div className="container p-b-15">
                     <h2 className="h-primary text-center">
