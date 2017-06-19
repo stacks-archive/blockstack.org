@@ -315,6 +315,10 @@ pre {
   font-size: 12px!important;
   font-weight: 600;
   color: #2C96FF!important;
+  line-height: 18px;
+}
+.codeHighlight {
+  color: #E91E63;
 }
 pre {
  white-space: pre-wrap;       /* css-3 */

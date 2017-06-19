@@ -288,8 +288,8 @@ class HomePage extends Component {
                         Identity
                       </h4>
                       <pre className="inverse">
-                        blockstack.redirectUserToSignIn()
-                        blockstack.signUserIn(user) => {})
+                        blockstack<span className="codeHighlight">.</span>redirectUserToSignIn()
+                        blockstack<span className="codeHighlight">.</span>signUserIn(<span className="codeHighlight">user</span>) <span className="codeHighlight">=></span> {})
                       </pre>
                     </div>
                     <div className="col-md-4">
@@ -297,10 +297,10 @@ class HomePage extends Component {
                         Storage
                       </h4>
                       <pre className="inverse">
-                        blockstack.putFile("settings.txt", {})
-                          .then(success => {})
-                        blockstack.getFile("settings.txt")
-                          .then(data => {})
+                        blockstack<span className="codeHighlight">.</span>putFile(<span className="codeHighlight">"settings.txt"</span>, {})
+                          <span className="codeHighlight">.</span>then(<span className="codeHighlight">success =></span> {})
+                        blockstack<span className="codeHighlight">.</span>getFile(<span className="codeHighlight">"settings.txt"</span>)
+                          <span className="codeHighlight">.</span>then(<span className="codeHighlight">data =></span> {})
                       </pre>
                     </div>
                     <div className="col-md-4">
@@ -308,10 +308,10 @@ class HomePage extends Component {
                         Payments
                       </h4>
                       <pre className="inverse">
-                        blockstack.getPaymentInfo("werner.id")
-                          .then(data => {})
-                        blockstack.sendMoney("werner.id")
-                          .then(success => {})
+                        blockstack<span className="codeHighlight">.</span>getPaymentInfo(<span className="codeHighlight">"werner.id"</span>)
+                          <span className="codeHighlight">.</span>then(<span className="codeHighlight">data =></span> {})
+                        blockstack<span className="codeHighlight">.</span>sendMoney(<span className="codeHighlight">"werner.id"</span>)
+                          <span className="codeHighlight">.</span>then(<span className="codeHighlight">success =></span> {})
                       </pre>
                     </div>
                   </div>
