@@ -399,8 +399,9 @@ pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35
 .hljs{background-color:transparent;}
 .docs-header-image-wrapper{position:relative;overflow:hidden;height:300px;color:#fff;}
 .docs-header-image{position:absolute;margin:auto;top:-100%;left:0;right:0;bottom:-100%;min-width:100%;}
-pre{color:#2C96FF!important;line-height:18px;white-space:pre;word-break:normal;word-wrap:normal;}
+pre{color:#2C96FF!important;line-height:24px;white-space:pre;word-break:normal;word-wrap:normal;}
 .codeHighlight{color:#E91E63;}
+.codeLeft{padding-left:1rem;}
 
 
 /* Sidebar */

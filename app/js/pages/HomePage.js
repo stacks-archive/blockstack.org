@@ -311,9 +311,9 @@ class HomePage extends Component {
                       </p>
                       <pre className="">
                         blockstack<span className="codeHighlight">.</span>putFile(<span className="codeHighlight">"settings.txt"</span>, {}) <br />
-                          <span className="codeHighlight">.</span>then(<span className="codeHighlight">success =></span> {}) <br />
+                          <span className="codeHighlight codeLeft">.</span>then(<span className="codeHighlight">success =></span> {}) <br />
                         blockstack<span className="codeHighlight">.</span>getFile(<span className="codeHighlight">"settings.txt"</span>) <br />
-                          <span className="codeHighlight">.</span>then(<span className="codeHighlight">data =></span> {})
+                          <span className="codeHighlight codeLeft">.</span>then(<span className="codeHighlight">data =></span> {})
                       </pre>
                     </div>
                     <div className="col-md-4">
@@ -325,9 +325,9 @@ class HomePage extends Component {
                       </p>
                       <pre className="">
                         blockstack<span className="codeHighlight">.</span>getPaymentInfo(<span className="codeHighlight">"werner.id"</span>) <br />
-                          <span className="codeHighlight">.</span>then(<span className="codeHighlight">data =></span> {}) <br />
+                          <span className="codeHighlight codeLeft">.</span>then(<span className="codeHighlight">data =></span> {}) <br />
                         blockstack<span className="codeHighlight">.</span>sendMoney(<span className="codeHighlight">"werner.id"</span>) <br />
-                          <span className="codeHighlight">.</span>then(<span className="codeHighlight">success =></span> {})
+                          <span className="codeHighlight codeLeft">.</span>then(<span className="codeHighlight">success =></span> {})
                       </pre>
                     </div>
                   </div>
