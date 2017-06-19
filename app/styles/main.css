@@ -312,22 +312,6 @@ body,html,#app,.app-landing{height:100%;}
   padding-right: 25px;
   padding-left: 25px;
 }
-pre {
-  font-size: 12px!important;
-  font-weight: 600;
-  color: #2C96FF!important;
-  line-height: 18px;
-}
-.codeHighlight {
-  color: #E91E63;
-}
-pre {
- white-space: pre-wrap;       /* css-3 */
- white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
- white-space: -pre-wrap;      /* Opera 4-6 */
- white-space: -o-pre-wrap;    /* Opera 7 */
- word-wrap: break-word;       /* Internet Explorer 5.5+ */
-}
 .section-stats{background-color:#270F34;padding-top:25px;padding-bottom:25px;}
 .col-3-section{padding-top:50px;padding-bottom:50px;background-color:rgba(248,249,251,1);border-bottom:1px solid #E6E6E6;}
 .about-head-wrap{padding-bottom:30px;background:url(/images/visuals/blockchain-timeline.png);background-repeat:no-repeat;background-position:center top;background-color:#53206f;}
@@ -441,10 +425,26 @@ iframe{border:none;}
 .video-wrapper{background-color:#222222;width:100%;}
 
 /* Docs */
-pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35,39,1);background-color:rgba(32,35,39,1);color:#fff;font-size:14px;border-radius:4px;}
+pre{margin-top:30px;margin-bottom:30px;padding:30px 20px;border-color:rgba(32,35,39,1);background-color:rgba(32,35,39,1);color:#fff;font-size:14px;}
 .hljs{background-color:transparent;}
 .docs-header-image-wrapper{position:relative;overflow:hidden;height:300px;color:#fff;}
 .docs-header-image{position:absolute;margin:auto;top:-100%;left:0;right:0;bottom:-100%;min-width:100%;}
+pre {
+  font-size: 12px!important;
+  font-weight: 600;
+  color: #2C96FF!important;
+  line-height: 18px;
+}
+.codeHighlight {
+  color: #E91E63;
+}
+pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
 
 /* Sidebar */
 .sidebar{display:none;}
