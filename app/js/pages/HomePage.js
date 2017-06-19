@@ -298,7 +298,7 @@ class HomePage extends Component {
                         Available today!
                       </p>
                       <pre className="">
-                        blockstack<span className="codeHighlight">.</span>redirectUserToSignIn()
+                        blockstack<span className="codeHighlight">.</span>redirectUserToSignIn() <br />
                         blockstack<span className="codeHighlight">.</span>signUserIn(<span className="codeHighlight">user</span>) <span className="codeHighlight">=></span> {})
                       </pre>
                     </div>
@@ -310,9 +310,9 @@ class HomePage extends Component {
                         <i>(Coming Soon...)</i>
                       </p>
                       <pre className="">
-                        blockstack<span className="codeHighlight">.</span>putFile(<span className="codeHighlight">"settings.txt"</span>, {})
-                          <span className="codeHighlight">.</span>then(<span className="codeHighlight">success =></span> {})
-                        blockstack<span className="codeHighlight">.</span>getFile(<span className="codeHighlight">"settings.txt"</span>)
+                        blockstack<span className="codeHighlight">.</span>putFile(<span className="codeHighlight">"settings.txt"</span>, {}) <br />
+                          <span className="codeHighlight">.</span>then(<span className="codeHighlight">success =></span> {}) <br />
+                        blockstack<span className="codeHighlight">.</span>getFile(<span className="codeHighlight">"settings.txt"</span>) <br />
                           <span className="codeHighlight">.</span>then(<span className="codeHighlight">data =></span> {})
                       </pre>
                     </div>
@@ -324,9 +324,9 @@ class HomePage extends Component {
                         <i>(Coming Soon...)</i>
                       </p>
                       <pre className="">
-                        blockstack<span className="codeHighlight">.</span>getPaymentInfo(<span className="codeHighlight">"werner.id"</span>)
-                          <span className="codeHighlight">.</span>then(<span className="codeHighlight">data =></span> {})
-                        blockstack<span className="codeHighlight">.</span>sendMoney(<span className="codeHighlight">"werner.id"</span>)
+                        blockstack<span className="codeHighlight">.</span>getPaymentInfo(<span className="codeHighlight">"werner.id"</span>) <br />
+                          <span className="codeHighlight">.</span>then(<span className="codeHighlight">data =></span> {}) <br />
+                        blockstack<span className="codeHighlight">.</span>sendMoney(<span className="codeHighlight">"werner.id"</span>) <br />
                           <span className="codeHighlight">.</span>then(<span className="codeHighlight">success =></span> {})
                       </pre>
                     </div>
