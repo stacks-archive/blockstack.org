@@ -388,6 +388,7 @@ li.nav-item:nth-last-child(2){display:none;}
 .text-stats{font-family:'Source Code Pro',monospace;font-size:0.8125rem;font-weight:400;}
 .landing-hero-img{display:none;}
 .no-padding-sm{padding-right:0;padding-left:0;}
+.col-img{max-width: 110px;}
 
 /* Tutorials */
 iframe{height:530px;}

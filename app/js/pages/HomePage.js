@@ -279,7 +279,7 @@ class HomePage extends Component {
                 <section>
                   <div className="container p-b-15">
                     <h2 className="h-primary text-center">
-                      Step-by-step tutorials
+                      Libraries and Step-by-Step Tutorials
                     </h2>
                   </div>
                   <div className="container m-b-30">
@@ -289,27 +289,27 @@ class HomePage extends Component {
                       </p>
                     </div>
                   </div>
-                  <div className="container m-b-45">
+                  <div className="container m-b-40">
                     <div className="col-md-4">
-                      <h4 className="inverse text-center m-b-25">
+                      <h4 className="text-center m-b-10">
                         Identity
                       </h4>
-                      <h5 className="light-gray text-center">
+                      <p className="light-gray text-center">
                         Available today!
-                      </h5>
-                      <pre className="inverse">
+                      </p>
+                      <pre className="">
                         blockstack<span className="codeHighlight">.</span>redirectUserToSignIn()
                         blockstack<span className="codeHighlight">.</span>signUserIn(<span className="codeHighlight">user</span>) <span className="codeHighlight">=></span> {})
                       </pre>
                     </div>
                     <div className="col-md-4">
-                      <h4 className="inverse text-center">
+                      <h4 className="text-center m-b-10">
                         Storage
                       </h4>
-                      <h5 className="light-gray text-center">
+                      <p className="light-gray text-center">
                         <i>(Coming Soon...)</i>
-                      </h5>
-                      <pre className="inverse">
+                      </p>
+                      <pre className="">
                         blockstack<span className="codeHighlight">.</span>putFile(<span className="codeHighlight">"settings.txt"</span>, {})
                           <span className="codeHighlight">.</span>then(<span className="codeHighlight">success =></span> {})
                         blockstack<span className="codeHighlight">.</span>getFile(<span className="codeHighlight">"settings.txt"</span>)
@@ -317,13 +317,13 @@ class HomePage extends Component {
                       </pre>
                     </div>
                     <div className="col-md-4">
-                      <h4 className="inverse text-center">
+                      <h4 className="text-center m-b-10">
                         Payments
                       </h4>
-                      <h5 className="light-gray text-center">
+                      <p className="light-gray text-center">
                         <i>(Coming Soon...)</i>
-                      </h5>
-                      <pre className="inverse">
+                      </p>
+                      <pre className="">
                         blockstack<span className="codeHighlight">.</span>getPaymentInfo(<span className="codeHighlight">"werner.id"</span>)
                           <span className="codeHighlight">.</span>then(<span className="codeHighlight">data =></span> {})
                         blockstack<span className="codeHighlight">.</span>sendMoney(<span className="codeHighlight">"werner.id"</span>)
@@ -342,27 +342,57 @@ class HomePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="sectionContainerDark section-spacing container-fluid">
+            <div className="sectionContainerLightGray section-spacing container-fluid">
               <div className="container sectionWrap">
                 <section>
                   <div className="containWrap">
                     <h3 className="h-primary text-center">
-                      Easily build apps like these
+                      Thousands of App Possibilities
                     </h3>
                   </div>
                   <div>
-                    {content.appPossibilities.map((item) => {
-                      return (
-                        <div className="col-md-4">
-                          <h4 className="modern text-center">
-                            {item.title}
-                          </h4>
-                          <p className="text-center">
-                            {item.body}
-                          </p>
-                        </div>
-                      )
-                    })}
+                    <div className="col-md-4">
+                      <p className="text-center">
+                        <Image className="col-img"
+                          src="/images/icons/icon-decentralized-social.svg"
+                          fallbackSrc="/images/tutorials/portal-home-screen.png"
+                          retinaSupport={false} />
+                      </p>
+                      <h4 className="modern text-center">
+                        Decentralized Social Networks
+                      </h4>
+                      <p className="text-center">
+                        Existing social networks lock in users and limit access. Build a decentralized social network that allows users to own their relationships and data and take it with them wherever they go.
+                      </p>
+                    </div>
+                    <div className="col-md-4">
+                      <p className="text-center">
+                        <Image className="col-img"
+                          src="/images/icons/icon-marketplace.svg"
+                          fallbackSrc="/images/tutorials/portal-home-screen.png"
+                          retinaSupport={false} />
+                      </p>
+                      <h4 className="modern text-center">
+                        Peer-to-Peer Marketplaces
+                      </h4>
+                      <p className="text-center">
+                        Existing marketplaces take a massive haircut and limit what can be bought and sold. Build a peer-to-peer marketplace that allows individuals to freely transact at a lower cost.
+                      </p>
+                    </div>
+                    <div className="col-md-4">
+                      <p className="text-center">
+                        <Image className="col-img"
+                          src="/images/icons/icon-community-vote.svg"
+                          fallbackSrc="/images/tutorials/portal-home-screen.png"
+                          retinaSupport={false} />
+                      </p>
+                      <h4 className="modern text-center">
+                        Community-Run Voting
+                      </h4>
+                      <p className="text-center">
+                        Existing voting systems are centrally operated and thus are extremely vulnerable to hacking. Build a voting system as a public internet utility that’s run by the community instead of a single corporation.
+                      </p>
+                    </div>
                   </div>                  
                 </section>
               </div>
