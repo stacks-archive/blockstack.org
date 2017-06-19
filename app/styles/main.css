@@ -196,6 +196,7 @@ h6{font-size:1rem;}
 /* Paragraph styles */
 p{font-size:1rem;line-height:1.6875rem;margin-bottom:1rem;}
 p-dark{color:#080809;}
+.light-gray{color:#949494;}
 
 /* Display Heading styles – Display headings are used When you need a heading 
 to stand out, consider using a display heading—a larger, slightly more 

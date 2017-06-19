@@ -277,16 +277,26 @@ class HomePage extends Component {
             <div className="sectionContainerLight section-spacing container-fluid">
               <div className="container">
                 <section>
-                  <div className="container containWrap">
+                  <div className="container p-b-15">
                     <h2 className="h-primary text-center">
                       Step-by-step tutorials
                     </h2>
                   </div>
-                  <div className="container m-b-35">
+                  <div className="container m-b-30">
+                    <div className="col-md-8 col-centered">
+                      <p className="text-center">
+                        Complete the step-by-step tutorial and see how easy it is to build an app with a decentralized identity system in a few lines of code and no servers.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="container m-b-45">
                     <div className="col-md-4">
-                      <h4 className="inverse text-center">
+                      <h4 className="inverse text-center m-b-25">
                         Identity
                       </h4>
+                      <h5 className="light-gray text-center">
+                        Available today!
+                      </h5>
                       <pre className="inverse">
                         blockstack<span className="codeHighlight">.</span>redirectUserToSignIn()
                         blockstack<span className="codeHighlight">.</span>signUserIn(<span className="codeHighlight">user</span>) <span className="codeHighlight">=></span> {})
@@ -296,6 +306,9 @@ class HomePage extends Component {
                       <h4 className="inverse text-center">
                         Storage
                       </h4>
+                      <h5 className="light-gray text-center">
+                        <i>(Coming Soon...)</i>
+                      </h5>
                       <pre className="inverse">
                         blockstack<span className="codeHighlight">.</span>putFile(<span className="codeHighlight">"settings.txt"</span>, {})
                           <span className="codeHighlight">.</span>then(<span className="codeHighlight">success =></span> {})
@@ -307,6 +320,9 @@ class HomePage extends Component {
                       <h4 className="inverse text-center">
                         Payments
                       </h4>
+                      <h5 className="light-gray text-center">
+                        <i>(Coming Soon...)</i>
+                      </h5>
                       <pre className="inverse">
                         blockstack<span className="codeHighlight">.</span>getPaymentInfo(<span className="codeHighlight">"werner.id"</span>)
                           <span className="codeHighlight">.</span>then(<span className="codeHighlight">data =></span> {})
