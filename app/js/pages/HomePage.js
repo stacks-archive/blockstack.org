@@ -302,7 +302,7 @@ class HomePage extends Component {
                         blockstack<span className="codeHighlight">.</span>signUserIn(<span className="codeHighlight">user</span>) <span className="codeHighlight">=></span> {})
                       </pre>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 no-padding">
                       <h4 className="text-center m-b-10">
                         Storage
                       </h4>

@@ -48,30 +48,93 @@
 /* Blockstack Label Colors - https://projects.invisionapp.com/boards/HE2VVROFSGB27/ */
 /* These label colors come from Google's Material Design Color Set [500] - Alternative shades [100 - 900] - http://materialuicolors.co/ */
 
-/* - Electric magenta + stereoscopy - #E91E63 - label: high-priority */
-/* - Electric blue + stereoscopy - #2C96FF - label: design */
+.label-red                 {color: #F44336;}  /* label: bug */
+.label-purple              {color: #9C27B0;}  /* label: ui */
+.label-deep-purple         {color: #673AB7;}  /* label: feature-request */
+.label-indigo              {color: #3F51B5;}  /* label: copywriting */
+.label-blue                {color: #2196F3;}  /* label: help wanted */
+.label-light-blue          {color: #03A9F4;}  /* label: enhancement */
+.label-cyan                {color: #00BCD4;}  /* label: refactoring */
+.label-teal                {color: #009688;}  /* label: question */
+.label-green               {color: #4CAF50;}  /* label: docs */
+.label-light-green         {color: #8BC34A;}  /* label: production */
+.label-lime                {color: #CDDC39;}  /* label: wontfix */
+.label-yellow              {color: #FFEB3B;}  /* label: request */
+.label-amber               {color: #FFC107;}  /* label: design */
+.label-orange              {color: #FF9800;}  /* label: duplicate */
+.label-deep-orange         {color: #FF5722;}  /* label: invalid */
+.label-brown               {color: #795548;}  /* label: events */
+.label-grey                {color: #9E9E9E;}  /* label: fixed in the next release */
+.label-blue-grey           {color: #607D8B;}  /* label: strategy */
 
-/* - Red - #F44336 - label: bug */
-/* - Purple - #9C27B0 - label: html/css */
-/* - Deep Purple - #673AB7 - label: feature-request */
-/* - Indigo - #3F51B5 - label: copywriting */
-/* - Blue - #2196F3 - label: help wanted */
-/* - Light Blue - #03A9F4 - label: enhancement */
-/* - Cyan - #00BCD4 - label: refactoring */
-/* - Teal - #009688 - label: question */
-/* - Green - #4CAF50 - label: docs */
-/* - Light Green - #8BC34A - label: production */
-/* - Lime - #CDDC39 - label: wontfix */
-/* - Yellow - #FFEB3B - label: request */
-/* - Amber - #FFC107 - label: design */
-/* - Orange - #FF9800 - label: duplicate */
-/* - Deep Orange - #FF5722 - label: invalid */
-/* - Brown - #795548 - label: events */
-/* - Grey - #9E9E9E - label: fixed in the next release */
-/* - Blue Grey - #607D8B - label: strategy */
+.electric-magenta          {color: #E91E63;}  /* label: high-priority + stereoscopy magenta */
+.electric-blue             {color: #2C96FF;}  /* label: design + stereoscopy blue */
 
-.electric-magenta{color:#E91E63;}
-.electric-blue{color:#2C96FF;}
+.midnight-50               {color: #434345;}
+.midnight-100              {color: #3a3a3d;}
+.midnight-200              {color: #323234;}
+.midnight-300              {color: #2a2a2b;}
+.midnight-400              {color: #212123;}
+.midnight-500              {color: #19191a;}
+.midnight-600              {color: #111111;}
+.midnight-700              {color: #080809;}
+
+.deep-slate-50             {color: #494f56;}
+.deep-slate-100            {color: #41474d;}
+.deep-slate-200            {color: #393e44;}
+.deep-slate-300            {color: #32363a;}
+.deep-slate-400            {color: #2a2d31;}
+.deep-slate-500            {color: #222528;}
+.deep-slate-600            {color: #1a1d1f;}
+.deep-slate-700            {color: #121416;}
+.deep-slate-800            {color: #0b0c0c;}
+.deep-slate-900            {color: #030303;}
+
+.purple-5                  {color: #f4f2f4;}
+.purple-10                 {color: #eae7eb;}
+.purple-15                 {color: #dfdbe1;}
+.purple-20                 {color: #d4cfd7;}
+.purple-25                 {color: #cac3cd;}
+.purple-30                 {color: #c0b8c4;}
+.purple-35                 {color: #b5abba;}
+.purple-40                 {color: #aa9fb0;}
+.purple-45                 {color: #9f93a6;}
+.purple-50                 {color: #95889c;}  /* 50 + logos + type */
+.purple-55                 {color: #8b7c92;}
+.purple-60                 {color: #807088;}
+.purple-65                 {color: #75647e;}
+.purple-70                 {color: #6b5875;}
+.purple-75                 {color: #604c6b;}  /* 75 + bug */
+.purple-80                 {color: #564061;}
+.purple-85                 {color: #4b3457;}  /* 85 + bug + lines */
+.purple-90                 {color: #41294e;}  /* 90 + bug + dots */
+.purple-95                 {color: #361d44;}
+.purple-100                {color: #2c113a;}
+.purple-105                {color: #291037;}
+.purple-110                {color: #270f34;}
+.purple-110                {color: #270f34;}  /* 110 + background */
+.purple-120                {color: #230d2e;}
+.purple-125                {color: #200c2b;}
+.purple-130                {color: #1e0b28;}
+.purple-135                {color: #1c0b25;}
+.purple-140                {color: #1a0a22;}
+.purple-145                {color: #18091f;}
+.purple-150                {color: #15081c;}
+
+.gray-50                   {color: #fafafa;}
+.gray-75                   {color: #f0f0f0;}
+.gray-85                   {color: #e6e6e6;}
+.gray-100                  {color: #e1e1e1;}
+.gray-200                  {color: #c7c7c7;}
+.gray-300                  {color: #aeaeae;}
+.gray-400                  {color: #949494;}
+.gray-500                  {color: #7b7b7b;}
+.gray-600                  {color: #616161;}
+.gray-700                  {color: #484848;}
+.gray-800                  {color: #2e2e2e;}
+.gray-850                  {color: #222222;}
+.gray-900                  {color: #1c1c1c;}
+.gray-950                  {color: #151515;}
 
 /* 2. Options */
 .col-centered{float:none;margin:0 auto;}
