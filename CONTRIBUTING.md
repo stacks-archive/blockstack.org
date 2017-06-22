@@ -167,7 +167,7 @@ includes code changes) and under the terms of the
 
 Run `npm run dev` before committing to ensure your changes follow our coding standards.
 
-# Maintainers
+## Maintainers
 
 <table>
   <tbody>
