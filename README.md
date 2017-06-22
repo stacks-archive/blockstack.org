@@ -74,3 +74,4 @@ Once the build has been produced, deploy the site to firebase by running `fireba
 For more in-depth information on any of the steps or libraries use, see the development guide:
 
 [Development Guide](development.md)
+[Contributing Guide](CONTRIBUTING.md)

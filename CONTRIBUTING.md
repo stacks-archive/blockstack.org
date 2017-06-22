@@ -1,3 +1,7 @@
+# Maintainers
+
+![Ryan Shea](shea-avatar) ![Guy Lepage](lepage-avatar)
+
 # Contributing to Blockstack
 
 Looking to contribute something to Blockstack? **Here's how you can help.**
@@ -171,3 +175,6 @@ Run `npm run dev` before committing to ensure your changes follow our coding sta
 ## License
 
 By contributing your code, you agree to license your contribution under the [MPL-2.0 License](LICENSE.md).
+
+[shea-avatar]: https://avatars1.githubusercontent.com/u/994646?v=3&s=100
+[lepage-avatar]: https://avatars0.githubusercontent.com/u/1711854?v=3&s=100
