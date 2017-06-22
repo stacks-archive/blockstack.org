@@ -297,24 +297,26 @@ class HomePage extends Component {
                       <p className="light-gray text-center">
                         Available today!
                       </p>
-                      <pre className="">
-                        blockstack<span className="codeHighlight">.</span>redirectUserToSignIn() <br />
-                        blockstack<span className="codeHighlight">.</span>signUserIn(<span className="codeHighlight">user</span>) <span className="codeHighlight">=></span> {})
-                      </pre>
+                      <p className="text-center">
+                        <Image className="col3-img-lg"
+                          src="/images/visuals/text-editor-identity.svg"
+                          fallbackSrc=""
+                          retinaSupport={false} />
+                      </p>
                     </div>
-                    <div className="col-md-4 no-padding">
+                    <div className="col-md-4">
                       <h4 className="text-center m-b-10">
                         Storage
                       </h4>
                       <p className="light-gray text-center">
                         <i>(Coming Soon...)</i>
                       </p>
-                      <pre className="">
-                        blockstack<span className="codeHighlight">.</span>putFile(<span className="codeHighlight">"settings.txt"</span>, {}) <br />
-                          <span className="codeHighlight codeLeft">.</span>then(<span className="codeHighlight">success =></span> {}) <br />
-                        blockstack<span className="codeHighlight">.</span>getFile(<span className="codeHighlight">"settings.txt"</span>) <br />
-                          <span className="codeHighlight codeLeft">.</span>then(<span className="codeHighlight">data =></span> {})
-                      </pre>
+                      <p className="text-center">
+                        <Image className="col3-img-lg"
+                          src="/images/visuals/text-editor-storage.svg"
+                          fallbackSrc=""
+                          retinaSupport={false} />
+                      </p>
                     </div>
                     <div className="col-md-4">
                       <h4 className="text-center m-b-10">
@@ -323,12 +325,12 @@ class HomePage extends Component {
                       <p className="light-gray text-center">
                         <i>(Coming Soon...)</i>
                       </p>
-                      <pre className="">
-                        blockstack<span className="codeHighlight">.</span>getPaymentInfo(<span className="codeHighlight">"werner.id"</span>) <br />
-                          <span className="codeHighlight codeLeft">.</span>then(<span className="codeHighlight">data =></span> {}) <br />
-                        blockstack<span className="codeHighlight">.</span>sendMoney(<span className="codeHighlight">"werner.id"</span>) <br />
-                          <span className="codeHighlight codeLeft">.</span>then(<span className="codeHighlight">success =></span> {})
-                      </pre>
+                      <p className="text-center">
+                        <Image className="col3-img-lg"
+                          src="/images/visuals/text-editor-payments.svg"
+                          fallbackSrc=""
+                          retinaSupport={false} />
+                      </p>
                     </div>
                   </div>
                   <div className="container">

@@ -407,7 +407,8 @@ li.nav-item:nth-last-child(2){display:none;}
 .text-stats{font-family:'Source Code Pro',monospace;font-size:0.8125rem;font-weight:400;}
 .landing-hero-img{display:none;}
 .no-padding-sm{padding-right:0;padding-left:0;}
-.col-img{max-width: 110px;}
+.col-img{max-width:110px;}
+.col3-img-lg{width:100%;min-width:210px;max-width:425px;}
 
 /* Tutorials */
 iframe{height:530px;}
@@ -612,6 +613,7 @@ section{word-break:break-word;}
   .landing-hero-img{display:initial;}
   .text-center-md{text-align:center;}
   .no-padding-sm{padding-right:15px;padding-left:15px;}
+  .col3-img-lg{width:110%;max-width:310px;}
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -664,6 +666,7 @@ section{word-break:break-word;}
   /* 37. Misc */
   .simple-featurette{margin-top:155px;}
   .sectionWrap{padding-right:15px;padding-left:15px;}
+  .col3-img-lg{width:unset;max-width:310px;}
 
   /* Footer */
   .foot-left-col{width:22.3%}

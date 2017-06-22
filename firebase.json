@@ -12,36 +12,8 @@
     ],
     "rewrites": [
       {
-        "source": "/posts/blockchain-identity",
-        "destination": "/docs-posts-blockchain-identity.html"
-      },
-      {
-        "source": "/posts/blockstack-core-v0-14",
-        "destination": "/docs-posts-blockstack-core-v0-14.html"
-      },
-      {
-        "source": "/posts/blockstack-profiles",
-        "destination": "/docs-posts-blockstack-profiles.html"
-      },
-      {
-        "source": "/posts/blockstack-vs-dns",
-        "destination": "/docs-posts-blockstack-vs-dns.html"
-      },
-      {
-        "source": "/posts/blockstack-vs-namecoin",
-        "destination": "/docs-posts-blockstack-vs-namecoin.html"
-      },
-      {
-        "source": "/posts/how-blockstack-works",
-        "destination": "/docs-posts-how-blockstack-works.html"
-      },
-      {
-        "source": "/posts/identity-attestation",
-        "destination": "/docs-posts-identity-attestation.html"
-      },
-      {
-        "source": "/posts/namespaces",
-        "destination": "/docs-posts-namespaces.html"
+        "source": "/posts/",
+        "destination": "/docs-posts-.html"
       },
       {
         "source": "/tutorials/readme",

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="356px" height="118px" viewBox="0 0 356 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>text-editor-identity</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="344" height="105.347656" rx="6"></rect>
+        <filter x="-2.9%" y="-7.6%" width="105.8%" height="119.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sections/Tutorials-Copy" transform="translate(-185.000000, -350.000000)">
+            <g id="text-editor-identity" transform="translate(191.000000, 354.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <use fill="#222528" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <rect id="Rectangle-Copy" fill="#32363A" mask="url(#mask-2)" x="0" y="0" width="39" height="105.347656"></rect>
+                <text id="1-2" mask="url(#mask-2)" font-family="SourceCodePro-Bold, Source Code Pro" font-size="12" font-weight="bold" line-spacing="19" fill="#7B7B7B">
+                    <tspan x="18.8" y="27">1</tspan>
+                    <tspan x="18.8" y="46">2</tspan>
+                </text>
+                <text id="blockstack.redirectU" mask="url(#mask-2)" font-family="SourceCodePro-Semibold, Source Code Pro" font-size="12" font-weight="500" line-spacing="19">
+                    <tspan x="60" y="27" fill="#2C96FF">blockstack</tspan>
+                    <tspan x="132" y="27" fill="#E91E63">.</tspan>
+                    <tspan x="139.2" y="27" fill="#2C96FF">redirectUserToSignIn()</tspan>
+                    <tspan x="60" y="46" fill="#2C96FF">blockstack</tspan>
+                    <tspan x="132" y="46" fill="#E91E63">.</tspan>
+                    <tspan x="139.2" y="46" fill="#2C96FF">signUserIn(</tspan>
+                    <tspan x="218.4" y="46" fill="#E91E63">user</tspan>
+                    <tspan x="247.2" y="46" fill="#2C96FF">) </tspan>
+                    <tspan x="261.6" y="46" fill="#E91E63">=&gt;</tspan>
+                    <tspan x="276" y="46" fill="#2C96FF"> {})</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
