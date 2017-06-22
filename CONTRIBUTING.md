@@ -18,6 +18,13 @@ restrictions:
 
 * Please **do not** post comments consisting solely of "+1" or ":thumbsup:". Use [GitHub's "reactions" feature](https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments) instead. We reserve the right to delete comments which violate this rule.
 
+### When reporting a bug, include:
+
+* Operating system and version (Windows, Mac OS X, Android, iOS, Win10 Mobile)
+
+* Browser and version (Chrome, Firefox, Safari, IE, MS Edge, Opera 15+, Android Browser)
+
+* Reduced test cases and potential fixes using [JS Bin](https://jsbin.com)
 
 ## Issues and labels
 
@@ -47,7 +54,7 @@ Guidelines for bug reports:
 
 0. **Validate and lint your code** &mdash; [validate your HTML](https://html5.validator.nu) and [lint your HTML](https://github.com/twbs/bootlint) to ensure your problem isn't caused by a simple error in your own code.
 
-1. **Use the GitHub issue search** &mdash; check if the issue has already been reported.
+1. **Use the GitHub issue search** &mdash; [Search for duplicate or closed issues](https://github.com/blockstack/blockstack.org/issues?utf8=%E2%9C%93&q=is%3Aissue).
 
 2. **Check if the issue has been fixed** &mdash; try to reproduce it using the latest `master` or development branch in the repository.
 
@@ -77,7 +84,7 @@ Example:
 
 ## Feature requests
 
-Feature requests are welcome. But take a moment to find out whether your idea fits with the scope and aims of the project. It's up to *you* to make a strong case to convince the project's developers of the merits of this feature. Please provide as much detail and context as possible.
+Feature requests are welcome. But take a moment to find out whether your idea fits with the scope and aims of the project. It's up to *you* to make a strong case to convince the project's developers of the merits of this feature. Please provide as much detail and context as possible, providing relevant links, prior art, or live demos whenever possible.
 
 
 ## Pull requests
