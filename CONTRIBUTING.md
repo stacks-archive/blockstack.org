@@ -1,26 +1,3 @@
-# Maintainers
-
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top">
-        <img width="150" height="150" src="https://github.com/shea256.png?s=150">
-        <br>
-        <a href="https://github.com/shea256">Ryan Shea</a>
-        <br>
-        <p>master branch</p>
-      </td>
-      <td align="center" valign="top">
-        <img width="150" height="150" src="https://github.com/guylepage3.png?s=150">
-        <br>
-        <a href="https://github.com/guylepage3">Guy Lepage</a>
-        <br>
-        <p>design branch</p>
-      </td>
-     </tr>
-  </tbody>
-</table>
-
 # Contributing to Blockstack
 
 Looking to contribute something to Blockstack? **Here's how you can help.**
@@ -190,6 +167,28 @@ includes code changes) and under the terms of the
 
 Run `npm run dev` before committing to ensure your changes follow our coding standards.
 
+# Maintainers
+
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top">
+        <img width="150" height="150" src="https://github.com/shea256.png?s=150">
+        <br>
+        <a href="https://github.com/shea256">Ryan Shea</a>
+        <br>
+        <p>master branch</p>
+      </td>
+      <td align="center" valign="top">
+        <img width="150" height="150" src="https://github.com/guylepage3.png?s=150">
+        <br>
+        <a href="https://github.com/guylepage3">Guy Lepage</a>
+        <br>
+        <p>design branch</p>
+      </td>
+     </tr>
+  </tbody>
+</table>
 
 ## License
 
