@@ -1,6 +1,25 @@
 # Maintainers
 
-![Ryan Shea](shea-avatar) ![Guy Lepage](lepage-avatar)
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top">
+        <img width="150" height="150" src="https://github.com/shea256.png?s=150">
+        <br>
+        <a href="https://github.com/shea256">Ryan Shea</a>
+        <br>
+        <p>master branch</p>
+      </td>
+      <td align="center" valign="top">
+        <img width="150" height="150" src="https://github.com/guylepage3.png?s=150">
+        <br>
+        <a href="https://github.com/guylepage3">Guy Lepage</a>
+        <br>
+        <p>design branch</p>
+      </td>
+     </tr>
+  </tbody>
+</table>
 
 # Contributing to Blockstack
 
@@ -175,6 +194,3 @@ Run `npm run dev` before committing to ensure your changes follow our coding sta
 ## License
 
 By contributing your code, you agree to license your contribution under the [MPL-2.0 License](LICENSE.md).
-
-[shea-avatar]: https://avatars1.githubusercontent.com/u/994646?v=3&s=400
-[lepage-avatar]: https://avatars0.githubusercontent.com/u/1711854?v=3&s=400
