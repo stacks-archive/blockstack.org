@@ -6,9 +6,11 @@ import DocumentTitle from 'react-document-title'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 
-import {BlogActions}  from '../datastore/Blog'
-import {StatsActions} from '../datastore/Stats'
-import Image          from '../components/Image'
+import {BlogActions}       from '../datastore/Blog'
+import {StatsActions}      from '../datastore/Stats'
+import Image               from '../components/Image'
+import TransparentHeader   from '../components/TransparentHeader'
+import Footer              from '../components/Footer'
 
 function mapStateToProps(state) {
   return {
@@ -60,67 +62,164 @@ class HomePage extends Component {
   render() {
     const firstThreePosts = this.state.posts.slice(0, 3)
 
+    const content = {
+      oldInternet: [
+        {
+          title: 'Mass Data Breaches',
+          body: 'Traditional apps store user data in massive data silos. This results in high value targets just waiting to be breached. With a single app, confidence in the safety of your data requires blind trust in dozens of companies.'
+        },
+        {
+          title: 'Insecure Connections',
+          body: 'With traditional apps, a secure connection is far from a certainty. Domain names and website certificates are vulnerable to compromise. Reliance on 3rd party servers and many trusted services makes us less safe.'
+        },
+        {
+          title: 'Platform Lock-in',
+          body: 'With traditional apps, the digital keys to identity and authentication are owned by large monopoly platforms. Users and developers are locked in and restrictions are placed on innovation.'
+        }
+      ],
+      newInternet: [
+        {
+          title: 'Own Your Data',
+          body: 'With Blockstack apps you truly own your data. It’s kept on your device and encrypted before backed up in the cloud. This removes the need for blind trust in 3rd parties and makes it easier to keep your data safe.'
+        },
+        {
+          title: 'Own Your Apps',
+          body: 'Blockstack apps put you in control of your software. Apps are loaded via a secure domain name system and live on your devices. Independence from 3rd parties makes you more safe.'
+        },
+        {
+          title: 'Own Your Identity',
+          body: 'With Blockstack apps you own your identity. Your digital keys are seamlessly generated and kept on your device. This lets you move freely between apps and control your online experience.'
+        }
+      ],
+      fullStack: [
+        {
+          title: 'Identity',
+          body: 'With Blockstack, users get digital keys that let them own their identity. They sign in to apps locally without remote servers or identity providers.'
+        },
+        {
+          title: 'Storage',
+          body: 'Blockstack\'s storage system allows users to bring their own storage providers and control their data. Data is encrypted and easily shared between applications.'
+        },
+        {
+          title: 'Payments',
+          body: 'Blockstack uses Bitcoin and other crypto-currencies for simple peer-to-peer payments. Developers can charge for downloads, subscriptions, and more.'
+        },
+      ],
+      appPossibilities: [
+        {
+          title: 'Decentralized Social Networks',
+          body: 'Existing social networks lock in users and limit access. Build a decentralized social network that allows users to own their relationships and data and take it with them wherever they go.'
+        },
+        {
+          title: 'Peer-to-peer Marketplaces',
+          body: 'Existing marketplaces take a massive haircut and limit what can be bought and sold. Build a peer-to-peer marketplace that allows individuals to freely transact at a lower cost.'
+        },
+        {
+          title: 'Collaborative Search Engines',
+          body: 'The web was built to be open and accessible but today the search indexes we rely upon are proprietary. Build a platform that incentivizes people to contribute to a collaborative index.'
+        }
+      ]
+    }
+
     return (
       <DocumentTitle title="Blockstack, building the decentralized internet">
         <div className="body-hero">
           <div className="col-centered block">
+            <TransparentHeader />
             <div className="container">
               <section className="hero">
                 <h1 className="hero-head">
-                  Build decentralized, serverless apps
+                 A New Internet for Decentralized Apps
                 </h1>
-                <p className="lead hero-lead col-md-5 block">
-                  Blockstack is a new decentralized internet where you own your data and apps run locally without remote servers.
+                <p className="lead hero-lead col-md-9 col-centered">
+                  Blockstack is a new decentralized internet where users own their data and apps run locally. A browser portal is all that’s needed to get started.
                 </p>
-                <p className="no-padding col-md-12">
-                  <Link to="/tutorials/hello-blockstack" role="button"
-                    className="btn btn-lg btn-secondary btn-block">
-                    Watch Tutorial
-                  </Link>
-                </p>
-                <p className="no-padding col-md-12 hero-caption">
-                  <Link to="/install" className="hero-caption-text">
-                    Try the browser portal &nbsp; › &nbsp;
-                    <span className="hero-caption-link">Install</span>
-                  </Link>
-                </p>
+                <div className="no-padding container-fluid col-md-9 col-centered">
+                  <div className="col-sm-12 text-center landing-hero-img">
+                    <Image className="landing-feat-img"
+                      src="/images/resources/portal-home-screen.png"
+                      fallbackSrc="/images/tutorials/portal-home-screen.png"
+                      retinaSupport={false} />
+                  </div>
+                </div>
+                <div className="no-padding container-fluid col-md-9 col-lg-7 col-centered">
+                  <div className="col-md-6">
+                    <p className="no-padding hero-btn-title">
+                      Developers
+                    </p>
+                    <p className="no-padding m-b-10">
+                      <Link to="/developers" role="button"
+                        className="btn btn-sm btn-secondary btn-block btn-hero">
+                        Developer Kit
+                      </Link>
+                    </p>
+                  </div>
+                  <div className="col-md-6">
+                    <p className="no-padding hero-btn-title">
+                      Users
+                    </p>
+                    <p className="no-padding">
+                      <Link to="/users" role="button"
+                        className="btn btn-sm btn-secondary btn-block btn-hero">
+                        Join the Waitlist
+                      </Link>
+                    </p>
+                  </div>
+                </div>
               </section>
+            </div>
+            <div className="section-stats container-fluid">
+              <div className="container">
+                <section>
+                  <div className="no-padding col-sm-12 col-md-4 text-center text-white text-stats">
+                    ——›&nbsp;{this.state.stats.domains} users registered
+                  </div>
+                  <div className="no-padding col-sm-12 col-md-4 text-center text-white text-stats">
+                    ——›&nbsp;In production for 3+ years
+                  </div>
+                  <div className="no-padding col-sm-12 col-md-4 text-center text-white text-stats">
+                    ——›&nbsp;{this.state.stats.slackUsers} community devs
+                  </div>
+                </section>
+              </div>
             </div>
             <div className="section-even container-fluid">
               <div className="container">
                 <section>
                   <h1 className="modern text-center">
-                    Why build on Blockstack?
+                    The Old Internet is Broken
                   </h1>
                   <div className="row">
-                    <div className="col-md-4 no-padding">
-                      <h3 className="modern text-center">
-                        No infrastructure
-                      </h3>
-                      <p className="lead lead-centered col-md-10 block col-centered text-center">
-                        Build apps without databases or server maintainance. Publish apps to the decentralized internet where they will run on user devices and live forever.
-                      </p>
-                    </div>
-                    <div className="col-md-4 no-padding">
-                      <h3 className="modern text-center">
-                        Get users faster
-                      </h3>
-                      <p className="lead lead-centered col-md-10 block col-centered text-center">
-                        Make it easier than ever for users to switch with shared data protocols between apps and freedom from walled gardens, censorship, and middlemen.
-                      </p>
-                    </div>
-                    <div className="col-md-4 no-padding">
-                      <h3 className="modern text-center">
-                        Be paid for open source
-                      </h3>
-                      <p className="lead lead-centered col-md-10 block col-centered text-center">
-                        New business models enable you to get paid for open source code. Utilize micropayments, blockchain protocols, and more.
-                      </p>
-                    </div>
+                    {content.oldInternet.map((item) => {
+                      return (
+                        <div className="col-md-4">
+                          <h3 className="modern text-center">
+                            {item.title}
+                          </h3>
+                          <p>
+                            {item.body}
+                          </p>
+                        </div>
+                      )
+                    })}
                   </div>
-                  <p className="lead lead-centered col-md-10 block col-centered text-center m-t-1">
-                    Build on a platform in production for <b>3+ years</b> with <b>{this.state.stats.domains} domains</b> registered and open source software maintained by a well-funded community.
-                  </p>
+                  <h1 className="modern text-center m-t-5">
+                    The New Internet is Here
+                  </h1>
+                  <div className="row">
+                    {content.newInternet.map((item) => {
+                      return (
+                        <div className="col-md-4">
+                          <h3 className="modern text-center">
+                            {item.title}
+                          </h3>
+                          <p>
+                            {item.body}
+                          </p>
+                        </div>
+                      )
+                    })}
+                  </div>
                 </section>
               </div>
             </div>
@@ -128,34 +227,22 @@ class HomePage extends Component {
               <div className="container">
                 <section>
                   <h1 className="modern text-center">
-                    New internet. New browser experience.
+                    A Full Stack for Decentralized Apps
                   </h1>
-                  <p className="lead lead-centered col-md-10 block col-centered text-center">
-                    Introducing the Blockstack browser portal - your way to access the new decentralized internet.
-                  </p>
                   <div className="row">
-                    <div className="col-md-4 no-padding">
-                      <h3 className="modern text-center">
-                        Free yourself from platform lock-in
-                      </h3>
-                    </div>
-                    <div className="col-md-4 no-padding">
-                      <h3 className="modern text-center">
-                        Be safe from tracking & mass breaches
-                      </h3>
-                    </div>
-                    <div className="col-md-4 no-padding">
-                      <h3 className="modern text-center">
-                        Powered by blockchain technology
-                      </h3>
-                    </div>
+                    {content.fullStack.map((item) => {
+                      return (
+                        <div className="col-md-4">
+                          <h3 className="modern text-center">
+                            {item.title}
+                          </h3>
+                          <p>
+                            {item.body}
+                          </p>
+                        </div>
+                      )
+                    })}
                   </div>
-                  <p className="lead-centered m-t-3">
-                    <Link to="/install" role="button"
-                      className="btn btn-lg btn-outline-primary btn-block">
-                      Install Browser Portal
-                    </Link>
-                  </p>
                 </section>
               </div>
             </div>
@@ -163,54 +250,29 @@ class HomePage extends Component {
               <div className="container">
                 <section>
                   <h1 className="modern text-center">
-                    A full trustless stack
+                    Step-by-step tutorials
                   </h1>
                   <div className="row">
-                    <div className="col-md-4 no-padding">
-                      <h3 className="modern text-center">
-                        Identity & Auth
-                      </h3>
-                      <p className="lead lead-centered col-md-10 block col-centered text-center">
-                        With Blockstack, users get a set of digital keys that let them own their identity.
-                        From there, they can sign in to apps locally without remote servers or identity providers.
+                    <div className="col-md-8 col-centered">
+                      <p className="modern text-center">
+                        Complete the step-by-step tutorial and see how easy it is to build an app with a decentralized identity system in a few lines of code and no servers.
                       </p>
-                    </div>
-                    <div className="col-md-4 no-padding">
-                      <h3 className="modern text-center">
-                        Storage
-                      </h3>
-                      <p className="lead lead-centered col-md-10 block col-centered text-center">
-                        Blockstack's storage system allows users to bring their own storage providers and control their data.
-                        Data is encrypted and easily shared between applications.
+                      <p className="modern text-center">
+                        <Link to="/tutorials/hello-blockstack">
+                          <Image className="landing-feat-img"
+                            src="/images/tutorials/hello-blockstack-fastforward.gif"
+                            fallbackSrc="/images/tutorials/hello-blockstack-fastforward.gif"
+                            retinaSupport={false} />
+                        </Link>
                       </p>
-                    </div>
-                    <div className="col-md-4 no-padding">
-                      <h3 className="modern text-center">
-                        Naming
-                      </h3>
-                      <p className="lead lead-centered col-md-10 block col-centered text-center">
-                        Blockstack's naming system (BNS) is completely decentralized, securely maps names to keys and routing info,
-                        and can be run on any blockchain.
+                      <p className="modern text-center">
+                        Want to learn more about building apps on blockstack? Tutorials on building serverless apps with decentralized storage are coming soon.
                       </p>
-                    </div>
-                  </div>
-                  <div className="row" style={{ display: 'none' }}>
-                    <div className="col-md-4 offset-md-2 no-padding">
-                      <h3 className="modern text-center">
-                        Payments
-                      </h3>
-                      <p className="lead lead-centered col-md-10 block col-centered text-center">
-                        With Blockstack, you can accept simple one-time payments, enable continuous micropayments, and do much more.
-                        All with a global-accepted and decentralized currency called Bitcoin.
-                      </p>
-                    </div>
-                    <div className="col-md-4 no-padding">
-                      <h3 className="modern text-center">
-                        Encryption
-                      </h3>
-                      <p className="lead lead-centered col-md-10 block col-centered text-center">
-                        With Blockstack, all files and communication is end-to-end encrypted by default.
-                        Blockstack handles key distribution and discovery so you don't have to.
+                      <p className="modern text-center">
+                        <Link to="/tutorials" role="button"
+                          className="btn btn-outline-primary btn-block">
+                          Try the Tutorials
+                        </Link>
                       </p>
                     </div>
                   </div>
@@ -223,73 +285,24 @@ class HomePage extends Component {
                   <h1 className="modern text-center">
                     Easily build apps like these
                   </h1>
-                  <div>
-                    <div className="col-md-4 no-padding feat-card">
-                      <h3 className="modern text-center">
-                        Liquid democracy
-                      </h3>
-                    </div>
-                    <div className="col-md-4 no-padding feat-card">
-                      <h3 className="modern text-center">
-                        Peer-to-peer marketplaces
-                      </h3>
-                    </div>
-                    <div className="col-md-4 no-padding feat-card">
-                      <h3 className="modern text-center">
-                        Decentralized social networks
-                      </h3>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="col-md-4 no-padding feat-card">
-                      <h3 className="modern text-center">
-                        Open ridesharing
-                      </h3>
-                    </div>
-                    <div className="col-md-4 no-padding feat-card">
-                      <h3 className="modern text-center">
-                        Verified file publishing
-                      </h3>
-                    </div>
-                    <div className="col-md-4 no-padding feat-card">
-                      <h3 className="modern text-center">
-                        Encrypted health records
-                      </h3>
-                    </div>
+                  <div className="row">
+                    {content.appPossibilities.map((item) => {
+                      return (
+                        <div className="col-md-4">
+                          <h3 className="modern text-center">
+                            {item.title}
+                          </h3>
+                          <p>
+                            {item.body}
+                          </p>
+                        </div>
+                      )
+                    })}
                   </div>
                 </section>
               </div>
             </div>
             <div className="section-even container-fluid">
-              <div className="container">
-                <section>
-                  <h1 className="modern text-center">
-                    Step-by-step tutorials
-                  </h1>
-                  <p className="lead lead-centered col-md-10 block col-centered text-center">
-                    <Link to="/tutorials/hello-blockstack">
-                      <Image className="landing-feat-img"
-                        src="/images/tutorials/hello-blockstack-fastforward.gif"
-                        fallbackSrc="/images/tutorials/hello-blockstack-fastforward.gif"
-                        retinaSupport={false} />
-                    </Link>
-                  </p>
-                  <p className="lead lead-centered col-md-10 block col-centered text-center">
-                    Complete the step-by-step tutorial and see how easy it is to build an app with a decentralized identity system in a few lines of code and no servers.
-                  </p>
-                  <p className="lead lead-centered col-md-10 block col-centered text-center">
-                    <Link to="/tutorials/hello-blockstack" role="button"
-                      className="btn btn-outline-primary btn-block">
-                      Hello Blockstack Tutorial
-                    </Link>
-                  </p>
-                  <p className="lead lead-centered col-md-10 block col-centered text-center">
-                    Want to learn more about building apps on blockstack? Tutorials on building serverless apps with decentralized storage are coming soon.
-                  </p>
-                </section>
-              </div>
-            </div>
-            <div className="section-odd container-fluid">
               <div className="container">
                 <section>
                   <h1 className="modern text-center">
@@ -322,12 +335,39 @@ class HomePage extends Component {
                     )
                   }) }
                   </div>
-                  <p className="lead-centered">
-                    <Link to="/newsletter" role="button"
-                      className="btn btn-lg btn-outline-primary btn-block">
-                      Get Updates
-                    </Link>
-                  </p>
+                </section>
+              </div>
+            </div>
+            <div className="section-odd container-fluid">
+              <div className="container">
+                <section>
+                  <h1 className="modern text-center">
+                    Get Started
+                  </h1>
+                  <div className="row">
+                    <div className="col-md-6">
+                      <p className="no-padding hero-btn-title">
+                        Developers
+                      </p>
+                      <p className="no-padding m-b-10">
+                        <Link to="/developers" role="button"
+                          className="btn btn-sm btn-secondary btn-block btn-hero">
+                          Developer Kit
+                        </Link>
+                      </p>
+                    </div>
+                    <div className="col-md-6">
+                      <p className="no-padding hero-btn-title">
+                        Users
+                      </p>
+                      <p className="no-padding">
+                        <Link to="/users" role="button"
+                          className="btn btn-sm btn-secondary btn-block btn-hero">
+                          Join the Waitlist
+                        </Link>
+                      </p>
+                    </div>
+                  </div>
                 </section>
               </div>
             </div>
@@ -339,36 +379,3 @@ class HomePage extends Component {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomePage)
-
-/*
-            <div className="section-even container-fluid">
-              <div className="container">
-                <section>
-                  <h1 className="modern text-center">
-                    The Blockstack app platform is here today
-                  </h1>
-                  <div className="row">
-                    <div className="col-md-4 no-padding feat-card">
-                      <h3 className="modern text-center">
-                        In production for over 3 years
-                      </h3>
-                    </div>
-                    <div className="col-md-4 no-padding feat-card">
-                      <h3 className="modern text-center">
-                        {this.state.stats.domains} domains registered
-                      </h3>
-                    </div>
-                    <div className="col-md-4 no-padding feat-card">
-                      <h3 className="modern text-center">
-                        Used by Microsoft, OpenBazaar & more
-                      </h3>
-                    </div>
-                  </div>
-                  <p className="lead lead-centered col-md-10 block col-centered text-center m-t-3">
-                    Build on a decentralized platform that's been in production use for years,
-                    with open source software maintained by a well-funded team.
-                  </p>
-                </section>
-              </div>
-            </div>
-*/

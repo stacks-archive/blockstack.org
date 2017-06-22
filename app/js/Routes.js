@@ -23,10 +23,13 @@ import BlogPostPage                from './pages/BlogPostPage'
 import JobsPage                    from './pages/JobsPage'
 import TalkPage                    from './pages/TalkPage'
 import SignUpPage                  from './pages/SignUpPage'
+import DevSignUpPage               from './pages/DevSignUpPage'
 import DownloadPage                from './pages/DownloadPage'
 import FAQPage                     from './pages/FAQPage'
 import TutorialsPage               from './pages/TutorialsPage'
 import TutorialPage                from './pages/TutorialPage'
+import AuthPage                    from './pages/AuthPage'
+import RoadmapPage                 from './pages/RoadmapPage'
 
 export default (
   <Router history={browserHistory} onUpdate={() => window.scrollTo(0, 0)}>
@@ -35,7 +38,8 @@ export default (
       <IndexRoute component={HomePage} />
       <Route path="/" component={HomePage} />
 
-      <Route path="/newsletter" component={SignUpPage} />
+      <Route path="/users" component={SignUpPage} />
+      <Route path="/developers" component={DevSignUpPage} />
       <Route path="/install" component={DownloadPage} />
 
       <Route path="/intro" component={IntroPage} />
@@ -61,6 +65,10 @@ export default (
 
       <Route path="/posts/:docSection" component={ArticlePage} />
       <Route path="/docs/:docSection" component={ArticlePage} />
+
+      <Route path="/auth" component={AuthPage} />
+
+      <Route path="/roadmap" component={RoadmapPage} />
 
       <Route path="*" component={NotFoundPage} />
     </Route>

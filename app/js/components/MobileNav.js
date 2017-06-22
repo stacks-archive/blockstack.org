@@ -14,18 +14,13 @@ class MobileNav extends Component {
       <div className="mobile-nav collapse" id="mobile-nav" aria-expanded="false">
         <ul className="nav nav-justified">
           <li className="nav-item">
-            <Link to="/intro" className="nav-link">
-              Intro
+            <Link to="/install" className="nav-link">
+              Install
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/about" className="nav-link">
-              About
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/docs" className="nav-link">
-              Docs
+            <Link to="/tutorials" className="nav-link">
+              Tutorials
             </Link>
           </li>
           <li className="nav-item">
@@ -48,8 +43,7 @@ class MobileNav extends Component {
               FAQs
             </Link>
           </li>
-          <li role="separator" className="divider"></li>
-          <li className="nav-item m-b-1">
+          <li className="nav-item">
             <Link to="https://github.com/blockstack" className="nav-link" target="_blank">
               <i className="fa fa-github"></i>
               <span>Code</span>
