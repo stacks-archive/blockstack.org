@@ -176,5 +176,5 @@ Run `npm run dev` before committing to ensure your changes follow our coding sta
 
 By contributing your code, you agree to license your contribution under the [MPL-2.0 License](LICENSE.md).
 
-[shea-avatar]: https://avatars1.githubusercontent.com/u/994646?v=3&s=100
-[lepage-avatar]: https://avatars0.githubusercontent.com/u/1711854?v=3&s=100
+[shea-avatar]: https://avatars1.githubusercontent.com/u/994646?v=3&s=400
+[lepage-avatar]: https://avatars0.githubusercontent.com/u/1711854?v=3&s=400
