@@ -6,6 +6,16 @@ Please take a moment to review this document in order to make the contribution p
 
 Following these guidelines helps to communicate that you respect the time of everyone involved in the Blockstack open source community. In return, the community will address your issue or assess patches and features as quickly as possible.
 
+## Table of contents
+
+- [Blockstack Brand Guide](https://github.com/blockstack/designs/issues/247)
+- [Using the issue tracker](#using-the-issue-tracker)
+- [Bug reports](#bug-reports)
+- [Feature requests](#feature-requests)
+- [Pull requests](#pull-requests)
+- [Code guidelines](#code-guidelines)
+- [Maintainers](#maintainers)
+- [License](#license)
 
 ## Using the issue tracker
 
@@ -148,7 +158,7 @@ Adhering to the following process is the best way to get your work included in t
     with a clear title and description against the `design` branch.
 
 **IMPORTANT**: By submitting a patch, you agree to allow the project owners to
-license your work under the terms of the [MPL-2.0 License](LICENSE.md) (if it
+license your work under the terms of the [MPL-2.0 License](https://github.com/blockstack/blockstack-browser/blob/master/LICENSE.md) (if it
 includes code changes) and under the terms of the
 [Creative Commons Attribution 3.0 Unported License](docs/LICENSE.md)
 (if it includes documentation changes).
@@ -199,4 +209,4 @@ Run `npm run dev` before committing to ensure your changes follow our coding sta
 
 ## License
 
-By contributing your code, you agree to license your contribution under the [MPL-2.0 License](LICENSE.md).
+By contributing your code, you agree to license your contribution under the [MPL-2.0 License](https://github.com/blockstack/blockstack-browser/blob/master/LICENSE.md).
