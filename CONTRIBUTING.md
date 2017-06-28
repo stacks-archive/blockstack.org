@@ -33,6 +33,8 @@ If the ticket your interested in is being worked, feel free to provide feedback.
 Otherwise, leave a comment addressing one of the [repo maintainers](#maintainers) to get
 the conversation started.
 
+[^ Back To The Top](#contributing-to-blockstack)
+
 ## Using the issue tracker
 
 The [issue tracker](/issues) is the preferred channel for [bug reports](#bug-reports), [features requests](#feature-requests) and [submitting pull requests](#pull-requests), but please respect the following
