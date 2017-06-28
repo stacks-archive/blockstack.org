@@ -26,7 +26,8 @@ There are two common ways to find opportunities to contribute:
 - [Issue Tracker](/issues)
 
 The project boards is a great place to start. Look for the version that has the label `current`
-and look for a ticket in the `To Do` column. This should link to the relative ticket.
+and look for a ticket in the `To Do` column. Click on the ticket your interested in
+and this will link you to the relative issue in the tracker.
 
 If the ticket your interested in is being worked, feel free to provide feedback.
 
