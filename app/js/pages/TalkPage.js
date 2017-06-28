@@ -4,7 +4,7 @@ import {Component}      from 'react'
 import DocumentTitle    from 'react-document-title'
 
 import Talk             from '../components/Talk'
-import {talks}          from '../config'
+import {videos}         from '../../constants.json'
 
 class TalkPage extends Component {
 
@@ -30,11 +30,13 @@ class TalkPage extends Component {
   setTalk(props) {
     if (props.routeParams.hasOwnProperty('slug')) {
       const slug = props.routeParams.slug
-      if (talks.hasOwnProperty(slug)) {
-        this.setState({
-          talk: talks[slug]
-        })
-      }
+      videos.forEach(video => {
+        if (video.urlSlug === slug) {
+          this.setState({
+            talk: video
+          })
+        }
+      })
     }
   }
 
