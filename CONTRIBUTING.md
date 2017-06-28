@@ -126,6 +126,8 @@ Feature requests are welcome. But take a moment to find out whether your idea fi
 
 ## Pull requests
 
+**Working on your first Pull Request?** You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
+
 Good pull requests—patches, improvements, new features—are a fantastic help. They should remain focused in scope and avoid containing unrelated commits.
 
 **Please ask first** before embarking on any significant pull request (e.g. implementing features, refactoring code, porting to a different language), otherwise you risk spending a lot of time working on something that the project's developers might not want to merge into the project.
@@ -181,8 +183,10 @@ Adhering to the following process is the best way to get your work included in t
    git push origin <topic-branch-name>
    ```
 
-7. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
-    with a clear title and description against the `design` branch.
+7. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/) against the `design` branch.
+    - Add a clear title and description
+    - Include screenshots of the before and after if your changes include differences in HTML/CSS. Drag and drop the images into the body of your pull request.
+    - Reference any relevant issues or supporting documentation in your PR (ex. “Closes #37.”)
 
 **IMPORTANT**: By submitting a patch, you agree to allow the project owners to
 license your work under the terms of the [MPL-2.0 License](https://github.com/blockstack/blockstack-browser/blob/master/LICENSE.md) (if it
