@@ -32,20 +32,25 @@ class Talk extends Component {
             <b>Location:</b> {this.props.location}
           </p>
         </div>
-        <div className="row">
-          { this.props.youtubeURL ?
+        { this.props.youtubeURL && this.props.speakerDeckID ?
+        <div className="row">          
           <div className="col-md-6">
             <EmbedYouTube src={this.props.youtubeURL} />
           </div>
-          : null }
-          { this.props.speakerDeckID ?
           <div className="col-md-6">
             <EmbedSpeakerDeck
               dataID={this.props.speakerDeckID}
               dataRatio="1.77777777777778" />
           </div>
-          : null }
         </div>
+        : null }
+        { this.props.youtubeURL && !this.props.speakerDeckID ?
+        <div className="row">          
+          <div className="col-md-12">
+            <EmbedYouTube src={this.props.youtubeURL} />
+          </div>
+        </div>
+        : null }
       </div>
     )
   }

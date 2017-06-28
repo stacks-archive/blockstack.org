@@ -6,9 +6,14 @@ function updateStats(stats) {
     slackUsers = stats.slack_users
   }
 
+  let domains = 72000
+  if (stats.domains !== 0) {
+    domains = stats.domains
+  }
+
   return {
     type: UPDATE_STATS,
-    domains: stats.domains,
+    domains: domains,
     forumUsers: stats.forum_users,
     meetupUsers: stats.meetup_users,
     slackUsers: slackUsers,

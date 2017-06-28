@@ -56,6 +56,14 @@
         "destination": "/docs-tutorials-hello-blockstack.html"
       },
       {
+        "source": "/blog/blockstack-summit-2017-freedom-to-innovate",
+        "destination": "/blog-blockstack-summit-2017-freedom-to-innovate.html"
+      },
+      {
+        "source": "/blog/introducing-the-blockstack-browser-a-gateway-to-a-new-decentralized-internet",
+        "destination": "/blog-introducing-the-blockstack-browser-a-gateway-to-a-new-decentralized-internet.html"
+      },
+      {
         "source": "/blog/blockstack-whitepaper-part-1",
         "destination": "/blog-blockstack-whitepaper-part-1.html"
       },
@@ -108,10 +116,6 @@
         "destination": "/blog-introducing-the-blockstack-identity-system.html"
       },
       {
-        "source": "/blog/initial-release-of-blockstack-core",
-        "destination": "/blog-initial-release-of-blockstack-core.html"
-      },
-      {
         "source": "**",
         "destination": "/index.html"
       }
@@ -130,6 +134,16 @@
       {
         "source": "/docs/what-is-blockstack",
         "destination": "/posts/blockstack-core",
+        "type": 301
+      },
+      {
+        "source": "/docs/how-blockstack-works",
+        "destination": "/whitepaper.pdf",
+        "type": 301
+      },
+      {
+        "source": "/blockstack_whitepaper.pdf",
+        "destination": "/whitepaper.pdf",
         "type": 301
       },
       {
@@ -164,7 +178,12 @@
       },
       {
         "source": "/articles/faq",
-        "destination": "/faqs",
+        "destination": "/faq",
+        "type": 301
+      },
+      {
+        "source": "/faqs",
+        "destination": "/faq",
         "type": 301
       },
       {
@@ -219,7 +238,12 @@
       },
       {
         "source": "/join",
-        "destination": "/newsletter",
+        "destination": "/users",
+        "type": 301
+      },
+      {
+        "source": "/newsletter",
+        "destination": "/users",
         "type": 301
       }
     ]

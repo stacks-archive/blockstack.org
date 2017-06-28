@@ -4,7 +4,7 @@ import {Component}      from 'react'
 import DocumentTitle    from 'react-document-title'
 
 import TalkPreview      from '../components/TalkPreview'
-import {talks}          from '../config'
+import {videos}         from '../../constants.json'
 
 class TalksPage extends Component {
 
@@ -22,8 +22,8 @@ class TalksPage extends Component {
                 <h1>
                   Videos
                 </h1>
-                { Object.keys(talks).map((key, index) => {
-                  const talk = talks[key]
+                { Object.keys(videos).map((key, index) => {
+                  const talk = videos[key]
                   return (
                     <TalkPreview
                       key={index}

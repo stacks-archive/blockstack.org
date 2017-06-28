@@ -70,51 +70,63 @@ gulp.task('buildBlog', () => {
   })
 })
 
+function buildDocFile(indexHtml, folderName, docFilename) {
+  let key = docFilename.split('.')[0].toLowerCase()
+  let docProperties = {}
+  if (folderName === '/') {
+    folderName = ''
+  }
+  let pathname = 'app/docs' + folderName + '/' + docFilename
+  let docPage = fs.readFileSync(pathname, 'utf8')
+  let pageSections = docPage.split('---')
+  
+  let description = ''
+  let image = ''
+  let title = ''
+  let url = 'https://blockstack.org/' + [folderName.replace(/^\/+/, ''), key].join('/')
+
+  if (pageSections.length === 3) {
+    docProperties.markdown = pageSections[2]
+    let propertyLines = pageSections[1].split('\n')
+    propertyLines.map((propertyLine) => {
+      if (propertyLine.split(': ').length >= 2) {
+        let parts = propertyLine.split(': ')
+        let propertyName = parts[0],
+            propertyValue = parts.slice(1).join(': ')
+        if (propertyName === 'description') {
+          description = propertyValue
+        }
+        if (propertyName === 'image') {
+          image = 'https://blockstack.org' + propertyValue
+        }
+        if (propertyName === 'title') {
+          title = propertyValue
+        }
+        docProperties[propertyName] = propertyValue.trim()
+      }
+    })
+  }
+  //allDocs[key] = docProperties
+  let metatagMarkup = createMetatagMarkup(url, title, description, image)
+  let modifiedIndex = indexHtml.replace('<meta charset="utf-8" />', metatagMarkup)
+  fs.writeFileSync('build/docs-' + [folderName.replace(/^\/+/, ''), key].join('-') + '.html', modifiedIndex)
+
+  return docProperties
+}
+
 gulp.task('buildDocs', () => {
   let allDocs = {}
 
   let indexHtml = fs.readFileSync('app/index.html', 'utf8')
 
-  let folderNames = ['tutorials', 'docs', 'posts']
+  let folderNames = ['/tutorials', '/docs', '/posts', '/']
 
   folderNames.forEach((folderName) => {
-    fs.readdirSync('app/docs/' + folderName).forEach((docFilename) => {
-      let key = docFilename.split('.')[0].toLowerCase(),
-          docProperties = {},
-          docPage = fs.readFileSync('app/docs/' + folderName + '/' + docFilename, 'utf8'),
-          pageSections = docPage.split('---')
-      
-      let description = '',
-          image = '',
-          title = '',
-          url = 'https://blockstack.org/' + folderName + '/' + key
-
-      if (pageSections.length === 3) {
-        docProperties.markdown = pageSections[2]
-        let propertyLines = pageSections[1].split('\n')
-        propertyLines.map((propertyLine) => {
-          if (propertyLine.split(': ').length >= 2) {
-            let parts = propertyLine.split(': ')
-            let propertyName = parts[0],
-                propertyValue = parts.slice(1).join(': ')
-            if (propertyName === 'description') {
-              description = propertyValue
-            }
-            if (propertyName === 'image') {
-              image = 'https://blockstack.org' + propertyValue
-            }
-            if (propertyName === 'title') {
-              title = propertyValue
-            }
-            docProperties[propertyName] = propertyValue.trim()
-          }
-        })
+    fs.readdirSync('app/docs' + folderName).forEach((docFilename) => {
+      if (docFilename.endsWith('.md')) {
+        let docFilenameKey = docFilename.split('.')[0].toLowerCase()
+        allDocs[docFilenameKey] = buildDocFile(indexHtml, folderName, docFilename)
       }
-      allDocs[key] = docProperties
-
-      let metatagMarkup = createMetatagMarkup(url, title, description, image)
-      let modifiedIndex = indexHtml.replace('<meta charset="utf-8" />', metatagMarkup)
-      fs.writeFileSync('build/docs-' + folderName + '-' + key + '.html', modifiedIndex)
     })
   })
 

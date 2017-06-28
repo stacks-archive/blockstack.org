@@ -35,7 +35,7 @@ class FAQpage extends Component {
 
   setQuestions() {
     let questions = []
-    let markdown = docs['faq'].markdown
+    let markdown = docs['faqs'].markdown
     let markdownParts = markdown.split(/### (.*)/g)
     markdownParts.splice(0, 1)
 
