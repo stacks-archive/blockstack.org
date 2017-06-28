@@ -33,6 +33,11 @@ If the ticket your interested in is being worked, feel free to provide feedback.
 Otherwise, leave a comment addressing one of the [repo maintainers](#maintainers) to get
 the conversation started.
 
+Whether you are a veteran programmer, beginner programmer, or don't program at all, we
+are positive you will find a place to helping us build a decentralized internet!
+
+[Just Ask!](http://chat.blockstack.org/)
+
 [^ Back To The Top](#contributing-to-blockstack)
 
 ## Using the issue tracker
@@ -40,7 +45,7 @@ the conversation started.
 The [issue tracker](/issues) is the preferred channel for [bug reports](#bug-reports), [features requests](#feature-requests) and [submitting pull requests](#pull-requests), but please respect the following
 restrictions:
 
-* Please **do not** use the issue tracker for personal support requests.  Please use the [Forum](https://forum.blockstack.org) or [Slack](https://chat.blockstack.org) as they are better places to get help.
+* Please **do not** use the issue tracker for personal support requests.  Please use the [Forum](https://forum.blockstack.org) or [Slack](http://chat.blockstack.org) as they are better places to get help.
 
 * Please **do not** derail or troll issues. Keep the discussion on topic and respect the opinions of others.
 
