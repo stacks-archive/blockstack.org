@@ -1,14 +1,12 @@
 'use strict';
 
 import gulp   from 'gulp'
-import config from '../config'
 import fs     from 'fs'
 
 gulp.task('copyIndex', function() {
-  var description = "Blockstack is a new decentralized internet of apps that let you control your data. " +
-                    "With the Blockstack Browser, you can get started with decentralized applications. " +
-                    "Free yourself of passwords and be less vulnerable to tracking and hacking.";
-  var image = "https://blockstack.org/images/metatags/twitter-image.png"
+  var description = 'Blockstack is a new decentralized internet where users own their data and apps run locally.\
+                     Take back control over your digital life. A browser portal is all you need to get started.';
+  var image = 'https://blockstack.org/images/metatags/twitter-image.png'
 
   var indexHtml = fs.readFileSync('app/index.html', 'utf8')
   var metatagsHtml = fs.readFileSync('app/metatags.html', 'utf8')

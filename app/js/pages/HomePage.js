@@ -10,7 +10,6 @@ import {BlogActions}       from '../datastore/Blog'
 import {StatsActions}      from '../datastore/Stats'
 import Image               from '../components/Image'
 import TransparentHeader   from '../components/TransparentHeader'
-import Footer              from '../components/Footer'
 
 function mapStateToProps(state) {
   return {
@@ -46,7 +45,10 @@ class HomePage extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.stats !== this.props.stats) {
-      const stats = nextProps.stats
+      let stats = nextProps.stats
+      if (stats.domains === 0) {
+        stats.domains = 72000
+      }
       this.setState({
         stats: stats,
       })
@@ -128,40 +130,40 @@ class HomePage extends Component {
             <TransparentHeader />
             <div className="container">
               <section className="hero">
-                <h1 className="hero-head">
+                <h1 className="h-secondary hero-head">
                  A New Internet for Decentralized Apps
                 </h1>
                 <p className="lead hero-lead col-md-9 col-centered">
                   Blockstack is a new decentralized internet where users own their data and apps run locally. A browser portal is all that’s needed to get started.
                 </p>
-                <div className="no-padding container-fluid col-md-9 col-centered">
+                <div className="no-padding container-fluid col-md-9 col-centered m-b-65">
                   <div className="col-sm-12 text-center landing-hero-img">
                     <Image className="landing-feat-img"
-                      src="/images/resources/portal-home-screen.png"
+                      src="/images/resources/portal-home-screen@2x.png"
                       fallbackSrc="/images/tutorials/portal-home-screen.png"
                       retinaSupport={false} />
                   </div>
                 </div>
-                <div className="no-padding container-fluid col-md-9 col-lg-7 col-centered">
-                  <div className="col-md-6">
+                <div className="no-padding container-fluid col-md-10 col-lg-10 col-centered">
+                  <div className="no-padding col-md-6" style={{ paddingRight: '1px' }}>
                     <p className="no-padding hero-btn-title">
                       Developers
                     </p>
                     <p className="no-padding m-b-10">
                       <Link to="/developers" role="button"
                         className="btn btn-sm btn-secondary btn-block btn-hero">
-                        Developer Kit
+                        › Browser Kit
                       </Link>
                     </p>
                   </div>
-                  <div className="col-md-6">
+                  <div className="no-padding col-md-6">
                     <p className="no-padding hero-btn-title">
                       Users
                     </p>
                     <p className="no-padding">
                       <Link to="/users" role="button"
                         className="btn btn-sm btn-secondary btn-block btn-hero">
-                        Join the Waitlist
+                        › Join the Waitlist
                       </Link>
                     </p>
                   </div>
@@ -178,143 +180,240 @@ class HomePage extends Component {
                     ——›&nbsp;In production for 3+ years
                   </div>
                   <div className="no-padding col-sm-12 col-md-4 text-center text-white text-stats">
-                    ——›&nbsp;{this.state.stats.slackUsers} community devs
+                    ——›&nbsp;{this.state.stats.meetupUsers} community devs
                   </div>
                 </section>
               </div>
             </div>
-            <div className="section-even container-fluid">
-              <div className="container">
+            <div className="sectionContainerLight section-spacing container-fluid">
+              <div className="sectionWrap">
                 <section>
-                  <h1 className="modern text-center">
-                    The Old Internet is Broken
-                  </h1>
-                  <div className="row">
-                    {content.oldInternet.map((item) => {
-                      return (
-                        <div className="col-md-4">
-                          <h3 className="modern text-center">
-                            {item.title}
+                  <div className="container no-padding">
+                    <div className="col-md-6 containWrap">
+                      <div className="row">
+                        <div className="container-fluid">
+                          <h3 className="h-primary text-center-md m-b-25">
+                            The <span className="electric-magenta">Old Internet</span> is Broken
                           </h3>
-                          <p>
-                            {item.body}
-                          </p>
                         </div>
-                      )
-                    })}
-                  </div>
-                  <h1 className="modern text-center m-t-5">
-                    The New Internet is Here
-                  </h1>
-                  <div className="row">
-                    {content.newInternet.map((item) => {
-                      return (
-                        <div className="col-md-4">
-                          <h3 className="modern text-center">
-                            {item.title}
+                      </div>
+                      <div className="row">
+                        <div className="container-fluid">
+                        {content.oldInternet.map((item) => {
+                          return (
+                            <div className="container-fluid no-padding-sm m-b-30">
+                              <h5 className="h-primary text-center-md">
+                                {item.title}
+                              </h5>
+                              <p className="text-center-md">
+                                {item.body}
+                              </p>
+                            </div>
+                          )
+                        })}
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-6 containWrap">
+                      <div className="row">
+                        <div className="container-fluid">
+                          <h3 className="h-primary text-center-md m-b-25">
+                            The <span className="electric-blue">New Internet</span> is Here
                           </h3>
-                          <p>
-                            {item.body}
-                          </p>
                         </div>
-                      )
-                    })}
-                  </div>
-                </section>
-              </div>
-            </div>
-            <div className="section-odd container-fluid">
-              <div className="container">
-                <section>
-                  <h1 className="modern text-center">
-                    A Full Stack for Decentralized Apps
-                  </h1>
-                  <div className="row">
-                    {content.fullStack.map((item) => {
-                      return (
-                        <div className="col-md-4">
-                          <h3 className="modern text-center">
-                            {item.title}
-                          </h3>
-                          <p>
-                            {item.body}
-                          </p>
+                      </div>
+                      <div className="row">
+                        <div className="container-fluid">
+                        {content.newInternet.map((item) => {
+                          return (
+                            <div className="container-fluid no-padding-sm m-b-30">
+                              <h5 className="h-primary text-center-md">
+                                {item.title}
+                              </h5>
+                              <p className="text-center-md">
+                                {item.body}
+                              </p>
+                            </div>
+                          )
+                        })}
                         </div>
-                      )
-                    })}
-                  </div>
-                </section>
-              </div>
-            </div>
-            <div className="section-even container-fluid">
-              <div className="container">
-                <section>
-                  <h1 className="modern text-center">
-                    Step-by-step tutorials
-                  </h1>
-                  <div className="row">
-                    <div className="col-md-8 col-centered">
-                      <p className="modern text-center">
-                        Complete the step-by-step tutorial and see how easy it is to build an app with a decentralized identity system in a few lines of code and no servers.
-                      </p>
-                      <p className="modern text-center">
-                        <Link to="/tutorials/hello-blockstack">
-                          <Image className="landing-feat-img"
-                            src="/images/tutorials/hello-blockstack-fastforward.gif"
-                            fallbackSrc="/images/tutorials/hello-blockstack-fastforward.gif"
-                            retinaSupport={false} />
-                        </Link>
-                      </p>
-                      <p className="modern text-center">
-                        Want to learn more about building apps on blockstack? Tutorials on building serverless apps with decentralized storage are coming soon.
-                      </p>
-                      <p className="modern text-center">
-                        <Link to="/tutorials" role="button"
-                          className="btn btn-outline-primary btn-block">
-                          Try the Tutorials
-                        </Link>
-                      </p>
+                      </div>
                     </div>
                   </div>
                 </section>
               </div>
             </div>
-            <div className="section-odd container-fluid">
-              <div className="container">
+            <div className="sectionContainerLightGray section-spacing container-fluid">
+              <div className="container sectionWrap">
                 <section>
-                  <h1 className="modern text-center">
-                    Easily build apps like these
-                  </h1>
-                  <div className="row">
-                    {content.appPossibilities.map((item) => {
-                      return (
-                        <div className="col-md-4">
-                          <h3 className="modern text-center">
-                            {item.title}
-                          </h3>
-                          <p>
-                            {item.body}
-                          </p>
-                        </div>
-                      )
-                    })}
+                  <div className="containWrap">
+                    <h3 className="h-primary text-center m-b-25">
+                      A Full Stack for Decentralized Apps
+                    </h3>
+                    <div className="col-sm-12 text-center landing-hero-img">
+                      <Image className="landing-feat-img"
+                        src="/images/visuals/blockstack-stack-diagram.svg"
+                        fallbackSrc="/images/tutorials/portal-home-screen.png"
+                        retinaSupport={false} />
+                    </div>
+                    <div>
+                      {content.fullStack.map((item) => {
+                        return (
+                          <div className="col-md-4">
+                            <h4 className="inverse text-center">
+                              {item.title}
+                            </h4>
+                            <p className="inverse text-center">
+                              {item.body}
+                            </p>
+                          </div>
+                        )
+                      })}
+                    </div>
                   </div>
                 </section>
               </div>
             </div>
-            <div className="section-even container-fluid">
+            <div className="sectionContainerLight section-spacing container-fluid">
+              <div className="container sectionWrap">
+                <section>
+                  <div className="container p-b-15">
+                    <h2 className="h-primary text-center">
+                      Libraries and Step-by-Step Tutorials
+                    </h2>
+                  </div>
+                  <div className="container m-b-30">
+                    <div className="col-md-8 col-centered">
+                      <p className="text-center">
+                        Complete the step-by-step tutorial and see how easy it is to build an app with a decentralized identity system in a few lines of code and no servers.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="container m-b-40">
+                    <div className="col-md-4">
+                      <h4 className="text-center m-b-10">
+                        Identity
+                      </h4>
+                      <p className="light-gray text-center">
+                        Available today!
+                      </p>
+                      <p className="text-center">
+                        <Image className="col3-img-lg"
+                          src="/images/visuals/text-editor-identity.svg"
+                          fallbackSrc=""
+                          retinaSupport={false} />
+                      </p>
+                    </div>
+                    <div className="col-md-4">
+                      <h4 className="text-center m-b-10">
+                        Storage
+                      </h4>
+                      <p className="light-gray text-center">
+                        <i>(Coming Soon...)</i>
+                      </p>
+                      <p className="text-center">
+                        <Image className="col3-img-lg"
+                          src="/images/visuals/text-editor-storage.svg"
+                          fallbackSrc=""
+                          retinaSupport={false} />
+                      </p>
+                    </div>
+                    <div className="col-md-4">
+                      <h4 className="text-center m-b-10">
+                        Payments
+                      </h4>
+                      <p className="light-gray text-center">
+                        <i>(Coming Soon...)</i>
+                      </p>
+                      <p className="text-center">
+                        <Image className="col3-img-lg"
+                          src="/images/visuals/text-editor-payments.svg"
+                          fallbackSrc=""
+                          retinaSupport={false} />
+                      </p>
+                    </div>
+                  </div>
+                  <div className="container">
+                    <p className="text-center">
+                      <Link to="/tutorials" role="button"
+                        className="btn btn-outline-primary">
+                        Try the Tutorials
+                      </Link>
+                    </p>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div className="sectionContainerLightGray section-spacing container-fluid">
+              <div className="container sectionWrap">
+                <section>
+                  <div className="containWrap">
+                    <h3 className="h-primary text-center">
+                      Thousands of App Possibilities
+                    </h3>
+                  </div>
+                  <div>
+                    <div className="col-md-4">
+                      <p className="text-center">
+                        <Image className="col-img"
+                          src="/images/icons/icon-decentralized-social.svg"
+                          fallbackSrc="/images/tutorials/portal-home-screen.png"
+                          retinaSupport={false} />
+                      </p>
+                      <h4 className="modern text-center">
+                        Decentralized Social Networks
+                      </h4>
+                      <p className="text-center">
+                        Existing social networks lock in users and limit access. Build a decentralized social network that allows users to own their relationships and data and take it with them wherever they go.
+                      </p>
+                    </div>
+                    <div className="col-md-4">
+                      <p className="text-center">
+                        <Image className="col-img"
+                          src="/images/icons/icon-marketplace.svg"
+                          fallbackSrc="/images/tutorials/portal-home-screen.png"
+                          retinaSupport={false} />
+                      </p>
+                      <h4 className="modern text-center">
+                        Peer-to-Peer Marketplaces
+                      </h4>
+                      <p className="text-center">
+                        Existing marketplaces take a massive haircut and limit what can be bought and sold. Build a peer-to-peer marketplace that allows individuals to freely transact at a lower cost.
+                      </p>
+                    </div>
+                    <div className="col-md-4">
+                      <p className="text-center">
+                        <Image className="col-img"
+                          src="/images/icons/icon-community-vote.svg"
+                          fallbackSrc="/images/tutorials/portal-home-screen.png"
+                          retinaSupport={false} />
+                      </p>
+                      <h4 className="modern text-center">
+                        Community-Run Voting
+                      </h4>
+                      <p className="text-center">
+                        Existing voting systems are centrally operated and thus are extremely vulnerable to hacking. Build a voting system as a public internet utility that’s run by the community instead of a single corporation.
+                      </p>
+                    </div>
+                  </div>                  
+                </section>
+              </div>
+            </div>
+            <div className="sectionContainerLight section-spacing container-fluid">
               <div className="container">
                 <section>
-                  <h1 className="modern text-center">
-                    News
-                  </h1>
+                  <div className="containWrap">
+                    <h2 className="h-primary text-center">
+                      News
+                    </h2>
+                  </div>
                   <div className="row m-b-50 no-margin">
                   { firstThreePosts.map((post, index) => {
                     return (
                       <div className="col-md-4" key={index}>
                         { post.urlSlug && post.title ?
                         <Link to={'/blog/' + post.urlSlug}>
-                          <h3>{ post.title }</h3>
+                          <h4>{ post.title }</h4>
                         </Link>
                         : null }
                         { post.preview ?
@@ -338,35 +437,35 @@ class HomePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="section-odd container-fluid">
-              <div className="container">
+            <div className="sectionContainerDark section-spacing container-fluid">
+              <div className="container sectionWrap">
                 <section>
-                  <h1 className="modern text-center">
-                    Get Started
-                  </h1>
-                  <div className="row">
-                    <div className="col-md-6">
-                      <p className="no-padding hero-btn-title">
-                        Developers
-                      </p>
-                      <p className="no-padding m-b-10">
-                        <Link to="/developers" role="button"
-                          className="btn btn-sm btn-secondary btn-block btn-hero">
-                          Developer Kit
-                        </Link>
-                      </p>
-                    </div>
-                    <div className="col-md-6">
-                      <p className="no-padding hero-btn-title">
-                        Users
-                      </p>
-                      <p className="no-padding">
-                        <Link to="/users" role="button"
-                          className="btn btn-sm btn-secondary btn-block btn-hero">
-                          Join the Waitlist
-                        </Link>
-                      </p>
-                    </div>
+                  <div className="containWrap">
+                    <h3 className="h-primary text-center">
+                      Get Started
+                    </h3>
+                  </div>
+                  <div className="col-md-6">
+                    <p className="no-padding hero-btn-title">
+                      Developers
+                    </p>
+                    <p className="no-padding m-b-10">
+                      <Link to="/developers" role="button"
+                        className="btn btn-sm btn-secondary btn-block btn-hero">
+                        Browser Kit
+                      </Link>
+                    </p>
+                  </div>
+                  <div className="col-md-6">
+                    <p className="no-padding hero-btn-title">
+                      Users
+                    </p>
+                    <p className="no-padding">
+                      <Link to="/users" role="button"
+                        className="btn btn-sm btn-secondary btn-block btn-hero">
+                        Join the Waitlist
+                      </Link>
+                    </p>
                   </div>
                 </section>
               </div>

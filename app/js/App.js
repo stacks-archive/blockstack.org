@@ -29,9 +29,9 @@ class App extends Component {
   }
 
   render() {
-    let wrapperClass = "app-common"
+    let wrapperClass = 'app-common'
     if (location.pathname === '/') {
-      wrapperClass = "app-landing"
+      wrapperClass = 'app-landing'
     }
 
     return (

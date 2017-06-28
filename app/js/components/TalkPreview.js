@@ -29,7 +29,7 @@ class TalkPreview extends Component {
           </Link>
         </div>
         <div className="col-md-8">
-          <h4 className="m-b-1">
+          <h4 className="m-t-0 m-b-1">
             {this.props.title}
           </h4>
           <p className="m-b-1">
