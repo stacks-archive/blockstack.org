@@ -55,7 +55,7 @@ Our bug tracker utilizes several labels to help organize and identify issues. He
 
 For a complete look at our labels, see the [project labels page](https://github.com/blockstack/blockstack.org/labels).
 
-[^ Back To The Top](#table-of-contents)
+[^ Back To The Top](#contributing-to-blockstack)
 
 ## Bug reports
 
@@ -98,7 +98,7 @@ Example:
 
 Feature requests are welcome. But take a moment to find out whether your idea fits with the scope and aims of the project. It's up to *you* to make a strong case to convince the project's developers of the merits of this feature. Please provide as much detail and context as possible, providing relevant links, prior art, or live demos whenever possible.
 
-[^ Back To The Top](#table-of-contents)
+[^ Back To The Top](#contributing-to-blockstack)
 
 ## Pull requests
 
@@ -166,7 +166,7 @@ includes code changes) and under the terms of the
 [Creative Commons Attribution 3.0 Unported License](docs/LICENSE.md)
 (if it includes documentation changes).
 
-[^ Back To The Top](#table-of-contents)
+[^ Back To The Top](#contributing-to-blockstack)
 
 ## Code guidelines
 
@@ -188,7 +188,7 @@ includes code changes) and under the terms of the
 
 Run `npm run dev` before committing to ensure your changes follow our coding standards.
 
-[^ Back To The Top](#table-of-contents)
+[^ Back To The Top](#contributing-to-blockstack)
 
 ## Maintainers
 
@@ -213,7 +213,7 @@ Run `npm run dev` before committing to ensure your changes follow our coding sta
   </tbody>
 </table>
 
-[^ Back To The Top](#table-of-contents)
+[^ Back To The Top](#contributing-to-blockstack)
 
 ## License
 
