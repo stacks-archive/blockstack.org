@@ -143,7 +143,7 @@ Adhering to the following process is the best way to get your work included in t
    # Clone your fork of the repo into the current directory
    git clone https://github.com/<your-username>/blockstack.org.git
    # Navigate to the newly cloned directory
-   cd blockstack-portal
+   cd blockstack.org
    # Assign the original repo to a remote called "upstream"
    git remote add upstream https://github.com/blockstack/blockstack.org.git
    ```
