@@ -4,6 +4,17 @@
 
 A live version of this site can be found online at https://blockstack.org.
 
+## Table of Contents
+- [Contributing Guide](CONTRIBUTING.md)
+- [Installation](#installation)
+- [Development](#development)
+- [Documentation](#documentation)
+- [Upgrading Blockstack Bootstrap](#upgrading-blockstack-bootstrap)
+- [Contributing to Blockstack Bootstrap](#contributing-to-blockstack-bootstrap)
+- [Deployment](#deployment)
+- [Languages and Tools](#languages-and-tools)
+- [More Info](#more-info)
+
 ### Installation
 
 ```
@@ -73,5 +84,4 @@ Once the build has been produced, deploy the site to firebase by running `fireba
 
 For more in-depth information on any of the steps or libraries use, see the development guide:
 
-- [Development Guide](development.md)
-- [Contributing Guide](CONTRIBUTING.md)
+[Development Guide](development.md)
