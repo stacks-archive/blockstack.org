@@ -36,7 +36,7 @@ restrictions:
 
 * Reduced test cases and potential fixes using [JS Bin](https://jsbin.com)
 
-## Issues and labels
+### Issues and labels
 
 Our bug tracker utilizes several labels to help organize and identify issues. Here's what they represent and how we use them:
 
@@ -55,6 +55,7 @@ Our bug tracker utilizes several labels to help organize and identify issues. He
 
 For a complete look at our labels, see the [project labels page](https://github.com/blockstack/blockstack.org/labels).
 
+[^ Back To The Top](#table-of-contents)
 
 ## Bug reports
 
@@ -91,11 +92,13 @@ Example:
 > causing the bug, and potential solutions (and your opinions on their
 > merits).
 
+[^ Back To The Top](#table-of-contents)
 
 ## Feature requests
 
 Feature requests are welcome. But take a moment to find out whether your idea fits with the scope and aims of the project. It's up to *you* to make a strong case to convince the project's developers of the merits of this feature. Please provide as much detail and context as possible, providing relevant links, prior art, or live demos whenever possible.
 
+[^ Back To The Top](#table-of-contents)
 
 ## Pull requests
 
@@ -163,6 +166,7 @@ includes code changes) and under the terms of the
 [Creative Commons Attribution 3.0 Unported License](docs/LICENSE.md)
 (if it includes documentation changes).
 
+[^ Back To The Top](#table-of-contents)
 
 ## Code guidelines
 
@@ -183,6 +187,8 @@ includes code changes) and under the terms of the
 ### Checking code
 
 Run `npm run dev` before committing to ensure your changes follow our coding standards.
+
+[^ Back To The Top](#table-of-contents)
 
 ## Maintainers
 
@@ -206,6 +212,8 @@ Run `npm run dev` before committing to ensure your changes follow our coding sta
      </tr>
   </tbody>
 </table>
+
+[^ Back To The Top](#table-of-contents)
 
 ## License
 
