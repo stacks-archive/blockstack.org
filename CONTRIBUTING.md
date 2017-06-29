@@ -184,7 +184,7 @@ Adhering to the following process is the best way to get your work included in t
    git push origin <topic-branch-name>-<github-username>-patch
    ```
 
-7. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/) against the `design` branch.a
+7. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/) against the `design` branch.
     - Add a clear title and description
     - Include screenshots of the before and after if your changes include differences in HTML/CSS. Drag and drop the images into the body of your pull request.
     - Reference any relevant issues or supporting documentation in your PR (ex. “Closes #37.”)
