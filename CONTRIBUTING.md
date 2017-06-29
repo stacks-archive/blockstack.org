@@ -1,4 +1,4 @@
-# Contributing to Blockstack
+# Contributing to Blockstack.org
 
 Looking to contribute something to Blockstack? **Here's how you can help.**
 
@@ -8,7 +8,6 @@ Following these guidelines helps to communicate that you respect the time of eve
 
 ## Table of contents
 
-- [Blockstack Brand Guide](https://github.com/blockstack/designs/issues/247)
 - [Finding opportunities to contribute](#finding-opportunities-to-contribute)
 - [Using the issue tracker](#using-the-issue-tracker)
 - [Bug reports](#bug-reports)
@@ -22,8 +21,8 @@ Following these guidelines helps to communicate that you respect the time of eve
 
 There are two common ways to find opportunities to contribute:
 
-- [Project Boards](/projects)
-- [Issue Tracker](/issues)
+- [Project Boards](https://github.com/blockstack/blockstack.org/projects)
+- [Issue Tracker](https://github.com/blockstack/blockstack.org/issues)
 
 The project boards is a great place to start. Look for the version that has the label `current`
 and look for a ticket in the `To Do` column. Click on the ticket your interested in
@@ -43,7 +42,7 @@ are positive you will find a place to helping us build a decentralized internet!
 
 ## Using the issue tracker
 
-The [issue tracker](/issues) is the preferred channel for [bug reports](#bug-reports), [features requests](#feature-requests) and [submitting pull requests](#pull-requests), but please respect the following
+The [issue tracker](https://github.com/blockstack/blockstack.org/issues) is the preferred channel for [bug reports](#bug-reports), [features requests](#feature-requests) and [submitting pull requests](#pull-requests), but please respect the following
 restrictions:
 
 * Please **do not** use the issue tracker for personal support requests.  Please use the [Forum](https://forum.blockstack.org) or [Slack](http://chat.blockstack.org) as they are better places to get help.
@@ -91,7 +90,7 @@ Guidelines for bug reports:
 
 1. **Use the GitHub issue search** &mdash; [Search for duplicate or closed issues](https://github.com/blockstack/blockstack.org/issues?utf8=%E2%9C%93&q=is%3Aissue).
 
-2. **Check if the issue has been fixed** &mdash; try to reproduce it using the latest `master` or development branch in the repository.
+2. **Check if the issue has been fixed** &mdash; try to reproduce it using the latest `master`, `design` or development branch in the repository.
 
 3. **Isolate the problem** &mdash; ideally create a [reduced test case](https://css-tricks.com/reduced-test-cases/) and a live example. [This JS Bin](https://jsbin.com/lolome/edit?html,output) is a helpful template.
 
@@ -132,7 +131,9 @@ Good pull requests—patches, improvements, new features—are a fantastic help.
 
 **Please ask first** before embarking on any significant pull request (e.g. implementing features, refactoring code, porting to a different language), otherwise you risk spending a lot of time working on something that the project's developers might not want to merge into the project.
 
-Please adhere to the [coding guidelines](#code-guidelines) used throughout the project (indentation, accurate comments, etc.) and any other requirements (such as test coverage).
+Ensure that your pull requests are small components. This assists both with your pull request getting accepted and makes it much easier/faster for the repository maintainer to merge in your pull request.
+
+Please adhere to the [Blockstack Brand Guide](https://github.com/blockstack/designs/issues/247), [coding guidelines](#code-guidelines) used throughout the project (indentation, accurate comments, etc.), and any other requirements (such as test coverage).
 
 When contributing to Blockstack's documentation, you should edit the documentation source files in [the `/app/` directory of the `master` branch](https://github.com/blockstack/blockstack.org/tree/master/app).
 
@@ -150,11 +151,11 @@ Adhering to the following process is the best way to get your work included in t
    git remote add upstream https://github.com/blockstack/blockstack.org.git
    ```
 
-2. If you cloned a while ago, get the latest changes from upstream:
+2. If you cloned a while ago, get the latest changes from the `contribute` branch upstream:
 
    ```bash
-   git checkout master
-   git pull upstream master
+   git checkout -b contribute
+   git pull upstream contribute
    ```
 
 3. Create a new topic branch (off the main project development branch) to
@@ -171,22 +172,23 @@ Adhering to the following process is the best way to get your work included in t
    [interactive rebase](https://help.github.com/articles/interactive-rebase)
    feature to tidy up your commits before making them public.
 
-5. Locally merge (or rebase) the upstream development branch into your topic branch:
+5. Locally merge the upstream `contribute` branch into your topic branch:
 
    ```bash
-   git pull [--rebase] upstream master
+   git pull upstream contribute
    ```
 
 6. Push your topic branch up to your fork:
 
    ```bash
-   git push origin <topic-branch-name>
+   git push origin <topic-branch-name>-<github-username>-patch
    ```
 
-7. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/) against the `design` branch.
+7. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/) against the `design` branch.a
     - Add a clear title and description
     - Include screenshots of the before and after if your changes include differences in HTML/CSS. Drag and drop the images into the body of your pull request.
     - Reference any relevant issues or supporting documentation in your PR (ex. “Closes #37.”)
+    - Make sure submitted code has no conflicts
 
 **IMPORTANT**: By submitting a patch, you agree to allow the project owners to
 license your work under the terms of the [MPL-2.0 License](https://github.com/blockstack/blockstack-browser/blob/master/LICENSE.md) (if it
@@ -224,18 +226,18 @@ Run `npm run dev` before committing to ensure your changes follow our coding sta
   <tbody>
     <tr>
       <td align="center" valign="top">
-        <img width="150" height="150" src="https://github.com/shea256.png?s=150">
-        <br>
-        <a href="https://github.com/shea256">Ryan Shea</a>
-        <br>
-        <p>master branch</p>
-      </td>
-      <td align="center" valign="top">
         <img width="150" height="150" src="https://github.com/guylepage3.png?s=150">
         <br>
         <a href="https://github.com/guylepage3">Guy Lepage</a>
         <br>
         <p>design branch</p>
+      </td>
+      <td align="center" valign="top">
+        <img width="150" height="150" src="https://github.com/shea256.png?s=150">
+        <br>
+        <a href="https://github.com/shea256">Ryan Shea</a>
+        <br>
+        <p>master branch</p>
       </td>
      </tr>
   </tbody>
