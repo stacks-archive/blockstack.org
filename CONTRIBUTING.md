@@ -151,11 +151,11 @@ Adhering to the following process is the best way to get your work included in t
    git remote add upstream https://github.com/blockstack/blockstack.org.git
    ```
 
-2. If you cloned a while ago, get the latest changes from the `contribute` branch upstream:
+2. If you cloned a while ago, get the latest changes from the latest MINOR version branch upstream: (You can see what the latest MINOR version is [here](https://github.com/blockstack/blockstack.org/projects))
 
    ```bash
-   git checkout -b contribute
-   git pull upstream contribute
+   git checkout -b <latest MINOR version branch>
+   git pull upstream <latest MINOR version branch>
    ```
 
 3. Create a new topic branch (off the main project development branch) to
@@ -172,10 +172,10 @@ Adhering to the following process is the best way to get your work included in t
    [interactive rebase](https://help.github.com/articles/interactive-rebase)
    feature to tidy up your commits before making them public.
 
-5. Locally merge the upstream `contribute` branch into your topic branch:
+5. Locally merge the upstream latest MINOR version branch into your topic branch:
 
    ```bash
-   git pull upstream contribute
+   git pull upstream <latest MINOR version branch>
    ```
 
 6. Push your topic branch up to your fork:
