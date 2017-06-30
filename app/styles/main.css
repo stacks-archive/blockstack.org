@@ -264,8 +264,8 @@ p{font-size:1rem;line-height:1.6875rem;margin-bottom:1rem;}
 p-dark{color:#080809;}
 .light-gray{color:#949494;}
 
-/* Display Heading styles – Display headings are used When you need a heading
-to stand out, consider using a display heading—a larger, slightly more
+/* Display Heading styles – Display headings are used When you need a heading 
+to stand out, consider using a display heading—a larger, slightly more 
 opinionated heading style.*/
 display-1,display-2,display-3,display-4,display-5,display-6{margin-top:0;margin-bottom:0.5rem;}
 display-1{font-size:2.25rem;}
