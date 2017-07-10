@@ -172,7 +172,7 @@ Adhering to the following process is the best way to get your work included in t
    Which branch should be used for integration of the "next release"?
       - develop
       - master
-   Branch name for "next release" development: [] develop
+   Branch name for "next release" development: [develop] develop
    
    How to name your supporting branch prefixes?
    Feature branches? [feature/] issue-
