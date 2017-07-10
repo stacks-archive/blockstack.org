@@ -254,14 +254,12 @@ Run `npm run dev` before committing to ensure your changes follow our coding sta
         <br>
         <a href="https://github.com/guylepage3">Guy Lepage</a>
         <br>
-        <p>design branch</p>
       </td>
       <td align="center" valign="top">
         <img width="150" height="150" src="https://github.com/shea256.png?s=150">
         <br>
         <a href="https://github.com/shea256">Ryan Shea</a>
         <br>
-        <p>master branch</p>
       </td>
      </tr>
   </tbody>
