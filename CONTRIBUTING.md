@@ -151,19 +151,18 @@ Adhering to the following process is the best way to get your work included in t
    git remote add upstream https://github.com/blockstack/blockstack.org.git
    ```
 
-2. If you cloned a while ago, get the latest changes from the latest MINOR version branch upstream: (You can see what the latest MINOR version is [here](https://github.com/blockstack/blockstack.org/projects))
+2. If you cloned a while ago, get the latest changes from the development branch upstream.
 
    ```bash
-   git checkout -b <latest MINOR version branch>
-   git pull upstream <latest MINOR version branch>
+   git checkout -b develop
+   git pull upstream develop
    ```
 
 3. Create a new topic branch (off the main project development branch) to
-   contain your feature, change, or fix, followed by semantic versioning
-   using your Github username and 'patch':
+   contain the issue number, your feature, change, or fix, and your Github username:
 
    ```bash
-   git checkout -b <topic-branch-name>-<github-username>-patch
+   git checkout -b issue-<issue number>-<topic-branch-name>-<github-username>
    ```
 
 4. Commit your changes in logical chunks. Please adhere to these [git commit
@@ -171,24 +170,27 @@ Adhering to the following process is the best way to get your work included in t
    or your code is unlikely be merged into the main project. Use Git's
    [interactive rebase](https://help.github.com/articles/interactive-rebase)
    feature to tidy up your commits before making them public.
+   
+   We advise including the issue number in the commit message as well.
 
-5. Locally merge the upstream latest MINOR version branch into your topic branch:
+5. Locally merge the upstream development branch into your topic branch:
 
    ```bash
-   git pull upstream <latest MINOR version branch>
+   git pull upstream develop
    ```
 
 6. Push your topic branch up to your fork:
 
    ```bash
-   git push origin <topic-branch-name>-<github-username>-patch
+   git push origin issue-<issue number>-<topic-branch-name>-<github-username>
    ```
 
-7. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/) against the `design` branch.
+7. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/) against the `develop` branch.
     - Add a clear title and description
     - Include screenshots of the before and after if your changes include differences in HTML/CSS. Drag and drop the images into the body of your pull request.
     - Reference any relevant issues or supporting documentation in your PR (ex. “Closes #37.”)
     - Make sure submitted code has no conflicts
+    - Review your PR code to ensure there is no extra edits than required to resolve the issue. For example no additional refactoring, no extra lines of code, no irrelavent bug fixes.
 
 **IMPORTANT**: By submitting a patch, you agree to allow the project owners to
 license your work under the terms of the [MPL-2.0 License](https://github.com/blockstack/blockstack-browser/blob/master/LICENSE.md) (if it
