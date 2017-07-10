@@ -137,6 +137,8 @@ Please adhere to the [Blockstack Brand Guide](https://github.com/blockstack/desi
 
 When contributing to Blockstack's documentation, you should edit the documentation source files in [the `/app/` directory of the `master` branch](https://github.com/blockstack/blockstack.org/tree/master/app).
 
+**Prerequisites:** Make sure you have [git-flow downloaded](https://github.com/petervanderdoes/gitflow-avh/wiki/Installation) on your machine. [Here is a cheatsheet](https://danielkummer.github.io/git-flow-cheatsheet/) to familiarize yourself with the command line tool.
+
 Adhering to the following process is the best way to get your work included in the project:
 
 1. [Fork](https://help.github.com/fork-a-repo/) the project, clone your fork,
@@ -158,11 +160,31 @@ Adhering to the following process is the best way to get your work included in t
    git pull upstream develop
    ```
 
-3. Create a new topic branch (off the main project development branch) to
-   contain the issue number, your feature, change, or fix, and your Github username:
+3. Initiate git flow in the repository and set up a feature branch.
 
    ```bash
-   git checkout -b issue-<issue number>-<topic-branch-name>-<github-username>
+   git flow init
+   Which branch should be used for bringing forth production releases?
+      - develop
+      - master
+   Branch name for production releases: [master] master
+   
+   Which branch should be used for integration of the "next release"?
+      - develop
+      - master
+   Branch name for "next release" development: [] develop
+   
+   How to name your supporting branch prefixes?
+   Feature branches? [feature/] issue-
+   Bugfix branches? [bugfix/] issue-
+   Release branches? [release/] issue-
+   Hotfix branches? [hotfix/] issue-
+   Support branches? [support/] issue-
+   Version tag prefix? []
+   ```
+   
+   ```bash
+   git flow feature start <issue number>-<feature name>-<github username>
    ```
 
 4. Commit your changes in logical chunks. Please adhere to these [git commit
