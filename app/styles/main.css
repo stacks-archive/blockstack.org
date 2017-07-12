@@ -1,3 +1,4 @@
+/* testing by @estermer */
 /* Guide */
 /* - Hero section is special */
 /* - All other headings are to be 400 weight */
@@ -263,8 +264,8 @@ p{font-size:1rem;line-height:1.6875rem;margin-bottom:1rem;}
 p-dark{color:#080809;}
 .light-gray{color:#949494;}
 
-/* Display Heading styles – Display headings are used When you need a heading 
-to stand out, consider using a display heading—a larger, slightly more 
+/* Display Heading styles – Display headings are used When you need a heading
+to stand out, consider using a display heading—a larger, slightly more
 opinionated heading style.*/
 display-1,display-2,display-3,display-4,display-5,display-6{margin-top:0;margin-bottom:0.5rem;}
 display-1{font-size:2.25rem;}
@@ -544,7 +545,7 @@ section{word-break:break-word;}
   /* Navbar */
   .navbar-brand img{position:relative;}
   .brand-bug{margin-top:0.625rem;}
-  .brand-logo{margin-right:2.5rem;margin-top:0.9375rem;}  
+  .brand-logo{margin-right:2.5rem;margin-top:0.9375rem;}
   div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-header > nav.navbar > a.navbar-brand{display:block;}
   div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-header > nav.navbar > a.navbar-brand.brand-bug{display:none;}
   .nav-item:first-child{margin-left:.875rem;}
@@ -629,7 +630,7 @@ section{word-break:break-word;}
   h4{margin:20px 0;}
 
   /* 9. Fonts */
-  
+
   /* Navbar */
   .navbar {
     font-family: 'Source Code Pro', monospace;
@@ -638,7 +639,7 @@ section{word-break:break-word;}
   }
   .brand-bug{display:none;}
   .brand-logo{display:initial;}
-  
+
   /* Hero */
   .hero-wrap{padding-top:11.5rem;padding-bottom:12.5rem;}
   .hero-head{padding-left:0;}
