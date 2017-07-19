@@ -154,6 +154,10 @@ gulp.task('configFirebase', () => {
       'source': '/newsletter',
       'destination': '/users'
     },
+    {
+      'source': '/summit',
+      'destination': 'https://www.eventbrite.com/e/blockstack-summit-2017-tickets-35385366584'
+    },
   ]
 
   let redirects = []
