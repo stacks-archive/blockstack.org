@@ -75,7 +75,6 @@ function buildPapers(callback) {
 }
 
 function analyzePart(part, callback) {
-  //console.log(part)
   let video = {}
   video.title = part.substring(0, part.indexOf('\n\n'))
   let rest = part.substring(part.indexOf('\n\n') + 2)
@@ -106,7 +105,6 @@ function buildVideos(callback) {
   const videosFileParts = videosFile.split('\n\n### ').slice(1)
 
   async.map(videosFileParts, analyzePart, (err, results) => {
-    console.log(results)
     callback(null, results)
   })
 }
