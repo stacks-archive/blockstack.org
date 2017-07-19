@@ -245,6 +245,11 @@
         "source": "/newsletter",
         "destination": "/users",
         "type": 301
+      },
+      {
+        "source": "/summit",
+        "destination": "https://www.eventbrite.com/e/blockstack-summit-2017-tickets-35385366584",
+        "type": 301
       }
     ]
   }
