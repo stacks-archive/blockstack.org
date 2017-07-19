@@ -83,22 +83,20 @@ function analyzePart(part, callback) {
   Object.assign(video, linesToObject(lines))
 
   if (!video.hasOwnProperty('urlSlug')) {
-    video.urlSlug = slugify(video.title)
+    video.urlSlug = slugify(video.event + ' ' + video.title)
   }
 
   if (video.hasOwnProperty('youtubeURL')) {
-    if (video.hasOwnProperty('image')) {
-      callback(null, video)
-    } else {
-      scrape(video.youtubeURL).then((metadata) => {
-        if (hasprop(metadata, ['openGraph', 'image', 'url'])) {
-          video.image = metadata.openGraph.image.url
-          callback(null, video)
-        } else {
-          callback(null, video)
-        }
-      })
-    }
+    scrape(video.youtubeURL).then((metadata) => {
+      if (hasprop(metadata, ['openGraph', 'image', 'url']) &&
+          hasprop(metadata, ['twitter', 'player', 'url'])) {
+        video.image = metadata.openGraph.image.url
+        video.youtubeURL = metadata.twitter.player.url
+        callback(null, video)
+      } else {
+        callback(null, video)
+      }
+    })
   }
 }
 
@@ -108,6 +106,7 @@ function buildVideos(callback) {
   const videosFileParts = videosFile.split('\n\n### ').slice(1)
 
   async.map(videosFileParts, analyzePart, (err, results) => {
+    console.log(results)
     callback(null, results)
   })
 }
