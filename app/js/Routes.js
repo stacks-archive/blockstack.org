@@ -30,6 +30,7 @@ import TutorialsPage               from './pages/TutorialsPage'
 import TutorialPage                from './pages/TutorialPage'
 import AuthPage                    from './pages/AuthPage'
 import RoadmapPage                 from './pages/RoadmapPage'
+import TokenSalePage               from './pages/TokenSalePage'
 
 export default (
   <Router history={browserHistory} onUpdate={() => window.scrollTo(0, 0)}>
@@ -69,6 +70,7 @@ export default (
       <Route path="/auth" component={AuthPage} />
 
       <Route path="/roadmap" component={RoadmapPage} />
+      <Route path="/tokensale" component={TokenSalePage} />
 
       <Route path="*" component={NotFoundPage} />
     </Route>
