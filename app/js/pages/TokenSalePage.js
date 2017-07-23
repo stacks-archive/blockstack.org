@@ -6,6 +6,7 @@ import DocumentTitle       from 'react-document-title'
 
 import DarkForm            from '../components/DarkForm'
 import TransparentHeader   from '../components/TransparentHeader'
+import Image               from '../components/Image'
 
 class TokenSalePage extends Component {
 
@@ -22,9 +23,12 @@ class TokenSalePage extends Component {
           <div className="col-centered block">
             <TransparentHeader />
             <div className="container">
-              <section className="text-xs-center hero">
-                <h1>The Blockstack Token Sale</h1>
-                <p className="hero-lead purple-25">Sign up to receive important information about the token sale</p>
+              <section className="text-xs-center">
+                <Image className="stacks-logo-sm m-t-90 m-b-55"
+                        src="/images/logos/stacks-logo.svg"
+                        retinaSupport={false} />
+                <h1 className="text-white">The Blockstack Token Sale</h1>
+                <p className="hero-lead purple-50">Sign up to receive important information about the token sale</p>
                 <div className="row">
                   <div className="col-md-9 col-centered m-t-2 m-b-3">
                     <DarkForm subscribeURL={subscribeURL} submitButtonText='Sign Up' />

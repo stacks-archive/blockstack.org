@@ -249,7 +249,7 @@ body {
 
 /* Heading styles */
 h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:1rem;}
-h1{font-size:2.5rem;}
+h1{font-size:2.75rem;}
 h2{font-size:1.875rem;}
 h3{font-size:1.625rem;}
 h4{font-size:1.375rem;}
@@ -453,6 +453,7 @@ li.nav-item:nth-last-child(2){display:none;}
 .no-padding-sm{padding-right:0;padding-left:0;}
 .col-img{max-width:110px;}
 .col3-img-lg{width:100%;min-width:210px;max-width:425px;}
+.stacks-logo-sm{}
 
 /* Tutorials */
 iframe{height:530px;}
