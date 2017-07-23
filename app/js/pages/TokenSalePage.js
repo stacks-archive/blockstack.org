@@ -26,7 +26,7 @@ class TokenSalePage extends Component {
                 <h1>The Blockstack Token Sale</h1>
                 <p className="hero-lead purple-25">Sign up to receive important information about the token sale</p>
                 <div className="row">
-                  <div className="col-md-8 col-centered m-t-2 m-b-3">
+                  <div className="col-md-9 col-centered m-t-2 m-b-3">
                     <DarkForm subscribeURL={subscribeURL} submitButtonText='Sign Up' />
                   </div>
                 </div>
