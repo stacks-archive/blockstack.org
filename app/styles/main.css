@@ -324,8 +324,10 @@ a.nav-link > i.fa.fa-github{display:none;}
 .btn-outline-primary:hover,.btn-outline-primary:focus,.btn-outline-primary:active{color:#270F34;border:1px solid rgba(255,255,255);background-color:#fff;}
 .btn-special{color:#fff;border:1px solid #080809;background-color:#080809;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
 .btn-special:hover,.btn-special:focus,.btn-special:active{color:#270F34;border:1px solid rgba(255,255,255);background-color:#fff;}
-.btn-highlight-magenta{color:#fff;border:1px solid #E91E63;background-color:#E91E63;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
-.btn-highlight-magenta:hover,.btn-highlight-magenta:focus,.btn-highlight-magenta:active{color:#270F34;border:1px solid rgba(255,255,255);background-color:#fff;}
+.btn-electric-magenta{color:#fff;border:1px solid #E91E63;background-color:#E91E63;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
+.btn-electric-magenta:hover,.btn-electric-magenta:focus,.btn-electric-magenta:active{color:#270F34;border:1px solid rgba(255,255,255);background-color:#fff;}
+.btn-electric-blue{color:#fff;border:1px solid #2C96FF;background-color:#2C96FF;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
+.btn-electric-blue:hover,.btn-electric-blue:focus,.btn-electric-blue:active{color:#fff;background-color:#2378CC;border:1px solid #2378CC;}
 .btn-footer-max-width{max-width:225px;}
 
 /* 37. Misc */

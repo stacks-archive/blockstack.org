@@ -49,7 +49,7 @@ class MailchimpForm extends Component {
             <div className="clear">
               <input type="submit" value={this.props.submitButtonText}
                 name="subscribe" id="mc-embedded-subscribe"
-                className="btn btn-outline-primary btn-block" />
+                className="btn btn-electric-blue btn-block" />
             </div>
           </div>
         </form>
