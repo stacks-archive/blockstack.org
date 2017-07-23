@@ -169,7 +169,6 @@
 .m-t-90{margin-top:90px}
 .m-t-95{margin-top:95px}
 .m-t-100{margin-top:100px}
-.m-t-150{margin-top:150px}
 .m-b-0{margin-bottom:0px}
 .m-b-10{margin-bottom:10px}
 .m-b-15{margin-bottom:15px}
@@ -189,6 +188,7 @@
 .m-b-85{margin-bottom:85px}
 .m-b-90{margin-bottom:90px}
 .m-b-95{margin-bottom:95px}
+.m-b-100{margin-bottom:100px}
 .p-t-0{padding-top:0px}
 .p-t-10{padding-top:10px}
 .p-t-15{padding-top:15px}
@@ -208,6 +208,7 @@
 .p-t-85{padding-top:85px}
 .p-t-90{padding-top:90px}
 .p-t-95{padding-top:95px}
+.p-t-100{padding-top:100px}
 .p-b-0{padding-bottom:0px}
 .p-b-10{padding-bottom:10px}
 .p-b-15{padding-bottom:15px}
@@ -227,6 +228,7 @@
 .p-b-85{padding-bottom:85px}
 .p-b-90{padding-bottom:90px}
 .p-b-95{padding-bottom:95px}
+.p-b-100{padding-bottom:100px}
 
 /*  4. Body */
 html, body {-webkit-overflow-scrolling:touch;}
@@ -361,7 +363,7 @@ a.nav-link > i.fa.fa-github{display:none;}
 .btn-outline-secondary:hover,.btn-outline-secondary:focus,.btn-outline-secondary:active{color:#9A21C5;}
 .btn-secondary{color:#270F34;border:1px solid #fff;background-color:#fff;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
 .btn-secondary:hover,.btn-secondary:focus,.btn-secondary:active{color:#fff;border:1px solid #E91E63;background-color:#E91E63;outline:none;}
-.btn-outline-primary{color:#fff;border:1px solid rgba(255,255,255,0.15);font-weight:400;background-color:#270F34;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
+.btn-outline-primary{color:#fff;border:1px solid rgba(255,255,255,0.15);font-weight:600;background-color:#270F34;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
 .btn-outline-primary:hover,.btn-outline-primary:focus,.btn-outline-primary:active{color:#270F34;border:1px solid rgba(255,255,255);background-color:#fff;outline:none;}
 .btn-special{color:#fff;border:1px solid #080809;background-color:#080809;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
 .btn-special:hover,.btn-special:focus,.btn-special:active{color:#270F34;border:1px solid rgba(255,255,255);background-color:#fff;outline:none;}
@@ -373,7 +375,7 @@ a.nav-link > i.fa.fa-github{display:none;}
 
 /* 37. Misc */
 .body-hero{background-color:#280f36!important;background:url(../images/visuals/earth-internet-purple.jpg) no-repeat;background-position:top -400px center;}
-.token-hero{background-color:#270F34!important;background:url(../images/visuals/blockstack-grid-reverse.svg) no-repeat;background-position:top center center;}
+.token-hero{background-color:#270F34!important;background:url(../images/visuals/blockstack-grid-reverse.svg) no-repeat;background-position:top -10px center;}
 body,html,#app,.app-landing{height:100%;}
 .app-common{height:auto;}
 .site-wrapper{display:flex;background-color:#270F34;flex-direction:column;height:100%;}
