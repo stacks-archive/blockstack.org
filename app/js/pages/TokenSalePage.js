@@ -18,7 +18,7 @@ class TokenSalePage extends Component {
 
     return (
       <DocumentTitle title="Blockstack - Token Sale">
-        <div className="body-hero">
+        <div className="token-hero">
           <div className="col-centered block">
             <TransparentHeader />
             <div className="container">
