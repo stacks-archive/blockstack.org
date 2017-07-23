@@ -287,6 +287,16 @@ h1.hero-head{font-family:'Lato',sans-serif;margin-bottom:0.875rem;font-size:1.75
 .lead-centered{font-family:'Source Code Pro',monospace;font-size:1rem;text-align:center;margin-bottom:2rem;font-weight:400;}
 
 /* 13. Forms */
+.form-control-outline-primary {
+  background-color: #270f34;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 0;
+  text-transform: capitalize;
+}
+.form-control-outline-primary::placeholder {
+  color: #95889c;
+  text-align: center; 
+}
 
 /* 16. Navbar */
 .navbar{font-family:'Source Code Pro',monospace;padding-top:0.4375rem;padding-bottom:0.5625rem;}
