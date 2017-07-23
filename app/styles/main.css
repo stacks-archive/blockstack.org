@@ -249,7 +249,7 @@ body {
 
 /* Heading styles */
 h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:1rem;}
-h1{font-size:2.25rem;}
+h1{font-size:2.5rem;}
 h2{font-size:1.875rem;}
 h3{font-size:1.625rem;}
 h4{font-size:1.375rem;}
@@ -281,14 +281,12 @@ a:hover,a:focus{font-weight:400;color:#E91E63;text-decoration:underline;}
 /* Depricated Type */ h1.modern{font-family:'Source Code Pro',monospace;font-size:1.75rem;font-weight:400;}
 
 /* Revisit Type */
-h1.type-beauty {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-h1.hero-head{font-family:'Source Code Pro',monospace;margin-bottom:0.875rem;font-size:1.75rem;font-weight:400;margin-top:1rem;}
-.hero-lead{font-family:'Source Code Pro',monospace;font-size:0.8125rem;margin-bottom:0.75rem;color:#D4CFD7;line-height:1.25rem;font-weight:400;}
+h1.type-beauty{font-family:'Lato',sans-serif;font-size:1.5rem;font-weight:700;}
+h1.hero-head{font-family:'Lato',sans-serif;margin-bottom:0.875rem;font-size:1.75rem;font-weight:400;margin-top:1rem;}
+.hero-lead{font-family:'Lato',sans-serif;font-size:1rem;margin-bottom:0.75rem;line-height:1.25rem;font-weight:400;}
 .lead-centered{font-family:'Source Code Pro',monospace;font-size:1rem;text-align:center;margin-bottom:2rem;font-weight:400;}
+
+/* 13. Forms */
 
 /* 16. Navbar */
 .navbar{font-family:'Source Code Pro',monospace;padding-top:0.4375rem;padding-bottom:0.5625rem;}
@@ -652,7 +650,6 @@ section{word-break:break-word;}
   /* Hero */
   .hero-wrap{padding-top:11.5rem;padding-bottom:12.5rem;}
   .hero-head{padding-left:0;}
-  .hero-lead{font-size:0.875rem;}
   .hero-img{margin-top:-25px;margin-right:-10px;}
   .slides{padding-top:50px;padding-right:0;padding-left:0;}
   .wrap-mob-feat{max-width:240px;}
