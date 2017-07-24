@@ -11,6 +11,10 @@ function createMetatagMarkup(url, title, description, image) {
   let metatagMarkup = '<meta charset="utf-8" />\n'
   metatagMarkup += `<title>Blockstack - ${title}</title>\n`
 
+  if (!image) {
+    image = 'https://blockstack.org/images/metatags/twitter-image.png'
+  }
+
   let metadata = metaData('name', {
     'description': description,
     'viewport': 'width=device-width',
