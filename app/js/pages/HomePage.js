@@ -136,14 +136,6 @@ class HomePage extends Component {
                 <p className="lead hero-lead col-md-9 col-centered">
                   Blockstack is a new decentralized internet where users own their data and apps run locally. A browser portal is all that’s needed to get started.
                 </p>
-                <div className="no-padding container-fluid col-md-9 col-centered m-b-65">
-                  <div className="col-sm-12 text-center landing-hero-img">
-                    <Image className="landing-feat-img"
-                      src="/images/resources/portal-home-screen@2x.png"
-                      fallbackSrc="/images/tutorials/portal-home-screen.png"
-                      retinaSupport={false} />
-                  </div>
-                </div>
                 <div className="no-padding container-fluid col-md-10 col-lg-10 col-centered">
                   <div className="no-padding col-md-6" style={{ paddingRight: '1px' }}>
                     <p className="no-padding m-b-10">
@@ -160,6 +152,14 @@ class HomePage extends Component {
                         Users › Join the Waitlist
                       </Link>
                     </p>
+                  </div>
+                </div>
+                <div className="no-padding container-fluid col-md-9 col-centered m-b-65">
+                  <div className="col-sm-12 text-center landing-hero-img">
+                    <Image className="landing-feat-img"
+                      src="/images/resources/portal-home-screen@2x.png"
+                      fallbackSrc="/images/tutorials/portal-home-screen.png"
+                      retinaSupport={false} />
                   </div>
                 </div>
               </section>
