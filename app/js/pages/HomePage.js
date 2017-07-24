@@ -164,17 +164,20 @@ class HomePage extends Component {
                 </div>
               </section>
             </div>
-            <div className="section-stats container-fluid">
+            <div className="section-stats container-fluid" style={{ zIndex: '902', position: 'absolute', width: '100%' }}>
               <div className="container">
                 <section>
-                  <div className="no-padding col-sm-12 col-md-4 text-center text-white text-stats">
-                    ——›&nbsp;{this.state.stats.domains} users registered
+                  <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
+                    {this.state.stats.domains}
+                    <span className="text-stats-description">users registered</span>
                   </div>
-                  <div className="no-padding col-sm-12 col-md-4 text-center text-white text-stats">
-                    ——›&nbsp;In production for 3+ years
+                  <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
+                    3+ years
+                    <span className="text-stats-description">in production</span>
                   </div>
-                  <div className="no-padding col-sm-12 col-md-4 text-center text-white text-stats">
-                    ——›&nbsp;{this.state.stats.meetupUsers} community devs
+                  <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
+                    {this.state.stats.meetupUsers}
+                    <span className="text-stats-description">community devs</span>
                   </div>
                 </section>
               </div>
