@@ -395,7 +395,7 @@ body,html,#app,.app-landing{height:100%;}
 .section-spacing{padding-top:100px;padding-bottom:100px;}
 .sectionWrap{padding-top:30px;padding-bottom:30px;}
 .containWrap{padding-top:30px;padding-bottom:30px;padding-right:25px;padding-left:25px;}
-.section-stats{background-color:#270F34;padding-top:25px;padding-bottom:25px;}
+.section-stats{background-color:#FAFAFA;padding-top:70px;padding-bottom:70px;}
 .col-3-section{padding-top:50px;padding-bottom:50px;background-color:rgba(248,249,251,1);border-bottom:1px solid #E6E6E6;}
 .about-head-wrap{padding-bottom:30px;background:url(/images/visuals/blockchain-timeline.png);background-repeat:no-repeat;background-position:center top;background-color:#53206f;}
 .highlight-box{padding-top:50px;padding-bottom:50px;background-color:#831ca8;color:rgba(255,255,255,1);}
@@ -453,7 +453,12 @@ li.nav-item:nth-last-child(2){display:none;}
 .landing-feat-img{width:100%;max-width:367px;}
 .feat-card{height:75px;display:block;}
 .feat-card > h3{font-weight:400;}
-.text-stats{font-family:'Source Code Pro',monospace;font-size:0.8125rem;font-weight:400;}
+.text-stats{font-size:1.5rem;font-weight:400;}
+.text-stats-description{
+  display: block;
+  font-size: 0.875rem;
+  color: #949494;
+}
 .landing-hero-img{display:none;}
 .no-padding-sm{padding-right:0;padding-left:0;}
 .col-img{max-width:110px;}

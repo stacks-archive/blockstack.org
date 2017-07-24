@@ -41,6 +41,24 @@ class TokenSalePage extends Component {
                 </p>
               </section>
             </div>
+            <div className="section-stats container-fluid">
+              <div className="container">
+                <section>
+                  <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
+                    73,191 
+                    <span className="text-stats-description">users registered</span>
+                  </div>
+                  <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
+                    3+ years
+                    <span className="text-stats-description">In production</span>
+                  </div>
+                  <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
+                    6,574 
+                    <span className="text-stats-description">community devs</span>
+                  </div>
+                </section>
+              </div>
+            </div>
           </div>
         </div>
       </DocumentTitle>
