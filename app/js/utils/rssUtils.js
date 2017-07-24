@@ -32,9 +32,13 @@ export function getPostFromRSS(rssPost) {
 
   // Handle markup
   const markupFull = post['content:encoded'][0]
-  const image = markupFull.split('src="')[1].split('" alt="')[0]
   let markupCleaned = null
+  let image = null
   if (markupFull) {
+    const srcSplit = markupFull.split('src="')
+    if (srcSplit.length > 1) {
+      image = srcSplit[1].split('" alt="')[0]
+    }
     markupCleaned = markupFull.replace(/<img[^>]*>/,'')
     markupCleaned = markupCleaned.replace(/<img/g, '<img class="img-fluid"')
   }
@@ -81,4 +85,3 @@ export function getAllPostsFromRSS(rssXML) {
     postObject: postObject
   }
 }
-
