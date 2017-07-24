@@ -5,6 +5,9 @@
 /* - Max-width of site is to be set via `container` */
 /* - All sections utilize `containter` */
 
+/* --------    #2C96FF   ELECTRIC-BLUE    -------- */ ::selection{background:rgba(44,150,255,0.99);color:#fff;}::-moz-selection{background:rgba(44,150,255,0.99);color:#fff;}
+/* --------    #270f34   PURPLE 110       -------- */ /*::selection{background:rgba(39,15,52,0.99);color:#fff;}::-moz-selection{background:rgba(39,15,52,0.99);color:#fff;}*/
+
 /* Table of Contents */
 /*  1. Colors */
 /*  2. Options */
@@ -254,7 +257,7 @@ body {
 
 /* Heading styles */
 h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:1rem;}
-h1{font-size:2.75rem;}
+h1{font-size:2.125rem;}
 h2{font-size:1.875rem;}
 h3{font-size:1.625rem;}
 h4{font-size:1.375rem;}
@@ -286,8 +289,7 @@ a:hover,a:focus{font-weight:400;color:#E91E63;text-decoration:underline;}
 
 /* Revisit Type */
 h1.type-beauty{font-family:'Lato',sans-serif;font-size:1.5rem;font-weight:700;}
-h1.hero-head{font-family:'Lato',sans-serif;margin-bottom:0.875rem;font-size:1.75rem;font-weight:400;margin-top:1rem;}
-.hero-lead{font-family:'Lato',sans-serif;font-size:1rem;margin-bottom:0.75rem;line-height:1.25rem;font-weight:400;}
+.hero-lead{font-family:'Lato',sans-serif;font-size:1rem;margin-bottom:2.75rem;line-height:1.25rem;font-weight:400;}
 .lead-centered{font-family:'Source Code Pro',monospace;font-size:1rem;text-align:center;margin-bottom:2rem;font-weight:400;}
 
 /* 13. Forms */
@@ -336,16 +338,12 @@ a.nav-link > i.fa.fa-github{display:none;}
 .btn-footer-max-width{max-width:225px;}
 
 /* 37. Misc */
-.body-hero{background-color:#402b4c!important;background:url(../images/visuals/blockstack-hero-globe@2x.png) no-repeat;background-position:top -300px center;background-size:100%;}
+.body-hero{background-color:#270F34!important;}
 .token-hero{background-color:#270F34!important;background:url(../images/visuals/blockstack-grid-reverse.svg) no-repeat;background-position:top -10px center;}
 body,html,#app,.app-landing{height:100%;}
 .app-common{height:auto;}
 .site-wrapper{display:flex;background-color:#270F34;flex-direction:column;height:100%;}
 .hero{display:block;color:#fff;padding-bottom:125px;padding-top:45px;padding-left:0.5rem;padding-right:0.5rem;}
-.hero-caption{text-align:center;font-family:'Lato',sans-serif;font-size:0.8125rem;font-weight:400;color:#95889C;margin-top:-5px;}
-.hero-caption > a{color:#95889C;font-weight:400;}
-.hero-caption > a:hover{color:#95889C;text-decoration:none;}
-.hero-caption > a:hover span{color:rgba(255,255,255,0.8);text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.5);padding-bottom:0px;}
 .hero-wrap{padding-top:.5rem;padding-bottom:6rem;}
 .hero-btn-title{font-family:'Source Code Pro',monospace;font-weight:400;font-size:0.875rem;margin-bottom:0.5rem;margin-top:0.5rem;}
 .sectionContainerDark{color:#fff;background-color:#270F34;padding-top:30px;padding-bottom:30px;padding-right:0px;padding-left:0px;}
@@ -369,7 +367,6 @@ h2.action-title{margin-bottom:35px;font-size:30px;line-height:42px;font-weight:4
 .table-wrap{max-width:800px;}
 .table-striped > thead > tr > th{text-align:center;}
 .table td{border-top:none;}
-.hero-img{margin-top:-10px;}
 .card{width:100%;}
 .inverse-3col-section{background-color:#41294E;color:#fff;padding-top:30px;padding-bottom:25px;}
 .inverse-lead{font-weight:400;margin-bottom:35px;}
@@ -535,23 +532,34 @@ section{word-break:break-word;}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px){
+  
+  /* 9. Fonts */
+  /* Heading styles */
+  h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:1rem;}
+  h1{font-size:2.75rem;}
+  h2{font-size:1.875rem;}
+  h3{font-size:1.625rem;}
+  h4{font-size:1.375rem;}
+  h5{font-size:1.125rem;}
+  h6{font-size:1rem;}
 
   /* Max widths */
   .container{max-width:975px;}
 
   /* Globals */
+  .body-hero{background-color:#402b4c!important;background:url(../images/visuals/blockstack-hero-globe@2x.png) no-repeat;background-position:top -300px center;background-size:100%;}
   h1.hero-head{font-size:2.25rem;text-align:center;margin-top:0;}
   .hero-lead{text-align:center;padding-left:0;padding-right:0;margin-bottom:3.125rem;line-height:1.5rem}
   .lead-centered{padding-left:0;padding-right:0;text-align:center;margin-bottom:3rem;}
   .col-3-section{padding-bottom:50px;}
   .hero-head.summ-head{font-size:40px;}
-  .hero-btn{padding-left:0;}
 
-  /* Buttons */
+  /* 12. Buttons */
   .btn-lg{font-size:0.875rem;padding:0.6875rem 3.4375rem;line-height:1.75rem;}
   .btn-block{display:block;width:initial;}
   .btn-text{padding-right: 0; padding-left: 0;margin-ttop: 0;padding: 0}
   .btn-hero{padding:0.5625rem 2.25rem;font-size:0.8125rem;font-weight:400;line-height:1.75rem;}
+  .btn-block-reset{width:unset;} /* new btn-* variable that resets btn-block on desktop */
 
   /* Feature Image Top */
   .feat-img-top > p{font-size:14px;}
@@ -587,7 +595,6 @@ section{word-break:break-word;}
   /* Content */
   .hero-wrap{display:block;padding-top:8rem;padding-bottom:12rem;}
   .hero{padding-bottom:0;}
-  .hero-caption {text-align: left;}
   .simple-featurette{display:block;margin-top:85px;}
   .simple-panel{display:inline-block;margin-top:0;margin-bottom:0;margin-right:50px;}
   .simple-panel-2{margin-top:0px;margin-bottom:0px;text-align:center;padding-top:0px;}
@@ -664,7 +671,6 @@ section{word-break:break-word;}
   /* Hero */
   .hero-wrap{padding-top:11.5rem;padding-bottom:12.5rem;}
   .hero-head{padding-left:0;}
-  .hero-img{margin-top:-25px;margin-right:-10px;}
   .slides{padding-top:50px;padding-right:0;padding-left:0;}
   .wrap-mob-feat{max-width:240px;}
   .topic{margin-bottom:5px;}
