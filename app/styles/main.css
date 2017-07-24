@@ -292,44 +292,12 @@ h1.hero-head{font-family:'Lato',sans-serif;margin-bottom:0.875rem;font-size:1.75
 .lead-centered{font-family:'Source Code Pro',monospace;font-size:1rem;text-align:center;margin-bottom:2rem;font-weight:400;}
 
 /* 13. Forms */
-.form-control-outline-primary {
-  background-color: #270f34;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 0;
-  font-size: 0.875rem;
-  padding: 0.5625rem 2.25rem;
-  line-height: 1.75rem;
-  text-transform: none;
-  outline: none;
-  -webkit-background-clip: unset;
-  background-clip: unset;
-  -webkit-transition: all .35s ease-in-out;
-  -moz-transition: all .35s ease-in-out;
-  -ms-transition: all .35s ease-in-out;
-  -o-transition: all .35s ease-in-out;
-  transition: all .35s ease-in-out;
-}
-.form-control-outline-primary:hover, .form-control-outline-primary:focus,.form-control-outline-primary:active {
-  background-color: #fff;
-  border: 1px solid #fff;
-  outline: none;
-  -webkit-background-clip: unset;
-  background-clip: unset;
-  -webkit-transition: all .35s ease-in-out;
-  -moz-transition: all .35s ease-in-out;
-  -ms-transition: all .35s ease-in-out;
-  -o-transition: all .35s ease-in-out;
-  transition: all .35s ease-in-out;
-}
-.form-control-outline-primary::placeholder {
-  color: #95889c;
-  text-align: center;
-  text-transform: none;
-  font-size: 0.875rem;
-}
+.form-control-outline-primary{background-color:#270f34;border:1px solid rgba(255,255,255,0.15);border-radius:0;font-size:0.875rem;padding:0.5625rem 2.25rem;line-height:1.75rem;text-transform:none;outline:none;-webkit-background-clip:unset;background-clip:unset;-webkit-transition:all .35s ease-in-out;-moz-transition:all .35s ease-in-out;-ms-transition:all .35s ease-in-out;-o-transition:all .35s ease-in-out;transition:all .35s ease-in-out;}
+.form-control-outline-primary:hover,.form-control-outline-primary:focus,.form-control-outline-primary:active{background-color:#fff;border:1px solid #fff;outline:none;-webkit-background-clip:unset;background-clip:unset;-webkit-transition:all .35s ease-in-out;-moz-transition:all .35s ease-in-out;-ms-transition:all .35s ease-in-out;-o-transition:all .35s ease-in-out;transition:all .35s ease-in-out;}
+.form-control-outline-primary::placeholder{color:#95889c;text-align:center;text-transform:none;font-size:0.875rem;}
 
 /* 16. Navbar */
-.navbar{font-family:'Source Code Pro',monospace;padding-top:0.4375rem;padding-bottom:0.5625rem;}
+.navbar{font-family:'Lato',sans-serif;padding-top:0.4375rem;padding-bottom:0.5625rem;}
 .navbar-brand{margin-right:0px;}
 .navbar-brand img {width:164px;}
 .brand-bug{margin-right:1rem;}
@@ -337,10 +305,10 @@ h1.hero-head{font-family:'Lato',sans-serif;margin-bottom:0.875rem;font-size:1.75
 .brand-logo{display:none;}
 div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-header > nav.navbar > a.navbar-brand{display:none;}
 div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-header > nav.navbar > a.navbar-brand.brand-bug{display:block;}
-.nav{font-family:'Source Code Pro',monospace;text-align:left;font-size:20px;padding-top:10px;padding-bottom:20px;}
+.nav{font-family:'Lato',sans-serif;text-align:left;font-size:20px;font-weight:700}
 .navbar-nav{display:initial;}
 .navbar-nav{display:none;}
-a.nav-link{color:#fff;font-size:0.8125rem;font-weight:400;margin-top:0.0625rem;}
+a.nav-link{color:#fff;font-size:0.9375rem;font-weight:700;margin-top:0.0625rem;}
 a.nav-link:hover,a.nav-link:focus{color:#fff;}
 .nav-item{margin-left:0.5rem;line-height:36px;}
 
@@ -352,38 +320,14 @@ a.nav-link:hover,a.nav-link:focus{color:#fff;}
 a.nav-link > i.fa.fa-github{display:none;}
 
 /* Buttons */
-.btn {
-  font-family: 'Lato', sans-serif;
-  padding: 0.5625rem 2.25rem;
-  font-size: 0.75rem;
-  font-weight: 600;
-  line-height: 1.75rem;
-  border-radius: 0;
-  text-transform: uppercase;
-}
+.btn{font-family:'Lato',sans-serif;padding:0.5625rem 2.25rem;font-size:0.75rem;font-weight:700;line-height:1.75rem;border-radius:0;text-transform:uppercase;}
 .btn-sm{font-size:0.8125rem;padding:0.375rem 2.125rem;line-height:1.5rem;}
 .btn-lg{font-size:0.875rem;padding:0.6875rem 3.4375rem;line-height:1.75rem;}
 .btn-outline-secondary:hover,.btn-outline-secondary:focus,.btn-outline-secondary:active{color:#9A21C5;}
 .btn-secondary{color:#270F34;border:1px solid #fff;background-color:#fff;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
 .btn-secondary:hover,.btn-secondary:focus,.btn-secondary:active{color:#fff;border:1px solid #E91E63;background-color:#E91E63;outline:none;}
-.btn-outline-primary {
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  font-weight: 600;
-  background-color: #270F34;
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  -ms-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-}
-.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
-  color: #270F34;
-  border: 1px solid rgba(255, 255, 255);
-  font-weight: 600;
-  background-color: #fff;
-  outline: none;
-}
+.btn-outline-primary{color:#fff;border:1px solid rgba(255,255,255,0.15);font-weight:700;background-color:#270F34;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
+.btn-outline-primary:hover,.btn-outline-primary:focus,.btn-outline-primary:active{color:#270F34;border:1px solid rgba(255,255,255);font-weight:700;background-color:#fff;outline:none;}
 .btn-special{color:#fff;border:1px solid #080809;background-color:#080809;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
 .btn-special:hover,.btn-special:focus,.btn-special:active{color:#270F34;border:1px solid rgba(255,255,255);background-color:#fff;outline:none;}
 .btn-electric-magenta{color:#fff;border:1px solid #E91E63;background-color:#E91E63;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
@@ -610,15 +554,14 @@ section{word-break:break-word;}
   /* Navbar */
   .navbar-brand img{position:relative;}
   .brand-bug{margin-top:0.625rem;}
-  .brand-logo{margin-right:2.5rem;margin-top:0.9375rem;}  
+  .brand-logo{margin-right:2.5rem;margin-top:0.8125rem;}  
   div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-header > nav.navbar > a.navbar-brand{display:block;}
   div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-header > nav.navbar > a.navbar-brand.brand-bug{display:none;}
   .nav-item:first-child{margin-left:.875rem;}
   .navbar-nav .nav-item+.nav-item{margin-left:1.375rem;}
-  .navbar-nav{display:initial;}
+  .navbar-nav{display:initial;margin-top:0.375rem;}
   a.nav-link{padding-right:5px;padding-left:5px;}
   .navbar{font-family:'Source Code Pro',monospace;padding-top:.375rem;padding-bottom:.625rem}
-  a.nav-link{margin-top:0.3125rem;}
   .fa-github{margin-top:-0.1875rem;margin-right:0.75rem;vertical-align:middle;font-size:1.175rem;}
   .dropdown-menu{margin-top:0;padding-top:1rem;padding-bottom:1rem;background-color:#270F34;border-radius:0;border:1px solid rgba(255,255,255,0.1);box-shadow:0 0 1.875rem rgba(0,0,0,0);}
   a.dropdown-item{font-size:0.8125rem;color:#95889C;font-weight:400;padding:0.375rem 3.4375rem 0.375rem 1.875rem;}
@@ -697,11 +640,7 @@ section{word-break:break-word;}
   /* 9. Fonts */
   
   /* Navbar */
-  .navbar {
-    font-family: 'Source Code Pro', monospace;
-    padding-top: 1.0625rem;
-    padding-bottom: 1.5rem;
-  }
+  .navbar{font-family:'Source Code Pro',monospace;padding-top:1.375rem;padding-bottom:1.375rem;}
   .brand-bug{display:none;}
   .brand-logo{display:initial;}
   
@@ -767,17 +706,3 @@ section{word-break:break-word;}
   .sticky-share div{margin:10px 10px 10px 10px;}
 }
 
-
-
-body {
-  -webkit-animation-duration: 0.1s;
-  -webkit-animation-name: fontfix;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 0.1s;
-}
-
-@-webkit-keyframes fontfix {
-  from { opacity: 1; }
-  to { opacity: 1; }
-}
