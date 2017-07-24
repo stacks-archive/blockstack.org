@@ -129,8 +129,8 @@ class HomePage extends Component {
           <div className="col-centered block">
             <TransparentHeader />
             <div className="container">
-              <section className="hero">
-                <h1 className="h-secondary hero-head">
+              <section className="hero text-xs-center">
+                <h1 className="text-white m-b-20">
                  A New Internet for Decentralized Apps
                 </h1>
                 <p className="lead hero-lead col-md-9 col-centered">
