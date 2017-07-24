@@ -157,8 +157,8 @@ class HomePage extends Component {
                 <div className="no-padding container-fluid col-md-9 col-centered m-b-65">
                   <div className="col-sm-12 text-center landing-hero-img">
                     <Image className="landing-feat-img"
-                      src="/images/resources/portal-home-screen@2x.png"
-                      fallbackSrc="/images/tutorials/portal-home-screen.png"
+                      src="/images/resources/browser-home-screen@2x.png"
+                      fallbackSrc="/images/resources/browser-home-screen.png"
                       retinaSupport={false} />
                   </div>
                 </div>
