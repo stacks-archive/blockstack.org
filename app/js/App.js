@@ -36,7 +36,7 @@ class App extends Component {
 
     return (
       <div className={wrapperClass}>
-        { location.pathname !== '/' ?
+        { (location.pathname !== '/' && location.pathname !== '/tokensale') ?
           <Header />
         : null }
         {this.renderChildren()}

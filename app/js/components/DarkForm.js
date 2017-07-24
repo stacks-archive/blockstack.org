@@ -1,6 +1,6 @@
 import {Component} from 'react'
 
-class MailchimpForm extends Component {
+class DarkForm extends Component {
   static propTypes: {
     subscribeURL: PropTypes.string.isRequired,
     submitButtonText: PropTypes.string.isRequired
@@ -33,8 +33,8 @@ class MailchimpForm extends Component {
             <div className="mc-field-group" style={{ marginBottom: '10px' }}>
               <label htmlFor="mce-EMAIL" style={{ display: 'none' }}>Email Address </label>
               <input type="email" value={this.state.email} name="EMAIL"
-                className="form-control required email"
-                id="mce-EMAIL" placeholder="Email address"
+                className="form-control form-control-outline-primary text-xs-center"
+                id="mce-EMAIL" placeholder="Enter email address"
                 onChange={this.onChange} />
             </div>
             <div id="mce-responses" className="clear">
@@ -58,5 +58,5 @@ class MailchimpForm extends Component {
   }
 }
 
-export default MailchimpForm
+export default DarkForm
 
