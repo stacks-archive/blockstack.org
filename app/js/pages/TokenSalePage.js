@@ -69,6 +69,11 @@ class TokenSalePage extends Component {
   render() {
     const firstThreePosts = this.state.posts.slice(0, 3)
 
+    const blockstackExplanation = `Blockstack is a new decentralized internet.
+      With Blockstack, users control their data and apps run on their devices. There are no middlemen, no passwords, no massive data silos to breach, and no services tracking us around the internet.
+      The applications on blockstack are server-less and decentralized. Developers start by building a single-page application in Javascript, Then, instead of plugging the frontend into a centralized API, they plug into an API run by the user. Developers install a library called 'blockstack.js' and don't have to worry about running servers, maintaining databases, or building out user management systems.
+    `
+
     return (
       <DocumentTitle title="Blockstack - Token Sale">
         <div className="token-hero">
@@ -113,7 +118,25 @@ class TokenSalePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="section-stats container-fluid" style={{ backgroundColor: '#DDD' }}>
+            <div className="sectionContainerLight section-spacing container-fluid" style={{ backgroundColor: '#DDD' }}>
+              <div className="container">
+                <section>
+                  <div className="containWrap">
+                    <h2 className="h-primary text-center">
+                      What is Blockstack?
+                    </h2>
+                    <div className="row">
+                      <div className="col-md-8 col-centered">
+                        <p className="text-center">
+                          {blockstackExplanation}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div className="sectionContainerLight section-spacing container-fluid">
               <div className="container">
                 <section>
                   <EmbedYouTube src={this.state.videoURL} />
