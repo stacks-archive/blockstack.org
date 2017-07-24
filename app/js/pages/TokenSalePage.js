@@ -1,13 +1,32 @@
 'use strict'
 
-import {Component}         from 'react'
-import {Link}              from 'react-router'
-import DocumentTitle       from 'react-document-title'
+import {Component}          from 'react'
+import {Link}               from 'react-router'
+import DocumentTitle        from 'react-document-title'
+import {bindActionCreators} from 'redux'
+import {connect}            from 'react-redux'
 
-import DarkForm            from '../components/DarkForm'
-import TransparentHeader   from '../components/TransparentHeader'
+import {BlogActions}       from '../datastore/Blog'
+import {StatsActions}      from '../datastore/Stats'
 import Image               from '../components/Image'
+import TransparentHeader   from '../components/TransparentHeader'
+import DarkForm            from '../components/DarkForm'
 import EmbedYouTube        from '../components/EmbedYouTube'
+import PostPreview         from '../components/PostPreview'
+
+function mapStateToProps(state) {
+  return {
+    posts: state.blog.posts,
+    stats: state.stats,
+  }
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(
+    Object.assign({}, BlogActions, StatsActions),
+    dispatch
+  )
+}
 
 class TokenSalePage extends Component {
 
@@ -16,11 +35,40 @@ class TokenSalePage extends Component {
 
     this.state = {
       subscribeURL: '//blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=0e5478ae86',
-      videoURL: 'https://www.youtube.com/embed/Z4bMFKBRg_k'
+      videoURL: 'https://www.youtube.com/embed/Z4bMFKBRg_k',
+      stats: this.props.stats,
+      posts: this.props.posts
+    }
+  }
+
+  componentWillMount() {
+    if (this.props.posts.length === 0) {
+      this.props.fetchPosts()
+    }
+    this.props.fetchStats()
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.stats !== this.props.stats) {
+      let stats = nextProps.stats
+      if (stats.domains === 0) {
+        stats.domains = 72000
+      }
+      this.setState({
+        stats: stats,
+      })
+    }
+
+    if (nextProps.posts !== this.props.posts) {
+      this.setState({
+        posts: nextProps.posts,
+      })
     }
   }
 
   render() {
+    const firstThreePosts = this.state.posts.slice(0, 3)
+
     return (
       <DocumentTitle title="Blockstack - Token Sale">
         <div className="token-hero">
@@ -72,6 +120,24 @@ class TokenSalePage extends Component {
                 </section>
               </div>
             </div>
+            <div className="sectionContainerLight section-spacing container-fluid">
+              <div className="container">
+                <section>
+                  <div className="containWrap">
+                    <h2 className="h-primary text-center">
+                      News
+                    </h2>
+                  </div>
+                  <div className="row m-b-50 no-margin">
+                  { firstThreePosts.map((post, index) => {
+                    return (
+                      <PostPreview key={index} post={post} />
+                    )
+                  }) }
+                  </div>
+                </section>
+              </div>
+            </div>
           </div>
         </div>
       </DocumentTitle>
@@ -80,4 +146,4 @@ class TokenSalePage extends Component {
 
 }
 
-export default TokenSalePage
+export default connect(mapStateToProps, mapDispatchToProps)(TokenSalePage)

@@ -1,10 +1,10 @@
 'use strict'
 
-import {Component}   from 'react'
-import {Link}        from 'react-router'
-import DocumentTitle from 'react-document-title'
+import {Component}          from 'react'
+import {Link}               from 'react-router'
+import DocumentTitle        from 'react-document-title'
 import {bindActionCreators} from 'redux'
-import {connect} from 'react-redux'
+import {connect}            from 'react-redux'
 
 import {BlogActions}       from '../datastore/Blog'
 import {StatsActions}      from '../datastore/Stats'
