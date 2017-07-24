@@ -35,7 +35,8 @@ class TokenSalePage extends Component {
                   </div>
                 </div>
                 <p className="text-xs-center m-t-2 m-b-150">
-                  <Link to="/whitepaper.pdf" target="_blank" className="btn btn-outline-primary">
+                  <Link to="/whitepaper.pdf" target="_blank" className="btn btn-outline-primary" 
+                  style={{ color: '#95889c' }}>
                     Read the Whitepaper
                   </Link>
                 </p>
