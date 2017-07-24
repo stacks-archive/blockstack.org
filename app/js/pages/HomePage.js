@@ -137,18 +137,18 @@ class HomePage extends Component {
                   Blockstack is a new decentralized internet where users own their data and apps run locally. A browser portal is all that’s needed to get started.
                 </p>
                 <div className="no-padding container-fluid col-md-10 col-lg-10 col-centered">
-                  <div className="no-padding col-md-6" style={{ paddingRight: '1px' }}>
-                    <p className="no-padding m-b-10">
+                  <div className="col-md-6">
+                    <p className="pull-right m-b-10">
                       <Link to="/developers" role="button"
-                        className="btn btn-outline-primary btn-block">
+                        className="btn btn-outline-primary">
                         Developers › Browser Kit
                       </Link>
                     </p>
                   </div>
-                  <div className="no-padding col-md-6">
-                    <p className="no-padding">
+                  <div className="col-md-6">
+                    <p className="pull-left">
                       <Link to="/users" role="button"
-                        className="btn btn-outline-primary btn-block">
+                        className="btn btn-outline-primary">
                         Users › Join the Waitlist
                       </Link>
                     </p>
