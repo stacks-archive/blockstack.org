@@ -336,7 +336,11 @@ a.nav-link > i.fa.fa-github{display:none;}
 .btn-footer-max-width{max-width:225px;}
 
 /* 37. Misc */
-.body-hero{background-color:#280f36!important;background:url(../images/visuals/earth-internet-purple.jpg) no-repeat;background-position:top -400px center;}
+.body-hero {
+  background-color: #280f36 !important;
+  background: url(../images/visuals/blockstack-hero-globe.jpg) no-repeat;
+  background-position: top -400px center;
+}
 .token-hero{background-color:#270F34!important;background:url(../images/visuals/blockstack-grid-reverse.svg) no-repeat;background-position:top -10px center;}
 body,html,#app,.app-landing{height:100%;}
 .app-common{height:auto;}
