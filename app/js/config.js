@@ -226,4 +226,10 @@ export const blogAuthors = {
     avatar: 'https://s3.amazonaws.com/kd4/muneeb-and-ryan.jpg',
     twitter: 'blockstackorg',
     github: 'blockstack' },
+  'mfreed.id': { 'blockstackId': 'mfreed',
+    name: 'Mike Freedman',
+    avatar: '/images/avatars/mike-freedman.jpg',
+    twitter: 'michaelfreedman',
+    github: 'mfreed'
+  }
 }
