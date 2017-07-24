@@ -337,9 +337,10 @@ a.nav-link > i.fa.fa-github{display:none;}
 
 /* 37. Misc */
 .body-hero {
-  background-color: #280f36 !important;
-  background: url(../images/visuals/blockstack-hero-globe.jpg) no-repeat;
+  background-color: #402b4c !important;
+  background: url(../images/visuals/blockstack-hero-globe@2x.png) no-repeat;
   background-position: top -400px center;
+  background-size: 100%;
 }
 .token-hero{background-color:#270F34!important;background:url(../images/visuals/blockstack-grid-reverse.svg) no-repeat;background-position:top -10px center;}
 body,html,#app,.app-landing{height:100%;}
