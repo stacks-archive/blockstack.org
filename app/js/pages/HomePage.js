@@ -133,15 +133,15 @@ class HomePage extends Component {
                 <h1 className="text-white m-b-20">
                  A New Internet for Decentralized Apps
                 </h1>
-                <p className="lead hero-lead col-md-9 col-centered">
+                <p className="hero-lead purple-50 col-md-9 col-centered">
                   Blockstack is a new decentralized internet where users own their data and apps run locally. A browser portal is all that’s needed to get started.
                 </p>
-                <div className="no-padding container-fluid col-md-10 col-lg-10 col-centered">
+                <div className="no-padding container-fluid col-md-10 col-lg-10 col-centered m-b-60">
                   <div className="col-md-6">
-                    <p className="pull-right m-b-10">
+                    <p className="pull-right">
                       <Link to="/developers" role="button"
                         className="btn btn-outline-primary">
-                        Developers › Browser Kit
+                        Developers&nbsp;&nbsp;›&nbsp;&nbsp;Browser Kit
                       </Link>
                     </p>
                   </div>
@@ -149,13 +149,13 @@ class HomePage extends Component {
                     <p className="pull-left">
                       <Link to="/users" role="button"
                         className="btn btn-outline-primary">
-                        Users › Join the Waitlist
+                        Users&nbsp;&nbsp;›&nbsp;&nbsp;Join the Waitlist
                       </Link>
                     </p>
                   </div>
                 </div>
-                <div className="no-padding container-fluid col-md-9 col-centered m-b-65">
-                  <div className="col-sm-12 text-center landing-hero-img">
+                <div className="no-padding container-fluid col-md-9 col-centered">
+                  <div className="text-center hidden-sm-down">
                     <Image className="landing-feat-img"
                       src="/images/resources/browser-home-screen@2x.png"
                       fallbackSrc="/images/resources/browser-home-screen.png"
