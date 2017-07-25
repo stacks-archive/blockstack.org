@@ -118,7 +118,7 @@ class TokenSalePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid" style={{ backgroundColor: '#DDD' }}>
+            <div className="sectionContainerLight section-spacing container-fluid">
               <div className="container">
                 <section>
                   <div className="containWrap">
@@ -136,7 +136,7 @@ class TokenSalePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid">
+            <div className="sectionContainerLight section-spacing container-fluid" style={{ backgroundColor: '#FAFAFA' }}>
               <div className="container">
                 <section>
                   <h2 className="h-primary text-center">
@@ -148,23 +148,56 @@ class TokenSalePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid" style={{ backgroundColor: '#DDD' }}>
+            <div className="sectionContainerLight section-spacing container-fluid">
               <div className="container">
                 <section>
                   <div className="containWrap">
                     <h2 className="h-primary text-center">
                       How Does Blockstack Work?
                     </h2>
-                    <div className="row">
-                      <div className="col-md-8 col-centered">
-                        
+                    <div className="row m-t-3">
+                      <div className="col-sm-6 text-center">
+                        <Image
+                          src="/images/visuals/blockstack-stack-diagram-2.png"
+                          fallbackSrc="/images/visuals/blockstack-stack-diagram-2.png"
+                          style={{width: '100%'}}
+                          retinaSupport={false} />
+                      </div>
+                      <div className="col-sm-6 text-center">
+                        <Image
+                          src="/images/visuals/blockstack-tx-diagram.png"
+                          fallbackSrc="/images/visuals/blockstack-tx-diagram.png"
+                          style={{width: '100%'}}
+                          retinaSupport={false} />
                       </div>
                     </div>
                   </div>
                 </section>
               </div>
             </div>
+            <div className="sectionContainerLight section-spacing container-fluid" style={{ backgroundColor: '#FAFAFA' }}>
+              <div className="container">
+                <section>
+                  <h2 className="h-primary text-center">
+                    Featured Apps
+                  </h2>
+                  <div className="row m-t-3">
+                  </div>
+                </section>
+              </div>
+            </div>
             <div className="sectionContainerLight section-spacing container-fluid">
+              <div className="container">
+                <section>
+                  <h2 className="h-primary text-center">
+                    Team
+                  </h2>
+                  <div className="row m-t-3">
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div className="sectionContainerLight section-spacing container-fluid" style={{ backgroundColor: '#FAFAFA' }}>
               <div className="container">
                 <section>
                   <div className="containWrap">
