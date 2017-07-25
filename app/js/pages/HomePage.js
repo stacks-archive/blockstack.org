@@ -392,7 +392,7 @@ class HomePage extends Component {
                         Existing voting systems are centrally operated and thus are extremely vulnerable to hacking. Build a voting system as a public internet utility that’s run by the community instead of a single corporation.
                       </p>
                     </div>
-                  </div>                  
+                  </div>
                 </section>
               </div>
             </div>
