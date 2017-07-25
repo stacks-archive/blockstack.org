@@ -81,7 +81,7 @@ class TokenSalePage extends Component {
             <TransparentHeader />
             <div className="container">
               <section className="text-xs-center">
-                <Image className="stacks-logo-sm m-t-85 m-b-55"
+                <Image className="stacks-logo-sm m-t-65 m-b-55"
                         src="/images/logos/stacks-logo.svg"
                         fallbackSrc="/images/logos/stacks-logo.svg"
                         retinaSupport={false} />
