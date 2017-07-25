@@ -357,18 +357,18 @@ body,html,#app,.app-landing{height:100%;}
   background-color: #FAFAFA;
   padding-top: 70px;
   padding-bottom: 70px;
-  webkit-box-shadow: 0 -10px 1.5rem rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 -10px 1.5rem rgba(0, 0, 0, 0.15);
-  box-shadow: 0 -10px 1.5rem rgba(0, 0, 0, 0.15);
+  webkit-box-shadow: 0 -10px 20px rgba(0,0,0,0.19), 0 0 0 rgba(0,0,0,0);
+  -moz-box-shadow: 0 -10px 20px rgba(0,0,0,0.19), 0 0 0 rgba(0,0,0,0);
+  box-shadow: 0 -10px 20px rgba(0,0,0,0.19), 0 0 0 rgba(0,0,0,0);
 }
 .section-stats-electric {
   background-color: #2C96FF;
   color: #fff;
   padding-top: 70px;
   padding-bottom: 70px;
-  webkit-box-shadow: 0 -10px 1.5rem rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 -10px 1.5rem rgba(0, 0, 0, 0.15);
-  box-shadow: 0 -10px 1.5rem rgba(0, 0, 0, 0.15);
+  webkit-box-shadow: 0 -10px 20px rgba(0,0,0,0.19), 0 0 0 rgba(0,0,0,0);
+  -moz-box-shadow: 0 -10px 20px rgba(0,0,0,0.19), 0 0 0 rgba(0,0,0,0);
+  box-shadow: 0 -10px 20px rgba(0,0,0,0.19), 0 0 0 rgba(0,0,0,0);
 }
 .col-3-section{padding-top:50px;padding-bottom:50px;background-color:rgba(248,249,251,1);border-bottom:1px solid #E6E6E6;}
 .about-head-wrap{padding-bottom:30px;background:url(/images/visuals/blockchain-timeline.png);background-repeat:no-repeat;background-position:center top;background-color:#53206f;}
