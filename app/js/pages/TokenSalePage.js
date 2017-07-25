@@ -100,7 +100,7 @@ class TokenSalePage extends Component {
                 </p>
               </section>
             </div>
-            <div className="section-stats container-fluid">
+            <div className="section-stats section-stats-electric container-fluid">
               <div className="container">
                 <section>
                   <div className="no-padding col-sm-12 col-md-4 text-center text-stats">

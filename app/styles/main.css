@@ -353,7 +353,23 @@ body,html,#app,.app-landing{height:100%;}
 .section-spacing{padding-top:100px;padding-bottom:100px;}
 .sectionWrap{padding-top:30px;padding-bottom:30px;}
 .containWrap{padding-top:30px;padding-bottom:30px;padding-right:25px;padding-left:25px;}
-.section-stats{background-color:#FAFAFA;padding-top:70px;padding-bottom:70px;webkit-box-shadow:0 -10px 1.5rem rgba(0,0,0,0.15);-moz-box-shadow:0 -10px 1.5rem rgba(0,0,0,0.15);box-shadow:0 -10px 1.5rem rgba(0,0,0,0.15);}
+.section-stats {
+  background-color: #FAFAFA;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  webkit-box-shadow: 0 -10px 1.5rem rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 -10px 1.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 -10px 1.5rem rgba(0, 0, 0, 0.15);
+}
+.section-stats-electric {
+  background-color: #2C96FF;
+  color: #fff;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  webkit-box-shadow: 0 -10px 1.5rem rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 -10px 1.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 -10px 1.5rem rgba(0, 0, 0, 0.15);
+}
 .col-3-section{padding-top:50px;padding-bottom:50px;background-color:rgba(248,249,251,1);border-bottom:1px solid #E6E6E6;}
 .about-head-wrap{padding-bottom:30px;background:url(/images/visuals/blockchain-timeline.png);background-repeat:no-repeat;background-position:center top;background-color:#53206f;}
 .highlight-box{padding-top:50px;padding-bottom:50px;background-color:#831ca8;color:rgba(255,255,255,1);}
@@ -412,7 +428,7 @@ img.landing-feat-img{-webkit-filter:drop-shadow(0 0 1.5625rem rgba(0,0,0,0.15));
 .feat-card{height:75px;display:block;}
 .feat-card > h3{font-weight:400;}
 .text-stats{font-size:1.5rem;font-weight:400;}
-.text-stats-description{display:block;font-size:0.875rem;color:#949494;}
+.text-stats-description{display:block;font-size:0.875rem;color:#D4EAFF;}
 .no-padding-sm{padding-right:0;padding-left:0;}
 .col-img{max-width:110px;}
 .col3-img-lg{width:100%;min-width:210px;max-width:425px;}
