@@ -127,44 +127,46 @@ class HomePage extends Component {
       <DocumentTitle title="Blockstack, building the decentralized internet">
         <div className="body-hero">
           <div className="col-centered block">
-            <TransparentHeader />
-            <div className="container">
-              <section className="hero text-xs-center">
-                <h1 className="text-white m-b-20">
-                 A New Internet for Decentralized Apps
-                </h1>
-                <p className="hero-lead purple-50 col-md-9 col-centered">
-                  Blockstack is a new decentralized internet where users own their data and apps run locally. A browser portal is all that’s needed to get started.
-                </p>
-                <div className="no-padding container-fluid col-md-10 col-lg-10 col-centered m-b-60">
-                  <div className="col-sm-12 col-md-6">
-                    <p className="pull-md-right">
-                      <Link to="/developers" role="button"
-                        className="btn btn-outline-primary btn-block btn-block-reset">
-                        Developers&nbsp;&nbsp;›&nbsp;&nbsp;Browser Kit
-                      </Link>
-                    </p>
+            <div>
+              <TransparentHeader />
+              <div className="container">
+                <section className="hero text-xs-center">
+                  <h1 className="text-white m-b-20">
+                   A New Internet for Decentralized Apps
+                  </h1>
+                  <p className="hero-lead purple-50 col-md-9 col-centered">
+                    Blockstack is a new decentralized internet where users own their data and apps run locally. A browser portal is all that’s needed to get started.
+                  </p>
+                  <div className="no-padding container-fluid col-md-10 col-lg-10 col-centered m-b-60">
+                    <div className="col-sm-12 col-md-6">
+                      <p className="pull-md-right">
+                        <Link to="/developers" role="button"
+                          className="btn btn-outline-primary btn-block btn-block-reset">
+                          Developers&nbsp;&nbsp;›&nbsp;&nbsp;Browser Kit
+                        </Link>
+                      </p>
+                    </div>
+                    <div className="col-sm-12 col-md-6">
+                      <p className="pull-md-left">
+                        <Link to="/users" role="button"
+                          className="btn btn-outline-primary btn-block btn-block-reset">
+                          Users&nbsp;&nbsp;›&nbsp;&nbsp;Join the Waitlist
+                        </Link>
+                      </p>
+                    </div>
                   </div>
-                  <div className="col-sm-12 col-md-6">
-                    <p className="pull-md-left">
-                      <Link to="/users" role="button"
-                        className="btn btn-outline-primary btn-block btn-block-reset">
-                        Users&nbsp;&nbsp;›&nbsp;&nbsp;Join the Waitlist
-                      </Link>
-                    </p>
+                  <div className="no-padding container-fluid col-md-9 col-centered">
+                    <div className="text-center hidden-sm-down">
+                      <Image className="landing-feat-img"
+                        src="/images/resources/browser-home-screen@2x.png"
+                        fallbackSrc="/images/resources/browser-home-screen.png"
+                        retinaSupport={false} />
+                    </div>
                   </div>
-                </div>
-                <div className="no-padding container-fluid col-md-9 col-centered">
-                  <div className="text-center hidden-sm-down">
-                    <Image className="landing-feat-img"
-                      src="/images/resources/browser-home-screen@2x.png"
-                      fallbackSrc="/images/resources/browser-home-screen.png"
-                      retinaSupport={false} />
-                  </div>
-                </div>
-              </section>
+                </section>
+              </div>
             </div>
-            <div className="section-stats container-fluid" style={{ zIndex: '902', position: 'absolute', width: '100%' }}>
+            <div className="section-stats container-fluid">
               <div className="container">
                 <section>
                   <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
