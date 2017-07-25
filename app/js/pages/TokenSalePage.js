@@ -92,7 +92,7 @@ class TokenSalePage extends Component {
                     <DarkForm subscribeURL={this.state.subscribeURL} submitButtonText='Sign Up' />
                   </div>
                 </div>
-                <p className="text-xs-center m-t-2 m-b-150">
+                <p className="text-xs-center m-t-2 m-b-165">
                   <Link to="/whitepaper.pdf" target="_blank" className="btn btn-outline-primary" 
                   style={{ color: '#95889c' }}>
                     Read the Whitepaper
