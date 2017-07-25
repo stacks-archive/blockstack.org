@@ -13,6 +13,8 @@ import TransparentHeader   from '../components/TransparentHeader'
 import DarkForm            from '../components/DarkForm'
 import EmbedYouTube        from '../components/EmbedYouTube'
 import PostPreview         from '../components/PostPreview'
+import CommunityMember     from '../components/CommunityMember'
+import {communityMembers}  from '../config'
 
 function mapStateToProps(state) {
   return {
@@ -192,7 +194,19 @@ class TokenSalePage extends Component {
                   <h2 className="h-primary text-center">
                     Team
                   </h2>
-                  <div className="row m-t-3">
+                  <div className="post-content m-t-3">
+                    {communityMembers.map((communityMember, index) => {
+                      return (
+                        <CommunityMember
+                          key={index}
+                          blockstackId={communityMember.blockstackId}
+                          name={communityMember.name}
+                          avatar={communityMember.avatar}
+                          twitter={communityMember.twitter}
+                          github={communityMember.github}
+                          facebook={communityMember.facebook} />
+                      )
+                    })}
                   </div>
                 </section>
               </div>
