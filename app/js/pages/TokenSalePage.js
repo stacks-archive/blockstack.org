@@ -139,7 +139,28 @@ class TokenSalePage extends Component {
             <div className="sectionContainerLight section-spacing container-fluid">
               <div className="container">
                 <section>
-                  <EmbedYouTube src={this.state.videoURL} />
+                  <h2 className="h-primary text-center">
+                    Why Blockstack?
+                  </h2>
+                  <div className="row m-t-3">
+                    <EmbedYouTube src={this.state.videoURL} />
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div className="sectionContainerLight section-spacing container-fluid" style={{ backgroundColor: '#DDD' }}>
+              <div className="container">
+                <section>
+                  <div className="containWrap">
+                    <h2 className="h-primary text-center">
+                      How Does Blockstack Work?
+                    </h2>
+                    <div className="row">
+                      <div className="col-md-8 col-centered">
+                        
+                      </div>
+                    </div>
+                  </div>
                 </section>
               </div>
             </div>
