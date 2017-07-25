@@ -100,20 +100,26 @@ class TokenSalePage extends Component {
                 </p>
               </section>
             </div>
-            <div className="section-stats section-stats-electric container-fluid">
+            <div className="section-stats section-stats-electric-blue container-fluid">
               <div className="container">
                 <section>
                   <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
                     73,191 
-                    <span className="text-stats-description">users registered</span>
+                    <span className="text-stats-description" style={{ color: 'rgba(255,255,255,0.8)' }} >
+                      users registered
+                    </span>
                   </div>
                   <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
                     3+ years
-                    <span className="text-stats-description">in production</span>
+                    <span className="text-stats-description" style={{ color: 'rgba(255,255,255,0.8)' }} >
+                      in production
+                    </span>
                   </div>
                   <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
                     6,574 
-                    <span className="text-stats-description">community devs</span>
+                    <span className="text-stats-description" style={{ color: 'rgba(255,255,255,0.8)' }} >
+                      community devs
+                    </span>
                   </div>
                 </section>
               </div>
