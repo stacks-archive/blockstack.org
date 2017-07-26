@@ -232,7 +232,7 @@ class TokenSalePage extends Component {
                   </h2>
                   {[[0,3], [3,5]].map((row, index) => {
                     return (
-                      <div className="" key={index}>
+                      <div key={index}>
                         {featuredApps.slice(row[0],row[1]).map((featuredApp, index2) => {
                           const offsetClass = (row[0] === 3 && index2 === 0) ? 'offset-md-2' : ''
                           return (
@@ -279,7 +279,7 @@ class TokenSalePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid" style={{ backgroundColor: '#FAFAFA' }}>
+            <div className="sectionContainerLight section-spacing container-fluid">
               <div className="container">
                 <section>
                   <div className="containWrap">
