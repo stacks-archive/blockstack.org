@@ -227,17 +227,17 @@ class TokenSalePage extends Component {
             <div className="sectionContainerGray section-spacing container-fluid">
               <div className="container">
                 <section>
-                  <h2 className="h-primary text-center">
+                  <h2 className="h-primary m-b-85 text-center">
                     Featured Apps on Blockstack
                   </h2>
                   {[[0,3], [3,5]].map((row, index) => {
                     return (
-                      <div className="m-t-3 row" key={index}>
+                      <div className="" key={index}>
                         {featuredApps.slice(row[0],row[1]).map((featuredApp, index2) => {
                           const offsetClass = (row[0] === 3 && index2 === 0) ? 'offset-md-2' : ''
                           return (
                             <div key={index2} 
-                              className={`col-md-4 ${offsetClass}`}>
+                              className={`col-md-4 m-b-55 ${offsetClass}`}>
                               <p className="text-center">
                                 <Image className="col-img" src={featuredApp.icon}
                                   retinaSupport={false} />
