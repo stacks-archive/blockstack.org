@@ -130,52 +130,64 @@ export const talks = {
 
 export const teamMembers = [
   {
-    blockstackId: 'larry',
-    name: 'Larry Salibra',
-    avatar: 'https://s3.amazonaws.com/kd4/larry',
-    bio: 'Traveler of worlds.',
-  },
-  {
-    blockstackId: 'judecn',
-    name: 'Jude Nelson',
-    avatar: 'https://s3.amazonaws.com/kd4/judecn',
-    bio: 'Traveler of worlds.',
-  },
-  {
-    blockstackId: 'guylepage3',
-    name: 'Guy Lepage',
-    avatar: 'https://s3.amazonaws.com/kd4/guylepage3',
-    bio: 'Traveler of worlds.',
-  },
-  {
-    blockstackId: 'pstanley',
-    name: 'Patrick Stanley',
-    avatar: 'https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAw9AAAAJDI4YTdkMGYyLTAzZTMtNDAwZi1iMmVmLWQ5M2IyYjk1ZTVkYw.jpg',
-    bio: 'Traveler of worlds.',
-  },
-  {
-    blockstackId: 'ablankstein',
-    name: 'Aaron Blankstein',
-    avatar: 'https://pbs.twimg.com/profile_images/849366675468242945/vXCtIt02.jpg',
-    bio: 'Traveler of worlds.',
-  },
-  {
     blockstackId: 'muneeb',
     name: 'Muneeb Ali',
     avatar: 'https://s3.amazonaws.com/kd4/muneeb',
-    bio: 'Traveler of worlds.',
+    bio: 'Muneeb Ali is a distributed systems PhD from Princeton and gives guest lectures on cloud computing there. He went through Y Combinator and was awarded a J. William Fulbright Fellowship.',
   },
   {
     blockstackId: 'ryan',
     name: 'Ryan Shea',
     avatar: 'https://s3.amazonaws.com/kd4/ryan',
-    bio: 'Traveler of worlds.',
+    bio: 'Ryan Shea studied engineering at Princeton, went through Y Combinator, and was inducted into the Forbes 30 Under 30. He has authored several popular open source libraries in cryptography and blockchains.',
+  },
+  {
+    blockstackId: 'judecn',
+    name: 'Jude Nelson',
+    avatar: 'https://s3.amazonaws.com/kd4/judecn',
+    bio: 'Jude Nelson did PhD-level research in distributed systems at Princeton and worked as a core member of PlanetLab, which received the ACM Test of Time Award for enabling planetary scale experimentation and deployment.',
+  },
+  {
+    blockstackId: 'ablankstein',
+    name: 'Aaron Blankstein',
+    avatar: '/images/avatars/aaron-blankstein.jpg',
+    bio: 'Aaron Blankstein received his PhD from Princeton and bachelors from MIT. His work on the CONIKS key management protocol was awarded the 2017 Caspar Bowden Award for Privacy Enhancing Technologies.',
+  },
+  {
+    blockstackId: 'larry',
+    name: 'Larry Salibra',
+    avatar: 'https://s3.amazonaws.com/kd4/larry',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum euismod porttitor. Phasellus vel lacus non tellus placerat suscipit. Etiam maximus luctus nunc id aliquet. Nam porttitor turpis dolor, eget condimentum diam sodales eu.',
+  },
+  {
+    blockstackId: 'guylepage3',
+    name: 'Guy Lepage',
+    avatar: 'https://s3.amazonaws.com/kd4/guylepage3',
+    bio: 'Guy Lepage previously worked as startup founder of a digital ad agency, as well as a tech company creative director. Over the years he’s worked on many brands from Toyota to Disney, and he’s been recognized by the Lotus Awards and the New York Festivals for branding and design.'
+  },
+  {
+    blockstackId: 'pstanley',
+    name: 'Patrick Stanley',
+    avatar: '/images/avatars/patrick-stanley.jpg',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum euismod porttitor. Phasellus vel lacus non tellus placerat suscipit. Etiam maximus luctus nunc id aliquet. Nam porttitor turpis dolor, eget condimentum diam sodales eu.',
+  },
+  {
+    blockstackId: 'jzampolin',
+    name: 'Jack Zampolin',
+    avatar: '/images/avatars/jack-zampolin.jpg',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum euismod porttitor. Phasellus vel lacus non tellus placerat suscipit. Etiam maximus luctus nunc id aliquet. Nam porttitor turpis dolor, eget condimentum diam sodales eu.',
   },
   {
     blockstackId: 'mfreed',
     name: 'Michael Freedman',
     avatar: '/images/avatars/mike-freedman.jpg',
-    bio: 'Traveler of worlds.',
+    bio: 'Michael Freedman is a distributed systems Professor at Princeton. He was awarded the Presidential Early Career Award (PECASE), the Sloan Fellowship, and his research has led to commercial products and deployed systems reaching millions of users daily.',
+  },
+  {
+    blockstackId: 'jpsingh',
+    name: 'JP Singh',
+    avatar: '/images/avatars/jp-singh.jpg',
+    bio: 'JP Singh received his PhD from from Stanford University and is a leading authority on scalable infrastructure and applications. He is the director of the Princeton CTO Program, serves on the board of 8x8, Inc., and has been a consultant to Intel, Microsoft, and the U.S. Government.',
   },
 ]
 

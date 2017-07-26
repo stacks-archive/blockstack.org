@@ -86,6 +86,34 @@ class TokenSalePage extends Component {
       Under the hood, Blockstack provides a decentralized domain name system (DNS), decentralized public key distribution system, and registry for apps and user identities.
     `
 
+    const featuredApps = [
+      {
+        name: 'Casa',
+        icon: '/images/logos/app-icon-casa@2x.png',
+        description: `Privately share your home with trusted friends and family using Casa. Casa is a decentralized homesharing platform that let's you control your data and book without trusted intermediaries.`
+      },
+      {
+        name: 'OpenBazaar',
+        icon: '/images/logos/app-icon-openbazaar@2x.png',
+        description: 'OpenBazaar is a different way to do online commerce. It’s a peer to peer application that doesn’t require middlemen, which means no fees & no restrictions.'
+      },
+      {
+        name: 'Ongaku Ryoho',
+        icon: '/images/logos/app-icon-ongaku-ryoho.png',
+        description: `Ongaku Ryoho is a music player that puts you in control. Join a decentralized music platform that let\'s you truly own your music and fund your favorite musicians directly.`
+      },
+      {
+        name: 'Afia',
+        icon: '/images/logos/app-icon-afia.png',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum euismod porttitor. Phasellus vel lacus non tellus placerat suscipit. Etiam maximus luctus nunc id aliquet.',
+      },
+      {
+        name: 'Guild',
+        icon: '/images/logos/app-icon-guild.png',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum euismod porttitor. Phasellus vel lacus non tellus placerat suscipit. Etiam maximus luctus nunc id aliquet.'
+      },
+    ]
+
     return (
       <DocumentTitle title="Blockstack - Token Sale">
         <div className="token-hero">
@@ -198,88 +226,30 @@ class TokenSalePage extends Component {
                   <h2 className="h-primary text-center">
                     Featured Apps on Blockstack
                   </h2>
-                  <div className="m-t-3 row">
-                    <div className="col-md-4">
-                      <p className="text-center">
-                        <Image className="col-img"
-                          src="/images/logos/app-icon-afia.png"
-                          retinaSupport={false} />
-                      </p>
-                      <h4 className="modern text-center">
-                        Afia
-                      </h4>
-                      <p className="text-center">
-                        Privately share your home with trusted friends and family using Casa. Casa is a decentralized homesharing platform that let's you control your data and book without trusted intermediaries.
-                      </p>
-                    </div>
-                    <div className="col-md-4">
-                      <p className="text-center">
-                        <Image className="col-img"
-                          src="/images/logos/app-icon-guild.png"
-                          retinaSupport={false} />
-                      </p>
-                      <h4 className="modern text-center">
-                        Guild
-                      </h4>
-                      <p className="text-center">
-                        OpenBazaar is a different way to do online commerce. It’s a peer to peer application that doesn’t require middlemen, which means no fees & no restrictions.
-                      </p>
-                    </div>
-                    <div className="col-md-4">
-                      <p className="text-center">
-                        <Image className="col-img"
-                          src="/images/logos/app-icon-ongaku-ryoho.png"
-                          retinaSupport={false} />
-                      </p>
-                      <h4 className="modern text-center">
-                        Ongaku Ryoho
-                      </h4>
-                      <p className="text-center">
-                        Ongaku Ryoho is a music player that puts you in control. Join a decentralized music platform that let's you truly own your music and fund your favorite musicians directly.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="m-t-3 row">
-                    <div className="col-md-4">
-                      <p className="text-center">
-                        <Image className="col-img"
-                          src="/images/logos/app-icon-afia.png"
-                          retinaSupport={false} />
-                      </p>
-                      <h4 className="modern text-center">
-                        Casa
-                      </h4>
-                      <p className="text-center">
-                        Privately share your home with trusted friends and family using Casa. Casa is a decentralized homesharing platform that let's you control your data and book without trusted intermediaries.
-                      </p>
-                    </div>
-                    <div className="col-md-4">
-                      <p className="text-center">
-                        <Image className="col-img"
-                          src="/images/logos/app-icon-guild.png"
-                          retinaSupport={false} />
-                      </p>
-                      <h4 className="modern text-center">
-                        OpenBazaar
-                      </h4>
-                      <p className="text-center">
-                        OpenBazaar is a different way to do online commerce. It’s a peer to peer application that doesn’t require middlemen, which means no fees & no restrictions.
-                      </p>
-                    </div>
-                    <div className="col-md-4">
-                      <p className="text-center">
-                        <Image className="col-img"
-                          src="/images/logos/app-icon-ongaku-ryoho.png"
-                          retinaSupport={false} />
-                      </p>
-                      <h4 className="modern text-center">
-                        Mediachain
-                      </h4>
-                      <p className="text-center">
-                        Ongaku Ryoho is a music player that puts you in control. Join a decentralized music platform that let's you truly own your music and fund your favorite musicians directly.
-                      </p>
-                    </div>
-                  </div>
+                  {[[0,3], [3,5]].map((row, index) => {
+                    return (
+                      <div className="m-t-3 row" key={index}>
+                        {featuredApps.slice(row[0],row[1]).map((featuredApp, index2) => {
+                          const offsetClass = (row[0] === 3 && index2 === 0) ? 'offset-md-2' : ''
+                          return (
+                            <div key={index2} 
+                              className={`col-md-4 ${offsetClass}`}>
+                              <p className="text-center">
+                                <Image className="col-img" src={featuredApp.icon}
+                                  retinaSupport={false} />
+                              </p>
+                              <h4 className="modern text-center">
+                                {featuredApp.name}
+                              </h4>
+                              <p className="text-center">
+                                {featuredApp.description}
+                              </p>
+                            </div>
+                          )
+                        })}
+                      </div>
+                    )
+                  })}
                 </section>
               </div>
             </div>

@@ -25,11 +25,7 @@ class TeamMember extends Component {
         </Link>
         <h4 className="center" style={{ marginBottom: '5px' }}>{profile.name}</h4>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Suspendisse pulvinar felis a purus aliquam, eu tincidunt ante mollis.
-          In tincidunt justo placerat tincidunt luctus.
-          Aenean at nulla in quam efficitur condimentum.
-          Cras eget nisi non eros elementum pulvinar.
+          {profile.bio}
         </p>
       </div>
     )
