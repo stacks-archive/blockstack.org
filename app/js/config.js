@@ -128,6 +128,34 @@ export const talks = {
   },
 }
 
+export const featuredApps = [
+  {
+    name: 'Casa',
+    icon: '/images/logos/app-icon-casa@2x.png',
+    description: `Privately share your home with trusted friends and family using Casa. Casa is a decentralized homesharing platform that let's you control your data and book without trusted intermediaries.`
+  },
+  {
+    name: 'OpenBazaar',
+    icon: '/images/logos/app-icon-openbazaar@2x.png',
+    description: 'OpenBazaar is a different way to do online commerce. It’s a peer to peer application that doesn’t require middlemen, which means no fees & no restrictions.'
+  },
+  {
+    name: 'Ongaku Ryoho',
+    icon: '/images/logos/app-icon-ongaku-ryoho.png',
+    description: `Ongaku Ryoho is a music player that puts you in control. Join a decentralized music platform that let\'s you truly own your music and fund your favorite musicians directly.`
+  },
+  {
+    name: 'Afia',
+    icon: '/images/logos/app-icon-afia.png',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum euismod porttitor. Phasellus vel lacus non tellus placerat suscipit. Etiam maximus luctus nunc id aliquet.',
+  },
+  {
+    name: 'Guild',
+    icon: '/images/logos/app-icon-guild.png',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum euismod porttitor. Phasellus vel lacus non tellus placerat suscipit. Etiam maximus luctus nunc id aliquet.'
+  },
+]
+
 export const teamMembers = [
   {
     blockstackId: 'muneeb',
@@ -163,7 +191,7 @@ export const teamMembers = [
     blockstackId: 'guylepage3',
     name: 'Guy Lepage',
     avatar: 'https://s3.amazonaws.com/kd4/guylepage3',
-    bio: 'Guy Lepage previously worked as startup founder of a digital ad agency, as well as a tech company creative director. Over the years he’s worked on many brands from Toyota to Disney, and he’s been recognized by the Lotus Awards and the New York Festivals for branding and design.'
+    bio: 'Guy Lepage is an award-winning designer, who has been recognized by the Lotus Awards and the New York Festivals for branding, and is a finalist for the INDEX award 2017. He has worked on many brands from Toyota to Disney and was a startup founder of a digital ad agency earlier.'
   },
   {
     blockstackId: 'pstanley',

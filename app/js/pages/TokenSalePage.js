@@ -14,7 +14,7 @@ import DarkForm            from '../components/DarkForm'
 import EmbedYouTube        from '../components/EmbedYouTube'
 import PostPreview         from '../components/PostPreview'
 import TeamMember          from '../components/TeamMember'
-import {teamMembers}  from '../config'
+import {teamMembers, featuredApps}  from '../config'
 
 function mapStateToProps(state) {
   return {
@@ -86,34 +86,6 @@ class TokenSalePage extends Component {
       Under the hood, Blockstack provides a decentralized domain name system (DNS), decentralized public key distribution system, and registry for apps and user identities.
     `
 
-    const featuredApps = [
-      {
-        name: 'Casa',
-        icon: '/images/logos/app-icon-casa@2x.png',
-        description: `Privately share your home with trusted friends and family using Casa. Casa is a decentralized homesharing platform that let's you control your data and book without trusted intermediaries.`
-      },
-      {
-        name: 'OpenBazaar',
-        icon: '/images/logos/app-icon-openbazaar@2x.png',
-        description: 'OpenBazaar is a different way to do online commerce. It’s a peer to peer application that doesn’t require middlemen, which means no fees & no restrictions.'
-      },
-      {
-        name: 'Ongaku Ryoho',
-        icon: '/images/logos/app-icon-ongaku-ryoho.png',
-        description: `Ongaku Ryoho is a music player that puts you in control. Join a decentralized music platform that let\'s you truly own your music and fund your favorite musicians directly.`
-      },
-      {
-        name: 'Afia',
-        icon: '/images/logos/app-icon-afia.png',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum euismod porttitor. Phasellus vel lacus non tellus placerat suscipit. Etiam maximus luctus nunc id aliquet.',
-      },
-      {
-        name: 'Guild',
-        icon: '/images/logos/app-icon-guild.png',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum euismod porttitor. Phasellus vel lacus non tellus placerat suscipit. Etiam maximus luctus nunc id aliquet.'
-      },
-    ]
-
     return (
       <DocumentTitle title="Blockstack - Token Sale">
         <div className="token-hero">
@@ -143,19 +115,19 @@ class TokenSalePage extends Component {
               <div className="container">
                 <section>
                   <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
-                    73,191 
+                    {this.state.stats.domains.toLocaleString()}
                     <span className="text-stats-description" style={{ color: 'rgba(255,255,255,0.8)' }} >
                       users registered
                     </span>
                   </div>
                   <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
-                    3+ years
+                    3+
                     <span className="text-stats-description" style={{ color: 'rgba(255,255,255,0.8)' }} >
-                      in production
+                      years in production
                     </span>
                   </div>
                   <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
-                    6,574 
+                    {this.state.stats.meetupUsers.toLocaleString()}
                     <span className="text-stats-description" style={{ color: 'rgba(255,255,255,0.8)' }} >
                       community devs
                     </span>
