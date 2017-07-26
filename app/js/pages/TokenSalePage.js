@@ -232,12 +232,12 @@ class TokenSalePage extends Component {
                   </h2>
                   {[[0,3], [3,5]].map((row, index) => {
                     return (
-                      <div className="m-t-3" key={index}>
+                      <div className="" key={index}>
                         {featuredApps.slice(row[0],row[1]).map((featuredApp, index2) => {
                           const offsetClass = (row[0] === 3 && index2 === 0) ? 'offset-md-2' : ''
                           return (
                             <div key={index2} 
-                              className={`col-md-4 ${offsetClass}`}>
+                              className={`col-md-4 m-b-55 ${offsetClass}`}>
                               <p className="text-center">
                                 <Image className="col-img" src={featuredApp.icon}
                                   retinaSupport={false} />
