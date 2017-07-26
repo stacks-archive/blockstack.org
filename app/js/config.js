@@ -185,7 +185,7 @@ export const teamMembers = [
     blockstackId: 'larry',
     name: 'Larry Salibra',
     avatar: 'https://s3.amazonaws.com/kd4/larry',
-    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum euismod porttitor. Phasellus vel lacus non tellus placerat suscipit. Etiam maximus luctus nunc id aliquet. Nam porttitor turpis dolor, eget condimentum diam sodales eu.',
+    bio: 'Larry Salibra co-founded Pay4Bugs, a crowdsourced security analysis and software testing platform, and is a founding member of the Bitcoin Association of Hong Kong. His work exposed private data leakage in Chinese Tinder clone Tantan, and how Apple censors apps in China.'
   },
   {
     blockstackId: 'guylepage3',
@@ -197,7 +197,7 @@ export const teamMembers = [
     blockstackId: 'pstanley',
     name: 'Patrick Stanley',
     avatar: '/images/avatars/patrick-stanley.jpg',
-    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum euismod porttitor. Phasellus vel lacus non tellus placerat suscipit. Etiam maximus luctus nunc id aliquet. Nam porttitor turpis dolor, eget condimentum diam sodales eu.',
+    bio: 'Patrick Stanley studied Economics and Psychology at Johns Hopkins, and was the first employee at Earnest. In a growth role, he helped it scale from from 3 to 200+ employees and go from $0 to $1.5B in loans within 3 years.'
   },
   {
     blockstackId: 'jzampolin',

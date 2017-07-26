@@ -37,7 +37,7 @@ class TokenSalePage extends Component {
 
     this.state = {
       subscribeURL: '//blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=0e5478ae86',
-      videoURL: 'https://www.youtube.com/embed/Z4bMFKBRg_k',
+      videoURL: 'https://www.youtube.com/embed/yue1xAd3JCY',
       stats: this.props.stats,
       posts: this.props.posts
     }
