@@ -30,7 +30,7 @@ class DarkForm extends Component {
               name="mc-embedded-subscribe-form"
               className="validate" target="_blank" noValidate>
           <div id="mc_embed_signup_scroll">
-            <div className="mc-field-group" style={{ marginBottom: '10px' }}>
+            <div className="mc-field-group" style={{ marginBottom: '12px' }}>
               <label htmlFor="mce-EMAIL" style={{ display: 'none' }}>Email Address </label>
               <input type="email" value={this.state.email} name="EMAIL"
                 className="form-control form-control-outline-primary text-xs-center"
