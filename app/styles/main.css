@@ -413,8 +413,8 @@ li.nav-item:nth-last-child(2){display:none;}
 img.landing-feat-img{-webkit-filter:drop-shadow(0 0 1.5625rem rgba(0,0,0,0.15));drop-shadow(0 0 1.5625rem rgba(0,0,0,0.15));}
 .feat-card{height:75px;display:block;}
 .feat-card > h3{font-weight:400;}
-.text-stats{font-size:1.5rem;font-weight:400;}
-.text-stats-description{display:block;font-size:0.875rem;}
+.text-stats{font-size:1.5rem;font-weight:700;}
+.text-stats-description{display:block;font-size:0.875rem;font-weight:400;}
 .no-padding-sm{padding-right:0;padding-left:0;}
 .col-img{max-width:110px;}
 .col3-img-lg{width:100%;min-width:210px;max-width:425px;}

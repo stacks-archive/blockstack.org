@@ -415,7 +415,7 @@ class HomePage extends Component {
                       <div className="col-md-4" key={index}>
                         { post.urlSlug && post.title ?
                         <Link to={'/blog/' + post.urlSlug}>
-                          <h4>{ post.title }</h4>
+                          <h4 className="font-weight-bold">{ post.title }</h4>
                         </Link>
                         : null }
                         { post.preview ?
