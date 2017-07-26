@@ -224,7 +224,7 @@ class TokenSalePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid" style={{ backgroundColor: '#FAFAFA' }}>
+            <div className="sectionContainerGray section-spacing container-fluid">
               <div className="container">
                 <section>
                   <h2 className="h-primary text-center">

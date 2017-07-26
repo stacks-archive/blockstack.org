@@ -350,6 +350,7 @@ body,html,#app,.app-landing{height:100%;}
 .sectionContainerDark{color:#fff;background-color:#270F34;padding-top:30px;padding-bottom:30px;padding-right:0px;padding-left:0px;}
 .sectionContainerLight{background-color:#fff;padding-top:30px;padding-bottom:30px;padding-right:0px;padding-left:0px;}
 .sectionContainerLightGray{background-color:#FAFAFA;padding-top:30px;padding-bottom:30px;padding-right:0px;padding-left:0px;}
+.sectionContainerGray{background-color:#F0F0F0;padding-top:30px;padding-bottom:30px;padding-right:0px;padding-left:0px;}
 .section-spacing{padding-top:100px;padding-bottom:100px;}
 .sectionWrap{padding-top:30px;padding-bottom:30px;}
 .containWrap{padding-top:30px;padding-bottom:30px;padding-right:25px;padding-left:25px;}
