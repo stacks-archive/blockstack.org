@@ -38,7 +38,7 @@ class TokenSalePage extends Component {
 
     this.state = {
       subscribeURL: '//blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=0e5478ae86',
-      videoURL: 'https://www.youtube.com/embed/yue1xAd3JCY',
+      videoURL: 'https://www.youtube.com/embed/0C2y9mZ0Dnc',
       stats: this.props.stats,
       posts: this.props.posts
     }
@@ -264,9 +264,15 @@ class TokenSalePage extends Component {
                     Team
                   </h2>
                   <div className="post-content m-t-3">
-                    {teamMembers.map((teamMember, index) => {
+                    {teamMembers.chunk(2).map((teamMemberRow, index) => {
                       return (
-                        <TeamMember key={index} profile={teamMember} />
+                        <div className="row" key={index}>
+                          {teamMemberRow.map((teamMember, subIndex) => {
+                            return (
+                              <TeamMember key={subIndex} profile={teamMember} />
+                            )
+                          })}
+                        </div>
                       )
                     })}
                   </div>

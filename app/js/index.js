@@ -14,6 +14,16 @@ if (process.env.NODE_ENV !== 'production') {
   window.React = React
 }
 
+Object.defineProperty(Array.prototype, 'chunk', {
+  value: function(chunkSize) {
+    let temporal = []
+    for (let i = 0; i < this.length; i+= chunkSize) {
+      temporal.push(this.slice(i, i+chunkSize))
+    }
+    return temporal
+  }
+})
+
 render(
   <Provider store={store}>
     {Routes}
