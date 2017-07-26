@@ -12,22 +12,22 @@ class PostPreview extends Component {
 
   render() {
     return (
-      <div className="col-md-4">
+      <div className="col-md-4 m-b-55">
         { this.props.post.urlSlug && this.props.post.title ?
-        <Link to={'/blog/' + this.props.post.urlSlug}>
-          <h4>{ this.props.post.title }</h4>
+        <Link className="news-links" to={'/blog/' + this.props.post.urlSlug}>
+          <h4 className="font-weight-bold">{ this.props.post.title }</h4>
         </Link>
         : null }
         { this.props.post.preview ?
         <div dangerouslySetInnerHTML={{ __html: this.props.post.preview }}>
         </div>
         : null }
-        <div className="post-meta">
+        <div className="post-meta" style={{ fontSize: '14px', color: '#949494' }}>
           { this.props.post.creator ?
           <span>{this.props.post.creator.name} |&nbsp;</span>
           : null }
           { this.props.post.datetime && this.props.post.date ?
-          <time className="post-date" dateTime={this.props.post.datetime}>
+          <time className="post-date" style={{ textTransform: 'unset', fontSize: '14px', color: '#949494' }} dateTime={this.props.post.datetime}>
             {this.props.post.date}
           </time>
           : null }

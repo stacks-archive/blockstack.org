@@ -409,12 +409,12 @@ class HomePage extends Component {
                       News
                     </h2>
                   </div>
-                  <div className="row m-b-50 no-margin">
+                  <div className="container">
                   { firstThreePosts.map((post, index) => {
                     return (
-                      <div className="col-md-4" key={index}>
+                      <div className="col-md-4 m-b-55" key={index}>
                         { post.urlSlug && post.title ?
-                        <Link to={'/blog/' + post.urlSlug}>
+                        <Link className="news-links" to={'/blog/' + post.urlSlug}>
                           <h4 className="font-weight-bold">{ post.title }</h4>
                         </Link>
                         : null }
@@ -422,12 +422,12 @@ class HomePage extends Component {
                         <div dangerouslySetInnerHTML={{ __html: post.preview }}>
                         </div>
                         : null }
-                        <div className="post-meta">
+                        <div className="post-meta" style={{ fontSize: '14px', color: '#949494' }}>
                           { post.creator ?
                           <span>{post.creator.name} |&nbsp;</span>
                           : null }
                           { post.datetime && post.date ?
-                          <time className="post-date" dateTime={post.datetime}>
+                          <time className="post-date" style={{ textTransform: 'unset', fontSize: '14px', color: '#949494' }} dateTime={post.datetime}>
                             {post.date}
                           </time>
                           : null }
