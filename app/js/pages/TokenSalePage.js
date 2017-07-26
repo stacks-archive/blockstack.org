@@ -13,8 +13,8 @@ import TransparentHeader   from '../components/TransparentHeader'
 import DarkForm            from '../components/DarkForm'
 import EmbedYouTube        from '../components/EmbedYouTube'
 import PostPreview         from '../components/PostPreview'
-import CommunityMember     from '../components/CommunityMember'
-import {communityMembers}  from '../config'
+import TeamMember          from '../components/TeamMember'
+import {teamMembers}  from '../config'
 
 function mapStateToProps(state) {
   return {
@@ -243,16 +243,9 @@ class TokenSalePage extends Component {
                     Team
                   </h2>
                   <div className="post-content m-t-3">
-                    {communityMembers.map((communityMember, index) => {
+                    {teamMembers.map((teamMember, index) => {
                       return (
-                        <CommunityMember
-                          key={index}
-                          blockstackId={communityMember.blockstackId}
-                          name={communityMember.name}
-                          avatar={communityMember.avatar}
-                          twitter={communityMember.twitter}
-                          github={communityMember.github}
-                          facebook={communityMember.facebook} />
+                        <TeamMember key={index} profile={teamMember} />
                       )
                     })}
                   </div>

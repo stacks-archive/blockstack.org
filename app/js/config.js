@@ -128,6 +128,57 @@ export const talks = {
   },
 }
 
+export const teamMembers = [
+  {
+    blockstackId: 'larry',
+    name: 'Larry Salibra',
+    avatar: 'https://s3.amazonaws.com/kd4/larry',
+    bio: 'Traveler of worlds.',
+  },
+  {
+    blockstackId: 'judecn',
+    name: 'Jude Nelson',
+    avatar: 'https://s3.amazonaws.com/kd4/judecn',
+    bio: 'Traveler of worlds.',
+  },
+  {
+    blockstackId: 'guylepage3',
+    name: 'Guy Lepage',
+    avatar: 'https://s3.amazonaws.com/kd4/guylepage3',
+    bio: 'Traveler of worlds.',
+  },
+  {
+    blockstackId: 'pstanley',
+    name: 'Patrick Stanley',
+    avatar: 'https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAw9AAAAJDI4YTdkMGYyLTAzZTMtNDAwZi1iMmVmLWQ5M2IyYjk1ZTVkYw.jpg',
+    bio: 'Traveler of worlds.',
+  },
+  {
+    blockstackId: 'ablankstein',
+    name: 'Aaron Blankstein',
+    avatar: 'https://pbs.twimg.com/profile_images/849366675468242945/vXCtIt02.jpg',
+    bio: 'Traveler of worlds.',
+  },
+  {
+    blockstackId: 'muneeb',
+    name: 'Muneeb Ali',
+    avatar: 'https://s3.amazonaws.com/kd4/muneeb',
+    bio: 'Traveler of worlds.',
+  },
+  {
+    blockstackId: 'ryan',
+    name: 'Ryan Shea',
+    avatar: 'https://s3.amazonaws.com/kd4/ryan',
+    bio: 'Traveler of worlds.',
+  },
+  {
+    blockstackId: 'mfreed',
+    name: 'Michael Freedman',
+    avatar: '/images/avatars/mike-freedman.jpg',
+    bio: 'Traveler of worlds.',
+  },
+]
+
 export const communityMembers = [
   { blockstackId: 'larry',
     name: 'Larry Salibra',
