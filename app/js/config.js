@@ -132,27 +132,27 @@ export const featuredApps = [
   {
     name: 'Casa',
     icon: '/images/logos/app-icon-casa@2x.png',
-    description: `Privately share your home with trusted friends and family using Casa. Casa is a decentralized homesharing platform that let's you control your data and book without trusted intermediaries.`
-  },
-  {
-    name: 'OpenBazaar',
-    icon: '/images/logos/app-icon-openbazaar@2x.png',
-    description: 'OpenBazaar is a different way to do online commerce. It’s a peer to peer application that doesn’t require middlemen, which means no fees & no restrictions.'
+    description: `Casa is the world's first open source homesharing protocol and decentralized network. Book rooms without platform fees or trusted intermediaries and securely transact with encrypted chat and multi-party escrow.`
   },
   {
     name: 'Ongaku Ryoho',
     icon: '/images/logos/app-icon-ongaku-ryoho.png',
-    description: `Ongaku Ryoho is a music player that puts you in control. Join a decentralized music platform that let\'s you truly own your music and fund your favorite musicians directly.`
+    description: `Ongaku Ryoho is a music player and decentralized media network that empowers both artists and consumers. Publish music and get paid for downloads without platform fees. Download music and it’s truly yours.`
+  },
+  {
+    name: 'OpenBazaar',
+    icon: '/images/logos/app-icon-openbazaar@2x.png',
+    description: 'OpenBazaar is a different way to do online commerce. It’s a peer to peer application that doesn’t require middlemen, which means no fees & no restrictions. Sell anything to anyone in any country around the world.'
   },
   {
     name: 'Afia',
     icon: '/images/logos/app-icon-afia.png',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum euismod porttitor. Phasellus vel lacus non tellus placerat suscipit. Etiam maximus luctus nunc id aliquet.',
+    description: 'Afia gives individuals the power to own and manage their personal health records. Keep your health data safe on your personal encrypted cloud storage and securely share your data with healthcare providers as you see fit.'
   },
   {
     name: 'Guild',
     icon: '/images/logos/app-icon-guild.png',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum euismod porttitor. Phasellus vel lacus non tellus placerat suscipit. Etiam maximus luctus nunc id aliquet.'
+    description: 'Guild is a blogging network where you own the content you create and can share your favorite posts with others. No longer will you be restricted to a single company’s walled gardens. Your writing will live on and travel with you.'
   },
 ]
 
