@@ -227,7 +227,7 @@ class TokenSalePage extends Component {
             <div className="sectionContainerGray section-spacing container-fluid">
               <div className="container">
                 <section>
-                  <h2 className="h-primary text-center">
+                  <h2 className="h-primary m-b-85 text-center">
                     Featured Apps on Blockstack
                   </h2>
                   {[[0,3], [3,5]].map((row, index) => {
