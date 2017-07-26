@@ -3,7 +3,7 @@ import isRetina from 'is-retina'
 
 const propTypes = {
   src: PropTypes.string.isRequired,
-  fallbackSrc: PropTypes.string.isRequired,
+  fallbackSrc: PropTypes.string,
   style: PropTypes.object,
   className: PropTypes.string,
   onLoad: PropTypes.func,

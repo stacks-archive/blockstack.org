@@ -189,12 +189,52 @@ class TokenSalePage extends Component {
                   <h2 className="h-primary text-center">
                     Featured Apps on Blockstack
                   </h2>
-                  <div className="m-t-3">
+                  <div className="m-t-3 row">
                     <div className="col-md-4">
                       <p className="text-center">
                         <Image className="col-img"
-                          src="/images/icons/icon-decentralized-social.svg"
-                          fallbackSrc="/images/tutorials/portal-home-screen.png"
+                          src="/images/logos/app-icon-afia.png"
+                          retinaSupport={false} />
+                      </p>
+                      <h4 className="modern text-center">
+                        Afia
+                      </h4>
+                      <p className="text-center">
+                        Privately share your home with trusted friends and family using Casa. Casa is a decentralized homesharing platform that let's you control your data and book without trusted intermediaries.
+                      </p>
+                    </div>
+                    <div className="col-md-4">
+                      <p className="text-center">
+                        <Image className="col-img"
+                          src="/images/logos/app-icon-guild.png"
+                          retinaSupport={false} />
+                      </p>
+                      <h4 className="modern text-center">
+                        Guild
+                      </h4>
+                      <p className="text-center">
+                        OpenBazaar is a different way to do online commerce. It’s a peer to peer application that doesn’t require middlemen, which means no fees & no restrictions.
+                      </p>
+                    </div>
+                    <div className="col-md-4">
+                      <p className="text-center">
+                        <Image className="col-img"
+                          src="/images/logos/app-icon-ongaku-ryoho.png"
+                          retinaSupport={false} />
+                      </p>
+                      <h4 className="modern text-center">
+                        Ongaku Ryoho
+                      </h4>
+                      <p className="text-center">
+                        Ongaku Ryoho is a music player that puts you in control. Join a decentralized music platform that let's you truly own your music and fund your favorite musicians directly.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="m-t-3 row">
+                    <div className="col-md-4">
+                      <p className="text-center">
+                        <Image className="col-img"
+                          src="/images/logos/app-icon-afia.png"
                           retinaSupport={false} />
                       </p>
                       <h4 className="modern text-center">
@@ -207,8 +247,7 @@ class TokenSalePage extends Component {
                     <div className="col-md-4">
                       <p className="text-center">
                         <Image className="col-img"
-                          src="/images/icons/icon-marketplace.svg"
-                          fallbackSrc="/images/tutorials/portal-home-screen.png"
+                          src="/images/logos/app-icon-guild.png"
                           retinaSupport={false} />
                       </p>
                       <h4 className="modern text-center">
@@ -221,12 +260,11 @@ class TokenSalePage extends Component {
                     <div className="col-md-4">
                       <p className="text-center">
                         <Image className="col-img"
-                          src="/images/icons/icon-community-vote.svg"
-                          fallbackSrc="/images/tutorials/portal-home-screen.png"
+                          src="/images/logos/app-icon-ongaku-ryoho.png"
                           retinaSupport={false} />
                       </p>
                       <h4 className="modern text-center">
-                        Ongaku Ryoho
+                        Mediachain
                       </h4>
                       <p className="text-center">
                         Ongaku Ryoho is a music player that puts you in control. Join a decentralized music platform that let's you truly own your music and fund your favorite musicians directly.
