@@ -14,6 +14,7 @@ import DarkForm            from '../components/DarkForm'
 import EmbedYouTube        from '../components/EmbedYouTube'
 import PostPreview         from '../components/PostPreview'
 import TeamMember          from '../components/TeamMember'
+import ContentSection      from '../components/ContentSection'
 import {teamMembers, featuredApps}  from '../config'
 
 function mapStateToProps(state) {
@@ -71,21 +72,6 @@ class TokenSalePage extends Component {
   render() {
     const firstThreePosts = this.state.posts.slice(0, 3)
 
-    const blockstackExplanation = `Blockstack is a new decentralized internet.
-      
-      With Blockstack, users control their data and apps run on their devices. There are no middlemen, no passwords, no massive data silos to breach, and no services tracking us around the internet.
-      
-      The applications on blockstack are server-less and decentralized. Developers start by building a single-page application in Javascript, Then, instead of plugging the frontend into a centralized API, they plug into an API run by the user. Developers install a library called 'blockstack.js' and don't have to worry about running servers, maintaining databases, or building out user management systems.
-
-      Personal user APIs ship with the Blockstack app and handle everything from identity and authentication to data storage. Applications can request permissions from users and then gain read and write access to user resources.
-      
-      Data storage is simple and reliable and uses existing cloud infrastructure. Users connect with their Dropbox, Google Drive, etc and data is synced from their local device up to the cloud.
-      
-      Identity is user-controlled and utilizes the blockchain for secure management of keys, devices and usernames. When users login with apps, they are anonymous by default and use an app-specific key, but their full identity can be revealed and proven at any time. Keys are for signing and encryption and can be changed as devices need to be added or removed.
-      
-      Under the hood, Blockstack provides a decentralized domain name system (DNS), decentralized public key distribution system, and registry for apps and user identities.
-    `
-
     return (
       <DocumentTitle title="Blockstack - Token Sale">
         <div className="token-hero">
@@ -142,13 +128,59 @@ class TokenSalePage extends Component {
                     <h2 className="h-primary text-center">
                       What is Blockstack?
                     </h2>
-                    <div className="row">
-                      <div className="col-md-8 col-centered">
-                        <h5>
-                          {blockstackExplanation}
-                        </h5>
-                      </div>
-                    </div>
+                    <ContentSection markup="
+                      <p>
+                        Blockstack is a new decentralized internet where users control their data and apps run on their devices.
+                        There are no middlemen, no passwords, no massive data silos to breach,
+                        and no services tracking us around the internet.
+                      </p>
+
+                      <p>
+                        The applications on blockstack are server-less and decentralized.
+
+                        Developers start by building a single-page application in Javascript,
+
+                        Then, instead of plugging the frontend into a centralized API,
+                        they plug into an API run by the user.
+
+                        Developers install a library called 'blockstack.js' and
+                        don't have to worry about running servers, maintaining databases,
+                        or building out user management systems.
+                      </p>
+
+                      <p>
+                        Personal user APIs ship with the Blockstack app and
+                        handle everything from identity and authentication
+                        to data storage.
+
+                        Applications can request permissions from users and then
+                        gain read and write access to user resources.
+                      </p>
+
+                      <p>
+                        Data storage is simple and reliable and uses existing cloud infrastructure.
+
+                        Users connect with their Dropbox, Google Drive, etc and data is synced from
+                        their local device up to the cloud.
+                      </p>
+
+                      <p>
+                        Identity is user-controlled and utilizes the blockchain for secure management
+                        of keys, devices and usernames.
+
+                        When users login with apps, they are anonymous by default and use an
+                        app-specific key, but their full identity can be revealed and proven
+                        at any time.
+
+                        Keys are for signing and encryption and can be changed
+                        as devices need to be added or removed.
+                      </p>
+
+                      <p>
+                        Under the hood, Blockstack provides a decentralized domain name system (DNS),
+                        decentralized public key distribution system,
+                        and registry for apps and user identities.
+                      </p>" />
                   </div>
                 </section>
               </div>
