@@ -162,6 +162,9 @@ class HomePage extends Component {
                         fallbackSrc="/images/resources/browser-home-screen.png"
                         retinaSupport={false} />
                     </div>
+                    <div className="caption-browser hidden-sm-down">
+                      Blockstack Browser
+                    </div>
                   </div>
                 </section>
               </div>
