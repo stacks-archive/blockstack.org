@@ -85,7 +85,6 @@ class TokenSalePage extends Component {
               <section className="text-xs-center">
                 <Image className="stacks-logo-sm m-t-65 m-b-55"
                         src="/images/logos/stacks-logo.svg"
-                        fallbackSrc="/images/logos/stacks-logo.svg"
                         retinaSupport={false} />
                 <h1 className="text-white m-b-20">The Blockstack Token Sale</h1>
                 <p className="hero-lead purple-50">Sign up to receive important information about the token sale</p>
@@ -164,17 +163,17 @@ class TokenSalePage extends Component {
                       How Does Blockstack Work?
                     </h2>
                     <div className="row m-t-3">
-                      <div className="col-sm-6 text-center">
+                      <div className="col-sm-10 offset-sm-1 text-center">
                         <Image
                           src="/images/visuals/blockstack-stack-diagram-2.png"
-                          fallbackSrc="/images/visuals/blockstack-stack-diagram-2.png"
                           style={{width: '100%'}}
                           retinaSupport={false} />
                       </div>
-                      <div className="col-sm-6 text-center">
+                    </div>
+                    <div className="row m-t-3">
+                      <div className="col-sm-10 offset-sm-1 text-center">
                         <Image
                           src="/images/visuals/blockstack-tx-diagram.png"
-                          fallbackSrc="/images/visuals/blockstack-tx-diagram.png"
                           style={{width: '100%'}}
                           retinaSupport={false} />
                       </div>
