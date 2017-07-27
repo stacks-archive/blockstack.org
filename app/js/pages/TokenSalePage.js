@@ -201,16 +201,13 @@ class TokenSalePage extends Component {
               <div className="container">
                 <section>
                   <div className="containWrap">
-                    <h2 className="h-primary text-center">
+                    <h2 className="h-primary text-center m-b-3">
                       How Does Blockstack Work?
                     </h2>
-                    <div className="row m-t-3">
-                      <div className="col-sm-10 offset-sm-1 text-center">
-                        <Image
-                          src="/images/visuals/blockstack-stack-diagram-2.png"
-                          style={{width: '100%'}}
-                          retinaSupport={false} />
-                      </div>
+                    <div className="col-sm-12 text-center landing-hero-img">
+                      <Image className="landing-feat-img"
+                        src="/images/visuals/blockstack-architecture-diagram.svg"
+                        retinaSupport={false} />
                     </div>
                     <div className="row m-t-3">
                       <div className="col-sm-10 offset-sm-1 text-center">
