@@ -13,15 +13,8 @@ class TokenBanner extends Component {
     return (
     <Link to="/tokensale">
     <div className="bg-electric-blue">
-      <div className="container-fluid">
-          <button type="button" className="navbar-toggler collapsed hidden-md-up" data-toggle="collapse" data-target="#mobile-nav" aria-controls="dropdown" aria-expanded="false">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <ul className="nav navbar-nav pull-xs-right">
-            <li className="nav-item">
-              Tutorials
-            </li>
-          </ul>
+      <div className="container-fluid text-center">
+        The Blockstack Token Sale
       </div>
     </div>
     </Link>
