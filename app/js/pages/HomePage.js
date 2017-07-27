@@ -10,6 +10,7 @@ import {BlogActions}       from '../datastore/Blog'
 import {StatsActions}      from '../datastore/Stats'
 import Image               from '../components/Image'
 import TransparentHeader   from '../components/TransparentHeader'
+import TokenBanner         from '../components/TokenBanner'
 
 function mapStateToProps(state) {
   return {
@@ -128,6 +129,7 @@ class HomePage extends Component {
         <div className="body-hero">
           <div className="col-centered block">
             <div>
+              <TokenBanner />
               <TransparentHeader />
               <div className="container">
                 <section className="hero text-xs-center">
