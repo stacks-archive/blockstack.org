@@ -143,7 +143,7 @@ class HomePage extends Component {
                     <div className="col-sm-12 col-md-6">
                       <p className="pull-md-right">
                         <Link to="/developers" role="button"
-                          className="btn btn-outline-primary btn-block btn-block-reset">
+                          className="btn btn-electric-blue btn-block btn-block-reset">
                           Developers&nbsp;&nbsp;›&nbsp;&nbsp;Browser Kit
                         </Link>
                       </p>
@@ -151,7 +151,7 @@ class HomePage extends Component {
                     <div className="col-sm-12 col-md-6">
                       <p className="pull-md-left">
                         <Link to="/users" role="button"
-                          className="btn btn-outline-primary btn-block btn-block-reset">
+                          className="btn btn-electric-blue btn-block btn-block-reset">
                           Users&nbsp;&nbsp;›&nbsp;&nbsp;Join the Waitlist
                         </Link>
                       </p>
