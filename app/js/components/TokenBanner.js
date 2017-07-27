@@ -11,12 +11,10 @@ class TokenBanner extends Component {
 
   render() {
     return (
-    <Link to="/tokensale">
-      <div className="bg-electric-blue">
-        <div className="container-fluid text-center text-white font-weight-bold ">
+    <Link className="tokenBanner" to="/tokensale">
+        <div className="container-fluid text-center text-white font-weight-bold">
           Introducing&nbsp;&nbsp;&nbsp;›&nbsp;&nbsp;&nbsp;The Blockstack Token Sale
         </div>
-      </div>
     </Link>
     )
   }
