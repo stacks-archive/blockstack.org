@@ -11,6 +11,7 @@ import {StatsActions}      from '../datastore/Stats'
 import Image               from '../components/Image'
 import TransparentHeader   from '../components/TransparentHeader'
 import TokenBanner         from '../components/TokenBanner'
+import {featuredApps}      from '../config'
 
 function mapStateToProps(state) {
   return {
@@ -348,57 +349,35 @@ class HomePage extends Component {
               </div>
             </div>
             <div className="sectionContainerLightGray section-spacing container-fluid">
-              <div className="container sectionWrap">
+              <div className="container">
                 <section>
-                  <div className="containWrap">
-                    <h3 className="h-primary text-center">
-                      Thousands of App Possibilities
-                    </h3>
-                  </div>
-                  <div>
-                    <div className="col-md-4">
-                      <p className="text-center">
-                        <Image className="col-img"
-                          src="/images/icons/icon-decentralized-social.svg"
-                          fallbackSrc="/images/tutorials/portal-home-screen.png"
-                          retinaSupport={false} />
-                      </p>
-                      <h4 className="modern text-center">
-                        Decentralized Social Networks
-                      </h4>
-                      <p className="text-center">
-                        Existing social networks lock in users and limit access. Build a decentralized social network that allows users to own their relationships and data and take it with them wherever they go.
-                      </p>
-                    </div>
-                    <div className="col-md-4">
-                      <p className="text-center">
-                        <Image className="col-img"
-                          src="/images/icons/icon-marketplace.svg"
-                          fallbackSrc="/images/tutorials/portal-home-screen.png"
-                          retinaSupport={false} />
-                      </p>
-                      <h4 className="modern text-center">
-                        Peer-to-Peer Marketplaces
-                      </h4>
-                      <p className="text-center">
-                        Existing marketplaces take a massive haircut and limit what can be bought and sold. Build a peer-to-peer marketplace that allows individuals to freely transact at a lower cost.
-                      </p>
-                    </div>
-                    <div className="col-md-4">
-                      <p className="text-center">
-                        <Image className="col-img"
-                          src="/images/icons/icon-community-vote.svg"
-                          fallbackSrc="/images/tutorials/portal-home-screen.png"
-                          retinaSupport={false} />
-                      </p>
-                      <h4 className="modern text-center">
-                        Community-Run Voting
-                      </h4>
-                      <p className="text-center">
-                        Existing voting systems are centrally operated and thus are extremely vulnerable to hacking. Build a voting system as a public internet utility that’s run by the community instead of a single corporation.
-                      </p>
-                    </div>
-                  </div>
+                  <h2 className="h-primary m-b-85 text-center">
+                    Featured Apps on Blockstack
+                  </h2>
+                  {[[0,3], [3,5]].map((row, index) => {
+                    return (
+                      <div key={index}>
+                        {featuredApps.slice(row[0],row[1]).map((featuredApp, index2) => {
+                          const offsetClass = (row[0] === 3 && index2 === 0) ? 'offset-md-2' : ''
+                          return (
+                            <div key={index2} 
+                              className={`col-md-4 m-b-55 ${offsetClass}`}>
+                              <p className="text-center">
+                                <Image className="col-img" src={featuredApp.icon}
+                                  retinaSupport={false} />
+                              </p>
+                              <h4 className="modern text-center">
+                                {featuredApp.name}
+                              </h4>
+                              <p className="text-center">
+                                {featuredApp.description}
+                              </p>
+                            </div>
+                          )
+                        })}
+                      </div>
+                    )
+                  })}
                 </section>
               </div>
             </div>
