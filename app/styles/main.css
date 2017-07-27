@@ -293,7 +293,15 @@ h1.type-beauty{font-family:'Lato',sans-serif;font-size:1.5rem;font-weight:700;}
 /* 13. Forms */
 .form-control-outline-primary{background-color:#270f34;border:1px solid rgba(255,255,255,0.15);border-radius:0;font-size:0.875rem;padding:0.5625rem 2.25rem;line-height:1.75rem;text-transform:none;outline:none;-webkit-background-clip:unset;background-clip:unset;-webkit-transition:all .35s ease-in-out;-moz-transition:all .35s ease-in-out;-ms-transition:all .35s ease-in-out;-o-transition:all .35s ease-in-out;transition:all .35s ease-in-out;}
 .form-control-outline-primary:hover,.form-control-outline-primary:focus,.form-control-outline-primary:active{background-color:#fff;border:1px solid #fff;outline:none;-webkit-background-clip:unset;background-clip:unset;-webkit-transition:all .35s ease-in-out;-moz-transition:all .35s ease-in-out;-ms-transition:all .35s ease-in-out;-o-transition:all .35s ease-in-out;transition:all .35s ease-in-out;}
-.form-control-outline-primary::placeholder{color:#95889c;text-align:center;text-transform:none;font-size:0.875rem;}
+.form-control-outline-primary::placeholder, .form-control-outline-primary::-webkit-input-placeholder {
+  color: #95889c;
+  text-align: center;
+  text-transform: none;
+  font-size: 0.875rem;
+  margin-top: -10px;
+  line-height: 20px;
+  display: block;
+}
 
 /* 16. Navbar */
 .navbar{font-family:'Lato',sans-serif;padding-top:0.4375rem;padding-bottom:0.5625rem;}
