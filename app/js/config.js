@@ -188,6 +188,12 @@ export const teamMembers = [
     bio: 'Larry Salibra co-founded Pay4Bugs, a crowdsourced security analysis and software testing platform, and is a founding member of the Bitcoin Association of Hong Kong. His work exposed private data leakage in Chinese Tinder clone Tantan, and how Apple censors apps in China.'
   },
   {
+    blockstackId: 'ginaabrams',
+    name: 'Gina Abrams',
+    avatar: '/images/avatars/gina-abrams.jpg',
+    bio: 'Gina Abrams studied Psychology and Social Sciences at Binghamton University. Previously she spent two years in agency technical recruiting, during which time she assisted numerous NYC start-ups in mission critical DevOps, SRE and Security hires.',
+  },
+  {
     blockstackId: 'guylepage3',
     name: 'Guy Lepage',
     avatar: 'https://s3.amazonaws.com/kd4/guylepage3',
