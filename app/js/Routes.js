@@ -56,7 +56,7 @@ export default (
       <Route path="/videos/:slug" component={TalkPage} />
 
       <Route path="/about" component={AboutPage} />
-      <Route path="/faq" component={FAQPage} />
+      <Route path="/faqs" component={FAQPage} />
       <Route path="/jobs" component={JobsPage} />
 
       <Route path="/docs" component={DocsPage} />
