@@ -39,7 +39,7 @@ class MobileNav extends Component {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/faqs" className="nav-link">
+            <Link to="/faq" className="nav-link">
               FAQs
             </Link>
           </li>
