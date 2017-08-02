@@ -4,6 +4,8 @@ import {Component, PropTypes, cloneElement} from 'react'
 
 import Header             from './components/Header'
 import Footer             from './components/Footer'
+import TokenBanner         from './components/TokenBanner'
+
 
 const propTypes = {
   params: PropTypes.object,
@@ -36,8 +38,11 @@ class App extends Component {
 
     return (
       <div className={wrapperClass}>
-        { location.pathname !== '/' ?
+        { (location.pathname !== '/' && location.pathname !== '/tokensale') ?
+        <div>
+          <TokenBanner />
           <Header />
+        </div>
         : null }
         {this.renderChildren()}
         <Footer />

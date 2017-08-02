@@ -56,6 +56,14 @@
         "destination": "/docs-tutorials-hello-blockstack.html"
       },
       {
+        "source": "/blog/untitled",
+        "destination": "/blog-untitled.html"
+      },
+      {
+        "source": "/blog/blockstack-and-the-power-of-choice",
+        "destination": "/blog-blockstack-and-the-power-of-choice.html"
+      },
+      {
         "source": "/blog/blockstack-summit-2017-freedom-to-innovate",
         "destination": "/blog-blockstack-summit-2017-freedom-to-innovate.html"
       },
@@ -106,14 +114,6 @@
       {
         "source": "/blog/blockstack-research-paper-published-at-usenix-atc16-conference",
         "destination": "/blog-blockstack-research-paper-published-at-usenix-atc16-conference.html"
-      },
-      {
-        "source": "/blog/why-blockstack-is-migrating-to-the-bitcoin-blockchain",
-        "destination": "/blog-why-blockstack-is-migrating-to-the-bitcoin-blockchain.html"
-      },
-      {
-        "source": "/blog/introducing-the-blockstack-identity-system",
-        "destination": "/blog-introducing-the-blockstack-identity-system.html"
       },
       {
         "source": "**",

@@ -1,15 +1,17 @@
 'use strict'
 
-import {Component}   from 'react'
-import {Link}        from 'react-router'
-import DocumentTitle from 'react-document-title'
+import {Component}          from 'react'
+import {Link}               from 'react-router'
+import DocumentTitle        from 'react-document-title'
 import {bindActionCreators} from 'redux'
-import {connect} from 'react-redux'
+import {connect}            from 'react-redux'
 
 import {BlogActions}       from '../datastore/Blog'
 import {StatsActions}      from '../datastore/Stats'
 import Image               from '../components/Image'
 import TransparentHeader   from '../components/TransparentHeader'
+import TokenBanner         from '../components/TokenBanner'
+import {featuredApps}      from '../config'
 
 function mapStateToProps(state) {
   return {
@@ -127,60 +129,63 @@ class HomePage extends Component {
       <DocumentTitle title="Blockstack, building the decentralized internet">
         <div className="body-hero">
           <div className="col-centered block">
-            <TransparentHeader />
-            <div className="container">
-              <section className="hero">
-                <h1 className="h-secondary hero-head">
-                 A New Internet for Decentralized Apps
-                </h1>
-                <p className="lead hero-lead col-md-9 col-centered">
-                  Blockstack is a new decentralized internet where users own their data and apps run locally. A browser portal is all that’s needed to get started.
-                </p>
-                <div className="no-padding container-fluid col-md-9 col-centered m-b-65">
-                  <div className="col-sm-12 text-center landing-hero-img">
-                    <Image className="landing-feat-img"
-                      src="/images/resources/portal-home-screen@2x.png"
-                      fallbackSrc="/images/tutorials/portal-home-screen.png"
-                      retinaSupport={false} />
+            <div>
+              <TokenBanner />
+              <TransparentHeader />
+              <div className="container">
+                <section className="hero text-xs-center">
+                  <h1 className="text-white m-b-20">
+                   A New Internet for Decentralized Apps
+                  </h1>
+                  <p className="hero-lead purple-50 col-md-9 col-centered">
+                    Blockstack is a new decentralized internet where users own their data and apps run locally. A browser portal is all that’s needed to get started.
+                  </p>
+                  <div className="no-padding container-fluid col-md-10 col-lg-10 col-centered m-b-60">
+                    <div className="col-sm-12 col-md-6">
+                      <p className="pull-md-right">
+                        <Link to="/developers" role="button"
+                          className="btn btn-electric-blue btn-block btn-block-reset">
+                          Developers&nbsp;&nbsp;›&nbsp;&nbsp;Browser Kit
+                        </Link>
+                      </p>
+                    </div>
+                    <div className="col-sm-12 col-md-6">
+                      <p className="pull-md-left">
+                        <Link to="/users" role="button"
+                          className="btn btn-electric-blue btn-block btn-block-reset">
+                          Users&nbsp;&nbsp;›&nbsp;&nbsp;Join the Waitlist
+                        </Link>
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className="no-padding container-fluid col-md-10 col-lg-10 col-centered">
-                  <div className="no-padding col-md-6" style={{ paddingRight: '1px' }}>
-                    <p className="no-padding hero-btn-title">
-                      Developers
-                    </p>
-                    <p className="no-padding m-b-10">
-                      <Link to="/developers" role="button"
-                        className="btn btn-sm btn-secondary btn-block btn-hero">
-                        › Browser Kit
-                      </Link>
-                    </p>
+                  <div className="no-padding container-fluid col-md-9 col-centered">
+                    <div className="text-center hidden-sm-down">
+                      <Image className="landing-feat-img"
+                        src="/images/resources/browser-home-screen@2x.png"
+                        fallbackSrc="/images/resources/browser-home-screen.png"
+                        retinaSupport={false} />
+                    </div>
+                    <div className="caption-browser hidden-sm-down">
+                      Blockstack Browser
+                    </div>
                   </div>
-                  <div className="no-padding col-md-6">
-                    <p className="no-padding hero-btn-title">
-                      Users
-                    </p>
-                    <p className="no-padding">
-                      <Link to="/users" role="button"
-                        className="btn btn-sm btn-secondary btn-block btn-hero">
-                        › Join the Waitlist
-                      </Link>
-                    </p>
-                  </div>
-                </div>
-              </section>
+                </section>
+              </div>
             </div>
             <div className="section-stats container-fluid">
               <div className="container">
                 <section>
-                  <div className="no-padding col-sm-12 col-md-4 text-center text-white text-stats">
-                    ——›&nbsp;{this.state.stats.domains} users registered
+                  <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
+                    {this.state.stats.domains.toLocaleString()}
+                    <span className="text-stats-description">users registered</span>
                   </div>
-                  <div className="no-padding col-sm-12 col-md-4 text-center text-white text-stats">
-                    ——›&nbsp;In production for 3+ years
+                  <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
+                    3+
+                    <span className="text-stats-description">years in production</span>
                   </div>
-                  <div className="no-padding col-sm-12 col-md-4 text-center text-white text-stats">
-                    ——›&nbsp;{this.state.stats.meetupUsers} community devs
+                  <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
+                    {this.state.stats.meetupUsers.toLocaleString()}
+                    <span className="text-stats-description">community devs</span>
                   </div>
                 </section>
               </div>
@@ -252,8 +257,7 @@ class HomePage extends Component {
                     </h3>
                     <div className="col-sm-12 text-center landing-hero-img">
                       <Image className="landing-feat-img"
-                        src="/images/visuals/blockstack-stack-diagram.svg"
-                        fallbackSrc="/images/tutorials/portal-home-screen.png"
+                        src="/images/visuals/blockstack-architecture-diagram.svg"
                         retinaSupport={false} />
                     </div>
                     <div>
@@ -309,7 +313,7 @@ class HomePage extends Component {
                         Storage
                       </h4>
                       <p className="light-gray text-center">
-                        <i>(Coming Soon...)</i>
+                        Available today!
                       </p>
                       <p className="text-center">
                         <Image className="col3-img-lg"
@@ -345,57 +349,35 @@ class HomePage extends Component {
               </div>
             </div>
             <div className="sectionContainerLightGray section-spacing container-fluid">
-              <div className="container sectionWrap">
+              <div className="container">
                 <section>
-                  <div className="containWrap">
-                    <h3 className="h-primary text-center">
-                      Thousands of App Possibilities
-                    </h3>
-                  </div>
-                  <div>
-                    <div className="col-md-4">
-                      <p className="text-center">
-                        <Image className="col-img"
-                          src="/images/icons/icon-decentralized-social.svg"
-                          fallbackSrc="/images/tutorials/portal-home-screen.png"
-                          retinaSupport={false} />
-                      </p>
-                      <h4 className="modern text-center">
-                        Decentralized Social Networks
-                      </h4>
-                      <p className="text-center">
-                        Existing social networks lock in users and limit access. Build a decentralized social network that allows users to own their relationships and data and take it with them wherever they go.
-                      </p>
-                    </div>
-                    <div className="col-md-4">
-                      <p className="text-center">
-                        <Image className="col-img"
-                          src="/images/icons/icon-marketplace.svg"
-                          fallbackSrc="/images/tutorials/portal-home-screen.png"
-                          retinaSupport={false} />
-                      </p>
-                      <h4 className="modern text-center">
-                        Peer-to-Peer Marketplaces
-                      </h4>
-                      <p className="text-center">
-                        Existing marketplaces take a massive haircut and limit what can be bought and sold. Build a peer-to-peer marketplace that allows individuals to freely transact at a lower cost.
-                      </p>
-                    </div>
-                    <div className="col-md-4">
-                      <p className="text-center">
-                        <Image className="col-img"
-                          src="/images/icons/icon-community-vote.svg"
-                          fallbackSrc="/images/tutorials/portal-home-screen.png"
-                          retinaSupport={false} />
-                      </p>
-                      <h4 className="modern text-center">
-                        Community-Run Voting
-                      </h4>
-                      <p className="text-center">
-                        Existing voting systems are centrally operated and thus are extremely vulnerable to hacking. Build a voting system as a public internet utility that’s run by the community instead of a single corporation.
-                      </p>
-                    </div>
-                  </div>                  
+                  <h2 className="h-primary m-b-85 text-center">
+                    Featured Apps on Blockstack
+                  </h2>
+                  {[[0,3], [3,5]].map((row, index) => {
+                    return (
+                      <div key={index}>
+                        {featuredApps.slice(row[0],row[1]).map((featuredApp, index2) => {
+                          const offsetClass = (row[0] === 3 && index2 === 0) ? 'offset-md-2' : ''
+                          return (
+                            <div key={index2} 
+                              className={`col-md-4 m-b-55 ${offsetClass}`}>
+                              <p className="text-center">
+                                <Image className="col-img" src={featuredApp.icon}
+                                  retinaSupport={false} />
+                              </p>
+                              <h4 className="modern text-center">
+                                {featuredApp.name}
+                              </h4>
+                              <p className="text-center">
+                                {featuredApp.description}
+                              </p>
+                            </div>
+                          )
+                        })}
+                      </div>
+                    )
+                  })}
                 </section>
               </div>
             </div>
@@ -407,25 +389,25 @@ class HomePage extends Component {
                       News
                     </h2>
                   </div>
-                  <div className="row m-b-50 no-margin">
+                  <div className="container">
                   { firstThreePosts.map((post, index) => {
                     return (
-                      <div className="col-md-4" key={index}>
+                      <div className="col-md-4 m-b-55" key={index}>
                         { post.urlSlug && post.title ?
-                        <Link to={'/blog/' + post.urlSlug}>
-                          <h4>{ post.title }</h4>
+                        <Link className="news-links" to={'/blog/' + post.urlSlug}>
+                          <h4 className="font-weight-bold">{ post.title }</h4>
                         </Link>
                         : null }
                         { post.preview ?
                         <div dangerouslySetInnerHTML={{ __html: post.preview }}>
                         </div>
                         : null }
-                        <div className="post-meta">
+                        <div className="post-meta" style={{ fontSize: '14px', color: '#949494' }}>
                           { post.creator ?
                           <span>{post.creator.name} |&nbsp;</span>
                           : null }
                           { post.datetime && post.date ?
-                          <time className="post-date" dateTime={post.datetime}>
+                          <time className="post-date" style={{ textTransform: 'unset', fontSize: '14px', color: '#949494' }} dateTime={post.datetime}>
                             {post.date}
                           </time>
                           : null }

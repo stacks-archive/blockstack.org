@@ -5,7 +5,6 @@ import DocumentTitle    from 'react-document-title'
 
 import TutorialPreview  from '../components/TutorialPreview'
 import {tutorials}      from '../config'
-
 class TutorialsPage extends Component {
 
   constructor(props) {
