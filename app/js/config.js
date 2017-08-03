@@ -79,6 +79,12 @@ export const tutorials = {
     urlSlug: 'cli-basics',
     description: 'Walk through the basics of the command line interface, like looking up names, getting name prices, and registering names.'
   },
+  'todo-spa': {
+    image: '/images/tutorials/cli-lookups.jpg',
+    title: 'Blockstak Todos',
+    urlSlug: 'todo-spa',
+    description: 'Walk through creating a basic Todo application with Blockstack. Learn about Sign In flow and Gaia storage.'
+  },
 }
 
 export const talks = {
