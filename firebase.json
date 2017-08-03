@@ -212,6 +212,11 @@
         "type": 301
       },
       {
+        "source": "/tutorials/todo-spa",
+        "destination": "/tutorials/todo-spa",
+        "type": 301
+      },
+      {
         "source": "/docs/cli-basic-usage",
         "destination": "/tutorials/cli-basics",
         "type": 301
