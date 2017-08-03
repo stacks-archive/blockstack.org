@@ -127,7 +127,7 @@ export const teamMembers = [
     blockstackId: 'jzampolin',
     name: 'Jack Zampolin',
     avatar: '/images/avatars/jack-zampolin.jpg',
-    bio: 'Jack Zampolin helped launch RightPSI, a small startup hardware startup in Bozeman, MT. Soon after he helped grow Influx DB as a Developer Evangelist.',
+    bio: 'Jack Zampolin came to Blockstack from InfluxData where he engaged with and grew the developer community as a Developer Evangelist. Before that he helped launch a hardware startup called RightPSI in Bozeman, MT.',
   },
   {
     blockstackId: 'mfreed',
