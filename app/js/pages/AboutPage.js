@@ -3,7 +3,6 @@
 import { Component }        from 'react'
 import DocumentTitle        from 'react-document-title'
 
-import CommunityMember      from '../components/CommunityMember'
 import ContentSection       from '../components/ContentSection'
 import TeamMembers       from '../components/TeamMembers'
 
