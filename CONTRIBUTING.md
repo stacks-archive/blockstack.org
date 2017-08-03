@@ -168,12 +168,12 @@ Adhering to the following process is the best way to get your work included in t
       - develop
       - master
    Branch name for production releases: [master] master
-   
+
    Which branch should be used for integration of the "next release"?
       - develop
       - master
    Branch name for "next release" development: [develop] develop
-   
+
    How to name your supporting branch prefixes?
    Feature branches? [feature/] issue-
    Bugfix branches? [bugfix/] issue-
@@ -182,7 +182,7 @@ Adhering to the following process is the best way to get your work included in t
    Support branches? [support/] issue-
    Version tag prefix? []
    ```
-   
+
    ```bash
    git flow feature start <issue number>-<feature name>-<github username>
    ```
@@ -192,7 +192,7 @@ Adhering to the following process is the best way to get your work included in t
    or your code is unlikely be merged into the main project. Use Git's
    [interactive rebase](https://help.github.com/articles/interactive-rebase)
    feature to tidy up your commits before making them public.
-   
+
    We advise including the issue number in the commit message as well.
 
 5. Locally merge the upstream development branch into your topic branch:
@@ -249,17 +249,23 @@ Run `npm run dev` before committing to ensure your changes follow our coding sta
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top">
-        <img width="150" height="150" src="https://github.com/guylepage3.png?s=150">
-        <br>
-        <a href="https://github.com/guylepage3">Guy Lepage</a>
-        <br>
+      <th>Maintainer</th>
+      <th>Github</th>
+    </tr>
+    <tr>
+      <td align="center">
+        Guy Lepage
       </td>
-      <td align="center" valign="top">
-        <img width="150" height="150" src="https://github.com/shea256.png?s=150">
-        <br>
-        <a href="https://github.com/shea256">Ryan Shea</a>
-        <br>
+      <td align="center">
+        Ryan Shea
+      </td>
+     </tr>
+     <tr>
+      <td align="center">
+        <a href="https://github.com/guylepage3">guylepage3</a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/shea256">shea256</a>
       </td>
      </tr>
   </tbody>
