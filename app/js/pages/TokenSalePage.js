@@ -13,9 +13,9 @@ import TransparentHeader   from '../components/TransparentHeader'
 import DarkForm            from '../components/DarkForm'
 import EmbedYouTube        from '../components/EmbedYouTube'
 import PostPreview         from '../components/PostPreview'
-import TeamMember          from '../components/TeamMember'
+import TeamMembers          from '../components/TeamMembers'
 import ContentSection      from '../components/ContentSection'
-import {teamMembers, featuredApps}  from '../config'
+import {featuredApps}  from '../config'
 
 function mapStateToProps(state) {
   return {
@@ -254,28 +254,7 @@ class TokenSalePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid">
-              <div className="container">
-                <section>
-                  <h2 className="h-primary text-center">
-                    Team
-                  </h2>
-                  <div className="post-content m-t-3">
-                    {teamMembers.chunk(2).map((teamMemberRow, index) => {
-                      return (
-                        <div className="row" key={index}>
-                          {teamMemberRow.map((teamMember, subIndex) => {
-                            return (
-                              <TeamMember key={subIndex} profile={teamMember} />
-                            )
-                          })}
-                        </div>
-                      )
-                    })}
-                  </div>
-                </section>
-              </div>
-            </div>
+            <TeamMembers />
             <div className="sectionContainerLightGray section-spacing container-fluid">
               <div className="container">
                 <section>
