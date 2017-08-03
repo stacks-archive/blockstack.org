@@ -6,7 +6,7 @@
 A live version of this site can be found online at https://blockstack.org.
 
 ## Table of Contents
-- [Contributing Guide](CONTRIBUTING.md)
+- [Contributing](#contributing)
 - [Installation](#installation)
 - [Development](#development)
 - [Documentation](#documentation)
@@ -15,6 +15,21 @@ A live version of this site can be found online at https://blockstack.org.
 - [Deployment](#deployment)
 - [Languages and Tools](#languages-and-tools)
 - [More Info](#more-info)
+
+### Contributing
+
+Before reporting a bug, [follow these steps](https://capgemini.github.io/testing/effective-bug-reports/#tldr-version).
+
+This repository uses the [git flow branching mode](http://nvie.com/posts/a-successful-git-branching-model/).
+
+We suggest using the [git-flow-avh](https://github.com/petervanderdoes/gitflow-avh) plugin.
+
+Please send pull requests against `develop`. `master` will reflect the latest production code deployed to npm.
+
+Please be sure to write tests for your added features, that tests are all passing by running `gulp test`,
+lint your code using [ESLint](http://eslint.org/), and link the issue your feature/fix resolves in your pull request.
+
+For more details on how to contribute, checkout our [Contributing Guide](CONTRIBUTING.md)
 
 ### Installation
 

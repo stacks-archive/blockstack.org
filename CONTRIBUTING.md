@@ -119,8 +119,6 @@ Please adhere to the [Blockstack Brand Guide](https://github.com/blockstack/desi
 
 When contributing to Blockstack's documentation, you should edit the documentation source files in [the `/app/` directory of the `master` branch](https://github.com/blockstack/blockstack.org/tree/master/app).
 
-**Prerequisites:** Make sure you have [git-flow downloaded](https://github.com/petervanderdoes/gitflow-avh/wiki/Installation) on your machine. [Here is a cheatsheet](https://danielkummer.github.io/git-flow-cheatsheet/) to familiarize yourself with the command line tool.
-
 Adhering to the following process is the best way to get your work included in the project:
 
 1. [Fork](https://help.github.com/fork-a-repo/) the project, clone your fork,
@@ -142,31 +140,10 @@ Adhering to the following process is the best way to get your work included in t
    git pull upstream develop
    ```
 
-3. Initiate git flow in the repository and set up a feature branch.
+3. Set up a feature branch. *Keep the feature name short yet descriptive to the issue*
 
    ```bash
-   git flow init
-   Which branch should be used for bringing forth production releases?
-      - develop
-      - master
-   Branch name for production releases: [master] master
-
-   Which branch should be used for integration of the "next release"?
-      - develop
-      - master
-   Branch name for "next release" development: [develop] develop
-
-   How to name your supporting branch prefixes?
-   Feature branches? [feature/] issue-
-   Bugfix branches? [bugfix/] issue-
-   Release branches? [release/] issue-
-   Hotfix branches? [hotfix/] issue-
-   Support branches? [support/] issue-
-   Version tag prefix? []
-   ```
-
-   ```bash
-   git flow feature start <issue number>-<feature name>-<github username>
+   git checkout -b <feature-branch-name>
    ```
 
 4. Commit your changes in logical chunks. Please adhere to these [git commit
@@ -186,7 +163,7 @@ Adhering to the following process is the best way to get your work included in t
 6. Push your topic branch up to your fork:
 
    ```bash
-   git push origin issue-<issue number>-<topic-branch-name>-<github-username>
+   git push origin <feature-branch-name>
    ```
 
 7. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/) against the `develop` branch.
@@ -214,15 +191,7 @@ includes code changes) and under the terms of the
 
 ### JS
 
-- No semicolons (in client-side JS)
-- 2 spaces (no tabs)
-- strict mode
-- "Attractive"
-- Don't use jQuery (no "$" allowed)
-
-### Checking code
-
-Run `npm run dev` before committing to ensure your changes follow our coding standards.
+Our projects use [AirBnB's ESLint](http://eslint.org/) for JavaScript and React's JSX.
 
 [^ Back To The Top](#contributing-to-blockstackorg)
 
