@@ -257,17 +257,17 @@ Run `npm run dev` before committing to ensure your changes follow our coding sta
         Guy Lepage
       </td>
       <td align="center">
-        Ryan Shea
-      </td>
-     </tr>
-     <tr>
-      <td align="center">
         <a href="https://github.com/guylepage3">guylepage3</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        Ryan Shea
       </td>
       <td align="center">
         <a href="https://github.com/shea256">shea256</a>
       </td>
-     </tr>
+    </tr>
   </tbody>
 </table>
 
