@@ -18,6 +18,8 @@ A live version of this site can be found online at https://blockstack.org.
 
 ### Contributing
 
+You can find opportunities to contribute on our [project board](https://github.com/blockstack/blockstack.org/projects) or [issue tracker](https://github.com/blockstack/blockstack.org/issues), or [Just Ask!](http://chat.blockstack.org/)
+
 Before reporting a bug, [follow these steps](https://capgemini.github.io/testing/effective-bug-reports/#tldr-version).
 
 This repository uses the [git flow branching mode](http://nvie.com/posts/a-successful-git-branching-model/).
