@@ -51,30 +51,9 @@ restrictions:
 
 * Please **do not** post comments consisting solely of "+1" or ":thumbsup:". Use [GitHub's "reactions" feature](https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments) instead. We reserve the right to delete comments which violate this rule.
 
-### When reporting a bug, include:
-
-* Operating system and version (Windows, Mac OS X, Android, iOS, Win10 Mobile)
-
-* Browser and version (Chrome, Firefox, Safari, IE, MS Edge, Opera 15+, Android Browser)
-
-* Reduced test cases and potential fixes using [JS Bin](https://jsbin.com)
-
 ### Issues and labels
 
-Our bug tracker utilizes several labels to help organize and identify issues. Here's what they represent and how we use them:
-
-- `backlog` - Issues that have yet to be prioritized
-- `bug` - Issues where code is demonstrably a problem
-- `copywriting` - Issues that require the art of using words to promote the blockstack brand
-- `design` - Issues related to design
-- `docs` - Issue that is specifically for addition, creation or editing of documentation
-- `duplicate` - Issues that have already been opened once already
-- `enhancement` - Issues that enhance the product
-- `help wanted` - Issues that require assistance
-- `ui` - Issues related to the user interface
-- `question` - Issues for general questions about blockstack
-- `versions (vX.X.X)` - Issues that are a part of a specific release
-- `wont-fix` - Issues that wont-fix
+Our bug tracker utilizes several labels to help organize and identify issues.
 
 For a complete look at our labels, see the [project labels page](https://github.com/blockstack/blockstack.org/labels).
 
@@ -92,8 +71,11 @@ Guidelines for bug reports:
 
 2. **Check if the issue has been fixed** &mdash; try to reproduce it using the latest `master`, `design` or development branch in the repository.
 
-3. **Isolate the problem** &mdash; ideally create a [reduced test case](https://css-tricks.com/reduced-test-cases/) and a live example. [This JS Bin](https://jsbin.com/lolome/edit?html,output) is a helpful template.
+3. **Isolate the problem** &mdash; ideally create a [reduced test case](https://css-tricks.com/reduced-test-cases/) and a live example. [This JS Bin](https://jsbin.com/lolome/edit?html,output) is a helpful template. At the minimum, include steps one can take to reproduce the bug.
 
+4. **Include Browser and Version** (Chrome, Firefox, Safari, IE, MS Edge, Opera 15+, Android Browser).
+
+5. **Include Operating System and Version**
 
 A good bug report shouldn't leave others needing to chase you up for more information. Please try to be as detailed as possible in your report. What is your environment? What steps will reproduce the issue? What browser(s) and OS experience the problem? Do other browsers show the bug differently? What would you expect to be the outcome? All these details will help people to fix any potential bugs.
 
