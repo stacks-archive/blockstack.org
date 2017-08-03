@@ -12,6 +12,10 @@
     ],
     "rewrites": [
       {
+        "source": "/posts/auth",
+        "destination": "/docs-posts-auth.html"
+      },
+      {
         "source": "/posts/blockchain-identity",
         "destination": "/docs-posts-blockchain-identity.html"
       },
@@ -30,6 +34,30 @@
       {
         "source": "/posts/blockstack-vs-namecoin",
         "destination": "/docs-posts-blockstack-vs-namecoin.html"
+      },
+      {
+        "source": "/posts/browser-installation",
+        "destination": "/docs-posts-browser-installation.html"
+      },
+      {
+        "source": "/posts/cli-basic-usage",
+        "destination": "/docs-posts-cli-basic-usage.html"
+      },
+      {
+        "source": "/posts/cli-extended-usage",
+        "destination": "/docs-posts-cli-extended-usage.html"
+      },
+      {
+        "source": "/posts/cli-installation",
+        "destination": "/docs-posts-cli-installation.html"
+      },
+      {
+        "source": "/posts/code-layout",
+        "destination": "/docs-posts-code-layout.html"
+      },
+      {
+        "source": "/posts/explorer-installation",
+        "destination": "/docs-posts-explorer-installation.html"
       },
       {
         "source": "/posts/how-blockstack-works",
@@ -54,6 +82,10 @@
       {
         "source": "/tutorials/hello-blockstack",
         "destination": "/docs-tutorials-hello-blockstack.html"
+      },
+      {
+        "source": "/tutorials/todo-spa",
+        "destination": "/docs-tutorials-todo-spa.html"
       },
       {
         "source": "/blog/announcing-blockstack-token-and-mining",
