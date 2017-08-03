@@ -56,8 +56,8 @@
         "destination": "/docs-tutorials-hello-blockstack.html"
       },
       {
-        "source": "/blog/untitled",
-        "destination": "/blog-untitled.html"
+        "source": "/blog/announcing-blockstack-token-and-mining",
+        "destination": "/blog-announcing-blockstack-token-and-mining.html"
       },
       {
         "source": "/blog/blockstack-and-the-power-of-choice",
@@ -209,6 +209,11 @@
       {
         "source": "/tutorials/hello-world",
         "destination": "/tutorials/hello-blockstack",
+        "type": 301
+      },
+      {
+        "source": "/tutorials/todo-spa",
+        "destination": "/tutorials/todo-spa",
         "type": 301
       },
       {
