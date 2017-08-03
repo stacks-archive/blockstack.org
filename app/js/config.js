@@ -18,51 +18,31 @@ export const installationLinks = {
   cliDevelopers: 'https://github.com/blockstack/blockstack-core',
 }
 
-export const companiesHiring = [
+export const jobs = [
   {
-    name: 'Blockstack Inc',
-    jobs: [
-      {
-        'title': 'Web Product Engineer',
-        'description': 'Build out the Blockstack web browser using ReactJS, Redux, Node and Blockstack APIs.',
-        'url': 'https://angel.co/blockstack/jobs/150184-product-engineer'
-      },
-      {
-        'title': 'Mobile Product Engineer',
-        'description': 'Kickstart the development of the Blockstack mobile browser.',
-        'url': 'https://angel.co/blockstack/jobs/150184-product-engineer'
-      },
-      {
-        'title': 'Systems Engineer',
-        'description': 'Build out Blockstack Core and the Blockstack P2P Atlas network with Python and blockchain transaction APIs',
-        'url': 'https://angel.co/blockstack/jobs/151139-systems-engineer'
-      },
-      {
-        'title': 'Security Engineer',
-        'description': 'Scrutinize and battle-test the Blockstack protocols and consensus critical systems.',
-        'url': 'https://angel.co/blockstack/jobs/151142-security-engineer'
-      },
-      {
-        'title': 'Developer Evangelist',
-        'description': 'Coordinate events and produce content to grow the Blockstack ecosystem.',
-        'url': 'https://angel.co/blockstack/jobs/151144-community-coordinator'
-      }
-    ]
+    'title': 'Web Product Engineer',
+    'description': 'Build out the Blockstack web browser using ReactJS, Redux, Node and Blockstack APIs.',
+    'url': 'https://angel.co/blockstack/jobs/150184-product-engineer'
   },
   {
-    name: 'Microsoft',
-    jobs: [
-      {
-        'title': 'Systems Engineer',
-        'description': 'Build self-sovereign identity software using Blockstack Core.',
-        'url': 'https://microsoft.com'
-      },
-      {
-        'title': 'Product Engineer',
-        'description': 'Build self-sovereign identity software using Blockstack Core.',
-        'url': 'https://microsoft.com'
-      }
-    ]
+    'title': 'Mobile Product Engineer',
+    'description': 'Kickstart the development of the Blockstack mobile browser.',
+    'url': 'https://angel.co/blockstack/jobs/150184-product-engineer'
+  },
+  {
+    'title': 'Systems Engineer',
+    'description': 'Build out Blockstack Core and the Blockstack P2P Atlas network with Python and blockchain transaction APIs',
+    'url': 'https://angel.co/blockstack/jobs/151139-systems-engineer'
+  },
+  {
+    'title': 'Security Engineer',
+    'description': 'Scrutinize and battle-test the Blockstack protocols and consensus critical systems.',
+    'url': 'https://angel.co/blockstack/jobs/151142-security-engineer'
+  },
+  {
+    'title': 'Developer Evangelist',
+    'description': 'Coordinate events and produce content to grow the Blockstack ecosystem.',
+    'url': 'https://angel.co/blockstack/jobs/151144-community-coordinator'
   }
 ]
 

@@ -392,7 +392,7 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .docs-ul{margin:20px 0 0 0;}
 .docs-btn-group{width:100%!important;}
 .blog-index .container{max-width:700px;font-size:18px;}
-.blog-post .container{max-width:700px;font-size:18px;}
+.blog-post .container, .blog-post .container p{max-width:700px;font-size:18px;}
 .post-title{margin-bottom:0;}
 .post-header{margin-bottom:0px;}
 .post-body img {width: 100%;}
