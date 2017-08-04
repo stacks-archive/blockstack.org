@@ -16,7 +16,7 @@ class Header extends Component {
         { to: '/install', label: 'Install' },
         { to: '/tutorials', label: 'Tutorials' },
         { to: '/blog', label: 'Blog' },
-        { to: '/papers', label: 'Papers', mobile: false },
+        { to: '/papers', label: 'Papers' },
         { to: '/videos', label: 'Videos' },
         { to: '/careers', label: 'Careers' },
         { to: 'https://github.com/blockstack', label: 'Code', mobile: false },
@@ -53,10 +53,15 @@ class Header extends Component {
               {this.state.navItems.map((navItem, index) => {
                 return (
                   <li key={index} className="nav-item">
-                    <Link to={navItem.to} className="nav-link"
-                          target={navItem.to.startsWith('http') ? '_blank' : '_self'}>
-                      {navItem.label}
-                    </Link>
+                    { !navItem.to.startsWith('http') ? (
+                      <Link to={navItem.to} className="nav-link">
+                        {navItem.label}
+                      </Link>
+                    ) : (
+                      <Link to={navItem.to} className="nav-link" target="_blank">
+                        {navItem.label}
+                      </Link>
+                    )}
                   </li>
                 )
               })}
@@ -68,10 +73,15 @@ class Header extends Component {
               {mobileNavItems.map((navItem, index) => {
                 return (
                   <li key={index} className="nav-item">
-                    <Link to={navItem.to} className="nav-link"
-                          target={navItem.to.startsWith('http') ? '_blank' : '_self'}>
-                      {navItem.label}
-                    </Link>
+                    { !navItem.to.startsWith('http') ? (
+                      <Link to={navItem.to} className="nav-link">
+                        {navItem.label}
+                      </Link>
+                    ) : (
+                      <Link to={navItem.to} className="nav-link" target="_blank">
+                        {navItem.label}
+                      </Link>
+                    )}
                   </li>
                 )
               })}
