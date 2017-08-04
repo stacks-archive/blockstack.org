@@ -127,6 +127,10 @@ gulp.task('configFirebase', () => {
       'destination': '/tutorials/hello-blockstack',
     },
     {
+      'source': '/tutorials/todo-spa',
+      'destination': '/tutorials/todo-spa',
+    },
+    {
       'source': '/docs/cli-basic-usage',
       'destination': '/tutorials/cli-basics'
     },
