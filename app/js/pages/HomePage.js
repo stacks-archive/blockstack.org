@@ -9,8 +9,9 @@ import {connect}            from 'react-redux'
 import {BlogActions}       from '../datastore/Blog'
 import {StatsActions}      from '../datastore/Stats'
 import Image               from '../components/Image'
-import TransparentHeader   from '../components/TransparentHeader'
+import Header              from '../components/Header'
 import TokenBanner         from '../components/TokenBanner'
+import PostPreview         from '../components/PostPreview'
 import {featuredApps}      from '../config'
 
 function mapStateToProps(state) {
@@ -131,7 +132,7 @@ class HomePage extends Component {
           <div className="col-centered block">
             <div>
               <TokenBanner />
-              <TransparentHeader />
+              <Header transparent={true} />
               <div className="container">
                 <section className="hero text-xs-center">
                   <h1 className="text-white m-b-20">
@@ -143,7 +144,7 @@ class HomePage extends Component {
                   <div className="no-padding container-fluid col-md-10 col-lg-10 col-centered m-b-60">
                     <div className="col-sm-12 col-md-6">
                       <p className="pull-md-right">
-                        <Link to="/developers" role="button"
+                        <Link to="/install" role="button"
                           className="btn btn-electric-blue btn-block btn-block-reset">
                           Developers&nbsp;&nbsp;›&nbsp;&nbsp;Browser Kit
                         </Link>
@@ -204,9 +205,9 @@ class HomePage extends Component {
                       </div>
                       <div className="row">
                         <div className="container-fluid">
-                        {content.oldInternet.map((item) => {
+                        {content.oldInternet.map((item, index) => {
                           return (
-                            <div className="container-fluid no-padding-sm m-b-30">
+                            <div key={index} className="container-fluid no-padding-sm m-b-30">
                               <h5 className="h-primary text-center-md">
                                 {item.title}
                               </h5>
@@ -229,9 +230,9 @@ class HomePage extends Component {
                       </div>
                       <div className="row">
                         <div className="container-fluid">
-                        {content.newInternet.map((item) => {
+                        {content.newInternet.map((item, index) => {
                           return (
-                            <div className="container-fluid no-padding-sm m-b-30">
+                            <div key={index} className="container-fluid no-padding-sm m-b-30">
                               <h5 className="h-primary text-center-md">
                                 {item.title}
                               </h5>
@@ -261,9 +262,9 @@ class HomePage extends Component {
                         retinaSupport={false} />
                     </div>
                     <div>
-                      {content.fullStack.map((item) => {
+                      {content.fullStack.map((item, index) => {
                         return (
-                          <div className="col-md-4">
+                          <div key={index} className="col-md-4">
                             <h4 className="inverse text-center">
                               {item.title}
                             </h4>
@@ -392,27 +393,7 @@ class HomePage extends Component {
                   <div className="container">
                   { firstThreePosts.map((post, index) => {
                     return (
-                      <div className="col-md-4 m-b-55" key={index}>
-                        { post.urlSlug && post.title ?
-                        <Link className="news-links" to={'/blog/' + post.urlSlug}>
-                          <h4 className="font-weight-bold">{ post.title }</h4>
-                        </Link>
-                        : null }
-                        { post.preview ?
-                        <div dangerouslySetInnerHTML={{ __html: post.preview }}>
-                        </div>
-                        : null }
-                        <div className="post-meta" style={{ fontSize: '14px', color: '#949494' }}>
-                          { post.creator ?
-                          <span>{post.creator.name} |&nbsp;</span>
-                          : null }
-                          { post.datetime && post.date ?
-                          <time className="post-date" style={{ textTransform: 'unset', fontSize: '14px', color: '#949494' }} dateTime={post.datetime}>
-                            {post.date}
-                          </time>
-                          : null }
-                        </div>
-                      </div>
+                      <PostPreview key={index} post={post} />
                     )
                   }) }
                   </div>
@@ -432,7 +413,7 @@ class HomePage extends Component {
                       Developers
                     </p>
                     <p className="no-padding m-b-10">
-                      <Link to="/developers" role="button"
+                      <Link to="/install" role="button"
                         className="btn btn-sm btn-secondary btn-block btn-hero">
                         Browser Kit
                       </Link>

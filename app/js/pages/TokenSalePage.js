@@ -9,13 +9,13 @@ import {connect}            from 'react-redux'
 import {BlogActions}       from '../datastore/Blog'
 import {StatsActions}      from '../datastore/Stats'
 import Image               from '../components/Image'
-import TransparentHeader   from '../components/TransparentHeader'
+import Header              from '../components/Header'
 import DarkForm            from '../components/DarkForm'
 import EmbedYouTube        from '../components/EmbedYouTube'
 import PostPreview         from '../components/PostPreview'
-import TeamMembers          from '../components/TeamMembers'
+import TeamMembers         from '../components/TeamMembers'
 import ContentSection      from '../components/ContentSection'
-import {featuredApps}  from '../config'
+import {featuredApps}      from '../config'
 
 function mapStateToProps(state) {
   return {
@@ -76,7 +76,7 @@ class TokenSalePage extends Component {
       <DocumentTitle title="Blockstack - Token Sale">
         <div className="token-hero">
           <div className="col-centered block">
-            <TransparentHeader />
+            <Header transparent={true} />
             <div className="container">
               <section className="text-xs-center">
                 <Image className="stacks-logo-sm m-t-65 m-b-55"
