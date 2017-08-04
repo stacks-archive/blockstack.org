@@ -2,14 +2,50 @@
 
 import {Component}      from 'react'
 import DocumentTitle    from 'react-document-title'
+import {bindActionCreators} from 'redux'
+import {connect}            from 'react-redux'
 
+import {StatsActions}      from '../datastore/Stats'
 import JobListing       from '../components/JobListing'
 import { jobs } from '../config'
 
-class JobsPage extends Component {
+function mapStateToProps(state) {
+  return {
+    stats: state.stats,
+  }
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(
+    Object.assign({}, StatsActions),
+    dispatch
+  )
+}
+
+class CareersPage extends Component {
 
   constructor(props) {
     super(props)
+
+    this.state = {
+      stats: this.props.stats,
+    }
+  }
+
+  componentWillMount() {
+    this.props.fetchStats()
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.stats !== this.props.stats) {
+      let stats = nextProps.stats
+      if (stats.domains === 0) {
+        stats.domains = 72000
+      }
+      this.setState({
+        stats: stats,
+      })
+    }
   }
 
   render() {
@@ -29,7 +65,8 @@ class JobsPage extends Component {
 
                 <div className="m-t-3 m-b-3">
                 <p>
-                  Blockstack is a global, open source community with over 2,500 developers and over 70,000 users. It was co-founded by Ryan Shea and Muneeb Ali in 2013 at Princeton and the core team is based in New York City and Hong Kong.
+                  Blockstack is a global, open source community with over {this.state.stats.meetupUsers.toLocaleString()} developers and over {this.state.stats.domains.toLocaleString()} users.
+                  It was co-founded by Ryan Shea and Muneeb Ali in 2013 at Princeton and the core team is based in New York City and Hong Kong.
                 </p>
                 <p>
                   We recently raised a $4M Series A and are grateful to have the confidence of investors like Union Square Ventures, Lux Capital, Shana Fisher, and Naval Ravikant.
@@ -40,17 +77,17 @@ class JobsPage extends Component {
                   <h3>
                     More about us:
                   </h3>
-                  <ol>
+                  <ul>
                     <li>
-                      We’re located in a cozy office in the lovely NoHo district of Manhattan.
+                      We’re passionate about making the internet freer and safer for everyone and you should be, too.
                     </li>
                     <li>
                       We’re both an open source project and a startup, so transparency is important to us.
                     </li>
                     <li>
-                      We’re passionate about making the internet freer and safer for everyone and you should be, too.
+                      We’re located in a cozy office in the lovely NoHo district of Manhattan.
                     </li>
-                  </ol>
+                  </ul>
                 </div>
 
                 <div className="m-t-3 m-b-3">
@@ -105,4 +142,5 @@ class JobsPage extends Component {
   }
 }
 
-export default JobsPage
+
+export default connect(mapStateToProps, mapDispatchToProps)(CareersPage)
