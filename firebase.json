@@ -84,8 +84,8 @@
         "destination": "/docs-tutorials-hello-blockstack.html"
       },
       {
-        "source": "/tutorials/todo-spa",
-        "destination": "/docs-tutorials-todo-spa.html"
+        "source": "/tutorials/todo-list",
+        "destination": "/docs-tutorials-todo-list.html"
       },
       {
         "source": "/blog/announcing-blockstack-token-and-mining",
