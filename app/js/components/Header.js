@@ -2,7 +2,6 @@
 
 import {Component}  from 'react'
 import {Link} from 'react-router'
-import MobileNav from './MobileNav'
 
 class Header extends Component {
   static propTypes: {
@@ -11,9 +10,29 @@ class Header extends Component {
 
   constructor(props) {
     super(props)
+
+    this.state = {
+      navItems: [
+        { to: '/install', label: 'Install' },
+        { to: '/tutorials', label: 'Tutorials' },
+        { to: '/blog', label: 'Blog' },
+        { to: '/papers', label: 'Papers', mobile: false },
+        { to: '/videos', label: 'Videos' },
+        { to: '/careers', label: 'Careers' },
+        { to: 'https://github.com/blockstack', label: 'Code', mobile: false },
+      ]
+    }
   }
 
   render() {
+    let mobileNavItems = []
+
+    this.state.navItems.map((navItem) => {
+      if (navItem.mobile !== false) {
+        mobileNavItems.push(navItem)
+      }
+    })
+
     return (
       <div className={ this.props.transparent ? 'bg-transparent' : 'bg-primary'}>
         <header className="container-fluid nav-header no-padding">
@@ -29,46 +48,36 @@ class Header extends Component {
                     aria-controls="dropdown" aria-expanded="false">
               <span className="navbar-toggler-icon"></span>
             </button>
+
             <ul className="nav navbar-nav pull-xs-right">
-              <li className="nav-item">
-                <Link to="/install" className="nav-link">
-                  Install
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/tutorials" className="nav-link">
-                  Tutorials
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/blog" className="nav-link">
-                  Blog
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/papers" className="nav-link">
-                  Papers
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/videos" className="nav-link">
-                  Videos
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/careers" className="nav-link">
-                  Careers
-                </Link>
-              </li>
-              <li className="nav-item hidden-sm-down">
-                <Link to="https://github.com/blockstack" className="nav-link"
-                      target="_blank">
-                  Code
-                </Link>
-              </li>
+              {this.state.navItems.map((navItem, index) => {
+                return (
+                  <li key={index} className="nav-item">
+                    <Link to={navItem.to} className="nav-link"
+                          target={navItem.to.startsWith('http') ? '_blank' : '_self'}>
+                      {navItem.label}
+                    </Link>
+                  </li>
+                )
+              })}
             </ul>
           </nav>
-          <MobileNav />
+
+          <div className="mobile-nav collapse" id="mobile-nav" aria-expanded="false">
+            <ul className="nav nav-justified">
+              {mobileNavItems.map((navItem, index) => {
+                return (
+                  <li key={index} className="nav-item">
+                    <Link to={navItem.to} className="nav-link"
+                          target={navItem.to.startsWith('http') ? '_blank' : '_self'}>
+                      {navItem.label}
+                    </Link>
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
+
         </header>
       </div>
     )
