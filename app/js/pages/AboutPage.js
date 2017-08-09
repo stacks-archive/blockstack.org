@@ -3,9 +3,8 @@
 import { Component }        from 'react'
 import DocumentTitle        from 'react-document-title'
 
-import CommunityMember      from '../components/CommunityMember'
 import ContentSection       from '../components/ContentSection'
-import {communityMembers}   from '../config'
+import TeamMembers       from '../components/TeamMembers'
 
 class AboutPage extends Component {
 
@@ -46,26 +45,7 @@ class AboutPage extends Component {
                     community and build your own app or contribute to the core software.
                   </p>
                 "/>
-                <section>
-                  <div className="container col-centered blog-post">
-                    <div className="container">
-                      <div className="post-content">
-                        {communityMembers.map((communityMember, index) => {
-                          return (
-                            <CommunityMember
-                              key={index}
-                              blockstackId={communityMember.blockstackId}
-                              name={communityMember.name}
-                              avatar={communityMember.avatar}
-                              twitter={communityMember.twitter}
-                              github={communityMember.github}
-                              facebook={communityMember.facebook} />
-                          )
-                        })}
-                      </div>
-                    </div>
-                  </div>
-                </section>
+              <TeamMembers />
               </div>
             </div>
           </section>

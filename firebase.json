@@ -12,6 +12,10 @@
     ],
     "rewrites": [
       {
+        "source": "/posts/auth",
+        "destination": "/docs-posts-auth.html"
+      },
+      {
         "source": "/posts/blockchain-identity",
         "destination": "/docs-posts-blockchain-identity.html"
       },
@@ -30,6 +34,30 @@
       {
         "source": "/posts/blockstack-vs-namecoin",
         "destination": "/docs-posts-blockstack-vs-namecoin.html"
+      },
+      {
+        "source": "/posts/browser-installation",
+        "destination": "/docs-posts-browser-installation.html"
+      },
+      {
+        "source": "/posts/cli-basic-usage",
+        "destination": "/docs-posts-cli-basic-usage.html"
+      },
+      {
+        "source": "/posts/cli-extended-usage",
+        "destination": "/docs-posts-cli-extended-usage.html"
+      },
+      {
+        "source": "/posts/cli-installation",
+        "destination": "/docs-posts-cli-installation.html"
+      },
+      {
+        "source": "/posts/code-layout",
+        "destination": "/docs-posts-code-layout.html"
+      },
+      {
+        "source": "/posts/explorer-installation",
+        "destination": "/docs-posts-explorer-installation.html"
       },
       {
         "source": "/posts/how-blockstack-works",
@@ -54,6 +82,18 @@
       {
         "source": "/tutorials/hello-blockstack",
         "destination": "/docs-tutorials-hello-blockstack.html"
+      },
+      {
+        "source": "/tutorials/todo-list",
+        "destination": "/docs-tutorials-todo-list.html"
+      },
+      {
+        "source": "/blog/announcing-blockstack-token-and-mining",
+        "destination": "/blog-announcing-blockstack-token-and-mining.html"
+      },
+      {
+        "source": "/blog/blockstack-and-the-power-of-choice",
+        "destination": "/blog-blockstack-and-the-power-of-choice.html"
       },
       {
         "source": "/blog/blockstack-summit-2017-freedom-to-innovate",
@@ -106,14 +146,6 @@
       {
         "source": "/blog/blockstack-research-paper-published-at-usenix-atc16-conference",
         "destination": "/blog-blockstack-research-paper-published-at-usenix-atc16-conference.html"
-      },
-      {
-        "source": "/blog/why-blockstack-is-migrating-to-the-bitcoin-blockchain",
-        "destination": "/blog-why-blockstack-is-migrating-to-the-bitcoin-blockchain.html"
-      },
-      {
-        "source": "/blog/introducing-the-blockstack-identity-system",
-        "destination": "/blog-introducing-the-blockstack-identity-system.html"
       },
       {
         "source": "**",
@@ -212,6 +244,11 @@
         "type": 301
       },
       {
+        "source": "/tutorials/todo-spa",
+        "destination": "/tutorials/todo-spa",
+        "type": 301
+      },
+      {
         "source": "/docs/cli-basic-usage",
         "destination": "/tutorials/cli-basics",
         "type": 301
@@ -244,6 +281,16 @@
       {
         "source": "/newsletter",
         "destination": "/users",
+        "type": 301
+      },
+      {
+        "source": "/summit",
+        "destination": "https://www.eventbrite.com/e/blockstack-summit-2017-tickets-35385366584",
+        "type": 301
+      },
+      {
+        "source": "/tokensale",
+        "destination": "/token",
         "type": 301
       }
     ]

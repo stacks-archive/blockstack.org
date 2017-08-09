@@ -14,7 +14,10 @@
     "mocha": true
   },
   "rules": {
-    "quotes": [2, "single"],
+    "quotes": [2, "single", {
+      "allowTemplateLiterals": true,
+      "avoidEscape": true
+    }],
     "eol-last": 0,
     "no-debugger": 1,
     "no-mixed-requires": 0,

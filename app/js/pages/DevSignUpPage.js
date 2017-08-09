@@ -25,7 +25,7 @@ class DevSignUpPage extends Component {
                     <h1>
                       Developer Sign Up
                     </h1>
-                    <MailchimpForm subscribeURL={subscribeURL} />
+                    <MailchimpForm subscribeURL={subscribeURL} submitButtonText='Sign Up' />
                   </div>
                 </section>
               </div>

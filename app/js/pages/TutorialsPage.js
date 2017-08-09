@@ -4,7 +4,7 @@ import {Component}      from 'react'
 import DocumentTitle    from 'react-document-title'
 
 import TutorialPreview  from '../components/TutorialPreview'
-import {tutorials}      from '../config'
+import {tutorials}      from '../../constants.json'
 
 class TutorialsPage extends Component {
 

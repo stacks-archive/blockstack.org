@@ -127,6 +127,10 @@ gulp.task('configFirebase', () => {
       'destination': '/tutorials/hello-blockstack',
     },
     {
+      'source': '/tutorials/todo-spa',
+      'destination': '/tutorials/todo-spa',
+    },
+    {
       'source': '/docs/cli-basic-usage',
       'destination': '/tutorials/cli-basics'
     },
@@ -154,6 +158,14 @@ gulp.task('configFirebase', () => {
       'source': '/newsletter',
       'destination': '/users'
     },
+    {
+      'source': '/summit',
+      'destination': 'https://www.eventbrite.com/e/blockstack-summit-2017-tickets-35385366584'
+    },
+    {
+      'source': '/tokensale',
+      'destination': '/token'
+    }
   ]
 
   let redirects = []

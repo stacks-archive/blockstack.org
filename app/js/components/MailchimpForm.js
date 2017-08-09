@@ -3,6 +3,7 @@ import {Component} from 'react'
 class MailchimpForm extends Component {
   static propTypes: {
     subscribeURL: PropTypes.string.isRequired,
+    submitButtonText: PropTypes.string.isRequired
   }
 
   constructor(props) {
@@ -46,9 +47,9 @@ class MailchimpForm extends Component {
               <input type="text" name="b_394a2b5cfee9c4b0f7525b009_0e5478ae86" tabIndex="-1" value="" />
             </div>
             <div className="clear">
-              <input type="submit" value="Subscribe"
+              <input type="submit" value={this.props.submitButtonText}
                 name="subscribe" id="mc-embedded-subscribe"
-                className="btn btn-outline-primary btn-block" />
+                className="btn btn-electric-blue btn-block" />
             </div>
           </div>
         </form>
