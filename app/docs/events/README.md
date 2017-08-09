@@ -4,6 +4,8 @@ Here you can find information on the latest Blockstack events.
 
 If you want to organize a new event, check out the [guidelines](/events/events-guidelines.md) for hosting events.
 
+# Events 
+
 ## 2017
 
 ### October 
