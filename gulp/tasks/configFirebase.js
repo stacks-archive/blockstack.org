@@ -220,7 +220,7 @@ gulp.task('configFirebase', () => {
     },
     {
       source: '/blog/blockstack-core-v0-14-0-release-aad748f46d',
-      destination: 'https://medium.com/@judenelson/blockstack-core-v0-14-0-release-aad748f46d'
+      destination: '/blog/blockstack-core-v0-14-release'
     },
     {
       source: '/blog/blockstack-at-the-decentralized-web-summit-8d45e3ea4b82',
@@ -252,15 +252,11 @@ gulp.task('configFirebase', () => {
     },
     {
       source: '/blog/blockstack-research-paper-published-at-usenix-atc16-conference-34bad5bd0221',
-      destination: 'https://medium.com/@blockstackinc/blockstack-research-paper-published-at-usenix-atc16-conference-34bad5bd0221'
+      destination: '/blog/blockstack-research-paper-published-at-usenix-atc16-conference'
     },
     {
       source: '/blog/it-s-not-about-privacy-phone-protection-21b0d4f400d5',
       destination: 'https://medium.com/@ryanshea/it-s-not-about-privacy-phone-protection-21b0d4f400d5'
-    },
-    {
-      source: '/blog/gaming-the-dao-prof-emin-gün-sirers-cornell-talk-d0b78099d0d5',
-      destination: 'https://medium.com/@guylepage3/gaming-the-dao-prof-emin-gün-sirers-cornell-talk-d0b78099d0d5'
     },
     {
       source: '/blog/the-scaling-announcement-bitcoin-core-should-have-made-146790f755df',
@@ -290,6 +286,10 @@ gulp.task('configFirebase', () => {
       source: '/blog/the-road-ahead-for-ethereum-b5b090bcd1a',
       destination: 'https://medium.com/@muneeb/the-road-ahead-for-ethereum-b5b090bcd1a'
     },
+    {
+      source: '/blog/gaming-the-dao-prof-emin-g%C3%BCn-sirers-cornell-talk-d0b78099d0d5',
+      destination: 'https://medium.com/@guylepage3/gaming-the-dao-prof-emin-g%C3%BCn-sirers-cornell-talk-d0b78099d0d5'
+    }
   ]
 
   let redirects = []
