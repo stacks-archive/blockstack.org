@@ -439,8 +439,13 @@
         "type": 301
       },
       {
-        "source": "/strange-democracy-fd00b1bc1f8",
+        "source": "/blog/strange-democracy-fd00b1bc1f8",
         "destination": "https://medium.com/@cryptowanderer/strange-democracy-fd00b1bc1f8",
+        "type": 301
+      },
+      {
+        "source": "/blog/the-road-ahead-for-ethereum-b5b090bcd1a",
+        "destination": "https://medium.com/@muneeb/the-road-ahead-for-ethereum-b5b090bcd1a",
         "type": 301
       }
     ]
