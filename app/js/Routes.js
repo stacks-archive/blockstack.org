@@ -70,7 +70,7 @@ export default (
       <Route path="/auth" component={AuthPage} />
 
       <Route path="/roadmap" component={RoadmapPage} />
-      <Route path="/tokensale" component={TokenSalePage} />
+      <Route path="/token" component={TokenSalePage} />
 
       <Route path="*" component={NotFoundPage} />
     </Route>
