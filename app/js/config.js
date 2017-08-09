@@ -20,30 +20,13 @@ export const installationLinks = {
 
 export const jobs = [
   {
-    'title': 'Web Product Engineer',
-    'description': 'Build out the Blockstack web browser using ReactJS, Redux, Node and Blockstack APIs.',
-    'url': 'https://angel.co/blockstack/jobs/150184-product-engineer'
+    'title': 'Frontend Engineer',
+    'url': 'https://github.com/blockstack/blockstack/blob/master/jobs/frontend-engineer.md'
   },
   {
-    'title': 'Mobile Product Engineer',
-    'description': 'Kickstart the development of the Blockstack mobile browser.',
-    'url': 'https://angel.co/blockstack/jobs/150184-product-engineer'
+    'title': 'Backend Engineer',
+    'url': 'https://github.com/blockstack/blockstack/blob/master/jobs/backend-engineer.md'
   },
-  {
-    'title': 'Systems Engineer',
-    'description': 'Build out Blockstack Core and the Blockstack P2P Atlas network with Python and blockchain transaction APIs',
-    'url': 'https://angel.co/blockstack/jobs/151139-systems-engineer'
-  },
-  {
-    'title': 'Security Engineer',
-    'description': 'Scrutinize and battle-test the Blockstack protocols and consensus critical systems.',
-    'url': 'https://angel.co/blockstack/jobs/151142-security-engineer'
-  },
-  {
-    'title': 'Developer Evangelist',
-    'description': 'Coordinate events and produce content to grow the Blockstack ecosystem.',
-    'url': 'https://angel.co/blockstack/jobs/151144-community-coordinator'
-  }
 ]
 
 export const featuredApps = [

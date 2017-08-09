@@ -17,13 +17,10 @@ class JobListing extends Component {
   render() {
     return (
       <div className="row m-b-1">
-        <div className="col-md-3">
+        <div className="col-md-6">
           {this.props.title}
         </div>
         <div className="col-md-6">
-          {this.props.description}
-        </div>
-        <div className="col-md-3">
             <Link to={this.props.url} target="_blank"
                   className="btn btn-primary btn-sm">
               Read More
