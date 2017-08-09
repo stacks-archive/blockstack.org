@@ -31,14 +31,15 @@ class App extends Component {
   }
 
   render() {
-    let wrapperClass = 'app-common'
-    if (location.pathname === '/') {
-      wrapperClass = 'app-landing'
+    let specialHeader = false
+    if (location.pathname === '/' ||
+        location.pathname === '/token') {
+      specialHeader = true
     }
 
     return (
-      <div className={wrapperClass}>
-        { (location.pathname !== '/' && location.pathname !== '/tokensale') ?
+      <div className={specialHeader ? 'app-landing' : 'app-common'}>
+        { !specialHeader ?
         <div>
           <TokenBanner />
           <Header />

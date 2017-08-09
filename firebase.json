@@ -287,6 +287,11 @@
         "source": "/summit",
         "destination": "https://www.eventbrite.com/e/blockstack-summit-2017-tickets-35385366584",
         "type": 301
+      },
+      {
+        "source": "/tokensale",
+        "destination": "/token",
+        "type": 301
       }
     ]
   }
