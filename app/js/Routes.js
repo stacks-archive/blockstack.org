@@ -20,7 +20,7 @@ import BlogPage                    from './pages/BlogPage'
 import BrowserPage                 from './pages/BrowserPage'
 import IntroPage                   from './pages/IntroPage'
 import BlogPostPage                from './pages/BlogPostPage'
-import JobsPage                    from './pages/JobsPage'
+import CareersPage                 from './pages/CareersPage'
 import TalkPage                    from './pages/TalkPage'
 import SignUpPage                  from './pages/SignUpPage'
 import DevSignUpPage               from './pages/DevSignUpPage'
@@ -58,7 +58,7 @@ export default (
 
       <Route path="/about" component={AboutPage} />
       <Route path="/faq" component={FAQPage} />
-      <Route path="/jobs" component={JobsPage} />
+      <Route path="/careers" component={CareersPage} />
 
       <Route path="/docs" component={DocsPage} />
       <Route path="/summit" component={SummitPage} />
@@ -70,7 +70,7 @@ export default (
       <Route path="/auth" component={AuthPage} />
 
       <Route path="/roadmap" component={RoadmapPage} />
-      <Route path="/tokensale" component={TokenSalePage} />
+      <Route path="/token" component={TokenSalePage} />
 
       <Route path="*" component={NotFoundPage} />
     </Route>

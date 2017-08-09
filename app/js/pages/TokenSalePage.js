@@ -9,13 +9,13 @@ import {connect}            from 'react-redux'
 import {BlogActions}       from '../datastore/Blog'
 import {StatsActions}      from '../datastore/Stats'
 import Image               from '../components/Image'
-import TransparentHeader   from '../components/TransparentHeader'
+import Header              from '../components/Header'
 import DarkForm            from '../components/DarkForm'
 import EmbedYouTube        from '../components/EmbedYouTube'
 import PostPreview         from '../components/PostPreview'
-import TeamMember          from '../components/TeamMember'
+import TeamMembers         from '../components/TeamMembers'
 import ContentSection      from '../components/ContentSection'
-import {teamMembers, featuredApps}  from '../config'
+import {featuredApps}      from '../config'
 
 function mapStateToProps(state) {
   return {
@@ -73,17 +73,17 @@ class TokenSalePage extends Component {
     const firstThreePosts = this.state.posts.slice(0, 3)
 
     return (
-      <DocumentTitle title="Blockstack - Token Sale">
+      <DocumentTitle title="Blockstack - Token">
         <div className="token-hero">
           <div className="col-centered block">
-            <TransparentHeader />
+            <Header transparent={true} />
             <div className="container">
               <section className="text-xs-center">
                 <Image className="stacks-logo-sm m-t-65 m-b-55"
                         src="/images/logos/stacks-logo.svg"
                         retinaSupport={false} />
-                <h1 className="text-white m-b-20">The Blockstack Token Sale</h1>
-                <p className="hero-lead purple-50">Sign up to receive important information about the token sale</p>
+                <h1 className="text-white m-b-20">The Blockstack Token</h1>
+                <p className="hero-lead purple-50">Sign up to receive important information about the token distribution</p>
                 <div>
                   <div className="col-md-9 col-centered m-t-2 m-b-3">
                     <DarkForm subscribeURL={this.state.subscribeURL} submitButtonText='Sign Up' />
@@ -254,28 +254,7 @@ class TokenSalePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid">
-              <div className="container">
-                <section>
-                  <h2 className="h-primary text-center">
-                    Team
-                  </h2>
-                  <div className="post-content m-t-3">
-                    {teamMembers.chunk(2).map((teamMemberRow, index) => {
-                      return (
-                        <div className="row" key={index}>
-                          {teamMemberRow.map((teamMember, subIndex) => {
-                            return (
-                              <TeamMember key={subIndex} profile={teamMember} />
-                            )
-                          })}
-                        </div>
-                      )
-                    })}
-                  </div>
-                </section>
-              </div>
-            </div>
+            <TeamMembers />
             <div className="sectionContainerLightGray section-spacing container-fluid">
               <div className="container">
                 <section>
