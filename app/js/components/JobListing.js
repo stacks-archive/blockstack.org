@@ -1,8 +1,6 @@
 import { Component, PropTypes } from 'react'
 import {Link}        from 'react-router'
 
-import Image         from '../components/Image'
-
 class JobListing extends Component {
   static propTypes: {
     title: PropTypes.string.isRequired,

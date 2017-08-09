@@ -18,6 +18,7 @@ class Header extends Component {
         { to: '/blog', label: 'Blog' },
         { to: '/papers', label: 'Papers' },
         { to: '/videos', label: 'Videos' },
+        { to: '/careers', label: 'Careers', mobile: false },
         { to: 'https://github.com/blockstack', label: 'Code', mobile: false },
       ]
     }
