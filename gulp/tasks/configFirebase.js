@@ -282,6 +282,14 @@ gulp.task('configFirebase', () => {
       source: '/blog/simple-contracts-are-better-contracts-what-we-can-learn-from-the-dao-6293214bad3a',
       destination: 'https://medium.com/@ryanshea/simple-contracts-are-better-contracts-what-we-can-learn-from-the-dao-6293214bad3a'
     },
+    {
+      source: '/blog/strange-democracy-fd00b1bc1f8',
+      destination: 'https://medium.com/@cryptowanderer/strange-democracy-fd00b1bc1f8'
+    },
+    {
+      source: '/blog/the-road-ahead-for-ethereum-b5b090bcd1a',
+      destination: 'https://medium.com/@muneeb/the-road-ahead-for-ethereum-b5b090bcd1a'
+    },
   ]
 
   let redirects = []
