@@ -48,7 +48,7 @@ class TutorialPage extends Component {
   render() {
     return (
       <DocumentTitle title={this.state.title}>
-        <section className="container-fluid spacing-container">
+        <section className="bottom-spacing-container">
           <div className="m-b-3">
             <Article urlSlug={this.state.urlSlug} youtubeURL={this.state.youtubeURL} />
           </div>

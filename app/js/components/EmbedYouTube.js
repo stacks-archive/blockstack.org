@@ -27,7 +27,7 @@ class EmbedYouTube extends Component {
   render() {
     return (
       <div className="media-screen">
-        <div className="media-wrap container-fluid col-centered">
+        <div className="container">
           <iframe
             ref="iframeWrapper"
             width="100%"
@@ -44,5 +44,3 @@ class EmbedYouTube extends Component {
 
 EmbedYouTube.propTypes = propTypes
 export default EmbedYouTube
-
-

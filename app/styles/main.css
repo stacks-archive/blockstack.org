@@ -267,8 +267,8 @@ p{font-size:1rem;line-height:1.6875rem;margin-bottom:1rem;}
 p-dark{color:#080809;}
 .light-gray{color:#949494;}
 
-/* Display Heading styles – Display headings are used When you need a heading 
-to stand out, consider using a display heading—a larger, slightly more 
+/* Display Heading styles – Display headings are used When you need a heading
+to stand out, consider using a display heading—a larger, slightly more
 opinionated heading style.*/
 display-1,display-2,display-3,display-4,display-5,display-6{margin-top:0;margin-bottom:0.5rem;}
 display-1{font-size:2.25rem;}
@@ -367,6 +367,7 @@ body,html,#app,.app-landing{height:100%;}
 .slides{padding-right:10px;padding-left:10px;}
 .feat-lead{margin-bottom:15px;}
 .spacing-container{padding-top:52px;padding-bottom:50px;background-color:rgba(248,249,251,1);}
+.bottom-spacing-container{padding-bottom:50px;background-color:rgba(248,249,251,1);}
 .foot-feature{margin:0;padding-top:150px;padding-bottom:150px;background-color:#270F34;color:rgba(255,255,255,1);text-align:center;}
 h2.action-title{margin-bottom:35px;font-size:30px;line-height:42px;font-weight:400;}
 .wrap-mob-feat{max-width:195px;}
@@ -410,7 +411,7 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .simple-featurette{display:none;}
 .sticky-share{display:none!important;flex-direction:column;justify-content:center;height:150px;position:fixed;top:47%;left:15px;background-color:transparent;}
 .sticky-share > div:hover{cursor:pointer;}
-.media-screen{width:100%;left:0;top:56px;max-height:618.75px;display:flex;flex-direction:row;justify-content:center;align-items:center;}
+.media-screen{background-color:#000;width:100%;left:0;top:56px;max-height:618.75px;display:flex;flex-direction:row;justify-content:center;align-items:center;}
 .media-wrap{width:975px;}
 .media-content{margin-top:35px;}
 .landing-feat-img{width:100%;max-width:696px;}
@@ -542,7 +543,7 @@ section{word-break:break-word;}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px){
-  
+
   /* 9. Fonts */
   /* Heading styles */
   h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:1rem;}
@@ -661,14 +662,14 @@ section{word-break:break-word;}
   h4{margin:20px 0;}
 
   /* 9. Fonts */
-  
+
   /* Navbar */
   .navbar{font-family:'Source Code Pro',monospace;padding-top:1.4375rem;padding-bottom:1.4375rem;}
   .navbar-nav{margin-top:0;}
   .brand-logo{margin-top:0.6875rem;}
   .brand-bug{display:none;}
   .brand-logo{display:initial;}
-  
+
   /* Hero */
   .hero-wrap{padding-top:11.5rem;padding-bottom:12.5rem;}
   .hero-head{padding-left:0;}
@@ -729,4 +730,3 @@ section{word-break:break-word;}
   .sticky-share{display:flex!important;flex-direction:row;justify-content:center;align-items:center;width:100%;height:50px;bottom:0!important;left:0;top:initial;z-index:20;background-color:white;border-top:1px solid #f0f0f0;}
   .sticky-share div{margin:10px 10px 10px 10px;}
 }
-
