@@ -31,6 +31,7 @@ import TutorialPage                from './pages/TutorialPage'
 import AuthPage                    from './pages/AuthPage'
 import RoadmapPage                 from './pages/RoadmapPage'
 import TokenSalePage               from './pages/TokenSalePage'
+import Summit2017Page              from './pages/Summit2017Page'
 
 export default (
   <Router history={browserHistory} onUpdate={() => window.scrollTo(0, 0)}>
