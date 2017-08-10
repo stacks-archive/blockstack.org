@@ -72,6 +72,7 @@ export default (
 
       <Route path="/roadmap" component={RoadmapPage} />
       <Route path="/token" component={TokenSalePage} />
+      <Route path="/summit2017" component={Summit2017Page} />
 
       <Route path="*" component={NotFoundPage} />
     </Route>
