@@ -1,8 +1,37 @@
 # Blockstack Site
 
 [![Slack](http://chat.blockstack.org/badge.svg)](http://chat.blockstack.org/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 A live version of this site can be found online at https://blockstack.org.
+
+## Table of Contents
+- [Contributing](#contributing)
+- [Installation](#installation)
+- [Development](#development)
+- [Documentation](#documentation)
+- [Upgrading Blockstack Bootstrap](#upgrading-blockstack-bootstrap)
+- [Contributing to Blockstack Bootstrap](#contributing-to-blockstack-bootstrap)
+- [Deployment](#deployment)
+- [Languages and Tools](#languages-and-tools)
+- [More Info](#more-info)
+
+### Contributing
+
+You can find opportunities to contribute on our [project board](https://github.com/blockstack/blockstack.org/projects) or [issue tracker](https://github.com/blockstack/blockstack.org/issues), or [Just Ask!](http://chat.blockstack.org/)
+
+Before reporting a bug, [follow these steps](https://capgemini.github.io/testing/effective-bug-reports/#tldr-version).
+
+This repository uses the [git flow branching mode](http://nvie.com/posts/a-successful-git-branching-model/).
+
+We suggest using the [git-flow-avh](https://github.com/petervanderdoes/gitflow-avh) plugin.
+
+Please send pull requests against `develop`. `master` will reflect the latest production code deployed to npm.
+
+Please be sure to write tests for your added features, that tests are all passing by running `gulp test`,
+lint your code using [ESLint](http://eslint.org/), and link the issue your feature/fix resolves in your pull request.
+
+For more details on how to contribute, checkout our [Contributing Guide](CONTRIBUTING.md)
 
 ### Installation
 
@@ -25,7 +54,7 @@ Now that `npm run dev` is running, the server is up as well and serving files fr
 
 #### Documentation
 
-This repo uses [Git Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) for documentation and links to the [blockstack](https://github.com/blockstack/blockstack) repo. Everytime you start up the server, new changes will be pulled automatically from the `github.com/blockstack/blockstack` repo. You can force this update with the following:
+This repo uses [Git Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) for documentation and links to the [blockstack](https://github.com/blockstack/blockstack) repo. Everytime you start up the server, new changes will be pulled automatically from the `github.com/blockstack/blockstack` repo. You can force this update with the following:
 
 ```
 npm run fetch-docs
