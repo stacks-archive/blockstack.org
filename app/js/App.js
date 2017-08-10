@@ -33,7 +33,8 @@ class App extends Component {
   render() {
     let specialHeader = false
     if (location.pathname === '/' ||
-        location.pathname === '/token') {
+        location.pathname === '/token' ||
+        location.pathname === '/summit2017') {
       specialHeader = true
     }
 
