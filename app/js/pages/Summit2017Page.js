@@ -77,112 +77,48 @@ class Summit2017Page extends Component {
         <div className="feature-event-hero">
           <div className="col-centered block">
             <Header transparent={true} />
-            <div className="container">
-              <section className="text-xs-center">
+            <div className="container p-b-100">
+              <section className="text-xs-center p-b-10">
                 <Image className="blockstack-summit-2017-logo-md m-t-65 m-b-55"
                         src="/images/logos/blockstack-summit-logo-landscape-rev.svg"
                         retinaSupport={false} />
                 <h1 className="text-white m-b-20">Blockstack Summit 2017</h1>
-                <p className="hero-lead text-white">the Blockstack Summit at the Computer History Museum, Mountain View, CA</p>
-                <div>
-                  <div className="col-md-9 col-centered m-t-2 m-b-3">
-                    <DarkForm subscribeURL={this.state.subscribeURL} submitButtonText='Sign Up' />
-                  </div>
-                </div>
-                <p className="text-xs-center m-t-2 m-b-165">
-                  <Link to="/whitepaper.pdf" target="_blank" className="btn btn-outline-primary" 
-                  style={{ color: '#95889c' }}>
-                    Read the Whitepaper
-                  </Link>
-                </p>
+                <p className="hero-lead text-white p-b-100">the Blockstack Summit at the Computer History Museum, Mountain View, CA</p>
               </section>
-            </div>
-            <div className="section-stats section-stats-electric-blue container-fluid">
-              <div className="container">
-                <section>
-                  <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
-                    {this.state.stats.domains.toLocaleString()}
-                    <span className="text-stats-description" style={{ color: 'rgba(255,255,255,0.8)' }} >
-                      users registered
-                    </span>
-                  </div>
-                  <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
-                    3+
-                    <span className="text-stats-description" style={{ color: 'rgba(255,255,255,0.8)' }} >
-                      years in production
-                    </span>
-                  </div>
-                  <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
-                    {this.state.stats.meetupUsers.toLocaleString()}
-                    <span className="text-stats-description" style={{ color: 'rgba(255,255,255,0.8)' }} >
-                      community devs
-                    </span>
-                  </div>
-                </section>
-              </div>
             </div>
             <div className="sectionContainerLight section-spacing container-fluid">
               <div className="container">
                 <section>
                   <div className="containWrap">
-                    <h2 className="h-primary text-center">
-                      What is Blockstack?
-                    </h2>
                     <ContentSection markup="
                       <p>
-                        Blockstack is a new decentralized internet where users control their data and apps run on their devices.
-                        There are no middlemen, no passwords, no massive data silos to breach,
-                        and no services tracking us around the internet.
+                        On July 27th, 2017, we hosted the Blockstack Summit at 
+                        the Computer History Museum. It was a day to take 
+                        people back to the original dream of the internet back 
+                        in 1989 -- one of a shared space where we could be free 
+                        to create together. Attendees and speakers from all 
+                        over the world came together for this one day event to 
+                        envision a new internet built for freedom, security, 
+                        and innovation.
                       </p>
-
                       <p>
-                        The applications on blockstack are server-less and decentralized.
-
-                        Developers start by building a single-page application in Javascript,
-
-                        Then, instead of plugging the frontend into a centralized API,
-                        they plug into an API run by the user.
-
-                        Developers install a library called 'blockstack.js' and
-                        don't have to worry about running servers, maintaining databases,
-                        or building out user management systems.
-                      </p>
-
-                      <p>
-                        Personal user APIs ship with the Blockstack app and
-                        handle everything from identity and authentication
-                        to data storage.
-
-                        Applications can request permissions from users and then
-                        gain read and write access to user resources.
-                      </p>
-
-                      <p>
-                        Data storage is simple and reliable and uses existing cloud infrastructure.
-
-                        Users connect with their Dropbox, Google Drive, etc and data is synced from
-                        their local device up to the cloud.
-                      </p>
-
-                      <p>
-                        Identity is user-controlled and utilizes the blockchain for secure management
-                        of keys, devices and usernames.
-
-                        When users login with apps, they are anonymous by default and use an
-                        app-specific key, but their full identity can be revealed and proven
-                        at any time.
-
-                        Keys are for signing and encryption and can be changed
-                        as devices need to be added or removed.
-                      </p>
-
-                      <p>
-                        Under the hood, Blockstack provides a decentralized domain name system (DNS),
-                        decentralized public key distribution system,
-                        and registry for apps and user identities.
+                        It was a star-studded lineup of speakers and they did 
+                        not disappoint. You'll find videos and photos below 
+                        from the event. We hope you enjoy them as much as we 
+                        did, and would love to hear what your favorite parts 
+                        were by tweeting your favorite speaker quotes and clips 
+                        mentioning @blockstackorg.
                       </p>" />
                   </div>
                 </section>
+              </div>
+            </div>
+            <div className="feature-event-subhero">
+              <div className="col-centered block">
+                <div className="container summit-img-section">
+                  <section className="text-xs-center p-b-80">
+                  </section>
+                </div>
               </div>
             </div>
             <div className="sectionContainerLight section-spacing container-fluid" style={{ backgroundColor: '#FAFAFA' }}>

@@ -421,8 +421,17 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .caption-browser{position:absolute;bottom:25px;left:-130px;font-size:0.6875rem;}
 a.tokenBanner{text-decoration:none;background-color:#2C96FF;padding:10px;display:block;font-size:0.875rem;}
 a.tokenBanner:hover{background-color:#2378CC;}
-.blockstack-summit-2017-logo-md {
-  width:280px;
+.blockstack-summit-2017-logo-md{width:280px;}
+
+.feature-event-subhero {
+  background-color: #1C1314 !important;
+  background: url(../images/photos/blockstack-summit-2017-naval-ryan.jpg) no-repeat 45% 45% fixed;
+}
+.img-summit-hero{
+  width: 50%;
+}
+.summit-img-section {
+  padding-bottom: 350px;
 }
 
 /* Tutorials */
