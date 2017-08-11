@@ -15,6 +15,7 @@ import EmbedYouTube        from '../components/EmbedYouTube'
 import PostPreview         from '../components/PostPreview'
 import TeamMembers         from '../components/TeamMembers'
 import ContentSection      from '../components/ContentSection'
+import VideosPresentation  from '../components/VideosPresentation'
 import {featuredApps}      from '../config'
 
 function mapStateToProps(state) {
@@ -77,13 +78,13 @@ class Summit2017Page extends Component {
         <div className="feature-event-hero">
           <div className="col-centered block">
             <Header transparent={true} />
-            <div className="container p-b-100">
-              <section className="text-xs-center p-b-10">
+            <div className="container p-b-90">
+              <section className="text-xs-center">
                 <Image className="blockstack-summit-2017-logo-md m-t-65 m-b-55"
                         src="/images/logos/blockstack-summit-logo-landscape-rev.svg"
                         retinaSupport={false} />
                 <h1 className="text-white m-b-20">Blockstack Summit 2017</h1>
-                <p className="hero-lead text-white p-b-100">the Blockstack Summit at the Computer History Museum, Mountain View, CA</p>
+                <p className="hero-lead text-white p-b-100">July 27th, 2017, Computer History Museum, Mountain View, CA</p>
               </section>
             </div>
             <div className="sectionContainerLight section-spacing container-fluid">
@@ -113,7 +114,7 @@ class Summit2017Page extends Component {
                 </section>
               </div>
             </div>
-            <div className="feature-event-subhero">
+            <div className="feature-event-subhero-1">
               <div className="col-centered block">
                 <div className="container summit-img-section">
                   <section className="text-xs-center p-b-80">
@@ -121,75 +122,15 @@ class Summit2017Page extends Component {
                 </div>
               </div>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid" style={{ backgroundColor: '#FAFAFA' }}>
-              <div className="container">
-                <section>
-                  <h2 className="h-primary text-center">
-                    Why Blockstack?
-                  </h2>
-                  <div className="row m-t-3">
-                    <EmbedYouTube src={this.state.videoURL} />
-                  </div>
-                </section>
+            <div className="feature-event-subhero-2">
+              <div className="col-centered block">
+                <div className="container summit-img-section">
+                  <section className="text-xs-center p-b-80">
+                  </section>
+                </div>
               </div>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid">
-              <div className="container">
-                <section>
-                  <div className="containWrap">
-                    <h2 className="h-primary text-center m-b-3">
-                      How Does Blockstack Work?
-                    </h2>
-                    <div className="col-sm-12 text-center landing-hero-img">
-                      <Image className="landing-feat-img"
-                        src="/images/visuals/blockstack-architecture-diagram.svg"
-                        retinaSupport={false} />
-                    </div>
-                    <div className="row m-t-3">
-                      <div className="col-sm-10 offset-sm-1 text-center">
-                        <Image
-                          src="/images/visuals/blockstack-tx-diagram.png"
-                          style={{width: '100%'}}
-                          retinaSupport={false} />
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </div>
-            </div>
-            <div className="sectionContainerGray section-spacing container-fluid">
-              <div className="container">
-                <section>
-                  <h2 className="h-primary m-b-85 text-center">
-                    Featured Apps on Blockstack
-                  </h2>
-                  {[[0,3], [3,5]].map((row, index) => {
-                    return (
-                      <div key={index}>
-                        {featuredApps.slice(row[0],row[1]).map((featuredApp, index2) => {
-                          const offsetClass = (row[0] === 3 && index2 === 0) ? 'offset-md-2' : ''
-                          return (
-                            <div key={index2} 
-                              className={`col-md-4 m-b-55 ${offsetClass}`}>
-                              <p className="text-center">
-                                <Image className="col-img" src={featuredApp.icon}
-                                  retinaSupport={false} />
-                              </p>
-                              <h4 className="modern text-center">
-                                {featuredApp.name}
-                              </h4>
-                              <p className="text-center">
-                                {featuredApp.description}
-                              </p>
-                            </div>
-                          )
-                        })}
-                      </div>
-                    )
-                  })}
-                </section>
-              </div>
-            </div>
+            <VideosPresentation />
             <TeamMembers />
             <div className="sectionContainerLightGray section-spacing container-fluid">
               <div className="container">

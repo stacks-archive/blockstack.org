@@ -423,16 +423,37 @@ a.tokenBanner{text-decoration:none;background-color:#2C96FF;padding:10px;display
 a.tokenBanner:hover{background-color:#2378CC;}
 .blockstack-summit-2017-logo-md{width:280px;}
 
-.feature-event-subhero {
+.feature-event-subhero-1 {
   background-color: #1C1314 !important;
-  background: url(../images/photos/blockstack-summit-2017-naval-ryan.jpg) no-repeat 45% 45% fixed;
+  background: url(../images/photos/blockstack-summit-2017-naval-ryan.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+.feature-event-subhero-2 {
+  background-color: #1C1314 !important;
+  background: url(../images/photos/blockstack-summit-2017-ryan-0040.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 .img-summit-hero{
   width: 50%;
 }
 .summit-img-section {
-  padding-bottom: 350px;
+  padding-bottom: 400px;
 }
+.img-video-presentation {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 35px;
+}
+/*.avatar-lg {
+  width: 72px;
+  height: 72px;
+  display: inline-block;
+  margin-bottom: 15px;
+  border-radius: 36px;
+  -webkit-border-radius: 38px;
+  -moz-border-radius: 38px;
+  background-position: center;
+}*/
 
 /* Tutorials */
 iframe{height:530px;}
