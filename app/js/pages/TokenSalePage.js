@@ -79,7 +79,7 @@ class TokenSalePage extends Component {
             <Header transparent={true} />
             <div className="container">
               <section className="text-xs-center">
-                <Image className="stacks-logo-sm m-t-65 m-b-55"
+                <Image className="m-t-65 m-b-55"
                         src="/images/logos/stacks-logo.svg"
                         retinaSupport={false} />
                 <h1 className="text-white m-b-20">The Blockstack Token</h1>

@@ -5,7 +5,7 @@
 /* - Max-width of site is to be set via `container` */
 /* - All sections utilize `containter` */
 
-/* --------    #2C96FF   ELECTRIC-BLUE    -------- */ ::selection{background:rgba(44,150,255,0.99);color:#fff;}::-moz-selection{background:rgba(44,150,255,0.99);color:#fff;}
+/* --------    #2C96FF   ELECTRIC-BLUE    -------- */ ::selection{background:rgba(44,150,255,0.8);color:#fff;}::-moz-selection{background:rgba(44,150,255,0.90);color:#fff;}
 /* --------    #270f34   PURPLE 110       -------- */ /*::selection{background:rgba(39,15,52,0.99);color:#fff;}::-moz-selection{background:rgba(39,15,52,0.99);color:#fff;}*/
 
 /* Table of Contents */
@@ -411,7 +411,6 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .media-wrap{width:975px;}
 .media-content{margin-top:35px;}
 .landing-feat-img{width:100%;max-width:696px;}
-
 .feat-card{height:75px;display:block;}
 .feat-card > h3{font-weight:400;}
 .text-stats{font-size:1.5rem;font-weight:700;}
@@ -420,16 +419,44 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .col-img{max-width:110px;}
 .col3-img-lg{width:100%;min-width:210px;max-width:425px;}
 .caption-browser{position:absolute;bottom:25px;left:-130px;font-size:0.6875rem;}
-a.tokenBanner{
-  text-decoration: none;
-  background-color: #2C96FF;
-  padding: 10px;
-  display: block;
-  font-size: 0.875rem;
+a.tokenBanner{text-decoration:none;background-color:#2C96FF;padding:10px;display:block;font-size:0.875rem;}
+a.tokenBanner:hover{background-color:#2378CC;}
+.blockstack-summit-2017-logo-md{width:280px;}
+
+.feature-event-subhero-1 {
+  background-color: #1C1314 !important;
+  background: url(../images/photos/blockstack-summit-2017-naval-ryan.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
-a.tokenBanner:hover{
-  background-color:#2378CC;
+.feature-event-subhero-2 {
+  background-color: #1C1314 !important;
+  background: url(../images/photos/blockstack-summit-2017-ryan-0040.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
+.img-summit-hero{
+  width: 50%;
+}
+.summit-img-section {
+  padding-bottom: 400px;
+}
+.img-video-presentation {
+  width: 100%;
+  max-width: 500px;
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 35px;
+}
+/*.avatar-lg {
+  width: 72px;
+  height: 72px;
+  display: inline-block;
+  margin-bottom: 15px;
+  border-radius: 36px;
+  -webkit-border-radius: 38px;
+  -moz-border-radius: 38px;
+  background-position: center;
+}*/
 
 /* Tutorials */
 iframe{height:530px;}
