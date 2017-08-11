@@ -83,7 +83,7 @@ class Summit2017Page extends Component {
                         src="/images/logos/blockstack-summit-logo-landscape-rev.svg"
                         retinaSupport={false} />
                 <h1 className="text-white m-b-20">Blockstack Summit 2017</h1>
-                <p className="hero-lead purple-50">Sign up to receive important information about the token distribution</p>
+                <p className="hero-lead text-white">the Blockstack Summit at the Computer History Museum, Mountain View, CA</p>
                 <div>
                   <div className="col-md-9 col-centered m-t-2 m-b-3">
                     <DarkForm subscribeURL={this.state.subscribeURL} submitButtonText='Sign Up' />

@@ -5,7 +5,7 @@
 /* - Max-width of site is to be set via `container` */
 /* - All sections utilize `containter` */
 
-/* --------    #2C96FF   ELECTRIC-BLUE    -------- */ ::selection{background:rgba(44,150,255,0.99);color:#fff;}::-moz-selection{background:rgba(44,150,255,0.99);color:#fff;}
+/* --------    #2C96FF   ELECTRIC-BLUE    -------- */ ::selection{background:rgba(44,150,255,0.8);color:#fff;}::-moz-selection{background:rgba(44,150,255,0.90);color:#fff;}
 /* --------    #270f34   PURPLE 110       -------- */ /*::selection{background:rgba(39,15,52,0.99);color:#fff;}::-moz-selection{background:rgba(39,15,52,0.99);color:#fff;}*/
 
 /* Table of Contents */
