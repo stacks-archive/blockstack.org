@@ -24,10 +24,10 @@ class VideosPresentation extends Component {
                   <Image className="img-video-presentation"
                       src="/images/visuals/summit-placeholder-design.png"
                       retinaSupport={false} />
-                </Link>
                 <h4 className="font-weight-bold center" style={{ marginTop: '10px', marginBottom: '10px' }} >
                   The Next Wave of Computing
                 </h4>
+                </Link>
                 <p className="font-weight-bold" >
                   Muneeb Ali, <span className="font-weight-normal font-italic">Blockstack Co-founder</span>
                 </p>
@@ -38,10 +38,10 @@ class VideosPresentation extends Component {
                   <Image className="img-video-presentation"
                     src="/images/visuals/summit-placeholder-design.png"
                     retinaSupport={false} />
-                </Link>
                 <h4 className="font-weight-bold center" style={{ marginTop: '10px', marginBottom: '10px' }} >
                   A New Blockstack Internet
                 </h4>
+                </Link>
                 <p className="font-weight-bold" >
                   Ryan Shea, <span className="font-weight-normal font-italic">Blockstack Co-founder</span>
                 </p>
@@ -66,11 +66,11 @@ class VideosPresentation extends Component {
                   <Image className="img-video-presentation"
                     src="/images/visuals/summit-placeholder-design.png"
                     retinaSupport={false} />
-                </Link>
                 <h4 className="font-weight-bold center" style={{ marginTop: '10px', marginBottom: '10px' }} >
                   Life After Google
                 </h4>
-                <p className="font-weight-bold" >
+                </Link>
+               <p className="font-weight-bold" >
                   George Gilder, <span className="font-weight-normal font-italic">Author & Information Theorist</span>
                 </p>
               </div>
@@ -80,10 +80,10 @@ class VideosPresentation extends Component {
                   <Image className="img-video-presentation"
                     src="/images/visuals/summit-placeholder-design.png"
                     retinaSupport={false} />
-                </Link>
                 <h4 className="font-weight-bold center" style={{ marginTop: '10px', marginBottom: '10px' }} >
                   Building Decentralized Consumer Applications: Casa
                 </h4>
+                </Link>
                 <p className="font-weight-bold" >
                   Jeremy Welch, <span className="font-weight-normal font-italic">Casa / Bedkin Founder</span>
                 </p>
@@ -94,10 +94,10 @@ class VideosPresentation extends Component {
                   <Image className="img-video-presentation"
                     src="/images/visuals/summit-placeholder-design.png"
                     retinaSupport={false} />
-                </Link>
                 <h4 className="font-weight-bold center" style={{ marginTop: '10px', marginBottom: '10px' }} >
                   A Conversation with Bram Cohen & Muneeb Ali
                 </h4>
+                </Link>
                 <p className="font-weight-bold" >
                   Bram Cohen, <span className="font-weight-normal font-italic">BitTorrent Creator < br/></span>
                   Muneeb Ali, <span className="font-weight-normal font-italic">Blockstack Co-founder</span>
@@ -109,10 +109,10 @@ class VideosPresentation extends Component {
                   <Image className="img-video-presentation"
                     src="/images/visuals/summit-placeholder-design.png"
                     retinaSupport={false} />
-                </Link>
                 <h4 className="font-weight-bold center" style={{ marginTop: '10px', marginBottom: '10px' }} >
                   A Conversation with Naval Ravikant & Ryan Shea
                 </h4>
+                </Link>
                 <p className="font-weight-bold" >
                   Naval Ravikant, <span className="font-weight-normal font-italic">AngelList Founder< br/></span>
                   Ryan Shea, <span className="font-weight-normal font-italic">Blockstack Co-founder</span>
@@ -124,10 +124,10 @@ class VideosPresentation extends Component {
                   <Image className="img-video-presentation"
                     src="/images/visuals/summit-placeholder-design.png"
                     retinaSupport={false} />
-                </Link>
                 <h4 className="font-weight-bold center" style={{ marginTop: '10px', marginBottom: '10px' }} >
                   Decentralization & the Knowledge Age
                 </h4>
+                </Link>
                 <p className="font-weight-bold" >
                   Albert Wenger, <span className="font-weight-normal font-italic">Union Square Ventures General Partner</span>
                 </p>
@@ -138,10 +138,10 @@ class VideosPresentation extends Component {
                   <Image className="img-video-presentation"
                     src="/images/visuals/summit-placeholder-design.png"
                     retinaSupport={false} />
-                </Link>
                 <h4 className="font-weight-bold center" style={{ marginTop: '10px', marginBottom: '10px' }} >
                   Quantifying Decentralization
                 </h4>
+                </Link>
                 <p className="font-weight-bold" >
                   Balaji Srinivasan, <span className="font-weight-normal font-italic">Andreessen Horowitz Board Partner and 21 CEO</span>
                 </p>
@@ -152,10 +152,10 @@ class VideosPresentation extends Component {
                   <Image className="img-video-presentation"
                     src="/images/visuals/summit-placeholder-design.png"
                     retinaSupport={false} />
-                </Link>
                 <h4 className="font-weight-bold center" style={{ marginTop: '10px', marginBottom: '10px' }} >
                   The Importance of Layer Two
                 </h4>
+                </Link>
                 <p className="font-weight-bold" >
                   Elizabeth Stark, <span className="font-weight-normal font-italic">Lightning Labs Co-founder</span>
                 </p>
@@ -166,10 +166,10 @@ class VideosPresentation extends Component {
                   <Image className="img-video-presentation"
                     src="/images/visuals/summit-placeholder-design.png"
                     retinaSupport={false} />
-                </Link>
                 <h4 className="font-weight-bold center" style={{ marginTop: '10px', marginBottom: '10px' }} >
                   Storage Panel
                 </h4>
+                </Link>
                 <p className="font-weight-bold" >
                   Muneeb Ali, <span className="font-weight-normal font-italic">Blockstack Co-founder< br/></span>
                   Juan Benet, <span className="font-weight-normal font-italic">Filecoin, IPFS Founder< br/></span>
@@ -183,10 +183,10 @@ class VideosPresentation extends Component {
                   <Image className="img-video-presentation"
                     src="/images/visuals/summit-placeholder-design.png"
                     retinaSupport={false} />
-                </Link>
                 <h4 className="font-weight-bold center" style={{ marginTop: '10px', marginBottom: '10px' }} >
                   Identity Panel
                 </h4>
+                </Link>
                 <p className="font-weight-bold" >
                   Daniel Buchner, <span className="font-weight-normal font-italic">Microsoft Head of Decentralized Identity< br/></span>
                   Drummond Reed, <span className="font-weight-normal font-italic">Evernym Chief Trust Officer< br/></span>
@@ -201,10 +201,10 @@ class VideosPresentation extends Component {
                   <Image className="img-video-presentation"
                     src="/images/visuals/summit-placeholder-design.png"
                     retinaSupport={false} />
-                </Link>
                 <h4 className="font-weight-bold center" style={{ marginTop: '10px', marginBottom: '10px' }} >
                   Payments Panel
                 </h4>
+                </Link>
                 <p className="font-weight-bold" >
                   Ryan X Charles, <span className="font-weight-normal font-italic">Yours Network CEO< br/></span>
                   Elizabeth Stark, <span className="font-weight-normal font-italic">Lightning Labs Co-founder< br/></span>
@@ -218,10 +218,10 @@ class VideosPresentation extends Component {
                   <Image className="img-video-presentation"
                     src="/images/visuals/summit-placeholder-design.png"
                     retinaSupport={false} />
-                </Link>
                 <h4 className="font-weight-bold center" style={{ marginTop: '10px', marginBottom: '10px' }} >
                   Investment Panel
                 </h4>
+                </Link>
                 <p className="font-weight-bold" >
                   Meltem Demirors, <span className="font-weight-normal font-italic">Digital Currency Group Director< br/></span>
                   Naval Ravikant, <span className="font-weight-normal font-italic">AngelList Founder< br/></span>
@@ -235,10 +235,10 @@ class VideosPresentation extends Component {
                   <Image className="img-video-presentation"
                     src="/images/visuals/summit-placeholder-design.png"
                     retinaSupport={false} />
-                </Link>
                 <h4 className="font-weight-bold center" style={{ marginTop: '10px', marginBottom: '10px' }} >
                   OpenBazaar 2.0 and Blockstack
                 </h4>
+                </Link>
                 <p className="font-weight-bold" >
                   Brian Hoffman, <span className="font-weight-normal font-italic">OpenBazaar Founder</span>
                 </p>
@@ -249,10 +249,10 @@ class VideosPresentation extends Component {
                   <Image className="img-video-presentation"
                     src="/images/visuals/summit-placeholder-design.png"
                     retinaSupport={false} />
-                </Link>
                 <h4 className="font-weight-bold center" style={{ marginTop: '10px', marginBottom: '10px' }} >
                   Creating the Decentralized Connectivity Layer
                 </h4>
+                </Link>
                 <p className="font-weight-bold" >
                   Daniela Perdomo, <span className="font-weight-normal font-italic">goTenna CEO and Co-founder</span>
                 </p>
@@ -263,10 +263,10 @@ class VideosPresentation extends Component {
                   <Image className="img-video-presentation"
                     src="/images/visuals/summit-placeholder-design.png"
                     retinaSupport={false} />
-                </Link>
                 <h4 className="font-weight-bold center" style={{ marginTop: '10px', marginBottom: '10px' }} >
                   Q&A with Muneeb Ali & Ryan Shea
                 </h4>
+                </Link>
                 <p className="font-weight-bold" >
                   Blockstack Co-founders < br/>
                   Moderated by Alice Lloyd George, <span className="font-weight-normal font-italic">RRE Ventures Principal</span>
@@ -278,10 +278,10 @@ class VideosPresentation extends Component {
                   <Image className="img-video-presentation"
                     src="/images/visuals/summit-placeholder-design.png"
                     retinaSupport={false} />
-                </Link>
                 <h4 className="font-weight-bold center" style={{ marginTop: '10px', marginBottom: '10px' }} >
                   Governance
                 </h4>
+                </Link>
                 <p className="font-weight-bold" >
                   Arthur Breitman, <span className="font-weight-normal font-italic">Tezos Co-founder</span>
                 </p>
@@ -292,10 +292,10 @@ class VideosPresentation extends Component {
                   <Image className="img-video-presentation"
                     src="/images/visuals/summit-placeholder-design.png"
                     retinaSupport={false} />
-                </Link>
                 <h4 className="font-weight-bold center" style={{ marginTop: '10px', marginBottom: '10px' }} >
                   Yours: Improving Content Quality with P2P Micropayments
                 </h4>
+                </Link>
                 <p className="font-weight-bold" >
                   Ryan X Charles, <span className="font-weight-normal font-italic">Yours Network CEO</span>
                 </p>
@@ -306,10 +306,10 @@ class VideosPresentation extends Component {
                   <Image className="img-video-presentation"
                     src="/images/visuals/summit-placeholder-design.png"
                     retinaSupport={false} />
-                </Link>
                 <h4 className="font-weight-bold center" style={{ marginTop: '10px', marginBottom: '10px' }} >
                   How Blockchain will Revolutionize Supply Chain & Insurance
                 </h4>
+                </Link>
                 <p className="font-weight-bold" >
                   Leanne Kemp, <span className="font-weight-normal font-italic">Everledger Founder</span>
                 </p>
@@ -320,10 +320,10 @@ class VideosPresentation extends Component {
                   <Image className="img-video-presentation"
                     src="/images/visuals/summit-placeholder-design.png"
                     retinaSupport={false} />
-                </Link>
                 <h4 className="font-weight-bold center" style={{ marginTop: '10px', marginBottom: '10px' }} >
                   UX Talk - Design Thinking
                 </h4>
+                </Link>
                 <p className="font-weight-bold" >
                   Tyler Schmidt, <span className="font-weight-normal font-italic">UX Design Consultant</span>
                 </p>
@@ -334,10 +334,10 @@ class VideosPresentation extends Component {
                   <Image className="img-video-presentation"
                     src="/images/visuals/summit-placeholder-design.png"
                     retinaSupport={false} />
-                </Link>
                 <h4 className="font-weight-bold center" style={{ marginTop: '10px', marginBottom: '10px' }} >
                   Economics of Distributed Systems
                 </h4>
+                </Link>
                 <p className="font-weight-bold" >
                   Zavain Dar, <span className="font-weight-normal font-italic">Lux Capital Partner</span>
                 </p>
