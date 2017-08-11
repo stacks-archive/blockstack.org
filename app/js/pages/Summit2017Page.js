@@ -10,10 +10,8 @@ import {BlogActions}       from '../datastore/Blog'
 import {StatsActions}      from '../datastore/Stats'
 import Image               from '../components/Image'
 import Header              from '../components/Header'
-import DarkForm            from '../components/DarkForm'
 import EmbedYouTube        from '../components/EmbedYouTube'
-import PostPreview         from '../components/PostPreview'
-import TeamMembers         from '../components/TeamMembers'
+import TokenBanner         from '../components/TokenBanner'
 import ContentSection      from '../components/ContentSection'
 import VideosPresentation  from '../components/VideosPresentation'
 import {featuredApps}      from '../config'
@@ -77,6 +75,7 @@ class Summit2017Page extends Component {
       <DocumentTitle title="Blockstack Summit 2017">
         <div className="feature-event-hero">
           <div className="col-centered block">
+            <TokenBanner />
             <Header transparent={true} />
             <div className="container p-b-90">
               <section className="text-xs-center">
