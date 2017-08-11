@@ -52,10 +52,10 @@ class VideosPresentation extends Component {
                   <Image className="img-video-presentation"
                     src="/images/visuals/summit-placeholder-design.png"
                     retinaSupport={false} />
-                </Link>
                 <h4 className="font-weight-bold center" style={{ marginTop: '10px', marginBottom: '10px' }} >
                   Blockstack App Ecosystem
                 </h4>
+                </Link>
                 <p className="font-weight-bold" >
                   Patrick Stanley, <span className="font-weight-normal font-italic">Blockstack Growth Partner</span>
                 </p>
