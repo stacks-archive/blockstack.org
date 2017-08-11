@@ -146,12 +146,7 @@
 .no-padding{padding-right:0;padding-left:0;}
 .no-margin{margin-right:0;margin-left:0;}
 .bg-primary{background-color:#270F34!important;}
-.bg-electric-blue {
-  background-color: #2C96FF !important;
-  padding: 10px;
-  display: block;
-  font-size: 0.875rem;
-}
+.bg-electric-blue{background-color:#2C96FF!important;padding:10px;display:block;font-size:0.875rem;}
 .text-center{text-align:center!important;}
 .text-white{color:#fff;}
 .container{width:100%;}
