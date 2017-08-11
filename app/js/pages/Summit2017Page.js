@@ -79,8 +79,8 @@ class Summit2017Page extends Component {
             <Header transparent={true} />
             <div className="container">
               <section className="text-xs-center">
-                <Image className="stacks-logo-sm m-t-65 m-b-55"
-                        src="/images/logos/stacks-logo.svg"
+                <Image className="blockstack-summit-2017-logo-md m-t-65 m-b-55"
+                        src="/images/logos/blockstack-summit-logo-landscape-rev.svg"
                         retinaSupport={false} />
                 <h1 className="text-white m-b-20">Blockstack Summit 2017</h1>
                 <p className="hero-lead purple-50">Sign up to receive important information about the token distribution</p>
