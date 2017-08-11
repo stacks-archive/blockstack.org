@@ -131,25 +131,6 @@ class Summit2017Page extends Component {
               </div>
             </div>
             <VideosPresentation />
-            <TeamMembers />
-            <div className="sectionContainerLightGray section-spacing container-fluid">
-              <div className="container">
-                <section>
-                  <div className="containWrap">
-                    <h2 className="h-primary text-center">
-                      News
-                    </h2>
-                  </div>
-                  <div className="container">
-                  { firstThreePosts.map((post, index) => {
-                    return (
-                      <PostPreview key={index} post={post} />
-                    )
-                  }) }
-                  </div>
-                </section>
-              </div>
-            </div>
           </div>
         </div>
       </DocumentTitle>

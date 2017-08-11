@@ -441,7 +441,10 @@ a.tokenBanner:hover{background-color:#2378CC;}
 }
 .img-video-presentation {
   width: 100%;
+  max-width: 500px;
   display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 35px;
 }
 /*.avatar-lg {
