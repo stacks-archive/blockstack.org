@@ -1,6 +1,6 @@
 # Blockstack Site
 
-[![Slack](http://chat.blockstack.org/badge.svg)](http://chat.blockstack.org/)
+[![Slack](https://img.shields.io/badge/join-slack-e32072.svg?style=flat)](http://slack.blockstack.org/)
 
 A live version of this site can be found online at https://blockstack.org.
 
