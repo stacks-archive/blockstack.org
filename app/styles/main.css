@@ -429,19 +429,20 @@ a.tokenBanner:hover{background-color:#2378CC;}
 .summit-img-section{padding-bottom:400px;}
 .img-video-presentation{width:100%;max-width:500px;display:inline-block;margin-right:auto;margin-left:auto;margin-bottom:35px;}
 .video-special {
-  width: 100%;
-  max-width: 700px;
-  display: inline-block;
+  display: block;
+  width: 640px;
+  height: 360px;
   margin-right: auto;
   margin-left: auto;
 }
 .video-special-container{
   display: block;
   background-color: #1A1D1F;
-  min-width: 100%;
+  width: 100%;
   margin-top: 100px;
   padding-top: 0;
   padding-bottom: 0;
+  text-align: center;
 }
 /*.video-special-contain {
   display: block;
@@ -452,7 +453,7 @@ a.tokenBanner:hover{background-color:#2378CC;}
 }*/
 
 /* Tutorials */
-iframe{height:530px;}
+
 
 /* Cards */
 .card{background-color:#fff;}

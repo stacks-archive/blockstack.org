@@ -28,47 +28,9 @@ function mapDispatchToProps(dispatch) {
   )
 }
 
-class SignatureFund extends Component {
-
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      subscribeURL: '//blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=da7056bb03',
-      videoURL: 'https://www.youtube.com/embed/0C2y9mZ0Dnc',
-      stats: this.props.stats,
-      posts: this.props.posts
-    }
-  }
-
-  componentWillMount() {
-    if (this.props.posts.length === 0) {
-      this.props.fetchPosts()
-    }
-    this.props.fetchStats()
-  }
-
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.stats !== this.props.stats) {
-      let stats = nextProps.stats
-      if (stats.domains === 0) {
-        stats.domains = 72000
-      }
-      this.setState({
-        stats: stats,
-      })
-    }
-
-    if (nextProps.posts !== this.props.posts) {
-      this.setState({
-        posts: nextProps.posts,
-      })
-    }
-  }
+class FundingPage extends Component {
 
   render() {
-    const firstThreePosts = this.state.posts.slice(0, 3)
-
     return (
       <DocumentTitle title="Blockstack Summit 2017">
         <div className="video-special-hero">
@@ -79,27 +41,16 @@ class SignatureFund extends Component {
               <div className="container-fluid p-b-90">
                 <div className="row">
                   <div className="container-fluid video-special-container">
-                    { /* <div className="video-special-contain"> */ }
-                    <div className="col-sm-12 col-md-8 col-centered" style={{ textAlign: 'center' }} >
-                      <Link to="https://youtu.be/YzlyEuRfXxo" target="_blank">
-                        <Image className="video-special"
-                          src="/images/visuals/summit-placeholder-design.png"
-                          retinaSupport={false} />
-                      </Link>
+                    <div class="embed-responsive embed-responsive-16by9 video-special">
+                      <iframe class="embed-responsive-item" width="640px" height="360px" src="https://www.youtube.com/embed/Z7L7UY-isRA" allowFullScreen></iframe>
                     </div>
-                    { /* </div> */ }
                   </div>
                 </div>
               </div>
-
-
-
-
               <section className="text-xs-center">
                 <Image className="blockstack-summit-2017-logo-md m-t-65 m-b-55"
-                        src="/images/logos/blockstack-summit-logo-landscape-rev.svg"
-                        retinaSupport={false} />
-                
+                  src="/images/logos/blockstack-summit-logo-landscape-rev.svg"
+                  retinaSupport={false} />
                 <h1 className="text-white m-b-20">Blockstack Summit 2017</h1>
                 <p className="hero-lead text-white p-b-100">July 27th, 2017, Computer History Museum, Mountain View, CA</p>
               </section>
@@ -156,4 +107,4 @@ class SignatureFund extends Component {
 
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(SignatureFund)
+export default connect(mapStateToProps, mapDispatchToProps)(FundingPage)

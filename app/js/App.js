@@ -35,7 +35,7 @@ class App extends Component {
     if (location.pathname === '/' ||
         location.pathname === '/token' ||
         location.pathname === '/summit2017' ||
-        location.pathname === '/signature-fund') {
+        location.pathname === '/funding') {
       specialHeader = true
     }
 
