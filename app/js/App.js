@@ -34,7 +34,8 @@ class App extends Component {
     let specialHeader = false
     if (location.pathname === '/' ||
         location.pathname === '/token' ||
-        location.pathname === '/summit2017') {
+        location.pathname === '/summit2017' ||
+        location.pathname === '/signature-fund') {
       specialHeader = true
     }
 

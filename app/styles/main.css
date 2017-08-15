@@ -341,6 +341,7 @@ a.nav-link > i.fa.fa-github{display:none;}
 /* 37. Misc */
 .body-hero{background-color:#270F34!important;}
 .token-hero{background-color:#270F34!important;background:url(../images/visuals/blockstack-grid-reverse.svg) no-repeat;background-position:top -10px center;}
+.video-special-hero{background-color:#121416!important;}
 .feature-event-hero{background-color:#E91E63!important;background:url(../images/visuals/blockstack-grid-reverse.svg) no-repeat;background-position:top -10px center;}
 body,html,#app,.app-landing{height:100%;}
 .app-common{height:auto;}
@@ -427,6 +428,28 @@ a.tokenBanner:hover{background-color:#2378CC;}
 .img-summit-hero{width:50%;}
 .summit-img-section{padding-bottom:400px;}
 .img-video-presentation{width:100%;max-width:500px;display:inline-block;margin-right:auto;margin-left:auto;margin-bottom:35px;}
+.video-special {
+  width: 100%;
+  max-width: 700px;
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.video-special-container{
+  display: block;
+  background-color: #1A1D1F;
+  min-width: 100%;
+  margin-top: 100px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/*.video-special-contain {
+  display: block;
+  background-color: #1A1D1F;
+  min-width: 100%;
+  padding-top: 0;
+  padding-bottom: 0; 
+}*/
 
 /* Tutorials */
 iframe{height:530px;}

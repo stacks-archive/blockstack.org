@@ -28,7 +28,7 @@ function mapDispatchToProps(dispatch) {
   )
 }
 
-class FundPage extends Component {
+class SignatureFund extends Component {
 
   constructor(props) {
     super(props)
@@ -71,15 +71,35 @@ class FundPage extends Component {
 
     return (
       <DocumentTitle title="Blockstack Summit 2017">
-        <div className="feature-event-hero">
+        <div className="video-special-hero">
           <div className="col-centered block">
             <TokenBanner />
             <Header transparent={true} />
-            <div className="container p-b-90">
+            <div className="row">
+              <div className="container-fluid p-b-90">
+                <div className="row">
+                  <div className="container-fluid video-special-container">
+                    { /* <div className="video-special-contain"> */ }
+                    <div className="col-sm-12 col-md-8 col-centered" style={{ textAlign: 'center' }} >
+                      <Link to="https://youtu.be/YzlyEuRfXxo" target="_blank">
+                        <Image className="video-special"
+                          src="/images/visuals/summit-placeholder-design.png"
+                          retinaSupport={false} />
+                      </Link>
+                    </div>
+                    { /* </div> */ }
+                  </div>
+                </div>
+              </div>
+
+
+
+
               <section className="text-xs-center">
                 <Image className="blockstack-summit-2017-logo-md m-t-65 m-b-55"
                         src="/images/logos/blockstack-summit-logo-landscape-rev.svg"
                         retinaSupport={false} />
+                
                 <h1 className="text-white m-b-20">Blockstack Summit 2017</h1>
                 <p className="hero-lead text-white p-b-100">July 27th, 2017, Computer History Museum, Mountain View, CA</p>
               </section>
@@ -136,4 +156,4 @@ class FundPage extends Component {
 
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(FundPage)
+export default connect(mapStateToProps, mapDispatchToProps)(SignatureFund)
