@@ -32,6 +32,7 @@ import AuthPage                    from './pages/AuthPage'
 import RoadmapPage                 from './pages/RoadmapPage'
 import TokenSalePage               from './pages/TokenSalePage'
 import Summit2017Page              from './pages/Summit2017Page'
+import FundPage              from './pages/FundPage'
 
 export default (
   <Router history={browserHistory} onUpdate={() => window.scrollTo(0, 0)}>
@@ -73,6 +74,7 @@ export default (
       <Route path="/roadmap" component={RoadmapPage} />
       <Route path="/token" component={TokenSalePage} />
       <Route path="/summit2017" component={Summit2017Page} />
+      <Route path="/fund" component={FundPage} />
 
       <Route path="*" component={NotFoundPage} />
     </Route>
