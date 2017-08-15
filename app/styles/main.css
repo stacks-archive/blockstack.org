@@ -9,6 +9,7 @@
 /* --------    #270f34   PURPLE 110       -------- */ /*::selection{background:rgba(39,15,52,0.99);color:#fff;}::-moz-selection{background:rgba(39,15,52,0.99);color:#fff;}*/
 
 /* Table of Contents */
+
 /*  1. Colors */
 /*  2. Options */
 /*  3. Spacing - Note: b4 has resolved a lot of spacing issues. for this version we are utilizing the custom spacing rules from blockstack.com. Upon import of blockstack-bootstrap, go through styles and replace with latest spacing rules from b4. */
@@ -45,7 +46,25 @@
 /* 34. Close */
 /* 35. Code */
 /* 36. Status Bars */
+
 /* 37. Misc */
+
+/* 38. Utilities */
+/* 38. a. - Align */
+/* 38. b. - Background */
+/* 38. c. - Borders */
+/* 38. d. - Clearfix */
+/* 38. e. - Display */
+/* 38. f. - Embed */
+/* 38. g. - Flex */
+/* 38. h. - Float */
+/* 38. i. - Position */
+/* 38. j. - Screenreaders */
+/* 38. k. - Sizing */
+/* 38. l. - Spacing */
+/* 38. m. - Text */
+/* 38. n. - Visibility */
+
 
 /* 1. Colors */
 /* Blockstack Label Colors - https://projects.invisionapp.com/boards/HE2VVROFSGB27/ */
@@ -285,18 +304,27 @@ h1.type-beauty{font-family:'Lato',sans-serif;font-size:1.5rem;font-weight:700;}
 .hero-lead{font-family:'Lato',sans-serif;font-size:1rem;margin-bottom:2.75rem;line-height:1.25rem;font-weight:400;}
 .lead-centered{font-family:'Source Code Pro',monospace;font-size:1rem;text-align:center;margin-bottom:2rem;font-weight:400;}
 
+/* 12. Buttons */
+.btn{font-family:'Lato',sans-serif;padding:0.5625rem 2.25rem;font-size:0.75rem;font-weight:700;line-height:1.75rem;border-radius:0;text-transform:uppercase;}
+.btn-sm{font-size:0.8125rem;padding:0.375rem 2.125rem;line-height:1.5rem;}
+.btn-lg{font-size:0.875rem;padding:0.6875rem 3.4375rem;line-height:1.75rem;}
+.btn-outline-secondary:hover,.btn-outline-secondary:focus,.btn-outline-secondary:active{color:#9A21C5;}
+.btn-secondary{color:#270F34;border:1px solid #fff;background-color:#fff;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
+.btn-secondary:hover,.btn-secondary:focus,.btn-secondary:active{color:#fff;border:1px solid #E91E63;background-color:#E91E63;outline:none;}
+.btn-outline-primary{color:#fff;border:1px solid rgba(255,255,255,0.15);font-weight:700;background-color:#270F34;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
+.btn-outline-primary:hover,.btn-outline-primary:focus,.btn-outline-primary:active{color:#270F34;border:1px solid rgba(255,255,255);font-weight:700;background-color:#fff;outline:none;}
+.btn-special{color:#fff;border:1px solid #080809;background-color:#080809;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
+.btn-special:hover,.btn-special:focus,.btn-special:active{color:#270F34;border:1px solid rgba(255,255,255);background-color:#fff;outline:none;}
+.btn-electric-magenta{color:#fff;border:1px solid #E91E63;background-color:#E91E63;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
+.btn-electric-magenta:hover,.btn-electric-magenta:focus,.btn-electric-magenta:active{color:#270F34;border:1px solid rgba(255,255,255);background-color:#fff;outline:none;}
+.btn-electric-blue{color:#fff;border:1px solid #2C96FF;background-color:#2C96FF;font-weight:700;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
+.btn-electric-blue:hover,.btn-electric-blue:focus,.btn-electric-blue:active{color:#fff;background-color:#2378CC;border:1px solid #2378CC;font-weight:700;outline:none;}
+.btn-footer-max-width{max-width:225px;}
+
 /* 13. Forms */
 .form-control-outline-primary{background-color:#270f34;border:1px solid rgba(255,255,255,0.15);border-radius:0;font-size:0.875rem;padding:0.5625rem 2.25rem;line-height:1.75rem;text-transform:none;outline:none;-webkit-background-clip:unset;background-clip:unset;-webkit-transition:all .35s ease-in-out;-moz-transition:all .35s ease-in-out;-ms-transition:all .35s ease-in-out;-o-transition:all .35s ease-in-out;transition:all .35s ease-in-out;}
 .form-control-outline-primary:hover,.form-control-outline-primary:focus,.form-control-outline-primary:active{background-color:#fff;border:1px solid #fff;outline:none;-webkit-background-clip:unset;background-clip:unset;-webkit-transition:all .35s ease-in-out;-moz-transition:all .35s ease-in-out;-ms-transition:all .35s ease-in-out;-o-transition:all .35s ease-in-out;transition:all .35s ease-in-out;}
-.form-control-outline-primary::placeholder, .form-control-outline-primary::-webkit-input-placeholder {
-  color: #95889c;
-  text-align: center;
-  text-transform: none;
-  font-size: 0.875rem;
-  margin-top: -10px;
-  line-height: 20px;
-  display: block;
-}
+.form-control-outline-primary::placeholder,.form-control-outline-primary::-webkit-input-placeholder{color:#95889c;text-align:center;text-transform:none;font-size:0.875rem;margin-top:-10px;line-height:20px;display:block;}
 
 /* 16. Navbar */
 .navbar{font-family:'Lato',sans-serif;padding-top:0.4375rem;padding-bottom:0.5625rem;}
@@ -313,7 +341,6 @@ div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-he
 a.nav-link{color:#fff;font-size:0.9375rem;font-weight:700;margin-top:0.0625rem;}
 a.nav-link:hover,a.nav-link:focus{color:#fff;}
 .nav-item{margin-left:0.5rem;line-height:36px;}
-
 /* Sandwich menu (landing page) */
 .navbar-toggler,.navbar-toggler.collapsed{float:right;margin-right:-5px;margin-top:-1px;}
 .navbar-toggler:focus,.navbar-toggler:hover{outline:none;}
@@ -321,22 +348,8 @@ a.nav-link:hover,a.nav-link:focus{color:#fff;}
 .mobile-nav{background-color:#200c2b;padding-left:15px;}
 a.nav-link > i.fa.fa-github{display:none;}
 
-/* Buttons */
-.btn{font-family:'Lato',sans-serif;padding:0.5625rem 2.25rem;font-size:0.75rem;font-weight:700;line-height:1.75rem;border-radius:0;text-transform:uppercase;}
-.btn-sm{font-size:0.8125rem;padding:0.375rem 2.125rem;line-height:1.5rem;}
-.btn-lg{font-size:0.875rem;padding:0.6875rem 3.4375rem;line-height:1.75rem;}
-.btn-outline-secondary:hover,.btn-outline-secondary:focus,.btn-outline-secondary:active{color:#9A21C5;}
-.btn-secondary{color:#270F34;border:1px solid #fff;background-color:#fff;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
-.btn-secondary:hover,.btn-secondary:focus,.btn-secondary:active{color:#fff;border:1px solid #E91E63;background-color:#E91E63;outline:none;}
-.btn-outline-primary{color:#fff;border:1px solid rgba(255,255,255,0.15);font-weight:700;background-color:#270F34;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
-.btn-outline-primary:hover,.btn-outline-primary:focus,.btn-outline-primary:active{color:#270F34;border:1px solid rgba(255,255,255);font-weight:700;background-color:#fff;outline:none;}
-.btn-special{color:#fff;border:1px solid #080809;background-color:#080809;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
-.btn-special:hover,.btn-special:focus,.btn-special:active{color:#270F34;border:1px solid rgba(255,255,255);background-color:#fff;outline:none;}
-.btn-electric-magenta{color:#fff;border:1px solid #E91E63;background-color:#E91E63;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
-.btn-electric-magenta:hover,.btn-electric-magenta:focus,.btn-electric-magenta:active{color:#270F34;border:1px solid rgba(255,255,255);background-color:#fff;outline:none;}
-.btn-electric-blue{color:#fff;border:1px solid #2C96FF;background-color:#2C96FF;font-weight:700;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
-.btn-electric-blue:hover,.btn-electric-blue:focus,.btn-electric-blue:active{color:#fff;background-color:#2378CC;border:1px solid #2378CC;font-weight:700;outline:none;}
-.btn-footer-max-width{max-width:225px;}
+/* 21. Cards */
+.card{background-color:#fff;}
 
 /* 37. Misc */
 .body-hero{background-color:#270F34!important;}
@@ -428,6 +441,10 @@ a.tokenBanner:hover{background-color:#2378CC;}
 .img-summit-hero{width:50%;}
 .summit-img-section{padding-bottom:400px;}
 .img-video-presentation{width:100%;max-width:500px;display:inline-block;margin-right:auto;margin-left:auto;margin-bottom:35px;}
+
+
+/* 38. f. - Embed */
+
 .video-special {
   display: block;
   width: 640px;
@@ -439,24 +456,12 @@ a.tokenBanner:hover{background-color:#2378CC;}
   display: block;
   background-color: #1A1D1F;
   width: 100%;
+  max-height: 364px;
   margin-top: 100px;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 2px;
+  padding-bottom: 2px;
   text-align: center;
 }
-/*.video-special-contain {
-  display: block;
-  background-color: #1A1D1F;
-  min-width: 100%;
-  padding-top: 0;
-  padding-bottom: 0; 
-}*/
-
-/* Tutorials */
-
-
-/* Cards */
-.card{background-color:#fff;}
 
 /* Summit page */
 .summit-head-wrap{background:url(/images/visuals/summ-dht.png)no-repeat center -50px;background-color:#53206f;}
@@ -537,6 +542,10 @@ footer > li{list-style:none;}
 .midfoot,.base-push-left{padding-left:30px;}
 .foot-logo{width:115px;}
 section{word-break:break-word;}
+
+
+
+
 
 /* Media queries */
 

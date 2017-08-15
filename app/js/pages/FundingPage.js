@@ -37,13 +37,11 @@ class FundingPage extends Component {
           <div className="col-centered block">
             <TokenBanner />
             <Header transparent={true} />
-            <div className="row">
-              <div className="container-fluid p-b-90">
-                <div className="row">
-                  <div className="container-fluid video-special-container">
-                    <div class="embed-responsive embed-responsive-16by9 video-special">
-                      <iframe class="embed-responsive-item" width="640px" height="360px" src="https://www.youtube.com/embed/Z7L7UY-isRA" allowFullScreen></iframe>
-                    </div>
+            <div className="container-fluid p-b-90">
+              <div className="row">  
+                <div className="container-fluid video-special-container">
+                  <div class="embed-responsive embed-responsive-16by9 video-special">
+                    <iframe class="embed-responsive-item" width="640px" height="360px" src="https://www.youtube.com/embed/Z7L7UY-isRA" allowFullScreen></iframe>
                   </div>
                 </div>
               </div>
@@ -51,8 +49,12 @@ class FundingPage extends Component {
                 <Image className="blockstack-summit-2017-logo-md m-t-65 m-b-55"
                   src="/images/logos/blockstack-summit-logo-landscape-rev.svg"
                   retinaSupport={false} />
-                <h1 className="text-white m-b-20">Blockstack Summit 2017</h1>
+                <h1 className="text-white m-b-20">Blockstack Signature Fund</h1>
                 <p className="hero-lead text-white p-b-100">July 27th, 2017, Computer History Museum, Mountain View, CA</p>
+                <Link to="/whitepaper.pdf" target="_blank" className="btn btn-outline-primary" 
+                  style={{ color: '#95889c' }}>
+                    Read the Whitepaper
+                  </Link>
               </section>
             </div>
             <div className="sectionContainerLight section-spacing container-fluid">
