@@ -41,20 +41,22 @@ class FundingPage extends Component {
               <div className="row">  
                 <div className="container-fluid video-special-container">
                   <div class="embed-responsive embed-responsive-16by9 video-special">
-                    <iframe class="embed-responsive-item" width="640px" height="360px" src="https://www.youtube.com/embed/Z7L7UY-isRA" allowFullScreen></iframe>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vQSbqwz4TPM" allowFullScreen></iframe>
                   </div>
                 </div>
               </div>
               <section className="text-xs-center">
-                <Image className="blockstack-summit-2017-logo-md m-t-65 m-b-55"
-                  src="/images/logos/blockstack-summit-logo-landscape-rev.svg"
+                <Image className="blockstack-signature-fund-logo-md m-t-55 m-b-45"
+                  src="/images/logos/blockstack-signature-fund-logo-rev.svg"
                   retinaSupport={false} />
-                <h1 className="text-white m-b-20">Blockstack Signature Fund</h1>
-                <p className="hero-lead text-white p-b-100">July 27th, 2017, Computer History Museum, Mountain View, CA</p>
-                <Link to="/whitepaper.pdf" target="_blank" className="btn btn-outline-primary" 
-                  style={{ color: '#95889c' }}>
-                    Read the Whitepaper
+                { /*<h1 className="text-white m-b-20">Blockstack Signature Fund</h1> */ }
+                <p className="hero-lead text-white p-b-30">“Money is bringing everybody in, but the thing we are creating is larger than ourselves, < br/>
+                larger than money. “ - Naval Ravikant at Blockstack Summit 2017</p>
+                <div className="col-sm-9 col-md-7 col-centered m-b-45">
+                  <Link to="/whitepaper.pdf" target="_blank" className="btn btn-electric-blue btn-block">
+                    Apply Here!
                   </Link>
+                </div>
               </section>
             </div>
             <div className="sectionContainerLight section-spacing container-fluid">

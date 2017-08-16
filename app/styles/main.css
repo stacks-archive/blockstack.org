@@ -160,6 +160,7 @@
 .gray-900                  {color: #1c1c1c;}
 .gray-950                  {color: #151515;}
 
+
 /* 2. Options */
 .col-centered{float:none;margin:0 auto;}
 .no-padding{padding-right:0;padding-left:0;}
@@ -169,6 +170,7 @@
 .text-center{text-align:center!important;}
 .text-white{color:#fff;}
 .container{width:100%;}
+
 
 /* 3. Spacing */
 /* Custom spacing classes to be removed */
@@ -257,6 +259,7 @@
 .p-b-95{padding-bottom:95px;}
 .p-b-100{padding-bottom:100px;}
 
+
 /*  4. Body */
 html, body {-webkit-overflow-scrolling:touch;}
 body{font-family:'Lato',sans-serif;font-size:1rem;font-weight:400;font-style:normal;-webkit-font-smoothing:antialiased;color:#484848;line-height:1.75rem;padding-top:0;padding-bottom:0;}
@@ -304,6 +307,7 @@ h1.type-beauty{font-family:'Lato',sans-serif;font-size:1.5rem;font-weight:700;}
 .hero-lead{font-family:'Lato',sans-serif;font-size:1rem;margin-bottom:2.75rem;line-height:1.25rem;font-weight:400;}
 .lead-centered{font-family:'Source Code Pro',monospace;font-size:1rem;text-align:center;margin-bottom:2rem;font-weight:400;}
 
+
 /* 12. Buttons */
 .btn{font-family:'Lato',sans-serif;padding:0.5625rem 2.25rem;font-size:0.75rem;font-weight:700;line-height:1.75rem;border-radius:0;text-transform:uppercase;}
 .btn-sm{font-size:0.8125rem;padding:0.375rem 2.125rem;line-height:1.5rem;}
@@ -321,10 +325,12 @@ h1.type-beauty{font-family:'Lato',sans-serif;font-size:1.5rem;font-weight:700;}
 .btn-electric-blue:hover,.btn-electric-blue:focus,.btn-electric-blue:active{color:#fff;background-color:#2378CC;border:1px solid #2378CC;font-weight:700;outline:none;}
 .btn-footer-max-width{max-width:225px;}
 
+
 /* 13. Forms */
 .form-control-outline-primary{background-color:#270f34;border:1px solid rgba(255,255,255,0.15);border-radius:0;font-size:0.875rem;padding:0.5625rem 2.25rem;line-height:1.75rem;text-transform:none;outline:none;-webkit-background-clip:unset;background-clip:unset;-webkit-transition:all .35s ease-in-out;-moz-transition:all .35s ease-in-out;-ms-transition:all .35s ease-in-out;-o-transition:all .35s ease-in-out;transition:all .35s ease-in-out;}
 .form-control-outline-primary:hover,.form-control-outline-primary:focus,.form-control-outline-primary:active{background-color:#fff;border:1px solid #fff;outline:none;-webkit-background-clip:unset;background-clip:unset;-webkit-transition:all .35s ease-in-out;-moz-transition:all .35s ease-in-out;-ms-transition:all .35s ease-in-out;-o-transition:all .35s ease-in-out;transition:all .35s ease-in-out;}
 .form-control-outline-primary::placeholder,.form-control-outline-primary::-webkit-input-placeholder{color:#95889c;text-align:center;text-transform:none;font-size:0.875rem;margin-top:-10px;line-height:20px;display:block;}
+
 
 /* 16. Navbar */
 .navbar{font-family:'Lato',sans-serif;padding-top:0.4375rem;padding-bottom:0.5625rem;}
@@ -348,8 +354,10 @@ a.nav-link:hover,a.nav-link:focus{color:#fff;}
 .mobile-nav{background-color:#200c2b;padding-left:15px;}
 a.nav-link > i.fa.fa-github{display:none;}
 
+
 /* 21. Cards */
 .card{background-color:#fff;}
+
 
 /* 37. Misc */
 .body-hero{background-color:#270F34!important;}
@@ -436,6 +444,7 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 a.tokenBanner{text-decoration:none;background-color:#2C96FF;padding:10px;display:block;font-size:0.875rem;}
 a.tokenBanner:hover{background-color:#2378CC;}
 .blockstack-summit-2017-logo-md{width:280px;}
+.blockstack-signature-fund-logo-md{width:190px;}
 .feature-event-subhero-1{display:none;}
 .feature-event-subhero-2{display:none;}
 .img-summit-hero{width:50%;}
@@ -462,6 +471,7 @@ a.tokenBanner:hover{background-color:#2378CC;}
   padding-bottom: 2px;
   text-align: center;
 }
+
 
 /* Summit page */
 .summit-head-wrap{background:url(/images/visuals/summ-dht.png)no-repeat center -50px;background-color:#53206f;}
@@ -647,6 +657,7 @@ section{word-break:break-word;}
   .feature-logo-4{margin-top:10px;}
   .feature-logo-5{margin-top:35px;}
 
+  
   /* 37. Misc. */
   .slides{padding-top:80px;padding-right:0;padding-left:0;}
   div.col-sm-4.feature-panel.wrap-mob-feat{padding-top:20px;}
@@ -675,6 +686,11 @@ section{word-break:break-word;}
   .col3-img-lg{width:110%;max-width:310px;}
   .feature-event-subhero-1{display:block;background-color:#1C1314!important;background:url(../images/photos/blockstack-summit-2017-naval-ryan.jpg) no-repeat center center fixed;background-size:cover;}
   .feature-event-subhero-2{display:block;background-color:#1C1314!important;background:url(../images/photos/blockstack-summit-2017-ryan-0040.jpg) no-repeat center center fixed;background-size:cover;}
+
+
+  /* 38. f. - Embed */
+  .video-special{display:block;width:640px;height:360px;margin-right:auto;margin-left:auto;}
+  .video-special-container{display:block;background-color:#1A1D1F;width:100%;max-height:364px;margin-top:100px;padding-top:2px;padding-bottom:2px;text-align:center;}
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -740,6 +756,28 @@ section{word-break:break-word;}
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width:1200px){
+  /* 38. f. - Embed */
+  .video-special {
+    display: block;
+    width: 711px;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .video-special-container {
+    display: block;
+    background-color: #1A1D1F;
+    width: 100%;
+    max-height: 404px;
+    margin-top: 100px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+  }
+  div.container-fluid.video-special-container > div > iframe {
+    width: 711px;
+    height: 400px;
+  }
 }
 
 /* x-Small devices */
