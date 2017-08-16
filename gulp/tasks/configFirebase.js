@@ -55,6 +55,18 @@ gulp.task('configFirebase', () => {
   */
   const redirectRules = [
     {
+      'source': '/token/',
+      'destination': '/token'
+    },
+    {
+      'source': '/summit2017/',
+      'destination': '/summit2017'
+    },
+    {
+      'source': '/funding/',
+      'destination': '/funding'
+    },
+    {
       'source': '/fund',
       'destination': '/funding'
     },
