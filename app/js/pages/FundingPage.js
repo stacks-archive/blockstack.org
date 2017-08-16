@@ -40,7 +40,7 @@ class FundingPage extends Component {
             <TokenBanner />
             <Header transparent={true} />
             <div className="container-fluid p-b-90">
-              <div className="row">  
+              <div className="row">
                 <div className="container-fluid video-special-container">
                   <div class="embed-responsive embed-responsive-16by9 video-special">
                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vQSbqwz4TPM" allowFullScreen></iframe>
@@ -73,7 +73,7 @@ class FundingPage extends Component {
                       The Signature Fund for Blockstack is a $25M fund aimed at growing an ecosystem of decentralized applications on Blockstack.
                     </h3>
                     <p className="lead-lg text-xs-center">
-                      We partnered with thesis-driven VC’s thesis-driven VC's who're aligned with our vision of a decentralized internet like Lux Capital, Rising Tide, Compound, OpenOcean, and VersionOne to fund app developers and teams looking to build their apps on the new fully decentralized internet. App creators will benefit directly from the deep expertise and insight of these experienced investors.
+                      We partnered with thesis-driven venture capital firms who are aligned with our vision of a decentralized internet like <a href="http://www.luxcapital.com">Lux Capital</a>, <a href="">Rising Tide</a>, <a href="">Compound</a>, <a href="http://openocean.vc/">OpenOcean</a>, and <a href="https://compound.vc/">VersionOne</a> to fund app developers and teams looking to build their apps on the new fully decentralized internet. App creators will benefit directly from the deep expertise and insight of these experienced investors.
                     </p>
                     <p className="lead-lg text-xs-center">
                       Additionally, those who apply will be first to hear 'x-prize' style prizes/bounties for large initiatives like building a decentralized microblogging platform, funded by investors like Naval Ravikant (founder, AngelList), Albert Wenger (managing partner, USV), and more
