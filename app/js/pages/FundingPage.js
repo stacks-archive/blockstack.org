@@ -73,7 +73,7 @@ class FundingPage extends Component {
                       We partnered with thesis-driven venture capital firms who are aligned with our vision of a decentralized internet like <a href="http://www.luxcapital.com">Lux Capital</a>, <a href="http://rtf.vc/">Rising Tide</a>, <a href="https://compound.vc/">Compound</a>, <a href="http://openocean.vc/">OpenOcean</a>, and <a href="http://versionone.vc/">VersionOne</a> to fund app developers and teams looking to build their apps on the new fully decentralized internet. App creators will benefit directly from the deep expertise and insight of these experienced investors.
                     </p>
                     <p className="lead-lg text-xs-center">
-                      Additionally, those who apply will be first to hear about 'x-prize' style prizes/bounties for large initiatives like building a decentralized microblogging platform, funded by investors like Naval Ravikant (founder, AngelList), Albert Wenger (managing partner, USV), and more
+                      Additionally, those who apply will be first to hear about “XPRIZE”-style prizes and bounties for large initiatives such as building a decentralized microblogging platform, funded by investors like <a href="https://twitter.com/naval">Naval Ravikant</a>, Founder, <a href="https://angel.co">AngelList</a>, <a href="http://continuations.com">Albert Wenger</a>, Managing Partner, <a href="https://www.usv.com">USV</a>, and more!
                     </p>
                     </div>
                   </div>
