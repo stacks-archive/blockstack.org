@@ -72,7 +72,7 @@ class Footer extends Component {
                   <Link to="/summit2017">Summit 2017</Link>
                 </li>
                 <li>
-                  <Link to="/summit2017">Funding</Link>
+                  <Link to="/funding">Funding</Link>
                 </li>
               </ul>
             </div>
