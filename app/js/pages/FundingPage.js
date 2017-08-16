@@ -11,9 +11,6 @@ import {StatsActions}      from '../datastore/Stats'
 import Image               from '../components/Image'
 import Header              from '../components/Header'
 import TokenBanner         from '../components/TokenBanner'
-import ContentSection      from '../components/ContentSection'
-import VideosPresentation  from '../components/VideosPresentation'
-import {featuredApps}      from '../config'
 
 
 function mapStateToProps(state) {
@@ -55,10 +52,10 @@ class FundingPage extends Component {
                   "Money is bringing everybody in, but the thing we are creating is larger than ourselves, larger than money."
                 </p>
                 <p className="hero-lead text-white p-b-30">
-                  — Naval Ravikant at Blockstack Summit 2017
+                  — Naval Ravikant ~ Blockstack Summit 2017
                 </p>
                 <div className="col-sm-9 col-md-7 col-centered m-b-65">
-                  <Link to="https://goo.gl/forms/5jAfojqWiqe4vBzb2" target="_blank" className="btn btn-electric-blue btn-block">
+                  <Link to="https://goo.gl/forms/Z1JbxmqLaLz9bz053" target="_blank" className="btn btn-electric-blue btn-block">
                     Apply Here!
                   </Link>
                 </div>
@@ -76,7 +73,7 @@ class FundingPage extends Component {
                       We partnered with thesis-driven venture capital firms who are aligned with our vision of a decentralized internet like <a href="http://www.luxcapital.com">Lux Capital</a>, <a href="">Rising Tide</a>, <a href="">Compound</a>, <a href="http://openocean.vc/">OpenOcean</a>, and <a href="https://compound.vc/">VersionOne</a> to fund app developers and teams looking to build their apps on the new fully decentralized internet. App creators will benefit directly from the deep expertise and insight of these experienced investors.
                     </p>
                     <p className="lead-lg text-xs-center">
-                      Additionally, those who apply will be first to hear 'x-prize' style prizes/bounties for large initiatives like building a decentralized microblogging platform, funded by investors like Naval Ravikant (founder, AngelList), Albert Wenger (managing partner, USV), and more
+                      Additionally, those who apply will be first to hear about 'x-prize' style prizes/bounties for large initiatives like building a decentralized microblogging platform, funded by investors like Naval Ravikant (founder, AngelList), Albert Wenger (managing partner, USV), and more
                     </p>
                     </div>
                   </div>
@@ -100,7 +97,7 @@ class FundingPage extends Component {
                         “Less white paper hype, more working code.”
                       </h3>
                       <p className="hero-lead p-b-65">
-                        — Jeremy Welch, Casa App Founder at Blockstack Summit 2017
+                        — Jeremy Welch ~ Casa App Founder (at Blockstack Summit 2017)
                       </p>
                       <p className="lead-lg text-xs-center m-b-95">
                         There’s a lot of excitement about building decentralized applications, but we know it is still early days. At Blockstack we’ve created the core infrastructure to enable developers to build these applications, but we realize that to increase an app’s chances of success, it will require access to capital and tools to bootstrap networks.
@@ -110,9 +107,15 @@ class FundingPage extends Component {
                       </p>
                       <p className="lead-lg col-md-10 col-centered m-b-95">
                         <ul>
-                          <li>VC-led Funding: Blockstack Apps will get access to and capital from some of the best minds in the space.</li>
-                          <li>Token: Blockstack Apps will be able to offer tokens on top of the Blockstack ecosystem, just like ERC20 tokens on Ethereum.</li>
-                          <li>Advanced Payments: Forward a percentage of your app’s subscription fees to specific names/addresses to incentivize app-building behavior.</li>
+                          <li>
+                            VC-led Funding: Blockstack Apps will get access to capital from some of the best minds in the venture space.
+                          </li>
+                          <li>
+                            Token: Blockstack Apps will be able to offer tokens on top of the Blockstack ecosystem, just like ERC20 tokens on Ethereum.
+                          </li>
+                          <li>
+                            Advanced Payments: Creators can forward a percentage of your app’s subscription fees to specific names/addresses to incentivize app-building behavior.
+                          </li>
                         </ul>
                       </p>
                       <h4 className="font-weight-bold text-xs-center">
@@ -128,24 +131,6 @@ class FundingPage extends Component {
                 <div className="containWrapper">
                   <div className="container sectionWrap">
                     <div className="col-md-10 col-centered">
-                    <h3 className="text-xs-center m-b-45">
-                      Why Apply?
-                    </h3>
-                    <p className="lead-lg text-xs-center col-md-10 col-centered">
-                      These is an early step to building a sustainable, responsible ecosystem.
-                      Just like building skyscraper, we are now pouring the concrete foundation.
-                      There will be many more layers to come.
-                    </p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </div>
-            <div className="sectionContainerLight section-spacing container-fluid">
-              <section>
-                <div className="containWrapper">
-                  <div className="container sectionWrap">
-                    <div className="col-md-10 col-centered">
                     <h3 className="text-xs-center m-b-65">
                       How to Apply
                     </h3>
@@ -153,7 +138,7 @@ class FundingPage extends Component {
                       You can apply as an individual or team by filling out the application form below or at the top of the page:
                     </p>
                     <div className="col-sm-9 col-md-7 col-centered m-b-45">
-                      <Link to="https://goo.gl/forms/5jAfojqWiqe4vBzb2" target="_blank" className="btn btn-electric-blue btn-block">
+                      <Link to="https://goo.gl/forms/Z1JbxmqLaLz9bz053" target="_blank" className="btn btn-electric-blue btn-block">
                         Apply Here!
                       </Link>
                     </div>
@@ -168,7 +153,7 @@ class FundingPage extends Component {
                 </div>
               </section>
             </div>
-            <div className="sectionContainerLightGray section-spacing container-fluid">
+            <div className="sectionContainerLight section-spacing container-fluid">
               <section>
                 <div className="containWrapper">
                   <div className="container sectionWrap">
@@ -184,7 +169,7 @@ class FundingPage extends Component {
                 </div>
               </section>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid">
+            <div className="sectionContainerLightGray section-spacing container-fluid">
               <section>
                 <div className="containWrapper">
                   <div className="container sectionWrap">
@@ -235,7 +220,7 @@ class FundingPage extends Component {
                 </div>
               </section>
             </div>
-            <div className="sectionContainerLightGray section-spacing container-fluid">
+            <div className="sectionContainerLight section-spacing container-fluid">
               <section>
                 <div className="containWrapper">
                   <div className="container sectionWrap">
