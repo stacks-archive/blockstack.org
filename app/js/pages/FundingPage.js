@@ -193,32 +193,42 @@ class FundingPage extends Component {
                     </p>
                     <div className="col-md-4 m-b-55">
                       <p className="text-center">
-                        <Image className="col-img" src="/images/logos/app-icon-ongaku-ryoho.png"
-                          retinaSupport={false} />
+                        <Link to="https://compound.vc/" target="_blank">
+                          <Image className="col-img partnerLogo" src="/images/logos/partner-logo-compound.svg"
+                            retinaSupport={false} />
+                        </Link>
                       </p>
                     </div>
                     <div className="col-md-4 m-b-55">
                       <p className="text-center">
-                        <Image className="col-img" src="/images/logos/app-icon-ongaku-ryoho.png"
-                          retinaSupport={false} />
+                        <Link to="http://versionone.vc/" target="_blank">
+                          <Image className="col-img partnerLogo" src="/images/logos/partner-logo-versionone.png"
+                            retinaSupport={false} />
+                        </Link>
                       </p>
                     </div>
                     <div className="col-md-4 m-b-55">
                       <p className="text-center">
-                        <Image className="col-img" src="/images/logos/app-icon-ongaku-ryoho.png"
-                          retinaSupport={false} />
+                        <Link to="http://rtf.vc/" target="_blank">
+                          <Image className="col-img partnerLogo" src="/images/logos/partner-logo-risingtide.png"
+                            retinaSupport={false} />
+                        </Link>
                       </p>
                     </div>
                     <div className="col-md-6 m-b-55">
                       <p className="text-center">
-                        <Image className="col-img" src="/images/logos/app-icon-ongaku-ryoho.png"
-                          retinaSupport={false} />
+                        <Link to="http://www.luxcapital.com/" target="_blank">
+                          <Image className="col-img partnerLogo-lux" src="/images/logos/partner-logo-lux.png"
+                            retinaSupport={false} />
+                        </Link>
                       </p>
                     </div>
                     <div className="col-md-6 m-b-55">
                       <p className="text-center">
-                        <Image className="col-img" src="/images/logos/app-icon-ongaku-ryoho.png"
-                          retinaSupport={false} />
+                        <Link to="http://openocean.vc/" target="_blank">
+                          <Image className="col-img partnerLogo" src="/images/logos/partner-logo-openocean.png"
+                            retinaSupport={false} />
+                        </Link>
                       </p>
                     </div>
                   </div>
