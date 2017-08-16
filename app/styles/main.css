@@ -460,12 +460,8 @@ a.tokenBanner:hover{background-color:#2378CC;}
 .summit-img-section{padding-bottom:400px;}
 .img-video-presentation{width:100%;max-width:500px;display:inline-block;margin-right:auto;margin-left:auto;margin-bottom:35px;}
 .containWrapper{padding-top:30px;padding-bottom:30px;}
-.partnerLogo {
-    max-width: 250px;
-  }
-.partnerLogo-lux {
-    max-width: 110px;
-  }
+.partnerLogo{max-width:210px;}
+.partnerLogo-lux{max-width:100px;}
 
 
 /* 38. f. - Embed */
