@@ -58,7 +58,7 @@ class FundingPage extends Component {
                   — Naval Ravikant at Blockstack Summit 2017
                 </p>
                 <div className="col-sm-9 col-md-7 col-centered m-b-65">
-                  <Link to="/whitepaper.pdf" target="_blank" className="btn btn-electric-blue btn-block">
+                  <Link to="https://goo.gl/forms/5jAfojqWiqe4vBzb2" target="_blank" className="btn btn-electric-blue btn-block">
                     Apply Here!
                   </Link>
                 </div>
@@ -153,7 +153,7 @@ class FundingPage extends Component {
                       You can apply as an individual or team by filling out the application form below or at the top of the page:
                     </p>
                     <div className="col-sm-9 col-md-7 col-centered m-b-45">
-                      <Link to="/whitepaper.pdf" target="_blank" className="btn btn-electric-blue btn-block">
+                      <Link to="https://goo.gl/forms/5jAfojqWiqe4vBzb2" target="_blank" className="btn btn-electric-blue btn-block">
                         Apply Here!
                       </Link>
                     </div>
