@@ -13,6 +13,8 @@ import Header              from '../components/Header'
 import TokenBanner         from '../components/TokenBanner'
 import ContentSection      from '../components/ContentSection'
 import VideosPresentation  from '../components/VideosPresentation'
+import {featuredApps}      from '../config'
+
 
 function mapStateToProps(state) {
   return {
@@ -186,21 +188,38 @@ class FundingPage extends Component {
               <section>
                 <div className="containWrapper">
                   <div className="container sectionWrap">
-                    <div className="col-md-10 col-centered">
                     <p className="lead-lg text-xs-center col-md-10 col-centered m-b-45">
                       In Partnership with:
                     </p>
-                    <div className="col-sm-9 col-md-7 col-centered m-b-45">
-                      <Link to="/whitepaper.pdf" target="_blank" className="btn btn-electric-blue btn-block">
-                        Apply Here!
-                      </Link>
+                    <div className="col-md-4 m-b-55">
+                      <p className="text-center">
+                        <Image className="col-img" src="/images/logos/app-icon-ongaku-ryoho.png"
+                          retinaSupport={false} />
+                      </p>
                     </div>
-                    <p className="lead-lg text-xs-center">
-                      Once you apply, we’ll provide you with some starter materials to get started building apps on Blockstack.
-                    </p>
-                    <p className="lead-lg text-xs-center">
-                      Members of the Blockstack team will reach out to you if there’s interest in working more closely to build a team (if needed) and a product using Blockstack. Projects will be selected for funding consideration and support.
-                    </p>
+                    <div className="col-md-4 m-b-55">
+                      <p className="text-center">
+                        <Image className="col-img" src="/images/logos/app-icon-ongaku-ryoho.png"
+                          retinaSupport={false} />
+                      </p>
+                    </div>
+                    <div className="col-md-4 m-b-55">
+                      <p className="text-center">
+                        <Image className="col-img" src="/images/logos/app-icon-ongaku-ryoho.png"
+                          retinaSupport={false} />
+                      </p>
+                    </div>
+                    <div className="col-md-6 m-b-55">
+                      <p className="text-center">
+                        <Image className="col-img" src="/images/logos/app-icon-ongaku-ryoho.png"
+                          retinaSupport={false} />
+                      </p>
+                    </div>
+                    <div className="col-md-6 m-b-55">
+                      <p className="text-center">
+                        <Image className="col-img" src="/images/logos/app-icon-ongaku-ryoho.png"
+                          retinaSupport={false} />
+                      </p>
                     </div>
                   </div>
                 </div>
