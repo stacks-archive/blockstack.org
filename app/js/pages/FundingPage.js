@@ -131,33 +131,6 @@ class FundingPage extends Component {
                 <div className="containWrapper">
                   <div className="container sectionWrap">
                     <div className="col-md-10 col-centered">
-                    <h3 className="text-xs-center m-b-65">
-                      How to Apply
-                    </h3>
-                    <p className="lead-lg text-xs-center col-md-10 col-centered m-b-45">
-                      You can apply as an individual or team by filling out the application form below or at the top of the page:
-                    </p>
-                    <div className="col-sm-9 col-md-7 col-centered m-b-45">
-                      <Link to="https://goo.gl/forms/Z1JbxmqLaLz9bz053" target="_blank" className="btn btn-electric-blue btn-block">
-                        Apply Here!
-                      </Link>
-                    </div>
-                    <p className="lead-lg text-xs-center">
-                      Once you apply, we’ll provide you with some starter materials to get started building apps on Blockstack.
-                    </p>
-                    <p className="lead-lg text-xs-center">
-                      Members of the Blockstack team will reach out to you if there’s interest in working more closely to build a team (if needed) and a product using Blockstack. Projects will be selected for funding consideration and support.
-                    </p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </div>
-            <div className="sectionContainerLight section-spacing container-fluid">
-              <section>
-                <div className="containWrapper">
-                  <div className="container sectionWrap">
-                    <div className="col-md-10 col-centered">
                     <h3 className="text-xs-center m-b-45">
                       What is Blockstack?
                     </h3>
@@ -169,7 +142,7 @@ class FundingPage extends Component {
                 </div>
               </section>
             </div>
-            <div className="sectionContainerLightGray section-spacing container-fluid">
+            <div className="sectionContainerLight section-spacing container-fluid">
               <section>
                 <div className="containWrapper">
                   <div className="container sectionWrap">
@@ -215,6 +188,33 @@ class FundingPage extends Component {
                             retinaSupport={false} />
                         </Link>
                       </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div className="sectionContainerLightGray section-spacing container-fluid">
+              <section>
+                <div className="containWrapper">
+                  <div className="container sectionWrap">
+                    <div className="col-md-10 col-centered">
+                    <h3 className="text-xs-center m-b-65">
+                      How to Apply
+                    </h3>
+                    <p className="lead-lg text-xs-center col-md-10 col-centered m-b-45">
+                      You can apply as an individual or team by filling out the application form below or at the top of the page:
+                    </p>
+                    <div className="col-sm-9 col-md-7 col-centered m-b-45">
+                      <Link to="https://goo.gl/forms/Z1JbxmqLaLz9bz053" target="_blank" className="btn btn-electric-blue btn-block">
+                        Apply Here!
+                      </Link>
+                    </div>
+                    <p className="lead-lg text-xs-center">
+                      Once you apply, we’ll provide you with some starter materials to get started building apps on Blockstack.
+                    </p>
+                    <p className="lead-lg text-xs-center">
+                      Members of the Blockstack team will reach out to you if there’s interest in working more closely to build a team (if needed) and a product using Blockstack. Projects will be selected for funding consideration and support.
+                    </p>
                     </div>
                   </div>
                 </div>

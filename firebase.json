@@ -154,6 +154,21 @@
     ],
     "redirects": [
       {
+        "source": "/token/",
+        "destination": "/token",
+        "type": 301
+      },
+      {
+        "source": "/summit2017/",
+        "destination": "/summit2017",
+        "type": 301
+      },
+      {
+        "source": "/funding/",
+        "destination": "/funding",
+        "type": 301
+      },
+      {
         "source": "/fund",
         "destination": "/funding",
         "type": 301
