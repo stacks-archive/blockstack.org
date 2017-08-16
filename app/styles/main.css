@@ -300,6 +300,10 @@ display-6{font-size:1rem;}
   font-size: 1.125rem;
   font-weight: 400;
 }
+.terms-sm {
+  font-size: 13px;
+  line-height: 20px;
+}
 /* Revisit Type */
 a{font-weight:400;color:#E91E63;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
 a:hover,a:focus{font-weight:400;color:#E91E63;text-decoration:underline;}
