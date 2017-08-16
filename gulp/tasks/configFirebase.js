@@ -55,6 +55,10 @@ gulp.task('configFirebase', () => {
   */
   const redirectRules = [
     {
+      'source': '/fund',
+      'destination': '/funding'
+    },
+    {
       'source': '/docs/blockchain-identity',
       'destination': '/posts/blockchain-identity',
     },

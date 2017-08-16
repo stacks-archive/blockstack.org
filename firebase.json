@@ -154,6 +154,11 @@
     ],
     "redirects": [
       {
+        "source": "/fund",
+        "destination": "/funding",
+        "type": 301
+      },
+      {
         "source": "/docs/blockchain-identity",
         "destination": "/posts/blockchain-identity",
         "type": 301
