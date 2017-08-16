@@ -32,7 +32,7 @@ class FundingPage extends Component {
 
   render() {
     return (
-      <DocumentTitle title="Blockstack Summit 2017">
+      <DocumentTitle title="Blockstack Signature Fund">
         <div className="video-special-hero">
           <div className="col-centered block">
             <TokenBanner />
@@ -60,39 +60,23 @@ class FundingPage extends Component {
               </section>
             </div>
             <div className="sectionContainerLight section-spacing container-fluid">
-              <div className="container">
-                <section>
-                  <div className="containWrap">
-                    <ContentSection markup="
-                      <p>
-                        On July 27th, 2017, we hosted the Blockstack Summit at 
-                        the Computer History Museum. It was a day to take 
-                        people back to the original dream of the internet back 
-                        in 1989 -- one of a shared space where we could be free 
-                        to create together. Attendees and speakers from all 
-                        over the world came together for this one day event to 
-                        envision a new internet built for freedom, security, 
-                        and innovation.
-                      </p>
-                      <p>
-                        It was a star-studded lineup of speakers and they did 
-                        not disappoint. You'll find videos and photos below 
-                        from the event. We hope you enjoy them as much as we 
-                        did, and would love to hear what your favorite parts 
-                        were by tweeting your favorite speaker quotes and clips 
-                        mentioning @blockstackorg.
-                      </p>" />
+              <section>
+                <div className="containWrapper">
+                  <div className="container sectionWrap">
+                    <div className="col-md-10 col-centered">
+                    <h3 className="text-xs-center m-b-65">
+                      The Signature Fund for Blockstack is a $25M fund aimed at growing an ecosystem of decentralized applications on Blockstack.
+                    </h3>
+                    <p className="lead-lg text-xs-center">
+                      We partnered with thesis-driven VC’s thesis-driven VC's who're aligned with our vision of a decentralized internet like Lux Capital, Rising Tide, Compound, OpenOcean, and VersionOne to fund app developers and teams looking to build their apps on the new fully decentralized internet. App creators will benefit directly from the deep expertise and insight of these experienced investors.
+                    </p>
+                    <p className="lead-lg text-xs-center">
+                      Additionally, those who apply will be first to hear 'x-prize' style prizes/bounties for large initiatives like building a decentralized microblogging platform, funded by investors like Naval Ravikant (founder, AngelList), Albert Wenger (managing partner, USV), and more
+                    </p>
+                    </div>
                   </div>
-                </section>
-              </div>
-            </div>
-            <div className="feature-event-subhero-1">
-              <div className="col-centered block">
-                <div className="container summit-img-section">
-                  <section className="text-xs-center p-b-80">
-                  </section>
                 </div>
-              </div>
+              </section>
             </div>
             <div className="feature-event-subhero-2">
               <div className="col-centered block">
@@ -102,7 +86,63 @@ class FundingPage extends Component {
                 </div>
               </div>
             </div>
-            <VideosPresentation />
+            <div className="sectionContainerLight section-spacing container-fluid">
+              <section>
+                <div className="containWrapper">
+                  <div className="container sectionWrap">
+                    <div className="col-md-10 col-centered">
+                    <h3 className="text-xs-center m-b-65">
+                      The Signature Fund for Blockstack is a $25M fund aimed at growing an ecosystem of decentralized applications on Blockstack.
+                    </h3>
+                    <p className="lead-lg text-xs-center">
+                      We partnered with thesis-driven VC’s thesis-driven VC's who're aligned with our vision of a decentralized internet like Lux Capital, Rising Tide, Compound, OpenOcean, and VersionOne to fund app developers and teams looking to build their apps on the new fully decentralized internet. App creators will benefit directly from the deep expertise and insight of these experienced investors.
+                    </p>
+                    <p className="lead-lg text-xs-center">
+                      Additionally, those who apply will be first to hear 'x-prize' style prizes/bounties for large initiatives like building a decentralized microblogging platform, funded by investors like Naval Ravikant (founder, AngelList), Albert Wenger (managing partner, USV), and more
+                    </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div className="sectionContainerLightGray section-spacing container-fluid">
+              <section>
+                <div className="containWrapper">
+                  <div className="container sectionWrap">
+                    <div className="col-md-10 col-centered">
+                    <h3 className="text-xs-center m-b-65">
+                      The Signature Fund for Blockstack is a $25M fund aimed at growing an ecosystem of decentralized applications on Blockstack.
+                    </h3>
+                    <p className="lead-lg text-xs-center">
+                      We partnered with thesis-driven VC’s thesis-driven VC's who're aligned with our vision of a decentralized internet like Lux Capital, Rising Tide, Compound, OpenOcean, and VersionOne to fund app developers and teams looking to build their apps on the new fully decentralized internet. App creators will benefit directly from the deep expertise and insight of these experienced investors.
+                    </p>
+                    <p className="lead-lg text-xs-center">
+                      Additionally, those who apply will be first to hear 'x-prize' style prizes/bounties for large initiatives like building a decentralized microblogging platform, funded by investors like Naval Ravikant (founder, AngelList), Albert Wenger (managing partner, USV), and more
+                    </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div className="sectionContainerLight section-spacing container-fluid">
+              <section>
+                <div className="containWrapper">
+                  <div className="container sectionWrap">
+                    <div className="col-md-10 col-centered">
+                    <h3 className="text-xs-center m-b-65">
+                      The Signature Fund for Blockstack is a $25M fund aimed at growing an ecosystem of decentralized applications on Blockstack.
+                    </h3>
+                    <p className="lead-lg text-xs-center">
+                      We partnered with thesis-driven VC’s thesis-driven VC's who're aligned with our vision of a decentralized internet like Lux Capital, Rising Tide, Compound, OpenOcean, and VersionOne to fund app developers and teams looking to build their apps on the new fully decentralized internet. App creators will benefit directly from the deep expertise and insight of these experienced investors.
+                    </p>
+                    <p className="lead-lg text-xs-center">
+                      Additionally, those who apply will be first to hear 'x-prize' style prizes/bounties for large initiatives like building a decentralized microblogging platform, funded by investors like Naval Ravikant (founder, AngelList), Albert Wenger (managing partner, USV), and more
+                    </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
           </div>
         </div>
       </DocumentTitle>

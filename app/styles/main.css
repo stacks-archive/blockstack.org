@@ -295,6 +295,11 @@ display-4{font-size:1.375rem;}
 display-5{font-size:1.125rem;}
 display-6{font-size:1rem;}
 
+/* Lead */
+.lead-lg {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
 /* Revisit Type */
 a{font-weight:400;color:#E91E63;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
 a:hover,a:focus{font-weight:400;color:#E91E63;text-decoration:underline;}
@@ -450,6 +455,8 @@ a.tokenBanner:hover{background-color:#2378CC;}
 .img-summit-hero{width:50%;}
 .summit-img-section{padding-bottom:400px;}
 .img-video-presentation{width:100%;max-width:500px;display:inline-block;margin-right:auto;margin-left:auto;margin-bottom:35px;}
+.containWrapper{padding-top:30px;padding-bottom:30px;}
+
 
 
 /* 38. f. - Embed */
