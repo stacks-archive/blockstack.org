@@ -123,14 +123,13 @@ class FundingPage extends Component {
                 <div className="containWrapper">
                   <div className="container sectionWrap">
                     <div className="col-md-10 col-centered">
-                    <h3 className="text-xs-center m-b-65">
-                      The Signature Fund for Blockstack is a $25M fund aimed at growing an ecosystem of decentralized applications on Blockstack.
+                    <h3 className="text-xs-center m-b-45">
+                      Why Apply?
                     </h3>
                     <p className="lead-lg text-xs-center">
-                      We partnered with thesis-driven VC’s thesis-driven VC's who're aligned with our vision of a decentralized internet like Lux Capital, Rising Tide, Compound, OpenOcean, and VersionOne to fund app developers and teams looking to build their apps on the new fully decentralized internet. App creators will benefit directly from the deep expertise and insight of these experienced investors.
-                    </p>
-                    <p className="lead-lg text-xs-center">
-                      Additionally, those who apply will be first to hear 'x-prize' style prizes/bounties for large initiatives like building a decentralized microblogging platform, funded by investors like Naval Ravikant (founder, AngelList), Albert Wenger (managing partner, USV), and more
+                      These is an early step to building a sustainable, responsible ecosystem.
+                      Just like building skyscraper, we are now pouring the concrete foundation.
+                      There will be many more layers to come.
                     </p>
                     </div>
                   </div>
@@ -143,13 +142,21 @@ class FundingPage extends Component {
                   <div className="container sectionWrap">
                     <div className="col-md-10 col-centered">
                     <h3 className="text-xs-center m-b-65">
-                      The Signature Fund for Blockstack is a $25M fund aimed at growing an ecosystem of decentralized applications on Blockstack.
+                      How to Apply
                     </h3>
+                    <p className="lead-lg text-xs-center col-md-10 col-centered m-b-45">
+                      You can apply as an individual or team by filling out the application form below or at the top of the page:
+                    </p>
+                    <div className="col-sm-9 col-md-7 col-centered m-b-45">
+                      <Link to="/whitepaper.pdf" target="_blank" className="btn btn-electric-blue btn-block">
+                        Apply Here!
+                      </Link>
+                    </div>
                     <p className="lead-lg text-xs-center">
-                      We partnered with thesis-driven VC’s thesis-driven VC's who're aligned with our vision of a decentralized internet like Lux Capital, Rising Tide, Compound, OpenOcean, and VersionOne to fund app developers and teams looking to build their apps on the new fully decentralized internet. App creators will benefit directly from the deep expertise and insight of these experienced investors.
+                      Once you apply, we’ll provide you with some starter materials to get started building apps on Blockstack.
                     </p>
                     <p className="lead-lg text-xs-center">
-                      Additionally, those who apply will be first to hear 'x-prize' style prizes/bounties for large initiatives like building a decentralized microblogging platform, funded by investors like Naval Ravikant (founder, AngelList), Albert Wenger (managing partner, USV), and more
+                      Members of the Blockstack team will reach out to you if there’s interest in working more closely to build a team (if needed) and a product using Blockstack. Projects will be selected for funding consideration and support.
                     </p>
                     </div>
                   </div>
