@@ -465,7 +465,6 @@ a.tokenBanner:hover{background-color:#2378CC;}
 
 
 /* 38. f. - Embed */
-
 .video-special {
   display: block;
   width: 640px;
@@ -473,15 +472,20 @@ a.tokenBanner:hover{background-color:#2378CC;}
   margin-right: auto;
   margin-left: auto;
 }
-.video-special-container{
+.video-special-container {
   display: block;
   background-color: #1A1D1F;
   width: 100%;
+  height: 100%;
   max-height: 364px;
   margin-top: 100px;
   padding-top: 2px;
   padding-bottom: 2px;
   text-align: center;
+}
+div.container-fluid.video-special-container > div > iframe {
+  width: 100%;
+  min-height: 250px;
 }
 
 
@@ -698,13 +702,34 @@ section{word-break:break-word;}
   .col3-img-lg{width:110%;max-width:310px;}
   .feature-event-subhero-1{display:block;background-color:#1C1314!important;background:url(../images/photos/blockstack-summit-2017-naval-ryan.jpg) no-repeat center center fixed;background-size:cover;}
   .feature-event-subhero-2{display:block;background-color:#1C1314!important;background:url(../images/photos/blockstack-summit-2017-ryan-0040.jpg) no-repeat center center fixed;background-size:cover;}
-  .partnerLogo-openocean {
-    max-width: 210px;
-  }
+  .partnerLogo-openocean{max-width:210px;}
 
   /* 38. f. - Embed */
-  .video-special{display:block;width:640px;height:360px;margin-right:auto;margin-left:auto;}
-  .video-special-container{display:block;background-color:#1A1D1F;width:100%;max-height:364px;margin-top:100px;padding-top:2px;padding-bottom:2px;text-align:center;}
+  .video-special {
+    display: block;
+    width: 640px;
+    height: 360px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .video-special-container {
+    display: block;
+    background-color: #1A1D1F;
+    width: 100%;
+    max-height: 364px;
+    margin-top: 100px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+  }
+  div.container-fluid.video-special-container > div > iframe {
+    width: 640px;
+    height: 360px;
+    min-height: initial;
+  }
+
+
+
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -754,6 +779,29 @@ section{word-break:break-word;}
   .simple-featurette{margin-top:155px;}
   .sectionWrap{padding-right:15px;padding-left:15px;}
   .col3-img-lg{width:unset;max-width:310px;}
+
+  /* 38. f. - Embed */
+  .video-special {
+    display: block;
+    width: 711px;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .video-special-container {
+    display: block;
+    background-color: #1A1D1F;
+    width: 100%;
+    max-height: 404px;
+    margin-top: 100px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+  }
+  div.container-fluid.video-special-container > div > iframe {
+    width: 711px;
+    height: 400px;
+  }
 
   /* Footer */
   .foot-left-col{width:22.3%}

@@ -99,16 +99,16 @@ class FundingPage extends Component {
                       <h3 className="text-xs-center">
                         “Less white paper hype, more working code.”
                       </h3>
-                      <p className="hero-lead m-b-65">
+                      <p className="hero-lead p-b-65">
                         — Jeremy Welch, Casa App Founder at Blockstack Summit 2017
                       </p>
-                      <p className="lead-lg text-xs-center m-b-45">
+                      <p className="lead-lg text-xs-center m-b-95">
                         There’s a lot of excitement about building decentralized applications, but we know it is still early days. At Blockstack we’ve created the core infrastructure to enable developers to build these applications, but we realize that to increase an app’s chances of success, it will require access to capital and tools to bootstrap networks.
                       </p>
                       <p className="lead-lg m-b-25">
                          We think in the long term it’s not just about raising a round or a token, but more about forging an ecosystem that keeps your application thriving. Here are just a few of the methods opening up to applications being built on Blockstack:
                       </p>
-                      <p className="lead-lg col-md-10 col-centered m-b-65">
+                      <p className="lead-lg col-md-10 col-centered m-b-95">
                         <ul>
                           <li>VC-led Funding: Blockstack Apps will get access to and capital from some of the best minds in the space.</li>
                           <li>Token: Blockstack Apps will be able to offer tokens on top of the Blockstack ecosystem, just like ERC20 tokens on Ethereum.</li>
