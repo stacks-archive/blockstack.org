@@ -160,7 +160,7 @@ class FundingPage extends Component {
                     <div className="col-md-4 m-b-55">
                       <p className="text-center">
                         <Link to="http://versionone.vc/" target="_blank">
-                          <Image className="col-img partnerLogo" src="/images/logos/partner-logo-versionone.png"
+                          <Image className="col-img partnerLogo" src="/images/logos/partner-logo-versionone.svg"
                             retinaSupport={false} />
                         </Link>
                       </p>
