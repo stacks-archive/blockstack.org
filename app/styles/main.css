@@ -461,7 +461,7 @@ a.tokenBanner:hover{background-color:#2378CC;}
 .img-video-presentation{width:100%;max-width:500px;display:inline-block;margin-right:auto;margin-left:auto;margin-bottom:35px;}
 .containWrapper{padding-top:30px;padding-bottom:30px;}
 .partnerLogo{max-width:210px;}
-.partnerLogo-lux{max-width:100px;}
+.partnerLogo-lux{max-width:80px;}
 
 
 /* 38. f. - Embed */
@@ -703,6 +703,7 @@ section{word-break:break-word;}
   .feature-event-subhero-1{display:block;background-color:#1C1314!important;background:url(../images/photos/blockstack-summit-2017-naval-ryan.jpg) no-repeat center center fixed;background-size:cover;}
   .feature-event-subhero-2{display:block;background-color:#1C1314!important;background:url(../images/photos/blockstack-summit-2017-ryan-0040.jpg) no-repeat center center fixed;background-size:cover;}
   .partnerLogo-openocean{max-width:210px;}
+  .partnerLogo-lux{max-width:90px;}
 
   /* 38. f. - Embed */
   .video-special {

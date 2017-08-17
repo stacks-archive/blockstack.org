@@ -168,7 +168,7 @@ class FundingPage extends Component {
                     <div className="col-md-4 m-b-55">
                       <p className="text-center">
                         <Link to="http://rtf.vc/" target="_blank">
-                          <Image className="col-img partnerLogo" src="/images/logos/partner-logo-risingtide.png"
+                          <Image className="col-img partnerLogo" src="/images/logos/partner-logo-risingtide.svg"
                             retinaSupport={false} />
                         </Link>
                       </p>
@@ -176,7 +176,7 @@ class FundingPage extends Component {
                     <div className="col-md-6 m-b-55">
                       <p className="text-center">
                         <Link to="http://www.luxcapital.com/" target="_blank">
-                          <Image className="col-img partnerLogo-lux" src="/images/logos/partner-logo-lux.png"
+                          <Image className="col-img partnerLogo-lux" src="/images/logos/partner-logo-lux.svg"
                             retinaSupport={false} />
                         </Link>
                       </p>
@@ -184,7 +184,7 @@ class FundingPage extends Component {
                     <div className="col-md-6 m-b-55">
                       <p className="text-center">
                         <Link to="http://openocean.vc/" target="_blank">
-                          <Image className="col-img partnerLogo" src="/images/logos/partner-logo-openocean.svg"
+                          <Image className="col-img partnerLogo-openocean" src="/images/logos/partner-logo-openocean.svg"
                             retinaSupport={false} />
                         </Link>
                       </p>
