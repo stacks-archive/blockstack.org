@@ -32,8 +32,11 @@ class App extends Component {
 
   render() {
     let specialHeader = false
+    const pathname = location.pathname.replace(/\/$/, '')
     if (location.pathname === '/' ||
-        location.pathname === '/token') {
+        pathname === '/token' ||
+        pathname === '/summit2017' ||
+        pathname === '/funding') {
       specialHeader = true
     }
 

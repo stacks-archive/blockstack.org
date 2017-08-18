@@ -68,6 +68,12 @@ class Footer extends Component {
                 <li>
                   <Link to={links.youtube} target="_blank">YouTube</Link>
                 </li>
+                <li>
+                  <Link to="/summit2017">Summit 2017</Link>
+                </li>
+                <li>
+                  <Link to="/funding">Funding</Link>
+                </li>
               </ul>
             </div>
             <div className="col-xs-6 col-lg-2">
