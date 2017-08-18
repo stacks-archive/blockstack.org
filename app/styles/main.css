@@ -460,8 +460,12 @@ a.tokenBanner:hover{background-color:#2378CC;}
 .summit-img-section{padding-bottom:400px;}
 .img-video-presentation{width:100%;max-width:500px;display:inline-block;margin-right:auto;margin-left:auto;margin-bottom:35px;}
 .containWrapper{padding-top:30px;padding-bottom:30px;}
-.partnerLogo{max-width:210px;}
-.partnerLogo-lux{max-width:80px;}
+.partnerLogo{max-width:200px;}
+  .partnerLogo-compound{max-width:190px;}
+  .partnerLogo-versionone{max-width:195px;}
+  .partnerLogo-risingtide{max-width: 230px;}
+  .partnerLogo-lux{max-width:70px;}
+  .partnerLogo-openocean{}
 
 
 /* 38. f. - Embed */
@@ -581,9 +585,6 @@ section{word-break:break-word;}
 
 /* Custom break for sticky share since overlaping container at normal breaks*/
 
-@media (min-width:830px){
-  .sticky-share{display:flex!important;}
-}
 
 @media (min-width: 576px){
   .navbar-toggler,.navbar-toggler.collapsed{display:none;}
@@ -672,7 +673,6 @@ section{word-break:break-word;}
   .feature-logo-3{margin-top:8px;}
   .feature-logo-4{margin-top:10px;}
   .feature-logo-5{margin-top:35px;}
-
   
   /* 37. Misc. */
   .slides{padding-top:80px;padding-right:0;padding-left:0;}
@@ -701,33 +701,21 @@ section{word-break:break-word;}
   .no-padding-sm{padding-right:15px;padding-left:15px;}
   .col3-img-lg{width:110%;max-width:310px;}
   .feature-event-subhero-1{display:block;background-color:#1C1314!important;background:url(../images/photos/blockstack-summit-2017-naval-ryan.jpg) no-repeat center center fixed;background-size:cover;}
-  .feature-event-subhero-2{display:block;background-color:#1C1314!important;background:url(../images/photos/blockstack-summit-2017-ryan-0040.jpg) no-repeat center center fixed;background-size:cover;}
-  .partnerLogo-openocean{max-width:210px;}
-  .partnerLogo-lux{max-width:90px;}
+  .feature-event-subhero-2{display:block;background-color:#1C1314!important;background:url(../images/photos/blockstack-summit-2017-ryan-0040.jpg) no-repeat center center fixed;background-size:cover;}  
+  .partnerLogo-compound{max-width:190px;margin-top:27px;}
+  .partnerLogo-versionone{max-width:200px;margin-top:20px;}
+  .partnerLogo-risingtide{margin-top:22px;}
+  .partnerLogo-lux{max-width:90px;margin-left:125px;}
+  .partnerLogo-openocean{max-width:200px;margin-right:125px;}
 
   /* 38. f. - Embed */
-  .video-special {
-    display: block;
-    width: 640px;
-    height: 360px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .video-special-container {
-    display: block;
-    background-color: #1A1D1F;
-    width: 100%;
-    max-height: 364px;
-    margin-top: 100px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    text-align: center;
-  }
-  div.container-fluid.video-special-container > div > iframe {
-    width: 640px;
-    height: 360px;
-    min-height: initial;
-  }
+  .video-special{display:block;width:640px;height:360px;margin-right:auto;margin-left:auto;}
+  .video-special-container{display:block;background-color:#1A1D1F;width:100%;max-height:364px;margin-top:100px;padding-top:2px;padding-bottom:2px;text-align:center;}
+  div.container-fluid.video-special-container > div > iframe{width:640px;height:360px;min-height:initial;}
+}
+
+@media (min-width:830px){
+  .sticky-share{display:flex!important;}
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -779,27 +767,9 @@ section{word-break:break-word;}
   .col3-img-lg{width:unset;max-width:310px;}
 
   /* 38. f. - Embed */
-  .video-special {
-    display: block;
-    width: 711px;
-    height: 400px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .video-special-container {
-    display: block;
-    background-color: #1A1D1F;
-    width: 100%;
-    max-height: 404px;
-    margin-top: 100px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    text-align: center;
-  }
-  div.container-fluid.video-special-container > div > iframe {
-    width: 711px;
-    height: 400px;
-  }
+  .video-special{display:block;width:711px;height:400px;margin-right:auto;margin-left:auto;}
+  .video-special-container{display:block;background-color:#1A1D1F;width:100%;max-height:404px;margin-top:100px;padding-top:2px;padding-bottom:2px;text-align:center;}
+  div.container-fluid.video-special-container > div > iframe{width:711px;height:400px;}
 
   /* Footer */
   .foot-left-col{width:22.3%}
@@ -817,28 +787,14 @@ section{word-break:break-word;}
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width:1200px){
   /* 38. f. - Embed */
-  .video-special {
-    display: block;
-    width: 711px;
-    height: 400px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .video-special-container {
-    display: block;
-    background-color: #1A1D1F;
-    width: 100%;
-    max-height: 404px;
-    margin-top: 100px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    text-align: center;
-  }
-  div.container-fluid.video-special-container > div > iframe {
-    width: 711px;
-    height: 400px;
-  }
+  .video-special{display:block;width:711px;height:400px;margin-right:auto;margin-left:auto;}
+  .video-special-container{display:block;background-color:#1A1D1F;width:100%;max-height:404px;margin-top:100px;padding-top:2px;padding-bottom:2px;text-align:center;}
+  div.container-fluid.video-special-container > div > iframe{width:711px;height:400px;}
 }
+
+
+
+/* max-widths */
 
 /* x-Small devices */
 @media (max-width:348px){

@@ -149,45 +149,49 @@ class FundingPage extends Component {
                     <p className="lead-lg text-xs-center col-md-10 col-centered m-b-45">
                       In Partnership with:
                     </p>
-                    <div className="col-md-4 m-b-55">
-                      <p className="text-center">
-                        <Link to="https://compound.vc/" target="_blank">
-                          <Image className="col-img partnerLogo" src="/images/logos/partner-logo-compound.svg"
-                            retinaSupport={false} />
-                        </Link>
-                      </p>
+                    <div className="container-fluid">
+                      <div className="col-md-4 m-b-55">
+                        <p className="text-center">
+                          <Link to="https://compound.vc/" target="_blank">
+                            <Image className="col-img partnerLogo partnerLogo-compound" src="/images/logos/partner-logo-compound.svg"
+                              retinaSupport={false} />
+                          </Link>
+                        </p>
+                      </div>
+                      <div className="col-md-4 m-b-55">
+                        <p className="text-center">
+                          <Link to="http://versionone.vc/" target="_blank">
+                            <Image className="col-img partnerLogo partnerLogo-versionone" src="/images/logos/partner-logo-versionone.svg"
+                              retinaSupport={false} />
+                          </Link>
+                        </p>
+                      </div>
+                      <div className="col-md-4 m-b-55">
+                        <p className="text-center">
+                          <Link to="http://rtf.vc/" target="_blank">
+                            <Image className="col-img partnerLogo partnerLogo-risingtide" src="/images/logos/partner-logo-risingtide.svg"
+                              retinaSupport={false} />
+                          </Link>
+                        </p>
+                      </div>
                     </div>
-                    <div className="col-md-4 m-b-55">
-                      <p className="text-center">
-                        <Link to="http://versionone.vc/" target="_blank">
-                          <Image className="col-img partnerLogo" src="/images/logos/partner-logo-versionone.svg"
-                            retinaSupport={false} />
-                        </Link>
-                      </p>
-                    </div>
-                    <div className="col-md-4 m-b-55">
-                      <p className="text-center">
-                        <Link to="http://rtf.vc/" target="_blank">
-                          <Image className="col-img partnerLogo" src="/images/logos/partner-logo-risingtide.svg"
-                            retinaSupport={false} />
-                        </Link>
-                      </p>
-                    </div>
-                    <div className="col-md-6 m-b-55">
-                      <p className="text-center">
-                        <Link to="http://www.luxcapital.com/" target="_blank">
-                          <Image className="col-img partnerLogo partnerLogo-lux" src="/images/logos/partner-logo-lux.svg"
-                            retinaSupport={false} />
-                        </Link>
-                      </p>
-                    </div>
-                    <div className="col-md-6 m-b-55">
-                      <p className="text-center">
-                        <Link to="http://openocean.vc/" target="_blank">
-                          <Image className="col-img partnerLogo partnerLogo-openocean" src="/images/logos/partner-logo-openocean.svg"
-                            retinaSupport={false} />
-                        </Link>
-                      </p>
+                    <div className="container-fluid">
+                      <div className="col-md-6 m-b-55">
+                        <p className="text-center">
+                          <Link to="http://www.luxcapital.com/" target="_blank">
+                            <Image className="col-img partnerLogo partnerLogo-lux" src="/images/logos/partner-logo-lux.svg"
+                              retinaSupport={false} />
+                          </Link>
+                        </p>
+                      </div>
+                      <div className="col-md-6 m-b-55">
+                        <p className="text-center">
+                          <Link to="http://openocean.vc/" target="_blank">
+                            <Image className="col-img partnerLogo partnerLogo-openocean" src="/images/logos/partner-logo-openocean.svg"
+                              retinaSupport={false} />
+                          </Link>
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
