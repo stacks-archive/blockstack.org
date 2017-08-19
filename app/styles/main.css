@@ -465,12 +465,12 @@ a.tokenBanner:hover{background-color:#2378CC;}
 .partnerLogo-versionone{max-width:195px;}
 .partnerLogo-risingtide{max-width: 230px;}
 .partnerLogo-lux{max-width:70px;}
-
+.sig-logo-space{margin-top:40px;margin-bottom:30px;}
 
 /* 38. f. - Embed */
 .video-special{display:block;width:640px;height:360px;margin-right:auto;margin-left:auto;}
-.video-special-container{display:block;background-color:#1A1D1F;width:100%;height:100%;max-height:364px;margin-top:100px;padding-top:2px;padding-bottom:2px;text-align:center;}
-div.container-fluid.video-special-container > div > iframe{width:100%;min-height:250px;}
+.video-special-container{display:block;background-color:#1A1D1F;width:100%;height:100%;max-height:254px;margin-top:50px;padding-top:2px;padding-bottom:2px;text-align:center;}
+div.container-fluid.video-special-container > div > iframe{width:100%;height:250px;}
 
 
 /* Summit page */
@@ -687,6 +687,7 @@ section{word-break:break-word;}
   .partnerLogo-risingtide{margin-top:22px;}
   .partnerLogo-lux{max-width:90px;margin-left:125px;}
   .partnerLogo-openocean{max-width:200px;margin-right:125px;}
+  .sig-logo-space{margin-top:50px;margin-bottom:40px;}
 
   /* 38. f. - Embed */
   .video-special{display:block;width:640px;height:360px;margin-right:auto;margin-left:auto;}

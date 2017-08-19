@@ -36,7 +36,7 @@ class FundingPage extends Component {
           <div className="col-centered block">
             <TokenBanner />
             <Header transparent={true} />
-            <div className="container-fluid p-b-90">
+            <div className="container-fluid">
               <div className="row">
                 <div className="container-fluid video-special-container no-padding">
                   <div class="embed-responsive embed-responsive-16by9 video-special">
@@ -45,7 +45,7 @@ class FundingPage extends Component {
                 </div>
               </div>
               <section className="text-xs-center">
-                <Image className="blockstack-signature-fund-logo-md m-t-55 m-b-45"
+                <Image className="blockstack-signature-fund-logo-md sig-logo-space"
                   src="/images/logos/blockstack-signature-fund-logo-rev.svg"
                   retinaSupport={false} />
                 <p className="lead-lg text-white col-md-8 col-centered p-b-10">
