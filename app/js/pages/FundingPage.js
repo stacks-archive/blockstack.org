@@ -38,7 +38,7 @@ class FundingPage extends Component {
             <Header transparent={true} />
             <div className="container-fluid p-b-90">
               <div className="row">
-                <div className="container-fluid video-special-container">
+                <div className="container-fluid video-special-container no-padding">
                   <div class="embed-responsive embed-responsive-16by9 video-special">
                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vQSbqwz4TPM" allowFullScreen></iframe>
                   </div>
