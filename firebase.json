@@ -88,6 +88,14 @@
         "destination": "/docs-tutorials-todo-list.html"
       },
       {
+        "source": "/blog/the-signature-fund-for-app-development-on-blockstack",
+        "destination": "/blog-the-signature-fund-for-app-development-on-blockstack.html"
+      },
+      {
+        "source": "/blog/summit2017-videos",
+        "destination": "/blog-summit2017-videos.html"
+      },
+      {
         "source": "/blog/announcing-blockstack-token-and-mining",
         "destination": "/blog-announcing-blockstack-token-and-mining.html"
       },
@@ -138,14 +146,6 @@
       {
         "source": "/blog/blockstack-core-v0-14-release",
         "destination": "/blog-blockstack-core-v0-14-release.html"
-      },
-      {
-        "source": "/blog/virtualchain-research-paper-published-at-dccl16",
-        "destination": "/blog-virtualchain-research-paper-published-at-dccl16.html"
-      },
-      {
-        "source": "/blog/blockstack-research-paper-published-at-usenix-atc16-conference",
-        "destination": "/blog-blockstack-research-paper-published-at-usenix-atc16-conference.html"
       },
       {
         "source": "**",
