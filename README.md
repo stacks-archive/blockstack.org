@@ -1,11 +1,7 @@
 # Blockstack Site
 
-<<<<<<< HEAD
 [![Slack](https://img.shields.io/badge/join-slack-e32072.svg?style=flat)](http://slack.blockstack.org/)
-=======
-[![Slack](http://chat.blockstack.org/badge.svg)](http://chat.blockstack.org/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
->>>>>>> d1a2832ee57b256d51fafedb7da2f0b7d4b822b9
 
 A live version of this site can be found online at https://blockstack.org.
 
