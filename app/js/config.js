@@ -157,10 +157,20 @@ export const blogAuthors = {
     avatar: 'https://s3.amazonaws.com/kd4/muneeb-and-ryan.jpg',
     twitter: 'blockstackorg',
     github: 'blockstack' },
+  'founders.id': { blockstackId: 'blockstack',
+    name: 'Ryan & Muneeb',
+    avatar: 'https://s3.amazonaws.com/kd4/muneeb-and-ryan.jpg',
+    twitter: 'blockstackorg',
+    github: 'blockstack' },
   'mfreed.id': { 'blockstackId': 'mfreed',
     name: 'Mike Freedman',
     avatar: '/images/avatars/mike-freedman.jpg',
     twitter: 'michaelfreedman',
-    github: 'mfreed'
-  }
+    github: 'mfreed' },
+  'stanley1': {
+    blockstackId: 'stanley1',
+    name: 'Patrick Stanley',
+    avatar: 'https://s3.amazonaws.com/kd4/stanley1',
+    twitter: 'patrickwstanley',
+    github: 'pstan26' }
 }
