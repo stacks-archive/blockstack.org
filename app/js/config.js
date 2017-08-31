@@ -167,7 +167,7 @@ export const blogAuthors = {
     avatar: '/images/avatars/mike-freedman.jpg',
     twitter: 'michaelfreedman',
     github: 'mfreed' },
-  'stanley1': {
+  'stanley1.id': {
     blockstackId: 'stanley1',
     name: 'Patrick Stanley',
     avatar: 'https://s3.amazonaws.com/kd4/stanley1',
