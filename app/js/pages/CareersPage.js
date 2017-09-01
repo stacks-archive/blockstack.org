@@ -65,11 +65,11 @@ class CareersPage extends Component {
 
                 <div className="m-t-3 m-b-3">
                 <p>
-                  Blockstack is a global, open source community with over {this.state.stats.meetupUsers.toLocaleString()} developers and over {this.state.stats.domains.toLocaleString()} users.
+                  Blockstack is a global, open source community with over {this.state.stats.meetupUsers.toLocaleString()} developers.
                   It was co-founded by Ryan Shea and Muneeb Ali in 2013 at Princeton and the core team is based in New York City and Hong Kong.
                 </p>
                 <p>
-                  We recently raised a $4M Series A and are grateful to have the confidence of investors like Union Square Ventures, Lux Capital, Shana Fisher, and Naval Ravikant.
+                  We recently raised a Series A and are grateful to have the confidence of investors like Union Square Ventures, Lux Capital, Shana Fisher, and Naval Ravikant.
                 </p>
                 </div>
 
@@ -85,7 +85,7 @@ class CareersPage extends Component {
                       We’re both an open source project and a startup, so transparency is important to us.
                     </li>
                     <li>
-                      We’re located in a cozy office in the lovely NoHo district of Manhattan.
+                      We’re located in a beautiful office in the lovely NoHo district of Manhattan, surrounded by some of the best cafes and restaurants in New York.
                     </li>
                   </ul>
                 </div>
@@ -93,10 +93,10 @@ class CareersPage extends Component {
                 <div className="m-t-3 m-b-3">
                   <div className="row">
                     <div className="col-md-6">
-                      <img src="/images/resources/retreat-2.jpg" style={{ width: '100%' }} />
+                      <img src="/images/photos/office-cheers.jpg" style={{ width: '100%' }} />
                     </div>
                     <div className="col-md-6">
-                      <img src="/images/resources/retreat-1.jpg" style={{ width: '100%' }} />
+                      <img src="/images/photos/retreat-2.jpg" style={{ width: '100%' }} />
                     </div>
                   </div>
                 </div>
@@ -106,7 +106,7 @@ class CareersPage extends Component {
                     Benefits & Perks
                   </h3>
                   <p>
-                    Blockstack offers a competitive salary, employer sponsored health insurance, free daily lunch, a free computer along with accessories to fit your requirements, a professional development budget, a casual workplace, and the standard 2 weeks vacation plus 5 sick days and national holidays.
+                    Blockstack offers a competitive salary, generous equity, employer-sponsored health insurance, free daily lunch, a free computer along with accessories to fit your requirements, a professional development budget, and a casual workplace.
                   </p>
                 </div>
 

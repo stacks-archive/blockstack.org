@@ -27,6 +27,10 @@ export const jobs = [
     'title': 'Backend Engineer',
     'url': 'https://github.com/blockstack/blockstack/blob/master/jobs/backend-engineer.md'
   },
+  {
+    'title': 'Product Manager',
+    'url': 'https://github.com/blockstack/blockstack/blob/master/jobs/product-manager.md'
+  },
 ]
 
 export const featuredApps = [
