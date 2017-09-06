@@ -51,6 +51,9 @@ class Footer extends Component {
                 <li>
                   <Link to="/faq">FAQs</Link>
                 </li>
+                <li>
+                  <Link to="/careers">Careers</Link>
+                </li>
               </ul>
             </div>
             <div className="col-xs-6 col-lg-2">
