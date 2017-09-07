@@ -93,7 +93,7 @@ class CareersPage extends Component {
                 <div className="m-t-3 m-b-3">
                   <div className="row">
                     <div className="col-md-6">
-                      <img src="/images/photos/retreat-2.jpg" style={{ width: '100%' }} />
+                      <img src="/images/photos/retreat-1.jpg" style={{ width: '100%' }} />
                     </div>
                     <div className="col-md-6">
                       <img src="/images/photos/retreat-2.jpg" style={{ width: '100%' }} />
