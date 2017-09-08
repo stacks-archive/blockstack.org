@@ -9,7 +9,6 @@ const EmbedYouTube = ({ src }) => (
     <div className="container no-padding">
       <div className="embed-responsive embed-responsive-16by9">
         <iframe
-          ref="iframeWrapper"
           className="embed-responsive-item"
           src={src}
           frameBorder="0"
