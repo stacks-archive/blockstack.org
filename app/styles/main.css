@@ -170,6 +170,7 @@
 .text-center{text-align:center!important;}
 .text-white{color:#fff;}
 .container{width:100%;}
+.sticky-top{position:sticky;top:0;left:0;}
 
 
 /* 3. Spacing */
@@ -553,8 +554,8 @@ footer > li{list-style:none;}
 .foot-logo{width:115px;}
 section{word-break:break-word;}
 
-
-
+/* FAQ Page */
+.sidebar-wrapper{display:none;}
 
 
 /* Media queries */
@@ -612,7 +613,7 @@ section{word-break:break-word;}
   /* Navbar */
   .navbar-brand img{position:relative;}
   .brand-bug{margin-top:0.625rem;}
-  .brand-logo{margin-right:2.5rem;margin-top:0.8125rem;}  
+  .brand-logo{margin-right:2.5rem;margin-top:0.8125rem;}
   div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-header > nav.navbar > a.navbar-brand{display:block;}
   div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-header > nav.navbar > a.navbar-brand.brand-bug{display:none;}
   .nav-item:first-child{margin-left:.875rem;}
@@ -653,7 +654,7 @@ section{word-break:break-word;}
   .feature-logo-3{margin-top:8px;}
   .feature-logo-4{margin-top:10px;}
   .feature-logo-5{margin-top:35px;}
-  
+
   /* 37. Misc. */
   .slides{padding-top:80px;padding-right:0;padding-left:0;}
   div.col-sm-4.feature-panel.wrap-mob-feat{padding-top:20px;}
@@ -681,13 +682,24 @@ section{word-break:break-word;}
   .no-padding-sm{padding-right:15px;padding-left:15px;}
   .col3-img-lg{width:110%;max-width:310px;}
   .feature-event-subhero-1{display:block;background-color:#1C1314!important;background:url(../images/photos/blockstack-summit-2017-naval-ryan.jpg) no-repeat center center fixed;background-size:cover;}
-  .feature-event-subhero-2{display:block;background-color:#1C1314!important;background:url(../images/photos/blockstack-summit-2017-ryan-0040.jpg) no-repeat center center fixed;background-size:cover;}  
+  .feature-event-subhero-2{display:block;background-color:#1C1314!important;background:url(../images/photos/blockstack-summit-2017-ryan-0040.jpg) no-repeat center center fixed;background-size:cover;}
   .partnerLogo-compound{max-width:190px;margin-top:27px;}
   .partnerLogo-versionone{max-width:200px;margin-top:20px;}
   .partnerLogo-risingtide{margin-top:22px;}
   .partnerLogo-lux{max-width:90px;margin-left:125px;}
   .partnerLogo-openocean{max-width:200px;margin-right:125px;}
   .sig-logo-space{margin-top:50px;margin-bottom:40px;}
+
+  /*Sidebar*/
+  .sidebar-wrapper{display:block;position:relative}
+  .sidebar-content-wrapper{height:86vh;margin-left:30%;overflow:auto;}
+  .faq-sidebar{height:86vh;position:absolute;top:0;left:0;width:30%;background-color:rgba(247,248,249,1);border-right:1px solid rgba(238,238,238,1);overflow:auto;}
+  .list-group{margin-bottom:50px}
+  .list-group-header{font-size:12px;color:rgba(140,140,140,1);text-transform:uppercase;padding-left:20px;margin-top:30px;}
+  .list-group-item{border:none;background-color:rgba(247,248,249,1);padding:4px 20px;}
+  a.list-group-item:hover,a.list-group-item:focus,a.list-group-item.active{color:#E91E63;}
+  a.list-group-item{text-transform:inherit;}
+  .segment-zone{padding:20px 20px 35px 20px;}
 
   /* 38. f. - Embed */
   .video-special{display:block;width:640px;height:360px;margin-right:auto;margin-left:auto;}
@@ -791,4 +803,5 @@ section{word-break:break-word;}
   td{text-align:center;}
   .sticky-share{display:flex!important;flex-direction:row;justify-content:center;align-items:center;width:100%;height:50px;bottom:0!important;left:0;top:initial;z-index:20;background-color:white;border-top:1px solid #f0f0f0;}
   .sticky-share div{margin:10px 10px 10px 10px;}
+  .onename-sidebar{display:none;}
 }
