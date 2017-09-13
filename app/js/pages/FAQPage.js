@@ -4,6 +4,7 @@ import {Component}         from 'react'
 import {Link}              from 'react-router'
 import DocumentTitle       from 'react-document-title'
 import Header              from '../components/Header'
+import Footer              from '../components/Footer'
 import TokenBanner         from '../components/TokenBanner'
 import marked              from 'marked'
 
@@ -78,9 +79,9 @@ class FAQpage extends Component {
             </div>
           </div>
           <div className="sidebar-content-wrapper">
-            <section className="container-fluid spacing-container">
+            <section>
               <div className="container-fluid col-centered segment-wrapper">
-                <div className="m-x-2">
+                <div className="m-y-3 m-x-2">
                   <div>
                     <h1>Frequently Asked Questions</h1>
                   </div>
@@ -98,6 +99,7 @@ class FAQpage extends Component {
                 </div>
               </div>
             </section>
+            <Footer />
           </div>
         </div>
       </DocumentTitle>
