@@ -438,7 +438,7 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .simple-featurette{display:none;}
 .sticky-share{display:none!important;flex-direction:column;justify-content:center;height:150px;position:fixed;top:47%;left:15px;background-color:transparent;}
 .sticky-share > div:hover{cursor:pointer;}
-.media-screen{background-color:#000;width:100%;left:0;top:56px;max-height:618.75px;display:flex;flex-direction:row;justify-content:center;align-items:center;}
+.media-screen{background-color:#000;}
 .media-wrap{width:975px;}
 .media-content{margin-top:35px;}
 .landing-feat-img{width:100%;max-width:696px;}
@@ -471,7 +471,6 @@ a.tokenBanner:hover{background-color:#2378CC;}
 .video-special{display:block;width:640px;height:360px;margin-right:auto;margin-left:auto;}
 .video-special-container{display:block;background-color:#1A1D1F;width:100%;height:100%;max-height:254px;margin-top:50px;padding-top:2px;padding-bottom:2px;text-align:center;}
 div.container-fluid.video-special-container > div > iframe{width:100%;height:250px;}
-
 
 /* Summit page */
 .summit-head-wrap{background:url(/images/visuals/summ-dht.png)no-repeat center -50px;background-color:#53206f;}

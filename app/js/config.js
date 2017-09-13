@@ -27,6 +27,10 @@ export const jobs = [
     'title': 'Backend Engineer',
     'url': 'https://github.com/blockstack/blockstack/blob/master/jobs/backend-engineer.md'
   },
+  {
+    'title': 'Product Manager',
+    'url': 'https://github.com/blockstack/blockstack/blob/master/jobs/product-manager.md'
+  },
 ]
 
 export const featuredApps = [
@@ -167,7 +171,7 @@ export const blogAuthors = {
     avatar: '/images/avatars/mike-freedman.jpg',
     twitter: 'michaelfreedman',
     github: 'mfreed' },
-  'stanley1': {
+  'stanley1.id': {
     blockstackId: 'stanley1',
     name: 'Patrick Stanley',
     avatar: 'https://s3.amazonaws.com/kd4/stanley1',
