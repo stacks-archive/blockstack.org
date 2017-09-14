@@ -83,13 +83,17 @@ class Article extends Component {
     return (
       <section>
         { this.props.youtubeURL ?
-              <EmbedYouTube src={this.props.youtubeURL} />
+              <div className="media-screen">
+                <div className="container no-padding">
+                  <EmbedYouTube src={this.props.youtubeURL} />
+                </div>
+              </div>
             : null }
         <div className="container p-b-5 col-centered media-content" style={{ fontSize: '18px' }}>
           { this.state.title ?
           <div className="container">
             <h1>{this.state.title}</h1>
-            <div className="m-b-1">            
+            <div className="m-b-1">
             </div>
             <div dangerouslySetInnerHTML={{ __html: this.state.markup }}>
             </div>
