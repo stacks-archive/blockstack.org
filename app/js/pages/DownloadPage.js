@@ -73,7 +73,7 @@ class DownloadsPage extends Component {
                       </table>
                     </div>
                     <div>
-                      <h3>Core Server + CLI</h3>
+                      <h3>Run a Full Node</h3>
                       <p>
                         <a href={installationLinks.cliDevelopers} role="button"
                           className="btn btn-outline-primary btn-block">
