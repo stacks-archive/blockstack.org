@@ -5,17 +5,13 @@ const propTypes = {
 }
 
 const EmbedYouTube = ({ src }) => (
-  <div className="media-screen">
-    <div className="container no-padding">
-      <div className="embed-responsive embed-responsive-16by9">
-        <iframe
-          className="embed-responsive-item"
-          src={src}
-          frameBorder="0"
-          allowFullScreen>
-        </iframe>
-      </div>
-    </div>
+  <div className="embed-responsive embed-responsive-16by9">
+    <iframe
+      className="embed-responsive-item"
+      src={src}
+      frameBorder="0"
+      allowFullScreen>
+    </iframe>
   </div>
 )
 
