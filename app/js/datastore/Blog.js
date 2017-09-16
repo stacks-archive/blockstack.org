@@ -4,16 +4,16 @@ const UPDATE_POSTS = 'UPDATE_POSTS'
 
 function updatePosts(postPages) {
   let posts = []
-  let postsObject = {}
+  let postObject = {}
   for (var i = 0; i < postPages.length; i++) {
     posts = posts.concat(postPages[i].postArray)
-    Object.assign(postsObject, postPages[i].postObject)
+    Object.assign(postObject, postPages[i].postObject)
   }
 
   return {
     type: UPDATE_POSTS,
     posts: posts,
-    postsObject: postsObject
+    postObject: postObject
   }
 }
 
