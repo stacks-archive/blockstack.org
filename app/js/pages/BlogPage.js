@@ -35,9 +35,9 @@ class BlogPage extends Component {
   }
 
   componentWillMount() {
-    let pageNumber = this.state.pageNumber
+    //let pageNumber = this.state.pageNumber
     if (this.props.posts.length === 0) {
-      this.props.fetchPosts(pageNumber)
+      this.props.fetchPosts()
     }
   }
 
@@ -48,7 +48,6 @@ class BlogPage extends Component {
       })
     }
     if (nextProps.location !== this.props.location) {
-      console.log(nextProps.location)
       let pageNumber = 1
       if ('page' in nextProps.location.query) {
         pageNumber = parseInt(nextProps.location.query.page)
@@ -56,12 +55,11 @@ class BlogPage extends Component {
       this.setState({
         pageNumber: pageNumber,
       })
-      this.props.fetchPosts(pageNumber)
+      this.props.fetchPosts()
     }
   }
 
   render() {
-    console.log(this.state.pageNumber)
     return (
       <DocumentTitle title="Blockstack - Blog">
         <div>
@@ -96,7 +94,20 @@ class BlogPage extends Component {
                     </div>
                   )
                 }) }
-                <p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </DocumentTitle>
+    )
+  }
+
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(BlogPage)
+
+/*
+<p>
                   { this.state.pageNumber > 1 ?
                   <Link to={'/blog?page=' + (this.state.pageNumber - 1).toString()}
                         className="btn btn-sm btn-outline-primary">
@@ -111,14 +122,4 @@ class BlogPage extends Component {
                   </Link>
                   : null }
                 </p>
-              </div>
-            </div>
-          </section>
-        </div>
-      </DocumentTitle>
-    )
-  }
-
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(BlogPage)
+*/
