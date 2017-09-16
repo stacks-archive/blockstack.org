@@ -13,9 +13,12 @@ function updatePosts(postData) {
   }
 }
 
-function fetchPosts() {
+function fetchPosts(pageNumber) {
   return dispatch => {
-    const url = 'https://blockstack-site-api.herokuapp.com/v1/blog-rss'
+    if (!pageNumber) {
+      pageNumber = 1
+    }
+    const url = 'https://blockstack-site-api.herokuapp.com/v1/blog-rss?page=' + pageNumber
     fetch(url)
     .then((response) => response.text())
     .then((responseText) => {
