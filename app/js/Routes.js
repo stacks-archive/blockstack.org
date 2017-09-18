@@ -41,7 +41,7 @@ export default (
       <IndexRoute component={HomePage} />
       <Route path="/" component={HomePage} />
 
-      <Route path="/users" component={SignUpPage} />
+      <Route path="/signup" component={SignUpPage} />
       <Route path="/developers" component={DevSignUpPage} />
       <Route path="/install" component={DownloadPage} />
 
