@@ -72,15 +72,6 @@ class DownloadsPage extends Component {
                         </tbody>
                       </table>
                     </div>
-                    <div>
-                      <h3>Core Server + CLI</h3>
-                      <p>
-                        <a href={installationLinks.cliDevelopers} role="button"
-                          className="btn btn-outline-primary btn-block">
-                          Instructions on GitHub
-                        </a>
-                      </p>
-                    </div>
                   </div>
                 </section>
               </div>
@@ -94,3 +85,15 @@ class DownloadsPage extends Component {
 }
 
 export default DownloadsPage
+
+/*
+                    <div>
+                      <h3>Core Server + CLI</h3>
+                      <p>
+                        <a href={installationLinks.cliDevelopers} role="button"
+                          className="btn btn-outline-primary btn-block">
+                          Instructions on GitHub
+                        </a>
+                      </p>
+                    </div>
+*/

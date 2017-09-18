@@ -295,12 +295,17 @@
       },
       {
         "source": "/join",
-        "destination": "/users",
+        "destination": "/signup",
         "type": 301
       },
       {
         "source": "/newsletter",
-        "destination": "/users",
+        "destination": "/signup",
+        "type": 301
+      },
+      {
+        "source": "/users",
+        "destination": "/signup",
         "type": 301
       },
       {
