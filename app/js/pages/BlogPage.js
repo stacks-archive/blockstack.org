@@ -23,12 +23,19 @@ class BlogPage extends Component {
   constructor(props) {
     super(props)
 
+    let pageNumber = 1
+    if ('page' in this.props.location.query) {
+      pageNumber = parseInt(this.props.location.query.page)
+    }
+
     this.state = {
-      posts: this.props.posts
+      posts: this.props.posts,
+      pageNumber: pageNumber,
     }
   }
 
   componentWillMount() {
+    //let pageNumber = this.state.pageNumber
     if (this.props.posts.length === 0) {
       this.props.fetchPosts()
     }
@@ -39,6 +46,16 @@ class BlogPage extends Component {
       this.setState({
         posts: nextProps.posts,
       })
+    }
+    if (nextProps.location !== this.props.location) {
+      let pageNumber = 1
+      if ('page' in nextProps.location.query) {
+        pageNumber = parseInt(nextProps.location.query.page)
+      }
+      this.setState({
+        pageNumber: pageNumber,
+      })
+      this.props.fetchPosts()
     }
   }
 
@@ -88,3 +105,21 @@ class BlogPage extends Component {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(BlogPage)
+
+/*
+<p>
+                  { this.state.pageNumber > 1 ?
+                  <Link to={'/blog?page=' + (this.state.pageNumber - 1).toString()}
+                        className="btn btn-sm btn-outline-primary">
+                    Newer Posts
+                  </Link>
+                  : null }
+                  &nbsp;
+                  { this.state.pageNumber < 2 ?
+                  <Link to={'/blog?page=' + (this.state.pageNumber + 1).toString()}
+                        className="btn btn-sm btn-outline-primary">
+                    Older Posts
+                  </Link>
+                  : null }
+                </p>
+*/
