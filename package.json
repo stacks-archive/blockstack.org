@@ -1,6 +1,6 @@
 {
   "name": "blockstack-site",
-  "version": "10.0.0",
+  "version": "10.1.0",
   "author": "Blockstack Inc <admin@blockstack.com>",
   "description": "The website for the Blockstack open source project",
   "scripts": {
@@ -69,9 +69,10 @@
     "bootstrap": "git+https://github.com/blockstack/blockstack-bootstrap.git",
     "font-awesome": "^4.7.0",
     "hasprop": "0.0.4",
-    "highlight.js": "git+https://git@github.com/isagalaev/highlight.js.git",
+    "highlight.js": "git+https://git@github.com/larrysalibra/highlight.js.git",
     "html-metadata": "git+https://github.com/wikimedia/html-metadata.git",
     "is-retina": "^1.0.3",
+    "js-beautify": "1.6.14",
     "jsontokens": "^0.7.6",
     "lodash": "^3.10.1",
     "marked": "^0.3.6",
