@@ -168,11 +168,15 @@ gulp.task('configFirebase', () => {
     },
     {
       'source': '/join',
-      'destination': '/users'
+      'destination': '/signup'
     },
     {
       'source': '/newsletter',
-      'destination': '/users'
+      'destination': '/signup'
+    },
+    {
+      'source': '/users',
+      'destination': '/signup'
     },
     {
       'source': '/summit',

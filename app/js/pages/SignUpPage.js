@@ -23,8 +23,9 @@ class SignUpPage extends Component {
                 <section className="sec-light" style={{ minHeight: '600px' }}>
                   <div className="col-md-6 offset-md-3">
                     <h1>
-                      User Waitlist
+                      Sign Up for Updates
                     </h1>
+                    <p>Our browser isn't ready for the public yet but join our mailing list and we'll notify you about upcoming product launches.</p>
                     <MailchimpForm subscribeURL={subscribeURL} submitButtonText='Sign Up' />
                   </div>
                 </section>
