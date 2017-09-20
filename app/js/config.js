@@ -1,7 +1,7 @@
 export const githubFileUrlRoot = 'https://github.com/blockstack/blockstack/blob/master'
 
 export const socialLinks = {
-  twitter: 'https://www.twitter.com/blockstackorg',
+  twitter: 'https://www.twitter.com/blockstack',
   youtube: 'https://www.youtube.com/channel/UC3J2iHnyt2JtOvtGVf_jpHQ',
   slack: 'http://chat.blockstack.org',
   meetup: 'http://www.meetup.com/topics/blockstack/',
@@ -159,12 +159,12 @@ export const blogAuthors = {
   'blockstack.id': { blockstackId: 'blockstack',
     name: 'Muneeb & Ryan',
     avatar: 'https://s3.amazonaws.com/kd4/muneeb-and-ryan.jpg',
-    twitter: 'blockstackorg',
+    twitter: 'blockstack',
     github: 'blockstack' },
   'founders.id': { blockstackId: 'blockstack',
     name: 'Ryan & Muneeb',
     avatar: 'https://s3.amazonaws.com/kd4/muneeb-and-ryan.jpg',
-    twitter: 'blockstackorg',
+    twitter: 'blockstack',
     github: 'blockstack' },
   'mfreed.id': { 'blockstackId': 'mfreed',
     name: 'Mike Freedman',
