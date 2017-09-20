@@ -72,6 +72,15 @@ class DownloadsPage extends Component {
                         </tbody>
                       </table>
                     </div>
+                    <div>
+                      <h3>Run a Full Node</h3>
+                      <p>
+                        <a href={installationLinks.cliDevelopers} role="button"
+                          className="btn btn-outline-primary btn-block">
+                          Instructions on GitHub
+                        </a>
+                      </p>
+                    </div>
                   </div>
                 </section>
               </div>
