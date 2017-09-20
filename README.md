@@ -28,6 +28,7 @@
 A live version of this site can be found online at https://blockstack.org.
 
 ### Table of Contents
+
 - [Contributing](#contributing)
 - [Installation](#installation)
 - [Development](#development)
