@@ -10,7 +10,7 @@ import {BlogActions}       from '../datastore/Blog'
 import {StatsActions}      from '../datastore/Stats'
 import Image               from '../components/Image'
 import Header              from '../components/Header'
-import TokenBanner         from '../components/TokenBanner'
+import Alert               from '../components/Alert'
 import EmbedYouTube        from '../components/EmbedYouTube'
 
 
@@ -35,7 +35,7 @@ class FundingPage extends Component {
       <DocumentTitle title="Blockstack Signature Fund">
         <div className="video-special-hero">
           <div className="col-centered block">
-            <TokenBanner />
+            <Alert />
             <Header transparent={true} />
             <div className="container-fluid">
               <div className="row video-special-row">

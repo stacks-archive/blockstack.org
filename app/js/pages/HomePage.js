@@ -10,7 +10,7 @@ import {BlogActions}       from '../datastore/Blog'
 import {StatsActions}      from '../datastore/Stats'
 import Image               from '../components/Image'
 import Header              from '../components/Header'
-import TokenBanner         from '../components/TokenBanner'
+import Alert               from '../components/Alert'
 import PostPreview         from '../components/PostPreview'
 import {featuredApps}      from '../config'
 
@@ -131,7 +131,7 @@ class HomePage extends Component {
         <div className="body-hero">
           <div className="col-centered block">
             <div>
-              <TokenBanner />
+              <Alert />
               <Header transparent={true} />
               <div className="container">
                 <section className="hero text-xs-center">

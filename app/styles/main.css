@@ -368,6 +368,12 @@ a.nav-link > i.fa.fa-github{display:none;}
 .card{background-color:#fff;}
 
 
+/* Alerts */
+.alert{border-radius:0;}
+.alert-primary{background-color:#2C96FF;padding:1.125rem;font-size:1rem;display: block;}
+a.alert.alert-primary:hover{background-color:#2378CC;text-decoration:none;}
+
+
 /* 37. Misc */
 .body-hero{background-color:#270F34!important;}
 .token-hero{background-color:#270F34!important;background:url(../images/visuals/blockstack-grid-reverse.svg) no-repeat;background-position:top -10px center;}
@@ -450,8 +456,6 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .col-img{max-width:110px;}
 .col3-img-lg{width:100%;min-width:210px;max-width:425px;}
 .caption-browser{position:absolute;bottom:25px;left:-130px;font-size:0.6875rem;}
-a.tokenBanner{text-decoration:none;background-color:#2C96FF;padding:10px;display:block;font-size:0.875rem;}
-a.tokenBanner:hover{background-color:#2378CC;}
 .blockstack-summit-2017-logo-md{width:280px;}
 .blockstack-signature-fund-logo-md{width:190px;}
 .feature-event-subhero-1{display:none;}
