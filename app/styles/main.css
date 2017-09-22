@@ -709,8 +709,18 @@ section{word-break:break-word;}
   h4{margin:20px 0;}
 
   /* 10. Components */
-  .PostShareWidget{display:flex;flex-direction:column;height:80px;width:60px;position:fixed;top:47%;left:15px;background-color:transparent;box-shadow:none;border:none;}
-
+.PostShareWidget {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  width: initial;
+  position: fixed;
+  top: 47%;
+  left: 15px;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
   /* Navbar */
   .navbar{font-family:'Source Code Pro',monospace;padding-top:1.4375rem;padding-bottom:1.4375rem;}
   .navbar-nav{margin-top:0;}
