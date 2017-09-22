@@ -795,8 +795,3 @@ section{word-break:break-word;}
   .hero-lead{line-height:1.125rem;}
 }
 
-/* Unresolved media queries - Discovered by GL - */
-@media (max-width:575px){
-  table,thead,tbody,th,td,tr{display:block;}
-  td{text-align:center;}
-}
