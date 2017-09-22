@@ -169,7 +169,6 @@
 .bg-electric-blue{background-color:#2C96FF!important;padding:10px;display:block;font-size:0.875rem;}
 .text-center{text-align:center!important;}
 .text-white{color:#fff;}
-/*.container{width:100%;}*/
 
 
 /* 3. Spacing */
@@ -595,9 +594,6 @@ section{word-break:break-word;}
   h5{font-size:1.125rem;}
   h6{font-size:1rem;}
 
-  /* Max widths */
-  .container{max-width:975px;}
-
   /* Globals */
   .body-hero{background-color:#402b4c!important;background:url(../images/visuals/blockstack-hero-globe@2x.png) no-repeat;background-position:top -300px center;background-size:100%;}
   h1.hero-head{font-size:2.25rem;text-align:center;margin-top:0;}
@@ -714,7 +710,6 @@ section{word-break:break-word;}
 @media (min-width:992px){
 
   /* Max widths */
-  .container{width:975px;}
   .bs-docs-featurette{max-width:1170px;}
 
   /* Globals */
