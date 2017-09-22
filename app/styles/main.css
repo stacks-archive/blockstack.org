@@ -169,7 +169,7 @@
 .bg-electric-blue{background-color:#2C96FF!important;padding:10px;display:block;font-size:0.875rem;}
 .text-center{text-align:center!important;}
 .text-white{color:#fff;}
-.container{width:100%;}
+/*.container{width:100%;}*/
 
 
 /* 3. Spacing */
@@ -561,13 +561,20 @@ section{word-break:break-word;}
 
 /* Media queries */
 
+/* max-widths */
+/* x-Small devices */ @media (max-width: 348px) { ... }
+
+/* Extra small devices (phones, less than 768px) */      @media (min-width: 576px) { ... }
+/* Small devices (tablets, 768px and up) */              @media (min-width: 768px) { ... }
+/* Medium devices (desktops, 992px and up) */            @media (min-width: 992px) { ... }
+/* Large devices (large desktops, 1200px and up) */      @media (min-width: 1200px) { ... }
+
+/* Unresolved media queries */
+/* Custom break for sticky share */                      @media (min-width: 830px) { ... }
+/* Unresolved media queries */                           @media (max-width: 575px) { ... }
+
+
 /* Extra small devices (phones, less than 768px) */
-
-/* No media query since this is the default in Bootstrap */
-
-/* Custom break for sticky share since overlaping container at normal breaks*/
-
-
 @media (min-width: 576px){
   .navbar-toggler,.navbar-toggler.collapsed{display:none;}
   .navbar-nav{display:initial;}
