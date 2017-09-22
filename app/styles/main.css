@@ -557,29 +557,19 @@ section{word-break:break-word;}
 
 /* Media queries */
 
-/* max-widths */
-/* x-Small devices */ @media (max-width: 348px) { ... }
-
-/* Small devices (landscape phones, 576px and up) */         @media (min-width: 576px) { ... }
-/* Medium devices (tablets, 768px and up) */                 @media (min-width: 768px) { ... }
-/* Large devices (desktops, 992px and up) */                 @media (min-width: 992px) { ... }
-/* Extra large devices (large desktops, 1200px and up) */    @media (min-width: 1200px) { ... }
-
-/* Unresolved media queries */
-/* Custom break for sticky share */                      @media (min-width: 830px) { ... }
-
+/* Extra Extra small devices devices */
+@media (max-width:348px){
+  li.nav-item:nth-last-child(2){display:none;}
+  h1.hero-head{font-size:1.65rem;}
+  .hero{padding-top:3%;padding-bottom:75px;}
+  .hero-lead{line-height:1.125rem;}
+}
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width:575px) {
-
 }
 
-
-
-
-
-
-/* INCLUDE ABOVE --- 576px and up) */
+/* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px){
   .navbar-toggler,.navbar-toggler.collapsed{display:none;}
   .navbar-nav{display:initial;}
@@ -587,11 +577,7 @@ section{word-break:break-word;}
   .brand-bug{margin-top:6px;}
 }
 
-
-
-
-
-/* Small devices (tablets, 768px and up) */
+/* Medium devices (tablets, 768px and up) */
 @media (min-width:768px){
 
   /* 9. Fonts */
@@ -712,7 +698,7 @@ section{word-break:break-word;}
   .foot-logo img{width:164px;}
 }
 
-/* Medium devices (desktops, 992px and up) */
+/* Large devices (desktops, 992px and up) */
 @media (min-width:992px){
 
   /* Max widths */
@@ -776,7 +762,7 @@ section{word-break:break-word;}
   .card.card-1-of-3{width:33.3333%!important;}
 }
 
-/* Large devices (large desktops, 1200px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width:1200px){
   /* 38. f. - Embed */
   .video-special-row{margin-top:100px;background-color:#1A1D1F;}
@@ -785,13 +771,4 @@ section{word-break:break-word;}
 
 
 
-/* max-widths */
-
-/* x-Small devices */
-@media (max-width:348px){
-  li.nav-item:nth-last-child(2){display:none;}
-  h1.hero-head{font-size:1.65rem;}
-  .hero{padding-top:3%;padding-bottom:75px;}
-  .hero-lead{line-height:1.125rem;}
-}
 
