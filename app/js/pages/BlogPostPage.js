@@ -9,7 +9,7 @@ import {connect}        from 'react-redux'
 import {BlogActions}    from '../datastore/Blog'
 import Image            from '../components/Image'
 import CommunityMember  from '../components/CommunityMember'
-import StickyShare      from '../components/StickyShare'
+import PostShareWidget      from '../components/PostShareWidget'
 
 function mapStateToProps(state) {
   return {
@@ -93,7 +93,7 @@ class BlogPostPage extends Component {
                 onLoad={this.onImageLoad}
                 retinaSupport={false} />
             </div>
-            <StickyShare
+            <PostShareWidget
               description={currentPage.description}
               imgUrl={headerImageSrc}
               shareUrl={currentPage.url}
