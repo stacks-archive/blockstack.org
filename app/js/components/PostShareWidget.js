@@ -26,7 +26,6 @@ class PostShareWidget extends Component {
           <FacebookIcon size={40} iconBgStyle={{ fill: 'transparent' }}
             logoFillColor="#616161" round />
         </FacebookShareButton>
-        <br/>
         <TwitterShareButton url={shareUrl} title={title} style={{ cursor: 'pointer', outline: 'none' }} >
           <TwitterIcon size={40} iconBgStyle={{ fill: 'transparent' }}
             logoFillColor="#616161" round />

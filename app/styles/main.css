@@ -295,14 +295,8 @@ display-5{font-size:1.125rem;}
 display-6{font-size:1rem;}
 
 /* Lead */
-.lead-lg {
-  font-size: 1.125rem;
-  font-weight: 400;
-}
-.terms-sm {
-  font-size: 13px;
-  line-height: 20px;
-}
+.lead-lg{font-size:1.125rem;font-weight:400;}
+.terms-sm{font-size:13px;line-height:20px;}
 /* Revisit Type */
 a{font-weight:400;color:#E91E63;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
 a:hover,a:focus{font-weight:400;color:#E91E63;text-decoration:underline;}
@@ -319,6 +313,7 @@ h1.type-beauty{font-family:'Lato',sans-serif;font-size:1.5rem;font-weight:700;}
 /* 10. Components */
 .PostShareWidget{position:fixed;display:flex;flex-direction:row;justify-content:center;align-items:center;width:100%;height:50px;bottom:0!important;left:0;z-index:20;background-color:#fff;border-top:1px solid #f0f0f0;webkit-box-shadow:0 -10px 20px rgba(0,0,0,0.08),0 0 0 rgba(0,0,0,0);-moz-box-shadow:0 -10px 20px rgba(0,0,0,0.08),0 0 0 rgba(0,0,0,0);box-shadow:0 -10px 20px rgba(0,0,0,0.08),0 0 0 rgba(0,0,0,0);}
 svg.social-icon.social-icon--facebook{margin-top:-1px;}
+
 
 /* 12. Buttons */
 .btn{font-family:'Lato',sans-serif;padding:0.5625rem 2.25rem;font-size:0.75rem;font-weight:700;line-height:1.75rem;border-radius:0;text-transform:uppercase;}
@@ -728,7 +723,7 @@ section{word-break:break-word;}
   h4{margin:20px 0;}
 
   /* 10. Components */
-  .PostShareWidget{display:flex;flex-direction:column;justify-content:center;height:150px;position:fixed;top:47%;left:15px;background-color:transparent;}
+  .PostShareWidget{display:flex;flex-direction:column;height:80px;width:60px;position:fixed;top:47%;left:15px;background-color:transparent;box-shadow:none;border:none;}
 
   /* Navbar */
   .navbar{font-family:'Source Code Pro',monospace;padding-top:1.4375rem;padding-bottom:1.4375rem;}
