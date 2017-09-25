@@ -29,7 +29,7 @@ class DownloadsPage extends Component {
                     <h1>
                       Install Blockstack
                     </h1>
-                    <h3>Browser Portal</h3>
+                    <h3>Browser</h3>
                     <div>
                       <table className="table">
                         <tbody>
@@ -73,7 +73,7 @@ class DownloadsPage extends Component {
                       </table>
                     </div>
                     <div>
-                      <h3>Core Server + CLI</h3>
+                      <h3>Run a Full Node</h3>
                       <p>
                         <a href={installationLinks.cliDevelopers} role="button"
                           className="btn btn-outline-primary btn-block">
@@ -94,3 +94,15 @@ class DownloadsPage extends Component {
 }
 
 export default DownloadsPage
+
+/*
+                    <div>
+                      <h3>Core Server + CLI</h3>
+                      <p>
+                        <a href={installationLinks.cliDevelopers} role="button"
+                          className="btn btn-outline-primary btn-block">
+                          Instructions on GitHub
+                        </a>
+                      </p>
+                    </div>
+*/

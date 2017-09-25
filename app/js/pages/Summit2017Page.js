@@ -107,7 +107,7 @@ class Summit2017Page extends Component {
                         from the event. We hope you enjoy them as much as we 
                         did, and would love to hear what your favorite parts 
                         were by tweeting your favorite speaker quotes and clips 
-                        mentioning @blockstackorg.
+                        mentioning @blockstack.
                       </p>" />
                   </div>
                 </section>

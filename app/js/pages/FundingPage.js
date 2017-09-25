@@ -11,6 +11,7 @@ import {StatsActions}      from '../datastore/Stats'
 import Image               from '../components/Image'
 import Header              from '../components/Header'
 import TokenBanner         from '../components/TokenBanner'
+import EmbedYouTube        from '../components/EmbedYouTube'
 
 
 function mapStateToProps(state) {
@@ -37,11 +38,9 @@ class FundingPage extends Component {
             <TokenBanner />
             <Header transparent={true} />
             <div className="container-fluid">
-              <div className="row">
-                <div className="container-fluid video-special-container no-padding">
-                  <div class="embed-responsive embed-responsive-16by9 video-special">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vQSbqwz4TPM" allowFullScreen></iframe>
-                  </div>
+              <div className="row video-special-row">
+                <div className="video-special-container">
+                  <EmbedYouTube src="https://www.youtube.com/embed/vQSbqwz4TPM" />
                 </div>
               </div>
               <section className="text-xs-center">
