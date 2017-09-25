@@ -797,9 +797,10 @@ section{word-break:break-word;}
 
 @media (min-width:768px) {
   .sidebar-wrapper{display:block;font-size:15px;}
-  .sidebar-content-wrapper{height:100vh;width:auto;margin-left:calc((100% - 994px) / 2);overflow:auto;}
-  .faq-sidebar{height:100vh;width:calc((100% - 994px) / 1.5 + 226px);padding-left:calc((100% - 994px) / 2);background-color:rgba(247,248,249,1);border-right:1px solid rgba(238,238,238,1);overflow:auto;}
-  .sidebar-logo{height:63px;padding-left:5px;border-bottom:solid 1px #eee;}
+  .sidebar-content-wrapper{height:100vh;width:770px;margin-left:220px;}
+  aside{position:fixed;top:0;left:0;height:100vh;width:220px;background-color:rgba(247,248,249,1);border-right:1px solid rgba(238,238,238,1);}
+  .sidebar-header{height:63px;padding-left:5px;border-bottom:solid 1px #eee;line-height: 1.428}
+  .sidebar-logo{display:initial;margin-right:2.5rem;margin-top:0.6875rem;}
   .list-group{margin-bottom:50px}
   .list-group-header{font-size:12px;color:rgba(140,140,140,1);text-transform:uppercase;padding-left:20px;margin-top:30px;}
   .list-group-item{border:none;background-color:rgba(247,248,249,1);padding:4px 20px;}

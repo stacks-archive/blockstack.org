@@ -3,7 +3,6 @@
 import {Component}         from 'react'
 import {Link}              from 'react-router'
 import DocumentTitle       from 'react-document-title'
-import Footer              from '../components/Footer'
 import marked              from 'marked'
 
 import docs                from '../../docs.json'
@@ -58,9 +57,9 @@ class FAQpage extends Component {
       <DocumentTitle title="Blockstack - FAQ ">
         <div>
           <div className='sidebar-wrapper'>
-            <div className="pull-left faq-sidebar">
-              <div className="sidebar-logo">
-                <Link className="navbar-brand brand-logo" to="/">
+            <aside>
+              <div className="sidebar-header">
+                <Link className="navbar-brand sidebar-logo" to="/">
                   <img src="/images/logos/blockstack-logo-landscape.svg" />
                 </Link>
               </div>
@@ -69,15 +68,20 @@ class FAQpage extends Component {
                 { questions.map((faq, index) => {
                   const refLink = faq.question.toLowerCase().split(' ').join('_');
                   return (
+                    index < 5 ?
                     <Link key={index}
                           href={`/faq/#${refLink}`}
                           className="list-group-item">
                       {faq.question}
-                    </Link>
+                    </Link> : null
                   )
                 })}
+                <h5 className="list-group-header">Token</h5>
+                <h5 className="list-group-header">For Developers</h5>
+                <h5 className="list-group-header">For Users</h5>
+                <h5 className="list-group-header">Misc</h5>
               </div>
-            </div>
+            </aside>
           </div>
           <div className="sidebar-content-wrapper">
             <section>
@@ -94,7 +98,6 @@ class FAQpage extends Component {
                 )
               })}
             </section>
-            <Footer />
           </div>
         </div>
       </DocumentTitle>
