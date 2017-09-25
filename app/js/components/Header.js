@@ -35,13 +35,21 @@ class Header extends Component {
 
     return (
       <div className={ this.props.transparent ? 'bg-transparent' : 'bg-primary'}>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <a className="navbar-brand" href="#">Navbar</a>
+
+        <nav className="navbar navbar-expand-lg">
+          <Link className="navbar-brand brand-bug" href="#">
+            <img src="/images/logos/blockstack-bug-rev.svg" />
+          </Link>
+          <Link className="navbar-brand brand-logo" to="/">
+            <img src="/images/logos/blockstack-logo-landscape-rev.svg" />
+          </Link>
+
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
+
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
+            <ul className="navbar-nav float-sm-right">
               <li className="nav-item active">
                 <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
               </li>
@@ -72,7 +80,7 @@ class Header extends Component {
               <span className="navbar-toggler-icon"></span>
             </button>
 
-            <ul className="nav navbar-nav pull-xs-right">
+            <ul className="nav navbar-nav">
               {this.state.navItems.map((navItem, index) => {
                 return (
                   <li key={index} className="nav-item">
