@@ -554,6 +554,7 @@ section{word-break:break-word;}
 
 /* FAQ Page */
 .sidebar-wrapper{display:none;}
+.segment-zone{padding:20px 20px 35px;border-top:1px solid rgba(240, 240, 240, 0.7);}
 
 
 /* Media queries */
@@ -688,16 +689,17 @@ section{word-break:break-word;}
   .partnerLogo-openocean{max-width:200px;margin-right:125px;}
   .sig-logo-space{margin-top:50px;margin-bottom:40px;}
 
-  /*Sidebar*/
-  .sidebar-wrapper{display:block;}
-  .sidebar-content-wrapper{height:82vh;margin-left:30%;overflow:auto;}
-  .faq-sidebar{height:82vh;width:30%;background-color:rgba(247,248,249,1);border-right:1px solid rgba(238,238,238,1);overflow:auto;}
+  /*FAQ page*/
+  .sidebar-wrapper{display:block;font-size:15px;}
+  .sidebar-content-wrapper{height:100vh;width:auto;margin-left:calc((100% - 994px) / 2);overflow:auto;}
+  .faq-sidebar{height:100vh;width:calc((100% - 994px) / 1.5 + 226px);padding-left:calc((100% - 994px) / 2);background-color:rgba(247,248,249,1);border-right:1px solid rgba(238,238,238,1);overflow:auto;}
+  .sidebar-logo{height:63px;padding-left:5px;border-bottom:solid 1px #eee;}
   .list-group{margin-bottom:50px}
   .list-group-header{font-size:12px;color:rgba(140,140,140,1);text-transform:uppercase;padding-left:20px;margin-top:30px;}
   .list-group-item{border:none;background-color:rgba(247,248,249,1);padding:4px 20px;}
-  a.list-group-item:hover,a.list-group-item:focus,a.list-group-item.active{color:#E91E63;}
+  a.list-group-item:hover,a.list-group-item:focus,a.list-group-item.active{color:#E91E63;background-color:transparent;}
   a.list-group-item{text-transform:inherit;}
-  .segment-zone{padding:20px 20px 35px 20px;}
+  .segment-zone{padding:50px 40px;}
 
   /* 38. f. - Embed */
   .video-special{display:block;width:640px;height:360px;margin-right:auto;margin-left:auto;}

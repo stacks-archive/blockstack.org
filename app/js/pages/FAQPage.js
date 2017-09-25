@@ -59,10 +59,13 @@ class FAQpage extends Component {
     return (
       <DocumentTitle title="Blockstack - FAQ ">
         <div>
-          <TokenBanner />
-          <Header />
           <div className='sidebar-wrapper'>
             <div className="pull-left faq-sidebar">
+              <div className="sidebar-logo">
+                <Link className="navbar-brand brand-logo" to="/">
+                  <img src="/images/logos/blockstack-logo-landscape.svg" />
+                </Link>
+              </div>
               <div className="list-group">
                 <h5 className="list-group-header">Frequently Asked Questions</h5>
                 { questions.map((faq, index) => {
@@ -80,24 +83,18 @@ class FAQpage extends Component {
           </div>
           <div className="sidebar-content-wrapper">
             <section>
-              <div className="container-fluid col-centered segment-wrapper">
-                <div className="m-y-3 m-x-2">
-                  <div>
-                    <h1>Frequently Asked Questions</h1>
+              {questions.map((faq, index) => {
+                const refLink = faq.question.toLowerCase().split(' ').join('_');
+                return (
+                  <div key={index} id={`${refLink}`}
+                       className="container-fluid col-centered segment-zone">
+                    <h4>{faq.question}</h4>
+                    <div dangerouslySetInnerHTML={{
+                      __html: faq.answer
+                    }}></div>
                   </div>
-                  {questions.map((faq, index) => {
-                    const refLink = faq.question.toLowerCase().split(' ').join('_');
-                    return (
-                      <div key={index} id={`${refLink}`}>
-                        <h4>{faq.question}</h4>
-                        <div dangerouslySetInnerHTML={{
-                          __html: faq.answer
-                        }}></div>
-                      </div>
-                    )
-                  })}
-                </div>
-              </div>
+                )
+              })}
             </section>
             <Footer />
           </div>

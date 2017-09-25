@@ -88,6 +88,10 @@
         "destination": "/docs-tutorials-todo-list.html"
       },
       {
+        "source": "/blog/public-benefit-corp",
+        "destination": "/blog-public-benefit-corp.html"
+      },
+      {
         "source": "/blog/the-signature-fund-for-app-development-on-blockstack",
         "destination": "/blog-the-signature-fund-for-app-development-on-blockstack.html"
       },
@@ -142,10 +146,6 @@
       {
         "source": "/blog/blockstack-auth-developer-preview",
         "destination": "/blog-blockstack-auth-developer-preview.html"
-      },
-      {
-        "source": "/blog/blockstack-core-v0-14-release",
-        "destination": "/blog-blockstack-core-v0-14-release.html"
       },
       {
         "source": "**",
