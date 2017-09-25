@@ -796,7 +796,6 @@ section{word-break:break-word;}
 .segment-zone{padding:20px 20px 35px;border-top:1px solid rgba(240, 240, 240, 0.7);}
 
 @media (min-width:768px) {
-  /*FAQ page*/
   .sidebar-wrapper{display:block;font-size:15px;}
   .sidebar-content-wrapper{height:100vh;width:auto;margin-left:calc((100% - 994px) / 2);overflow:auto;}
   .faq-sidebar{height:100vh;width:calc((100% - 994px) / 1.5 + 226px);padding-left:calc((100% - 994px) / 2);background-color:rgba(247,248,249,1);border-right:1px solid rgba(238,238,238,1);overflow:auto;}
