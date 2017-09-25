@@ -36,7 +36,7 @@ class Header extends Component {
     return (
       <div className={ this.props.transparent ? 'bg-transparent' : 'bg-primary'}>
 
-        <nav className="navbar navbar-expand-lg nav-header no-padding">
+        <nav className="navbar navbar-expand-lg">
           <Link className="navbar-brand brand-bug" href="#">
             <img src="/images/logos/blockstack-bug-rev.svg" />
           </Link>
@@ -44,11 +44,11 @@ class Header extends Component {
             <img src="/images/logos/blockstack-logo-landscape-rev.svg" />
           </Link>
 
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="collapse navbar-collapse" id="navbarNav">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-md-auto">
               {this.state.navItems.map((navItem, index) => {
                 return (
@@ -69,7 +69,7 @@ class Header extends Component {
           </div>
         </nav>
 
-          <div className="mobile-nav collapse navbar-collapse" id="mobile-nav" aria-expanded="false">
+          <div className="mobile-nav collapse" id="navbarSupportedContent" aria-expanded="false">
             <ul className="nav-justified">
               {mobileNavItems.map((navItem, index) => {
                 return (
