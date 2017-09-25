@@ -69,7 +69,7 @@ class Header extends Component {
           </div>
         </nav>
 
-          <div className="mobile-nav collapse navbar-collapse" id="navbarNav" aria-expanded="false">
+          <div className="mobile-nav collapse navbar-collapse" id="mobile-nav" aria-expanded="false">
             <ul className="nav-justified">
               {mobileNavItems.map((navItem, index) => {
                 return (
