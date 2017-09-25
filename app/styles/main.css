@@ -349,8 +349,6 @@ svg.social-icon.social-icon--facebook{margin-top:-1px;}
 div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-header > nav.navbar > a.navbar-brand{display:none;}
 div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-header > nav.navbar > a.navbar-brand.brand-bug{display:block;}
 .nav{font-family:'Lato',sans-serif;text-align:left;font-size:20px;font-weight:700}
-.navbar-nav{display:initial;}
-.navbar-nav{display:none;}
 a.nav-link{color:#fff;font-size:0.9375rem;font-weight:700;margin-top:0.0625rem;}
 a.nav-link:hover,a.nav-link:focus{color:#fff;}
 .nav-item{margin-left:0.5rem;line-height:36px;}
@@ -572,7 +570,6 @@ section{word-break:break-word;}
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px){
   .navbar-toggler,.navbar-toggler.collapsed{display:none;}
-  .navbar-nav{display:initial;}
   li.nav-item:nth-last-child(2){display:initial;}
   .brand-bug{margin-top:6px;}
 }
@@ -618,7 +615,7 @@ section{word-break:break-word;}
   div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-header > nav.navbar > a.navbar-brand.brand-bug{display:none;}
   .nav-item:first-child{margin-left:.875rem;}
   .navbar-nav .nav-item+.nav-item{margin-left:1.375rem;}
-  .navbar-nav{display:initial;margin-top:0.25rem;}
+  .navbar-nav{margin-top:0.25rem;}
   a.nav-link{padding-right:5px;padding-left:5px;}
   .navbar{font-family:'Source Code Pro',monospace;padding-top:.375rem;padding-right:2rem;padding-bottom:.625rem;padding-left:2rem;}
   .fa-github{margin-top:-0.1875rem;margin-right:0.75rem;vertical-align:middle;font-size:1.175rem;}
@@ -709,19 +706,9 @@ section{word-break:break-word;}
   h4{margin:20px 0;}
 
   /* 10. Components */
-.PostShareWidget {
-  display: flex;
-  flex-direction: column;
-  height: 80px;
-  width: initial;
-  position: fixed;
-  top: 47%;
-  left: 15px;
-  background-color: transparent;
-  box-shadow: none;
-  border: none;
-}
-  /* Navbar */
+  .PostShareWidget{display:flex;flex-direction:column;height:80px;width:initial;position:fixed;top:47%;left:15px;background-color:transparent;box-shadow:none;border:none;}
+
+  /* 16. Navbar */
   .navbar{font-family:'Source Code Pro',monospace;padding-top:1.4375rem;padding-bottom:1.4375rem;}
   .navbar-nav{margin-top:0;}
   .brand-logo{margin-top:0.6875rem;}
