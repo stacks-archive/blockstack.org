@@ -49,19 +49,22 @@ class Header extends Component {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav float-sm-right">
-              <li className="nav-item active">
-                <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Features</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Pricing</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link disabled" href="#">Disabled</a>
-              </li>
+            <ul className="navbar-nav ml-md-auto">
+              {this.state.navItems.map((navItem, index) => {
+                return (
+                  <li key={index} className="nav-item">
+                    { !navItem.to.startsWith('http') ? (
+                      <Link to={navItem.to} className="nav-link">
+                        {navItem.label}
+                      </Link>
+                    ) : (
+                      <Link to={navItem.to} className="nav-link" target="_blank">
+                        {navItem.label}
+                      </Link>
+                    )}
+                  </li>
+                )
+              })}
             </ul>
           </div>
         </nav>

@@ -348,7 +348,7 @@ svg.social-icon.social-icon--facebook{margin-top:-1px;}
 .brand-logo{display:none;}
 div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-header > nav.navbar > a.navbar-brand{display:none;}
 div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-header > nav.navbar > a.navbar-brand.brand-bug{display:block;}
-.nav{font-family:'Lato',sans-serif;text-align:left;font-size:20px;font-weight:700}
+.navbar-nav{font-family:'Lato',sans-serif;text-align:left;font-size:20px;font-weight:700}
 a.nav-link{color:#fff;font-size:0.9375rem;font-weight:700;margin-top:0.0625rem;}
 a.nav-link:hover,a.nav-link:focus{color:#fff;}
 .nav-item{margin-left:0.5rem;line-height:36px;}
