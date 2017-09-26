@@ -446,8 +446,8 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .landing-feat-img{width:100%;max-width:696px;}
 .feat-card{height:75px;display:block;}
 .feat-card > h3{font-weight:400;}
-.text-stats{font-size:1.5rem;font-weight:700;}
-.text-stats-description{display:block;font-size:0.875rem;font-weight:400;}
+.text-stats{color:#484848;font-size:2rem;font-weight:700;}
+.text-stats-description{display:block;color:#949494;font-size:1rem;font-weight:400;padding-top:0.5rem;}
 .no-padding-sm{padding-right:0;padding-left:0;}
 .col-img{max-width:110px;}
 .col3-img-lg{width:100%;min-width:210px;max-width:425px;}
