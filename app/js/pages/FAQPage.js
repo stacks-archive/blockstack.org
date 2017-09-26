@@ -55,7 +55,7 @@ class FAQpage extends Component {
 
     return (
       <DocumentTitle title="Blockstack - FAQ ">
-        <div>
+        <div className="content-wrapper">
           <div className='sidebar-wrapper'>
             <aside>
               <div className="sidebar-header">
@@ -76,7 +76,6 @@ class FAQpage extends Component {
                     </Link> : null
                   )
                 })}
-                <h5 className="list-group-header">Token</h5>
                 <h5 className="list-group-header">For Developers</h5>
                 <h5 className="list-group-header">For Users</h5>
                 <h5 className="list-group-header">Misc</h5>

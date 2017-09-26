@@ -792,9 +792,10 @@ section{word-break:break-word;}
 .segment-zone{padding:20px 20px 35px;border-top:1px solid rgba(240, 240, 240, 0.7);}
 
 @media (min-width:768px) {
+  .content-wrapper{min-width:994px;}
   .sidebar-wrapper{display:block;font-size:15px;}
-  .sidebar-content-wrapper{height:100vh;width:770px;margin-left:220px;}
-  aside{position:fixed;top:0;left:0;height:100vh;width:220px;background-color:rgba(247,248,249,1);border-right:1px solid rgba(238,238,238,1);}
+  .sidebar-content-wrapper{height:100vh;width:770px;margin-left: calc((100% - 994px) / 2 + 220px);}
+  aside{position:fixed;top:0;left:0;height:100vh;width:calc((100% - 994px) / 2 + 220px);background-color:rgba(247,248,249,1);border-right:1px solid rgba(238,238,238,1);min-width:220px;padding-left:calc((100% - 994px) / 2);}
   .sidebar-header{height:63px;padding-left:5px;border-bottom:solid 1px #eee;line-height: 1.428}
   .sidebar-logo{display:initial;margin-right:2.5rem;margin-top:0.6875rem;}
   .list-group{margin-bottom:50px}
