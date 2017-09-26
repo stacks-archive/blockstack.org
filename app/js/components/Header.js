@@ -14,12 +14,10 @@ class Header extends Component {
     this.state = {
       navItems: [
         { to: '/install', label: 'Install' },
-        { to: '/tutorials', label: 'Tutorials' },
+        { to: '/about', label: 'About' },
         { to: '/blog', label: 'Blog' },
-        { to: '/papers', label: 'Papers' },
-        { to: '/videos', label: 'Videos' },
-        { to: '/careers', label: 'Careers' },
-        { to: 'https://github.com/blockstack', label: 'Code', mobile: false },
+        { to: '/faq', label: 'FAQ' },
+        { to: 'https://github.com/blockstack', label: 'GitHub', mobile: false },
       ]
     }
   }
