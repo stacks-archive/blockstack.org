@@ -146,7 +146,7 @@ class HomePage extends Component {
                       <div className="col-sm-12 col-md-6">
                         <p className="float-md-right">
                           <Link to="/install" role="button"
-                            className="btn btn-electric-blue btn-lg btn-block btn-block-reset">
+                            className="btn btn-electric-blue btn-block btn-block-reset" style={{ minWidth: '245px' }}>
                             Developers&nbsp;&nbsp;›&nbsp;&nbsp;Browser Kit
                           </Link>
                         </p>
@@ -154,7 +154,7 @@ class HomePage extends Component {
                       <div className="col-sm-12 col-md-6">
                         <p className="float-md-left">
                           <Link to="/signup" role="button"
-                            className="btn btn-electric-blue btn-lg btn-block btn-block-reset">
+                            className="btn btn-electric-blue btn-block btn-block-reset" style={{ minWidth: '245px' }}>
                             Users&nbsp;&nbsp;›&nbsp;&nbsp;Sign Up
                           </Link>
                         </p>

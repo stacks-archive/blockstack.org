@@ -364,8 +364,8 @@ a.nav-link > i.fa.fa-github{display:none;}
 
 /* 26. Alerts */
 .alert{border-radius:0;}
-.alert-primary{background-color:#2C96FF;padding:1.125rem 1.125rem 1.375rem 1.125rem;font-size:0.9375rem;display:block;border:1px solid #2C96FF;}
-a.alert.alert-primary:hover{background-color:#2378CC;text-decoration:none;border:1px solid #2378CC;}
+.alert-primary{background-color:#2C96FF;padding:1.125rem 1.125rem 1.375rem 1.125rem;font-size:0.9375rem;border:none;}
+a.alert.alert-primary:hover{background-color:#2378CC;text-decoration:none;}
 
 
 /* 34. Close */
