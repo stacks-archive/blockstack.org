@@ -71,7 +71,7 @@ class DocsPage extends Component {
         markupParts.splice(0, 1)
 
         for (var i = 0, j = markupParts.length; i < j; i += 2) {
-          let id = section.title + '-' + markupParts[i].split(/id="(.*)"/g)[1]
+          let id = markupParts[i].split(/id="(.*)"/g)[1]
           let title = markdownParts[i]
           subSections.push({
             id: id,
@@ -104,6 +104,7 @@ class DocsPage extends Component {
                 <Link className="navbar-brand sidebar-logo" to="/">
                   <img src="/images/logos/blockstack-logo-landscape.svg" />
                 </Link>
+                <Link className="tagline" to="/docs">docs</Link>
               </div>
               <div className="list-group">
                 { sections.map((section, index) => {
@@ -111,10 +112,9 @@ class DocsPage extends Component {
                     <div key={index}>
                       <h5 className="list-group-header">{section.title}</h5>
                       { section.subSections.map((section, index) => {
-                        const refLink = section.title.toLowerCase().split(' ').join('_');
                         return (
                           <Link key={index}
-                                href={`/docs/#${refLink}`}
+                                href={`/docs/#${section.id}`}
                                 className="list-group-item">
                             {section.title}
                           </Link>
@@ -130,9 +130,8 @@ class DocsPage extends Component {
             <section>
               { sections.map((section) => {
                 return section.subSections.map((section, index) => {
-                        const refLink = section.title.toLowerCase().split(' ').join('_');
                         return (
-                          <div key={index} id={`${refLink}`}
+                          <div key={index} id={`${section.id}`}
                                className="container-fluid col-centered segment-zone">
                             <h4>{section.title}</h4>
                             <div dangerouslySetInnerHTML={{
