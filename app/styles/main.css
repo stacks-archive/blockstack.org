@@ -346,9 +346,6 @@ svg.social-icon.social-icon--facebook{margin-top:-1px;}
 .brand-bug{margin-right:1rem;}
 .brand-bug img{width:30px;position:relative;}
 .brand-logo{display:none;}
-div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-header > nav.navbar > a.navbar-brand{display:none;}
-div.app-common > div > div.navbar-fixed-top.bg-primary > header.container.nav-header > nav.navbar > a.navbar-brand.brand-bug{display:block;}
-.navbar-nav{display:none;}
 a.nav-link{color:#fff;font-size:0.9375rem;font-weight:700;margin-top:0.0625rem;}
 a.nav-link:hover,a.nav-link:focus{color:#fff;}
 .nav-item{margin-left:0.5rem;line-height:36px;}
@@ -366,7 +363,7 @@ a.nav-link > i.fa.fa-github{display:none;}
 
 /* Alerts */
 .alert{border-radius:0;}
-.alert-primary{background-color:#2C96FF;padding:1.125rem;font-size:1rem;display: block;}
+.alert-primary{background-color:#2C96FF;padding:1.125rem;font-size:1rem;display: block;border:1px solid #2C96FF;}
 a.alert.alert-primary:hover{background-color:#2378CC;text-decoration:none;}
 
 
@@ -569,7 +566,6 @@ section{word-break:break-word;}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px){
-  .navbar-nav{display:initial;}
   .navbar-toggler,.navbar-toggler.collapsed{display:none;}
   li.nav-item:nth-last-child(2){display:initial;}
   .brand-bug{margin-top:6px;}
