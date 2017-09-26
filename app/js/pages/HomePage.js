@@ -134,7 +134,7 @@ class HomePage extends Component {
               <Alert />
               <Header transparent={true} />
               <div className="container">
-                <section className="hero text-xs-center">
+                <section className="hero text-center">
                   <h1 className="text-white m-b-20">
                    A New Internet for Decentralized Apps
                   </h1>
@@ -142,23 +142,23 @@ class HomePage extends Component {
                     Blockstack is a new decentralized internet where users own their data and apps run locally. A browser portal is all that’s needed to get started.
                   </p>
                   <div className="no-padding container-fluid col-md-10 col-lg-10 col-centered m-b-60">
-                    <div className="col-sm-12 col-md-6">
-                      <p className="pull-md-right">
-                        <Link to="/install" role="button"
-                          className="btn btn-electric-blue btn-block btn-block-reset"
-                          style={{ minWidth: '245px' }}>
-                          Developers&nbsp;&nbsp;›&nbsp;&nbsp;Browser Kit
-                        </Link>
-                      </p>
-                    </div>
-                    <div className="col-sm-12 col-md-6">
-                      <p className="pull-md-left">
-                        <Link to="/signup" role="button"
-                          className="btn btn-electric-blue btn-block btn-block-reset"
-                          style={{ minWidth: '245px' }}>
-                          Users&nbsp;&nbsp;›&nbsp;&nbsp;Sign Up
-                        </Link>
-                      </p>
+                    <div className="row">
+                      <div className="col-sm-12 col-md-6">
+                        <p className="float-md-right">
+                          <Link to="/install" role="button"
+                            className="btn btn-electric-blue btn-lg btn-block btn-block-reset">
+                            Developers&nbsp;&nbsp;›&nbsp;&nbsp;Browser Kit
+                          </Link>
+                        </p>
+                      </div>
+                      <div className="col-sm-12 col-md-6">
+                        <p className="float-md-left">
+                          <Link to="/signup" role="button"
+                            className="btn btn-electric-blue btn-lg btn-block btn-block-reset">
+                            Users&nbsp;&nbsp;›&nbsp;&nbsp;Sign Up
+                          </Link>
+                        </p>
+                      </div>
                     </div>
                   </div>
                   <div className="no-padding container-fluid col-md-9 col-centered">
@@ -180,7 +180,7 @@ class HomePage extends Component {
                 <section>
                   <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
                     {this.state.stats.domains.toLocaleString()}
-                    <span className="text-stats-description">users registered</span>
+                    <span className="text-stats-description">domains registered</span>
                   </div>
                   <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
                     3+
