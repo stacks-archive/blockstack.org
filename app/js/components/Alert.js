@@ -11,11 +11,13 @@ class Alert extends Component {
 
   render() {
     return (
-      <Link to="/token" className="alert alert-primary alert-dismissible fade show text-center text-white" >
+      <Link to="/token" >
+        <div className="alert alert-primary alert-dismissible fade show text-center text-white" >
           <button type="button" className="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
           <p>Introducing The Blockstack Token. <strong>Learn more.</strong></p>
+        </div>
       </Link>
     )
   }
