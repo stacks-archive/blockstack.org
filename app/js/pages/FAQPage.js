@@ -62,6 +62,7 @@ class FAQpage extends Component {
                 <Link className="navbar-brand sidebar-logo" to="/">
                   <img src="/images/logos/blockstack-logo-landscape.svg" />
                 </Link>
+                <Link className="tagline" to="/faq">faq</Link>
               </div>
               <div className="list-group">
                 <h5 className="list-group-header">Frequently Asked Questions</h5>
