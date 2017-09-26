@@ -380,7 +380,7 @@ a.alert.alert-primary:hover{background-color:#2378CC;text-decoration:none;}
 body,html,#app,.app-landing{height:100%;}
 .app-common{height:auto;}
 .site-wrapper{display:flex;background-color:#270F34;flex-direction:column;height:100%;}
-.hero{display:block;color:#fff;padding-top:3.125rem;padding-right:0.5rem;padding-bottom:5rem;padding-left:0.5rem;}
+.hero{display:block;color:#fff;padding-top:3.125rem;padding-right:0.5rem;padding-bottom:0;padding-left:0.5rem;}
 .hero-wrap{padding-top:.5rem;padding-bottom:6rem;}
 .hero-btn-title{font-family:'Source Code Pro',monospace;font-weight:400;font-size:0.875rem;margin-bottom:0.5rem;margin-top:0.5rem;}
 .sectionContainerDark{color:#fff;background-color:#270F34;padding-top:30px;padding-bottom:30px;padding-right:0px;padding-left:0px;}
@@ -593,6 +593,7 @@ section{word-break:break-word;}
   /* Globals */
   .body-hero{background-color:#402b4c!important;background:url(../images/visuals/blockstack-hero-globe@2x.png) no-repeat;background-position:top -300px center;background-size:100%;}
   h1.hero-head{font-size:2.25rem;text-align:center;margin-top:0;}
+  .hero{padding-bottom:5rem;}
   .hero-lead{text-align:center;padding-left:0;padding-right:0;margin-bottom:3.125rem;line-height:1.5rem}
   .lead-centered{padding-left:0;padding-right:0;text-align:center;margin-bottom:3rem;}
   .col-3-section{padding-bottom:50px;}

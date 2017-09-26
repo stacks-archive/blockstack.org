@@ -130,7 +130,7 @@ class HomePage extends Component {
       <DocumentTitle title="Blockstack, building the decentralized internet">
         <div className="body-hero">
           <div className="col-centered block">
-            <div>
+            <div style={{ overflow: 'hidden' }}>
               <Alert />
               <Header transparent={true} />
               <div className="container">
