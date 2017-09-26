@@ -177,16 +177,16 @@ class HomePage extends Component {
             </div>
             <div className="section-stats container-fluid">
               <div className="container">
-                <section>
-                  <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
+                <section className="row">
+                  <div className="col-sm-12 col-md-4 text-center text-stats">
                     {this.state.stats.domains.toLocaleString()}
                     <span className="text-stats-description">domains registered</span>
                   </div>
-                  <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
+                  <div className="col-sm-12 col-md-4 text-center text-stats">
                     3+
                     <span className="text-stats-description">years in production</span>
                   </div>
-                  <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
+                  <div className="col-sm-12 col-md-4 text-center text-stats">
                     {this.state.stats.meetupUsers.toLocaleString()}
                     <span className="text-stats-description">community devs</span>
                   </div>
