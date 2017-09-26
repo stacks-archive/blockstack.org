@@ -12,6 +12,7 @@ import Image               from '../components/Image'
 import Header              from '../components/Header'
 import Alert               from '../components/Alert'
 import PostPreview         from '../components/PostPreview'
+import EmbedYouTube        from '../components/EmbedYouTube'
 import {featuredApps}      from '../config'
 
 function mapStateToProps(state) {
@@ -34,6 +35,8 @@ class HomePage extends Component {
     super(props)
 
     this.state = {
+      subscribeURL: '//blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=da7056bb03',
+      videoURL: 'https://www.youtube.com/watch?v=Z4bMFKBRg_k',
       stats: this.props.stats,
       posts: this.props.posts
     }
@@ -68,34 +71,6 @@ class HomePage extends Component {
     const firstThreePosts = this.state.posts.slice(0, 3)
 
     const content = {
-      oldInternet: [
-        {
-          title: 'Mass Data Breaches',
-          body: 'Traditional apps store user data in massive data silos. This results in high value targets just waiting to be breached. With a single app, confidence in the safety of your data requires blind trust in dozens of companies.'
-        },
-        {
-          title: 'Insecure Connections',
-          body: 'With traditional apps, a secure connection is far from a certainty. Domain names and website certificates are vulnerable to compromise. Reliance on 3rd party servers and many trusted services makes us less safe.'
-        },
-        {
-          title: 'Platform Lock-in',
-          body: 'With traditional apps, the digital keys to identity and authentication are owned by large monopoly platforms. Users and developers are locked in and restrictions are placed on innovation.'
-        }
-      ],
-      newInternet: [
-        {
-          title: 'Own Your Data',
-          body: 'With Blockstack apps you truly own your data. It’s kept on your device and encrypted before backed up in the cloud. This removes the need for blind trust in 3rd parties and makes it easier to keep your data safe.'
-        },
-        {
-          title: 'Own Your Apps',
-          body: 'Blockstack apps put you in control of your software. Apps are loaded via a secure domain name system and live on your devices. Independence from 3rd parties makes you more safe.'
-        },
-        {
-          title: 'Own Your Identity',
-          body: 'With Blockstack apps you own your identity. Your digital keys are seamlessly generated and kept on your device. This lets you move freely between apps and control your online experience.'
-        }
-      ],
       fullStack: [
         {
           title: 'Identity',
@@ -193,60 +168,11 @@ class HomePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid">
-              <div className="sectionWrap">
+            <div className="sectionContainerLight section-spacing container-fluid" style={{ backgroundColor: '#FAFAFA' }}>
+              <div className="container">
                 <section>
-                  <div className="container no-padding">
-                    <div className="col-md-6 containWrap">
-                      <div className="row">
-                        <div className="container-fluid">
-                          <h3 className="h-primary text-center-md m-b-25">
-                            The <span className="electric-magenta">Old Internet</span> is Broken
-                          </h3>
-                        </div>
-                      </div>
-                      <div className="row">
-                        <div className="container-fluid">
-                        {content.oldInternet.map((item, index) => {
-                          return (
-                            <div key={index} className="container-fluid no-padding-sm m-b-30">
-                              <h5 className="h-primary text-center-md">
-                                {item.title}
-                              </h5>
-                              <p className="text-center-md">
-                                {item.body}
-                              </p>
-                            </div>
-                          )
-                        })}
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6 containWrap">
-                      <div className="row">
-                        <div className="container-fluid">
-                          <h3 className="h-primary text-center-md m-b-25">
-                            The <span className="electric-blue">New Internet</span> is Here
-                          </h3>
-                        </div>
-                      </div>
-                      <div className="row">
-                        <div className="container-fluid">
-                        {content.newInternet.map((item, index) => {
-                          return (
-                            <div key={index} className="container-fluid no-padding-sm m-b-30">
-                              <h5 className="h-primary text-center-md">
-                                {item.title}
-                              </h5>
-                              <p className="text-center-md">
-                                {item.body}
-                              </p>
-                            </div>
-                          )
-                        })}
-                        </div>
-                      </div>
-                    </div>
+                  <div className="row m-t-3">
+                    <EmbedYouTube src={this.state.videoURL} />
                   </div>
                 </section>
               </div>

@@ -90,7 +90,7 @@ class TokenSalePage extends Component {
                   </div>
                 </div>
                 <p className="text-xs-center m-t-2 m-b-165">
-                  <Link to="/whitepaper.pdf" target="_blank" className="btn btn-outline-primary" 
+                  <Link to="/whitepaper.pdf" target="_blank" className="btn btn-outline-primary"
                   style={{ color: '#95889c' }}>
                     Read the Whitepaper
                   </Link>
@@ -103,7 +103,7 @@ class TokenSalePage extends Component {
                   <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
                     {this.state.stats.domains.toLocaleString()}
                     <span className="text-stats-description" style={{ color: 'rgba(255,255,255,0.8)' }} >
-                      users registered
+                      domains registered
                     </span>
                   </div>
                   <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
@@ -233,7 +233,7 @@ class TokenSalePage extends Component {
                         {featuredApps.slice(row[0],row[1]).map((featuredApp, index2) => {
                           const offsetClass = (row[0] === 3 && index2 === 0) ? 'offset-md-2' : ''
                           return (
-                            <div key={index2} 
+                            <div key={index2}
                               className={`col-md-4 m-b-55 ${offsetClass}`}>
                               <p className="text-center">
                                 <Image className="col-img" src={featuredApp.icon}
