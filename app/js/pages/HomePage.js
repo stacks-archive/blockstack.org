@@ -363,7 +363,7 @@ class HomePage extends Component {
                         {featuredApps.slice(row[0],row[1]).map((featuredApp, index2) => {
                           const offsetClass = (row[0] === 3 && index2 === 0) ? 'offset-md-2' : ''
                           return (
-                            <div key={index2} 
+                            <div key={index2}
                               className={`col-md-4 m-b-55 ${offsetClass}`}>
                               <p className="text-center">
                                 <Image className="col-img" src={featuredApp.icon}
