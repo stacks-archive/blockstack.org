@@ -35,7 +35,7 @@ class HomePage extends Component {
     super(props)
 
     this.state = {
-      videoURL: 'https://www.youtube.com/watch?v=Z4bMFKBRg_k',
+      videoURL: 'https://www.youtube.com/embed/Z4bMFKBRg_k',
       stats: this.props.stats,
       posts: this.props.posts
     }
