@@ -149,215 +149,217 @@ class HomePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="section-stats container-fluid">
-              <div className="container">
-                <section className="row">
-                  <div className="col-sm-12 col-md-4 text-center text-stats">
-                    {this.state.stats.domains.toLocaleString()}
-                    <span className="text-stats-description">domains registered</span>
-                  </div>
-                  <div className="col-sm-12 col-md-4 text-center text-stats">
-                    3+
-                    <span className="text-stats-description">years in production</span>
-                  </div>
-                  <div className="col-sm-12 col-md-4 text-center text-stats">
-                    {this.state.stats.meetupUsers.toLocaleString()}
-                    <span className="text-stats-description">community devs</span>
-                  </div>
-                </section>
-              </div>
-            </div>
-            <div className="sectionContainerLight section-spacing container-fluid">
-              <div className="container">
-                <section>
-                  <div className="row m-t-3">
-                    <EmbedYouTube src={this.state.videoURL} />
-                  </div>
-                </section>
-              </div>
-            </div>
-            <div className="sectionContainerLightGray section-spacing container-fluid">
-              <div className="container sectionWrap">
-                <section>
-                  <div className="containWrap">
-                    <h3 className="h-primary text-center m-b-25">
-                      A Full Stack for Decentralized Apps
-                    </h3>
-                    <div className="col-sm-12 text-center landing-hero-img">
-                      <Image className="landing-feat-img"
-                        src="/images/visuals/blockstack-architecture-diagram.svg"
-                        retinaSupport={false} />
+            <div classNam="container-primary">
+              <div className="section-stats container-fluid">
+                <div className="container">
+                  <section className="row">
+                    <div className="col-sm-12 col-md-4 text-center text-stats">
+                      {this.state.stats.domains.toLocaleString()}
+                      <span className="text-stats-description">domains registered</span>
                     </div>
-                    <div>
-                      {content.fullStack.map((item, index) => {
-                        return (
-                          <div key={index} className="col-md-4">
-                            <h4 className="inverse text-center">
-                              {item.title}
-                            </h4>
-                            <p className="inverse text-center">
-                              {item.body}
-                            </p>
-                          </div>
-                        )
-                      })}
+                    <div className="col-sm-12 col-md-4 text-center text-stats">
+                      3+
+                      <span className="text-stats-description">years in production</span>
                     </div>
-                  </div>
-                </section>
+                    <div className="col-sm-12 col-md-4 text-center text-stats">
+                      {this.state.stats.meetupUsers.toLocaleString()}
+                      <span className="text-stats-description">community devs</span>
+                    </div>
+                  </section>
+                </div>
               </div>
-            </div>
-            <div className="sectionContainerLight section-spacing container-fluid">
-              <div className="container sectionWrap">
-                <section>
-                  <div className="container p-b-15">
-                    <h2 className="h-primary text-center">
-                      Libraries and Step-by-Step Tutorials
-                    </h2>
-                  </div>
-                  <div className="container m-b-30">
-                    <div className="col-md-8 col-centered">
-                      <p className="text-center">
-                        Complete the step-by-step tutorial and see how easy it is to build an app with a decentralized identity system in a few lines of code and no servers.
-                      </p>
+              <div className="sectionContainerLight section-spacing container-fluid">
+                <div className="container">
+                  <section>
+                    <div className="row m-t-3">
+                      <EmbedYouTube src={this.state.videoURL} />
                     </div>
-                  </div>
-                  <div className="container m-b-40">
-                    <div className="col-md-4">
-                      <h4 className="text-center m-b-10">
-                        Identity
-                      </h4>
-                      <p className="light-gray text-center">
-                        Available today!
-                      </p>
-                      <p className="text-center">
-                        <Image className="col3-img-lg"
-                          src="/images/visuals/text-editor-identity.svg"
-                          fallbackSrc=""
+                  </section>
+                </div>
+              </div>
+              <div className="sectionContainerLightGray section-spacing container-fluid">
+                <div className="container sectionWrap">
+                  <section>
+                    <div className="containWrap">
+                      <h3 className="h-primary text-center m-b-25">
+                        A Full Stack for Decentralized Apps
+                      </h3>
+                      <div className="col-sm-12 text-center landing-hero-img">
+                        <Image className="landing-feat-img"
+                          src="/images/visuals/blockstack-architecture-diagram.svg"
                           retinaSupport={false} />
-                      </p>
-                    </div>
-                    <div className="col-md-4">
-                      <h4 className="text-center m-b-10">
-                        Storage
-                      </h4>
-                      <p className="light-gray text-center">
-                        Available today!
-                      </p>
-                      <p className="text-center">
-                        <Image className="col3-img-lg"
-                          src="/images/visuals/text-editor-storage.svg"
-                          fallbackSrc=""
-                          retinaSupport={false} />
-                      </p>
-                    </div>
-                    <div className="col-md-4">
-                      <h4 className="text-center m-b-10">
-                        Payments
-                      </h4>
-                      <p className="light-gray text-center">
-                        <i>(Coming Soon...)</i>
-                      </p>
-                      <p className="text-center">
-                        <Image className="col3-img-lg"
-                          src="/images/visuals/text-editor-payments.svg"
-                          fallbackSrc=""
-                          retinaSupport={false} />
-                      </p>
-                    </div>
-                  </div>
-                  <div className="container">
-                    <p className="text-center">
-                      <Link to="/tutorials" role="button"
-                        className="btn btn-outline-primary">
-                        Try the Tutorials
-                      </Link>
-                    </p>
-                  </div>
-                </section>
-              </div>
-            </div>
-            <div className="sectionContainerLightGray section-spacing container-fluid">
-              <div className="container">
-                <section>
-                  <h2 className="h-primary m-b-85 text-center">
-                    Featured Apps on Blockstack
-                  </h2>
-                  {[[0,3], [3,5]].map((row, index) => {
-                    return (
-                      <div key={index}>
-                        {featuredApps.slice(row[0],row[1]).map((featuredApp, index2) => {
-                          const offsetClass = (row[0] === 3 && index2 === 0) ? 'offset-md-2' : ''
+                      </div>
+                      <div>
+                        {content.fullStack.map((item, index) => {
                           return (
-                            <div key={index2}
-                              className={`col-md-4 m-b-55 ${offsetClass}`}>
-                              <p className="text-center">
-                                <Image className="col-img" src={featuredApp.icon}
-                                  retinaSupport={false} />
-                              </p>
-                              <h4 className="modern text-center">
-                                {featuredApp.name}
+                            <div key={index} className="col-md-4">
+                              <h4 className="inverse text-center">
+                                {item.title}
                               </h4>
-                              <p className="text-center">
-                                {featuredApp.description}
+                              <p className="inverse text-center">
+                                {item.body}
                               </p>
                             </div>
                           )
                         })}
                       </div>
-                    )
-                  })}
-                </section>
+                    </div>
+                  </section>
+                </div>
               </div>
-            </div>
-            <div className="sectionContainerLight section-spacing container-fluid">
-              <div className="container">
-                <section>
-                  <div className="containWrap">
-                    <h2 className="h-primary text-center">
-                      News
+              <div className="sectionContainerLight section-spacing container-fluid">
+                <div className="container sectionWrap">
+                  <section>
+                    <div className="container p-b-15">
+                      <h2 className="h-primary text-center">
+                        Libraries and Step-by-Step Tutorials
+                      </h2>
+                    </div>
+                    <div className="container m-b-30">
+                      <div className="col-md-8 col-centered">
+                        <p className="text-center">
+                          Complete the step-by-step tutorial and see how easy it is to build an app with a decentralized identity system in a few lines of code and no servers.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="container m-b-40">
+                      <div className="col-md-4">
+                        <h4 className="text-center m-b-10">
+                          Identity
+                        </h4>
+                        <p className="light-gray text-center">
+                          Available today!
+                        </p>
+                        <p className="text-center">
+                          <Image className="col3-img-lg"
+                            src="/images/visuals/text-editor-identity.svg"
+                            fallbackSrc=""
+                            retinaSupport={false} />
+                        </p>
+                      </div>
+                      <div className="col-md-4">
+                        <h4 className="text-center m-b-10">
+                          Storage
+                        </h4>
+                        <p className="light-gray text-center">
+                          Available today!
+                        </p>
+                        <p className="text-center">
+                          <Image className="col3-img-lg"
+                            src="/images/visuals/text-editor-storage.svg"
+                            fallbackSrc=""
+                            retinaSupport={false} />
+                        </p>
+                      </div>
+                      <div className="col-md-4">
+                        <h4 className="text-center m-b-10">
+                          Payments
+                        </h4>
+                        <p className="light-gray text-center">
+                          <i>(Coming Soon...)</i>
+                        </p>
+                        <p className="text-center">
+                          <Image className="col3-img-lg"
+                            src="/images/visuals/text-editor-payments.svg"
+                            fallbackSrc=""
+                            retinaSupport={false} />
+                        </p>
+                      </div>
+                    </div>
+                    <div className="container">
+                      <p className="text-center">
+                        <Link to="/tutorials" role="button"
+                          className="btn btn-outline-primary">
+                          Try the Tutorials
+                        </Link>
+                      </p>
+                    </div>
+                  </section>
+                </div>
+              </div>
+              <div className="sectionContainerLightGray section-spacing container-fluid">
+                <div className="container">
+                  <section>
+                    <h2 className="h-primary m-b-85 text-center">
+                      Featured Apps on Blockstack
                     </h2>
-                  </div>
-                  <div className="container">
-                  { firstThreePosts.map((post, index) => {
-                    return (
-                      <PostPreview key={index} post={post} />
-                    )
-                  }) }
-                  </div>
-                </section>
+                    {[[0,3], [3,5]].map((row, index) => {
+                      return (
+                        <div key={index}>
+                          {featuredApps.slice(row[0],row[1]).map((featuredApp, index2) => {
+                            const offsetClass = (row[0] === 3 && index2 === 0) ? 'offset-md-2' : ''
+                            return (
+                              <div key={index2}
+                                className={`col-md-4 m-b-55 ${offsetClass}`}>
+                                <p className="text-center">
+                                  <Image className="col-img" src={featuredApp.icon}
+                                    retinaSupport={false} />
+                                </p>
+                                <h4 className="modern text-center">
+                                  {featuredApp.name}
+                                </h4>
+                                <p className="text-center">
+                                  {featuredApp.description}
+                                </p>
+                              </div>
+                            )
+                          })}
+                        </div>
+                      )
+                    })}
+                  </section>
+                </div>
               </div>
-            </div>
-            <div className="sectionContainerDark section-spacing container-fluid">
-              <div className="container sectionWrap">
-                <section>
-                  <div className="containWrap">
-                    <h3 className="h-primary text-center">
-                      Get Started
-                    </h3>
-                  </div>
-                  <div className="col-md-6">
-                    <p className="no-padding hero-btn-title">
-                      Developers
-                    </p>
-                    <p className="no-padding m-b-10">
-                      <Link to="/install" role="button"
-                        className="btn btn-sm btn-secondary btn-block btn-hero">
-                        Browser Kit
-                      </Link>
-                    </p>
-                  </div>
-                  <div className="col-md-6">
-                    <p className="no-padding hero-btn-title">
-                      Users
-                    </p>
-                    <p className="no-padding">
-                      <Link to="/signup" role="button"
-                        className="btn btn-sm btn-secondary btn-block btn-hero">
-                        Sign Up
-                      </Link>
-                    </p>
-                  </div>
-                </section>
+              <div className="sectionContainerLight section-spacing container-fluid">
+                <div className="container">
+                  <section>
+                    <div className="containWrap">
+                      <h2 className="h-primary text-center">
+                        News
+                      </h2>
+                    </div>
+                    <div className="container">
+                    { firstThreePosts.map((post, index) => {
+                      return (
+                        <PostPreview key={index} post={post} />
+                      )
+                    }) }
+                    </div>
+                  </section>
+                </div>
+              </div>
+              <div className="sectionContainerDark section-spacing container-fluid">
+                <div className="container sectionWrap">
+                  <section>
+                    <div className="containWrap">
+                      <h3 className="h-primary text-center">
+                        Get Started
+                      </h3>
+                    </div>
+                    <div className="col-md-6">
+                      <p className="no-padding hero-btn-title">
+                        Developers
+                      </p>
+                      <p className="no-padding m-b-10">
+                        <Link to="/install" role="button"
+                          className="btn btn-sm btn-secondary btn-block btn-hero">
+                          Browser Kit
+                        </Link>
+                      </p>
+                    </div>
+                    <div className="col-md-6">
+                      <p className="no-padding hero-btn-title">
+                        Users
+                      </p>
+                      <p className="no-padding">
+                        <Link to="/signup" role="button"
+                          className="btn btn-sm btn-secondary btn-block btn-hero">
+                          Sign Up
+                        </Link>
+                      </p>
+                    </div>
+                  </section>
+                </div>
               </div>
             </div>
           </div>
