@@ -11,14 +11,14 @@ class VideosPresentation extends Component {
 
   render() {
     return (
-      <div className="sectionContainerLight section-spacing container-fluid">
+      <div className="bg-white sectionWrap section-spacing container-fluid">
         <div className="container">
           <section>
             <h2 className="h-primary text-center">
               Videos
             </h2>
             <div className="post-content m-t-3">
-              
+
               <div className="col-sm-12 col-md-8 col-centered m-b-100" style={{ textAlign: 'center' }} >
                 <Link to="https://youtu.be/IfONVXL6tnk" target="_blank">
                   <Image className="img-video-presentation"
@@ -32,7 +32,7 @@ class VideosPresentation extends Component {
                   Muneeb Ali, <span className="font-weight-normal font-italic">Blockstack Co-founder</span>
                 </p>
               </div>
-              
+
               <div className="col-sm-12 col-md-8 col-centered m-b-100" style={{ textAlign: 'center' }} >
                 <Link to="https://youtu.be/YzlyEuRfXxo" target="_blank">
                   <Image className="img-video-presentation"

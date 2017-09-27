@@ -121,7 +121,7 @@ class TokenSalePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid">
+            <div className="bg-white sectionWrap section-spacing container-fluid">
               <div className="container">
                 <section>
                   <div className="containWrap">
@@ -185,7 +185,7 @@ class TokenSalePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid" style={{ backgroundColor: '#FAFAFA' }}>
+            <div className="bg-white sectionWrap section-spacing container-fluid" style={{ backgroundColor: '#FAFAFA' }}>
               <div className="container">
                 <section>
                   <h2 className="h-primary text-center">
@@ -197,7 +197,7 @@ class TokenSalePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid">
+            <div className="bg-white sectionWrap section-spacing container-fluid">
               <div className="container">
                 <section>
                   <div className="containWrap">
@@ -255,7 +255,7 @@ class TokenSalePage extends Component {
               </div>
             </div>
             <TeamMembers />
-            <div className="sectionContainerLightGray section-spacing container-fluid">
+            <div className="bg-container-lightGray section-spacing container-fluid">
               <div className="container">
                 <section>
                   <div className="containWrap">

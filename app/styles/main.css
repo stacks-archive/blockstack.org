@@ -268,7 +268,28 @@ body{font-family:'Lato',sans-serif;font-size:1rem;font-weight:400;font-style:nor
 
 /*  7. Grid containers */
 .container-primary{width:88%;}
+.sectionWrap{padding-top:30px;padding-bottom:30px;}
 section{word-break:break-word;}
+.bg-container-dark {
+  color: #fff;
+  background-color: #270F34;
+}
+
+.bg-container-lightGray {
+  background-color: #FAFAFA;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.sectionContainerGray {
+  background-color: #F0F0F0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
 
 /*  9. Fonts */
 /* Font spacing has no margin-top */
@@ -408,12 +429,7 @@ body,html,#app,.app-landing{height:100%;}
 .hero{display:block;color:#fff;padding-top:3.125rem;padding-right:0.5rem;padding-bottom:0;padding-left:0.5rem;}
 .hero-wrap{padding-top:.5rem;padding-bottom:6rem;}
 .hero-btn-title{font-family:'Source Code Pro',monospace;font-weight:400;font-size:0.875rem;margin-bottom:0.5rem;margin-top:0.5rem;}
-.sectionContainerDark{color:#fff;background-color:#270F34;padding-top:30px;padding-bottom:30px;padding-right:0px;padding-left:0px;}
-.sectionContainerLight{background-color:#fff;padding-top:30px;padding-bottom:30px;padding-right:0px;padding-left:0px;}
-.sectionContainerLightGray{background-color:#FAFAFA;padding-top:30px;padding-bottom:30px;padding-right:0px;padding-left:0px;}
-.sectionContainerGray{background-color:#F0F0F0;padding-top:30px;padding-bottom:30px;padding-right:0px;padding-left:0px;}
 .section-spacing{padding-top:100px;padding-bottom:100px;}
-.sectionWrap{padding-top:30px;padding-bottom:30px;}
 .containWrap{padding-top:30px;padding-bottom:30px;padding-right:25px;padding-left:25px;}
 .section-stats{position:relative;background-color:#fff;padding-top:70px;padding-bottom:70px;-webkit-box-shadow:0 -10px 20px rgba(0,0,0,0.08),0 0 20px rgba(0,0,0,0.08);-moz-box-shadow:0 -10px 20px rgba(0,0,0,0.08),0 0 20px rgba(0,0,0,0.08);box-shadow:0 -10px 20px rgba(0,0,0,0.08),0 0 20px rgba(0,0,0,0.08);}
 .section-stats-electric-blue{position:relative;background-color:#2C96FF;color:#fff;padding-top:70px;padding-bottom:70px;webkit-box-shadow:0 -10px 20px rgba(0,0,0,0.08),0 0 0 rgba(0,0,0,0);-moz-box-shadow:0 -10px 20px rgba(0,0,0,0.08),0 0 0 rgba(0,0,0,0);box-shadow:0 -10px 20px rgba(0,0,0,0.08),0 0 0 rgba(0,0,0,0);}
@@ -722,6 +738,9 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
   /* Globals */
   h3{margin-bottom:15px;margin-bottom:20px;}
   h4{margin:20px 0;}
+
+  /*  7. Grid containers */
+  .container-primary{width:70%;}
 
   /* 10. Components */
   .PostShareWidget{display:flex;flex-direction:column;height:80px;width:initial;position:fixed;top:47%;left:15px;background-color:transparent;box-shadow:none;border:none;}

@@ -60,7 +60,7 @@ class FundingPage extends Component {
                 </div>
               </section>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid">
+            <div className="bg-white sectionWrap section-spacing container-fluid">
               <section>
                 <div className="containWrapper">
                   <div className="container sectionWrap">
@@ -87,7 +87,7 @@ class FundingPage extends Component {
                 </div>
               </div>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid">
+            <div className="bg-white sectionWrap section-spacing container-fluid">
               <section>
                 <div className="containWrapper">
                   <div className="container sectionWrap">
@@ -125,7 +125,7 @@ class FundingPage extends Component {
                 </div>
               </section>
             </div>
-            <div className="sectionContainerLightGray section-spacing container-fluid">
+            <div className="bg-container-lightGray section-spacing container-fluid">
               <section>
                 <div className="containWrapper">
                   <div className="container sectionWrap">
@@ -141,7 +141,7 @@ class FundingPage extends Component {
                 </div>
               </section>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid">
+            <div className="bg-white sectionWrap section-spacing container-fluid">
               <section>
                 <div className="containWrapper">
                   <div className="container sectionWrap">
@@ -196,7 +196,7 @@ class FundingPage extends Component {
                 </div>
               </section>
             </div>
-            <div className="sectionContainerLightGray section-spacing container-fluid">
+            <div className="bg-container-lightGray section-spacing container-fluid">
               <section>
                 <div className="containWrapper">
                   <div className="container sectionWrap">
@@ -223,7 +223,7 @@ class FundingPage extends Component {
                 </div>
               </section>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid">
+            <div className="bg-white sectionWrap section-spacing container-fluid">
               <section>
                 <div className="containWrapper">
                   <div className="container sectionWrap">

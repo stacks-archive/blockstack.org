@@ -12,7 +12,7 @@ class TeamMembers extends Component {
 
   render() {
     return (
-      <div className="sectionContainerLight section-spacing container-fluid">
+      <div className="bg-white sectionWrap section-spacing container-fluid">
         <div className="container">
           <section>
             <h2 className="h-primary text-center">

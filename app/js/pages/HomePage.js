@@ -149,135 +149,134 @@ class HomePage extends Component {
                 </section>
               </div>
             </div>
-            <div classNam="container-primary">
-              <div className="section-stats container-fluid">
-                <div className="container">
-                  <section className="row">
-                    <div className="col-sm-12 col-md-4 text-center text-stats">
-                      {this.state.stats.domains.toLocaleString()}
-                      <span className="text-stats-description">domains registered</span>
-                    </div>
-                    <div className="col-sm-12 col-md-4 text-center text-stats">
-                      3+
-                      <span className="text-stats-description">years in production</span>
-                    </div>
-                    <div className="col-sm-12 col-md-4 text-center text-stats">
-                      {this.state.stats.meetupUsers.toLocaleString()}
-                      <span className="text-stats-description">community devs</span>
-                    </div>
-                  </section>
-                </div>
+            <div className="section-stats">
+              <div className="container">
+                <section className="row">
+                  <div className="col-sm-12 col-md-4 text-center text-stats">
+                    {this.state.stats.domains.toLocaleString()}
+                    <span className="text-stats-description">domains registered</span>
+                  </div>
+                  <div className="col-sm-12 col-md-4 text-center text-stats">
+                    3+
+                    <span className="text-stats-description">years in production</span>
+                  </div>
+                  <div className="col-sm-12 col-md-4 text-center text-stats">
+                    {this.state.stats.meetupUsers.toLocaleString()}
+                    <span className="text-stats-description">community devs</span>
+                  </div>
+                </section>
               </div>
-              <div className="sectionContainerLight section-spacing container-fluid">
-                <div className="container">
-                  <section>
-                    <div className="row m-t-3">
-                      <EmbedYouTube src={this.state.videoURL} />
-                    </div>
-                  </section>
-                </div>
+            </div>
+            <div className="bg-white sectionWrap section-spacing">
+              <div className="container">
+                <section>
+                  <div className="row m-t-3">
+                    <EmbedYouTube src={this.state.videoURL} />
+                  </div>
+                </section>
               </div>
-              <div className="sectionContainerLightGray section-spacing container-fluid">
-                <div className="container sectionWrap">
-                  <section>
-                    <div className="containWrap">
-                      <h3 className="h-primary text-center m-b-25">
-                        A Full Stack for Decentralized Apps
-                      </h3>
-                      <div className="col-sm-12 text-center landing-hero-img">
-                        <Image className="landing-feat-img"
-                          src="/images/visuals/blockstack-architecture-diagram.svg"
-                          retinaSupport={false} />
-                      </div>
-                      <div>
-                        {content.fullStack.map((item, index) => {
-                          return (
-                            <div key={index} className="col-md-4">
-                              <h4 className="inverse text-center">
-                                {item.title}
-                              </h4>
-                              <p className="inverse text-center">
-                                {item.body}
-                              </p>
-                            </div>
-                          )
-                        })}
-                      </div>
+            </div>
+            <div className="bg-container-lightGray section-spacing">
+              <div className="container sectionWrap">
+                <section>
+                  <div className="containWrap">
+                    <h3 className="h-primary text-center m-b-25">
+                      A Full Stack for Decentralized Apps
+                    </h3>
+                    <div className="col-sm-12 text-center landing-hero-img">
+                      <Image className="landing-feat-img"
+                        src="/images/visuals/blockstack-architecture-diagram.svg"
+                        retinaSupport={false} />
                     </div>
-                  </section>
-                </div>
+                    <div>
+                      {content.fullStack.map((item, index) => {
+                        return (
+                          <div key={index} className="col-md-4">
+                            <h4 className="inverse text-center">
+                              {item.title}
+                            </h4>
+                            <p className="inverse text-center">
+                              {item.body}
+                            </p>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  </div>
+                </section>
               </div>
-              <div className="sectionContainerLight section-spacing container-fluid">
-                <div className="container sectionWrap">
-                  <section>
-                    <div className="container p-b-15">
-                      <h2 className="h-primary text-center">
-                        Libraries and Step-by-Step Tutorials
-                      </h2>
-                    </div>
-                    <div className="container m-b-30">
-                      <div className="col-md-8 col-centered">
-                        <p className="text-center">
-                          Complete the step-by-step tutorial and see how easy it is to build an app with a decentralized identity system in a few lines of code and no servers.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="container m-b-40">
-                      <div className="col-md-4">
-                        <h4 className="text-center m-b-10">
-                          Identity
-                        </h4>
-                        <p className="light-gray text-center">
-                          Available today!
-                        </p>
-                        <p className="text-center">
-                          <Image className="col3-img-lg"
-                            src="/images/visuals/text-editor-identity.svg"
-                            fallbackSrc=""
-                            retinaSupport={false} />
-                        </p>
-                      </div>
-                      <div className="col-md-4">
-                        <h4 className="text-center m-b-10">
-                          Storage
-                        </h4>
-                        <p className="light-gray text-center">
-                          Available today!
-                        </p>
-                        <p className="text-center">
-                          <Image className="col3-img-lg"
-                            src="/images/visuals/text-editor-storage.svg"
-                            fallbackSrc=""
-                            retinaSupport={false} />
-                        </p>
-                      </div>
-                      <div className="col-md-4">
-                        <h4 className="text-center m-b-10">
-                          Payments
-                        </h4>
-                        <p className="light-gray text-center">
-                          <i>(Coming Soon...)</i>
-                        </p>
-                        <p className="text-center">
-                          <Image className="col3-img-lg"
-                            src="/images/visuals/text-editor-payments.svg"
-                            fallbackSrc=""
-                            retinaSupport={false} />
-                        </p>
-                      </div>
-                    </div>
-                    <div className="container">
+            </div>
+            <div className="bg-white sectionWrap section-spacing">
+              <div className="container sectionWrap">
+                <section>
+                  <div className="container p-b-15">
+                    <h2 className="h-primary text-center">
+                      Libraries and Step-by-Step Tutorials
+                    </h2>
+                  </div>
+                  <div className="container m-b-30">
+                    <div className="col-md-8 col-centered">
                       <p className="text-center">
-                        <Link to="/tutorials" role="button"
-                          className="btn btn-outline-primary">
-                          Try the Tutorials
-                        </Link>
+                        Complete the step-by-step tutorial and see how easy it is to build an app with a decentralized identity system in a few lines of code and no servers.
                       </p>
                     </div>
-                  </section>
-                </div>
+                  </div>
+                  <div className="container m-b-40">
+                    <div className="col-md-4">
+                      <h4 className="text-center m-b-10">
+                        Identity
+                      </h4>
+                      <p className="light-gray text-center">
+                        Available today!
+                      </p>
+                      <p className="text-center">
+                        <Image className="col3-img-lg"
+                          src="/images/visuals/text-editor-identity.svg"
+                          fallbackSrc=""
+                          retinaSupport={false} />
+                      </p>
+                    </div>
+                    <div className="col-md-4">
+                      <h4 className="text-center m-b-10">
+                        Storage
+                      </h4>
+                      <p className="light-gray text-center">
+                        Available today!
+                      </p>
+                      <p className="text-center">
+                        <Image className="col3-img-lg"
+                          src="/images/visuals/text-editor-storage.svg"
+                          fallbackSrc=""
+                          retinaSupport={false} />
+                      </p>
+                    </div>
+                    <div className="col-md-4">
+                      <h4 className="text-center m-b-10">
+                        Payments
+                      </h4>
+                      <p className="light-gray text-center">
+                        <i>(Coming Soon...)</i>
+                      </p>
+                      <p className="text-center">
+                        <Image className="col3-img-lg"
+                          src="/images/visuals/text-editor-payments.svg"
+                          fallbackSrc=""
+                          retinaSupport={false} />
+                      </p>
+                    </div>
+                  </div>
+                  <div className="container">
+                    <p className="text-center">
+                      <Link to="/tutorials" role="button"
+                        className="btn btn-outline-primary">
+                        Try the Tutorials
+                      </Link>
+                    </p>
+                  </div>
+                </section>
               </div>
-              <div className="sectionContainerLightGray section-spacing container-fluid">
+            </div>
+            <div className="bg-container-lightGray section-spacing">
                 <div className="container">
                   <section>
                     <h2 className="h-primary m-b-85 text-center">
@@ -309,8 +308,8 @@ class HomePage extends Component {
                     })}
                   </section>
                 </div>
-              </div>
-              <div className="sectionContainerLight section-spacing container-fluid">
+            </div>
+            <div className="bg-white sectionWrap section-spacing">
                 <div className="container">
                   <section>
                     <div className="containWrap">
@@ -327,8 +326,8 @@ class HomePage extends Component {
                     </div>
                   </section>
                 </div>
-              </div>
-              <div className="sectionContainerDark section-spacing container-fluid">
+            </div>
+            <div className="bg-container-dark section-spacing">
                 <div className="container sectionWrap">
                   <section>
                     <div className="containWrap">
@@ -360,7 +359,6 @@ class HomePage extends Component {
                     </div>
                   </section>
                 </div>
-              </div>
             </div>
           </div>
         </div>
