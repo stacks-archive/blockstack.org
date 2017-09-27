@@ -11,8 +11,8 @@ import {StatsActions}      from '../datastore/Stats'
 import Image               from '../components/Image'
 import Header              from '../components/Header'
 import Alert               from '../components/Alert'
-import PostPreview         from '../components/PostPreview'
 import EmbedYouTube        from '../components/EmbedYouTube'
+import PostPreview         from '../components/PostPreview'
 import {featuredApps}      from '../config'
 
 function mapStateToProps(state) {
@@ -35,7 +35,6 @@ class HomePage extends Component {
     super(props)
 
     this.state = {
-      subscribeURL: '//blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=da7056bb03',
       videoURL: 'https://www.youtube.com/watch?v=Z4bMFKBRg_k',
       stats: this.props.stats,
       posts: this.props.posts
@@ -168,7 +167,7 @@ class HomePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid" style={{ backgroundColor: '#FAFAFA' }}>
+            <div className="sectionContainerLight section-spacing container-fluid">
               <div className="container">
                 <section>
                   <div className="row m-t-3">
