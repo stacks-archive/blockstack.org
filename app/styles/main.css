@@ -165,7 +165,6 @@
 .col-centered{float:none;margin:0 auto;}
 .no-padding{padding-right:0;padding-left:0;}
 .no-margin{margin-right:0;margin-left:0;}
-.text-center{text-align:center!important;}
 .text-white{color:#fff;}
 
 
@@ -267,42 +266,29 @@ body{font-family:'Lato',sans-serif;font-size:1rem;font-weight:400;font-style:nor
 
 
 /*  7. Grid containers */
-.container-primary{width:88%;}
-.sectionWrap{padding-top:30px;padding-bottom:30px;}
+.container-primary{max-width:700px;}
+.sectionWrap{padding-top:60px;padding-bottom:60px;}
 section{word-break:break-word;}
-.bg-container-dark {
-  color: #fff;
-  background-color: #270F34;
-}
-
 .bg-container-lightGray {
   background-color: #FAFAFA;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-right: 0px;
-  padding-left: 0px;
 }
-
 .sectionContainerGray {
   background-color: #F0F0F0;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-right: 0px;
-  padding-left: 0px;
 }
+.section-stats{position:relative;-webkit-box-shadow:0 -10px 20px rgba(0,0,0,0.08),0 0 20px rgba(0,0,0,0.08);-moz-box-shadow:0 -10px 20px rgba(0,0,0,0.08),0 0 20px rgba(0,0,0,0.08);box-shadow:0 -10px 20px rgba(0,0,0,0.08),0 0 20px rgba(0,0,0,0.08);}
 
 /*  9. Fonts */
 /* Font spacing has no margin-top */
 
 /* Heading styles */
-h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:1rem;}
+/*h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:1rem;}
 h1{font-size:2.125rem;}
 h2{font-size:1.875rem;}
 h3{font-size:1.625rem;}
 h4{font-size:1.375rem;}
 h5{font-size:1.125rem;}
 h6{font-size:1rem;}
-.h-primary{font-weight:700;}
+.h-primary{font-weight:700;}*/
 
 /* Paragraph styles */
 p{font-size:1rem;line-height:1.6875rem;margin-bottom:1rem;}
@@ -431,7 +417,6 @@ body,html,#app,.app-landing{height:100%;}
 .hero-btn-title{font-family:'Source Code Pro',monospace;font-weight:400;font-size:0.875rem;margin-bottom:0.5rem;margin-top:0.5rem;}
 .section-spacing{padding-top:100px;padding-bottom:100px;}
 .containWrap{padding-top:30px;padding-bottom:30px;padding-right:25px;padding-left:25px;}
-.section-stats{position:relative;background-color:#fff;padding-top:70px;padding-bottom:70px;-webkit-box-shadow:0 -10px 20px rgba(0,0,0,0.08),0 0 20px rgba(0,0,0,0.08);-moz-box-shadow:0 -10px 20px rgba(0,0,0,0.08),0 0 20px rgba(0,0,0,0.08);box-shadow:0 -10px 20px rgba(0,0,0,0.08),0 0 20px rgba(0,0,0,0.08);}
 .section-stats-electric-blue{position:relative;background-color:#2C96FF;color:#fff;padding-top:70px;padding-bottom:70px;webkit-box-shadow:0 -10px 20px rgba(0,0,0,0.08),0 0 0 rgba(0,0,0,0);-moz-box-shadow:0 -10px 20px rgba(0,0,0,0.08),0 0 0 rgba(0,0,0,0);box-shadow:0 -10px 20px rgba(0,0,0,0.08),0 0 0 rgba(0,0,0,0);}
 .col-3-section{padding-top:50px;padding-bottom:50px;background-color:rgba(248,249,251,1);border-bottom:1px solid #E6E6E6;}
 .about-head-wrap{padding-bottom:30px;background:url(/images/visuals/blockchain-timeline.png);background-repeat:no-repeat;background-position:center top;background-color:#53206f;}
@@ -614,13 +599,13 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
 
   /* 9. Fonts */
   /* Heading styles */
-  h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:1rem;}
+/*  h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:1rem;}
   h1{font-size:2.75rem;}
   h2{font-size:1.875rem;}
   h3{font-size:1.625rem;}
   h4{font-size:1.375rem;}
   h5{font-size:1.125rem;}
-  h6{font-size:1rem;}
+  h6{font-size:1rem;}*/
 
   /* Globals */
   .body-hero{background-color:#402b4c!important;background:url(../images/visuals/blockstack-hero-globe@2x.png) no-repeat;background-position:top -300px center;background-size:100%;}
@@ -634,6 +619,7 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
 
   /*  7. Grid containers */
   .container-primary{width:85%;}
+  .sectionWrap{padding-top:60px;padding-bottom:60px;}
 
   /* 10. Components */
   /* Footer */
@@ -701,7 +687,6 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
   .inverse-3col-section{padding-top:10px;padding-bottom:10px;}
   .social-count{position:absolute;margin-top:0;display:inline-block;margin-left:25px;margin-top:5px;}
   .social-type{margin-left:-45px;}
-  .sectionWrap{padding-top:30px;padding-bottom:30px;padding-right:15px;padding-left:15px;}
   a > div.col-md-4.feature-panel:hover{background-color:rgba(248,249,251,1);}
   .docs-header-image-wrapper{height:400px;}
   .card.card-1-of-3{margin-bottom:15px;}
@@ -787,7 +772,6 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
 
   /* 37. Misc */
   .simple-featurette{margin-top:155px;}
-  .sectionWrap{padding-right:15px;padding-left:15px;}
   .col3-img-lg{width:unset;max-width:310px;}
 
   /* 38. f. - Embed */

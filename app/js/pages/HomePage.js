@@ -104,9 +104,12 @@ class HomePage extends Component {
       <DocumentTitle title="Blockstack, building the decentralized internet">
         <div className="body-hero">
           <div className="col-centered block">
+
             <div style={{ overflow: 'hidden' }}>
+
               <Alert />
               <Header transparent={true} />
+
               <div className="container">
                 <section className="hero text-center">
                   <h1 className="text-white m-b-20">
@@ -149,9 +152,12 @@ class HomePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="section-stats">
+
+
+            {/* This is the standard container format */}
+            <div className="container-fluid sectionWrap section-stats bg-white">
               <div className="container">
-                <section className="row">
+                <div className="row align-items-center">
                   <div className="col-sm-12 col-md-4 text-center text-stats">
                     {this.state.stats.domains.toLocaleString()}
                     <span className="text-stats-description">domains registered</span>
@@ -164,34 +170,38 @@ class HomePage extends Component {
                     {this.state.stats.meetupUsers.toLocaleString()}
                     <span className="text-stats-description">community devs</span>
                   </div>
-                </section>
+                </div>
               </div>
             </div>
-            <div className="bg-white sectionWrap section-spacing">
+
+
+            {/* This is the standard container format */}
+            <div className="container-fluid sectionWrap bg-white">
+              <div className="container container-primary">
+                <div className="row align-items-center">
+                  <EmbedYouTube src={this.state.videoURL} />
+                </div>
+              </div>
+            </div>
+
+
+            {/* This is the standard container format */}
+            <div className="container-fluid sectionWrap bg-container-lightGray">
               <div className="container">
-                <section>
-                  <div className="row m-t-3">
-                    <EmbedYouTube src={this.state.videoURL} />
-                  </div>
-                </section>
-              </div>
-            </div>
-            <div className="bg-container-lightGray section-spacing">
-              <div className="container sectionWrap">
-                <section>
-                  <div className="containWrap">
-                    <h3 className="h-primary text-center m-b-25">
+                <div className="row align-items-center">
+                  <div className="container">
+                    <h2 className="text-center m-b-25">
                       A Full Stack for Decentralized Apps
-                    </h3>
+                    </h2>
                     <div className="col-sm-12 text-center landing-hero-img">
                       <Image className="landing-feat-img"
                         src="/images/visuals/blockstack-architecture-diagram.svg"
                         retinaSupport={false} />
                     </div>
-                    <div>
+                    <div className="row">
                       {content.fullStack.map((item, index) => {
                         return (
-                          <div key={index} className="col-md-4">
+                          <div key={index} className="col-lg-4">
                             <h4 className="inverse text-center">
                               {item.title}
                             </h4>
@@ -203,17 +213,22 @@ class HomePage extends Component {
                       })}
                     </div>
                   </div>
-                </section>
+                </div>
               </div>
             </div>
-            <div className="bg-white sectionWrap section-spacing">
-              <div className="container sectionWrap">
-                <section>
-                  <div className="container p-b-15">
-                    <h2 className="h-primary text-center">
+
+            {/* This is the standard container format */}
+            <div className="container-fluid sectionWrap bg-white">
+              <div className="container">
+                <div className="row align-items-center">
+
+
+                  <div className="container">
+                    <h2 className="text-center m-b-25">
                       Libraries and Step-by-Step Tutorials
                     </h2>
                   </div>
+
                   <div className="container m-b-30">
                     <div className="col-md-8 col-centered">
                       <p className="text-center">
@@ -221,50 +236,54 @@ class HomePage extends Component {
                       </p>
                     </div>
                   </div>
-                  <div className="container m-b-40">
-                    <div className="col-md-4">
-                      <h4 className="text-center m-b-10">
-                        Identity
-                      </h4>
-                      <p className="light-gray text-center">
-                        Available today!
-                      </p>
-                      <p className="text-center">
-                        <Image className="col3-img-lg"
-                          src="/images/visuals/text-editor-identity.svg"
-                          fallbackSrc=""
-                          retinaSupport={false} />
-                      </p>
-                    </div>
-                    <div className="col-md-4">
-                      <h4 className="text-center m-b-10">
-                        Storage
-                      </h4>
-                      <p className="light-gray text-center">
-                        Available today!
-                      </p>
-                      <p className="text-center">
-                        <Image className="col3-img-lg"
-                          src="/images/visuals/text-editor-storage.svg"
-                          fallbackSrc=""
-                          retinaSupport={false} />
-                      </p>
-                    </div>
-                    <div className="col-md-4">
-                      <h4 className="text-center m-b-10">
-                        Payments
-                      </h4>
-                      <p className="light-gray text-center">
-                        <i>(Coming Soon...)</i>
-                      </p>
-                      <p className="text-center">
-                        <Image className="col3-img-lg"
-                          src="/images/visuals/text-editor-payments.svg"
-                          fallbackSrc=""
-                          retinaSupport={false} />
-                      </p>
+
+                  <div className="container m-b-30">
+                    <div className="row">
+                      <div className="col-lg-4">
+                        <h4 className="text-center m-b-10">
+                          Identity
+                        </h4>
+                        <p className="light-gray text-center">
+                          Available today!
+                        </p>
+                        <p className="text-center">
+                          <Image className="col3-img-lg"
+                            src="/images/visuals/text-editor-identity.svg"
+                            fallbackSrc=""
+                            retinaSupport={false} />
+                        </p>
+                      </div>
+                      <div className="col-lg-4">
+                        <h4 className="text-center m-b-10">
+                          Storage
+                        </h4>
+                        <p className="light-gray text-center">
+                          Available today!
+                        </p>
+                        <p className="text-center">
+                          <Image className="col3-img-lg"
+                            src="/images/visuals/text-editor-storage.svg"
+                            fallbackSrc=""
+                            retinaSupport={false} />
+                        </p>
+                      </div>
+                      <div className="col-lg-4">
+                        <h4 className="text-center m-b-10">
+                          Payments
+                        </h4>
+                        <p className="light-gray text-center">
+                          <i>(Coming Soon...)</i>
+                        </p>
+                        <p className="text-center">
+                          <Image className="col3-img-lg"
+                            src="/images/visuals/text-editor-payments.svg"
+                            fallbackSrc=""
+                            retinaSupport={false} />
+                        </p>
+                      </div>
                     </div>
                   </div>
+
                   <div className="container">
                     <p className="text-center">
                       <Link to="/tutorials" role="button"
@@ -273,9 +292,12 @@ class HomePage extends Component {
                       </Link>
                     </p>
                   </div>
-                </section>
-              </div>
+
+
             </div>
+            </div>
+            </div>
+
             <div className="bg-container-lightGray section-spacing">
                 <div className="container">
                   <section>
@@ -327,7 +349,7 @@ class HomePage extends Component {
                   </section>
                 </div>
             </div>
-            <div className="bg-container-dark section-spacing">
+            <div className="section-spacing bg-primary text-white">
                 <div className="container sectionWrap">
                   <section>
                     <div className="containWrap">

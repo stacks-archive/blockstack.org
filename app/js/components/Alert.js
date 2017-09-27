@@ -19,6 +19,7 @@ class Alert extends Component {
           <span style={{ marginLeft: "26px" }}>Introducing The <strong>Blockstack Token</strong> &nbsp;&nbsp; › &nbsp; <strong>More</strong></span>
         </div>
       </Link>
+
     )
   }
 
