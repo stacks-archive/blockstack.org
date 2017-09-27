@@ -11,6 +11,7 @@ import {StatsActions}      from '../datastore/Stats'
 import Image               from '../components/Image'
 import Header              from '../components/Header'
 import Alert               from '../components/Alert'
+import EmbedYouTube        from '../components/EmbedYouTube'
 import PostPreview         from '../components/PostPreview'
 import {featuredApps}      from '../config'
 
@@ -34,6 +35,7 @@ class HomePage extends Component {
     super(props)
 
     this.state = {
+      videoURL: 'https://www.youtube.com/watch?v=Z4bMFKBRg_k',
       stats: this.props.stats,
       posts: this.props.posts
     }
@@ -68,34 +70,6 @@ class HomePage extends Component {
     const firstThreePosts = this.state.posts.slice(0, 3)
 
     const content = {
-      oldInternet: [
-        {
-          title: 'Mass Data Breaches',
-          body: 'Traditional apps store user data in massive data silos. This results in high value targets just waiting to be breached. With a single app, confidence in the safety of your data requires blind trust in dozens of companies.'
-        },
-        {
-          title: 'Insecure Connections',
-          body: 'With traditional apps, a secure connection is far from a certainty. Domain names and website certificates are vulnerable to compromise. Reliance on 3rd party servers and many trusted services makes us less safe.'
-        },
-        {
-          title: 'Platform Lock-in',
-          body: 'With traditional apps, the digital keys to identity and authentication are owned by large monopoly platforms. Users and developers are locked in and restrictions are placed on innovation.'
-        }
-      ],
-      newInternet: [
-        {
-          title: 'Own Your Data',
-          body: 'With Blockstack apps you truly own your data. It’s kept on your device and encrypted before backed up in the cloud. This removes the need for blind trust in 3rd parties and makes it easier to keep your data safe.'
-        },
-        {
-          title: 'Own Your Apps',
-          body: 'Blockstack apps put you in control of your software. Apps are loaded via a secure domain name system and live on your devices. Independence from 3rd parties makes you more safe.'
-        },
-        {
-          title: 'Own Your Identity',
-          body: 'With Blockstack apps you own your identity. Your digital keys are seamlessly generated and kept on your device. This lets you move freely between apps and control your online experience.'
-        }
-      ],
       fullStack: [
         {
           title: 'Identity',
@@ -130,11 +104,11 @@ class HomePage extends Component {
       <DocumentTitle title="Blockstack, building the decentralized internet">
         <div className="body-hero">
           <div className="col-centered block">
-            <div>
+            <div style={{ overflow: 'hidden' }}>
               <Alert />
               <Header transparent={true} />
               <div className="container">
-                <section className="hero text-xs-center">
+                <section className="hero text-center">
                   <h1 className="text-white m-b-20">
                    A New Internet for Decentralized Apps
                   </h1>
@@ -142,23 +116,23 @@ class HomePage extends Component {
                     Blockstack is a new decentralized internet where users own their data and apps run locally. A browser portal is all that’s needed to get started.
                   </p>
                   <div className="no-padding container-fluid col-md-10 col-lg-10 col-centered m-b-60">
-                    <div className="col-sm-12 col-md-6">
-                      <p className="pull-md-right">
-                        <Link to="/install" role="button"
-                          className="btn btn-electric-blue btn-block btn-block-reset"
-                          style={{ minWidth: '245px' }}>
-                          Developers&nbsp;&nbsp;›&nbsp;&nbsp;Browser Kit
-                        </Link>
-                      </p>
-                    </div>
-                    <div className="col-sm-12 col-md-6">
-                      <p className="pull-md-left">
-                        <Link to="/signup" role="button"
-                          className="btn btn-electric-blue btn-block btn-block-reset"
-                          style={{ minWidth: '245px' }}>
-                          Users&nbsp;&nbsp;›&nbsp;&nbsp;Sign Up
-                        </Link>
-                      </p>
+                    <div className="row">
+                      <div className="col-sm-12 col-md-6">
+                        <p className="float-md-right">
+                          <Link to="/install" role="button"
+                            className="btn btn-electric-blue btn-block btn-block-reset" style={{ minWidth: '245px' }}>
+                            Developers&nbsp;&nbsp;›&nbsp;&nbsp;Browser Kit
+                          </Link>
+                        </p>
+                      </div>
+                      <div className="col-sm-12 col-md-6">
+                        <p className="float-md-left">
+                          <Link to="/signup" role="button"
+                            className="btn btn-electric-blue btn-block btn-block-reset" style={{ minWidth: '245px' }}>
+                            Users&nbsp;&nbsp;›&nbsp;&nbsp;Sign Up
+                          </Link>
+                        </p>
+                      </div>
                     </div>
                   </div>
                   <div className="no-padding container-fluid col-md-9 col-centered">
@@ -177,16 +151,16 @@ class HomePage extends Component {
             </div>
             <div className="section-stats container-fluid">
               <div className="container">
-                <section>
-                  <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
+                <section className="row">
+                  <div className="col-sm-12 col-md-4 text-center text-stats">
                     {this.state.stats.domains.toLocaleString()}
-                    <span className="text-stats-description">users registered</span>
+                    <span className="text-stats-description">domains registered</span>
                   </div>
-                  <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
+                  <div className="col-sm-12 col-md-4 text-center text-stats">
                     3+
                     <span className="text-stats-description">years in production</span>
                   </div>
-                  <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
+                  <div className="col-sm-12 col-md-4 text-center text-stats">
                     {this.state.stats.meetupUsers.toLocaleString()}
                     <span className="text-stats-description">community devs</span>
                   </div>
@@ -194,59 +168,10 @@ class HomePage extends Component {
               </div>
             </div>
             <div className="sectionContainerLight section-spacing container-fluid">
-              <div className="sectionWrap">
+              <div className="container">
                 <section>
-                  <div className="container no-padding">
-                    <div className="col-md-6 containWrap">
-                      <div className="row">
-                        <div className="container-fluid">
-                          <h3 className="h-primary text-center-md m-b-25">
-                            The <span className="electric-magenta">Old Internet</span> is Broken
-                          </h3>
-                        </div>
-                      </div>
-                      <div className="row">
-                        <div className="container-fluid">
-                        {content.oldInternet.map((item, index) => {
-                          return (
-                            <div key={index} className="container-fluid no-padding-sm m-b-30">
-                              <h5 className="h-primary text-center-md">
-                                {item.title}
-                              </h5>
-                              <p className="text-center-md">
-                                {item.body}
-                              </p>
-                            </div>
-                          )
-                        })}
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6 containWrap">
-                      <div className="row">
-                        <div className="container-fluid">
-                          <h3 className="h-primary text-center-md m-b-25">
-                            The <span className="electric-blue">New Internet</span> is Here
-                          </h3>
-                        </div>
-                      </div>
-                      <div className="row">
-                        <div className="container-fluid">
-                        {content.newInternet.map((item, index) => {
-                          return (
-                            <div key={index} className="container-fluid no-padding-sm m-b-30">
-                              <h5 className="h-primary text-center-md">
-                                {item.title}
-                              </h5>
-                              <p className="text-center-md">
-                                {item.body}
-                              </p>
-                            </div>
-                          )
-                        })}
-                        </div>
-                      </div>
-                    </div>
+                  <div className="row m-t-3">
+                    <EmbedYouTube src={this.state.videoURL} />
                   </div>
                 </section>
               </div>
@@ -363,7 +288,7 @@ class HomePage extends Component {
                         {featuredApps.slice(row[0],row[1]).map((featuredApp, index2) => {
                           const offsetClass = (row[0] === 3 && index2 === 0) ? 'offset-md-2' : ''
                           return (
-                            <div key={index2} 
+                            <div key={index2}
                               className={`col-md-4 m-b-55 ${offsetClass}`}>
                               <p className="text-center">
                                 <Image className="col-img" src={featuredApp.icon}
