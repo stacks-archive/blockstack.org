@@ -11,15 +11,14 @@ class Alert extends Component {
 
   render() {
     return (
-      <Link to="/token" className="alert alert-primary alert-dismissible fade show text-center text-white" style={{ marginBottom: '0' }}>
-        <div style={{ marginLeft: "26px" }}>
+      <Link to="/token" className="alert alert-primary alert-dismissible fade show text-center text-white" role="alert" style={{ marginBottom: '0', display: "block" }}>
+        <div >
           <button type="button" className="close close-primary" data-dismiss="alert" aria-label="Close" style={{ top: '-.65rem' }}>
             <span aria-hidden="true">&times;</span>
           </button>
-          Introducing The <strong>Blockstack Token</strong> &nbsp;&nbsp; › &nbsp; <strong>More</strong>
+          <span style={{ marginLeft: "26px" }}>Introducing The <strong>Blockstack Token</strong> &nbsp;&nbsp; › &nbsp; <strong>More</strong></span>
         </div>
       </Link>
-
     )
   }
 
