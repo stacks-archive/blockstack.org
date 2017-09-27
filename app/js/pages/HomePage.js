@@ -80,7 +80,7 @@ class HomePage extends Component {
           body: 'Blockstack\'s storage system allows users to bring their own storage providers and control their data. Data is encrypted and easily shared between applications.'
         },
         {
-          title: 'Payments',
+          title: 'Token',
           body: 'Blockstack uses Bitcoin and other crypto-currencies for simple peer-to-peer payments. Developers can charge for downloads, subscriptions, and more.'
         },
       ],
@@ -153,8 +153,18 @@ class HomePage extends Component {
               </div>
             </div>
 
+            {/* The following is the new section layout
 
-            {/* This is the standard container format */}
+              <div className="container-fluid sectionWrap section-stats bg-white">
+                <div className="container">
+                  <div className="row align-items-center">
+                  </div>
+                </div>
+              </div>
+
+            */}
+
+            {/* New section layout applied */}
             <div className="container-fluid sectionWrap section-stats bg-white">
               <div className="container">
                 <div className="row align-items-center">
@@ -174,8 +184,7 @@ class HomePage extends Component {
               </div>
             </div>
 
-
-            {/* This is the standard container format */}
+            {/* New section layout applied */}
             <div className="container-fluid sectionWrap bg-white">
               <div className="container container-primary">
                 <div className="row align-items-center">
@@ -184,8 +193,7 @@ class HomePage extends Component {
               </div>
             </div>
 
-
-            {/* This is the standard container format */}
+            {/* New section layout applied */}
             <div className="container-fluid sectionWrap bg-container-lightGray">
               <div className="container">
                 <div className="row align-items-center">
@@ -217,7 +225,7 @@ class HomePage extends Component {
               </div>
             </div>
 
-            {/* This is the standard container format */}
+            {/* New section layout applied */}
             <div className="container-fluid sectionWrap bg-white">
               <div className="container">
                 <div className="row align-items-center">
@@ -291,7 +299,7 @@ class HomePage extends Component {
               </div>
             </div>
 
-            {/* This is the standard container format */}
+            {/* New section layout applied */}
             <div className="container-fluid sectionWrap bg-container-lightGray">
               <div className="container">
                 <div className="row align-items-center">
@@ -327,57 +335,68 @@ class HomePage extends Component {
                 </div>
               </div>
             </div>
-            <div className="bg-white sectionWrap section-spacing">
-                <div className="container">
-                  <section>
-                    <div className="containWrap">
-                      <h2 className="h-primary text-center">
-                        News
-                      </h2>
-                    </div>
+
+            {/* New section layout applied */}
+            <div className="container-fluid sectionWrap bg-white">
+              <div className="container">
+                <div className="row align-items-center">
+                  <div className="container">
+                    <h2 className="h-primary text-center">
+                      News
+                    </h2>
                     <div className="container">
-                    { firstThreePosts.map((post, index) => {
-                      return (
-                        <PostPreview key={index} post={post} />
-                      )
-                    }) }
+                      <div className="row">
+                      { firstThreePosts.map((post, index) => {
+                        return (
+                          <PostPreview key={index} post={post} />
+                        )
+                      }) }
+                      </div>
                     </div>
-                  </section>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div className="section-spacing bg-primary text-white">
-                <div className="container sectionWrap">
-                  <section>
-                    <div className="containWrap">
-                      <h3 className="h-primary text-center">
-                        Get Started
-                      </h3>
+
+            {/* New section layout applied */}
+            <div className="container-fluid sectionWrap bg-primary text-white">
+              <div className="container">
+                <div className="row align-items-center">
+                  <div className="container">
+                    <h3 className="h-primary text-center">
+                      Get Started
+                    </h3>
+                    <div className="container">
+                      <div className="row">
+                        <div className="col-md-6">
+                          <p className="lead-lg text-center text-white">
+                            Developers
+                          </p>
+                          <p className="no-padding m-b-10">
+                            <Link to="/install" role="button"
+                              className="btn btn-primary btn-block">
+                              Browser Kit
+                            </Link>
+                          </p>
+                        </div>
+                        <div className="col-md-6">
+                          <p className="lead-lg text-center text-white">
+                            Users
+                          </p>
+                          <p className="no-padding">
+                            <Link to="/signup" role="button"
+                              className="btn btn-primary btn-block">
+                              Sign Up
+                            </Link>
+                          </p>
+                        </div>
+                      </div>
                     </div>
-                    <div className="col-md-6">
-                      <p className="no-padding hero-btn-title">
-                        Developers
-                      </p>
-                      <p className="no-padding m-b-10">
-                        <Link to="/install" role="button"
-                          className="btn btn-sm btn-secondary btn-block btn-hero">
-                          Browser Kit
-                        </Link>
-                      </p>
-                    </div>
-                    <div className="col-md-6">
-                      <p className="no-padding hero-btn-title">
-                        Users
-                      </p>
-                      <p className="no-padding">
-                        <Link to="/signup" role="button"
-                          className="btn btn-sm btn-secondary btn-block btn-hero">
-                          Sign Up
-                        </Link>
-                      </p>
-                    </div>
-                  </section>
+                  </div>
                 </div>
+              </div>
             </div>
+
           </div>
         </div>
       </DocumentTitle>
