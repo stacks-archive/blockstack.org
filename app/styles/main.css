@@ -264,8 +264,15 @@ html, body {-webkit-overflow-scrolling:touch;}
 body{font-family:'Lato',sans-serif;font-size:1rem;font-weight:400;font-style:normal;-webkit-font-smoothing:antialiased;color:#484848;line-height:1.75rem;padding-top:0;padding-bottom:0;}
 
 
-/*  9. Fonts */
+/*  6. Grid breakpoints */
+/* blockstack.org utilizes Bootstrap's breakpoints. See 7. Grid containers */
 
+
+/*  7. Grid containers */
+.container-primary{width:86%;}
+
+
+/*  9. Fonts */
 /* Font spacing has no margin-top */
 
 /* Heading styles */
