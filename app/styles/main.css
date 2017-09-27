@@ -267,6 +267,7 @@ body{font-family:'Lato',sans-serif;font-size:1rem;font-weight:400;font-style:nor
 
 /*  7. Grid containers */
 .container-primary{max-width:700px;}
+.container-secondary{max-width:550px;}
 .sectionWrap{padding-top:60px;padding-bottom:60px;}
 section{word-break:break-word;}
 .bg-container-lightGray {

@@ -221,14 +221,11 @@ class HomePage extends Component {
             <div className="container-fluid sectionWrap bg-white">
               <div className="container">
                 <div className="row align-items-center">
-
-
                   <div className="container">
                     <h2 className="text-center m-b-25">
                       Libraries and Step-by-Step Tutorials
                     </h2>
                   </div>
-
                   <div className="container m-b-30">
                     <div className="col-md-8 col-centered">
                       <p className="text-center">
@@ -236,8 +233,7 @@ class HomePage extends Component {
                       </p>
                     </div>
                   </div>
-
-                  <div className="container m-b-30">
+                  <div className="container m-b-60">
                     <div className="row">
                       <div className="col-lg-4">
                         <h4 className="text-center m-b-10">
@@ -269,7 +265,7 @@ class HomePage extends Component {
                       </div>
                       <div className="col-lg-4">
                         <h4 className="text-center m-b-10">
-                          Payments
+                          Token
                         </h4>
                         <p className="light-gray text-center">
                           <i>(Coming Soon...)</i>
@@ -283,35 +279,34 @@ class HomePage extends Component {
                       </div>
                     </div>
                   </div>
-
-                  <div className="container">
+                  <div className="container container-secondary">
                     <p className="text-center">
                       <Link to="/tutorials" role="button"
-                        className="btn btn-outline-primary">
+                        className="btn btn-primary btn-lg btn-block">
                         Try the Tutorials
                       </Link>
                     </p>
                   </div>
-
-
-            </div>
-            </div>
+                </div>
+              </div>
             </div>
 
-            <div className="bg-container-lightGray section-spacing">
-                <div className="container">
-                  <section>
-                    <h2 className="h-primary m-b-85 text-center">
+            {/* This is the standard container format */}
+            <div className="container-fluid sectionWrap bg-container-lightGray">
+              <div className="container">
+                <div className="row align-items-center">
+                  <div className="container">
+                    <h2 className="h-primary text-center m-b-85">
                       Featured Apps on Blockstack
                     </h2>
                     {[[0,3], [3,5]].map((row, index) => {
                       return (
-                        <div key={index}>
+                        <div key={index} className="row">
                           {featuredApps.slice(row[0],row[1]).map((featuredApp, index2) => {
                             const offsetClass = (row[0] === 3 && index2 === 0) ? 'offset-md-2' : ''
                             return (
                               <div key={index2}
-                                className={`col-md-4 m-b-55 ${offsetClass}`}>
+                                className={`col-md-4 m-b-55 mx-auto ${offsetClass}`}>
                                 <p className="text-center">
                                   <Image className="col-img" src={featuredApp.icon}
                                     retinaSupport={false} />
@@ -328,8 +323,9 @@ class HomePage extends Component {
                         </div>
                       )
                     })}
-                  </section>
+                  </div>
                 </div>
+              </div>
             </div>
             <div className="bg-white sectionWrap section-spacing">
                 <div className="container">
