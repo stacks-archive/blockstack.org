@@ -99,18 +99,20 @@ class BlogPostPage extends Component {
               shareUrl={currentPage.url}
               title={currentPage.title}
             />
-            <section className="m-b-50 m-t-100">
-              <div className="container p-b-5 col-centered blog-post">
+            <div className="container container-lg sectionWrap blog-post bg-white m-b-60">
+              <div className="row">
                 <div className="container">
-                  <div className="post-header">
-                    <h1 className="post-title">
-                      {currentPage.title}
-                    </h1>
-                    <time className="post-date" dateTime={currentPage.datetime}>
-                      {currentPage.date}
-                    </time>
+                  <div className="row">
+                    <div className="container-fluid">
+                      <h2 className="post-title">
+                        {currentPage.title}
+                      </h2>
+                      <time className="post-date" dateTime={currentPage.datetime}>
+                        {currentPage.date}
+                      </time>
+                    </div>
                   </div>
-                  <div className="m-b-3 m-t-3">
+                  <div className="m-b-55">
                     { currentPage !== null && this.state.imageLoading !== true ?
                     <Image src={headerImageSrc}
                       fallbackSrc="/images/article-photos/road.jpg"
@@ -118,33 +120,43 @@ class BlogPostPage extends Component {
                       retinaSupport={false} />
                     : null }
                   </div>
-                  <div className="post-body"
+                  <div className="post-body m-b-50"
                     dangerouslySetInnerHTML={{ __html: currentPage.markup }}>
                   </div>
                   <hr className="m-t-70 m-b-60" />
-                  <section className="author">
-                    <p>
-                      Written by:
-                    </p>
-                    <CommunityMember
-                      key={0}
-                      blockstackId={currentPage.creator.blockstackId}
-                      name={currentPage.creator.name}
-                      avatar={currentPage.creator.avatar}
-                      twitter={currentPage.creator.twitter}
-                      github={currentPage.creator.github}
-                      isCentered={false} />
-                  </section>
-                  <p className="no-padding col-md-8">
-                    <Link to="/signup" role="button"
-                      className="btn btn-lg btn-primary btn-block">
-                      Get Updates
-                    </Link>
-                  </p>
+                    <div className="container-fluid">
+                      <div className="row">
+                        <div className="col-md-4">
+                          <div className="row">
+                            <div className="author">
+                              <p className="written-by">
+                                Written by:
+                              </p>
+                              <CommunityMember
+                                key={0}
+                                blockstackId={currentPage.creator.blockstackId}
+                                name={currentPage.creator.name}
+                                avatar={currentPage.creator.avatar}
+                                twitter={currentPage.creator.twitter}
+                                github={currentPage.creator.github}
+                                isCentered={false} />
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-8">
+                          <div className="row h-100 d-flex align-items-center">
+                              <Link to="/signup" role="button"
+                                className="btn btn-secondary btn-block">
+                                Get Updates
+                              </Link>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </section>
-          </div>
+            </div>
           :
           <section className="m-b-5 m-t-5">
             <div className="container p-b-5 col-centered blog-post">

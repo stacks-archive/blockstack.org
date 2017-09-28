@@ -63,40 +63,44 @@ class BlogPage extends Component {
     return (
       <DocumentTitle title="Blockstack - Blog">
         <div>
-          <section className="container-fluid spacing-container">
-            <div className="container col-centered blog-index">
-              <div className="container m-b-5">
-                <h1>
-                  Blockstack Blog
-                </h1>
-                { this.state.posts.map((post, index) => {
-                  return (
-                    <div className="m-b-3" key={index}>
-                      { post.urlSlug && post.title ?
-                      <Link to={'/blog/' + post.urlSlug}>
-                        <h3>{ post.title }</h3>
-                      </Link>
-                      : null }
-                      { post.preview ?
-                      <div dangerouslySetInnerHTML={{ __html: post.preview }}>
-                      </div>
-                      : null }
-                      <div className="post-meta">
-                        { post.creator ?
-                        <span>{post.creator.name} |&nbsp;</span>
-                        : null }
-                        { post.datetime && post.date ?
-                        <time className="post-date" dateTime={post.datetime}>
-                          {post.date}
-                        </time>
-                        : null }
-                      </div>
-                    </div>
-                  )
-                }) }
+          <div className="container container-lg sectionWrap blog-post bg-white m-b-100">
+            <div className="row">
+              <div className="container">
+                <div className="row">
+                  <div className="container-fluid">
+                    <h2 className="m-b-45">
+                      Blockstack Blog
+                    </h2>
+                    { this.state.posts.map((post, index) => {
+                      return (
+                        <div className="m-b-20" key={index}>
+                          { post.urlSlug && post.title ?
+                          <Link to={'/blog/' + post.urlSlug}>
+                            <h3 className="m-b-10">{ post.title }</h3>
+                          </Link>
+                          : null }
+                          { post.preview ?
+                          <div dangerouslySetInnerHTML={{ __html: post.preview }}>
+                          </div>
+                          : null }
+                          <div className="post-meta">
+                            { post.creator ?
+                            <span className="post-author">{post.creator.name} |&nbsp;</span>
+                            : null }
+                            { post.datetime && post.date ?
+                            <time className="post-date" dateTime={post.datetime}>
+                              {post.date}
+                            </time>
+                            : null }
+                          </div>
+                        </div>
+                      )
+                    }) }
+                  </div>
+                </div>
               </div>
             </div>
-          </section>
+          </div>
         </div>
       </DocumentTitle>
     )
