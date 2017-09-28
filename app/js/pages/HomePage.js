@@ -122,7 +122,7 @@ class HomePage extends Component {
                       <div className="col-sm-12 col-md-6">
                         <p className="float-md-right">
                           <Link to="/install" role="button"
-                            className="btn btn-electric-blue btn-block btn-block-reset" style={{ minWidth: '245px' }}>
+                            className="btn btn-primary btn-block btn-block-reset" style={{ minWidth: '245px' }}>
                             Developers&nbsp;&nbsp;›&nbsp;&nbsp;Browser Kit
                           </Link>
                         </p>
@@ -130,7 +130,7 @@ class HomePage extends Component {
                       <div className="col-sm-12 col-md-6">
                         <p className="float-md-left">
                           <Link to="/signup" role="button"
-                            className="btn btn-electric-blue btn-block btn-block-reset" style={{ minWidth: '245px' }}>
+                            className="btn btn-primary btn-block btn-block-reset" style={{ minWidth: '245px' }}>
                             Users&nbsp;&nbsp;›&nbsp;&nbsp;Sign Up
                           </Link>
                         </p>
@@ -234,9 +234,9 @@ class HomePage extends Component {
                         </p>
                       </div>
                     </div>
-                    <div className="container m-b-60">
+                    <div className="container m-b-80">
                       <div className="row">
-                        <div className="col-lg-4 code-img-gutter">
+                        <div className="col-xl-4 code-img-gutter">
                           <h4 className="text-center m-b-10">
                             Identity
                           </h4>
@@ -250,7 +250,7 @@ class HomePage extends Component {
                               retinaSupport={false} />
                           </p>
                         </div>
-                        <div className="col-lg-4 code-img-gutter">
+                        <div className="col-xl-4 code-img-gutter">
                           <h4 className="text-center m-b-10">
                             Storage
                           </h4>
@@ -264,7 +264,7 @@ class HomePage extends Component {
                               retinaSupport={false} />
                           </p>
                         </div>
-                        <div className="col-lg-4 code-img-gutter">
+                        <div className="col-xl-4 code-img-gutter">
                           <h4 className="text-center m-b-10">
                             Token
                           </h4>
@@ -280,7 +280,7 @@ class HomePage extends Component {
                         </div>
                       </div>
                     </div>
-                    <div className="container container-sm">
+                    <div className="container container-xs">
                       <p className="text-center">
                         <Link to="/tutorials" role="button"
                           className="btn btn-primary btn-lg btn-block">
