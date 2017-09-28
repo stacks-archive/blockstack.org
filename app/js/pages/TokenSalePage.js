@@ -98,28 +98,23 @@ class TokenSalePage extends Component {
               </section>
             </div>
 
-            <div className="section-stats section-stats-electric-blue container-fluid">
+            {/* New section layout applied */}
+            <div className="container-fluid sectionWrap bg-secondary section-stats">
               <div className="container">
-                <section>
-                  <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
+                <div className="row">
+                  <div className="col-sm-4 text-center text-stats text-white">
                     {this.state.stats.domains.toLocaleString()}
-                    <span className="text-stats-description" style={{ color: 'rgba(255,255,255,0.8)' }} >
-                      domains registered
-                    </span>
+                    <span className="text-stats-description text-white">domains registered</span>
                   </div>
-                  <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
+                  <div className="col-sm-4 text-center text-stats text-white">
                     3+
-                    <span className="text-stats-description" style={{ color: 'rgba(255,255,255,0.8)' }} >
-                      years in production
-                    </span>
+                    <span className="text-stats-description text-white">years in production</span>
                   </div>
-                  <div className="no-padding col-sm-12 col-md-4 text-center text-stats">
+                  <div className="col-sm-4 text-center text-stats text-white">
                     {this.state.stats.meetupUsers.toLocaleString()}
-                    <span className="text-stats-description" style={{ color: 'rgba(255,255,255,0.8)' }} >
-                      community devs
-                    </span>
+                    <span className="text-stats-description text-white">community devs</span>
                   </div>
-                </section>
+                </div>
               </div>
             </div>
 
