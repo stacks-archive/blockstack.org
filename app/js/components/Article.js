@@ -84,29 +84,37 @@ class Article extends Component {
       <section>
         { this.props.youtubeURL ?
               <div className="media-screen">
-                <div className="container no-padding">
-                  <EmbedYouTube src={this.props.youtubeURL} />
+                <div className="container container-lg">
+                  <div className="row">
+                    <EmbedYouTube src={this.props.youtubeURL} />
+                  </div>
                 </div>
               </div>
             : null }
-        <div className="container p-b-5 col-centered media-content" style={{ fontSize: '18px' }}>
-          { this.state.title ?
-          <div className="container">
-            <h1>{this.state.title}</h1>
-            <div className="m-b-1">
+            <div className="container container-lg sectionWrap blog-post bg-white m-b-100">
+              <div className="row">
+                <div className="container">
+                  <div className="row">
+                    { this.state.title ?
+                    <div className="container container-card">
+                      <h2 className="m-b-45">
+                        {this.state.title}
+                      </h2>
+                      <div dangerouslySetInnerHTML={{ __html: this.state.markup }}>
+                      </div>
+                      <div className="m-t-4">
+                        <Link to={`${githubFileUrlRoot}${pathPrefix}/${this.state.urlSlug}.md`}
+                          role="button" target="_blank"
+                          className="btn btn-sm btn-outline-primary m-b-2">
+                          Edit this post on GitHub
+                        </Link>
+                      </div>
+                    </div>
+                    : null }
+                  </div>
+                </div>
+              </div>
             </div>
-            <div dangerouslySetInnerHTML={{ __html: this.state.markup }}>
-            </div>
-            <div className="m-t-4">
-              <Link to={`${githubFileUrlRoot}${pathPrefix}/${this.state.urlSlug}.md`}
-                role="button" target="_blank"
-                className="btn btn-sm btn-outline-primary m-b-2">
-                Edit this post on GitHub
-              </Link>
-            </div>
-          </div>
-          : null }
-        </div>
       </section>
     )
   }
