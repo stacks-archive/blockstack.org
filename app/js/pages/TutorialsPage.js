@@ -20,22 +20,20 @@ class TutorialsPage extends Component {
             <div className="row">
               <div className="container">
                 <div className="row">
-                  <div className="container container-card">
-                    <h2 className="m-b-45">
-                      Tutorials
-                    </h2>
-                    { Object.keys(tutorials).map((key, index) => {
-                      const tutorial = tutorials[key]
-                      return (
-                        <TutorialPreview
-                          key={index}
-                          url={'/tutorials/' + tutorial.urlSlug}
-                          title={tutorial.title}
-                          description={tutorial.description}
-                          image={tutorial.image} />
-                      )
-                    }) }
-                  </div>
+                  <h2 className="m-b-45">
+                    Tutorials
+                  </h2>
+                  { Object.keys(tutorials).map((key, index) => {
+                    const tutorial = tutorials[key]
+                    return (
+                      <TutorialPreview
+                        key={index}
+                        url={'/tutorials/' + tutorial.urlSlug}
+                        title={tutorial.title}
+                        description={tutorial.description}
+                        image={tutorial.image} />
+                    )
+                  }) }
                 </div>
               </div>
             </div>
