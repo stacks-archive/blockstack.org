@@ -369,25 +369,25 @@ class HomePage extends Component {
                       </h2>
                     </div>
                     <div className="col-12 col-xl-8 container-lg mx-auto">
-                    <div className="row">
-                      <div className="col-md-6 m-b-20">
-                        <p className="lead-lg text-center text-white">
-                          Developers
-                        </p>
-                        <Link to="/install" role="button"
-                          className="btn btn-primary btn-block m-b-10">
-                          Browser Kit
-                        </Link>
-                      </div>
-                      <div className="col-md-6 m-b-20">
-                        <p className="lead-lg text-center text-white">
-                          Users
-                        </p>
-                        <Link to="/signup" role="button"
-                          className="btn btn-primary btn-block">
-                          Sign Up
-                        </Link>
-                      </div>
+                      <div className="row">
+                        <div className="col-md-6 m-b-20">
+                          <p className="lead-lg text-center text-white">
+                            Developers
+                          </p>
+                          <Link to="/install" role="button"
+                            className="btn btn-primary btn-block m-b-10">
+                            Browser Kit
+                          </Link>
+                        </div>
+                        <div className="col-md-6 m-b-20">
+                          <p className="lead-lg text-center text-white">
+                            Users
+                          </p>
+                          <Link to="/signup" role="button"
+                            className="btn btn-primary btn-block">
+                            Sign Up
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   </div>

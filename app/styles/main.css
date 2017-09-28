@@ -272,6 +272,7 @@ body{font-family:'Lato',sans-serif;font-size:1rem;font-weight:400;font-style:nor
 .container-lg{max-width:960px;}
 .container-xl{max-width:1140px;}
 .sectionWrap{padding:60px 23px;}
+.container-box{padding:20px 20px;border:1px solid #F0F0F0;border-radius:6px;-webkit-border-radius:6px;-moz-border-radius:6px;}
 section{word-break:break-word;}
 .bg-container-lightGray {
   background-color: #FAFAFA;
@@ -356,11 +357,12 @@ button{outline:none!important;cursor:pointer;}
 .btn-lg{font-size:0.8125rem;padding:0.8125rem 3.4375rem;line-height:1.75rem;}
 .btn:focus,.btn:active:focus,.btn.active:focus{outline:none;}
 .btn-primary{color:#fff;border:1px solid #2C96FF;background-color:#2C96FF;}
-.btn-primary:hover,.btn-primary:focus,.btn-primary:active{background-color:#2378CC;border:1px solid #2378CC;font-weight:700;}
+.btn-primary:hover,.btn-primary:focus,.btn-primary:active{color:#fff;background-color:#2378CC;border:1px solid #2378CC;font-weight:700;}
+.btn-secondary{color:#fff;background-color:#270F34;border:1px solid #270F34;}
+.btn-secondary:hover,.btn-secondary:focus,.btn-secondary:active{color:#fff;background-color:#2C96FF;border:1px solid #2C96FF;font-weight:700;}
+
 /* Need to review all buttons below */
 .btn-outline-secondary:hover,.btn-outline-secondary:focus,.btn-outline-secondary:active{color:#9A21C5;}
-.btn-secondary{color:#270F34;border:1px solid #fff;background-color:#fff;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
-.btn-secondary:hover,.btn-secondary:focus,.btn-secondary:active{color:#fff;border:1px solid #E91E63;background-color:#E91E63;outline:none;}
 .btn-outline-primary{color:#fff;border:1px solid rgba(255,255,255,0.15);font-weight:700;background-color:#270F34;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
 .btn-outline-primary:hover,.btn-outline-primary:focus,.btn-outline-primary:active{color:#270F34;border:1px solid rgba(255,255,255);font-weight:700;background-color:#fff;outline:none;}
 .btn-special{color:#fff;border:1px solid #080809;background-color:#080809;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
@@ -639,6 +641,8 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
   .container-primary{width:85%;}
   .sectionWrap{padding:120px 50px;}
   .section-stats{padding:100px 50px;}
+  .container-box{padding:20px 45px;}
+
 
   /* 10. Components */
   /* Footer */
