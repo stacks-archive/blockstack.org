@@ -20,7 +20,7 @@ class TutorialsPage extends Component {
             <div className="row">
               <div className="container">
                 <div className="row">
-                  <div className="container-fluid">
+                  <div className="container container-card">
                     <h2 className="m-b-45">
                       Tutorials
                     </h2>

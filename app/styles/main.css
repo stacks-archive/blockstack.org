@@ -286,6 +286,7 @@ section > div.container.col-centered.blog-post{padding:0!important;}
 section > div.container.col-centered.blog-post > div.container{padding-right:0!important;padding-left:0!important;}
 section > div.container.col-centered.blog-post > div.container > div.post-content > div > p{font-size:1rem;margin-bottom:15px;}
 .author{margin-bottom:35px;}
+.container-card{max-width:440px;margin-right:auto;margin-left:auto;}
 
 /*  9. Fonts */
 /* Font spacing has no margin-top */
@@ -405,18 +406,9 @@ a.nav-link > i.fa.fa-github{display:none;}
 
 /* 21. Cards */
 .card{background-color:#fff;}
-.card-media {
-  padding: 35px 25px;
-  margin-bottom: 35px;
-  border: none;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.2);
-}
-.card-text-media{font-size:0.9375rem!important;line-height:1.5rem!important;margin-bottom:1.5rem;}
+.card-media{padding:0;margin-bottom:45px;border:none;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;}
+.card-text-media{font-size:0.9375rem!important;line-height:1.5rem!important;margin-bottom:1.375rem;}
+.card-media-title{font-weight:700;}
 
 
 /* 26. Alerts */
@@ -659,6 +651,7 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
   .section-stats{padding:100px 50px;}
   .container-box{padding:20px 45px;}
   .author{margin-bottom:0;}
+  .container-card{max-width:none;}
 
 
   /* 10. Components */
@@ -767,7 +760,7 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
   .section-stats{padding:100px 80px;}
 
   /* 10. Components */
-  .PostShareWidget{display:flex;flex-direction:column;height:80px;width:initial;position:fixed;top:47%;left:15px;background-color:transparent;box-shadow:none;border:none;}
+  /*.PostShareWidget{display:flex;flex-direction:column;height:80px;width:initial;position:fixed;top:47%;left:15px;background-color:transparent;box-shadow:none;border:none;}*/
   /* 10. Components - Footer */
   .foot-left-col{width:22.3%}
   .foot-menu{padding-top:0px;}
@@ -785,6 +778,9 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
   .brand-bug{display:none;}
   .brand-logo{display:initial;}
   .navbar-brand img{margin-top:-7px;}
+
+  /* 21. Cards */
+  .card-media-title{margin-top:26px;}
 
   /* Hero */
   .hero-wrap{padding-top:11.5rem;padding-bottom:12.5rem;}
@@ -824,6 +820,9 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
   .sectionWrap{padding:140px 100px;}
   .section-stats{padding:100px 100px;}
   .blog-post{padding:100px 100px;}
+
+  /* 21. Cards */
+  .card-media-title{margin-top:18px;}
 
   /* 38. f. - Embed */
   .video-special-row{margin-top:100px;background-color:#1A1D1F;}

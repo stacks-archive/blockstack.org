@@ -26,8 +26,8 @@ class TutorialPreview extends Component {
                 className="talk-preview-image" />
             </Link>
           </div>
-          <div className="col-md-7 m-t-10 m-b-25">
-            <p className="lead font-weight-bold">
+          <div className="col-md-7 m-b-25">
+            <p className="lead card-media-title">
               {this.props.title}
             </p>
             <p className="card-text card-text-media">
