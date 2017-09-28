@@ -21,7 +21,7 @@ class DownloadsPage extends Component {
     return (
       <DocumentTitle title="Install Blockstack">
         <div>
-          <div className="container-fluid sectionWrap bg-white">
+          <div className="container container-lg sectionWrap blog-post bg-white">
               <div className="container container-lg">
                 <div className="row">
                   <div className="container">
