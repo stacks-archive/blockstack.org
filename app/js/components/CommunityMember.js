@@ -26,28 +26,28 @@ class CommunityMember extends Component {
 
     return (
       <div>
-        <div className={`col-md-3 m-b-60 no-padding ${extraWrapperClass}`}>
+        <div className={`container no-padding ${extraWrapperClass}`}>
           <Link to={"https://onename.com/" + this.props.blockstackId} target="_blank">
             <Image
               src={this.props.avatar}
               fallbackSrc="https://s3.amazonaws.com/onename/avatar-placeholder.png"
-              className="avatar-lg" />
+              className="avatar-md" />
           </Link>
-          <h5 className="center" style={{ marginBottom: '5px' }}>{this.props.name}</h5>
+          <p style={{ marginBottom: '5px' }}>{this.props.name}</p>
           { this.props.twitter ?
-          <Link to={"https://twitter.com/" + this.props.twitter} target="_blank">
+          <Link to={"https://twitter.com/" + this.props.twitter}  target="_blank">
             <i className="fa fa-twitter fa-lg">
             </i>
           </Link>
           : null }
           { this.props.github ?
-          <Link to={"https://github.com/" + this.props.github} target="_blank">
+          <Link to={"https://github.com/" + this.props.github}  target="_blank">
             <i className="fa fa-github fa-lg">
             </i>
           </Link>
           : null }
           { this.props.facebook ?
-          <Link to={"https://facebook.com/" + this.props.facebook} target="_blank">
+          <Link to={"https://facebook.com/" + this.props.facebook}  target="_blank">
             <i className="fa fa-facebook fa-lg">
             </i>
           </Link>
