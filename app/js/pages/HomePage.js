@@ -341,7 +341,7 @@ class HomePage extends Component {
                   <div className="row">
                     <div className="container-fluid">
                       <h2 className="text-center m-b-25">
-                        News
+                        Press
                       </h2>
                     </div>
                     <div className="container">

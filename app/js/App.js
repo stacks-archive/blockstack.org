@@ -32,12 +32,19 @@ class App extends Component {
 
   render() {
     let specialHeader = false
+    let specialFooter = false
     const pathname = location.pathname.replace(/\/$/, '')
     if (location.pathname === '/' ||
         pathname === '/token' ||
         pathname === '/summit2017' ||
-        pathname === '/funding') {
+        pathname === '/funding' ||
+        pathname === '/faq' ||
+        pathname === '/docs') {
       specialHeader = true
+    }
+    if (pathname === '/faq' ||
+        pathname === '/docs') {
+      specialFooter = true
     }
 
     return (
@@ -49,7 +56,9 @@ class App extends Component {
         </div>
         : null }
         {this.renderChildren()}
+        { !specialFooter ?
         <Footer />
+        : null }
       </div>
     )
   }
