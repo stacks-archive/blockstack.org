@@ -153,18 +153,18 @@ class HomePage extends Component {
             </div>
 
             {/* New section layout applied */}
-            <div className="container-fluid sectionWrap section-stats bg-white">
+            <div className="container-fluid sectionWrap bg-white section-stats">
               <div className="container">
                 <div className="row">
-                  <div className="col-xs-12 col-md-4 text-center text-stats">
+                  <div className="col-sm-4 text-center text-stats">
                     {this.state.stats.domains.toLocaleString()}
                     <span className="text-stats-description">domains registered</span>
                   </div>
-                  <div className="col-xs-12 col-md-4 text-center text-stats">
+                  <div className="col-sm-4 text-center text-stats">
                     3+
                     <span className="text-stats-description">years in production</span>
                   </div>
-                  <div className="col-xs-12 col-md-4 text-center text-stats">
+                  <div className="col-sm-4 text-center text-stats">
                     {this.state.stats.meetupUsers.toLocaleString()}
                     <span className="text-stats-description">community devs</span>
                   </div>
