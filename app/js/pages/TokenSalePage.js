@@ -78,11 +78,13 @@ class TokenSalePage extends Component {
           <div className="col-centered block">
             <Header transparent={true} />
             <div className="container">
-              <section className="text-xs-center">
+              <section className="text-center">
                 <Image className="m-t-65 m-b-55"
                   src="/images/logos/stacks-logo.svg"
                   retinaSupport={false} />
-                <h1 className="text-white m-b-20">The Blockstack Token</h1>
+                <h1 className="text-white m-b-20">
+                  The Blockstack Token
+                </h1>
                 <p className="hero-lead purple-50">Sign up to receive important information about the token distribution</p>
                 <div>
                   <div className="col-md-9 col-centered m-t-2 m-b-3">
