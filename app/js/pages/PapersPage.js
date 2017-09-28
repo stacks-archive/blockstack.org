@@ -16,23 +16,27 @@ class PapersPage extends Component {
     return (
       <DocumentTitle title="Blockstack - Papers">
         <div>
-          <section className="container-fluid spacing-container">
-            <div className="container col-centered">
-              <div className="container m-b-5">
-                <h1>
-                  Papers
-                </h1>
-                { papers.map((paper, index) => {
-                  return (
-                    <Paper key={index}
-                    date={paper.date} title={paper.title}
-                    publication={paper.publication} authors={paper.authors}
-                    url={paper.url} index={index} />
-                  )
-                }) }
+          <div className="container container-lg sectionWrap blog-post bg-white m-b-100">
+            <div className="row">
+              <div className="container">
+                <div className="row">
+                  <div className="container container-card">
+                    <h2 className="m-b-45">
+                      Papers
+                    </h2>
+                    { papers.map((paper, index) => {
+                      return (
+                        <Paper key={index}
+                        date={paper.date} title={paper.title}
+                        publication={paper.publication} authors={paper.authors}
+                        url={paper.url} index={index} />
+                      )
+                    }) }
+                  </div>
+                </div>
               </div>
             </div>
-          </section>
+          </div>
         </div>
       </DocumentTitle>
     )
