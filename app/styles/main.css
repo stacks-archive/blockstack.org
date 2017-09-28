@@ -270,7 +270,7 @@ body{font-family:'Lato',sans-serif;font-size:1rem;font-weight:400;font-style:nor
 .container-md{max-width:720px;}
 .container-lg{max-width:960px;}
 .container-xl{max-width:1140px;}
-.sectionWrap{padding-top:60px;padding-bottom:60px;}
+.sectionWrap{padding:60px 23px;}
 section{word-break:break-word;}
 .bg-container-lightGray {
   background-color: #FAFAFA;

@@ -364,13 +364,13 @@ class HomePage extends Component {
                 <div className="col-sm-10 col-lg-11 col-xl-12 mx-auto m-b-80 m-t-35">
                   <div className="row">
                     <div className="container-fluid">
-                      <h2 className="text-center m-b-25">
+                      <h2 className="text-center m-b-35">
                         Get Started
                       </h2>
                     </div>
                     <div className="col-12 col-xl-8 container-lg mx-auto">
                     <div className="row">
-                      <div className="col-md-6">
+                      <div className="col-md-6 m-b-20">
                         <p className="lead-lg text-center text-white">
                           Developers
                         </p>
@@ -379,7 +379,7 @@ class HomePage extends Component {
                           Browser Kit
                         </Link>
                       </div>
-                      <div className="col-md-6">
+                      <div className="col-md-6 m-b-20">
                         <p className="lead-lg text-center text-white">
                           Users
                         </p>
@@ -388,7 +388,7 @@ class HomePage extends Component {
                           Sign Up
                         </Link>
                       </div>
-                    </div>
+                      </div>
                     </div>
                   </div>
                 </div>
