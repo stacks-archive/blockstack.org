@@ -324,7 +324,7 @@ display-6{font-size:1rem;}
   a{font-weight:400;color:#2C96FF;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
   a:hover,a:focus{font-weight:400;color:#2C96FF;text-decoration:underline;}
   a.news-links{color:#484848;}
-  .blog-post .container, .blog-post .container p{font-size:1rem;padding-right:-15px;padding-left:-15px;}
+  .blog-post > .container, .blog-post >.container > p{font-size:1rem;padding-right:-15px;padding-left:-15px;}
   .post-title{margin-bottom:5px;}
   .post-date{display:inline-block;padding:0;margin:0;border:none;text-transform:uppercase;font-size:0.75rem!important;white-space:nowrap;color:#949494;line-height:18px;margin-bottom:2rem;}
   .post-author{font-size:0.875rem!important;color:#949494;line-height:18px;}
@@ -405,6 +405,18 @@ a.nav-link > i.fa.fa-github{display:none;}
 
 /* 21. Cards */
 .card{background-color:#fff;}
+.card-media {
+  padding: 35px 25px;
+  margin-bottom: 35px;
+  border: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.2);
+}
+.card-text-media{font-size:0.9375rem!important;line-height:1.5rem!important;margin-bottom:1.5rem;}
 
 
 /* 26. Alerts */
@@ -459,7 +471,6 @@ h2.action-title{margin-bottom:35px;font-size:30px;line-height:42px;font-weight:4
 .table-wrap{max-width:800px;}
 .table-striped > thead > tr > th{text-align:center;}
 .table td{border-top:none;}
-.card{width:100%;}
 .inverse-3col-section{background-color:#41294E;color:#fff;padding-top:30px;padding-bottom:25px;}
 .inverse-lead{font-weight:400;margin-bottom:35px;}
 .inverse-heading{font-weight:400;}
@@ -555,7 +566,6 @@ h1.hero-head.summ-head,.summ-head,.about-head,.date,.hero-comm-des,.hall{text-al
 .card .card-link-image{width:100%;display:block;position:absolute;margin:auto;top:-100%;left:-100%;right:-100%;bottom:-100%;min-width:100%;}
 .card-block{padding:25px 30px 65px 30px;}
 .card-text{font-weight:400;line-height:1.625rem;}
-.card{border:1px solid #e5e5e5;box-shadow:none;}
 .card-deck-wrapper{margin-bottom:55px;}
 .page-link{background-color:#53206f;color:#fff;padding:8px 15px;border:1px solid #53206f;}
 .page-link:hover{text-decoration:none;}
@@ -750,7 +760,7 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
 
   /* Globals */
   h3{margin-bottom:15px;margin-bottom:20px;}
-  h4{margin:20px 0;}
+  h4{margin:15px 0;}
 
   /*  7. Grid containers */
   .sectionWrap{padding:120px 80px;}

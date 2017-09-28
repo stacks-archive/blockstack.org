@@ -16,26 +16,30 @@ class TutorialsPage extends Component {
     return (
       <DocumentTitle title="Blockstack - Videos">
         <div>
-          <section className="container-fluid spacing-container">
-            <div className="container-fluid col-centered">
-              <div className="container m-b-1">
-                <h1>
-                  Tutorials
-                </h1>
-                { Object.keys(tutorials).map((key, index) => {
-                  const tutorial = tutorials[key]
-                  return (
-                    <TutorialPreview
-                      key={index}
-                      url={'/tutorials/' + tutorial.urlSlug}
-                      title={tutorial.title}
-                      description={tutorial.description}
-                      image={tutorial.image} />
-                  )
-                }) }
+          <div className="container container-lg sectionWrap blog-post bg-white m-b-100">
+            <div className="row">
+              <div className="container">
+                <div className="row">
+                  <div className="container-fluid">
+                    <h2 className="m-b-45">
+                      Tutorials
+                    </h2>
+                    { Object.keys(tutorials).map((key, index) => {
+                      const tutorial = tutorials[key]
+                      return (
+                        <TutorialPreview
+                          key={index}
+                          url={'/tutorials/' + tutorial.urlSlug}
+                          title={tutorial.title}
+                          description={tutorial.description}
+                          image={tutorial.image} />
+                      )
+                    }) }
+                  </div>
+                </div>
               </div>
             </div>
-          </section>
+          </div>
         </div>
       </DocumentTitle>
     )
