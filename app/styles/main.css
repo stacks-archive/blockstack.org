@@ -349,7 +349,7 @@ svg.social-icon.social-icon--facebook{margin-top:-1px;}
 
 
 /* 12. Buttons */
-button{outline:none!important;cursor:pointer;}
+.btn,button{outline:none!important;cursor:pointer;}
 .btn{font-family:'Lato',sans-serif;padding:0.5625rem 2.5rem;font-size:0.75rem;font-weight:700;line-height:1.75rem;border-radius:2px;-webkit-border-radius:2px;-moz-border-radius:2px;text-transform:uppercase;letter-spacing:1px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
 .btn:hover,.btn:focus,.btn:active{-webkit-box-shadow:0px 5px 20px 0px rgba(0,0,0,0.25);-moz-box-shadow:0px 5px 20px 0px rgba(0,0,0,0.25);box-shadow:0px 5px 20px 0px rgba(0,0,0,0.25);}
 .btn-xs{font-size:0.75rem;padding:0.375rem 2.125rem;line-height:1rem;}
@@ -360,11 +360,13 @@ button{outline:none!important;cursor:pointer;}
 .btn-primary:hover,.btn-primary:focus,.btn-primary:active{color:#fff;background-color:#2378CC;border:1px solid #2378CC;font-weight:700;}
 .btn-secondary{color:#fff;background-color:#270F34;border:1px solid #270F34;}
 .btn-secondary:hover,.btn-secondary:focus,.btn-secondary:active{color:#fff;background-color:#2C96FF;border:1px solid #2C96FF;font-weight:700;}
+.btn-outline-primary{color:#fff;border:1px solid rgba(255,255,255,0.15);font-weight:700;background-color:#270F34;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
+.btn-outline-primary:hover,.btn-outline-primary:focus,.btn-outline-primary:active{color:#270F34!important;border:1px solid rgba(255,255,255,1)!important;font-weight:700;background-color:#fff;outline:none;}
+
+
 
 /* Need to review all buttons below */
 .btn-outline-secondary:hover,.btn-outline-secondary:focus,.btn-outline-secondary:active{color:#9A21C5;}
-.btn-outline-primary{color:#fff;border:1px solid rgba(255,255,255,0.15);font-weight:700;background-color:#270F34;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
-.btn-outline-primary:hover,.btn-outline-primary:focus,.btn-outline-primary:active{color:#270F34;border:1px solid rgba(255,255,255);font-weight:700;background-color:#fff;outline:none;}
 .btn-special{color:#fff;border:1px solid #080809;background-color:#080809;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
 .btn-special:hover,.btn-special:focus,.btn-special:active{color:#270F34;border:1px solid rgba(255,255,255);background-color:#fff;outline:none;}
 .btn-electric-magenta{color:#fff;border:1px solid #E91E63;background-color:#E91E63;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
