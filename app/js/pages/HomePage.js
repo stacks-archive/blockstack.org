@@ -191,24 +191,26 @@ class HomePage extends Component {
                         A Full Stack for Decentralized Apps
                       </h2>
                     </div>
-                    <div className="col-sm-12 text-center landing-hero-img">
+                    <div className="col-sm-12 text-center landing-hero-img m-b-35">
                       <Image className="landing-feat-img"
                         src="/images/visuals/blockstack-architecture-diagram.svg"
                         retinaSupport={false} />
                     </div>
-                    <div className="row">
-                      {content.fullStack.map((item, index) => {
-                        return (
-                          <div key={index} className="col-lg-4">
-                            <h4 className="inverse text-center">
-                              {item.title}
-                            </h4>
-                            <p className="inverse text-center">
-                              {item.body}
-                            </p>
-                          </div>
-                        )
-                      })}
+                    <div className="container-fluid">
+                      <div className="row">
+                        {content.fullStack.map((item, index) => {
+                          return (
+                            <div key={index} className="col-lg-4 m-b-25">
+                              <h4 className="inverse text-center">
+                                {item.title}
+                              </h4>
+                              <p className="inverse text-center">
+                                {item.body}
+                              </p>
+                            </div>
+                          )
+                        })}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -234,7 +236,7 @@ class HomePage extends Component {
                     </div>
                     <div className="container m-b-60">
                       <div className="row">
-                        <div className="col-lg-4 no-padding">
+                        <div className="col-lg-4 code-img-gutter">
                           <h4 className="text-center m-b-10">
                             Identity
                           </h4>
@@ -248,7 +250,7 @@ class HomePage extends Component {
                               retinaSupport={false} />
                           </p>
                         </div>
-                        <div className="col-lg-4 no-padding">
+                        <div className="col-lg-4 code-img-gutter">
                           <h4 className="text-center m-b-10">
                             Storage
                           </h4>
@@ -262,7 +264,7 @@ class HomePage extends Component {
                               retinaSupport={false} />
                           </p>
                         </div>
-                        <div className="col-lg-4 no-padding">
+                        <div className="col-lg-4 code-img-gutter">
                           <h4 className="text-center m-b-10">
                             Token
                           </h4>
@@ -302,31 +304,31 @@ class HomePage extends Component {
                       </h2>
                     </div>
                     <div className="container-fluid">
-                    {[[0,3], [3,5]].map((row, index) => {
-                      return (
-                        <div key={index} className="row">
-                          {featuredApps.slice(row[0],row[1]).map((featuredApp, index2) => {
-                            const offsetClass = (row[0] === 3 && index2 === 0) ? '' : ''
-                            return (
-                              <div key={index2}
-                                className={`col-lg-4 m-b-55 mx-auto ${offsetClass}`}>
-                                <p className="text-center">
-                                  <Image className="col-img" src={featuredApp.icon}
-                                    retinaSupport={false} />
-                                </p>
-                                <h4 className="modern text-center">
-                                  {featuredApp.name}
-                                </h4>
-                                <p className="text-center">
-                                  {featuredApp.description}
-                                </p>
-                              </div>
-                            )
-                          })}
-                        </div>
-                      )
-                    })}
-                  </div>
+                      {[[0,3], [3,5]].map((row, index) => {
+                        return (
+                          <div key={index} className="row">
+                            {featuredApps.slice(row[0],row[1]).map((featuredApp, index2) => {
+                              const offsetClass = (row[0] === 3 && index2 === 0) ? '' : ''
+                              return (
+                                <div key={index2}
+                                  className={`col-lg-4 m-b-55 mx-auto ${offsetClass}`}>
+                                  <p className="text-center">
+                                    <Image className="col-img" src={featuredApp.icon}
+                                      retinaSupport={false} />
+                                  </p>
+                                  <h4 className="modern text-center">
+                                    {featuredApp.name}
+                                  </h4>
+                                  <p className="text-center">
+                                    {featuredApp.description}
+                                  </p>
+                                </div>
+                              )
+                            })}
+                          </div>
+                        )
+                      })}
+                    </div>
                   </div>
                 </div>
               </div>

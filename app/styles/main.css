@@ -284,14 +284,14 @@ section{word-break:break-word;}
 /* Font spacing has no margin-top */
 
 /* Heading styles */
-/*h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:1rem;}
+h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:1rem;}
 h1{font-size:2.125rem;}
 h2{font-size:1.875rem;}
 h3{font-size:1.625rem;}
 h4{font-size:1.375rem;}
 h5{font-size:1.125rem;}
 h6{font-size:1rem;}
-.h-primary{font-weight:700;}*/
+.h-primary{font-weight:700;}
 
 /* Paragraph styles */
 p{font-size:1rem;line-height:1.6875rem;margin-bottom:1rem;}
@@ -320,7 +320,7 @@ display-6{font-size:1rem;}
 
 /* Revisit Type */
 h1.type-beauty{font-family:'Lato',sans-serif;font-size:1.5rem;font-weight:700;}
-.hero-lead{font-family:'Lato',sans-serif;font-size:1rem;margin-bottom:2.75rem;line-height:1.25rem;font-weight:400;}
+.hero-lead{font-family:'Lato',sans-serif;font-size:0.9375rem;margin-bottom:2.75rem;line-height:1.5rem;font-weight:400;}
 .lead-centered{font-family:'Source Code Pro',monospace;font-size:1rem;text-align:center;margin-bottom:2rem;font-weight:400;}
 
 
@@ -495,6 +495,7 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .partnerLogo-risingtide{max-width: 230px;}
 .partnerLogo-lux{max-width:70px;}
 .sig-logo-space{margin-top:40px;margin-bottom:30px;}
+.code-img-gutter{padding-right:11px;padding-left:11px;}
 
 
 /* 38. f. - Embed */
@@ -579,10 +580,9 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
 
 /* Extra Extra small devices devices */
 @media (max-width:348px){
-  li.nav-item:nth-last-child(2){display:none;}
+  /*li.nav-item:nth-last-child(2){display:none;}*/
   h1.hero-head{font-size:1.65rem;}
   .hero{padding-top:3%;padding-bottom:75px;}
-  .hero-lead{line-height:1.125rem;}
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -607,19 +607,20 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
 
   /* 9. Fonts */
   /* Heading styles */
-/*  h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:1rem;}
+  h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:1rem;}
   h1{font-size:2.75rem;}
   h2{font-size:1.875rem;}
   h3{font-size:1.625rem;}
   h4{font-size:1.375rem;}
   h5{font-size:1.125rem;}
-  h6{font-size:1rem;}*/
+  h6{font-size:1rem;}
+  .hero-lead{text-align:center;font-size:1rem;padding-left:0;padding-right:0;margin-bottom:3.125rem;line-height:1.5rem}
 
   /* Globals */
   .body-hero{background-color:#402b4c!important;background:url(../images/visuals/blockstack-hero-globe@2x.png) no-repeat;background-position:top -300px center;background-size:100%;}
   h1.hero-head{font-size:2.25rem;text-align:center;margin-top:0;}
   .hero{padding-bottom:5rem;}
-  .hero-lead{text-align:center;padding-left:0;padding-right:0;margin-bottom:3.125rem;line-height:1.5rem}
+
   .lead-centered{padding-left:0;padding-right:0;text-align:center;margin-bottom:3rem;}
   .col-3-section{padding-bottom:50px;}
   .hero-head.summ-head{font-size:40px;}
@@ -716,6 +717,7 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
   .partnerLogo-lux{max-width:90px;margin-left:125px;}
   .partnerLogo-openocean{max-width:200px;margin-right:125px;}
   .sig-logo-space{margin-top:50px;margin-bottom:40px;}
+  .code-img-gutter{padding-right: 0;padding-left: 0;}
 
   /* 38. f. - Embed */
   .video-special-row{margin-top:50px;background-color:#1A1D1F;}
