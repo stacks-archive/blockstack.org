@@ -122,7 +122,7 @@ class TokenSalePage extends Component {
 
             <div className="container-fluid sectionWrap bg-white">
               <div className="row">
-                <div className="container">
+                <div className="container container-md">
                   <div className="row">
                     <div className="container-fluid">
                       <h2 className="text-center m-b-35">

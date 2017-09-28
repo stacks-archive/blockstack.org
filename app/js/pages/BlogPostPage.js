@@ -99,7 +99,7 @@ class BlogPostPage extends Component {
               shareUrl={currentPage.url}
               title={currentPage.title}
             />
-            <div className="container container-lg sectionWrap blog-post bg-white m-b-100">
+            <div className="container container-lg sectionWrap blog-post bg-white m-b-60">
               <div className="row">
                 <div className="container">
                   <div className="row">
@@ -146,7 +146,7 @@ class BlogPostPage extends Component {
                         <div className="col-md-8">
                           <div className="row h-100 d-flex align-items-center">
                               <Link to="/signup" role="button"
-                                className="btn btn-primary btn-block">
+                                className="btn btn-secondary btn-block">
                                 Get Updates
                               </Link>
                           </div>
