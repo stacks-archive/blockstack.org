@@ -192,7 +192,7 @@ class HomePage extends Component {
                       </h2>
                     </div>
                     <div className="col-sm-12 text-center landing-hero-img m-b-35">
-                      <Image className="landing-feat-img"
+                      <Image className="landing-feat-img container-sm"
                         src="/images/visuals/blockstack-architecture-diagram.svg"
                         retinaSupport={false} />
                     </div>
@@ -283,7 +283,7 @@ class HomePage extends Component {
                     <div className="container container-xs">
                       <p className="text-center">
                         <Link to="/tutorials" role="button"
-                          className="btn btn-primary btn-lg btn-block">
+                          className="btn btn-primary btn-block">
                           Try the Tutorials
                         </Link>
                       </p>

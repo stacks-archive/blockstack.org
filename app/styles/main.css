@@ -478,7 +478,7 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .media-screen{background-color:#000;}
 .media-wrap{width:975px;}
 .media-content{margin-top:35px;}
-.landing-feat-img{width:100%;max-width:696px;}
+.landing-feat-img{width:100%;}
 .feat-card{height:75px;display:block;}
 .feat-card > h3{font-weight:400;}
 .text-stats{color:#484848;font-size:1.75rem;font-weight:700;margin-bottom:35px;}
