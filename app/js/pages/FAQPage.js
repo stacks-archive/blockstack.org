@@ -1,10 +1,11 @@
 'use strict'
 
-import { Component }   from 'react'
-import DocumentTitle   from 'react-document-title'
-import marked          from 'marked'
+import {Component}         from 'react'
+import {Link}              from 'react-router'
+import DocumentTitle       from 'react-document-title'
+import marked              from 'marked'
 
-import docs            from '../../docs.json'
+import docs                from '../../docs.json'
 
 marked.setOptions({
   renderer: new marked.Renderer(),
@@ -42,39 +43,62 @@ class FAQpage extends Component {
     for (let i = 0; i < markdownParts.length; i += 2) {
       questions.push({
         question: markdownParts[i],
-        answer: marked(markdownParts[i+1]),
+        answer: marked(markdownParts[i+1])
       })
     }
 
-    this.setState({
-      questions
-    })
+    this.setState({questions})
   }
 
-  render () {
-    const { questions } = this.state
+  render() {
+    const {questions} = this.state
 
-    return(
-      <DocumentTitle title="Blockstack - FAQ">
-        <div>
-          <section className="container-fluid spacing-container">
-            <div className="container-fluid col-centered">
-              <div className="container m-b-1">
-                <div>
-                  <h1>Frequently Asked Questions</h1>
-                </div>
-                { questions.map((faq, index) => {
-                  return (
-                    <div key={ index }>
-                      <h4>{ faq.question }</h4>
-                      <div dangerouslySetInnerHTML={{ __html: faq.answer }}>
-                      </div>
-                    </div>
-                  )
-                }) }
+    return (
+      <DocumentTitle title="Blockstack - FAQ ">
+        <div className="content-wrapper">
+          <div className='sidebar-wrapper'>
+            <aside>
+              <div className="sidebar-header">
+                <Link className="navbar-brand sidebar-logo" to="/">
+                  <img src="/images/logos/blockstack-logo-landscape.svg" />
+                </Link>
+                <Link className="tagline" to="/faq">faq</Link>
               </div>
-            </div>
-          </section>
+              <div className="list-group">
+                <h5 className="list-group-header">Frequently Asked Questions</h5>
+                { questions.map((faq, index) => {
+                  const refLink = faq.question.toLowerCase().split(' ').join('_');
+                  return (
+                    index < 5 ?
+                    <Link key={index}
+                          href={`/faq/#${refLink}`}
+                          className="list-group-item">
+                      {faq.question}
+                    </Link> : null
+                  )
+                })}
+                <h5 className="list-group-header">For Developers</h5>
+                <h5 className="list-group-header">For Users</h5>
+                <h5 className="list-group-header">Misc</h5>
+              </div>
+            </aside>
+          </div>
+          <div className="sidebar-content-wrapper">
+            <section>
+              {questions.map((faq, index) => {
+                const refLink = faq.question.toLowerCase().split(' ').join('_');
+                return (
+                  <div key={index} id={`${refLink}`}
+                       className="container-fluid col-centered segment-zone">
+                    <h4>{faq.question}</h4>
+                    <div dangerouslySetInnerHTML={{
+                      __html: faq.answer
+                    }}></div>
+                  </div>
+                )
+              })}
+            </section>
+          </div>
         </div>
       </DocumentTitle>
     );
