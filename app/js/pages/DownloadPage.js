@@ -21,71 +21,119 @@ class DownloadsPage extends Component {
     return (
       <DocumentTitle title="Install Blockstack">
         <div>
-          <section className="container-fluid spacing-container">
-            <div className="container col-centered">
-              <div className="container m-b-5">
-                <section className="sec-light row">
-                  <div className="col-md-12">
-                    <h1>
-                      Install Blockstack
-                    </h1>
-                    <h3>Browser</h3>
-                    <div>
-                      <table className="table">
-                        <tbody>
-                          <tr>
-                            <td>Developer alpha</td>
-                            <td>
-                              <a href={installationLinks.portalDevelopers} role="button"
-                                className="btn btn-sm btn-outline-primary btn-block">
-                                Releases on GitHub
-                              </a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>macOS</td>
-                            <td>
-                              <a href="#" role="button"
-                                className="btn btn-sm btn-outline-primary btn-block disabled">
-                                Coming Soon
-                              </a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Linux</td>
-                            <td>
-                              <a href="#" role="button"
-                                className="btn btn-sm btn-outline-primary btn-block disabled">
-                                Coming Soon
-                              </a>
-                            </td>
-                          </tr>
-                          <tr style={{ display: 'none' }}>
-                            <td>Windows</td>
-                            <td>
-                              <a href="#" role="button"
-                                className="btn btn-sm btn-outline-primary btn-block disabled">
-                                Coming Soon
-                              </a>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <div>
-                      <h3>Run a Full Node</h3>
-                      <p>
-                        <a href={installationLinks.cliDevelopers} role="button"
-                          className="btn btn-outline-primary btn-block">
-                          Instructions on GitHub
-                        </a>
-                      </p>
+          <div className="container container-lg sectionWrap blog-post bg-white">
+              <div className="container container-lg">
+                <div className="row">
+                  <div className="container">
+                    <div className="row">
+                      <h2 className="m-b-35">
+                        Install Blockstack
+                      </h2>
                     </div>
                   </div>
-                </section>
+                  <div className="container container-md container-box bg-white ml-0 m-b-50">
+                    <div className="container">
+                      <div className="row">
+                        <h4 className="m-b-35">
+                          Browser
+                        </h4>
+                        <div className="container mx-auto">
+                          <div className="row">
+                            <div className="col-md-6">
+                              <div className="row">
+                                <p className="lead-lg d-sm-block m-b-10">
+                                  Developer alpha
+                                </p>
+                              </div>
+                            </div>
+                            <div className="col-md-6 m-b-15">
+                              <div className="row">
+                                <a href={installationLinks.portalDevelopers} role="button"
+                                  className="btn btn-secondary btn-block">
+                                  Releases on GitHub
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="container mx-auto">
+                          <div className="row">
+                            <div className="col-md-6">
+                              <div className="row">
+                                <p className="lead-lg d-sm-block m-b-10">
+                                  Windows
+                                </p>
+                              </div>
+                            </div>
+                            <div className="col-md-6 m-b-15">
+                              <div className="row">
+                                 <a href={installationLinks.portalDevelopers} role="button"
+                                  className="btn btn-secondary btn-block">
+                                  Releases on GitHub
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="container mx-auto">
+                          <div className="row">
+                            <div className="col-md-6">
+                              <div className="row">
+                                <p className="lead-lg d-sm-block m-b-10">
+                                  macOS
+                                </p>
+                              </div>
+                            </div>
+                            <div className="col-md-6 m-b-15">
+                              <div className="row">
+                                <a to="#" role="button"
+                                  className="btn btn-secondary btn-block disabled">
+                                  Coming Soon
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="container mx-auto">
+                          <div className="row">
+                            <div className="col-md-6">
+                              <div className="row">
+                                <p className="lead-lg d-sm-block m-b-10">
+                                  Linux
+                                </p>
+                              </div>
+                            </div>
+                            <div className="col-md-6 m-b-15">
+                              <div className="row">
+                                <a to="#" role="button"
+                                  className="btn btn-secondary btn-block disabled">
+                                  Coming Soon
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="container m-b-50">
+                    <div className="row">
+                      <h4 className="">
+                        Run a Full Node
+                      </h4>
+                      <div className="container mx-auto">
+                        <div className="row">
+                          <a href={installationLinks.cliDevelopers} role="button"
+                            className="btn btn-secondary btn-block">
+                            Instructions on GitHub
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </section>
         </div>
       </DocumentTitle>
     )

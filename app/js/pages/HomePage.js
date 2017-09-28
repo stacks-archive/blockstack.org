@@ -80,7 +80,7 @@ class HomePage extends Component {
           body: 'Blockstack\'s storage system allows users to bring their own storage providers and control their data. Data is encrypted and easily shared between applications.'
         },
         {
-          title: 'Payments',
+          title: 'Token',
           body: 'Blockstack uses Bitcoin and other crypto-currencies for simple peer-to-peer payments. Developers can charge for downloads, subscriptions, and more.'
         },
       ],
@@ -103,10 +103,12 @@ class HomePage extends Component {
     return (
       <DocumentTitle title="Blockstack, building the decentralized internet">
         <div className="body-hero">
-          <div className="col-centered block">
-            <div style={{ overflow: 'hidden' }}>
+          <div className="w-100" style={{ overflow: 'hidden' }}>
+            <div>
+
               <Alert />
               <Header transparent={true} />
+
               <div className="container">
                 <section className="hero text-center">
                   <h1 className="text-white m-b-20">
@@ -115,12 +117,12 @@ class HomePage extends Component {
                   <p className="hero-lead purple-50 col-md-9 col-centered">
                     Blockstack is a new decentralized internet where users own their data and apps run locally. A browser portal is all that’s needed to get started.
                   </p>
-                  <div className="no-padding container-fluid col-md-10 col-lg-10 col-centered m-b-60">
+                  <div className="no-padding container-fluid col-md-10 col-lg-10 col-centered m-b-95">
                     <div className="row">
                       <div className="col-sm-12 col-md-6">
                         <p className="float-md-right">
                           <Link to="/install" role="button"
-                            className="btn btn-electric-blue btn-block btn-block-reset" style={{ minWidth: '245px' }}>
+                            className="btn btn-primary btn-block btn-block-reset" style={{ minWidth: '245px' }}>
                             Developers&nbsp;&nbsp;›&nbsp;&nbsp;Browser Kit
                           </Link>
                         </p>
@@ -128,7 +130,7 @@ class HomePage extends Component {
                       <div className="col-sm-12 col-md-6">
                         <p className="float-md-left">
                           <Link to="/signup" role="button"
-                            className="btn btn-electric-blue btn-block btn-block-reset" style={{ minWidth: '245px' }}>
+                            className="btn btn-primary btn-block btn-block-reset" style={{ minWidth: '245px' }}>
                             Users&nbsp;&nbsp;›&nbsp;&nbsp;Sign Up
                           </Link>
                         </p>
@@ -136,228 +138,260 @@ class HomePage extends Component {
                     </div>
                   </div>
                   <div className="no-padding container-fluid col-md-9 col-centered">
-                    <div className="text-center hidden-sm-down">
+                    <div className="text-center d-none d-sm-block">
                       <Image className="landing-feat-img"
                         src="/images/resources/browser-home-screen@2x.png"
                         fallbackSrc="/images/resources/browser-home-screen.png"
                         retinaSupport={false} />
                     </div>
-                    <div className="caption-browser hidden-sm-down">
+                    <div className="caption-browser d-none d-sm-block">
                       Blockstack Browser
                     </div>
                   </div>
                 </section>
               </div>
             </div>
-            <div className="section-stats container-fluid">
+
+            {/* New section layout applied */}
+            <div className="container-fluid sectionWrap bg-secondary section-stats">
               <div className="container">
-                <section className="row">
-                  <div className="col-sm-12 col-md-4 text-center text-stats">
+                <div className="row">
+                  <div className="col-sm-4 text-center text-stats text-white">
                     {this.state.stats.domains.toLocaleString()}
-                    <span className="text-stats-description">domains registered</span>
+                    <span className="text-stats-description text-white">domains registered</span>
                   </div>
-                  <div className="col-sm-12 col-md-4 text-center text-stats">
+                  <div className="col-sm-4 text-center text-stats text-white">
                     3+
-                    <span className="text-stats-description">years in production</span>
+                    <span className="text-stats-description text-white">years in production</span>
                   </div>
-                  <div className="col-sm-12 col-md-4 text-center text-stats">
+                  <div className="col-sm-4 text-center text-stats text-white">
                     {this.state.stats.meetupUsers.toLocaleString()}
-                    <span className="text-stats-description">community devs</span>
+                    <span className="text-stats-description text-white">community devs</span>
                   </div>
-                </section>
+                </div>
               </div>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid">
-              <div className="container">
-                <section>
-                  <div className="row m-t-3">
-                    <EmbedYouTube src={this.state.videoURL} />
-                  </div>
-                </section>
+
+            {/* New section layout applied */}
+            <div className="container-fluid sectionWrap bg-white">
+              <div className="row">
+                <div className="container container-md">
+                  <EmbedYouTube src={this.state.videoURL} />
+                </div>
               </div>
             </div>
-            <div className="sectionContainerLightGray section-spacing container-fluid">
-              <div className="container sectionWrap">
-                <section>
-                  <div className="containWrap">
-                    <h3 className="h-primary text-center m-b-25">
-                      A Full Stack for Decentralized Apps
-                    </h3>
-                    <div className="col-sm-12 text-center landing-hero-img">
-                      <Image className="landing-feat-img"
+
+            {/* New section layout applied */}
+            <div className="container-fluid sectionWrap bg-container-lightGray">
+              <div className="row">
+                <div className="container">
+                  <div className="row">
+                    <div className="container-fluid">
+                      <h2 className="text-center m-b-25">
+                        A Full Stack for Decentralized Apps
+                      </h2>
+                    </div>
+                    <div className="col-sm-12 text-center landing-hero-img m-b-35">
+                      <Image className="landing-feat-img container-sm"
                         src="/images/visuals/blockstack-architecture-diagram.svg"
                         retinaSupport={false} />
                     </div>
-                    <div>
-                      {content.fullStack.map((item, index) => {
-                        return (
-                          <div key={index} className="col-md-4">
-                            <h4 className="inverse text-center">
-                              {item.title}
-                            </h4>
-                            <p className="inverse text-center">
-                              {item.body}
-                            </p>
-                          </div>
-                        )
-                      })}
-                    </div>
-                  </div>
-                </section>
-              </div>
-            </div>
-            <div className="sectionContainerLight section-spacing container-fluid">
-              <div className="container sectionWrap">
-                <section>
-                  <div className="container p-b-15">
-                    <h2 className="h-primary text-center">
-                      Libraries and Step-by-Step Tutorials
-                    </h2>
-                  </div>
-                  <div className="container m-b-30">
-                    <div className="col-md-8 col-centered">
-                      <p className="text-center">
-                        Complete the step-by-step tutorial and see how easy it is to build an app with a decentralized identity system in a few lines of code and no servers.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="container m-b-40">
-                    <div className="col-md-4">
-                      <h4 className="text-center m-b-10">
-                        Identity
-                      </h4>
-                      <p className="light-gray text-center">
-                        Available today!
-                      </p>
-                      <p className="text-center">
-                        <Image className="col3-img-lg"
-                          src="/images/visuals/text-editor-identity.svg"
-                          fallbackSrc=""
-                          retinaSupport={false} />
-                      </p>
-                    </div>
-                    <div className="col-md-4">
-                      <h4 className="text-center m-b-10">
-                        Storage
-                      </h4>
-                      <p className="light-gray text-center">
-                        Available today!
-                      </p>
-                      <p className="text-center">
-                        <Image className="col3-img-lg"
-                          src="/images/visuals/text-editor-storage.svg"
-                          fallbackSrc=""
-                          retinaSupport={false} />
-                      </p>
-                    </div>
-                    <div className="col-md-4">
-                      <h4 className="text-center m-b-10">
-                        Payments
-                      </h4>
-                      <p className="light-gray text-center">
-                        <i>(Coming Soon...)</i>
-                      </p>
-                      <p className="text-center">
-                        <Image className="col3-img-lg"
-                          src="/images/visuals/text-editor-payments.svg"
-                          fallbackSrc=""
-                          retinaSupport={false} />
-                      </p>
-                    </div>
-                  </div>
-                  <div className="container">
-                    <p className="text-center">
-                      <Link to="/tutorials" role="button"
-                        className="btn btn-outline-primary">
-                        Try the Tutorials
-                      </Link>
-                    </p>
-                  </div>
-                </section>
-              </div>
-            </div>
-            <div className="sectionContainerLightGray section-spacing container-fluid">
-              <div className="container">
-                <section>
-                  <h2 className="h-primary m-b-85 text-center">
-                    Featured Apps on Blockstack
-                  </h2>
-                  {[[0,3], [3,5]].map((row, index) => {
-                    return (
-                      <div key={index}>
-                        {featuredApps.slice(row[0],row[1]).map((featuredApp, index2) => {
-                          const offsetClass = (row[0] === 3 && index2 === 0) ? 'offset-md-2' : ''
+                    <div className="container-fluid">
+                      <div className="row">
+                        {content.fullStack.map((item, index) => {
                           return (
-                            <div key={index2}
-                              className={`col-md-4 m-b-55 ${offsetClass}`}>
-                              <p className="text-center">
-                                <Image className="col-img" src={featuredApp.icon}
-                                  retinaSupport={false} />
-                              </p>
-                              <h4 className="modern text-center">
-                                {featuredApp.name}
+                            <div key={index} className="col-lg-4 m-b-25">
+                              <h4 className="inverse text-center">
+                                {item.title}
                               </h4>
-                              <p className="text-center">
-                                {featuredApp.description}
+                              <p className="inverse text-center">
+                                {item.body}
                               </p>
                             </div>
                           )
                         })}
                       </div>
-                    )
-                  })}
-                </section>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid">
-              <div className="container">
-                <section>
-                  <div className="containWrap">
-                    <h2 className="h-primary text-center">
-                      News
-                    </h2>
+
+            {/* New section layout applied */}
+            <div className="container-fluid sectionWrap bg-white">
+              <div className="row">
+                <div className="container">
+                  <div className="row">
+                    <div className="container-fluid">
+                      <h2 className="text-center m-b-25">
+                        Libraries and Step-by-Step Tutorials
+                      </h2>
+                    </div>
+                    <div className="container m-b-30">
+                      <div className="col-md-8 col-centered">
+                        <p className="text-center">
+                          Complete the step-by-step tutorial and see how easy it is to build an app with a decentralized identity system in a few lines of code and no servers.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="container m-b-80">
+                      <div className="row">
+                        <div className="col-xl-4 code-img-gutter">
+                          <h4 className="text-center m-b-10">
+                            Identity
+                          </h4>
+                          <p className="light-gray text-center">
+                            Available today!
+                          </p>
+                          <p className="text-center">
+                            <Image className="col3-img-lg"
+                              src="/images/visuals/text-editor-identity.svg"
+                              fallbackSrc=""
+                              retinaSupport={false} />
+                          </p>
+                        </div>
+                        <div className="col-xl-4 code-img-gutter">
+                          <h4 className="text-center m-b-10">
+                            Storage
+                          </h4>
+                          <p className="light-gray text-center">
+                            Available today!
+                          </p>
+                          <p className="text-center">
+                            <Image className="col3-img-lg"
+                              src="/images/visuals/text-editor-storage.svg"
+                              fallbackSrc=""
+                              retinaSupport={false} />
+                          </p>
+                        </div>
+                        <div className="col-xl-4 code-img-gutter">
+                          <h4 className="text-center m-b-10">
+                            Token
+                          </h4>
+                          <p className="light-gray text-center">
+                            <i>(Coming Soon...)</i>
+                          </p>
+                          <p className="text-center">
+                            <Image className="col3-img-lg"
+                              src="/images/visuals/text-editor-payments.svg"
+                              fallbackSrc=""
+                              retinaSupport={false} />
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="container container-xs">
+                      <p className="text-center">
+                        <Link to="/tutorials" role="button"
+                          className="btn btn-primary btn-block">
+                          Try the Tutorials
+                        </Link>
+                      </p>
+                    </div>
                   </div>
-                  <div className="container">
-                  { firstThreePosts.map((post, index) => {
-                    return (
-                      <PostPreview key={index} post={post} />
-                    )
-                  }) }
-                  </div>
-                </section>
+                </div>
               </div>
             </div>
-            <div className="sectionContainerDark section-spacing container-fluid">
-              <div className="container sectionWrap">
-                <section>
-                  <div className="containWrap">
-                    <h3 className="h-primary text-center">
-                      Get Started
-                    </h3>
+
+            {/* New section layout applied */}
+            <div className="container-fluid sectionWrap bg-container-lightGray">
+              <div className="row">
+                <div className="container">
+                  <div className="row">
+                    <div className="container-fluid">
+                      <h2 className="text-center m-b-85">
+                        Featured Apps on Blockstack
+                      </h2>
+                    </div>
+                    <div className="container-fluid">
+                      {[[0,3], [3,5]].map((row, index) => {
+                        return (
+                          <div key={index} className="row">
+                            {featuredApps.slice(row[0],row[1]).map((featuredApp, index2) => {
+                              const offsetClass = (row[0] === 3 && index2 === 0) ? '' : ''
+                              return (
+                                <div key={index2}
+                                  className={`col-lg-4 m-b-55 mx-auto ${offsetClass}`}>
+                                  <p className="text-center">
+                                    <Image className="col-img" src={featuredApp.icon}
+                                      retinaSupport={false} />
+                                  </p>
+                                  <h4 className="modern text-center">
+                                    {featuredApp.name}
+                                  </h4>
+                                  <p className="text-center">
+                                    {featuredApp.description}
+                                  </p>
+                                </div>
+                              )
+                            })}
+                          </div>
+                        )
+                      })}
+                    </div>
                   </div>
-                  <div className="col-md-6">
-                    <p className="no-padding hero-btn-title">
-                      Developers
-                    </p>
-                    <p className="no-padding m-b-10">
-                      <Link to="/install" role="button"
-                        className="btn btn-sm btn-secondary btn-block btn-hero">
-                        Browser Kit
-                      </Link>
-                    </p>
+                </div>
+              </div>
+            </div>
+
+            {/* New section layout applied */}
+            <div className="container-fluid sectionWrap bg-white">
+              <div className="row">
+                <div className="container container-lg">
+                  <div className="row">
+                    <div className="container-fluid">
+                      <h2 className="text-center m-b-25">
+                        News
+                      </h2>
+                    </div>
+                    <div className="container">
+                      <div className="row">
+                      { firstThreePosts.map((post, index) => {
+                        return (
+                          <PostPreview key={index} post={post} />
+                        )
+                      }) }
+                      </div>
+                    </div>
                   </div>
-                  <div className="col-md-6">
-                    <p className="no-padding hero-btn-title">
-                      Users
-                    </p>
-                    <p className="no-padding">
-                      <Link to="/signup" role="button"
-                        className="btn btn-sm btn-secondary btn-block btn-hero">
-                        Sign Up
-                      </Link>
-                    </p>
+                </div>
+              </div>
+            </div>
+
+            {/* New section layout applied */}
+            <div className="container-fluid sectionWrap bg-primary text-white">
+              <div className="row">
+                <div className="col-sm-10 col-lg-11 col-xl-12 mx-auto m-b-80 m-t-35">
+                  <div className="row">
+                    <div className="container-fluid">
+                      <h2 className="text-center m-b-35">
+                        Get Started
+                      </h2>
+                    </div>
+                    <div className="col-12 col-xl-8 container-lg mx-auto">
+                      <div className="row">
+                        <div className="col-md-6 m-b-20">
+                          <p className="lead-lg text-center text-white">
+                            Developers
+                          </p>
+                          <Link to="/install" role="button"
+                            className="btn btn-primary btn-block m-b-10">
+                            Browser Kit
+                          </Link>
+                        </div>
+                        <div className="col-md-6 m-b-20">
+                          <p className="lead-lg text-center text-white">
+                            Users
+                          </p>
+                          <Link to="/signup" role="button"
+                            className="btn btn-primary btn-block">
+                            Sign Up
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </section>
+                </div>
               </div>
             </div>
           </div>

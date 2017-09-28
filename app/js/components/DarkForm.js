@@ -33,7 +33,7 @@ class DarkForm extends Component {
             <div className="mc-field-group" style={{ marginBottom: '12px' }}>
               <label htmlFor="mce-EMAIL" style={{ display: 'none' }}>Email Address </label>
               <input type="email" value={this.state.email} name="EMAIL"
-                className="form-control form-control-outline-primary text-xs-center"
+                className="form-control form-control-outline-primary text-center"
                 id="mce-EMAIL" placeholder="Enter email address"
                 onChange={this.onChange} />
             </div>
@@ -49,7 +49,7 @@ class DarkForm extends Component {
             <div className="clear">
               <input type="submit" value={this.props.submitButtonText}
                 name="subscribe" id="mc-embedded-subscribe"
-                className="btn btn-electric-blue btn-block" />
+                className="btn btn-primary btn-block" />
             </div>
           </div>
         </form>

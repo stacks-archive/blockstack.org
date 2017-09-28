@@ -17,14 +17,14 @@ class TeamMember extends Component {
     const profile = this.props.profile
 
     return (
-      <div className="col-md-6 m-b-3" style={{ textAlign: 'center' }}>
+      <div className="col-md-6 m-b-50 text-center">
         <Link to={`https://explorer.blockstack.org/name/${profile.blockstackId}.id`}
           target="_blank">
           <Image src={profile.avatar} className="avatar-lg" style={{ marginBottom: '5px' }}
             fallbackSrc="https://s3.amazonaws.com/onename/avatar-placeholder.png" />
         </Link>
-        <h4 className="center" style={{ marginTop: '10px', marginBottom: '10px' }}>{profile.name}</h4>
-        <p>
+        <h5 className="text-center font-weight-bold" style={{ marginTop: '10px', marginBottom: '10px' }}>{profile.name}</h5>
+        <p style={{ fontSize: '1rem' }}>
           {profile.bio}
         </p>
       </div>

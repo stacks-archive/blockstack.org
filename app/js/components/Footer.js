@@ -16,7 +16,7 @@ class Footer extends Component {
     return (
       <footer>
         <div className="container">
-            <div className="col-md-2 foot-left-col hidden-md-down">
+            <div className="col-md-2 foot-left-col d-none d-lg-block">
               <ul className="list-unstyled">
                 <li>
                   <div className="foot-logo">

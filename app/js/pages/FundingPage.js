@@ -54,13 +54,13 @@ class FundingPage extends Component {
                   — Naval Ravikant ~ Blockstack Summit 2017
                 </p>
                 <div className="col-sm-9 col-md-7 col-centered m-b-65">
-                  <Link to="https://goo.gl/forms/Z1JbxmqLaLz9bz053" target="_blank" className="btn btn-electric-blue btn-block">
+                  <Link to="https://goo.gl/forms/Z1JbxmqLaLz9bz053" target="_blank" className="btn btn-primary btn-block">
                     Apply Here!
                   </Link>
                 </div>
               </section>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid">
+            <div className="bg-white sectionWrap section-spacing container-fluid">
               <section>
                 <div className="containWrapper">
                   <div className="container sectionWrap">
@@ -87,7 +87,7 @@ class FundingPage extends Component {
                 </div>
               </div>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid">
+            <div className="bg-white sectionWrap section-spacing container-fluid">
               <section>
                 <div className="containWrapper">
                   <div className="container sectionWrap">
@@ -125,7 +125,7 @@ class FundingPage extends Component {
                 </div>
               </section>
             </div>
-            <div className="sectionContainerLightGray section-spacing container-fluid">
+            <div className="bg-container-lightGray section-spacing container-fluid">
               <section>
                 <div className="containWrapper">
                   <div className="container sectionWrap">
@@ -141,7 +141,7 @@ class FundingPage extends Component {
                 </div>
               </section>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid">
+            <div className="bg-white sectionWrap section-spacing container-fluid">
               <section>
                 <div className="containWrapper">
                   <div className="container sectionWrap">
@@ -196,7 +196,7 @@ class FundingPage extends Component {
                 </div>
               </section>
             </div>
-            <div className="sectionContainerLightGray section-spacing container-fluid">
+            <div className="bg-container-lightGray section-spacing container-fluid">
               <section>
                 <div className="containWrapper">
                   <div className="container sectionWrap">
@@ -208,7 +208,7 @@ class FundingPage extends Component {
                       You can apply as an individual or team by filling out the application form below or at the top of the page:
                     </p>
                     <div className="col-sm-9 col-md-7 col-centered m-b-45">
-                      <Link to="https://goo.gl/forms/Z1JbxmqLaLz9bz053" target="_blank" className="btn btn-electric-blue btn-block">
+                      <Link to="https://goo.gl/forms/Z1JbxmqLaLz9bz053" target="_blank" className="btn btn-primary btn-block">
                         Apply Here!
                       </Link>
                     </div>
@@ -223,7 +223,7 @@ class FundingPage extends Component {
                 </div>
               </section>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid">
+            <div className="bg-white sectionWrap section-spacing container-fluid">
               <section>
                 <div className="containWrapper">
                   <div className="container sectionWrap">
