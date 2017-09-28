@@ -110,7 +110,7 @@ class BlogPostPage extends Component {
                       {currentPage.date}
                     </time>
                   </div>
-                  <div className="m-b-3 m-t-3">
+                  <div className="m-b-35">
                     { currentPage !== null && this.state.imageLoading !== true ?
                     <Image src={headerImageSrc}
                       fallbackSrc="/images/article-photos/road.jpg"

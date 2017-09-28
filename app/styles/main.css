@@ -319,14 +319,26 @@ display-6{font-size:1rem;}
 .terms-sm{font-size:13px;line-height:20px;}
 
 /* Revisit Type */
-  a{font-weight:400;color:#E91E63;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
-  a:hover,a:focus{font-weight:400;color:#E91E63;text-decoration:underline;}
+  a{font-weight:400;color:#2C96FF;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
+  a:hover,a:focus{font-weight:400;color:#2C96FF;text-decoration:underline;}
   a.news-links{color:#484848;}
-
-/* Revisit Type */
-h1.type-beauty{font-family:'Lato',sans-serif;font-size:1.5rem;font-weight:700;}
-.hero-lead{font-family:'Lato',sans-serif;font-size:0.9375rem;margin-bottom:2.75rem;line-height:1.5rem;font-weight:400;}
-.lead-centered{font-family:'Source Code Pro',monospace;font-size:1rem;text-align:center;margin-bottom:2rem;font-weight:400;}
+  .blog-post .container, .blog-post .container p{max-width:720px;font-size:1rem;}
+  .post-title{font-size:1.875rem;margin-bottom:5px;}
+.post-date {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  color: #484848;
+  line-height: 18px;
+  margin-bottom: 2rem;
+}
+  h1.type-beauty{font-family:'Lato',sans-serif;font-size:1.5rem;font-weight:700;}
+  .hero-lead{font-family:'Lato',sans-serif;font-size:0.9375rem;margin-bottom:2.75rem;line-height:1.5rem;font-weight:400;}
+  .lead-centered{font-family:'Source Code Pro',monospace;font-size:1rem;text-align:center;margin-bottom:2rem;font-weight:400;}
 
 
 /* 10. Components */
@@ -466,11 +478,8 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .docs-ul{margin:20px 0 0 0;}
 .docs-btn-group{width:100%!important;}
 .blog-index .container{max-width:700px;font-size:18px;}
-.blog-post .container, .blog-post .container p{max-width:700px;font-size:18px;}
-.post-title{margin-bottom:0;}
 .post-header{margin-bottom:0px;}
 .post-body img {width: 100%;}
-.post-date{display:inline-block;padding:0;margin:0;border:none;text-transform:uppercase;font-size:18px;white-space:nowrap;color:#9EABB3;font-family:"Open Sans",sans-serif;line-height:24px;}
 .post-meta{display:block;margin:18px 0 0 0;font-family:"Open Sans",sans-serif;font-size:16px;line-height:24px;color:#9EABB3;}
 .post-meta .post-date{font-size:14px;}
 .simple-link,.simple-link:hover,.simple-link:focus{text-decoration:none;}
