@@ -12,26 +12,30 @@ class TeamMembers extends Component {
 
   render() {
     return (
-      <div className="bg-white sectionWrap section-spacing container-fluid">
-        <div className="container">
-          <section>
-            <h2 className="h-primary text-center">
-              Team
-            </h2>
-            <div className="post-content m-t-3">
-              {teamMembers.chunk(2).map((teamMemberRow, index) => {
-                return (
-                  <div className="row" key={index}>
-                    {teamMemberRow.map((teamMember, subIndex) => {
-                      return (
-                        <TeamMember key={subIndex} profile={teamMember} />
-                      )
-                    })}
-                  </div>
-                )
-              })}
+      <div className="container-fluid sectionWrap bg-white">
+        <div className="row">
+          <div className="container container-lg">
+            <div className="row">
+              <div className="container-fluid">
+                <h2 className="text-center m-b-65">
+                  Team
+                </h2>
+                <div className="post-content">
+                  {teamMembers.chunk(2).map((teamMemberRow, index) => {
+                    return (
+                      <div className="row" key={index}>
+                        {teamMemberRow.map((teamMember, subIndex) => {
+                          return (
+                            <TeamMember key={subIndex} profile={teamMember} />
+                          )
+                        })}
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
             </div>
-          </section>
+          </div>
         </div>
       </div>
     )

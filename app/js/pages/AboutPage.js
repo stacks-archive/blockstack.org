@@ -17,39 +17,49 @@ class AboutPage extends Component {
     return (
       <DocumentTitle title="Blockstack - About">
         <div>
-          <section className="m-t-5">
-            <div className="container p-b-5 col-centered">
-              <div className="container">
-                <section className="m-t-100">
-                  <div className="container col-centered blog-post">
-                    <div className="container">
-                      <div className="post-header">
-                        <h1>
+          <div className="container-fluid bg-container-lightGray">
+            <div className="row">
+              <div className="container-fluid container-lg sectionWrap blog-post bg-container-lightGray">
+                <div className="row">
+                  <div className="container">
+                    <div className="row">
+                      <div className="container-fluid">
+                        <h2>
                           About
-                        </h1>
+                        </h2>
                       </div>
                     </div>
+                    <ContentSection className="" markup="
+                      <p>
+                        Blockstack is a new decentralized internet where you own your data and apps run
+                        locally without remote servers.
+                      </p>
+                      <p>
+                        Blockstack is an open source project with core developers and contributors
+                        located around the world, from New York City to Hong Kong.
+                      </p>
+                      <p>
+                        At Blockstack, we welcome developers and entrepreneurs of all kinds. Join our
+                        community and build your own app or contribute to the core software.
+                      </p>
+                    "/>
                   </div>
-                </section>
-                <ContentSection className="m-b-3" markup="
-                  <p>
-                    Blockstack is a new decentralized internet where you own your data and apps run
-                    locally without remote servers.
-                  </p>
-                  <p>
-                    Blockstack is an open source project with core developers and contributors
-                    located around the world, from New York City to Hong Kong.
-                  </p>
-                  <p>
-                    At Blockstack, we welcome developers and entrepreneurs of all kinds. Join our
-                    community and build your own app or contribute to the core software.
-                  </p>
-                "/>
-              <TeamMembers />
+                </div>
               </div>
             </div>
-          </section>
+          </div>
+          <div className="container-fluid m-b-100">
+            <div className="row">
+              <div className="container">
+                <div className="row">
+                  <div className="container-fluid">
+                    <TeamMembers />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
       </DocumentTitle>
     )
   }

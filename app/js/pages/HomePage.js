@@ -337,7 +337,7 @@ class HomePage extends Component {
             {/* New section layout applied */}
             <div className="container-fluid sectionWrap bg-white">
               <div className="row">
-                <div className="container">
+                <div className="container container-lg">
                   <div className="row">
                     <div className="container-fluid">
                       <h2 className="text-center m-b-25">

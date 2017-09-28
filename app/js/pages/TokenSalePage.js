@@ -120,6 +120,7 @@ class TokenSalePage extends Component {
               </div>
             </div>
 
+            {/* New section layout applied */}
             <div className="container-fluid sectionWrap bg-white">
               <div className="row">
                 <div className="container container-md">
@@ -270,7 +271,7 @@ class TokenSalePage extends Component {
             {/* New section layout applied */}
             <div className="container-fluid sectionWrap bg-container-lightGray">
               <div className="row">
-                <div className="container">
+                <div className="container container-lg">
                   <div className="row">
                     <div className="container-fluid">
                       <h2 className="text-center m-b-25">
