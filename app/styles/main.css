@@ -327,23 +327,8 @@ display-6{font-size:1rem;}
   .blog-post .container, .blog-post .container p{font-size:1rem;padding-right:-15px;padding-left:-15px;}
   .post-title{margin-bottom:5px;}
   .post-date{display:inline-block;padding:0;margin:0;border:none;text-transform:uppercase;font-size:0.75rem!important;white-space:nowrap;color:#949494;line-height:18px;margin-bottom:2rem;}
-.post-author {
-  font-size: 0.875rem !important;
-  color: #949494;
-  line-height: 18px;
-}
-.written-by {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  border: none;
-  text-transform: uppercase;
-  font-size: 0.75rem !important;
-  white-space: nowrap;
-  color: #484848;
-  line-height: 18px;
-  margin-bottom: 10px;
-}
+  .post-author{font-size:0.875rem!important;color:#949494;line-height:18px;}
+  .written-by{display:inline-block;padding:0;margin:0;border:none;text-transform:uppercase;font-size:0.75rem!important;white-space:nowrap;color:#484848;line-height:18px;margin-bottom:10px;}
   h1.type-beauty{font-family:'Lato',sans-serif;font-size:1.5rem;font-weight:700;}
   .hero-lead{font-family:'Lato',sans-serif;font-size:0.9375rem;margin-bottom:2.75rem;line-height:1.5rem;font-weight:400;}
   .lead-centered{font-family:'Source Code Pro',monospace;font-size:1rem;text-align:center;margin-bottom:2rem;font-weight:400;}
@@ -441,6 +426,9 @@ a.alert.alert-primary:hover{background-color:#2378CC;text-decoration:none;}
 .alert-dismissible .close{padding:0.5rem 1.25rem;top:-0.5rem;}
 .close-primary:focus,.close-primary:hover{color:#0E3051;}
 
+
+/* 35. Code */
+pre{border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;}
 
 /* 37. Misc */
 .body-hero{background-color:#270F34!important;}
