@@ -56,7 +56,7 @@ class AboutPage extends Component {
                     <div className="row">
                       <div className="container-fluid">
                         <h2>
-                          Blockstack Public Benefit Corp
+                          Blockstack is a Public Benefit Corp
                         </h2>
                       </div>
                     </div>
