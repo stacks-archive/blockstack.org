@@ -301,6 +301,7 @@ class HomePage extends Component {
                         Featured Apps on Blockstack
                       </h2>
                     </div>
+                    <div className="container-fluid">
                     {[[0,3], [3,5]].map((row, index) => {
                       return (
                         <div key={index} className="row">
@@ -325,6 +326,7 @@ class HomePage extends Component {
                         </div>
                       )
                     })}
+                  </div>
                   </div>
                 </div>
               </div>
