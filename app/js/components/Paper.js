@@ -17,8 +17,8 @@ class Paper extends Component {
 
   render() {
     return (
-      <div className="m-b-3">
-        <h4 className="m-b-1">
+      <div className="m-b-50">
+        <h4 className="m-b-10">
           {this.props.title}
         </h4>
         {this.props.authors ?
@@ -37,7 +37,7 @@ class Paper extends Component {
         }
         <p className="m-b-1">
           <Link to={this.props.url} target="_blank"
-                className="btn btn-sm btn-outline-primary">
+                className="btn btn-secondary btn-sm">
             PDF
           </Link>
         </p>
