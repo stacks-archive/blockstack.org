@@ -17,15 +17,46 @@ class AboutPage extends Component {
     return (
       <DocumentTitle title="Blockstack - About">
         <div>
-          <div className="container-fluid bg-container-lightGray">
+          <div className="container-fluid bg-white">
             <div className="row">
-              <div className="container-fluid container-lg sectionWrap blog-post bg-container-lightGray">
+              <div className="container-fluid container-lg sectionWrap blog-post">
                 <div className="row">
                   <div className="container">
                     <div className="row">
                       <div className="container-fluid">
                         <h2>
-                          About
+                          Our Mission
+                        </h2>
+                      </div>
+                    </div>
+                    <ContentSection className="" markup="
+                      <p>
+                        Blockstack is a new decentralized internet where you own your data and apps run
+                        locally without remote servers.
+                      </p>
+                      <p>
+                        Blockstack is an open source project with core developers and contributors
+                        located around the world, from New York City to Hong Kong.
+                      </p>
+                      <p>
+                        At Blockstack, we welcome developers and entrepreneurs of all kinds. Join our
+                        community and build your own app or contribute to the core software.
+                      </p>
+                    "/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="container-fluid bg-container-lightGray">
+            <div className="row">
+              <div className="container-fluid container-lg sectionWrap blog-post">
+                <div className="row">
+                  <div className="container">
+                    <div className="row">
+                      <div className="container-fluid">
+                        <h2>
+                          Blockstack Public Benefit Corp
                         </h2>
                       </div>
                     </div>
