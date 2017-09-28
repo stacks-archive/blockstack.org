@@ -33,7 +33,7 @@ class Talk extends Component {
           </p>
         </div>
         { this.props.youtubeURL && this.props.speakerDeckID ?
-        <div className="row">          
+        <div className="row">
           <div className="col-md-6">
             <EmbedYouTube src={this.props.youtubeURL} />
           </div>
@@ -45,9 +45,11 @@ class Talk extends Component {
         </div>
         : null }
         { this.props.youtubeURL && !this.props.speakerDeckID ?
-        <div className="row">          
-          <div className="col-md-12">
-            <EmbedYouTube src={this.props.youtubeURL} />
+        <div className="bg-white">
+          <div className="container container-lg">
+            <div className="row">
+              <EmbedYouTube src={this.props.youtubeURL} />
+            </div>
           </div>
         </div>
         : null }
