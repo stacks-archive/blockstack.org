@@ -41,12 +41,12 @@ class DownloadsPage extends Component {
                           <div className="row">
                             <div className="col-md-6">
                               <div className="row">
-                                <p className="lead-lg d-sm-block">
+                                <p className="lead-lg d-sm-block m-b-10">
                                   Developer alpha
                                 </p>
                               </div>
                             </div>
-                            <div className="col-md-6 m-b-30">
+                            <div className="col-md-6 m-b-15">
                               <div className="row">
                                 <a href={installationLinks.portalDevelopers} role="button"
                                   className="btn btn-secondary btn-block">
@@ -60,31 +60,31 @@ class DownloadsPage extends Component {
                           <div className="row">
                             <div className="col-md-6">
                               <div className="row">
-                                <p className="lead-lg d-sm-block">
-                                  macOS
-                                </p>
-                              </div>
-                            </div>
-                            <div className="col-md-6 m-b-30">
-                              <div className="row">
-                                <a to="#" role="button"
-                                  className="btn btn-secondary btn-block disabled">
-                                  Coming Soon
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="container mx-auto">
-                          <div className="row">
-                            <div className="col-md-6">
-                              <div className="row">
-                                <p className="lead-lg d-sm-block">
+                                <p className="lead-lg d-sm-block m-b-10">
                                   Windows
                                 </p>
                               </div>
                             </div>
-                            <div className="col-md-6 m-b-30">
+                            <div className="col-md-6 m-b-15">
+                              <div className="row">
+                                 <a href={installationLinks.portalDevelopers} role="button"
+                                  className="btn btn-secondary btn-block">
+                                  Releases on GitHub
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="container mx-auto">
+                          <div className="row">
+                            <div className="col-md-6">
+                              <div className="row">
+                                <p className="lead-lg d-sm-block m-b-10">
+                                  macOS
+                                </p>
+                              </div>
+                            </div>
+                            <div className="col-md-6 m-b-15">
                               <div className="row">
                                 <a to="#" role="button"
                                   className="btn btn-secondary btn-block disabled">
@@ -98,12 +98,12 @@ class DownloadsPage extends Component {
                           <div className="row">
                             <div className="col-md-6">
                               <div className="row">
-                                <p className="lead-lg d-sm-block">
+                                <p className="lead-lg d-sm-block m-b-10">
                                   Linux
                                 </p>
                               </div>
                             </div>
-                            <div className="col-md-6 m-b-30">
+                            <div className="col-md-6 m-b-15">
                               <div className="row">
                                 <a to="#" role="button"
                                   className="btn btn-secondary btn-block disabled">
