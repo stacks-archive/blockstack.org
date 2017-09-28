@@ -38,10 +38,12 @@ class App extends Component {
         pathname === '/token' ||
         pathname === '/summit2017' ||
         pathname === '/funding' ||
-        pathname === '/faq') {
+        pathname === '/faq' ||
+        pathname === '/docs') {
       specialHeader = true
     }
-    if (pathname === '/faq') {
+    if (pathname === '/faq' ||
+        pathname === '/docs') {
       specialFooter = true
     }
 
