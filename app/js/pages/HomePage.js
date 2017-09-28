@@ -175,7 +175,7 @@ class HomePage extends Component {
             {/* New section layout applied */}
             <div className="container-fluid sectionWrap bg-white">
               <div className="row">
-                <div className="container container-primary">
+                <div className="container container-md">
                   <EmbedYouTube src={this.state.videoURL} />
                 </div>
               </div>
@@ -234,7 +234,7 @@ class HomePage extends Component {
                     </div>
                     <div className="container m-b-60">
                       <div className="row">
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 no-padding">
                           <h4 className="text-center m-b-10">
                             Identity
                           </h4>
@@ -248,7 +248,7 @@ class HomePage extends Component {
                               retinaSupport={false} />
                           </p>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 no-padding">
                           <h4 className="text-center m-b-10">
                             Storage
                           </h4>
@@ -262,7 +262,7 @@ class HomePage extends Component {
                               retinaSupport={false} />
                           </p>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 no-padding">
                           <h4 className="text-center m-b-10">
                             Token
                           </h4>
@@ -278,7 +278,7 @@ class HomePage extends Component {
                         </div>
                       </div>
                     </div>
-                    <div className="container container-secondary">
+                    <div className="container container-sm">
                       <p className="text-center">
                         <Link to="/tutorials" role="button"
                           className="btn btn-primary btn-lg btn-block">
@@ -357,30 +357,34 @@ class HomePage extends Component {
             {/* New section layout applied */}
             <div className="container-fluid sectionWrap bg-primary text-white">
               <div className="row">
-                <div className="container">
+                <div className="col-sm-10 col-lg-11 col-xl-12 mx-auto m-b-80 m-t-35">
                   <div className="row">
                     <div className="container-fluid">
                       <h2 className="text-center m-b-25">
                         Get Started
                       </h2>
                     </div>
-                    <div className="col-md-6">
-                      <p className="lead-lg text-center text-white">
-                        Developers
-                      </p>
-                      <Link to="/install" role="button"
-                        className="btn btn-primary btn-block m-b-10">
-                        Browser Kit
-                      </Link>
+                    <div className="col-12 col-xl-8 container-lg mx-auto">
+                    <div className="row">
+                      <div className="col-md-6">
+                        <p className="lead-lg text-center text-white">
+                          Developers
+                        </p>
+                        <Link to="/install" role="button"
+                          className="btn btn-primary btn-block m-b-10">
+                          Browser Kit
+                        </Link>
+                      </div>
+                      <div className="col-md-6">
+                        <p className="lead-lg text-center text-white">
+                          Users
+                        </p>
+                        <Link to="/signup" role="button"
+                          className="btn btn-primary btn-block">
+                          Sign Up
+                        </Link>
+                      </div>
                     </div>
-                    <div className="col-md-6">
-                      <p className="lead-lg text-center text-white">
-                        Users
-                      </p>
-                      <Link to="/signup" role="button"
-                        className="btn btn-primary btn-block">
-                        Sign Up
-                      </Link>
                     </div>
                   </div>
                 </div>
