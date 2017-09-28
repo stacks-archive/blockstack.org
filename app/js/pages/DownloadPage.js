@@ -31,7 +31,6 @@ class DownloadsPage extends Component {
                       </h2>
                     </div>
                   </div>
-
                   <div className="container container-md container-box bg-white ml-0 m-b-50">
                     <div className="container">
                       <div className="row">
@@ -47,7 +46,7 @@ class DownloadsPage extends Component {
                                 </p>
                               </div>
                             </div>
-                            <div className="col-md-6 m-b-35">
+                            <div className="col-md-6 m-b-30">
                               <div className="row">
                                 <a href={installationLinks.portalDevelopers} role="button"
                                   className="btn btn-secondary btn-block">
@@ -66,7 +65,7 @@ class DownloadsPage extends Component {
                                 </p>
                               </div>
                             </div>
-                            <div className="col-md-6 m-b-35">
+                            <div className="col-md-6 m-b-30">
                               <div className="row">
                                 <a to="#" role="button"
                                   className="btn btn-secondary btn-block disabled">
@@ -85,7 +84,7 @@ class DownloadsPage extends Component {
                                 </p>
                               </div>
                             </div>
-                            <div className="col-md-6 m-b-35">
+                            <div className="col-md-6 m-b-30">
                               <div className="row">
                                 <a to="#" role="button"
                                   className="btn btn-secondary btn-block disabled">
@@ -104,7 +103,7 @@ class DownloadsPage extends Component {
                                 </p>
                               </div>
                             </div>
-                            <div className="col-md-6 m-b-35">
+                            <div className="col-md-6 m-b-30">
                               <div className="row">
                                 <a to="#" role="button"
                                   className="btn btn-secondary btn-block disabled">
@@ -117,9 +116,6 @@ class DownloadsPage extends Component {
                       </div>
                     </div>
                   </div>
-
-
-
                   <div className="container m-b-50">
                     <div className="row">
                       <h4 className="">

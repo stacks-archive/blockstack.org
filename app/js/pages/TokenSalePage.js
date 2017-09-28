@@ -80,8 +80,8 @@ class TokenSalePage extends Component {
             <div className="container">
               <section className="text-xs-center">
                 <Image className="m-t-65 m-b-55"
-                        src="/images/logos/stacks-logo.svg"
-                        retinaSupport={false} />
+                  src="/images/logos/stacks-logo.svg"
+                  retinaSupport={false} />
                 <h1 className="text-white m-b-20">The Blockstack Token</h1>
                 <p className="hero-lead purple-50">Sign up to receive important information about the token distribution</p>
                 <div>
@@ -97,6 +97,7 @@ class TokenSalePage extends Component {
                 </p>
               </section>
             </div>
+
             <div className="section-stats section-stats-electric-blue container-fluid">
               <div className="container">
                 <section>
@@ -121,6 +122,7 @@ class TokenSalePage extends Component {
                 </section>
               </div>
             </div>
+
             <div className="bg-white sectionWrap section-spacing container-fluid">
               <div className="container">
                 <section>
@@ -185,18 +187,21 @@ class TokenSalePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="bg-white sectionWrap section-spacing container-fluid" style={{ backgroundColor: '#FAFAFA' }}>
-              <div className="container">
-                <section>
-                  <h2 className="h-primary text-center">
+
+            {/* New section layout applied */}
+            <div className="container-fluid sectionWrap bg-container-lightGray">
+              <div className="row">
+                <div className="container-fluid">
+                  <h2 className="text-center m-b-25">
                     Why Blockstack?
                   </h2>
-                  <div className="row m-t-3">
-                    <EmbedYouTube src={this.state.videoURL} />
-                  </div>
-                </section>
+                </div>
+                <div className="container container-md">
+                  <EmbedYouTube src={this.state.videoURL} />
+                </div>
               </div>
             </div>
+
             <div className="bg-white sectionWrap section-spacing container-fluid">
               <div className="container">
                 <section>
@@ -221,58 +226,74 @@ class TokenSalePage extends Component {
                 </section>
               </div>
             </div>
-            <div className="sectionContainerGray section-spacing container-fluid">
-              <div className="container">
-                <section>
-                  <h2 className="h-primary m-b-85 text-center">
-                    Featured Apps on Blockstack
-                  </h2>
-                  {[[0,3], [3,5]].map((row, index) => {
-                    return (
-                      <div key={index}>
-                        {featuredApps.slice(row[0],row[1]).map((featuredApp, index2) => {
-                          const offsetClass = (row[0] === 3 && index2 === 0) ? 'offset-md-2' : ''
-                          return (
-                            <div key={index2}
-                              className={`col-md-4 m-b-55 ${offsetClass}`}>
-                              <p className="text-center">
-                                <Image className="col-img" src={featuredApp.icon}
-                                  retinaSupport={false} />
-                              </p>
-                              <h4 className="modern text-center">
-                                {featuredApp.name}
-                              </h4>
-                              <p className="text-center">
-                                {featuredApp.description}
-                              </p>
-                            </div>
-                          )
-                        })}
-                      </div>
-                    )
-                  })}
-                </section>
+
+            {/* New section layout applied */}
+            <div className="container-fluid sectionWrap bg-container-lightGray">
+              <div className="row">
+                <div className="container">
+                  <div className="row">
+                    <div className="container-fluid">
+                      <h2 className="text-center m-b-85">
+                        Featured Apps on Blockstack
+                      </h2>
+                    </div>
+                    <div className="container-fluid">
+                      {[[0,3], [3,5]].map((row, index) => {
+                        return (
+                          <div key={index} className="row">
+                            {featuredApps.slice(row[0],row[1]).map((featuredApp, index2) => {
+                              const offsetClass = (row[0] === 3 && index2 === 0) ? '' : ''
+                              return (
+                                <div key={index2}
+                                  className={`col-lg-4 m-b-55 mx-auto ${offsetClass}`}>
+                                  <p className="text-center">
+                                    <Image className="col-img" src={featuredApp.icon}
+                                      retinaSupport={false} />
+                                  </p>
+                                  <h4 className="modern text-center">
+                                    {featuredApp.name}
+                                  </h4>
+                                  <p className="text-center">
+                                    {featuredApp.description}
+                                  </p>
+                                </div>
+                              )
+                            })}
+                          </div>
+                        )
+                      })}
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+
             <TeamMembers />
-            <div className="bg-container-lightGray section-spacing container-fluid">
-              <div className="container">
-                <section>
-                  <div className="containWrap">
-                    <h2 className="h-primary text-center">
-                      News
-                    </h2>
+
+            {/* New section layout applied */}
+            <div className="container-fluid sectionWrap bg-container-lightGray">
+              <div className="row">
+                <div className="container">
+                  <div className="row">
+                    <div className="container-fluid">
+                      <h2 className="text-center m-b-25">
+                        News
+                      </h2>
+                    </div>
+                    <div className="container">
+                      <div className="row">
+                      { firstThreePosts.map((post, index) => {
+                        return (
+                          <PostPreview key={index} post={post} />
+                        )
+                      }) }
+                      </div>
+                    </div>
                   </div>
-                  <div className="container">
-                  { firstThreePosts.map((post, index) => {
-                    return (
-                      <PostPreview key={index} post={post} />
-                    )
-                  }) }
-                  </div>
-                </section>
+                </div>
               </div>
             </div>
+
           </div>
         </div>
       </DocumentTitle>
