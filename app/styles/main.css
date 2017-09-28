@@ -281,6 +281,9 @@ section{word-break:break-word;}
   background-color: #F0F0F0;
 }
 .section-stats{position:relative;-webkit-box-shadow:0 -10px 20px rgba(0,0,0,0.08),0 0 10px rgba(0,0,0,0.08);-moz-box-shadow:0 -10px 20px rgba(0,0,0,0.08),0 0 10px rgba(0,0,0,0.08);box-shadow:0 -10px 20px rgba(0,0,0,0.08),0 0 10px rgba(0,0,0,0.08);}
+section > div.container.col-centered.blog-post{padding-right:0!important;padding-left:0!important;}
+section > div.container.col-centered.blog-post > div.container{padding-right:0!important;padding-left:0!important;}
+section > div.container.col-centered.blog-post > div.container > div.post-content > div > p{font-size:1rem;margin-bottom:15px;}
 
 /*  9. Fonts */
 /* Font spacing has no margin-top */

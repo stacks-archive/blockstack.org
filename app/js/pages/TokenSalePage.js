@@ -120,68 +120,68 @@ class TokenSalePage extends Component {
               </div>
             </div>
 
-            <div className="bg-white sectionWrap section-spacing container-fluid">
-              <div className="container">
-                <section>
-                  <div className="containWrap">
-                    <h2 className="h-primary text-center">
-                      What is Blockstack?
-                    </h2>
-                    <ContentSection markup="
-                      <p>
-                        Blockstack is a new decentralized internet where users control their data and apps run on their devices.
-                        There are no middlemen, no passwords, no massive data silos to breach,
-                        and no services tracking us around the internet.
-                      </p>
+            <div className="container-fluid sectionWrap bg-white">
+              <div className="row">
+                <div className="container">
+                  <div className="row">
+                    <div className="container-fluid">
+                      <h2 className="text-center m-b-35">
+                        What is Blockstack?
+                      </h2>
+                      <ContentSection markup="
+                        <p>
+                          Blockstack is a new decentralized internet where users control their data and apps run on their devices.
+                          There are no middlemen, no passwords, no massive data silos to breach,
+                          and no services tracking us around the internet.
+                        </p>
+                        <p>
+                          The applications on blockstack are server-less and decentralized.
 
-                      <p>
-                        The applications on blockstack are server-less and decentralized.
+                          Developers start by building a single-page application in Javascript,
 
-                        Developers start by building a single-page application in Javascript,
+                          Then, instead of plugging the frontend into a centralized API,
+                          they plug into an API run by the user.
 
-                        Then, instead of plugging the frontend into a centralized API,
-                        they plug into an API run by the user.
+                          Developers install a library called 'blockstack.js' and
+                          don't have to worry about running servers, maintaining databases,
+                          or building out user management systems.
+                        </p>
+                        <p>
+                          Personal user APIs ship with the Blockstack app and
+                          handle everything from identity and authentication
+                          to data storage.
 
-                        Developers install a library called 'blockstack.js' and
-                        don't have to worry about running servers, maintaining databases,
-                        or building out user management systems.
-                      </p>
+                          Applications can request permissions from users and then
+                          gain read and write access to user resources.
+                        </p>
 
-                      <p>
-                        Personal user APIs ship with the Blockstack app and
-                        handle everything from identity and authentication
-                        to data storage.
+                        <p>
+                          Data storage is simple and reliable and uses existing cloud infrastructure.
 
-                        Applications can request permissions from users and then
-                        gain read and write access to user resources.
-                      </p>
+                          Users connect with their Dropbox, Google Drive, etc and data is synced from
+                          their local device up to the cloud.
+                        </p>
 
-                      <p>
-                        Data storage is simple and reliable and uses existing cloud infrastructure.
+                        <p>
+                          Identity is user-controlled and utilizes the blockchain for secure management
+                          of keys, devices and usernames.
 
-                        Users connect with their Dropbox, Google Drive, etc and data is synced from
-                        their local device up to the cloud.
-                      </p>
+                          When users login with apps, they are anonymous by default and use an
+                          app-specific key, but their full identity can be revealed and proven
+                          at any time.
 
-                      <p>
-                        Identity is user-controlled and utilizes the blockchain for secure management
-                        of keys, devices and usernames.
+                          Keys are for signing and encryption and can be changed
+                          as devices need to be added or removed.
+                        </p>
 
-                        When users login with apps, they are anonymous by default and use an
-                        app-specific key, but their full identity can be revealed and proven
-                        at any time.
-
-                        Keys are for signing and encryption and can be changed
-                        as devices need to be added or removed.
-                      </p>
-
-                      <p>
-                        Under the hood, Blockstack provides a decentralized domain name system (DNS),
-                        decentralized public key distribution system,
-                        and registry for apps and user identities.
-                      </p>" />
+                        <p>
+                          Under the hood, Blockstack provides a decentralized domain name system (DNS),
+                          decentralized public key distribution system,
+                          and registry for apps and user identities.
+                        </p>" />
+                    </div>
                   </div>
-                </section>
+                </div>
               </div>
             </div>
 
@@ -199,28 +199,28 @@ class TokenSalePage extends Component {
               </div>
             </div>
 
-            <div className="bg-white sectionWrap section-spacing container-fluid">
-              <div className="container">
-                <section>
-                  <div className="containWrap">
-                    <h2 className="h-primary text-center m-b-3">
-                      How Does Blockstack Work?
-                    </h2>
-                    <div className="col-sm-12 text-center landing-hero-img">
-                      <Image className="landing-feat-img"
+            {/* New section layout applied */}
+            <div className="container-fluid sectionWrap bg-white">
+              <div className="row">
+                <div className="container">
+                  <div className="row">
+                    <div className="container-fluid">
+                      <h2 className="text-center m-b-25">
+                        How Does Blockstack Work?
+                      </h2>
+                    </div>
+                    <div className="col-sm-12 text-center landing-hero-img m-b-35">
+                      <Image className="landing-feat-img container-sm"
                         src="/images/visuals/blockstack-architecture-diagram.svg"
                         retinaSupport={false} />
                     </div>
-                    <div className="row m-t-3">
-                      <div className="col-sm-10 offset-sm-1 text-center">
-                        <Image
+                    <div className="col-sm-12 text-center landing-hero-img m-b-35">
+                      <Image className="landing-feat-img container-sm"
                           src="/images/visuals/blockstack-tx-diagram.png"
-                          style={{width: '100%'}}
                           retinaSupport={false} />
-                      </div>
                     </div>
                   </div>
-                </section>
+                </div>
               </div>
             </div>
 
