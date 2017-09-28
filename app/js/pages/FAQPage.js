@@ -72,7 +72,7 @@ class FAQpage extends Component {
                     index < 5 ?
                     <Link key={index}
                           href={`/faq/#${refLink}`}
-                          className="list-group-item">
+                          className="list-group-item list-group-item-d">
                       {faq.question}
                     </Link> : null
                   )

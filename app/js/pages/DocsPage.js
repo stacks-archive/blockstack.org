@@ -106,6 +106,21 @@ class DocsPage extends Component {
                 </Link>
                 <Link className="tagline" to="/docs">docs</Link>
               </div>
+              <div className="sidebar-links">
+                <Link className="" to="/tutorials">
+                  Tutorials
+                </Link>
+              </div>
+              <div className="sidebar-links">
+                <Link className="" to="/videos">
+                  Videos
+                </Link>
+              </div>
+              <div className="sidebar-links">
+                <Link className="" to="/papers">
+                  Papers
+                </Link>
+              </div>
               <div className="list-group">
                 { sections.map((section, index) => {
                   return (
@@ -115,7 +130,7 @@ class DocsPage extends Component {
                         return (
                           <Link key={index}
                                 href={`/docs/#${section.id}`}
-                                className="list-group-item">
+                                className="list-group-item list-group-item-d">
                             {section.title}
                           </Link>
                         )

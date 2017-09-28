@@ -15,6 +15,7 @@ class Header extends Component {
       navItems: [
         { to: '/install', label: 'Install' },
         { to: '/about', label: 'About' },
+        { to: '/docs', label: 'Docs' },
         { to: '/blog', label: 'Blog' },
         { to: '/faq', label: 'FAQ' },
         { to: 'https://github.com/blockstack', label: 'GitHub', mobile: false },
