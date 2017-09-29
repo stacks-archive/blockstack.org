@@ -82,7 +82,7 @@ class AuthPage extends Component {
                         - or -
                       </h4>
                       <p>
-                        <Link className="btn btn-outline-primary"
+                        <Link className="btn btn-secondary"
                               onClick={this.signIn}>
                           Quick Sign In
                         </Link>

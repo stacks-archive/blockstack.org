@@ -129,7 +129,7 @@ export default DownloadsPage
                       <h3>Core Server + CLI</h3>
                       <p>
                         <a href={installationLinks.cliDevelopers} role="button"
-                          className="btn btn-outline-primary btn-block">
+                          className="btn btn-secondary btn-block">
                           Instructions on GitHub
                         </a>
                       </p>

@@ -102,10 +102,10 @@ class Article extends Component {
                       </h2>
                       <div dangerouslySetInnerHTML={{ __html: this.state.markup }}>
                       </div>
-                      <div className="m-t-4">
+                      <div className="m-t-40">
                         <Link to={`${githubFileUrlRoot}${pathPrefix}/${this.state.urlSlug}.md`}
                           role="button" target="_blank"
-                          className="btn btn-sm btn-outline-primary m-b-2">
+                          className="btn btn-primary m-b-20">
                           Edit this post on GitHub
                         </Link>
                       </div>

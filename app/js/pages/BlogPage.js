@@ -114,14 +114,14 @@ export default connect(mapStateToProps, mapDispatchToProps)(BlogPage)
 <p>
                   { this.state.pageNumber > 1 ?
                   <Link to={'/blog?page=' + (this.state.pageNumber - 1).toString()}
-                        className="btn btn-sm btn-outline-primary">
+                        className="btn btn-sm btn-secondary">
                     Newer Posts
                   </Link>
                   : null }
                   &nbsp;
                   { this.state.pageNumber < 2 ?
                   <Link to={'/blog?page=' + (this.state.pageNumber + 1).toString()}
-                        className="btn btn-sm btn-outline-primary">
+                        className="btn btn-sm btn-secondary">
                     Older Posts
                   </Link>
                   : null }
