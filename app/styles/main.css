@@ -346,11 +346,7 @@ footer{padding-top:60px;padding-bottom:80px;background-color:#080809;color:#fff;
 .foot-item {
   padding-left:15px;
 }
-
-
-
-
-.foot-menu > li a {
+.foot-item a {
   display: block;
   color: rgba(255, 255, 255, 0.65);
 }
@@ -810,7 +806,9 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
   /* 10. Components */
   /*.PostShareWidget{display:flex;flex-direction:column;height:80px;width:initial;position:fixed;top:47%;left:15px;background-color:transparent;box-shadow:none;border:none;}*/
   /* 10. Components - Footer */
-  .foot-left-col{width:22.3%}
+  .foot-3col{margin-left:250px;margin-top:-24px;}
+
+
   .foot-menu{padding-top:0px;}
   .copyright-push-left,.base-push-left{margin-left:30%;max-width:55%}
   .midfoot,.base-push-left{padding-left:0;}
