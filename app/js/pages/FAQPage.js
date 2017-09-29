@@ -64,6 +64,11 @@ class FAQpage extends Component {
                 </Link>
                 <Link className="tagline" to="/faq">faq</Link>
               </div>
+              <div className="sidebar-links">
+                <Link to="/">
+                  Home
+                </Link>
+              </div>
               <div className="list-group">
                 <h5 className="list-group-header list-group-header-d-sidebar">Frequently Asked Questions</h5>
                 { questions.map((faq, index) => {

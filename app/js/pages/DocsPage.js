@@ -107,6 +107,11 @@ class DocsPage extends Component {
                 <Link className="tagline" to="/docs">docs</Link>
               </div>
               <div className="sidebar-links">
+                <Link to="/">
+                  Home
+                </Link>
+              </div>
+              <div className="sidebar-links">
                 <Link to="/tutorials">
                   › &nbsp;Tutorials
                 </Link>
