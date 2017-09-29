@@ -15,7 +15,7 @@ class Footer extends Component {
     const links = socialLinks
     return (
       <footer>
-        <div className="container">
+        <div className="container container-lg">
           <div className="row">
             <div className="d-none d-lg-inline">
               <div className="foot-logo">
