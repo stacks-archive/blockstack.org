@@ -102,40 +102,36 @@ class Footer extends Component {
             </div>
           </div>
         </div>
-
         <div className="container container-primary">
           <div className="row">
             <div className="container foot-3col">
               <div className="row">
-
-                <div className="col-12 col-md-3 order-md-2">
+                <div className="col-12 col-md-3 order-md-2 mt-5 foot-social">
                   <div className="container d-flex justify-content-md-end">
                     <div className="d-inline">
                       <Link to={links.twitter} target="_blank">
-                        <i className="fa fa-twitter"></i>
+                        <i className="fa fa-twitter foot-social-item"></i>
                       </Link>
                     </div>
                     <div className="d-inline">
                       <Link to={links.youtube} target="_blank">
-                        <i className="fa fa-youtube-play"></i>
+                        <i className="fa fa-youtube-play foot-social-item"></i>
                       </Link>
                     </div>
                     <div className="d-inline">
                       <Link to={links.github} target="_blank">
-                        <i className="fa fa-github"></i>
+                        <i className="fa fa-github foot-social-item"></i>
                       </Link>
                     </div>
                   </div>
                 </div>
-
-                <div className="col-12 col-md-9 order-md-1">
+                <div className="col-12 col-md-9 order-md-1 mt-2 mt-md-5">
                   <div className="container">
-                    <div className="copyright">
+                    <div className="foot-text">
                       This is an open sourced site hosted on GitHub. Patches, suggestions and comments are welcome.
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -150,16 +146,3 @@ class Footer extends Component {
 
 export default Footer
 
-{ /*
-
-
-
-
-
-        <div className="container base-foot">
-            <p className="base-push-left">
-              Made with &lt;3 by the Blockstack community
-            </p>
-        </div>
-      </footer>
-*/ }

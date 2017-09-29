@@ -336,67 +336,14 @@ display-6{font-size:1rem;}
 /* 10. Components */
 .PostShareWidget{position:fixed;display:flex;flex-direction:row;justify-content:center;align-items:center;width:100%;height:40px;bottom:0!important;left:0;z-index:20;background-color:#fff;border-top:1px solid #f0f0f0;webkit-box-shadow:0 -10px 20px rgba(0,0,0,0.08),0 0 0 rgba(0,0,0,0);-moz-box-shadow:0 -10px 20px rgba(0,0,0,0.08),0 0 0 rgba(0,0,0,0);box-shadow:0 -10px 20px rgba(0,0,0,0.08),0 0 0 rgba(0,0,0,0);}
 svg.social-icon.social-icon--facebook{margin-top:-1px;}
-/* Footer */
-footer{padding-top:40px;padding-bottom:80px;background-color:#080809;color:#fff;font-size:0.9375rem;z-index:999;}
-.foot-menu {
-  padding-top: 20px;
-}
-.foot-item {
-  padding-left:15px;
-}
-.foot-item a {
-  display: block;
-  color: rgba(255, 255, 255, 0.65);
-}
-
-.foot-menu > li a:hover {
-  color: rgba(255, 255, 255, 1);
-  text-decoration: none;
-}
-
-
-
-
-
-
-.copy-foot {
-  padding-top: 60px;
-}
-
-.sm-social {
-  margin-left: -25px;
-}
-
-.sm-social li {
-  display: inline-block;
-  padding: 8px 10px;
-  font-size: 18px;
-}
-
-.sm-social li a {
-  color: rgba(255, 255, 255, 0.65);
-}
-
-.sm-social > li a:hover {
-  color: rgba(255, 255, 255, 1);
-}
-
-.base-foot {
-  padding-top: 20px;
-}
-
-.midfoot li {
-  display: inline-block;
-  list-style: none;
-}
-
-.midfoot, .base-push-left {
-  padding-left: 30px;
-}
-
-.foot-logo {
-  width: 115px;
-}
+/* 10. Components - Footer */
+footer{padding-top:40px;padding-bottom:80px;background-color:#080809;color:#fff;font-size:0.875rem;z-index:999;}
+.foot-menu{padding-top:20px;}
+.foot-item{padding-left:15px;}
+footer a{display:block;color:rgba(255,255,255,0.55);}
+footer a:hover,footer a:focus,footer a:active{color:#fff;text-decoration:none;}
+.foot-social{margin-left:-8px;}
+.foot-social-item{padding:8px 8px;font-size:1rem;}
 
 
 /* 12. Buttons */
@@ -701,6 +648,7 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
   footer{padding-top:60px;}
   .foot-3col{margin-top:-24px;}
   .foot-logo img{width:164px;}
+  i.fa.fa-github.foot-social-item{margin-top:0px;}
 
   /* 12. Buttons */
   .btn-text{padding-right: 0; padding-left: 0;margin-ttop: 0;padding: 0}
@@ -808,9 +756,6 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
   /* 10. Components - Footer */
   .foot-3col{margin-left:200px;}
   .foot-menu{padding-top:0px;}
-  .copyright-push-left,.base-push-left{margin-left:30%;max-width:55%}
-  .midfoot,.base-push-left{padding-left:0;}
-  .social{margin-top:-8px;}
   .foot-logo{max-width:190px;}
   .card.card-1-of-1{width:100%!important;}
   .card.card-1-of-2{width:50%!important;}
