@@ -101,31 +101,41 @@ class DocsPage extends Component {
           <div className='sidebar-wrapper'>
             <aside>
               <div className="sidebar-header">
-                <Link className="navbar-brand sidebar-logo" to="/">
-                  <img src="/images/logos/blockstack-logo-landscape.svg" />
+                <Link className="navbar-brand" to="/">
+                  blockstack
                 </Link>
                 <Link className="tagline" to="/docs">docs</Link>
               </div>
               <div className="sidebar-links">
-                <Link className="" to="/tutorials">
-                  Tutorials
+                <Link to="/tutorials">
+                  › &nbsp;Tutorials
                 </Link>
               </div>
               <div className="sidebar-links">
-                <Link className="" to="/videos">
-                  Videos
+                <Link to="/videos">
+                  › &nbsp;Videos
                 </Link>
               </div>
               <div className="sidebar-links">
-                <Link className="" to="/papers">
-                  Papers
+                <Link to="/papers">
+                  › &nbsp;Papers
+                </Link>
+              </div>
+              <div className="sidebar-links">
+                <Link to="https://core.blockstack.org/" target="_blank">
+                  › &nbsp;Core API
+                </Link>
+              </div>
+              <div className="sidebar-links">
+                <Link to="http://blockstack.github.io/blockstack.js/" target="_blank">
+                  › &nbsp;blockstack.js
                 </Link>
               </div>
               <div className="list-group">
                 { sections.map((section, index) => {
                   return (
                     <div key={index}>
-                      <h5 className="list-group-header">{section.title}</h5>
+                      <h5 className="list-group-header list-group-header-d-sidebar">{section.title}</h5>
                       { section.subSections.map((section, index) => {
                         return (
                           <Link key={index}

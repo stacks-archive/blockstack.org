@@ -59,13 +59,13 @@ class FAQpage extends Component {
           <div className='sidebar-wrapper'>
             <aside>
               <div className="sidebar-header">
-                <Link className="navbar-brand sidebar-logo" to="/">
-                  <img src="/images/logos/blockstack-logo-landscape.svg" />
+                <Link className="navbar-brand" to="/">
+                  blockstack
                 </Link>
                 <Link className="tagline" to="/faq">faq</Link>
               </div>
               <div className="list-group">
-                <h5 className="list-group-header">Frequently Asked Questions</h5>
+                <h5 className="list-group-header list-group-header-d-sidebar">Frequently Asked Questions</h5>
                 { questions.map((faq, index) => {
                   const refLink = faq.question.toLowerCase().split(' ').join('_');
                   return (
@@ -77,9 +77,9 @@ class FAQpage extends Component {
                     </Link> : null
                   )
                 })}
-                <h5 className="list-group-header">For Developers</h5>
-                <h5 className="list-group-header">For Users</h5>
-                <h5 className="list-group-header">Misc</h5>
+                <h5 className="list-group-header list-group-header-d-sidebar">For Developers</h5>
+                <h5 className="list-group-header list-group-header-d-sidebar">For Users</h5>
+                <h5 className="list-group-header list-group-header-d-sidebar">Misc</h5>
               </div>
             </aside>
           </div>
