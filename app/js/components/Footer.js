@@ -16,89 +16,113 @@ class Footer extends Component {
     return (
       <footer>
         <div className="container">
-            <div className="col-md-2 foot-left-col d-none d-lg-block">
-              <ul className="list-unstyled">
-                <li>
-                  <div className="foot-logo">
-                    <Link to="/">
-                      <img src="/images/logos/blockstack-logo-landscape-rev.svg" />
-                    </Link>
+          <div className="row">
+            <div className="d-none d-lg-inline">
+              <div className="foot-logo">
+                <Link to="/">
+                  <img src="/images/logos/blockstack-logo-landscape-rev.svg" />
+                </Link>
+              </div>
+            </div>
+            <div className="container-fluid foot-3col">
+              <div className="row">
+                <div className="col-6 col-lg-3">
+                  <div className="foot-menu">
+                    <div className="foot-item text-white">
+                      Pages
+                    </div>
+                    <div className="foot-item">
+                      <Link to="/intro">Intro</Link>
+                    </div>
+                    <div className="foot-item">
+                      <Link to="/tutorials">Tutorials</Link>
+                    </div>
+                    <div className="foot-item">
+                      <Link to="/blog">Blog</Link>
+                    </div>
+                    <div className="foot-item">
+                      <Link to="/papers">Papers</Link>
+                    </div>
+                    <div className="foot-item">
+                      <Link to="/videos">Videos</Link>
+                    </div>
+                    <div className="foot-item">
+                      <Link to="/about">About</Link>
+                    </div>
+                    <div className="foot-item">
+                      <Link to="/faq">FAQs</Link>
+                    </div>
+                    <div className="foot-item">
+                      <Link to="/careers">Careers</Link>
+                    </div>
                   </div>
-                </li>
-              </ul>
+                </div>
+                <div className="col-6 col-lg-3">
+                  <div className="foot-menu">
+                    <div className="foot-item text-white">
+                      Community
+                    </div>
+                    <div className="foot-item">
+                      <Link to={links.forum} target="_blank">Forum</Link>
+                    </div>
+                    <div className="foot-item">
+                      <Link to={links.slack} target="_blank">Slack</Link>
+                    </div>
+                    <div className="foot-item">
+                      <Link to={links.meetup} target="_blank">Meetup</Link>
+                    </div>
+                    <div className="foot-item">
+                      <Link to={links.youtube} target="_blank">YouTube</Link>
+                    </div>
+                    <div className="foot-item">
+                      <Link to="/summit2017">Summit 2017</Link>
+                    </div>
+                    <div className="foot-item">
+                      <Link to="/funding">Funding</Link>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-6 col-lg-3">
+                  <div className="foot-menu">
+                    <div className="foot-item text-white">
+                      Resources
+                    </div>
+                    <div className="foot-item">
+                      <Link to={links.github} target="_blank">Github</Link>
+                    </div>
+                    <div className="foot-item">
+                      <Link to={links.twitter} target="_blank">Twitter</Link>
+                    </div>
+                    <div className="foot-item">
+                      <Link to={links.branding} target="_blank">Branding</Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="col-xs-6 col-lg-2">
-              <ul className="foot-menu list-unstyled">
-                <li>Pages</li>
-                <li>
-                  <Link to="/intro">Intro</Link>
-                </li>
-                <li>
-                  <Link to="/tutorials">Tutorials</Link>
-                </li>
-                <li>
-                  <Link to="/blog">Blog</Link>
-                </li>
-                <li>
-                  <Link to="/papers">Papers</Link>
-                </li>
-                <li>
-                  <Link to="/videos">Videos</Link>
-                </li>
-                <li>
-                  <Link to="/about">About</Link>
-                </li>
-                <li>
-                  <Link to="/faq">FAQs</Link>
-                </li>
-                <li>
-                  <Link to="/careers">Careers</Link>
-                </li>
-              </ul>
-            </div>
-            <div className="col-xs-6 col-lg-2">
-              <ul className="foot-menu list-unstyled">
-                <li>Community</li>
-                <li>
-                  <Link to={links.forum} target="_blank">Forum</Link>
-                </li>
-                <li>
-                  <Link to={links.slack} target="_blank">Slack</Link>
-                </li>
-                <li>
-                  <Link to={links.meetup} target="_blank">Meetup</Link>
-                </li>
-                <li>
-                  <Link to={links.youtube} target="_blank">YouTube</Link>
-                </li>
-                <li>
-                  <Link to="/summit2017">Summit 2017</Link>
-                </li>
-                <li>
-                  <Link to="/funding">Funding</Link>
-                </li>
-              </ul>
-            </div>
-            <div className="col-xs-6 col-lg-2">
-              <ul className="foot-menu list-unstyled">
-                <li>Resources</li>
-                <li>
-                  <Link to={links.github} target="_blank">Github</Link>
-                </li>
-                <li>
-                  <Link to={links.twitter} target="_blank">Twitter</Link>
-                </li>
-                <li>
-                  <Link to={links.branding} target="_blank">Branding</Link>
-                </li>
-              </ul>
-            </div>
+
+          </div>
         </div>
+      </footer>
+
+    )
+  }
+
+}
+
+export default Footer
+
+{ /*
+
+
+
+        </div>
+
         <div className="container copy-foot">
           <ul className="midfoot">
             <li>
               <div className="social hidden-lg-up container">
-                <ul className="sm-social list-unstyled">
+                <div className="sm-social">
                   <li>
                     <Link to={links.twitter} target="_blank">
                       <i className="fa fa-twitter"></i>
@@ -114,7 +138,7 @@ class Footer extends Component {
                       <i className="fa fa-github"></i>
                     </Link>
                   </li>
-                </ul>
+                </div>
               </div>
             </li>
             <li className="copyright-push-left">
@@ -125,7 +149,7 @@ class Footer extends Component {
             </li>
             <li className="pull-right">
               <div className="social hidden-md-down">
-                <ul className="sm-social list-unstyled">
+                <div className="sm-social">
                   <li>
                     <Link to={links.twitter} target="_blank">
                       <i className="fa fa-twitter"></i>
@@ -141,10 +165,10 @@ class Footer extends Component {
                       <i className="fa fa-github"></i>
                     </Link>
                   </li>
-                </ul>
+                </div>
               </div>
             </li>
-          </ul>
+          </div>
         </div>
         <div className="container base-foot">
             <p className="base-push-left">
@@ -152,9 +176,4 @@ class Footer extends Component {
             </p>
         </div>
       </footer>
-    )
-  }
-
-}
-
-export default Footer
+*/ }
