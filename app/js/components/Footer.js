@@ -15,7 +15,7 @@ class Footer extends Component {
     const links = socialLinks
     return (
       <footer>
-        <div className="container container-lg">
+        <div className="container container-primary">
           <div className="row">
             <div className="d-none d-lg-inline">
               <div className="foot-logo">
@@ -24,9 +24,9 @@ class Footer extends Component {
                 </Link>
               </div>
             </div>
-            <div className="container-fluid foot-3col">
+            <div className="container foot-3col">
               <div className="row">
-                <div className="col-6 col-lg-3">
+                <div className="col-6 col-md-3">
                   <div className="foot-menu">
                     <div className="foot-item text-white">
                       Pages
@@ -57,7 +57,7 @@ class Footer extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-6 col-lg-3">
+                <div className="col-6 col-md-3">
                   <div className="foot-menu">
                     <div className="foot-item text-white">
                       Community
@@ -82,7 +82,7 @@ class Footer extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-6 col-lg-3">
+                <div className="col-6 col-md-3">
                   <div className="foot-menu">
                     <div className="foot-item text-white">
                       Resources
@@ -100,9 +100,14 @@ class Footer extends Component {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
+
+        <div className="container container-md">
+          <div className="row">
+          </div>
+        </div>
+
       </footer>
 
     )
@@ -116,9 +121,7 @@ export default Footer
 
 
 
-        </div>
-
-        <div className="container copy-foot">
+         <div className="container copy-foot">
           <ul className="midfoot">
             <li>
               <div className="social hidden-lg-up container">
@@ -141,6 +144,7 @@ export default Footer
                 </div>
               </div>
             </li>
+
             <li className="copyright-push-left">
               <div className="copyright">
                 This is an open sourced site hosted on GitHub.
@@ -170,6 +174,7 @@ export default Footer
             </li>
           </div>
         </div>
+
         <div className="container base-foot">
             <p className="base-push-left">
               Made with &lt;3 by the Blockstack community
