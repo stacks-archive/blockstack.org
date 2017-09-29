@@ -15,7 +15,7 @@ class Footer extends Component {
     const links = socialLinks
     return (
       <footer>
-        <div className="container container-primary">
+        <div className="container container-lg">
           <div className="row">
             <div className="d-none d-lg-inline">
               <div className="foot-logo">
@@ -102,7 +102,7 @@ class Footer extends Component {
             </div>
           </div>
         </div>
-        <div className="container container-primary">
+        <div className="container container-lg">
           <div className="row">
             <div className="container foot-3col">
               <div className="row">
@@ -136,7 +136,7 @@ class Footer extends Component {
             </div>
           </div>
         </div>
-        <div className="container container-primary">
+        <div className="container container-lg">
           <div className="row">
             <div className="container foot-3col">
               <div className="container mt-5">
