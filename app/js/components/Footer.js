@@ -103,8 +103,41 @@ class Footer extends Component {
           </div>
         </div>
 
-        <div className="container container-md">
+        <div className="container container-primary">
           <div className="row">
+            <div className="container foot-3col">
+              <div className="row">
+
+                <div className="col-12 col-md-3 order-md-2">
+                  <div className="container d-flex justify-content-md-end">
+                    <div className="d-inline">
+                      <Link to={links.twitter} target="_blank">
+                        <i className="fa fa-twitter"></i>
+                      </Link>
+                    </div>
+                    <div className="d-inline">
+                      <Link to={links.youtube} target="_blank">
+                        <i className="fa fa-youtube-play"></i>
+                      </Link>
+                    </div>
+                    <div className="d-inline">
+                      <Link to={links.github} target="_blank">
+                        <i className="fa fa-github"></i>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-12 col-md-9 order-md-1">
+                  <div className="container">
+                    <div className="copyright">
+                      This is an open sourced site hosted on GitHub. Patches, suggestions and comments are welcome.
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </div>
         </div>
 
@@ -121,59 +154,7 @@ export default Footer
 
 
 
-         <div className="container copy-foot">
-          <ul className="midfoot">
-            <li>
-              <div className="social hidden-lg-up container">
-                <div className="sm-social">
-                  <li>
-                    <Link to={links.twitter} target="_blank">
-                      <i className="fa fa-twitter"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={links.youtube} target="_blank">
-                      <i className="fa fa-youtube-play"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={links.github} target="_blank">
-                      <i className="fa fa-github"></i>
-                    </Link>
-                  </li>
-                </div>
-              </div>
-            </li>
 
-            <li className="copyright-push-left">
-              <div className="copyright">
-                This is an open sourced site hosted on GitHub.
-                Patches, suggestions and comments are welcome.
-              </div>
-            </li>
-            <li className="pull-right">
-              <div className="social hidden-md-down">
-                <div className="sm-social">
-                  <li>
-                    <Link to={links.twitter} target="_blank">
-                      <i className="fa fa-twitter"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={links.youtube} target="_blank">
-                      <i className="fa fa-youtube-play"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={links.github} target="_blank">
-                      <i className="fa fa-github"></i>
-                    </Link>
-                  </li>
-                </div>
-              </div>
-            </li>
-          </div>
-        </div>
 
         <div className="container base-foot">
             <p className="base-push-left">
