@@ -30,6 +30,14 @@ function mapDispatchToProps(dispatch) {
 
 class FundingPage extends Component {
 
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      videoURL: 'https://www.youtube.com/embed/vQSbqwz4TPM'
+    }
+  }
+
   render() {
     return (
       <DocumentTitle title="Blockstack Signature Fund">
@@ -38,9 +46,13 @@ class FundingPage extends Component {
             <Alert />
             <Header transparent={true} />
             <div className="container-fluid">
-              <div className="row video-special-row">
-                <div className="video-special-container">
-                  <EmbedYouTube src="https://www.youtube.com/embed/vQSbqwz4TPM" />
+              <div className="row">
+                <div className="container-fluid video-special-row">
+                  <div className="row">
+                    <div className="container container-md">
+                      <EmbedYouTube src={this.state.videoURL} />
+                    </div>
+                  </div>
                 </div>
               </div>
               <section className="text-xs-center">

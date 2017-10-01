@@ -513,7 +513,6 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 
 /* 38. f. - Embed */
 .video-special-row{margin-top:50px;background-color:#1A1D1F;}
-.video-special-container{margin-left:auto;margin-right:auto;}
 
 
 /* 38. b. - Background */
@@ -735,9 +734,6 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
   .sig-logo-space{margin-top:50px;margin-bottom:40px;}
   .code-img-gutter{padding-right: 0;padding-left: 0;}
 
-  /* 38. f. - Embed */
-  .video-special-row{margin-top:50px;background-color:#1A1D1F;}
-  .video-special-container{margin-left:auto;margin-right:auto;}
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -802,7 +798,6 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
 
   /* 38. f. - Embed */
   .video-special-row{margin-top:100px;background-color:#1A1D1F;}
-  .video-special-container{width:711px;height:400px;margin-left:auto;margin-right:auto;}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -815,10 +810,6 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
 
   /* 21. Cards */
   .card-media-title{margin-top:18px;}
-
-  /* 38. f. - Embed */
-  .video-special-row{margin-top:100px;background-color:#1A1D1F;}
-  .video-special-container{width:711px;height:400px;margin-left:auto;margin-right:auto;}
 }
 
 /* x-Small devices */
