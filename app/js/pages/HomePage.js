@@ -182,7 +182,7 @@ class HomePage extends Component {
             </div>
 
             {/* New section layout applied */}
-            <div className="container-fluid sectionWrap bg-container-lightGray">
+            <div className="container-fluid sectionWrap bg-light-gray">
               <div className="row">
                 <div className="container">
                   <div className="row">
@@ -294,7 +294,7 @@ class HomePage extends Component {
             </div>
 
             {/* New section layout applied */}
-            <div className="container-fluid sectionWrap bg-container-lightGray">
+            <div className="container-fluid sectionWrap bg-light-gray">
               <div className="row">
                 <div className="container">
                   <div className="row">

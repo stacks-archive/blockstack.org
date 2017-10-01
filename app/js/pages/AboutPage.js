@@ -48,7 +48,7 @@ class AboutPage extends Component {
               </div>
             </div>
           </div>
-          <div className="container-fluid bg-container-lightGray">
+          <div className="container-fluid bg-light-gray">
             <div className="row">
               <div className="container-fluid container-lg sectionWrap blog-post">
                 <div className="row">

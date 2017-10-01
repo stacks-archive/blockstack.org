@@ -137,7 +137,7 @@ class FundingPage extends Component {
                 </div>
               </section>
             </div>
-            <div className="bg-container-lightGray section-spacing container-fluid">
+            <div className="bg-light-gray section-spacing container-fluid">
               <section>
                 <div className="containWrapper">
                   <div className="container sectionWrap">
@@ -208,7 +208,7 @@ class FundingPage extends Component {
                 </div>
               </section>
             </div>
-            <div className="bg-container-lightGray section-spacing container-fluid">
+            <div className="bg-light-gray section-spacing container-fluid">
               <section>
                 <div className="containWrapper">
                   <div className="container sectionWrap">
