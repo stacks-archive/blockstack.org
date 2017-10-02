@@ -41,6 +41,7 @@ class FundingPage extends Component {
   render() {
     return (
       <DocumentTitle title="Blockstack Signature Fund">
+
         <div className="video-special-hero">
           <div className="col-centered block">
             <Alert />
@@ -55,7 +56,6 @@ class FundingPage extends Component {
                   </div>
                 </div>
               </div>
-
               <div className="container-fluid">
                 <div className="row">
                   <Image className="mx-auto block blockstack-signature-fund-logo sig-logo-space"
@@ -63,12 +63,12 @@ class FundingPage extends Component {
                     retinaSupport={false} />
                 </div>
               </div>
-              <div className="container-fluid">
+              <div className="container container-lg">
                 <div className="row">
                   <p className="container-fluid lead-lg text-center text-white col-md-8 p-b-10">
                     “Money is bringing everybody in, but the thing we are creating is larger than ourselves, larger than money.”
                   </p>
-                  <p className="container-fluid hero-lead text-center text-white p-b-30">
+                  <p className="container-fluid text-center text-white p-b-30">
                     — Naval Ravikant ~ Blockstack Summit 2017
                   </p>
                 </div>
@@ -81,80 +81,75 @@ class FundingPage extends Component {
                 </div>
               </div>
             </div>
-            <div className="bg-white sectionWrap section-spacing container-fluid">
-              <section>
-                <div className="containWrapper">
-                  <div className="container sectionWrap">
-                    <div className="col-md-10 col-centered">
-                    <h3 className="text-xs-center m-b-65">
-                      The Signature Fund for Blockstack is a $25M fund aimed at growing an ecosystem of decentralized applications on Blockstack.
-                    </h3>
-                    <p className="lead-lg text-xs-center">
-                      We partnered with thesis-driven venture capital firms who are aligned with our vision of a decentralized internet like <a href="http://www.luxcapital.com">Lux Capital</a>, <a href="http://rtf.vc/">Rising Tide</a>, <a href="https://compound.vc/">Compound</a>, <a href="http://openocean.vc/">OpenOcean</a>, and <a href="http://versionone.vc/">VersionOne</a> to fund app developers and teams looking to build their apps on the new fully decentralized internet. App creators will benefit directly from the deep expertise and insight of these experienced investors.
-                    </p>
-                    <p className="lead-lg text-xs-center">
-                      Additionally, those who apply will be first to hear about “XPRIZE”-style prizes and bounties for large initiatives such as building a decentralized microblogging platform, funded by investors like <a href="https://twitter.com/naval">Naval Ravikant</a> (Founder: <a href="https://angel.co">AngelList</a>), <a href="http://continuations.com">Albert Wenger</a> (Managing Partner: <a href="https://www.usv.com">USV</a>) and more!
-                    </p>
-                    </div>
-                  </div>
+
+            <div className="container-fluid sectionWrap bg-white">
+              <div className="row">
+                <div className="container container-md">
+                  <h3 className="text-center m-b-65">
+                    The Signature Fund for Blockstack is a $25M fund aimed at growing an ecosystem of decentralized applications on Blockstack.
+                  </h3>
+                  <p className="lead-lg text-center">
+                    We partnered with thesis-driven venture capital firms who are aligned with our vision of a decentralized internet like <a href="http://www.luxcapital.com">Lux Capital</a>, <a href="http://rtf.vc/">Rising Tide</a>, <a href="https://compound.vc/">Compound</a>, <a href="http://openocean.vc/">OpenOcean</a>, and <a href="http://versionone.vc/">VersionOne</a> to fund app developers and teams looking to build their apps on the new fully decentralized internet. App creators will benefit directly from the deep expertise and insight of these experienced investors.
+                  </p>
+                  <p className="lead-lg text-center">
+                    Additionally, those who apply will be first to hear about “XPRIZE”-style prizes and bounties for large initiatives such as building a decentralized microblogging platform, funded by investors like <a href="https://twitter.com/naval">Naval Ravikant</a> (Founder: <a href="https://angel.co">AngelList</a>), <a href="http://continuations.com">Albert Wenger</a> (Managing Partner: <a href="https://www.usv.com">USV</a>) and more!
+                  </p>
                 </div>
-              </section>
+              </div>
             </div>
+
             <div className="feature-event-subhero-2">
               <div className="col-centered block">
                 <div className="container summit-img-section">
-                  <section className="text-xs-center p-b-80">
+                  <section className="text-center p-b-80">
                   </section>
                 </div>
               </div>
             </div>
-            <div className="bg-white sectionWrap section-spacing container-fluid">
-              <section>
-                <div className="containWrapper">
-                  <div className="container sectionWrap">
-                    <div className="col-md-10 col-centered">
-                      <h3 className="text-xs-center">
-                        “Less white paper hype, more working code.”
-                      </h3>
-                      <p className="hero-lead p-b-65">
-                        — Jeremy Welch ~ Casa App Founder (at Blockstack Summit 2017)
-                      </p>
-                      <p className="lead-lg text-xs-center m-b-95">
-                        There’s a lot of excitement about building decentralized applications, but we know it is still early days. At Blockstack we’ve created the core infrastructure to enable developers to build these applications, but we realize that to increase an app’s chances of success, it will require access to capital and tools to bootstrap networks.
-                      </p>
-                      <p className="lead-lg m-b-25">
-                         We think in the long term it’s not just about raising a round or a token, but more about forging an ecosystem that keeps your application thriving. Here are just a few of the methods opening up to applications being built on Blockstack:
-                      </p>
-                      <p className="lead-lg col-md-10 col-centered m-b-95">
-                        <ul>
-                          <li>
-                            VC-led Funding: Blockstack Apps will get access to capital from some of the best minds in the venture space.
-                          </li>
-                          <li>
-                            Token: Blockstack Apps will be able to offer tokens on top of the Blockstack ecosystem, just like ERC20 tokens on Ethereum.
-                          </li>
-                          <li>
-                            Advanced Payments: Creators can forward a percentage of your app’s subscription fees to specific names/addresses to incentivize app-building behavior.
-                          </li>
-                        </ul>
-                      </p>
-                      <h4 className="font-weight-bold text-xs-center">
-                        These are just the first steps to building an app ecosystem for the decentralized internet, and we expect tools to evolve and capabilities to grow.
-                      </h4>
-                    </div>
-                  </div>
+
+             <div className="container-fluid sectionWrap bg-white">
+              <div className="row">
+                <div className="container container-md">
+                  <h3 className="text-center">
+                    “Less white paper hype, more working code.”
+                  </h3>
+                  <p className="hero-lead p-b-65">
+                    — Jeremy Welch ~ Casa App Founder (at Blockstack Summit 2017)
+                  </p>
+                  <p className="lead-lg text-center m-b-95">
+                    There’s a lot of excitement about building decentralized applications, but we know it is still early days. At Blockstack we’ve created the core infrastructure to enable developers to build these applications, but we realize that to increase an app’s chances of success, it will require access to capital and tools to bootstrap networks.
+                  </p>
+                  <p className="lead-lg m-b-25">
+                     We think in the long term it’s not just about raising a round or a token, but more about forging an ecosystem that keeps your application thriving. Here are just a few of the methods opening up to applications being built on Blockstack:
+                  </p>
+                  <p className="lead-lg col-md-10 col-centered m-b-95">
+                    <ul>
+                      <li>
+                        VC-led Funding: Blockstack Apps will get access to capital from some of the best minds in the venture space.
+                      </li>
+                      <li>
+                        Token: Blockstack Apps will be able to offer tokens on top of the Blockstack ecosystem, just like ERC20 tokens on Ethereum.
+                      </li>
+                      <li>
+                        Advanced Payments: Creators can forward a percentage of your app’s subscription fees to specific names/addresses to incentivize app-building behavior.
+                      </li>
+                    </ul>
+                  </p>
+                  <h4 className="font-weight-bold text-center">
+                    These are just the first steps to building an app ecosystem for the decentralized internet, and we expect tools to evolve and capabilities to grow.
+                  </h4>
                 </div>
-              </section>
+              </div>
             </div>
             <div className="bg-light-gray section-spacing container-fluid">
               <section>
                 <div className="containWrapper">
                   <div className="container sectionWrap">
                     <div className="col-md-10 col-centered">
-                    <h3 className="text-xs-center m-b-45">
+                    <h3 className="text-center m-b-45">
                       What is Blockstack?
                     </h3>
-                    <p className="lead-lg text-xs-center col-md-10 col-centered">
+                    <p className="lead-lg text-center col-md-10 col-centered">
                       Blockstack is a new fully decentralized internet that comes with a full stack of open-source developer tools to build and bootstrap decentralized applications and protocol ecosystems.
                     </p>
                     </div>
@@ -166,7 +161,7 @@ class FundingPage extends Component {
               <section>
                 <div className="containWrapper">
                   <div className="container sectionWrap">
-                    <p className="lead-lg text-xs-center col-md-10 col-centered m-b-45">
+                    <p className="lead-lg text-center col-md-10 col-centered m-b-45">
                       In Partnership with:
                     </p>
                     <div className="container-fluid">
@@ -222,10 +217,10 @@ class FundingPage extends Component {
                 <div className="containWrapper">
                   <div className="container sectionWrap">
                     <div className="col-md-10 col-centered">
-                    <h3 className="text-xs-center m-b-65">
+                    <h3 className="text-center m-b-65">
                       How to Apply
                     </h3>
-                    <p className="lead-lg text-xs-center col-md-10 col-centered m-b-45">
+                    <p className="lead-lg text-center col-md-10 col-centered m-b-45">
                       You can apply as an individual or team by filling out the application form below or at the top of the page:
                     </p>
                     <div className="col-sm-9 col-md-7 col-centered m-b-45">
@@ -233,10 +228,10 @@ class FundingPage extends Component {
                         Apply Here!
                       </Link>
                     </div>
-                    <p className="lead-lg text-xs-center">
+                    <p className="lead-lg text-center">
                       Once you apply, we’ll provide you with some starter materials to get started building apps on Blockstack.
                     </p>
-                    <p className="lead-lg text-xs-center">
+                    <p className="lead-lg text-center">
                       Members of the Blockstack team will reach out to you if there’s interest in working more closely to build a team (if needed) and a product using Blockstack. Projects will be selected for funding consideration and support.
                     </p>
                     </div>
