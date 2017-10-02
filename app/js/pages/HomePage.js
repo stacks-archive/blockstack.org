@@ -115,7 +115,7 @@ class HomePage extends Component {
                    A New Internet for Decentralized Apps
                   </h1>
                   <p className="hero-lead purple-50 col-md-9 col-centered">
-                    Blockstack is a new decentralized internet where users own their data and apps run locally. A browser portal is all that’s needed to get started.
+                    Blockstack is a new internet for decentralized apps where users own their data.<br/>A browser is all that’s needed to get started.
                   </p>
                   <div className="no-padding container-fluid col-md-10 col-lg-10 col-centered m-b-95">
                     <div className="row">
@@ -123,7 +123,7 @@ class HomePage extends Component {
                         <p className="float-md-right">
                           <Link to="/install" role="button"
                             className="btn btn-primary btn-block btn-block-reset" style={{ minWidth: '245px' }}>
-                            Developers&nbsp;&nbsp;›&nbsp;&nbsp;Browser Kit
+                            Install
                           </Link>
                         </p>
                       </div>
@@ -131,7 +131,7 @@ class HomePage extends Component {
                         <p className="float-md-left">
                           <Link to="/signup" role="button"
                             className="btn btn-primary btn-block btn-block-reset" style={{ minWidth: '245px' }}>
-                            Users&nbsp;&nbsp;›&nbsp;&nbsp;Sign Up
+                            Get Updates
                           </Link>
                         </p>
                       </div>
@@ -266,7 +266,7 @@ class HomePage extends Component {
                         </div>
                         <div className="col-xl-4 code-img-gutter">
                           <h4 className="text-center m-b-10">
-                            Token
+                            Tokens
                           </h4>
                           <p className="light-gray text-center">
                             <i>(Coming Soon...)</i>
@@ -341,7 +341,7 @@ class HomePage extends Component {
                   <div className="row">
                     <div className="container-fluid">
                       <h2 className="text-center m-b-25">
-                        Press
+                        News
                       </h2>
                     </div>
                     <div className="container">
@@ -371,21 +371,15 @@ class HomePage extends Component {
                     <div className="col-12 col-xl-8 container-lg mx-auto">
                       <div className="row">
                         <div className="col-md-6 m-b-20">
-                          <p className="lead-lg text-center text-white">
-                            Developers
-                          </p>
                           <Link to="/install" role="button"
                             className="btn btn-primary btn-block m-b-10">
-                            Browser Kit
+                            Install
                           </Link>
                         </div>
                         <div className="col-md-6 m-b-20">
-                          <p className="lead-lg text-center text-white">
-                            Users
-                          </p>
                           <Link to="/signup" role="button"
                             className="btn btn-primary btn-block">
-                            Sign Up
+                            Get Updates
                           </Link>
                         </div>
                       </div>
