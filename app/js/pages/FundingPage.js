@@ -107,7 +107,7 @@ class FundingPage extends Component {
               </div>
             </div>
 
-             <div className="container-fluid sectionWrap bg-white">
+            <div className="container-fluid sectionWrap bg-white">
               <div className="row">
                 <div className="container container-md">
                   <h3 className="text-center">
@@ -141,11 +141,12 @@ class FundingPage extends Component {
                 </div>
               </div>
             </div>
-            <div className="bg-light-gray section-spacing container-fluid">
-              <section>
-                <div className="containWrapper">
-                  <div className="container sectionWrap">
-                    <div className="col-md-10 col-centered">
+
+            <div className="container-fluid sectionWrap bg-light-gray">
+              <div className="row">
+                <div className="container container-md">
+                  <div className="row">
+                    <div className="container-fluid">
                     <h3 className="text-center m-b-45">
                       What is Blockstack?
                     </h3>
@@ -155,68 +156,62 @@ class FundingPage extends Component {
                     </div>
                   </div>
                 </div>
-              </section>
+              </div>
             </div>
-            <div className="bg-white sectionWrap section-spacing container-fluid">
-              <section>
-                <div className="containWrapper">
-                  <div className="container sectionWrap">
-                    <p className="lead-lg text-center col-md-10 col-centered m-b-45">
-                      In Partnership with:
-                    </p>
-                    <div className="container-fluid">
-                      <div className="col-md-4 m-b-55">
-                        <p className="text-center">
-                          <Link to="https://compound.vc/" target="_blank">
-                            <Image className="col-img partnerLogo partnerLogo-compound" src="/images/logos/partner-logo-compound.svg"
-                              retinaSupport={false} />
-                          </Link>
-                        </p>
+
+            <div className="container-fluid sectionWrap bg-white">
+              <div className="row">
+                <div className="container container-md">
+                  <p className="lead-lg text-center col-md-10 col-centered m-b-45">
+                    In Partnership with:
+                  </p>
+                  <div className="container">
+                    <div className="row">
+                      <div className="col-md-4 text-center m-b-55">
+                        <Link to="https://compound.vc/" className="mx-auto" target="_blank">
+                          <Image className="col-img partnerLogo partnerLogo-compound" src="/images/logos/partner-logo-compound.svg"
+                            retinaSupport={false} />
+                        </Link>
                       </div>
-                      <div className="col-md-4 m-b-55">
-                        <p className="text-center">
-                          <Link to="http://versionone.vc/" target="_blank">
-                            <Image className="col-img partnerLogo partnerLogo-versionone" src="/images/logos/partner-logo-versionone.svg"
-                              retinaSupport={false} />
-                          </Link>
-                        </p>
+                      <div className="col-md-4 text-center m-b-55">
+                        <Link to="http://versionone.vc/" className="mx-auto" target="_blank">
+                          <Image className="col-img partnerLogo partnerLogo-versionone" src="/images/logos/partner-logo-versionone.svg"
+                            retinaSupport={false} />
+                        </Link>
                       </div>
-                      <div className="col-md-4 m-b-55">
-                        <p className="text-center">
-                          <Link to="http://rtf.vc/" target="_blank">
-                            <Image className="col-img partnerLogo partnerLogo-risingtide" src="/images/logos/partner-logo-risingtide.svg"
-                              retinaSupport={false} />
-                          </Link>
-                        </p>
+                      <div className="col-md-4 text-center m-b-55">
+                        <Link to="http://rtf.vc/" className="mx-auto" target ="_blank">
+                          <Image className="col-img partnerLogo partnerLogo-risingtide" src="/images/logos/partner-logo-risingtide.svg"
+                            retinaSupport={false} />
+                        </Link>
                       </div>
                     </div>
-                    <div className="container-fluid">
-                      <div className="col-md-6 m-b-55">
-                        <p className="text-center">
-                          <Link to="http://www.luxcapital.com/" target="_blank">
-                            <Image className="col-img partnerLogo partnerLogo-lux" src="/images/logos/partner-logo-lux.svg"
-                              retinaSupport={false} />
-                          </Link>
-                        </p>
+                  </div>
+                  <div className="container">
+                    <div className="row">
+                      <div className="col-md-6 text-center m-b-55">
+                        <Link to="http://www.luxcapital.com/" className="mx-auto" target="_blank">
+                          <Image className="col-img partnerLogo partnerLogo-lux" src="/images/logos/partner-logo-lux.svg"
+                            retinaSupport={false} />
+                        </Link>
                       </div>
-                      <div className="col-md-6 m-b-55">
-                        <p className="text-center">
-                          <Link to="http://openocean.vc/" target="_blank">
-                            <Image className="col-img partnerLogo partnerLogo-openocean" src="/images/logos/partner-logo-openocean.svg"
-                              retinaSupport={false} />
-                          </Link>
-                        </p>
+                      <div className="col-md-6 text-center m-b-55">
+                        <Link to="http://openocean.vc/" className="mx-auto" target="_blank">
+                          <Image className="col-img partnerLogo partnerLogo-openocean" src="/images/logos/partner-logo-openocean.svg"
+                            retinaSupport={false} />
+                        </Link>
                       </div>
                     </div>
                   </div>
                 </div>
-              </section>
+              </div>
             </div>
-            <div className="bg-light-gray section-spacing container-fluid">
-              <section>
-                <div className="containWrapper">
-                  <div className="container sectionWrap">
-                    <div className="col-md-10 col-centered">
+
+            <div className="container-fluid sectionWrap bg-light-gray">
+              <div className="row">
+                <div className="container container-md">
+                  <div className="row">
+                    <div className="container-fluid">
                     <h3 className="text-center m-b-65">
                       How to Apply
                     </h3>
@@ -237,42 +232,39 @@ class FundingPage extends Component {
                     </div>
                   </div>
                 </div>
-              </section>
+              </div>
             </div>
-            <div className="bg-white sectionWrap section-spacing container-fluid">
-              <section>
-                <div className="containWrapper">
-                  <div className="container sectionWrap">
-                    <div className="col-md-9 col-centered">
-                    <p className="lead-lg">
-                      Terms & Conditions
-                    </p>
-                    <p className="terms-sm">
-                      Thank you for your interest in Signature Fund. By submitting any information or materials to Blockstack regarding the Signature Fund program and application process (the "Program"), you (and the entity or business you represent) (collectively, "you") agree to be bound by the following terms:
-                    </p>
-                    <p className="terms-sm">
-                      <ul>
-                        <li>
-                          You acknowledge and agree that Blockstack will share all information you provide in connection with the Program(including product usage and spend data), to our VC partners in Signature Fund.
-                        </li>
-                        <li>
-                          You should not submit or provide anything you consider confidential or proprietary as part of the Program. Due to the large number of submissions we receive, we cannot be responsible for maintaining submitted information or materials in confidence. Accordingly, you represent and agree that all information you provide in connection with the Program will be non-confidential, and you acknowledge and agree that such information will not be held in confidence or restricted from use or disclosure in any way.
-                        </li>
-                        <li>
-                          There are a large number of applicants for Signature Fund. Accordingly, we make no promises or guarantees that you will receive funding or even be invited to apply. Blockstack, Signature Fund and its VC partners have no obligation or duty to you unless and until a definitive agreement regarding funding is executed and delivered by all relevant parties (if at all).
-                        </li>
-                        <li>
-                          NOTWITHSTANDING ANYTHING TO THE CONTRARY, Blockstack, THE Signature Fund AND ITS VC PARTNERS WILL NOT BE RESPONSIBLE OR LIABLE, UNDER ANY LEGAL OR EQUITABLE THEORY, FOR ANY INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES OF ANY KIND OR FOR ANY AMOUNT IN THE AGGREGATE IN EXCESS OF FIFTY DOLLARS ($50).
-                        </li>
-                        <li>
-                          These Signature Fund Submission Terms are governed by the laws of the State of New York.
-                        </li>
-                      </ul>
-                    </p>
-                    </div>
-                  </div>
+
+            <div className="container-fluid sectionWrap bg-white">
+              <div className="row">
+                <div className="container container-md">
+                  <p className="lead-lg">
+                    Terms & Conditions
+                  </p>
+                  <p className="terms-sm">
+                    Thank you for your interest in Signature Fund. By submitting any information or materials to Blockstack regarding the Signature Fund program and application process (the "Program"), you (and the entity or business you represent) (collectively, "you") agree to be bound by the following terms:
+                  </p>
+                  <p className="terms-sm">
+                    <ul>
+                      <li>
+                        You acknowledge and agree that Blockstack will share all information you provide in connection with the Program(including product usage and spend data), to our VC partners in Signature Fund.
+                      </li>
+                      <li>
+                        You should not submit or provide anything you consider confidential or proprietary as part of the Program. Due to the large number of submissions we receive, we cannot be responsible for maintaining submitted information or materials in confidence. Accordingly, you represent and agree that all information you provide in connection with the Program will be non-confidential, and you acknowledge and agree that such information will not be held in confidence or restricted from use or disclosure in any way.
+                      </li>
+                      <li>
+                        There are a large number of applicants for Signature Fund. Accordingly, we make no promises or guarantees that you will receive funding or even be invited to apply. Blockstack, Signature Fund and its VC partners have no obligation or duty to you unless and until a definitive agreement regarding funding is executed and delivered by all relevant parties (if at all).
+                      </li>
+                      <li>
+                        NOTWITHSTANDING ANYTHING TO THE CONTRARY, Blockstack, THE Signature Fund AND ITS VC PARTNERS WILL NOT BE RESPONSIBLE OR LIABLE, UNDER ANY LEGAL OR EQUITABLE THEORY, FOR ANY INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES OF ANY KIND OR FOR ANY AMOUNT IN THE AGGREGATE IN EXCESS OF FIFTY DOLLARS ($50).
+                      </li>
+                      <li>
+                        These Signature Fund Submission Terms are governed by the laws of the State of New York.
+                      </li>
+                    </ul>
+                  </p>
                 </div>
-              </section>
+              </div>
             </div>
           </div>
         </div>
