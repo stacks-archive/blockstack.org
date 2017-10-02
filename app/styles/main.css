@@ -492,7 +492,7 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .col3-img-lg{width:100%;min-width:210px;max-width:425px;}
 .caption-browser{font-size:.6875rem;position:absolute;bottom:25px;left:-130px;}
 .blockstack-summit-2017-logo-md{width:280px;}
-.blockstack-signature-fund-logo-md{width:190px;}
+.blockstack-signature-fund-logo{width:160px;}
 .feature-event-subhero-1{display:none;}
 .feature-event-subhero-2{display:none;}
 .img-summit-hero{width:50%;}
@@ -508,7 +508,7 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .code-img-gutter{padding-right:11px;padding-left:11px;}
 
 /* 38. f. - Embed */
-.video-special-row{margin-top:50px;padding-top:3px;padding-bottom:3px;background-color:#1a1d1f;}
+.video-special-row{margin-top:50px;padding-top:5px;padding-bottom:5px;background-color:#1a1d1f;}
 
 /* 38. b. - Background */
 .bg-primary{background-color:#270F34!important;}
@@ -729,6 +729,7 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
   .partnerLogo-openocean{max-width:200px;margin-right:125px;}
   .sig-logo-space{margin-top:50px;margin-bottom:40px;}
   .code-img-gutter{padding-right: 0;padding-left: 0;}
+  .blockstack-signature-fund-logo{width:190px;}
 
 }
 

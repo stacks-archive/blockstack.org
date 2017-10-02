@@ -55,22 +55,31 @@ class FundingPage extends Component {
                   </div>
                 </div>
               </div>
-              <section className="text-xs-center">
-                <Image className="blockstack-signature-fund-logo-md sig-logo-space"
-                  src="/images/logos/blockstack-signature-fund-logo-rev.svg"
-                  retinaSupport={false} />
-                <p className="lead-lg text-white col-md-8 col-centered p-b-10">
-                  “Money is bringing everybody in, but the thing we are creating is larger than ourselves, larger than money.”
-                </p>
-                <p className="hero-lead text-white p-b-30">
-                  — Naval Ravikant ~ Blockstack Summit 2017
-                </p>
-                <div className="col-sm-9 col-md-7 col-centered m-b-65">
+
+              <div className="container-fluid">
+                <div className="row">
+                  <Image className="mx-auto block blockstack-signature-fund-logo sig-logo-space"
+                    src="/images/logos/blockstack-signature-fund-logo-rev.svg"
+                    retinaSupport={false} />
+                </div>
+              </div>
+              <div className="container-fluid">
+                <div className="row">
+                  <p className="container-fluid lead-lg text-center text-white col-md-8 p-b-10">
+                    “Money is bringing everybody in, but the thing we are creating is larger than ourselves, larger than money.”
+                  </p>
+                  <p className="container-fluid hero-lead text-center text-white p-b-30">
+                    — Naval Ravikant ~ Blockstack Summit 2017
+                  </p>
+                </div>
+              </div>
+              <div className="container container-sm m-b-100 p-b-50">
+                <div className="row">
                   <Link to="https://goo.gl/forms/Z1JbxmqLaLz9bz053" target="_blank" className="btn btn-primary btn-block">
                     Apply Here!
                   </Link>
                 </div>
-              </section>
+              </div>
             </div>
             <div className="bg-white sectionWrap section-spacing container-fluid">
               <section>
