@@ -17,8 +17,10 @@ class Header extends Component {
         { to: '/about', label: 'About' },
         { to: '/docs', label: 'Docs', dropdown: [
           {to: '/tutorials', label: 'Tutorials'},
-          {to: '/videos', label: 'Videos'},
           {to: '/papers', label: 'Papers'},
+          {to: '/videos', label: 'Videos'},
+          {to: 'http://blockstack.github.io/blockstack.js/', label: 'BlockstackJS'},
+          {to: 'https://core.blockstack.org/', label: 'Core API'},
         ] },
         { to: '/blog', label: 'Blog' },
         { to: '/faq', label: 'FAQ' },
