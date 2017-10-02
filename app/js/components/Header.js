@@ -67,7 +67,7 @@ class Header extends Component {
                         aria-haspopup="true" aria-expanded="false">
                         {navItem.label}
                       </a>
-                      <div className="dropdown-menu">
+                      <div className="dropdown-menu navbar-dropdown-primary">
                         { navItem.dropdown.map((dropdownItem, subindex) => {
                           return (
                             <Link to={dropdownItem.to} className="dropdown-item" key={subindex}>
@@ -112,7 +112,7 @@ export default Header
 
 /*
                     { !navItem.to.startsWith('http') ? (
-                      
+
                     ) : (
                       <Link to={navItem.to} className="nav-link" target="_blank">
                         {navItem.label}
