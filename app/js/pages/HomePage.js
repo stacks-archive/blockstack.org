@@ -269,7 +269,7 @@ class HomePage extends Component {
                             Tokens
                           </h4>
                           <p className="light-gray text-center">
-                            <i>(Coming Soon...)</i>
+                            <i>Coming Soon...</i>
                           </p>
                           <p className="text-center">
                             <Image className="col3-img-lg"

@@ -15,7 +15,11 @@ class Header extends Component {
       navItems: [
         { to: '/install', label: 'Install' },
         { to: '/about', label: 'About' },
-        { to: '/docs', label: 'Docs' },
+        { to: '/docs', label: 'Docs', dropdown: [
+          {to: '/tutorials', label: 'Tutorials'},
+          {to: '/videos', label: 'Videos'},
+          {to: '/papers', label: 'Papers'},
+        ] },
         { to: '/blog', label: 'Blog' },
         { to: '/faq', label: 'FAQ' },
         { to: 'https://github.com/blockstack', label: 'GitHub', mobile: false },
@@ -47,19 +51,34 @@ class Header extends Component {
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav ml-sm-auto">
               {this.state.navItems.map((navItem, index) => {
-                return (
-                  <li key={index} className="nav-item">
-                    { !navItem.to.startsWith('http') ? (
+                if (!navItem.hasOwnProperty('dropdown')) {
+                  return (
+                    <li key={index} className="nav-item">
                       <Link to={navItem.to} className="nav-link">
                         {navItem.label}
                       </Link>
-                    ) : (
-                      <Link to={navItem.to} className="nav-link" target="_blank">
+                    </li>
+                  )
+                } else {
+                  return (
+                    <li key={index} className="nav-item dropdown">
+                      <a href="#" className="nav-link dropdown-toggle"
+                        data-toggle="dropdown" role="button"
+                        aria-haspopup="true" aria-expanded="false">
                         {navItem.label}
-                      </Link>
-                    )}
-                  </li>
-                )
+                      </a>
+                      <div className="dropdown-menu">
+                        { navItem.dropdown.map((dropdownItem, subindex) => {
+                          return (
+                            <Link to={dropdownItem.to} className="dropdown-item" key={subindex}>
+                              {dropdownItem.label}
+                            </Link>
+                          )
+                        })}
+                      </div>
+                    </li>
+                  )
+                }
               })}
             </ul>
           </div>
@@ -90,3 +109,13 @@ class Header extends Component {
 }
 
 export default Header
+
+/*
+                    { !navItem.to.startsWith('http') ? (
+                      
+                    ) : (
+                      <Link to={navItem.to} className="nav-link" target="_blank">
+                        {navItem.label}
+                      </Link>
+                    )}
+*/

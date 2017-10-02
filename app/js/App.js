@@ -50,7 +50,7 @@ class App extends Component {
     return (
       <div className={specialHeader ? 'app-landing' : 'app-common'}>
         { !specialHeader ?
-        <div style={{ overflow: 'hidden' }}>
+        <div>
           <Alert />
           <Header />
         </div>
