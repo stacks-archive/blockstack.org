@@ -47,15 +47,17 @@ class TalkPage extends Component {
       <DocumentTitle title={`Blockstack - ${title}`}>
         <div>
           { talk ?
-          <section className="container-fluid spacing-container">
-            <div className="container-fluid col-centered">
-              <div className="container-fluid m-b-5">
-                <div className="container">
-                  <h1>
-                    {talk.title}
-                  </h1>
+          <div className="container container-lg sectionWrap blog-post bg-white m-b-100">
+            <div className="row">
+              <div className="container">
+                <div className="row">
+                  <div className="container">
+                    <h2 className="m-b-25">
+                      {talk.title}
+                    </h2>
+                  </div>
                 </div>
-                <div className="m-b-3">
+                <div className="m-b-30">
                   <Talk
                     date={talk.date}
                     title={talk.title}
@@ -67,7 +69,7 @@ class TalkPage extends Component {
                 </div>
               </div>
             </div>
-          </section>
+          </div>
           : null }
         </div>
       </DocumentTitle>

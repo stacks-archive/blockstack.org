@@ -11,7 +11,7 @@ import {StatsActions}      from '../datastore/Stats'
 import Image               from '../components/Image'
 import Header              from '../components/Header'
 import EmbedYouTube        from '../components/EmbedYouTube'
-import TokenBanner         from '../components/TokenBanner'
+import Alert               from '../components/Alert'
 import ContentSection      from '../components/ContentSection'
 import VideosPresentation  from '../components/VideosPresentation'
 import {featuredApps}      from '../config'
@@ -75,7 +75,7 @@ class Summit2017Page extends Component {
       <DocumentTitle title="Blockstack Summit 2017">
         <div className="feature-event-hero">
           <div className="col-centered block">
-            <TokenBanner />
+            <Alert />
             <Header transparent={true} />
             <div className="container p-b-90">
               <section className="text-xs-center">
@@ -86,28 +86,28 @@ class Summit2017Page extends Component {
                 <p className="hero-lead text-white p-b-100">July 27th, 2017, Computer History Museum, Mountain View, CA</p>
               </section>
             </div>
-            <div className="sectionContainerLight section-spacing container-fluid">
+            <div className="bg-white sectionWrap section-spacing container-fluid">
               <div className="container">
                 <section>
                   <div className="containWrap">
                     <ContentSection markup="
                       <p>
-                        On July 27th, 2017, we hosted the Blockstack Summit at 
-                        the Computer History Museum. It was a day to take 
-                        people back to the original dream of the internet back 
-                        in 1989 -- one of a shared space where we could be free 
-                        to create together. Attendees and speakers from all 
-                        over the world came together for this one day event to 
-                        envision a new internet built for freedom, security, 
+                        On July 27th, 2017, we hosted the Blockstack Summit at
+                        the Computer History Museum. It was a day to take
+                        people back to the original dream of the internet back
+                        in 1989 -- one of a shared space where we could be free
+                        to create together. Attendees and speakers from all
+                        over the world came together for this one day event to
+                        envision a new internet built for freedom, security,
                         and innovation.
                       </p>
                       <p>
-                        It was a star-studded lineup of speakers and they did 
-                        not disappoint. You'll find videos and photos below 
-                        from the event. We hope you enjoy them as much as we 
-                        did, and would love to hear what your favorite parts 
-                        were by tweeting your favorite speaker quotes and clips 
-                        mentioning @blockstackorg.
+                        It was a star-studded lineup of speakers and they did
+                        not disappoint. You'll find videos and photos below
+                        from the event. We hope you enjoy them as much as we
+                        did, and would love to hear what your favorite parts
+                        were by tweeting your favorite speaker quotes and clips
+                        mentioning @blockstack.
                       </p>" />
                   </div>
                 </section>

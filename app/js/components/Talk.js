@@ -21,19 +21,8 @@ class Talk extends Component {
   render() {
     return (
       <div>
-        <div className="container">
-          <p>
-            <b>Date:</b> {this.props.date}
-            <br/>
-            <b>Event:</b> {this.props.event}
-            <br/>
-            <b>Speaker:</b> {this.props.speaker}
-            <br/>
-            <b>Location:</b> {this.props.location}
-          </p>
-        </div>
         { this.props.youtubeURL && this.props.speakerDeckID ?
-        <div className="row">          
+        <div className="row">
           <div className="col-md-6">
             <EmbedYouTube src={this.props.youtubeURL} />
           </div>
@@ -45,12 +34,42 @@ class Talk extends Component {
         </div>
         : null }
         { this.props.youtubeURL && !this.props.speakerDeckID ?
-        <div className="row">          
-          <div className="col-md-12">
-            <EmbedYouTube src={this.props.youtubeURL} />
+        <div className="bg-white">
+          <div className="container container-lg">
+            <div className="row">
+              <EmbedYouTube src={this.props.youtubeURL} />
+            </div>
           </div>
         </div>
         : null }
+        <div className="container m-t-20">
+          <div className="row">
+            <p style={{ fontSize: '13px', marginBottom: '0', lineHeight: '1.25rem' }}>
+              <b>Date:</b> {this.props.date}
+            </p>
+          </div>
+        </div>
+        <div className="container">
+          <div className="row">
+            <p style={{ fontSize: '13px', marginBottom: '0', lineHeight: '1.25rem' }}>
+              <b>Event:</b> {this.props.event}
+            </p>
+          </div>
+        </div>
+        <div className="container">
+          <div className="row">
+            <p style={{ fontSize: '13px', marginBottom: '0', lineHeight: '1.25rem' }}>
+              <b>Speaker:</b> {this.props.speaker}
+            </p>
+          </div>
+        </div>
+        <div className="container">
+          <div className="row">
+            <p style={{ fontSize: '13px', marginBottom: '0', lineHeight: '1.25rem' }}>
+              <b>Location:</b> {this.props.location}
+            </p>
+          </div>
+        </div>
       </div>
     )
   }

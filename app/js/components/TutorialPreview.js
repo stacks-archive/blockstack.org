@@ -17,27 +17,31 @@ class TutorialPreview extends Component {
 
   render() {
     return (
-      <div className="row m-b-1">
-        <div className="col-md-4">
-          <Link to={this.props.url}>
-            <Image src={this.props.image}
-              fallbackSrc={'/images/article-photos/chalkboard.jpg'}
-              className="talk-preview-image" />
-          </Link>
-        </div>
-        <div className="col-md-8">
-          <h4 className="m-b-1">
-            {this.props.title}
-          </h4>
-          <p className="m-b-1">
-            {this.props.description}
-          </p>
-          <p className="m-b-1">
-            <Link to={this.props.url}
-                  className="btn btn-sm btn-outline-primary">
-              Get Started
+      <div className="card card-media">
+        <div className="row">
+          <div className="col-md-5 m-b-25">
+            <Link to={this.props.url}>
+              <Image src={this.props.image}
+                fallbackSrc={'/images/article-photos/chalkboard.jpg'}
+                className="talk-preview-image" />
             </Link>
-          </p>
+          </div>
+          <div className="col-md-7 m-b-25">
+            <p className="lead card-media-title">
+              {this.props.title}
+            </p>
+            <p className="card-text card-text-media">
+              {this.props.description}
+            </p>
+            <div className="container-fluid">
+              <div className="row">
+                <Link to={this.props.url}
+                  className="btn btn-secondary btn-sm btn-block">
+                   Get Started
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     )

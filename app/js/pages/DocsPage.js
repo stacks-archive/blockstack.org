@@ -2,7 +2,7 @@
 
 import { Component }   from 'react'
 import DocumentTitle   from 'react-document-title'
-import { Link, Element } from 'react-scroll'
+import { Link }        from 'react-router'
 import marked          from 'marked'
 
 import docs            from '../../docs.json'
@@ -71,7 +71,7 @@ class DocsPage extends Component {
         markupParts.splice(0, 1)
 
         for (var i = 0, j = markupParts.length; i < j; i += 2) {
-          let id = section.title + '-' + markupParts[i].split(/id="(.*)"/g)[1]
+          let id = markupParts[i].split(/id="(.*)"/g)[1]
           let title = markdownParts[i]
           subSections.push({
             id: id,
@@ -96,56 +96,84 @@ class DocsPage extends Component {
 
     return (
       <DocumentTitle title="Blockstack - Docs">
-        <div>
-          <section className="m-t-5">
-            <div className="container p-b-5 col-centered">
-              { sections ?
-              <div className="row">
-                <div className="col-md-4 col-lg-3 sidebar hidden-sm-down">
+        { sections ?
+        <div className="content-wrapper">
+          <div className='sidebar-wrapper'>
+            <aside>
+              <div className="sidebar-header">
+                <Link className="navbar-brand" to="/">
+                  blockstack
+                </Link>
+                <Link className="tagline" to="/docs">docs</Link>
+              </div>
+              <div className="sidebar-links">
+                <Link to="/">
+                  Home
+                </Link>
+              </div>
+              <div className="sidebar-links">
+                <Link to="/tutorials">
+                  › &nbsp;Tutorials
+                </Link>
+              </div>
+              <div className="sidebar-links">
+                <Link to="/videos">
+                  › &nbsp;Videos
+                </Link>
+              </div>
+              <div className="sidebar-links">
+                <Link to="/papers">
+                  › &nbsp;Papers
+                </Link>
+              </div>
+              <div className="sidebar-links">
+                <Link to="https://core.blockstack.org/" target="_blank">
+                  › &nbsp;Core API
+                </Link>
+              </div>
+              <div className="sidebar-links">
+                <Link to="http://blockstack.github.io/blockstack.js/" target="_blank">
+                  › &nbsp;blockstack.js
+                </Link>
+              </div>
+              <div className="list-group">
                 { sections.map((section, index) => {
                   return (
                     <div key={index}>
-                      <h4>{section.title}</h4>
-                      <ul className="nav nav-sidebar docs-ul">
-                        <div className="btn-group-vertical docs-btn-group">
-                        { section.subSections.map((section, index) => {
-                          return (
-                            <Link to={section.id} smooth={true} spy={true} offset={-250}
-                              className="btn btn-secondary" key={index}>
-                              {section.title}
-                            </Link>
-                          )
-                        }) }
-                        </div>
-                      </ul>
-                    </div>
-                  )
-                }) }
-                </div>
-                <div className="col-md-8 offset-md-4 col-lg-9 offset-lg-3 bitcoin-protocols-main">
-                { sections.map((section, index) => {
-                  return (
-                    <div key={index}>
-                      <h1>{section.title}</h1>
-                      <div className="m-b-5">
+                      <h5 className="list-group-header list-group-header-d-sidebar">{section.title}</h5>
                       { section.subSections.map((section, index) => {
                         return (
-                          <Element name={section.id} className="element" key={index}>
-                            <div dangerouslySetInnerHTML={{ __html: section.header + section.body }}>
-                            </div>
-                          </Element>
+                          <Link key={index}
+                                href={`/docs/#${section.id}`}
+                                className="list-group-item list-group-item-d">
+                            {section.title}
+                          </Link>
                         )
-                      })}
-                      </div>
+                      }) }
                     </div>
                   )
-                }) }
-                </div>
+                })}
               </div>
-              : null }
-            </div>
-          </section>
-        </div>
+            </aside>
+          </div>
+          <div className="sidebar-content-wrapper">
+            <section>
+              { sections.map((section) => {
+                return section.subSections.map((section, index) => {
+                        return (
+                          <div key={index} id={`${section.id}`}
+                               className="container-fluid col-centered segment-zone">
+                            <h4>{section.title}</h4>
+                            <div dangerouslySetInnerHTML={{
+                              __html: section.body
+                            }}></div>
+                          </div>
+                        )
+                      })
+              }) }
+            </section>
+          </div>
+        </div> : null }
       </DocumentTitle>
     )
   }

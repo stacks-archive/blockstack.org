@@ -16,29 +16,33 @@ class TalksPage extends Component {
     return (
       <DocumentTitle title="Blockstack - Videos">
         <div>
-          <section className="container-fluid spacing-container">
-            <div className="container-fluid col-centered">
-              <div className="container m-b-1">
-                <h1>
-                  Videos
-                </h1>
-                { Object.keys(videos).map((key, index) => {
-                  const talk = videos[key]
-                  return (
-                    <TalkPreview
-                      key={index}
-                      url={'/videos/' + talk.urlSlug}
-                      date={talk.date}
-                      title={talk.title}
-                      event={talk.event}
-                      speaker={talk.speaker}
-                      location={talk.location}
-                      image={talk.image} />
-                  )
-                }) }
+          <div className="container container-lg sectionWrap blog-post bg-white m-b-100">
+            <div className="row">
+              <div className="container">
+                <div className="row">
+                  <div className="container-fluid">
+                    <h2 className="m-b-45">
+                      Videos
+                    </h2>
+                    { Object.keys(videos).map((key, index) => {
+                      const talk = videos[key]
+                      return (
+                        <TalkPreview
+                          key={index}
+                          url={'/videos/' + talk.urlSlug}
+                          date={talk.date}
+                          title={talk.title}
+                          event={talk.event}
+                          speaker={talk.speaker}
+                          location={talk.location}
+                          image={talk.image} />
+                      )
+                    }) }
+                  </div>
+                </div>
               </div>
             </div>
-          </section>
+          </div>
         </div>
       </DocumentTitle>
     )
