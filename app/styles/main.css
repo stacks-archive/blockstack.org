@@ -387,7 +387,17 @@ footer a:hover,footer a:focus,footer a:active{color:#fff;text-decoration:none;}
 a.nav-link{color:#fff;font-size:0.9375rem;font-weight:700;margin-top:0.0625rem;}
 a.nav-link:hover,a.nav-link:focus{color:#fff;}
 .nav-item{margin-left:0.5rem;line-height:36px;}
-.mobile-nav{background-color:#200c2b;padding-left:15px;padding-bottom:8px;}
+.navbar-collapse {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  margin-left: -15px;
+  margin-right: -45px;
+  width:100%;
+  padding-left: 15px;
+  padding-bottom: 8px;
+}
+div#mobile-nav.navbar-collapse.collapse {
+
+}
 a.nav-link > i.fa.fa-github{display:none;}
 /* Custom sandwich menu */
 .navbar-toggler,.navbar-toggler.collapsed{float:right;margin-right:-5px;margin-top:-1px;}

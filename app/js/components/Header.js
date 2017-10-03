@@ -24,7 +24,7 @@ class Header extends Component {
         ] },
         { to: '/blog', label: 'Blog' },
         { to: '/faq', label: 'FAQ' },
-        { to: 'https://github.com/blockstack', label: 'GitHub', mobile: false },
+        { to: 'https://github.com/blockstack', label: 'GitHub' },
       ]
     }
   }
@@ -50,7 +50,7 @@ class Header extends Component {
           <button type="button" className="navbar-toggler collapsed hidden-md-up" data-toggle="collapse" data-target="#mobile-nav" aria-controls="dropdown" aria-expanded="false">
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse">
+          <div className="collapse navbar-collapse" id="mobile-nav">
             <ul className="navbar-nav ml-sm-auto">
               {this.state.navItems.map((navItem, index) => {
                 if (!navItem.hasOwnProperty('dropdown')) {
@@ -85,25 +85,6 @@ class Header extends Component {
             </ul>
           </div>
         </nav>
-        <div className="mobile-nav collapse" id="mobile-nav">
-          <ul className="navbar-nav">
-            {mobileNavItems.map((navItem, index) => {
-              return (
-                <li key={index} className="nav-item">
-                  { !navItem.to.startsWith('http') ? (
-                    <Link to={navItem.to} className="nav-link">
-                      {navItem.label}
-                    </Link>
-                  ) : (
-                    <Link to={navItem.to} className="nav-link" target="_blank">
-                      {navItem.label}
-                    </Link>
-                  )}
-                </li>
-              )
-            })}
-          </ul>
-        </div>
       </div>
     )
   }
