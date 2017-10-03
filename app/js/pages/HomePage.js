@@ -36,7 +36,7 @@ class HomePage extends Component {
 
     this.state = {
       videoURL: 'https://www.youtube.com/embed/Z4bMFKBRg_k',
-      videoPreviewImageUrl: 'https://blockstack.ghost.io/content/images/2017/09/30660582-5c820602-9e0f-11e7-8265-6d619d9afba4.png',
+      videoPreviewImageUrl: 'https://user-images.githubusercontent.com/1711854/31123257-22e46ca2-a80d-11e7-8a2e-eb9ee377c39b.jpg',
       stats: this.props.stats,
       posts: this.props.posts
     }
@@ -177,9 +177,11 @@ class HomePage extends Component {
             <div className="container-fluid sectionWrap bg-white">
               <div className="row">
                 <div className="container container-md">
-                  <EmbedYouTube 
-                    previewImageUrl={this.state.videoPreviewImageUrl}
-                    src={this.state.videoURL} />
+                  <div className="row">
+                    <EmbedYouTube
+                      previewImageUrl={this.state.videoPreviewImageUrl}
+                      src={this.state.videoURL} />
+                    </div>
                 </div>
               </div>
             </div>
