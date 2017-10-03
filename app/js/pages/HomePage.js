@@ -177,9 +177,11 @@ class HomePage extends Component {
             <div className="container-fluid sectionWrap bg-white">
               <div className="row">
                 <div className="container container-md">
-                  <EmbedYouTube
-                    previewImageUrl={this.state.videoPreviewImageUrl}
-                    src={this.state.videoURL} />
+                  <div className="row">
+                    <EmbedYouTube
+                      previewImageUrl={this.state.videoPreviewImageUrl}
+                      src={this.state.videoURL} />
+                    </div>
                 </div>
               </div>
             </div>
