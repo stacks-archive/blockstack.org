@@ -507,6 +507,7 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .partnerLogo-lux{max-width:70px;}
 .sig-logo-space{margin-top:40px;margin-bottom:30px;}
 .code-img-gutter{padding-right:11px;padding-left:11px;}
+.cursor-pointer{cursor:pointer;}
 
 /* 38. f. - Embed */
 .video-special-row{margin-top:50px;padding-top:5px;padding-bottom:5px;background-color:#1a1d1f;}

@@ -7,7 +7,8 @@ const propTypes = {
   style: PropTypes.object,
   className: PropTypes.string,
   onLoad: PropTypes.func,
-  retinaSupport: PropTypes.bool
+  retinaSupport: PropTypes.bool,
+  onClick: PropTypes.func
 }
 
 class Image extends Component {
@@ -24,6 +25,7 @@ class Image extends Component {
     }
 
     this.onError = this.onError.bind(this)
+    this.handleClick = this.handleClick.bind(this)
   }
 
   componentWillReceiveProps(nextProps) {
@@ -44,13 +46,20 @@ class Image extends Component {
     })
   }
 
+  handleClick() {
+    if (this.props.onClick !== undefined) {
+      this.props.onClick()
+    }
+  }
+
   render() {
     return (
       <img src={this.state.src}
         style={this.props.style}
         className={this.props.className}
         onLoad={this.props.onLoad}
-        onError={this.onError} />
+        onError={this.onError} 
+        onClick={this.handleClick}/>
     )
   }
 }
