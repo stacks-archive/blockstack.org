@@ -387,20 +387,10 @@ footer a:hover,footer a:focus,footer a:active{color:#fff;text-decoration:none;}
 a.nav-link{color:#fff;font-size:0.9375rem;font-weight:700;margin-top:0.0625rem;}
 a.nav-link:hover,a.nav-link:focus{color:#fff;}
 .nav-item{margin-left:0.5rem;line-height:36px;}
-.navbar-collapse {
-  background-color: rgba(0, 0, 0, 0.2) !important;
-  margin-left: -15px;
-  margin-right: -45px;
-  width:100%;
-  padding-left: 15px;
-  padding-bottom: 8px;
-}
-div#mobile-nav.navbar-collapse.collapse {
-
-}
+.navbar-collapse{background-color:rgba(0,0,0,0.2)!important;max-width:100%;padding-left:15px;overflow-x:visible;}
 a.nav-link > i.fa.fa-github{display:none;}
 /* Custom sandwich menu */
-.navbar-toggler,.navbar-toggler.collapsed{float:right;margin-right:-5px;margin-top:-1px;}
+.navbar-toggler,.navbar-toggler.collapsed{float:right;margin-right:-5px;margin-top:-1px;cursor:pointer;}
 .navbar-toggler:focus,.navbar-toggler:hover{outline:none;}
 .navbar-toggler-icon{background-image:url(../images/icons/icon-menu-bar.svg);width:15px!important;height:11px;display:inline-block;margin-top:-4px;}
 

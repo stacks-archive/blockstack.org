@@ -50,7 +50,7 @@ class Header extends Component {
           <button type="button" className="navbar-toggler collapsed hidden-md-up" data-toggle="collapse" data-target="#mobile-nav" aria-controls="dropdown" aria-expanded="false">
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="mobile-nav">
+          <div className="collapse navbar-collapse">
             <ul className="navbar-nav ml-sm-auto">
               {this.state.navItems.map((navItem, index) => {
                 if (!navItem.hasOwnProperty('dropdown')) {
@@ -85,6 +85,40 @@ class Header extends Component {
             </ul>
           </div>
         </nav>
+        <div className="collapse navbar-collapse" id="mobile-nav">
+          <ul className="navbar-nav ml-sm-auto">
+            {this.state.navItems.map((navItem, index) => {
+              if (!navItem.hasOwnProperty('dropdown')) {
+                return (
+                  <li key={index} className="nav-item">
+                    <Link to={navItem.to} className="nav-link">
+                      {navItem.label}
+                    </Link>
+                  </li>
+                )
+              } else {
+                return (
+                  <li key={index} className="nav-item dropdown">
+                    <a href="#" className="nav-link dropdown-toggle"
+                      data-toggle="dropdown" role="button"
+                      aria-haspopup="true" aria-expanded="false">
+                      {navItem.label}
+                    </a>
+                    <div className="dropdown-menu navbar-dropdown-primary">
+                      { navItem.dropdown.map((dropdownItem, subindex) => {
+                        return (
+                          <Link to={dropdownItem.to} className="dropdown-item" key={subindex}>
+                            {dropdownItem.label}
+                          </Link>
+                        )
+                      })}
+                    </div>
+                  </li>
+                )
+              }
+            })}
+          </ul>
+        </div>
       </div>
     )
   }
