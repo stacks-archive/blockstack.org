@@ -386,9 +386,14 @@ footer a:hover,footer a:focus,footer a:active{color:#fff;text-decoration:none;}
 .brand-logo{display:none;}
 a.nav-link{color:#fff;font-size:0.9375rem;font-weight:700;margin-top:0.0625rem;}
 a.nav-link:hover,a.nav-link:focus{color:#fff;}
-.nav-item{margin-left:0.5rem;line-height:36px;}
-.navbar-collapse{background-color:rgba(0,0,0,0.2)!important;max-width:100%;padding-left:15px;overflow-x:visible;}
+.nav-item{margin-left:0;line-height:36px;padding-left:20px;}
+.nav-item:hover,.nav-item:active,.nav-item:focus{background-color:rgba(0,0,0,0.2);}
+.navbar-collapse{background-color:rgba(0,0,0,0.3);max-width:100%;}
 a.nav-link > i.fa.fa-github{display:none;}
+.dropdown-menu{margin-top:0;padding-top:1rem;padding-bottom:1rem;background-color:rgba(0,0,0,0.3);border:1px solid rgba(0,0,0,0.3);}
+.navbar-nav .dropdown-menu{position:static!important;border-radius:0;width:120%;margin-left:-25px;margin-right:auto;-webkit-transform:translate3d(-5px,25px,0px)!important;transform:translate3d(-5px,5px,0px)!important;color:#fff;}
+.dropdown-item{color:rgba(255,255,255,0.7);padding-left:40px;}
+.dropdown-item:focus,.dropdown-item:hover{color:#fff;background-color:rgba(255,255,255,0.1);}
 /* Custom sandwich menu */
 .navbar-toggler,.navbar-toggler.collapsed{float:right;margin-right:-5px;margin-top:-1px;cursor:pointer;}
 .navbar-toggler:focus,.navbar-toggler:hover{outline:none;}
@@ -604,20 +609,13 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
   li.nav-item:nth-last-child(2){display:initial;}
   .nav-item{margin-left:0;}
 
-.dropdown-menu {
-  margin-top: 0;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #2C96FF;
-  border: 1px solid #2C96FF;
-}
-
 a.dropdown-item {
   font-size: 0.9375rem;
   color: #fff;
   font-weight: 700;
   padding: 0.375rem 3.4375rem 0.375rem 1.875rem;
 }
+.dropdown-menu{margin-top:0;padding-top:1rem;padding-bottom:1rem;background-color:#2C96FF;border:1px solid #2C96FF;}
 
 .dropdown-item:focus, .dropdown-item:hover {
   color: #fff;
@@ -879,4 +877,5 @@ a.dropdown-item {
   .content-wrapper{min-width:992px;}
   .sidebar-content-wrapper{height:100vh;max-width:770px;margin-left: calc((100% - 992px) / 2 + 220px);}
   aside{position:fixed;top:0;left:0;height:100vh;width:calc((100% - 992px) / 2 + 220px);background-color:rgba(247,248,249,1);border-right:1px solid rgba(238,238,238,1);min-width:220px;padding-left:calc((100% - 992px) / 2);}
+}
 }
