@@ -56,7 +56,8 @@ class Header extends Component {
                 if (!navItem.hasOwnProperty('dropdown')) {
                   return (
                     <li key={index} className="nav-item">
-                      <Link to={navItem.to} className="nav-link">
+                      <Link to={navItem.to} className="nav-link"
+                            target={navItem.to.startsWith('http') ? '_blank' : '_self'}>
                         {navItem.label}
                       </Link>
                     </li>
@@ -72,7 +73,8 @@ class Header extends Component {
                       <div className="dropdown-menu navbar-dropdown-primary">
                         { navItem.dropdown.map((dropdownItem, subindex) => {
                           return (
-                            <Link to={dropdownItem.to} className="dropdown-item" key={subindex}>
+                            <Link to={dropdownItem.to} className="dropdown-item" key={subindex}
+                                  target={navItem.to.startsWith('http') ? '_blank' : '_self'}>
                               {dropdownItem.label}
                             </Link>
                           )
