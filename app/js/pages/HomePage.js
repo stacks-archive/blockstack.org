@@ -181,7 +181,14 @@ class HomePage extends Component {
                     <EmbedYouTube
                       previewImageUrl={this.state.videoPreviewImageUrl}
                       src={this.state.videoURL} />
+                  </div>
+
+                  <div className="container">
+                    <div className="row">
                     </div>
+
+                  </div>
+
                 </div>
               </div>
             </div>
