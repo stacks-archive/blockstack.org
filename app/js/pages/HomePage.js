@@ -208,7 +208,7 @@ class HomePage extends Component {
                         <div className="container mx-auto">
                           <div className="row">
                             <div className="col-md-3 text-center m-b-25">
-                              <a href="https://www.wsj.com/articles/blockstack-launches-25-million-fund-for-blockchain-startups-1502883001" target="_blank">
+                              <a href="https://blockstack.org/whitepaper.pdf" target="_blank">
                                 <Image className="col-img"
                                   src="/images/icons/icon-whitepaper.svg"
                                   retinaSupport={false} />
