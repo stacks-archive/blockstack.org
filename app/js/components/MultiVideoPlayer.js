@@ -58,7 +58,7 @@ class MultiVideoPlayer extends Component {
 		          	<div className="row">
 			          	{this.props.videos.map((video, index) => {
 			          		return (
-											<div className="col-sm-4" key={index}>
+											<div className="col-4" key={index}>
 					              <Link className={`img-hover-scale 
 					              	${this.state.activeVideoIndex === index ? 'active' : ''}`}
 					              	onClick={e => this.handleMiniVideoClick(e, index)}
