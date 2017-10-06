@@ -12,6 +12,7 @@ import Image               from '../components/Image'
 import Header              from '../components/Header'
 import Alert               from '../components/Alert'
 import EmbedYouTube        from '../components/EmbedYouTube'
+import MultiVideoPlayer        from '../components/MultiVideoPlayer'
 import PostPreview         from '../components/PostPreview'
 import {featuredApps}      from '../config'
 
@@ -35,8 +36,23 @@ class HomePage extends Component {
     super(props)
 
     this.state = {
-      videoURL: 'https://www.youtube.com/embed/Z4bMFKBRg_k',
-      videoPreviewImageUrl: 'https://user-images.githubusercontent.com/1711854/31123257-22e46ca2-a80d-11e7-8a2e-eb9ee377c39b.jpg',
+      videos: [
+        {
+          src: 'https://www.youtube.com/embed/Z4bMFKBRg_k',
+          previewImageUrl: '/images/resources/video-home-1-preview.jpg',
+          thumbnailImageUrl: '/images/resources/video-home-1-thumbnail.jpg',
+        },
+        {
+          src: 'https://www.youtube.com/embed/qtOIh93Hvuw',
+          previewImageUrl: '/images/resources/video-home-2-thumbnail.jpg',
+          thumbnailImageUrl: '/images/resources/video-home-2-thumbnail.jpg',
+        },
+        {
+          src: 'https://www.youtube.com/embed/YzlyEuRfXxo',
+          previewImageUrl: '/images/resources/video-home-3-thumbnail.jpg',
+          thumbnailImageUrl: '/images/resources/video-home-3-thumbnail.jpg',
+        }
+      ],
       stats: this.props.stats,
       posts: this.props.posts
     }
@@ -81,7 +97,7 @@ class HomePage extends Component {
           body: 'Blockstack\'s storage system allows users to bring their own storage providers and control their data. Data is encrypted and easily shared between applications.'
         },
         {
-          title: 'Token',
+          title: 'Tokens',
           body: 'Blockstack uses Bitcoin and other crypto-currencies for simple peer-to-peer payments. Developers can charge for downloads, subscriptions, and more.'
         },
       ],
@@ -176,18 +192,51 @@ class HomePage extends Component {
             {/* New section layout applied */}
             <div className="container-fluid sectionWrap bg-white">
               <div className="row">
-                <div className="container container-md">
-                  <div className="row">
-                    <EmbedYouTube
-                      previewImageUrl={this.state.videoPreviewImageUrl}
-                      src={this.state.videoURL} />
-                    </div>
+                <div className="col-sm-12">
+                  <MultiVideoPlayer videos={this.state.videos}/>
                 </div>
               </div>
             </div>
 
             {/* New section layout applied */}
-            <div className="container-fluid sectionWrap bg-light-gray">
+            <div className="container-fluid sectionWrap">
+              <div className="row">
+                <div className="container-md mx-auto">
+                  <div className="row">
+                    <div className="container-fluid m-b-50">
+                      <div className="row">
+                        <div className="container mx-auto">
+                          <div className="row">
+                            <div className="col-md-3 text-center m-b-25">
+                              <a href="https://blockstack.org/whitepaper.pdf" target="_blank">
+                                <Image className="col-img"
+                                  src="/images/icons/icon-whitepaper.svg"
+                                  retinaSupport={false} />
+                              </a>
+                            </div>
+                            <div className="col-md-9 m-b-25">
+                              <div className="container">
+                                <h3 className="text-center text-white">
+                                  The Blockstack white paper
+                                </h3>
+                                <a href="https://blockstack.org/whitepaper.pdf" role="button"
+                                  className="btn btn-primary btn-block btn-block-reset" style={{ minWidth: '245px' }}>
+                                  Download Whitepaper
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            {/* New section layout applied */}
+            <div className="container-fluid sectionWrap bg-white">
               <div className="row">
                 <div className="container">
                   <div className="row">
@@ -223,7 +272,7 @@ class HomePage extends Component {
             </div>
 
             {/* New section layout applied */}
-            <div className="container-fluid sectionWrap bg-white">
+            <div className="container-fluid sectionWrap bg-light-gray">
               <div className="row">
                 <div className="container">
                   <div className="row">
@@ -299,7 +348,7 @@ class HomePage extends Component {
             </div>
 
             {/* New section layout applied */}
-            <div className="container-fluid sectionWrap bg-light-gray">
+            <div className="container-fluid sectionWrap bg-white">
               <div className="row">
                 <div className="container">
                   <div className="row">
@@ -340,22 +389,54 @@ class HomePage extends Component {
             </div>
 
             {/* New section layout applied */}
-            <div className="container-fluid sectionWrap bg-white">
+            <div className="container-fluid sectionWrap bg-light-gray">
               <div className="row">
-                <div className="container container-lg">
+                <div className="container">
                   <div className="row">
                     <div className="container-fluid">
-                      <h2 className="text-center m-b-25">
-                        News
-                      </h2>
-                    </div>
-                    <div className="container">
                       <div className="row">
-                      { firstThreePosts.map((post, index) => {
-                        return (
-                          <PostPreview key={index} post={post} />
-                        )
-                      }) }
+                        <div className="col-lg-4 m-b-25">
+                          <div className="container">
+                            <a href="https://www.wsj.com/articles/blockstack-launches-25-million-fund-for-blockchain-startups-1502883001" target="_blank">
+                            <h4 className="text-center">
+                              <Image className="h-press-wsj"
+                                src="/images/logos/wsj-logo-BW-40.svg"
+                                retinaSupport={false} />
+                            </h4>
+                            <p className="font-weight-bold text-center">
+                              “Blockstack… has launched a $25 million fund to invest in startups that build on its technology.”
+                            </p>
+                            </a>
+                          </div>
+                        </div>
+                        <div className="col-lg-4 m-b-25">
+                          <div className="container">
+                            <a href="http://observer.com/2016/09/a-second-internet-coming-soon-courtesy-of-the-blockchain/" target="_blank">
+                            <h4 className="text-center">
+                              <Image className="h-press-observer"
+                                src="/images/logos/observer-logo-BW-40.svg"
+                                retinaSupport={false} />
+                            </h4>
+                            <p className="font-weight-bold text-center">
+                              “Blockstack… has been designing an alternative browser for what could be fairly described as another internet”
+                            </p>
+                            </a>
+                          </div>
+                        </div>
+                        <div className="col-lg-4 m-b-25">
+                          <div className="container">
+                            <a href="https://www.technologyreview.com/s/603352/one-startups-vision-to-reinvent-the-web-for-better-privacy/" target="_blank">
+                            <h4 className="text-center">
+                              <Image className="h-press-mit"
+                                src="/images/logos/mit-logo-BW-40.svg"
+                                retinaSupport={false} />
+                            </h4>
+                            <p className="font-weight-bold text-center">
+                              “A kind of parallel universe to the Web we know — one where users have more control of their data.”
+                            </p>
+                            </a>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
