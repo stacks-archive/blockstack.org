@@ -216,7 +216,7 @@ class HomePage extends Component {
                             </div>
                             <div className="col-md-9 m-b-25">
                               <div className="container">
-                                <h3 className="text-sm-center text-white">
+                                <h3 className="text-center text-white">
                                   The Blockstack white paper
                                 </h3>
                                 <a href="https://blockstack.org/whitepaper.pdf" role="button"
