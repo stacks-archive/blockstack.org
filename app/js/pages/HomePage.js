@@ -97,7 +97,7 @@ class HomePage extends Component {
           body: 'Blockstack\'s storage system allows users to bring their own storage providers and control their data. Data is encrypted and easily shared between applications.'
         },
         {
-          title: 'Token',
+          title: 'Tokens',
           body: 'Blockstack uses Bitcoin and other crypto-currencies for simple peer-to-peer payments. Developers can charge for downloads, subscriptions, and more.'
         },
       ],
@@ -199,7 +199,44 @@ class HomePage extends Component {
             </div>
 
             {/* New section layout applied */}
-            <div className="container-fluid sectionWrap bg-light-gray">
+            <div className="container-fluid sectionWrap">
+              <div className="row">
+                <div className="container-md mx-auto">
+                  <div className="row">
+                    <div className="container-fluid m-b-50">
+                      <div className="row">
+                        <div className="container mx-auto">
+                          <div className="row">
+                            <div className="col-md-3 text-center m-b-25">
+                              <a href="https://www.wsj.com/articles/blockstack-launches-25-million-fund-for-blockchain-startups-1502883001" target="_blank">
+                                <Image className="col-img"
+                                  src="/images/icons/icon-whitepaper.svg"
+                                  retinaSupport={false} />
+                              </a>
+                            </div>
+                            <div className="col-md-9 m-b-25">
+                              <div className="container">
+                                <h3 className="text-sm-center text-white">
+                                  The Blockstack white paper
+                                </h3>
+                                <a href="https://blockstack.org/whitepaper.pdf" role="button"
+                                  className="btn btn-primary btn-block btn-block-reset" style={{ minWidth: '245px' }}>
+                                  Download Whitepaper
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            {/* New section layout applied */}
+            <div className="container-fluid sectionWrap bg-white">
               <div className="row">
                 <div className="container">
                   <div className="row">
@@ -235,7 +272,7 @@ class HomePage extends Component {
             </div>
 
             {/* New section layout applied */}
-            <div className="container-fluid sectionWrap bg-white">
+            <div className="container-fluid sectionWrap bg-light-gray">
               <div className="row">
                 <div className="container">
                   <div className="row">
@@ -311,7 +348,7 @@ class HomePage extends Component {
             </div>
 
             {/* New section layout applied */}
-            <div className="container-fluid sectionWrap bg-light-gray">
+            <div className="container-fluid sectionWrap bg-white">
               <div className="row">
                 <div className="container">
                   <div className="row">
@@ -352,14 +389,13 @@ class HomePage extends Component {
             </div>
 
             {/* New section layout applied */}
-            <div className="container-fluid sectionWrap bg-white">
+            <div className="container-fluid sectionWrap bg-light-gray">
               <div className="row">
                 <div className="container">
                   <div className="row">
                     <div className="container-fluid">
                       <div className="row">
-
-                          <div className="col-lg-4 m-b-25">
+                        <div className="col-lg-4 m-b-25">
                           <div className="container">
                             <a href="https://www.wsj.com/articles/blockstack-launches-25-million-fund-for-blockchain-startups-1502883001" target="_blank">
                             <h4 className="text-center">
@@ -372,8 +408,8 @@ class HomePage extends Component {
                             </p>
                             </a>
                           </div>
-                          </div>
-                          <div className="col-lg-4 m-b-25">
+                        </div>
+                        <div className="col-lg-4 m-b-25">
                           <div className="container">
                             <a href="http://observer.com/2016/09/a-second-internet-coming-soon-courtesy-of-the-blockchain/" target="_blank">
                             <h4 className="text-center">
@@ -386,8 +422,8 @@ class HomePage extends Component {
                             </p>
                             </a>
                           </div>
-                          </div>
-                          <div className="col-lg-4 m-b-25">
+                        </div>
+                        <div className="col-lg-4 m-b-25">
                           <div className="container">
                             <a href="https://www.technologyreview.com/s/603352/one-startups-vision-to-reinvent-the-web-for-better-privacy/" target="_blank">
                             <h4 className="text-center">
@@ -400,7 +436,7 @@ class HomePage extends Component {
                             </p>
                             </a>
                           </div>
-                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
