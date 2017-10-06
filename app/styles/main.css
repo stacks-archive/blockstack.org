@@ -512,6 +512,15 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .sig-logo-space{margin-top:40px;margin-bottom:30px;}
 .code-img-gutter{padding-right:11px;padding-left:11px;}
 .cursor-pointer{cursor:pointer;}
+a.img-hover-scale > img {
+    -webkit-transition:all .2s ease-in-out;
+        transition:all .2s ease-in-out;
+}
+a.img-hover-scale > img:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+}
+a.img-hover-scale.active{display:block;outline:5px solid #2C96FF;}
 
 /* 38. f. - Embed */
 .video-special-row{margin-top:50px;padding-top:5px;padding-bottom:5px;background-color:#1a1d1f;}

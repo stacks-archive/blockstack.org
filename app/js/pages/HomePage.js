@@ -187,17 +187,17 @@ class HomePage extends Component {
                   <div className="row">
                     <div className="row">
                       <div className="col-sm-4">
-                        <Link to="/">
+                        <Link className="img-hover-scale" to="/">
                           <img src="/images/metatags/twitter-image.png" className="img-fluid" />
                         </Link>
                       </div>
                       <div className="col-sm-4">
-                        <Link to="/">
+                        <Link className="img-hover-scale active" to="/">
                           <img src="/images/metatags/twitter-image.png" className="img-fluid"  />
                         </Link>
                       </div>
                       <div className="col-sm-4">
-                        <Link to="/">
+                        <Link className="img-hover-scale" to="/">
                           <img src="/images/metatags/twitter-image.png" className="img-fluid"  />
                         </Link>
                       </div>
