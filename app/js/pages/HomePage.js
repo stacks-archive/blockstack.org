@@ -346,18 +346,49 @@ class HomePage extends Component {
                   <div className="row">
                     <div className="container-fluid">
                       <div className="row">
-                        <a href="https://www.wsj.com/articles/blockstack-launches-25-million-fund-for-blockchain-startups-1502883001" target="_blank">
+
                           <div className="col-lg-4 m-b-25">
-                            <h4 className="inverse text-center">
-                              <Image className="landing-feat-img"
+                          <div className="container">
+                            <a href="https://www.wsj.com/articles/blockstack-launches-25-million-fund-for-blockchain-startups-1502883001" target="_blank">
+                            <h4 className="text-center">
+                              <Image className="h-press-wsj"
                                 src="/images/logos/wsj-logo-BW-40.svg"
                                 retinaSupport={false} />
                             </h4>
-                            <p className="inverse text-center">
+                            <p className="font-weight-bold text-center">
                               “Blockstack, …, has launched a $25 million fund to invest in startups that build on its technology.”
                             </p>
+                            </a>
                           </div>
-                        </a>
+                          </div>
+                          <div className="col-lg-4 m-b-25">
+                          <div className="container">
+                            <a href="http://observer.com/2016/09/a-second-internet-coming-soon-courtesy-of-the-blockchain/" target="_blank">
+                            <h4 className="text-center">
+                              <Image className="h-press-observer"
+                                src="/images/logos/observer-logo-BW-40.svg"
+                                retinaSupport={false} />
+                            </h4>
+                            <p className="font-weight-bold text-center">
+                              “Blockstack, …, has been designing an alternative browser for what could be fairly described as another internet”
+                            </p>
+                            </a>
+                          </div>
+                          </div>
+                          <div className="col-lg-4 m-b-25">
+                          <div className="container">
+                            <a href="https://www.technologyreview.com/s/603352/one-startups-vision-to-reinvent-the-web-for-better-privacy/" target="_blank">
+                            <h4 className="text-center">
+                              <Image className="h-press-mit"
+                                src="/images/logos/mit-logo-BW-40.svg"
+                                retinaSupport={false} />
+                            </h4>
+                            <p className="font-weight-bold text-center">
+                              “Blockstack’s system would let you control your own personal data”
+                            </p>
+                            </a>
+                          </div>
+                          </div>
                       </div>
                     </div>
                   </div>
