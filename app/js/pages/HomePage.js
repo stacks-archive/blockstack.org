@@ -176,19 +176,33 @@ class HomePage extends Component {
             {/* New section layout applied */}
             <div className="container-fluid sectionWrap bg-white">
               <div className="row">
-                <div className="container container-md">
+                <div className="container container-md m-b-25">
                   <div className="row">
                     <EmbedYouTube
                       previewImageUrl={this.state.videoPreviewImageUrl}
                       src={this.state.videoURL} />
                   </div>
-
-                  <div className="container">
+                </div>
+                <div className="container container-md">
+                  <div className="row">
                     <div className="row">
+                      <div className="col-sm-4">
+                        <Link to="/">
+                          <img src="/images/metatags/twitter-image.png" className="img-fluid" />
+                        </Link>
+                      </div>
+                      <div className="col-sm-4">
+                        <Link to="/">
+                          <img src="/images/metatags/twitter-image.png" className="img-fluid"  />
+                        </Link>
+                      </div>
+                      <div className="col-sm-4">
+                        <Link to="/">
+                          <img src="/images/metatags/twitter-image.png" className="img-fluid"  />
+                        </Link>
+                      </div>
                     </div>
-
                   </div>
-
                 </div>
               </div>
             </div>
