@@ -217,7 +217,7 @@ class HomePage extends Component {
                             <div className="col-md-9 m-b-25">
                               <div className="container">
                                 <h3 className="text-center text-white">
-                                  The Blockstack white paper
+                                  The Blockstack whitepaper
                                 </h3>
                                 <a href="https://blockstack.org/whitepaper.pdf" role="button"
                                   className="btn btn-primary btn-block btn-block-reset" style={{ minWidth: '245px' }}>

@@ -111,7 +111,7 @@ class FundingPage extends Component {
               <div className="row">
                 <div className="container container-md">
                   <h3 className="text-center">
-                    “Less white paper hype, more working code.”
+                    “Less whitepaper hype, more working code.”
                   </h3>
                   <p className="hero-lead p-b-65">
                     — Jeremy Welch ~ Casa App Founder (at Blockstack Summit 2017)
