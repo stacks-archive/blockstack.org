@@ -217,38 +217,12 @@ class HomePage extends Component {
                             <div className="col-md-9 m-b-25">
                               <div className="container">
                                 <h3 className="text-sm-center text-white">
-                                  Blockstack Network Whitepaper
+                                  The Blockstack white paper
                                 </h3>
-                                <Link to="/" role="button"
+                                <a href="https://blockstack.org/whitepaper.pdf" role="button"
                                   className="btn btn-primary btn-block btn-block-reset" style={{ minWidth: '245px' }}>
                                   Download Whitepaper
-                                </Link>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="container-fluid">
-                      <div className="row">
-                        <div className="container mx-auto">
-                          <div className="row">
-                            <div className="col-lg-3 text-center m-b-25">
-                              <a href="https://www.wsj.com/articles/blockstack-launches-25-million-fund-for-blockchain-startups-1502883001" target="_blank">
-                                <Image className="col-img"
-                                  src="/images/icons/icon-whitepaper.svg"
-                                  retinaSupport={false} />
-                              </a>
-                            </div>
-                            <div className="col-lg-9 m-b-25">
-                              <div className="container">
-                                <h3 className="text-sm-center text-white">
-                                  Blockstack Token Incentives Whitepaper
-                                </h3>
-                                <Link to="/" role="button"
-                                  className="btn btn-primary btn-block btn-block-reset" style={{ minWidth: '245px' }}>
-                                  Download Whitepaper
-                                </Link>
+                                </a>
                               </div>
                             </div>
                           </div>
