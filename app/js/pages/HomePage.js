@@ -39,18 +39,18 @@ class HomePage extends Component {
       videos: [
         {
           src: 'https://www.youtube.com/embed/Z4bMFKBRg_k',
-          previewImageUrl: 'https://user-images.githubusercontent.com/1711854/31123257-22e46ca2-a80d-11e7-8a2e-eb9ee377c39b.jpg',
-          thumbnailImageUrl: 'https://user-images.githubusercontent.com/1711854/31123257-22e46ca2-a80d-11e7-8a2e-eb9ee377c39b.jpg',
+          previewImageUrl: '/images/resources/video-home-1-preview.jpg',
+          thumbnailImageUrl: '/images/resources/video-home-1-thumbnail.jpg',
         },
         {
-          src: 'https://www.youtube.com/embed/IfONVXL6tnk',
-          previewImageUrl: 'https://i.ytimg.com/vi/IfONVXL6tnk/maxresdefault.jpg',
-          thumbnailImageUrl: 'https://i.ytimg.com/vi/IfONVXL6tnk/maxresdefault.jpg',
+          src: 'https://www.youtube.com/embed/qtOIh93Hvuw',
+          previewImageUrl: '/images/resources/video-home-2-thumbnail.jpg',
+          thumbnailImageUrl: '/images/resources/video-home-2-thumbnail.jpg',
         },
         {
           src: 'https://www.youtube.com/embed/YzlyEuRfXxo',
-          previewImageUrl: 'https://i.ytimg.com/vi/YzlyEuRfXxo/maxresdefault.jpg',
-          thumbnailImageUrl: 'https://i.ytimg.com/vi/YzlyEuRfXxo/maxresdefault.jpg',
+          previewImageUrl: '/images/resources/video-home-3-thumbnail.jpg',
+          thumbnailImageUrl: '/images/resources/video-home-3-thumbnail.jpg',
         }
       ],
       stats: this.props.stats,
