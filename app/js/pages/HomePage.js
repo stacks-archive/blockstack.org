@@ -342,20 +342,22 @@ class HomePage extends Component {
             {/* New section layout applied */}
             <div className="container-fluid sectionWrap bg-white">
               <div className="row">
-                <div className="container container-lg">
+                <div className="container">
                   <div className="row">
                     <div className="container-fluid">
-                      <h2 className="text-center m-b-25">
-                        News
-                      </h2>
-                    </div>
-                    <div className="container">
                       <div className="row">
-                      { firstThreePosts.map((post, index) => {
-                        return (
-                          <PostPreview key={index} post={post} />
-                        )
-                      }) }
+                        <a href="https://www.wsj.com/articles/blockstack-launches-25-million-fund-for-blockchain-startups-1502883001" target="_blank">
+                          <div className="col-lg-4 m-b-25">
+                            <h4 className="inverse text-center">
+                              <Image className="landing-feat-img"
+                                src="/images/logos/wsj-logo-BW-40.svg"
+                                retinaSupport={false} />
+                            </h4>
+                            <p className="inverse text-center">
+                              “Blockstack, …, has launched a $25 million fund to invest in startups that build on its technology.”
+                            </p>
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </div>
