@@ -3,7 +3,9 @@ import Image from './Image'
 
 const propTypes = {
   src: PropTypes.string.isRequired,
-  previewImageUrl: PropTypes.string
+  previewImageUrl: PropTypes.string,
+  showPreview: PropTypes.bool,
+  autoplay: PropTypes.bool
 }
 
 class EmbedYouTube extends Component {
@@ -12,10 +14,16 @@ class EmbedYouTube extends Component {
 		super(props)
 
 		this.state = {
-			preview: this.props.previewImageUrl !== undefined,
+			preview: this.props.showPreview
 		}
 
 		this.playVideo = this.playVideo.bind(this)
+	}
+
+	componentWillReceiveProps(nextProps) {
+		this.setState({
+			preview: nextProps.showPreview
+		})
 	}
 
 	playVideo() {
@@ -26,7 +34,7 @@ class EmbedYouTube extends Component {
 
 	render() {
 
-		const autoplay = this.props.previewImageUrl !== undefined ? '?autoplay=1' : ''
+		const autoplay = (this.props.previewImageUrl || (this.props.autoplay)) ? '?autoplay=1' : ''
 
 		return (
 		  <div className="embed-responsive embed-responsive-16by9 cursor-pointer">

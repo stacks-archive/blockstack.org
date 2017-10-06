@@ -12,6 +12,7 @@ import Image               from '../components/Image'
 import Header              from '../components/Header'
 import Alert               from '../components/Alert'
 import EmbedYouTube        from '../components/EmbedYouTube'
+import MultiVideoPlayer        from '../components/MultiVideoPlayer'
 import PostPreview         from '../components/PostPreview'
 import {featuredApps}      from '../config'
 
@@ -35,8 +36,23 @@ class HomePage extends Component {
     super(props)
 
     this.state = {
-      videoURL: 'https://www.youtube.com/embed/Z4bMFKBRg_k',
-      videoPreviewImageUrl: 'https://user-images.githubusercontent.com/1711854/31123257-22e46ca2-a80d-11e7-8a2e-eb9ee377c39b.jpg',
+      videos: [
+        {
+          src: 'https://www.youtube.com/embed/Z4bMFKBRg_k',
+          previewImageUrl: 'https://user-images.githubusercontent.com/1711854/31123257-22e46ca2-a80d-11e7-8a2e-eb9ee377c39b.jpg',
+          thumbnailImageUrl: 'https://user-images.githubusercontent.com/1711854/31123257-22e46ca2-a80d-11e7-8a2e-eb9ee377c39b.jpg',
+        },
+        {
+          src: 'https://www.youtube.com/embed/IfONVXL6tnk',
+          previewImageUrl: 'https://i.ytimg.com/vi/IfONVXL6tnk/maxresdefault.jpg',
+          thumbnailImageUrl: 'https://i.ytimg.com/vi/IfONVXL6tnk/maxresdefault.jpg',
+        },
+        {
+          src: 'https://www.youtube.com/embed/YzlyEuRfXxo',
+          previewImageUrl: 'https://i.ytimg.com/vi/YzlyEuRfXxo/maxresdefault.jpg',
+          thumbnailImageUrl: 'https://i.ytimg.com/vi/YzlyEuRfXxo/maxresdefault.jpg',
+        }
+      ],
       stats: this.props.stats,
       posts: this.props.posts
     }
@@ -176,12 +192,8 @@ class HomePage extends Component {
             {/* New section layout applied */}
             <div className="container-fluid sectionWrap bg-white">
               <div className="row">
-                <div className="container container-md">
-                  <div className="row">
-                    <EmbedYouTube
-                      previewImageUrl={this.state.videoPreviewImageUrl}
-                      src={this.state.videoURL} />
-                    </div>
+                <div className="col-sm-12">
+                  <MultiVideoPlayer videos={this.state.videos}/>
                 </div>
               </div>
             </div>
