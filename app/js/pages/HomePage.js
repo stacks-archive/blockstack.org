@@ -404,7 +404,7 @@ class HomePage extends Component {
                                 retinaSupport={false} />
                             </h4>
                             <p className="font-weight-bold text-center">
-                              “Blockstack, …, has launched a $25 million fund to invest in startups that build on its technology.”
+                              “Blockstack… has launched a $25 million fund to invest in startups that build on its technology.”
                             </p>
                             </a>
                           </div>
@@ -418,7 +418,7 @@ class HomePage extends Component {
                                 retinaSupport={false} />
                             </h4>
                             <p className="font-weight-bold text-center">
-                              “Blockstack, …, has been designing an alternative browser for what could be fairly described as another internet”
+                              “Blockstack… has been designing an alternative browser for what could be fairly described as another internet”
                             </p>
                             </a>
                           </div>
@@ -432,7 +432,7 @@ class HomePage extends Component {
                                 retinaSupport={false} />
                             </h4>
                             <p className="font-weight-bold text-center">
-                              “Blockstack’s system would let you control your own personal data”
+                              “A kind of parallel universe to the Web we know — one where users have more control of their data.”
                             </p>
                             </a>
                           </div>
