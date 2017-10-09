@@ -131,21 +131,13 @@ class HomePage extends Component {
                   <p className="hero-lead purple-50 col-md-9 col-centered">
                     Blockstack is a new internet for decentralized apps where users own their data.<br/>A browser is all that’s needed to get started.
                   </p>
-                  <div className="no-padding container-fluid col-md-10 col-lg-10 col-centered m-b-95">
+                  <div className="no-padding container-fluid col-md-10 col-lg-10 col-centered m-b-55">
                     <div className="row">
-                      <div className="col-sm-12 col-md-6">
-                        <p className="float-md-right">
+                      <div className="col-sm-12 col-md-4 mx-auto">
+                        <p className="">
                           <Link to="/install" role="button"
                             className="btn btn-primary btn-block btn-block-reset" style={{ minWidth: '245px' }}>
                             Install
-                          </Link>
-                        </p>
-                      </div>
-                      <div className="col-sm-12 col-md-6">
-                        <p className="float-md-left">
-                          <Link to="/signup" role="button"
-                            className="btn btn-primary btn-block btn-block-reset" style={{ minWidth: '245px' }}>
-                            Get Updates
                           </Link>
                         </p>
                       </div>
