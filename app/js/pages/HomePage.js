@@ -432,7 +432,7 @@ class HomePage extends Component {
                       <h2 className="text-center m-b-45">
                         Sign Up for Updates
                       </h2>
-                    <div className="col-md-6 offset-md-3">
+                    <div className="container-fluid">
                       <p>Our browser isn't ready for the public yet but join our mailing list and we'll notify you about upcoming product launches.</p>
                       <MailchimpForm subscribeURL={subscribeURL} submitButtonText='Sign Up' />
                     </div>

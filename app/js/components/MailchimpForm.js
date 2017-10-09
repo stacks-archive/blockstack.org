@@ -33,7 +33,7 @@ class MailchimpForm extends Component {
             <div className="mc-field-group" style={{ marginBottom: '10px' }}>
               <label htmlFor="mce-EMAIL" style={{ display: 'none' }}>Email Address </label>
               <input type="email" value={this.state.email} name="EMAIL"
-                className="form-control required email"
+                className="form-control "
                 id="mce-EMAIL" placeholder="Email address"
                 onChange={this.onChange} />
             </div>
