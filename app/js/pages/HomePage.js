@@ -12,7 +12,8 @@ import Image               from '../components/Image'
 import Header              from '../components/Header'
 import Alert               from '../components/Alert'
 import EmbedYouTube        from '../components/EmbedYouTube'
-import MultiVideoPlayer        from '../components/MultiVideoPlayer'
+import MultiVideoPlayer    from '../components/MultiVideoPlayer'
+import MailchimpForm       from '../components/MailchimpForm'
 import PostPreview         from '../components/PostPreview'
 import {featuredApps}      from '../config'
 
@@ -116,6 +117,8 @@ class HomePage extends Component {
         }
       ]
     }
+
+    const subscribeURL = '//blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=0e5478ae86'
 
     return (
       <DocumentTitle title="Blockstack, building the decentralized internet">
@@ -427,24 +430,12 @@ class HomePage extends Component {
                   <div className="row">
                     <div className="container-fluid">
                       <h2 className="text-center m-b-45">
-                        Get Started
+                        Sign Up for Updates
                       </h2>
+                    <div className="col-md-6 offset-md-3">
+                      <p>Our browser isn't ready for the public yet but join our mailing list and we'll notify you about upcoming product launches.</p>
+                      <MailchimpForm subscribeURL={subscribeURL} submitButtonText='Sign Up' />
                     </div>
-                    <div className="container mx-auto">
-                      <div className="row">
-                        <div className="col-md-6 m-b-20">
-                          <Link to="/install" role="button"
-                            className="btn btn-primary btn-block m-b-10">
-                            Install
-                          </Link>
-                        </div>
-                        <div className="col-md-6 m-b-20">
-                          <Link to="/signup" role="button"
-                            className="btn btn-primary btn-block">
-                            Get Updates
-                          </Link>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
