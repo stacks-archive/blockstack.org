@@ -52,6 +52,12 @@ class Header extends Component {
           </button>
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav ml-sm-auto">
+              <li className="nav-item">
+                <Link to="/token" role="button"
+                  className="btn btn-primary btn-sm btn-navbar">
+                  Token
+                </Link>
+              </li>
               {this.state.navItems.map((navItem, index) => {
                 if (!navItem.hasOwnProperty('dropdown')) {
                   return (
