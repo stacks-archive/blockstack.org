@@ -423,14 +423,14 @@ class HomePage extends Component {
             {/* New section layout applied */}
             <div className="container-fluid sectionWrap bg-primary text-white">
               <div className="row">
-                <div className="col-sm-10 col-lg-11 col-xl-12 mx-auto m-b-80 m-t-35">
+                <div className="container container-md mx-auto m-b-80 m-t-35">
                   <div className="row">
                     <div className="container-fluid">
-                      <h2 className="text-center m-b-35">
+                      <h2 className="text-center m-b-45">
                         Get Started
                       </h2>
                     </div>
-                    <div className="col-12 col-xl-8 container-lg mx-auto">
+                    <div className="container mx-auto">
                       <div className="row">
                         <div className="col-md-6 m-b-20">
                           <Link to="/install" role="button"
