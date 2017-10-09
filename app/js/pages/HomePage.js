@@ -12,7 +12,8 @@ import Image               from '../components/Image'
 import Header              from '../components/Header'
 import Alert               from '../components/Alert'
 import EmbedYouTube        from '../components/EmbedYouTube'
-import MultiVideoPlayer        from '../components/MultiVideoPlayer'
+import MultiVideoPlayer    from '../components/MultiVideoPlayer'
+import MailchimpForm       from '../components/MailchimpForm'
 import PostPreview         from '../components/PostPreview'
 import {featuredApps}      from '../config'
 
@@ -117,6 +118,8 @@ class HomePage extends Component {
       ]
     }
 
+    const subscribeURL = '//blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=0e5478ae86'
+
     return (
       <DocumentTitle title="Blockstack, building the decentralized internet">
         <div className="body-hero">
@@ -131,21 +134,13 @@ class HomePage extends Component {
                   <p className="hero-lead purple-50 col-md-9 col-centered">
                     Blockstack is a new internet for decentralized apps where users own their data.<br/>A browser is all that’s needed to get started.
                   </p>
-                  <div className="no-padding container-fluid col-md-10 col-lg-10 col-centered m-b-95">
+                  <div className="no-padding container-fluid col-md-10 col-lg-10 col-centered m-b-55">
                     <div className="row">
-                      <div className="col-sm-12 col-md-6">
-                        <p className="float-md-right">
+                      <div className="col-sm-12 col-md-4 mx-auto">
+                        <p className="">
                           <Link to="/install" role="button"
                             className="btn btn-primary btn-block btn-block-reset" style={{ minWidth: '245px' }}>
                             Install
-                          </Link>
-                        </p>
-                      </div>
-                      <div className="col-sm-12 col-md-6">
-                        <p className="float-md-left">
-                          <Link to="/signup" role="button"
-                            className="btn btn-primary btn-block btn-block-reset" style={{ minWidth: '245px' }}>
-                            Get Updates
                           </Link>
                         </p>
                       </div>
@@ -431,28 +426,16 @@ class HomePage extends Component {
             {/* New section layout applied */}
             <div className="container-fluid sectionWrap bg-primary text-white">
               <div className="row">
-                <div className="col-sm-10 col-lg-11 col-xl-12 mx-auto m-b-80 m-t-35">
+                <div className="container container-md mx-auto m-b-80 m-t-35">
                   <div className="row">
                     <div className="container-fluid">
-                      <h2 className="text-center m-b-35">
-                        Get Started
+                      <h2 className="text-center m-b-45">
+                        Sign Up for Updates
                       </h2>
+                    <div className="container-fluid">
+                      <p>Our browser isn't ready for the public yet but join our mailing list and we'll notify you about upcoming product launches.</p>
+                      <MailchimpForm subscribeURL={subscribeURL} submitButtonText='Sign Up' />
                     </div>
-                    <div className="col-12 col-xl-8 container-lg mx-auto">
-                      <div className="row">
-                        <div className="col-md-6 m-b-20">
-                          <Link to="/install" role="button"
-                            className="btn btn-primary btn-block m-b-10">
-                            Install
-                          </Link>
-                        </div>
-                        <div className="col-md-6 m-b-20">
-                          <Link to="/signup" role="button"
-                            className="btn btn-primary btn-block">
-                            Get Updates
-                          </Link>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>

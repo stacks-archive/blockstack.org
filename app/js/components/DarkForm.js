@@ -33,7 +33,7 @@ class DarkForm extends Component {
             <div className="mc-field-group" style={{ marginBottom: '12px' }}>
               <label htmlFor="mce-EMAIL" style={{ display: 'none' }}>Email Address </label>
               <input type="email" value={this.state.email} name="EMAIL"
-                className="form-control form-control-outline-primary text-center"
+                className="form-control form-control-outline-secondary text-center"
                 id="mce-EMAIL" placeholder="Enter email address"
                 onChange={this.onChange} />
             </div>

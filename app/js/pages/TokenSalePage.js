@@ -87,12 +87,12 @@ class TokenSalePage extends Component {
                 </h1>
                 <p className="hero-lead purple-50">Sign up to receive important information about the token distribution</p>
                 <div className="m-b-50">
-                  <div className="col-md-9 col-centered m-b-3">
+                  <div className="container container-md mx-auto m-b-3">
                     <DarkForm subscribeURL={this.state.subscribeURL} submitButtonText='Sign Up' />
                   </div>
                 </div>
                 <p className="text-xs-center m-t-2 m-b-165">
-                  <Link to="/whitepaper.pdf" target="_blank" className="btn btn-outline-primary"
+                  <Link to="/whitepaper.pdf" target="_blank" className="btn btn-outline-secondary"
                   style={{ color: '#95889c' }}>
                     Read the Whitepaper
                   </Link>

@@ -17,21 +17,23 @@ class SignUpPage extends Component {
     return (
       <DocumentTitle title="Blockstack newsletter sign-up">
         <div>
-          <section className="container-fluid spacing-container">
-            <div className="container col-centered">
-              <div className="container m-b-5">
-                <section className="sec-light" style={{ minHeight: '600px' }}>
-                  <div className="col-md-6 offset-md-3">
-                    <h1>
+          <div className="container-fluid spacing-container">
+            <div className="row">
+              <div className="container container-md mx-auto m-b-100 p-b-100 p-t-85">
+                <div className="row">
+                  <div className="container-fluid">
+                    <h2 className="text-center m-b-45">
                       Sign Up for Updates
-                    </h1>
+                    </h2>
+                  <div className="container-fluid">
                     <p>Our browser isn't ready for the public yet but join our mailing list and we'll notify you about upcoming product launches.</p>
                     <MailchimpForm subscribeURL={subscribeURL} submitButtonText='Sign Up' />
                   </div>
-                </section>
+                  </div>
+                </div>
               </div>
             </div>
-          </section>
+          </div>
         </div>
       </DocumentTitle>
     )
