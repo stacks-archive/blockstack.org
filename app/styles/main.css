@@ -354,6 +354,7 @@ footer a:hover,footer a:focus,footer a:active{color:#fff;text-decoration:none;}
 .btn-xs{font-size:0.75rem;padding:0.375rem 2.125rem;line-height:1rem;}
 .btn-sm{font-size:0.75rem;padding:0.375rem 2.125rem;line-height:1.5rem;}
 .btn-lg{font-size:0.8125rem;padding:0.8125rem 3.4375rem;line-height:1.75rem;}
+.btn-pill{border-radius:30px;-webkit-border-radius:30px;}
 .btn:focus,.btn:active:focus,.btn.active:focus{outline:none;}
 .btn-primary{color:#fff;border:1px solid #2C96FF;background-color:#2C96FF;}
 .btn-primary:hover,.btn-primary:focus,.btn-primary:active{color:#fff;background-color:#2378CC;border:1px solid #2378CC;font-weight:700;}
@@ -393,6 +394,7 @@ a.nav-link:hover,a.nav-link:focus{color:#fff;}
 .navbar-nav .dropdown-menu{position:static!important;border-radius:0;width:120%;margin-left:-25px;margin-right:auto;-webkit-transform:translate3d(-5px,0px,0px)!important;transform:translate3d(-5px,0px,0px)!important;color:#fff;}
 .dropdown-item{color:rgba(255,255,255,0.7);padding-left:40px;}
 .dropdown-item:focus,.dropdown-item:hover{color:#fff;background-color:rgba(255,255,255,0.1);}
+.navbar-btn{margin-top:9px;margin-right:20px;}
 /* Custom sandwich menu */
 .navbar-toggler,.navbar-toggler.collapsed{float:right;margin-right:-5px;margin-top:-1px;cursor:pointer;}
 .navbar-toggler:focus,.navbar-toggler:hover{outline:none;}
@@ -608,18 +610,6 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px){
 
-  /* 16. Navbar */
-  .navbar-nav{margin-top:7px;padding-bottom:8px;}
-  .navbar-toggler,.navbar-toggler .collapsed{display:none;}
-  .nav-item{margin-left:0px;padding-right:.25rem;padding-left:.25rem;}
-  .nav-item:hover, .nav-item:active, .nav-item:focus{background-color:transparent;}
-  .navbar-collapse{background-color:transparent;}
-  .navbar-nav .dropdown-menu{position:absolute!important;width:120%;margin-right:auto;margin-left:-25px;-webkit-transform:translate3d(-5px, 25px, 0px)!important;transform:translate3d(-5px,5px,0px)!important;color:#fff;border-radius:0;}
-  a.dropdown-item{font-size:.9375rem;font-weight:700;padding:.375rem 3.4375rem .375rem 1.875rem;color:#fff;}
-  .dropdown-menu{margin-top:0;padding-top:1rem;padding-bottom:1rem;background-color:#2C96FF;border:1px solid #2C96FF;}
-  .dropdown-item:focus,.dropdown-item:hover{color:#fff;background-color:rgba(0,0,0,0.15);}
-  .navbar-dropdown-primary{border-radius:6px!important;-webkit-box-shadow:0px 5px 10px 0px rgba(0,0,0,0.25);box-shadow:0px 5px 10px 0px rgba(0,0,0,0.25);}
-
   /* 26. Alerts */
   .alert-primary{background-color:#2C96FF;padding:1rem 1rem 1.0625rem 1rem;}
 
@@ -677,12 +667,22 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
   .feat-img-top > h4{font-size:18px;}
 
   /* 16. Navbar */
+  .navbar-nav{margin-top:7px;padding-bottom:8px;}
+  .nav-item{margin-left:0px;padding-right:.25rem;padding-left:.25rem;}
+  .nav-item:hover,.nav-item:active,.nav-item:focus{background-color:transparent;}
+  .navbar-collapse{background-color:transparent;}
+  .navbar-nav .dropdown-menu{position:absolute!important;width:120%;margin-right:auto;margin-left:-25px;-webkit-transform:translate3d(-5px,25px,0px)!important;transform:translate3d(-5px,5px,0px)!important;color:#fff;border-radius:0;}
+  a.dropdown-item{font-size:.9375rem;font-weight:700;padding:.375rem 3.4375rem .375rem 1.875rem;color:#fff;}
+  .dropdown-menu{margin-top:0;padding-top:1rem;padding-bottom:1rem;background-color:#2C96FF;border:1px solid #2C96FF;}
+  .dropdown-item:focus,.dropdown-item:hover{color:#fff;background-color:rgba(0,0,0,0.15);}
+  .navbar-dropdown-primary{border-radius:6px!important;-webkit-box-shadow:0px 5px 10px 0px rgba(0,0,0,0.25);box-shadow:0px 5px 10px 0px rgba(0,0,0,0.25);}
   .navbar-brand img{position:relative;margin-top:-12px;}
   a.nav-link{padding-right:5px;padding-left:5px;}
   .navbar{padding-top:.375rem;padding-right:2rem;padding-bottom:.625rem;padding-left:2rem;}
   .brand-bug{margin-top:6px;}
   .fa-github{margin-top:-0.1875rem;margin-right:0.75rem;vertical-align:middle;font-size:1.175rem;}
   a.nav-link > i.fa.fa-github{display:initial;}
+  .navbar-btn{margin-top:9px;margin-right:5px;padding-right:50px;padding-left:50px;}
 
   /* Content */
   .hero-wrap{display:block;padding-top:8rem;padding-bottom:12rem;}

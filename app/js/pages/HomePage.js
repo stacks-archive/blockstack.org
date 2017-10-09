@@ -122,10 +122,7 @@ class HomePage extends Component {
         <div className="body-hero">
           <div className="w-100" style={{ overflow: 'hidden' }}>
             <div>
-
-              <Alert />
               <Header transparent={true} />
-
               <div className="container">
                 <section className="hero text-center">
                   <h1 className="text-white m-b-20">
