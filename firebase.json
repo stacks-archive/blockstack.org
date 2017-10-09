@@ -88,6 +88,10 @@
         "destination": "/docs-tutorials-todo-list.html"
       },
       {
+        "source": "/blog/blockstack-cores-successful-hard-fork-to-version-0-17",
+        "destination": "/blog-blockstack-cores-successful-hard-fork-to-version-0-17.html"
+      },
+      {
         "source": "/blog/public-benefit-corp",
         "destination": "/blog-public-benefit-corp.html"
       },
@@ -142,10 +146,6 @@
       {
         "source": "/blog/blockstack-core-is-available-on-the-azure-marketplace",
         "destination": "/blog-blockstack-core-is-available-on-the-azure-marketplace.html"
-      },
-      {
-        "source": "/blog/blockstack-auth-developer-preview",
-        "destination": "/blog-blockstack-auth-developer-preview.html"
       },
       {
         "source": "**",
