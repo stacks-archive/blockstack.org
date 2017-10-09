@@ -44,7 +44,6 @@ class FundingPage extends Component {
 
         <div className="video-special-hero">
           <div className="col-centered block">
-            <Alert />
             <Header transparent={true} />
             <div className="container-fluid">
               <div className="row">
