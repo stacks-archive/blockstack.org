@@ -199,41 +199,28 @@ class HomePage extends Component {
             </div>
 
             {/* New section layout applied */}
-            <div className="container-fluid sectionWrap">
+            <div className="container container-lg sectionWrap">
               <div className="row">
-                <div className="container-md mx-auto">
-                  <div className="row">
-                    <div className="container-fluid m-b-50">
-                      <div className="row">
-                        <div className="container mx-auto">
-                          <div className="row">
-                            <div className="col-md-3 text-center m-b-25">
-                              <a href="https://blockstack.org/whitepaper.pdf" target="_blank">
-                                <Image className="col-img"
-                                  src="/images/icons/icon-whitepaper.svg"
-                                  retinaSupport={false} />
-                              </a>
-                            </div>
-                            <div className="col-md-9 m-b-25">
-                              <div className="container">
-                                <h3 className="text-center text-white">
-                                  The Blockstack white paper
-                                </h3>
-                                <a href="https://blockstack.org/whitepaper.pdf" role="button"
-                                  className="btn btn-primary btn-block btn-block-reset" style={{ minWidth: '245px' }}>
-                                  Download Whitepaper
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                <div className="col-md-3 text-center m-b-25">
+                  <a href="https://blockstack.org/whitepaper.pdf" target="_blank">
+                    <Image className="col-img icon-lg-special"
+                      src="/images/icons/icon-whitepaper-01@2x.png"
+                      retinaSupport={false} />
+                  </a>
+                </div>
+                <div className="col-md-9 m-b-25">
+                  <div className="container">
+                    <h3 className="text-center text-white">
+                      The Blockstack white paper
+                    </h3>
+                    <a href="https://blockstack.org/whitepaper.pdf" role="button"
+                      className="btn btn-primary btn-block btn-block-reset" style={{ minWidth: '245px' }}>
+                      Download Whitepaper
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
-
 
             {/* New section layout applied */}
             <div className="container-fluid sectionWrap bg-white">
