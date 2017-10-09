@@ -40,7 +40,7 @@ class Header extends Component {
 
     return (
       <div className={ this.props.transparent ? 'bg-transparent' : 'bg-primary'}>
-        <nav className="navbar navbar-expand-sm">
+        <nav className="navbar navbar-expand-md">
           <Link className="navbar-brand brand-bug" to="/">
             <img src="/images/logos/blockstack-bug-rev.svg" />
           </Link>
@@ -52,9 +52,9 @@ class Header extends Component {
           </button>
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav ml-sm-auto">
-              <li className="nav-item">
+              <li className="nav-item" style={{ paddingRight: '20px' }}>
                 <Link to="/token" role="button"
-                  className="btn btn-primary btn-sm btn-navbar">
+                  className="btn btn-primary btn-sm btn-pill navbar-btn">
                   Token
                 </Link>
               </li>
@@ -95,9 +95,9 @@ class Header extends Component {
         </nav>
         <div className="collapse navbar-collapse" id="mobile-nav">
           <ul className="navbar-nav ml-sm-auto">
-            <li className="nav-item">
+            <li className="nav-item" style={{ paddingTop: '10px', paddingRight: '20px', paddingBottom: '5px' }}>
               <Link to="/token" role="button"
-                className="btn btn-primary btn-sm btn-block btn-navbar">
+                className="btn btn-primary btn-sm btn-block btn-pill navbar-btn">
                 Token
               </Link>
             </li>
