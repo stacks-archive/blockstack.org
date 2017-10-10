@@ -193,21 +193,21 @@ class HomePage extends Component {
             {/* New section layout applied */}
             <div className="container container-lg sectionWrap">
               <div className="row">
-                <div className="col-md-3 text-center m-b-25">
+                <div className="col-md-5 text-center">
                   <a href="https://blockstack.org/whitepaper.pdf" target="_blank">
-                    <Image className="col-img icon-lg-special"
+                    <Image className="w-100 icon-lg-special"
                       src="/images/icons/icon-whitepaper-01@2x.png"
                       retinaSupport={false} />
                   </a>
                 </div>
-                <div className="col-md-9 m-b-25">
-                  <div className="container">
-                    <h3 className="text-center text-white">
+                <div className="col-md-7 m-b-25 d-flex align-items-center">
+                  <div className="container-fluid text-center">
+                    <h3 className="text-white m-b-35">
                       The Blockstack Whitepaper
                     </h3>
                     <a href="https://blockstack.org/whitepaper.pdf" role="button"
-                      className="btn btn-primary btn-block btn-block-reset" style={{ minWidth: '245px' }}>
-                      Download Whitepaper
+                      className="btn btn-outline-light btn-pill" style={{ minWidth: '245px' }}>
+                      Read the Whitepaper
                     </a>
                   </div>
                 </div>

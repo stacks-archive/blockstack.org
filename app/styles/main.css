@@ -530,6 +530,7 @@ a.img-hover-scale.active{display:block;outline:5px solid #2C96FF;}
 .h-press-wsj{width:90px;margin-top:15px;margin-bottom:25px;}
 .h-press-observer{width:150px;margin-top:25px;margin-bottom:41px;}
 .h-press-mit{width:150px;margin-top:0px;margin-bottom:16px;}
+.icon-lg-special{max-width:225px;margin-bottom:45px;}
 
 /* 38. f. - Embed */
 .video-special-row{margin-top:50px;padding-top:5px;padding-bottom:5px;background-color:#1a1d1f;}
@@ -759,7 +760,7 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
   .h-press-wsj{width:90px;margin-top:0;margin-bottom:25px;}
   .h-press-observer{width:150px;margin-top:15px;margin-bottom:41px;}
   .h-press-mit{width:150px;margin-top:-10px;margin-bottom:16px;}
-  .icon-lg-special{max-width:180px;}
+  .icon-lg-special{max-width:unset;margin-bottom:0;}
 }
 
 
