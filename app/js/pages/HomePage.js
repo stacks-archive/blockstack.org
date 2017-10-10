@@ -144,7 +144,7 @@ class HomePage extends Component {
                       </div>
                     </div>
                   </div>
-                  <div className="no-padding container-fluid col-md-9 col-centered">
+                  <div className="container container-md mx-auto no-padding">
                     <div className="text-center d-none d-sm-block">
                       <Image className="landing-feat-img"
                         src="/images/resources/browser-home-screen@2x.png"

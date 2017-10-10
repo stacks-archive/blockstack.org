@@ -507,7 +507,7 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead{color:#373a3c;}
 .no-padding-sm{padding-right:0;padding-left:0;}
 .col-img{max-width:110px;}
 .col3-img-lg{width:100%;min-width:210px;max-width:425px;}
-.caption-browser{font-size:.6875rem;position:absolute;bottom:25px;left:-130px;}
+.caption-browser{font-size:.6875rem;position:absolute;margin-top:-45px;margin-left:-125px;}
 .blockstack-summit-2017-logo-md{width:280px;}
 .blockstack-signature-fund-logo{width:160px;}
 .feature-event-subhero-1{display:none;}
