@@ -138,7 +138,7 @@ class HomePage extends Component {
                     <div className="row">
                       <div className="col-sm-12 col-md-5 mx-auto">
                         <Link to="/install" role="button"
-                          className="btn btn-light btn-block btn-block-reset" style={{ minWidth: '245px' }}>
+                          className="btn btn-primary btn-block btn-block-reset" style={{ minWidth: '245px' }}>
                           Install
                         </Link>
                       </div>

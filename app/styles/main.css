@@ -663,7 +663,7 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
   /*  7. Grid containers */
   .container-primary{width:85%;}
   .sectionWrap{padding:120px 50px;}
-  .section-stats{padding:50px 50px;}
+  .section-stats{padding:80px 80px;}
   .container-box{padding:20px 45px;}
   .author{margin-bottom:0;}
   .container-card{max-width:none;}
@@ -784,7 +784,7 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
 
   /*  7. Grid containers */
   .sectionWrap{padding:120px 80px;}
-  .section-stats{padding:60px 60px;}
+  .section-stats{padding:100px 100px;}
 
   /* 10. Components */
   /* Commented out by GL - 09/29/2017 - PostShareWidget{display:flex;flex-direction:column;height:80px;width:initial;position:fixed;top:47%;left:15px;background-color:transparent;box-shadow:none;border:none;}*/
@@ -841,7 +841,7 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
 
   /* 7. Grid containers */
   .sectionWrap{padding:140px 100px;}
-  .section-stats{padding:60px 60px;}
+  .section-stats{padding:100px 100px;}
   .blog-post{padding:100px 100px;}
 
   /* 21. Cards */
