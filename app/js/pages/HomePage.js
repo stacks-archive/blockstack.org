@@ -136,17 +136,15 @@ class HomePage extends Component {
                   </p>
                   <div className="no-padding container-fluid col-md-10 col-lg-10 col-centered m-b-55">
                     <div className="row">
-                      <div className="col-sm-12 col-md-4 mx-auto">
-                        <p className="">
-                          <Link to="/install" role="button"
-                            className="btn btn-primary btn-block btn-block-reset" style={{ minWidth: '245px' }}>
-                            Install
-                          </Link>
-                        </p>
+                      <div className="col-sm-12 col-md-5 mx-auto">
+                        <Link to="/install" role="button"
+                          className="btn btn-primary btn-block btn-block-reset" style={{ minWidth: '245px' }}>
+                          Install
+                        </Link>
                       </div>
                     </div>
                   </div>
-                  <div className="no-padding container-fluid col-md-9 col-centered">
+                  <div className="container container-md mx-auto no-padding">
                     <div className="text-center d-none d-sm-block">
                       <Image className="landing-feat-img"
                         src="/images/resources/browser-home-screen@2x.png"
@@ -162,20 +160,20 @@ class HomePage extends Component {
             </div>
 
             {/* New section layout applied */}
-            <div className="container-fluid sectionWrap bg-secondary section-stats">
-              <div className="container">
+            <div className="container-fluid sectionWrap bg-primary-dark section-stats">
+              <div className="container container-md mx-auto">
                 <div className="row">
                   <div className="col-sm-4 text-center text-stats text-white">
                     {this.state.stats.domains.toLocaleString()}
-                    <span className="text-stats-description text-white">domains registered</span>
+                    <span className="text-stats-description purple-50">domains registered</span>
                   </div>
                   <div className="col-sm-4 text-center text-stats text-white">
                     3+
-                    <span className="text-stats-description text-white">years in production</span>
+                    <span className="text-stats-description purple-50">years in production</span>
                   </div>
                   <div className="col-sm-4 text-center text-stats text-white">
                     {this.state.stats.meetupUsers.toLocaleString()}
-                    <span className="text-stats-description text-white">community devs</span>
+                    <span className="text-stats-description purple-50">community devs</span>
                   </div>
                 </div>
               </div>
@@ -217,10 +215,10 @@ class HomePage extends Component {
             {/* New section layout applied */}
             <div className="container-fluid sectionWrap bg-white">
               <div className="row">
-                <div className="container">
+                <div className="container container-lg mx-auto">
                   <div className="row">
                     <div className="container-fluid">
-                      <h2 className="text-center m-b-25">
+                      <h2 className="text-center m-b-40">
                         A Full Stack for Decentralized Apps
                       </h2>
                     </div>
