@@ -26,7 +26,7 @@ class SignUpPage extends Component {
                       Sign Up for Updates
                     </h2>
                   <div className="container-fluid">
-                    <p>Our browser isn't ready for the public yet but join our mailing list and we'll notify you about upcoming product launches.</p>
+                    <p>Join our mailing list to stay up to date with the Blockstack community. You'll hear about product launches, upcoming events, newly released applications and more</p>
                     <MailchimpForm subscribeURL={subscribeURL} submitButtonText='Sign Up' />
                   </div>
                   </div>
