@@ -134,7 +134,7 @@ class HomePage extends Component {
                   <p className="hero-lead purple-50 col-md-9 col-centered">
                     Blockstack is a new internet for decentralized apps where users own their data.<br/>A browser is all that’s needed to get started.
                   </p>
-                  <div className="no-padding container-fluid col-md-10 col-lg-10 col-centered m-b-55">
+                  <div className="no-padding container-fluid col-md-10 col-lg-10 col-centered m-b-50">
                     <div className="row">
                       <div className="col-sm-12 col-md-6">
                         <p className="float-md-right">
@@ -152,9 +152,15 @@ class HomePage extends Component {
                           </Link>
                         </p>
                       </div>
+                      <div className="col-sm-12 col-md-5 col-lg-4 mr-auto m-b-15">
+                        <Link to="/signup" role="button"
+                          className="btn btn-primary btn-block" style={{ minWidth: '180px' }}>
+                          Sign up
+                        </Link>
+                      </div>
                     </div>
                   </div>
-                  <div className="container container-md mx-auto no-padding">
+                  <div className="container col-md-9 mx-auto no-padding">
                     <div className="text-center d-none d-sm-block">
                       <Image className="landing-feat-img"
                         src="/images/resources/browser-home-screen@2x.png"
@@ -170,20 +176,20 @@ class HomePage extends Component {
             </div>
 
             {/* New section layout applied */}
-            <div className="container-fluid sectionWrap bg-primary-dark section-stats">
-              <div className="container container-md mx-auto">
+            <div className="container-fluid sectionWrap bg-secondary section-stats">
+              <div className="container container-xl mx-auto">
                 <div className="row">
                   <div className="col-sm-4 text-center text-stats text-white">
                     {this.state.stats.domains.toLocaleString()}
-                    <span className="text-stats-description purple-50">domains registered</span>
+                    <span className="text-stats-description text-white">domains registered</span>
                   </div>
                   <div className="col-sm-4 text-center text-stats text-white">
                     3+
-                    <span className="text-stats-description purple-50">years in production</span>
+                    <span className="text-stats-description text-white">years in production</span>
                   </div>
                   <div className="col-sm-4 text-center text-stats text-white">
                     {this.state.stats.meetupUsers.toLocaleString()}
-                    <span className="text-stats-description purple-50">community devs</span>
+                    <span className="text-stats-description text-white">community devs</span>
                   </div>
                 </div>
               </div>
