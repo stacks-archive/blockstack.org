@@ -167,7 +167,7 @@ class HomePage extends Component {
 
             {/* New section layout applied */}
             <div className="container-fluid sectionWrap bg-secondary section-stats">
-              <div className="container container-md mx-auto">
+              <div className="container container-xl mx-auto">
                 <div className="row">
                   <div className="col-sm-4 text-center text-stats text-white">
                     {this.state.stats.domains.toLocaleString()}
