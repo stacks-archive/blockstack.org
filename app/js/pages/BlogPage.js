@@ -71,6 +71,11 @@ class BlogPage extends Component {
                     <h2 className="m-b-45">
                       Blockstack Blog
                     </h2>
+                    { this.state.posts.length == 0 && 
+                      <div className="m-t-100 m-b-100 text-center">
+                        <i className="fa fa-spinner fa-spin fa-3x fa-fw" />
+                      </div>
+                    }
                     { this.state.posts.map((post, index) => {
                       return (
                         <div className="m-b-20" key={index}>
