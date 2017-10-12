@@ -105,6 +105,9 @@ class Footer extends Component {
                     <div className="foot-item">
                       <Link to="/legal/terms-of-use">Terms of Use</Link>
                     </div>
+                    <div className="foot-item">
+                      <Link to="/legal/disclaimers">Disclaimers</Link>
+                    </div>
                   </div>
                 </div>
               </div>
