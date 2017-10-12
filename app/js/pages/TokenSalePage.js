@@ -99,7 +99,7 @@ class TokenSalePage extends Component {
                 <div className="col-md-10 mx-auto">
                   <div className="row">
                     <div className="col-md-4 text-center">
-                      <a href="/token-whitepaper.pdf">
+                      <a href="https://blockstack.com/tokenpaper.pdf">
                         <Image className="w-100 icon-lg-special"
                           src="/images/icons/icon-bsk-token-whitepaper@2x.png"
                           retinaSupport={false} />
@@ -110,7 +110,7 @@ class TokenSalePage extends Component {
                         <h3 className="text-white m-b-30">
                           Blockstack Token Whitepaper
                         </h3>
-                        <a href="/token-whitepaper.pdf" role="button"
+                        <a href="https://blockstack.com/tokenpaper.pdf" role="button"
                           className="btn btn-outline-light btn-pill" style={{ minWidth: '245px' }}>
                           Read the Whitepaper
                         </a>
