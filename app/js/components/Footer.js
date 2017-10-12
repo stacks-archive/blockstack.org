@@ -144,6 +144,14 @@ class Footer extends Component {
                     </div>
                   </div>
                 </div>
+                <div className="col-12 col-md-9 order-md-1 mt-1 mt-md-3">
+                  <div className="container">
+                    <div className="foot-text" style={{ fontSize: '8px', lineHeight: '8px' }}>
+                      The Blockstack Tokens are a crypto asset that is currently being developed by Blockstack Token LLC, a Delaware limited liability company, whose website can be found at www.blockstack.com.
+                      The website you are currently visiting (www.blockstack.org) is sponsored by Blockstack PBC, an affiliate of Blockstack Token LLC, and should not be viewed as an offer or sale of securities.
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
