@@ -96,6 +96,12 @@ class Footer extends Component {
                     <div className="foot-item">
                       <Link to={links.branding} target="_blank">Branding</Link>
                     </div>
+                    <div className="foot-item">
+                      <Link to="/legal/privacy-policy">Privacy Policy</Link>
+                    </div>
+                    <div className="foot-item">
+                      <Link to="/legal/terms-of-use">Terms of Use</Link>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -68,8 +68,20 @@
         "destination": "/docs-posts-identity-attestation.html"
       },
       {
+        "source": "/posts/legal-disclaimers",
+        "destination": "/docs-posts-legal-disclaimers.html"
+      },
+      {
         "source": "/posts/namespaces",
         "destination": "/docs-posts-namespaces.html"
+      },
+      {
+        "source": "/posts/privacy-policy",
+        "destination": "/docs-posts-privacy-policy.html"
+      },
+      {
+        "source": "/posts/terms-of-use",
+        "destination": "/docs-posts-terms-of-use.html"
       },
       {
         "source": "/tutorials/readme",

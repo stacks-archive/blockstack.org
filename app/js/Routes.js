@@ -68,6 +68,7 @@ export default (
 
       <Route path="/posts/:docSection" component={ArticlePage} />
       <Route path="/docs/:docSection" component={ArticlePage} />
+      <Route path="/legal/:docSection" component={ArticlePage} />
 
       <Route path="/auth" component={AuthPage} />
 
