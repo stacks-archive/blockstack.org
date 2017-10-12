@@ -84,6 +84,11 @@ class BlogPostPage extends Component {
     return (
       <DocumentTitle title={title}>
         <div>
+          { !currentPage && 
+            <div className="container container-lg sectionWrap blog-post bg-white m-t-100 m-b-100 text-center">
+              <i className="fa fa-spinner fa-spin fa-3x fa-fw" />
+            </div>
+          }
           { currentPage && currentPage.preview ?
           <div>
             <div className="hidden-image">
