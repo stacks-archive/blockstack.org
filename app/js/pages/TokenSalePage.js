@@ -91,16 +91,48 @@ class TokenSalePage extends Component {
                     <DarkForm subscribeURL={this.state.subscribeURL} submitButtonText='Sign Up' />
                   </div>
                 </div>
-                <p className="text-xs-center m-t-2 m-b-165">
-                  <Link to="/whitepaper.pdf" target="_blank" className="btn btn-outline-secondary"
-                  style={{ color: '#95889c' }}>
-                    Read the Whitepaper
-                  </Link>
-                </p>
               </section>
             </div>
 
-            {/* New section layout applied */}
+            <div className="container container-lg sectionWrap">
+              <div className="row">
+                <div className="col-md-10 mx-auto">
+                  <div className="row">
+                    <div className="col-md-4 text-center">
+                      <a href="/token-whitepaper.pdf">
+                        <Image className="w-100 icon-lg-special"
+                          src="/images/icons/icon-bsk-token-whitepaper@2x.png"
+                          retinaSupport={false} />
+                      </a>
+                    </div>
+                    <div className="col-md-8 d-flex align-items-center">
+                      <div className="container-fluid text-center">
+                        <h3 className="text-white m-b-30">
+                          Blockstack Token Whitepaper
+                        </h3>
+                        <a href="/token-whitepaper.pdf" role="button"
+                          className="btn btn-outline-light btn-pill" style={{ minWidth: '245px' }}>
+                          Read the Whitepaper
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </DocumentTitle>
+    )
+  }
+
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(TokenSalePage)
+
+/*
+
             <div className="container-fluid sectionWrap bg-secondary section-stats">
               <div className="container">
                 <div className="row">
@@ -120,7 +152,6 @@ class TokenSalePage extends Component {
               </div>
             </div>
 
-            {/* New section layout applied */}
             <div className="container-fluid sectionWrap bg-white">
               <div className="row">
                 <div className="container container-md">
@@ -186,57 +217,6 @@ class TokenSalePage extends Component {
               </div>
             </div>
 
-            {/* New section layout applied */}
-            <div className="container container-lg sectionWrap">
-              <div className="row">
-                <div className="col-md-10 mx-auto m-b-65">
-                  <div className="row">
-                    <div className="col-md-4 text-center">
-                      <a href="https://blockstack.org/whitepaper.pdf" target="_blank">
-                        <Image className="w-100 icon-lg-special"
-                          src="/images/icons/icon-bsk-technical-whitepaper@2x.png"
-                          retinaSupport={false} />
-                      </a>
-                    </div>
-                    <div className="col-md-8 d-flex align-items-center">
-                      <div className="container-fluid text-center">
-                        <h3 className="text-white m-b-30">
-                          Blockstack Technical Whitepaper
-                        </h3>
-                        <a href="https://blockstack.org/whitepaper.pdf" role="button"
-                          className="btn btn-outline-light btn-pill" style={{ minWidth: '245px' }}>
-                          Read the Whitepaper
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-10 mx-auto">
-                  <div className="row">
-                    <div className="col-md-4 text-center">
-                      <a href="https://blockstack.org/whitepaper.pdf" target="_blank">
-                        <Image className="w-100 icon-lg-special"
-                          src="/images/icons/icon-bsk-token-whitepaper@2x.png"
-                          retinaSupport={false} />
-                      </a>
-                    </div>
-                    <div className="col-md-8 d-flex align-items-center">
-                      <div className="container-fluid text-center">
-                        <h3 className="text-white m-b-30">
-                          Blockstack Token Whitepaper
-                        </h3>
-                        <a href="https://blockstack.org/whitepaper.pdf" role="button"
-                          className="btn btn-outline-light btn-pill" style={{ minWidth: '245px' }}>
-                          Read the Whitepaper
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* New section layout applied */}
             <div className="container-fluid sectionWrap bg-light-gray">
               <div className="row">
                 <div className="container-fluid">
@@ -250,7 +230,6 @@ class TokenSalePage extends Component {
               </div>
             </div>
 
-            {/* New section layout applied */}
             <div className="container-fluid sectionWrap bg-white">
               <div className="row">
                 <div className="container">
@@ -275,7 +254,6 @@ class TokenSalePage extends Component {
               </div>
             </div>
 
-            {/* New section layout applied */}
             <div className="container-fluid sectionWrap bg-light-gray">
               <div className="row">
                 <div className="container">
@@ -318,7 +296,6 @@ class TokenSalePage extends Component {
 
             <TeamMembers />
 
-            {/* New section layout applied */}
             <div className="container-fluid sectionWrap bg-light-gray">
               <div className="row">
                 <div className="container container-lg">
@@ -342,12 +319,4 @@ class TokenSalePage extends Component {
               </div>
             </div>
 
-          </div>
-        </div>
-      </DocumentTitle>
-    )
-  }
-
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(TokenSalePage)
+*/
