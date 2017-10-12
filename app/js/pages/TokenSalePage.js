@@ -187,6 +187,56 @@ class TokenSalePage extends Component {
             </div>
 
             {/* New section layout applied */}
+            <div className="container container-lg sectionWrap">
+              <div className="row">
+                <div className="col-md-10 mx-auto m-b-65">
+                  <div className="row">
+                    <div className="col-md-4 text-center">
+                      <a href="https://blockstack.org/whitepaper.pdf" target="_blank">
+                        <Image className="w-100 icon-lg-special"
+                          src="/images/icons/icon-bsk-technical-whitepaper@2x.png"
+                          retinaSupport={false} />
+                      </a>
+                    </div>
+                    <div className="col-md-8 d-flex align-items-center">
+                      <div className="container-fluid text-center">
+                        <h3 className="text-white m-b-30">
+                          Blockstack Technical Whitepaper
+                        </h3>
+                        <a href="https://blockstack.org/whitepaper.pdf" role="button"
+                          className="btn btn-outline-light btn-pill" style={{ minWidth: '245px' }}>
+                          Read the Whitepaper
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-10 mx-auto">
+                  <div className="row">
+                    <div className="col-md-4 text-center">
+                      <a href="https://blockstack.org/whitepaper.pdf" target="_blank">
+                        <Image className="w-100 icon-lg-special"
+                          src="/images/icons/icon-bsk-token-whitepaper@2x.png"
+                          retinaSupport={false} />
+                      </a>
+                    </div>
+                    <div className="col-md-8 d-flex align-items-center">
+                      <div className="container-fluid text-center">
+                        <h3 className="text-white m-b-30">
+                          Blockstack Token Whitepaper
+                        </h3>
+                        <a href="https://blockstack.org/whitepaper.pdf" role="button"
+                          className="btn btn-outline-light btn-pill" style={{ minWidth: '245px' }}>
+                          Read the Whitepaper
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* New section layout applied */}
             <div className="container-fluid sectionWrap bg-light-gray">
               <div className="row">
                 <div className="container-fluid">
