@@ -32,13 +32,13 @@ class Footer extends Component {
                       Pages
                     </div>
                     <div className="foot-item">
-                      <Link to="/intro">Intro</Link>
+                      <Link to="/install">Install</Link>
+                    </div>
+                    <div className="foot-item">
+                      <Link to="/about">About</Link>
                     </div>
                     <div className="foot-item">
                       <Link to="/tutorials">Tutorials</Link>
-                    </div>
-                    <div className="foot-item">
-                      <Link to="/blog">Blog</Link>
                     </div>
                     <div className="foot-item">
                       <Link to="/papers">Papers</Link>
@@ -47,10 +47,10 @@ class Footer extends Component {
                       <Link to="/videos">Videos</Link>
                     </div>
                     <div className="foot-item">
-                      <Link to="/about">About</Link>
+                      <Link to="/blog">Blog</Link>
                     </div>
                     <div className="foot-item">
-                      <Link to="/faq">FAQs</Link>
+                      <Link to="/faq">FAQ</Link>
                     </div>
                     <div className="foot-item">
                       <Link to="/careers">Careers</Link>
@@ -79,6 +79,9 @@ class Footer extends Component {
                     </div>
                     <div className="foot-item">
                       <Link to="/funding">Funding</Link>
+                    </div>
+                    <div className="foot-item">
+                      <Link to="/token">Token</Link>
                     </div>
                   </div>
                 </div>
