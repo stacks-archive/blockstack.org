@@ -194,7 +194,7 @@ class TokenSalePage extends Component {
                     <div className="col-md-4 text-center">
                       <a href="https://blockstack.org/whitepaper.pdf" target="_blank">
                         <Image className="w-100 icon-lg-special"
-                          src="/images/icons/icon-whitepaper-01@2x.png"
+                          src="/images/icons/icon-bsk-technical-whitepaper@2x.png"
                           retinaSupport={false} />
                       </a>
                     </div>
@@ -216,7 +216,7 @@ class TokenSalePage extends Component {
                     <div className="col-md-4 text-center">
                       <a href="https://blockstack.org/whitepaper.pdf" target="_blank">
                         <Image className="w-100 icon-lg-special"
-                          src="/images/icons/icon-whitepaper-01@2x.png"
+                          src="/images/icons/icon-bsk-token-whitepaper@2x.png"
                           retinaSupport={false} />
                       </a>
                     </div>
