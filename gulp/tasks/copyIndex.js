@@ -5,7 +5,7 @@ import fs     from 'fs'
 
 gulp.task('copyIndex', function() {
   var description = 'Blockstack is a new decentralized internet where users own their data and apps run locally.\
-                     Take back control over your digital life. A browser portal is all you need to get started.';
+                     Take back control over your digital life. A browser is all you need to get started.';
   var image = 'https://blockstack.org/images/metatags/twitter-image.png'
 
   var indexHtml = fs.readFileSync('app/index.html', 'utf8')
