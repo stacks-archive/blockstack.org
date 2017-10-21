@@ -56,6 +56,10 @@
         "destination": "/docs-posts-code-layout.html"
       },
       {
+        "source": "/posts/disclaimers",
+        "destination": "/docs-posts-disclaimers.html"
+      },
+      {
         "source": "/posts/explorer-installation",
         "destination": "/docs-posts-explorer-installation.html"
       },
@@ -66,10 +70,6 @@
       {
         "source": "/posts/identity-attestation",
         "destination": "/docs-posts-identity-attestation.html"
-      },
-      {
-        "source": "/posts/legal-disclaimers",
-        "destination": "/docs-posts-legal-disclaimers.html"
       },
       {
         "source": "/posts/namespaces",
@@ -100,8 +100,16 @@
         "destination": "/docs-tutorials-todo-list.html"
       },
       {
+        "source": "/blog/announcing-the-blockstack-token-whitepaper",
+        "destination": "/blog-announcing-the-blockstack-token-whitepaper.html"
+      },
+      {
         "source": "/blog/blockstack-cores-successful-hard-fork-to-version-0-17",
         "destination": "/blog-blockstack-cores-successful-hard-fork-to-version-0-17.html"
+      },
+      {
+        "source": "/blog/signature-bounties-for-decentralized-apps-on-the-new-internet",
+        "destination": "/blog-signature-bounties-for-decentralized-apps-on-the-new-internet.html"
       },
       {
         "source": "/blog/public-benefit-corp",
@@ -150,14 +158,6 @@
       {
         "source": "/blog/blockstack-explorer",
         "destination": "/blog-blockstack-explorer.html"
-      },
-      {
-        "source": "/blog/funding-the-new-decentralized-internet",
-        "destination": "/blog-funding-the-new-decentralized-internet.html"
-      },
-      {
-        "source": "/blog/blockstack-core-is-available-on-the-azure-marketplace",
-        "destination": "/blog-blockstack-core-is-available-on-the-azure-marketplace.html"
       },
       {
         "source": "**",
