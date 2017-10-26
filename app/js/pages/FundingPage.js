@@ -90,9 +90,23 @@ class FundingPage extends Component {
                   <p className="lead-lg text-center">
                     We partnered with thesis-driven venture capital firms who are aligned with our vision of a decentralized internet like <a href="http://www.luxcapital.com">Lux Capital</a>, <a href="http://rtf.vc/">Rising Tide</a>, <a href="https://compound.vc/">Compound</a>, <a href="http://openocean.vc/">OpenOcean</a>, and <a href="http://versionone.vc/">VersionOne</a> to fund app developers and teams looking to build their apps on the new fully decentralized internet. App creators will benefit directly from the deep expertise and insight of these experienced investors.
                   </p>
-                  <p className="lead-lg text-center">
+                  <p className="lead-lg text-center m-b-35">
                     Additionally, those who apply will be first to hear about “XPRIZE”-style prizes and bounties for large initiatives such as building a decentralized microblogging platform, funded by investors like <a href="https://twitter.com/naval">Naval Ravikant</a> (Founder: <a href="https://angel.co">AngelList</a>), <a href="http://continuations.com">Albert Wenger</a> (Managing Partner: <a href="https://www.usv.com">USV</a>) and more!
                   </p>
+                  <div className="row">
+                    <div className="col-lg-6 text-center m-b-25">
+                      <h4>Signature Bounties</h4>
+                      <p>
+                        <a href="https://tokenportfolio.eventbrite.com/?aff=funding">
+                          Encrypted Token Portfolio App
+                        </a>
+                      </p>
+                    </div>
+                    <div className="col-lg-6 text-center m-b-25">
+                      <h4>Submission Deadline</h4>
+                      <p>Dec 1, 2017</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

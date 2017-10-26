@@ -48,7 +48,7 @@ gulp.task('buildBlog', () => {
     const metatagMarkup = createMetatagMarkup(
       post.url, post.title, post.description, post.image)
     const modifiedIndex = indexHtml.replace('<meta charset="utf-8" />', metatagMarkup)
-    fs.writeFileSync('build/blog-' + post.urlSlug + '.html', modifiedIndex)    
+    fs.writeFileSync('build/blog-' + post.urlSlug + '.html', modifiedIndex)
   }
 
   function createBlogRecords(indexHtml, rssJSON) {
@@ -83,7 +83,7 @@ function buildDocFile(indexHtml, folderName, docFilename) {
   let pathname = 'app/docs' + folderName + '/' + docFilename
   let docPage = fs.readFileSync(pathname, 'utf8')
   let pageSections = docPage.split('---')
-  
+
   let description = ''
   let image = ''
   let title = ''
