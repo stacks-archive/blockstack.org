@@ -50,7 +50,7 @@ class DownloadsPage extends Component {
                               <div className="row">
                                 <a href={installationLinks.portalDevelopersMacOS} role="button"
                                   className="btn btn-secondary btn-block">
-                                  Releases on GitHub
+                                  Download
                                 </a>
                               </div>
                             </div>
@@ -69,7 +69,7 @@ class DownloadsPage extends Component {
                               <div className="row">
                                  <a href={installationLinks.portalDevelopersWindows} role="button"
                                   className="btn btn-secondary btn-block">
-                                  Releases on GitHub
+                                  Download
                                 </a>
                               </div>
                             </div>
@@ -86,10 +86,10 @@ class DownloadsPage extends Component {
                             </div>
                             <div className="col-md-6 m-b-15">
                               <div className="row">
-                                <a to="#" role="button"
-                                  className="btn btn-secondary btn-block disabled">
-                                  Coming Soon
-                                </a>
+                                <a href={installationLinks.portalDevelopersLinux} role="button"
+                                 className="btn btn-secondary btn-block">
+                                 Download
+                               </a>
                               </div>
                             </div>
                           </div>

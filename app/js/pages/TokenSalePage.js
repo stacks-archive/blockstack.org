@@ -110,7 +110,7 @@ class TokenSalePage extends Component {
                         <h3 className="text-white m-b-30">
                           Blockstack Token Whitepaper
                         </h3>
-                        <a href="/tokenpaper.pdf" role="button"
+                        <a href="https://blockstack.com/tokenpaper.pdf" role="button"
                           className="btn btn-outline-light btn-pill" style={{ minWidth: '245px' }}>
                           Read the Whitepaper
                         </a>
