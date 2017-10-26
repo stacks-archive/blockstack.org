@@ -211,6 +211,11 @@
         "type": 301
       },
       {
+        "source": "/tokenpaper.pdf",
+        "destination": "https://blockstack.com/tokenpaper.pdf",
+        "type": 301
+      },
+      {
         "source": "/articles",
         "destination": "/blog",
         "type": 301

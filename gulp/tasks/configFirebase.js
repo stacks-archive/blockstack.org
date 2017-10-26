@@ -91,6 +91,10 @@ gulp.task('configFirebase', () => {
       'destination': '/whitepaper.pdf'
     },
     {
+      'source': '/tokenpaper.pdf',
+      'destination': 'https://blockstack.com/tokenpaper.pdf'
+    },
+    {
       'source': '/articles',
       'destination': '/blog'
     },
