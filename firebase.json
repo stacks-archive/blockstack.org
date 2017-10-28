@@ -100,6 +100,10 @@
         "destination": "/docs-tutorials-todo-list.html"
       },
       {
+        "source": "/blog/blockstack-token-sale",
+        "destination": "/blog-blockstack-token-sale.html"
+      },
+      {
         "source": "/blog/announcing-the-blockstack-token-whitepaper",
         "destination": "/blog-announcing-the-blockstack-token-whitepaper.html"
       },
@@ -154,10 +158,6 @@
       {
         "source": "/blog/fastsync-is-now-available-on-the-aws-marketplace",
         "destination": "/blog-fastsync-is-now-available-on-the-aws-marketplace.html"
-      },
-      {
-        "source": "/blog/blockstack-explorer",
-        "destination": "/blog-blockstack-explorer.html"
       },
       {
         "source": "**",
