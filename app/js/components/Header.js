@@ -52,12 +52,6 @@ class Header extends Component {
           </button>
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav ml-sm-auto">
-              <li className="nav-item" style={{ paddingRight: '20px' }}>
-                <Link to="/token" role="button"
-                  className="btn btn-outline-alpha-light btn-sm btn-pill navbar-btn">
-                  Token
-                </Link>
-              </li>
               {this.state.navItems.map((navItem, index) => {
                 if (!navItem.hasOwnProperty('dropdown')) {
                   return (
@@ -97,7 +91,7 @@ class Header extends Component {
           <ul className="navbar-nav ml-sm-auto">
             <li className="nav-item" style={{ paddingTop: '10px', paddingRight: '20px', paddingBottom: '5px' }}>
               <Link to="/token" role="button"
-                className="btn btn-light btn-sm btn-block btn-pill navbar-btn">
+                className="btn btn-primary btn-sm btn-block navbar-btn">
                 Token
               </Link>
             </li>
