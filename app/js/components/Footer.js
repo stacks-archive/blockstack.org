@@ -81,7 +81,7 @@ class Footer extends Component {
                       <Link to="/funding">Funding</Link>
                     </div>
                     <div className="foot-item">
-                      <Link to="/token">Token</Link>
+                      <a href="http://blockstack.com" target="_blank">Token</a>
                     </div>
                   </div>
                 </div>
