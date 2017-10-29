@@ -421,7 +421,7 @@ a.nav-link:hover,a.nav-link:focus{color:#fff;}
 /* 26. Alerts */
 .alert{border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
 .alert-primary{background-color:#2C96FF;font-size:0.9375rem;border:none;}
-a.alert.alert-primary:hover,a.alert.alert-primary:focus,a.alert.alert-primary:visited{background-color:#2378CC;text-decoration:none;}
+a.alert.alert-primary:hover,a.alert.alert-primary:focus{background-color:#2378CC;text-decoration:none;}
 
 
 /* 29. Image thumbnails */

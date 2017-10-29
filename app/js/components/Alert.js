@@ -16,7 +16,7 @@ class Alert extends Component {
           <button type="button" className="close close-primary d-none d-sm-block" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-          <span style={{ marginLeft: "26px" }}>The <strong>Blockstack Token</strong> &nbsp;&nbsp; › &nbsp; <strong>Learn more</strong></span>
+          <span style={{ marginLeft: "26px" }}>Introducing the <strong>Blockstack Token</strong> &nbsp;&nbsp; › &nbsp; <strong>Learn more</strong></span>
         </div>
       </a>
     )
