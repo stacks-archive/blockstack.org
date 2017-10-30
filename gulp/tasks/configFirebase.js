@@ -55,7 +55,7 @@ gulp.task('configFirebase', () => {
   */
   const redirectRules = [
     {
-      'source': '/token/',
+      'source': '/token',
       'destination': 'https://blockstack.com'
     },
     {
