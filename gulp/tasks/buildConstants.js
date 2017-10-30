@@ -74,6 +74,38 @@ function buildTutorials(callback) {
   callback(null, tutorials)
 }
 
+function buildPress(callback) {
+  const pressFile = fs.readFileSync('app/docs/media/appearances.md', 'utf8')
+  const pressFileMain = pressFile.split('\n**Appearances**\n')[1]
+  const pressFileParts = pressFileMain.split('\n* ')
+  
+  let appearances = []
+
+  pressFileParts.map((part) => {
+    //console.log(part)
+    let appearance = {}
+
+    const split1 = part.split(' - **')
+    appearance.date = split1[0]
+    if (split1.length > 1) {
+      const split2 = split1[1].split('** - [')
+      appearance.publication = split2[0]
+      if (split2.length > 1) {
+        const split3 = split2[1].split('](')
+        appearance.title = split3[0]
+        if (split3.length > 1) {
+          const split4 = split3[1].split(')')
+          appearance.url = split4[0]
+          appearances.push(appearance)
+        }
+      }   
+    }
+
+  })
+
+  callback(null, appearances)
+}
+
 function buildPapers(callback) {
   const papersFile = fs.readFileSync('app/docs/papers/README.md', 'utf8')
 
@@ -132,6 +164,7 @@ gulp.task('buildConstants', () => {
     papers: buildPapers,
     videos: buildVideos,
     tutorials: buildTutorials,
+    press: buildPress,
   }, (err, results) => {
     const constants = Object.assign({}, results)
     fs.writeFile('app/constants.json', JSON.stringify(constants), (err) => {
