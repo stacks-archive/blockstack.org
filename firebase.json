@@ -166,8 +166,13 @@
     ],
     "redirects": [
       {
+        "source": "/token",
+        "destination": "https://blockstack.com",
+        "type": 301
+      },
+      {
         "source": "/token/",
-        "destination": "/token",
+        "destination": "https://blockstack.com",
         "type": 301
       },
       {
@@ -332,7 +337,7 @@
       },
       {
         "source": "/tokensale",
-        "destination": "/token",
+        "destination": "https://blockstack.com",
         "type": 301
       },
       {
