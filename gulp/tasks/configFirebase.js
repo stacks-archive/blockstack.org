@@ -56,7 +56,11 @@ gulp.task('configFirebase', () => {
   const redirectRules = [
     {
       'source': '/token/',
-      'destination': '/token'
+      'destination': 'https://blockstack.com'
+    },
+    {
+      'source': '/token/',
+      'destination': 'https://blockstack.com'
     },
     {
       'source': '/summit2017/',
@@ -188,7 +192,7 @@ gulp.task('configFirebase', () => {
     },
     {
       'source': '/tokensale',
-      'destination': '/token'
+      'destination': 'https://blockstack.com'
     },
     {
       'source': '/blog/the-scaling-announcement-bitcoin-core-should-have-made-146790f755df',
