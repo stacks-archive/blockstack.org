@@ -83,6 +83,9 @@ class Footer extends Component {
                     <div className="foot-item">
                       <a href="http://blockstack.com" target="_blank">Token</a>
                     </div>
+                    <div className="foot-item">
+                      <Link to="/press">Press</Link>
+                    </div>
                   </div>
                 </div>
                 <div className="col-6 col-md-3">
