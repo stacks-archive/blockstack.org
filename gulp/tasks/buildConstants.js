@@ -40,15 +40,28 @@ function buildRoadmap(callback) {
   let roadmapItems = []
 
   roadmapFileParts.map((part) => {
-    let description = part.substring(part.indexOf('\n\n') + 2)
     let dateAndTitle = part.substring(0, part.indexOf('\n\n'))
     let date = dateAndTitle.substring(0, dateAndTitle.indexOf(': '))
-    let title = dateAndTitle.substring(dateAndTitle.indexOf(': ') + 2)
+    let title = date.length > 0 ? dateAndTitle.substring(dateAndTitle.indexOf(': ') + 2)
+    : part.substring(0, part.indexOf('\n\n'))
+    let description = part.substring(part.indexOf('\n\n') + (date.length > 0 ? 2 : 0))
+    let subParts = description.split('\n**')
+
+    if (subParts.length > 1) {
+      subParts = subParts.map((subPart, index) => {
+        let subPartTitle = subPart.substring(0, subPart.indexOf(':**'))
+        let subPartDescription = subPart.substring(subPart.indexOf(':**') + 3)
+        return {title: subPartTitle, description: subPartDescription}
+      })
+    } else {
+      subParts = [{title: '', description: subParts[0]}]
+    }
 
     roadmapItems.push({
       date: date,
       title: title,
-      description: description
+      description: description,
+      parts: subParts
     })
   })
 

@@ -100,6 +100,10 @@
         "destination": "/docs-tutorials-todo-list.html"
       },
       {
+        "source": "/blog/blockstack-token-sale-registration",
+        "destination": "/blog-blockstack-token-sale-registration.html"
+      },
+      {
         "source": "/blog/browser-public-alpha",
         "destination": "/blog-browser-public-alpha.html"
       },
@@ -154,10 +158,6 @@
       {
         "source": "/blog/hello-blockstack-tutorial",
         "destination": "/blog-hello-blockstack-tutorial.html"
-      },
-      {
-        "source": "/blog/serverless-sign-in-with-blockstack-auth",
-        "destination": "/blog-serverless-sign-in-with-blockstack-auth.html"
       },
       {
         "source": "**",
