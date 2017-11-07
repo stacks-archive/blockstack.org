@@ -58,10 +58,16 @@ class AuthPage extends Component {
   }
 
   signInWebAppUrl() {
-    return `https://browser.blockstack.com/auth?authRequest=${this.state.authRequest}`
+    let suffix = `/auth?authRequest=${this.state.authRequest}`
+    if (this.state.authRequest === null || this.state.authRequest === undefined) {
+      suffix = '/'
+    }
+    return `https://browser.blockstack.com${suffix}`
   }
 
   render() {
+    window.location = this.signInWebAppUrl()
+
     return (
       <DocumentTitle title="Sign In with Blockstack">
         <div>
@@ -69,31 +75,8 @@ class AuthPage extends Component {
             <div className="container col-centered">
               <div className="container col-centered m-b-5" style={{ minHeight: '800px' }}>
                 <h1>
-                  Sign in with Blockstack
+                  Redirecting to Blockstack Browser...
                 </h1>
-                <div>
-                  <h5>
-                    You're here because you clicked "Sign in with
-                    Blockstack" and you don't have the Blockstack app installed.
-                  </h5>
-                  <p>
-                    <Link to="/install" className="btn btn-secondary">
-                      Install Blockstack
-                    </Link>
-                  </p>
-                  {this.state.authRequest ?
-                    <div>
-                      <h4>
-                        - or -
-                      </h4>
-                      <p>
-                        <a className="btn btn-secondary" href={this.signInWebAppUrl()}>
-                          Sign In With Blockstack Web App
-                        </a>
-                      </p>
-                    </div>
-                  : null }
-                </div>
               </div>
             </div>
           </section>
