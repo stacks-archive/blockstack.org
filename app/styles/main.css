@@ -832,7 +832,7 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
 
   /* 37. Misc */
   .simple-featurette{margin-top:155px;}
-  .banner-timer-wrap{display:unset;margin-top:0;margin-left:15px;background-color:#2786E5;padding:14px 14px 10px;border-radius:4px;}
+  .banner-timer-wrap{display:initial;margin-top:0;margin-left:15px;background-color:#2786E5;padding:14px 14px 10px;border-radius:4px;}
 
   /* 38. f. - Embed */
   .video-special-row{margin-top:100px;background-color:#1A1D1F;}
