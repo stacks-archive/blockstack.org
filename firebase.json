@@ -100,6 +100,10 @@
         "destination": "/docs-tutorials-todo-list.html"
       },
       {
+        "source": "/blog/signature-berlin",
+        "destination": "/blog-signature-berlin.html"
+      },
+      {
         "source": "/blog/blockstack-token-sale-registration",
         "destination": "/blog-blockstack-token-sale-registration.html"
       },
@@ -154,10 +158,6 @@
       {
         "source": "/blog/blockstack-whitepaper-part-1",
         "destination": "/blog-blockstack-whitepaper-part-1.html"
-      },
-      {
-        "source": "/blog/hello-blockstack-tutorial",
-        "destination": "/blog-hello-blockstack-tutorial.html"
       },
       {
         "source": "**",
