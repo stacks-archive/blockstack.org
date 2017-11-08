@@ -2,6 +2,10 @@
 
 import {Component}  from 'react'
 import {Link} from 'react-router'
+import Countdown from 'react-countdown-now';
+import CountdownTimer from './CountdownTimer'
+
+const registrationEndDate = "Friday, November 11 2017 12:00:00 EDT"
 
 class Alert extends Component {
 
@@ -17,9 +21,10 @@ class Alert extends Component {
             <span aria-hidden="true">&times;</span>
           </button>
           <span className="" style={{ marginLeft: "26px" }}>Blockstack Token Sale Registration Now Open &nbsp;&nbsp; › &nbsp; <strong>Register Now</strong></span>
-          <span className="banner-timer-wrap">
-            <span className="banner-time">03</span> days <span className="banner-time">12</span> hrs
-          </span>
+          <Countdown 
+            date={Date.parse(registrationEndDate)}
+            renderer={CountdownTimer}
+          />
         </div>
       </a>
     )
