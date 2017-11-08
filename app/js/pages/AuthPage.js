@@ -58,7 +58,7 @@ class AuthPage extends Component {
   }
 
   signInWebAppUrl() {
-    return `https://browser.blockstack.com/auth?authRequest=${this.state.authRequest}`
+    return `https://browser.blockstack.org/auth?authRequest=${this.state.authRequest}`
   }
 
   render() {
