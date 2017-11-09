@@ -42,7 +42,8 @@ class DownloadsPage extends Component {
                             <div className="col-md-6">
                               <div className="row">
                                 <p className="lead-lg d-sm-block m-b-10">
-                                  macOS
+                                  macOS<br/>
+                                  <span className="small text-muted">Requires Sierra 10.12+</span>
                                 </p>
                               </div>
                             </div>
@@ -61,7 +62,8 @@ class DownloadsPage extends Component {
                             <div className="col-md-6">
                               <div className="row">
                                 <p className="lead-lg d-sm-block m-b-10">
-                                  Windows
+                                  Windows<br/>
+                                  <span className="small text-muted">Requires Windows 10</span>
                                 </p>
                               </div>
                             </div>
