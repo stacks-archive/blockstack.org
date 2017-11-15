@@ -5,7 +5,7 @@ import {Link} from 'react-router'
 import Countdown from 'react-countdown-now';
 import CountdownTimer from './CountdownTimer'
 
-const registrationEndDate = "Wednesday, November 15 2017 15:00:00 EDT"
+const registrationEndDate = "Wednesday, November 15 2017 15:00:00 EST"
 
 class Alert extends Component {
 
