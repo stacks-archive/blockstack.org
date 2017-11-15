@@ -100,6 +100,10 @@
         "destination": "/docs-tutorials-todo-list.html"
       },
       {
+        "source": "/blog/registration-extension",
+        "destination": "/blog-registration-extension.html"
+      },
+      {
         "source": "/blog/signature-berlin",
         "destination": "/blog-signature-berlin.html"
       },
@@ -154,10 +158,6 @@
       {
         "source": "/blog/introducing-the-blockstack-browser-a-gateway-to-a-new-decentralized-internet",
         "destination": "/blog-introducing-the-blockstack-browser-a-gateway-to-a-new-decentralized-internet.html"
-      },
-      {
-        "source": "/blog/blockstack-whitepaper-part-1",
-        "destination": "/blog-blockstack-whitepaper-part-1.html"
       },
       {
         "source": "**",
