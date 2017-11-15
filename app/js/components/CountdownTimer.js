@@ -2,13 +2,15 @@
 
 const CountdownTimer = (props) => {
 
-  const dayString = props.days
-  const hourString = props.hours
+  const dayString = Math.max(0, props.days)
+  const hourString = Math.max(0, props.hours)
+  const minuteString = Math.max(0, props.minutes)
 
   return (
     <span className="banner-timer-wrap">
-      <span className="banner-time">{dayString}</span> days 
+    	{props.days > 0 && <span><span className="banner-time">{dayString}</span> days</span>}
       <span className="banner-time">{hourString}</span> hrs
+      {props.days <= 0 && <span><span className="banner-time">{minuteString}</span> mins</span>}
     </span>
   )
 }
