@@ -20,7 +20,7 @@ class Alert extends Component {
           <button type="button" className="close close-primary d-none d-sm-block" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-          <span className="" style={{ marginLeft: "26px" }}>The Blockstack Token Main Sale has started - <strong>Thu, Nov 16 at 12pm EST</strong></span>
+          <span className="" style={{ marginLeft: "26px" }}>Blockstack Token Main Sale Starts - <strong>Thu, Nov 16 at 12pm EST</strong></span>
         </div>
       </a>
     )
