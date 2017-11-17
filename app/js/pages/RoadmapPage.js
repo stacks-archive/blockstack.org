@@ -25,8 +25,19 @@ class RoadmapPage extends Component {
                   {milestones.map((milestone, index) => {
                     return (
                       <div key={index}>
-                        <h3>{milestone.date}: {milestone.title}</h3>
-                        <p>{milestone.description}</p>
+                        <h3>{milestone.date}{milestone.date.length > 0 && ':'} {milestone.title}</h3>
+                        {milestone.parts.length > 1 ? 
+                          milestone.parts.map((part, index) => {
+                            return (
+                              <p key={index}>
+                                {part.title.length > 0 ? <strong>{part.title}:</strong> : ''}
+                                {part.description}
+                              </p>
+                              )
+                          })
+                          : 
+                          <p>{milestone.description}</p>
+                        }
                       </div>
                     )
                   })}

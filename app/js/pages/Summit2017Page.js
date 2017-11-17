@@ -75,6 +75,7 @@ class Summit2017Page extends Component {
       <DocumentTitle title="Blockstack Summit 2017">
         <div className="feature-event-hero">
           <div className="col-centered block">
+            <Alert />
             <Header transparent={true} />
             <div className="container p-b-90">
               <section className="text-xs-center">

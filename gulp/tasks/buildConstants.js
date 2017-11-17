@@ -40,15 +40,28 @@ function buildRoadmap(callback) {
   let roadmapItems = []
 
   roadmapFileParts.map((part) => {
-    let description = part.substring(part.indexOf('\n\n') + 2)
     let dateAndTitle = part.substring(0, part.indexOf('\n\n'))
     let date = dateAndTitle.substring(0, dateAndTitle.indexOf(': '))
-    let title = dateAndTitle.substring(dateAndTitle.indexOf(': ') + 2)
+    let title = date.length > 0 ? dateAndTitle.substring(dateAndTitle.indexOf(': ') + 2)
+    : part.substring(0, part.indexOf('\n\n'))
+    let description = part.substring(part.indexOf('\n\n') + (date.length > 0 ? 2 : 0))
+    let subParts = description.split('\n**')
+
+    if (subParts.length > 1) {
+      subParts = subParts.map((subPart, index) => {
+        let subPartTitle = subPart.substring(0, subPart.indexOf(':**'))
+        let subPartDescription = subPart.substring(subPart.indexOf(':**') + 3)
+        return {title: subPartTitle, description: subPartDescription}
+      })
+    } else {
+      subParts = [{title: '', description: subParts[0]}]
+    }
 
     roadmapItems.push({
       date: date,
       title: title,
-      description: description
+      description: description,
+      parts: subParts
     })
   })
 
@@ -72,6 +85,38 @@ function buildTutorials(callback) {
   })
 
   callback(null, tutorials)
+}
+
+function buildPress(callback) {
+  const pressFile = fs.readFileSync('app/docs/media/appearances.md', 'utf8')
+  const pressFileMain = pressFile.split('\n**Appearances**\n')[1]
+  const pressFileParts = pressFileMain.split('\n* ')
+  
+  let appearances = []
+
+  pressFileParts.map((part) => {
+    //console.log(part)
+    let appearance = {}
+
+    const split1 = part.split(' - **')
+    appearance.date = split1[0]
+    if (split1.length > 1) {
+      const split2 = split1[1].split('** - [')
+      appearance.publication = split2[0]
+      if (split2.length > 1) {
+        const split3 = split2[1].split('](')
+        appearance.title = split3[0]
+        if (split3.length > 1) {
+          const split4 = split3[1].split(')')
+          appearance.url = split4[0]
+          appearances.push(appearance)
+        }
+      }   
+    }
+
+  })
+
+  callback(null, appearances)
 }
 
 function buildPapers(callback) {
@@ -132,6 +177,7 @@ gulp.task('buildConstants', () => {
     papers: buildPapers,
     videos: buildVideos,
     tutorials: buildTutorials,
+    press: buildPress,
   }, (err, results) => {
     const constants = Object.assign({}, results)
     fs.writeFile('app/constants.json', JSON.stringify(constants), (err) => {

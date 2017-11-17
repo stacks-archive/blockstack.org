@@ -100,6 +100,26 @@
         "destination": "/docs-tutorials-todo-list.html"
       },
       {
+        "source": "/blog/registration-extension",
+        "destination": "/blog-registration-extension.html"
+      },
+      {
+        "source": "/blog/signature-berlin",
+        "destination": "/blog-signature-berlin.html"
+      },
+      {
+        "source": "/blog/blockstack-token-sale-registration",
+        "destination": "/blog-blockstack-token-sale-registration.html"
+      },
+      {
+        "source": "/blog/browser-public-alpha",
+        "destination": "/blog-browser-public-alpha.html"
+      },
+      {
+        "source": "/blog/blockstack-token-sale",
+        "destination": "/blog-blockstack-token-sale.html"
+      },
+      {
         "source": "/blog/announcing-the-blockstack-token-whitepaper",
         "destination": "/blog-announcing-the-blockstack-token-whitepaper.html"
       },
@@ -140,34 +160,19 @@
         "destination": "/blog-introducing-the-blockstack-browser-a-gateway-to-a-new-decentralized-internet.html"
       },
       {
-        "source": "/blog/blockstack-whitepaper-part-1",
-        "destination": "/blog-blockstack-whitepaper-part-1.html"
-      },
-      {
-        "source": "/blog/hello-blockstack-tutorial",
-        "destination": "/blog-hello-blockstack-tutorial.html"
-      },
-      {
-        "source": "/blog/serverless-sign-in-with-blockstack-auth",
-        "destination": "/blog-serverless-sign-in-with-blockstack-auth.html"
-      },
-      {
-        "source": "/blog/fastsync-is-now-available-on-the-aws-marketplace",
-        "destination": "/blog-fastsync-is-now-available-on-the-aws-marketplace.html"
-      },
-      {
-        "source": "/blog/blockstack-explorer",
-        "destination": "/blog-blockstack-explorer.html"
-      },
-      {
         "source": "**",
         "destination": "/index.html"
       }
     ],
     "redirects": [
       {
+        "source": "/token",
+        "destination": "https://blockstack.com",
+        "type": 301
+      },
+      {
         "source": "/token/",
-        "destination": "/token",
+        "destination": "https://blockstack.com",
         "type": 301
       },
       {
@@ -332,7 +337,7 @@
       },
       {
         "source": "/tokensale",
-        "destination": "/token",
+        "destination": "https://blockstack.com",
         "type": 301
       },
       {

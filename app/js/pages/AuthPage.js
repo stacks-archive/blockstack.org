@@ -18,6 +18,7 @@ class AuthPage extends Component {
     }
 
     this.signIn = this.signIn.bind(this)
+    this.signInWebAppUrl = this.signInWebAppUrl.bind(this)
     this.getAuthRequest = this.getAuthRequest.bind(this)
   }
 
@@ -56,23 +57,27 @@ class AuthPage extends Component {
     }
   }
 
+  signInWebAppUrl() {
+    return `https://browser.blockstack.org/auth?authRequest=${this.state.authRequest}`
+  }
+
   render() {
     return (
       <DocumentTitle title="Sign In with Blockstack">
         <div>
           <section className="container-fluid spacing-container">
             <div className="container col-centered">
-              <div className="container m-b-5" style={{ minHeight: '800px' }}>
+              <div className="container col-centered m-b-5" style={{ minHeight: '800px' }}>
                 <h1>
                   Sign in with Blockstack
                 </h1>
                 <div>
-                  <h4>
+                  <h5>
                     You're here because you clicked "Sign in with
-                    Blockstack" and you don't have the Blockstack app.
-                  </h4>
+                    Blockstack" and you don't have the Blockstack app installed.
+                  </h5>
                   <p>
-                    <Link to="/install" className="btn btn-outline-primary">
+                    <Link to="/install" className="btn btn-secondary">
                       Install Blockstack
                     </Link>
                   </p>
@@ -82,19 +87,12 @@ class AuthPage extends Component {
                         - or -
                       </h4>
                       <p>
-                        <Link className="btn btn-secondary"
-                              onClick={this.signIn}>
-                          Quick Sign In
-                        </Link>
+                        <a className="btn btn-secondary" href={this.signInWebAppUrl()}>
+                          Sign In With Blockstack Web App
+                        </a>
                       </p>
                     </div>
                   : null }
-                  <p><i>
-                    Note: If you already have Blockstack,
-                    go to your settings page in Blockstack and
-                    enable the auth protocol handler,
-                    then go to the app and try signing in again.
-                  </i></p>
                 </div>
               </div>
             </div>

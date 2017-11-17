@@ -421,7 +421,7 @@ a.nav-link:hover,a.nav-link:focus{color:#fff;}
 /* 26. Alerts */
 .alert{border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
 .alert-primary{background-color:#2C96FF;font-size:0.9375rem;border:none;}
-a.alert.alert-primary:hover{background-color:#2378CC;text-decoration:none;}
+a.alert.alert-primary:hover,a.alert.alert-primary:focus{background-color:#2378CC;text-decoration:none;}
 
 
 /* 29. Image thumbnails */
@@ -531,7 +531,8 @@ a.img-hover-scale.active{display:block;outline:5px solid #2C96FF;}
 .h-press-observer{width:150px;margin-top:25px;margin-bottom:41px;}
 .h-press-mit{width:150px;margin-top:0px;margin-bottom:16px;}
 .icon-lg-special{max-width:140px;margin-bottom:30px;}
-
+.banner-timer-wrap{display:block;margin-top:5px;margin-left:15px;background-color:#2786E5;padding:13px 14px 10px;border-radius:4px;}
+.banner-time{font-size:24px;font-weight:900;margin-left:7px;}
 
 /* 38. Utilities */
 .drop-shadow{-webkit-box-shadow:0px 0px 30px 0px rgba(0,0,0,0.1);box-shadow:0px 0px 30px 0px rgba(0,0,0,0.1);}
@@ -831,6 +832,7 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
 
   /* 37. Misc */
   .simple-featurette{margin-top:155px;}
+  .banner-timer-wrap{display:initial;margin-top:0;margin-left:15px;background-color:#2786E5;padding:14px 14px 10px;border-radius:4px;}
 
   /* 38. f. - Embed */
   .video-special-row{margin-top:100px;background-color:#1A1D1F;}
