@@ -121,6 +121,12 @@ export const teamMembers = [
     bio: 'Jack Zampolin came to Blockstack from InfluxData where he engaged with and grew the developer community as a Developer Evangelist. Before that he helped launch a hardware startup called RightPSI in Bozeman, MT.',
   },
   {
+    blockstackId: 'yukan.id',
+    name: 'Ken Liao',
+    avatar: '/images/avatars/ken-liao.jpg',
+    bio: 'Ken Liao studied Computer Engineering at the University of Waterloo and co-founded the fashion brand marketplace, PR-A-PO. He designed and built mobile apps which were featured as Best New App on the Apple App Store.',
+  },
+  {
     blockstackId: 'mfreed',
     name: 'Michael Freedman, Technical Advisor',
     avatar: '/images/avatars/mike-freedman.jpg',
