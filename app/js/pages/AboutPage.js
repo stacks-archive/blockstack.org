@@ -50,7 +50,7 @@ class AboutPage extends Component {
                       </a> (available for Mac, Windows, and Linux).
                     </p>
                     <p className="mb-5">
-                      There are ___ Blockstack apps currently in production and more being built 
+                      There are many Blockstack apps already in production and more being built 
                       every day with the participation of the online open source community and in 
                       partnership with VC Bounties Programs. See more on that at <a href="/funding">
                       blockstack.org/funding</a>
