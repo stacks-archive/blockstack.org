@@ -15,9 +15,9 @@ export const socialLinks = {
 export const installationLinks = {
   portalMacOS: 'https://github.com/blockstack/blockstack-browser/releases/download/v0.9.0/Blockstack-v0.9.app.zip',
   portalDevelopers: 'https://github.com/blockstack/blockstack-browser/releases',
-  portalDevelopersMacOS: 'https://github.com/blockstack/blockstack-browser/releases/download/v0.21.1/Blockstack-for-macOS-v0.21.1.dmg',
-  portalDevelopersWindows: 'https://github.com/blockstack/blockstack-browser/releases/download/v0.21.1/Blockstack-for-win10-v0.21.1.msi',
-  portalDevelopersLinux: 'https://github.com/blockstack/blockstack-browser/releases/download/v0.21.1/Blockstack-for-Linux-v0.21.1.sh',
+  portalDevelopersMacOS: 'https://github.com/blockstack/blockstack-browser/releases/download/v0.21.2/Blockstack-for-macOS-v0.21.2.dmg',
+  portalDevelopersWindows: 'https://github.com/blockstack/blockstack-browser/releases/download/v0.21.2/Blockstack-for-wind10-v0.21.2.msi',
+  portalDevelopersLinux: 'https://github.com/blockstack/blockstack-browser/releases/download/v0.21.2/Blockstack-for-Linux-v0.21.2.sh',
   portalDevelopersWeb: 'https://browser.blockstack.org',
   cliDevelopers: 'https://github.com/blockstack/blockstack-core',
 }
@@ -119,6 +119,12 @@ export const teamMembers = [
     name: 'Jack Zampolin',
     avatar: '/images/avatars/jack-zampolin.jpg',
     bio: 'Jack Zampolin came to Blockstack from InfluxData where he engaged with and grew the developer community as a Developer Evangelist. Before that he helped launch a hardware startup called RightPSI in Bozeman, MT.',
+  },
+  {
+    blockstackId: 'yukan.id',
+    name: 'Ken Liao',
+    avatar: '/images/avatars/ken-liao.jpg',
+    bio: 'Ken Liao studied Computer Engineering at the University of Waterloo and co-founded the fashion brand marketplace, PR-A-PO. He designed and built mobile apps which were featured as Best New App on the Apple App Store.',
   },
   {
     blockstackId: 'mfreed',
