@@ -4,7 +4,6 @@ import {Component, PropTypes, cloneElement} from 'react'
 
 import Header             from './components/Header'
 import Footer             from './components/Footer'
-import Alert              from './components/Alert'
 
 
 const propTypes = {
@@ -51,7 +50,6 @@ class App extends Component {
       <div className={specialHeader ? 'app-landing' : 'app-common'}>
         { !specialHeader ?
         <div>
-          <Alert />
           <Header />
         </div>
         : null }
