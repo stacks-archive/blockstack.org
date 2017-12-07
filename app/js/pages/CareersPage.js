@@ -1,13 +1,13 @@
 'use strict'
 
-import {Component}      from 'react'
-import DocumentTitle    from 'react-document-title'
+import {Component}          from 'react'
+import DocumentTitle        from 'react-document-title'
 import {bindActionCreators} from 'redux'
 import {connect}            from 'react-redux'
 
-import {StatsActions}      from '../datastore/Stats'
-import JobListing       from '../components/JobListing'
-import { jobs } from '../config'
+import {StatsActions}       from '../datastore/Stats'
+import JobListing           from '../components/JobListing'
+import { jobs }             from '../config'
 
 function mapStateToProps(state) {
   return {
@@ -92,11 +92,8 @@ class CareersPage extends Component {
 
                 <div className="m-t-3 m-b-3">
                   <div className="row">
-                    <div className="col-md-6">
-                      <img src="/images/photos/retreat-1.jpg" style={{ width: '100%' }} />
-                    </div>
-                    <div className="col-md-6">
-                      <img src="/images/photos/retreat-2.jpg" style={{ width: '100%' }} />
+                    <div className="col-12">
+                      <img src="/images/photos/blockstackteam.jpg" alt="Blockstack team" style={{ width: '100%' }} />
                     </div>
                   </div>
                 </div>
