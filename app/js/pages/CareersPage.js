@@ -57,13 +57,13 @@ class CareersPage extends Component {
             <div className="container col-centered">
               <div className="container">
 
-                <div className="m-t-3 m-b-3">
+                <div className="mb-4">
                   <h1>
                     Careers
                   </h1>
                 </div>
 
-                <div className="m-t-3 m-b-3">
+                <div className="mb-4">
                 <p>
                   Blockstack is a global, open source community with over {this.state.stats.meetupUsers.toLocaleString()} developers.
                   It was co-founded by Ryan Shea and Muneeb Ali in 2013 at Princeton and the core team is based in New York City and Hong Kong.
@@ -73,7 +73,7 @@ class CareersPage extends Component {
                 </p>
                 </div>
 
-                <div className="m-t-3 m-b-3">
+                <div className="mb-4">
                   <h3>
                     More about us:
                   </h3>
@@ -90,7 +90,7 @@ class CareersPage extends Component {
                   </ul>
                 </div>
 
-                <div className="m-t-3 m-b-3">
+                <div className="mb-4">
                   <div className="row">
                     <div className="col-12">
                       <img src="/images/photos/blockstackteam.jpg" alt="Blockstack team" style={{ width: '100%' }} />
@@ -98,7 +98,7 @@ class CareersPage extends Component {
                   </div>
                 </div>
 
-                <div className="m-t-3 m-b-3">
+                <div className="mb-4">
                   <h3>
                     Benefits & Perks
                   </h3>
@@ -107,7 +107,7 @@ class CareersPage extends Component {
                   </p>
                 </div>
 
-                <div className="m-t-3 m-b-3">
+                <div className="mb-4">
                   <h3>
                     Open Positions
                   </h3>
@@ -120,7 +120,7 @@ class CareersPage extends Component {
                   })}
                 </div>
 
-                <div className="m-t-3 m-b-3">
+                <div className="mb-4">
                   <h3>
                     Contact Us
                   </h3>
