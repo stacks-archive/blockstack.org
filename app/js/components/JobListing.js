@@ -14,7 +14,7 @@ class JobListing extends Component {
 
   render() {
     return (
-      <div className="row m-b-1">
+      <div className="row mb-3">
         <div className="col-md-6">
           {this.props.title}
         </div>
