@@ -39,6 +39,14 @@ class DocsPage extends Component {
     Array.prototype.forEach.call(codeBlocks, hljs.highlightBlock)
   }
 
+  disableBodyScroll() {
+    document.body.style.overflow = 'hidden';
+  }
+
+  enableBodyScroll() {
+    document.body.style.overflow = 'auto';
+  }
+
   setPage() {
     const sections = [
       {
@@ -99,7 +107,7 @@ class DocsPage extends Component {
         { sections ?
         <div className="content-wrapper">
           <div className='sidebar-wrapper'>
-            <aside>
+            <aside onMouseEnter={this.disableBodyScroll} onMouseLeave={this.enableBodyScroll}>
               <div className="sidebar-header">
                 <Link className="navbar-brand" to="/">
                   blockstack

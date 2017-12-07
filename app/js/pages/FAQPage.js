@@ -34,6 +34,14 @@ class FAQpage extends Component {
     this.setQuestions()
   }
 
+  disableBodyScroll() {
+    document.body.style.overflow = 'hidden';
+  }
+
+  enableBodyScroll() {
+    document.body.style.overflow = 'auto';
+  }
+
   setQuestions() {
     let questions = []
     let markdown = docs['faqs'].markdown
@@ -57,7 +65,7 @@ class FAQpage extends Component {
       <DocumentTitle title="Blockstack - FAQ ">
         <div className="content-wrapper">
           <div className='sidebar-wrapper'>
-            <aside>
+            <aside onMouseEnter={this.disableBodyScroll} onMouseLeave={this.enableBodyScroll}>
               <div className="sidebar-header">
                 <Link className="navbar-brand" to="/">
                   blockstack
