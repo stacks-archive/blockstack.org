@@ -25,15 +25,15 @@ export const installationLinks = {
 export const jobs = [
   {
     'title': 'Frontend Engineer',
-    'url': 'https://github.com/blockstack/blockstack/blob/master/jobs/frontend-engineer.md'
+    'url': 'https://jobs.lever.co/blockstack/cf85b3ac-0e7c-4070-a8a4-af687a3fbac9?lever-origin=applied&lever-source%5B%5D=blockstack.org'
   },
   {
     'title': 'Backend Engineer',
-    'url': 'https://github.com/blockstack/blockstack/blob/master/jobs/backend-engineer.md'
+    'url': 'https://jobs.lever.co/blockstack/431188cd-63a3-4314-8d30-55a4d91722af?lever-origin=applied&lever-source%5B%5D=Blockstack.org'
   },
   {
-    'title': 'Product Manager',
-    'url': 'https://github.com/blockstack/blockstack/blob/master/jobs/product-manager.md'
+    'title': 'Technical Product Manager',
+    'url': 'https://jobs.lever.co/blockstack/f6a98e76-b1f6-4284-9c39-1bda11e7160a?lever-origin=applied&lever-source%5B%5D=Blockstack.com'
   },
 ]
 
