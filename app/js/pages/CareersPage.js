@@ -95,15 +95,15 @@ class CareersPage extends Component {
                 </div>
 
                 <div className="mb-4">
-                  <div className="row">
-                    <div className="col-12">
+                  <div className="row justify-content-md-center">
+                    <div className="col col-lg-9">
                       <img src="/images/photos/blockstackteam-1.jpg" alt="Blockstack team" style={{ width: '100%' }} />
                     </div>
                   </div>
                 </div>
                 <div className="mb-4">
-                  <div className="row">
-                    <div className="col-12">
+                  <div className="row justify-content-md-center">
+                    <div className="col col-lg-9">
                       <img src="/images/photos/blockstackteam-2.jpg" alt="Blockstack team" style={{ width: '100%' }} />
                     </div>
                   </div>
