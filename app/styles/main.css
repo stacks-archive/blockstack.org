@@ -868,7 +868,7 @@ pre{color:#2C96FF!important;font-size:13px;line-height:22px;white-space:pre;word
   .content-wrapper{min-width:768px;}
   .sidebar-wrapper{display:block;font-size:0.9375rem;}
   .sidebar-content-wrapper{height:100vh;max-width:770px;margin-left: calc((100% - 768px) / 2 + 220px);}
-  aside{position:fixed;top:0;left:0;height:100vh;width:calc((100% - 768px) / 2 + 220px);background-color:rgba(247,248,249,1);border-right:1px solid rgba(238,238,238,1);min-width:220px;padding-left:calc((100% - 768px) / 2);}
+  aside{position:fixed;top:0;left:0;height:100vh;width:calc((100% - 768px) / 2 + 220px);background-color:rgba(247,248,249,1);border-right:1px solid rgba(238,238,238,1);min-width:220px;padding-left:calc((100% - 768px) / 2);overflow-y:scroll;}
   .sidebar-header{height:63px;padding-left:20px;border-bottom:solid 1px #eee;line-height:1.375rem;}
   div.sidebar-header > a.navbar-brand{font-size:1.25rem;font-weight:700;color:#484848;}
   .sidebar-links{border-bottom:solid 1px #eee;line-height:1.375rem;}

@@ -11,7 +11,6 @@ import {StatsActions}      from '../datastore/Stats'
 import Image               from '../components/Image'
 import Header              from '../components/Header'
 import EmbedYouTube        from '../components/EmbedYouTube'
-import Alert               from '../components/Alert'
 import ContentSection      from '../components/ContentSection'
 import VideosPresentation  from '../components/VideosPresentation'
 import {featuredApps}      from '../config'
@@ -75,7 +74,6 @@ class Summit2017Page extends Component {
       <DocumentTitle title="Blockstack Summit 2017">
         <div className="feature-event-hero">
           <div className="col-centered block">
-            <Alert />
             <Header transparent={true} />
             <div className="container p-b-90">
               <section className="text-xs-center">

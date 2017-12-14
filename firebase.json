@@ -100,6 +100,10 @@
         "destination": "/docs-tutorials-todo-list.html"
       },
       {
+        "source": "/blog/blockstack-token-sale-recap",
+        "destination": "/blog-blockstack-token-sale-recap.html"
+      },
+      {
         "source": "/blog/registration-extension",
         "destination": "/blog-registration-extension.html"
       },
@@ -154,10 +158,6 @@
       {
         "source": "/blog/blockstack-summit-2017-freedom-to-innovate",
         "destination": "/blog-blockstack-summit-2017-freedom-to-innovate.html"
-      },
-      {
-        "source": "/blog/introducing-the-blockstack-browser-a-gateway-to-a-new-decentralized-internet",
-        "destination": "/blog-introducing-the-blockstack-browser-a-gateway-to-a-new-decentralized-internet.html"
       },
       {
         "source": "**",

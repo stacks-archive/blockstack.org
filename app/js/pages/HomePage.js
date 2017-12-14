@@ -10,7 +10,6 @@ import {BlogActions}       from '../datastore/Blog'
 import {StatsActions}      from '../datastore/Stats'
 import Image               from '../components/Image'
 import Header              from '../components/Header'
-import Alert               from '../components/Alert'
 import EmbedYouTube        from '../components/EmbedYouTube'
 import MultiVideoPlayer    from '../components/MultiVideoPlayer'
 import MailchimpForm       from '../components/MailchimpForm'
@@ -125,7 +124,6 @@ class HomePage extends Component {
         <div className="body-hero">
           <div className="w-100" style={{ overflow: 'hidden' }}>
             <div>
-              <Alert />
               <Header transparent={true} />
               <div className="container">
                 <section className="hero text-center">
