@@ -112,7 +112,7 @@ export const teamMembers = [
     blockstackId: 'pstanley',
     name: 'Patrick Stanley',
     avatar: '/images/avatars/patrick-stanley.jpg',
-    bio: 'Patrick Stanley studied Economics and Psychology at Johns Hopkins, and was the first employee at Earnest. In a growth role, he helped it scale from from 3 to 200+ employees and go from $0 to $1.5B in loans within 3 years.'
+    bio: 'Patrick Stanley studied Economics and Psychology at Johns Hopkins, and was the first employee at data-driven lending startup Earnest which sold to Navient for $155m in 2017. In a growth role there, he helped it scale from from 1 to 200 employees and go from $0 to $2B in originations within 3 years.'
   },
   {
     blockstackId: 'jzampolin',
