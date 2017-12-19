@@ -182,7 +182,7 @@ class FundingPage extends Component {
                     <div className="row">
                       <div className="col-lg-4 text-center m-b-25">
                         <p>
-                          <Link to="#" target="_blank">
+                          <Link to="/blog/encrypted-token-portfolio-bounty-recap" target="_blank">
                             Encrypted Token Portfolio
                           </Link>
                         </p>
