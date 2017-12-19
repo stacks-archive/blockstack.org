@@ -80,18 +80,125 @@ class FundingPage extends Component {
               </div>
             </div>
 
-            <div className="container-fluid sectionWrap bg-white">
+            <div className="container-fluid sectionWrap bg-light-gray">
               <div className="row">
                 <div className="container container-md">
                   <h3 className="text-center m-b-65">
                     The Signature Fund for Blockstack is a $25M fund aimed at growing an ecosystem of decentralized applications on Blockstack.
                   </h3>
                   <p className="lead-lg text-center">
-                    We partnered with thesis-driven venture capital firms who are aligned with our vision of a decentralized internet like <a href="http://www.luxcapital.com">Lux Capital</a>, <a href="http://rtf.vc/">Rising Tide</a>, <a href="https://compound.vc/">Compound</a>, <a href="http://openocean.vc/">OpenOcean</a>, and <a href="http://versionone.vc/">VersionOne</a> to fund app developers and teams looking to build their apps on the new fully decentralized internet. App creators will benefit directly from the deep expertise and insight of these experienced investors.
+                    We partnered with thesis-driven venture capital firms who are aligned with our vision of a decentralized internet like <a href="http://www.luxcapital.com">Lux Capital</a>, <a href="http://rtf.vc/">Rising Tide</a>, <a href="https://compound.vc/">Compound</a>, <a href="http://fabric.vc/">Fabric Ventures</a>, and <a href="http://versionone.vc/">VersionOne</a> to fund app developers and teams looking to build their apps on the new fully decentralized internet. App creators will benefit directly from the deep expertise and insight of these experienced investors.
                   </p>
-                  <p className="lead-lg text-center">
-                    Additionally, those who apply will be first to hear about “XPRIZE”-style prizes and bounties for large initiatives such as building a decentralized microblogging platform, funded by investors like <a href="https://twitter.com/naval">Naval Ravikant</a> (Founder: <a href="https://angel.co">AngelList</a>), <a href="http://continuations.com">Albert Wenger</a> (Managing Partner: <a href="https://www.usv.com">USV</a>) and more!
-                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="container-fluid sectionWrap bg-white">
+              <div className="row">
+                <div className="container container-md">
+                  <div className="row m-b-45">
+                    <div className="container-fluid">
+                      <h3 className="text-center m-b-45">
+                        Signature Bounties
+                      </h3>
+                      <p className="lead-lg text-center">
+                        Additionally, those who apply will be first to hear about “XPRIZE”-style prizes and bounties for large initiatives such as building a decentralized microblogging platform, funded by investors like <a href="https://twitter.com/naval">Naval Ravikant</a> (Founder: <a href="https://angel.co">AngelList</a>), <a href="http://continuations.com">Albert Wenger</a> (Managing Partner: <a href="https://www.usv.com">USV</a>) and more!
+                      </p>
+                    </div>
+                  </div>
+                  <div className="container container-md container-box bg-white ml-0 m-b-50">
+                    <div className="row">
+                      <div className="col-lg-12">
+                        <h4 className="text-center">
+                          Current Requests
+                        </h4>
+                      </div>
+                    </div>
+                    <hr />
+                    <div className="row">
+                      <div className="col-lg-4 text-center">
+                        <strong>Bounty</strong>
+                      </div>
+                      <div className="col-lg-4 text-center">
+                        <strong>Award</strong>
+                      </div>
+                      <div className="col-lg-4 text-center">
+                        <strong>Deadline</strong>
+                      </div>
+                    </div>
+                    <hr />
+                    <div className="row">
+                      <div className="col-lg-4 text-center m-b-25">
+                        <p>
+                          <Link to="https://groupmessage.eventbrite.com" target="_blank">
+                            Team Messaging
+                          </Link>
+                        </p>
+                      </div>
+                      <div className="col-lg-4 text-center m-b-25">
+                        <p>$25,000</p>
+                      </div>
+                      <div className="col-lg-4 text-center m-b-25">
+                        <p>Feb 16, 2018</p>
+                      </div>
+                    </div>
+                    <div className="row">
+                      <div className="col-lg-4 text-center m-b-25">
+                        <p>
+                          <Link to="https://p2pmessage.eventbrite.com" target="_blank">
+                            Encrypted & Decentralized P2P Messaging
+                          </Link>
+                        </p>
+                      </div>
+                      <div className="col-lg-4 text-center m-b-25">
+                        <p>$25,000</p>
+                      </div>
+                      <div className="col-lg-4 text-center m-b-25">
+                        <p>Feb 16, 2018</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="container container-md container-box bg-white ml-0 m-b-50">
+                    <div className="row">
+                      <div className="col-lg-12">
+                        <h4 className="text-center">
+                          Past Requests
+                        </h4>
+                      </div>
+                    </div>
+                    <hr />
+                    <div className="row">
+                      <div className="col-lg-4 text-center">
+                        <strong>Bounty</strong>
+                      </div>
+                      <div className="col-lg-4 text-center">
+                        <strong>Award</strong>
+                      </div>
+                      <div className="col-lg-4 text-center">
+                        <strong>Winner</strong>
+                      </div>
+                    </div>
+                    <hr />
+                    <div className="row">
+                      <div className="col-lg-4 text-center m-b-25">
+                        <p>
+                          <Link to="#" target="_blank">
+                            Encrypted Token Portfolio
+                          </Link>
+                        </p>
+                      </div>
+                      <div className="col-lg-4 text-center m-b-25">
+                        <p>$25,000</p>
+                      </div>
+                      <div className="col-lg-4 text-center m-b-25">
+                        <p>
+                          <Link to="http://use.coinsapp.co/" target="_blank">
+                            Coins
+                          </Link>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -194,10 +301,9 @@ class FundingPage extends Component {
                         </Link>
                       </div>
                       <div className="col-md-6 text-center m-b-55">
-                        <Link to="http://openocean.vc/" className="mx-auto" target="_blank">
-                          <Image className="col-img partnerLogo partnerLogo-openocean" src="/images/logos/partner-logo-openocean.svg"
-                            retinaSupport={false} />
-                        </Link>
+                        <h4>
+                          <Link to="http://fabric.vc/" className="mx-auto col-img partnerLogo partnerLogo-fabric" target="_blank">FABRIC VENTURES</Link>
+                        </h4>
                       </div>
                     </div>
                   </div>
