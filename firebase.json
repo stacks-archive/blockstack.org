@@ -100,6 +100,14 @@
         "destination": "/docs-tutorials-todo-list.html"
       },
       {
+        "source": "/blog/50-000-signature-bounty-to-decentralize-communication",
+        "destination": "/blog-50-000-signature-bounty-to-decentralize-communication.html"
+      },
+      {
+        "source": "/blog/encrypted-token-portfolio-bounty-recap",
+        "destination": "/blog-encrypted-token-portfolio-bounty-recap.html"
+      },
+      {
         "source": "/blog/blockstack-token-sale-recap",
         "destination": "/blog-blockstack-token-sale-recap.html"
       },
@@ -150,14 +158,6 @@
       {
         "source": "/blog/announcing-blockstack-token-and-mining",
         "destination": "/blog-announcing-blockstack-token-and-mining.html"
-      },
-      {
-        "source": "/blog/blockstack-and-the-power-of-choice",
-        "destination": "/blog-blockstack-and-the-power-of-choice.html"
-      },
-      {
-        "source": "/blog/blockstack-summit-2017-freedom-to-innovate",
-        "destination": "/blog-blockstack-summit-2017-freedom-to-innovate.html"
       },
       {
         "source": "**",
