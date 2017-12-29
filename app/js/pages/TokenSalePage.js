@@ -169,7 +169,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(TokenSalePage)
                         <p>
                           The applications on blockstack are server-less and decentralized.
 
-                          Developers start by building a single-page application in Javascript,
+                          Developers start by building a single-page application in JavaScript,
 
                           Then, instead of plugging the frontend into a centralized API,
                           they plug into an API run by the user.
