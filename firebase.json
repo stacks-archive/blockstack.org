@@ -96,6 +96,10 @@
         "destination": "/docs-tutorials-hello-blockstack.html"
       },
       {
+        "source": "/tutorials/multi-player-storage",
+        "destination": "/docs-tutorials-multi-player-storage.html"
+      },
+      {
         "source": "/tutorials/todo-list",
         "destination": "/docs-tutorials-todo-list.html"
       },
