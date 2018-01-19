@@ -88,7 +88,7 @@ export const teamMembers = [
     blockstackId: 'ablankstein',
     name: 'Aaron Blankstein',
     avatar: '/images/avatars/aaron-blankstein.jpg',
-    bio: 'Aaron Blankstein received his PhD from Princeton and bachelors from MIT. His work on the CONIKS key management protocol was awarded the 2017 Caspar Bowden Award for Privacy Enhancing Technologies.',
+    bio: 'Aaron joined the Blockstack engineering team from an academic background, finishing his PhD in 2017. His doctoral research spanned a range of topics, mostly focusing on web application performance and security. He’s worked in information flow tracking systems, caching algorithms, compilers, and applied cryptography. 10+ years of Emacs usage.',
   },
   {
     blockstackId: 'larry',
@@ -118,13 +118,37 @@ export const teamMembers = [
     blockstackId: 'jzampolin',
     name: 'Jack Zampolin',
     avatar: '/images/avatars/jack-zampolin.jpg',
-    bio: 'Jack Zampolin came to Blockstack from InfluxData where he engaged with and grew the developer community as a Developer Evangelist. Before that he helped launch a hardware startup called RightPSI in Bozeman, MT.',
+    bio: 'Jack came to Blockstack from InfluxData where he engaged with and grew the developer community as a Developer Evangelist. A self taught programmer, he is an active contributor to Open Source projects including Blockstack, InfluxDB, and Helm.',
   },
   {
     blockstackId: 'yukan.id',
     name: 'Ken Liao',
     avatar: '/images/avatars/ken-liao.jpg',
     bio: 'Ken Liao studied Computer Engineering at the University of Waterloo and co-founded the fashion brand marketplace, PR-A-PO. He designed and built mobile apps which were featured as Best New App on the Apple App Store.',
+  },
+  {
+    blockstackId: '',
+    name: 'Sebastian Dunkel',
+    avatar: '/images/avatars/sebastian-dunkel.jpg',
+    bio: 'Sebastian received his MA in Linguistics and Communications from the University of Heidelberg, Germany, and the University of Brighton, UK. Before joining the Blockstack team, he worked in localization and product support for Apple, Vimeo, and Master & Dynamic.',
+  },
+  {
+    blockstackId: '',
+    name: 'Shannon Voight',
+    avatar: '/images/avatars/shannon-voight.jpg',
+    bio: 'Shannon drives event and marketing programs focusing on Blockstack\'s growth and expansion. Prior to joining Blockstack in 2017, Shannon spent over 11 years honing her skills as event and program producer, talent manager and brand strategist at Condé Nast and Time Inc. ',
+  },
+  {
+    blockstackId: '',
+    name: 'Xan Ditkoff',
+    avatar: '/images/avatars/xan-ditkoff.jpg',
+    bio: 'Xan came to Blockstack with backgrounds in private equity, investment banking, and the military. He is passionate about driving the creation, growth, and expansion of application ecosystems through his growth role and with the Signature Fund.',
+  },
+  {
+    blockstackId: '',
+    name: 'Clint Nelsen',
+    avatar: '/images/avatars/clint-nelsen.jpg',
+    bio: 'Clint is part of the growth team at Blockstack and previously was the founder of Startup Weekend.  Clint grew Startup Weekend to a team of 80 employees and community of 8,000 local organizers producing 3,000+ hackathons spanning 600 cities and 147 countries.  Clint is a published author and regularly serves as a lecturer on entrepreneurship & startups.',
   },
   {
     blockstackId: 'mfreed',
