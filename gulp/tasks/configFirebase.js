@@ -334,8 +334,8 @@ gulp.task('configFirebase', () => {
 
   fs.writeFileSync('firebase.json', JSON.stringify(firebaseJson, null, 2))
 
-  const netlifyRedirectFilename = '_redirects'
-  fs.writeFileSync(netlifyRedirectFilename, '# Netlify redirects & rewrites')
+  const netlifyRedirectFilename = 'build/_redirects'
+  fs.writeFileSync(netlifyRedirectFilename, '# Netlify redirects & rewrites \n')
 
 
   firebaseJson.hosting.redirects.forEach(redirect => {
