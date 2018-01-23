@@ -334,6 +334,8 @@ gulp.task('configFirebase', () => {
 
   fs.writeFileSync('firebase.json', JSON.stringify(firebaseJson, null, 2))
 
+  // Convert firebase redirects and rewrites into a netlify compatible format
+
   const netlifyRedirectFilename = 'build/_redirects'
   fs.writeFileSync(netlifyRedirectFilename, '# Netlify redirects & rewrites \n')
 
@@ -344,7 +346,7 @@ gulp.task('configFirebase', () => {
   })
 
   firebaseJson.hosting.rewrites.forEach(rewrite => {
-    if (rewrite.source === '**') {
+    if (rewrite.source === '**') { // Single page app / history push state redirect
       const line = `/*    /index.html   200 \n`
       fs.appendFileSync(netlifyRedirectFilename, line)
     } else {
