@@ -9,6 +9,7 @@ import {connect}            from 'react-redux'
 import {BlogActions}       from '../datastore/Blog'
 import {StatsActions}      from '../datastore/Stats'
 import Image               from '../components/Image'
+import Alert               from '../components/Alert'
 import Header              from '../components/Header'
 import EmbedYouTube        from '../components/EmbedYouTube'
 import MultiVideoPlayer    from '../components/MultiVideoPlayer'
@@ -124,6 +125,7 @@ class HomePage extends Component {
         <div className="body-hero">
           <div className="w-100" style={{ overflow: 'hidden' }}>
             <div>
+              <Alert />
               <Header transparent={true} />
               <div className="container">
                 <section className="hero text-center">

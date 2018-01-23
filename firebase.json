@@ -96,6 +96,10 @@
         "destination": "/docs-tutorials-hello-blockstack.html"
       },
       {
+        "source": "/tutorials/multi-player-storage",
+        "destination": "/docs-tutorials-multi-player-storage.html"
+      },
+      {
         "source": "/tutorials/todo-list",
         "destination": "/docs-tutorials-todo-list.html"
       },
@@ -116,8 +120,8 @@
         "destination": "/blog-registration-extension.html"
       },
       {
-        "source": "/blog/signature-berlin",
-        "destination": "/blog-signature-berlin.html"
+        "source": "/blog/blockstack-berlin",
+        "destination": "/blog-blockstack-berlin.html"
       },
       {
         "source": "/blog/blockstack-token-sale-registration",
