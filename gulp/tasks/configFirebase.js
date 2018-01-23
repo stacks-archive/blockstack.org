@@ -344,7 +344,10 @@ gulp.task('configFirebase', () => {
   })
 
   firebaseJson.hosting.rewrites.forEach(rewrite => {
-    if (rewrite.source !== '**') { 
+    if (rewrite.source === '**') {
+      const line = `/*    /index.html   200 \n`
+      fs.appendFileSync(netlifyRedirectFilename, line)
+    } else {
       const line = `${rewrite.source} ${rewrite.destination} 200 \n`
       fs.appendFileSync(netlifyRedirectFilename, line)
     }
