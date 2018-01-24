@@ -333,4 +333,25 @@ gulp.task('configFirebase', () => {
   firebaseJson.hosting.redirects = redirects
 
   fs.writeFileSync('firebase.json', JSON.stringify(firebaseJson, null, 2))
+
+  // Convert firebase redirects and rewrites into a netlify compatible format
+
+  const netlifyRedirectFilename = 'build/_redirects'
+  fs.writeFileSync(netlifyRedirectFilename, '# Netlify redirects & rewrites \n')
+
+
+  firebaseJson.hosting.redirects.forEach(redirect => {
+    const line = `${redirect.source} ${redirect.destination} ${redirect.type} \n`
+    fs.appendFileSync(netlifyRedirectFilename, line)
+  })
+
+  firebaseJson.hosting.rewrites.forEach(rewrite => {
+    if (rewrite.source === '**') { // Single page app / history push state redirect
+      const line = `/*    /index.html   200 \n`
+      fs.appendFileSync(netlifyRedirectFilename, line)
+    } else {
+      const line = `${rewrite.source} ${rewrite.destination} 200 \n`
+      fs.appendFileSync(netlifyRedirectFilename, line)
+    }
+  })
 });
