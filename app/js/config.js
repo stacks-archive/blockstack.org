@@ -115,7 +115,7 @@ export const teamMembers = [
     bio: 'Patrick Stanley studied Economics and Psychology at Johns Hopkins, and was the first employee at data-driven lending startup Earnest which sold to Navient for $155m in 2017. In a growth role there, he helped it scale from from 1 to 200 employees and go from $0 to $2B in originations within 3 years.'
   },
   {
-    blockstackId: 'jzampolin',
+    blockstackId: 'jack_zampolin',
     name: 'Jack Zampolin',
     avatar: '/images/avatars/jack-zampolin.jpg',
     bio: 'Jack came to Blockstack from InfluxData where he engaged with and grew the developer community as a Developer Evangelist. A self taught programmer, he is an active contributor to Open Source projects including Blockstack, InfluxDB, and Helm.',
