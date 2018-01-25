@@ -104,6 +104,10 @@
         "destination": "/docs-tutorials-todo-list.html"
       },
       {
+        "source": "/blog/connecting-users-and-their-data-on-the-decentralized-internet",
+        "destination": "/blog-connecting-users-and-their-data-on-the-decentralized-internet.html"
+      },
+      {
         "source": "/blog/50-000-signature-bounty-to-decentralize-communication",
         "destination": "/blog-50-000-signature-bounty-to-decentralize-communication.html"
       },
@@ -158,10 +162,6 @@
       {
         "source": "/blog/summit2017-videos",
         "destination": "/blog-summit2017-videos.html"
-      },
-      {
-        "source": "/blog/announcing-blockstack-token-and-mining",
-        "destination": "/blog-announcing-blockstack-token-and-mining.html"
       },
       {
         "source": "**",

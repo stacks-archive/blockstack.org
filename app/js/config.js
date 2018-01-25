@@ -210,5 +210,10 @@ export const blogAuthors = {
     name: 'Patrick Stanley',
     avatar: 'https://s3.amazonaws.com/kd4/stanley1',
     twitter: 'patrickwstanley',
-    github: 'pstan26' }
+    github: 'pstan26' },
+  'yukan.id': { blockstackId: 'yukan',
+    name: 'Ken Liao',
+    avatar: 'https://www.dropbox.com/s/j1h0kts0m7aadip/avatar-0?dl=1',
+    twitter: 'yukanl',
+    github: 'yknl' }
 }
