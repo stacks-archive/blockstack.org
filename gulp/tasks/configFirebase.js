@@ -63,14 +63,6 @@ gulp.task('configFirebase', () => {
       'destination': 'https://blockstack.com'
     },
     {
-      'source': '/summit2017/',
-      'destination': '/summit2017'
-    },
-    {
-      'source': '/funding/',
-      'destination': '/funding'
-    },
-    {
       'source': '/fund',
       'destination': '/funding'
     },
