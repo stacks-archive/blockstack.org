@@ -171,26 +171,6 @@ class HomePage extends Component {
             </div>
 
             {/* New section layout applied */}
-            <div className="container-fluid sectionWrap bg-secondary section-stats">
-              <div className="container container-xl mx-auto">
-                <div className="row">
-                  <div className="col-sm-4 text-center text-stats text-white">
-                    {this.state.stats.domains.toLocaleString()}
-                    <span className="text-stats-description text-white">domains registered</span>
-                  </div>
-                  <div className="col-sm-4 text-center text-stats text-white">
-                    3+
-                    <span className="text-stats-description text-white">years in production</span>
-                  </div>
-                  <div className="col-sm-4 text-center text-stats text-white">
-                    {this.state.stats.meetupUsers.toLocaleString()}
-                    <span className="text-stats-description text-white">community devs</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* New section layout applied */}
             <div className="container-fluid sectionWrap bg-white">
               <div className="row">
                 <div className="col-sm-12">
