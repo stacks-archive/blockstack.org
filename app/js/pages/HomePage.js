@@ -39,7 +39,7 @@ class HomePage extends Component {
     this.state = {
       videos: [
         {
-          src: 'https://www.youtube.com/embed/Z4bMFKBRg_k',
+          src: 'https://www.youtube.com/embed/7SmC7AuZNWY',
           previewImageUrl: '/images/resources/video-home-1-preview.jpg',
           thumbnailImageUrl: '/images/resources/video-home-1-thumbnail.jpg',
         },
