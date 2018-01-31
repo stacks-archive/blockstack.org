@@ -136,19 +136,9 @@ class CareersPage extends Component {
                 </div>
 
                 <div className="m-t-3 m-b-3">
-                  <h3>
-                    Open Positions
-                  </h3>
-                  {jobs.map((jobListing, jobIndex) => {
-                    return (
-                      <JobListing key={jobIndex} title={jobListing.title}
-                        description={jobListing.description}
-                        url={jobListing.url} />
-                    )
-                  })}
                   <p>
-                    <a href="https://jobs.lever.co/blockstack/5deebd50-43d3-45d1-afa2-55ccab0e812a?lever-origin=applied&lever-source%5B%5D=Blockstack.com">
-                      Don't see what you're looking for?
+                    <a href="https://jobs.lever.co/blockstack?lever-source%5B%5D=Blockstack.org" className="btn btn-primary btn-sm">
+                      See All Open Positions
                     </a>
                   </p>
                 </div>
