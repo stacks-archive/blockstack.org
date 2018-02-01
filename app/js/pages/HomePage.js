@@ -306,14 +306,6 @@ class HomePage extends Component {
                         </div>
                       </div>
                     </div>
-                    <div className="container container-xs">
-                      <p className="text-center">
-                        <Link to="/tutorials" role="button"
-                          className="btn btn-primary btn-block">
-                          Try the Tutorials
-                        </Link>
-                      </p>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -408,6 +400,14 @@ class HomePage extends Component {
                             </p>
                             </a>
                           </div>
+                        </div>
+                        <div className="container container-xs m-t-35">
+                          <p className="text-center">
+                            <Link to="/press" role="button"
+                              className="btn btn-outline-primary btn-block">
+                              More Articles...
+                            </Link>
+                          </p>
                         </div>
                       </div>
                     </div>
