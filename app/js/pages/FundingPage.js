@@ -130,7 +130,7 @@ class FundingPage extends Component {
                     <div className="row">
                       <div className="col-lg-4 text-center m-b-25">
                         <p>
-                          <Link to="https://groupmessage.eventbrite.com" target="_blank">
+                          <Link to="https://communitymessage.eventbrite.com" target="_blank">
                             Team Messaging
                           </Link>
                         </p>
