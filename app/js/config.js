@@ -55,13 +55,13 @@ export const featuredApps = [
   },
   {
     name: 'Afia',
-    icon: '/images/logos/app-icon-afia.png',
+    icon: '/images/logos/app-icon-afia-512x512.png',
     description: 'Afia gives individuals the power to own and manage their personal health records. Keep your health data safe on your personal encrypted cloud storage and securely share your data with healthcare providers as you see fit.'
   },
   {
     name: 'Guild',
-    icon: '/images/logos/app-icon-guild.png',
-    description: 'Guild is a blogging network where you own the content you create and can share your favorite posts with others. No longer will you be restricted to a single company’s walled gardens. Your writing will live on and travel with you.'
+    icon: '/images/logos/app-icon-dotpodcast-512x512.png',
+    description: 'DotPodcast helps creators get paid, protects against censorship, and allows listeners to enjoy podcasts without privacy-invading tracking.'
   },
 ]
 
