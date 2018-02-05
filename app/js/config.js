@@ -59,7 +59,7 @@ export const featuredApps = [
     description: 'Afia gives individuals the power to own and manage their personal health records. Keep your health data safe on your personal encrypted cloud storage and securely share your data with healthcare providers as you see fit.'
   },
   {
-    name: 'Guild',
+    name: 'DotPodcast',
     icon: '/images/logos/app-icon-dotpodcast-512x512.png',
     description: 'DotPodcast helps creators get paid, protects against censorship, and allows listeners to enjoy podcasts without privacy-invading tracking.'
   },
