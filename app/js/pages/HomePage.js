@@ -331,7 +331,7 @@ class HomePage extends Component {
                                 <div key={index2}
                                   className={`col-lg-4 m-b-55 mx-auto ${offsetClass}`}>
                                   <p className="text-center">
-                                    <Image className="col-img" src={featuredApp.icon}
+                                    <Image className="col-img drop-shadow-app" src={featuredApp.icon}
                                       retinaSupport={false} />
                                   </p>
                                   <h4 className="modern text-center">
