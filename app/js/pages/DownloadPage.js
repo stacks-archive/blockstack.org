@@ -130,17 +130,27 @@ class DownloadsPage extends Component {
                       </div>
                     </div>
                   </div>
-                  <div className="container m-b-50">
-                    <div className="row">
-                      <h4 className="">
-                        Run a Full Node
-                      </h4>
-                      <div className="container mx-auto">
-                        <div className="row">
-                          <a href={installationLinks.cliDevelopers} role="button"
-                            className="btn btn-secondary btn-block">
-                            Instructions on GitHub
-                          </a>
+                  <div className="container container-md container-box bg-white ml-0 m-b-50">
+                    <div className="container">
+                      <div className="row">
+                        <div className="container mx-auto">
+                          <div className="row">
+                            <div className="col-md-6">
+                              <div className="row">
+                                <p className="lead-lg d-sm-block m-b-10">
+                                  Run a Full Node<br/>
+                                </p>
+                              </div>
+                            </div>
+                            <div className="col-md-6 m-b-15">
+                              <div className="row">
+                                <a href={installationLinks.cliDevelopers} role="button"
+                                  className="btn btn-secondary btn-block">
+                                  Instructions on GitHub
+                                </a>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
