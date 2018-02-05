@@ -363,7 +363,7 @@ class HomePage extends Component {
                           <div className="container">
                             <a href="https://venturebeat.com/2017/12/04/blockstack-raises-52-million-to-build-a-parallel-internet-where-you-own-all-your-data/" target="_blank">
                             <h4 className="text-center">
-                              <Image className="h-press-wsj"
+                              <Image className="h-press-1"
                                 src="/images/logos/venturebeat-logo-BW-40.svg"
                                 retinaSupport={false} />
                             </h4>

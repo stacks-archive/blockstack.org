@@ -1788,10 +1788,10 @@ a.img-hover-scale.active {
   outline: 5px solid #2C96FF;
 }
 
-.h-press-wsj {
-  width: 90px;
-  margin-top: 15px;
-  margin-bottom: 25px;
+.h-press-1 {
+  width: 200px;
+  margin-top: 9px;
+  margin-bottom: 41px;
 }
 
 .h-press-observer {
@@ -2696,7 +2696,7 @@ pre {
   }
 
   .h-press-wsj {
-    width: 90px;
+    width: 200px;
     margin-top: 0;
     margin-bottom: 25px;
   }
