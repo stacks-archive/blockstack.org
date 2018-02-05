@@ -361,13 +361,13 @@ class HomePage extends Component {
                       <div className="row">
                         <div className="col-lg-4 m-b-25">
                           <div className="container">
-                            <a href="https://venturebeat.com/2017/12/04/blockstack-raises-52-million-to-build-a-parallel-internet-where-you-own-all-your-data/" target="_blank">
+                            <a className="item-description-link" href="https://venturebeat.com/2017/12/04/blockstack-raises-52-million-to-build-a-parallel-internet-where-you-own-all-your-data/" target="_blank">
                             <h4 className="text-center">
                               <Image className="h-press-1"
                                 src="/images/logos/venturebeat-logo-BW-40.svg"
                                 retinaSupport={false} />
                             </h4>
-                            <p className="font-weight-bold text-center">
+                            <p className="press-item-description text-center">
                               “Blockstack raises $52 million to build a parallel internet where you own all your data”
                             </p>
                             </a>
@@ -375,13 +375,13 @@ class HomePage extends Component {
                         </div>
                         <div className="col-lg-4 m-b-25">
                           <div className="container">
-                            <a href="http://observer.com/2016/09/a-second-internet-coming-soon-courtesy-of-the-blockchain/" target="_blank">
+                            <a className="item-description-link" href="http://observer.com/2016/09/a-second-internet-coming-soon-courtesy-of-the-blockchain/" target="_blank">
                             <h4 className="text-center">
                               <Image className="h-press-observer"
                                 src="/images/logos/observer-logo-BW-40.svg"
                                 retinaSupport={false} />
                             </h4>
-                            <p className="font-weight-bold text-center">
+                            <p className="press-item-description text-center">
                               “Blockstack… has been designing an alternative browser for what could be fairly described as another internet”
                             </p>
                             </a>
@@ -389,13 +389,13 @@ class HomePage extends Component {
                         </div>
                         <div className="col-lg-4 m-b-25">
                           <div className="container">
-                            <a href="https://www.technologyreview.com/s/603352/one-startups-vision-to-reinvent-the-web-for-better-privacy/" target="_blank">
+                            <a className="item-description-link" href="https://www.technologyreview.com/s/603352/one-startups-vision-to-reinvent-the-web-for-better-privacy/" target="_blank">
                             <h4 className="text-center">
                               <Image className="h-press-mit"
                                 src="/images/logos/mit-logo-BW-40.svg"
                                 retinaSupport={false} />
                             </h4>
-                            <p className="font-weight-bold text-center">
+                            <p className="press-item-description text-center">
                               “A kind of parallel universe to the Web we know — one where users have more control of their data.”
                             </p>
                             </a>
