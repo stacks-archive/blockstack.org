@@ -39,19 +39,19 @@ export const jobs = [
 
 export const featuredApps = [
   {
+    name: 'Coins',
+    icon: '/images/logos/app-icon-coins-512x512.png',
+    description: `Coins is a decentralized and encrypted cryptocurrency portfolio app. Analyze your performance with flexible, customizable reporting. Track your holdings, watch your favorite tokens and optionally send pricing alerts.`
+  },
+  {
+    name: 'Graphite',
+    icon: '/images/logos/app-icon-graphite-512x512.png',
+    description: `Graphite gives you ownership over your data and files. Write, create, connect—all without giving up your privacy.`
+  },
+  {
     name: 'Casa',
-    icon: '/images/logos/app-icon-casa@2x.png',
+    icon: '/images/logos/app-icon-casa-512x512.png',
     description: `Casa is the world's first open source homesharing protocol and decentralized network. Book rooms without platform fees or trusted intermediaries and securely transact with encrypted chat and multi-party escrow.`
-  },
-  {
-    name: 'Ongaku Ryoho',
-    icon: '/images/logos/app-icon-ongaku-ryoho.png',
-    description: `Ongaku Ryoho is a music player and decentralized media network that empowers both artists and consumers. Publish music and get paid for downloads without platform fees. Download music and it’s truly yours.`
-  },
-  {
-    name: 'OpenBazaar',
-    icon: '/images/logos/app-icon-openbazaar@2x.png',
-    description: 'OpenBazaar is a different way to do online commerce. It’s a peer to peer application that doesn’t require middlemen, which means no fees & no restrictions. Sell anything to anyone in any country around the world.'
   },
   {
     name: 'Afia',
