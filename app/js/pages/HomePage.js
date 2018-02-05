@@ -361,14 +361,14 @@ class HomePage extends Component {
                       <div className="row">
                         <div className="col-lg-4 m-b-25">
                           <div className="container">
-                            <a href="https://www.wsj.com/articles/blockstack-launches-25-million-fund-for-blockchain-startups-1502883001" target="_blank">
+                            <a href="https://venturebeat.com/2017/12/04/blockstack-raises-52-million-to-build-a-parallel-internet-where-you-own-all-your-data/" target="_blank">
                             <h4 className="text-center">
-                              <Image className="h-press-wsj"
-                                src="/images/logos/wsj-logo-BW-40.svg"
+                              <Image className="h-press-1"
+                                src="/images/logos/venturebeat-logo-BW-40.svg"
                                 retinaSupport={false} />
                             </h4>
                             <p className="font-weight-bold text-center">
-                              “Blockstack… has launched a $25 million fund to invest in startups that build on its technology.”
+                              “Blockstack raises $52 million to build a parallel internet where you own all your data”
                             </p>
                             </a>
                           </div>
