@@ -2389,6 +2389,10 @@ pre {
     padding-left: 5px;
   }
 
+  a.nav-link i {
+    color: #E91E63;
+  }
+
   .navbar {
     padding-top: .375rem;
     padding-right: 2rem;
@@ -2841,6 +2845,12 @@ pre {
   .gallery-contain {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+
+  /* Jobs Sidebar */
+  .jobs-sidebar {
+    border-left: 1px solid #efefef;
+    padding: 1rem 0 1rem 2rem;
   }
 
   .page-header-image-wrapper {
