@@ -2110,6 +2110,11 @@ pre {
   display: none;
 }
 
+.jobs-sidebar {
+  border-left: 1px solid #efefef;
+  padding: 0 0 1rem 2rem;
+}
+
 
 /* Sidebar navigation */
 .nav-sidebar {
@@ -2845,12 +2850,6 @@ pre {
   .gallery-contain {
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-
-  /* Jobs Sidebar */
-  .jobs-sidebar {
-    border-left: 1px solid #efefef;
-    padding: 0 0 1rem 2rem;
   }
 
   .page-header-image-wrapper {
