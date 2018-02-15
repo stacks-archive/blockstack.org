@@ -800,6 +800,17 @@ h1.type-beauty {
   font-weight: 400;
 }
 
+.press-item-description {
+  font-size: 1.125rem;
+  color: #484848;
+  text-decoration: none;
+}
+
+a.item-description-link:hover, a.item-description-link:focus, a.item-description-link:active {
+  font-size: 1.125rem;
+  color: #484848;
+  text-decoration: none;
+}
 
 /* 10. Components */
 .PostShareWidget {
@@ -2221,6 +2232,10 @@ pre {
 
   h6 {
     font-size: 1rem;
+  }
+
+  .left-align {
+    text-align: left!important;
   }
 
   .hero-lead {
