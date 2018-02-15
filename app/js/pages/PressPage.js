@@ -53,6 +53,29 @@ class PressPage extends Component {
 
 
                       <div className="container-fluid m-b-50">
+                        <a href="https://venturebeat.com/2017/12/04/blockstack-raises-52-million-to-build-a-parallel-internet-where-you-own-all-your-data/" target="_blank" style={{ color: '#484848' }}>
+                        <div className="row">
+                          <div className="col-md-4 text-center">
+                            <Image className="col3-img-lg m-b-45" style={{ maxWidth: '225px', minWidth: '200px' }}
+                              src="/images/logos/venturebeat-logo.svg"
+                              fallbackSrc=""
+                              retinaSupport={false} />
+                          </div>
+                          <div className="col-md-8">
+                            <div className="row">
+                              <h3 className="container text-center left-align" style={{ fontSize: '1.5rem', lineHeight: '1.2' }}>
+                                Blockstack raises $52 million to build a parallel internet where you own all your data
+                              </h3>
+                              <p className="container text-center left-align" style={{ fontSize: '0.9375rem', marginTop: '-10px' }}>
+                                Dec 4, 2017
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        </a>
+                      </div>
+
+                      <div className="container-fluid m-b-50">
                         <a href="http://www.scmp.com/news/hong-kong/economy/article/2113521/new-internet-looks-keep-user-data-away-tech-giants-and-bypass" target="_blank" style={{ color: '#484848' }}>
                         <div className="row">
                           <div className="col-md-4 text-center">
