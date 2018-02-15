@@ -151,6 +151,12 @@ export const teamMembers = [
     bio: 'Clint is part of the growth team at Blockstack and previously was the founder of Startup Weekend.  Clint grew Startup Weekend to a team of 80 employees and community of 8,000 local organizers producing 3,000+ hackathons spanning 600 cities and 147 countries.  Clint is a published author and regularly serves as a lecturer on entrepreneurship & startups.',
   },
   {
+    blockstackId: 'hologram',
+    name: 'Chase Wackerfuss',
+    avatar: '/images/avatars/chase-wackerfuss.jpg',
+    bio: 'Chase joined Blockstack\'s engineering team after being an active contributor to the community. A self taught programmer and UI designer, his focus is on cultivating a user-friendly front end developer experience and helping scale client-side applications.',
+  },
+  {
     blockstackId: 'mfreed',
     name: 'Michael Freedman, Technical Advisor',
     avatar: '/images/avatars/mike-freedman.jpg',
