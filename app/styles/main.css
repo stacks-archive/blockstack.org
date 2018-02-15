@@ -2119,6 +2119,11 @@ pre {
   display: none;
 }
 
+.jobs-sidebar {
+  border-left: 1px solid #efefef;
+  padding: 0 0 1rem 2rem;
+}
+
 
 /* Sidebar navigation */
 .nav-sidebar {
@@ -2396,6 +2401,10 @@ pre {
   a.nav-link {
     padding-right: 5px;
     padding-left: 5px;
+  }
+
+  a.nav-link i {
+    color: #E91E63;
   }
 
   .navbar {
