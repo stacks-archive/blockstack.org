@@ -3,6 +3,7 @@
 import {Component}      from 'react'
 import DocumentTitle    from 'react-document-title'
 
+import Image            from '../components/Image'
 import PressItem        from '../components/PressItem'
 import {press}          from '../../constants.json'
 
@@ -25,19 +26,46 @@ class PressPage extends Component {
                       Press
                     </h2>
                     <div className="row">
-                      <div className="col-md-10">
-                       <div className="col-md-4">
-                       </div>
-                       <div className="col-md-8">
-                        <h4 className="">
-                          This is the really long title part
-                        </h4>
-                        <p className="">
-                          Date
-                        </p>
-                       </div>
+                      <div className="container-fluid">
+                        <div className="row">
+                          <div className="col-md-4">
+                            <Image className="col3-img-lg"
+                              src="/images/logos/new-york-times-logo.svg" style={{ marginTop: '15px' }}
+                              fallbackSrc="/images/logos/new-york-times-logo.svg"
+                              retinaSupport={false} />
+                          </div>
+                          <div className="col-md-8">
+                            <div className="row">
+                              <h4 className="container">
+                                Beyond the Bitcoin Bubble
+                              </h4>
+                              <p className="container">
+                                Jan 16, 2018
+                              </p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-
+                      <div className="container-fluid">
+                        <div className="row">
+                          <div className="col-md-4">
+                            <Image className="col3-img-lg"
+                              src="/images/logos/new-york-times-logo.svg" style={{ marginTop: '15px' }}
+                              fallbackSrc="/images/logos/new-york-times-logo.svg"
+                              retinaSupport={false} />
+                          </div>
+                          <div className="col-md-8">
+                            <div className="row">
+                              <h4 className="container">
+                                Beyond the Bitcoin Bubble
+                              </h4>
+                              <p className="container">
+                                Jan 16, 2018
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
