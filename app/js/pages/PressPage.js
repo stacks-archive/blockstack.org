@@ -25,15 +25,19 @@ class PressPage extends Component {
                       Press
                     </h2>
                     <div className="row">
-                    { press.map((item, index) => {
-                      return (
-                        <div className="col-md-4" key={index}>
-                          <PressItem
-                            date={item.date} title={item.title}
-                            publication={item.publication} url={item.url} />
-                        </div>
-                      )
-                    }) }
+                      <div className="col-md-10">
+                       <div className="col-md-4">
+                       </div>
+                       <div className="col-md-8">
+                        <h4 className="">
+                          This is the really long title part
+                        </h4>
+                        <p className="">
+                          Date
+                        </p>
+                       </div>
+                      </div>
+
                     </div>
                   </div>
                 </div>
