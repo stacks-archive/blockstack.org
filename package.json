@@ -65,6 +65,7 @@
   },
   "dependencies": {
     "async": "^2.5.0",
+    "axios": "^0.17.1",
     "blockstack": "0.3.10",
     "bootstrap": "^4.0.0-beta",
     "font-awesome": "^4.7.0",
