@@ -800,6 +800,17 @@ h1.type-beauty {
   font-weight: 400;
 }
 
+.press-item-description {
+  font-size: 1.125rem;
+  color: #484848;
+  text-decoration: none;
+}
+
+a.item-description-link:hover, a.item-description-link:focus, a.item-description-link:active {
+  font-size: 1.125rem;
+  color: #484848;
+  text-decoration: none;
+}
 
 /* 10. Components */
 .PostShareWidget {
@@ -1788,10 +1799,10 @@ a.img-hover-scale.active {
   outline: 5px solid #2C96FF;
 }
 
-.h-press-wsj {
-  width: 90px;
-  margin-top: 15px;
-  margin-bottom: 25px;
+.h-press-1 {
+  width: 200px;
+  margin-top: 9px;
+  margin-bottom: 41px;
 }
 
 .h-press-observer {
@@ -1831,6 +1842,15 @@ a.img-hover-scale.active {
 .drop-shadow {
   -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.drop-shadow-app {
+  -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
+  -moz-border-radius: 23px;
+  -webkit-border-radius: 23px;
+  border-radius: 23px;
 }
 
 .rounded-corners {
@@ -2110,6 +2130,11 @@ pre {
   display: none;
 }
 
+.jobs-sidebar {
+  border-left: 1px solid #efefef;
+  padding: 0 0 1rem 2rem;
+}
+
 
 /* Sidebar navigation */
 .nav-sidebar {
@@ -2207,6 +2232,10 @@ pre {
 
   h6 {
     font-size: 1rem;
+  }
+
+  .left-align {
+    text-align: left!important;
   }
 
   .hero-lead {
@@ -2387,6 +2416,10 @@ pre {
   a.nav-link {
     padding-right: 5px;
     padding-left: 5px;
+  }
+
+  a.nav-link i {
+    color: #E91E63;
   }
 
   .navbar {
@@ -2696,7 +2729,7 @@ pre {
   }
 
   .h-press-wsj {
-    width: 90px;
+    width: 200px;
     margin-top: 0;
     margin-bottom: 25px;
   }

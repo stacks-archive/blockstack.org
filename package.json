@@ -54,7 +54,7 @@
     "history": "^3.2.1",
     "humps": "^0.6.0",
     "istanbul": "^0.4.0",
-    "jsdom": "^3.1.2",
+    "jsdom": "^11.6.2",
     "meta-tag-data": "^1.1.0",
     "mocha": "^2.3.3",
     "postcss": "^5.0.16",
@@ -65,6 +65,7 @@
   },
   "dependencies": {
     "async": "^2.5.0",
+    "axios": "^0.17.1",
     "blockstack": "0.3.10",
     "bootstrap": "^4.0.0-beta",
     "font-awesome": "^4.7.0",
