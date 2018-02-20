@@ -889,13 +889,12 @@ footer a:hover, footer a:focus, footer a:active {
 .btn {
   font-family: 'Lato', sans-serif;
   padding: 0.625rem 2.5rem 0.5625rem 2.5rem;
-  font-size: 0.75rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 400;
   line-height: 1.75rem;
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  text-transform: uppercase;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
   letter-spacing: 1px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1128,6 +1127,7 @@ footer a:hover, footer a:focus, footer a:active {
 
 /* 16. Navbar */
 .navbar {
+  background-color: #FAFAFA;
   font-family: 'Lato', sans-serif;
   padding-top: 0.4375rem;
   padding-bottom: 0.5625rem;
@@ -1170,14 +1170,14 @@ footer a:hover, footer a:focus, footer a:active {
 }
 
 a.nav-link {
-  color: #fff;
-  font-size: 0.9375rem;
-  font-weight: 700;
+  color: #6C6C6C;
+  font-size: 1rem;
+  font-weight: 400;
   margin-top: 0.0625rem;
 }
 
 a.nav-link:hover, a.nav-link:focus {
-  color: #fff;
+  color: black;
 }
 
 .dropdown-menu {
@@ -1340,8 +1340,84 @@ pre {
 
 
 /* 37. Misc */
-.body-hero {
-  background-color: #270f34 !important;
+.home-hero {
+  background-color: #FAFAFA !important;
+  padding: 50px 0;
+}
+.home-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.home-hero p {
+  color: #6C6C6C;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  max-width: 320px;
+}
+
+.app-store {
+  padding: 50px 0;
+}
+
+.app-store-sidebar ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 3rem;
+}
+.app-store-sidebar ul i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  transform: translateY(2px);
+  color: #D0CAD3;
+}
+.app-store-sidebar ul li {
+  margin-bottom: 1.25rem;
+}
+.app-store-section {
+  border-bottom: 1px solid #EDEDED;
+  margin-bottom: 3rem;
+}
+.app-store-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.app-store-app {
+  margin-bottom: 3rem;
+}
+.app-store-app img {
+  width: 70px;
+  height: 70px;
+}
+.app-store-app a h4 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #272727;
+  transition: color 0.1s ease-in-out;
+}
+.app-store-app a p {
+  color: #6C6C6C;
+}
+.app-store-app a {
+  text-decoration: none;
+}
+.app-store-app a:hover h4 {
+  color: #2C96FF;
+}
+
+.cta-panel {
+  padding: 100px 0;
+  border-top: 1px solid #EDEDED;
+}
+.cta-panel h2 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.cta-panel p {
+  color: #6C6C6C;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  max-width: 320px;
 }
 
 .token-hero {

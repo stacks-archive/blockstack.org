@@ -85,7 +85,7 @@ class TokenSalePage extends Component {
                 <h1 className="text-white m-b-20">
                   The Blockstack Token
                 </h1>
-                <p className="hero-lead purple-50">Sign up to receive important information about the token distribution</p>
+                <p className="m-b-50 purple-50">Sign up to receive important information about the token distribution</p>
                 <div className="m-b-50">
                   <div className="container container-md mx-auto m-b-3">
                     <DarkForm subscribeURL={this.state.subscribeURL} submitButtonText='Sign Up' />

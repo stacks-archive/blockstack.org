@@ -4,10 +4,6 @@ import {Component}  from 'react'
 import {Link} from 'react-router'
 
 class Header extends Component {
-  static propTypes: {
-    transparent: PropTypes.bool
-  }
-
   constructor(props) {
     super(props)
 
@@ -40,13 +36,13 @@ class Header extends Component {
     })
 
     return (
-      <div className={ this.props.transparent ? 'bg-transparent' : 'bg-primary'}>
+      <div>
         <nav className="navbar navbar-expand-md">
           <Link className="navbar-brand brand-bug" to="/">
-            <img src="/images/logos/blockstack-bug-rev.svg" />
+            <img src="/images/logos/blockstack-bug-logo.svg" />
           </Link>
           <Link className="navbar-brand brand-logo" to="/">
-            <img src="/images/logos/blockstack-logo-landscape-rev.svg" />
+            <img src="/images/logos/blockstack-bug.svg" />
           </Link>
           <button type="button" className="navbar-toggler collapsed hidden-md-up" data-toggle="collapse" data-target="#mobile-nav" aria-controls="dropdown" aria-expanded="false">
             <span className="navbar-toggler-icon"></span>

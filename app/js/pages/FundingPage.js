@@ -218,7 +218,7 @@ class FundingPage extends Component {
                   <h3 className="text-center">
                     “Less whitepaper hype, more working code.”
                   </h3>
-                  <p className="hero-lead p-b-65">
+                  <p className="text-center p-b-65">
                     — Jeremy Welch ~ Casa App Founder (at Blockstack Summit 2017)
                   </p>
                   <p className="lead-lg text-center m-b-95">
