@@ -21,7 +21,7 @@ class Header extends Component {
         { to: '/blog', label: 'Blog' },
         { to: '/faq', label: 'FAQ' },
         { to: 'https://github.com/blockstack', label: 'GitHub' },
-        { to: '/careers', label: 'We\'re Hiring!', icon: 'flag' }
+        { to: '/careers', label: 'We\'re Hiring!' }
       ]
     }
   }
@@ -39,7 +39,7 @@ class Header extends Component {
       <div>
         <nav className="navbar navbar-expand-md">
           <Link className="navbar-brand brand-bug" to="/">
-            <img src="/images/logos/blockstack-bug-logo.svg" />
+            <img src="/images/logos/blockstack-bug-icon.svg" />
           </Link>
           <Link className="navbar-brand brand-logo" to="/">
             <img src="/images/logos/blockstack-bug.svg" />

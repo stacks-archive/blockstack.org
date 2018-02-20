@@ -5,7 +5,6 @@ import {Link}               from 'react-router'
 import DocumentTitle        from 'react-document-title'
 import {bindActionCreators} from 'redux'
 import {connect}            from 'react-redux'
-
 import {BlogActions}       from '../datastore/Blog'
 import {StatsActions}      from '../datastore/Stats'
 import Image               from '../components/Image'
@@ -16,6 +15,7 @@ import MultiVideoPlayer    from '../components/MultiVideoPlayer'
 import MailchimpForm       from '../components/MailchimpForm'
 import PostPreview         from '../components/PostPreview'
 import {featuredApps}      from '../config'
+import ModalVideo          from 'react-modal-video'
 
 function mapStateToProps(state) {
   return {
@@ -37,26 +37,12 @@ class HomePage extends Component {
     super(props)
 
     this.state = {
-      videos: [
-        {
-          src: 'https://www.youtube.com/embed/7SmC7AuZNWY',
-          previewImageUrl: '/images/resources/video-home-1-preview.jpg',
-          thumbnailImageUrl: '/images/resources/video-home-1-thumbnail.jpg',
-        },
-        {
-          src: 'https://www.youtube.com/embed/qtOIh93Hvuw',
-          previewImageUrl: '/images/resources/video-home-2-thumbnail.jpg',
-          thumbnailImageUrl: '/images/resources/video-home-2-thumbnail.jpg',
-        },
-        {
-          src: 'https://www.youtube.com/embed/YzlyEuRfXxo',
-          previewImageUrl: '/images/resources/video-home-3-thumbnail.jpg',
-          thumbnailImageUrl: '/images/resources/video-home-3-thumbnail.jpg',
-        }
-      ],
+      videoOpen: false,
       stats: this.props.stats,
       posts: this.props.posts
     }
+
+    this.openModal = this.openModal.bind(this)
   }
 
   componentWillMount() {
@@ -84,40 +70,11 @@ class HomePage extends Component {
     }
   }
 
+  openModal() {
+    this.setState({ videoOpen: true })
+  }
+
   render() {
-    const firstThreePosts = this.state.posts.slice(0, 3)
-
-    const content = {
-      fullStack: [
-        {
-          title: 'Identity',
-          body: 'With Blockstack, users get digital keys that let them own their identity. They sign in to apps locally without remote servers or identity providers.'
-        },
-        {
-          title: 'Storage',
-          body: 'Blockstack\'s storage system allows users to bring their own storage providers and control their data. Data is encrypted and easily shared between applications.'
-        },
-        {
-          title: 'Tokens',
-          body: 'Blockstack uses Bitcoin and other crypto-currencies for simple peer-to-peer payments. Developers can charge for downloads, subscriptions, and more.'
-        },
-      ],
-      appPossibilities: [
-        {
-          title: 'Decentralized Social Networks',
-          body: 'Existing social networks lock in users and limit access. Build a decentralized social network that allows users to own their relationships and data and take it with them wherever they go.'
-        },
-        {
-          title: 'Peer-to-peer Marketplaces',
-          body: 'Existing marketplaces take a massive haircut and limit what can be bought and sold. Build a peer-to-peer marketplace that allows individuals to freely transact at a lower cost.'
-        },
-        {
-          title: 'Collaborative Search Engines',
-          body: 'The web was built to be open and accessible but today the search indexes we rely upon are proprietary. Build a platform that incentivizes people to contribute to a collaborative index.'
-        }
-      ]
-    }
-
     const subscribeURL = '//blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=0e5478ae86'
 
     return (
@@ -129,12 +86,16 @@ class HomePage extends Component {
             <div className="container">
               <div className="row">
                 <div className="col-md-7">
-                  <h1 className="m-b-20 m-t-40">
+                  <h1 className="m-b-20 mt-1 mt-md-5">
                     A new internet for decentralized apps
                   </h1>
                 </div>
                 <div className="col-md-5">
-                  <div style={{ width: '320px', height: '210px', backgroundColor: '#4a4a4a', borderRadius: '3px' }} />
+                  <div className="video-thumbnail img-hover-scale" onClick={this.openModal}>
+                    <div className="video-thumbnail-img" style={{ backgroundImage: 'url("/images/resources/video-home-1-thumbnail.jpg")' }} />
+                    <i className="fa fa-play"></i>
+                  </div>
+                  <ModalVideo channel='youtube' timeout={300} isOpen={this.state.videoOpen} videoId='7SmC7AuZNWY' onClose={() => this.setState({ videoOpen: false })} />
                 </div>
               </div>
             </div>
@@ -143,24 +104,11 @@ class HomePage extends Component {
           <section className="app-store">
             <div className="container">
               <div className="row">
-                <div className="col-md-3">
-                  <div className="app-store-sidebar">
-                    <p><strong>Blockstack apps are</strong></p>
-                    <ul>
-                      <li><i className="fa fa-cog" /> Easier to use</li>
-                      <li><i className="fa fa-cog" /> Secure</li>
-                      <li><i className="fa fa-cog" /> Decentralized</li>
-                      <li><i className="fa fa-cog" /> Faster to Build</li>
-                    </ul>
-                    <p className="m-b-1">Are you a developer?</p>
-                    <button className="btn btn-outline-primary">View tutorials</button>
-                  </div>
-                </div>
-                <div className="col-md-9">
+                <div className="col-lg-9 col-md-8 order-md-2">
                   <div className="app-store-section">
                     <p>Featured Apps</p>
                     <div className="row">
-                      <div className="col-sm-3">
+                      <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
                           <a href="">
                             <img src="/images/logos/app-icon-dotpodcast-512x512.png" />
@@ -169,7 +117,7 @@ class HomePage extends Component {
                           </a>
                         </div>
                       </div>
-                      <div className="col-sm-3">
+                      <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
                           <a href="">
                             <img src="/images/logos/app-icon-afia-512x512.png" />
@@ -178,7 +126,7 @@ class HomePage extends Component {
                           </a>
                         </div>
                       </div>
-                      <div className="col-sm-3">
+                      <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
                           <a href="">
                             <img src="/images/logos/app-icon-casa-512x512.png" />
@@ -187,7 +135,7 @@ class HomePage extends Component {
                           </a>
                         </div>
                       </div>
-                      <div className="col-sm-3">
+                      <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
                           <a href="">
                             <img src="/images/logos/app-icon-guild.png" />
@@ -201,7 +149,7 @@ class HomePage extends Component {
                   <div className="app-store-section">
                     <p>Cryptocurrency Portfolio Apps</p>
                     <div className="row">
-                      <div className="col-sm-3">
+                      <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
                           <a href="">
                             <img src="/images/logos/app-icon-coins-512x512.png" />
@@ -210,7 +158,7 @@ class HomePage extends Component {
                           </a>
                         </div>
                       </div>
-                      <div className="col-sm-3">
+                      <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
                           <a href="">
                             <img src="/images/logos/app-icon-dotpodcast-512x512.png" />
@@ -219,7 +167,7 @@ class HomePage extends Component {
                           </a>
                         </div>
                       </div>
-                      <div className="col-sm-3">
+                      <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
                           <a href="">
                             <img src="/images/logos/app-icon-casa-512x512.png" />
@@ -228,7 +176,7 @@ class HomePage extends Component {
                           </a>
                         </div>
                       </div>
-                      <div className="col-sm-3">
+                      <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
                           <a href="">
                             <img src="/images/logos/app-icon-guild.png" />
@@ -242,7 +190,7 @@ class HomePage extends Component {
                   <div className="app-store-section">
                     <p>Upcoming Apps</p>
                     <div className="row">
-                      <div className="col-sm-3">
+                      <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
                           <a href="">
                             <img src="/images/logos/app-icon-dotpodcast-512x512.png" />
@@ -251,7 +199,7 @@ class HomePage extends Component {
                           </a>
                         </div>
                       </div>
-                      <div className="col-sm-3">
+                      <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
                           <a href="">
                             <img src="/images/logos/app-icon-afia-512x512.png" />
@@ -260,7 +208,7 @@ class HomePage extends Component {
                           </a>
                         </div>
                       </div>
-                      <div className="col-sm-3">
+                      <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
                           <a href="">
                             <img src="/images/logos/app-icon-casa-512x512.png" />
@@ -269,7 +217,7 @@ class HomePage extends Component {
                           </a>
                         </div>
                       </div>
-                      <div className="col-sm-3">
+                      <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
                           <a href="">
                             <img src="/images/logos/app-icon-guild.png" />
@@ -278,6 +226,21 @@ class HomePage extends Component {
                           </a>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-3 col-md-4 order-md-1">
+                  <div className="app-store-sidebar">
+                    <p><strong>Blockstack apps are</strong></p>
+                    <ul>
+                      <li><i className="fa fa-cog" /> Easier to use</li>
+                      <li><i className="fa fa-cog" /> Secure</li>
+                      <li><i className="fa fa-cog" /> Decentralized</li>
+                      <li><i className="fa fa-cog" /> Faster to Build</li>
+                    </ul>
+                    <div className="d-none d-md-block">
+                      <p className="m-b-1">Are you a developer?</p>
+                      <button className="btn btn-outline-primary">View tutorials</button>
                     </div>
                   </div>
                 </div>
@@ -293,9 +256,9 @@ class HomePage extends Component {
                   <p>Get started building on Blockstack by visiting our developer site where you can find tutorials, docs, sourcecode, and a community forum.</p>
                 </div>
                 <div className="col-md-6">
-                  <div className="m-t-60">
-                    <button className="btn btn-primary">Go to developer site</button>
-                    <button className="btn btn-outline-primary">Request an app</button>
+                  <div className="m-t-60 float-md-right">
+                    <button className="btn btn-primary mt-3">Go to developer site</button>
+                    <button className="btn btn-outline-primary mt-3">Request an app</button>
                   </div>
                 </div>
               </div>

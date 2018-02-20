@@ -905,8 +905,8 @@ footer a:hover, footer a:focus, footer a:active {
 }
 
 .btn:hover, .btn:focus, .btn:active {
-  -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
 }
 
 .btn-xs {
@@ -946,7 +946,6 @@ footer a:hover, footer a:focus, footer a:active {
   color: #fff;
   background-color: #2378CC;
   border: 1px solid #2378CC;
-  font-weight: 700;
 }
 
 .btn-secondary {
@@ -959,7 +958,6 @@ footer a:hover, footer a:focus, footer a:active {
   color: #fff;
   background-color: #2C96FF;
   border: 1px solid #2C96FF;
-  font-weight: 700;
 }
 
 .btn-light {
@@ -972,7 +970,6 @@ footer a:hover, footer a:focus, footer a:active {
   color: #fff;
   background-color: #2C96FF;
   border: 1px solid #2C96FF;
-  font-weight: 700;
 }
 
 .btn-outline-primary {
@@ -985,13 +982,11 @@ footer a:hover, footer a:focus, footer a:active {
   color: #fff;
   background-color: #2378CC;
   border: 1px solid #2378CC;
-  font-weight: 700;
 }
 
 .btn-outline-secondary {
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.15);
-  font-weight: 700;
   background-color: #270F34;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
@@ -1000,7 +995,6 @@ footer a:hover, footer a:focus, footer a:active {
 .btn-outline-secondary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
   color: #270F34 !important;
   border: 1px solid rgba(255, 255, 255, 1) !important;
-  font-weight: 700;
   background-color: #fff;
   outline: none;
 }
@@ -1015,7 +1009,6 @@ footer a:hover, footer a:focus, footer a:active {
   color: #fff;
   background-color: #2C96FF;
   border: 1px solid #2C96FF;
-  font-weight: 700;
 }
 
 .btn-outline-alpha-light {
@@ -1028,7 +1021,6 @@ footer a:hover, footer a:focus, footer a:active {
   color: #212529;
   background-color: #fff;
   border: 1px solid #fff;
-  font-weight: 700;
 }
 
 /* Need to review all buttons below */
@@ -1164,8 +1156,8 @@ footer a:hover, footer a:focus, footer a:active {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.navbar-collapse {
-  background-color: rgba(0, 0, 0, 0.3);
+#mobile-nav {
+  background-color: #080809;
   max-width: 100%;
 }
 
@@ -1178,6 +1170,15 @@ a.nav-link {
 
 a.nav-link:hover, a.nav-link:focus {
   color: black;
+}
+
+#mobile-nav a.nav-link {
+  color: white;
+}
+
+#mobile-nav a.nav-link:hover,
+#mobile-nav a.nav-link:focus {
+  color: #2C96FF;
 }
 
 .dropdown-menu {
@@ -1345,14 +1346,42 @@ pre {
   padding: 50px 0;
 }
 .home-hero h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 800;
+  max-width: 400px;
 }
-.home-hero p {
-  color: #6C6C6C;
-  font-size: 1rem;
-  line-height: 1.625rem;
+
+.video-thumbnail {
   max-width: 320px;
+  height: 210px;
+  background-color: #4a4a4a;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.video-thumbnail .video-thumbnail-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  transition: transform 0.3s ease-in-out;
+}
+.video-thumbnail i {
+  font-size: 4rem;
+  color: white;
+  z-index: 2;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+.video-thumbnail:hover .video-thumbnail-img {
+  transform: scale(1.1);
+}
+.video-thumbnail:hover i {
+  color: #EDEDED;
 }
 
 .app-store {
@@ -1391,6 +1420,7 @@ pre {
 .app-store-app a h4 {
   font-size: 1.125rem;
   font-weight: bold;
+  margin-top: 1rem;
   margin-bottom: 0;
   color: #272727;
   transition: color 0.1s ease-in-out;
@@ -1410,7 +1440,7 @@ pre {
   border-top: 1px solid #EDEDED;
 }
 .cta-panel h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 800;
 }
 .cta-panel p {
@@ -1418,6 +1448,9 @@ pre {
   font-size: 1rem;
   line-height: 1.625rem;
   max-width: 320px;
+}
+.cta-panel .btn:first-child {
+  margin-right: 1rem;
 }
 
 .token-hero {
@@ -2445,6 +2478,15 @@ pre {
     text-align: left!important;
   }
 
+  .home-hero h1 {
+    font-size: 2.5rem;
+    max-width: none;
+  }
+
+  .cta-panel h2 {
+    font-size: 3rem;
+  }
+
   .hero-lead {
     text-align: center;
     font-size: 1rem;
@@ -2593,20 +2635,19 @@ pre {
     font-size: .9375rem;
     font-weight: 700;
     padding: .375rem 3.4375rem .375rem 1.875rem;
-    color: #fff;
+    color: #484848;
   }
 
   .dropdown-menu {
     margin-top: 0;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #2C96FF;
-    border: 1px solid #2C96FF;
+    background-color: white;
+    border: 1px solid white;
   }
 
   .dropdown-item:focus, .dropdown-item:hover {
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.15);
+    color: #2C96FF;
   }
 
   .navbar-dropdown-primary {
@@ -3351,6 +3392,10 @@ pre {
 @media (min-width:992px) {
   .content-wrapper {
     min-width: 992px;
+  }
+
+  .home-hero h1 {
+    font-size: 3rem;
   }
 
   .sidebar-content-wrapper {
