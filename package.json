@@ -87,6 +87,7 @@
     "react-document-title": "^1.0.2",
     "react-dom": "^15.4.0",
     "react-helmet": "^2.3.1",
+    "react-modal-video": "^1.1.1",
     "react-redux": "^5.0.4",
     "react-remarkable": "^1.1.1",
     "react-retina-image": "^2.0.0",
