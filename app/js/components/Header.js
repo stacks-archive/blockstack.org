@@ -7,13 +7,6 @@ class Header extends Component {
   constructor(props) {
     super(props)
 
-
-// - Developers (dropdown)
-//   - Tutorials
-//   - Papers
-//   - BlockstackJS
-//   - Blockstack Core
-//   - GitHub
     this.state = {
       navItems: [
         { to: '/learn', label: 'Learn', dropdown: [
