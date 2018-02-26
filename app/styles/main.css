@@ -1341,11 +1341,15 @@ pre {
 
 
 /* 37. Misc */
-.home-hero {
-  background-color: #FAFAFA !important;
-  padding: 50px 0;
+.jumbotron {
+  background-color: #FAFAFA;
 }
-.home-hero h1 {
+
+.jumbotron-white {
+  background-color: #FFFFFF;
+}
+
+.page-heading {
   font-size: 2rem;
   font-weight: 800;
   max-width: 400px;
@@ -1762,6 +1766,66 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead {
 
 .landing-feat-img {
   width: 100%;
+}
+
+.features {
+  margin: 5rem 0;
+}
+
+.feature {
+  position: relative;
+  margin-top: 5rem;
+}
+
+.feature-number {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #94859A;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.feature-number:before {
+  content: '';
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #95CAFF;
+  border-radius: 15px;
+}
+
+.feature-number:after {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #F48EB1;
+  border-radius: 15px;
+}
+
+.feature-body {
+  padding-left: 70px;
+  padding-top: 5px;
+}
+
+.feature-benefits {
+  margin-top: 2rem;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 3px;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .feat-card {
@@ -2478,7 +2542,7 @@ pre {
     text-align: left!important;
   }
 
-  .home-hero h1 {
+  .page-heading {
     font-size: 2.5rem;
     max-width: none;
   }
@@ -3394,7 +3458,7 @@ pre {
     min-width: 992px;
   }
 
-  .home-hero h1 {
+  .page-heading {
     font-size: 3rem;
   }
 

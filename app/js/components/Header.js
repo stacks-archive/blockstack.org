@@ -7,21 +7,31 @@ class Header extends Component {
   constructor(props) {
     super(props)
 
+
+// - Developers (dropdown)
+//   - Tutorials
+//   - Papers
+//   - BlockstackJS
+//   - Blockstack Core
+//   - GitHub
     this.state = {
       navItems: [
-        { to: '/install', label: 'Install' },
-        { to: '/about', label: 'About' },
-        { to: '/docs', label: 'Docs', dropdown: [
+        { to: '/learn', label: 'Learn', dropdown: [
+          {to: '/what-is-blockstack', label: 'What is Blockstack?'},
+          {to: '/about', label: 'About'},
+          {to: '/faq', label: 'FAQ'},
+          {to: '/videos', label: 'Videos'},
+        ] },
+        { to: '/developers', label: 'Developers', dropdown: [
           {to: '/tutorials', label: 'Tutorials'},
           {to: '/papers', label: 'Papers'},
-          {to: '/videos', label: 'Videos'},
           {to: 'http://blockstack.github.io/blockstack.js/', label: 'BlockstackJS'},
-          {to: 'https://core.blockstack.org/', label: 'Core API'},
+          {to: 'https://core.blockstack.org/', label: 'Blockstack Core'},
+          {to: 'https://github.com/blockstack', label: 'Github'}
         ] },
         { to: '/blog', label: 'Blog' },
-        { to: '/faq', label: 'FAQ' },
-        { to: 'https://github.com/blockstack', label: 'GitHub' },
-        { to: '/careers', label: 'We\'re Hiring!' }
+        { to: '/install', label: 'Download' },
+        { to: '/careers', label: 'We\'re Hiring' }
       ]
     }
   }

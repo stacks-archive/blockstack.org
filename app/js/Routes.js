@@ -34,6 +34,7 @@ import TokenSalePage               from './pages/TokenSalePage'
 import Summit2017Page              from './pages/Summit2017Page'
 import FundingPage                 from './pages/FundingPage'
 import PressPage                   from './pages/PressPage'
+import WhatIsBlockstack            from './pages/WhatIsBlockstack'
 
 export default (
   <Router history={browserHistory} onUpdate={() => window.scrollTo(0, 0)}>
@@ -47,6 +48,8 @@ export default (
       <Route path="/install" component={DownloadPage} />
 
       <Route path="/intro" component={IntroPage} />
+
+      <Route path="/what-is-blockstack" component={WhatIsBlockstack} />
 
       <Route path="/tutorials" component={TutorialsPage} />
       <Route path="/tutorials/:docSection" component={TutorialPage} />
