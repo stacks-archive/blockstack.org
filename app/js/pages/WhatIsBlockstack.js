@@ -86,7 +86,8 @@ class HomePage extends Component {
                 What is Blockstack?
               </h1>
               <p style={{ maxWidth: '410px' }} className="mb-5 mx-auto">
-                Blockstack helps people find and use apps that let them own their data. Developers can use Blockstack's platform to build these apps, also known on decentralized apps, to give their users a better experience.              </p>
+                Blockstack helps people find and use apps that let them own their data. Developers can use Blockstack's platform to build these apps, also known on decentralized apps, to give their users a better experience.
+              </p>
               <button className="btn btn-primary">Download Blockstack</button>
             </div>
           </section>
@@ -115,16 +116,17 @@ class HomePage extends Component {
                       <div className="col-md-6">
                         <h5 className="font-weight-bold">For users</h5>
                         <ul className="pl-3">
-                          <li>You control where you store your data</li>
-                          <li>No one sees your data unless you want them to</li>
-                          <li>If you’re hacked, your data is encrypted and unreadable</li>
+                          <li>You control where you store your data.</li>
+                          <li>No one sees your data unless you want them to.</li>
+                          <li>If you’re hacked, your data is encrypted and unreadable.</li>
                         </ul>
                       </div>
                       <div className="col-md-6">
                         <h5 className="font-weight-bold">For developers</h5>
                         <ul className="pl-3">
-                          <li>Scale easily since you don’t have to store user data</li>
-                          <li>Get up and running with serverless data storage painlessly</li>
+                          <li>The data is stored with users and not on a central server.</li>
+                          <li>Code in the language of your choice.</li>
+                          <li>Less data liability since you don't host data.</li>
                         </ul>
                       </div>
                     </div>
@@ -138,7 +140,7 @@ class HomePage extends Component {
                     <div className="col-md-6">
                       <h2 className="font-weight-bold">Take your identity everywhere</h2>
                       <p>
-                        Your personal data and storage are built around your Blockstack ID. Blockstack utilizes the blockchain for secure management of keys, devices, and usernames.
+                        Your personal data and storage are built around your Blockstack ID. Blockstack utilizes a blockchain to enable secure devices and usernames.
                       </p>
                     </div>
                     <div className="col-md-6 text-center">
@@ -150,7 +152,7 @@ class HomePage extends Component {
                       <div className="col-md-6">
                         <h5 className="font-weight-bold">For users</h5>
                         <ul className="pl-3">
-                          <li>You create one identity and use it everywhere (without Google or Facebook)</li>
+                          <li>One identity nobody else but you owns.</li>
                           <li>Identities can be verified so that you can trust who you’re talking to online.</li>
                           <li>Your identity is globally and verifiably unique.</li>
                         </ul>
@@ -172,7 +174,7 @@ class HomePage extends Component {
           <section className="jumbotron jumbotron-white jumbotron-fluid text-center">
             <div className="container">
               <h1 className="page-heading mx-auto" style={{ maxWidth: '550px' }}>
-                Simply put, we're building a new internet.
+                Join the new internet
               </h1>
               <p style={{ maxWidth: '410px' }} className="mb-5 mx-auto">
                 A decentralized internet is one where users don't need to trust any intermediaries or remote services. We envision a world where users control their own data, and power flows back to the users.

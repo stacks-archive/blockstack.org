@@ -1,7 +1,7 @@
 'use strict'
 
 import {Component}          from 'react'
-import {Link}               from 'react-router'
+import {Link} from 'react-router'
 import DocumentTitle        from 'react-document-title'
 import {bindActionCreators} from 'redux'
 import {connect}            from 'react-redux'
@@ -80,7 +80,6 @@ class HomePage extends Component {
     return (
       <DocumentTitle title="Blockstack, building the decentralized internet">
         <div>
-          <Alert />
           <Header transparent={true} />
           <section className="jumbotron jumbotron-fluid">
             <div className="container">
@@ -94,12 +93,16 @@ class HomePage extends Component {
                   </p>
                 </div>
                 <div className="col-md-5">
-                  <div className="video-thumbnail img-hover-scale" onClick={this.openModal}>
-                    <div className="video-thumbnail-img" style={{ backgroundImage: 'url("/images/resources/video-home-1-thumbnail.jpg")' }} />
-                    <i className="fa fa-play"></i>
+                  <div className="d-inline-block">
+                    <div className="video-thumbnail img-hover-scale" onClick={this.openModal}>
+                      <div className="video-thumbnail-img" style={{ backgroundImage: 'url("/images/resources/video-home-1-thumbnail.jpg")' }} />
+                      <i className="fa fa-play"></i>
+                    </div>
+                    <ModalVideo channel='youtube' timeout={300} isOpen={this.state.videoOpen} videoId='7SmC7AuZNWY' onClose={() => this.setState({ videoOpen: false })} />
+                    <Link to="/what-is-blockstack" className="float-right">
+                      What is Blockstack?
+                    </Link>
                   </div>
-                  <ModalVideo channel='youtube' timeout={300} isOpen={this.state.videoOpen} videoId='7SmC7AuZNWY' onClose={() => this.setState({ videoOpen: false })} />
-                  <a href="">What is Blockstack?</a>
                 </div>
               </div>
             </div>
@@ -115,7 +118,7 @@ class HomePage extends Component {
                       <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
                           <a href="">
-                            <img src="/images/logos/app-icon-coins-512x512.png" />
+                            <img src="/images/logos/app-icon-graphite-512x512.png" />
                             <h4>Graphite</h4>
                             <p>Docs Suite</p>
                           </a>
@@ -123,7 +126,7 @@ class HomePage extends Component {
                       </div>
                       <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
-                          <a href="">
+                          <a href="http://www.google.com">
                             <img src="/images/logos/app-icon-coins-512x512.png" />
                             <h4>Stealthy</h4>
                             <p>Messaging</p>
@@ -165,7 +168,7 @@ class HomePage extends Component {
                       <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
                           <a href="">
-                            <img src="/images/logos/app-icon-dotpodcast-512x512.png" />
+                            <img src="/images/logos/app-icon-coinfort-256x256.png" />
                             <h4>CoinFort</h4>
                             <p>Crypto Portfolios</p>
                           </a>
@@ -174,7 +177,7 @@ class HomePage extends Component {
                       <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
                           <a href="">
-                            <img src="/images/logos/app-icon-dotpodcast-512x512.png" />
+                            <img src="/images/logos/app-icon-coinstack-256x256.png" />
                             <h4>CoinStack</h4>
                             <p>Crypto Portfolios</p>
                           </a>
@@ -183,7 +186,7 @@ class HomePage extends Component {
                       <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
                           <a href="">
-                            <img src="/images/logos/app-icon-dotpodcast-512x512.png" />
+                            <img src="/images/logos/app-icon-lio-256x256.png" />
                             <h4>Lio</h4>
                             <p>Crypto Portfolios</p>
                           </a>
@@ -237,10 +240,16 @@ class HomePage extends Component {
                   <div className="app-store-sidebar">
                     <p><strong>Blockstack apps are perfect for:</strong></p>
                     <ul>
-                      <li><i className="fa fa-cog" /> Privacy</li>
-                      <li><i className="fa fa-cog" /> Security</li>
-                      <li><i className="fa fa-cog" /> Freedom</li>
-                      <li><i className="fa fa-cog" /> Cryptocurrency use</li>
+                      <li>Keeping your privacy</li>
+                      <li>Using cryptocurrency</li>
+                      <li>Freedom of speech</li>
+                    </ul>
+
+                    <p><strong>Blockstack helps devs:</strong></p>
+                    <ul>
+                      <li>Remove data liability</li>
+                      <li>Differentiate themselves</li>
+                      <li>Fund their projects</li>
                     </ul>
                     <div className="d-none d-md-block">
                       <p className="m-b-1">Are you a developer?</p>
@@ -254,16 +263,22 @@ class HomePage extends Component {
 
           <section className="cta-panel">
             <div className="container">
-              <div className="row">
-                <div className="col-md-6">
-                  <h2>Have an app idea?</h2>
-                  <p>Get started building on Blockstack by visiting our developer site where you can find tutorials, docs, sourcecode, and a community forum.</p>
+              <h2 className="page-heading">Have an app idea?</h2>
+              <div className="row mt-5">
+                <div className="col-lg-4 col-md-6 pb-5">
+                  <h5>Start building</h5>
+                  <p>If you’re a developer, we’re here to help. Discover tutorials, docs, sourcecode, our forum, and more.</p>
+                  <button className="btn btn-outline-primary mt-3">View tutorials</button>
                 </div>
-                <div className="col-md-6">
-                  <div className="m-t-60 float-md-right">
-                    <button className="btn btn-primary mt-3">Go to developer site</button>
-                    <button className="btn btn-outline-primary mt-3">Request an app</button>
-                  </div>
+                <div className="col-lg-4 col-md-6 pb-5">
+                  <h5>Request an app</h5>
+                  <p>If you’ve got an idea for an app you’d like to see built on Blockstack, let us know and we’ll take note.</p>
+                  <button className="btn btn-outline-primary mt-3">Request an app</button>
+                </div>
+                <div className="col-lg-4 col-md-6 pb-5">
+                  <h5>Funding</h5>
+                  <p>Developer building something great with Blockstack?  Investor looking to fund powerful applications on Web 3?</p>
+                  <button className="btn btn-outline-primary mt-3">Learn more</button>
                 </div>
               </div>
             </div>

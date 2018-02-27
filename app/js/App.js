@@ -50,7 +50,6 @@ class App extends Component {
       <div className={specialHeader ? 'app-landing' : 'app-common'}>
         { !specialHeader ?
         <div>
-          <Alert />
           <Header />
         </div>
         : null }

@@ -1192,7 +1192,6 @@ a.nav-link:hover, a.nav-link:focus {
 .navbar-nav .dropdown-menu {
   position: static !important;
   border-radius: 0;
-  width: 120%;
   margin-left: -25px;
   margin-right: auto;
   -webkit-transform: translate3d(-5px, 0px, 0px) !important;
@@ -1356,7 +1355,7 @@ pre {
 }
 
 .video-thumbnail {
-  max-width: 320px;
+  width: 320px;
   height: 210px;
   background-color: #4a4a4a;
   border-radius: 3px;
@@ -1392,6 +1391,10 @@ pre {
   padding: 50px 0;
 }
 
+.app-store-sidebar {
+  max-width: 190px;
+}
+
 .app-store-sidebar ul {
   list-style-type: none;
   padding-left: 0;
@@ -1416,10 +1419,16 @@ pre {
 }
 .app-store-app {
   margin-bottom: 3rem;
+  cursor: pointer;
 }
 .app-store-app img {
   width: 70px;
   height: 70px;
+  box-shadow: 4px 4px 5px #00000012;
+  border-radius: 18px;
+}
+.app-store-app a {
+  display: block;
 }
 .app-store-app a h4 {
   font-size: 1.125rem;
@@ -2686,7 +2695,6 @@ pre {
 
   .navbar-nav .dropdown-menu {
     position: absolute !important;
-    width: 120%;
     margin-right: auto;
     margin-left: -25px;
     -webkit-transform: translate3d(-5px, 25px, 0px) !important;
@@ -2700,6 +2708,7 @@ pre {
     font-weight: 700;
     padding: .375rem 3.4375rem .375rem 1.875rem;
     color: #484848;
+
   }
 
   .dropdown-menu {
