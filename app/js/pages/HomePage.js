@@ -130,7 +130,7 @@ class HomePage extends Component {
                       <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
                           <a href="https://www.stealthy.im/" target="_blank">
-                            <img src="/images/logos/app-icon-coins-512x512.png" />
+                            <img src="/images/logos/app-icon-stealthy-256x256.png" />
                             <h4>Stealthy</h4>
                             <p>Messaging</p>
                           </a>
