@@ -29,7 +29,7 @@ gulp.task('configFirebase', () => {
   })
 
   // Create rewrites for blog
-  const rssURL = 'https://blockstack-site-api.herokuapp.com/v1/blog-rss'
+  const rssURL = 'https://site-api.blockstack.org/v1/blog-rss'
   const requestBody = request('GET', rssURL).body
   parseXML(requestBody, (err, blogRSSData) => {
     const firstChannel = blogRSSData.rss.channel[0]

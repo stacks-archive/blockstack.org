@@ -22,7 +22,7 @@ function updateStats(stats) {
 
 function fetchStats() {
   return dispatch => {
-    const url = 'https://blockstack-site-api.herokuapp.com/v1/stats'
+    const url = 'https://site-api.blockstack.org/v1/stats'
     fetch(url)
     .then((response) => response.text())
     .then((responseText) => JSON.parse(responseText))

@@ -37,7 +37,7 @@ function createMetatagMarkup(url, title, description, image) {
   metadata2.forEach((datum) => {
     metatagMarkup += `<meta property="${datum.property}" content="${datum.content}" />\n`
   })
-  metatagMarkup += '<link rel="alternate" type="application/rss+xml" title="Blockstack Blog" href="https://blockstack-site-api.herokuapp.com/v1/blog-rss" />'
+  metatagMarkup += '<link rel="alternate" type="application/rss+xml" title="Blockstack Blog" href="https://site-api.blockstack.org/v1/blog-rss" />'
 
   return metatagMarkup
 }
@@ -59,7 +59,7 @@ gulp.task('buildBlog', () => {
   }
 
   const indexHtml = fs.readFileSync('app/index.html', 'utf8')
-  const rssURL = 'https://blockstack-site-api.herokuapp.com/v1/blog-rss'
+  const rssURL = 'https://site-api.blockstack.org/v1/blog-rss'
   request({
     url: rssURL,
     withCredentials: false

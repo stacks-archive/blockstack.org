@@ -28,8 +28,8 @@ function updatePosts(postPages) {
 function fetchPosts() {
   return dispatch => {
     const urls = [
-      'https://blockstack-site-api.herokuapp.com/v1/blog-rss?page=1',
-      'https://blockstack-site-api.herokuapp.com/v1/blog-rss?page=2',
+      'https://site-api.blockstack.org/v1/blog-rss?page=1',
+      'https://site-api.blockstack.org/v1/blog-rss?page=2',
     ]
 
     const promises = urls.map(url =>
