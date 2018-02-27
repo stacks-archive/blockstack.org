@@ -110,15 +110,18 @@ class HomePage extends Component {
 
           <section className="app-store">
             <div className="container">
+              <h3 className="mb-5 mt-1 mt-md-5">
+                Apps built on Blockstack
+              </h3>
               <div className="row">
-                <div className="col-lg-9 col-md-8 order-md-2">
+                <div className="col-lg-9 col-md-8">
                   <div className="app-store-section">
                     <p>Featured Apps</p>
                     <div className="row">
                       <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
                           <a href="https://www.graphitedocs.com/" target="_blank">
-                            <img src="/images/logos/app-icon-graphite-512x512.png" />
+                            <img src="/images/logos/app-icon-graphite-256x256.png" />
                             <h4>Graphite</h4>
                             <p>Docs Suite</p>
                           </a>
@@ -236,16 +239,16 @@ class HomePage extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-3 col-md-4 order-md-1">
+                <div className="col-lg-3 col-md-4">
                   <div className="app-store-sidebar">
-                    <p><strong>Blockstack apps are perfect for:</strong></p>
+                    <p><strong>Perfect for:</strong></p>
                     <ul>
                       <li>Keeping your privacy</li>
                       <li>Using cryptocurrency</li>
                       <li>Freedom of speech</li>
                     </ul>
 
-                    <p><strong>Blockstack helps devs:</strong></p>
+                    <p><strong>Helps engineers:</strong></p>
                     <ul>
                       <li>Remove data liability</li>
                       <li>Differentiate themselves</li>

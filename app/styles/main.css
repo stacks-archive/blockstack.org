@@ -1388,16 +1388,21 @@ pre {
 }
 
 .app-store {
-  padding: 50px 0;
+  padding: 0 0 50px 0;
 }
 
 .app-store-sidebar {
-  max-width: 190px;
+  background-color: #FAFAFA;
+  padding: 30px;
+}
+
+.cta-panel p {
+  min-height: 90px;
 }
 
 .app-store-sidebar ul {
-  list-style-type: none;
-  padding-left: 0;
+  /* list-style-type: none; */
+  padding-left: 20px;
   margin-bottom: 3rem;
 }
 .app-store-sidebar ul i {
@@ -1836,11 +1841,11 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead {
 
 .feature-benefits {
   margin-top: 2rem;
-  padding: 20px;
+  padding: 40px;
   background-color: #fafafa;
   border-radius: 3px;
-  margin-left: -20px;
-  margin-right: -20px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .feat-card {
@@ -3199,6 +3204,11 @@ pre {
 
   .feature-body img {
     margin-top: -30px;
+  }
+
+  .feature-benefits {
+    margin-left: -40px;
+    margin-right: -40px;
   }
 
   .deck-wrap-top {
