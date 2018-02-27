@@ -276,7 +276,7 @@ class HomePage extends Component {
                 <div className="col-lg-4 col-md-6 pb-5">
                   <h5>Request an app</h5>
                   <p>If you’ve got an idea for an app you’d like to see built on Blockstack, let us know and we’ll take note.</p>
-                  <Link to="https://docs.google.com/forms/d/e/1FAIpQLSd2CPJ5nKwxH1l9Bl_tu22g1xfNxL9fOt6K9UiGYtTi9InfSw/viewform" className="btn btn-outline-primary mt-3">Request an app</Link>
+                  <Link to="https://docs.google.com/forms/d/e/1FAIpQLSd2CPJ5nKwxH1l9Bl_tu22g1xfNxL9fOt6K9UiGYtTi9InfSw/viewform" target="_blank" className="btn btn-outline-primary mt-3">Request an app</Link>
                 </div>
                 <div className="col-lg-4 col-md-6 pb-5">
                   <h5>Funding</h5>

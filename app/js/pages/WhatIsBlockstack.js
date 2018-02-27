@@ -86,7 +86,7 @@ class HomePage extends Component {
                 What is Blockstack?
               </h1>
               <p style={{ maxWidth: '410px' }} className="mb-5 mx-auto">
-                Blockstack helps people find and use apps that let them own their data. Developers can use Blockstack's platform to build these apps, also known on decentralized apps, to give their users a better experience.
+                Blockstack helps people find and use apps that let them own their data. Developers can use Blockstack's platform to build these apps, also known as decentralized apps, to give their users a better experience.
               </p>
               <Link to="install" className="btn btn-primary">Download Blockstack</Link>
             </div>
@@ -94,9 +94,6 @@ class HomePage extends Component {
 
           <section className="features">
             <div className="container">
-              <h1 className="page-heading text-center mx-auto">
-                Features
-              </h1>
               <div className="feature">
                 <div className="feature-number">1</div>
                 <div className="feature-body">
@@ -104,7 +101,7 @@ class HomePage extends Component {
                     <div className="col-md-6">
                       <h2 className="font-weight-bold">Own your data</h2>
                       <p>
-                        Right now, app users are "digital serfs" and applications are the "digital landlords". Users don't own their data; the app owns it. Users don't control where data gets stored; they’re only allowed store it on the application.
+                        Right now, app users are "digital serfs" and applications are the "digital landlords". Users don't own their data; the app owns it. Users don't control where data gets stored; they’re only allowed to store it on the application.
                       </p>
                     </div>
                     <div className="col-md-6 text-center">
@@ -162,6 +159,41 @@ class HomePage extends Component {
                         <ul className="pl-3">
                           <li>You don’t need to worry about account security and data breaches. Identity is managed through Blockstack.</li>
                           <li>Access user meta information like social profile URLs and more automatically.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="feature">
+                <div className="feature-number">3</div>
+                <div className="feature-body">
+                  <div className="row">
+                    <div className="col-md-6">
+                      <h2 className="font-weight-bold">Decentralized app ecosystem</h2>
+                      <p>
+                        Join the community building the decentralized internet, as we reenvision apps for social, gaming, finance and everything in between. 
+                      </p>
+                    </div>
+                    <div className="col-md-6 text-center">
+                      <img src="/images/visuals/dev.png" />
+                    </div>
+                  </div>
+                  <div className="feature-benefits">
+                    <div className="row">
+                      <div className="col-md-6">
+                        <h5 className="font-weight-bold">For users</h5>
+                        <ul className="pl-3">
+                          <li>Discover the latest decentralized apps.</li>
+                          <li>Limitless applications, one identity .</li>
+                          <li>Share your data across applications.</li>
+                        </ul>
+                      </div>
+                      <div className="col-md-6">
+                        <h5 className="font-weight-bold">For developers</h5>
+                        <ul className="pl-3">
+                          <li>Join an active community driven by decentralized philosophy.</li>
+                          <li>Built-in, free, and effortless distribution channel for acquiring new users.</li>
                         </ul>
                       </div>
                     </div>
