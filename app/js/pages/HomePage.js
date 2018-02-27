@@ -95,7 +95,7 @@ class HomePage extends Component {
                 <div className="col-md-5">
                   <div className="d-inline-block">
                     <div className="video-thumbnail img-hover-scale" onClick={this.openModal}>
-                      <div className="video-thumbnail-img" style={{ backgroundImage: 'url("/images/visuals/girl-smiling.png")' }} />
+                      <div className="video-thumbnail-img" style={{ backgroundImage: 'url("/images/visuals/retro.png")' }} />
                       <i className="fa fa-play"></i>
                     </div>
                     <ModalVideo channel='youtube' timeout={300} isOpen={this.state.videoOpen} videoId='7SmC7AuZNWY' onClose={() => this.setState({ videoOpen: false })} />
