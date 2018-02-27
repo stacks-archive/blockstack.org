@@ -117,7 +117,7 @@ class HomePage extends Component {
                     <div className="row">
                       <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
-                          <a href="">
+                          <a href="https://www.graphitedocs.com/" target="_blank">
                             <img src="/images/logos/app-icon-graphite-512x512.png" />
                             <h4>Graphite</h4>
                             <p>Docs Suite</p>
@@ -126,7 +126,7 @@ class HomePage extends Component {
                       </div>
                       <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
-                          <a href="http://www.google.com">
+                          <a href="https://www.stealthy.im/" target="_blank">
                             <img src="/images/logos/app-icon-coins-512x512.png" />
                             <h4>Stealthy</h4>
                             <p>Messaging</p>
@@ -135,7 +135,7 @@ class HomePage extends Component {
                       </div>
                       <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
-                          <a href="">
+                          <a href="https://coinsapp.co" target="_blank">
                             <img src="/images/logos/app-icon-coins-512x512.png" />
                             <h4>Coins</h4>
                             <p>Investment Portfolios</p>
@@ -144,7 +144,7 @@ class HomePage extends Component {
                       </div>
                       <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
-                          <a href="">
+                          <a href="https://dotpodcast.co/" target="_blank">
                             <img src="/images/logos/app-icon-dotpodcast-512x512.png" />
                             <h4>DotPodcast</h4>
                             <p>Podcasts</p>
@@ -158,7 +158,7 @@ class HomePage extends Component {
                     <div className="row">
                       <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
-                          <a href="">
+                          <a href="https://coinsapp.co/" target="_blank">
                             <img src="/images/logos/app-icon-coins-512x512.png" />
                             <h4>Coins</h4>
                             <p>Crypto Portfolios</p>
@@ -167,16 +167,16 @@ class HomePage extends Component {
                       </div>
                       <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
-                          <a href="">
-                            <img src="/images/logos/app-icon-coinfort-256x256.png" />
-                            <h4>CoinFort</h4>
+                          <a href="https://faa.st" target="_blank">
+                            <img src="/images/logos/app-icon-faast-256x256.png" />
+                            <h4>faast</h4>
                             <p>Crypto Portfolios</p>
                           </a>
                         </div>
                       </div>
                       <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
-                          <a href="">
+                          <a href="http://www.coinstack.one/" target="_blank">
                             <img src="/images/logos/app-icon-coinstack-256x256.png" />
                             <h4>CoinStack</h4>
                             <p>Crypto Portfolios</p>
@@ -185,7 +185,7 @@ class HomePage extends Component {
                       </div>
                       <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
-                          <a href="">
+                          <a href="http://lioapp.io/" target="_blank">
                             <img src="/images/logos/app-icon-lio-256x256.png" />
                             <h4>Lio</h4>
                             <p>Crypto Portfolios</p>
@@ -199,7 +199,7 @@ class HomePage extends Component {
                     <div className="row">
                       <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
-                          <a href="">
+                          <a href="https://dotpodcast.co/" target="_blank">
                             <img src="/images/logos/app-icon-dotpodcast-512x512.png" />
                             <h4>DotPodcast</h4>
                             <p>Podcasts</p>
@@ -208,7 +208,7 @@ class HomePage extends Component {
                       </div>
                       <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
-                          <a href="">
+                          <a href="https://casa.cash/" target="_blank">
                             <img src="/images/logos/app-icon-casa-512x512.png" />
                             <h4>Casa</h4>
                             <p>Homesharing</p>
@@ -217,7 +217,7 @@ class HomePage extends Component {
                       </div>
                       <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
-                          <a href="">
+                          <a href="http://www.afiabeta.com/" target="_blank">
                             <img src="/images/logos/app-icon-afia-512x512.png" />
                             <h4>Afia</h4>
                             <p>Healthcare</p>
@@ -226,7 +226,7 @@ class HomePage extends Component {
                       </div>
                       <div className="col-lg-3 col-sm-4 col-6">
                         <div className="app-store-app">
-                          <a href="">
+                          <a href="http://www.guildblog.com/" target="_blank">
                             <img src="/images/logos/app-icon-guild.png" />
                             <h4>Guild</h4>
                             <p>Forums</p>

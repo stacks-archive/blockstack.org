@@ -82,19 +82,19 @@ class HomePage extends Component {
         <div>
           <section className="jumbotron jumbotron-fluid text-center">
             <div className="container">
-              <h1 className="page-heading">
+              <h1 className="page-heading mx-auto">
                 What is Blockstack?
               </h1>
               <p style={{ maxWidth: '410px' }} className="mb-5 mx-auto">
                 Blockstack helps people find and use apps that let them own their data. Developers can use Blockstack's platform to build these apps, also known on decentralized apps, to give their users a better experience.
               </p>
-              <button className="btn btn-primary">Download Blockstack</button>
+              <Link to="install" className="btn btn-primary">Download Blockstack</Link>
             </div>
           </section>
 
           <section className="features">
             <div className="container">
-              <h1 className="page-heading text-center">
+              <h1 className="page-heading text-center mx-auto">
                 Features
               </h1>
               <div className="feature">
@@ -108,7 +108,7 @@ class HomePage extends Component {
                       </p>
                     </div>
                     <div className="col-md-6 text-center">
-                      <img src="http://placehold.it/200x200" />
+                      <img src="/images/visuals/storage.png" />
                     </div>
                   </div>
                   <div className="feature-benefits">
@@ -144,7 +144,7 @@ class HomePage extends Component {
                       </p>
                     </div>
                     <div className="col-md-6 text-center">
-                      <img src="http://placehold.it/200x200" />
+                      <img src="/images/visuals/identity.png" />
                     </div>
                   </div>
                   <div className="feature-benefits">
@@ -179,7 +179,7 @@ class HomePage extends Component {
               <p style={{ maxWidth: '410px' }} className="mb-5 mx-auto">
                 A decentralized internet is one where users don't need to trust any intermediaries or remote services. We envision a world where users control their own data, and power flows back to the users.
               </p>
-              <button className="btn btn-primary">Download Blockstack</button>
+              <Link to="/install" className="btn btn-primary">Download Blockstack</Link>
             </div>
           </section>
           
@@ -191,17 +191,17 @@ class HomePage extends Component {
                 <div className="col-lg-4 col-md-6 pb-5">
                   <h5>Videos</h5>
                   <p>Our video section is a great place to find past presentations, Q&amp;A sessions with cofounders Muneeb &amp; Ryan, and more.</p>
-                  <button className="btn btn-outline-primary mt-3">Watch videos</button>
+                  <Link to="/videos" className="btn btn-outline-primary mt-3">Watch videos</Link>
                 </div>
                 <div className="col-lg-4 col-md-6 pb-5">
                   <h5>Papers</h5>
                   <p>Our whitepapers are the best place to start for a technical deep-dive into the Blockstack vision.</p>
-                  <button className="btn btn-outline-primary mt-3">Read whitepapers</button>
+                  <Link to="/papers" className="btn btn-outline-primary mt-3">Read whitepapers</Link>
                 </div>
                 <div className="col-lg-4 col-md-6 pb-5">
                   <h5>About Blockstack</h5>
                   <p>Read about our history, values, and core team. Find out why we're a Public Benefit Corporation.</p>
-                  <button className="btn btn-outline-primary mt-3">About Blockstack</button>
+                  <Link to="/about" className="btn btn-outline-primary mt-3">About Blockstack</Link>
                 </div>
               </div>
             </div>
