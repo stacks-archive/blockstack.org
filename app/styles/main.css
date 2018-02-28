@@ -1348,6 +1348,10 @@ pre {
   background-color: #FFFFFF;
 }
 
+.jumbotron-blob {
+  max-width: 410px;
+}
+
 .page-heading {
   font-size: 2rem;
   font-weight: 800;
@@ -1393,7 +1397,8 @@ pre {
 
 .app-store-sidebar {
   background-color: #FAFAFA;
-  padding: 30px;
+  padding: 40px;
+  font-size:0.9rem;
 }
 
 .cta-panel p {
@@ -1404,6 +1409,7 @@ pre {
   /* list-style-type: none; */
   padding-left: 20px;
   margin-bottom: 3rem;
+  line-height: 1.3em;
 }
 .app-store-sidebar ul i {
   margin-right: 10px;
@@ -1414,6 +1420,9 @@ pre {
 .app-store-sidebar ul li {
   margin-bottom: 1.25rem;
 }
+.app-store-section p {
+  line-height: 1.4rem;
+}
 .app-store-section {
   border-bottom: 1px solid #EDEDED;
   margin-bottom: 3rem;
@@ -1421,6 +1430,11 @@ pre {
 .app-store-section:last-child {
   border-bottom: none;
   margin-bottom: 0;
+}
+.app-store-section h3 {
+  font-size: 1.2rem;
+  margin-bottom:40px;
+  font-weight:bold;
 }
 .app-store-app {
   margin-bottom: 3rem;
@@ -1440,11 +1454,13 @@ pre {
   font-weight: bold;
   margin-top: 1rem;
   margin-bottom: 0;
+  margin-left: 2px;
   color: #272727;
   transition: color 0.1s ease-in-out;
 }
 .app-store-app a p {
   color: #6C6C6C;
+  margin-left: 2px;
 }
 .app-store-app a {
   text-decoration: none;
@@ -1463,7 +1479,7 @@ pre {
 }
 .cta-panel p {
   color: #6C6C6C;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.625rem;
   max-width: 320px;
 }
@@ -1479,6 +1495,16 @@ pre {
 
 .video-special-hero {
   background-color: #121416 !important;
+}
+
+.video-caption {
+  font-weight: bold;
+  color: #111111;
+  line-height: 2.5rem;
+}
+
+.video-block a:hover {
+  text-decoration: none;
 }
 
 .feature-event-hero {
@@ -3354,6 +3380,14 @@ pre {
     margin: 10px 10px 10px 10px;
   }
 
+  .cta-panel {
+    padding-top: 50px;
+  }
+
+  .app-store-sidebar {
+    background-color: #FAFAFA;
+    padding: 40px 40px 2px 40px;
+  }
 }
 
   /* FAQ Page */

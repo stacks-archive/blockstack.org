@@ -85,21 +85,23 @@ class HomePage extends Component {
             <div className="container">
               <div className="row">
                 <div className="col-md-7">
-                  <h1 className="page-heading m-b-20 mt-1 mt-md-5">
-                    Own your data
-                  </h1>
-                  <p style={{ maxWidth: '410px' }}>
-                    Decentralized apps on Blockstack let you own your data so you can maintain your privacy, security and freedom.
-                  </p>
+                  <div className="own-your-data">
+                    <h1 className="page-heading m-b-20 mt-1 mt-md-5">
+                      Own your data
+                    </h1>
+                    <p className="jumbotron-blob">
+                      Decentralized apps on Blockstack let you own your data so you can maintain your privacy, security and freedom.
+                    </p>
+                  </div>
                 </div>
-                <div className="col-md-5">
-                  <div className="d-inline-block">
+                <div className="col-md-5 text-center">
+                  <div className="d-inline-block video-block">
                     <div className="video-thumbnail img-hover-scale" onClick={this.openModal}>
                       <div className="video-thumbnail-img" style={{ backgroundImage: 'url("/images/visuals/retro.png")' }} />
                       <i className="fa fa-play"></i>
                     </div>
                     <ModalVideo channel='youtube' timeout={300} isOpen={this.state.videoOpen} videoId='7SmC7AuZNWY' onClose={() => this.setState({ videoOpen: false })} />
-                    <Link to="/what-is-blockstack" className="float-right mt-2">
+                    <Link to="/what-is-blockstack" className="mt-4 video-caption">
                       What is Blockstack?
                     </Link>
                   </div>
@@ -116,9 +118,9 @@ class HomePage extends Component {
               <div className="row">
                 <div className="col-lg-9 col-md-8">
                   <div className="app-store-section">
-                    <p>Featured Apps</p>
+                    <p><h3>Featured Apps</h3></p>
                     <div className="row">
-                      <div className="col-lg-3 col-sm-4 col-6">
+                      <div className="col-lg-3 col-sm-6 col-6">
                         <div className="app-store-app">
                           <a href="https://www.graphitedocs.com/" target="_blank">
                             <img src="/images/logos/app-icon-graphite-256x256.png" />
@@ -127,7 +129,7 @@ class HomePage extends Component {
                           </a>
                         </div>
                       </div>
-                      <div className="col-lg-3 col-sm-4 col-6">
+                      <div className="col-lg-3 col-sm-6 col-6">
                         <div className="app-store-app">
                           <a href="https://www.stealthy.im/" target="_blank">
                             <img src="/images/logos/app-icon-stealthy-256x256.png" />
@@ -136,7 +138,7 @@ class HomePage extends Component {
                           </a>
                         </div>
                       </div>
-                      <div className="col-lg-3 col-sm-4 col-6">
+                      <div className="col-lg-3 col-sm-6 col-6">
                         <div className="app-store-app">
                           <a href="https://coinsapp.co" target="_blank">
                             <img src="/images/logos/app-icon-coins-512x512.png" />
@@ -145,7 +147,7 @@ class HomePage extends Component {
                           </a>
                         </div>
                       </div>
-                      <div className="col-lg-3 col-sm-4 col-6">
+                      <div className="col-lg-3 col-sm-6 col-6">
                         <div className="app-store-app">
                           <a href="https://dotpodcast.co/" target="_blank">
                             <img src="/images/logos/app-icon-dotpodcast-512x512.png" />
@@ -157,9 +159,9 @@ class HomePage extends Component {
                     </div>
                   </div>
                   <div className="app-store-section">
-                    <p>Cryptocurrency Portfolio Apps</p>
+                    <p><h3>Cryptocurrency Portfolio Apps</h3></p>
                     <div className="row">
-                      <div className="col-lg-3 col-sm-4 col-6">
+                      <div className="col-lg-3 col-sm-6 col-6">
                         <div className="app-store-app">
                           <a href="https://coinsapp.co/" target="_blank">
                             <img src="/images/logos/app-icon-coins-512x512.png" />
@@ -168,7 +170,7 @@ class HomePage extends Component {
                           </a>
                         </div>
                       </div>
-                      <div className="col-lg-3 col-sm-4 col-6">
+                      <div className="col-lg-3 col-sm-6 col-6">
                         <div className="app-store-app">
                           <a href="https://faa.st" target="_blank">
                             <img src="/images/logos/app-icon-faast-256x256.png" />
@@ -177,7 +179,7 @@ class HomePage extends Component {
                           </a>
                         </div>
                       </div>
-                      <div className="col-lg-3 col-sm-4 col-6">
+                      <div className="col-lg-3 col-sm-6 col-6">
                         <div className="app-store-app">
                           <a href="http://www.coinstack.one/" target="_blank">
                             <img src="/images/logos/app-icon-coinstack-256x256.png" />
@@ -186,7 +188,7 @@ class HomePage extends Component {
                           </a>
                         </div>
                       </div>
-                      <div className="col-lg-3 col-sm-4 col-6">
+                      <div className="col-lg-3 col-sm-6 col-6">
                         <div className="app-store-app">
                           <a href="http://lioapp.io/" target="_blank">
                             <img src="/images/logos/app-icon-lio-256x256.png" />
@@ -198,9 +200,9 @@ class HomePage extends Component {
                     </div>
                   </div>
                   <div className="app-store-section">
-                    <p>Upcoming Apps</p>
+                    <p><h3>Upcoming Apps</h3></p>
                     <div className="row">
-                      <div className="col-lg-3 col-sm-4 col-6">
+                      <div className="col-lg-3 col-sm-6 col-6">
                         <div className="app-store-app">
                           <a href="https://dotpodcast.co/" target="_blank">
                             <img src="/images/logos/app-icon-dotpodcast-512x512.png" />
@@ -209,7 +211,7 @@ class HomePage extends Component {
                           </a>
                         </div>
                       </div>
-                      <div className="col-lg-3 col-sm-4 col-6">
+                      <div className="col-lg-3 col-sm-6 col-6">
                         <div className="app-store-app">
                           <a href="https://casa.cash/" target="_blank">
                             <img src="/images/logos/app-icon-casa-512x512.png" />
@@ -218,7 +220,7 @@ class HomePage extends Component {
                           </a>
                         </div>
                       </div>
-                      <div className="col-lg-3 col-sm-4 col-6">
+                      <div className="col-lg-3 col-sm-6 col-6">
                         <div className="app-store-app">
                           <a href="http://www.afiabeta.com/" target="_blank">
                             <img src="/images/logos/app-icon-afia-512x512.png" />
@@ -227,7 +229,7 @@ class HomePage extends Component {
                           </a>
                         </div>
                       </div>
-                      <div className="col-lg-3 col-sm-4 col-6">
+                      <div className="col-lg-3 col-sm-6 col-6">
                         <div className="app-store-app">
                           <a href="http://www.guildblog.com/" target="_blank">
                             <img src="/images/logos/app-icon-guild.png" />
@@ -256,7 +258,7 @@ class HomePage extends Component {
                     </ul>
                     <div className="d-none d-md-block">
                       <p className="m-b-1">Are you a developer?</p>
-                      <Link to="/tutorials" className="btn btn-outline-primary">View tutorials</Link>
+                      <Link to="/tutorials" className="btn btn-sm btn-outline-primary">View tutorials</Link>
                     </div>
                   </div>
                 </div>
