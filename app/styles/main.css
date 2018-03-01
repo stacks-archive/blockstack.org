@@ -1062,6 +1062,9 @@ footer a:hover, footer a:focus, footer a:active {
   max-width: 225px;
 }
 
+.btn-sidebar {
+  padding:6px 12px 6px 12px;
+}
 
 /* 13. Forms */
 .form-control {

@@ -232,7 +232,7 @@ class HomePage extends Component {
                 </div>
                 <div className="col-lg-4 col-md-6 pb-5">
                   <h5>About Blockstack</h5>
-                  <p>Read about our history, values, and core team. Find out why we're a Public Benefit Corporation.</p>
+                  <p>Read about our history, values and core team. Find out why we're a Public Benefit Corporation.</p>
                   <Link to="/about" className="btn btn-outline-primary mt-3">About Blockstack</Link>
                 </div>
               </div>
