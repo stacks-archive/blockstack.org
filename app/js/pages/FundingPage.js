@@ -27,14 +27,14 @@ class FundPage extends Component {
                 <div className="row">
                   <div className="col-md-6 mb-5">
                     <h2>App creators</h2>
-                    <p style={{ minHeight: '50px', maxWidth: '350px', margin: '0 auto 20px' }}>
+                    <p style={{ minHeight: '75px', maxWidth: '350px', margin: '0 auto 20px' }}>
                       Get funded to build applications on the decentralized internet.
                     </p>
                     <Link to="https://docs.google.com/forms/d/e/1FAIpQLScXVYTZSD9GIiI2fMPbs9Gpa-3CXZSHaMmUXrioaHlkqcDoJQ/viewform" target="_blank" className="btn btn-primary">Apply for funding</Link>
                   </div>
                   <div className="col-md-6 mb-5">
                     <h2>App funders</h2>
-                    <p style={{ minHeight: '50px', maxWidth: '350px', margin: '0 auto 20px' }}>
+                    <p style={{ minHeight: '75px', maxWidth: '350px', margin: '0 auto 20px' }}>
                       Accelerate the next generation of apps as an investor by qualifying yourself here.
                     </p>
                     <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfgUVpBEIeFdxXGVZFm6ma6_Luvmnq2mchXp5UQ61bctT5hTQ/viewform?usp=sf_link" target="_blank" className="btn btn-primary">Apply to fund</Link>
