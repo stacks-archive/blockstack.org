@@ -19,7 +19,7 @@ class FundPage extends Component {
                 Funding
               </h1>
               <p style={{ maxWidth: '410px' }} className="mb-5 mx-auto">
-                There’s a lot of excitement about building decentralized applications, but we know it is still early days. At Blockstack we’ve created the core infrastructure to enable developers to build these applications, but we realize that to increase an app’s chances of success, it will require access to capital and tools to bootstrap networks.
+                Funding is aimed at growing an ecosystem of decentralized applications on Blockstack
               </p>
 
               <div className="p-b-50 p-t-30">
