@@ -33,6 +33,7 @@ import RoadmapPage                 from './pages/RoadmapPage'
 import TokenSalePage               from './pages/TokenSalePage'
 import Summit2017Page              from './pages/Summit2017Page'
 import FundingPage                 from './pages/FundingPage'
+import FundPage                    from './pages/FundPage'
 import PressPage                   from './pages/PressPage'
 import WhatIsBlockstack            from './pages/WhatIsBlockstack'
 
@@ -80,6 +81,7 @@ export default (
       <Route path="/token" component={TokenSalePage} />
       <Route path="/summit2017" component={Summit2017Page} />
       <Route path="/funding" component={FundingPage} />
+      <Route path="/fund" component={FundPage} />
 
       <Route path="/press" component={PressPage} />
 
