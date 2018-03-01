@@ -1443,7 +1443,7 @@ pre {
 .app-store-app img {
   width: 70px;
   height: 70px;
-  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.08);
   border-radius: 18px;
 }
 .app-store-app a {

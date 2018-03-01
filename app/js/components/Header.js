@@ -104,12 +104,6 @@ class Header extends Component {
         </nav>
         <div className="collapse navbar-collapse" id="mobile-nav">
           <ul className="navbar-nav ml-sm-auto">
-            <li className="nav-item" style={{ paddingTop: '10px', paddingRight: '20px', paddingBottom: '5px' }}>
-              <a href="http://blockstack.com" target="_blank" role="button"
-                className="btn btn-primary btn-sm btn-block navbar-btn">
-                Token
-              </a>
-            </li>
             {this.state.navItems.map((navItem, index) => {
               if (!navItem.hasOwnProperty('dropdown')) {
                 return (
