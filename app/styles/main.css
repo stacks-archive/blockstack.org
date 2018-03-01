@@ -1469,6 +1469,23 @@ pre {
   color: #2C96FF;
 }
 
+.home-signup {
+  border-top: 1px solid #EDEDED;
+  background-color: #fafafa;
+}
+.home-signup #mc_embed_signup_scroll {
+  display: flex;
+}
+
+.home-signup .mc-field-group {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.home-signup .mc-field-group input {
+  border-radius: 100px;
+}
+
 .cta-panel {
   padding: 100px 0;
   border-top: 1px solid #EDEDED;

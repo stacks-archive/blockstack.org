@@ -288,6 +288,23 @@ class HomePage extends Component {
               </div>
             </div>
           </section>
+
+          <div className="container-fluid home-signup">
+            <div className="row">
+              <div className="container container-md mx-auto m-b-70 m-t-70">
+                <div className="row">
+                  <div className="container-fluid">
+                    <div className="container-fluid">
+                      <p>
+                        Join our mailing list to stay up to date with the Blockstack community. You'll hear about product launches, upcoming events, newly released applications and more.
+                    </p>
+                      <MailchimpForm subscribeURL={subscribeURL} submitButtonText='Sign Up' />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </DocumentTitle>
     )
