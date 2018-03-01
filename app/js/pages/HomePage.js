@@ -116,7 +116,7 @@ class HomePage extends Component {
                 Apps built on Blockstack
               </h3>
               <div className="row">
-                <div className="col-lg-9 col-md-8">
+                <div className="col-lg-9 col-md-7">
                   <div className="app-store-section">
                     <p><h3>Featured Apps</h3></p>
                     <div className="row">
@@ -216,7 +216,7 @@ class HomePage extends Component {
                           <a href="https://casa.cash/" target="_blank">
                             <img src="/images/logos/app-icon-casa-512x512.png" />
                             <h4>Casa</h4>
-                            <p>Homesharing</p>
+                            <p>Home sharing</p>
                           </a>
                         </div>
                       </div>
@@ -241,12 +241,12 @@ class HomePage extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-3 col-md-4">
+                <div className="col-lg-3 col-md-5">
                   <div className="app-store-sidebar">
                     <p><strong>Perfect for:</strong></p>
                     <ul>
-                      <li>Keeping your privacy</li>
-                      <li>Using cryptocurrency</li>
+                      <li>Privacy</li>
+                      <li>Cryptocurrency</li>
                       <li>Freedom of speech</li>
                     </ul>
 
@@ -258,7 +258,7 @@ class HomePage extends Component {
                     </ul>
                     <div className="d-none d-md-block">
                       <p className="m-b-1">Are you a developer?</p>
-                      <Link to="/tutorials" className="btn btn-sm btn-outline-primary">View tutorials</Link>
+                      <Link to="/tutorials" className="btn btn-sm btn-outline-primary btn-sidebar btn-block">View tutorials</Link>
                     </div>
                   </div>
                 </div>
@@ -272,7 +272,7 @@ class HomePage extends Component {
               <div className="row mt-5">
                 <div className="col-lg-4 col-md-6 pb-5">
                   <h5>Start building</h5>
-                  <p>If you’re a developer, we’re here to help. Discover tutorials, docs, sourcecode, our forum, and more.</p>
+                  <p>If you’re a developer, we’re here to help. Discover tutorials, docs, source code, our forum, and more.</p>
                   <Link to="/tutorials" className="btn btn-outline-primary mt-3">View tutorials</Link>
                 </div>
                 <div className="col-lg-4 col-md-6 pb-5">
