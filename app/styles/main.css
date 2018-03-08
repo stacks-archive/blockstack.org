@@ -992,13 +992,6 @@ footer a:hover, footer a:focus, footer a:active {
   transition: all .2s ease-in-out;
 }
 
-.btn-outline-secondary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
-  color: #270F34 !important;
-  border: 1px solid rgba(255, 255, 255, 1) !important;
-  background-color: #fff;
-  outline: none;
-}
-
 .btn-outline-light {
   color: #fff;
   background-color: transparent;
@@ -1404,10 +1397,6 @@ pre {
   font-size:0.9rem;
 }
 
-.cta-panel p {
-  min-height: 90px;
-}
-
 .app-store-sidebar ul {
   /* list-style-type: none; */
   padding-left: 20px;
@@ -1501,7 +1490,6 @@ pre {
   color: #6C6C6C;
   font-size: 0.9rem;
   line-height: 1.625rem;
-  max-width: 320px;
 }
 .cta-panel .btn:first-child {
   margin-right: 1rem;
@@ -2615,6 +2603,11 @@ pre {
 
   .cta-panel h2 {
     font-size: 3rem;
+  }
+
+  .cta-panel p {
+    max-width: 320px;
+    min-height: 90px;
   }
 
   .hero-lead {

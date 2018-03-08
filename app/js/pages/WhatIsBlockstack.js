@@ -86,7 +86,7 @@ class HomePage extends Component {
                 What is Blockstack?
               </h1>
               <p style={{ maxWidth: '410px' }} className="mb-5 mx-auto">
-                Blockstack is a decentralized app ecosystem where users own and control their data. Blockstack's platform helps entrepreneurs and engineers build these apps and deliver better end-user experiences. 
+                Blockstack is a decentralized app ecosystem where users own and control their data. Blockstack's platform helps entrepreneurs and engineers build these apps and deliver better end-user experiences.
               </p>
               <Link to="install" className="btn btn-primary">Download Blockstack</Link>
             </div>
@@ -136,7 +136,7 @@ class HomePage extends Component {
                     <div className="col-md-6">
                       <h2 className="font-weight-bold">Own your data</h2>
                       <p>
-                        Currently, users are "digital serfs" and apps are "digital landlords". User's don't actually or control own their data. 
+                        Currently, users are "digital serfs" and apps are "digital landlords". User's don't actually or control own their data.
                       </p>
                     </div>
                     <div className="col-md-6 text-center">
@@ -209,16 +209,16 @@ class HomePage extends Component {
                 Join the new internet
               </h1>
               <p style={{ maxWidth: '410px' }} className="mb-5 mx-auto">
-                We envision a decentralized internet, where users take control of their identity and data, without having to rely on intermediaries. 
+                We envision a decentralized internet, where users take control of their identity and data, without having to rely on intermediaries.
               </p>
               <Link to="/install" className="btn btn-primary">Download Blockstack</Link>
             </div>
           </section>
-          
 
-          <section className="cta-panel">
+
+          <section className="cta-panel text-center text-left-md">
             <div className="container">
-              <h2 className="page-heading">Resources</h2>
+              <h2 className="page-heading mx-auto">Resources</h2>
               <div className="row mt-5">
                 <div className="col-lg-4 col-md-6 pb-5">
                   <h5>Videos</h5>
