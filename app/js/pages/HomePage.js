@@ -116,7 +116,7 @@ class HomePage extends Component {
                 Apps built on Blockstack
               </h3>
               <div className="row">
-                <div className="col-lg-9">
+                <div className="col-lg-9 order-first order-md-last">
                   <div className="app-store-section">
                     <p><h3>Featured Apps</h3></p>
                     <div className="row">
@@ -241,20 +241,13 @@ class HomePage extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-3">
-                  <div className="app-store-sidebar">
+                <div className="col-lg-3 order-last order-md-first">
+                  <div className="app-store-sidebar mr-4">
                     <p><strong>Perfect for:</strong></p>
                     <ul>
-                      <li>Privacy</li>
-                      <li>Cryptocurrency</li>
+                      <li>Keeping your privacy</li>
+                      <li>Using cryptocurrency</li>
                       <li>Freedom of speech</li>
-                    </ul>
-
-                    <p><strong>Helps engineers:</strong></p>
-                    <ul>
-                      <li>Remove data liability</li>
-                      <li>Differentiate themselves</li>
-                      <li>Fund their projects</li>
                     </ul>
                     <div className="d-none d-md-block">
                       <p className="m-b-1">Are you a developer?</p>

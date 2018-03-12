@@ -86,7 +86,7 @@ class HomePage extends Component {
                 What is Blockstack?
               </h1>
               <p style={{ maxWidth: '410px' }} className="mb-5 mx-auto">
-                Blockstack is a decentralized app ecosystem where users own and control their data. Blockstack's platform helps entrepreneurs and engineers build these apps and deliver better end-user experiences.
+                Blockstack is a decentralized app ecosystem where users own and control their data. Blockstack{`'`}s platform helps entrepreneurs and engineers build these apps and deliver better end-user experiences.
               </p>
               <Link to="install" className="btn btn-primary">Download Blockstack</Link>
             </div>
@@ -94,14 +94,17 @@ class HomePage extends Component {
 
           <section className="features">
             <div className="container">
+              <h2 className="text-center page-heading mx-auto">
+                How it works
+              </h2>
               <div className="feature">
                 <div className="feature-number">1</div>
                 <div className="feature-body">
                   <div className="row">
                     <div className="col-md-6">
-                      <h2 className="font-weight-bold">Decentralized app ecosystem</h2>
+                      <h2 className="font-weight-bold">Explore a new world of decentralized apps</h2>
                       <p>
-                        Join a community building the decentralized internet, as we re-envision apps for social, gaming, finance, and everything in between.
+                        Join our community as we re-envision apps for social, gaming, finance, and everything in between.
                       </p>
                     </div>
                     <div className="col-md-6 text-center">
@@ -113,16 +116,17 @@ class HomePage extends Component {
                       <div className="col-md-6">
                         <h5 className="font-weight-bold">For users</h5>
                         <ul className="pl-3">
-                          <li>Discover the latest decentralized apps.</li>
-                          <li>Limitless applications, one identity.</li>
-                          <li>Share your data across applications.</li>
+                          <li>Discover the latest decentralized apps on the Blockstack platform.</li>
+                          <li>Use your trusted ID across all your apps.</li>
+                          <li>Share and manage your data how you want.</li>
                         </ul>
                       </div>
                       <div className="col-md-6">
                         <h5 className="font-weight-bold">For developers</h5>
                         <ul className="pl-3">
                           <li>Join an active community driven by decentralized philosophy.</li>
-                          <li>Built-in, free, and effortless app distribution channel.</li>
+                          <li>Distribute apps quickly with our development platform.</li>
+                          <li>Get in early on building with Web 3.0 technology.</li>
                         </ul>
                       </div>
                     </div>
@@ -134,9 +138,9 @@ class HomePage extends Component {
                 <div className="feature-body">
                   <div className="row">
                     <div className="col-md-6">
-                      <h2 className="font-weight-bold">Own your data</h2>
+                      <h2 className="font-weight-bold">Truly own your data</h2>
                       <p>
-                        Currently, users are "digital serfs" and apps are "digital landlords". User's don't actually or control own their data.
+                        Web corporations today assume complete ownership over your data and abuse it for their benefit. With Blockstack, we simplify data ownership and give you back control.
                       </p>
                     </div>
                     <div className="col-md-6 text-center">
@@ -148,17 +152,17 @@ class HomePage extends Component {
                       <div className="col-md-6">
                         <h5 className="font-weight-bold">For users</h5>
                         <ul className="pl-3">
-                          <li>Decide where to store your data.</li>
-                          <li>No one sees your data unless you want them to.</li>
-                          <li>If you’re hacked, your data is encrypted and unreadable.</li>
+                          <li>Choose where to store your data, whether on a cloud provider or your own personal server.</li>
+                          <li>Decide who has access to your data and when.</li>
+                          <li>Relax knowing your data is end-to-end encrypted with keys that only you hold.</li>
                         </ul>
                       </div>
                       <div className="col-md-6">
                         <h5 className="font-weight-bold">For developers</h5>
                         <ul className="pl-3">
-                          <li>Users store their own data. No central servers.</li>
-                          <li>Code in the language of your choice.</li>
-                          <li>No data storage. No data liabilities.</li>
+                          <li>Build serverless apps easier than ever before.</li>
+                          <li>Streamline your application code by using Blockstack auth and storage services.</li>
+                          <li>Don't worry about data liability since users provide their encrypted data.</li>
                         </ul>
                       </div>
                     </div>
@@ -170,9 +174,9 @@ class HomePage extends Component {
                 <div className="feature-body">
                   <div className="row">
                     <div className="col-md-6">
-                      <h2 className="font-weight-bold">Take your identity everywhere</h2>
+                      <h2 className="font-weight-bold">One identity, infinite apps.</h2>
                       <p>
-                        Your personal storage is built on Blockstack ID, which uses blockchain to keep devices and usernames secure.
+                        Your Blockstack ID is your login for Blockstack apps. By verifying identities on other social platforms, users can be confident they're interacting with trusted people in their network. Under the hood, Blockstack creates a unique blockchain record for each user identity created.
                       </p>
                     </div>
                     <div className="col-md-6 text-center">
@@ -184,16 +188,17 @@ class HomePage extends Component {
                       <div className="col-md-6">
                         <h5 className="font-weight-bold">For users</h5>
                         <ul className="pl-3">
-                          <li>One identity that you own and control.</li>
-                          <li>Verify identities to increase trust online.</li>
-                          <li>Your identity is globally and verifiably unique.</li>
+                          <li>Log in to every app safely with the same account.</li>
+                          <li>Quickly check that people you interact with are trustworthy.</li>
+                          <li>Add verifications to your profile to increase your trust rating.</li>
                         </ul>
                       </div>
                       <div className="col-md-6">
                         <h5 className="font-weight-bold">For developers</h5>
                         <ul className="pl-3">
-                          <li>Never worry about account security again.</li>
-                          <li>Access meta-information like social URLs.</li>
+                          <li>Take the pain out of managing user accounts.</li>
+                          <li>Access meta information like social URLs, email addresses, and more.</li>
+                          <li>Leverage an easy to use account search API to connect users to one another.</li>
                         </ul>
                       </div>
                     </div>
@@ -209,7 +214,7 @@ class HomePage extends Component {
                 Join the new internet
               </h1>
               <p style={{ maxWidth: '410px' }} className="mb-5 mx-auto">
-                We envision a decentralized internet, where users take control of their identity and data, without having to rely on intermediaries.
+                We envision a decentralized internet where users take control of their own identity and data, without having to rely on intermediaries.
               </p>
               <Link to="/install" className="btn btn-primary">Download Blockstack</Link>
             </div>
@@ -232,7 +237,7 @@ class HomePage extends Component {
                 </div>
                 <div className="col-lg-4 col-md-6 pb-5">
                   <h5>About Blockstack</h5>
-                  <p>Read about our history, values and core team. Find out why we're a Public Benefit Corporation.</p>
+                  <p>Read about our history, values, and core team. Find out why we're a Public Benefit Corporation.</p>
                   <Link to="/about" className="btn btn-outline-primary mt-3">About Blockstack</Link>
                 </div>
               </div>
