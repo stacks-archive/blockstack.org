@@ -174,7 +174,7 @@ class HomePage extends Component {
                 <div className="feature-body">
                   <div className="row">
                     <div className="col-md-6">
-                      <h2 className="font-weight-bold">One identity, infinite apps.</h2>
+                      <h2 className="font-weight-bold">Access infinite apps with a single account</h2>
                       <p>
                         Your Blockstack ID is your login for Blockstack apps. By verifying identities on other social platforms, users can be confident they're interacting with trusted people in their network. Under the hood, Blockstack creates a unique blockchain record for each user identity created.
                       </p>
