@@ -41,6 +41,7 @@
     "request": "^2.69.0",
     "rss-parser": "^2.5.2",
     "run-sequence": "^1.1.1",
+    "serve": "^6.5.3",
     "should": "^7.1.0",
     "sinon": "^1.17.1",
     "superagent": "^1.2.0",
@@ -106,9 +107,10 @@
   "scripts": {
     "build-docs": "npm run fetch-docs; gulp buildDocs",
     "dev": "npm run fetch-docs; gulp dev",
+    "start": "serve ./build --single",
     "fetch-docs": "git submodule init; git submodule update --remote",
     "postinstall": "cd ./node_modules/highlight.js && npm i && node ./tools/build.js :common",
-    "prod": "npm run fetch-docs; gulp prod",
+    "build": "npm run fetch-docs; gulp prod",
     "format": "prettier --write \"app/**/*.js\" && echo -e '\\033[0;32m'💅 Just use prettier'\\033[0m'"
   }
 }
