@@ -34,6 +34,7 @@ import TokenSalePage               from './pages/TokenSalePage'
 import Summit2017Page              from './pages/Summit2017Page'
 import FundingPage                 from './pages/FundingPage'
 import PressPage                   from './pages/PressPage'
+import DappRequestPage             from './pages/DappRequestPage'
 
 export default (
   <Router history={browserHistory} onUpdate={() => window.scrollTo(0, 0)}>
@@ -77,6 +78,7 @@ export default (
       <Route path="/token" component={TokenSalePage} />
       <Route path="/summit2017" component={Summit2017Page} />
       <Route path="/funding" component={FundingPage} />
+      <Route path="/rfd" component={DappRequestPage} />
 
       <Route path="/press" component={PressPage} />
 
