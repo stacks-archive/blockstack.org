@@ -1,25 +1,27 @@
-import { Component, PropTypes } from 'react'
+import { Component } from 'react';
+import PropTypes from 'prop-types';
 
 const propTypes = {
   dataID: PropTypes.string.isRequired,
-  dataRatio: PropTypes.string.isRequired,  
-}
+  dataRatio: PropTypes.string.isRequired,
+};
 
 class EmbedSpeakerDeck extends Component {
-
   componentDidMount() {
-    const script = document.createElement('script')
-    script.src = '//speakerdeck.com/assets/embed.js'
-    script.async = 1
-    document.body.appendChild(script)
+    const script = document.createElement('script');
+    script.src = '//speakerdeck.com/assets/embed.js';
+    script.async = 1;
+    document.body.appendChild(script);
   }
 
   render() {
     return (
       <div>
-        <div className="speakerdeck-embed"
-             data-id={this.props.dataID}
-             data-ratio={this.props.dataRatio}>
+        <div
+          className="speakerdeck-embed"
+          data-id={this.props.dataID}
+          data-ratio={this.props.dataRatio}
+        >
           Loading Slides ...
         </div>
       </div>
@@ -27,5 +29,5 @@ class EmbedSpeakerDeck extends Component {
   }
 }
 
-EmbedSpeakerDeck.propTypes = propTypes
-export default EmbedSpeakerDeck
+EmbedSpeakerDeck.propTypes = propTypes;
+export default EmbedSpeakerDeck;

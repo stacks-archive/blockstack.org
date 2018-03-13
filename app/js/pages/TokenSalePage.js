@@ -1,76 +1,76 @@
-'use strict'
+'use strict';
 
-import {Component}          from 'react'
-import {Link}               from 'react-router'
-import DocumentTitle        from 'react-document-title'
-import {bindActionCreators} from 'redux'
-import {connect}            from 'react-redux'
+import { Component } from 'react';
+import { Link } from 'react-router';
+import DocumentTitle from 'react-document-title';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 
-import {BlogActions}       from '../datastore/Blog'
-import {StatsActions}      from '../datastore/Stats'
-import Image               from '../components/Image'
-import Header              from '../components/Header'
-import DarkForm            from '../components/DarkForm'
-import EmbedYouTube        from '../components/EmbedYouTube'
-import PostPreview         from '../components/PostPreview'
-import TeamMembers         from '../components/TeamMembers'
-import ContentSection      from '../components/ContentSection'
-import {featuredApps}      from '../config'
+import { BlogActions } from '../datastore/Blog';
+import { StatsActions } from '../datastore/Stats';
+import Image from '../components/Image';
+import Header from '../components/Header';
+import DarkForm from '../components/DarkForm';
+import EmbedYouTube from '../components/EmbedYouTube';
+import PostPreview from '../components/PostPreview';
+import TeamMembers from '../components/TeamMembers';
+import ContentSection from '../components/ContentSection';
+import { featuredApps } from '../config';
 
 function mapStateToProps(state) {
   return {
     posts: state.blog.posts,
     stats: state.stats,
-  }
+  };
 }
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
     Object.assign({}, BlogActions, StatsActions),
-    dispatch
-  )
+    dispatch,
+  );
 }
 
 class TokenSalePage extends Component {
-
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
-      subscribeURL: '//blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=da7056bb03',
+      subscribeURL:
+        '//blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=da7056bb03',
       videoURL: 'https://www.youtube.com/embed/0C2y9mZ0Dnc',
       stats: this.props.stats,
-      posts: this.props.posts
-    }
+      posts: this.props.posts,
+    };
   }
 
   componentWillMount() {
     if (this.props.posts.length === 0) {
-      this.props.fetchPosts()
+      this.props.fetchPosts();
     }
-    this.props.fetchStats()
+    this.props.fetchStats();
   }
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.stats !== this.props.stats) {
-      let stats = nextProps.stats
+      let stats = nextProps.stats;
       if (stats.domains === 0) {
-        stats.domains = 72000
+        stats.domains = 72000;
       }
       this.setState({
         stats: stats,
-      })
+      });
     }
 
     if (nextProps.posts !== this.props.posts) {
       this.setState({
         posts: nextProps.posts,
-      })
+      });
     }
   }
 
   render() {
-    const firstThreePosts = this.state.posts.slice(0, 3)
+    const firstThreePosts = this.state.posts.slice(0, 3);
 
     return (
       <DocumentTitle title="Blockstack - Token">
@@ -79,16 +79,22 @@ class TokenSalePage extends Component {
             <Header transparent={true} />
             <div className="container">
               <section className="text-center">
-                <Image className="m-t-65 m-b-55"
+                <Image
+                  className="m-t-65 m-b-55"
                   src="/images/logos/stacks-logo.svg"
-                  retinaSupport={false} />
-                <h1 className="text-white m-b-20">
-                  The Blockstack Token
-                </h1>
-                <p className="hero-lead purple-50">Sign up to receive important information about the token distribution</p>
+                  retinaSupport={false}
+                />
+                <h1 className="text-white m-b-20">The Blockstack Token</h1>
+                <p className="hero-lead purple-50">
+                  Sign up to receive important information about the token
+                  distribution
+                </p>
                 <div className="m-b-50">
                   <div className="container container-md mx-auto m-b-3">
-                    <DarkForm subscribeURL={this.state.subscribeURL} submitButtonText='Sign Up' />
+                    <DarkForm
+                      subscribeURL={this.state.subscribeURL}
+                      submitButtonText="Sign Up"
+                    />
                   </div>
                 </div>
               </section>
@@ -100,9 +106,11 @@ class TokenSalePage extends Component {
                   <div className="row">
                     <div className="col-md-4 text-center">
                       <a href="https://blockstack.com/tokenpaper.pdf">
-                        <Image className="w-100 icon-lg-special"
+                        <Image
+                          className="w-100 icon-lg-special"
                           src="/images/icons/icon-bsk-token-whitepaper@2x.png"
-                          retinaSupport={false} />
+                          retinaSupport={false}
+                        />
                       </a>
                     </div>
                     <div className="col-md-8 d-flex align-items-center">
@@ -110,8 +118,12 @@ class TokenSalePage extends Component {
                         <h3 className="text-white m-b-30">
                           Blockstack Token Whitepaper
                         </h3>
-                        <a href="https://blockstack.com/tokenpaper.pdf" role="button"
-                          className="btn btn-outline-light btn-pill" style={{ minWidth: '245px' }}>
+                        <a
+                          href="https://blockstack.com/tokenpaper.pdf"
+                          role="button"
+                          className="btn btn-outline-light btn-pill"
+                          style={{ minWidth: '245px' }}
+                        >
                           Read the Whitepaper
                         </a>
                       </div>
@@ -120,16 +132,14 @@ class TokenSalePage extends Component {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </DocumentTitle>
-    )
+    );
   }
-
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(TokenSalePage)
+export default connect(mapStateToProps, mapDispatchToProps)(TokenSalePage);
 
 /*
 

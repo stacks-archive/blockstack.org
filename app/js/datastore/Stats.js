@@ -1,14 +1,14 @@
-const UPDATE_STATS = 'UPDATE_STATS'
+const UPDATE_STATS = 'UPDATE_STATS';
 
 function updateStats(stats) {
-  let slackUsers = 2500
+  let slackUsers = 2500;
   if (stats.slack_users !== 0) {
-    slackUsers = stats.slack_users
+    slackUsers = stats.slack_users;
   }
 
-  let domains = 72000
+  let domains = 72000;
   if (stats.domains !== 0) {
-    domains = stats.domains
+    domains = stats.domains;
   }
 
   return {
@@ -17,35 +17,35 @@ function updateStats(stats) {
     forumUsers: stats.forum_users,
     meetupUsers: stats.meetup_users,
     slackUsers: slackUsers,
-  }
+  };
 }
 
 function fetchStats() {
-  return dispatch => {
-    const url = 'https://blockstack-site-api.herokuapp.com/v1/stats'
+  return (dispatch) => {
+    const url = 'https://blockstack-site-api.herokuapp.com/v1/stats';
     fetch(url)
-    .then((response) => response.text())
-    .then((responseText) => JSON.parse(responseText))
-    .then((responseJSON) => {
-      dispatch(updateStats(responseJSON))
-    })
-    .catch((error) => {
-      console.warn(error)
-    })
-  }
+      .then((response) => response.text())
+      .then((responseText) => JSON.parse(responseText))
+      .then((responseJSON) => {
+        dispatch(updateStats(responseJSON));
+      })
+      .catch((error) => {
+        console.warn(error);
+      });
+  };
 }
 
 export const StatsActions = {
   updateStats: updateStats,
-  fetchStats: fetchStats
-}
+  fetchStats: fetchStats,
+};
 
 const initialState = {
   domains: 70000,
   slackUsers: 2500,
   meetupUsers: 5000,
   forumUsers: 400,
-}
+};
 
 export function StatsReducer(state = initialState, action) {
   switch (action.type) {
@@ -55,8 +55,8 @@ export function StatsReducer(state = initialState, action) {
         forumUsers: action.forumUsers,
         meetupUsers: action.meetupUsers,
         slackUsers: action.slackUsers,
-      })
+      });
     default:
-      return state
+      return state;
   }
 }

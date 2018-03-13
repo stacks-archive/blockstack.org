@@ -1,13 +1,12 @@
-'use strict'
+'use strict';
 
-import {Component}   from 'react'
-import {Link}        from 'react-router'
-import DocumentTitle from 'react-document-title'
+import { Component } from 'react';
+import { Link } from 'react-router';
+import DocumentTitle from 'react-document-title';
 
 class NotFoundPage extends Component {
-
   constructor(props) {
-    super(props)
+    super(props);
   }
 
   render() {
@@ -19,9 +18,7 @@ class NotFoundPage extends Component {
               <div className="container">
                 <div className="m-b-3 p-t-1">
                   <hgroup>
-                    <h1 className="action-title">
-                      Page Does Not Exist
-                    </h1>
+                    <h1 className="action-title">Page Does Not Exist</h1>
                   </hgroup>
                   <Link className="btn btn-lg btn-special" to="/">
                     Go Home
@@ -32,9 +29,8 @@ class NotFoundPage extends Component {
           </section>
         </div>
       </DocumentTitle>
-    )
+    );
   }
-
 }
 
-export default NotFoundPage
+export default NotFoundPage;

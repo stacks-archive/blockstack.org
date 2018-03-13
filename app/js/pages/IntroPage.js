@@ -1,13 +1,12 @@
-'use strict'
+'use strict';
 
-import {Component}      from 'react'
-import DocumentTitle    from 'react-document-title'
+import { Component } from 'react';
+import DocumentTitle from 'react-document-title';
 
-import CardLink         from '../components/CardLink'
-import ContentSection   from '../components/ContentSection'
+import CardLink from '../components/CardLink';
+import ContentSection from '../components/ContentSection';
 
 class IntroPage extends Component {
-
   render() {
     return (
       <DocumentTitle title="Blockstack - Intro">
@@ -16,14 +15,13 @@ class IntroPage extends Component {
             <div className="container col-centered blog-post">
               <div className="container">
                 <div className="post-header">
-                  <h1>
-                    Intro to Blockstack
-                  </h1>
+                  <h1>Intro to Blockstack</h1>
                 </div>
               </div>
             </div>
           </section>
-          <ContentSection className="m-b-50"
+          <ContentSection
+            className="m-b-50"
             markup="<p>
               Blockstack is a new decentralized internet.
             </p>
@@ -83,9 +81,12 @@ class IntroPage extends Component {
 
             <p>
               Here's a diagram laying out the major components of Blockstack and showing how it works under the hood:
-            </p>" />
-          <section className="foot-feature col-centered"
-            style={{ paddingTop: '50px', paddingBottom: '50px' }}>
+            </p>"
+          />
+          <section
+            className="foot-feature col-centered"
+            style={{ paddingTop: '50px', paddingBottom: '50px' }}
+          >
             <div className="container-fluid bs-docs-featurette col-centered">
               <div className="col-centered m-b-5">
                 <div className="row col-centered">
@@ -93,78 +94,91 @@ class IntroPage extends Component {
                     How Blockstack Works
                   </h2>
                   <div className="text-xs-center">
-                    <img src="/images/visuals/bsk-architecture-dark.svg"
-                      className="img-fluid col-centered" alt="Blockstack layer diagram" />
+                    <img
+                      src="/images/visuals/bsk-architecture-dark.svg"
+                      className="img-fluid col-centered"
+                      alt="Blockstack layer diagram"
+                    />
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          <ContentSection className="m-b-50 m-t-50"
+          <ContentSection
+            className="m-b-50 m-t-50"
             markup="<p>
               To get started building apps on Blockstack,
               read the developer documentation,
               setup a Blockstack Core node,
               and preview the Blockstack Browser (in an experimental alpha).
-            </p>" />
+            </p>"
+          />
           <section>
             <div className="bs-docs-featurette col-centered m-b-2">
               <div className="container col-centered">
                 <div className="card-deck-wrapper">
                   <div className="card-deck m-b-3">
                     <CardLink
-                      href='/docs'
-                      title='Docs'
+                      href="/docs"
+                      title="Docs"
                       body="Documentation for the Blockstack Browser, Blockstack Core, and Blockstack Explorer."
                       imageSrc="/images/article-photos/bookshelves.jpg"
-                      cardsPerRow={3} />
+                      cardsPerRow={3}
+                    />
                     <CardLink
-                      href='https://github.com/blockstack/blockstack-browser/releases'
-                      title='Blockstack Portal'
+                      href="https://github.com/blockstack/blockstack-browser/releases"
+                      title="Blockstack Portal"
                       body="A desktop app you can install to upgrade your browsers and turn them into blockstack-enabled browsers."
                       imageSrc="/images/article-photos/astronaut.jpg"
                       target="_blank"
-                      cardsPerRow={3} />
+                      cardsPerRow={3}
+                    />
                     <CardLink
-                      href='https://github.com/blockstack/blockstack-core'
-                      title='Blockstack Core'
+                      href="https://github.com/blockstack/blockstack-core"
+                      title="Blockstack Core"
                       body="A server you can run that becomes a part of the Blockstack P2P network and maintains the DNS, PKI and identity system."
                       imageSrc="/images/article-photos/passport.jpg"
                       target="_blank"
-                      cardsPerRow={3} />
+                      cardsPerRow={3}
+                    />
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          <ContentSection className="m-b-50 m-t-50"
+          <ContentSection
+            className="m-b-50 m-t-50"
             markup="<p>
                     To learn more about Blockstack, read the papers,
                     watch the videos, and check out the Blockstack Blog.
-                  </p>" />
+                  </p>"
+          />
           <section>
             <div className="bs-docs-featurette col-centered m-b-2">
               <div className="container col-centered">
                 <div className="card-deck-wrapper">
                   <div className="card-deck m-b-3">
                     <CardLink
-                      href='/papers'
-                      title='Papers'
+                      href="/papers"
+                      title="Papers"
                       body="Academic papers on Blockstack's DNS/naming, storage, identity, and authentication systems."
                       imageSrc="/images/article-photos/booklets.jpg"
-                      cardsPerRow={3} />
+                      cardsPerRow={3}
+                    />
                     <CardLink
-                      href='/videos'
-                      title='Videos'
+                      href="/videos"
+                      title="Videos"
                       body="Videos of talks given about what Blockstack is, how it works, and what can be built on top of it."
                       imageSrc="/images/article-photos/scribble.jpg"
-                      cardsPerRow={3} />
+                      cardsPerRow={3}
+                    />
                     <CardLink
-                      href='/blog'
-                      title='Blog'
+                      href="/blog"
+                      title="Blog"
                       body="Blog with the latest developments about Blockstack, including product announcements and technical writeups."
                       imageSrc="/images/article-photos/computer.jpg"
-                      cardsPerRow={3} />
+                      cardsPerRow={3}
+                    />
                   </div>
                 </div>
               </div>
@@ -172,9 +186,8 @@ class IntroPage extends Component {
           </section>
         </div>
       </DocumentTitle>
-    )
+    );
   }
-
 }
 
-export default IntroPage
+export default IntroPage;

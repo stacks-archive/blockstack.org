@@ -40,3 +40,6 @@ dist
 app/docs.json
 
 unused
+.idea
+yarn.lock
+package-lock.json

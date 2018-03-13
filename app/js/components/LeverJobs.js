@@ -1,21 +1,22 @@
-import { Component } from 'react'
-import axios from 'axios'
-import JobListing from './JobListing'
+import { Component } from 'react';
+import axios from 'axios';
+import JobListing from './JobListing';
 
 class LeverJobs extends Component {
   constructor(props) {
-    super(props)
-    this.sortJobs = this.sortJobs.bind(this)
-    this.state = { jobs: [] }
+    super(props);
+    this.sortJobs = this.sortJobs.bind(this);
+    this.state = { jobs: [] };
   }
 
   componentDidMount() {
-    axios.get('https://api.lever.co/v0/postings/blockstack?mode=json')
-      .then(res => {
-        const jobs = this.sortJobs(res.data)
-        this.setState({ jobs })
+    axios
+      .get('https://api.lever.co/v0/postings/blockstack?mode=json')
+      .then((res) => {
+        const jobs = this.sortJobs(res.data);
+        this.setState({ jobs });
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
       });
   }
@@ -36,9 +37,11 @@ class LeverJobs extends Component {
 
   render() {
     return (
-      <div className='jobs-sidebar'>
-        <p className='mb-5'><strong>Open Positions</strong></p>
-        { this.state.jobs.map(({ text, categories = {}, hostedUrl}) => (
+      <div className="jobs-sidebar">
+        <p className="mb-5">
+          <strong>Open Positions</strong>
+        </p>
+        {this.state.jobs.map(({ text, categories = {}, hostedUrl }) => (
           <JobListing
             key={hostedUrl}
             title={text}
@@ -48,8 +51,8 @@ class LeverJobs extends Component {
           />
         ))}
       </div>
-    )
+    );
   }
 }
 
-export default LeverJobs
+export default LeverJobs;

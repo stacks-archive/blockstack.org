@@ -1,25 +1,24 @@
-import {Component} from 'react'
+import { Component } from 'react';
 
 class ContentSection extends Component {
   static propTypes: {
     markup: PropTypes.string.isRequired,
-    className: PropTypes.string
-  }
+    className: PropTypes.string,
+  };
 
   render() {
-    return(
+    return (
       <section className={this.props.className}>
         <div className="container col-centered blog-post">
           <div className="container">
             <div className="post-content">
-              <div dangerouslySetInnerHTML={{ __html: this.props.markup }}>
-              </div>
+              <div dangerouslySetInnerHTML={{ __html: this.props.markup }} />
             </div>
           </div>
         </div>
       </section>
-    )
+    );
   }
 }
 
-export default ContentSection
+export default ContentSection;
