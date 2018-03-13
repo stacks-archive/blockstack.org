@@ -9,6 +9,7 @@
     "blockstack": "0.3.10",
     "bootstrap": "^4.0.0-beta",
     "font-awesome": "^4.7.0",
+    "gulp-sass": "^3.1.0",
     "hasprop": "0.0.4",
     "highlight.js": "git+https://git@github.com/larrysalibra/highlight.js.git",
     "html-metadata": "git+https://github.com/wikimedia/html-metadata.git",

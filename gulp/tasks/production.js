@@ -12,7 +12,7 @@ gulp.task('prod', ['clean'], function(cb) {
   process.env.NODE_ENV = 'production';
 
   runSequence([
-    'makeBuildDir', 'copyStyles', 'copyScripts', 'copyimages', 'browserify', 'copyFonts',
+    'makeBuildDir', 'copyStyles', 'compileScss', 'copyScripts', 'copyimages', 'browserify', 'copyFonts',
     'copyIndex', 'copyIcons', 'copyFiles', 'buildDocs', 'buildBlog',
     'buildConstants', 'configFirebase'
   ], cb);

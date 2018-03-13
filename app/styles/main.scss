@@ -1,74 +1,3 @@
-/* Guide */
-/* - Hero section is special */
-/* - All other headings are to be 400 weight */
-/* - Y-axis margins are to be added in via media quieries with class names */
-/* - Max-width of site is to be set via `container` */
-/* - All sections utilize `containter` */
-
-/* --------    #2C96FF   ELECTRIC-BLUE    -------- */ ::-moz-selection{background:rgba(44,150,255,0.8);color:#fff;} ::selection{background:rgba(44,150,255,0.8);color:#fff;}::-moz-selection{background:rgba(44,150,255,0.90);color:#fff;}
-/* --------    #270f34   PURPLE 110       -------- */ /*::selection{background:rgba(39,15,52,0.99);color:#fff;}::-moz-selection{background:rgba(39,15,52,0.99);color:#fff;}*/
-
-/* Table of Contents */
-
-/*  1. Colors */
-/*  2. Options */
-/*  3. Spacing - Note: b4 has resolved a lot of spacing issues. for this version we are utilizing the custom spacing rules from blockstack.com. Upon import of blockstack-bootstrap, go through styles and replace with latest spacing rules from b4. */
-/*  4. Body */
-/*  5. Links */
-/*  6. Grid breakpoints */
-/*  7. Grid containers */
-/*  8. Grid columns */
-/*  9. Fonts */
-/* 10. Components */
-/* 11. Tables */
-/* 12. Buttons */
-/* 13. Forms */
-/* 14. Dropdowns */
-/* 15. Z-index master list */
-/* 16. Navbar */
-/* 17. Navs */
-/* 18. Pagination */
-/* 19. Jumbotron */
-/* 20. Form states and alerts */
-/* 21. Cards */
-/* 22. Tooltips */
-/* 23. Popovers */
-/* 24. Tags */
-/* 25. Modals */
-/* 26. Alerts */
-/* 27. Progress bars */
-/* 28. List group */
-/* 29. Image thumbnails */
-/* 30. Figures */
-/* 31. Breadcrumbs */
-/* 32. Media objects */
-/* 33. Carousel */
-/* 34. Close */
-/* 35. Code */
-/* 36. Status Bars */
-
-/* 37. Misc */
-
-/* 38. Utilities */
-/* 38. a. - Align */
-/* 38. b. - Background */
-/* 38. c. - Borders */
-/* 38. d. - Clearfix */
-/* 38. e. - Display */
-/* 38. f. - Embed */
-/* 38. g. - Flex */
-/* 38. h. - Float */
-/* 38. i. - Position */
-/* 38. j. - Screenreaders */
-/* 38. k. - Sizing */
-/* 38. l. - Spacing */
-/* 38. m. - Text */
-/* 38. n. - Visibility */
-
-
-/* 1. Colors */
-/* Blockstack Label Colors - https://projects.invisionapp.com/boards/HE2VVROFSGB27/ */
-/* These label colors come from Google's Material Design Color Set [500] - Alternative shades [100 - 900] - http://materialuicolors.co/ */
 
 .label-red                 {color: #F44336;}  /* label: bug */
 .label-purple              {color: #9C27B0;}  /* label: ui */
@@ -1047,7 +976,7 @@ footer a:hover, footer a:focus, footer a:active {
 
 .btn-special:hover, .btn-special:focus, .btn-special:active {
   color: #270F34;
-  border: 1px solid rgba(255, 255, 255);
+  border: 1px solid rgba(255, 255, 255, 1);
   background-color: #fff;
   outline: none;
 }
@@ -1062,7 +991,7 @@ footer a:hover, footer a:focus, footer a:active {
 
 .btn-electric-magenta:hover, .btn-electric-magenta:focus, .btn-electric-magenta:active {
   color: #270F34;
-  border: 1px solid rgba(255, 255, 255);
+  border: 1px solid rgba(255, 255, 255, 1);
   background-color: #fff;
   outline: none;
 }
