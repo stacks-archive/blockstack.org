@@ -31,7 +31,7 @@ import TokenSalePage from './pages/TokenSalePage';
 import Summit2017Page from './pages/Summit2017Page';
 import FundingPage from './pages/FundingPage';
 import PressPage from './pages/PressPage';
-
+import Berlin2018Page from './pages/Berlin2018Page'
 export default (
   <Router history={browserHistory} onUpdate={() => window.scrollTo(0, 0)}>
     <Route path="/" component={App}>
@@ -72,6 +72,7 @@ export default (
       <Route path="/roadmap" component={RoadmapPage} />
       <Route path="/token" component={TokenSalePage} />
       <Route path="/summit2017" component={Summit2017Page} />
+      <Route path="/berlin2018" component={Berlin2018Page} />
       <Route path="/funding" component={FundingPage} />
 
       <Route path="/press" component={PressPage} />
