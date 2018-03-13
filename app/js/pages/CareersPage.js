@@ -136,7 +136,7 @@ class CareersPage extends Component {
                         prior to submitting your resume.
                       </p>
                       <p>
-                        Read more about our engineering team on <a href="https://www.keyvalues.com/blockstack" target="_blank">Keyvalues</a>.
+                        Read more about our engineering team on <a href="https://www.keyvalues.com/blockstack" target="_blank">Key Values</a>.
                       </p>
                     </div>
                   </div>
