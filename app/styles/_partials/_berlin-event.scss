@@ -1,0 +1,23 @@
+.event {
+  $c: &;
+
+  #{$c}__speaker-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #{$c}__speaker {
+    &__avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      background: whitesmoke;
+      margin-bottom: 20px;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 10px 20px;
+  }
+}

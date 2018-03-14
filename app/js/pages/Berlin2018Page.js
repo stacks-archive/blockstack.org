@@ -1,9 +1,9 @@
 'use strict';
 
 import React, { Component, Fragment } from 'react';
-import DocumentTitle from 'react-document-title';
 import Image from '../components/Image';
 import { Helmet } from 'react-helmet';
+import berlinData from '../datastore/berlin-event-data';
 
 class Berlin2018Page extends Component {
   constructor(props) {
@@ -37,6 +37,44 @@ class Berlin2018Page extends Component {
                 </p>
               </section>
             </div>
+          </div>
+          <div className="event container p-b-90">
+            <h1>Main Event</h1>
+            {berlinData.map((speaker, i) =>
+              Object.entries(speaker).map(([k, v]) => console.log(k, v)),
+            )}
+            <div className="event__speaker-grid">
+              {berlinData.map(
+                (speaker, i) =>
+                  speaker.day === `March 2` && (
+                    <div key={i} className="event__speaker">
+                      <div className="event__speaker__avatar" />
+                      <div>{speaker.name}</div>
+                      <div>{speaker.talkTitle}</div>
+                      <div>{speaker.company}</div>
+                      <div>{speaker.jobTitle}</div>
+                      <div>{speaker.twitter}</div>
+                      <br /> <br />
+                    </div>
+                  ),
+              )}
+            </div>
+          </div>
+          <div>
+            <h1>Pre Event Workshops</h1>
+            {berlinData.map(
+              (speaker, i) =>
+                speaker.day === `March 1` && (
+                  <div key={i}>
+                    <div>{speaker.name}</div>
+                    <div>{speaker.talkTitle}</div>
+                    <div>{speaker.company}</div>
+                    <div>{speaker.jobTitle}</div>
+                    <div>{speaker.twitter}</div>
+                    <br /> <br />
+                  </div>
+                ),
+            )}
           </div>
         </div>
       </Fragment>
