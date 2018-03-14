@@ -1,23 +1,99 @@
+.page--berlin-event {
+  img {
+    max-width: 100%;
+    display: block;
+    pointer-events: none;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .photo-slider {
+    &__slide {
+      padding: 10px;
+    }
+    .photo-slider__slide + .photo-slider__slide {
+      padding-left: 0;
+    }
+  }
+
+  overflow: hidden;
+}
 .event {
   $c: &;
 
   #{$c}__speaker-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    //display: grid;
+    //grid-template-columns: repeat(1, 1fr);
+    padding-top: 30px;
+  }
+  #{$c}__talk {
+
+    margin-bottom: 30px;
+    //padding-bottom: 30px;
+    //border-bottom: 1px solid darken(whitesmoke, 10%);
+    &--large {
+      grid-column: span 2;
+    }
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    &__media {
+      grid-column: span 3;
+    }
+    &__speakers {
+      &__container {
+        padding-left: 20px;
+        background: whitesmoke;
+      }
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-column-gap: 10px;
+    }
+    &--large {
+      #{$c}__talk__media {
+        grid-column: span 4;
+      }
+      .event__talk__speakers__container {
+        grid-column: span 4;
+        #{$c}__speaker + #{$c}__speaker {
+          border-top: 0px;
+        }
+      }
+    }
+  }
+  #{$c}__speaker + #{$c}__speaker {
+    border-top: 1px solid darken(whitesmoke, 5%);
   }
   #{$c}__speaker {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 0;
     &__avatar {
-      width: 100px;
-      height: 100px;
+      $size: 60px;
+      width: $size;
+      min-width: $size;
+      max-width: $size;
+      height: $size;
+      min-height: $size;
+      max-height: $size;
       border-radius: 100%;
       background: whitesmoke;
       margin-bottom: 20px;
+      overflow: hidden;
+      //box-shadow: 0 2px 8px rgba(black, 0.3);
+      border: 1px solid whitesmoke;
+      img {
+        display: block;
+        max-width: 100%;
+      }
     }
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: center;
-    padding: 10px 20px;
+    &__meta {
+      //padding-left: 20px;
+    }
   }
 }

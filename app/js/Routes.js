@@ -33,8 +33,26 @@ import FundingPage from './pages/FundingPage'
 import PressPage from './pages/PressPage'
 import Berlin2018Page from './pages/Berlin2018Page'
 
+function hashLinkScroll() {
+  const { hash } = window.location
+  if (hash !== '') {
+    // Push onto callback queue so it runs after the DOM is updated,
+    // this is required when navigating from a different page so that
+    // the element is rendered on the page before trying to getElementById.
+    setTimeout(() => {
+      const id = hash.replace('#', '')
+      const element = document.getElementById(id)
+      if (element) element.scrollIntoView()
+    }, 0)
+  } else {
+    setTimeout(() => {
+      window.scrollTo(0, 0)
+    }, 0)
+  }
+}
+
 export default (
-  <Router history={browserHistory} onUpdate={() => window.scrollTo(0, 0)}>
+  <Router history={browserHistory} onUpdate={() => hashLinkScroll()}>
     <Route path="/" component={App}>
       <IndexRoute component={HomePage} />
       <Route path="/" component={HomePage} />
