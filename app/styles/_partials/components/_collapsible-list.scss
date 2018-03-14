@@ -1,0 +1,31 @@
+.sticky-sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+.collapsibleList {
+  $c: &;
+
+  #{$c}__section {
+    &__title {
+      margin-top: 20px;
+      opacity: 0.75;
+      font-weight: bold;
+      &--active {
+        opacity: 1;
+      }
+      &:hover {
+        cursor: pointer;
+        opacity: 1;
+      }
+    }
+    &__items {
+      &__line {
+        &:not(:last-child){
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}

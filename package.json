@@ -1,8 +1,8 @@
 {
   "name": "blockstack-site",
+  "description": "The website for the Blockstack open source project",
   "version": "10.3.0",
   "author": "Blockstack Inc <admin@blockstack.com>",
-  "description": "The website for the Blockstack open source project",
   "dependencies": {
     "async": "^2.5.0",
     "axios": "^0.17.1",
@@ -20,7 +20,6 @@
     "lodash": "^3.10.1",
     "marked": "^0.3.6",
     "popper.js": "^1.12.5",
-    "prettier": "^1.11.1",
     "prop-types": "^15.6.1",
     "query-string": "^4.3.2",
     "react": "^16.2.0",
@@ -94,7 +93,8 @@
     "postcss-modules-extract-imports": "^1.0.0",
     "postcss-modules-local-by-default": "^1.0.1",
     "postcss-modules-scope": "^1.0.0",
-    "postcss-modules-values": "^1.1.1"
+    "postcss-modules-values": "^1.1.1",
+    "prettier": "^1.11.1"
   },
   "keywords": [
     "boilerplate",
@@ -108,13 +108,13 @@
     "url": "https://github.com/blockstack/blockstack.org.git"
   },
   "scripts": {
+    "build": "npm run fetch-docs; gulp prod",
     "build-docs": "npm run fetch-docs; gulp buildDocs",
     "dev": "npm run fetch-docs; gulp dev",
-    "start": "serve ./build --single",
     "fetch-docs": "git submodule init; git submodule update --remote",
+    "format": "prettier --write \"app/**/*.js\" && echo -e '\\033[0;32m'💅 Just use prettier'\\033[0m'",
     "postinstall": "cd ./node_modules/highlight.js && npm i && node ./tools/build.js :common",
-    "build": "npm run fetch-docs; gulp prod",
     "prod": "npm run fetch-docs; gulp prod",
-    "format": "prettier --write \"app/**/*.js\" && echo -e '\\033[0;32m'💅 Just use prettier'\\033[0m'"
+    "start": "serve ./build --single"
   }
 }

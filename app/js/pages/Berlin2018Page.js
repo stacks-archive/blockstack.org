@@ -1,27 +1,12 @@
 'use strict'
 
 import React, { Component, Fragment } from 'react'
-import Image from '../components/Image'
 import { Helmet } from 'react-helmet'
+import CollapsibleList from '../components/CollapsibleList'
 import berlinData from '../datastore/berlin-event-data'
 import Slider from 'react-slick'
-
-function slugify(text) {
-  return text
-    .toString()
-    .toLowerCase()
-    .replace(/\s+/g, '-') // Replace spaces with -
-    .replace(/[^\w\-]+/g, '') // Remove all non-word chars
-    .replace(/\-\-+/g, '-') // Replace multiple - with single -
-    .replace(/^-+/, '') // Trim - from start of text
-    .replace(/-+$/, '') // Trim - from end of text
-}
-
-function removeDuplicates(myArr, prop) {
-  return myArr.filter((obj, pos, arr) => {
-    return arr.map((mapObj) => mapObj[prop]).indexOf(obj[prop]) === pos
-  })
-}
+import SignatureTalks from '../components/SignatureTalks'
+import { slugify } from '../utils/functions'
 
 const settings = {
   className: 'photo-slider center',
@@ -29,6 +14,8 @@ const settings = {
   infinite: true,
   centerPadding: '0',
   slidesToShow: 3,
+  autoPlay: true,
+  autoplaySpeed: 1500,
   initialSlide: 1,
   speed: 500,
   arrows: true,
@@ -61,90 +48,60 @@ const photoSlides = [
   },
 ]
 
-const renderSpeakers = (speakers) => {
-  return speakers.map((speaker, i) => (
-    <div key={i} className="event__speaker">
-      <div className="event__speaker__avatar">
-        {speaker.headshot && (
-          <img
-            src={`${
-              speaker.headshot
-            }?fit=facearea&crop=faces&facepad=2.6&w=400&h=400&auto=format`}
-            alt={speaker.name}
-          />
-        )}
-      </div>
-      <div className="event__speaker__meta">
-        <h5>{speaker.name}</h5>
-        <div>{speaker.company}</div>
-        <div>{speaker.jobTitle}</div>
-        <div>
-          <a href={`https://twitter.com/${speaker.twitter}`} target="_blank">
-            {speaker.twitter}
-          </a>
-        </div>
-      </div>
-    </div>
-  ))
+function removeDuplicates(myArr, prop) {
+  return myArr.filter((obj, pos, arr) => {
+    return arr.map((mapObj) => mapObj[prop]).indexOf(obj[prop]) === pos
+  })
 }
 
-const renderTalks = (talks, dayNum = 2) =>
-  talks.map(({ day, talkTitle: title, time }, i) => {
-    const speakers = berlinData.filter((speaker) => speaker.talkTitle === title)
-    let classes = 'event__talk'
-
-    if (speakers.length > 2) {
-      classes += ' event__talk--large'
+const filterIndex = (data, min, max) =>
+  data.filter((item, i) => {
+    if (min && max) {
+      return i >= min && i <= max
     }
-    return (
-      day === `March ${dayNum}` && (
-        <div className={classes} id={slugify(title)}>
-          <div className="event__talk__details">
-            <h6>{time}</h6>
-            <h3 key={i}>
-              <a href={`#${slugify(title)}`}>{title}</a>
-            </h3>
-          </div>
-          <div className="event__talk__content">
-            <div className="event__talk__media">
-              <img
-                src="https://blockstack.imgix.net/7c53ed6a-c4eb-4d99-94fc-2e2ed9f62652_p3020241.jpg?auto=format&w=1400"
-                alt={title}
-              />
-            </div>
-            <div className="event__talk__speakers__container">
-              <div className="event__talk__speakers">
-                {renderSpeakers(speakers)}
-              </div>
-            </div>
-          </div>
-        </div>
-      )
-    )
+    if (min && !max) {
+      return i >= min
+    }
+    if (!min && max) {
+      return i <= max
+    }
   })
 
-const renderSimpleTalkList = (talks, dayNum = 2) =>
-  talks.map(({ day, talkTitle: title, time }, i) => {
-    return (
-      day === `March ${dayNum}` && (
-        <div key={i} className="event__toc__talk__item">
-          <a href={`#${slugify(title)}`}>{title}</a>
-        </div>
-      )
-    )
-  })
+const filteredData = [...removeDuplicates(berlinData, 'talkTitle')]
+
+const mainEvent = filteredData.filter((day) => day.day === 'March 2')
+
+const sections = [
+  {
+    title: 'Morning Sessions',
+    items: filterIndex(mainEvent, 0, 8),
+  },
+  {
+    title: 'After Lunch Sessions',
+    items: filterIndex(mainEvent, 9, 11),
+  },
+  {
+    title: 'App Demos',
+    items: filterIndex(mainEvent, 12, 23),
+  },
+  {
+    title: 'Late Afternoon Sessions',
+    items: filterIndex(mainEvent, 24, 26),
+  },
+]
+
+const renderSections = (sections) =>
+  sections.map((section, i) => (
+    <div key={i} id={slugify(section.title)}>
+      <h2 className="event__talk__header">{section.title}</h2>
+      <SignatureTalks talks={section.items} allData={berlinData} />
+    </div>
+  ))
 
 class Berlin2018Page extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {}
-  }
-
   render() {
-    const filteredData = removeDuplicates(berlinData, 'talkTitle')
     return (
-      <div className="page--berlin-event">
+      <div className="page--berlin-event" id="berlin-page">
         <Helmet>
           <title>Blockstack Berlin: A Signature Fund Event</title>
           <meta
@@ -156,17 +113,23 @@ class Berlin2018Page extends Component {
           <div className="col-centered block">
             <div className="container p-b-90">
               <section className="text-xs-center">
-                <h1 className="text-white m-b-20 p-t-90">
-                  Blockstack Berlin: A Signature Fund Event
-                </h1>
+                <h3 className="text-white p-t-90">A Signature Fund Event</h3>
+                <h1 className="text-white m-b-20">Blockstack Berlin</h1>
                 <p className="text-white">
-                  July 27th, 2017, Computer History Museum, Mountain View, CA
+                  The Blockstack Signature Fund and the folks who brought you{' '}
+                  <a href="https://blockstack.org/summit2017">
+                    Blockstack Summit 2017
+                  </a>{' '}
+                  are excited to announce Blockstack Berlin, the first in a
+                  series of worldwide events and demo days around Blockstack.
+                  The event took place on March 2, 2018 in Berlin at the Axica
+                  Convention Center.
                 </p>
               </section>
             </div>
           </div>
         </div>
-        <div>
+        <div className="page__slider">
           <Slider {...settings}>
             {photoSlides.map((slide, i) => (
               <div key={i} className="photo-slider__slide">
@@ -175,12 +138,26 @@ class Berlin2018Page extends Component {
             ))}
           </Slider>
         </div>
-        <div className="col-centered block">
-          <div className="event container p-t-90 p-b-90">
-            {/*<div>{renderSimpleTalkList(filteredData)}</div>*/}
-            <h2>Talks</h2>
-            <div className="event__speaker-grid">
-              {renderTalks(filteredData)}
+        <div className="bg-light-gray">
+          <div className="container ">
+            <div className="row">
+              <div className="col-lg-3 col-md-4 order-1 order-md-4 order-lg-1 p-t-70">
+                <div className="sticky-sidebar">
+                  <div className="p-t-20 p-b-90">
+                    <h3>Event Timeline</h3>
+                    <div>
+                      <CollapsibleList sections={sections} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-9 col-md-8 order-12 order-md-1">
+                <div className="event p-t-90 p-b-90">
+                  <div className="event__speaker-grid">
+                    {renderSections(sections)}
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
