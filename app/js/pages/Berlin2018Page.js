@@ -127,18 +127,21 @@ class Berlin2018Page extends Component {
         <div className="berlin-event-hero">
           <div className="col-centered block">
             <div className="container p-b-90">
-              <section className="text-xs-center">
-                <h3 className="text-white p-t-90">A Signature Fund Event</h3>
-                <h1 className="text-white m-b-20">Blockstack Berlin</h1>
+              <section className="berlin-hero">
+                <h1 className="text-white m-b-20">
+                  <img
+                    src="https://blockstack.imgix.net/e8fbcc68-0777-47b3-a29a-c91bf2a5eac2_berlin-logo.svg"
+                    alt="Blockstack Berlin"
+                  />
+                </h1>
                 <p className="text-white">
-                  The Blockstack Signature Fund and the folks who brought you{' '}
-                  <a href="https://blockstack.org/summit2017">
+                  The Blockstack Signature Fund and the folks who brought you
+                  {' '}<a href="https://blockstack.org/summit2017">
                     Blockstack Summit 2017
-                  </a>{' '}
-                  are excited to announce Blockstack Berlin, the first in a
-                  series of worldwide events and demo days around Blockstack.
-                  The event took place on March 2, 2018 in Berlin at the Axica
-                  Convention Center.
+                  </a> are excited to bring you Blockstack
+                  Berlin, the first in a series of worldwide events and demo
+                  days around Blockstack. The event took place on March 2, 2018
+                  in Berlin at the Axica Convention Center.
                 </p>
               </section>
             </div>

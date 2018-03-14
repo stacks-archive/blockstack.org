@@ -17,7 +17,6 @@
   }
 }
 
-
 .event {
   $c: &;
 
@@ -36,10 +35,14 @@
 
     &:nth-of-type(even) {
       #{$c}__talk__media {
-        order: 2;
+        @media (min-width: 992px) {
+          order: 2;
+        }
       }
       #{$c}__talk__details {
-        order: 1;
+        @media (min-width: 992px) {
+          order: 1;
+        }
       }
     }
     &__content {
@@ -114,4 +117,21 @@
 
 .page__slider {
   overflow: hidden;
+}
+
+.berlin-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    img {
+      width: 480px;
+      max-width: 100%;
+    }
+  }
+  p {
+    text-align: center;
+    max-width: 560px;
+  }
 }
