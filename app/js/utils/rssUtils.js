@@ -1,6 +1,6 @@
 import createTextVersion from 'textversionjs'
-import {parseString} from 'xml2js'
-import {blogAuthors} from '../config'
+import { parseString } from 'xml2js'
+import { blogAuthors } from '../config'
 
 export function getSlugFromRSS(rssPost) {
   // Handle URL
@@ -39,7 +39,7 @@ export function getPostFromRSS(rssPost) {
     if (srcSplit.length > 1) {
       image = srcSplit[1].split('" alt="')[0]
     }
-    markupCleaned = markupFull.replace(/<img[^>]*>/,'')
+    markupCleaned = markupFull.replace(/<img[^>]*>/, '')
     markupCleaned = markupCleaned.replace(/<img/g, '<img class="img-fluid"')
   }
 
@@ -54,7 +54,7 @@ export function getPostFromRSS(rssPost) {
     markup: markupCleaned,
     blockstackID: blockstackID,
     date: dateString,
-    datetime: datetimeString
+    datetime: datetimeString,
   }
 
   return data
@@ -64,7 +64,8 @@ export function getAllPostsFromRSS(rssXML) {
   let posts = []
   let postObject = {}
 
-  parseString(rssXML, (err, result) => { // parse XML string
+  parseString(rssXML, (err, result) => {
+    // parse XML string
     const firstChannel = result.rss.channel[0]
     const channelItems = firstChannel.item
 
@@ -79,9 +80,9 @@ export function getAllPostsFromRSS(rssXML) {
       postObject[post.urlSlug] = post
     })
   })
-  
+
   return {
     postArray: posts,
-    postObject: postObject
+    postObject: postObject,
   }
 }

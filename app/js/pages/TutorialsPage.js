@@ -1,13 +1,12 @@
 'use strict'
 
-import {Component}      from 'react'
-import DocumentTitle    from 'react-document-title'
+import { Component } from 'react'
+import DocumentTitle from 'react-document-title'
 
-import TutorialPreview  from '../components/TutorialPreview'
-import {tutorials}      from '../../constants.json'
+import TutorialPreview from '../components/TutorialPreview'
+import { tutorials } from '../../constants.json'
 
 class TutorialsPage extends Component {
-
   constructor(props) {
     super(props)
   }
@@ -20,10 +19,8 @@ class TutorialsPage extends Component {
             <div className="row">
               <div className="container">
                 <div className="row">
-                  <h2 className="m-b-45">
-                    Tutorials
-                  </h2>
-                  { Object.keys(tutorials).map((key, index) => {
+                  <h2 className="m-b-45">Tutorials</h2>
+                  {Object.keys(tutorials).map((key, index) => {
                     const tutorial = tutorials[key]
                     return (
                       <TutorialPreview
@@ -31,9 +28,10 @@ class TutorialsPage extends Component {
                         url={'/tutorials/' + tutorial.urlSlug}
                         title={tutorial.title}
                         description={tutorial.description}
-                        image={tutorial.image} />
+                        image={tutorial.image}
+                      />
                     )
-                  }) }
+                  })}
                 </div>
               </div>
             </div>
@@ -42,7 +40,6 @@ class TutorialsPage extends Component {
       </DocumentTitle>
     )
   }
-
 }
 
 export default TutorialsPage

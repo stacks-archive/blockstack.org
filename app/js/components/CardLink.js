@@ -1,7 +1,8 @@
 'use strict'
 
-import {Component, PropTypes}  from 'react'
-import {Link} from 'react-router'
+import { Component } from 'react'
+import { Link } from 'react-router'
+import PropTypes from 'prop-types'
 
 const propTypes = {
   title: PropTypes.string.isRequired,
@@ -11,11 +12,10 @@ const propTypes = {
   footnote: PropTypes.string,
   cardsPerRow: PropTypes.number,
   onClick: PropTypes.func,
-  target: PropTypes.string
+  target: PropTypes.string,
 }
 
 class CardLink extends Component {
-
   constructor(props) {
     super(props)
 
@@ -43,41 +43,39 @@ class CardLink extends Component {
   }
 
   render() {
-    let target = "_self"
-    if (this.props.target === "_blank") {
-      target = "_blank"
+    let target = '_self'
+    if (this.props.target === '_blank') {
+      target = '_blank'
     }
 
     return (
       <div className={`card ${this.getCardClass()}`}>
         <Link to={this.props.href} className="card-link" target={target}>
-          { this.props.imageSrc ?
-          <div className="card-link-image-wrapper">
-            <img src={this.props.imageSrc} className="card-img-top card-link-image" />
-          </div>
-          : null }
+          {this.props.imageSrc ? (
+            <div className="card-link-image-wrapper">
+              <img
+                src={this.props.imageSrc}
+                className="card-img-top card-link-image"
+              />
+            </div>
+          ) : null}
           <div className="card-block">
             <h4 className="card-title card-title-wrapped">
               {this.props.title}
             </h4>
-            { this.props.body ?
-            <p className="card-text">
-              {this.props.body}
-            </p>
-            : null }
-            { this.props.footnote ?
-            <p className="card-text">
-              <small className="text-muted">
-                {this.props.footnote}
-              </small>
-            </p>
-            : null }
+            {this.props.body ? (
+              <p className="card-text">{this.props.body}</p>
+            ) : null}
+            {this.props.footnote ? (
+              <p className="card-text">
+                <small className="text-muted">{this.props.footnote}</small>
+              </p>
+            ) : null}
           </div>
         </Link>
       </div>
     )
   }
-
 }
 
 CardLink.propTypes = propTypes

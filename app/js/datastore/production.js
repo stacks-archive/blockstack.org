@@ -4,10 +4,9 @@ import persistState from 'redux-localstorage'
 
 import RootReducer from './reducers'
 
-const finalCreateStore = compose(
-  applyMiddleware(thunk),
-  persistState()
-)(createStore)
+const finalCreateStore = compose(applyMiddleware(thunk), persistState())(
+  createStore,
+)
 
 export default function configureStore(initialState) {
   return finalCreateStore(RootReducer, initialState)

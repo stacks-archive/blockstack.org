@@ -1,12 +1,12 @@
 'use strict'
 
-import {Component}     from 'react'
-import {Link}          from 'react-router'
-import DocumentTitle   from 'react-document-title'
-import {bindActionCreators} from 'redux'
-import {connect} from 'react-redux'
+import { Component } from 'react'
+import { Link } from 'react-router'
+import DocumentTitle from 'react-document-title'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
 
-import {BlogActions}  from '../datastore/Blog'
+import { BlogActions } from '../datastore/Blog'
 
 function mapStateToProps(state) {
   return {
@@ -19,7 +19,6 @@ function mapDispatchToProps(dispatch) {
 }
 
 class BlogPage extends Component {
-
   constructor(props) {
     super(props)
 
@@ -68,39 +67,43 @@ class BlogPage extends Component {
               <div className="container">
                 <div className="row">
                   <div className="container-fluid">
-                    <h2 className="m-b-45">
-                      Blockstack Blog
-                    </h2>
-                    { this.state.posts.length == 0 && 
+                    <h2 className="m-b-45">Blockstack Blog</h2>
+                    {this.state.posts.length == 0 && (
                       <div className="m-t-100 m-b-100 text-center">
                         <i className="fa fa-spinner fa-spin fa-3x fa-fw" />
                       </div>
-                    }
-                    { this.state.posts.map((post, index) => {
+                    )}
+                    {this.state.posts.map((post, index) => {
                       return (
                         <div className="m-b-20" key={index}>
-                          { post.urlSlug && post.title ?
-                          <Link to={'/blog/' + post.urlSlug}>
-                            <h3 className="m-b-10">{ post.title }</h3>
-                          </Link>
-                          : null }
-                          { post.preview ?
-                          <div dangerouslySetInnerHTML={{ __html: post.preview }}>
-                          </div>
-                          : null }
+                          {post.urlSlug && post.title ? (
+                            <Link to={'/blog/' + post.urlSlug}>
+                              <h3 className="m-b-10">{post.title}</h3>
+                            </Link>
+                          ) : null}
+                          {post.preview ? (
+                            <div
+                              dangerouslySetInnerHTML={{ __html: post.preview }}
+                            />
+                          ) : null}
                           <div className="post-meta">
-                            { post.creator ?
-                            <span className="post-author">{post.creator.name} |&nbsp;</span>
-                            : null }
-                            { post.datetime && post.date ?
-                            <time className="post-date" dateTime={post.datetime}>
-                              {post.date}
-                            </time>
-                            : null }
+                            {post.creator ? (
+                              <span className="post-author">
+                                {post.creator.name} |&nbsp;
+                              </span>
+                            ) : null}
+                            {post.datetime && post.date ? (
+                              <time
+                                className="post-date"
+                                dateTime={post.datetime}
+                              >
+                                {post.date}
+                              </time>
+                            ) : null}
                           </div>
                         </div>
                       )
-                    }) }
+                    })}
                   </div>
                 </div>
               </div>
@@ -110,7 +113,6 @@ class BlogPage extends Component {
       </DocumentTitle>
     )
   }
-
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(BlogPage)

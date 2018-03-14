@@ -1,13 +1,12 @@
 'use strict'
 
-import {Component}      from 'react'
-import DocumentTitle    from 'react-document-title'
+import { Component } from 'react'
+import DocumentTitle from 'react-document-title'
 
-import Article          from '../components/Article'
-import docs             from '../../docs.json'
+import Article from '../components/Article'
+import docs from '../../docs.json'
 
 class ArticlePage extends Component {
-
   constructor(props) {
     super(props)
 
@@ -26,7 +25,7 @@ class ArticlePage extends Component {
     }
     this.setState({
       urlSlug: urlSlug,
-      title: title
+      title: title,
     })
   }
 
