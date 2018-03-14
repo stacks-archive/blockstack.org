@@ -1,6 +1,6 @@
-import { Component } from 'react';
-import PropTypes from 'prop-types';
-import { Link } from 'react-router';
+import { Component } from 'react'
+import PropTypes from 'prop-types'
+import { Link } from 'react-router'
 
 const propTypes = {
   date: PropTypes.string.isRequired,
@@ -9,12 +9,11 @@ const propTypes = {
   authors: PropTypes.string,
   url: PropTypes.string.isRequired,
   index: PropTypes.string.isRequired,
-};
+}
 
 class Paper extends Component {
-
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
@@ -41,10 +40,10 @@ class Paper extends Component {
           </Link>
         </p>
       </div>
-    );
+    )
   }
 }
 
-Paper.propTypes = propTypes;
+Paper.propTypes = propTypes
 
-export default Paper;
+export default Paper

@@ -1,12 +1,12 @@
-'use strict';
+'use strict'
 
-import { Component } from 'react';
-import { Link } from 'react-router';
-import DocumentTitle from 'react-document-title';
+import { Component } from 'react'
+import { Link } from 'react-router'
+import DocumentTitle from 'react-document-title'
 
 class SummitPage extends Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
@@ -541,8 +541,8 @@ class SummitPage extends Component {
           </section>
         </div>
       </DocumentTitle>
-    );
+    )
   }
 }
 
-export default SummitPage;
+export default SummitPage

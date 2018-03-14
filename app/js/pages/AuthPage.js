@@ -1,40 +1,40 @@
-'use strict';
+'use strict'
 
-import { Component } from 'react';
-import { Link } from 'react-router';
-import DocumentTitle from 'react-document-title';
+import { Component } from 'react'
+import { Link } from 'react-router'
+import DocumentTitle from 'react-document-title'
 //import { decodeToken, SECP256K1Client, TokenSigner } from 'jsontokens'
 import {
   makeAuthResponse,
   makeECPrivateKey,
   getAuthRequestFromURL,
   redirectUserToApp,
-} from 'blockstack';
+} from 'blockstack'
 //import { Person, fetchAppManifest, publicKeyToAddress, makeDIDFromAddress, makeUUID4, nextMonth } from 'blockstack'
 
 class AuthPage extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       authRequest: null,
       appURI: null,
-    };
+    }
 
-    this.signIn = this.signIn.bind(this);
-    this.signInWebAppUrl = this.signInWebAppUrl.bind(this);
-    this.getAuthRequest = this.getAuthRequest.bind(this);
+    this.signIn = this.signIn.bind(this)
+    this.signInWebAppUrl = this.signInWebAppUrl.bind(this)
+    this.getAuthRequest = this.getAuthRequest.bind(this)
   }
 
   componentWillMount() {
-    this.getAuthRequest();
+    this.getAuthRequest()
   }
 
   getAuthRequest() {
-    const authRequest = getAuthRequestFromURL();
+    const authRequest = getAuthRequestFromURL()
     this.setState({
       authRequest: authRequest,
-    });
+    })
     /*
     fetchAppManifest(authRequest).then(appManifest => {
     }).catch((e) => {
@@ -43,7 +43,7 @@ class AuthPage extends Component {
   }
 
   signIn() {
-    const privateKey = makeECPrivateKey();
+    const privateKey = makeECPrivateKey()
     const profile = {
       '@type': 'Person',
       name: 'Anonymous',
@@ -54,17 +54,17 @@ class AuthPage extends Component {
           contentUrl: 'https://s3.amazonaws.com/onename/avatar-placeholder.png',
         },
       ],
-    };
-    const authResponse = makeAuthResponse(privateKey, profile);
+    }
+    const authResponse = makeAuthResponse(privateKey, profile)
     if (this.state.authRequest) {
-      redirectUserToApp(this.state.authRequest, authResponse);
+      redirectUserToApp(this.state.authRequest, authResponse)
     }
   }
 
   signInWebAppUrl() {
     return `https://browser.blockstack.org/auth?authRequest=${
       this.state.authRequest
-    }`;
+    }`
   }
 
   render() {
@@ -107,8 +107,8 @@ class AuthPage extends Component {
           </section>
         </div>
       </DocumentTitle>
-    );
+    )
   }
 }
 
-export default AuthPage;
+export default AuthPage

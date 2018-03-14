@@ -1,17 +1,17 @@
-'use strict';
+'use strict'
 
-import { Component } from 'react';
-import { Link } from 'react-router';
+import { Component } from 'react'
+import { Link } from 'react-router'
 
-import { socialLinks } from '../config';
+import { socialLinks } from '../config'
 
 class Footer extends Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
-    const links = socialLinks;
+    const links = socialLinks
     return (
       <footer>
         <div className="container container-lg">
@@ -187,8 +187,8 @@ class Footer extends Component {
           </div>
         </div>
       </footer>
-    );
+    )
   }
 }
 
-export default Footer;
+export default Footer

@@ -1,11 +1,11 @@
-'use strict';
+'use strict'
 
-import { Component } from 'react';
-import { Link } from 'react-router';
-import DocumentTitle from 'react-document-title';
-import marked from 'marked';
+import { Component } from 'react'
+import { Link } from 'react-router'
+import DocumentTitle from 'react-document-title'
+import marked from 'marked'
 
-import docs from '../../docs.json';
+import docs from '../../docs.json'
 
 marked.setOptions({
   renderer: new marked.Renderer(),
@@ -16,49 +16,49 @@ marked.setOptions({
   sanitize: false,
   smartLists: true,
   smartypants: false,
-});
+})
 
 class FAQpage extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       questions: null,
-    };
+    }
 
-    this.setQuestions = this.setQuestions.bind(this);
+    this.setQuestions = this.setQuestions.bind(this)
   }
 
   componentWillMount() {
-    this.setQuestions();
+    this.setQuestions()
   }
 
   disableBodyScroll() {
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden'
   }
 
   enableBodyScroll() {
-    document.body.style.overflow = 'auto';
+    document.body.style.overflow = 'auto'
   }
 
   setQuestions() {
-    let questions = [];
-    let markdown = docs['faqs'].markdown;
-    let markdownParts = markdown.split(/### (.*)/g);
-    markdownParts.splice(0, 1);
+    let questions = []
+    let markdown = docs['faqs'].markdown
+    let markdownParts = markdown.split(/### (.*)/g)
+    markdownParts.splice(0, 1)
 
     for (let i = 0; i < markdownParts.length; i += 2) {
       questions.push({
         question: markdownParts[i],
         answer: marked(markdownParts[i + 1]),
-      });
+      })
     }
 
-    this.setState({ questions });
+    this.setState({ questions })
   }
 
   render() {
-    const { questions } = this.state;
+    const { questions } = this.state
 
     return (
       <DocumentTitle title="Blockstack - FAQ ">
@@ -87,7 +87,7 @@ class FAQpage extends Component {
                   const refLink = faq.question
                     .toLowerCase()
                     .split(' ')
-                    .join('_');
+                    .join('_')
                   return index < 5 ? (
                     <Link
                       key={index}
@@ -96,7 +96,7 @@ class FAQpage extends Component {
                     >
                       {faq.question}
                     </Link>
-                  ) : null;
+                  ) : null
                 })}
                 <h5 className="list-group-header list-group-header-d-sidebar">
                   For Developers
@@ -116,7 +116,7 @@ class FAQpage extends Component {
                 const refLink = faq.question
                   .toLowerCase()
                   .split(' ')
-                  .join('_');
+                  .join('_')
                 return (
                   <div
                     key={index}
@@ -130,14 +130,14 @@ class FAQpage extends Component {
                       }}
                     />
                   </div>
-                );
+                )
               })}
             </section>
           </div>
         </div>
       </DocumentTitle>
-    );
+    )
   }
 }
 
-export default FAQpage;
+export default FAQpage

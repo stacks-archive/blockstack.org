@@ -1,11 +1,11 @@
-import { combineReducers } from 'redux';
+import { combineReducers } from 'redux'
 
-import { BlogReducer } from './Blog';
-import { StatsReducer } from './Stats';
+import { BlogReducer } from './Blog'
+import { StatsReducer } from './Stats'
 
 const RootReducer = combineReducers({
   blog: BlogReducer,
   stats: StatsReducer,
-});
+})
 
-export default RootReducer;
+export default RootReducer

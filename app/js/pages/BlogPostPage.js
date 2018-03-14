@@ -1,84 +1,84 @@
-'use strict';
+'use strict'
 
-import { Component } from 'react';
-import { Link } from 'react-router';
-import DocumentTitle from 'react-document-title';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
+import { Component } from 'react'
+import { Link } from 'react-router'
+import DocumentTitle from 'react-document-title'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
 
-import { BlogActions } from '../datastore/Blog';
-import Image from '../components/Image';
-import CommunityMember from '../components/CommunityMember';
-import PostShareWidget from '../components/PostShareWidget';
+import { BlogActions } from '../datastore/Blog'
+import Image from '../components/Image'
+import CommunityMember from '../components/CommunityMember'
+import PostShareWidget from '../components/PostShareWidget'
 
 function mapStateToProps(state) {
   return {
     posts: state.blog.posts,
     postObject: state.blog.postObject,
-  };
+  }
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators(BlogActions, dispatch);
+  return bindActionCreators(BlogActions, dispatch)
 }
 
 class BlogPostPage extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       imageLoading: false,
       posts: this.props.posts,
       postObject: this.props.postObject,
-    };
+    }
 
-    this.initHighlighting = this.initHighlighting.bind(this);
-    this.filterMarkup = this.filterMarkup.bind(this);
-    this.onImageLoad = this.onImageLoad.bind(this);
+    this.initHighlighting = this.initHighlighting.bind(this)
+    this.filterMarkup = this.filterMarkup.bind(this)
+    this.onImageLoad = this.onImageLoad.bind(this)
   }
 
   componentWillMount() {
     if (this.props.posts.length === 0) {
-      this.props.fetchPosts();
+      this.props.fetchPosts()
     }
   }
 
   componentWillReceiveProps(nextProps) {
     this.setState({
       imageLoading: true,
-    });
+    })
     if (this.props.posts !== nextProps.posts) {
       this.setState({
         posts: nextProps.posts,
         postObject: nextProps.postObject,
-      });
+      })
     }
   }
 
   componentDidUpdate() {
-    this.initHighlighting();
+    this.initHighlighting()
   }
 
   initHighlighting() {
-    const blocks = document.querySelectorAll('pre code');
-    Array.prototype.forEach.call(blocks, hljs.highlightBlock);
+    const blocks = document.querySelectorAll('pre code')
+    Array.prototype.forEach.call(blocks, hljs.highlightBlock)
   }
 
   filterMarkup(markup) {
-    return markup.replace('<a href="', '<a target="_blank" href="');
+    return markup.replace('<a href="', '<a target="_blank" href="')
   }
 
   onImageLoad() {
     this.setState({
       imageLoading: false,
-    });
+    })
   }
 
   render() {
-    const currentUrlSlug = location.pathname.split('/')[2];
-    const currentPage = this.state.postObject[currentUrlSlug];
-    const title = currentPage ? currentPage.title : '';
-    const headerImageSrc = currentPage ? currentPage.image : '';
+    const currentUrlSlug = location.pathname.split('/')[2]
+    const currentPage = this.state.postObject[currentUrlSlug]
+    const title = currentPage ? currentPage.title : ''
+    const headerImageSrc = currentPage ? currentPage.image : ''
 
     return (
       <DocumentTitle title={title}>
@@ -182,8 +182,8 @@ class BlogPostPage extends Component {
           )}
         </div>
       </DocumentTitle>
-    );
+    )
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(BlogPostPage);
+export default connect(mapStateToProps, mapDispatchToProps)(BlogPostPage)

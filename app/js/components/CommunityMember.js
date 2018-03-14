@@ -1,8 +1,8 @@
-import { Component } from 'react';
-import PropTypes from 'prop-types';
-import { Link } from 'react-router';
+import { Component } from 'react'
+import PropTypes from 'prop-types'
+import { Link } from 'react-router'
 
-import Image from '../components/Image';
+import Image from '../components/Image'
 
 const propTypes = {
   blockstackId: PropTypes.string.isRequired,
@@ -11,17 +11,17 @@ const propTypes = {
   github: PropTypes.string,
   twitter: PropTypes.string,
   isCentered: PropTypes.bool,
-};
+}
 
 class CommunityMember extends Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
-    let extraWrapperClass = 'text-xs-center';
+    let extraWrapperClass = 'text-xs-center'
     if (this.props.isCentered === false) {
-      extraWrapperClass = '';
+      extraWrapperClass = ''
     }
 
     return (
@@ -64,9 +64,9 @@ class CommunityMember extends Component {
           ) : null}
         </div>
       </div>
-    );
+    )
   }
 }
 
-CommunityMember.propTypes = propTypes;
-export default CommunityMember;
+CommunityMember.propTypes = propTypes
+export default CommunityMember

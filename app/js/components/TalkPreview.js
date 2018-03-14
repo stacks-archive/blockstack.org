@@ -1,7 +1,7 @@
-import { Component } from 'react';
-import { Link } from 'react-router';
-import PropTypes from 'prop-types';
-import Image from '../components/Image';
+import { Component } from 'react'
+import { Link } from 'react-router'
+import PropTypes from 'prop-types'
+import Image from '../components/Image'
 
 class TalkPreview extends Component {
   static propTypes: {
@@ -12,10 +12,10 @@ class TalkPreview extends Component {
     location: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
-  };
+  }
 
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
@@ -48,8 +48,8 @@ class TalkPreview extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default TalkPreview;
+export default TalkPreview

@@ -1,46 +1,46 @@
-'use strict';
+'use strict'
 
-import { Component } from 'react';
-import DocumentTitle from 'react-document-title';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
+import { Component } from 'react'
+import DocumentTitle from 'react-document-title'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
 
-import { StatsActions } from '../datastore/Stats';
-import LeverJobs from '../components/LeverJobs';
-import { jobs } from '../config';
+import { StatsActions } from '../datastore/Stats'
+import LeverJobs from '../components/LeverJobs'
+import { jobs } from '../config'
 
 function mapStateToProps(state) {
   return {
     stats: state.stats,
-  };
+  }
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators(Object.assign({}, StatsActions), dispatch);
+  return bindActionCreators(Object.assign({}, StatsActions), dispatch)
 }
 
 class CareersPage extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       stats: this.props.stats,
-    };
+    }
   }
 
   componentWillMount() {
-    this.props.fetchStats();
+    this.props.fetchStats()
   }
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.stats !== this.props.stats) {
-      let stats = nextProps.stats;
+      let stats = nextProps.stats
       if (stats.domains === 0) {
-        stats.domains = 72000;
+        stats.domains = 72000
       }
       this.setState({
         stats: stats,
-      });
+      })
     }
   }
 
@@ -184,8 +184,8 @@ class CareersPage extends Component {
           </section>
         </div>
       </DocumentTitle>
-    );
+    )
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(CareersPage);
+export default connect(mapStateToProps, mapDispatchToProps)(CareersPage)

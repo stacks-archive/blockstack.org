@@ -1,14 +1,14 @@
-import { Component } from 'react';
-import { Link } from 'react-router';
-import PropTypes from 'prop-types';
+import { Component } from 'react'
+import { Link } from 'react-router'
+import PropTypes from 'prop-types'
 
 const propTypes = {
   post: PropTypes.object.isRequired,
-};
+}
 
 class PostPreview extends Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
@@ -44,9 +44,9 @@ class PostPreview extends Component {
           ) : null}
         </div>
       </div>
-    );
+    )
   }
 }
 
-PostPreview.propTypes = propTypes;
-export default PostPreview;
+PostPreview.propTypes = propTypes
+export default PostPreview

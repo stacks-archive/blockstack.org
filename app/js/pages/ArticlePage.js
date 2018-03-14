@@ -1,41 +1,41 @@
-'use strict';
+'use strict'
 
-import { Component } from 'react';
-import DocumentTitle from 'react-document-title';
+import { Component } from 'react'
+import DocumentTitle from 'react-document-title'
 
-import Article from '../components/Article';
-import docs from '../../docs.json';
+import Article from '../components/Article'
+import docs from '../../docs.json'
 
 class ArticlePage extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
-    this.state = { urlSlug: null };
-    this.getPageInfo = this.getPageInfo.bind(this);
+    this.state = { urlSlug: null }
+    this.getPageInfo = this.getPageInfo.bind(this)
   }
 
   getPageInfo(props) {
-    let title = '404';
-    let urlSlug = '404';
+    let title = '404'
+    let urlSlug = '404'
     if (props.routeParams.hasOwnProperty('docSection')) {
       if (docs.hasOwnProperty(props.routeParams.docSection)) {
-        urlSlug = props.routeParams.docSection;
-        title = docs[urlSlug].title;
+        urlSlug = props.routeParams.docSection
+        title = docs[urlSlug].title
       }
     }
     this.setState({
       urlSlug: urlSlug,
       title: title,
-    });
+    })
   }
 
   componentWillMount() {
-    this.getPageInfo(this.props);
+    this.getPageInfo(this.props)
   }
 
   componentWillReceiveProps(nextProps) {
     if (this.props !== nextProps) {
-      this.getPageInfo(nextProps);
+      this.getPageInfo(nextProps)
     }
   }
 
@@ -46,8 +46,8 @@ class ArticlePage extends Component {
           <Article urlSlug={this.state.urlSlug} />
         </div>
       </DocumentTitle>
-    );
+    )
   }
 }
 
-export default ArticlePage;
+export default ArticlePage

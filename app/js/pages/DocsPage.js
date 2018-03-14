@@ -1,11 +1,11 @@
-'use strict';
+'use strict'
 
-import { Component } from 'react';
-import DocumentTitle from 'react-document-title';
-import { Link } from 'react-router';
-import marked from 'marked';
+import { Component } from 'react'
+import DocumentTitle from 'react-document-title'
+import { Link } from 'react-router'
+import marked from 'marked'
 
-import docs from '../../docs.json';
+import docs from '../../docs.json'
 
 marked.setOptions({
   renderer: new marked.Renderer(),
@@ -16,34 +16,34 @@ marked.setOptions({
   sanitize: false,
   smartLists: true,
   smartypants: false,
-});
+})
 
 class DocsPage extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       sections: null,
-    };
+    }
 
-    this.setPage = this.setPage.bind(this);
+    this.setPage = this.setPage.bind(this)
   }
 
   componentDidMount() {
-    this.setPage();
+    this.setPage()
   }
 
   componentDidUpdate() {
-    const codeBlocks = document.querySelectorAll('pre code');
-    Array.prototype.forEach.call(codeBlocks, hljs.highlightBlock);
+    const codeBlocks = document.querySelectorAll('pre code')
+    Array.prototype.forEach.call(codeBlocks, hljs.highlightBlock)
   }
 
   disableBodyScroll() {
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden'
   }
 
   enableBodyScroll() {
-    document.body.style.overflow = 'auto';
+    document.body.style.overflow = 'auto'
   }
 
   setPage() {
@@ -64,46 +64,46 @@ class DocsPage extends Component {
         title: 'Blockstack Explorer',
         pageNames: ['explorer-installation'],
       },
-    ];
+    ]
 
     sections.forEach((section) => {
-      let markup = '';
-      let subSections = [];
+      let markup = ''
+      let subSections = []
 
       section.pageNames.forEach((pageName) => {
-        let markdown = docs[pageName].markdown;
-        let markdownParts = markdown.split(/### (.*)/g);
-        markdownParts.splice(0, 1);
+        let markdown = docs[pageName].markdown
+        let markdownParts = markdown.split(/### (.*)/g)
+        markdownParts.splice(0, 1)
 
-        let currentMarkup = marked(markdown);
-        markup = markup + currentMarkup;
+        let currentMarkup = marked(markdown)
+        markup = markup + currentMarkup
 
-        let markupParts = currentMarkup.split(/(<h3.*<\/h3>)\n/g);
-        markupParts.splice(0, 1);
+        let markupParts = currentMarkup.split(/(<h3.*<\/h3>)\n/g)
+        markupParts.splice(0, 1)
 
         for (var i = 0, j = markupParts.length; i < j; i += 2) {
-          let id = markupParts[i].split(/id="(.*)"/g)[1];
-          let title = markdownParts[i];
+          let id = markupParts[i].split(/id="(.*)"/g)[1]
+          let title = markdownParts[i]
           subSections.push({
             id: id,
             title: title,
             header: markupParts[i],
             body: markupParts[i + 1],
-          });
+          })
         }
-      });
+      })
 
-      section.markup = markup;
-      section.subSections = subSections;
-    });
+      section.markup = markup
+      section.subSections = subSections
+    })
 
     this.setState({
       sections: sections,
-    });
+    })
   }
 
   render() {
-    const sections = this.state.sections;
+    const sections = this.state.sections
 
     return (
       <DocumentTitle title="Blockstack - Docs">
@@ -163,10 +163,10 @@ class DocsPage extends Component {
                             >
                               {section.title}
                             </Link>
-                          );
+                          )
                         })}
                       </div>
-                    );
+                    )
                   })}
                 </div>
               </aside>
@@ -188,16 +188,16 @@ class DocsPage extends Component {
                           }}
                         />
                       </div>
-                    );
-                  });
+                    )
+                  })
                 })}
               </section>
             </div>
           </div>
         ) : null}
       </DocumentTitle>
-    );
+    )
   }
 }
 
-export default DocsPage;
+export default DocsPage

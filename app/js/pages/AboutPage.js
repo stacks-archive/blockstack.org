@@ -1,14 +1,14 @@
-'use strict';
+'use strict'
 
-import { Component } from 'react';
-import DocumentTitle from 'react-document-title';
+import { Component } from 'react'
+import DocumentTitle from 'react-document-title'
 
-import ContentSection from '../components/ContentSection';
-import TeamMembers from '../components/TeamMembers';
+import ContentSection from '../components/ContentSection'
+import TeamMembers from '../components/TeamMembers'
 
 class AboutPage extends Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
@@ -148,8 +148,8 @@ class AboutPage extends Component {
           </div>
         </div>
       </DocumentTitle>
-    );
+    )
   }
 }
 
-export default AboutPage;
+export default AboutPage

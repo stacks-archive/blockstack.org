@@ -1,42 +1,42 @@
-'use strict';
+'use strict'
 
-import { Component } from 'react';
-import { Link } from 'react-router';
-import DocumentTitle from 'react-document-title';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
+import { Component } from 'react'
+import { Link } from 'react-router'
+import DocumentTitle from 'react-document-title'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
 
-import { BlogActions } from '../datastore/Blog';
+import { BlogActions } from '../datastore/Blog'
 
 function mapStateToProps(state) {
   return {
     posts: state.blog.posts,
-  };
+  }
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators(BlogActions, dispatch);
+  return bindActionCreators(BlogActions, dispatch)
 }
 
 class BlogPage extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
-    let pageNumber = 1;
+    let pageNumber = 1
     if ('page' in this.props.location.query) {
-      pageNumber = parseInt(this.props.location.query.page);
+      pageNumber = parseInt(this.props.location.query.page)
     }
 
     this.state = {
       posts: this.props.posts,
       pageNumber: pageNumber,
-    };
+    }
   }
 
   componentWillMount() {
     //let pageNumber = this.state.pageNumber
     if (this.props.posts.length === 0) {
-      this.props.fetchPosts();
+      this.props.fetchPosts()
     }
   }
 
@@ -44,17 +44,17 @@ class BlogPage extends Component {
     if (nextProps.posts !== this.props.posts) {
       this.setState({
         posts: nextProps.posts,
-      });
+      })
     }
     if (nextProps.location !== this.props.location) {
-      let pageNumber = 1;
+      let pageNumber = 1
       if ('page' in nextProps.location.query) {
-        pageNumber = parseInt(nextProps.location.query.page);
+        pageNumber = parseInt(nextProps.location.query.page)
       }
       this.setState({
         pageNumber: pageNumber,
-      });
-      this.props.fetchPosts();
+      })
+      this.props.fetchPosts()
     }
   }
 
@@ -102,7 +102,7 @@ class BlogPage extends Component {
                             ) : null}
                           </div>
                         </div>
-                      );
+                      )
                     })}
                   </div>
                 </div>
@@ -111,11 +111,11 @@ class BlogPage extends Component {
           </div>
         </div>
       </DocumentTitle>
-    );
+    )
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(BlogPage);
+export default connect(mapStateToProps, mapDispatchToProps)(BlogPage)
 
 /*
 <p>

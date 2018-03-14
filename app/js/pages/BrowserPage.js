@@ -1,14 +1,14 @@
-'use strict';
+'use strict'
 
-import { Component } from 'react';
-import { Link } from 'react-router';
-import DocumentTitle from 'react-document-title';
+import { Component } from 'react'
+import { Link } from 'react-router'
+import DocumentTitle from 'react-document-title'
 
-import Image from '../components/Image';
+import Image from '../components/Image'
 
 class AboutPage extends Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
@@ -50,8 +50,8 @@ class AboutPage extends Component {
           </section>
         </div>
       </DocumentTitle>
-    );
+    )
   }
 }
 
-export default AboutPage;
+export default AboutPage
