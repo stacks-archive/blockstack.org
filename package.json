@@ -10,7 +10,7 @@
     "fetch-docs": "git submodule init; git submodule update --remote",
     "format": "prettier --write \"app/**/*.js\" && echo -e '\\033[0;32m'💅 Just use prettier'\\033[0m'",
     "postinstall": "cd ./node_modules/highlight.js && npm i && node ./tools/build.js :common",
-    "prod": "npm run fetch-docs; gulp prod",
+    "prod": "npm run build",
     "start": "serve ./build --single"
   },
   "repository": {
