@@ -1,11 +1,11 @@
-import { Component } from 'react';
+import { Component } from 'react'
 
-import TeamMember from '../components/TeamMember';
-import { teamMembers } from '../config';
+import TeamMember from '../components/TeamMember'
+import { teamMembers } from '../config'
 
 class TeamMembers extends Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
@@ -23,10 +23,10 @@ class TeamMembers extends Component {
                         {teamMemberRow.map((teamMember, subIndex) => {
                           return (
                             <TeamMember key={subIndex} profile={teamMember} />
-                          );
+                          )
                         })}
                       </div>
-                    );
+                    )
                   })}
                 </div>
               </div>
@@ -34,8 +34,8 @@ class TeamMembers extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default TeamMembers;
+export default TeamMembers

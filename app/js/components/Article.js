@@ -1,12 +1,12 @@
-'use strict';
+'use strict'
 
-import { Component } from 'react';
-import { Link } from 'react-router';
-import marked from 'marked';
+import { Component } from 'react'
+import { Link } from 'react-router'
+import marked from 'marked'
 
-import EmbedYouTube from '../components/EmbedYouTube';
-import docs from '../../docs.json';
-import { githubFileUrlRoot } from '../config';
+import EmbedYouTube from '../components/EmbedYouTube'
+import docs from '../../docs.json'
+import { githubFileUrlRoot } from '../config'
 
 marked.setOptions({
   renderer: new marked.Renderer(),
@@ -17,68 +17,68 @@ marked.setOptions({
   sanitize: false,
   smartLists: true,
   smartypants: false,
-});
+})
 
 class Article extends Component {
   static propTypes: {
     urlSlug: PropTypes.string.isRequired,
     youtubeURL: PropTypes.string,
-  };
+  }
 
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       title: null,
       markup: null,
       urlSlug: null,
-    };
+    }
 
-    this.initHighlighting = this.initHighlighting.bind(this);
-    this.setArticle = this.setArticle.bind(this);
+    this.initHighlighting = this.initHighlighting.bind(this)
+    this.setArticle = this.setArticle.bind(this)
   }
 
   setArticle(props) {
-    const urlSlug = props.urlSlug;
+    const urlSlug = props.urlSlug
     if (docs.hasOwnProperty(urlSlug)) {
-      const title = docs[urlSlug].title;
-      const markdown = docs[props.urlSlug].markdown;
-      const markup = marked(markdown);
+      const title = docs[urlSlug].title
+      const markdown = docs[props.urlSlug].markdown
+      const markup = marked(markdown)
       this.setState({
         urlSlug: urlSlug,
         title: title,
         markup: markup,
-      });
+      })
     } else {
       // do nothing
     }
   }
 
   initHighlighting() {
-    const blocks = document.querySelectorAll('pre code');
-    Array.prototype.forEach.call(blocks, hljs.highlightBlock);
+    const blocks = document.querySelectorAll('pre code')
+    Array.prototype.forEach.call(blocks, hljs.highlightBlock)
   }
 
   componentWillMount() {
-    this.setArticle(this.props);
+    this.setArticle(this.props)
   }
 
   componentWillReceiveProps(nextProps) {
     if (this.props !== nextProps) {
-      this.setArticle(nextProps);
+      this.setArticle(nextProps)
     }
   }
 
   componentDidMount() {
-    this.initHighlighting();
+    this.initHighlighting()
   }
 
   componentDidUpdate() {
-    this.initHighlighting();
+    this.initHighlighting()
   }
 
   render() {
-    const pathPrefix = '/' + location.pathname.split('/')[1];
+    const pathPrefix = '/' + location.pathname.split('/')[1]
 
     return (
       <section>
@@ -120,8 +120,8 @@ class Article extends Component {
           </div>
         </div>
       </section>
-    );
+    )
   }
 }
 
-export default Article;
+export default Article

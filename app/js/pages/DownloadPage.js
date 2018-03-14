@@ -1,14 +1,14 @@
-'use strict';
+'use strict'
 
-import { Component } from 'react';
-import DocumentTitle from 'react-document-title';
+import { Component } from 'react'
+import DocumentTitle from 'react-document-title'
 //import { UAParser }    from 'ua-parser-js'
 
-import { installationLinks } from '../config';
+import { installationLinks } from '../config'
 
 class DownloadsPage extends Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
@@ -178,11 +178,11 @@ class DownloadsPage extends Component {
           </div>
         </div>
       </DocumentTitle>
-    );
+    )
   }
 }
 
-export default DownloadsPage;
+export default DownloadsPage
 
 /*
                     <div>

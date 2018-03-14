@@ -1,7 +1,7 @@
-import { Component } from 'react';
-import { Link } from 'react-router';
-import EmbedYouTube from './EmbedYouTube';
-import PropTypes from 'prop-types';
+import { Component } from 'react'
+import { Link } from 'react-router'
+import EmbedYouTube from './EmbedYouTube'
+import PropTypes from 'prop-types'
 
 const propTypes = {
   videos: PropTypes.arrayOf(
@@ -11,33 +11,33 @@ const propTypes = {
       thumbnailImageUrl: PropTypes.string,
     }),
   ).isRequired,
-};
+}
 
 class MultiVideoPlayer extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       activeVideoIndex: 0,
       initialState: true,
       preview: this.props.previewImageUrl !== undefined,
-    };
+    }
 
-    this.handleMiniVideoClick = this.handleMiniVideoClick.bind(this);
+    this.handleMiniVideoClick = this.handleMiniVideoClick.bind(this)
   }
 
   playVideo() {
     this.setState({
       preview: false,
-    });
+    })
   }
 
   handleMiniVideoClick(e, videoIndex) {
-    e.preventDefault();
+    e.preventDefault()
     this.setState({
       initialState: false,
       activeVideoIndex: videoIndex,
-    });
+    })
   }
 
   render() {
@@ -76,7 +76,7 @@ class MultiVideoPlayer extends Component {
                           />
                         </Link>
                       </div>
-                    );
+                    )
                   })}
                 </div>
               </div>
@@ -84,10 +84,10 @@ class MultiVideoPlayer extends Component {
           </div>
         )}
       </div>
-    );
+    )
   }
 }
 
-MultiVideoPlayer.propTypes = propTypes;
+MultiVideoPlayer.propTypes = propTypes
 
-export default MultiVideoPlayer;
+export default MultiVideoPlayer

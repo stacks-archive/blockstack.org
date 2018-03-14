@@ -1,39 +1,39 @@
-'use strict';
+'use strict'
 
-import { Component } from 'react';
-import { Link } from 'react-router';
-import DocumentTitle from 'react-document-title';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
+import { Component } from 'react'
+import { Link } from 'react-router'
+import DocumentTitle from 'react-document-title'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
 
-import { BlogActions } from '../datastore/Blog';
-import { StatsActions } from '../datastore/Stats';
-import Image from '../components/Image';
-import Alert from '../components/Alert';
-import Header from '../components/Header';
-import EmbedYouTube from '../components/EmbedYouTube';
-import MultiVideoPlayer from '../components/MultiVideoPlayer';
-import MailchimpForm from '../components/MailchimpForm';
-import PostPreview from '../components/PostPreview';
-import { featuredApps } from '../config';
+import { BlogActions } from '../datastore/Blog'
+import { StatsActions } from '../datastore/Stats'
+import Image from '../components/Image'
+import Alert from '../components/Alert'
+import Header from '../components/Header'
+import EmbedYouTube from '../components/EmbedYouTube'
+import MultiVideoPlayer from '../components/MultiVideoPlayer'
+import MailchimpForm from '../components/MailchimpForm'
+import PostPreview from '../components/PostPreview'
+import { featuredApps } from '../config'
 
 function mapStateToProps(state) {
   return {
     posts: state.blog.posts,
     stats: state.stats,
-  };
+  }
 }
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
     Object.assign({}, BlogActions, StatsActions),
     dispatch,
-  );
+  )
 }
 
 class HomePage extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       videos: [
@@ -55,36 +55,36 @@ class HomePage extends Component {
       ],
       stats: this.props.stats,
       posts: this.props.posts,
-    };
+    }
   }
 
   componentWillMount() {
     if (this.props.posts.length === 0) {
-      this.props.fetchPosts();
+      this.props.fetchPosts()
     }
-    this.props.fetchStats();
+    this.props.fetchStats()
   }
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.stats !== this.props.stats) {
-      let stats = nextProps.stats;
+      let stats = nextProps.stats
       if (stats.domains === 0) {
-        stats.domains = 72000;
+        stats.domains = 72000
       }
       this.setState({
         stats: stats,
-      });
+      })
     }
 
     if (nextProps.posts !== this.props.posts) {
       this.setState({
         posts: nextProps.posts,
-      });
+      })
     }
   }
 
   render() {
-    const firstThreePosts = this.state.posts.slice(0, 3);
+    const firstThreePosts = this.state.posts.slice(0, 3)
 
     const content = {
       fullStack: [
@@ -121,10 +121,10 @@ class HomePage extends Component {
             'The web was built to be open and accessible but today the search indexes we rely upon are proprietary. Build a platform that incentivizes people to contribute to a collaborative index.',
         },
       ],
-    };
+    }
 
     const subscribeURL =
-      '//blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=0e5478ae86';
+      '//blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=0e5478ae86'
 
     return (
       <DocumentTitle title="Blockstack, building the decentralized internet">
@@ -258,7 +258,7 @@ class HomePage extends Component {
                               </h4>
                               <p className="inverse text-center">{item.body}</p>
                             </div>
-                          );
+                          )
                         })}
                       </div>
                     </div>
@@ -355,7 +355,7 @@ class HomePage extends Component {
                               .slice(row[0], row[1])
                               .map((featuredApp, index2) => {
                                 const offsetClass =
-                                  row[0] === 3 && index2 === 0 ? '' : '';
+                                  row[0] === 3 && index2 === 0 ? '' : ''
                                 return (
                                   <div
                                     key={index2}
@@ -375,10 +375,10 @@ class HomePage extends Component {
                                       {featuredApp.description}
                                     </p>
                                   </div>
-                                );
+                                )
                               })}
                           </div>
-                        );
+                        )
                       })}
                     </div>
                   </div>
@@ -505,8 +505,8 @@ class HomePage extends Component {
           </div>
         </div>
       </DocumentTitle>
-    );
+    )
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
+export default connect(mapStateToProps, mapDispatchToProps)(HomePage)

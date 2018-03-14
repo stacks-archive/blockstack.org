@@ -1,7 +1,7 @@
-import { Component } from 'react';
-import PropTypes from 'prop-types';
-import EmbedSpeakerDeck from '../components/EmbedSpeakerDeck';
-import EmbedYouTube from '../components/EmbedYouTube';
+import { Component } from 'react'
+import PropTypes from 'prop-types'
+import EmbedSpeakerDeck from '../components/EmbedSpeakerDeck'
+import EmbedYouTube from '../components/EmbedYouTube'
 
 class Talk extends Component {
   static propTypes: {
@@ -12,10 +12,10 @@ class Talk extends Component {
     location: PropTypes.string.isRequired,
     youtubeURL: PropTypes.string.isRequired,
     speakerDeckID: PropTypes.string.isRequired,
-  };
+  }
 
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
@@ -96,8 +96,8 @@ class Talk extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Talk;
+export default Talk

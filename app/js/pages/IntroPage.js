@@ -1,10 +1,10 @@
-'use strict';
+'use strict'
 
-import { Component } from 'react';
-import DocumentTitle from 'react-document-title';
+import { Component } from 'react'
+import DocumentTitle from 'react-document-title'
 
-import CardLink from '../components/CardLink';
-import ContentSection from '../components/ContentSection';
+import CardLink from '../components/CardLink'
+import ContentSection from '../components/ContentSection'
 
 class IntroPage extends Component {
   render() {
@@ -186,8 +186,8 @@ class IntroPage extends Component {
           </section>
         </div>
       </DocumentTitle>
-    );
+    )
   }
 }
 
-export default IntroPage;
+export default IntroPage

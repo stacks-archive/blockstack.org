@@ -1,10 +1,10 @@
-import { Component } from 'react';
-import PropTypes from 'prop-types';
-import { ShareButtons, generateShareIcon } from 'react-share';
+import { Component } from 'react'
+import PropTypes from 'prop-types'
+import { ShareButtons, generateShareIcon } from 'react-share'
 
-const { FacebookShareButton, TwitterShareButton } = ShareButtons;
-const FacebookIcon = generateShareIcon('facebook');
-const TwitterIcon = generateShareIcon('twitter');
+const { FacebookShareButton, TwitterShareButton } = ShareButtons
+const FacebookIcon = generateShareIcon('facebook')
+const TwitterIcon = generateShareIcon('twitter')
 
 const propTypes = {
   description: PropTypes.string,
@@ -14,13 +14,12 @@ const propTypes = {
 }
 
 class PostShareWidget extends Component {
-
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
-    const { description, imgUrl, shareUrl, title } = this.props;
+    const { description, imgUrl, shareUrl, title } = this.props
     return (
       <div className="PostShareWidget">
         <FacebookShareButton
@@ -50,9 +49,9 @@ class PostShareWidget extends Component {
           />
         </TwitterShareButton>
       </div>
-    );
+    )
   }
 }
-PostShareWidget.propTypes = propTypes;
+PostShareWidget.propTypes = propTypes
 
-export default PostShareWidget;
+export default PostShareWidget

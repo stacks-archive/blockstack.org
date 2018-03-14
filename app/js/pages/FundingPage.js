@@ -1,11 +1,11 @@
-'use strict';
+'use strict'
 
-import { Component } from 'react';
-import { Link } from 'react-router';
-import DocumentTitle from 'react-document-title';
-import Image from '../components/Image';
-import Header from '../components/Header';
-import EmbedYouTube from '../components/EmbedYouTube';
+import { Component } from 'react'
+import { Link } from 'react-router'
+import DocumentTitle from 'react-document-title'
+import Image from '../components/Image'
+import Header from '../components/Header'
+import EmbedYouTube from '../components/EmbedYouTube'
 
 class FundPage extends Component {
   render() {
@@ -128,8 +128,8 @@ class FundPage extends Component {
           </div>
         </div>
       </DocumentTitle>
-    );
+    )
   }
 }
 
-export default FundPage;
+export default FundPage

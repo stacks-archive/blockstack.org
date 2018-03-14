@@ -1,14 +1,14 @@
-'use strict';
+'use strict'
 
-import { Component } from 'react';
-import DocumentTitle from 'react-document-title';
+import { Component } from 'react'
+import DocumentTitle from 'react-document-title'
 
-import Paper from '../components/Paper';
-import { papers } from '../../constants.json';
+import Paper from '../components/Paper'
+import { papers } from '../../constants.json'
 
 class PapersPage extends Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
@@ -32,7 +32,7 @@ class PapersPage extends Component {
                           url={paper.url}
                           index={index}
                         />
-                      );
+                      )
                     })}
                   </div>
                 </div>
@@ -41,8 +41,8 @@ class PapersPage extends Component {
           </div>
         </div>
       </DocumentTitle>
-    );
+    )
   }
 }
 
-export default PapersPage;
+export default PapersPage

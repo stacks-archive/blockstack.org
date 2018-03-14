@@ -1,7 +1,7 @@
-import { Component } from 'react';
-import { Link } from 'react-router';
-import PropTypes from 'prop-types';
-import Image from '../components/Image';
+import { Component } from 'react'
+import { Link } from 'react-router'
+import PropTypes from 'prop-types'
+import Image from '../components/Image'
 
 class TutorialPreview extends Component {
   static propTypes: {
@@ -9,10 +9,10 @@ class TutorialPreview extends Component {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
-  };
+  }
 
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
@@ -46,8 +46,8 @@ class TutorialPreview extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default TutorialPreview;
+export default TutorialPreview

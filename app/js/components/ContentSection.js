@@ -1,10 +1,10 @@
-import { Component } from 'react';
+import { Component } from 'react'
 
 class ContentSection extends Component {
   static propTypes: {
     markup: PropTypes.string.isRequired,
     className: PropTypes.string,
-  };
+  }
 
   render() {
     return (
@@ -17,8 +17,8 @@ class ContentSection extends Component {
           </div>
         </div>
       </section>
-    );
+    )
   }
 }
 
-export default ContentSection;
+export default ContentSection

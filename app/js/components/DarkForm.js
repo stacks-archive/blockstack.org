@@ -1,25 +1,25 @@
-import { Component } from 'react';
+import { Component } from 'react'
 
 class DarkForm extends Component {
   static propTypes: {
     subscribeURL: PropTypes.string.isRequired,
     submitButtonText: PropTypes.string.isRequired,
-  };
+  }
 
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       email: '',
-    };
+    }
 
-    this.onChange = this.onChange.bind(this);
+    this.onChange = this.onChange.bind(this)
   }
 
   onChange(event) {
     this.setState({
       email: event.target.value,
-    });
+    })
   }
 
   render() {
@@ -84,8 +84,8 @@ class DarkForm extends Component {
           </div>
         </form>
       </div>
-    );
+    )
   }
 }
 
-export default DarkForm;
+export default DarkForm

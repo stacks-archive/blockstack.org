@@ -1,9 +1,9 @@
-'use strict';
+'use strict'
 
 const CountdownTimer = (props) => {
-  const dayString = Math.max(0, props.days);
-  const hourString = Math.max(0, props.hours);
-  const minuteString = Math.max(0, props.minutes);
+  const dayString = Math.max(0, props.days)
+  const hourString = Math.max(0, props.hours)
+  const minuteString = Math.max(0, props.minutes)
 
   return (
     <span className="banner-timer-wrap">
@@ -19,7 +19,7 @@ const CountdownTimer = (props) => {
         </span>
       )}
     </span>
-  );
-};
+  )
+}
 
-export default CountdownTimer;
+export default CountdownTimer

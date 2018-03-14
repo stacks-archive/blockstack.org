@@ -1,18 +1,18 @@
-'use strict';
+'use strict'
 
-import { Component } from 'react';
-import DocumentTitle from 'react-document-title';
+import { Component } from 'react'
+import DocumentTitle from 'react-document-title'
 
-import MailchimpForm from '../components/MailchimpForm';
+import MailchimpForm from '../components/MailchimpForm'
 
 class DevSignUpPage extends Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
     const subscribeURL =
-      '//blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&id=696cc92791';
+      '//blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&id=696cc92791'
 
     return (
       <DocumentTitle title="Blockstack newsletter sign-up">
@@ -34,8 +34,8 @@ class DevSignUpPage extends Component {
           </section>
         </div>
       </DocumentTitle>
-    );
+    )
   }
 }
 
-export default DevSignUpPage;
+export default DevSignUpPage

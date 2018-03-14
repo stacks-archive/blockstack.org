@@ -1,37 +1,38 @@
-'use strict';
+'use strict'
 
-import React from 'react';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import React from 'react'
+import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 
-import App from './App';
-import HomePage from './pages/HomePage';
-import SummitPage from './pages/SummitPage';
+import App from './App'
+import HomePage from './pages/HomePage'
+import SummitPage from './pages/SummitPage'
 
-import PapersPage from './pages/PapersPage';
-import TalksPage from './pages/TalksPage';
-import ArticlePage from './pages/ArticlePage';
-import NotFoundPage from './pages/NotFoundPage';
-import AboutPage from './pages/AboutPage';
-import DocsPage from './pages/DocsPage';
-import BlogPage from './pages/BlogPage';
-import BrowserPage from './pages/BrowserPage';
-import IntroPage from './pages/IntroPage';
-import BlogPostPage from './pages/BlogPostPage';
-import CareersPage from './pages/CareersPage';
-import TalkPage from './pages/TalkPage';
-import SignUpPage from './pages/SignUpPage';
-import DevSignUpPage from './pages/DevSignUpPage';
-import DownloadPage from './pages/DownloadPage';
-import FAQPage from './pages/FAQPage';
-import TutorialsPage from './pages/TutorialsPage';
-import TutorialPage from './pages/TutorialPage';
-import AuthPage from './pages/AuthPage';
-import RoadmapPage from './pages/RoadmapPage';
-import TokenSalePage from './pages/TokenSalePage';
-import Summit2017Page from './pages/Summit2017Page';
-import FundingPage from './pages/FundingPage';
-import PressPage from './pages/PressPage';
+import PapersPage from './pages/PapersPage'
+import TalksPage from './pages/TalksPage'
+import ArticlePage from './pages/ArticlePage'
+import NotFoundPage from './pages/NotFoundPage'
+import AboutPage from './pages/AboutPage'
+import DocsPage from './pages/DocsPage'
+import BlogPage from './pages/BlogPage'
+import BrowserPage from './pages/BrowserPage'
+import IntroPage from './pages/IntroPage'
+import BlogPostPage from './pages/BlogPostPage'
+import CareersPage from './pages/CareersPage'
+import TalkPage from './pages/TalkPage'
+import SignUpPage from './pages/SignUpPage'
+import DevSignUpPage from './pages/DevSignUpPage'
+import DownloadPage from './pages/DownloadPage'
+import FAQPage from './pages/FAQPage'
+import TutorialsPage from './pages/TutorialsPage'
+import TutorialPage from './pages/TutorialPage'
+import AuthPage from './pages/AuthPage'
+import RoadmapPage from './pages/RoadmapPage'
+import TokenSalePage from './pages/TokenSalePage'
+import Summit2017Page from './pages/Summit2017Page'
+import FundingPage from './pages/FundingPage'
+import PressPage from './pages/PressPage'
 import Berlin2018Page from './pages/Berlin2018Page'
+
 export default (
   <Router history={browserHistory} onUpdate={() => window.scrollTo(0, 0)}>
     <Route path="/" component={App}>
@@ -80,4 +81,4 @@ export default (
       <Route path="*" component={NotFoundPage} />
     </Route>
   </Router>
-);
+)

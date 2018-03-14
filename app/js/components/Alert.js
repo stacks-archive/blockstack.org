@@ -1,13 +1,13 @@
-'use strict';
+'use strict'
 
-import { Component } from 'react';
-import { Link } from 'react-router';
+import { Component } from 'react'
+import { Link } from 'react-router'
 
-const registrationEndDate = 'Wednesday, November 15 2017 15:00:00 EST';
+const registrationEndDate = 'Wednesday, November 15 2017 15:00:00 EST'
 
 class Alert extends Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
@@ -34,8 +34,8 @@ class Alert extends Component {
           </span>
         </div>
       </a>
-    );
+    )
   }
 }
 
-export default Alert;
+export default Alert

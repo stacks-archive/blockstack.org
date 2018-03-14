@@ -1,19 +1,19 @@
-import { Component } from 'react';
-import { Link } from 'react-router';
+import { Component } from 'react'
+import { Link } from 'react-router'
 import PropTypes from 'prop-types'
-import Image from '../components/Image';
+import Image from '../components/Image'
 
 const propTypes = {
   profile: PropTypes.object.isRequired,
-};
+}
 
 class TeamMember extends Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
-    const profile = this.props.profile;
+    const profile = this.props.profile
 
     return (
       <div className="col-md-6 m-b-50 text-center">
@@ -36,9 +36,9 @@ class TeamMember extends Component {
         </h5>
         <p style={{ fontSize: '1rem' }}>{profile.bio}</p>
       </div>
-    );
+    )
   }
 }
 
-TeamMember.propTypes = propTypes;
-export default TeamMember;
+TeamMember.propTypes = propTypes
+export default TeamMember

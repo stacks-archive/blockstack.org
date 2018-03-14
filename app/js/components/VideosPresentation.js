@@ -1,11 +1,11 @@
-import { Component } from 'react';
-import { Link } from 'react-router';
+import { Component } from 'react'
+import { Link } from 'react-router'
 
-import Image from '../components/Image';
+import Image from '../components/Image'
 
 class VideosPresentation extends Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
@@ -629,8 +629,8 @@ class VideosPresentation extends Component {
           </section>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default VideosPresentation;
+export default VideosPresentation

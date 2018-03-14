@@ -1,5 +1,5 @@
 export const githubFileUrlRoot =
-  'https://github.com/blockstack/blockstack/blob/master';
+  'https://github.com/blockstack/blockstack/blob/master'
 
 export const socialLinks = {
   twitter: 'https://www.twitter.com/blockstack',
@@ -11,7 +11,7 @@ export const socialLinks = {
   blog: 'http://blog.blockstack.org',
   github: 'https://github.com/blockstack',
   branding: 'https://projects.invisionapp.com/boards/HE2VVROFSGB27/',
-};
+}
 
 export const installationLinks = {
   portalMacOS:
@@ -25,7 +25,7 @@ export const installationLinks = {
     'https://github.com/blockstack/blockstack-browser/releases/download/v0.26.0/Blockstack-for-Linux-v0.26.0.sh',
   portalDevelopersWeb: 'https://browser.blockstack.org',
   cliDevelopers: 'https://github.com/blockstack/blockstack-core',
-};
+}
 
 export const jobs = [
   {
@@ -43,7 +43,7 @@ export const jobs = [
     url:
       'https://jobs.lever.co/blockstack/f6a98e76-b1f6-4284-9c39-1bda11e7160a?lever-origin=applied&lever-source%5B%5D=Blockstack.com',
   },
-];
+]
 
 export const featuredApps = [
   {
@@ -73,7 +73,7 @@ export const featuredApps = [
     description:
       'DotPodcast helps creators get paid, protects against censorship, and allows listeners to enjoy podcasts without privacy-invading tracking.',
   },
-];
+]
 
 export const teamMembers = [
   {
@@ -195,7 +195,7 @@ export const teamMembers = [
     bio:
       'JP Singh received his PhD from from Stanford University and is a leading authority on scalable infrastructure and applications. He is the director of the Princeton CTO Program, serves on the board of 8x8, Inc., and has been a consultant to Intel, Microsoft, and the U.S. Government.',
   },
-];
+]
 
 export const blogAuthors = {
   'larry.id': {
@@ -268,4 +268,4 @@ export const blogAuthors = {
     twitter: 'yukanl',
     github: 'yknl',
   },
-};
+}

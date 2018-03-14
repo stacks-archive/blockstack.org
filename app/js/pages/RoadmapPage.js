@@ -1,13 +1,13 @@
-'use strict';
+'use strict'
 
-import { Component } from 'react';
-import DocumentTitle from 'react-document-title';
+import { Component } from 'react'
+import DocumentTitle from 'react-document-title'
 
-import { milestones } from '../../constants.json';
+import { milestones } from '../../constants.json'
 
 class RoadmapPage extends Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
@@ -37,13 +37,13 @@ class RoadmapPage extends Component {
                                 )}
                                 {part.description}
                               </p>
-                            );
+                            )
                           })
                         ) : (
                           <p>{milestone.description}</p>
                         )}
                       </div>
-                    );
+                    )
                   })}
                 </div>
               </div>
@@ -51,8 +51,8 @@ class RoadmapPage extends Component {
           </section>
         </div>
       </DocumentTitle>
-    );
+    )
   }
 }
 
-export default RoadmapPage;
+export default RoadmapPage

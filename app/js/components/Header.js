@@ -1,15 +1,15 @@
-'use strict';
+'use strict'
 
-import { Component } from 'react';
-import { Link } from 'react-router';
+import { Component } from 'react'
+import { Link } from 'react-router'
 
 class Header extends Component {
   static propTypes: {
     transparent: PropTypes.bool,
-  };
+  }
 
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       navItems: [
@@ -34,17 +34,17 @@ class Header extends Component {
         { to: 'https://github.com/blockstack', label: 'GitHub' },
         { to: '/careers', label: "We're Hiring!", icon: 'flag' },
       ],
-    };
+    }
   }
 
   render() {
-    let mobileNavItems = [];
+    let mobileNavItems = []
 
     this.state.navItems.map((navItem) => {
       if (navItem.mobile !== false) {
-        mobileNavItems.push(navItem);
+        mobileNavItems.push(navItem)
       }
-    });
+    })
 
     return (
       <div className={this.props.transparent ? 'bg-transparent' : 'bg-primary'}>
@@ -86,7 +86,7 @@ class Header extends Component {
                         {navItem.label}
                       </Link>
                     </li>
-                  );
+                  )
                 } else {
                   return (
                     <li key={index} className="nav-item dropdown">
@@ -115,11 +115,11 @@ class Header extends Component {
                             >
                               {dropdownItem.label}
                             </Link>
-                          );
+                          )
                         })}
                       </div>
                     </li>
-                  );
+                  )
                 }
               })}
             </ul>
@@ -135,7 +135,7 @@ class Header extends Component {
                       {navItem.label}
                     </Link>
                   </li>
-                );
+                )
               } else {
                 return (
                   <li key={index} className="nav-item dropdown">
@@ -159,18 +159,18 @@ class Header extends Component {
                           >
                             {dropdownItem.label}
                           </Link>
-                        );
+                        )
                       })}
                     </div>
                   </li>
-                );
+                )
               }
             })}
           </ul>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Header;
+export default Header

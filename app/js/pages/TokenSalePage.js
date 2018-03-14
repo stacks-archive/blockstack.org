@@ -1,39 +1,39 @@
-'use strict';
+'use strict'
 
-import { Component } from 'react';
-import { Link } from 'react-router';
-import DocumentTitle from 'react-document-title';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
+import { Component } from 'react'
+import { Link } from 'react-router'
+import DocumentTitle from 'react-document-title'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
 
-import { BlogActions } from '../datastore/Blog';
-import { StatsActions } from '../datastore/Stats';
-import Image from '../components/Image';
-import Header from '../components/Header';
-import DarkForm from '../components/DarkForm';
-import EmbedYouTube from '../components/EmbedYouTube';
-import PostPreview from '../components/PostPreview';
-import TeamMembers from '../components/TeamMembers';
-import ContentSection from '../components/ContentSection';
-import { featuredApps } from '../config';
+import { BlogActions } from '../datastore/Blog'
+import { StatsActions } from '../datastore/Stats'
+import Image from '../components/Image'
+import Header from '../components/Header'
+import DarkForm from '../components/DarkForm'
+import EmbedYouTube from '../components/EmbedYouTube'
+import PostPreview from '../components/PostPreview'
+import TeamMembers from '../components/TeamMembers'
+import ContentSection from '../components/ContentSection'
+import { featuredApps } from '../config'
 
 function mapStateToProps(state) {
   return {
     posts: state.blog.posts,
     stats: state.stats,
-  };
+  }
 }
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
     Object.assign({}, BlogActions, StatsActions),
     dispatch,
-  );
+  )
 }
 
 class TokenSalePage extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       subscribeURL:
@@ -41,36 +41,36 @@ class TokenSalePage extends Component {
       videoURL: 'https://www.youtube.com/embed/0C2y9mZ0Dnc',
       stats: this.props.stats,
       posts: this.props.posts,
-    };
+    }
   }
 
   componentWillMount() {
     if (this.props.posts.length === 0) {
-      this.props.fetchPosts();
+      this.props.fetchPosts()
     }
-    this.props.fetchStats();
+    this.props.fetchStats()
   }
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.stats !== this.props.stats) {
-      let stats = nextProps.stats;
+      let stats = nextProps.stats
       if (stats.domains === 0) {
-        stats.domains = 72000;
+        stats.domains = 72000
       }
       this.setState({
         stats: stats,
-      });
+      })
     }
 
     if (nextProps.posts !== this.props.posts) {
       this.setState({
         posts: nextProps.posts,
-      });
+      })
     }
   }
 
   render() {
-    const firstThreePosts = this.state.posts.slice(0, 3);
+    const firstThreePosts = this.state.posts.slice(0, 3)
 
     return (
       <DocumentTitle title="Blockstack - Token">
@@ -135,11 +135,11 @@ class TokenSalePage extends Component {
           </div>
         </div>
       </DocumentTitle>
-    );
+    )
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(TokenSalePage);
+export default connect(mapStateToProps, mapDispatchToProps)(TokenSalePage)
 
 /*
 

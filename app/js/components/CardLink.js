@@ -1,8 +1,8 @@
-'use strict';
+'use strict'
 
-import { Component } from 'react';
-import { Link } from 'react-router';
-import PropTypes from 'prop-types';
+import { Component } from 'react'
+import { Link } from 'react-router'
+import PropTypes from 'prop-types'
 
 const propTypes = {
   title: PropTypes.string.isRequired,
@@ -13,39 +13,39 @@ const propTypes = {
   cardsPerRow: PropTypes.number,
   onClick: PropTypes.func,
   target: PropTypes.string,
-};
+}
 
 class CardLink extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
-    this.getCardClass = this.getCardClass.bind(this);
+    this.getCardClass = this.getCardClass.bind(this)
   }
 
   getCardClass() {
-    let cardClass = {};
+    let cardClass = {}
     switch (this.props.cardsPerRow) {
       case 1:
-        cardClass = 'card-1-of-1';
-        break;
+        cardClass = 'card-1-of-1'
+        break
       case 2:
-        cardClass = 'card-1-of-2';
-        console.log('1 of 2');
-        break;
+        cardClass = 'card-1-of-2'
+        console.log('1 of 2')
+        break
       case 3:
-        cardClass = 'card-1-of-3';
-        console.log('1 of 3');
-        break;
+        cardClass = 'card-1-of-3'
+        console.log('1 of 3')
+        break
       default:
-        break;
+        break
     }
-    return cardClass;
+    return cardClass
   }
 
   render() {
-    let target = '_self';
+    let target = '_self'
     if (this.props.target === '_blank') {
-      target = '_blank';
+      target = '_blank'
     }
 
     return (
@@ -74,9 +74,9 @@ class CardLink extends Component {
           </div>
         </Link>
       </div>
-    );
+    )
   }
 }
 
-CardLink.propTypes = propTypes;
-export default CardLink;
+CardLink.propTypes = propTypes
+export default CardLink

@@ -1,23 +1,23 @@
-import { Component, PropTypes } from 'react';
-import { Link } from 'react-router';
+import { Component, PropTypes } from 'react'
+import { Link } from 'react-router'
 
-import CardLink from '../components/CardLink';
+import CardLink from '../components/CardLink'
 
 const propTypes = {
   pageRows: PropTypes.array.isRequired,
   docs: PropTypes.object.isRequired,
   pathPrefix: PropTypes.string.isRequired,
   cardsPerRow: PropTypes.number.isRequired,
-};
+}
 
 class CommonIndex extends Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
-    const pageRows = this.props.pageRows;
-    const docs = this.props.docs;
+    const pageRows = this.props.pageRows
+    const docs = this.props.docs
 
     return (
       <section className="container-fluid spacing-container">
@@ -31,7 +31,7 @@ class CommonIndex extends Component {
                     <div className="card-deck m-b-3">
                       {pageRow.items.map((slug, columnIndex) => {
                         if (!docs.hasOwnProperty(slug)) {
-                          slug = '';
+                          slug = ''
                         }
                         if (slug === '') {
                           return (
@@ -39,9 +39,9 @@ class CommonIndex extends Component {
                               key={columnIndex}
                               className={`card-2-of-${this.props.cardsPerRow}`}
                             />
-                          );
+                          )
                         } else {
-                          const page = docs[slug];
+                          const page = docs[slug]
                           return (
                             <CardLink
                               key={columnIndex}
@@ -51,20 +51,20 @@ class CommonIndex extends Component {
                               imageSrc={page.image}
                               cardsPerRow={this.props.cardsPerRow}
                             />
-                          );
+                          )
                         }
                       })}
                     </div>
                   </div>
                 </div>
-              );
+              )
             })}
           </div>
         </div>
       </section>
-    );
+    )
   }
 }
 
-ArticleIndex.propTypes = propTypes;
-export default CommonIndex;
+ArticleIndex.propTypes = propTypes
+export default CommonIndex
