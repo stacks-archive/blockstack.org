@@ -35,7 +35,7 @@ const HomePage = () => {
                     width="800px"
                   >
                     <div className="video-thumbnail img-hover-scale">
-                      <div className="video-thumbnail-img" style={{ backgroundImage: 'url("/images/resources/video-home-4-thumbnail.jpg")' }} />
+                      <div className="video-thumbnail-img" style={{ backgroundImage: 'url("/images/resources/metronome.jpg")' }} />
                       <i className="fa fa-play"></i>
                     </div>
                   </YoutubeModal>
