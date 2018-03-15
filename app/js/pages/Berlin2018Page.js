@@ -1,12 +1,13 @@
 'use strict'
 
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 import CollapsibleList from '../components/CollapsibleList'
 import berlinData from '../datastore/berlin-event-data'
 import Slider from 'react-slick'
 import SignatureTalks from '../components/SignatureTalks'
 import { slugify } from '../utils/functions'
+import Image from '../components/Image'
 
 const settings = {
   className: 'photo-slider center',
@@ -129,8 +130,8 @@ class Berlin2018Page extends Component {
             <div className="container p-b-90">
               <section className="berlin-hero">
                 <h1 className="text-white m-b-20">
-                  <img
-                    src="https://blockstack.imgix.net/e8fbcc68-0777-47b3-a29a-c91bf2a5eac2_berlin-logo.svg"
+                  <Image
+                    src="https://blockstack.imgix.net/0c4ac3e2-64ca-41cb-9e51-0c8b59764b42_blockstackberlin_logos_whitewithborder.png"
                     alt="Blockstack Berlin"
                   />
                 </h1>
@@ -151,7 +152,7 @@ class Berlin2018Page extends Component {
           <Slider {...settings}>
             {photoSlides.map((slide, i) => (
               <div key={i} className="photo-slider__slide">
-                <img src={`${slide.src}?auto=format&w=1400`} />
+                <Image src={`${slide.src}?auto=format&w=1400`} />
               </div>
             ))}
           </Slider>

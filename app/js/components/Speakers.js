@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Image from './Image'
 
 const Speaker = ({ headshot, name, twitter, jobTitle, company, website }) => (
   <div className="event__speaker">
     <div className="event__speaker__avatar">
       {headshot && (
-        <img
+        <Image
           src={`${headshot}?fit=facearea&crop=faces&facepad=2.6&w=400&h=400&auto=format`}
           alt={name}
         />

@@ -169,9 +169,20 @@ const data = [
     twitter: '@starkness',
     day: 'March 2',
     time: '11:42 AM',
-    talkTitle: 'Building the Future of Layer 2',
+    talkTitle: 'Elizabeth Stark interview with Larry Salibra.',
     headshot:
       'https://blockstack.imgix.net/bb29c187-86d9-4af5-af62-a250dfec9023_elizabeth+stark_lightning+labs_co-founder+and+ceo.jpeg',
+  },
+  {
+    name: 'Larry Salibra',
+    company: 'Blockstack',
+    jobTitle: null,
+    twitter: '@larrysalibra',
+    day: 'March 2',
+    time: '11:42 AM',
+    talkTitle: 'Elizabeth Stark interview with Larry Salibra.',
+    headshot:
+      'https://blockstack.imgix.net/d70de42e-5056-4cec-af87-55ab20055c5d_larry.jpg',
   },
   {
     name: 'Ken Liao',

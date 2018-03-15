@@ -1,6 +1,7 @@
 import React from 'react'
 import { slugify } from '../utils/functions'
 import Speakers from './Speakers'
+import Image from './Image'
 
 const SignatureTalks = ({ talks, allData }) =>
   talks.map(({ day, talkTitle: title, time, span }, i) => {
@@ -12,13 +13,12 @@ const SignatureTalks = ({ talks, allData }) =>
       <div key={i} className={classes} id={slugify(title)}>
         <div className="event__talk__content">
           <div className="event__talk__media">
-            <img
+            <Image
               src="https://blockstack.imgix.net/7c53ed6a-c4eb-4d99-94fc-2e2ed9f62652_p3020241.jpg?auto=format&w=1400"
               alt={title}
             />
           </div>
           <div className="event__talk__details">
-            <h6>{time}</h6>
             <h4>
               <a href={`#${slugify(title)}`}>{title}</a>
             </h4>
