@@ -1,13 +1,12 @@
 'use strict'
 
-import {Component}      from 'react'
-import DocumentTitle    from 'react-document-title'
+import { Component } from 'react'
+import DocumentTitle from 'react-document-title'
 
-import TalkPreview      from '../components/TalkPreview'
-import {videos}         from '../../constants.json'
+import TalkPreview from '../components/TalkPreview'
+import { videos } from '../../constants.json'
 
 class TalksPage extends Component {
-
   constructor(props) {
     super(props)
   }
@@ -21,10 +20,8 @@ class TalksPage extends Component {
               <div className="container">
                 <div className="row">
                   <div className="container-fluid">
-                    <h2 className="m-b-45">
-                      Videos
-                    </h2>
-                    { Object.keys(videos).map((key, index) => {
+                    <h2 className="m-b-45">Videos</h2>
+                    {Object.keys(videos).map((key, index) => {
                       const talk = videos[key]
                       return (
                         <TalkPreview
@@ -35,9 +32,10 @@ class TalksPage extends Component {
                           event={talk.event}
                           speaker={talk.speaker}
                           location={talk.location}
-                          image={talk.image} />
+                          image={talk.image}
+                        />
                       )
-                    }) }
+                    })}
                   </div>
                 </div>
               </div>
@@ -47,7 +45,6 @@ class TalksPage extends Component {
       </DocumentTitle>
     )
   }
-
 }
 
 export default TalksPage

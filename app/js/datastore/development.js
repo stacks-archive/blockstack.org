@@ -4,16 +4,14 @@ import thunk from 'redux-thunk'
 
 import RootReducer from './reducers'
 
-const finalCreateStore = compose(
-  applyMiddleware(thunk),
-)(createStore)
+const finalCreateStore = compose(applyMiddleware(thunk))(createStore)
 
 export default function configureStore(initialState) {
   const store = finalCreateStore(RootReducer, initialState)
 
   if (module.hot) {
     module.hot.accept('./reducers', () =>
-      store.replaceReducer(require('./reducers'))
+      store.replaceReducer(require('./reducers')),
     )
   }
 

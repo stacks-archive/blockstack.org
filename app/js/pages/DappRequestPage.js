@@ -2,7 +2,6 @@
 
 import React, { Component } from 'react'
 import DocumentTitle from 'react-document-title'
-import StickyBox from 'react-sticky-box'
 
 export default class DappRequestPage extends Component {
   render() {
@@ -44,7 +43,6 @@ export default class DappRequestPage extends Component {
                           <li>Private finance management</li>
                           <li>Private cryptocurrency taxes</li>
                         </ul>
-                        <hr />
                       </section>
                       <section className="dapp-request-category mb-5">
                         <h3 id="secure-collaboration">Secure Collaboration</h3>
@@ -56,7 +54,6 @@ export default class DappRequestPage extends Component {
                           <li>Spreadsheets</li>
                           <li>Project management</li>
                         </ul>
-                        <hr />
                       </section>
                       <section className="dapp-request-category mb-5">
                         <h3 id="crypto-commerce">Crypto Commerce</h3>
@@ -75,7 +72,6 @@ export default class DappRequestPage extends Component {
                           <li> Decentralized home-sharing</li>
                           <li> Decentralized real estate marketplace</li>
                         </ul>
-                        <hr />
                       </section>
                       <section className="dapp-request-category mb-5">
                         <h3 id="crypto-governance">Crypto Governance</h3>
@@ -87,7 +83,6 @@ export default class DappRequestPage extends Component {
                           <li>Multi-party constitution & official document management</li>
                           <li>Voting systems for small governments</li>
                         </ul>
-                        <hr />
                       </section>
                       <section className="dapp-request-category mb-5">
                         <h3 id="social-networks">Social Networks</h3>
@@ -101,7 +96,6 @@ export default class DappRequestPage extends Component {
                           <li>Browser extension social network</li>
                           <li>Decentralized encyclopedia</li>
                         </ul>
-                        <hr />
                       </section>
                       <section className="dapp-request-category mb-5">
                         <h3 id="developer-tools">Developer Tools</h3>
@@ -116,7 +110,6 @@ export default class DappRequestPage extends Component {
                           <li>Decentralized package managers</li>
                           <li>Decentralized server access provisioning</li>
                         </ul>
-                        <hr />
                       </section>
                       <section className="dapp-request-category mb-5">
                         <h3 id="digital-asset-games">Digital Asset Games</h3>
@@ -127,7 +120,6 @@ export default class DappRequestPage extends Component {
                           <li>Virtual pet games</li>
                           <li>Attribute-based fighting and racing games</li>
                         </ul>
-                        <hr />
                       </section>
                       <section className="dapp-request-category mb-5">
                         <h3 id="data-portability">Data Portability</h3>
@@ -138,7 +130,6 @@ export default class DappRequestPage extends Component {
                           <li>Personal social network archiver</li>
                           <li>Personal reputation bank</li>
                         </ul>
-                        <hr />
                       </section>
                       <section className="dapp-request-category mb-5">
                         <h3 id="data-liability-protection">Data Liability Protection</h3>
@@ -149,27 +140,24 @@ export default class DappRequestPage extends Component {
                           <li>Apps that hold credit card info, SSNs, historical locations, etc.</li>
                           <li>Apps that hold medical data</li>
                         </ul>
-                        <hr />
                       </section>
                     </div>
                   </div>
                   <div className="col-lg-3 col-md-4 order-1 order-md-4 order-lg-3">
-                    <StickyBox>
-                      <div className="py-3">
-                        <h4>Contents</h4>
-                        <ol className="pl-3">
-                          <li><a href="#personal-data-privacy">Personal Data Privacy</a></li>
-                          <li><a href="#secure-collaboration">Secure Collaboration</a></li>
-                          <li><a href="#crypto-commerce">Crypto Commerce</a></li>
-                          <li><a href="#crypto-governance">Crypto Governance</a></li>
-                          <li><a href="#social-networks">Social Networks</a></li>
-                          <li><a href="#developer-tools">Developer Tools</a></li>
-                          <li><a href="#digital-asset-games">Digital Asset Games</a></li>
-                          <li><a href="#data-portability">Data Portability</a></li>
-                          <li><a href="#data-liability-protection">Data Liability Protection</a></li>
-                        </ol>
-                      </div>
-                    </StickyBox>
+                    <div className="py-3 sticky">
+                      <h4>Contents</h4>
+                      <ol className="pl-3">
+                        <li><a href="#personal-data-privacy">Personal Data Privacy</a></li>
+                        <li><a href="#secure-collaboration">Secure Collaboration</a></li>
+                        <li><a href="#crypto-commerce">Crypto Commerce</a></li>
+                        <li><a href="#crypto-governance">Crypto Governance</a></li>
+                        <li><a href="#social-networks">Social Networks</a></li>
+                        <li><a href="#developer-tools">Developer Tools</a></li>
+                        <li><a href="#digital-asset-games">Digital Asset Games</a></li>
+                        <li><a href="#data-portability">Data Portability</a></li>
+                        <li><a href="#data-liability-protection">Data Liability Protection</a></li>
+                      </ol>
+                    </div>
                   </div>
                 </div>
               </div>

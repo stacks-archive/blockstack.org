@@ -1,7 +1,7 @@
-import { Component, PropTypes } from 'react'
-import {Link}           from 'react-router'
-
-import Image            from '../components/Image'
+import { Component } from 'react'
+import { Link } from 'react-router'
+import PropTypes from 'prop-types'
+import Image from '../components/Image'
 
 class TalkPreview extends Component {
   static propTypes: {
@@ -11,7 +11,7 @@ class TalkPreview extends Component {
     speaker: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired
+    image: PropTypes.string.isRequired,
   }
 
   constructor(props) {
@@ -24,9 +24,11 @@ class TalkPreview extends Component {
         <div className="row">
           <div className="col-md-5 m-b-25">
             <Link to={this.props.url}>
-              <Image src={this.props.image}
+              <Image
+                src={this.props.image}
                 fallbackSrc={'/images/article-photos/chalkboard.jpg'}
-                className="talk-preview-image" />
+                className="talk-preview-image"
+              />
             </Link>
           </div>
           <div className="col-md-7 m-b-25">
@@ -38,17 +40,14 @@ class TalkPreview extends Component {
             </p>
             <div className="container-fluid">
               <div className="row">
-                <Link to={this.props.url}
-                  className="btn btn-secondary btn-sm">
-                   Watch
+                <Link to={this.props.url} className="btn btn-secondary btn-sm">
+                  Watch
                 </Link>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-
     )
   }
 }

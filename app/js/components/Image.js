@@ -1,4 +1,6 @@
-import { Component, PropTypes } from 'react'
+import { Component } from 'react'
+import PropTypes from 'prop-types'
+
 import isRetina from 'is-retina'
 
 const propTypes = {
@@ -8,11 +10,10 @@ const propTypes = {
   className: PropTypes.string,
   onLoad: PropTypes.func,
   retinaSupport: PropTypes.bool,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 }
 
 class Image extends Component {
-
   constructor(props) {
     super(props)
 
@@ -21,7 +22,7 @@ class Image extends Component {
       src = src.replace('.jpg', '@2x.jpg').replace('.png', '@2x.png')
     }
     this.state = {
-      src: src
+      src: src,
     }
 
     this.onError = this.onError.bind(this)
@@ -35,14 +36,14 @@ class Image extends Component {
         nextSrc = nextSrc.replace('.jpg', '@2x.jpg').replace('.png', '@2x.png')
       }
       this.setState({
-        src: nextSrc
+        src: nextSrc,
       })
     }
   }
 
   onError(event) {
     this.setState({
-      src: this.props.fallbackSrc
+      src: this.props.fallbackSrc,
     })
   }
 
@@ -54,12 +55,14 @@ class Image extends Component {
 
   render() {
     return (
-      <img src={this.state.src}
+      <img
+        src={this.state.src}
         style={this.props.style}
         className={this.props.className}
         onLoad={this.props.onLoad}
-        onError={this.onError} 
-        onClick={this.handleClick}/>
+        onError={this.onError}
+        onClick={this.handleClick}
+      />
     )
   }
 }
