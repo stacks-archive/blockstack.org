@@ -29,6 +29,7 @@
     "react-document-title": "^2.0.3",
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0",
+    "react-player": "^1.3.0",
     "react-redux": "^5.0.4",
     "react-remarkable": "^1.1.1",
     "react-retina-image": "^2.0.0",

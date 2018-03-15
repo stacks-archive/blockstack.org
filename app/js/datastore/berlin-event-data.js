@@ -1,3 +1,4 @@
+import React from 'react'
 const data = [
   {
     name: 'Ryan Shea',
@@ -114,7 +115,7 @@ const data = [
   {
     name: 'William Mougayar',
     company: null,
-    jobTitle: 'Author: "The Business Blockchain." Technology Futurist',
+    jobTitle: `Author: <em>"The Business Blockchain."</em> Technology Futurist`,
     twitter: '@wmougayar',
     day: 'March 2',
     time: '10:47 AM',
@@ -124,8 +125,8 @@ const data = [
   },
   {
     name: 'Richard Muirhead',
-    company: 'Fabric Ventures and OpenOcean',
-    jobTitle: 'Fabric Ventures, Founding Partner & OpenOcean, General Partner',
+    company: null,
+    jobTitle: 'Founding Partner, Fabric Ventures & General Partner, OpenOcean',
     twitter: '@richardmuirhead',
     day: 'March 2',
     time: '10:47 AM',
@@ -432,17 +433,6 @@ const data = [
       'https://blockstack.imgix.net/f2d048f0-cdc9-48b1-aa4a-9359315ce0f4_matt+moody.png',
   },
   {
-    name: 'Chris Burniske',
-    company: 'Placeholder',
-    jobTitle: 'Partner',
-    twitter: '@cburniske',
-    day: 'March 2',
-    time: '4:58 PM',
-    talkTitle: 'A Conversation on Digital Art & Cryptokitties',
-    headshot:
-      'https://blockstack.imgix.net/7ba2bc6f-24d3-41ef-8b07-f2feab1f6bad_chris+burniske.png',
-  },
-  {
     name: 'Dieter Shirley',
     company: 'Axiom Zen',
     jobTitle: 'Director of Blockchain Technology',
@@ -463,6 +453,17 @@ const data = [
     talkTitle: 'A Conversation on Digital Art & Cryptokitties',
     headshot:
       'https://blockstack.imgix.net/f672e139-35b9-4fd2-ad88-b3228bc08463_mik+website+%28edited%29.png',
+  },
+  {
+    name: 'Chris Burniske',
+    company: 'Placeholder',
+    jobTitle: 'Partner',
+    twitter: '@cburniske',
+    day: 'March 2',
+    time: '4:58 PM',
+    talkTitle: 'A Conversation on Digital Art & Cryptokitties',
+    headshot:
+      'https://blockstack.imgix.net/7ba2bc6f-24d3-41ef-8b07-f2feab1f6bad_chris+burniske.png',
   },
   {
     name: 'Juan Benet',

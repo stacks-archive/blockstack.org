@@ -1,3 +1,6 @@
+.no-scroll {
+  overflow: hidden;
+}
 .page--berlin-event {
   img {
     max-width: 100%;
@@ -54,12 +57,15 @@
       grid-column: span 3;
       position: relative;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
-      box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0);
-      will-change: box-shadow;
-      transition: 0.2s all ease-in-out;
 
+      &__wrapper {
+        position: relative;
+        box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0);
+        will-change: box-shadow;
+        transition: 0.2s all ease-in-out;
+      }
 
       &__overlay {
         @media (max-width: 992px) {
@@ -110,8 +116,10 @@
       }
       &:hover {
         cursor: pointer;
-        box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.25);
-        .event__talk__media__overlay {
+        #{$c}__talk__media__wrapper {
+          box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.25);
+        }
+        #{$c}__talk__media__overlay {
           opacity: 1;
           svg {
             transform: none;
@@ -122,10 +130,10 @@
 
     &__details {
       grid-column: span 4;
-      padding: 20px;
+      padding: 0 20px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       h3 {
         margin: 0;
         a {
@@ -143,17 +151,18 @@
       grid-column-gap: 10px;
     }
   }
-  #{$c}__speaker + #{$c}__speaker {
-    padding-top: 10px;
-    margin-top: 10px;
-  }
   #{$c}__speaker {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     h5 {
       margin-bottom: 0;
+    }
+
+    &:not(:last-of-type){
+      padding-bottom: 10px;
+      margin-bottom: 10px;
     }
     &__avatar {
       $size: 40px;
@@ -166,7 +175,6 @@
       border-radius: 100%;
       background: whitesmoke;
       overflow: hidden;
-      border: 1px solid whitesmoke;
       img {
         display: block;
         max-width: 100%;
@@ -193,7 +201,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  &__actions{
+  &__actions {
     @media (max-width: 992px) {
       display: none;
     }
@@ -240,4 +248,49 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.event__modal {
+  &__talk {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    //margin-bottom: 20vh;
+    //margin-left: 10vw;
+    //margin-right: 10vw;
+    top: 0;
+    left: 0;
+    &__title {
+      color: white;
+      width: 90%;
+    }
+    &__content {
+      width: 90%;
+      //flex-grow: 1;
+      display: flex;
+      .player-wrapper {
+        position: relative;
+        padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+        background: #000000;
+      }
+
+      .react-player {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .event__talk__speakers__container{
+        padding-top: 40px;
+        *{
+          color: white !important;
+          text-align: left;
+        }
+      }
+      & > div {
+        flex-grow: 1;
+      }
+    }
+  }
 }

@@ -104,7 +104,7 @@ const mainEventSections = [
   },
   {
     title: 'Late Afternoon Sessions',
-    items: filterIndex(mainEvent, 24, 26),
+    items: filterIndex(mainEvent, 24, 28),
   },
 ]
 const learningSessionSections = [

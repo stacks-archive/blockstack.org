@@ -22,7 +22,7 @@ const Speaker = ({ headshot, name, twitter, jobTitle, company, website }) => (
       )}
 
       <div>
-        {jobTitle && `${jobTitle}, `}
+        {jobTitle && company ? `${jobTitle}, ` : jobTitle && `${jobTitle}`}
         {company}
       </div>
       {website && (

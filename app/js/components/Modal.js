@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import CloseIcon from 'mdi-react/CloseIcon'
 
-const modalRoot = document.getElementById('modal-root');
+const modalRoot = document.getElementById('modal-root')
 
 export default class Modal extends React.Component {
   listenKeyboard(event) {
@@ -11,14 +12,24 @@ export default class Modal extends React.Component {
   }
 
   componentDidMount() {
+    if (!document.body.classList.contains('no-scroll')) {
+      document.body.classList.add('no-scroll')
+    }
     if (this.props.onClose) {
       window.addEventListener('keydown', this.listenKeyboard.bind(this), true)
     }
   }
 
   componentWillUnmount() {
+    if (document.body.classList.contains('no-scroll')) {
+      document.body.classList.remove('no-scroll')
+    }
     if (this.props.onClose) {
-      window.removeEventListener('keydown', this.listenKeyboard.bind(this), true)
+      window.removeEventListener(
+        'keydown',
+        this.listenKeyboard.bind(this),
+        true,
+      )
     }
   }
 
@@ -32,13 +43,19 @@ export default class Modal extends React.Component {
 
   render() {
     const modalShell = (
-      <div>
-        <div className="modal-overlay-div" />
-        <div className="modal-content-div" onClick={this.onOverlayClick.bind(this)}>
-          <div className="modal-dialog-div" onClick={this.onDialogClick}>
+      <div className="bs-modal">
+        <div className="bs-modal__close" onClick={this.onOverlayClick.bind(this)}>
+          <CloseIcon/>
+        </div>
+        <div
+          className="bs-modal__content"
+          onClick={this.onOverlayClick.bind(this)}
+        >
+          <div className="bs-modal__dialog" onClick={this.onDialogClick}>
             {this.props.children}
           </div>
         </div>
+        <div className="bs-modal__overlay" />
       </div>
     )
 
