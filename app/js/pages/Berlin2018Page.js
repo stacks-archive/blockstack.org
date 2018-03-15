@@ -9,7 +9,7 @@ import SignatureTalks from '../components/SignatureTalks'
 import { slugify } from '../utils/functions'
 import Image from '../components/Image'
 
-const settings = {
+const sliderSettings = {
   className: 'photo-slider center',
   centerMode: true,
   infinite: true,
@@ -114,15 +114,29 @@ const learningSessionSections = [
   },
 ]
 
-const renderSections = (sections) =>
+const renderSections = (sections, props) =>
   sections.map((section, i) => (
     <div key={i} id={slugify(section.title)}>
       <h2 className="event__talk__header">{section.title}</h2>
-      <SignatureTalks talks={section.items} allData={berlinData} />
+      <SignatureTalks talks={section.items} allData={berlinData} {...props} />
     </div>
   ))
 
 class Berlin2018Page extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      talkInView: null,
+    }
+  }
+
+  handleTalkInView(talkInView) {
+    if (this.state.talkInView !== talkInView) {
+      this.setState({
+        talkInView,
+      })
+    }
+  }
   render() {
     return (
       <div className="page--berlin-event" id="berlin-page">
@@ -153,12 +167,38 @@ class Berlin2018Page extends Component {
                   The event took place on March 2, 2018 in Berlin at the Frank
                   Gehry designed Axica Convention Center.
                 </p>
+                <div className="row p-t-20">
+                  <div className="col-sm">
+                    <a
+                      role="button"
+                      className="btn btn-primary btn-block btn-block-reset"
+                      href="#morning-sessions"
+                      style={{
+                        minWidth: '245px',
+                      }}
+                    >
+                      Main Event
+                    </a>
+                  </div>
+                  <div className="col-sm">
+                    <a
+                      role="button"
+                      className="btn btn-primary btn-block btn-block-reset"
+                      href="#learning-sessions"
+                      style={{
+                        minWidth: '245px',
+                      }}
+                    >
+                      Learning Sessions
+                    </a>
+                  </div>
+                </div>
               </section>
             </div>
           </div>
         </div>
         <div className="page__slider">
-          <Slider {...settings}>
+          <Slider {...sliderSettings}>
             {photoSlides.map((slide, i) => (
               <div key={i} className="photo-slider__slide">
                 <Image src={`${slide.src}?auto=format&w=1400`} />
@@ -174,7 +214,10 @@ class Berlin2018Page extends Component {
                   <div className="p-t-20 p-b-90">
                     <h3>Event Timeline</h3>
                     <div>
-                      <CollapsibleList sections={mainEventSections} />
+                      <CollapsibleList
+                        sections={mainEventSections}
+                        talkInView={this.state.talkInView}
+                      />
                     </div>
                   </div>
                 </div>
@@ -182,7 +225,9 @@ class Berlin2018Page extends Component {
               <div className="col-lg-9 col-md-8 order-12 order-md-1">
                 <div className="event p-t-90 p-b-90">
                   <div className="event__speaker-grid">
-                    {renderSections(mainEventSections)}
+                    {renderSections(mainEventSections, {
+                      handleTalkInView: (t) => this.handleTalkInView(t),
+                    })}
                   </div>
                 </div>
               </div>
@@ -221,7 +266,10 @@ class Berlin2018Page extends Component {
                   <div className="p-t-20 p-b-90">
                     <h3>Overview</h3>
                     <div>
-                      <CollapsibleList sections={learningSessionSections} />
+                      <CollapsibleList
+                        sections={learningSessionSections}
+                        talkInView={this.state.talkInView}
+                      />
                     </div>
                   </div>
                 </div>
@@ -229,7 +277,9 @@ class Berlin2018Page extends Component {
               <div className="col-lg-9 col-md-8 order-12 order-md-1">
                 <div className="event p-t-90 p-b-90">
                   <div className="event__speaker-grid">
-                    {renderSections(learningSessionSections)}
+                    {renderSections(learningSessionSections, {
+                      handleTalkInView: (t) => this.handleTalkInView(t),
+                    })}
                   </div>
                 </div>
               </div>

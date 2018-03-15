@@ -3,15 +3,16 @@ import { slugify } from '../utils/functions'
 import Speakers from './Speakers'
 import Image from './Image'
 import PlayIcon from 'mdi-react/PlayIcon'
+import Waypoint from 'react-waypoint'
 
-const SignatureTalks = ({ talks, allData }) =>
+const SignatureTalks = ({ talks, allData, handleTalkInView }) =>
   talks.map(({ day, talkTitle: title, time, span }, i) => {
     const speakers = allData.filter((speaker) => speaker.talkTitle === title)
 
     const classes = 'event__talk'
 
     return (
-      <div key={i} className={classes} id={slugify(title)}>
+      <div className={classes} id={slugify(title)} key={i}>
         <div className="event__talk__content">
           <div className="event__talk__media">
             <Image
@@ -23,9 +24,17 @@ const SignatureTalks = ({ talks, allData }) =>
             </div>
           </div>
           <div className="event__talk__details">
-            <h3>
-              <a href={`#${slugify(title)}`}>{title}</a>
-            </h3>
+            <Waypoint
+              onEnter={({ currentPosition }) =>
+                currentPosition === 'inside' && handleTalkInView(slugify(title))
+              }
+              bottomOffset={'80%'}
+            >
+              <h3>
+                <a href={`#${slugify(title)}`}>{title}</a>
+              </h3>
+            </Waypoint>
+
             <div className="event__talk__speakers__container">
               <div className="event__talk__speakers">
                 <Speakers speakers={speakers} />

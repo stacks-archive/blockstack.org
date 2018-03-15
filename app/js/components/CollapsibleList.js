@@ -23,27 +23,38 @@ class CollapsibleList extends Component {
     }
   }
 
+  checkIfChildIsActive(items, talkInView) {
+    return items.find(
+      (item) => item.talkTitle && slugify(item.talkTitle) === talkInView,
+    )
+  }
+
   render() {
-    const { sections } = this.props
+    const { sections, talkInView } = this.props
     return sections.map(({ title, items }, index) => (
       <div key={index} className="collapsibleList">
         {title && (
           <h6
             className={`${
-              this.state.activeList === index
+              this.checkIfChildIsActive(items, talkInView)
                 ? `collapsibleList__section__title collapsibleList__section__title--active`
                 : `collapsibleList__section__title`
             }`}
             onClick={() => this.handleSectionTitleClick(index)}
           >
-            {title}
+            <a href={`#${slugify(title)}`}>{title}</a>
           </h6>
         )}
-        {this.state.activeList === index ? (
+        {this.checkIfChildIsActive(items, talkInView) ? (
           <div className="collapsibleList__section__items">
             {items.map(({ day, talkTitle, time }, i) => {
+              let classes = 'collapsibleList__section__items__line'
+              if (talkInView === slugify(talkTitle)) {
+                classes =
+                  'collapsibleList__section__items__line collapsibleList__section__items__line--active'
+              }
               return (
-                <div key={i} className="collapsibleList__section__items__line">
+                <div key={i} className={classes}>
                   <a href={`#${slugify(talkTitle)}`}>{talkTitle}</a>
                 </div>
               )

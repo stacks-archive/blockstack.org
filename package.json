@@ -36,6 +36,7 @@
     "react-scroll": "^1.4.2",
     "react-share": "^1.13.0",
     "react-slick": "^0.20.0",
+    "react-waypoint": "^8.0.1",
     "redux": "^3.6.0",
     "redux-localstorage": "^0.4.1",
     "redux-thunk": "^2.2.0",

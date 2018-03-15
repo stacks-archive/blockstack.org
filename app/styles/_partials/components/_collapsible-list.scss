@@ -11,7 +11,10 @@
     &__title {
       margin-top: 20px;
       opacity: 0.75;
-      font-weight: bold;
+      a {
+        font-weight: bold;
+        color: #484848 !important;
+      }
       &--active {
         opacity: 1;
       }
@@ -22,7 +25,44 @@
     }
     &__items {
       &__line {
-        &:not(:last-child){
+        position: relative;
+        padding-right: 20px;
+        padding-bottom: 4px;
+        border-bottom: 1px solid darken(whitesmoke, 5%);
+        a {
+          color: #484848 !important;
+          opacity: 0.75;
+        }
+        &::before {
+          position: absolute;
+          top: 10px;
+          left: -18px;
+          background: #41294e;
+          $size: 8px;
+          width: $size;
+          height: $size;
+          border-radius: 100%;
+          content: '';
+          transform-origin: center center;
+          transform: scale(0);
+          transition: 0.2s all ease-in-out;
+        }
+        &:hover {
+          a {
+            opacity: 1;
+          }
+        }
+        &--active {
+          &::before {
+            transform: none;
+          }
+          a {
+            opacity: 1;
+            font-weight: bold;
+            color: #41294e !important;
+          }
+        }
+        &:not(:last-child) {
           margin-bottom: 5px;
         }
       }
