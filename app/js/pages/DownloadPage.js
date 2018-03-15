@@ -1,13 +1,12 @@
 'use strict'
 
-import { Component }   from 'react'
-import DocumentTitle   from 'react-document-title'
+import { Component } from 'react'
+import DocumentTitle from 'react-document-title'
 //import { UAParser }    from 'ua-parser-js'
 
-import {installationLinks} from '../config'
+import { installationLinks } from '../config'
 
 class DownloadsPage extends Component {
-
   constructor(props) {
     super(props)
   }
@@ -22,133 +21,151 @@ class DownloadsPage extends Component {
       <DocumentTitle title="Install Blockstack">
         <div>
           <div className="container container-lg sectionWrap blog-post bg-white">
-              <div className="container container-lg">
-                <div className="row">
+            <div className="container container-lg">
+              <div className="row">
+                <div className="container">
+                  <div className="row">
+                    <h2 className="m-b-35">Install Blockstack</h2>
+                  </div>
+                </div>
+                <div className="container container-md container-box bg-white ml-0 m-b-50">
                   <div className="container">
                     <div className="row">
-                      <h2 className="m-b-35">
-                        Install Blockstack
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="container container-md container-box bg-white ml-0 m-b-50">
-                    <div className="container">
-                      <div className="row">
-                        <h4 className="m-b-35">
-                          Browser
-                        </h4>
-                        <div className="container mx-auto">
-                          <div className="row">
-                            <div className="col-md-6">
-                              <div className="row">
-                                <p className="lead-lg d-sm-block m-b-10">
-                                  macOS<br/>
-                                  <span className="small text-muted">Requires Sierra 10.12+</span>
-                                </p>
-                              </div>
+                      <h4 className="m-b-35">Browser</h4>
+                      <div className="container mx-auto">
+                        <div className="row">
+                          <div className="col-md-6">
+                            <div className="row">
+                              <p className="lead-lg d-sm-block m-b-10">
+                                macOS<br />
+                                <span className="small text-muted">
+                                  Requires Sierra 10.12+
+                                </span>
+                              </p>
                             </div>
-                            <div className="col-md-6 m-b-15">
-                              <div className="row">
-                                <a href={installationLinks.portalDevelopersMacOS} role="button"
-                                  className="btn btn-secondary btn-block">
-                                  Download
-                                </a>
-                              </div>
+                          </div>
+                          <div className="col-md-6 m-b-15">
+                            <div className="row">
+                              <a
+                                href={installationLinks.portalDevelopersMacOS}
+                                role="button"
+                                className="btn btn-secondary btn-block"
+                              >
+                                Download
+                              </a>
                             </div>
                           </div>
                         </div>
-                        <div className="container mx-auto">
-                          <div className="row">
-                            <div className="col-md-6">
-                              <div className="row">
-                                <p className="lead-lg d-sm-block m-b-10">
-                                  Windows*<br/>
-                                  <span className="small text-muted">Requires Windows 10</span>
-                                </p>
-                              </div>
+                      </div>
+                      <div className="container mx-auto">
+                        <div className="row">
+                          <div className="col-md-6">
+                            <div className="row">
+                              <p className="lead-lg d-sm-block m-b-10">
+                                Windows*<br />
+                                <span className="small text-muted">
+                                  Requires Windows 10
+                                </span>
+                              </p>
                             </div>
-                            <div className="col-md-6 m-b-15">
-                              <div className="row">
-                                 <a href={installationLinks.portalDevelopersWindows} role="button"
-                                  className="btn btn-secondary btn-block">
-                                  Download
-                                </a>
-                              </div>
+                          </div>
+                          <div className="col-md-6 m-b-15">
+                            <div className="row">
+                              <a
+                                href={installationLinks.portalDevelopersWindows}
+                                role="button"
+                                className="btn btn-secondary btn-block"
+                              >
+                                Download
+                              </a>
                             </div>
                           </div>
                         </div>
-                        <div className="container mx-auto">
-                          <div className="row">
-                            <div className="col-md-6">
-                              <div className="row">
-                                <p className="lead-lg d-sm-block m-b-10">
-                                  Linux<br/>
-                                  <span className="small text-muted">Advanced Install</span>
-                                </p>
-                              </div>
+                      </div>
+                      <div className="container mx-auto">
+                        <div className="row">
+                          <div className="col-md-6">
+                            <div className="row">
+                              <p className="lead-lg d-sm-block m-b-10">
+                                Linux<br />
+                                <span className="small text-muted">
+                                  Advanced Install
+                                </span>
+                              </p>
                             </div>
-                            <div className="col-md-6 m-b-15">
-                              <div className="row">
-                                <a href={installationLinks.portalDevelopersLinux} role="button"
-                                 className="btn btn-secondary btn-block">
-                                 Download
-                               </a>
-                              </div>
+                          </div>
+                          <div className="col-md-6 m-b-15">
+                            <div className="row">
+                              <a
+                                href={installationLinks.portalDevelopersLinux}
+                                role="button"
+                                className="btn btn-secondary btn-block"
+                              >
+                                Download
+                              </a>
                             </div>
                           </div>
                         </div>
-                        <div className="container mx-auto">
-                          <div className="row">
-                            <div className="col-md-6">
-                              <div className="row">
-                                <p className="lead-lg d-sm-block m-b-10">
-                                  Web App*
-                                </p>
-                              </div>
+                      </div>
+                      <div className="container mx-auto">
+                        <div className="row">
+                          <div className="col-md-6">
+                            <div className="row">
+                              <p className="lead-lg d-sm-block m-b-10">
+                                Web App*
+                              </p>
                             </div>
-                            <div className="col-md-6 m-b-15">
-                              <div className="row">
-                                <a href={installationLinks.portalDevelopersWeb} role="button"
-                                 className="btn btn-secondary btn-block">
-                                 Visit
-                               </a>
-                              </div>
+                          </div>
+                          <div className="col-md-6 m-b-15">
+                            <div className="row">
+                              <a
+                                href={installationLinks.portalDevelopersWeb}
+                                role="button"
+                                className="btn btn-secondary btn-block"
+                              >
+                                Visit
+                              </a>
                             </div>
                           </div>
                         </div>
-                        <div className="container mx-auto">
-                          <div className="row">
-                            <div className="col-md-12 m-t-30">
-                              <div className="row">
-                                <p className="lead-lg d-sm-block m-b-10">
-                                  <span className="small text-muted">*Limited Capability</span>
-                                </p>
-                              </div>
+                      </div>
+                      <div className="container mx-auto">
+                        <div className="row">
+                          <div className="col-md-12 m-t-30">
+                            <div className="row">
+                              <p className="lead-lg d-sm-block m-b-10">
+                                <span className="small text-muted">
+                                  *Limited Capability
+                                </span>
+                              </p>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="container container-md container-box bg-white ml-0 m-b-50">
-                    <div className="container">
-                      <div className="row">
-                        <div className="container mx-auto">
-                          <div className="row">
-                            <div className="col-md-6">
-                              <div className="row">
-                                <p className="lead-lg d-sm-block m-b-10">
-                                  Run a Full Node<br/>
-                                </p>
-                              </div>
+                </div>
+                <div className="container container-md container-box bg-white ml-0 m-b-50">
+                  <div className="container">
+                    <div className="row">
+                      <div className="container mx-auto">
+                        <div className="row">
+                          <div className="col-md-6">
+                            <div className="row">
+                              <p className="lead-lg d-sm-block m-b-10">
+                                Run a Full Node<br />
+                              </p>
                             </div>
-                            <div className="col-md-6 m-b-15">
-                              <div className="row">
-                                <a href={installationLinks.cliDevelopers} role="button"
-                                  className="btn btn-secondary btn-block">
-                                  Instructions on GitHub
-                                </a>
-                              </div>
+                          </div>
+                          <div className="col-md-6 m-b-15">
+                            <div className="row">
+                              <a
+                                href={installationLinks.cliDevelopers}
+                                role="button"
+                                className="btn btn-secondary btn-block"
+                              >
+                                Instructions on GitHub
+                              </a>
                             </div>
                           </div>
                         </div>
@@ -158,11 +175,11 @@ class DownloadsPage extends Component {
                 </div>
               </div>
             </div>
+          </div>
         </div>
       </DocumentTitle>
     )
   }
-
 }
 
 export default DownloadsPage

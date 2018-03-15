@@ -1,13 +1,12 @@
 'use strict'
 
-import {Component}      from 'react'
-import DocumentTitle    from 'react-document-title'
+import { Component } from 'react'
+import DocumentTitle from 'react-document-title'
 
-import Article          from '../components/Article'
-import docs             from '../../docs.json'
+import Article from '../components/Article'
+import docs from '../../docs.json'
 
 class TutorialPage extends Component {
-
   constructor(props) {
     super(props)
 
@@ -31,7 +30,7 @@ class TutorialPage extends Component {
     this.setState({
       urlSlug: urlSlug,
       title: title,
-      youtubeURL: youtubeURL
+      youtubeURL: youtubeURL,
     })
   }
 
@@ -50,7 +49,10 @@ class TutorialPage extends Component {
       <DocumentTitle title={this.state.title}>
         <section className="bottom-spacing-container">
           <div className="m-b-25">
-            <Article urlSlug={this.state.urlSlug} youtubeURL={this.state.youtubeURL} />
+            <Article
+              urlSlug={this.state.urlSlug}
+              youtubeURL={this.state.youtubeURL}
+            />
           </div>
         </section>
       </DocumentTitle>

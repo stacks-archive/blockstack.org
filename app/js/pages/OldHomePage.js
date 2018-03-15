@@ -27,12 +27,11 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
     Object.assign({}, BlogActions, StatsActions),
-    dispatch
+    dispatch,
   )
 }
 
 class HomePage extends Component {
-
   constructor(props) {
     super(props)
 
@@ -52,10 +51,10 @@ class HomePage extends Component {
           src: 'https://www.youtube.com/embed/YzlyEuRfXxo',
           previewImageUrl: '/images/resources/video-home-3-thumbnail.jpg',
           thumbnailImageUrl: '/images/resources/video-home-3-thumbnail.jpg',
-        }
+        },
       ],
       stats: this.props.stats,
-      posts: this.props.posts
+      posts: this.props.posts,
     }
   }
 
@@ -91,34 +90,41 @@ class HomePage extends Component {
       fullStack: [
         {
           title: 'Identity',
-          body: 'With Blockstack, users get digital keys that let them own their identity. They sign in to apps locally without remote servers or identity providers.'
+          body:
+            'With Blockstack, users get digital keys that let them own their identity. They sign in to apps locally without remote servers or identity providers.',
         },
         {
           title: 'Storage',
-          body: 'Blockstack\'s storage system allows users to bring their own storage providers and control their data. Data is encrypted and easily shared between applications.'
+          body:
+            "Blockstack's storage system allows users to bring their own storage providers and control their data. Data is encrypted and easily shared between applications.",
         },
         {
           title: 'Tokens',
-          body: 'Blockstack uses Bitcoin and other crypto-currencies for simple peer-to-peer payments. Developers can charge for downloads, subscriptions, and more.'
+          body:
+            'Blockstack uses Bitcoin and other crypto-currencies for simple peer-to-peer payments. Developers can charge for downloads, subscriptions, and more.',
         },
       ],
       appPossibilities: [
         {
           title: 'Decentralized Social Networks',
-          body: 'Existing social networks lock in users and limit access. Build a decentralized social network that allows users to own their relationships and data and take it with them wherever they go.'
+          body:
+            'Existing social networks lock in users and limit access. Build a decentralized social network that allows users to own their relationships and data and take it with them wherever they go.',
         },
         {
           title: 'Peer-to-peer Marketplaces',
-          body: 'Existing marketplaces take a massive haircut and limit what can be bought and sold. Build a peer-to-peer marketplace that allows individuals to freely transact at a lower cost.'
+          body:
+            'Existing marketplaces take a massive haircut and limit what can be bought and sold. Build a peer-to-peer marketplace that allows individuals to freely transact at a lower cost.',
         },
         {
           title: 'Collaborative Search Engines',
-          body: 'The web was built to be open and accessible but today the search indexes we rely upon are proprietary. Build a platform that incentivizes people to contribute to a collaborative index.'
-        }
-      ]
+          body:
+            'The web was built to be open and accessible but today the search indexes we rely upon are proprietary. Build a platform that incentivizes people to contribute to a collaborative index.',
+        },
+      ],
     }
 
-    const subscribeURL = '//blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=0e5478ae86'
+    const subscribeURL =
+      '//blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=0e5478ae86'
 
     return (
       <DocumentTitle title="Blockstack, building the decentralized internet">
@@ -133,22 +139,32 @@ class HomePage extends Component {
                     A New Internet for Decentralized Apps
                   </h1>
                   <p className="hero-lead purple-50 col-md-9 col-centered">
-                    Blockstack is a new internet for decentralized apps where users own their data.<br />A browser is all that’s needed to get started.
+                    Blockstack is a new internet for decentralized apps where
+                    users own their data.<br />A browser is all that’s needed to
+                    get started.
                   </p>
                   <div className="no-padding container-fluid col-md-10 col-lg-10 col-centered m-b-50">
                     <div className="row">
                       <div className="col-sm-12 col-md-6">
                         <p className="float-md-right">
-                          <Link to="/install" role="button"
-                            className="btn btn-primary btn-block btn-block-reset" style={{ minWidth: '245px' }}>
+                          <Link
+                            to="/install"
+                            role="button"
+                            className="btn btn-primary btn-block btn-block-reset"
+                            style={{ minWidth: '245px' }}
+                          >
                             Install
                           </Link>
                         </p>
                       </div>
                       <div className="col-sm-12 col-md-6">
                         <p className="float-md-left">
-                          <Link to="/signup" role="button"
-                            className="btn btn-primary btn-block btn-block-reset" style={{ minWidth: '245px' }}>
+                          <Link
+                            to="/signup"
+                            role="button"
+                            className="btn btn-primary btn-block btn-block-reset"
+                            style={{ minWidth: '245px' }}
+                          >
                             Get Updates
                           </Link>
                         </p>
@@ -157,10 +173,12 @@ class HomePage extends Component {
                   </div>
                   <div className="container col-md-9 mx-auto no-padding">
                     <div className="text-center d-none d-sm-block">
-                      <Image className="landing-feat-img"
+                      <Image
+                        className="landing-feat-img"
                         src="/images/resources/browser-home-screen@2x.png"
                         fallbackSrc="/images/resources/browser-home-screen.png"
-                        retinaSupport={false} />
+                        retinaSupport={false}
+                      />
                     </div>
                     <div className="caption-browser d-none d-sm-block">
                       Blockstack Browser
@@ -186,9 +204,11 @@ class HomePage extends Component {
                   <div className="row">
                     <div className="col-md-4 text-center">
                       <a href="/whitepaper.pdf">
-                        <Image className="w-100 icon-lg-special"
+                        <Image
+                          className="w-100 icon-lg-special"
                           src="/images/icons/icon-bsk-technical-whitepaper@2x.png"
-                          retinaSupport={false} />
+                          retinaSupport={false}
+                        />
                       </a>
                     </div>
                     <div className="col-md-8 d-flex align-items-center">
@@ -196,8 +216,12 @@ class HomePage extends Component {
                         <h3 className="text-white m-b-30">
                           Blockstack Technical Whitepaper
                         </h3>
-                        <a href="/whitepaper.pdf" role="button"
-                          className="btn btn-outline-light btn-pill" style={{ minWidth: '245px' }}>
+                        <a
+                          href="/whitepaper.pdf"
+                          role="button"
+                          className="btn btn-outline-light btn-pill"
+                          style={{ minWidth: '245px' }}
+                        >
                           Read the Whitepaper
                         </a>
                       </div>
@@ -218,9 +242,11 @@ class HomePage extends Component {
                       </h2>
                     </div>
                     <div className="col-sm-12 text-center landing-hero-img m-b-35">
-                      <Image className="landing-feat-img container-sm"
+                      <Image
+                        className="landing-feat-img container-sm"
                         src="/images/visuals/blockstack-architecture-diagram.svg"
-                        retinaSupport={false} />
+                        retinaSupport={false}
+                      />
                     </div>
                     <div className="container-fluid">
                       <div className="row">
@@ -230,9 +256,7 @@ class HomePage extends Component {
                               <h4 className="inverse text-center">
                                 {item.title}
                               </h4>
-                              <p className="inverse text-center">
-                                {item.body}
-                              </p>
+                              <p className="inverse text-center">{item.body}</p>
                             </div>
                           )
                         })}
@@ -256,52 +280,54 @@ class HomePage extends Component {
                     <div className="container m-b-30">
                       <div className="col-md-8 col-centered">
                         <p className="text-center">
-                          Complete the step-by-step tutorial and see how easy it is to build an app with a decentralized identity system in a few lines of code and no servers.
+                          Complete the step-by-step tutorial and see how easy it
+                          is to build an app with a decentralized identity
+                          system in a few lines of code and no servers.
                         </p>
                       </div>
                     </div>
                     <div className="container m-b-80">
                       <div className="row">
                         <div className="col-xl-4 code-img-gutter">
-                          <h4 className="text-center m-b-10">
-                            Identity
-                          </h4>
+                          <h4 className="text-center m-b-10">Identity</h4>
                           <p className="light-gray text-center">
                             Available today!
                           </p>
                           <p className="text-center">
-                            <Image className="col3-img-lg"
+                            <Image
+                              className="col3-img-lg"
                               src="/images/visuals/text-editor-identity.svg"
                               fallbackSrc=""
-                              retinaSupport={false} />
+                              retinaSupport={false}
+                            />
                           </p>
                         </div>
                         <div className="col-xl-4 code-img-gutter">
-                          <h4 className="text-center m-b-10">
-                            Storage
-                          </h4>
+                          <h4 className="text-center m-b-10">Storage</h4>
                           <p className="light-gray text-center">
                             Available today!
                           </p>
                           <p className="text-center">
-                            <Image className="col3-img-lg"
+                            <Image
+                              className="col3-img-lg"
                               src="/images/visuals/text-editor-storage.svg"
                               fallbackSrc=""
-                              retinaSupport={false} />
+                              retinaSupport={false}
+                            />
                           </p>
                         </div>
                         <div className="col-xl-4 code-img-gutter">
-                          <h4 className="text-center m-b-10">
-                            Tokens
-                          </h4>
+                          <h4 className="text-center m-b-10">Tokens</h4>
                           <p className="light-gray text-center">
                             <i>Coming Soon...</i>
                           </p>
                           <p className="text-center">
-                            <Image className="col3-img-lg"
+                            <Image
+                              className="col3-img-lg"
                               src="/images/visuals/text-editor-payments.svg"
                               fallbackSrc=""
-                              retinaSupport={false} />
+                              retinaSupport={false}
+                            />
                           </p>
                         </div>
                       </div>
@@ -325,24 +351,32 @@ class HomePage extends Component {
                       {[[0, 3], [3, 5]].map((row, index) => {
                         return (
                           <div key={index} className="row">
-                            {featuredApps.slice(row[0], row[1]).map((featuredApp, index2) => {
-                              const offsetClass = (row[0] === 3 && index2 === 0) ? '' : ''
-                              return (
-                                <div key={index2}
-                                  className={`col-lg-4 m-b-55 mx-auto ${offsetClass}`}>
-                                  <p className="text-center">
-                                    <Image className="col-img drop-shadow-app" src={featuredApp.icon}
-                                      retinaSupport={false} />
-                                  </p>
-                                  <h4 className="modern text-center">
-                                    {featuredApp.name}
-                                  </h4>
-                                  <p className="text-center">
-                                    {featuredApp.description}
-                                  </p>
-                                </div>
-                              )
-                            })}
+                            {featuredApps
+                              .slice(row[0], row[1])
+                              .map((featuredApp, index2) => {
+                                const offsetClass =
+                                  row[0] === 3 && index2 === 0 ? '' : ''
+                                return (
+                                  <div
+                                    key={index2}
+                                    className={`col-lg-4 m-b-55 mx-auto ${offsetClass}`}
+                                  >
+                                    <p className="text-center">
+                                      <Image
+                                        className="col-img drop-shadow-app"
+                                        src={featuredApp.icon}
+                                        retinaSupport={false}
+                                      />
+                                    </p>
+                                    <h4 className="modern text-center">
+                                      {featuredApp.name}
+                                    </h4>
+                                    <p className="text-center">
+                                      {featuredApp.description}
+                                    </p>
+                                  </div>
+                                )
+                              })}
                           </div>
                         )
                       })}
@@ -361,50 +395,76 @@ class HomePage extends Component {
                       <div className="row">
                         <div className="col-lg-4 m-b-25">
                           <div className="container">
-                            <a className="item-description-link" href="https://venturebeat.com/2017/12/04/blockstack-raises-52-million-to-build-a-parallel-internet-where-you-own-all-your-data/" target="_blank">
+                            <a
+                              className="item-description-link"
+                              href="https://venturebeat.com/2017/12/04/blockstack-raises-52-million-to-build-a-parallel-internet-where-you-own-all-your-data/"
+                              target="_blank"
+                            >
                               <h4 className="text-center">
-                                <Image className="h-press-1"
+                                <Image
+                                  className="h-press-1"
                                   src="/images/logos/venturebeat-logo-BW-40.svg"
-                                  retinaSupport={false} />
+                                  retinaSupport={false}
+                                />
                               </h4>
                               <p className="press-item-description text-center">
-                                “Blockstack raises $52 million to build a parallel internet where you own all your data”
-                            </p>
+                                “Blockstack raises $52 million to build a
+                                parallel internet where you own all your data”
+                              </p>
                             </a>
                           </div>
                         </div>
                         <div className="col-lg-4 m-b-25">
                           <div className="container">
-                            <a className="item-description-link" href="http://observer.com/2016/09/a-second-internet-coming-soon-courtesy-of-the-blockchain/" target="_blank">
+                            <a
+                              className="item-description-link"
+                              href="http://observer.com/2016/09/a-second-internet-coming-soon-courtesy-of-the-blockchain/"
+                              target="_blank"
+                            >
                               <h4 className="text-center">
-                                <Image className="h-press-observer"
+                                <Image
+                                  className="h-press-observer"
                                   src="/images/logos/observer-logo-BW-40.svg"
-                                  retinaSupport={false} />
+                                  retinaSupport={false}
+                                />
                               </h4>
                               <p className="press-item-description text-center">
-                                “Blockstack… has been designing an alternative browser for what could be fairly described as another internet”
-                            </p>
+                                “Blockstack… has been designing an alternative
+                                browser for what could be fairly described as
+                                another internet”
+                              </p>
                             </a>
                           </div>
                         </div>
                         <div className="col-lg-4 m-b-25">
                           <div className="container">
-                            <a className="item-description-link" href="https://www.technologyreview.com/s/603352/one-startups-vision-to-reinvent-the-web-for-better-privacy/" target="_blank">
+                            <a
+                              className="item-description-link"
+                              href="https://www.technologyreview.com/s/603352/one-startups-vision-to-reinvent-the-web-for-better-privacy/"
+                              target="_blank"
+                            >
                               <h4 className="text-center">
-                                <Image className="h-press-mit"
+                                <Image
+                                  className="h-press-mit"
                                   src="/images/logos/mit-logo-BW-40.svg"
-                                  retinaSupport={false} />
+                                  retinaSupport={false}
+                                />
                               </h4>
                               <p className="press-item-description text-center">
-                                “A kind of parallel universe to the Web we know — one where users have more control of their data.”
-                            </p>
+                                “A kind of parallel universe to the Web we know
+                                — one where users have more control of their
+                                data.”
+                              </p>
                             </a>
                           </div>
                         </div>
                         <div className="container container-xs m-t-35">
                           <p className="text-center">
-                            <Link to="/press" role="button"
-                              className="btn btn-outline-primary btn-block">
+                            <Link
+                              to="/press"
+                              role="button"
+                              className="btn btn-outline-primary btn-block"
+                            >
                               More Articles...
                             </Link>
                           </p>
@@ -427,9 +487,15 @@ class HomePage extends Component {
                       </h2>
                       <div className="container-fluid">
                         <p>
-                          Join our mailing list to stay up to date with the Blockstack community. You'll hear about product launches, upcoming events, newly released applications and more.
-                      </p>
-                        <MailchimpForm subscribeURL={subscribeURL} submitButtonText='Sign Up' />
+                          Join our mailing list to stay up to date with the
+                          Blockstack community. You'll hear about product
+                          launches, upcoming events, newly released applications
+                          and more.
+                        </p>
+                        <MailchimpForm
+                          subscribeURL={subscribeURL}
+                          submitButtonText="Sign Up"
+                        />
                       </div>
                     </div>
                   </div>

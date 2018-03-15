@@ -1,19 +1,19 @@
 'use strict'
 
-import {Component}          from 'react'
-import {Link}               from 'react-router'
-import DocumentTitle        from 'react-document-title'
-import {bindActionCreators} from 'redux'
-import {connect}            from 'react-redux'
+import { Component } from 'react'
+import { Link } from 'react-router'
+import DocumentTitle from 'react-document-title'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
 
-import {BlogActions}       from '../datastore/Blog'
-import {StatsActions}      from '../datastore/Stats'
-import Image               from '../components/Image'
-import Header              from '../components/Header'
-import EmbedYouTube        from '../components/EmbedYouTube'
-import ContentSection      from '../components/ContentSection'
-import VideosPresentation  from '../components/VideosPresentation'
-import {featuredApps}      from '../config'
+import { BlogActions } from '../datastore/Blog'
+import { StatsActions } from '../datastore/Stats'
+import Image from '../components/Image'
+import Header from '../components/Header'
+import EmbedYouTube from '../components/EmbedYouTube'
+import ContentSection from '../components/ContentSection'
+import VideosPresentation from '../components/VideosPresentation'
+import { featuredApps } from '../config'
 
 function mapStateToProps(state) {
   return {
@@ -25,20 +25,20 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
     Object.assign({}, BlogActions, StatsActions),
-    dispatch
+    dispatch,
   )
 }
 
 class Summit2017Page extends Component {
-
   constructor(props) {
     super(props)
 
     this.state = {
-      subscribeURL: '//blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=da7056bb03',
+      subscribeURL:
+        '//blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=da7056bb03',
       videoURL: 'https://www.youtube.com/embed/0C2y9mZ0Dnc',
       stats: this.props.stats,
-      posts: this.props.posts
+      posts: this.props.posts,
     }
   }
 
@@ -77,11 +77,15 @@ class Summit2017Page extends Component {
             <Header transparent={true} />
             <div className="container p-b-90">
               <section className="text-center">
-                <Image className="blockstack-summit-2017-logo-md m-t-65 m-b-55"
-                        src="/images/logos/blockstack-summit-logo-landscape-rev.svg"
-                        retinaSupport={false} />
+                <Image
+                  className="blockstack-summit-2017-logo-md m-t-65 m-b-55"
+                  src="/images/logos/blockstack-summit-logo-landscape-rev.svg"
+                  retinaSupport={false}
+                />
                 <h1 className="text-white m-b-20">Blockstack Summit 2017</h1>
-                <p className="hero-lead text-white p-b-100">July 27th, 2017, Computer History Museum, Mountain View, CA</p>
+                <p className="hero-lead text-white p-b-100">
+                  July 27th, 2017, Computer History Museum, Mountain View, CA
+                </p>
               </section>
             </div>
             <div className="bg-white sectionWrap section-spacing container-fluid">
@@ -114,16 +118,14 @@ class Summit2017Page extends Component {
             <div className="feature-event-subhero-1">
               <div className="col-centered block">
                 <div className="container summit-img-section">
-                  <section className="text-xs-center p-b-80">
-                  </section>
+                  <section className="text-xs-center p-b-80" />
                 </div>
               </div>
             </div>
             <div className="feature-event-subhero-2">
               <div className="col-centered block">
                 <div className="container summit-img-section">
-                  <section className="text-xs-center p-b-80">
-                  </section>
+                  <section className="text-xs-center p-b-80" />
                 </div>
               </div>
             </div>
@@ -133,7 +135,6 @@ class Summit2017Page extends Component {
       </DocumentTitle>
     )
   }
-
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Summit2017Page)
