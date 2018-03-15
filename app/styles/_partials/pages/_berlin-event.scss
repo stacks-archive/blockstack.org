@@ -135,3 +135,24 @@
     max-width: 560px;
   }
 }
+
+.press-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-column-gap: 120px;
+  justify-content: center;
+  align-items: center;
+  $c: &;
+
+  #{$c}__item {
+    opacity: 0.5;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    &:hover {
+      opacity: 1;
+      -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(0%);
+    }
+  }
+}

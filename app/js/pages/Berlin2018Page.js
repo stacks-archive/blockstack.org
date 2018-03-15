@@ -3,7 +3,7 @@
 import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 import CollapsibleList from '../components/CollapsibleList'
-import berlinData from '../datastore/berlin-event-data'
+import berlinData, { berlinPressData } from '../datastore/berlin-event-data'
 import Slider from 'react-slick'
 import SignatureTalks from '../components/SignatureTalks'
 import { slugify } from '../utils/functions'
@@ -136,13 +136,14 @@ class Berlin2018Page extends Component {
                   />
                 </h1>
                 <p className="text-white">
-                  The Blockstack Signature Fund and the folks who brought you
-                  {' '}<a href="https://blockstack.org/summit2017">
+                  The Blockstack Signature Fund and the folks who brought you{' '}
+                  <a href="https://blockstack.org/summit2017">
                     Blockstack Summit 2017
-                  </a> are excited to bring you Blockstack
-                  Berlin, the first in a series of worldwide events and demo
-                  days around Blockstack. The event took place on March 2, 2018
-                  in Berlin at the Axica Convention Center.
+                  </a>{' '}
+                  are excited to bring you Blockstack Berlin, the first in a
+                  series of worldwide events and demo days around Blockstack.
+                  The event took place on March 2, 2018 in Berlin at the Frank
+                  Gehry designed Axica Convention Center.
                 </p>
               </section>
             </div>
@@ -175,6 +176,27 @@ class Berlin2018Page extends Component {
                   <div className="event__speaker-grid">
                     {renderSections(sections)}
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 col-md-12 order-12 order-md-1 bg-white">
+              <div className="event p-t-90 p-b-90">
+                <h2>Press</h2>
+                <div className="press-grid">
+                  {berlinPressData.map((item, i) => (
+                    <div key={i} className="press-grid__item">
+                      <a href={item.url} target="_blank">
+                        <Image
+                          src={`${item.logo}?w=200&auto=compress`}
+                          alt={item.outlet}
+                        />
+                      </a>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>

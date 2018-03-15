@@ -17,7 +17,7 @@ const data = [
     twitter: '@muneeb',
     day: 'March 2',
     time: '9:24 AM',
-    talkTitle: 'From Cloud Computing to Decentralized Computing',
+    talkTitle: 'The end of cloud computing',
     headshot:
       'https://blockstack.imgix.net/479a5d92-8812-4768-a31b-d7d074f2aa56_muneeb+ali_blockstack_founder.png',
   },
@@ -50,7 +50,8 @@ const data = [
     twitter: '@jutta_steiner ‏',
     day: 'March 2',
     time: '9:58 AM',
-    talkTitle: 'Web3 and the Decentralized Internet',
+    talkTitle:
+      'Hello Web 3! the polkadot protocol, blockchain, & the bigger picture',
     headshot:
       'https://blockstack.imgix.net/9900ff64-1f63-4eba-bd7b-44bf8a7a5878_jutta_steiner.jpg',
   },
@@ -72,7 +73,8 @@ const data = [
     twitter: '@deseventral',
     day: 'March 2',
     time: '10:22 AM',
-    talkTitle: 'Building a Censorship and Surveillance Free Internet',
+    talkTitle:
+      'How can decentralized technologies address centralized forms of power and control?',
     headshot:
       'https://blockstack.imgix.net/f0e01716-d771-4cf9-9852-4b0b46f005fd_steve_orchid.jpg',
   },
@@ -145,7 +147,7 @@ const data = [
   {
     name: 'Nick Szabo',
     company: null,
-    jobTitle: 'Blockchain, Cryptocurrency & Smart Contracts Pioneer',
+    jobTitle: 'Blockchains & Social Scalability',
     twitter: '@NickSzabo4',
     day: 'March 2',
     time: '11:20 AM',
@@ -194,13 +196,15 @@ const data = [
     talkTitle: 'Building a Blockstack App',
   },
   {
-    name: null,
-    company: null,
-    jobTitle: null,
-    twitter: null,
-    day: null,
+    name: 'Ari Paul',
+    company: 'BlockTower Capital',
+    jobTitle: 'Co-Founder and CIO',
+    twitter: '@AriDavidPaul',
+    day: 'March 2',
     time: '11:59 AM',
     talkTitle: 'Stable Coins Interview',
+    headshot:
+      'https://blockstack.imgix.net/ac9f4a81-58a3-4118-9d18-bdab1f1d9993_ari+paul.png',
   },
   {
     name: 'Nader Al-Naji',
@@ -280,7 +284,7 @@ const data = [
     twitter: '@albertwenger',
     day: 'March 2',
     time: '2:17 PM',
-    talkTitle: 'Privacy',
+    talkTitle: 'Decentralization: Two Possible Futures',
     headshot:
       'https://blockstack.imgix.net/80d1f4de-541e-415a-b97f-06ba878ab84c_albert+wenger_union+square+venture_general+partner.png',
   },
@@ -313,7 +317,7 @@ const data = [
     twitter: '@jeremyrwelch',
     day: 'March 2',
     time: '3:02 PM',
-    talkTitle: 'Casa - Launching the Best Key System on the Planet',
+    talkTitle: 'Casa: Premium HODL Software',
     headshot:
       'https://blockstack.imgix.net/99237e31-fc8e-4829-bcdb-520926e9b84b_jeremy+welch_casa+app_founder.jpg',
   },
@@ -482,6 +486,112 @@ const data = [
     headshot:
       'https://blockstack.imgix.net/66cb56ee-352d-46e2-86ec-a9ac10dcb7e4_felix_petersen.jpg',
   },
+  {
+    name: 'Ryan Shea',
+    company: 'Blockstack',
+    jobTitle: 'Co-Founder',
+    twitter: '@ryaneshea',
+    day: 'March 2',
+    time: '5:45 PM',
+    talkTitle: 'Blockstack Berlin Closing Remarks',
+    headshot:
+      'https://blockstack.imgix.net/7a92e818-1126-4e5e-a9e0-7fc5e75da3b3_ryan+shea_blockstack_founder.jpg',
+  },
+  {
+    name: 'Dr. Muneeb Ali',
+    company: 'Blockstack',
+    jobTitle: 'Co-Founder',
+    twitter: '@muneeb',
+    day: 'March 2',
+    time: '5:45 PM',
+    talkTitle: 'Blockstack Berlin Closing Remarks',
+    headshot:
+      'https://blockstack.imgix.net/479a5d92-8812-4768-a31b-d7d074f2aa56_muneeb+ali_blockstack_founder.png',
+  },
 ]
 
 export default data
+
+export const berlinPressData = [
+  {
+    logo: 'https://blockstack.imgix.net/cc3a1dbc-9289-45fd-9449-6f77d81cbc5d_t3n-logo-press-2018_color_rgb_rechts.png',
+    url: 'https://t3n.de/news/web-3-blockstack-dezentrales-internet-984971/ ',
+    date: 'Mar 14th 2018',
+    outlet: 't3n',
+  },
+  {
+    logo: 'https://blockstack.imgix.net/d6d25c4a-d6e8-41fc-a43a-5d2f72d2099a_futurezone.de.png',
+    url:
+      'https://www.futurezone.de/produkte/article213640421/Blockstack-Das-dezentralisierte-Internet-der-Zukunft.html ',
+    date: 'Mar 7th 2018',
+    outlet: 'Futurezone',
+  },
+  {
+    logo: 'https://blockstack.imgix.net/de65b191-338a-4804-9214-bb4f7ea2d945_wired.jpeg',
+    url:
+      'https://www.wired.de/collection/business/blockchain-spekulative-blasen-sind-extrem-wichtig',
+    date: 'Mar 6th 2018',
+    outlet: 'WIRED',
+  },
+  {
+    logo: 'https://blockstack.imgix.net/fee57dec-e492-4516-8a44-a41531e041c3_gru%CC%88nderszene.png',
+    url: 'https://www.gruenderszene.de/allgemein/albert-wenger-blockchain-usv',
+    date: 'Mar 6th 2018',
+    outlet: 'Gründerszene',
+  },
+  {
+    logo: 'https://blockstack.imgix.net/a6ed832d-f62b-48b7-b37b-589a96d6b235_infinity-1170x300.png',
+    url: 'https://www.infinity-economics-world.eu/btc-echo ',
+    date: 'Mar 5th 2018',
+    outlet: 'Infinity Echonomoics',
+  },
+  {
+    logo: 'https://blockstack.imgix.net/fee196a6-5a55-421e-8ee7-f2f53230e178_international-business-times-uk-logo.jpg',
+    url:
+      'http://www.ibtimes.co.uk/blockstack-announces-another-token-sale-this-time-open-all-investors-1665188',
+    date: 'Mar 5th 2018',
+    outlet: 'IB Times',
+  },
+  {
+    logo: 'https://blockstack.imgix.net/a0a5728d-256f-41c6-8ea4-494bff74079d_btc-echo-logo.png',
+    url:
+      'https://www.btc-echo.de/mit-der-blockchain-fuer-eine-freie-welt-eindruecke-vom-blockstack-event/',
+    date: 'Mar 3rd 2018',
+    outlet: 'BTC Echo',
+  },
+  {
+    logo: 'https://blockstack.imgix.net/fee57dec-e492-4516-8a44-a41531e041c3_gru%CC%88nderszene.png',
+    url:
+      'https://www.gruenderszene.de/allgemein/was-euch-diese-woche-erwartet-die-startup-events-89',
+    date: 'Feb 19th 2018',
+    outlet: 'Gründerszene',
+  },
+  {
+    logo: 'https://blockstack.imgix.net/e4d833e9-f7e0-46eb-8b7a-02733328a948_krypto.jpg',
+    url:
+      'https://www.krypto-magazin.de/blockstack-berlin-a-signature-fund-event/',
+    date: 'Feb 12th 2018',
+    outlet: 'Kryptomagazin',
+  },
+  {
+    logo: 'https://blockstack.imgix.net/b7d0d9dc-efaf-4eda-a9df-af9fb8f80cd9_bitcoin-live-de-logo.jpg',
+    url:
+      'https://bitcoin-live.de/veranstaltungshinweis-blockstack-berlin-a-signature-fund-event/',
+    date: 'Feb 13th 2018',
+    outlet: 'Bitcoin Live',
+  },
+  {
+    logo: 'https://blockstack.imgix.net/76217db0-4a42-444d-b413-73407d1a963d_startup-valley-news.png',
+    url:
+      'https://www.startupvalley.news/de/startup-events/blockstack-berlin-blockchain-konferenz-und-hackathon/',
+    date: 'Feb 13th 2018',
+    outlet: 'Startupvalleynews ',
+  },
+  {
+    logo: 'https://blockstack.imgix.net/9109774e-5e2e-473b-a2e9-c07e59ab5ff6_startup+calendar.png',
+    url:
+      'https://startup-calendar.com/event/signature-berlin-blockstack-event/',
+    date: 'Feb 15th 2018',
+    outlet: 'Startupcalendar',
+  },
+]
