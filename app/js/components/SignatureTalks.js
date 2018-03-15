@@ -2,6 +2,7 @@ import React from 'react'
 import { slugify } from '../utils/functions'
 import Speakers from './Speakers'
 import Image from './Image'
+import PlayIcon from 'mdi-react/PlayIcon'
 
 const SignatureTalks = ({ talks, allData }) =>
   talks.map(({ day, talkTitle: title, time, span }, i) => {
@@ -17,11 +18,14 @@ const SignatureTalks = ({ talks, allData }) =>
               src="https://blockstack.imgix.net/7c53ed6a-c4eb-4d99-94fc-2e2ed9f62652_p3020241.jpg?auto=format&w=1400"
               alt={title}
             />
+            <div className="event__talk__media__overlay">
+              <PlayIcon />
+            </div>
           </div>
           <div className="event__talk__details">
-            <h4>
+            <h3>
               <a href={`#${slugify(title)}`}>{title}</a>
-            </h4>
+            </h3>
             <div className="event__talk__speakers__container">
               <div className="event__talk__speakers">
                 <Speakers speakers={speakers} />

@@ -19,6 +19,7 @@
     "jsontokens": "^0.7.6",
     "lodash": "^3.10.1",
     "marked": "^0.3.6",
+    "mdi-react": "^2.1.19",
     "popper.js": "^1.12.5",
     "prop-types": "^15.6.1",
     "query-string": "^4.3.2",

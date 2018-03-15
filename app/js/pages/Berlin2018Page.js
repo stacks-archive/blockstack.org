@@ -87,7 +87,9 @@ const filteredData = [...removeDuplicates(berlinData, 'talkTitle')]
 
 const mainEvent = filteredData.filter((day) => day.day === 'March 2')
 
-const sections = [
+const learningSessions = filteredData.filter((day) => day.day === 'March 1')
+
+const mainEventSections = [
   {
     title: 'Morning Sessions',
     items: filterIndex(mainEvent, 0, 8),
@@ -103,6 +105,12 @@ const sections = [
   {
     title: 'Late Afternoon Sessions',
     items: filterIndex(mainEvent, 24, 26),
+  },
+]
+const learningSessionSections = [
+  {
+    title: 'Learning Sessions',
+    items: learningSessions,
   },
 ]
 
@@ -166,7 +174,7 @@ class Berlin2018Page extends Component {
                   <div className="p-t-20 p-b-90">
                     <h3>Event Timeline</h3>
                     <div>
-                      <CollapsibleList sections={sections} />
+                      <CollapsibleList sections={mainEventSections} />
                     </div>
                   </div>
                 </div>
@@ -174,7 +182,7 @@ class Berlin2018Page extends Component {
               <div className="col-lg-9 col-md-8 order-12 order-md-1">
                 <div className="event p-t-90 p-b-90">
                   <div className="event__speaker-grid">
-                    {renderSections(sections)}
+                    {renderSections(mainEventSections)}
                   </div>
                 </div>
               </div>
@@ -197,6 +205,32 @@ class Berlin2018Page extends Component {
                       </a>
                     </div>
                   ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {
+          //  Learning Sessions
+        }
+        <div className="bg-light-gray">
+          <div className="container ">
+            <div className="row">
+              <div className="col-lg-3 col-md-4 order-1 order-md-4 order-lg-1 p-t-70">
+                <div className="sticky-sidebar">
+                  <div className="p-t-20 p-b-90">
+                    <h3>Overview</h3>
+                    <div>
+                      <CollapsibleList sections={learningSessionSections} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-9 col-md-8 order-12 order-md-1">
+                <div className="event p-t-90 p-b-90">
+                  <div className="event__speaker-grid">
+                    {renderSections(learningSessionSections)}
+                  </div>
                 </div>
               </div>
             </div>

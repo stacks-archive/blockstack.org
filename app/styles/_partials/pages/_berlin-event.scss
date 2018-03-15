@@ -47,7 +47,7 @@
     }
     &__content {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-template-columns: repeat(5, 1fr);
       grid-column-gap: 20px;
     }
     &__media {
@@ -56,16 +56,77 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0);
+      will-change: box-shadow;
+      transition: 0.2s all ease-in-out;
+
+      &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: 0.2s all ease-in-out;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        will-change: opacity;
+        &::before {
+          position: absolute;
+          content: '';
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #270f34;
+          opacity: 0.75;
+          z-index: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          will-change: opacity;
+        }
+        svg {
+          position: relative;
+          z-index: 2;
+          display: block;
+          $size: 62px;
+          width: $size !important;
+          height: $size !important;
+          transform: translateY(5px);
+          transition: 0.2s all ease-in-out;
+          path {
+            width: $size !important;
+            height: $size !important;
+            fill: white;
+          }
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.25);
+        .event__talk__media__overlay {
+          opacity: 1;
+          svg {
+            transform: none;
+          }
+        }
+      }
     }
 
     &__details {
-      grid-column: span 2;
+      grid-column: span 3;
       padding: 20px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      h4 {
+      h3 {
         margin: 0;
+        a {
+          color: #484848 !important;
+        }
       }
     }
     &__speakers {
@@ -79,7 +140,6 @@
     }
   }
   #{$c}__speaker + #{$c}__speaker {
-    border-top: 1px solid darken(whitesmoke, 5%);
     padding-top: 10px;
     margin-top: 10px;
   }
