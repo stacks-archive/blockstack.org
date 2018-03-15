@@ -167,7 +167,7 @@ class Berlin2018Page extends Component {
                   The event took place on March 2, 2018 in Berlin at the Frank
                   Gehry designed Axica Convention Center.
                 </p>
-                <div className="row p-t-20">
+                <div className="row p-t-20 berlin-hero__actions">
                   <div className="col-sm">
                     <a
                       role="button"
@@ -209,7 +209,7 @@ class Berlin2018Page extends Component {
         <div className="bg-light-gray">
           <div className="container ">
             <div className="row">
-              <div className="col-lg-3 col-md-4 order-1 order-md-4 order-lg-1 p-t-70">
+              <div className="col-lg-3 col-md-4 order-1 order-md-4 order-lg-1 p-t-70 event__timeline-sidebar">
                 <div className="sticky-sidebar">
                   <div className="p-t-20 p-b-90">
                     <h3>Event Timeline</h3>
@@ -236,9 +236,9 @@ class Berlin2018Page extends Component {
         </div>
         <div className="container">
           <div className="row">
-            <div className="col-lg-12 col-md-12 order-12 order-md-1 bg-white">
+            <div className="col-lg-12 col-md-12 order-12 order-md-1 bg-white col-centered">
               <div className="event p-t-90 p-b-90">
-                <h2>Press</h2>
+                <h2 className="text-center">Press</h2>
                 <div className="press-grid">
                   {berlinPressData.map((item, i) => (
                     <div key={i} className="press-grid__item">
@@ -261,7 +261,7 @@ class Berlin2018Page extends Component {
         <div className="bg-light-gray">
           <div className="container ">
             <div className="row">
-              <div className="col-lg-3 col-md-4 order-1 order-md-4 order-lg-1 p-t-70">
+              <div className="col-lg-3 col-md-4 order-1 order-md-4 order-lg-1 p-t-70 event__timeline-sidebar">
                 <div className="sticky-sidebar">
                   <div className="p-t-20 p-b-90">
                     <h3>Overview</h3>
