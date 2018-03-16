@@ -1823,7 +1823,7 @@ a > div.col-md-4.feature-panel > p.lead.bs-lead {
 
 .feature {
   position: relative;
-  margin-top: 8rem;
+  margin-top: 4rem;
 }
 
 .feature-number {
@@ -3423,6 +3423,10 @@ pre {
   .sidebar-wrapper {
     display: block;
     font-size: 0.9375rem;
+  }
+
+  .feature {
+    margin-top: 8rem;
   }
 
   .sidebar-content-wrapper {
