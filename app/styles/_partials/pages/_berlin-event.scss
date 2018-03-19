@@ -10,7 +10,18 @@
   * {
     box-sizing: border-box;
   }
+  .slick-dots {
+    //position: relative;
+    z-index: 44;
+    //bottom: -20px;
+    li {
+      button {
+      }
+    }
+  }
   .photo-slider {
+    padding-left: 10px;
+    padding-right: 10px;
     &__slide {
       padding: 10px;
     }
@@ -194,9 +205,30 @@
     display: none;
   }
 }
-
 .page__slider {
   overflow: hidden;
+  padding-bottom: 40px;
+  .slick-prev,
+  .slick-next {
+    bottom: -35px;
+    top: auto;
+    z-index: 999999;
+    &:hover {
+      &:before {
+        opacity: 0.85;
+      }
+    }
+    &:before {
+      color: black;
+      opacity: 0.25;
+    }
+  }
+  .slick-next {
+    right: 25px;
+  }
+  .slick-prev {
+    left: 20px;
+  }
 }
 
 .berlin-hero {

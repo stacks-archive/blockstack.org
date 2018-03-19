@@ -59,11 +59,11 @@ const photoSlides = [
   },
   {
     src:
-      'https://blockstack.imgix.net/b0415647-dc2f-44ac-b083-e7f445229f10__3020103.jpg',
+      'https://blockstack.imgix.net/b52ca3fc-1b98-4f41-b296-24b0d1d26ea3__3020287.jpg',
   },
   {
     src:
-      'https://blockstack.imgix.net/2a992e79-07b5-4440-a681-6c33a339a5ad__3020104.jpg',
+      'https://blockstack.imgix.net/14051eb2-e391-4830-8bb0-a759c50f3126__3020140.jpg',
   },
 ]
 
