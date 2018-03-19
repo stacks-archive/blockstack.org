@@ -44,16 +44,16 @@ export default class Modal extends React.Component {
   render() {
     const modalShell = (
       <div className="bs-modal">
-        <div className="bs-modal__close" onClick={this.onOverlayClick.bind(this)}>
-          <CloseIcon/>
-        </div>
-        <div
-          className="bs-modal__content"
-          onClick={this.onOverlayClick.bind(this)}
-        >
-          <div className="bs-modal__dialog" onClick={this.onDialogClick}>
-            {this.props.children}
+        {this.props.closeButton && (
+          <div
+            className="bs-modal__close"
+            onClick={this.onOverlayClick.bind(this)}
+          >
+            <CloseIcon />
           </div>
+        )}
+        <div className="bs-modal__content">
+          <div className="bs-modal__dialog">{this.props.children}</div>
         </div>
         <div className="bs-modal__overlay" />
       </div>

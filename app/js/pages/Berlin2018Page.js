@@ -8,6 +8,9 @@ import Slider from 'react-slick'
 import SignatureTalks from '../components/SignatureTalks'
 import { slugify } from '../utils/functions'
 import Image from '../components/Image'
+import Modal from '../components/Modal'
+import YouTubePlayer from 'react-player/lib/players/YouTube'
+import Speakers from '../components/Speakers'
 
 const sliderSettings = {
   className: 'photo-slider center',
@@ -114,19 +117,67 @@ const learningSessionSections = [
   },
 ]
 
-const renderSections = (sections, props) =>
-  sections.map((section, i) => (
-    <div key={i} id={slugify(section.title)}>
-      <h2 className="event__talk__header">{section.title}</h2>
-      <SignatureTalks talks={section.items} allData={berlinData} {...props} />
-    </div>
-  ))
-
 class Berlin2018Page extends Component {
   constructor(props) {
     super(props)
     this.state = {
       talkInView: null,
+      modal: false,
+      talk: null,
+      nextTalk: null,
+      prevTalk: null,
+    }
+  }
+
+  setNewTalk(talk, direction) {
+    const { sections, talks, sectionIndex } = this.state
+
+    if (this.state.talk !== talk) {
+      const {
+        prevTalk,
+        nextTalk,
+        nextSection,
+        prevSection,
+        talks: newTalks,
+        sectionIndex: newSectionIndex,
+      } = this.computeTalkData(talk, sections, talks, sectionIndex)
+
+      const returnTalks = () => {
+        if (direction && direction === 'next') {
+          if (nextSection && nextSection !== this.state.talks) {
+            return nextSection
+          } else {
+            return newTalks
+          }
+        } else if (direction && direction === 'prev') {
+          if (prevSection && prevSection !== this.state.talks) {
+            return prevSection
+          } else {
+            return newTalks
+          }
+        } else {
+          return newTalks
+        }
+      }
+      this.setState({
+        modal: true,
+        talk,
+        prevTalk,
+        nextTalk,
+        nextSection,
+        prevSection,
+        sectionIndex: newSectionIndex,
+        talks: returnTalks(),
+      })
+    }
+  }
+
+  closeModal() {
+    if (this.state.modal) {
+      this.setState({
+        modal: false,
+        talk: null,
+      })
     }
   }
 
@@ -137,9 +188,168 @@ class Berlin2018Page extends Component {
       })
     }
   }
+
+  openModal(talk, sections, talks, sectionIndex) {
+    const {
+      prevTalk,
+      nextTalk,
+      nextSection,
+      prevSection,
+      talks: newTalks,
+    } = this.computeTalkData(talk, sections, talks, sectionIndex)
+
+    if (!this.state.modal) {
+      this.setState({
+        modal: true,
+        talk,
+        talks: newTalks,
+        sections,
+        prevTalk,
+        nextTalk,
+        nextSection,
+        prevSection,
+        sectionIndex,
+      })
+    }
+  }
+
+  computeTalkData(talk, sections, talks, sectionIndex) {
+    let computedSectionIndex = sectionIndex
+    let computedTalks = talks
+    let newSection = false
+
+    let talkIndex = computedTalks.findIndex(
+      (speaker) => speaker.talkTitle === talk.talkTitle,
+    )
+
+    if (talkIndex === -1) {
+      newSection = sections.find((section) =>
+        section.items.find((speaker) => speaker.talkTitle === talk.talkTitle),
+      )
+      talkIndex = newSection.items.findIndex(
+        (speaker) => speaker.talkTitle === talk.talkTitle,
+      )
+      computedTalks = newSection.items
+      computedSectionIndex = sections.findIndex(
+        (sect) => sect.title === newSection.title,
+      )
+    }
+
+    let prevTalkIndex = talkIndex - 1
+    let nextTalkIndex = talkIndex + 1
+
+    let prevTalk = computedTalks[prevTalkIndex]
+    let nextTalk = computedTalks[nextTalkIndex]
+    let nextSection = false
+    let prevSection = false
+
+    const isLastTalkInSection = talkIndex === computedTalks.length - 1
+    const isFirstTalkInSection = talkIndex === 0
+
+    const isNotLastSection = computedSectionIndex < sections.length - 1
+    const isNotFirstSection = computedSectionIndex > 0
+
+    if (!isFirstTalkInSection && isLastTalkInSection && isNotLastSection) {
+      const thisSection = sections.findIndex((s) =>
+        s.items.find((t) => t.talkTitle === talk.talkTitle),
+      )
+      const ns = sections[thisSection + 1]
+      nextTalk = ns.items[0]
+      nextSection = ns.items
+      computedSectionIndex = thisSection
+    }
+
+    if (!isLastTalkInSection && isFirstTalkInSection && isNotFirstSection) {
+      const thisSection = sections.findIndex((s) =>
+        s.items.find((t) => t.talkTitle === talk.talkTitle),
+      )
+
+      const ps = sections[thisSection - 1]
+      prevTalk = ps.items[ps.items.length - 1]
+      prevSection = ps.items
+      computedSectionIndex = thisSection
+    }
+
+    return {
+      prevTalk,
+      nextTalk,
+      nextSection,
+      prevSection,
+      sectionIndex: computedSectionIndex,
+      talks: computedTalks,
+    }
+  }
+
+  renderSections(sections, props) {
+    return sections.map((section, i) => (
+      <div key={i} id={slugify(section.title)}>
+        <h2 className="event__talk__header">{section.title}</h2>
+        <SignatureTalks
+          talks={section.items}
+          allData={berlinData}
+          openModal={(t, ss, talks, si) => this.openModal(t, ss, talks, si)}
+          closeModal={() => this.closeModal()}
+          sections={sections}
+          sectionIndex={i}
+          section={section}
+          {...props}
+        />
+      </div>
+    ))
+  }
   render() {
+    const { talk, nextTalk, prevTalk } = this.state
+    const thisTalk = (speaker) => talk && speaker.talkTitle === talk.talkTitle
+    const speakers = berlinData.filter(thisTalk)
     return (
       <div className="page--berlin-event" id="berlin-page">
+        {this.state.modal && (
+          <Modal onClose={() => this.closeModal()} closeButton>
+            <div className="event__modal__talk">
+              <h3 className="event__modal__talk__title">{talk.talkTitle}</h3>
+              <div className="event__modal__talk__content">
+                <div>
+                  <div className="player-wrapper">
+                    <YouTubePlayer
+                      className="react-player"
+                      preload
+                      url="https://www.youtube.com/watch?v=7SmC7AuZNWY"
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                  <div className="event">
+                    <div className="event__talk__speakers__container">
+                      <div className="event__talk__speakers">
+                        <Speakers speakers={speakers} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="modal__navigation">
+                    {prevTalk && (
+                      <div
+                        className="modal__navigation--button"
+                        onClick={() => this.setNewTalk(prevTalk, 'prev')}
+                      >
+                        <h5>Previous</h5>
+                        <h4>{prevTalk.talkTitle}</h4>
+                      </div>
+                    )}
+                    {nextTalk && (
+                      <div
+                        className="modal__navigation--button"
+                        onClick={() => this.setNewTalk(nextTalk, 'next')}
+                      >
+                        <h5>Up Next</h5>
+                        <h4>{nextTalk.talkTitle}</h4>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Modal>
+        )}
         <Helmet>
           <title>Blockstack Berlin: A Signature Fund Event</title>
           <meta
@@ -225,8 +435,9 @@ class Berlin2018Page extends Component {
               <div className="col-lg-9 col-md-8 order-12 order-md-1">
                 <div className="event p-t-90 p-b-90">
                   <div className="event__speaker-grid">
-                    {renderSections(mainEventSections, {
+                    {this.renderSections(mainEventSections, {
                       handleTalkInView: (t) => this.handleTalkInView(t),
+                      activeTalk: this.state.talk,
                     })}
                   </div>
                 </div>
@@ -277,8 +488,9 @@ class Berlin2018Page extends Component {
               <div className="col-lg-9 col-md-8 order-12 order-md-1">
                 <div className="event p-t-90 p-b-90">
                   <div className="event__speaker-grid">
-                    {renderSections(learningSessionSections, {
+                    {this.renderSections(learningSessionSections, {
                       handleTalkInView: (t) => this.handleTalkInView(t),
+                      activeTalk: this.state.talk,
                     })}
                   </div>
                 </div>

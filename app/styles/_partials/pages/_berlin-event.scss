@@ -38,12 +38,12 @@
 
     &:nth-of-type(even) {
       #{$c}__talk__media {
-        @media (min-width: 992px) {
+        @media (min-width: 1198px) {
           order: 2;
         }
       }
       #{$c}__talk__details {
-        @media (min-width: 992px) {
+        @media (min-width: 1198px) {
           order: 1;
         }
       }
@@ -134,6 +134,9 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+      @media (max-width: 1198px) {
+        padding: 20px 0 0;
+      }
       h3 {
         margin: 0;
         a {
@@ -160,7 +163,7 @@
       margin-bottom: 0;
     }
 
-    &:not(:last-of-type){
+    &:not(:last-of-type) {
       padding-bottom: 10px;
       margin-bottom: 10px;
     }
@@ -252,24 +255,31 @@
 
 .event__modal {
   &__talk {
+    max-height: 100vh;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    //margin-bottom: 20vh;
-    //margin-left: 10vw;
-    //margin-right: 10vw;
     top: 0;
     left: 0;
+    $modal-content-width: 80%;
     &__title {
       color: white;
-      width: 90%;
+      width: $modal-content-width;
+      padding: 40px 20px 20px 20px;
+      @media (max-width: 992px) {
+        width: 100%;
+        padding-right: 80px;
+      }
     }
     &__content {
-      width: 90%;
-      //flex-grow: 1;
+      width: $modal-content-width;
+      flex-grow: 1;
       display: flex;
+      @media (max-width: 992px) {
+        width: 100%;
+      }
       .player-wrapper {
         position: relative;
         padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
@@ -281,9 +291,13 @@
         top: 0;
         left: 0;
       }
-      .event__talk__speakers__container{
+      .event__talk__speakers__container {
         padding-top: 40px;
-        *{
+        @media (max-width: 992px) {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        * {
           color: white !important;
           text-align: left;
         }
