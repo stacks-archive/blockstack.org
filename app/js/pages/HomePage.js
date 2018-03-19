@@ -58,9 +58,9 @@ const HomePage = () => {
 
         <section className="app-store">
           <div className="container">
-            <h3 className="mb-5 mt-1 mt-md-5">Apps built on Blockstack</h3>
+            <h3 className="mb-5 mt-1 mt-md-5 text-center">Decentralized apps built on Blockstack</h3>
             <div className="row">
-              <div className="col-lg-9 order-first order-md-last">
+              <div className="col-lg-10 offset-md-1">
                 <div className="app-store-section">
                   <p>
                     <h3>Featured Apps</h3>
@@ -188,27 +188,6 @@ const HomePage = () => {
                         </a>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 order-last order-md-first">
-                <div className="app-store-sidebar mr-4">
-                  <p>
-                    <strong>Perfect for:</strong>
-                  </p>
-                  <ul>
-                    <li>Keeping your privacy</li>
-                    <li>Using cryptocurrency</li>
-                    <li>Freedom of speech</li>
-                  </ul>
-                  <div className="d-none d-md-block">
-                    <p className="m-b-1">Are you a developer?</p>
-                    <Link
-                      to="/tutorials"
-                      className="btn btn-sm btn-outline-primary btn-sidebar btn-block"
-                    >
-                      View tutorials
-                    </Link>
                   </div>
                 </div>
               </div>

@@ -56,10 +56,7 @@ class Header extends Component {
     return (
       <div>
         <nav className="navbar navbar-expand-md">
-          <Link className="navbar-brand brand-bug" to="/">
-            <img src="/images/logos/blockstack-bug-icon.svg" />
-          </Link>
-          <Link className="navbar-brand brand-logo" to="/">
+          <Link className="navbar-brand" to="/">
             <img src="/images/logos/blockstack-bug.svg" />
           </Link>
           <button

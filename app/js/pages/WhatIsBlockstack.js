@@ -11,7 +11,7 @@ const WhatIsBlockstack = () => {
         <section className="jumbotron jumbotron-fluid text-center">
           <div className="container">
             <h1 className="page-heading mx-auto">What is Blockstack?</h1>
-            <p style={{ maxWidth: '410px' }} className="mb-5 mx-auto">
+            <p className="mb-5 mx-auto page-heading-subtext">
               Blockstack is a new internet for decentralized apps where users own their data.
               Blockstack{`'`}s platform helps entrepreneurs
               and engineers build these apps and deliver better end-user
@@ -189,7 +189,7 @@ const WhatIsBlockstack = () => {
             <h1 className="page-heading mx-auto" style={{ maxWidth: '550px' }}>
               Join the new internet
             </h1>
-            <p style={{ maxWidth: '410px' }} className="mb-5 mx-auto">
+            <p className="mb-5 mx-auto page-heading-subtext">
               We envision a decentralized internet where users take control of
               their own identity and data, without having to rely on
               intermediaries.

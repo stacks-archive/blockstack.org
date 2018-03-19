@@ -1129,19 +1129,6 @@ footer a:hover, footer a:focus, footer a:active {
   width: 164px;
 }
 
-.brand-bug {
-  margin-right: 1rem;
-}
-
-.brand-bug img {
-  width: 30px;
-  position: relative;
-}
-
-.brand-logo {
-  display: none;
-}
-
 .nav-item {
   margin-left: 0;
   line-height: 36px;
@@ -1353,6 +1340,9 @@ pre {
   font-weight: 800;
   max-width: 400px;
 }
+.page-heading-subtext {
+  max-width: 500px;
+}
 
 .video-thumbnail {
   width: 320px;
@@ -1428,10 +1418,12 @@ pre {
   font-size: 1.2rem;
   margin-bottom:40px;
   font-weight:bold;
+  text-align: center;
 }
 .app-store-app {
   margin-bottom: 3rem;
   cursor: pointer;
+  text-align: center;
 }
 .app-store-app img {
   width: 70px;
@@ -3191,14 +3183,6 @@ pre {
   .navbar-nav {
     margin-top: 0;
     padding-bottom: 0;
-  }
-
-  .brand-bug {
-    display: none;
-  }
-
-  .brand-logo {
-    display: initial;
   }
 
   .navbar-brand img {
