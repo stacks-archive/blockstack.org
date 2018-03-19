@@ -10,6 +10,7 @@ const data = [
     talkTitle: 'Web 3, and Decentralized Apps',
     headshot:
       'https://blockstack.imgix.net/7a92e818-1126-4e5e-a9e0-7fc5e75da3b3_ryan+shea_blockstack_founder.jpg',
+    thumbnail: 'https://blockstack.imgix.net/3865618c-8dd2-4917-a684-97bc01f5620c__3020149.jpg'
   },
   {
     name: 'Dr. Muneeb Ali',
@@ -164,6 +165,8 @@ const data = [
     talkTitle: 'Blockstack Identity & Authentication',
     headshot:
       'https://blockstack.imgix.net/d70de42e-5056-4cec-af87-55ab20055c5d_larry.jpg',
+    thumbnail:
+      'https://blockstack.imgix.net/fe4585e7-eeec-4569-8548-4bd0489c049c_p3010027.jpg',
   },
   {
     name: 'Nick Szabo',
@@ -283,6 +286,8 @@ const data = [
     time: '1:15 PM',
     talkTitle:
       'Approaching Infinity: Governance & The Case for Experimentation',
+    thumbnail:
+      'https://blockstack.imgix.net/4fa17866-fc54-4ed5-9c32-b645b9b8d3b6__3010072.jpg',
   },
   {
     name: 'Edward Snowden',
@@ -370,6 +375,8 @@ const data = [
     talkTitle: 'Casa: Premium HODL Software',
     headshot:
       'https://blockstack.imgix.net/99237e31-fc8e-4829-bcdb-520926e9b84b_jeremy+welch_casa+app_founder.jpg',
+    thumbnail:
+      'https://blockstack.imgix.net/7041e967-22c5-46e6-9949-20af88beb84d_p3020646.jpg',
   },
   {
     name: 'Justin Carter',
@@ -407,6 +414,8 @@ const data = [
     talkTitle: 'Symmitree',
     headshot:
       'https://blockstack.imgix.net/1b23460f-82ce-44ee-a534-645ab7d65a48_aneela+quresh.jpeg',
+    thumbnail:
+      'https://blockstack.imgix.net/adfcda33-d24f-4037-8817-3f4e993c5eca_p3020711.jpg',
   },
   {
     name: 'Ryan Wells',
@@ -431,6 +440,8 @@ const data = [
     talkTitle: 'Coins',
     headshot:
       'https://blockstack.imgix.net/e52ac454-e79a-4908-af9e-48397622b685_thomas+osmonson.png',
+    thumbnail:
+      'https://blockstack.imgix.net/85393293-e8ec-43b1-89d3-0865e095241c_p3020742.jpg',
   },
   {
     name: 'Aron Beierschmitt',
@@ -442,6 +453,8 @@ const data = [
     talkTitle: 'Postly',
     headshot:
       'https://blockstack.imgix.net/de91f237-4302-456f-bfcf-b14981e43aaf_aron+beierschmitt.png',
+    thumbnail:
+      'https://blockstack.imgix.net/083b193e-9c85-42b0-aecd-4ff7ae91b54e_p3020748.jpg',
   },
   {
     name: 'Dirk Lueth',
@@ -453,6 +466,7 @@ const data = [
     talkTitle: 'Global Content Network',
     headshot:
       'https://blockstack.imgix.net/09f086c3-d75d-488b-8253-fd37ba5aed01_dirk+leuth.png',
+    thumbnail: 'https://blockstack.imgix.net/e4570a40-fff2-4ceb-a7d4-de79dc41a23f_p3020756.jpg'
   },
   {
     name: 'Justin Hunter',
@@ -477,6 +491,8 @@ const data = [
     talkTitle: 'Prism',
     headshot:
       'https://blockstack.imgix.net/2eec7368-f212-4cf1-b671-89322ab470ff_nk5t8iob_400x400.jpg',
+    thumbnail:
+      'https://blockstack.imgix.net/75f86197-ae3c-4e0c-82d7-9d288284d4a2_p3020792.jpg',
   },
   {
     name: 'Matt Moody',
@@ -538,6 +554,8 @@ const data = [
     talkTitle: 'Filecoin',
     headshot:
       'https://blockstack.imgix.net/81c8bdfc-fe1b-4aff-8c18-f86a24236608_juan+benet.png',
+    thumbnail:
+      'https://blockstack.imgix.net/9dabcfa1-89a9-4d30-a994-1ef46fdb2ebb_p3020893.jpg',
   },
   {
     name: 'Felix Petersen',
@@ -549,6 +567,7 @@ const data = [
     talkTitle: 'Berlin Eco-System & What the Future Holds...',
     headshot:
       'https://blockstack.imgix.net/66cb56ee-352d-46e2-86ec-a9ac10dcb7e4_felix_petersen.jpg',
+    thumbnail: 'https://blockstack.imgix.net/796fc327-d5a6-4215-a221-d27d4de5eed4_p3020906.jpg'
   },
   {
     name: 'Ryan Shea',
