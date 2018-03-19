@@ -13,7 +13,7 @@ function updatePosts(postPages) {
   return {
     type: UPDATE_POSTS,
     posts: posts,
-    postObject: postObject
+    postObject: postObject,
   }
 }
 
@@ -26,35 +26,36 @@ function updatePosts(postPages) {
 */
 
 function fetchPosts() {
-  return dispatch => {
+  return (dispatch) => {
     const urls = [
       'https://blockstack-site-api.herokuapp.com/v1/blog-rss?page=1',
       'https://blockstack-site-api.herokuapp.com/v1/blog-rss?page=2',
     ]
 
-    const promises = urls.map(url =>
+    const promises = urls.map((url) =>
       fetch(url)
-      .then(response => response.text())
-      .then(responseText => getAllPostsFromRSS(responseText))
+        .then((response) => response.text())
+        .then((responseText) => getAllPostsFromRSS(responseText)),
     )
 
-    Promise.all(promises).then(results => {
-      dispatch(updatePosts(results))
-    })
-    .catch((error) => {
-      console.warn(error)
-    })    
+    Promise.all(promises)
+      .then((results) => {
+        dispatch(updatePosts(results))
+      })
+      .catch((error) => {
+        console.warn(error)
+      })
   }
 }
 
 export const BlogActions = {
   updatePosts: updatePosts,
-  fetchPosts: fetchPosts
+  fetchPosts: fetchPosts,
 }
 
 const initialState = {
   posts: [],
-  postObject: {}
+  postObject: {},
 }
 
 export function BlogReducer(state = initialState, action) {

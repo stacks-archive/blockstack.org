@@ -4,27 +4,26 @@
   "author": "Blockstack Inc <admin@blockstack.com>",
   "description": "The website for the Blockstack open source project",
   "scripts": {
-    "dev": "npm run fetch-docs; gulp dev",
-    "prod": "npm run fetch-docs; gulp prod",
+    "build": "npm run fetch-docs; gulp prod",
     "build-docs": "npm run fetch-docs; gulp buildDocs",
+    "dev": "npm run fetch-docs; gulp dev",
     "fetch-docs": "git submodule init; git submodule update --remote",
-    "postinstall": "cd ./node_modules/highlight.js && npm i && node ./tools/build.js :common"
+    "format": "prettier --write \"app/**/*.js\" && echo -e '\\033[0;32m'💅 Just use prettier'\\033[0m'",
+    "postinstall": "cd ./node_modules/highlight.js && npm i && node ./tools/build.js :common",
+    "prod": "npm run build",
+    "start": "serve ./build --single"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/blockstack/blockstack.org.git"
   },
   "keywords": [
-    "gulp",
+    "boilerplate",
     "browserify",
-    "react",
-    "boilerplate"
+    "gulp",
+    "react"
   ],
   "private": true,
-  "engines": {
-    "node": "^6.1.0",
-    "npm": "^4.0.3"
-  },
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-core": "^5.8.38",
@@ -61,7 +60,8 @@
     "postcss-modules-extract-imports": "^1.0.0",
     "postcss-modules-local-by-default": "^1.0.1",
     "postcss-modules-scope": "^1.0.0",
-    "postcss-modules-values": "^1.1.1"
+    "postcss-modules-values": "^1.1.1",
+    "prettier": "^1.11.1"
   },
   "dependencies": {
     "async": "^2.5.0",
@@ -79,13 +79,13 @@
     "lodash": "^3.10.1",
     "marked": "^0.3.6",
     "popper.js": "^1.12.5",
-    "prop-types": "^15.5.8",
+    "prop-types": "^15.6.1",
     "query-string": "^4.3.2",
-    "react": "^15.4.0",
+    "react": "^16.2.0",
     "react-addons-test-utils": "^15.4.1",
     "react-countdown-now": "^1.2.0",
-    "react-document-title": "^1.0.2",
-    "react-dom": "^15.4.0",
+    "react-document-title": "^2.0.3",
+    "react-dom": "^16.2.0",
     "react-helmet": "^2.3.1",
     "react-redux": "^5.0.4",
     "react-remarkable": "^1.1.1",
@@ -100,6 +100,7 @@
     "request": "^2.69.0",
     "rss-parser": "^2.5.2",
     "run-sequence": "^1.1.1",
+    "serve": "^6.5.3",
     "should": "^7.1.0",
     "sinon": "^1.17.1",
     "superagent": "^1.2.0",

@@ -21,23 +21,23 @@ function updateStats(stats) {
 }
 
 function fetchStats() {
-  return dispatch => {
+  return (dispatch) => {
     const url = 'https://blockstack-site-api.herokuapp.com/v1/stats'
     fetch(url)
-    .then((response) => response.text())
-    .then((responseText) => JSON.parse(responseText))
-    .then((responseJSON) => {
-      dispatch(updateStats(responseJSON))
-    })
-    .catch((error) => {
-      console.warn(error)
-    })
+      .then((response) => response.text())
+      .then((responseText) => JSON.parse(responseText))
+      .then((responseJSON) => {
+        dispatch(updateStats(responseJSON))
+      })
+      .catch((error) => {
+        console.warn(error)
+      })
   }
 }
 
 export const StatsActions = {
   updateStats: updateStats,
-  fetchStats: fetchStats
+  fetchStats: fetchStats,
 }
 
 const initialState = {
