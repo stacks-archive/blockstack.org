@@ -21,6 +21,8 @@ const data = [
     talkTitle: 'The end of cloud computing',
     headshot:
       'https://blockstack.imgix.net/479a5d92-8812-4768-a31b-d7d074f2aa56_muneeb+ali_blockstack_founder.png',
+    thumbnail:
+      'https://blockstack.imgix.net/3281d629-85c1-4544-9613-4a7f44759522__3020160.jpg',
   },
   {
     name: 'Ken Seiff',
@@ -32,6 +34,8 @@ const data = [
     talkTitle: 'Interview with Melanie Shapiro and Ken Seiff',
     headshot:
       'https://blockstack.imgix.net/2a6d9dd1-9675-4f78-85f1-6a7778f1d06a_ken-seiff.jpg',
+    thumbnail:
+      'https://blockstack.imgix.net/820131fb-fe36-479c-8184-f402fda37fca_p3020314.jpg',
   },
   {
     name: 'Melanie Shapiro',
@@ -43,6 +47,8 @@ const data = [
     talkTitle: 'Interview with Melanie Shapiro and Ken Seiff',
     headshot:
       'https://blockstack.imgix.net/bb14fd78-52b2-4fa3-bc9a-9a7eb6a3a4e1_melanie.jpg',
+    thumbnail:
+      'https://blockstack.imgix.net/820131fb-fe36-479c-8184-f402fda37fca_p3020314.jpg',
   },
   {
     name: 'Dr. Jutta Steiner',
@@ -55,6 +61,8 @@ const data = [
       'Hello Web 3! the polkadot protocol, blockchain, & the bigger picture',
     headshot:
       'https://blockstack.imgix.net/9900ff64-1f63-4eba-bd7b-44bf8a7a5878_jutta_steiner.jpg',
+    thumbnail:
+      'https://blockstack.imgix.net/5ef4894c-becf-4c27-b7ee-f39575ba6aad_p3020348.jpg',
   },
   {
     name: 'Santiago Siri',
@@ -66,6 +74,8 @@ const data = [
     talkTitle: 'Crypto Politics: Beyond the Nation-State',
     headshot:
       'https://blockstack.imgix.net/f1a24617-447f-486c-b66d-5b5eb36f20a4_santiago_siri.width-1360.jpg',
+    thumbnail:
+      'https://blockstack.imgix.net/7db4574f-bc95-4021-ace3-cbd2a63df418_p3020367.jpg',
   },
   {
     name: 'Dr. Steven "Seven" Waterhouse',
@@ -78,6 +88,8 @@ const data = [
       'How can decentralized technologies address centralized forms of power and control?',
     headshot:
       'https://blockstack.imgix.net/f0e01716-d771-4cf9-9852-4b0b46f005fd_steve_orchid.jpg',
+    thumbnail:
+      'https://blockstack.imgix.net/cca8966a-43e7-4091-9706-4504d0a553ea_p3020368.jpg',
   },
   {
     name: 'Andy Bromberg',
@@ -89,6 +101,8 @@ const data = [
     talkTitle: 'Investor Panel: Investing in a Decentralized Eco-System',
     headshot:
       'https://blockstack.imgix.net/d976b947-36d2-4585-9eb8-368bd97210ea_andy_bromberg_headshot.jpg',
+    thumbnail:
+      'https://blockstack.imgix.net/fc33b466-c6ed-4731-ae91-6b5805ebcdd1__3020192.jpg',
   },
   {
     name: 'Ari Paul',
@@ -100,6 +114,8 @@ const data = [
     talkTitle: 'Investor Panel: Investing in a Decentralized Eco-System',
     headshot:
       'https://blockstack.imgix.net/ac9f4a81-58a3-4118-9d18-bdab1f1d9993_ari+paul.png',
+    thumbnail:
+      'https://blockstack.imgix.net/fc33b466-c6ed-4731-ae91-6b5805ebcdd1__3020192.jpg',
   },
   {
     name: 'Brittany Laughlin',
@@ -111,6 +127,8 @@ const data = [
     talkTitle: 'Investor Panel: Investing in a Decentralized Eco-System',
     headshot:
       'https://blockstack.imgix.net/5909e678-a6dd-495c-93dc-1f42e7cd5705_brittany+laughlin.jpg',
+    thumbnail:
+      'https://blockstack.imgix.net/fc33b466-c6ed-4731-ae91-6b5805ebcdd1__3020192.jpg',
   },
   {
     name: 'William Mougayar',
@@ -133,6 +151,8 @@ const data = [
     talkTitle: 'Investor Panel: Investing in a Decentralized Eco-System',
     headshot:
       'https://blockstack.imgix.net/400f2ce0-144f-40e0-9336-9a33208960d0_richardmuirhead.jpg',
+    thumbnail:
+      'https://blockstack.imgix.net/fc33b466-c6ed-4731-ae91-6b5805ebcdd1__3020192.jpg',
   },
   {
     name: 'Larry Salibra',
@@ -155,6 +175,8 @@ const data = [
     talkTitle: 'Social Scalability and Blockchains',
     headshot:
       'https://blockstack.imgix.net/66fff681-9862-4fdb-b57a-2677670d1a69_nick-szabo.jpg',
+    thumbnail:
+      'https://blockstack.imgix.net/d4ec0b1a-f241-40bc-9e2f-9d67f53a5df4_p3020426.jpg',
   },
   {
     name: 'Jude Nelson',
@@ -164,6 +186,8 @@ const data = [
     day: 'March 1',
     time: '11:25 AM',
     talkTitle: 'Subdomains',
+    thumbnail:
+      'https://blockstack.imgix.net/086b3de7-1375-4acf-87dc-9ef98ac406bd__3010031.jpg',
   },
   {
     name: 'Elizabeth Stark',
@@ -175,6 +199,8 @@ const data = [
     talkTitle: 'Elizabeth Stark interview with Larry Salibra.',
     headshot:
       'https://blockstack.imgix.net/bb29c187-86d9-4af5-af62-a250dfec9023_elizabeth+stark_lightning+labs_co-founder+and+ceo.jpeg',
+    thumbnail:
+      'https://blockstack.imgix.net/f3e90d77-e33d-499f-a2ac-90f90272ec45_p3020451.jpg',
   },
   {
     name: 'Larry Salibra',
@@ -186,6 +212,8 @@ const data = [
     talkTitle: 'Elizabeth Stark interview with Larry Salibra.',
     headshot:
       'https://blockstack.imgix.net/d70de42e-5056-4cec-af87-55ab20055c5d_larry.jpg',
+    thumbnail:
+      'https://blockstack.imgix.net/f3e90d77-e33d-499f-a2ac-90f90272ec45_p3020451.jpg',
   },
   {
     name: 'Ken Liao',
@@ -195,6 +223,8 @@ const data = [
     day: 'March 1',
     time: '11:45 AM',
     talkTitle: 'Building a Blockstack App',
+    thumbnail:
+      'https://blockstack.imgix.net/cfa9d7f5-6f37-45a8-aa0e-7a6a90e554b6_p3010052.jpg',
   },
   {
     name: 'Ari Paul',
@@ -206,6 +236,8 @@ const data = [
     talkTitle: 'Stable Coins Interview',
     headshot:
       'https://blockstack.imgix.net/ac9f4a81-58a3-4118-9d18-bdab1f1d9993_ari+paul.png',
+    thumbnail:
+      'https://blockstack.imgix.net/e30c90b5-1869-4bca-8fe8-377fd306e988_p3020480.jpg',
   },
   {
     name: 'Nader Al-Naji',
@@ -217,6 +249,8 @@ const data = [
     talkTitle: 'Stable Coins Interview',
     headshot:
       'https://blockstack.imgix.net/975731a9-abea-42aa-b17c-aee8698153c8_nader.jpg',
+    thumbnail:
+      'https://blockstack.imgix.net/e30c90b5-1869-4bca-8fe8-377fd306e988_p3020480.jpg',
   },
   {
     name: 'Aaron Blankstein',
@@ -226,6 +260,8 @@ const data = [
     day: 'March 1',
     time: '12:05 PM',
     talkTitle: 'Gaia Storage',
+    thumbnail:
+      'https://blockstack.imgix.net/45cd97fb-7c8a-4119-9242-148ae945bd0f_p3010081.jpg',
   },
   {
     name: 'Chase Wackerfuss',
@@ -235,6 +271,8 @@ const data = [
     day: 'March 1',
     time: '12:55 PM',
     talkTitle: 'Blockstack.js Storage Strategies',
+    thumbnail:
+      'https://blockstack.imgix.net/fcdf4cc7-6d69-40af-bd65-29604a10ac5f_p3010095.jpg',
   },
   {
     name: 'Brett Sun',
@@ -256,7 +294,8 @@ const data = [
     talkTitle: 'Edward Snowden Interview with Peter Van Valkenburgh',
     headshot:
       'https://blockstack.imgix.net/29ba0191-dcba-44bb-95cf-f21372358219_edward+snowden_former+u.s+intelligence+officer+and+whistleblower.jpg',
-    span: 2,
+    thumbnail:
+      'https://blockstack.imgix.net/753171c2-ef37-429a-babb-686f9f031c83__3020258.jpg',
   },
   {
     name: 'Peter Van Valkenburgh',
@@ -268,6 +307,8 @@ const data = [
     talkTitle: 'Edward Snowden Interview with Peter Van Valkenburgh',
     headshot:
       'https://blockstack.imgix.net/dd9fb610-ba5c-400d-9e6a-86df26347ab0_peter-van-valkenburgh.jpg',
+    thumbnail:
+      'https://blockstack.imgix.net/753171c2-ef37-429a-babb-686f9f031c83__3020258.jpg',
   },
   {
     name: 'Xan Ditkoff',
@@ -277,6 +318,8 @@ const data = [
     day: 'March 1',
     time: '1:35 PM',
     talkTitle: 'Resources for Building Apps on Blockstack',
+    thumbnail:
+      'https://blockstack.imgix.net/befb557b-ac35-4c67-9aaf-dbb578552274_p3010098.jpg',
   },
   {
     name: 'Albert Wenger',
@@ -288,6 +331,8 @@ const data = [
     talkTitle: 'Decentralization: Two Possible Futures',
     headshot:
       'https://blockstack.imgix.net/80d1f4de-541e-415a-b97f-06ba878ab84c_albert+wenger_union+square+venture_general+partner.png',
+    thumbnail:
+      'https://blockstack.imgix.net/8ad8589d-e8df-44fe-b6ef-d30f9e4d38a8_p3020586.jpg',
   },
   {
     name: 'George Gilder',
@@ -299,6 +344,8 @@ const data = [
     talkTitle: 'Life After Google',
     headshot:
       'https://blockstack.imgix.net/2f9dc725-549d-469c-bf41-585f7254900d_george+gilder.jpg',
+    thumbnail:
+      'https://blockstack.imgix.net/f8ec770a-7963-4c7f-b360-d3cb26ef3ae9_p3020608.jpg',
   },
   {
     name: 'Patrick Stanley',
@@ -310,6 +357,8 @@ const data = [
     talkTitle: "Intro to Blockstack Live App Demo's",
     headshot:
       'https://blockstack.imgix.net/b2045dc2-3815-4cfe-9fa3-18e85ddcfd5f_bikawbtr_400x400.jpg',
+    thumbnail:
+      'https://blockstack.imgix.net/96920394-d71e-414f-9a4b-59114abc66c5_p3020643.jpg',
   },
   {
     name: 'Jeremy Welch',
@@ -332,6 +381,8 @@ const data = [
     talkTitle: 'Misthos',
     headshot:
       'https://blockstack.imgix.net/ebfafd1e-8e36-4099-8556-d443b5f4c724_justin+carter.png',
+    thumbnail:
+      'https://blockstack.imgix.net/ab40a620-7611-43cd-bcf3-f4bc36941289_p3020681.jpg',
   },
   {
     name: 'Bill Hessert',
@@ -343,6 +394,8 @@ const data = [
     talkTitle: 'DotPodcast',
     headshot:
       'https://blockstack.imgix.net/243e2074-8e14-4a28-87d3-ac555a6498e6_bill+hessert.jpeg',
+    thumbnail:
+      'https://blockstack.imgix.net/2733aa80-6796-4228-ab47-fc69604b87dc_p3020695.jpg',
   },
   {
     name: 'Aneela Qureshi',
@@ -365,6 +418,8 @@ const data = [
     talkTitle: 'Health Here',
     headshot:
       'https://blockstack.imgix.net/e5e5ecf2-6c3c-464c-8dee-a186d368cdb5_ryan+wells+2.png',
+    thumbnail:
+      'https://blockstack.imgix.net/c226dfee-02c7-4498-be98-2767d658ab52_p3020727.jpg',
   },
   {
     name: 'Thomas Osmonson',
@@ -409,6 +464,8 @@ const data = [
     talkTitle: 'Graphite',
     headshot:
       'https://blockstack.imgix.net/a9ad69ea-39c3-4025-9db0-cf094fd7b3d6_justin+hunter.png',
+    thumbnail:
+      'https://blockstack.imgix.net/5b52b9cd-b44f-4733-a023-01076a6a9601_p3020765.jpg',
   },
   {
     name: 'Adam Breckler',
@@ -431,6 +488,8 @@ const data = [
     talkTitle: 'Bellwethr',
     headshot:
       'https://blockstack.imgix.net/f2d048f0-cdc9-48b1-aa4a-9359315ce0f4_matt+moody.png',
+    thumbnail:
+      'https://blockstack.imgix.net/b5b73ba8-a9f3-4871-9a6d-6df5b0301e21_p3020804.jpg',
   },
   {
     name: 'Dieter Shirley',
@@ -442,6 +501,8 @@ const data = [
     talkTitle: 'A Conversation on Digital Art & Cryptokitties',
     headshot:
       'https://blockstack.imgix.net/3f2d0d11-5668-4dc6-b97f-76634e8d2327_dieter+wesbited+edited+2+%28no+hat%29.png',
+    thumbnail:
+      'https://blockstack.imgix.net/5ba339e1-d9cf-4853-b7c0-4a0cb7bf7a6f_p3020868.jpg',
   },
   {
     name: 'Mik Naayem',
@@ -453,6 +514,8 @@ const data = [
     talkTitle: 'A Conversation on Digital Art & Cryptokitties',
     headshot:
       'https://blockstack.imgix.net/f672e139-35b9-4fd2-ad88-b3228bc08463_mik+website+%28edited%29.png',
+    thumbnail:
+      'https://blockstack.imgix.net/5ba339e1-d9cf-4853-b7c0-4a0cb7bf7a6f_p3020868.jpg',
   },
   {
     name: 'Chris Burniske',
@@ -497,6 +560,8 @@ const data = [
     talkTitle: 'Blockstack Berlin Closing Remarks',
     headshot:
       'https://blockstack.imgix.net/7a92e818-1126-4e5e-a9e0-7fc5e75da3b3_ryan+shea_blockstack_founder.jpg',
+    thumbnail:
+      'https://blockstack.imgix.net/e4fa13f5-9dc9-44f5-8d16-52727e338f50_p3020918.jpg',
   },
   {
     name: 'Dr. Muneeb Ali',
@@ -508,6 +573,8 @@ const data = [
     talkTitle: 'Blockstack Berlin Closing Remarks',
     headshot:
       'https://blockstack.imgix.net/479a5d92-8812-4768-a31b-d7d074f2aa56_muneeb+ali_blockstack_founder.png',
+    thumbnail:
+      'https://blockstack.imgix.net/e4fa13f5-9dc9-44f5-8d16-52727e338f50_p3020918.jpg',
   },
 ]
 

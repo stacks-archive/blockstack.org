@@ -99,15 +99,15 @@ const mainEventSections = [
   },
   {
     title: 'After Lunch Sessions',
-    items: filterIndex(mainEvent, 9, 11),
+    items: filterIndex(mainEvent, 9, 12),
   },
   {
     title: 'App Demos',
-    items: filterIndex(mainEvent, 12, 23),
+    items: filterIndex(mainEvent, 13, 24),
   },
   {
     title: 'Late Afternoon Sessions',
-    items: filterIndex(mainEvent, 24, 28),
+    items: filterIndex(mainEvent, 25, 28),
   },
 ]
 const learningSessionSections = [

@@ -20,6 +20,10 @@ class SignatureTalks extends React.PureComponent {
       const speakers = allData.filter(thisTalk)
       const classes = 'event__talk'
 
+      const imageSrc = talk.thumbnail
+        ? talk.thumbnail + '?auto=format&w=800'
+        : 'https://blockstack.imgix.net/7c53ed6a-c4eb-4d99-94fc-2e2ed9f62652_p3020241.jpg?blur=160.2&auto=format&w=800'
+
       return (
         <Fragment key={i}>
           <div className={classes} id={slugify(title)} key={i}>
@@ -31,10 +35,7 @@ class SignatureTalks extends React.PureComponent {
                 }
               >
                 <div className="event__talk__media__wrapper">
-                  <Image
-                    src="https://blockstack.imgix.net/7c53ed6a-c4eb-4d99-94fc-2e2ed9f62652_p3020241.jpg?auto=format&w=1400"
-                    alt={title}
-                  />
+                  <Image src={`${imageSrc}?auto=format&w=800`} alt={title} />
                   <div className="event__talk__media__overlay">
                     <PlayIcon />
                   </div>
