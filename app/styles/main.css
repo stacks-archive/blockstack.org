@@ -2135,6 +2135,12 @@ pre {
   padding: 0 0 1rem 2rem;
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 
 /* Sidebar navigation */
 .nav-sidebar {
