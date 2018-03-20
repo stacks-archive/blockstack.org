@@ -193,7 +193,7 @@ const data = [
     twitter: '@larrysalibra',
     day: 'March 1',
     time: '11:05 AM',
-    talkTitle: 'Blockstack Identity & Authentication',
+    talkTitle: 'Blockstack Authentication & Identity',
     headshot:
       'https://blockstack.imgix.net/d70de42e-5056-4cec-af87-55ab20055c5d_larry.jpg',
     thumbnail:
@@ -208,7 +208,7 @@ const data = [
     twitter: '@JudeCNelson',
     day: 'March 1',
     time: '11:25 AM',
-    talkTitle: 'Subdomains',
+    talkTitle: 'Subdomains: Scalable User Registration',
     thumbnail:
       'https://blockstack.imgix.net/086b3de7-1375-4acf-87dc-9ef98ac406bd__3010031.jpg',
     headshot:
@@ -298,7 +298,7 @@ const data = [
     twitter: '@AaronBlankstein',
     day: 'March 1',
     time: '12:05 PM',
-    talkTitle: 'Gaia Storage',
+    talkTitle: 'Gaia Storage: User Owned Data',
     thumbnail:
       'https://blockstack.imgix.net/45cd97fb-7c8a-4119-9242-148ae945bd0f_p3010081.jpg',
     headshot:
@@ -312,7 +312,7 @@ const data = [
     twitter: '@vockerfoos',
     day: 'March 1',
     time: '12:55 PM',
-    talkTitle: 'Blockstack.js Storage Strategies',
+    talkTitle: 'Managing Data in Gaia',
     thumbnail:
       'https://blockstack.imgix.net/fcdf4cc7-6d69-40af-bd65-29604a10ac5f_p3010095.jpg',
     headshot:
