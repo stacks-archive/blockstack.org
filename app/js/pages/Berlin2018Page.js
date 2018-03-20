@@ -11,6 +11,7 @@ import Image from '../components/Image'
 import Modal from '../components/Modal'
 import YouTubePlayer from 'react-player/lib/players/YouTube'
 import Speakers from '../components/Speakers'
+import { SECTIONS } from '../datastore/berlin-event-data'
 
 const sliderSettings = {
   className: 'photo-slider center',
@@ -73,18 +74,8 @@ function removeDuplicates(myArr, prop) {
   })
 }
 
-const filterIndex = (data, min, max) =>
-  data.filter((item, i) => {
-    if (min && max) {
-      return i >= min && i <= max
-    }
-    if (min && !max) {
-      return i >= min
-    }
-    if (!min && max) {
-      return i <= max
-    }
-  })
+const filterTalksBySection = (data, section) =>
+  data.filter((talk) => talk.section === section)
 
 const filteredData = [...removeDuplicates(berlinData, 'talkTitle')]
 
@@ -95,19 +86,19 @@ const learningSessions = filteredData.filter((day) => day.day === 'March 1')
 const mainEventSections = [
   {
     title: 'Morning Sessions',
-    items: filterIndex(mainEvent, 0, 8),
+    items: filterTalksBySection(mainEvent, SECTIONS.MORNING),
   },
   {
-    title: 'After Lunch Sessions',
-    items: filterIndex(mainEvent, 9, 12),
+    title: 'Early Afternoon Sessions',
+    items: filterTalksBySection(mainEvent, SECTIONS.EARLY_AFTERNOON),
   },
   {
     title: 'App Demos',
-    items: filterIndex(mainEvent, 13, 24),
+    items: filterTalksBySection(mainEvent, SECTIONS.APPDEMOS),
   },
   {
     title: 'Late Afternoon Sessions',
-    items: filterIndex(mainEvent, 25, 28),
+    items: filterTalksBySection(mainEvent, SECTIONS.LATE_AFTERNOON),
   },
 ]
 const learningSessionSections = [

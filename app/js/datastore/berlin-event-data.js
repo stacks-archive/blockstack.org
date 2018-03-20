@@ -1,4 +1,10 @@
-import React from 'react'
+export const SECTIONS = {
+  MORNING: 'sections/morning',
+  EARLY_AFTERNOON: 'sections/early_afternoon',
+  APPDEMOS: 'sections/app_demos',
+  LATE_AFTERNOON: 'section/late_afternoon',
+  LEARNING: 'section/learning',
+}
 const data = [
   {
     name: 'Ryan Shea',
@@ -13,6 +19,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/3865618c-8dd2-4917-a684-97bc01f5620c__3020149.jpg',
     video: 'https://youtu.be/drRGGoYyKGs',
+    section: SECTIONS.MORNING,
   },
   {
     name: 'Dr. Muneeb Ali',
@@ -27,6 +34,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/3281d629-85c1-4544-9613-4a7f44759522__3020160.jpg',
     video: 'https://youtu.be/DTXd0ZYrnig',
+    section: SECTIONS.MORNING,
   },
   {
     name: 'Ken Seiff',
@@ -41,6 +49,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/820131fb-fe36-479c-8184-f402fda37fca_p3020314.jpg',
     video: 'https://youtu.be/vfJRXzypKtg',
+    section: SECTIONS.MORNING,
   },
   {
     name: 'Melanie Shapiro',
@@ -55,6 +64,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/820131fb-fe36-479c-8184-f402fda37fca_p3020314.jpg',
     video: 'https://youtu.be/vfJRXzypKtg',
+    section: SECTIONS.MORNING,
   },
   {
     name: 'Dr. Jutta Steiner',
@@ -70,6 +80,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/5ef4894c-becf-4c27-b7ee-f39575ba6aad_p3020348.jpg',
     video: 'https://youtu.be/yKj_t0DTQ0o',
+    section: SECTIONS.MORNING,
   },
   {
     name: 'Santiago Siri',
@@ -84,6 +95,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/7db4574f-bc95-4021-ace3-cbd2a63df418_p3020367.jpg',
     video: 'https://youtu.be/xqafNk_VsMM',
+    section: SECTIONS.MORNING,
   },
   {
     name: 'Dr. Steven "Seven" Waterhouse',
@@ -99,6 +111,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/cca8966a-43e7-4091-9706-4504d0a553ea_p3020368.jpg',
     video: 'https://youtu.be/iDHLyb7MESw',
+    section: SECTIONS.MORNING,
   },
   {
     name: 'Andy Bromberg',
@@ -113,6 +126,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/fc33b466-c6ed-4731-ae91-6b5805ebcdd1__3020192.jpg',
     video: 'https://youtu.be/KNIexltbmDo',
+    section: SECTIONS.MORNING,
   },
   {
     name: 'Ari Paul',
@@ -127,6 +141,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/fc33b466-c6ed-4731-ae91-6b5805ebcdd1__3020192.jpg',
     video: 'https://youtu.be/KNIexltbmDo',
+    section: SECTIONS.MORNING,
   },
   {
     name: 'Brittany Laughlin',
@@ -141,6 +156,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/fc33b466-c6ed-4731-ae91-6b5805ebcdd1__3020192.jpg',
     video: 'https://youtu.be/KNIexltbmDo',
+    section: SECTIONS.MORNING,
   },
   {
     name: 'William Mougayar',
@@ -153,6 +169,7 @@ const data = [
     headshot:
       'https://blockstack.imgix.net/0f41ec47-d4e6-458a-9406-19c8a3ada9da_william-mougayar.jpg',
     video: 'https://youtu.be/KNIexltbmDo',
+    section: SECTIONS.MORNING,
   },
   {
     name: 'Richard Muirhead',
@@ -167,6 +184,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/fc33b466-c6ed-4731-ae91-6b5805ebcdd1__3020192.jpg',
     video: 'https://youtu.be/KNIexltbmDo',
+    section: SECTIONS.MORNING,
   },
   {
     name: 'Larry Salibra',
@@ -181,6 +199,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/fe4585e7-eeec-4569-8548-4bd0489c049c_p3010027.jpg',
     video: 'https://youtu.be/ZXx2a9HeSO4',
+    section: SECTIONS.LEARNING,
   },
   {
     name: 'Jude Nelson',
@@ -195,6 +214,7 @@ const data = [
     headshot:
       'https://blockstack.imgix.net/22ddb05d-7121-464c-8fda-852a601c7fb3_judecn.jpeg',
     video: 'https://youtu.be/ffprmuFD_d8',
+    section: SECTIONS.LEARNING,
   },
   {
     name: 'Elizabeth Stark',
@@ -209,6 +229,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/f3e90d77-e33d-499f-a2ac-90f90272ec45_p3020451.jpg',
     video: 'https://youtu.be/9MVkxEdTDAQ',
+    section: SECTIONS.MORNING,
   },
   {
     name: 'Larry Salibra',
@@ -223,6 +244,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/f3e90d77-e33d-499f-a2ac-90f90272ec45_p3020451.jpg',
     video: 'https://youtu.be/9MVkxEdTDAQ',
+    section: SECTIONS.MORNING,
   },
   {
     name: 'Ken Liao',
@@ -237,6 +259,7 @@ const data = [
     headshot:
       'https://blockstack.imgix.net/3d8e50ec-8bfe-46c5-8059-7904d7eab041_ken-liao.jpg',
     video: 'https://youtu.be/kVY7pd01E7k',
+    section: SECTIONS.LEARNING,
   },
   {
     name: 'Ari Paul',
@@ -251,6 +274,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/e30c90b5-1869-4bca-8fe8-377fd306e988_p3020480.jpg',
     video: 'https://youtu.be/druDJcR2s7U',
+    section: SECTIONS.MORNING,
   },
   {
     name: 'Nader Al-Naji',
@@ -265,6 +289,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/e30c90b5-1869-4bca-8fe8-377fd306e988_p3020480.jpg',
     video: 'https://youtu.be/druDJcR2s7U',
+    section: SECTIONS.MORNING,
   },
   {
     name: 'Aaron Blankstein',
@@ -278,6 +303,7 @@ const data = [
       'https://blockstack.imgix.net/45cd97fb-7c8a-4119-9242-148ae945bd0f_p3010081.jpg',
     headshot:
       'https://blockstack.imgix.net/e1749ee6-b74a-44ef-a9d5-cdf2ccc12faa_aaron-blankstein.jpg',
+    section: SECTIONS.LEARNING,
   },
   {
     name: 'Chase Wackerfuss',
@@ -291,6 +317,7 @@ const data = [
       'https://blockstack.imgix.net/fcdf4cc7-6d69-40af-bd65-29604a10ac5f_p3010095.jpg',
     headshot:
       'https://blockstack.imgix.net/84843c40-b018-4b05-bc67-25882c525e96_chase-wackerfuss.jpg',
+    section: SECTIONS.LEARNING,
   },
   {
     name: 'Brett Sun',
@@ -303,7 +330,9 @@ const data = [
       'Approaching Infinity: Governance & The Case for Experimentation',
     thumbnail:
       'https://blockstack.imgix.net/4fa17866-fc54-4ed5-9c32-b645b9b8d3b6__3010072.jpg',
-    headshot: 'https://blockstack.imgix.net/da512f06-931c-4932-80a7-e5bbe016eebf_e95toqev_400x400.jpg'
+    headshot:
+      'https://blockstack.imgix.net/da512f06-931c-4932-80a7-e5bbe016eebf_e95toqev_400x400.jpg',
+    section: SECTIONS.LEARNING,
   },
   {
     name: 'Edward Snowden',
@@ -318,6 +347,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/753171c2-ef37-429a-babb-686f9f031c83__3020258.jpg',
     video: 'https://youtu.be/YUhFf6K-SU8',
+    section: SECTIONS.EARLY_AFTERNOON,
   },
   {
     name: 'Peter Van Valkenburgh',
@@ -332,6 +362,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/753171c2-ef37-429a-babb-686f9f031c83__3020258.jpg',
     video: 'https://youtu.be/YUhFf6K-SU8',
+    section: SECTIONS.EARLY_AFTERNOON,
   },
   {
     name: 'Xan Ditkoff',
@@ -345,6 +376,7 @@ const data = [
       'https://blockstack.imgix.net/befb557b-ac35-4c67-9aaf-dbb578552274_p3010098.jpg',
     headshot:
       'https://blockstack.imgix.net/446f95fc-25d9-4bc4-8f1f-a1b3802c4e1f_xan-ditkoff.jpg',
+    section: SECTIONS.LEARNING,
   },
   {
     name: 'Albert Wenger',
@@ -359,6 +391,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/8ad8589d-e8df-44fe-b6ef-d30f9e4d38a8_p3020586.jpg',
     video: 'https://youtu.be/qaDKyzhJRoA',
+    section: SECTIONS.EARLY_AFTERNOON,
   },
   {
     name: 'George Gilder',
@@ -373,6 +406,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/f8ec770a-7963-4c7f-b360-d3cb26ef3ae9_p3020608.jpg',
     video: 'https://youtu.be/ZWKWbHmWAcY',
+    section: SECTIONS.EARLY_AFTERNOON,
   },
   {
     name: 'Patrick Stanley',
@@ -387,6 +421,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/96920394-d71e-414f-9a4b-59114abc66c5_p3020643.jpg',
     video: 'https://youtu.be/pdhVZ_s5kiQ',
+    section: SECTIONS.APPDEMOS,
   },
   {
     name: 'Jeremy Welch',
@@ -401,6 +436,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/7041e967-22c5-46e6-9949-20af88beb84d_p3020646.jpg',
     video: 'https://youtu.be/pi_ez7Hefq4',
+    section: SECTIONS.EARLY_AFTERNOON,
   },
   {
     name: 'Justin Carter',
@@ -415,6 +451,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/ab40a620-7611-43cd-bcf3-f4bc36941289_p3020681.jpg',
     video: 'https://youtu.be/lbntUEUvJTc',
+    section: SECTIONS.APPDEMOS,
   },
   {
     name: 'Bill Hessert',
@@ -429,6 +466,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/2733aa80-6796-4228-ab47-fc69604b87dc_p3020695.jpg',
     video: 'https://youtu.be/TbIaWvR37q0',
+    section: SECTIONS.APPDEMOS,
   },
   {
     name: 'Aneela Qureshi',
@@ -443,6 +481,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/adfcda33-d24f-4037-8817-3f4e993c5eca_p3020711.jpg',
     video: 'https://youtu.be/4YJQnfws7vo',
+    section: SECTIONS.APPDEMOS,
   },
   {
     name: 'Ryan Wells',
@@ -457,6 +496,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/c226dfee-02c7-4498-be98-2767d658ab52_p3020727.jpg',
     video: 'https://youtu.be/Qaf1AM7HhpE',
+    section: SECTIONS.APPDEMOS,
   },
   {
     name: 'Thomas Osmonson',
@@ -471,6 +511,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/85393293-e8ec-43b1-89d3-0865e095241c_p3020742.jpg',
     video: 'https://youtu.be/zvpVbv5aPuU',
+    section: SECTIONS.APPDEMOS,
   },
   {
     name: 'Aron Beierschmitt',
@@ -485,6 +526,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/083b193e-9c85-42b0-aecd-4ff7ae91b54e_p3020748.jpg',
     video: 'https://youtu.be/YzZhA8zFtI0',
+    section: SECTIONS.APPDEMOS,
   },
   {
     name: 'Dirk Lueth',
@@ -499,6 +541,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/e4570a40-fff2-4ceb-a7d4-de79dc41a23f_p3020756.jpg',
     video: 'https://youtu.be/wfPA9lONOHk',
+    section: SECTIONS.APPDEMOS,
   },
   {
     name: 'Justin Hunter',
@@ -513,6 +556,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/5b52b9cd-b44f-4733-a023-01076a6a9601_p3020765.jpg',
     video: 'https://youtu.be/71jvS8g1YWA',
+    section: SECTIONS.APPDEMOS,
   },
   {
     name: 'Adam Breckler',
@@ -527,6 +571,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/75f86197-ae3c-4e0c-82d7-9d288284d4a2_p3020792.jpg',
     video: 'https://youtu.be/2VQi56Nnvks',
+    section: SECTIONS.APPDEMOS,
   },
   {
     name: 'Matt Moody',
@@ -541,6 +586,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/b5b73ba8-a9f3-4871-9a6d-6df5b0301e21_p3020804.jpg',
     video: 'https://youtu.be/nOH9sxuFTlk',
+    section: SECTIONS.APPDEMOS,
   },
   {
     name: 'Dieter Shirley',
@@ -555,6 +601,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/5ba339e1-d9cf-4853-b7c0-4a0cb7bf7a6f_p3020868.jpg',
     video: 'https://youtu.be/vGEvmM3BhSY',
+    section: SECTIONS.LATE_AFTERNOON,
   },
   {
     name: 'Mik Naayem',
@@ -569,6 +616,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/5ba339e1-d9cf-4853-b7c0-4a0cb7bf7a6f_p3020868.jpg',
     video: 'https://youtu.be/vGEvmM3BhSY',
+    section: SECTIONS.LATE_AFTERNOON,
   },
   {
     name: 'Chris Burniske',
@@ -581,6 +629,7 @@ const data = [
     headshot:
       'https://blockstack.imgix.net/7ba2bc6f-24d3-41ef-8b07-f2feab1f6bad_chris+burniske.png',
     video: 'https://youtu.be/vGEvmM3BhSY',
+    section: SECTIONS.LATE_AFTERNOON,
   },
   {
     name: 'Juan Benet',
@@ -595,6 +644,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/9dabcfa1-89a9-4d30-a994-1ef46fdb2ebb_p3020893.jpg',
     video: 'https://youtu.be/6h2WNxEV8q4',
+    section: SECTIONS.LATE_AFTERNOON,
   },
   {
     name: 'Felix Petersen',
@@ -609,6 +659,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/796fc327-d5a6-4215-a221-d27d4de5eed4_p3020906.jpg',
     video: 'https://youtu.be/_PRg167R9BA',
+    section: SECTIONS.LATE_AFTERNOON,
   },
   {
     name: 'Ryan Shea',
@@ -623,6 +674,7 @@ const data = [
     thumbnail:
       'https://blockstack.imgix.net/e4fa13f5-9dc9-44f5-8d16-52727e338f50_p3020918.jpg',
     video: 'https://youtu.be/1wUBk72KGkc',
+    section: SECTIONS.LATE_AFTERNOON,
   },
   {
     name: 'Dr. Muneeb Ali',
@@ -636,6 +688,7 @@ const data = [
       'https://blockstack.imgix.net/479a5d92-8812-4768-a31b-d7d074f2aa56_muneeb+ali_blockstack_founder.png',
     thumbnail:
       'https://blockstack.imgix.net/e4fa13f5-9dc9-44f5-8d16-52727e338f50_p3020918.jpg',
+    section: SECTIONS.LATE_AFTERNOON,
   },
 ]
 
