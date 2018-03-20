@@ -310,13 +310,15 @@ class Berlin2018Page extends Component {
               <div className="event__modal__talk__content">
                 <div>
                   <div className="player-wrapper">
-                    <YouTubePlayer
-                      className="react-player"
-                      preload
-                      url="https://www.youtube.com/watch?v=7SmC7AuZNWY"
-                      width="100%"
-                      height="100%"
-                    />
+                    {talk.video && (
+                      <YouTubePlayer
+                        className="react-player"
+                        preload
+                        url={talk.video}
+                        width="100%"
+                        height="100%"
+                      />
+                    )}
                   </div>
                   <div className="event">
                     <div className="event__talk__speakers__container">
