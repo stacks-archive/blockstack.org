@@ -304,6 +304,7 @@ const data = [
     headshot:
       'https://blockstack.imgix.net/e1749ee6-b74a-44ef-a9d5-cdf2ccc12faa_aaron-blankstein.jpg',
     section: SECTIONS.LEARNING,
+    video: 'https://youtu.be/aF4IGcwMgmM',
   },
   {
     name: 'Chase Wackerfuss',
@@ -318,6 +319,7 @@ const data = [
     headshot:
       'https://blockstack.imgix.net/84843c40-b018-4b05-bc67-25882c525e96_chase-wackerfuss.jpg',
     section: SECTIONS.LEARNING,
+    video: 'https://youtu.be/e4xIGGv3Wpc',
   },
   {
     name: 'Brett Sun',
@@ -333,6 +335,7 @@ const data = [
     headshot:
       'https://blockstack.imgix.net/da512f06-931c-4932-80a7-e5bbe016eebf_e95toqev_400x400.jpg',
     section: SECTIONS.LEARNING,
+    video: 'https://youtu.be/nn1HsC99wcM',
   },
   {
     name: 'Edward Snowden',
@@ -377,6 +380,7 @@ const data = [
     headshot:
       'https://blockstack.imgix.net/446f95fc-25d9-4bc4-8f1f-a1b3802c4e1f_xan-ditkoff.jpg',
     section: SECTIONS.LEARNING,
+    video: 'https://youtu.be/Ctq42hLOKpc',
   },
   {
     name: 'Albert Wenger',
