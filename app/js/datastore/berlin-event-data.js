@@ -796,7 +796,6 @@ export const berlinPressData = [
 
 export const berlinSponsorData = [
   {
-    title: '',
     items: [
       {
         src:
@@ -809,7 +808,6 @@ export const berlinSponsorData = [
     ],
   },
   {
-    title: '',
     items: [
       {
         src:
@@ -822,7 +820,6 @@ export const berlinSponsorData = [
     ],
   },
   {
-    title: '',
     items: [
       {
         src:
