@@ -13,26 +13,33 @@ class Header extends Component {
 
     this.state = {
       navItems: [
-        { to: '/install', label: 'Install' },
-        { to: '/about', label: 'About' },
         {
-          to: '/docs',
-          label: 'Docs',
+          to: '/learn',
+          label: 'Learn',
+          dropdown: [
+            { to: '/what-is-blockstack', label: 'What is Blockstack?' },
+            { to: '/about', label: 'About' },
+            { to: '/faq', label: 'FAQ' },
+            { to: '/videos', label: 'Videos' },
+          ],
+        },
+        {
+          to: '/developers',
+          label: 'Developers',
           dropdown: [
             { to: '/tutorials', label: 'Tutorials' },
             { to: '/papers', label: 'Papers' },
-            { to: '/videos', label: 'Videos' },
             {
               to: 'http://blockstack.github.io/blockstack.js/',
               label: 'BlockstackJS',
             },
-            { to: 'https://core.blockstack.org/', label: 'Core API' },
+            { to: 'https://core.blockstack.org/', label: 'Blockstack Core' },
+            { to: 'https://github.com/blockstack', label: 'Github' },
           ],
         },
         { to: '/blog', label: 'Blog' },
-        { to: '/faq', label: 'FAQ' },
-        { to: 'https://github.com/blockstack', label: 'GitHub' },
-        { to: '/careers', label: "We're Hiring!", icon: 'flag' },
+        { to: '/install', label: 'Download' },
+        { to: '/careers', label: "We're Hiring" },
       ],
     }
   }
@@ -47,13 +54,10 @@ class Header extends Component {
     })
 
     return (
-      <div className={this.props.transparent ? 'bg-transparent' : 'bg-primary'}>
+      <div>
         <nav className="navbar navbar-expand-md">
-          <Link className="navbar-brand brand-bug" to="/">
-            <img src="/images/logos/blockstack-bug-rev.svg" />
-          </Link>
-          <Link className="navbar-brand brand-logo" to="/">
-            <img src="/images/logos/blockstack-logo-landscape-rev.svg" />
+          <Link className="navbar-brand" to="/">
+            <img src="/images/logos/blockstack-bug.svg" />
           </Link>
           <button
             type="button"

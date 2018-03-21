@@ -30,7 +30,9 @@ import RoadmapPage from './pages/RoadmapPage'
 import TokenSalePage from './pages/TokenSalePage'
 import Summit2017Page from './pages/Summit2017Page'
 import FundingPage from './pages/FundingPage'
+import FundPage from './pages/FundPage'
 import PressPage from './pages/PressPage'
+import WhatIsBlockstack from './pages/WhatIsBlockstack'
 import Berlin2018Page from './pages/Berlin2018Page'
 
 function hashLinkScroll() {
@@ -63,6 +65,8 @@ export default (
 
       <Route path="/intro" component={IntroPage} />
 
+      <Route path="/what-is-blockstack" component={WhatIsBlockstack} />
+
       <Route path="/tutorials" component={TutorialsPage} />
       <Route path="/tutorials/:docSection" component={TutorialPage} />
 
@@ -93,6 +97,7 @@ export default (
       <Route path="/summit2017" component={Summit2017Page} />
       <Route path="/berlin2018" component={Berlin2018Page} />
       <Route path="/funding" component={FundingPage} />
+      <Route path="/fund" component={FundPage} />
 
       <Route path="/press" component={PressPage} />
 
