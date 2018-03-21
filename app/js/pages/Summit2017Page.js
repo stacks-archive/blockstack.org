@@ -92,7 +92,8 @@ class Summit2017Page extends Component {
               <div className="container">
                 <section>
                   <div className="containWrap">
-                    <ContentSection markup="
+                    <ContentSection
+                      markup="
                       <p>
                         On July 27th, 2017, we hosted the Blockstack Summit at
                         the Computer History Museum. It was a day to take
@@ -110,7 +111,8 @@ class Summit2017Page extends Component {
                         did, and would love to hear what your favorite parts
                         were by tweeting your favorite speaker quotes and clips
                         mentioning @blockstack.
-                      </p>" />
+                      </p>"
+                    />
                   </div>
                 </section>
               </div>

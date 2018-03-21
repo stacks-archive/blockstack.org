@@ -20,7 +20,7 @@ gulp.task('browserSync', function() {
         let fileHrefClean = url.parse(req.url).href.split('?')[0];
         let fileHrefArray = fileHrefClean.split('.');
         let fileExtension = fileHrefArray[fileHrefArray.length - 1];
-        
+
         if (ASSET_EXTENSIONS.indexOf(fileExtension) === -1) {
           req.url = '/' + DEFAULT_FILE;
         }
