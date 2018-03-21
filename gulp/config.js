@@ -16,7 +16,7 @@ const config = {
   },
 
   styles: {
-    src: './app/styles/**/*.css',
+    src: './app/styles/**/*.scss',
     dest: './build/css/'
   },
 

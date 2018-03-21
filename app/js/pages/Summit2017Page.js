@@ -76,7 +76,7 @@ class Summit2017Page extends Component {
           <div className="col-centered block">
             <Header transparent={true} />
             <div className="container p-b-90">
-              <section className="text-xs-center">
+              <section className="text-center">
                 <Image
                   className="blockstack-summit-2017-logo-md m-t-65 m-b-55"
                   src="/images/logos/blockstack-summit-logo-landscape-rev.svg"

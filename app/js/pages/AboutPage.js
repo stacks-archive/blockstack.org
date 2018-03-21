@@ -7,10 +7,6 @@ import ContentSection from '../components/ContentSection'
 import TeamMembers from '../components/TeamMembers'
 
 class AboutPage extends Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return (
       <DocumentTitle title="Blockstack - About">
