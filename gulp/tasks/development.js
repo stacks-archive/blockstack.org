@@ -1,20 +1,35 @@
-'use strict';
+'use strict'
 
-import gulp        from 'gulp';
-import runSequence from 'run-sequence';
+import gulp from 'gulp'
+import runSequence from 'run-sequence'
 
 gulp.task('dev', ['clean'], function(cb) {
+  cb = cb || function() {}
 
-  cb = cb || function() {};
+  global.isProd = false
 
-  global.isProd = false;
-
-  process.env.NODE_ENV = 'test';
+  process.env.NODE_ENV = 'test'
 
   // Run all tasks once
-  return runSequence([
-    'makeBuildDir', 'copyStyles', 'copyScripts', 'imagemin', 'browserify', 'copyFonts', 'copyIndex', 'copyIcons',
-    'copyFiles', 'buildDocs', 'buildBlog', 'buildConstants', 'configFirebase'
-  ], 'watch', cb);
-
-});
+  return runSequence(
+    [
+      'makeBuildDir',
+      'copyStyles',
+      'compileScss',
+      'copyStyleFonts',
+      'copyScripts',
+      'imagemin',
+      'browserify',
+      'copyFonts',
+      'copyIndex',
+      'copyIcons',
+      'copyFiles',
+      'buildDocs',
+      'buildBlog',
+      'buildConstants',
+      'configFirebase',
+    ],
+    'watch',
+    cb,
+  )
+})
