@@ -91,6 +91,14 @@ class Footer extends Component {
                     <div className="foot-item">
                       <Link to="/press">Press</Link>
                     </div>
+                    <div className="foot-item">
+                      <a
+                        href="https://blockstack.myshopify.com/"
+                        target="_blank"
+                      >
+                        Swag Shop
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <div className="col-6 col-md-3">

@@ -76,7 +76,7 @@ class Summit2017Page extends Component {
           <div className="col-centered block">
             <Header transparent={true} />
             <div className="container p-b-90">
-              <section className="text-xs-center">
+              <section className="text-center">
                 <Image
                   className="blockstack-summit-2017-logo-md m-t-65 m-b-55"
                   src="/images/logos/blockstack-summit-logo-landscape-rev.svg"
@@ -92,8 +92,7 @@ class Summit2017Page extends Component {
               <div className="container">
                 <section>
                   <div className="containWrap">
-                    <ContentSection
-                      markup="
+                    <ContentSection markup="
                       <p>
                         On July 27th, 2017, we hosted the Blockstack Summit at
                         the Computer History Museum. It was a day to take
@@ -111,8 +110,7 @@ class Summit2017Page extends Component {
                         did, and would love to hear what your favorite parts
                         were by tweeting your favorite speaker quotes and clips
                         mentioning @blockstack.
-                      </p>"
-                    />
+                      </p>" />
                   </div>
                 </section>
               </div>
