@@ -274,11 +274,17 @@
   justify-content: center;
   align-items: center;
   &.sponsors {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    display: flex;
     justify-content: center;
     align-items: center;
     #{$c}__item {
       padding: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 992px) {
+        padding: 30px;
+      }
     }
   }
   @media (max-width: 992px) {
@@ -358,4 +364,6 @@
       }
     }
   }
+}
+.sponsors-section {
 }

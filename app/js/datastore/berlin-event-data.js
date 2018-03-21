@@ -796,23 +796,38 @@ export const berlinPressData = [
 
 export const berlinSponsorData = [
   {
-    src:
-      'https://blockstack.imgix.net/21dfa856-0b7c-4e97-859f-10ea79b701d5_coinlist+black.png',
+    title: '',
+    items: [
+      {
+        src:
+          'https://blockstack.imgix.net/21dfa856-0b7c-4e97-859f-10ea79b701d5_coinlist+black.png',
+      },
+      {
+        src:
+          'https://blockstack.imgix.net/0829efb3-0406-4dbb-832b-a39d5d069736_snext_blue_2c+%281%29.png',
+      },
+    ],
   },
   {
-    src:
-      'https://blockstack.imgix.net/0829efb3-0406-4dbb-832b-a39d5d069736_snext_blue_2c+%281%29.png',
+    title: '',
+    items: [
+      {
+        src:
+          'https://blockstack.imgix.net/77e837ee-45a4-4658-8fce-5ff76d9e7dba_berlin+valley+jpeg+2.png',
+      },
+      {
+        src:
+          'https://blockstack.imgix.net/3714d314-0a23-423b-a974-57a980861e48_t3n-logo-press-2018_color_rgb_rechts.png',
+      },
+    ],
   },
   {
-    src:
-      'https://blockstack.imgix.net/77e837ee-45a4-4658-8fce-5ff76d9e7dba_berlin+valley+jpeg+2.png',
-  },
-  {
-    src:
-      'https://blockstack.imgix.net/3714d314-0a23-423b-a974-57a980861e48_t3n-logo-press-2018_color_rgb_rechts.png',
-  },
-  {
-    src:
-      'https://blockstack.imgix.net/ad2936d1-f73d-40b7-a40c-4fe8b9310d44_bundesblock.png',
+    title: '',
+    items: [
+      {
+        src:
+          'https://blockstack.imgix.net/ad2936d1-f73d-40b7-a40c-4fe8b9310d44_bundesblock.png',
+      },
+    ],
   },
 ]

@@ -499,16 +499,21 @@ class Berlin2018Page extends Component {
             <div className="col-lg-12 col-md-12 order-12 order-md-1 bg-white col-centered">
               <div className="event p-t-90 p-b-90">
                 <h2 className="text-center">Our Sponsors</h2>
-                <div className="press-grid sponsors">
-                  {berlinSponsorData.map((item, i) => (
-                    <div key={i} className="press-grid__item">
-                      <Image
-                        src={`${item.src}?w=200&auto=compress`}
-                        alt="Blockstack Berlin Sponsor"
-                      />
+                {berlinSponsorData.map(({ items, title }, i) => (
+                  <div key={i} className="sponsors-section">
+                    <h5>{title}</h5>
+                    <div className="press-grid sponsors">
+                      {items.map((item, i) => (
+                        <div key={i} className="press-grid__item">
+                          <Image
+                            src={`${item.src}?w=200&auto=compress`}
+                            alt="Blockstack Berlin Sponsor"
+                          />
+                        </div>
+                      ))}
                     </div>
-                  ))}
-                </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
