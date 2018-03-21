@@ -3,7 +3,10 @@
 import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 import CollapsibleList from '../components/CollapsibleList'
-import berlinData, { berlinPressData } from '../datastore/berlin-event-data'
+import berlinData, {
+  berlinPressData,
+  berlinSponsorData,
+} from '../datastore/berlin-event-data'
 import Slider from 'react-slick'
 import SignatureTalks from '../components/SignatureTalks'
 import { slugify } from '../utils/functions'
@@ -486,6 +489,25 @@ class Berlin2018Page extends Component {
                       activeTalk: this.state.talk,
                     })}
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 col-md-12 order-12 order-md-1 bg-white col-centered">
+              <div className="event p-t-90 p-b-90">
+                <h2 className="text-center">Our Sponsors</h2>
+                <div className="press-grid sponsors">
+                  {berlinSponsorData.map((item, i) => (
+                    <div key={i} className="press-grid__item">
+                      <Image
+                        src={`${item.src}?w=200&auto=compress`}
+                        alt="Blockstack Berlin Sponsor"
+                      />
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>

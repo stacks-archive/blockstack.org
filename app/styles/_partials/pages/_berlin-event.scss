@@ -254,17 +254,26 @@
 }
 
 .press-grid {
+    $c: &;
+
   display: grid;
   width: 100%;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-column-gap: 120px;
   justify-content: center;
   align-items: center;
+  &.sponsors {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    justify-content: center;
+    align-items: center;
+    #{$c}__item{
+      padding: 80px;
+    }
+  }
   @media (max-width: 992px) {
     grid-column-gap: 20px;
   }
 
-  $c: &;
 
   #{$c}__item {
     padding: 30px;
