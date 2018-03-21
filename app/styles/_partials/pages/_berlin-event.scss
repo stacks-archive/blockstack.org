@@ -230,12 +230,21 @@
     left: 20px;
   }
 }
+.berlin-event-hero {
+  background-color: #fafafa;
+  .container.p-b-90 {
+    @media (max-width: 992px) {
+      padding-bottom: 40px !important;
+    }
+  }
+}
 
 .berlin-hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   &__actions {
     @media (max-width: 992px) {
       display: none;
@@ -243,7 +252,9 @@
   }
   h1 {
     img {
-      width: 480px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      width: 500px;
       max-width: 100%;
     }
   }
@@ -254,7 +265,7 @@
 }
 
 .press-grid {
-    $c: &;
+  $c: &;
 
   display: grid;
   width: 100%;
@@ -266,14 +277,13 @@
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     justify-content: center;
     align-items: center;
-    #{$c}__item{
+    #{$c}__item {
       padding: 80px;
     }
   }
   @media (max-width: 992px) {
     grid-column-gap: 20px;
   }
-
 
   #{$c}__item {
     padding: 30px;

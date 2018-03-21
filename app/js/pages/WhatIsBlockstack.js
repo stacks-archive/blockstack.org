@@ -12,12 +12,15 @@ const WhatIsBlockstack = () => {
           <div className="container">
             <h1 className="page-heading mx-auto">What is Blockstack?</h1>
             <p className="mb-5 mx-auto page-heading-subtext">
-              Blockstack is a new internet for decentralized apps where users own their data.
-              Blockstack{`'`}s platform helps entrepreneurs
-              and engineers build these apps and deliver better end-user
+              Blockstack is a new internet for decentralized apps where users
+              own their data. Blockstack{`'`}s platform helps entrepreneurs and
+              engineers build these apps and deliver better end-user
               experiences.
             </p>
-            <Link to="install" className="btn btn-primary d-none d-sm-inline-block">
+            <Link
+              to="install"
+              className="btn btn-primary d-none d-sm-inline-block"
+            >
               Download Blockstack
             </Link>
           </div>

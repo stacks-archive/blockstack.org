@@ -357,13 +357,13 @@ class Berlin2018Page extends Component {
           <div className="col-centered block">
             <div className="container p-b-90">
               <section className="berlin-hero">
-                <h1 className="text-white m-b-20">
+                <h1>
                   <Image
-                    src="https://blockstack.imgix.net/0c4ac3e2-64ca-41cb-9e51-0c8b59764b42_blockstackberlin_logos_whitewithborder.png"
+                    src="https://blockstack.imgix.net/799cc81f-381b-46a5-9a72-8f2a202cfe7f_blockstackberlin_logos_blackwithborder.png"
                     alt="Blockstack Berlin"
                   />
                 </h1>
-                <p className="text-white">
+                <p>
                   The Blockstack Signature Fund and the folks who brought you{' '}
                   <a href="https://blockstack.org/summit2017">
                     Blockstack Summit 2017
