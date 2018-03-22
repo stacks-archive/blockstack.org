@@ -108,7 +108,7 @@ class VideosPresentation extends Component {
                   </h4>
                 </Link>
                 <p className="font-weight-bold">
-                  George Gilder,{' '}
+                  George Glider,{' '}
                   <span className="font-weight-normal font-italic">
                     Author & Information Theorist
                   </span>
