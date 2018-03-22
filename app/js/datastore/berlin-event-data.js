@@ -13,7 +13,7 @@ const data = [
     twitter: '@ryaneshea',
     day: 'March 2',
     time: '9:07 AM',
-    talkTitle: 'Web 3, and Decentralized Apps',
+    talkTitle: 'Web 3 and Decentralized Apps',
     headshot:
       'https://blockstack.imgix.net/7a92e818-1126-4e5e-a9e0-7fc5e75da3b3_ryan+shea_blockstack_founder.jpg',
     thumbnail:
@@ -581,7 +581,7 @@ const data = [
     name: 'Matt Moody',
     company: 'Bellwethr',
     jobTitle: null,
-    twitter: null,
+    twitter: '@matmoody',
     day: 'March 2',
     time: '4:38 PM',
     talkTitle: 'Bellwethr',

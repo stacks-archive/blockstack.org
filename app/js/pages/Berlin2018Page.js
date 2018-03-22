@@ -96,7 +96,7 @@ const mainEventSections = [
     items: filterTalksBySection(mainEvent, SECTIONS.EARLY_AFTERNOON),
   },
   {
-    title: 'App Demos',
+    title: 'Dapp Demos',
     items: filterTalksBySection(mainEvent, SECTIONS.APPDEMOS),
   },
   {
