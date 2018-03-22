@@ -62,7 +62,7 @@ const HomePage = () => {
               Decentralized apps built on Blockstack
             </h3>
             <div className="row">
-              <div className="col-lg-10 offset-lg-1">
+              <div className="col-12">
                 <div className="app-store-section">
                   <p>
                     <h3>Featured Apps</h3>
