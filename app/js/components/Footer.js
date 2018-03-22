@@ -78,6 +78,9 @@ class Footer extends Component {
                       </Link>
                     </div>
                     <div className="foot-item">
+                      <Link to="/berlin2018">Berlin 2018</Link>
+                    </div>
+                    <div className="foot-item">
                       <Link to="/summit2017">Summit 2017</Link>
                     </div>
                     <div className="foot-item">

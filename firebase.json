@@ -108,6 +108,10 @@
         "destination": "/docs-tutorials-todo-list.html"
       },
       {
+        "source": "/blog/blockstack-berlin-videos-now-live",
+        "destination": "/blog-blockstack-berlin-videos-now-live.html"
+      },
+      {
         "source": "/blog/connecting-users-and-their-data-on-the-decentralized-internet",
         "destination": "/blog-connecting-users-and-their-data-on-the-decentralized-internet.html"
       },
@@ -162,10 +166,6 @@
       {
         "source": "/blog/the-signature-fund-for-app-development-on-blockstack",
         "destination": "/blog-the-signature-fund-for-app-development-on-blockstack.html"
-      },
-      {
-        "source": "/blog/summit2017-videos",
-        "destination": "/blog-summit2017-videos.html"
       },
       {
         "source": "**",
