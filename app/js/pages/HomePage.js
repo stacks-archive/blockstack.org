@@ -113,7 +113,7 @@ const HomePage = () => {
                   <div className="row">
                     <div className="col-lg-3 col-sm-3 col-6">
                       <div className="app-store-app">
-                        <a href="https://coinsapp.co/" target="_blank">
+                        <a href="https://faa.st/portfolio" target="_blank">
                           <img src="/images/logos/app-icon-faast-512x512.png" />
                           <h4>Faa.st</h4>
                           <p>Crypto Portfolios</p>
