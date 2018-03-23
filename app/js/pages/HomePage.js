@@ -91,7 +91,7 @@ const HomePage = () => {
                         <a href="https://coinsapp.co" target="_blank">
                           <img src="/images/logos/app-icon-coins-512x512.png" />
                           <h4>Coins</h4>
-                          <p>Investment Portfolios</p>
+                          <p>Crypto Portfolios</p>
                         </a>
                       </div>
                     </div>
@@ -114,17 +114,17 @@ const HomePage = () => {
                     <div className="col-lg-3 col-sm-3 col-6">
                       <div className="app-store-app">
                         <a href="https://coinsapp.co/" target="_blank">
-                          <img src="/images/logos/app-icon-coins-512x512.png" />
-                          <h4>Coins</h4>
+                          <img src="/images/logos/app-icon-faast-512x512.png" />
+                          <h4>Faa.st</h4>
                           <p>Crypto Portfolios</p>
                         </a>
                       </div>
                     </div>
                     <div className="col-lg-3 col-sm-3 col-6">
                       <div className="app-store-app">
-                        <a href="https://faa.st" target="_blank">
-                          <img src="/images/logos/app-icon-faast-256x256.png" />
-                          <h4>faast</h4>
+                        <a href="http://coinremix.netlify.com/" target="_blank">
+                          <img src="/images/logos/app-icon-coinremix-512x512.png" />
+                          <h4>Coinremix</h4>
                           <p>Crypto Portfolios</p>
                         </a>
                       </div>
@@ -156,19 +156,19 @@ const HomePage = () => {
                   <div className="row">
                     <div className="col-lg-3 col-sm-3 col-6">
                       <div className="app-store-app">
-                        <a href="https://dotpodcast.co/" target="_blank">
-                          <img src="/images/logos/app-icon-dotpodcast-512x512.png" />
-                          <h4>DotPodcast</h4>
-                          <p>Podcasts</p>
+                        <a href="https://www.misthos.io/" target="_blank">
+                          <img src="/images/logos/app-icon-misthos-512x512.png" />
+                          <h4>Misthos</h4>
+                          <p>Autonomous Organizations</p>
                         </a>
                       </div>
                     </div>
                     <div className="col-lg-3 col-sm-3 col-6">
                       <div className="app-store-app">
-                        <a href="https://casa.cash/" target="_blank">
+                        <a href="https://keys.casa/" target="_blank">
                           <img src="/images/logos/app-icon-casa-512x512.png" />
                           <h4>Casa</h4>
-                          <p>Home sharing</p>
+                          <p>Key Management</p>
                         </a>
                       </div>
                     </div>
