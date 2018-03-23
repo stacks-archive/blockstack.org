@@ -223,7 +223,7 @@ const data = [
     twitter: '@starkness',
     day: 'March 2',
     time: '11:42 AM',
-    talkTitle: 'Elizabeth Stark interview with Larry Salibra.',
+    talkTitle: 'Building the Future of Layer 2: A conversation with Elizabeth Stark and Larry Salibra',
     headshot:
       'https://blockstack.imgix.net/bb29c187-86d9-4af5-af62-a250dfec9023_elizabeth+stark_lightning+labs_co-founder+and+ceo.jpeg',
     thumbnail:
@@ -238,7 +238,7 @@ const data = [
     twitter: '@larrysalibra',
     day: 'March 2',
     time: '11:42 AM',
-    talkTitle: 'Elizabeth Stark interview with Larry Salibra.',
+    talkTitle: 'Building the Future of Layer 2: A conversation with Elizabeth Stark and Larry Salibra',
     headshot:
       'https://blockstack.imgix.net/d70de42e-5056-4cec-af87-55ab20055c5d_larry.jpg',
     thumbnail:
@@ -394,7 +394,7 @@ const data = [
       'https://blockstack.imgix.net/80d1f4de-541e-415a-b97f-06ba878ab84c_albert+wenger_union+square+venture_general+partner.png',
     thumbnail:
       'https://blockstack.imgix.net/8ad8589d-e8df-44fe-b6ef-d30f9e4d38a8_p3020586.jpg',
-    video: 'https://youtu.be/qaDKyzhJRoA',
+    video: 'https://youtu.be/lBUPEv6KlnM',
     section: SECTIONS.EARLY_AFTERNOON,
   },
   {
