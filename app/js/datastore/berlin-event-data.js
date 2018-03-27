@@ -228,7 +228,7 @@ const data = [
       'https://blockstack.imgix.net/bb29c187-86d9-4af5-af62-a250dfec9023_elizabeth+stark_lightning+labs_co-founder+and+ceo.jpeg',
     thumbnail:
       'https://blockstack.imgix.net/f3e90d77-e33d-499f-a2ac-90f90272ec45_p3020451.jpg',
-    video: 'https://youtu.be/9MVkxEdTDAQ',
+    video: 'https://youtu.be/4kjnEb9dHt4',
     section: SECTIONS.MORNING,
   },
   {
@@ -243,7 +243,7 @@ const data = [
       'https://blockstack.imgix.net/d70de42e-5056-4cec-af87-55ab20055c5d_larry.jpg',
     thumbnail:
       'https://blockstack.imgix.net/f3e90d77-e33d-499f-a2ac-90f90272ec45_p3020451.jpg',
-    video: 'https://youtu.be/9MVkxEdTDAQ',
+    video: 'https://youtu.be/4kjnEb9dHt4',
     section: SECTIONS.MORNING,
   },
   {
