@@ -101,6 +101,11 @@ export default (
 
       <Route path="/press" component={PressPage} />
 
+      <Route path="/devs" component={() => {
+        window.location = 'https://community.blockstack.org/developers-getting-started'
+        return 'Redirecting...'
+      }}/>
+
       <Route path="*" component={NotFoundPage} />
     </Route>
   </Router>
