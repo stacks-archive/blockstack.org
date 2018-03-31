@@ -55,6 +55,10 @@ gulp.task('configFirebase', () => {
   */
   const redirectRules = [
     {
+      'source': '/devs',
+      'destination': 'https://community.blockstack.org/developers-getting-started'
+    },
+    {
       'source': '/rfds',
       'destination': 'https://goo.gl/forms/XQHbP6COpEK7mPCy2'
     },
