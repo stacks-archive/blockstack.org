@@ -70,7 +70,7 @@ class FAQpage extends Component {
             >
               <div className="sidebar-header">
                 <Link className="navbar-brand" to="/">
-                  blockstack
+                 Blockstack
                 </Link>
                 <Link className="tagline" to="/faq">
                   faq
