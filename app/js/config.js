@@ -3,6 +3,7 @@ export const githubFileUrlRoot =
 
 export const socialLinks = {
   twitter: 'https://www.twitter.com/blockstack',
+  telegram: 'https://t.me/BlockstackChat',
   youtube: 'https://www.youtube.com/channel/UC3J2iHnyt2JtOvtGVf_jpHQ',
   slack: 'http://chat.blockstack.org',
   meetup: 'http://www.meetup.com/topics/blockstack/',

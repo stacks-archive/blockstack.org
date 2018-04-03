@@ -68,6 +68,11 @@ class Footer extends Component {
                       </Link>
                     </div>
                     <div className="foot-item">
+                      <Link to={links.telegram} target="_blank">
+                        Telegram
+                      </Link>
+                    </div>
+                    <div className="foot-item">
                       <Link to={links.meetup} target="_blank">
                         Meetup
                       </Link>
@@ -143,6 +148,11 @@ class Footer extends Component {
               <div className="row">
                 <div className="col-12 col-md-3 order-md-2 mt-5 foot-social">
                   <div className="container d-flex justify-content-md-end">
+                    <div className="d-inline">
+                      <Link to={links.telegram} target="_blank">
+                        <i className="fa fa-telegram foot-social-item" />
+                      </Link>
+                    </div>
                     <div className="d-inline">
                       <Link to={links.twitter} target="_blank">
                         <i className="fa fa-twitter foot-social-item" />
