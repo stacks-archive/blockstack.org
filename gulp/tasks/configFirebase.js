@@ -59,6 +59,10 @@ gulp.task('configFirebase', () => {
       'destination': 'https://community.blockstack.org/developers-getting-started'
     },
     {
+      'source': '/dev',
+      'destination': 'https://community.blockstack.org/developers-getting-started'
+    },
+    {
       'source': '/rfds',
       'destination': 'https://goo.gl/forms/XQHbP6COpEK7mPCy2'
     },
