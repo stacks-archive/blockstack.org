@@ -99,7 +99,7 @@ export const teamMembers = [
       'Jude Nelson did PhD-level research in distributed systems at Princeton and worked as a core member of PlanetLab, which received the ACM Test of Time Award for enabling planetary scale experimentation and deployment.',
   },
   {
-    blockstackId: 'ablankstein',
+    blockstackId: 'blankstein',
     name: 'Aaron Blankstein',
     avatar: '/images/avatars/aaron-blankstein.jpg',
     bio:
@@ -118,13 +118,6 @@ export const teamMembers = [
     avatar: '/images/avatars/gina-abrams.jpg',
     bio:
       'Gina Abrams studied Psychology and Social Sciences at Binghamton University. Previously she spent two years in agency technical recruiting, during which time she assisted numerous NYC start-ups in mission critical DevOps, SRE and Security hires.',
-  },
-  {
-    blockstackId: 'guylepage3',
-    name: 'Guy Lepage',
-    avatar: 'https://s3.amazonaws.com/kd4/guylepage3',
-    bio:
-      'Guy Lepage is an award-winning designer, who has been recognized by the Lotus Awards and the New York Festivals for branding, and is a finalist for the INDEX award 2017. He has worked on many brands from Toyota to Disney and was a startup founder of a digital ad agency earlier.',
   },
   {
     blockstackId: 'pstanley',
@@ -181,6 +174,20 @@ export const teamMembers = [
     avatar: '/images/avatars/chase-wackerfuss.jpg',
     bio:
       "Chase joined Blockstack's engineering team after being an active contributor to the community. A self taught programmer and UI designer, his focus is on cultivating a user-friendly front end developer experience and helping scale client-side applications.",
+  },
+  {
+    blockstackId: 'ariella',
+    name: 'Ariella Steinhorn',
+    avatar: '/images/avatars/ariella-steinhorn.jpg',
+    bio:
+     "Ariella is Blockstack’s Communications Partner. She previously led communications and public policy efforts at Managed by Q. Before that, she held several communications positions at Uber, and was a speechwriter in Washington, DC."
+  },
+  { 
+    blockstackId: 'jesse',
+    name: 'Jesse Soslow',
+    avatar: '/images/avatars/jesse-soslow.jpg',
+    bio:
+     "Jesse is Blockstack’s Operations Partner.  Prior to Blockstack, he led operations at Everwise, a Sequoia-backed SaaS startup, and worked as a technology transactions attorney for a large, international law firm.  Jesse received his J.D. and B.A., in math, both from the University of Pennsylvania."
   },
   {
     blockstackId: 'mfreed',
