@@ -269,4 +269,18 @@ export const blogAuthors = {
     twitter: 'yukanl',
     github: 'yknl',
   },
+  'ariella': {
+    blockstackId: 'ariella',
+    name: 'Ariella Steinhorn',
+    avatar: 'https://blockstack.org/images/avatars/ariella-steinhorn.jpg',
+    twitter: 'arsteinhorn',
+    github: 'arsteinhorn',
+  },
+  'chase': {
+    blockstackId: 'hologram',
+    name: 'Chase Wackerfuss',
+    avatar: 'https://blockstack.org/images/avatars/chase-wackerfuss.jpg',
+    twitter: 'vockerfoos',
+    github: 'cwackerfuss'
+  }
 }
