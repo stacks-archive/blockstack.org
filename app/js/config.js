@@ -276,7 +276,7 @@ export const blogAuthors = {
     twitter: 'yukanl',
     github: 'yknl',
   },
-  'arsteinhorn.id': {
+  'ariella.id': {
     blockstackId: 'ariella',
     name: 'Ariella Steinhorn',
     avatar: 'https://blockstack.org/images/avatars/ariella-steinhorn.jpg',
