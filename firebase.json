@@ -96,12 +96,20 @@
         "destination": "/docs-tutorials-hello-blockstack.html"
       },
       {
+        "source": "/tutorials/managing-data-with-gaia",
+        "destination": "/docs-tutorials-managing-data-with-gaia.html"
+      },
+      {
         "source": "/tutorials/multi-player-storage",
         "destination": "/docs-tutorials-multi-player-storage.html"
       },
       {
         "source": "/tutorials/todo-list",
         "destination": "/docs-tutorials-todo-list.html"
+      },
+      {
+        "source": "/blog/gaining-ownership-of-our-digital-lives",
+        "destination": "/blog-gaining-ownership-of-our-digital-lives.html"
       },
       {
         "source": "/blog/blockstack-berlin-videos-now-live",
@@ -160,15 +168,21 @@
         "destination": "/blog-public-benefit-corp.html"
       },
       {
-        "source": "/blog/the-signature-fund-for-app-development-on-blockstack",
-        "destination": "/blog-the-signature-fund-for-app-development-on-blockstack.html"
-      },
-      {
         "source": "**",
         "destination": "/index.html"
       }
     ],
     "redirects": [
+      {
+        "source": "/devs",
+        "destination": "https://community.blockstack.org/developers-getting-started",
+        "type": 301
+      },
+      {
+        "source": "/dev",
+        "destination": "https://community.blockstack.org/developers-getting-started",
+        "type": 301
+      },
       {
         "source": "/rfds",
         "destination": "https://goo.gl/forms/XQHbP6COpEK7mPCy2",
