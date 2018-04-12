@@ -96,10 +96,6 @@
         "destination": "/docs-tutorials-hello-blockstack.html"
       },
       {
-        "source": "/tutorials/managing-data-with-gaia",
-        "destination": "/docs-tutorials-managing-data-with-gaia.html"
-      },
-      {
         "source": "/tutorials/multi-player-storage",
         "destination": "/docs-tutorials-multi-player-storage.html"
       },

@@ -1520,6 +1520,10 @@ pre {
   color: #ededed;
 }
 
+.body-hero {
+  background-color: #280f34;
+}
+
 .app-store {
   padding: 0 0 50px 0;
 }
@@ -2771,10 +2775,6 @@ pre {
     margin-top: 0;
   }
 
-  .hero {
-    padding-bottom: 5rem;
-  }
-
   .lead-centered {
     padding-left: 0;
     padding-right: 0;
@@ -2791,7 +2791,7 @@ pre {
   }
 
   .hero {
-    padding-top: 2.8125rem;
+    padding-top: 5rem;
     padding-bottom: 7rem;
   }
 
