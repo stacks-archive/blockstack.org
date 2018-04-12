@@ -107,6 +107,11 @@ class Footer extends Component {
                         Swag Shop
                       </a>
                     </div>
+                    <div className="foot-item">
+                      <Link to={links.community} target="_blank">
+                        Community Site
+                      </Link>
+                    </div>
                   </div>
                 </div>
                 <div className="col-6 col-md-3">
