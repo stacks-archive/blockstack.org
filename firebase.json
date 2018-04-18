@@ -108,6 +108,10 @@
         "destination": "/docs-tutorials-todo-list.html"
       },
       {
+        "source": "/blog/blockstack-community-rewards-program",
+        "destination": "/blog-blockstack-community-rewards-program.html"
+      },
+      {
         "source": "/blog/gaining-ownership-of-our-digital-lives",
         "destination": "/blog-gaining-ownership-of-our-digital-lives.html"
       },
@@ -162,10 +166,6 @@
       {
         "source": "/blog/signature-bounties-for-decentralized-apps-on-the-new-internet",
         "destination": "/blog-signature-bounties-for-decentralized-apps-on-the-new-internet.html"
-      },
-      {
-        "source": "/blog/public-benefit-corp",
-        "destination": "/blog-public-benefit-corp.html"
       },
       {
         "source": "**",
