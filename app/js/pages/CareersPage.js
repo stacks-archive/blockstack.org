@@ -56,44 +56,35 @@ class CareersPage extends Component {
                   <div className="col-md-7">
                     <div className="mb-4">
                       <p>
-                        Blockstack is a rapidly growing open source community
-                        with over{' '}
-                        {this.state.stats.meetupUsers.toLocaleString()}{' '}
-                        developers globally. It was co-founded by Ryan Shea and
-                        Muneeb Ali in 2013 at Princeton and the core team is
-                        based in New York City and Hong Kong.
+                        Blockstack is a new internet for decentralized apps. Our open-source community of {' '}
+                        {this.state.stats.meetupUsers.toLocaleString()}{' '} members globally is building protocols & 
+                        tools that make it easy to build scalable decentralized apps.
+                      <p>
+                      <p>
+                        Blockstack PBC, a Public Benefit Corp, was co-founded by Ryan Shea and Muneeb Ali to contribute to 
+                        the development of the core open-source software. Blockstack PBC has offices in New York City, 
+                        San Francisco, Hong Kong, and Toronto.
                       </p>
                       <p>
-                        We raised a Series A in February 2017, and 50M in the{' '}
+                        Blockstack PBC raised a $4M Series A in January 2017, and $50M in the{' '}
                         <a href="/blog/blockstack-token-sale-recap">
                           Blockstack Token Sale
                         </a>{' '}
-                        in November 2017. We are grateful to have the confidence
-                        of investors including Union Square Ventures, Lux
-                        Capital, Shana Fisher, Naval Ravikant, Winklevoss
-                        Capital, Digital Currency Group, Foundation Capital,
-                        Kevin Rose, Michael Arrington, and Qasar Younis (former
-                        COO of Y Combinator).
+                        in December 2017. We are grateful to have investors like Union Square Ventures, 
+                        Lux Capital, Naval Ravikant, Winklevoss Capital, Digital Currency Group, Foundation Capital, 
+                        Kevin Rose, and Michael Arrington amongst others. Our token sale had 800 Accredited Investors 
+                        and 8000+ total participants.
                       </p>
                     </div>
 
                     <div className="mb-4">
-                      <h3>More about us:</h3>
-                      <ul>
-                        <li>
-                          We’re passionate about making the internet freer and
-                          safer for everyone and you should be, too.
-                        </li>
-                        <li>
-                          We’re both an open source project and a startup, so
-                          transparency is important to us.
-                        </li>
-                        <li>
-                          We’re located in a beautiful office in the lovely NoHo
-                          district of Manhattan, surrounded by some of the best
-                          cafes and restaurants in New York.
-                        </li>
-                      </ul>
+                      <h3>Mission:</h3>
+                      <p>
+                        Blockstack’s mission is to enable an open, decentralized internet which will benefit all internet users
+                        by giving them more control over information and computation. We’re committed to always support the
+                        decentralization of the Blockstack network and ensure that we build the network in a way that no
+                        single entity, including Blockstack PBC, has control over it.
+                        </p>
                     </div>
 
                     <div className="mb-4">
