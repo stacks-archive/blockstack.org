@@ -59,11 +59,11 @@ class CareersPage extends Component {
                         Blockstack is a new internet for decentralized apps. Our open-source community of {' '}
                         {this.state.stats.meetupUsers.toLocaleString()}{' '} members globally is building protocols & 
                         tools that make it easy to build scalable decentralized apps.
+                      </p>
                       <p>
-                      <p>
-                        Blockstack PBC, a Public Benefit Corp, was co-founded by Ryan Shea and Muneeb Ali to contribute to 
-                        the development of the core open-source software. Blockstack PBC has offices in New York City, 
-                        San Francisco, Hong Kong, and Toronto.
+                        Blockstack PBC, a <a href="https://blockstack.org/blog/public-benefit-corp">Public Benefit Corp</a>, 
+                        was co-founded by Ryan Shea and Muneeb Ali to contribute to the development of the core open-source 
+                        software. Blockstack PBC has offices in New York City, San Francisco, Hong Kong, and Toronto.
                       </p>
                       <p>
                         Blockstack PBC raised a $4M Series A in January 2017, and $50M in the{' '}
@@ -78,7 +78,7 @@ class CareersPage extends Component {
                     </div>
 
                     <div className="mb-4">
-                      <h3>Mission:</h3>
+                      <h3>Mission</h3>
                       <p>
                         Blockstack’s mission is to enable an open, decentralized internet which will benefit all internet users
                         by giving them more control over information and computation. We’re committed to always support the
@@ -96,10 +96,11 @@ class CareersPage extends Component {
                     </div>
                     <div className="mb-4">
                       <img
-                        src="/images/photos/blockstackteam-2.jpg"
+                        src="/images/photos/blockstackteam-3.jpg"
                         alt="Blockstack team"
                         style={{ width: '100%' }}
                       />
+                      <small class="text-muted">Photo credit: The New York Times</small>
                     </div>
 
                     <div className="mb-4">
