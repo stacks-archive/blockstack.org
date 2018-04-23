@@ -1,0 +1,241 @@
+$margin: 2.5rem;
+$mobile-margin: 7.5%;
+$max-site-width: 100%;
+$site-width : calc(100% - #{$margin} * 2);
+$min-site-width : 300px;
+
+// Grid Settings
+$columns: 12;
+$gutter: 1.25rem; // can be % or px
+$wide-gutter: $margin;
+$tight-gutter: .875rem;
+
+// Colors
+$bg-color : #F5F5F6;
+$bg-color : lighten(#384B59, 67%);
+$main-color : #FF756D;
+$secondary-color : #35A3F1;
+
+$black : #000;
+$white : #fff;
+$alert : #FF554D;
+$notify : #F7C24E;
+$success : darken(#2FD9B1, 4%);
+$text-color : #384B59;
+$dark-color : darken($text-color, 4%);
+$light-grey : lighten($text-color, 71%);
+
+$main-color-on-dark : lighten($main-color, 7%);
+$landing-margin : 5rem;
+$sticky-header-height : 80px;
+
+// $light-text-color : rgba($text-color, .35);
+$light-text-color : lighten($text-color, 40%);
+$hr-color : lighten($text-color, 70%);
+$hr-styles : 1px solid $hr-color;
+
+// Links
+$link-color : $light-text-color;
+$link-hover-color : $main-color;
+$dropdown-color : $light-text-color;
+$nav-color : $text-color;
+$nav-hover-color : $main-color;
+
+// Typography
+$main-font: 'Hind', sans-serif;
+$secondary-font: $main-font;
+$code-font: 'Roboto Mono', monospace;
+
+$base-line-height : 1.4em;
+	$short-line-height : 1.3em;
+		$tight-line-height : 1.15em;
+$base-letter-spacing : 0;
+$short-line-height : 1.333em;
+$tracked-out : .1em;
+	// General Text Sizes
+	$tiny-font-size : 9px;
+	$sm-font-size : 11px; // Small caps mixin uses this
+	$base-font-size : 1rem;
+	$md-font-size : 1.4rem;
+	$lg-font-size : 2rem;
+	// Font Weights
+	$normal : 400;
+	$thin : 400;
+	$light : 400;
+	$medium : 600;
+	$bold : 700;
+	// h1
+		$h1-font-size : 2.25rem;
+		$h1-font-weight : $light;
+		$h1-line-height : $tight-line-height;
+		$h1-letter-spacing : inherit;
+	// h2
+		$h2-font-size : 2rem;
+		$h2-font-weight : $light;
+		$h2-line-height : $short-line-height;
+		$h2-letter-spacing : inherit;
+	// h3
+		$h3-font-size : 1.5rem;
+		$h3-font-weight : $normal;
+		$h3-line-height : $short-line-height;
+		$h3-letter-spacing : inherit;
+	// h4
+		$h4-font-size : 1.25rem;
+		$h4-font-weight : $medium;
+		$h4-line-height : $short-line-height;
+		$h4-letter-spacing : inherit;
+	// h5
+		$h5-font-size : 1rem;
+		$h5-font-weight : $medium;
+		$h5-line-height : $short-line-height;
+		$h5-letter-spacing : inherit;
+	// h6 is tracked out all caps by default
+	// p
+		$sm-p-font-size : .75rem;
+		$p-font-size : .875rem;
+		$md-p-font-size : 1rem;
+		$lg-p-font-size : 1.25rem;
+		$p-font-weight : $normal;
+		$p-line-height : $base-line-height;
+		$p-letter-spacing : -.015em;
+
+// Text Highlights
+$highlight-bg : $light-text-color;
+$highlight-color : $bg-color;
+
+// General UI Varibales
+$base-border-radius : 2px;
+$footer-height : 60px;
+$header-height : 60px;
+$sidebar-width : 16rem;
+$drawer-width : 24rem;
+$right-sidebar-width : 16rem;
+$scrollbar-width : 18px;
+
+// Button Variables
+$btn-radius: $base-border-radius;
+$btn-padding: 0 2em;
+$btn-text-transform: lowercase;
+$btn-letter-spacing: $tracked-out;
+$btn-weight: $bold;
+$btn-font-style: normal;
+$btn-vertical-offset: 10px;
+
+// Button Sizes
+$btn-height: 40px;
+	$btn-small-height: 30px;
+		$btn-tiny-height: 24px;
+			$btn-large-height: 60px;
+				$btn-micro-height: 20px;
+$btn-font-size: 14px;
+	$btn-small-font-size: 12px;
+		$btn-tiny-font-size: 12px;
+			$btn-large-font-size: $btn-font-size;
+
+	// Default
+	$btn-font: $secondary-font;
+	$btn-bg: $main-color;
+	$btn-border-weight: 1px;
+	$btn-border-color: $main-color;
+	$btn-color: $white;
+	$btn-shadow: none;
+		$btn-hover-bg: darken($btn-bg, 7%);
+		$btn-hover-border-color: $btn-hover-bg;
+		$btn-hover-color: $white;
+		$btn-hover-shadow: none;
+
+	// Secondary
+	$btn-secondary-bg: $text-color;
+	$btn-secondary-border-color: $btn-secondary-bg;
+	$btn-secondary-color: $bg-color;
+		$btn-secondary-hover-bg: darken($btn-secondary-bg, 10%);
+		$btn-secondary-hover-border-color: $btn-secondary-hover-bg;
+		$btn-secondary-hover-color: $white;
+
+	// Tertiary
+	$btn-tertiary-bg: darken($text-color, 10%);
+	$btn-tertiary-border-color: $btn-tertiary-bg;
+	$btn-tertiary-color: $white;
+		$btn-tertiary-hover-bg: $black;
+		$btn-tertiary-hover-border-color: $btn-tertiary-hover-bg;
+		$btn-tertiary-hover-color: $white;
+
+	// Alert
+	$btn-alert-color: $bg-color;
+	// Notify
+	$btn-notify-color: $text-color;
+	// success
+	$btn-success-color: $bg-color;
+
+// Text Inputs
+$input-font : $main-font;
+$input-font-size : $p-font-size;
+$input-letter-spaceing : $p-letter-spacing;
+$input-label-weight : $medium;
+$input-font-weight : $medium;
+$input-underline-offset : .3rem;
+$input-bg : $light-grey;
+$input-color : $text-color;
+$input-border-color : $light-grey;
+$input-border : 1px solid $input-border-color;
+$input-border-radius : $base-border-radius;
+$input-hover-bg : darken($light-grey, 5%);
+$input-hover-color : $text-color;
+$input-hover-border-color : darken($light-grey, 5%);
+$input-hover-border : 1px solid $input-hover-border-color;
+$input-focus-bg : darken($light-grey, 5%);
+$input-focus-color : $text-color;
+$input-focus-border-color : $input-hover-border-color;
+$input-focus-border : 1px solid $input-focus-border-color;
+$placeholder-color : $light-text-color;
+$placeholder-hover-color : rgba($text-color, .4);
+$placeholder-focus-color : rgba($text-color, .4);
+$input-h-padding: .875em;
+$input-padding: 2px $input-h-padding 0;
+$input-text-offset: 3px;
+$input-height: $btn-height;
+$input-large-height: $btn-large-height;
+$input-large-font-size: $p-font-size;
+$input-small-height: $btn-small-height;
+$input-small-font-size: .75rem;
+$input-tiny-height: $btn-tiny-height;
+$input-tiny-font-size: $input-small-font-size;
+
+// Select Fields
+$select-border : $input-border;
+$select-bg : transparent;
+$select-color : $light-text-color;
+
+// Tables
+$v-cell-padding-top: $tight-gutter + .2rem;
+$v-cell-padding-bottom: $tight-gutter;
+$h-cell-padding: $tight-gutter;
+$tight-v-cell-padding: $tight-gutter / 2;
+$tight-h-cell-padding: $tight-gutter / 2;
+
+// Tooltips
+$nipple-size: 4px;
+$tooltip-offset: 4px;
+$tooltip-text-transform: lowercase;
+$tooltip-letter-spacing: .05em;
+$tooltip-font-size: 10px;
+$tooltip-font-weight: $bold;
+$tooltip-padding: 1px 6px 4px 7px;
+$tooltip-height: 18px;
+
+// Modals
+$modal-padding: $gutter * 1.5;
+$modal-header-font-size: $h4-font-size;
+
+// Breakpoints
+$sm : 450;
+$md : 600;
+$lg : 1000;
+$xlg : 1200;
+$huge : 1500;
+
+// Transitions
+$fast-speed : .1s;
+$slow-speed : .5s;
+$md-speed : .2s;
+$ease : ease-in-out;

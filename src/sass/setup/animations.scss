@@ -1,0 +1,134 @@
+$stagger-time : .45s;
+$stagger-delay : .05s;
+
+@keyframes rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes transition-in {
+	100% {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+		visibility: visible;
+	}
+}
+
+@keyframes fade-in {
+	100% {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+.transition-in {
+	opacity: 0;
+	animation: transition-in $slow-speed $ease forwards;	
+}
+
+.stagger-in-1 { animation: transition-in $stagger-time $stagger-delay * 0 $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
+.stagger-in-2 { animation: transition-in $stagger-time $stagger-delay * 1 $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
+.stagger-in-3 { animation: transition-in $stagger-time $stagger-delay * 2 $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
+.stagger-in-4 { animation: transition-in $stagger-time $stagger-delay * 3 $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
+.stagger-in-5 { animation: transition-in $stagger-time $stagger-delay * 4 $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
+.stagger-in-6 { animation: transition-in $stagger-time $stagger-delay * 5 $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
+.stagger-in-7 { animation: transition-in $stagger-time $stagger-delay * 6 $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
+.stagger-in-8 { animation: transition-in $stagger-time $stagger-delay * 7 $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
+.stagger-in-9 { animation: transition-in $stagger-time $stagger-delay * 8 $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
+.stagger-in-10 { animation: transition-in $stagger-time $stagger-delay * 9 $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
+
+.stagger-in-items {
+	> * {
+		opacity: 0;
+		transform: translate3d(0, 1.5rem, 0);
+		animation: transition-in $stagger-time ease forwards;
+		@for $i from 1 through 20 {
+			$staggerIncrement : $i - 1;
+	  	&:nth-child(#{$i}) {
+	  		animation-delay: $stagger-delay * $staggerIncrement;
+		  }
+		}
+	}
+}
+
+@keyframes blink {
+	0%, 100% { opacity: 1; }
+	50% { opacity: 0; }
+}
+
+
+// Right to Left React Transition
+.fade-in-up-enter,
+.fade-in-up-appear {
+  opacity: 0.01;
+  transform: translate3d(0, 3rem, 0);
+}
+
+.fade-in-up-enter.fade-in-up-enter-active,
+.fade-in-up-appear.fade-in-up-appear-active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: opacity .5s $ease, transform .5s $ease;
+}
+
+.fade-in-up-exit {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.fade-in-up-exit.fade-in-up-exit-active {
+  opacity: 0.01;
+  transform: translate3d(0, 3rem, 0);
+  transition: opacity .5s $ease, transform .5s $ease;
+}
+
+// Right to Left React Transition
+.right-left-enter,
+.right-left-appear {
+  opacity: 0.01;
+  transform: translate3d(100%, 0, 0) scale(.9);
+}
+
+.right-left-enter.right-left-enter-active,
+.right-left-appear.right-left-appear-active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: opacity .5s $ease, transform .5s $ease;
+}
+
+.right-left-exit {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.right-left-exit.right-left-exit-active {
+  opacity: 0.01;
+  transform: translate3d(-100%, 0, 0) scale(.9);
+  transition: opacity .5s $ease, transform .5s $ease;
+}
+
+// Left to Right React Transition
+.left-right-enter,
+.left-right-appear {
+  opacity: 0.01;
+  transform: translate3d(-100%, 0, 0) scale(.9);
+}
+
+.left-right-enter.left-right-enter-active,
+.left-right-appear.left-right-appear-active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: opacity .5s $ease, transform .5s $ease;
+}
+
+.left-right-exit {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.left-right-exit.left-right-exit-active {
+  opacity: 0.01;
+  transform: translate3d(100%, 0, 0) scale(.9);
+  transition: opacity .5s $ease, transform .5s $ease;
+}

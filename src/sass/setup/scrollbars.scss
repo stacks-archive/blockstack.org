@@ -1,0 +1,99 @@
+@mixin minimal-scrollbar() {
+	&::-webkit-scrollbar {
+		background: transparent;
+		width: $scrollbar-width;
+	}
+	&::-webkit-scrollbar-track {
+		background: transparent;
+	}
+	&::-webkit-scrollbar-track-piece {
+		background: transparent;
+	}
+	&::-webkit-scrollbar-thumb {
+		border-color: $bg-color;
+	}
+}
+
+@mixin minimal-dark-scrollbar() {
+	&::-webkit-scrollbar {
+		background: transparent;
+		width: $scrollbar-width;
+	}
+	&::-webkit-scrollbar-track {
+		background: transparent;
+	}
+	&::-webkit-scrollbar-thumb {
+		border-color: $text-color;
+	}
+}
+
+@mixin dark-scrollbar() {
+	&::-webkit-scrollbar-track {
+		background: darken($text-color, 5%);
+	}
+	&::-webkit-scrollbar-track {
+		background: darken($text-color, 5%);
+	}
+	&::-webkit-scrollbar-thumb {
+		background: lighten($text-color, 10%);
+		border: 5px solid darken($text-color, 5%);
+		&:hover {
+			background: lighten($text-color, 20%);
+		}
+	}
+	&::-webkit-scrollbar-corner {
+		background: $light-grey;
+	}
+	&::-webkit-resizer {
+		background: $light-grey;
+	}
+}
+
+*:not(.native-scrollbars):not(body):not(html) {
+	::-webkit-scrollbar {
+		-webkit-appearance: none;
+		width: $scrollbar-width; 
+	}
+	::-webkit-scrollbar-button {
+		border-radius: 30px;
+		display: none;
+	}
+	::-webkit-scrollbar-track {
+		background: $light-grey;
+	}
+	::-webkit-scrollbar-track-piece {
+	}
+	::-webkit-scrollbar-thumb {
+		background: rgba($text-color, .2);
+		border: 5px solid $light-grey;
+		width: calc(#{$scrollbar-width} - 1px);
+		border-radius: 20px;
+		opacity: .5;
+		transition: opacity $md-speed ease-in-out, background $md-speed ease-in-out;
+		&:hover {
+			opacity: 1;
+			background: rgba($text-color, .3);
+		}
+	}
+	::-webkit-scrollbar-corner {
+		background: $light-grey;
+	}
+	::-webkit-resizer {
+		background: $light-grey;
+	}
+	.minimal-scrollbar {
+		@include minimal-scrollbar();
+	}
+	.minimal-scrollbar-white {
+		@include minimal-scrollbar();
+		&::-webkit-scrollbar-thumb {
+			border-color: $white;
+		}
+	}
+	.dark-scrollbar {
+		@include dark-scrollbar();
+	}
+	.minimal-dark-scrollbar {
+		@include minimal-dark-scrollbar();
+	}
+}

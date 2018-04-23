@@ -1,0 +1,59 @@
+@import '~sass/setup/variables';
+@import '~sass/setup/mixins';
+
+
+.footer {
+	height : 450px;
+	background : $dark-color;
+	color : $light-grey;
+
+	.es-logo {
+		width: 74px;
+		height : 37px;
+		margin-bottom : 30px;
+	}
+
+	a {
+		color : $white;
+	}
+
+	svg {
+		fill : $white;
+	}
+}
+
+.col-footer {
+	display : relative;
+  height: 300px;
+}
+
+.social {
+	display : flex;
+	flex-direction : row;
+	margin-bottom: 40px;
+}
+
+.android {
+	position : absolute;
+	bottom : 0;
+	width : 100%;
+}
+
+.android-icon {
+	display:inline-block;
+
+	svg {
+		width : 21px;
+		height : 24px;
+		fill : $white;
+	}
+}
+
+.social-icon {
+	margin-right : 8px;
+	svg {
+		width : 21px;
+		height : 21px;
+		fill : $white;
+	}
+}

@@ -1,0 +1,153 @@
+// Media Queries
+@mixin respond($breakpoint) {
+  @media only screen and (min-width: $breakpoint + px) { @content; }
+}
+
+@mixin respond-smaller-than($breakpoint) {
+  @media only screen and (max-width: $breakpoint + px) { @content; }
+}
+
+// Transform
+@mixin transform($transform){
+  -ms-transform: $transform; /* IE 9 */
+  -webkit-transform: $transform; /* Chrome, Safari, Opera */
+  transform: $transform;
+}
+
+// Transition
+@mixin transition($transition: all .2s ease-in-out) {
+  -webkit-transition: $transition;
+  -moz-transition:    $transition;
+  -o-transition:      $transition;
+}
+
+// Greyscale/ Color
+@mixin greyscale() {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
+}
+
+@mixin fullcolor() {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: grayscale(0%);
+  filter: url(grayscale.svg); /* Firefox 4+ */
+  filter: none; /* IE 6-9 */;
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+@mixin font-smooth() {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin scrollable() {
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@mixin clearfix() {
+  *zoom:1;
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin ellipsis() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+@mixin all-caps () {
+  text-transform: lowercase;
+  letter-spacing: $tracked-out;
+  font-size: 14px;
+  font-weight: $normal;
+  line-height: 1.4em;
+  font-family: $secondary-font;
+  @include font-smooth();
+}
+
+@mixin small-caps () {
+  @include all-caps();
+  font-size: 12px;
+}
+
+@mixin tiny-caps () {
+  @include all-caps();
+  font-size: 10px;
+}
+
+
+// Placeholders
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+      @content;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+      @content;
+  }
+  &::-moz-placeholder {  /* Firefox 19+ */
+      @content;
+  }
+  &:-ms-input-placeholder {
+      @content;
+  }
+}
+@mixin placeholder-focus {
+  &:focus::-webkit-input-placeholder {
+      @content;
+  }
+  &:focus:-moz-placeholder { /* Firefox 18- */
+      @content;
+  }
+  &:focus::-moz-placeholder {  /* Firefox 19+ */
+      @content;
+  }
+  &:focus:-ms-input-placeholder {
+      @content;
+  }
+}
+
+/// Slightly lighten a color
+/// @access public
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+/// Slightly darken a color
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}

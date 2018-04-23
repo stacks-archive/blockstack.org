@@ -1,0 +1,113 @@
+@import '~sass/setup/variables';
+@import '~sass/setup/mixins';
+
+.landing-page {
+	background: $white;
+	height: auto;
+	display: block;
+
+	.navigation {}
+	.content {
+		padding : 90px 0;
+
+	}
+	.container {
+		max-width : 1200px;
+	}
+
+	.button {
+		display : inline-block;
+		border-radius : 3px;
+		background : $secondary-color;
+		padding : 13px 24px;
+		color : $white;
+		text-align:center;
+		&.block {
+			display : block;
+		}
+	}
+
+	.section-header {
+		padding: 6rem 0;
+		text-align: center;
+		margin: 0;
+
+
+		&.red {
+			background-color : $main-color;
+			.section-title, .section-subtitle {
+				color : $white
+			}
+		}
+
+		&.grey {
+			background-color : $light-grey;
+			.section-title, .section-subtitle {
+				color : $text-color
+			}
+		}
+
+		@include respond($lg) {
+			padding: 8rem 0;
+		}
+
+
+		.section-title {
+			letter-spacing: $tracked-out * .75;
+			font-weight : $bold;
+			font-size: 1.5rem;
+			padding-bottom: .5em;
+		}
+
+		.section-subtitle {
+			font-weight : $light;
+			// font-family: Hind-Regular;
+			// font-size: 18px;
+			// color:
+			// letter-spacing: 0;
+			// text-align: center;
+			// line-height: 23.4px;
+		}
+
+	}
+
+}
+
+
+
+img,
+video {
+	display: block;
+}
+
+
+.dark-section {
+	@include font-smooth();
+	color: $white;
+	background: $dark-color;
+	.main-color {
+		color: $main-color-on-dark;
+	}
+	.light-text-color {
+		color: lighten($text-color, 50%);
+	}
+}
+
+.blue-section {
+	@include font-smooth();
+	color: $white;
+	background: $main-color;
+	.light-text-color {
+		color: lighten($main-color, 40%);
+	}
+	p {
+		max-width: 31em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.light-grey-section {
+	background: tint($light-grey, 50%);
+}
+

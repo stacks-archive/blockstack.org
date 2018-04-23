@@ -1,0 +1,187 @@
+.no-space-after,
+hr.no-space-after,
+.v-spaced.no-space-after,
+.rich-text .no-space-after,
+.rich-text .no-space-after:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).no-space-after {
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.no-space-before,
+hr.no-space-before,
+.v-spaced.no-space-before,
+.rich-text .no-space-before,
+.rich-text .no-space-before:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).no-space-before {
+	margin-top: 0 !important;
+	padding-top: 0 !important;
+}
+
+.space-after,
+.rich-text .space-after,
+.rich-text .space-after:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).space-after {
+	margin-bottom: $gutter;
+}
+
+.padding-after,
+.rich-text .padding-after,
+.rich-text .padding-after:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).padding-after {
+	padding-bottom: $gutter;
+}
+
+.tight-space-after,
+.rich-text .tight-space-after,
+.rich-text .tight-space-after:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).tight-space-after {
+	margin-bottom: $tight-gutter;
+}
+
+.tight-padding-after,
+.rich-text .tight-padding-after,
+.rich-text .tight-padding-after:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).tight-padding-after {
+	padding-bottom: $tight-gutter;
+}
+
+.slim-space-after,
+.rich-text .slim-space-after,
+.rich-text .slim-space-after:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).slim-space-after {
+	margin-bottom: $tight-gutter/2;
+}
+
+.slim-padding-after,
+.rich-text .slim-padding-after,
+.rich-text .slim-padding-after:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).slim-padding-after {
+	padding-bottom: $tight-gutter/2;
+}
+
+.wide-space-after,
+.rich-text .wide-space-after,
+.rich-text .wide-space-after:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).wide-space-after {
+	margin-bottom: $wide-gutter;
+}
+
+.wide-padding-after,
+.rich-text .wide-padding-after,
+.rich-text .wide-padding-after:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).wide-padding-after {
+	padding-bottom: $wide-gutter;
+}
+
+.space-before,
+.rich-text .space-before,
+.rich-text .space-before:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).space-before {
+	margin-top: $gutter;
+}
+
+.padding-before,
+.rich-text .padding-before,
+.rich-text .padding-before:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).padding-before {
+	padding-top: $gutter;
+}
+
+.tight-space-before,
+.rich-text .tight-space-before,
+.rich-text .tight-space-before:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).tight-space-before {
+	margin-top: $tight-gutter;
+}
+
+.tight-padding-before,
+.rich-text .tight-padding-before,
+.rich-text .tight-padding-before:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).tight-padding-before {
+	padding-top: $tight-gutter;
+}
+
+.slim-space-before,
+.rich-text .slim-space-before,
+.rich-text .slim-space-before:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).slim-space-before {
+	margin-top: $tight-gutter/2;
+}
+
+.slim-padding-before,
+.rich-text .slim-padding-before,
+.rich-text .slim-padding-before:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).slim-padding-before {
+	padding-top: $tight-gutter/2;
+}
+
+.wide-space-before,
+.rich-text .wide-space-before,
+.rich-text .wide-space-before:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).wide-space-before {
+	margin-top: $wide-gutter;
+}
+
+.wide-padding-before,
+.rich-text .wide-padding-before,
+.rich-text .wide-padding-before:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).wide-padding-before {
+	padding-top: $wide-gutter;
+}
+
+.space-right,
+.rich-text .space-right,
+.rich-text .space-right:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).space-right {
+	margin-right: $gutter;
+}
+
+.tight-space-right,
+.rich-text .tight-space-right,
+.rich-text .tight-space-right:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).tight-space-right {
+	margin-right: $tight-gutter;
+}
+
+.slim-space-right,
+.rich-text .slim-space-right,
+.rich-text .slim-space-right:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).slim-space-right {
+	margin-right: $tight-gutter/2;
+}
+
+.wide-space-right,
+.rich-text .wide-space-right,
+.rich-text .wide-space-right:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).wide-space-right {
+	margin-right: $wide-gutter;
+}
+
+.space-left,
+.rich-text .space-left,
+.rich-text .space-left:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).space-left {
+	margin-left: $gutter;
+}
+
+.tight-space-left,
+.rich-text .tight-space-left,
+.rich-text .tight-space-left:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).tight-space-left {
+	margin-left: $tight-gutter;
+}
+
+.slim-space-left,
+.rich-text .slim-space-left,
+.rich-text .slim-space-left:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).slim-space-left {
+	margin-left: $tight-gutter/2;
+}
+
+.wide-space-left,
+.rich-text .wide-space-left,
+.rich-text .wide-space-left:not(:first-child),
+.rich-text > div:not(:first-child):not(.p).wide-space-left {
+	margin-left: $wide-gutter;
+}

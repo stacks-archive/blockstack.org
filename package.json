@@ -1,0 +1,56 @@
+{
+  "name": "easyset-landing",
+  "version": "1.0.0",
+  "description": "Landing Pages for Easyset",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development node index.js",
+    "build": "webpack",
+    "postinstall": "NODE_ENV=staging webpack",
+    "test": "eslint ./src/js/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gordils-willis/easyset-landing.git"
+  },
+  "author": "@robincwillis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gordils-willis/easyset-landing/issues"
+  },
+  "homepage": "https://github.com/gordils-willis/easyset-landing#readme",
+  "devDependencies": {
+    "autoprefixer": "^8.3.0",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.7.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.8.3",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-loader": "^2.1.4",
+    "react-dom": "^16.3.2",
+    "resolve-url-loader": "^2.3.0",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "svg-inline-loader": "^0.8.0",
+    "svg-inline-react": "^3.0.0",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-dev-server": "^3.1.3",
+    "webpack-merge": "^4.1.2",
+    "webpack-notifier": "^1.6.0"
+  },
+  "dependencies": {
+    "react": "^16.3.2"
+  }
+}

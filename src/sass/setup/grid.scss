@@ -1,0 +1,423 @@
+$col: calc(100% / 12);
+
+@mixin grid-setup() {
+  display: block;
+  margin-left: calc(#{$gutter} * -.5);
+  margin-right: calc(#{$gutter} * -.5);
+}
+
+@mixin wide-gutter-grid-setup() {
+  display: block;
+  margin-left: calc(#{$wide-gutter} * -.5);
+  margin-right: calc(#{$wide-gutter} * -.5);
+}
+
+@mixin tight-gutter-grid-setup() {
+  display: block;
+  margin-left: calc(#{$tight-gutter} * -.5);
+  margin-right: calc(#{$tight-gutter} * -.5);
+}
+
+@mixin no-gutter-grid-setup() {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@mixin col-setup() {
+  // Column Rules
+  > *[class^="col"],
+  > .col {
+    min-height: 1px;
+    flex-grow: 0;
+    padding-left: calc(#{$gutter} / 2);
+    padding-right: calc(#{$gutter} / 2);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    letter-spacing: $base-letter-spacing;
+  }
+
+  @for $col-count from 1 through 12 {
+    > .col-#{$col-count} {
+      width: calc(#{$col} * #{$col-count});
+    }
+  }
+
+  /* 
+  Use .push classes to move columns over
+  Gernerally better to do this manually at breakpoints
+  */
+
+  @for $push-count from 1 through 12 {
+    .push-right-#{$push-count} {
+      margin-right: calc(#{$col} * #{$push-count});
+    }
+    .push-left-#{$push-count} {
+      margin-left: calc(#{$col} * #{$push-count});
+    }
+  }
+
+}
+
+@mixin float-grid() {
+  *zoom:1;
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+  > *[class^="col-"]:not(.right),
+  > .col:not(.right) {
+    float: left;
+  }
+  > *[class^="col-"].right,
+  > .col.right {
+    float: right;
+  }
+}
+
+@mixin inline-grid() {
+  font-size: 0;
+  letter-spacing: 0;
+  &.middle {
+    > *[class^="col-"],
+    > .col {
+      vertical-align: middle;
+    }
+  }
+  &.bottom {
+    > *[class^="col-"],
+    > .col {
+      vertical-align: bottom;
+    }
+  }
+  &.center {
+    text-align: center;
+  }
+  &.right {
+    text-align: right;
+  }
+  > *[class^="col-"],
+  > .col {
+    font-size: inherit;
+    letter-spacing: inherit;
+    display: inline-block;
+    vertical-align: top;
+    font-size: $base-font-size;
+    letter-spacing: $base-letter-spacing;
+  }
+}
+
+@mixin flex-grid() {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &.no-wrap {
+    flex-wrap: nowrap;
+  }
+  &.center {
+    justify-content: center;
+  }
+  &.left {
+    justify-content: flex-start;
+  }
+  &.right {
+    justify-content: flex-end;
+  }
+  &.middle {
+    align-items: center;
+  }
+  &.bottom {
+    align-items: flex-end;
+  }
+  &.baseline {
+    align-items: baseline;
+  }
+  &.stretch {
+    align-items: stretch;
+  }
+  > .col,
+  > *[class^="col-"] {
+    &.grow { flex-grow: 1; width: 1%; }
+    &.no-grow { flex-grow: 0; flex-shrink: 0; }
+  }
+}
+
+@mixin wide-gutter() {
+  &.wide-gutter {
+    @include wide-gutter-grid-setup();
+    &.flex-grid {
+      display: flex;
+    }
+    > *[class^="col"],
+    > .col {
+      padding-left: calc(#{$wide-gutter} / 2);
+      padding-right: calc(#{$wide-gutter} / 2);
+    }
+  }
+}
+
+@mixin tight-gutter() {
+  &.tight-gutter {
+    @include tight-gutter-grid-setup();
+    &.flex-grid {
+      display: flex;
+    }
+    > *[class^="col"],
+    > .col {
+      padding-left: calc(#{$tight-gutter} / 2);
+      padding-right: calc(#{$tight-gutter} / 2);
+    }
+  }
+}
+
+@mixin no-gutter() {
+  &.no-gutter {
+    @include no-gutter-grid-setup();
+    &.flex-grid {
+      display: flex;
+    }
+    > *[class^="col"],
+    > .col {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.float-grid,
+.inline-grid,
+.flex-grid {
+  // Turn grid on at different breakpoints
+  &:not(.no-break):not(.break-lg):not(.break-xlg):not(.break-sm) {
+    @include respond($md) {
+      @include grid-setup();
+      @include col-setup();
+      @include tight-gutter();
+      @include no-gutter();
+    }
+    @include respond($lg) {
+      @include wide-gutter();
+    }
+  }
+  &.no-break {
+    @include grid-setup();
+    @include col-setup();
+    @include tight-gutter();
+    @include no-gutter();
+    @include respond($lg) {
+      @include wide-gutter();
+    }
+  }
+  &.break-sm {
+    @include respond($sm) {
+      @include grid-setup();
+      @include col-setup();
+      @include tight-gutter();
+      @include no-gutter();
+    }
+    @include respond($lg) {
+      @include wide-gutter();
+    }
+  }
+  &.break-lg {
+    @include respond($lg) {
+      @include grid-setup();
+      @include col-setup();
+      @include tight-gutter();
+      @include no-gutter();
+      @include wide-gutter();
+    }
+  }
+  &.break-xlg {
+    @include respond($xlg) {
+      @include grid-setup();
+      @include col-setup();
+      @include tight-gutter();
+      @include no-gutter();
+    }
+    @include respond($lg) {
+      @include wide-gutter();
+    }
+  }
+  &.v-spaced-normal {
+    margin-bottom: -$gutter;
+    > .col,
+    > *[class^="col-"] {
+      margin-bottom: $gutter;
+    }
+  }
+  &.v-spaced-tight {
+    margin-bottom: -$tight-gutter;
+    > .col,
+    > *[class^="col-"] {
+      margin-bottom: $tight-gutter;
+    }
+  }
+  &.v-spaced-wide {
+    margin-bottom: -$wide-gutter;
+    > .col,
+    > *[class^="col-"] {
+      margin-bottom: $wide-gutter;
+    }
+  }
+  &.v-spaced {
+    margin-bottom: -$gutter;
+    > .col,
+    > *[class^="col-"] {
+      margin-bottom: $gutter;
+    }
+    &.wide-gutter {
+      @include respond($lg) {
+        margin-bottom: -$wide-gutter;
+      }
+      > .col,
+      > *[class^="col-"] {
+        @include respond($lg) {
+          margin-bottom: $wide-gutter;
+        }
+      } 
+    }
+    &.tight-gutter {
+      margin-bottom: -$tight-gutter;
+      > .col,
+      > *[class^="col-"] {
+        margin-bottom: $tight-gutter;
+      } 
+    }
+  }
+}
+
+.float-grid {
+  // Turn grid on at different breakpoints
+  &:not(.no-break):not(.break-lg):not(.break-xlg):not(.break-sm) {
+    @include respond($md) {
+      @include float-grid();
+    }
+  }
+  &.no-break {
+    @include float-grid();
+  }
+  &.break-sm {
+    @include respond($sm) {
+      @include float-grid();
+    }
+  }
+  &.break-lg {
+    @include respond($lg) {
+      @include float-grid();
+    }
+  }
+  &.break-xlg {
+    @include respond($xlg) {
+      @include float-grid();
+    }
+  }
+}
+
+.inline-grid {
+  // Turn grid on at different breakpoints
+  &:not(.no-break):not(.break-lg):not(.break-xlg):not(.break-sm) {
+    @include respond($md) {
+      @include inline-grid();
+    }
+  }
+  &.no-break {
+    @include inline-grid();
+  }
+  &.break-sm {
+    @include respond($sm) {
+      @include inline-grid();
+    }
+  }
+  &.break-lg {
+    @include respond($lg) {
+      @include inline-grid();
+    }
+  }
+  &.break-xlg {
+    @include respond($xlg) {
+      @include inline-grid();
+    }
+  }
+}
+
+.flex-grid {
+  // Turn grid on at different breakpoints
+  &:not(.no-break):not(.break-lg):not(.break-xlg):not(.break-sm) {
+    @include respond($md) {
+      @include flex-grid();
+      display: flex;
+    }
+  }
+  &.no-break {
+    @include flex-grid();
+    display: flex;
+  }
+  &.break-sm {
+    @include respond($sm) {
+      @include flex-grid();
+      display: flex;
+    }
+  }
+  &.break-lg {
+    @include respond($lg) {
+      @include flex-grid();
+      display: flex;
+    }
+  }
+  &.break-xlg {
+    @include respond($xlg) {
+      @include flex-grid();
+      display: flex;
+    }
+  }
+  &.v-stretch {
+    align-items: stretch;
+  }
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+// Stack Responsively
+.col-5-4-2-1 {
+  width: 100%;
+  @include respond($sm) {
+    width: 50%;
+  }
+  @include respond($lg) {
+    width: 25%;
+  }
+  @include respond($xlg) {
+    width: 20%;
+  }
+}
+
+.col-4-3-2-1 {
+  width: 100%;
+  @include respond($md) {
+    width: 50%;
+  }
+  @include respond($lg) {
+    width: 33.333%;
+  }
+  @include respond($xlg) {
+    width: 25%;
+  }
+}
+
+.col-3-2-1 {
+  width: 100%;
+  @include respond($md) {
+    width: 50%;
+  }
+  @include respond($lg) {
+    width: 33.333%;
+  }
+}

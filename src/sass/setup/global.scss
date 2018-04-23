@@ -1,0 +1,214 @@
+body,
+html {
+	height: 100%;
+}
+
+.unscrollable-frame {
+	overflow: hidden !important;
+}
+
+.scrollable-frame {
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	height: 100%;
+}
+
+p, .p {
+	.dot-indecator {
+		&:not(:first-child) {
+			margin-left: .3em;
+			margin-right: .3em;
+		}
+	}
+}
+
+.dot-indecator {
+	color: $light-text-color;
+	background: currentcolor;
+	width: .5rem;
+	height: .5rem;
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 50%;
+	margin: -2px 0 0;
+	&.main-color {
+		color: $main-color;
+	}
+	&.success {
+		color: $success;
+	}
+	&.alert {
+		color: $alert;
+	}
+	&.notify {
+		color: $notify;
+	}
+}
+
+.white-bg {
+	background: $white;
+}
+
+.dark-bg {
+	background: $text-color;
+	color: $white;
+	@include font-smooth();
+	.light-text-color {
+		color: rgba($white, .5);
+	}
+	a {
+		color: currentcolor;
+		border-bottom: 1px solid transparent;
+		&:hover {
+			border-color: lighten($main-color, .1);
+		}
+	}
+}
+
+section,
+.section {
+	&.border-top {
+		@include respond($md) {
+			padding-top: $gutter;
+			border-top: 1px solid $hr-color;
+		}
+	}
+	.title {
+		@include respond-smaller-than($md) {
+			padding-bottom: $tight-gutter;
+			border-bottom: 1px solid $hr-color;
+			margin-bottom: $tight-gutter;
+		}
+	}
+}
+
+.dark-section {
+	background: $black;
+	color: $main-color;
+	.button {
+		&.transparent {
+			color: rgba($main-color, .65);
+			&:not(.disabled):not(.loading):hover {
+				color: $white;
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.flex-center-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// General Section headers
+.section-header {
+	min-height: $btn-height;
+	margin-bottom: 1.5rem;
+	&.no-space-below {
+		margin-bottom: 0;
+	}
+	&.space-above {
+		margin-top: 1rem;
+	}
+	&.with-border {
+		border-bottom: 1px solid $text-color;
+	}
+	h1, h2, h3, h4, h5, h6, p,
+	.h1, .h2, .h3, .h4, .h5, .h6, .p {
+		margin: 0;
+	}
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.main-content-sidebar {
+	width: $sidebar-width;
+	&.fixed {
+		.content {
+			@include respond($md) {
+				position: fixed;
+				width: $sidebar-width + $margin + $margin;
+				left: 0;
+				padding-top: $margin;
+				padding-right: $margin;
+				padding-left: $margin;
+				overflow-y: auto;
+				top: $header-height;
+				bottom: 0;
+			}
+		}
+	}
+}
+
+.centered-content {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+}
+
+.tag {
+	border-radius: 40px;
+	line-height: 1em;
+	font-size: 13px;
+	background: lighten($main-color, 43%);
+	border: 1px solid lighten($main-color, 43%);
+	color: $main-color;
+	font-weight: $bold;
+	padding: .4em .75em;
+	@include font-smooth();
+	&.small,
+	&.sm {
+		font-size: 12px;
+		font-weight: $bold;
+	}
+	&.tiny {
+		font-size: 10px;
+		font-weight: $bold;
+	}
+	&.outlined {
+		border-color: currentcolor;
+		background: transparent;
+	}
+	&.secondary {
+		border: 1px solid lighten($text-color, 71%);
+		background: lighten($text-color, 71%);
+		color: lighten($text-color, 40%);
+	}
+}
+
+.hide-xlg {
+	@include respond-smaller-than($xlg) {
+		display: none;
+	}
+}
+
+.hide-lg {
+	@include respond-smaller-than($lg) {
+		display: none;
+	}
+}
+
+.hide-md {
+	@include respond-smaller-than($md) {
+		display: none;
+	}
+}
+
+.hide-sm {
+	@include respond-smaller-than($sm) {
+		display: none;
+	}
+}

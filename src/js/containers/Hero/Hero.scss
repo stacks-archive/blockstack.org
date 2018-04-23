@@ -1,0 +1,109 @@
+@import '~sass/setup/variables';
+@import '~sass/setup/mixins';
+
+.hero {
+
+	height : 100vh;
+	overflow:hidden;
+
+	h1 {
+		/* The Ultimate Physica: */
+		font-family: Hind-SemiBold;
+		font-size: 36px;
+		color: #FFFFFF;
+		letter-spacing: 0.15px;
+		line-height: 42px;
+		margin-bottom: 24px;
+	}
+
+	.grid {
+	  display: grid;
+	  grid-template-columns: repeat(4, 1fr);
+	}
+
+
+.cell-1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  @include respond($lg) {
+	  grid-column-end: 3;
+  }
+}
+
+.cell-2 {
+  grid-column-start: 1;
+  grid-column-end : 4;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+
+.cell-3 {
+  grid-column-start: 4;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.grid > div {
+  // border: 2px solid #ffa94d;
+  // border-radius: 5px;
+  // background-color: #ffd8a8;
+  //padding: 1em 0;
+  padding-bottom:50px;
+}
+
+
+}
+
+
+
+
+.full-height {
+	min-height : 100vh;
+}
+
+//https://github.com/webcore-it/colorful-background-css-generator
+
+.colorful {
+	height : 100%;
+	padding-top: 140px;
+
+	background:
+		-webkit-linear-gradient(45deg, hsla(3, 100%, 71%, 1) 0%, hsla(3, 100%, 71%, 0) 70%),
+		-webkit-linear-gradient(315deg, hsla(0, 20%, 50%, 0.5) 10%, hsla(0, 20%, 50%, 0) 80%),
+		-webkit-linear-gradient(135deg, hsla(1, 100%, 80%, 1) 100%, hsla(0, 20%, 50%, 1) 70%),
+		-webkit-linear-gradient(225deg, hsla(0, 20%, 50%, 1) 0%, hsla(0, 20%, 50%, 0) 70%),
+}
+
+//hsla(0, 20%, 50%, 1);
+//hsla(3, 100%, 71%, 1);
+//hsla(1, 100%, 80%, 1);
+//hsla(205, 26%, 22%, 1);
+
+
+.colorful2 {
+	background:
+		-webkit-linear-gradient(45deg, hsla(111, 99%, 45%, 1) 0%, hsla(111, 99%, 45%, 0) 70%),
+		-webkit-linear-gradient(315deg, hsla(159, 96%, 41%, 1) 10%, hsla(159, 96%, 41%, 0) 80%),
+		-webkit-linear-gradient(225deg, hsla(78, 96%, 48%, 1) 10%, hsla(78, 96%, 48%, 0) 80%),
+		-webkit-linear-gradient(135deg, hsla(354, 92%, 41%, 1) 100%, hsla(354, 92%, 41%, 0) 70%);
+	background:
+		linear-gradient(45deg, hsla(111, 99%, 45%, 1) 0%, hsla(111, 99%, 45%, 0) 70%),
+		linear-gradient(135deg, hsla(159, 96%, 41%, 1) 10%, hsla(159, 96%, 41%, 0) 80%),
+		linear-gradient(225deg, hsla(78, 96%, 48%, 1) 10%, hsla(78, 96%, 48%, 0) 80%),
+		linear-gradient(315deg, hsla(354, 92%, 41%, 1) 100%, hsla(354, 92%, 41%, 0) 70%);
+}
+
+.bg {
+
+  background-color: #0200ff;
+  background-image:
+
+	linear-gradient(rgba(255,0,255,1) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(255,255,0,1) 1px, transparent 1px);
+  background-size: 60px 60px, 60px 100px, 20px 20px, 20px 20px;
+  background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+  -webkit-transform: rotate(-15deg);
+}
