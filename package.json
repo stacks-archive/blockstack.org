@@ -1,12 +1,15 @@
 {
   "name": "easyset-landing",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=0.8.0"
+  },
   "description": "Landing Pages for Easyset",
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=development node index.js",
     "build": "webpack",
-    "postinstall": "NODE_ENV=staging webpack --mode=production --config=webpack.dev.js",
+    "postinstall": "webpack --mode=production --config=webpack.dev.js",
     "test": "eslint ./src/js/"
   },
   "repository": {
@@ -26,6 +29,7 @@
     "babel-eslint": "^8.2.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-es2017": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
     "css-loader": "^0.28.11",
