@@ -1,5 +1,15 @@
 @import '~sass/setup/variables';
 
+
+.how-it-works {
+	.images {
+		margin-top:60px;
+		.image {
+			margin-bottom: 60px;
+		}
+	}
+}
+
 .step-image {
 	svg {
 		display : block;
@@ -10,7 +20,7 @@
 
 .step-content {
 	position : relative;
-	margin-bottom : 60px;
+	margin-bottom : 80px;
 	margin-left : 60px;
 	.num {
 		position : absolute;

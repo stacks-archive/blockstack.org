@@ -9,11 +9,9 @@
 	.navigation {}
 	.content {
 		padding : 90px 0;
+	}
 
-	}
-	.container {
-		max-width : 1200px;
-	}
+	//TODO Real buttons
 
 	.button {
 		display : inline-block;
@@ -22,6 +20,12 @@
 		padding : 13px 24px;
 		color : $white;
 		text-align:center;
+		font-weight : bold;
+
+		&:hover {
+			background : darken($secondary-color, 8%);
+		}
+
 		&.block {
 			display : block;
 		}

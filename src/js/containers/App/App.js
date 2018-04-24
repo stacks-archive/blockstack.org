@@ -7,6 +7,8 @@ import Footer from 'containers/Footer';
 import HowItWorks from 'containers/HowItWorks';
 import Pricing from 'containers/Pricing';
 import Solution from 'containers/Solution';
+import Mobile from 'containers/Mobile';
+
 import './App.scss';
 
 class App extends Component {
@@ -18,6 +20,7 @@ class App extends Component {
 				<HowItWorks />
 				<Pricing />
 				<Solution />
+				<Mobile />
 				<Footer />
 			</div>
 		);

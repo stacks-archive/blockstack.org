@@ -4,6 +4,7 @@ import InlineSVG from 'svg-inline-react';
 
 import image1 from 'assets/images/how-it-works-1.png';
 import image2 from 'assets/images/how-it-works-2.png';
+import image3 from 'assets/images/how-it-works-3.png';
 
 import step1 from 'assets/images/step-1.svg';
 import step2 from 'assets/images/step-2.svg';
@@ -46,9 +47,12 @@ class HowItWorks extends Component {
 								</div>
 							</div>
 							<div className="col-6">
+								<div className="images">
+									<img src={image1} className="image" />
+									<img src={image2} className="image" />
+								</div>
 
-								<img src={image1} className="space-after" />
-								<img src={image2} className="space-after" />
+
 							</div>
 						</div>
 					</div>

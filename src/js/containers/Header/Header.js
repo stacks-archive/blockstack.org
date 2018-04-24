@@ -17,19 +17,19 @@ class Header extends Component {
 						</div>
 
 						<div className="col-no-grow align-right">
-							<a href="#" className="all-caps">How It Works</a>
+							<a href="#how-it-works" className="all-caps">How It Works</a>
 						</div>
 
 						<div className="col-no-grow align-right">
-							<a href="#" className="all-caps">Pricing</a>
+							<a href="#pricing" className="all-caps">Pricing</a>
 						</div>
 
 						<div className="col-no-grow align-right">
-							<a href="#" className="all-caps">Solution</a>
+							<a href="#solution" className="all-caps">Solution</a>
 						</div>
 
 						<div className="col-no-grow align-right">
-							<a href="#" className="all-caps">Mobile App</a>
+							<a href="#mobile" className="all-caps">Mobile App</a>
 						</div>
 
 						<div className="col-no-grow align-right">

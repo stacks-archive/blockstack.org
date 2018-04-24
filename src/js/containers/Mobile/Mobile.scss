@@ -1,0 +1,39 @@
+@import '~sass/setup/variables';
+@import '~sass/setup/mixins';
+
+
+.mobile {
+	.section-header {
+		background : $light-grey;
+		position : relative;
+	}
+
+	.app-icon {
+
+		position : absolute;
+		top: -22px;
+		left : 50%;
+		margin-left:-135px;
+
+		svg {
+			width : 270px;
+			height : 270px;
+		}
+	}
+
+	.content.mobile-content {
+		background : $main-color;
+		padding-top:190px;
+		padding-bottom : 100px;
+		text-align : center;
+	}
+
+
+	.app-store {
+		svg {
+			width : 295px;
+			height : 100px;
+		}
+	}
+
+}
