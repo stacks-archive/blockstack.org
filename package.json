@@ -6,7 +6,7 @@
   "scripts": {
     "start": "NODE_ENV=development node index.js",
     "build": "webpack",
-    "postinstall": "NODE_ENV=staging webpack",
+    "postinstall": "NODE_ENV=staging webpack --mode=production --config=webpack.dev.js",
     "test": "eslint ./src/js/"
   },
   "repository": {
