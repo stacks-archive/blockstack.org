@@ -283,11 +283,11 @@ export const blogAuthors = {
     twitter: 'arsteinhorn',
     github: 'arsteinhorn',
   },
-  'chase': {
-    blockstackId: 'hologram',
-    name: 'Chase Wackerfuss',
-    avatar: 'https://blockstack.org/images/avatars/chase-wackerfuss.jpg',
-    twitter: 'vockerfoos',
-    github: 'cwackerfuss'
-  }
+  'xan.id': {
+    blockstackId: 'xan',
+    name: 'Xan Ditkoff',
+    avatar: 'https://blockstack.org/images/avatars/xan-ditkoff.jpg',
+    twitter: 'xanditkoff',
+    github: 'xanbots',
+  },
 }
