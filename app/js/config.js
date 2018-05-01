@@ -290,4 +290,11 @@ export const blogAuthors = {
     twitter: 'xanditkoff',
     github: 'xanbots',
   },
+  'mitchell.id': {
+    blockstackId: 'mitchell',
+    name: 'Mitchell Cuevas',
+    avatar: 'https://blockstack.org/images/avatars/mitchell-cuevas.jpg',
+    twitter: 'mcuevasm',
+    github: 'cuevasm',
+  }
 }
