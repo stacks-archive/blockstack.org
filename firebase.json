@@ -108,6 +108,10 @@
         "destination": "/docs-tutorials-todo-list.html"
       },
       {
+        "source": "/blog/blockstack-shapeshift-50-000-for-a-universal-wallet-app",
+        "destination": "/blog-blockstack-shapeshift-50-000-for-a-universal-wallet-app.html"
+      },
+      {
         "source": "/blog/blockstack-community-rewards-program",
         "destination": "/blog-blockstack-community-rewards-program.html"
       },
@@ -162,10 +166,6 @@
       {
         "source": "/blog/blockstack-cores-successful-hard-fork-to-version-0-17",
         "destination": "/blog-blockstack-cores-successful-hard-fork-to-version-0-17.html"
-      },
-      {
-        "source": "/blog/signature-bounties-for-decentralized-apps-on-the-new-internet",
-        "destination": "/blog-signature-bounties-for-decentralized-apps-on-the-new-internet.html"
       },
       {
         "source": "**",
