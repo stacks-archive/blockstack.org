@@ -63,10 +63,10 @@ export const featuredApps = [
     description: `Casa is the world's first open source homesharing protocol and decentralized network. Book rooms without platform fees or trusted intermediaries and securely transact with encrypted chat and multi-party escrow.`,
   },
   {
-    name: 'Afia',
-    icon: '/images/logos/app-icon-afia-512x512.png',
+    name: 'Stealthy',
+    icon: '/images/logos/app-icon-stealthy-512x512.png',
     description:
-      'Afia gives individuals the power to own and manage their personal health records. Keep your health data safe on your personal encrypted cloud storage and securely share your data with healthcare providers as you see fit.',
+      'Stealthy is a decentralized, end to end encrypted, p2p chat and video application built with security & privacy in mind. You can use WebRTC for real time chat, video, and screen sharing.',
   },
   {
     name: 'DotPodcast',
