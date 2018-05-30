@@ -108,6 +108,14 @@
         "destination": "/docs-tutorials-todo-list.html"
       },
       {
+        "source": "/blog/announcing-a-universal-dapp-store",
+        "destination": "/blog-announcing-a-universal-dapp-store.html"
+      },
+      {
+        "source": "/blog/a-1m-request-for-social-networks",
+        "destination": "/blog-a-1m-request-for-social-networks.html"
+      },
+      {
         "source": "/blog/blockstack-shapeshift-50-000-for-a-universal-wallet-app",
         "destination": "/blog-blockstack-shapeshift-50-000-for-a-universal-wallet-app.html"
       },
@@ -158,14 +166,6 @@
       {
         "source": "/blog/blockstack-token-sale",
         "destination": "/blog-blockstack-token-sale.html"
-      },
-      {
-        "source": "/blog/announcing-the-blockstack-token-whitepaper",
-        "destination": "/blog-announcing-the-blockstack-token-whitepaper.html"
-      },
-      {
-        "source": "/blog/blockstack-cores-successful-hard-fork-to-version-0-17",
-        "destination": "/blog-blockstack-cores-successful-hard-fork-to-version-0-17.html"
       },
       {
         "source": "**",

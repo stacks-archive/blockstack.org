@@ -101,6 +101,14 @@ class Footer extends Component {
                     </div>
                     <div className="foot-item">
                       <a
+                        href="https://contribute.blockstack.org/"
+                        target="_blank"
+                      >
+                        Contribute
+                      </a>
+                    </div>
+                    <div className="foot-item">
+                      <a
                         href="https://blockstack.myshopify.com/"
                         target="_blank"
                       >
