@@ -1,0 +1,27 @@
+@import '~sass/setup/variables';
+@import '~sass/setup/mixins';
+
+header {
+	.container {
+		padding-top: $mobile-margin;
+		@include respond($lg) {
+			width: 100%;
+			max-width: 100%;
+			padding: 3rem 3rem 0 3rem;
+		}
+	}
+
+	svg {
+		display: block;
+		height: 2.25rem;
+		// fill : white;
+	}
+
+	a {
+		padding-bottom : .25em;
+		border-bottom : 1px solid transparent;
+		&:hover {
+			border-bottom : 1px solid $white;
+		}
+	}
+}

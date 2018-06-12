@@ -1,6 +1,6 @@
-@import '~sass/setup/variables';
-@import '~sass/setup/mixins';
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
+// Material Icons
 .icon {
   svg:not(.logo) {
     display: block;
@@ -11,6 +11,9 @@
 	}
   display: inline-block;
   vertical-align: middle;
+  &.cc-icon {
+    margin-top: -3px;
+  }
   &.large {
     svg {
       width: 1.5rem !important;
@@ -20,6 +23,11 @@
   &.md-12 { 
     svg {
       width: 12px !important; height: 12px !important; 
+    }
+  }
+  &.md-14 { 
+    svg {
+      width: 14px !important; height: 14px !important; 
     }
   }
   &.md-18 { 
@@ -45,6 +53,7 @@
 }
 
 @mixin material-icons() {
+  // color: currentcolor;
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -62,10 +71,11 @@
   text-rendering: optimizeLegibility;
   font-feature-settings: 'liga';
   &.md-12 { font-size: 12px; line-height: 12px; }
+  &.md-14 { font-size: 14px; line-height: 14px; }
   &.md-18 { font-size: 18px; line-height: 18px; }
-  &.md-24 { font-size: 24px; line-height: 24px; }
-  &.md-36 { font-size: 36px; line-height: 36px; }
-  &.md-48 { font-size: 48px; line-height: 48px; }
+	&.md-24 { font-size: 24px; line-height: 24px; }
+	&.md-36 { font-size: 36px; line-height: 36px; }
+	&.md-48 { font-size: 48px; line-height: 48px; }
 }
 
 .material-icons {

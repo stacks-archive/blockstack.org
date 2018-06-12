@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 
-import Header from 'containers/Header';
-import Hero from 'containers/Hero';
-import Footer from 'containers/Footer';
+import Header from 'components/Header';
+import Card from 'components/Card';
 
-import HowItWorks from 'containers/HowItWorks';
-import Pricing from 'containers/Pricing';
-import Solution from 'containers/Solution';
-import Mobile from 'containers/Mobile';
+import TopArea from 'components/TopArea';
+import AppsGrid from 'components/AppsGrid';
+import WhyBS from 'components/WhyBS';
+import OurTechnology from 'components/OurTechnology';
+import OurCommunity from 'components/OurCommunity';
+import FundApp from 'components/FundApp';
+import Mission from 'components/Mission';
+import Footer from 'components/Footer';
 
 import './App.scss';
 
@@ -15,13 +18,17 @@ class App extends Component {
 	render() {
 		return (
 			<div className="landing-page">
-				<Header />
-				<Hero />
-				<HowItWorks />
-				<Pricing />
-				<Solution />
-				<Mobile />
-				<Footer />
+				<section className="blue-bg top-section">
+					<Header/>
+					<TopArea/>
+				</section>
+				<AppsGrid/>
+				<WhyBS/>
+				<OurTechnology/>
+				<OurCommunity/>
+				<FundApp/>
+				<Mission/>
+				<Footer/>
 			</div>
 		);
 	}

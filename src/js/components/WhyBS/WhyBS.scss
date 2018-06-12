@@ -1,0 +1,15 @@
+@import '~sass/setup/variables';
+@import '~sass/setup/mixins';
+
+.why-bs {
+	ol.dashlist {
+		counter-reset: list-counter;
+		li {
+			margin: $space-1;
+			&:before {
+				counter-increment: list-counter;
+				content: counter(list-counter, decimal-leading-zero) ' --- ';
+			}
+		}
+	}
+}

@@ -1,312 +1,130 @@
 .rich-text {
-	max-width: 32rem;
-	
-	h1,
-	.h1 {
-		& ~ p:not(:first-child),
-		& ~ .p:not(:first-child) {
-			padding-top: 1.25rem;
-		}
-	}
+  // max-width: $max-text-width;
 
-	h2,
-	.h2 {
-		&:not(:first-child) {
-			margin-top: -1.25rem;
-			padding-top: 1.25rem;
-		}
-		& ~ p:not(:first-child),
-		& ~ .p:not(:first-child) {
-			padding-top: .75rem;
-		}
-	}
+  > *:first-child {
+    margin-top: 0;
+  }
+  > *:last-child {
+    margin-bottom: 0;
+  }
 
-	h2,
-	.h2,
-	h3,
-	.h3 {
-	}
+  h1, 
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 3rem;
+    max-width: 100% !important;
+  }
 
-	h3,
-	.h3 {
-		&:not(:first-child) {
-			margin-top: -1rem;
-			padding-top: 1rem;
-		}
-		& ~ p:not(:first-child),
-		& ~ .p:not(:first-child) {
-			padding-top: 7px;
-		}
-	}
+  p,
+  ul,
+  ol,
+  blockquote,
+  pre {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 
-	h4, 
-	.h4, 
-	h5, 
-	.h5, 
-	h6,
-	.h6, {
-		&:not(:first-child) {
-			margin-top: -.625rem;
-			padding-top: .625rem;
-		}
-		& ~ p:not(:first-child),
-		& ~ .p:not(:first-child) {
-			padding-top: .4rem;
-		}
-	}
+  p {
+    margin-bottom: $p-line-height;
+  }
 
-	blockquote,
-	dl,
-	ol,
-	p,
-	table tbody,
-	ul {
-	}
+  a {
+    border-bottom: 1px solid rgba($text-color, .3);
+  }
 
-	p,
-	.p {
-		&:not(:first-child) {
-			padding-top: 1em;
-		}
-	}
+  li {
+    font-size: $p-font-size;
+    line-height: $base-line-height;
+    letter-spacing: $p-letter-spacing;
+    font-weight: $p-font-weight;
+    text-transform: none;
+  }
 
-	blockquote:not(:first-child),
-	> div:not(:first-child):not(.p) {
-		margin-top: 1rem;
-	}
+  &.sm li {
+    font-size: $sm-p-font-size;
+    @include respond($huge) {
+      font-size: 16px;
+    }
+  }
 
-	.image:first-child+p,
-	aside:first-child+p {
-		padding-top: 0;
-	}
+  blockquote {
+    font-size: 1.75rem;
+    line-height: $short-line-height;
+    position: relative;
+    padding-left: .75em;
+    margin-left: -.75em;
+    margin-bottom: calc($base-line-height * 1.25);
+    & p {
+      font-size: 1.75rem;
+      line-height: $short-line-height;
+    }
+    &:before {
+      content: '“';
+      position: absolute;
+      left: 0;
+    }
+    &:after {
+      // content: '”';
+    }
+  }
 
-	h2:not(:first-child),
-	.h2:not(:first-child),
-	li h2,
-	li .h2 {
-		margin-top: 1.125rem;
-		padding-top: 1.25rem;
-	}
+  ul {
+    list-style: disc;
+    margin-bottom: 1rem;
+    padding-left: 3rem;
+  }
 
-	h3:not(:first-child),
-	.h3:not(:first-child),
-	li h3,
-	li .h3 {
-		margin-top: 1.125rem;
-		padding-top: 1rem;
-	}
+  ol {
+    list-style: decimal;
+    margin-bottom: 1rem;
+    padding-left: 3rem;
+  }
 
-	li h3,
-	li .h3,
-	li h4,
-	li .h4, {
-		padding-top: 0;
-	}
+  li,
+  dd {
+    // margin-bottom: 1rem;
+  }
 
-	h4:not(:first-child)
-	.h4:not(:first-child),
-	h5:not(:first-child)
-	.h5:not(:first-child),
-	h6:not(:first-child)
-	.h6:not(:first-child),
-	li h4
-	li .h4,
-	li h5
-	li .h5,
-	li h6,
-	li .h6 {
-		margin-top: 1em;
-		padding-top: .5rem;
-	}
+  dl {
+    list-style: disc;
+  }
 
-	ol {
-		li {
-			h1,
-			h3,
-			h4,
-			h5,
-			h6,
-			.h1,
-			.h3,
-			.h4,
-			.h5,
-			.h6 {
-				margin-top: 0;
-				padding-top: 0;
-			}
-		}
-		& > li:before {
-			counter-increment: a;
-			content: counter(a);
-			text-align: right;
-			width: 2rem;
-			border-radius: .625rem;
-			position: absolute;
-			left: 0;
-			top: 0;
-			padding-right: .5rem;
-	    box-sizing: border-box;
-	    color: $light-text-color;
-		}
-	}
+  dt {
+    font-weight: $medium;
+  }
 
-	aside {
-		float: right;
-		border-left: 2px solid $light-grey;
-		width: 14rem;
-		padding-left: 1rem;
-		margin: 1rem 0 1rem $gutter;
-		position: relative;
-		z-index: 2;
+  dd {
+    color: $light-text-color;
+  }
 
-		:first-child {
-			margin-top: 0;
-			padding-top: 0;
-		}
+  pre {
+    background: rgba($text-color, .05);
+    border-radius: 3px;
+    overflow-x: auto;
+    padding: .5rem .85rem .85rem;
+  }
 
-		h3,
-		.h3 {
-			font-size: 1rem;
-		}
+  code {
+    background: #eee;
+    padding: .075em .4em .25em;
+    border-radius: 3px;
+  }
 
-		p:not(:first-child),
-		.p:not(:first-child) {
-			padding-top: .625rem;
-		}
-
-		p,
-		ul,
-		.p {
-			font-size: $sm-p-font-size;
-		}
-
-		ul li {
-			padding-left: 1.5rem;
-		}
-
-		ul li:before {
-			top: 7px;
-			width: .25rem;
-			height: .25rem;
-		}
-	}
-
-	a,
-	a code {
-		text-decoration: underline
-		&:active,
-		&:active code {
-		}
-	}
-
-	code,
-	strong {
-		font-size: inherit;
-	}
-
-	li > code,
-	p code,
-	.p code {
-		background: $light-grey;
-		border-radius: $base-border-radius;
-		padding: 3px 6px;
-	}
-
-	ol,
-	ul {
-		list-style: none;
-	}
-
-	ol:not(:first-child),
-	ul:not(:first-child) {
-		margin-top: .625rem;
-	}
-
-	li > ol,
-	li > ul {
-		margin-top: 0!important;
-	}
-
-	ol > li,
-	ul > li {
-		position: relative;
-		margin: .4rem 0;
-		padding-left: 2rem;
-	}
-
-	ul > li:before {
-		content: "";
-		position: absolute;
-		width: 6px;
-		height: 6px;
-		left: 1rem;
-		top: 9px;
-		border-radius: 50%;
-		background: $light-text-color;
-	}
-
-	.code:not(:first-child) {
-		margin-top: 1.125rem;
-	}
-
-	pre:not(:first-child) {
-		margin-top: 1.125rem;
-	}
-
-	pre:not(:last-child) {
-		margin-bottom: .5rem;
-	}
-
-	pre {
-		background: $light-grey;
-		border-radius: $base-border-radius;
-		position: relative;
-	}
-
-	pre {
-		padding: .75rem .875rem;
-		overflow-x: auto;
-	}
-
-	dl:not(:first-child) {
-		padding-top: 1.5rem;
-	}
-
-	dl dt {
-		position: relative;
-		background-size: 1.5rem 1.5rem;
-		background-position: 0 0;
-		background-repeat: no-repeat;
-		padding-left: 2rem;
-		overflow: hidden;
-	}
-
-	dl dt:not(:first-child) {
-		margin-top: .625rem;
-	}
-
-	dl dd {
-		background-size: 1rem .75rem;
-		background-position: 5px .75rem;
-		background-repeat: no-repeat;
-		padding: .25rem 0 1.125rem 2rem;
-	}
-
-	a.button:not(:first-child),
-	button:not(:first-child) {
-		margin-top: .875rem;
-	}
-
-	blockquote {
-		border-left: 2px solid $light-grey;
-		padding-left: 1.125rem;
-	}
-
-	mark {
-		background: $main-color;
-		color: $bg-color;
-		padding: .125em .35em 0;
-		border-radius: $base-border-radius;
-	}
+  hr.tiny {
+    width: 50px;
+    height: 2px;
+    border: none;
+    outline: none;
+    margin: $base-line-height 0;
+    background: $main-color;
+    display: block;
+    &.centered {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 
 }

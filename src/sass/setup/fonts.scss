@@ -1,55 +1,23 @@
 @font-face {
-  font-family: 'Hind';
-  src:  url('assets/fonts/hind/Hind-Light.woff') format('woff'),
-        url('assets/fonts/hind/Hind-Light.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Hind';
-  src:  url('assets/fonts/hind/Hind-Regular.woff') format('woff'),
-        url('assets/fonts/hind/Hind-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Hind';
-  src:  url('assets/fonts/hind/Hind-Medium.woff') format('woff'),
-        url('assets/fonts/hind/Hind-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Hind';
-  src:  url('assets/fonts/hind/Hind-SemiBold.woff') format('woff'),
-        url('assets/fonts/hind/Hind-SemiBold.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Material Icons';
-  src:  url('assets/fonts/icons/material-icons-regular.woff') format('woff'),
-        url('assets/fonts/icons/material-icons-regular.woff2') format('woff2');
+  font-family: 'Plex';
+  src:  url('assets/fonts/plex/IBM-Plex-Mono/IBMPlexMono-Text-Latin1.woff') format('woff'),
+        url('assets/fonts/plex/IBM-Plex-Mono/IBMPlexMono-Text-Latin1.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto Mono';
-  src:  url('assets/fonts/roboto/roboto-mono-regular.woff') format('woff'),
-        url('assets/fonts/roboto/roboto-mono-regular.woff2') format('woff2');
-  font-weight: 400;
+  font-family: 'Plex';
+  src:  url('assets/fonts/plex/IBM-Plex-Mono/IBMPlexMono-Light-Latin1.woff') format('woff'),
+        url('assets/fonts/plex/IBM-Plex-Mono/IBMPlexMono-Light-Latin1.woff2') format('woff2');
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto Mono';
-  src:  url('assets/fonts/roboto/roboto-mono-bold.woff') format('woff'),
-        url('assets/fonts/roboto/roboto-mono-bold.woff2') format('woff2');
-  font-weight: 600;
+  font-family: 'Plex';
+  src:  url('assets/fonts/plex/IBM-Plex-Mono/IBMPlexMono-Bold-Latin1.woff') format('woff'),
+        url('assets/fonts/plex/IBM-Plex-Mono/IBMPlexMono-Bold-Latin1.woff2') format('woff2');
+  font-weight: 700;
   font-style: normal;
 }

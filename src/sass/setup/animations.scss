@@ -1,5 +1,6 @@
-$stagger-time : .45s;
+$stagger-time : .5s; //$slow-speed;
 $stagger-delay : .05s;
+$page-load-delay : .4s;
 
 @keyframes rotate {
 	100% {
@@ -10,8 +11,8 @@ $stagger-delay : .05s;
 @keyframes transition-in {
 	100% {
 		opacity: 1;
-		transform: translate3d(0, 0, 0);
 		visibility: visible;
+		transform: none;
 	}
 }
 
@@ -22,113 +23,113 @@ $stagger-delay : .05s;
 	}
 }
 
+@keyframes no-transition {
+	0%, 100% {
+		opacity: 1;
+	}
+}
+
 .transition-in {
 	opacity: 0;
 	animation: transition-in $slow-speed $ease forwards;	
 }
 
-.stagger-in-1 { animation: transition-in $stagger-time $stagger-delay * 0 $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
-.stagger-in-2 { animation: transition-in $stagger-time $stagger-delay * 1 $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
-.stagger-in-3 { animation: transition-in $stagger-time $stagger-delay * 2 $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
-.stagger-in-4 { animation: transition-in $stagger-time $stagger-delay * 3 $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
-.stagger-in-5 { animation: transition-in $stagger-time $stagger-delay * 4 $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
-.stagger-in-6 { animation: transition-in $stagger-time $stagger-delay * 5 $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
-.stagger-in-7 { animation: transition-in $stagger-time $stagger-delay * 6 $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
-.stagger-in-8 { animation: transition-in $stagger-time $stagger-delay * 7 $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
-.stagger-in-9 { animation: transition-in $stagger-time $stagger-delay * 8 $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
-.stagger-in-10 { animation: transition-in $stagger-time $stagger-delay * 9 $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
+.stagger-in-1 { animation: transition-in $stagger-time $stagger-delay * 0 + $page-load-delay $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
+.stagger-in-2 { animation: transition-in $stagger-time $stagger-delay * 1 + $page-load-delay $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
+.stagger-in-3 { animation: transition-in $stagger-time $stagger-delay * 2 + $page-load-delay $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
+.stagger-in-4 { animation: transition-in $stagger-time $stagger-delay * 3 + $page-load-delay $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
+.stagger-in-5 { animation: transition-in $stagger-time $stagger-delay * 4 + $page-load-delay $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
+.stagger-in-6 { animation: transition-in $stagger-time $stagger-delay * 5 + $page-load-delay $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
+.stagger-in-7 { animation: transition-in $stagger-time $stagger-delay * 6 + $page-load-delay $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
+.stagger-in-8 { animation: transition-in $stagger-time $stagger-delay * 7 + $page-load-delay $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
+.stagger-in-9 { animation: transition-in $stagger-time $stagger-delay * 8 + $page-load-delay $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
+.stagger-in-10 { animation: transition-in $stagger-time $stagger-delay * 9 + $page-load-delay $ease forwards; opacity: 0; transform: translate3d(0, 1.5rem, 0); }
 
 .stagger-in-items {
 	> * {
 		opacity: 0;
-		transform: translate3d(0, 1.5rem, 0);
+		transform: translate3d(0, 3.5rem, 0);
 		animation: transition-in $stagger-time ease forwards;
-		@for $i from 1 through 20 {
-			$staggerIncrement : $i - 1;
-	  	&:nth-child(#{$i}) {
-	  		animation-delay: $stagger-delay * $staggerIncrement;
-		  }
+		animation-delay: $stagger-delay * 0 + $page-load-delay;
+		&:nth-child(2) {
+			animation-delay: $stagger-delay * 1 + $page-load-delay;
+		}
+		&:nth-child(3) {
+			animation-delay: $stagger-delay * 2 + $page-load-delay;
+		}
+		&:nth-child(4) {
+			animation-delay: $stagger-delay * 3 + $page-load-delay;
+		}
+		&:nth-child(5) {
+			animation-delay: $stagger-delay * 4 + $page-load-delay;
+		}
+		&:nth-child(6) {
+			animation-delay: $stagger-delay * 5 + $page-load-delay;
+		}
+		&:nth-child(7) {
+			animation-delay: $stagger-delay * 6 + $page-load-delay;
+		}
+		&:nth-child(8) {
+			animation-delay: $stagger-delay * 7 + $page-load-delay;
+		}
+		&:nth-child(9) {
+			animation-delay: $stagger-delay * 8 + $page-load-delay;
+		}
+		&:nth-child(10) {
+			animation-delay: $stagger-delay * 9 + $page-load-delay;
+		}
+		&:nth-child(11) {
+			animation-delay: $stagger-delay * 10 + $page-load-delay;
+		}
+		&:nth-child(12) {
+			animation-delay: $stagger-delay * 11 + $page-load-delay;
+		}
+		&:nth-child(13) {
+			animation-delay: $stagger-delay * 12 + $page-load-delay;
+		}
+		&:nth-child(14) {
+			animation-delay: $stagger-delay * 13 + $page-load-delay;
+		}
+		&:nth-child(15) {
+			animation-delay: $stagger-delay * 14 + $page-load-delay;
+		}
+		&:nth-child(16) {
+			animation-delay: $stagger-delay * 15 + $page-load-delay;
+		}
+		&:nth-child(17) {
+			animation-delay: $stagger-delay * 16 + $page-load-delay;
+		}
+		&:nth-child(18) {
+			animation-delay: $stagger-delay * 17 + $page-load-delay;
+		}
+		&:nth-child(19) {
+			animation-delay: $stagger-delay * 18 + $page-load-delay;
+		}
+		&:nth-child(20) {
+			animation-delay: $stagger-delay * 19 + $page-load-delay;
 		}
 	}
 }
 
-@keyframes blink {
-	0%, 100% { opacity: 1; }
-	50% { opacity: 0; }
-}
-
-
-// Right to Left React Transition
-.fade-in-up-enter,
-.fade-in-up-appear {
-  opacity: 0.01;
-  transform: translate3d(0, 3rem, 0);
-}
-
-.fade-in-up-enter.fade-in-up-enter-active,
-.fade-in-up-appear.fade-in-up-appear-active {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-  transition: opacity .5s $ease, transform .5s $ease;
-}
-
-.fade-in-up-exit {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-}
-
-.fade-in-up-exit.fade-in-up-exit-active {
-  opacity: 0.01;
-  transform: translate3d(0, 3rem, 0);
-  transition: opacity .5s $ease, transform .5s $ease;
-}
-
-// Right to Left React Transition
-.right-left-enter,
-.right-left-appear {
-  opacity: 0.01;
-  transform: translate3d(100%, 0, 0) scale(.9);
-}
-
-.right-left-enter.right-left-enter-active,
-.right-left-appear.right-left-appear-active {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-  transition: opacity .5s $ease, transform .5s $ease;
-}
-
-.right-left-exit {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-}
-
-.right-left-exit.right-left-exit-active {
-  opacity: 0.01;
-  transform: translate3d(-100%, 0, 0) scale(.9);
-  transition: opacity .5s $ease, transform .5s $ease;
-}
-
-// Left to Right React Transition
-.left-right-enter,
-.left-right-appear {
-  opacity: 0.01;
-  transform: translate3d(-100%, 0, 0) scale(.9);
-}
-
-.left-right-enter.left-right-enter-active,
-.left-right-appear.left-right-appear-active {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-  transition: opacity .5s $ease, transform .5s $ease;
-}
-
-.left-right-exit {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-}
-
-.left-right-exit.left-right-exit-active {
-  opacity: 0.01;
-  transform: translate3d(100%, 0, 0) scale(.9);
-  transition: opacity .5s $ease, transform .5s $ease;
+.scroll-transition-in {
+	> * {
+		opacity: 0;
+		transform: translate3d(0, 2rem, 0);
+		transition: opacity $slow-speed $ease, transform $slow-speed $ease;
+		&:nth-child(2) {
+			transition-delay: .05s;
+		}
+		&:nth-child(3) {
+			transition-delay: .05s * 2;
+		}
+		&:nth-child(4) {
+			transition-delay: .05s * 3;
+		}
+	}
+	&.in-view {
+		> * {
+			transform: none;
+			opacity: 1;
+		}
+	}
 }

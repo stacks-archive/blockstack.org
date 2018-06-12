@@ -1,0 +1,13 @@
+@import '~sass/setup/variables';
+@import '~sass/setup/mixins';
+
+.top-area {
+	.intro-text {
+		h1,
+		.h1 {
+			display: inline-block;
+			vertical-align: top;
+			max-width: 20em;
+		}
+	}
+}
