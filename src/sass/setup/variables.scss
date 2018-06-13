@@ -29,7 +29,7 @@ $white : #fff;
 $alert : #EF4F4F;
 $notify : #FFD780;
 $success : #77B305;
-$text-color : #333;
+$text-color : #211F6D;//#333;
 $light-grey : darken($bg-color, 5%);
 $light-text-color : rgba($text-color, .5);
 $hr-color : rgba($text-color, 1);
@@ -97,7 +97,7 @@ $tracked-out : .125em;
 	// h6 is tracked out all caps by default
 		$h6-font-family : $secondary-font;
 	// p
-		$sm-p-font-size : 13px;
+		$sm-p-font-size : .875rem; //13px;
 		$p-font-size : 1rem;
 		$md-p-font-size : 1.125rem;
 		$lg-p-font-size : 1.25rem;
@@ -110,21 +110,21 @@ $highlight-bg : $light-text-color;
 $highlight-color : $bg-color;
 
 // Button Variables
-$btn-radius: $base-border-radius;
+$btn-radius: 60px;
 $btn-padding: 0 2em 0;
-$btn-text-transform: uppercase;
-$btn-letter-spacing: $tracked-out * .9;
+$btn-text-transform: none;
+$btn-letter-spacing: 0;
 $btn-weight: $bold;
 $btn-font-style: normal;
 $btn-vertical-offset: 1px;
 
 // Button Sizes
-$btn-height: 40px;
+$btn-height: 44px;
 	$btn-small-height: 30px;
 		$btn-tiny-height: 24px;
 			$btn-large-height: 60px;
 				$btn-micro-height: 20px;
-$btn-font-size: 12px;
+$btn-font-size: $sm-p-font-size;
 	$btn-small-font-size: $btn-font-size;
 		$btn-tiny-font-size: 9px;
 			$btn-large-font-size: $btn-font-size;
@@ -173,7 +173,7 @@ $input-font-weight : $normal;
 $input-bg : transparent;
 $input-color : $text-color;
 $input-border : 1px solid darken($hr-color, 10%);
-$input-border-radius : $base-border-radius;
+$input-border-radius : $btn-radius;
 $input-hover-bg : transparent;
 $input-hover-color : $text-color;
 $input-hover-border : 1px solid darken($main-color, 10%);
@@ -183,7 +183,7 @@ $input-focus-border : 1px solid darken($main-color, 5%);
 $placeholder-color : rgba($text-color, .3);
 $placeholder-hover-color : rgba($text-color, .4);
 $placeholder-focus-color : rgba($text-color, .4);
-$input-padding: 0px .875em 1px;
+$input-padding: 0px 1.25em 1px;
 $input-text-offset: 3px;
 $input-height: $btn-height;
 $input-large-height: $btn-large-height;

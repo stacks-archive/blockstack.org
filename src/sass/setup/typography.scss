@@ -14,7 +14,7 @@ button {
 		font-size: $base-font-size;
 	}
 	@include respond($huge) {
-		font-size: calc(#{$base-font-size} + 2px);
+		// font-size: calc(#{$base-font-size} + 2px);
 	}
 }
 
@@ -266,6 +266,14 @@ i,
 
 .bg-color {
 	color: $bg-color;
+}
+
+.black {
+	color: $black;
+}
+
+.white {
+	color: $white;
 }
 
 .main-color {

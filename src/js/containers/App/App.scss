@@ -48,20 +48,21 @@ body {
 .triangle-bg {
 	position: relative;
 	.triangle {
-		display: block;
-		position: absolute;
-		width: 100%;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		svg {
-			width: 100%;
-			height: 100%;
-			* {
-				fill: rgba($text-color, .1);
-			}
-		}
+		// display: block;
+		// position: absolute;
+		// width: 100%;
+		// top: 0;
+		// left: 0;
+		// right: 0;
+		// bottom: 0;
+		// svg {
+		// 	width: 100%;
+		// 	height: 100%;
+		// 	* {
+		// 		fill: rgba($text-color, .1);
+		// 		fill: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxjaXJjbGUgY3g9IjEiIGN5PSIxIiByPSIxIiBmaWxsPSIjMDAwIi8+Cjwvc3ZnPg==");
+		// 	}
+		// }
 	}
 }
 
@@ -81,4 +82,19 @@ body {
 
 .bs-mt-card {
 	margin-top: 4.5rem;
+}
+
+.bs-logo {
+	svg {
+		display: block;
+		height: 36px;
+		// fill : white;
+	}
+}
+
+.hang-section-title {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
 }

@@ -18,10 +18,8 @@ class App extends Component {
 	render() {
 		return (
 			<div className="landing-page">
-				<section className="blue-bg top-section">
-					<Header/>
-					<TopArea/>
-				</section>
+				<Header/>
+				<TopArea/>
 				<AppsGrid/>
 				<WhyBS/>
 				<OurTechnology/>

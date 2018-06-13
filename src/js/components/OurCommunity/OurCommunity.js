@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import InlineSVG from 'svg-inline-react';
 import Card from 'components/Card';
-import TriangleDown from 'assets/images/triangle-down';
+import TriangleBg from 'components/TriangleBg';
 import Arrow from 'assets/images/outline-arrow';
+import Divider from 'assets/images/divider-2';
 
 import './OurCommunity.scss';
 
@@ -30,7 +31,8 @@ class OurCommunity extends Component {
 			<section>
 				<div className="blue-bg bs-pb-card">
 					<div className="container">
-						<div className="align-center py-4">
+						<InlineSVG src={Divider} element="div" className="text-color pt-4 pb-4 align-center" />
+						<div className="align-center pb-3 mb-1">
 							<p>Our community</p>
 						</div>
 					</div>	
@@ -44,9 +46,9 @@ class OurCommunity extends Component {
 										<div key={"community-card-" + index} className="col-4">
 											<Card className="card mb-tight-gutter min-height c-mtn-height" href="#">
 												<div className="p-2">
-													<div className="grid-flex tight-gutter no-break">
+													<div className="grid-flex tight-gutter no-break pb-1">
 														<div className="col grow">
-															<p className="main-color">{card.title}</p>
+															<p className="main-color underline-hover">{card.title}</p>
 														</div>
 														<div className="col no-grow">
 														<InlineSVG src={Arrow} element="div" />
@@ -61,9 +63,9 @@ class OurCommunity extends Component {
 								<div className="col-12">
 									<Card className="card" href="#">
 										<div className="p-2">
-											<div className="grid-flex tight-gutter no-break">
+											<div className="grid-flex tight-gutter no-break pb-1">
 												<div className="col grow">
-													<p className="main-color">card.title</p>
+													<p className="main-color underline-hover">card.title</p>
 												</div>
 												<div className="col no-grow">
 												<InlineSVG src={Arrow} element="div" />
@@ -76,7 +78,7 @@ class OurCommunity extends Component {
 							</div>
 						</div>
 					</div>
-					<div className="container align-center pt-3">
+					<div className="container align-center pt-3 mt-2">
 						<nav className="line-nav main-color">
 							<ul>
 								<li><a href="#">Slack</a></li>
@@ -87,7 +89,7 @@ class OurCommunity extends Component {
 							</ul>
 						</nav>
 					</div>
-					<InlineSVG src={TriangleDown} element="div" className="triangle triangle-down bs-mt-card" />
+					<TriangleBg className="down bs-mt-card"/>
 				</div>
 			</section>
 		);

@@ -9,7 +9,6 @@ footer {
 		line-height: $tight-line-height;
 	}
 	.newsletter-form {
-		position: relative;
 		margin-top: -$btn-large-height/2;
 		max-width: 26rem;
 		margin-left: auto;
@@ -17,11 +16,9 @@ footer {
 		input[type='text'],
 		input[type='email'] {
 			box-shadow: 0 3px 12px rgba(37, 0, 105, 0.32);
-			border-radius: 60px;
 			border: none;
 			background: $white !important;
 			padding: 0 ($btn-large-height + 5px) 0 24px;
-			transition: 
 			&:hover,
 			&:active,
 			&:focus {
@@ -34,22 +31,20 @@ footer {
 				box-shadow: 0 6px 24px rgba($main-color, .85);
 			}
 		}
-		.button {
-			position: absolute;
-			top: 0;
-			right: 0;
-			height: 60px;
-			width: 60px;
-			.icon {
-				width: 37px !important;
-				padding-right: 10px;
-				svg {
-					width: 27px;
-					* {
-						fill: transparent;
-					}
-				}
-			}
-		}
+		// .button {
+		// 	position: absolute;
+		// 	top: 0;
+		// 	right: 0;
+		// 	.icon {
+		// 		width: 37px !important;
+		// 		padding-right: 10px;
+		// 		svg {
+		// 			width: 27px;
+		// 			* {
+		// 				fill: transparent;
+		// 			}
+		// 		}
+		// 	}
+		// }
 	}
 }

@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import InlineSVG from 'svg-inline-react';
 import Card from 'components/Card';
-import TriangleUp from 'assets/images/triangle-up';
+import Arrow from 'assets/images/outline-arrow';
+import TriangleBg from 'components/TriangleBg';
 
 import './TopArea.scss'
 
 class TopArea extends Component {
 	render() {
 		return (
-			<div className="top-area">
-				<div className="intro-text align-center mt-4 mb-3">
+			<section className="blue-bg top-section top-area">
+				<div className="intro-text align-center">
 					<div className="container">
 						<h1>The easiest way to start building  decentralized blockchain apps</h1>
 					</div>
@@ -17,51 +18,72 @@ class TopArea extends Component {
 				<div className="triangle-bg py-4">
 					<div className="container">
 						<div>
-							<div className="grid-flex">
+							<div className="grid-flex v-spaced break-xlg">
 								<div className="col-4">
-									<div className="g-card dark align-left">
+									<a className="g-card code-card dark align-left link" href="#">
 										<div className="p-2">
 											code
 										</div>
 										<Card className="card">
 											<div className="p-2">
-												<h4 className="main-color">Hello World</h4>
+												<div className="grid-flex tight-gutter no-break pb-2">
+													<div className="col grow">
+														<h4 className="main-color underline-hover">Hello World</h4>
+													</div>
+													<div className="col no-grow">
+														<InlineSVG src={Arrow} element="div" />
+													</div>
+												</div>
 												<p className="sm">Build a single-page JavaScript application that runs completely client-side without any servers.</p>
 											</div>
 										</Card>
-									</div>
+									</a>
 								</div>
 								<div className="col-4">
-									<div className="g-card dark align-left">
+									<a className="g-card code-card dark align-left link" href="#">
 										<div className="p-2">
 											code
 										</div>
 										<Card className="card">
 											<div className="p-2">
-												<h4 className="main-color">Authentication</h4>
+												<div className="grid-flex tight-gutter no-break pb-2">
+													<div className="col grow">
+														<h4 className="main-color underline-hover">Authentication</h4>
+													</div>
+													<div className="col no-grow">
+														<InlineSVG src={Arrow} element="div" />
+													</div>
+												</div>
 												<p className="sm">Build a basic Todo application and learn about Authentication and Gaia storage.</p>
 											</div>
 										</Card>
-									</div>
+									</a>
 								</div>
 								<div className="col-4">
-									<div className="g-card dark align-left">
+									<a className="g-card code-card dark align-left link" href="#">
 										<div className="p-2">
 											code
 										</div>
 										<Card className="card">
 											<div className="p-2">
-												<h4 className="main-color">Storage</h4>
+												<div className="grid-flex tight-gutter no-break pb-2">
+													<div className="col grow">
+														<h4 className="main-color underline-hover">Storage</h4>
+													</div>
+													<div className="col no-grow">
+														<InlineSVG src={Arrow} element="div" />
+													</div>
+												</div>
 												<p className="sm">Build a decentralized blogging app using multi-player Gaia storage.</p>
 											</div>
 										</Card>
-									</div>
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div className="container align-center pt-3">
-						<nav className="line-nav">
+					<div className="container align-center pt-3 mt-2 bs-pb-card">
+						<nav className="line-nav pb-4">
 							<ul>
 								<li><a href="#">All tutorials</a></li>
 								<li><a href="#">Documentation</a></li>
@@ -69,9 +91,9 @@ class TopArea extends Component {
 							</ul>
 						</nav>
 					</div>
-					<InlineSVG src={TriangleUp} element="div" className="triangle triangle-up" />
+					<TriangleBg/>
 				</div>
-			</div>
+			</section>
 		);
 	}
 }

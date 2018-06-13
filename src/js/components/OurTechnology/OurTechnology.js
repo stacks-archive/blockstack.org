@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 import InlineSVG from 'svg-inline-react';
 import Card from 'components/Card';
-import TriangleDown from 'assets/images/triangle-down';
+import TriangleBg from 'components/TriangleBg';
 import Arrow from 'assets/images/outline-arrow';
+
+import GraphiteIcon from 'assets/images/app-hermes';
+import HermesIcon from 'assets/images/app-hermes';
+import DotpodcastIcon from 'assets/images/app-dotpodcast';
+import KanstackIcon from 'assets/images/app-dotpodcast';
+import CoinfortIcon from 'assets/images/app-coinfort';
 
 import './OurTechnology.scss';
 
@@ -55,9 +61,22 @@ class OurTechnology extends Component {
 			<section className="blue-bg">
 				<div className="triangle-bg pt-margin">
 					<div className="container">
-						<div className="align-center pb-4">
+						<div className="align-center pb-3 mb-1">
 							<p>Our technology (Block)stack</p>
 						</div>
+					</div>
+					<div className="container very-narrow pt-3">
+						<div className="g-card dark px-2 pb-2 align-center mb-tight-gutter pt-1px">
+							<div className="grid-flex no-break tight-gutter center mtn-3">
+								<div className="col"><img src={GraphiteIcon} style={{ width: '60px' }} /></div>
+								<div className="col"><img src={GraphiteIcon} style={{ width: '60px' }} /></div>
+								<div className="col"><img src={GraphiteIcon} style={{ width: '60px' }} /></div>
+								<div className="col"><img src={GraphiteIcon} style={{ width: '60px' }} /></div>
+							</div>
+							<p className="sm pt-2">Amazing dapps built by you!</p>
+						</div>
+					</div>
+					<div className="container">
 						<div>
 							<div className="grid-flex tight-gutter center">
 								<div className="col-8">
@@ -68,9 +87,9 @@ class OurTechnology extends Component {
 													<div key={"tech-card-" + index} className="col-6">
 														<Card className="card mb-tight-gutter" href="#">
 															<div className="p-2">
-																<div className="grid-flex tight-gutter no-break">
+																<div className="grid-flex tight-gutter no-break pb-1">
 																	<div className="col grow">
-																		<p className="main-color">{card.title}</p>
+																		<p className="main-color underline-hover">{card.title}</p>
 																	</div>
 																	<div className="col no-grow">
 																		<InlineSVG src={Arrow} element="div" />
@@ -93,9 +112,9 @@ class OurTechnology extends Component {
 											<div key={"tech-card-" + index} className="col-4">
 												<Card className="card mb-tight-gutter" href="#">
 													<div className="p-2">
-														<div className="grid-flex tight-gutter no-break">
+														<div className="grid-flex tight-gutter no-break pb-1">
 															<div className="col grow">
-																<p className="main-color">{card.title}</p>
+																<p className="main-color underline-hover">{card.title}</p>
 															</div>
 															<div className="col no-grow">
 																<InlineSVG src={Arrow} element="div" />
@@ -111,9 +130,9 @@ class OurTechnology extends Component {
 											<div key={"tech-card-" + index} className="col-12">
 												<Card className="card" href="#">
 													<div className="p-2">
-														<div className="grid-flex tight-gutter no-break">
+														<div className="grid-flex tight-gutter no-break pb-1">
 															<div className="col grow">
-																<p className="main-color">{card.title}</p>
+																<p className="main-color underline-hover">{card.title}</p>
 															</div>
 															<div className="col no-grow">
 																<InlineSVG src={Arrow} element="div" />
@@ -129,7 +148,7 @@ class OurTechnology extends Component {
 							</div>
 						</div>
 					</div>
-					<InlineSVG src={TriangleDown} element="div" className="triangle triangle-down" />
+					<TriangleBg className="down"/>
 				</div>
 			</section>
 		);

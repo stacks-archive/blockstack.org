@@ -19,7 +19,7 @@ video {
 svg {
 	color: currentcolor;
 	* {
-		transition: fill $md-speed $ease;
+		transition: fill $md-speed $ease, stroke $md-speed $ease;
 		fill: currentcolor;
 	}
 }
@@ -55,6 +55,9 @@ a {
   		margin-left: auto;
   		margin-right: auto;
   	}
+  }
+  &.very-narrow {
+  	max-width: 25em;
   }
   @include respond($lg) {
     width: calc(100% - #{$margin} * 2);

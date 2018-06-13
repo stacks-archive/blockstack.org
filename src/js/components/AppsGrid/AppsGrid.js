@@ -1,63 +1,89 @@
 import React, { Component } from 'react';
 import InlineSVG from 'svg-inline-react';
 import AppCard from './components/AppCard.js';
-import TriangleDown from 'assets/images/triangle-down';
+import TriangleBg from 'components/TriangleBg';
 
-import './AppsGrid.scss'
+// App Icons
+import GraphiteIcon from 'assets/images/app-hermes';
+import HermesIcon from 'assets/images/app-hermes';
+import DotpodcastIcon from 'assets/images/app-dotpodcast';
+import KanstackIcon from 'assets/images/app-dotpodcast';
+import CoinfortIcon from 'assets/images/app-coinfort';
+
+import './AppsGrid.scss';
+
+const cards = [
+	{
+		title : 'Graphite',
+		icon : GraphiteIcon,
+		link : '#',
+		description : 'Collaborative decentralized docs'
+	},
+	{
+		title : 'Hermes',
+		icon : HermesIcon,
+		link : '#',
+		description : 'Encrypted peer-to-peer chat'
+	},
+	{
+		title : 'Dotpodcast',
+		icon : DotpodcastIcon,
+		link : 'https://github.com/DotPodcast/dotpodcast-player',
+		description : 'Discover and listen to podcasts'
+	},
+	{
+		title : 'Kanstack',
+		icon : KanstackIcon,
+		link : '#',
+		description : 'Decentralized Kanban sprint board'
+	},
+	{
+		title : 'Coinfort',
+		icon : CoinfortIcon,
+		link : '#',
+		description : 'Encrypted crypto tracker'
+	}
+];
 
 class AppsGrid extends Component {
 	render() {
 		return (
-			<section className="triangle-bg mb-2">
-				<div className="container pb-margin">
-					<h2 className="p white align-center py-3">Live dapps built by our community</h2>
-					<div className="grid-flex collapse-3-2-1 v-spaced">
-						<div className="col">
-							<AppCard
-								appName="Graphite"
-								appDescription="Collaborative decentralized docs"
-								appIcon="http://unsplash.it/300/300"
-							/>
+			<section className="app-grid mb-2">
+				<div className="div triangle up"></div>
+				<div className="hang-section-title">
+					<div className="container">
+						<div className="align-center pb-3 mb-1">
+							<h3 className="p white">Live dapps built by our community</h3>
 						</div>
-						<div className="col">
-							<AppCard
-								appName="Hermes"
-								appDescription="Encrypted peer-to-peer chat"
-								appIcon="http://unsplash.it/300/300"
-							/>
-						</div>
-						<div className="col">
-							<AppCard
-								appName="Dotpodcast"
-								appDescription="Discover and listen to podcasts"
-								appIcon="http://unsplash.it/300/300"
-							/>
-						</div>
-						<div className="col">
-							<AppCard
-								appName="Kanstack"
-								appDescription="Decentralized Kanban sprint board"
-								appIcon="http://unsplash.it/300/300"
-							/>
-						</div>
-						<div className="col">
-							<AppCard
-								appName="Coinfort"
-								appDescription="Encrypted crypto tracker"
-								appIcon="http://unsplash.it/300/300"
-							/>
-						</div>
-						<div className="col">
-							<AppCard
-								className="dark"
-								appName="Dotpodcast"
-								appDescription="View all live Blockstack dapps"
-								appIcon="http://unsplash.it/300/300"
-							/>
+					</div>	
+				</div>
+				<div className="triangle-bg">
+					<div className="container pb-4 bs-mtn-card">
+						<div className="grid-flex collapse-3-2-1 v-spaced">
+							{cards.map( (app, index) => {
+								return (
+									<div className="col" key={"app-card-" + index}>
+										<AppCard
+											appName={app.title}
+											appDescription={app.description}
+											appIcon={app.icon}
+											href={app.link}
+										/>
+									</div>
+								);
+							})}
+							<div className="col">
+								<AppCard
+									className="dark view-all-apps"
+									appDescription="View all live Blockstack dapps"
+									appIcon="http://unsplash.it/300/300"
+									href="http://google.com/"
+								/>
+							</div>
 						</div>
 					</div>
+					<TriangleBg className="down bs-mt-card"/>
 				</div>
-				<InlineSVG src={TriangleDown} element="div" className="triangle triangle-down" />
 			</section>
 		);
 	}

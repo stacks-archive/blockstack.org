@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import InlineSVG from 'svg-inline-react';
 
 import Logo from 'assets/images/Logo';
-import Arrow from 'assets/images/outline-arrow';
-import Input from 'components/Input';
-import Button from 'components/Button';
+import LogoType from 'assets/images/logotype';
+
+import NewsletterSignup from 'components/NewsletterSignup';
 
 import './Footer.scss'
 
@@ -13,9 +13,8 @@ class Header extends Component {
 		return (
 			<footer className="pb-4 blue-bg mt-4">
 				<div className="container narrow">
-					<div className="newsletter-form mb-4 my-auto">
-						<Input placeholder="Get email updates" className="large" />
-						<Button icon={Arrow} className="transparent large circle"/>
+					<div className="mb-4 my-auto">
+						<NewsletterSignup inputClass="large" />
 					</div>
 					<div className="align-center pb-4">
 						<nav className="line-nav">
@@ -67,6 +66,13 @@ class Header extends Component {
 						</div>
 					</div>
 					<p className="tiny text-color medium-weight pt-4">The Blockstack Tokens are a crypto asset that is currently being developed by Blockstack Token LLC, a Delaware limited liability company, whose website can be found at www.blockstack.com. The website you are currently visiting (www.blockstack.org) is sponsored by Blockstack PBC, an affiliate of Blockstack Token LLC, and should not be viewed as an offer or sale of securities.</p>
+
+					<div className="es-logo mt-4">
+						<div className="grid-flex no-break no-gutter middle center">
+							<InlineSVG src={Logo} element="div" className="bs-logo" />
+							<InlineSVG src={LogoType} element="div" className="bs-logotype ml-2" />
+						</div>
+					</div>
 				</div>
 			</footer>
 		);

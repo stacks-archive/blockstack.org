@@ -18,10 +18,22 @@
 	}
 	&.link {
 		cursor: pointer;
+		.underline-hover {
+			display: inline;
+			vertical-align: top;
+			border-bottom: 1px solid transparent;
+			transition: border $md-speed $ease;
+		}
 		&:hover {
 			color: $text-color;
 			box-shadow: 0 6px 18px rgba(37, 0, 105, 0.32);
-			transform: translate3d(0, -.25rem, 0);
+			transform: translate3d(0, -4px, 0);
+			.underline-hover {
+				border-color: currentcolor;
+			}
+			&.dark {
+				color: $white;
+			}
 		}
 		&:active {
 			transform: scale(.98);	
