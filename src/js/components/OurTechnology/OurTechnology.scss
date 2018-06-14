@@ -1,2 +1,13 @@
 @import '~sass/setup/variables';
 @import '~sass/setup/mixins';
+
+.our-technology {
+	.example-app-icon {
+		width: 60px;
+		margin-top: -30px;
+		@include respond-smaller-than(400) {
+			width: 40px;
+			margin-top: -20px;
+		}
+	}
+}

@@ -9,7 +9,7 @@ class AppsGrid extends Component {
 			<Card className={"p-2 app-card " + this.props.className} href={this.props.href} target="_blank">
 				<div className="grid-flex no-break tight-gutter top">
 					<div className="col no-grow">
-						<img src={this.props.appIcon} alt={this.props.appName} style={{width: '60px' }}/>
+						<img className="icon" src={this.props.appIcon} alt={this.props.appName} />
 					</div>
 					<div className="col grow">
 						<div className="app-desc">

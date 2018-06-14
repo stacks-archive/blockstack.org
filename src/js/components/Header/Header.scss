@@ -89,6 +89,19 @@ header.header {
 			border-bottom : 1px solid $white;
 		}
 	}
+	
+	.menu-toggle {
+		border-radius: $base-border-radius;
+		border: none;
+		padding: .75rem;
+		margin-right: -.75rem;
+		cursor: pointer;
+		&:hover {
+			border: none;
+			background: $text-color;
+		}
+	}
+	
 	.menu-icon {
 		margin-top: -3px;
 	}
@@ -125,8 +138,11 @@ header.header {
 			transform: translate3d(0, 16px, 0);
 			transition: opacity $md-speed $ease, visibility $md-speed $ease, transform $md-speed $ease, border $md-speed $ease, background $md-speed $ease, color $md-speed $ease;
 		}
-		.newsletter-form {
+		.button.main-action {
 			transition-delay: .05s;
+		}
+		.newsletter-form {
+			transition-delay: .1s;
 		}
 	}
 }

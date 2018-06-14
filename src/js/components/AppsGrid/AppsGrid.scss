@@ -11,11 +11,25 @@
 		.view-arrow {
 			margin-top: .25rem;
 		}
-		&.view-all-apps {
+		.icon {
+			width: 57px;
+		}
+		&.large-icon {
+			position: relative;
+			.icon-wrap {
+				margin: -6px -10px -11px;
+			}
+			.icon {
+				width: 84px;
+			}
 			.view-text {
 				display: none;
 			}
 			.view-arrow {
+				position: absolute;
+				bottom: .5rem;
+				width: auto;
+				right: $space-2;
 				* {
 					stroke: lighten($main-color, 30%);
 				}

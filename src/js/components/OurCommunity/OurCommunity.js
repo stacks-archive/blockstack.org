@@ -37,14 +37,14 @@ class OurCommunity extends Component {
 						</div>
 					</div>	
 				</div>
-				<div className="triangle-bg pb-margin">
+				<div className="triangle-bg pb-4">
 					<div className="container bs-mtn-card">
 						<div>
 							<div className="grid-flex tight-gutter center">
 								{cards.map( (card, index) => {
 									return (
-										<div key={"community-card-" + index} className="col-4">
-											<Card className="card mb-tight-gutter min-height c-mtn-height" href="#">
+										<div key={"community-card-" + index} className="col-4 pb-tight-gutter">
+											<Card className="card stretch-height c-mtn-height" href="#">
 												<div className="p-2">
 													<div className="grid-flex tight-gutter no-break pb-1">
 														<div className="col grow">
@@ -89,7 +89,7 @@ class OurCommunity extends Component {
 							</ul>
 						</nav>
 					</div>
-					<TriangleBg className="down bs-mt-card"/>
+					<TriangleBg className="bs-mt-card" direction="down" />
 				</div>
 			</section>
 		);

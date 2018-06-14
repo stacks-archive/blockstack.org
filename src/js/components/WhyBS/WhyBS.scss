@@ -7,8 +7,29 @@
 		li {
 			margin: $space-1;
 			&:before {
+				display: inline;
 				counter-increment: list-counter;
 				content: counter(list-counter, decimal-leading-zero) ' --- ';
+			}
+			p {
+				display: inline;
+			}
+			@include respond-smaller-than($lg + 100) {
+				&:before {
+					display: block;
+					content: counter(list-counter, decimal-leading-zero);
+				}
+				p {
+					max-width: 20em;
+					margin-left: auto;
+					margin-right: auto;
+					display: block;
+					margin-bottom: 1.5em;
+					&:before {
+						display: block;
+						content: '---'
+					}
+				}
 			}
 		}
 	}

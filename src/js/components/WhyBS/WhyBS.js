@@ -12,9 +12,9 @@ class WhyBS extends Component {
 					<h2 className="main-color">Why build on Blockstack?</h2>
 					<InlineSVG src={Divider} element="div" className="main-color pt-2 pb-1" />
 					<ol className="dashlist main-color">
-						<li>Get paid mining rewards if you build a popular app</li>
-						<li>Scale your app orders of magnitude greater than blockchain alone</li>
-						<li>Gain a competitive advantage by giving your users data ownership</li>
+						<li><p>Get paid mining rewards if you build a popular app</p></li>
+						<li><p>Scale your app orders of magnitude greater than blockchain alone</p></li>
+						<li><p>Gain a competitive advantage by giving your users data ownership</p></li>
 					</ol>
 				</div>
 			</section>

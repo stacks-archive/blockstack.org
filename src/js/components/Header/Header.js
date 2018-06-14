@@ -60,7 +60,7 @@ class Header extends Component {
 									</div>
 
 									<div className="col right side-col align-right">
-										<a className="p"><span className="material-icons md-24 menu-icon">menu</span> Menu</a>
+										<a className="p menu-toggle"><span className="material-icons md-24 menu-icon">menu</span> Menu</a>
 									</div>
 
 								</div>

@@ -25,8 +25,8 @@ class Header extends Component {
 							</ul>
 						</nav>
 					</div>
-					<div className="grid-flex">
-						<div className="col">
+					<div className="grid-flex v-spaced">
+						<div className="col pb-2">
 							<h5 className="p sm medium-weight pb-1">Technology</h5>
 							<ul>
 								<li><a href="#" className="p sm">Tutorials</a></li>
@@ -35,7 +35,7 @@ class Header extends Component {
 								<li><a href="#" className="p sm">White Papers</a></li>
 							</ul>
 						</div>
-						<div className="col">
+						<div className="col pb-2">
 							<h5 className="p sm medium-weight pb-1">Community</h5>
 							<ul>
 								<li><a href="#" className="p sm">Forum</a></li>
@@ -49,7 +49,7 @@ class Header extends Component {
 								<li><a href="#" className="p sm">Signature fund</a></li>
 							</ul>
 						</div>
-						<div className="col">
+						<div className="col pb-2">
 							<h5 className="p sm medium-weight pb-1">Blockstack</h5>
 							<ul>
 								<li><a href="#" className="p sm">About</a></li>

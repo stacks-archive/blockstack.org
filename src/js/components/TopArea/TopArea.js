@@ -3,6 +3,7 @@ import InlineSVG from 'svg-inline-react';
 import Card from 'components/Card';
 import Arrow from 'assets/images/outline-arrow';
 import TriangleBg from 'components/TriangleBg';
+import CodeBlock from 'components/CodeBlock';
 
 import './TopArea.scss'
 
@@ -10,6 +11,7 @@ class TopArea extends Component {
 	render() {
 		return (
 			<section className="blue-bg top-section top-area">
+
 				<div className="intro-text align-center">
 					<div className="container">
 						<h1>The easiest way to start building  decentralized blockchain apps</h1>
@@ -22,7 +24,11 @@ class TopArea extends Component {
 								<div className="col-4">
 									<a className="g-card code-card dark align-left link" href="#">
 										<div className="p-2">
-											code
+											<CodeBlock className="sm minimal dark" language="javascript">
+{`if (blockstack.isUserSignedIn()) {
+  var profile = blockstack.loadUserData().profile
+  showProfile(profile)`}
+											</CodeBlock>
 										</div>
 										<Card className="card">
 											<div className="p-2">
@@ -42,7 +48,11 @@ class TopArea extends Component {
 								<div className="col-4">
 									<a className="g-card code-card dark align-left link" href="#">
 										<div className="p-2">
-											code
+											<CodeBlock className="sm minimal dark">
+{`signIn () {
+  const blockstack = this.blockstack
+  blockstack.redirectToSignIn()`}
+											</CodeBlock>
 										</div>
 										<Card className="card">
 											<div className="p-2">
@@ -62,7 +72,11 @@ class TopArea extends Component {
 								<div className="col-4">
 									<a className="g-card code-card dark align-left link" href="#">
 										<div className="p-2">
-											code
+											<CodeBlock className="sm minimal dark">
+{` this.setState({
+    person: new Person(loadUserData().profile),
+    username: loadUserData().username`}
+											</CodeBlock>
 										</div>
 										<Card className="card">
 											<div className="p-2">
@@ -84,7 +98,7 @@ class TopArea extends Component {
 					</div>
 					<div className="container align-center pt-3 mt-2 bs-pb-card">
 						<nav className="line-nav pb-4">
-							<ul>
+							<ul className="pb-3">
 								<li><a href="#">All tutorials</a></li>
 								<li><a href="#">Documentation</a></li>
 								<li><a href="#">Github</a></li>
