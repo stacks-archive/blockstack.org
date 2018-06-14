@@ -1,117 +1,100 @@
 @import '~sass/setup/variables';
 @import '~sass/setup/mixins';
 
+html {
+	background-color: $main-color !important;
+}
+
+body {
+	background-color: $white;
+	overflow: hidden;
+}
+
 .landing-page {
-	background: $white;
-	height: auto;
-	display: block;
+}
 
-	.navigation {}
-	.content {
-		padding : 90px 0;
-	}
+.blue-bg {
+	color: $white;
+	background-color: $main-color;
+}
 
-	//TODO Real buttons
-
-	.button {
-		display : inline-block;
-		border-radius : 3px;
-		background : $secondary-color;
-		padding : 13px 24px;
-		color : $white;
-		text-align:center;
-		font-weight : bold;
-
-		&:hover {
-			background : darken($secondary-color, 8%);
-		}
-
-		&.block {
-			display : block;
-		}
-	}
-
-	.section-header {
-		padding: 6rem 0;
-		text-align: center;
-		margin: 0;
-
-
-		&.red {
-			background-color : $main-color;
-			.section-title, .section-subtitle {
-				color : $white
+.line-nav {
+	display: inline-block;
+	vertical-align: top;
+	ul {
+		display: flex;
+		align-items: center;
+		li {
+			display: flex;
+			align-items: center;
+			&:not(:last-child):after {
+				content: '';
+				display: block;
+				width: 4rem;
+				height: 1px;
+				background-color: currentcolor;
+				margin: 0 1rem;
+			}
+			a {
+				border-bottom: 1px solid transparent;
+				&:hover {
+					border-color: currentcolor;
+				}
 			}
 		}
-
-		&.grey {
-			background-color : $light-grey;
-			.section-title, .section-subtitle {
-				color : $text-color
-			}
-		}
-
-		@include respond($lg) {
-			padding: 8rem 0;
-		}
-
-
-		.section-title {
-			letter-spacing: $tracked-out * .75;
-			font-weight : $bold;
-			font-size: 1.5rem;
-			padding-bottom: .5em;
-		}
-
-		.section-subtitle {
-			font-weight : $light;
-			// font-family: Hind-Regular;
-			// font-size: 18px;
-			// color:
-			// letter-spacing: 0;
-			// text-align: center;
-			// line-height: 23.4px;
-		}
-
-	}
-
-}
-
-
-
-img,
-video {
-	display: block;
-}
-
-
-.dark-section {
-	@include font-smooth();
-	color: $white;
-	background: $dark-color;
-	.main-color {
-		color: $main-color-on-dark;
-	}
-	.light-text-color {
-		color: lighten($text-color, 50%);
 	}
 }
 
-.blue-section {
-	@include font-smooth();
-	color: $white;
-	background: $main-color;
-	.light-text-color {
-		color: lighten($main-color, 40%);
-	}
-	p {
-		max-width: 31em;
-		margin-left: auto;
-		margin-right: auto;
+.triangle-bg {
+	position: relative;
+	.triangle {
+		// display: block;
+		// position: absolute;
+		// width: 100%;
+		// top: 0;
+		// left: 0;
+		// right: 0;
+		// bottom: 0;
+		// svg {
+		// 	width: 100%;
+		// 	height: 100%;
+		// 	* {
+		// 		fill: rgba($text-color, .1);
+		// 		fill: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxjaXJjbGUgY3g9IjEiIGN5PSIxIiByPSIxIiBmaWxsPSIjMDAwIi8+Cjwvc3ZnPg==");
+		// 	}
+		// }
 	}
 }
 
-.light-grey-section {
-	background: tint($light-grey, 50%);
+.bs-outline-arrow {
+	* {
+		fill: transparent;
+	}
 }
 
+// Offset cards to overlap previous section
+.bs-pb-card {
+	padding-bottom: 4.5rem;
+}
+.bs-mtn-card {
+	margin-top: -4.5rem;
+}
+
+.bs-mt-card {
+	margin-top: 4.5rem;
+}
+
+.bs-logo {
+	svg {
+		display: block;
+		height: 36px;
+		// fill : white;
+	}
+}
+
+.hang-section-title {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+}

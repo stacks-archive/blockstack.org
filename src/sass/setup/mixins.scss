@@ -7,20 +7,6 @@
   @media only screen and (max-width: $breakpoint + px) { @content; }
 }
 
-// Transform
-@mixin transform($transform){
-  -ms-transform: $transform; /* IE 9 */
-  -webkit-transform: $transform; /* Chrome, Safari, Opera */
-  transform: $transform;
-}
-
-// Transition
-@mixin transition($transition: all .2s ease-in-out) {
-  -webkit-transition: $transition;
-  -moz-transition:    $transition;
-  -o-transition:      $transition;
-}
-
 // Greyscale/ Color
 @mixin greyscale() {
   -webkit-filter: grayscale(100%);
@@ -29,6 +15,14 @@
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
   filter: gray; /* IE 6-9 */
+}
+
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
 }
 
 @mixin fullcolor() {
@@ -41,38 +35,20 @@
   filter: none; /* IE 6-9 */;
 }
 
-@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
-  @if $inset {
-    -webkit-box-shadow:inset $top $left $blur $color;
-    -moz-box-shadow:inset $top $left $blur $color;
-    box-shadow:inset $top $left $blur $color;
-  } @else {
-    -webkit-box-shadow: $top $left $blur $color;
-    -moz-box-shadow: $top $left $blur $color;
-    box-shadow: $top $left $blur $color;
-  }
-}
-
 @mixin font-smooth() {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-@mixin scrollable() {
-  overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
 @mixin clearfix() {
   *zoom:1;
-  &:before,
+  &:before, 
   &:after {
-    content: "";
-    display: table;
+    content: ""; 
+    display: table; 
   }
   &:after {
-    clear: both;
+    clear: both; 
   }
 }
 
@@ -80,43 +56,41 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 100%;
 }
 
 @mixin all-caps () {
-  text-transform: lowercase;
+  text-transform: uppercase;
+  font-family: $h6-font-family;
   letter-spacing: $tracked-out;
-  font-size: 14px;
-  font-weight: $normal;
-  line-height: 1.4em;
-  font-family: $secondary-font;
-  @include font-smooth();
+  font-size: $md-font-size;
+  font-weight: $bold;
+  line-height: 1.2em;
 }
 
 @mixin small-caps () {
   @include all-caps();
-  font-size: 12px;
+  font-size: $sm-font-size;
 }
 
 @mixin tiny-caps () {
   @include all-caps();
-  font-size: 10px;
+  font-size: $tiny-font-size;
+  font-weight: $medium;
 }
 
-
 // Placeholders
-@mixin placeholder {
+@mixin placeholder($color) {
   &::-webkit-input-placeholder {
-      @content;
+      color: $color;
   }
   &:-moz-placeholder { /* Firefox 18- */
-      @content;
+      color: $color;
   }
   &::-moz-placeholder {  /* Firefox 19+ */
-      @content;
+      color: $color;
   }
   &:-ms-input-placeholder {
-      @content;
+      color: $color;
   }
 }
 @mixin placeholder-focus {
@@ -132,22 +106,4 @@
   &:focus:-ms-input-placeholder {
       @content;
   }
-}
-
-/// Slightly lighten a color
-/// @access public
-/// @param {Color} $color - color to tint
-/// @param {Number} $percentage - percentage of `$color` in returned color
-/// @return {Color}
-@function tint($color, $percentage) {
-  @return mix(white, $color, $percentage);
-}
-
-/// Slightly darken a color
-/// @access public
-/// @param {Color} $color - color to shade
-/// @param {Number} $percentage - percentage of `$color` in returned color
-/// @return {Color}
-@function shade($color, $percentage) {
-  @return mix(black, $color, $percentage);
 }

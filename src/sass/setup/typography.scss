@@ -1,48 +1,34 @@
-@import '~sass/setup/fonts';
-@import '~sass/setup/rich-text';
-
 html,
-body {
+body,
+input,
+textarea,
+button {
 	font-family: $main-font;
 	line-height: $base-line-height;
-	font-size: calc(#{$base-font-size} - 2px);
+	// font-size: calc(#{$base-font-size} - 2px);
+	font-size: $base-font-size;
 	color: $text-color;
 	letter-spacing: $base-letter-spacing;
+	@include font-smooth();
 	@include respond($md) {
 		font-size: $base-font-size;
 	}
-	@include respond(1280) {
-		font-size: calc(#{$base-font-size} + 2px);
+	@include respond($huge) {
+		// font-size: calc(#{$base-font-size} + 2px);
 	}
 }
 
-button,
-.button {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	// margin-top: .5rem;
+	// margin-bottom: .5rem;
 	@include font-smooth();
 }
 
 h1,
 .h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-	// margin-top: .5rem;
-	// margin-bottom: .5rem;
-	@include font-smooth();
-	&.inline {
-		display: inline;
-	}
-}
-
-h1,
-.h1 {
+.h1 p {
+	font-family: $h1-font-family;
+	text-transform: $h1-text-transform;
 	font-size: $h1-font-size * .75;
 	font-weight: $h1-font-weight;
 	line-height: $h1-line-height;
@@ -53,7 +39,10 @@ h1,
 }
 
 h2,
-.h2 {
+.h2,
+.h2 p {
+	font-family: $h2-font-family;
+	text-transform: $h2-text-transform;
 	font-size: $h2-font-size * .85;
 	font-weight: $h2-font-weight;
 	line-height: $h2-line-height;
@@ -64,7 +53,10 @@ h2,
 }
 
 h3,
-.h3 {
+.h3,
+.h3 p {
+	font-family: $h3-font-family;
+	text-transform: $h3-text-transform;
 	font-size: $h3-font-size;
 	font-weight: $h3-font-weight;
 	line-height: $h3-line-height;
@@ -72,7 +64,10 @@ h3,
 }
 
 h4,
-.h4 {
+.h4,
+.h4 p {
+	font-family: $h4-font-family;
+	text-transform: $h4-text-transform;
 	font-size: $h4-font-size;
 	font-weight: $h4-font-weight;
 	line-height: $h4-line-height;
@@ -80,7 +75,10 @@ h4,
 }
 
 h5,
-.h5 {
+.h5,
+.h5 p {
+	font-family: $h5-font-family;
+	text-transform: $h5-text-transform;
 	font-size: $h5-font-size;
 	font-weight: $h5-font-weight;
 	line-height: $h5-line-height;
@@ -88,21 +86,19 @@ h5,
 }
 
 h6,
-.h6 {
+.h6,
+.h6 p {
 	@include small-caps();
-	@include font-smooth();
 }
 
 p,
 .p {
+	font-family: $main-font;
 	font-size: $p-font-size;
 	line-height: $base-line-height;
 	letter-spacing: $p-letter-spacing;
-	font-weight: $normal;
+	font-weight: $p-font-weight;
 	text-transform: none;
-	&.inline {
-		display: inline;
-	}
 	&.max-width,
 	.max-width & {
 		max-width: 32em;
@@ -120,11 +116,13 @@ p,
 		margin-top: -2px;
 	}
 	a {
-		display: inline-block;
 		color: currentcolor;
 		border-bottom: 1px solid transparent;
+		line-height: 1em;
+		padding-bottom: .1em;
 		&:hover {
-			border-color: $main-color;
+			color: $main-color;
+			border-color: currentcolor;
 		}
 		&.hover-alert {
 			&:hover {
@@ -132,9 +130,16 @@ p,
 				border-color: $alert !important;
 			}
 		}
+		&.main-color {
+			border-color: transparent;
+			&:hover {
+				color: $main-color;
+				border-color: currentcolor;
+			}
+		}
 	}
-	.sm > &,
-	.small > &,
+	.sm &,
+	.small &,
 	&.sm,
 	&.small,
 	&.caption {
@@ -147,15 +152,15 @@ p,
 		max-width: 30em;
 		color: $light-text-color;
 	}
-	.tiny > &,
+	.tiny &,
 	&.tiny {
 		font-size: $tiny-font-size;
 		.material-icons.md-12 {
 			margin-top: -1px 4px;
 		}
 	}
-	.lg > &,
-	.large > &,
+	.lg &,
+	.large &,
 	&.lg,
 	&.large {
 		font-size: $lg-p-font-size;
@@ -163,12 +168,21 @@ p,
 		line-height: $short-line-height;
 		letter-spacing: 0;
 	}
-	.md > &,
-	.medium > &,
+	.xlg &,
+	&.xlg {
+		font-size: 1.5rem;
+		font-weight: $light;
+		line-height: $short-line-height;
+		letter-spacing: 0;
+	}
+	.md &,
+	.medium &,
 	&.md,
 	&.medium {
 		font-size: $md-p-font-size;
 		font-weight: $normal;
+		// line-height: $short-line-height;
+		line-height: $base-line-height;
 	}
 	.light &,
 	&.light-text-color {
@@ -188,48 +202,31 @@ p,
 
 ul,
 ol {
-	counter-reset: a;
 	font-size: $p-font-size;
 	line-height: $base-line-height;
 	letter-spacing: $p-letter-spacing;
+	counter-reset: list-counter;
 	.sm > &,
 	.small > &,
 	&.sm,
 	&.small {
 		font-size: $sm-font-size;
+		font-weight: $medium;
 	}
 }
 
-ol {
-	&.numbered {
-		> li {
+ul {
+	&.bulleted {
+		li {
 			position: relative;
+			padding-left: 1.5rem;
 			&:before {
-				counter-increment: a;
-				content: counter(a);
-				padding-right: .5em;
-		    box-sizing: border-box;
-		    color: $light-text-color;
-
-				&.list-decimal {
-					counter-increment: a;
-					content: counter(a, decimal);
-				}
-
-				&.list-lower-roman {
-					counter-increment: a;
-					content: counter(a, lower-roman);
-				}
-
-				&.list-lower-alpha {
-					counter-increment: a;
-					content: counter(a, lower-alpha);
-				}
-
-				&.list-upper-alpha {
-					counter-increment: a;
-					content: counter(a, upper-alpha);
-				}
+				content: '•';
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 1.5rem;
+				padding-left: .3rem;
 			}
 		}
 	}
@@ -239,9 +236,10 @@ strong,
 .bold,
 b {
 	font-weight: $bold !important;
-	@include font-smooth();
 }
 
+em,
+i,
 .italic {
 	font-style: italic;
 }
@@ -270,16 +268,20 @@ b {
 	color: $bg-color;
 }
 
-.pop-color {
-	color: $main-color;
+.black {
+	color: $black;
+}
+
+.white {
+	color: $white;
 }
 
 .main-color {
 	color: $main-color;
 }
 
-.main-color-2 {
-	color: $main-color;
+.main-color-opacity {
+	color: rgba($main-color, .6);
 }
 
 .success-color {
@@ -289,11 +291,6 @@ b {
 .alert-color {
 	color: $alert;
 }
-
-.disabled-color {
-	color: $light-text-color ;
-}
-
 
 .notify-color {
 	color: $notify;
@@ -322,8 +319,11 @@ hr {
 	&.text-color {
 		border-color: $text-color;
 	}
+	&.main-color {
+		border-color: $main-color;
+	}
 	&.tight-spacing {
-		margin: $tight-gutter 0;
+		margin: $gutter-tight 0;
 	}
 	&.no-space {
 		margin: 0;
@@ -335,27 +335,41 @@ hr {
 		margin-bottom: 0;
 	}
 	&.thick {
-		border-top: 3px solid $hr-color;
+		border-width: 2px;
+	}
+	&.small,
+	&.short {
+		width: 2.5rem;
 	}
 }
 
 ::selection {
-  background: $main-color;
-  color: $bg-color;
+  background: rgba($main-color, .15);
+  color: darken($main-color, 5%);
 }
 ::-moz-selection {
-  background: $main-color;
-  color: $bg-color;
+  background: rgba($main-color, .15);
+  color: darken($main-color, 5%);
 }
 
 .underlined-link {
-	@include small-caps();
+	cursor: pointer;
+	font-weight: $medium;
 	border-bottom: 1px solid currentcolor;
-	color: currentcolor;
 	display: inline-block;
 	cursor: pointer;
-	padding-bottom: .2em;
+	padding-bottom: .25em;
+	font-size: $p-font-size;
+	@include small-caps();
 	transition: opacity $md-speed $ease, color $md-speed $ease, border $md-speed $ease, background $md-speed $ease, transform $md-speed $ease;
+}
+
+.hover-underline {
+	border-bottom: 1px solid transparent;
+	&:hover {
+		color: inherit;
+		border-color: currentcolor;
+	}
 }
 
 .ellipsis {
@@ -371,10 +385,6 @@ code,
   font-family: $code-font;
   font-size: $sm-font-size;
   line-height: $base-line-height;
-}
-
-.normal-weight {
-	font-weight: $normal !important;
 }
 
 .medium-weight {

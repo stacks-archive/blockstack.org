@@ -1,21 +1,15 @@
 *[data-tooltip-text] {
 	overflow: visible;
-	position: relative;
-	&:hover {
-		&:after,
-		&:before {
-			opacity: 1;
-			visibility: visible;
-			pointer-events: none !important;
-		}
+	&:hover:after,
+	&:hover:before {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: none;
 	}
 
 	&:after,
 	&:before {
-		opacity: 0;
-		visibility: hidden;
 		z-index: 9999;
-		transition: opacity $md-speed $ease, visibility $md-speed $ease, transform $md-speed $ease;
 	}
 
 	&:after {
@@ -32,16 +26,19 @@
 		margin-top: -($tooltip-height/2);
 		background: $text-color;
 		color: $bg-color;
+		z-index: 1;
 		font-size: $tooltip-font-size;
 		line-height: 1.4em;
 		letter-spacing: $tooltip-letter-spacing;
 		text-transform: $tooltip-text-transform;
 		font-weight: $tooltip-font-weight;
 		padding: $tooltip-padding;
-	  border-radius: $base-border-radius;
+	  border-radius: 3px;
 	  box-sizing: border-box;
 	  max-width: 250px;
 	  opacity: 0;
+	  visibility: hidden;
+	  transition: opacity $md-speed $ease, visibility $md-speed $ease, transform $md-speed $ease;
 	}
 
 	&[data-tooltip-paragraph="true"]:after {
@@ -61,6 +58,8 @@
 		border-right-color: $text-color;
 		border-left: none;
 		opacity: 0;
+	  visibility: hidden;
+		transition: opacity $md-speed $ease, visibility $md-speed $ease, transform $md-speed $ease;
 	}
 
 	/* Position Tooltip Left */
@@ -88,8 +87,7 @@
 
 	&[data-tooltip-position="top"]:before {
 		left: 50%;
-		bottom: 100%;
-		transform: translate3d(0, -$tooltip-offset, 0);
+		bottom: calc(100% + #{$tooltip-offset});
 		top: auto;
 		margin-top: 0;
 		margin-left: calc(#{$nipple-size} * -1);
@@ -109,8 +107,7 @@
 
 	&[data-tooltip-position="bottom"]:before {
 		left: 50%;
-		top: 100%;
-		transform: translate3d(0, $tooltip-offset, 0);
+		top: calc(100% + #{$tooltip-offset});
 		bottom: auto;
 		margin-top: 0;
 		margin-left: calc(#{$nipple-size} * -1);

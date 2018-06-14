@@ -1,0 +1,36 @@
+@import '~sass/setup/variables';
+@import '~sass/setup/mixins';
+
+.app-grid {
+	
+}
+
+.g-card {
+	&.app-card {
+		height: 100%;
+		.view-arrow {
+			margin-top: .25rem;
+		}
+		&.view-all-apps {
+			.view-text {
+				display: none;
+			}
+			.view-arrow {
+				* {
+					stroke: lighten($main-color, 30%);
+				}
+			}
+			&:hover {
+				.view-arrow {
+					* {
+						stroke: $white;
+					}
+				}
+			}
+		}
+		.app-desc {
+			padding-top: .3rem;
+			max-width: 13.5rem;
+		}
+	}
+}
