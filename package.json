@@ -1,10 +1,10 @@
 {
-  "name": "easyset-landing",
+  "name": "blockstack-landing",
   "version": "1.0.0",
   "engines": {
     "node": ">=0.8.0"
   },
-  "description": "Landing Pages for Easyset",
+  "description": "A Static React App. Landing Pages for Block Stack",
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=development node index.js",
@@ -55,7 +55,6 @@
     "webpack-notifier": "^1.6.0"
   },
   "dependencies": {
-    "react": "^16.3.2",
-    "react-player": "^1.5.0"
+    "react": "^16.3.2"
   }
 }

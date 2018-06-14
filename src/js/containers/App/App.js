@@ -4,10 +4,6 @@ import Header from 'containers/Header';
 import Hero from 'containers/Hero';
 import Footer from 'containers/Footer';
 
-import HowItWorks from 'containers/HowItWorks';
-import Pricing from 'containers/Pricing';
-import Solution from 'containers/Solution';
-import Mobile from 'containers/Mobile';
 
 import './App.scss';
 
@@ -17,10 +13,6 @@ class App extends Component {
 			<div className="landing-page">
 				<Header />
 				<Hero />
-				<HowItWorks />
-				<Pricing />
-				<Solution />
-				<Mobile />
 				<Footer />
 			</div>
 		);
