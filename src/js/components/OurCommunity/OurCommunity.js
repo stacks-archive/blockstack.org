@@ -9,19 +9,19 @@ import './OurCommunity.scss';
 
 const cards = [
 	{
-		title : 'SDKs',
+		title : 'Meetups',
 		link : '#',
-		description : 'Dev tools: Web, iOS, Android'
+		description : '7000+ developers across 23 countries'
 	},
 	{
-		title : 'Browser',
+		title : 'Events',
 		link : '#',
-		description : 'Auth and identity mgmt apps'
+		description : 'Bi-annual Global Summit and hackathons'
 	},
 	{
-		title : 'Blockstack Naming Sys. ',
+		title : 'Forum',
 		link : '#',
-		description : 'Discover apps and people'
+		description : 'Latest news and instant answers from our developer community'
 	}
 ];
 
@@ -44,7 +44,7 @@ class OurCommunity extends Component {
 								{cards.map( (card, index) => {
 									return (
 										<div key={"community-card-" + index} className="col-4 pb-tight-gutter">
-											<Card className="card stretch-height c-mtn-height" href="#">
+											<Card className="card stretch-height min-height c-mtn-height" href="#">
 												<div className="p-2">
 													<div className="grid-flex tight-gutter no-break pb-1">
 														<div className="col grow">
@@ -54,7 +54,7 @@ class OurCommunity extends Component {
 														<InlineSVG src={Arrow} element="div" />
 														</div>
 													</div>
-													<p className="sm">Dev tools: Web, iOS, Android</p>
+													<p className="sm">{card.description}</p>
 												</div>
 											</Card>
 										</div>
