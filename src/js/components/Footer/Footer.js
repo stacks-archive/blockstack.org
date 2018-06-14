@@ -14,7 +14,7 @@ class Header extends Component {
 			<footer className="pb-4 blue-bg mt-4">
 				<div className="container narrow">
 					<div className="mb-4 my-auto">
-						<NewsletterSignup inputClass="large" />
+						<NewsletterSignup inputClass="large" id="footerNewsletterSignup" />
 					</div>
 					<div className="align-center pb-4">
 						<nav className="line-nav">
@@ -25,7 +25,7 @@ class Header extends Component {
 							</ul>
 						</nav>
 					</div>
-					<div className="grid-flex v-spaced">
+					<div className="grid-flex v-spaced footer-links">
 						<div className="col pb-2">
 							<h5 className="p sm medium-weight pb-1">Technology</h5>
 							<ul>

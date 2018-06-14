@@ -562,6 +562,9 @@ input[type=submit].button {
     border-color: transparent;
     color: rgba($text-color, .25);
     box-shadow: none !important;
+    &.transparent {
+      background: transparent;
+    }
   }
 
 }

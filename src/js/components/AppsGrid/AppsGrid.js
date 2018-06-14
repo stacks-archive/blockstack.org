@@ -6,10 +6,10 @@ import TriangleBg from 'components/TriangleBg';
 import Arrow from 'assets/images/outline-arrow';
 
 // App Icons
-import GraphiteIcon from 'assets/images/app-hermes';
+import GraphiteIcon from 'assets/images/app-graphite';
 import HermesIcon from 'assets/images/app-hermes';
 import DotpodcastIcon from 'assets/images/app-dotpodcast';
-import KanstackIcon from 'assets/images/app-dotpodcast';
+import KanstackIcon from 'assets/images/app-kanstack';
 import CoinfortIcon from 'assets/images/app-coinfort';
 import AppCoIcon from 'assets/images/app-co-icon';
 

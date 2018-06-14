@@ -5,6 +5,8 @@ import TriangleBg from 'components/TriangleBg';
 import Arrow from 'assets/images/outline-arrow';
 import Divider from 'assets/images/divider-2';
 
+import BsBerlin from 'assets/images/bs-berlin.png';
+
 import './OurCommunity.scss';
 
 const cards = [
@@ -62,17 +64,25 @@ class OurCommunity extends Component {
 								})}
 								<div className="col-12">
 									<Card className="card" href="#">
-										<div className="p-2">
-											<div className="grid-flex tight-gutter no-break pb-1">
-												<div className="col grow">
-													<p className="main-color underline-hover">card.title</p>
+											<div className="grid-flex tight-gutter middle break-xlg">
+												<div className="col-4 logo-col">
+													<img src={BsBerlin} alt="Blockstack Berlin" className="mx-auto" />
 												</div>
-												<div className="col no-grow">
-												<InlineSVG src={Arrow} element="div" />
+												<div className="col-8">
+													<div className="grid-flex tight-gutter middle">
+														<div className="col grow">
+															<div className="p-2 max-text-width">
+																<p className="sm">Experts on privacy, blockchain, information theory, and the decentralized community.</p>
+															</div>
+														</div>
+														<div className="col no-grow">
+															<div className="p-2 pr-gutter">
+																<div className="p sm medium-weight underline-hover main-color">Fri, March 2, 2018 <InlineSVG src={Arrow} element="span" /></div>
+															</div>
+														</div>
+													</div>
 												</div>
 											</div>
-											<p className="sm">Experts on privacy, blockchain, information theory, and the decentralized community.</p>
-										</div>
 									</Card>
 								</div>
 							</div>

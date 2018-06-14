@@ -1,5 +1,6 @@
 @import '~sass/setup/variables';
 @import '~sass/setup/mixins';
+@import '~sass/setup/icons';
 
 header.header {
 	padding-top: $mobile-margin * .75;
@@ -7,11 +8,18 @@ header.header {
 	@include respond($lg) {
 		padding-top: 2rem;
 	}
-	.container {
+	.header-container {
 		@include respond($lg) {
 			width: 100%;
 			max-width: 100%;
 			padding: 0 3rem;
+		}
+	}
+	&.menu-open {
+		.inner-header {
+			&.collapsed {
+				background: transparent;
+			}
 		}
 	}
 
@@ -43,6 +51,11 @@ header.header {
 					opacity: 1;
 					visibility: visible;
 					transform: none;
+					&.invalid {
+						input {
+							border-color: $alert;
+						}	
+					}
 				}
 			}
 			.bs-logo {
@@ -144,5 +157,50 @@ header.header {
 		.newsletter-form {
 			transition-delay: .1s;
 		}
+	}
+}
+
+.main-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	min-height: 60vh;
+	max-height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	z-index: 9;
+	border-bottom: 20px solid darken($text-color, 10%);
+	.container {
+		@include respond($md) {
+			padding-top: $space-3;
+		}
+	}
+	.list-title {
+		color: #6FD4FF;
+	}
+	.list-divider {
+		color: #A75AF4;
+	}
+	ul {
+		li {
+			a {
+				padding-bottom: 0;
+			}
+		}
+	}
+	.menu-cols {
+		.col {
+			@include respond($sm) {
+				width: 50%;
+			}
+			@include respond($xlg) {
+				width: 25%;
+			}
+		}
+	}
+	&.blue-bg {
+		background: rgba($text-color, .9);
 	}
 }

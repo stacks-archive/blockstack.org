@@ -391,3 +391,7 @@ code,
 	font-weight: $medium !important;
 	@include font-smooth();
 }
+
+.max-text-width {
+	max-width: $max-text-width;
+}

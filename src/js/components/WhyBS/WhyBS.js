@@ -77,7 +77,7 @@ class WhyBS extends Component {
 							{compareRows.map( (row, index) => {
 								return (
 									<div className="bs-compare-row my-1" key={'compare-row-' + index}>
-										<div className="grid-flex no-break no-gutter">
+										<div className="grid-flex no-break no-gutter middle">
 											<div className="col-12">
 												<div className="px-tight-gutter mt-tight-gutter align-center"><h5 className="p sm main-color row-title">{row.title}</h5></div>
 											</div>

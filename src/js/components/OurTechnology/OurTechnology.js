@@ -4,10 +4,10 @@ import Card from 'components/Card';
 import TriangleBg from 'components/TriangleBg';
 import Arrow from 'assets/images/outline-arrow';
 
-import GraphiteIcon from 'assets/images/app-hermes';
+import GraphiteIcon from 'assets/images/app-graphite';
 import HermesIcon from 'assets/images/app-hermes';
 import DotpodcastIcon from 'assets/images/app-dotpodcast';
-import KanstackIcon from 'assets/images/app-dotpodcast';
+import KanstackIcon from 'assets/images/app-kanstack';
 import CoinfortIcon from 'assets/images/app-coinfort';
 
 import './OurTechnology.scss';
@@ -67,11 +67,11 @@ class OurTechnology extends Component {
 					</div>
 					<div className="container very-narrow pt-3">
 						<div className="g-card dark px-2 pb-2 align-center mb-tight-gutter pt-1px">
-							<div className="grid-flex no-break tight-gutter center">
+							<div className="grid-flex no-break no-gutter center">
 								<div className="col"><img className="example-app-icon" src={GraphiteIcon} /></div>
-								<div className="col"><img className="example-app-icon" src={GraphiteIcon} /></div>
-								<div className="col"><img className="example-app-icon" src={GraphiteIcon} /></div>
-								<div className="col"><img className="example-app-icon" src={GraphiteIcon} /></div>
+								<div className="col"><img className="example-app-icon" src={CoinfortIcon} /></div>
+								<div className="col"><img className="example-app-icon" src={HermesIcon} /></div>
+								<div className="col"><img className="example-app-icon" src={KanstackIcon} /></div>
 							</div>
 							<p className="sm pt-2">Amazing dapps built by you!</p>
 						</div>
@@ -128,17 +128,17 @@ class OurTechnology extends Component {
 									} else if (index == length) {
 										return(
 											<div key={"tech-card-" + index} className="col-12">
-												<Card className="card" href="#">
+												<Card className="card tech-long-card" href="#">
 													<div className="p-2">
-														<div className="grid-flex tight-gutter no-break pb-1">
-															<div className="col grow">
+														<div className="grid-flex no-break middle">
+															<div className="col no-grow">
 																<p className="main-color underline-hover">{card.title}</p>
 															</div>
-															<div className="col no-grow">
+															<div className="col arrow-col no-grow">
 																<InlineSVG src={Arrow} element="div" />
 															</div>
+															<div className="col desc-col"><p className="sm">{card.description}</p></div>
 														</div>
-														<p className="sm">Dev tools: Web, iOS, Android</p>
 													</div>
 												</Card>
 											</div>
