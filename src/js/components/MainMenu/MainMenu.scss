@@ -1,0 +1,48 @@
+@import '~sass/setup/variables';
+@import '~sass/setup/mixins';
+@import '~sass/setup/icons';
+
+.main-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	min-height: 60vh;
+	max-height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	z-index: 9;
+	border-bottom: 20px solid darken($text-color, 10%);
+	.container {
+		@include respond($md) {
+			padding-top: $space-3;
+		}
+	}
+	.list-title {
+		color: #6FD4FF;
+	}
+	.list-divider {
+		color: #A75AF4;
+	}
+	ul {
+		li {
+			a {
+				padding-bottom: 0;
+			}
+		}
+	}
+	.menu-cols {
+		.col {
+			@include respond($sm) {
+				width: 50%;
+			}
+			@include respond($xlg) {
+				width: 25%;
+			}
+		}
+	}
+	&.blue-bg {
+		background: rgba($text-color, .9);
+	}
+}
