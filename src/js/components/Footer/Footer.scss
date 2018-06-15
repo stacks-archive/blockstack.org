@@ -1,18 +1,51 @@
 @import '~sass/setup/variables';
 @import '~sass/setup/mixins';
+@import '~sass/setup/icons';
 
 footer {
 	.container {
 		padding-top: 1px;
 	}
-	ul {
-		line-height: $tight-line-height;
+	.footer-links {
+		ul {
+			line-height: $tight-line-height;
+			li {
+				a {
+					border-bottom: 1px solid transparent;
+					&:hover {
+						border-color: currentcolor;
+					}
+					@include respond-smaller-than($md) {
+						border-bottom: none;
+						border-top: 1px solid currentcolor;
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						padding: .5em 0;
+						&:after {
+							@include material-icons();
+							content: 'arrow_forward';
+						}
+					}
+				}
+			}
+		}
 	}
 	.newsletter-form {
 		margin-top: -$btn-large-height/2;
 		max-width: 26rem;
 		margin-left: auto;
 		margin-right: auto;
+		&.invalid {
+			input[type='text'],
+			input[type='email'] {
+				box-shadow: 0 6px 24px rgba($alert, .85);
+				&:focus,
+				&:hover {
+					box-shadow: 0 6px 24px rgba($alert, .85);
+				}
+			}	
+		}
 		input[type='text'],
 		input[type='email'] {
 			box-shadow: 0 3px 12px rgba(37, 0, 105, 0.32);

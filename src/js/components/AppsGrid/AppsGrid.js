@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 import InlineSVG from 'svg-inline-react';
 import AppCard from './components/AppCard.js';
+import Card from 'components/Card';
 import TriangleBg from 'components/TriangleBg';
+import Arrow from 'assets/images/outline-arrow';
 
 // App Icons
-import GraphiteIcon from 'assets/images/app-hermes';
+import GraphiteIcon from 'assets/images/app-graphite';
 import HermesIcon from 'assets/images/app-hermes';
 import DotpodcastIcon from 'assets/images/app-dotpodcast';
-import KanstackIcon from 'assets/images/app-dotpodcast';
+import KanstackIcon from 'assets/images/app-kanstack';
 import CoinfortIcon from 'assets/images/app-coinfort';
+import AppCoIcon from 'assets/images/app-co-icon';
 
 import './AppsGrid.scss';
 
@@ -73,16 +76,27 @@ class AppsGrid extends Component {
 								);
 							})}
 							<div className="col">
-								<AppCard
-									className="dark view-all-apps"
-									appDescription="View all live Blockstack dapps"
-									appIcon="http://unsplash.it/300/300"
-									href="http://google.com/"
-								/>
+								<Card className="p-gutter app-card dark large-icon flex-center" href="http://blockstack.com/apps">
+									<div>
+										<div className="grid-flex no-break middle">
+											<div className="col no-grow">
+												<div className="icon-wrap">
+													<img className="icon" src={AppCoIcon} />
+												</div>
+											</div>
+											<div className="col grow align-left">
+												<div className="app-desc">
+													<p className="underline-hover">View all live Blockstack dapps</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<InlineSVG src={Arrow} element="div" className="ml-1 view-arrow" />
+								</Card>
 							</div>
 						</div>
 					</div>
-					<TriangleBg className="down bs-mt-card"/>
+					<TriangleBg className="bs-mt-card" direction="down" />
 				</div>
 			</section>
 		);

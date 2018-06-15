@@ -22,21 +22,38 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	ul {
-		display: flex;
-		align-items: center;
-		li {
+		@include respond($md) {
 			display: flex;
 			align-items: center;
+		}
+		li {
+			@include respond($md) {
+				display: flex;
+				align-items: center;
+			}
 			&:not(:last-child):after {
-				content: '';
-				display: block;
-				width: 4rem;
-				height: 1px;
-				background-color: currentcolor;
-				margin: 0 1rem;
+				@include respond($md) {
+					content: '';
+					display: block;
+					width: 2rem;
+					height: 1px;
+					background-color: currentcolor;
+					margin: 0 1rem;
+				}
+				@include respond($lg) {
+					width: 3rem;
+				}
+				@include respond($xlg) {
+					width: 4rem;
+				}
 			}
 			a {
-				border-bottom: 1px solid transparent;
+				border-bottom: 1px solid currentcolor;
+				margin-bottom: .5em;
+				@include respond($md) {
+					border-bottom: 1px solid transparent;
+					margin-bottom: 0;
+				}
 				&:hover {
 					border-color: currentcolor;
 				}

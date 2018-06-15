@@ -13,6 +13,23 @@
 		.g-card {
 			flex-grow: 1;
 		}
+		.code-block {
+			overflow: hidden;
+			.hljs {
+				position: relative;
+				overflow: hidden;
+				&:after {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					right: 0;
+					background: linear-gradient(to right, rgba($text-color, 0) 0%, rgba($text-color, 1) 100%);
+					width: 40px;
+				}
+			}
+		}
 	}
 	.intro-text {
 		@include respond($md) {

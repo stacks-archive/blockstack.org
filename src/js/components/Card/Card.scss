@@ -8,6 +8,9 @@
 	box-shadow: 0 3px 12px rgba(37, 0, 105, 0.32);
 	color: $text-color;
 	transition: transform $md-speed $ease, box-shadow $md-speed $ease;
+	&.stretch-height {
+		height: 100%;
+	}
 	&.min-height {
 		min-height: 9rem;
 	}

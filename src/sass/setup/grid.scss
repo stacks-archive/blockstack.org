@@ -340,7 +340,7 @@ $col: 100% / 12;
 
 .collapse-3-2-1 {
 	> .col {
-		@include respond($sm) {
+		@include respond($md) {
 			width: 50%;
 		}
 		@include respond($xlg) {

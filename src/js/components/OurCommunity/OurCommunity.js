@@ -5,23 +5,25 @@ import TriangleBg from 'components/TriangleBg';
 import Arrow from 'assets/images/outline-arrow';
 import Divider from 'assets/images/divider-2';
 
+import BsBerlin from 'assets/images/bs-berlin.png';
+
 import './OurCommunity.scss';
 
 const cards = [
 	{
-		title : 'SDKs',
+		title : 'Meetups',
 		link : '#',
-		description : 'Dev tools: Web, iOS, Android'
+		description : '7000+ developers across 23 countries'
 	},
 	{
-		title : 'Browser',
+		title : 'Events',
 		link : '#',
-		description : 'Auth and identity mgmt apps'
+		description : 'Bi-annual Global Summit and hackathons'
 	},
 	{
-		title : 'Blockstack Naming Sys. ',
+		title : 'Forum',
 		link : '#',
-		description : 'Discover apps and people'
+		description : 'Latest news and instant answers from our developer community'
 	}
 ];
 
@@ -37,14 +39,14 @@ class OurCommunity extends Component {
 						</div>
 					</div>	
 				</div>
-				<div className="triangle-bg pb-margin">
+				<div className="triangle-bg pb-4">
 					<div className="container bs-mtn-card">
 						<div>
 							<div className="grid-flex tight-gutter center">
 								{cards.map( (card, index) => {
 									return (
-										<div key={"community-card-" + index} className="col-4">
-											<Card className="card mb-tight-gutter min-height c-mtn-height" href="#">
+										<div key={"community-card-" + index} className="col-4 pb-tight-gutter">
+											<Card className="card stretch-height min-height c-mtn-height" href="#">
 												<div className="p-2">
 													<div className="grid-flex tight-gutter no-break pb-1">
 														<div className="col grow">
@@ -54,7 +56,7 @@ class OurCommunity extends Component {
 														<InlineSVG src={Arrow} element="div" />
 														</div>
 													</div>
-													<p className="sm">Dev tools: Web, iOS, Android</p>
+													<p className="sm">{card.description}</p>
 												</div>
 											</Card>
 										</div>
@@ -62,17 +64,25 @@ class OurCommunity extends Component {
 								})}
 								<div className="col-12">
 									<Card className="card" href="#">
-										<div className="p-2">
-											<div className="grid-flex tight-gutter no-break pb-1">
-												<div className="col grow">
-													<p className="main-color underline-hover">card.title</p>
+											<div className="grid-flex tight-gutter middle break-xlg">
+												<div className="col-4 logo-col">
+													<img src={BsBerlin} alt="Blockstack Berlin" className="mx-auto" />
 												</div>
-												<div className="col no-grow">
-												<InlineSVG src={Arrow} element="div" />
+												<div className="col-8">
+													<div className="grid-flex tight-gutter middle">
+														<div className="col grow">
+															<div className="p-2 max-text-width">
+																<p className="sm">Experts on privacy, blockchain, information theory, and the decentralized community.</p>
+															</div>
+														</div>
+														<div className="col no-grow">
+															<div className="p-2 pr-gutter">
+																<div className="p sm medium-weight underline-hover main-color">Fri, March 2, 2018 <InlineSVG src={Arrow} element="span" /></div>
+															</div>
+														</div>
+													</div>
 												</div>
 											</div>
-											<p className="sm">Experts on privacy, blockchain, information theory, and the decentralized community.</p>
-										</div>
 									</Card>
 								</div>
 							</div>
@@ -89,7 +99,7 @@ class OurCommunity extends Component {
 							</ul>
 						</nav>
 					</div>
-					<TriangleBg className="down bs-mt-card"/>
+					<TriangleBg className="bs-mt-card" direction="down" />
 				</div>
 			</section>
 		);
