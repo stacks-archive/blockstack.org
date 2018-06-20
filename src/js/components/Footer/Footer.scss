@@ -23,8 +23,8 @@ footer {
 						align-items: center;
 						padding: .5em 0;
 						&:after {
-							@include material-icons();
-							content: 'arrow_forward';
+							letter-spacing: -.1em;
+							content: '-->';
 						}
 					}
 				}

@@ -9,8 +9,8 @@ class MainMenu extends Component {
 				<div className="container">
 					<div className="grid-flex break-sm menu-cols v-spaced pt-4 pb-3">
 						<div className="col pb-2">
-							<h5 className="p md medium-weight list-title">Quicklinks</h5>
-							<p className="md py-1 list-divider">//</p>
+							<h5 className="p md medium-weight list-title">Get Started</h5>
+							<p className="md py-1 list-divider">---</p>
 							<ul>
 								<li><a href="#" className="p md">Tutorials</a></li>
 								<li><a href="#" className="p md">Install browser</a></li>
@@ -19,7 +19,7 @@ class MainMenu extends Component {
 						</div>
 						<div className="col pb-2">
 							<h5 className="p md medium-weight list-title">Technology</h5>
-							<p className="md py-1 list-divider">//</p>
+							<p className="md py-1 list-divider">---</p>
 							<ul>
 								<li><a href="#" className="p md">Tutorials</a></li>
 								<li><a href="#" className="p md">Documentation</a></li>
@@ -29,7 +29,7 @@ class MainMenu extends Component {
 						</div>
 						<div className="col pb-2">
 							<h5 className="p md medium-weight list-title">Community</h5>
-							<p className="md py-1 list-divider">//</p>
+							<p className="md py-1 list-divider">---</p>
 							<ul>
 								<li><a href="#" className="p md">Forum</a></li>
 								<li><a href="#" className="p md">Slack</a></li>
@@ -44,7 +44,7 @@ class MainMenu extends Component {
 						</div>
 						<div className="col pb-2">
 							<h5 className="p md medium-weight list-title">Blockstack</h5>
-							<p className="md py-1 list-divider">//</p>
+							<p className="md py-1 list-divider">---</p>
 							<ul>
 								<li><a href="#" className="p md">About</a></li>
 								<li><a href="#" className="p md">FAQ</a></li>

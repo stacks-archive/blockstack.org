@@ -78,14 +78,11 @@ class WhyBS extends Component {
 								return (
 									<div className="bs-compare-row my-1" key={'compare-row-' + index}>
 										<div className="grid-flex no-break no-gutter middle">
-											<div className="col-12">
-												<div className="px-tight-gutter mt-tight-gutter align-center"><h5 className="p sm main-color row-title">{row.title}</h5></div>
-											</div>
-											<div className="col-6 align-right">
-												<div className="px-tight-gutter pb-tight-gutter pt-1 mb-1"><p className="sm main-color">{row.leftItem}</p></div>
+											<div className="col-6 align-left">
+												<div className="px-tight-gutter pb-tight-gutter pt-2"><p className="sm main-color">{row.leftItem}</p></div>
 											</div>
 											<div className="col-6 align-left">
-												<div className="px-tight-gutter pb-tight-gutter pt-1 mb-1"><p className="sm main-color">{row.rightItem}</p></div>
+												<div className="px-tight-gutter pb-tight-gutter pt-2"><p className="sm main-color">{row.rightItem}</p></div>
 											</div>
 										</div>
 									</div>

@@ -41,9 +41,24 @@ header.header {
 			transform-origin: left center;
 			transition: opacity $md-speed $ease, visibility $md-speed $ease, transform $md-speed $ease;
 		}
+		@include respond-smaller-than(330) {
+			.bs-logotype {
+				display: none;
+			}
+		}
 		&.collapsed {
 			position: fixed;
 			background: darken($main-color, 10%);
+			.menu-toggle {
+				@include respond-smaller-than($lg) {
+					margin-right: -60px;
+				}
+				@include respond-smaller-than($lg) {
+					.menu-text {
+						opacity: 0;
+					}
+				}
+			}
 			.center-actions {
 				.button.main-action,
 				.newsletter-form {
@@ -108,6 +123,10 @@ header.header {
 		padding: .75rem;
 		margin-right: -.75rem;
 		cursor: pointer;
+		transition: margin $md-speed $ease;
+		.menu-text {
+			transition: opacity $md-speed $ease;
+		}
 		&:hover {
 			border: none;
 			background: $text-color;
@@ -131,9 +150,21 @@ header.header {
 			}
 		}
 		&.center {
-			@include respond(1200) {
-				flex-grow: 1 !important;
-				width: 1px;
+			position: absolute;
+			left: 100px;
+			right: 100px;
+			@include respond-smaller-than($lg) {
+				left: 45px;
+				right: 45px;
+			}
+			.button.main-action {
+				max-width: 100%;
+				min-width: 180px;
+			}
+			.newsletter-col {
+				@include respond-smaller-than(875) {
+					display: none;
+				}
 			}
 		}
 	}
@@ -142,6 +173,7 @@ header.header {
 		.button.main-action,
 		input {
 			width: 17rem;
+			font-size: $sm-p-font-size;
 		}
 		.button.main-action,
 		.newsletter-form {
