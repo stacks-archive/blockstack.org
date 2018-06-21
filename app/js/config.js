@@ -96,7 +96,7 @@ export const teamMembers = [
     name: 'Jude Nelson',
     avatar: 'https://s3.amazonaws.com/kd4/judecn',
     bio:
-      'Jude Nelson did PhD-level research in distributed systems at Princeton and worked as a core member of PlanetLab, which received the ACM Test of Time Award for enabling planetary scale experimentation and deployment.',
+      'Jude Nelson earned his PhD in computer science at Princeton and worked as a core member of PlanetLab, which received the ACM Test of Time Award for enabling planetary scale experimentation and deployment. His research covered wide-area storage systems and CDNs. 10+ years of Vim usage.',
   },
   {
     blockstackId: 'blankstein',
@@ -127,13 +127,6 @@ export const teamMembers = [
       'Patrick Stanley studied Economics and Psychology at Johns Hopkins, and was the first employee at data-driven lending startup Earnest which sold to Navient for $155m in 2017. In a growth role there, he helped it scale from from 1 to 200 employees and go from $0 to $2B in originations within 3 years.',
   },
   {
-    blockstackId: 'jack_zampolin',
-    name: 'Jack Zampolin',
-    avatar: '/images/avatars/jack-zampolin.jpg',
-    bio:
-      'Jack came to Blockstack from InfluxData where he engaged with and grew the developer community as a Developer Evangelist. A self taught programmer, he is an active contributor to Open Source projects including Blockstack, InfluxDB, and Helm.',
-  },
-  {
     blockstackId: 'yukan',
     name: 'Ken Liao',
     avatar: '/images/avatars/ken-liao.jpg',
@@ -162,20 +155,6 @@ export const teamMembers = [
       'Xan came to Blockstack with backgrounds in private equity, investment banking, and the military. He is passionate about driving the creation, growth, and expansion of application ecosystems through his growth role and with the Signature Fund.',
   },
   {
-    blockstackId: 'clintnelson',
-    name: 'Clint Nelsen',
-    avatar: '/images/avatars/clint-nelsen.jpg',
-    bio:
-      'Clint is part of the growth team at Blockstack and previously was the founder of Startup Weekend.  Clint grew Startup Weekend to a team of 80 employees and community of 8,000 local organizers producing 3,000+ hackathons spanning 600 cities and 147 countries.  Clint is a published author and regularly serves as a lecturer on entrepreneurship & startups.',
-  },
-  {
-    blockstackId: 'hologram',
-    name: 'Chase Wackerfuss',
-    avatar: '/images/avatars/chase-wackerfuss.jpg',
-    bio:
-      "Chase joined Blockstack's engineering team after being an active contributor to the community. A self taught programmer and UI designer, his focus is on cultivating a user-friendly front end developer experience and helping scale client-side applications.",
-  },
-  {
     blockstackId: 'ariella',
     name: 'Ariella Steinhorn',
     avatar: '/images/avatars/ariella-steinhorn.jpg',
@@ -188,6 +167,56 @@ export const teamMembers = [
     avatar: '/images/avatars/jesse-soslow.jpg',
     bio:
      "Jesse is Blockstack’s Operations Partner.  Prior to Blockstack, he led operations at Everwise, a Sequoia-backed SaaS startup, and worked as a technology transactions attorney for a large, international law firm.  Jesse received his J.D. and B.A., in math, both from the University of Pennsylvania."
+  },
+  { 
+    blockstackId: 'mitchell',
+    name: 'Mitchell Cuevas',
+    avatar: '/images/avatars/mitchell-cuevas.jpg',
+    bio:
+     "Mitchell is Blockstack’s Marketing Partner. He previously led Marketing at UP Global (Startup Weekend, Startup Digest, Startup Week) before joining the Product team at Techstars. He curates the Martech Digest, advises at Cove Group, and runs ScreenChecker."
+  },
+  { 
+    blockstackId: 'jeffdomke',
+    name: 'Jeff Domke',
+    avatar: '/images/avatars/jeff-domke.jpg',
+    bio:
+     "Jeff leads product at Blockstack. Previously he was CPO and the first hire at CompStak (real estate analytics) where he helped grow the user base 125x, hire 50 team members, and raise 22M in funding. He also previously cofounded Signal (CX analytics) and Capsule.me (consumer messaging)."
+  },
+  { 
+    blockstackId: 'hankstoever',
+    name: 'Hank Stoever',
+    avatar: '/images/avatars/hank-stoever.jpg',
+    bio: "Hank is an engineer at Blockstack, working on developer tools and consumer-facing products. He previously worked as an engineer for a variety of startups, including as lead developer for Startup Digest.",
+  },
+  { 
+    blockstackId: 'thaonguyenle',
+    name: 'Thao-Nguyen Le',
+    avatar: '/images/avatars/thao-nguyen-le.jpg',
+    bio: "Thao-Nguyen is People and Operations partner at Blockstack, assisting the co-founders and team with organizational prioritization, project management, team collaboration and internal communication. Prior to joining, she led operations in mission driven organizations such as Farmshelf (indoor hydro agri-tech), AntiGravity Fitness and Vietnam Heritage Center. ",
+  },
+  { 
+    blockstackId: 'ginxh.id.blockstack',
+    name: 'Virginia Hickox',
+    avatar: '/images/avatars/virginia-hickox.jpg',
+    bio: "Virginia is a Blockstack Engineering Partner, focusing on DevOps, developing microservices and infrastructure for the decentralized web. She has a degree in Electrical Engineering from RPI, and previously worked as an Engineer in Operations for open market access for electrical power. She is interested in information privacy and democracy in the digital world.",
+  },
+  { 
+    blockstackId: 'lizblockstack.blockstack',
+    name: 'Elizabeth Thys',
+    avatar: '/images/avatars/elizabeth-thys.jpg',
+    bio: "Liz is a Blockstack Operations Partner. Prior to Blockstack, she co-founded limeSHIFT, a creative agency that that aligns people, place and purpose, which emerged from a collaboration between MIT Sloan School of Management and MIT Department of Urban Studies and Planning. She received a BS in Mechanical Engineering from Tufts University and an MBA from MIT Sloan School of Management. ",
+  },
+  { 
+    blockstackId: 'shrey',
+    name: 'Shreyas Thiagaraj',
+    avatar: '/images/avatars/shreyas-thiagaraj.jpg',
+    bio: "Shreyas is a Blockstack Engineering Partner, working on developer tools and mobile efforts. He comes from a background in product development for various social apps, and before that built developer tools for mobile apps as an engineer at Microsoft. When not at work, you can find him on the hunt for the world’s best hot chocolate.",
+  },
+  { 
+    blockstackId: 'mmanthony.id.blockstack',
+    name: 'Mary Anthony',
+    avatar: '/images/avatars/mary-anthony.jpg',
+    bio: "Mary joined Blockstack as a Documentation Engineer. She has co-founded a CRO, managed teams, developed documentation deployment infrastructure, and designed user interfaces. Her experience includes developing content for open source, clinical research, container technologies, security software, business intelligence software, remote source control software, and system administration. She spends her non-work time studying figurative art, hiking, and trail running.",
   },
   {
     blockstackId: 'mfreed',
