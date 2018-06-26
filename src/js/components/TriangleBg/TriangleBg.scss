@@ -26,6 +26,9 @@
 	background-repeat: repeat;
 	background-position: center;
 	background-size: 30px 30px;
+	@include respond-smaller-than($md) {
+		display: none;
+	}
 	svg {
 		width: 100%;
 		height: 100%;

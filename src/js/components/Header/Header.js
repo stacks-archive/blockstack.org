@@ -52,7 +52,7 @@ class Header extends Component {
 					<div className={this.state.collapsed ? ("inner-header collapsed") : ("inner-header")}>
 						<div>
 							<div className="container header-container">
-								<div className="grid-flex no-break middle">
+								<div className="grid-flex no-break middle no-gutter">
 
 									<div className="col left">
 										<div className="es-logo">
@@ -63,15 +63,15 @@ class Header extends Component {
 										</div>
 									</div>
 
-									<div className="col center align-center hide-lg">
+									<div className="col center align-center">
 										<div className="grid-flex tight-gutter center-actions center">
 											<div className="col"><Button className="secondary main-action" label="Docs & Tutorials" /></div>
-											<div className="col hide-xlg"><NewsletterSignup id="headerNewsletterSignup" /></div>
+											<div className="col newsletter-col"><NewsletterSignup id="headerNewsletterSignup" /></div>
 										</div>
 									</div>
 
 									<div className="col right side-col align-right">
-										<a onClick={this.toggleMenu} className="p menu-toggle"><span className="material-icons md-24 menu-icon">{this.state.menuOpen ? ('close') : ('menu')}</span> Menu</a>
+										<a onClick={this.toggleMenu} className="p menu-toggle"><span className="material-icons md-24 menu-icon">{this.state.menuOpen ? ('close') : ('menu')}</span><span className="menu-text"> Menu</span></a>
 									</div>
 
 								</div>

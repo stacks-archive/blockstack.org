@@ -99,9 +99,9 @@ class TopArea extends Component {
 					<div className="container align-center pt-3 mt-2 bs-pb-card">
 						<nav className="line-nav pb-4">
 							<ul className="pb-3">
-								<li><a href="#">All tutorials</a></li>
-								<li><a href="#">Documentation</a></li>
-								<li><a href="#">Github</a></li>
+								<li><a href="#" target="blank">All tutorials</a></li>
+								<li><a href="http://blockstack.github.io/blockstack.js/" target="blank">Documentation</a></li>
+								<li><a href="https://github.com/blockstack" target="blank">Github</a></li>
 							</ul>
 						</nav>
 					</div>

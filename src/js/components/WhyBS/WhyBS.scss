@@ -16,6 +16,7 @@
 			}
 			@include respond-smaller-than($lg + 100) {
 				&:before {
+					font-weight: $bold;
 					display: block;
 					content: counter(list-counter, decimal-leading-zero);
 				}
@@ -27,7 +28,7 @@
 					margin-bottom: 1.5em;
 					&:before {
 						display: block;
-						content: '---'
+						// content: '---';
 					}
 				}
 			}
