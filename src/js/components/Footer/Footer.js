@@ -19,9 +19,9 @@ class Header extends Component {
 					<div className="align-center pb-4">
 						<nav className="line-nav">
 							<ul>
-								<li><a href="#" className="p md">Tutorials</a></li>
-								<li><a href="#" className="p md">Install browser</a></li>
-								<li><a href="#" className="p md">Live apps</a></li>
+								<li><a href={this.props.links.tutorials} className="p md">Tutorials</a></li>
+								<li><a href={this.props.links.install} className="p md">Install browser</a></li>
+								<li><a href={this.props.links.liveApps} className="p md">Live apps</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -29,39 +29,39 @@ class Header extends Component {
 						<div className="col pb-2">
 							<h5 className="p sm medium-weight pb-1">Technology</h5>
 							<ul>
-								<li><a href="#" className="p sm">Tutorials</a></li>
-								<li><a href="#" className="p sm">Documentation</a></li>
-								<li><a href="#" className="p sm">Github</a></li>
-								<li><a href="#" className="p sm">White Papers</a></li>
+								<li><a href={this.props.links.tutorials} className="p sm">Tutorials</a></li>
+								<li><a href={this.props.links.documentation} className="p sm">Documentation</a></li>
+								<li><a href={this.props.links.github} className="p sm">Github</a></li>
+								<li><a href={this.props.links.whitePapers} className="p sm">White Papers</a></li>
 							</ul>
 						</div>
 						<div className="col pb-2">
 							<h5 className="p sm medium-weight pb-1">Community</h5>
 							<ul>
-								<li><a href="#" className="p sm">Forum</a></li>
-								<li><a href="#" className="p sm">Slack</a></li>
-								<li><a href="#" className="p sm">Meetup</a></li>
+								<li><a href={this.props.links.forum} className="p sm">Forum</a></li>
+								<li><a href={this.props.links.slack} className="p sm">Slack</a></li>
+								<li><a href={this.props.links.meetup} className="p sm">Meetup</a></li>
 								<li><a href="#" className="p sm">Request an app</a></li>
 								<li><a href="#" className="p sm">Get updates</a></li>
-								<li><a href="#" className="p sm">Blog</a></li>
-								<li><a href="#" className="p sm">Youtube</a></li>
-								<li><a href="#" className="p sm">Videos</a></li>
-								<li><a href="#" className="p sm">Signature fund</a></li>
+								<li><a href={this.props.links.blog} className="p sm">Blog</a></li>
+								<li><a href={this.props.links.youtube} className="p sm">Youtube</a></li>
+								<li><a href={this.props.links.videos} className="p sm">Videos</a></li>
+								<li><a href={this.props.links.signatureFund} className="p sm">Signature fund</a></li>
 							</ul>
 						</div>
 						<div className="col pb-2">
 							<h5 className="p sm medium-weight pb-1">Blockstack</h5>
 							<ul>
-								<li><a href="#" className="p sm">About</a></li>
-								<li><a href="#" className="p sm">FAQ</a></li>
-								<li><a href="#" className="p sm">Careers</a></li>
-								<li><a href="#" className="p sm">Press</a></li>
-								<li><a href="#" className="p sm">Swag</a></li>
-								<li><a href="#" className="p sm">Twitter</a></li>
-								<li><a href="#" className="p sm">Branding</a></li>
-								<li><a href="#" className="p sm">Privacy</a></li>
-								<li><a href="#" className="p sm">Terms of Use</a></li>
-								<li><a href="#" className="p sm">Disclaimers</a></li>
+								<li><a href={this.props.links.about} className="p sm">About</a></li>
+								<li><a href={this.props.links.faq} className="p sm">FAQ</a></li>
+								<li><a href={this.props.links.careers} className="p sm">Careers</a></li>
+								<li><a href={this.props.links.press} className="p sm">Press</a></li>
+								<li><a href={this.props.links.swag} className="p sm">Swag</a></li>
+								<li><a href={this.props.links.twitter} className="p sm">Twitter</a></li>
+								<li><a href={this.props.links.branding} className="p sm">Branding</a></li>
+								<li><a href={this.props.links.privacy} className="p sm">Privacy</a></li>
+								<li><a href={this.props.links.tos} className="p sm">Terms of Use</a></li>
+								<li><a href={this.props.links.disclaimers} className="p sm">Disclaimers</a></li>
 							</ul>
 						</div>
 					</div>

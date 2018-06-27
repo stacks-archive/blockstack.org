@@ -76,7 +76,7 @@ class AppsGrid extends Component {
 								);
 							})}
 							<div className="col">
-								<Card className="p-gutter app-card dark large-icon flex-center" href="http://blockstack.com/apps">
+								<Card className="p-gutter app-card dark large-icon flex-center" href={this.props.links.liveApps}>
 									<div>
 										<div className="grid-flex no-break middle">
 											<div className="col no-grow">

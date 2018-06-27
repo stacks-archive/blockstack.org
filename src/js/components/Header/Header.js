@@ -65,7 +65,7 @@ class Header extends Component {
 
 									<div className="col center align-center">
 										<div className="grid-flex tight-gutter center-actions center">
-											<div className="col"><Button className="secondary main-action" label="Docs & Tutorials" /></div>
+											<div className="col"><Button className="secondary main-action" href={this.props.links.tutorials} label="Docs & Tutorials" /></div>
 											<div className="col newsletter-col"><NewsletterSignup id="headerNewsletterSignup" /></div>
 										</div>
 									</div>
@@ -80,7 +80,7 @@ class Header extends Component {
 					</div>
 				</div>
 				{this.state.menuOpen ? (
-					<MainMenu/>
+					<MainMenu links={this.props.links}/>
 				) : false}
 			</header>
 		);

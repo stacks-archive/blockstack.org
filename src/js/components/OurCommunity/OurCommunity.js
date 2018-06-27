@@ -9,26 +9,26 @@ import BsBerlin from 'assets/images/bs-berlin.png';
 
 import './OurCommunity.scss';
 
-const cards = [
-	{
-		title : 'Meetups',
-		link : '#',
-		description : '7000+ developers across 23 countries'
-	},
-	{
-		title : 'Events',
-		link : '#',
-		description : 'Bi-annual Global Summit and hackathons'
-	},
-	{
-		title : 'Forum',
-		link : '#',
-		description : 'Latest news and instant answers from our developer community'
-	}
-];
-
 class OurCommunity extends Component {
 	render() {
+		const cards = [
+			{
+				title : 'Meetups',
+				link : this.props.links.meetup,
+				description : '7000+ developers across 23 countries'
+			},
+			{
+				title : 'Events',
+				link : this.props.links.events,
+				description : 'Bi-annual Global Summit and hackathons'
+			},
+			{
+				title : 'Forum',
+				link : this.props.links.forum,
+				description : 'Latest news and instant answers from our developer community'
+			}
+		];
+
 		return (
 			<section>
 				<div className="blue-bg bs-pb-card">
@@ -46,7 +46,7 @@ class OurCommunity extends Component {
 								{cards.map( (card, index) => {
 									return (
 										<div key={"community-card-" + index} className="col-4 pb-tight-gutter">
-											<Card className="card stretch-height min-height c-mtn-height" href="#">
+											<Card className="card stretch-height min-height c-mtn-height" href={card.link}>
 												<div className="p-2">
 													<div className="grid-flex tight-gutter no-break pb-1">
 														<div className="col grow">
@@ -63,7 +63,7 @@ class OurCommunity extends Component {
 									);
 								})}
 								<div className="col-12">
-									<Card className="card" href="#">
+									<Card className="card" href="https://blockstack.org/berlin2018">
 											<div className="grid-flex tight-gutter middle break-xlg">
 												<div className="col-4 logo-col">
 													<img src={BsBerlin} alt="Blockstack Berlin" className="mx-auto" />
@@ -91,11 +91,11 @@ class OurCommunity extends Component {
 					<div className="container align-center pt-3 mt-2">
 						<nav className="line-nav main-color">
 							<ul>
-								<li><a href="#">Slack</a></li>
-								<li><a href="#">Github</a></li>
-								<li><a href="#">App.co</a></li>
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">YouTube</a></li>
+								<li><a href={this.props.links.slack}>Slack</a></li>
+								<li><a href={this.props.links.github} target="_blank">Github</a></li>
+								<li><a href={this.props.links.appCo}>App.co</a></li>
+								<li><a href={this.props.links.blog}>Blog</a></li>
+								<li><a href={this.props.links.youtube}>YouTube</a></li>
 							</ul>
 						</nav>
 					</div>
