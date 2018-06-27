@@ -37,7 +37,9 @@ class TopArea extends Component {
 														<h4 className="main-color underline-hover">Hello World</h4>
 													</div>
 													<div className="col no-grow">
-														{Arrow()}
+														<div className="bs-outline-arrow">
+															{Arrow()}
+														</div>
 													</div>
 												</div>
 												<p className="sm">Build a single-page JavaScript application that runs completely client-side without any servers.</p>
@@ -61,7 +63,9 @@ class TopArea extends Component {
 														<h4 className="main-color underline-hover">Authentication</h4>
 													</div>
 													<div className="col no-grow">
-														{Arrow()}
+														<div className="bs-outline-arrow">
+															{Arrow()}
+														</div>
 													</div>
 												</div>
 												<p className="sm">Build a basic Todo application and learn about Authentication and Gaia storage.</p>
@@ -85,7 +89,9 @@ class TopArea extends Component {
 														<h4 className="main-color underline-hover">Storage</h4>
 													</div>
 													<div className="col no-grow">
-														{Arrow()}
+														<div className="bs-outline-arrow">
+															{Arrow()}
+														</div>
 													</div>
 												</div>
 												<p className="sm">Build a decentralized blogging app using multi-player Gaia storage.</p>

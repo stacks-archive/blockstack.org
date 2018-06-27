@@ -33,7 +33,7 @@ class OurCommunity extends Component {
 			<section>
 				<div className="blue-bg bs-pb-card">
 					<div className="container">
-						<div className="text-color pt-4 pb-4 align-center">{Divider()}</div>
+						<div className="text-color pt-4 pb-4 align-center"><div className="divider-2">{Divider()}</div></div>
 						<div className="align-center pb-3 mb-1">
 							<p>Our community</p>
 						</div>
@@ -48,12 +48,14 @@ class OurCommunity extends Component {
 										<div key={"community-card-" + index} className="col-4 pb-tight-gutter">
 											<Card className="card stretch-height min-height c-mtn-height" href="#">
 												<div className="p-2">
-													<div className="grid-flex tight-gutter no-break pb-1">
+													<div className="grid-flex tight-gutter no-break pb-1 middle">
 														<div className="col grow">
 															<p className="main-color underline-hover">{card.title}</p>
 														</div>
 														<div className="col no-grow">
-														{Arrow()}
+															<div className="bs-outline-arrow">
+																{Arrow()}
+															</div>
 														</div>
 													</div>
 													<p className="sm">{card.description}</p>
@@ -77,7 +79,7 @@ class OurCommunity extends Component {
 														</div>
 														<div className="col no-grow">
 															<div className="p-2 pr-gutter">
-																<div className="p sm medium-weight underline-hover main-color">Fri, March 2, 2018 <span>{Arrow()}</span></div>
+																<div className="p sm medium-weight underline-hover main-color">Fri, March 2, 2018 <span className="bs-outline-arrow">{Arrow()}</span></div>
 															</div>
 														</div>
 													</div>

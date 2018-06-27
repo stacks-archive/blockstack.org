@@ -12,7 +12,7 @@ Blockstack uses the lower layers of the traditional internet and focuses on dece
 
 Get started by installing the [Blockstack Browser](https://blockstack.org/install) (available for Mac, Windows, and Linux).
 
-There are many Blockstack apps already in production and more being built every day with the participation of the online open source community and in partnership with VC Bounties Programs. See more on that at <blockstack.org/funding>
+There are many Blockstack apps already in production and more being built every day with the participation of the online open source community and in partnership with VC Bounties Programs. See more on that at (blockstack.org/funding)
 
 ## Stats
 * 3+ years in production

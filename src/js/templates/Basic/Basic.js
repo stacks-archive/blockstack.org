@@ -9,12 +9,20 @@ export default function Basic({data}) {
 
   return (
     <div>
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.description}</h2>
-        <div
-          className="content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+      <section className="blue-bg top-section top-area">
+        <div className="container py-margin">
+          <h1>{frontmatter.title}</h1>
+          <h2>{frontmatter.description}</h2>
+        </div>
+      </section>
+      <section>
+        <div className="container">
+          <div
+            className="content rich-text"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+        </div>
+      </section>
     </div>
   );
 }

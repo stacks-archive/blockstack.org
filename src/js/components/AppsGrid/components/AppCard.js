@@ -23,7 +23,7 @@ class AppsGrid extends Component {
 					<div className="sm main-color">
 						<div className="grid-flex no-break no-gutter right middle">
 							<div className="col"><span className="main-color p sm view-text">View code</span></div>
-							<div className="col"><div className="ml-1 view-arrow" >{Arrow()}</div></div>
+							<div className="col"><div className="ml-1 view-arrow" ><div className="bs-outline-arrow">{Arrow()}</div></div></div>
 						</div>
 					</div>
 				</div>
