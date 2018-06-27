@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import InlineSVG from 'svg-inline-react';
-import Card from 'components/Card';
-import Arrow from 'assets/images/outline-arrow';
-import TriangleBg from 'components/TriangleBg';
-import CodeBlock from 'components/CodeBlock';
+import Card from 'js/components/Card';
+import Arrow from 'assets/images/outline-arrow.svg';
+import TriangleBg from 'js/components/TriangleBg';
+import CodeBlock from 'js/components/CodeBlock';
 
 import './TopArea.scss'
 
@@ -14,7 +14,7 @@ class TopArea extends Component {
 
 				<div className="intro-text align-center">
 					<div className="container">
-						<h1>The easiest way to start building  decentralized blockchain apps</h1>
+						<h1>The easiest way to start building decentralized blockchain apps</h1>
 					</div>
 				</div>
 				<div className="triangle-bg py-4">
@@ -37,7 +37,7 @@ class TopArea extends Component {
 														<h4 className="main-color underline-hover">Hello World</h4>
 													</div>
 													<div className="col no-grow">
-														<InlineSVG src={Arrow} element="div" />
+														{Arrow()}
 													</div>
 												</div>
 												<p className="sm">Build a single-page JavaScript application that runs completely client-side without any servers.</p>
@@ -61,7 +61,7 @@ class TopArea extends Component {
 														<h4 className="main-color underline-hover">Authentication</h4>
 													</div>
 													<div className="col no-grow">
-														<InlineSVG src={Arrow} element="div" />
+														{Arrow()}
 													</div>
 												</div>
 												<p className="sm">Build a basic Todo application and learn about Authentication and Gaia storage.</p>
@@ -85,7 +85,7 @@ class TopArea extends Component {
 														<h4 className="main-color underline-hover">Storage</h4>
 													</div>
 													<div className="col no-grow">
-														<InlineSVG src={Arrow} element="div" />
+														{Arrow()}
 													</div>
 												</div>
 												<p className="sm">Build a decentralized blogging app using multi-player Gaia storage.</p>

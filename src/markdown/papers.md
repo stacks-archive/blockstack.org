@@ -1,7 +1,7 @@
 ---
 path: "/papers"
 title: "Papers"
-template: "button-list"
+template: "ButtonList"
 ---
 
 ## Browser

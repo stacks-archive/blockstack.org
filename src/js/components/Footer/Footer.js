@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import InlineSVG from 'svg-inline-react';
 
-import Logo from 'assets/images/Logo';
-import LogoType from 'assets/images/logotype';
+import Logo from 'assets/images/Logo.svg';
+import LogoType from 'assets/images/logotype.svg';
 
-import NewsletterSignup from 'components/NewsletterSignup';
+import NewsletterSignup from 'js/components/NewsletterSignup';
 
 import './Footer.scss'
 
@@ -69,8 +69,8 @@ class Header extends Component {
 
 					<div className="es-logo mt-4">
 						<div className="grid-flex no-break no-gutter middle center">
-							<InlineSVG src={Logo} element="div" className="bs-logo" />
-							<InlineSVG src={LogoType} element="div" className="bs-logotype ml-2" />
+							<div className="bs-logo">{Logo()}</div>
+							<div className="bs-logotype ml-2">{LogoType()}</div>
 						</div>
 					</div>
 				</div>

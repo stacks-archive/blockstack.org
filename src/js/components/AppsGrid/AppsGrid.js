@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import InlineSVG from 'svg-inline-react';
 import AppCard from './components/AppCard.js';
-import Card from 'components/Card';
-import TriangleBg from 'components/TriangleBg';
-import Arrow from 'assets/images/outline-arrow';
+import Card from 'js/components/Card';
+import TriangleBg from 'js/components/TriangleBg';
+import Arrow from 'assets/images/outline-arrow.svg';
 
 // App Icons
-import GraphiteIcon from 'assets/images/app-graphite';
-import HermesIcon from 'assets/images/app-hermes';
-import DotpodcastIcon from 'assets/images/app-dotpodcast';
-import KanstackIcon from 'assets/images/app-kanstack';
-import CoinfortIcon from 'assets/images/app-coinfort';
-import AppCoIcon from 'assets/images/app-co-icon';
+import GraphiteIcon from 'assets/images/app-graphite.png';
+import HermesIcon from 'assets/images/app-hermes.png';
+import DotpodcastIcon from 'assets/images/app-dotpodcast.png';
+import KanstackIcon from 'assets/images/app-kanstack.png';
+import CoinfortIcon from 'assets/images/app-coinfort.png';
+import AppCoIcon from 'assets/images/app-co-icon.png';
 
 import './AppsGrid.scss';
 
@@ -58,7 +58,7 @@ class AppsGrid extends Component {
 						<div className="align-center pb-3 mb-1">
 							<h3 className="p white">Live dapps built by our community</h3>
 						</div>
-					</div>	
+					</div>
 				</div>
 				<div className="triangle-bg">
 					<div className="container pb-4 bs-mtn-card">
@@ -91,7 +91,7 @@ class AppsGrid extends Component {
 											</div>
 										</div>
 									</div>
-									<InlineSVG src={Arrow} element="div" className="ml-1 view-arrow" />
+									<div className="ml-1 view-arrow" >{Arrow()}</div>
 								</Card>
 							</div>
 						</div>

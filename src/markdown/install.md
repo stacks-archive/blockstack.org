@@ -1,7 +1,7 @@
 ---
 path: "/install"
 title: "Install"
-template: "button-list"
+template: "ButtonList"
 ---
 
 ## Browser

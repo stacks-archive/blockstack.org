@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import InlineSVG from 'svg-inline-react';
-import Divider from 'assets/images/divider-1';
+import Divider from 'assets/images/divider-1.svg';
 
 import debounce from 'debounce';
 
@@ -46,7 +46,7 @@ class WhyBS extends Component {
 	}
 
 	componentWillUnmount () {
-		window.removeEventListener('resize', this.toggleMobileComparision);	
+		window.removeEventListener('resize', this.toggleMobileComparision);
 	}
 
 	toggleMobileComparision = debounce(() => {
@@ -62,7 +62,7 @@ class WhyBS extends Component {
 			<section className="why-bs py-3">
 				<div className="container align-center mb-4">
 					<h2 className="main-color">Why build on Blockstack?</h2>
-					<InlineSVG src={Divider} element="div" className="main-color pt-2 pb-1" />
+					<div className="main-color pt-2 pb-1">{Divider()}</div>
 					<ol className="dashlist main-color">
 						<li><p>Get paid mining rewards if you build a popular app</p></li>
 						<li><p>Scale your app orders of magnitude greater than blockchain alone</p></li>

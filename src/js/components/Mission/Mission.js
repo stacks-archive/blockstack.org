@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import InlineSVG from 'svg-inline-react';
 
-import Logo from 'assets/images/Logo';
+import Logo from 'assets/images/Logo.svg';
 
 import './Mission.scss'
 

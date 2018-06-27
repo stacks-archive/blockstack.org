@@ -7,10 +7,10 @@ Landing Pages for Easyset
 Node ^6.7
 NPM  ^4.6
 
-# Run Locally
+# Run Locally (New using Gatsby)
 
 ```
 npm install
-npm start
-localhost:4000
+gatsby develop
+localhost:8000
 ```

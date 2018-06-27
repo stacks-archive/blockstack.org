@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import InlineSVG from 'svg-inline-react';
-import Card from 'components/Card';
-import TriangleBg from 'components/TriangleBg';
-import Arrow from 'assets/images/outline-arrow';
+import Card from 'js/components/Card';
+import TriangleBg from 'js/components/TriangleBg';
+import Arrow from 'assets/images/outline-arrow.svg';
 
-import GraphiteIcon from 'assets/images/app-graphite';
-import HermesIcon from 'assets/images/app-hermes';
-import DotpodcastIcon from 'assets/images/app-dotpodcast';
-import KanstackIcon from 'assets/images/app-kanstack';
-import CoinfortIcon from 'assets/images/app-coinfort';
+import GraphiteIcon from 'assets/images/app-graphite.png';
+import HermesIcon from 'assets/images/app-hermes.png';
+import DotpodcastIcon from 'assets/images/app-dotpodcast.png';
+import KanstackIcon from 'assets/images/app-kanstack.png';
+import CoinfortIcon from 'assets/images/app-coinfort.png';
 
 import './OurTechnology.scss';
 
@@ -92,7 +92,7 @@ class OurTechnology extends Component {
 																		<p className="main-color underline-hover">{card.title}</p>
 																	</div>
 																	<div className="col no-grow">
-																		<InlineSVG src={Arrow} element="div" />
+																		{Arrow()}
 																	</div>
 																</div>
 																<p className="sm">{card.description}</p>
@@ -117,7 +117,7 @@ class OurTechnology extends Component {
 																<p className="main-color underline-hover">{card.title}</p>
 															</div>
 															<div className="col no-grow">
-																<InlineSVG src={Arrow} element="div" />
+																{Arrow()}
 															</div>
 														</div>
 														<p className="sm">{card.description}</p>
@@ -135,7 +135,7 @@ class OurTechnology extends Component {
 																<p className="main-color underline-hover">{card.title}</p>
 															</div>
 															<div className="col arrow-col no-grow">
-																<InlineSVG src={Arrow} element="div" />
+																{Arrow()}
 															</div>
 															<div className="col desc-col"><p className="sm">{card.description}</p></div>
 														</div>

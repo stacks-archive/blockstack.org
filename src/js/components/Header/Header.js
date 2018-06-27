@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import InlineSVG from 'svg-inline-react';
 
-import Logo from 'assets/images/Logo';
-import LogoType from 'assets/images/logotype';
-import Button from 'components/Button';
-import NewsletterSignup from 'components/NewsletterSignup';
-import MainMenu from 'components/MainMenu';
+import Logo from 'assets/images/Logo.svg';
+import LogoType from 'assets/images/logotype.svg';
+import Button from 'js/components/Button';
+import NewsletterSignup from 'js/components/NewsletterSignup';
+import MainMenu from 'js/components/MainMenu';
 
 import scrollMonitor from 'scrollmonitor';
 
@@ -57,8 +57,8 @@ class Header extends Component {
 									<div className="col left">
 										<div className="es-logo">
 											<div className="grid-flex no-break no-gutter middle left">
-												<InlineSVG src={Logo} element="div" className="bs-logo" />
-												<InlineSVG src={LogoType} element="div" className="bs-logotype ml-2" />
+												<div className="bs-logo" >{Logo()}</div>
+												<div className="bs-logotype ml-2" >{LogoType()}</div>
 											</div>
 										</div>
 									</div>

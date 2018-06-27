@@ -1,6 +1,7 @@
 ---
 path: "/about"
 title: "About"
+description : "lalala"
 ---
 
 ## In Short

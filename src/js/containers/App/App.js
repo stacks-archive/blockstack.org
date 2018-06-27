@@ -1,25 +1,22 @@
 import React, { Component } from 'react';
 
-import Header from 'components/Header';
-import Card from 'components/Card';
 
+import Card from 'js/components/Card';
+import TopArea from 'js/components/TopArea';
+import AppsGrid from 'js/components/AppsGrid';
+import WhyBS from 'js/components/WhyBS';
+import OurTechnology from 'js/components/OurTechnology';
+import OurCommunity from 'js/components/OurCommunity';
+import FundApp from 'js/components/FundApp';
+import Mission from 'js/components/Mission';
 
-import TopArea from 'components/TopArea';
-import AppsGrid from 'components/AppsGrid';
-import WhyBS from 'components/WhyBS';
-import OurTechnology from 'components/OurTechnology';
-import OurCommunity from 'components/OurCommunity';
-import FundApp from 'components/FundApp';
-import Mission from 'components/Mission';
-import Footer from 'components/Footer';
 
 import './App.scss';
 
 class App extends Component {
 	render() {
 		return (
-			<div className="landing-page">
-				<Header/>
+			<div>
 				<TopArea/>
 				<AppsGrid/>
 				<WhyBS/>
@@ -27,7 +24,6 @@ class App extends Component {
 				<OurCommunity/>
 				<FundApp/>
 				<Mission/>
-				<Footer/>
 			</div>
 		);
 	}

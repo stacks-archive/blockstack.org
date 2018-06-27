@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import InlineSVG from 'svg-inline-react';
-import Card from 'components/Card';
-import TriangleBg from 'components/TriangleBg';
-import Arrow from 'assets/images/outline-arrow';
-import Divider from 'assets/images/divider-2';
+import Card from 'js/components/Card';
+import TriangleBg from 'js/components/TriangleBg';
+import Arrow from 'assets/images/outline-arrow.svg';
+import Divider from 'assets/images/divider-2.svg';
 
 import BsBerlin from 'assets/images/bs-berlin.png';
 
@@ -33,11 +33,11 @@ class OurCommunity extends Component {
 			<section>
 				<div className="blue-bg bs-pb-card">
 					<div className="container">
-						<InlineSVG src={Divider} element="div" className="text-color pt-4 pb-4 align-center" />
+						<div className="text-color pt-4 pb-4 align-center">{Divider()}</div>
 						<div className="align-center pb-3 mb-1">
 							<p>Our community</p>
 						</div>
-					</div>	
+					</div>
 				</div>
 				<div className="triangle-bg pb-4">
 					<div className="container bs-mtn-card">
@@ -53,7 +53,7 @@ class OurCommunity extends Component {
 															<p className="main-color underline-hover">{card.title}</p>
 														</div>
 														<div className="col no-grow">
-														<InlineSVG src={Arrow} element="div" />
+														{Arrow()}
 														</div>
 													</div>
 													<p className="sm">{card.description}</p>
@@ -77,7 +77,7 @@ class OurCommunity extends Component {
 														</div>
 														<div className="col no-grow">
 															<div className="p-2 pr-gutter">
-																<div className="p sm medium-weight underline-hover main-color">Fri, March 2, 2018 <InlineSVG src={Arrow} element="span" /></div>
+																<div className="p sm medium-weight underline-hover main-color">Fri, March 2, 2018 <span>{Arrow()}</span></div>
 															</div>
 														</div>
 													</div>
