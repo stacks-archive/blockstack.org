@@ -7,10 +7,10 @@
   "description": "A Static React App. Landing Pages for Block Stack",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=development node index.js",
+    "start": "gastby serve",
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "postinstall": "gatsby build",
+    "postinstall": "./node_modules/.bin/gatsby build",
     "webpack": "webpack",
     "test": "eslint ./src/js/"
   },
