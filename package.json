@@ -7,11 +7,10 @@
   "description": "A Static React App. Landing Pages for Block Stack",
   "main": "index.js",
   "scripts": {
-    "start": "gatsby serve",
+    "start": "gatsby serve --port 5000",
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "postinstall": "./node_modules/.bin/gatsby build",
-    "webpack": "webpack",
     "test": "eslint ./src/js/"
   },
   "repository": {
