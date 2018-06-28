@@ -10,6 +10,7 @@
     "start": "NODE_ENV=development node index.js",
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "postinstall": "gatsby build",
     "webpack": "webpack",
     "test": "eslint ./src/js/"
   },
@@ -23,7 +24,9 @@
     "url": "https://github.com/gordils-willis/blockstack-landing/issues"
   },
   "homepage": "https://github.com/gordils-willis/blockstack-landing#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^5.0.1"
+  },
   "dependencies": {
     "babel-preset-es2017": "^6.24.1",
     "debounce": "^1.1.0",
