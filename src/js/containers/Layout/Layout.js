@@ -20,7 +20,7 @@ const Layout = ({ children, data, location }) => {
 
   if(location.pathname !== '/') {
     let item = data.allMarkdownRemark.edges.find( (item) => {
-      return item.node.frontmatter.path.includes(location.pathname);
+      return item.node.frontmatter.path.includes(location.pathname.replace(/\//g, ""));
     });
 
     if(item) {
@@ -32,7 +32,7 @@ const Layout = ({ children, data, location }) => {
 
   if(location.pathname !== '/') {
     let item = data.allMarkdownRemark.edges.find( (item) => {
-      return item.node.frontmatter.path.includes(location.pathname);
+      return item.node.frontmatter.path.includes(location.pathname.replace(/\//g, ""));
     });
 
     if (item) {
