@@ -7,6 +7,13 @@
 		vertical-align: top;
 	}
 
+	img {
+		width: 400px;
+		display: inline-block;
+		vertical-align: top;
+		margin: $margin * .75 auto 0em;
+	}
+
 	p {
 		margin-top: .25em;
 		margin-bottom: .75em;

@@ -8,7 +8,7 @@ export default function Basic({data}) {
   const { frontmatter, html } = markdownRemark;
 
   return (
-    <div className="md-basic-template">
+    <div className="md-basic-template md-what-is-bs-template">
       <section className="blue-bg top-section top-area">
         <div className="container pb-margin align-center">
           <h1 className="h4">{frontmatter.title}</h1>
@@ -17,6 +17,9 @@ export default function Basic({data}) {
               <div className="h4 py-2">---</div>
               <h2 className="h4">{frontmatter.description}</h2>
             </div>
+          ) : false}
+          {frontmatter.buttonText && frontmatter.buttonLink ? (
+            <a href={frontmatter.buttonLink} className="button white mt-3">{frontmatter.buttonText}</a>
           ) : false}
         </div>
       </section>

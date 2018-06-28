@@ -9,6 +9,8 @@ export const whatIsBlockstackQuery = graphql`
         path
         title
         description
+        buttonText
+        buttonLink
       }
     }
   }

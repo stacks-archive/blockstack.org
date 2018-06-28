@@ -9,6 +9,8 @@ export const buttonListQuery = graphql`
         path
         title
         description
+        buttonText
+        buttonLink
       }
     }
   }
