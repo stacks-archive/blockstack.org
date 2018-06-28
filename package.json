@@ -7,7 +7,7 @@
   "description": "A Static React App. Landing Pages for Block Stack",
   "main": "index.js",
   "scripts": {
-    "start": "gastby serve",
+    "start": "gatsby serve",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "postinstall": "./node_modules/.bin/gatsby build",
