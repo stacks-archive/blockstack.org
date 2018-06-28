@@ -18,6 +18,9 @@ export default function Basic({data}) {
               <h2 className="h4">{frontmatter.description}</h2>
             </div>
           ) : false}
+          {frontmatter.buttonText && frontmatter.buttonLink ? (
+            <a href={frontmatter.buttonLink} className="button white mt-3">{frontmatter.buttonText}</a>
+          ) : false}
         </div>
       </section>
       <section>

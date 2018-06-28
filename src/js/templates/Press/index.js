@@ -1,8 +1,8 @@
-export default from './Basic';
-export * from './Basic';
+export default from './Press';
+export * from './Press';
 
-export const pageQuery = graphql`
-  query PageFromPathQuery( $path: String! ) {
+export const PressQuery = graphql`
+  query PressFromPathQuery( $path: String! ) {
     markdownRemark ( frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {

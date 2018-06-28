@@ -430,14 +430,15 @@ input[type=submit].button {
   }
 
   &.white {
-    color: rgba($text-color, .6);
+    color: $main-color;
     background: $white;
     border-color: $white;
     &:not(.disabled):not(.loading):hover {
       color: $main-color;
       background: $white;
       border-color: $white;
-      box-shadow: 0 8px 9px rgba($text-color, .1);
+      box-shadow: 0 8px 9px rgba($text-color, .4);
+      transform: translate3d(0, -4px, 0);
     }
     &:active {
       transform: scale(.9);
