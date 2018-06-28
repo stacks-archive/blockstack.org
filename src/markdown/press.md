@@ -7,7 +7,7 @@ template: "Press"
 
 ------------------------------------------------------------
 
-<img src="/assets/images/app-co-icon.png">
+![](images/press/coindesk-logo.svg)
 
 Jan 16, 2018
 
