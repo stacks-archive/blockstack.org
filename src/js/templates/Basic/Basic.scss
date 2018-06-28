@@ -1,4 +1,8 @@
-.md-basic-template {
+@import '~sass/setup/variables';
+@import '~sass/setup/mixins';
+
+.md-basic-template,
+.md-button-list-template {
 	.top-area {
 		.container {
 			max-width: 46rem;
@@ -37,5 +41,8 @@
 				content: counter(list-counter, decimal-leading-zero) ' --- ';
 			}
 		}
+	}
+	hr {
+		margin: $margin 0;
 	}
 }

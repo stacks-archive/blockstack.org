@@ -1,6 +1,18 @@
+@import '~sass/setup/variables';
+@import '~sass/setup/mixins';
+
 .md-button-list-template {
-	h4,
-	h6 {
-		vertical-align: middle;
+	.button {
+		margin-top: .75rem;
+	}
+	p {
+		margin-top: .25em;
+		margin-bottom: .75em;
+	}
+	h3 {
+		margin-top: $gutter;
+	}
+	hr {
+		margin: $margin 0;
 	}
 }

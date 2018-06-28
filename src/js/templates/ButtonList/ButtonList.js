@@ -21,7 +21,7 @@ export default function ButtonList({ data }) {
       <section>
         <div className="container py-margin">
           <div
-            className="md-content"
+            className="md-content align-center"
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </div>
