@@ -12,21 +12,32 @@ import touchIcon from 'assets/images/touch-icon.png';
 
 const Layout = ({ children, data, location }) => {
 
-  console.log(data)
+  console.log(data);
+  console.log(location);
 
   let title = '';
   let description = 'Blockstack is a new internet for decentralized apps where users own their data. A browser is all that’s needed to get started.';
 
   if(location.pathname !== '/') {
-    title = data.allMarkdownRemark.edges.find((item) => {
-      return item.node.frontmatter.path === location.pathname;
-    }).node.frontmatter.title;
+    let item = data.allMarkdownRemark.edges.find( (item) => {
+      return item.node.frontmatter.path.includes(location.pathname);
+    });
+
+    if(item) {
+      title = item.node.frontmatter.title;
+    } else {
+      console.log('No item for', location.pathname);
+    }
   }
 
   if(location.pathname !== '/') {
-    description = data.allMarkdownRemark.edges.find((item) => {
-      return item.node.frontmatter.path === location.pathname;
-    }).node.frontmatter.description;
+    let item = data.allMarkdownRemark.edges.find( (item) => {
+      return item.node.frontmatter.path.includes(location.pathname);
+    });
+
+    if (item) {
+      description = item.node.frontmatter.description;
+    }
   }
 
   return(
