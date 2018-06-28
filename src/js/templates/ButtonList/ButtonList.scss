@@ -3,16 +3,34 @@
 
 .md-button-list-template {
 	.button {
-		margin-top: .75rem;
+		// display: block;
+		vertical-align: top;
 	}
+
 	p {
 		margin-top: .25em;
 		margin-bottom: .75em;
 	}
-	h3 {
+	h3,
+	h4,
+	h5 {
 		margin-top: $gutter;
 	}
 	hr {
 		margin: $margin 0;
+	}
+	.md-content {
+		h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote {
+			max-width: 24rem !important;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.md-tos {
+			h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote {
+				max-width: 44rem !important;
+				margin-left: auto;
+				margin-right: auto;
+			}	
+		}
 	}
 }
