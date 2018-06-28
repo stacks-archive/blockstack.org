@@ -3,7 +3,7 @@
 
 .blue-bg {
 	.pattern-triangle {
-		background-image: url('assets/images/dot-tile-2.png');
+		background-image: url('~assets/images/dot-tile-2.png');
 		svg {
 			* {
 				fill: $main-color;
@@ -22,7 +22,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-image: url('assets/images/dot-tile.png');
+	background-image: url('~assets/images/dot-tile.png');
 	background-repeat: repeat;
 	background-position: center;
 	background-size: 30px 30px;

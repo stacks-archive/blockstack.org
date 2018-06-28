@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import InlineSVG from 'svg-inline-react';
 
-import Input from 'components/Input';
-import Button from 'components/Button';
+import Input from 'js/components/Input';
+import Button from 'js/components/Button';
 
-import Arrow from 'assets/images/outline-arrow';
+import Arrow from 'assets/images/outline-arrow.svg';
 
 import './NewsletterSignup.scss'
 
@@ -30,7 +30,7 @@ class NewsletterSignup extends Component {
 		return (
 			<form className={!this.state.validEmail && this.state.email != '' ? ('newsletter-form invalid') : ('newsletter-form')}>
 				<Input id={this.props.id} placeholder="Get email updates" className={this.props.inputClass} value={this.state.email} onChange={this.updateEmailAddress} />
-				<Button icon={Arrow} className={"transparent circle " + this.props.inputClass} htmlFor={this.props.id} disabled={this.state.email.length < 4 || !this.state.validEmail ? true : false} />
+				<Button icon={Arrow()} className={"transparent circle " + this.props.inputClass} htmlFor={this.props.id} disabled={this.state.email.length < 4 || !this.state.validEmail ? true : false} />
 			</form>
 		);
 	}

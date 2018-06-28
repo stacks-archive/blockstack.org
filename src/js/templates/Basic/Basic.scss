@@ -1,0 +1,41 @@
+.md-basic-template {
+	.top-area {
+		.container {
+			max-width: 46rem;
+		}
+	}
+}
+
+.md-content {
+	h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote {
+		max-width: 46rem !important;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.md-content.rich-text {
+	ul {
+		padding: 0;
+		list-style: none;
+		li {
+			&:before {
+				display: inline;
+				counter-increment: list-counter;
+				content: '--- ';
+			}
+		}
+	}
+	ol {
+		padding: 0;
+		list-style: none;
+		counter-reset: list-counter;
+		li {
+			&:before {
+				display: inline;
+				counter-increment: list-counter;
+				content: counter(list-counter, decimal-leading-zero) ' --- ';
+			}
+		}
+	}
+}

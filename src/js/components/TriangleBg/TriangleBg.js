@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import InlineSVG from 'svg-inline-react';
 
-import TriangleTopLeft from 'assets/images/triangle-top-left';
-import TriangleTopRight from 'assets/images/triangle-top-right';
-import TriangleBottomLeft from 'assets/images/triangle-bottom-left';
-import TriangleBottomRight from 'assets/images/triangle-bottom-right';
+import TriangleTopLeft from 'assets/images/triangle-top-left.svg';
+import TriangleTopRight from 'assets/images/triangle-top-right.svg';
+import TriangleBottomLeft from 'assets/images/triangle-bottom-left.svg';
+import TriangleBottomRight from 'assets/images/triangle-bottom-right.svg';
 
 import './TriangleBg.scss'
 
@@ -14,13 +14,13 @@ class Header extends Component {
 			<div className={"pattern-triangle " + this.props.className}>
 				{this.props.direction == 'down' ? (
 					<div>
-						<InlineSVG src={TriangleBottomLeft} element="div" className="triangle triangle-bottom-left" />
-						<InlineSVG src={TriangleBottomRight} element="div" className="triangle triangle-bottom-right" />
+						<div className="triangle triangle-bottom-left" >{TriangleBottomLeft()}</div>
+						<div className="triangle triangle-bottom-right" >{TriangleBottomRight()}</div>
 					</div>
 				) : (
 					<div>
-						<InlineSVG src={TriangleTopLeft} element="div" className="triangle triangle-top-left" />
-						<InlineSVG src={TriangleTopRight} element="div" className="triangle triangle-top-right" />
+						<div className="triangle triangle-top-left" >{TriangleTopLeft()}</div>
+						<div className="triangle triangle-top-right" >{TriangleTopRight()}</div>
 					</div>
 				)}
 			</div>

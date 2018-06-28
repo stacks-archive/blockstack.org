@@ -59,5 +59,12 @@ typings/
 # dotenv environment variables file
 .env
 
-build/
+# Project dependencies
+.cache
+node_modules
+yarn-error.log
+
+# Build directory
+/public
+.DS_Store
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import InlineSVG from 'svg-inline-react';
-import Card from 'components/Card';
-import Arrow from 'assets/images/outline-arrow';
+import Card from 'js/components/Card';
+import Arrow from 'assets/images/outline-arrow.svg';
 
 class AppsGrid extends Component {
 	render() {
@@ -23,7 +23,7 @@ class AppsGrid extends Component {
 					<div className="sm main-color">
 						<div className="grid-flex no-break no-gutter right middle">
 							<div className="col"><span className="main-color p sm view-text">View code</span></div>
-							<div className="col"><InlineSVG src={Arrow} element="div" className="ml-1 view-arrow" /></div>
+							<div className="col"><div className="ml-1 view-arrow" ><div className="bs-outline-arrow">{Arrow()}</div></div></div>
 						</div>
 					</div>
 				</div>

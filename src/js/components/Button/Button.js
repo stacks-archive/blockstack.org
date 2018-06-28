@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import InlineSVG from 'svg-inline-react';
 
-import CheckIcon from 'assets/icons/check';
-import CrossIcon from 'assets/icons/cross';
-import Loader from 'components/Loader';
+
+import Loader from 'js/components/Loader';
 
 import './button.scss';
 
@@ -66,9 +65,7 @@ export class Button extends Component {
 		if (this.props.icon) {
 			if (this.props.icon == "loader" || this.props.state == "loading") {
 				icon = <Loader className="normal icon" />;
-			} else if (this.props.icon.startsWith('<svg')) {
-				icon = (<InlineSVG src={this.props.icon} className="icon" />);
-			} else if (this.props.state == 'success') {
+			}  else if (this.props.state == 'success') {
 				icon = (<i className="material-icons icon">check</i>);
 			} else if (this.props.state == 'error') {
 				icon = (<i className="material-icons icon">error_outline</i>);

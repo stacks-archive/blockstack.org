@@ -2,7 +2,7 @@
 path: "/funding"
 title: "Funding"
 description: "Aimed at growing an ecosystem of decentralized applications on Blockstack."
-template: "button-list"
+template: "ButtonList"
 ---
 
 ## App creators

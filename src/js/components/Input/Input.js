@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-
-import Typeahead from 'components/Typeahead';
 import InlineSVG from 'svg-inline-react';
-import Loader from 'components/Loader';
 
-import './inputs';
+import Typeahead from 'js/components/Typeahead';
+import Loader from 'js/components/Loader';
+
+import './inputs.scss';
 
 export default class Input extends Component {
 
