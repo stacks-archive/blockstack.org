@@ -12,7 +12,7 @@ import touchIcon from 'assets/images/touch-icon.png';
 
 const Layout = ({ children, data, location }) => {
 
-  console.log(location.pathname)
+  console.log(data)
 
   let title = '';
   let description = 'Blockstack is a new internet for decentralized apps where users own their data. A browser is all that’s needed to get started.';
