@@ -65,7 +65,7 @@ class OurCommunity extends Component {
 									);
 								})}
 								<div className="col-12">
-									<Card className="card" href="https://blockstack.org/berlin2018">
+									<Card className="card" href="http://www.meetup.com/Blockstack-Berlin/">
 											<div className="grid-flex tight-gutter middle break-xlg">
 												<div className="col-4 logo-col">
 													<img src={BsBerlin} alt="Blockstack Berlin" className="mx-auto" />

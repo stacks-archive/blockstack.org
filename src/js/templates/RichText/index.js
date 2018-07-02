@@ -1,5 +1,5 @@
-export default from './Legal';
-export * from './Legal';
+export default from './RichText';
+export * from './RichText';
 
 export const legalPageQuery = graphql`
   query LegalPageFromPathQuery( $path: String! ) {

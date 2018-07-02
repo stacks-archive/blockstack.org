@@ -1,7 +1,7 @@
 ---
 path: "/legal/terms-of-use"
 title: "Terms of Use"
-template: "Legal"
+template: "RichText"
 ---
 
 **VERSION 1.0 LAST REVISED ON: OCTOBER 12, 2017**

@@ -1,7 +1,7 @@
 ---
 path: "/legal/disclaimers"
 title: "Disclaimers"
-template: "Legal"
+template: "RichText"
 ---
 
 **Effective Date: October 12, 2017**

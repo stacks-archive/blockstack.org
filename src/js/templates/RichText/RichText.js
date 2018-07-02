@@ -1,6 +1,6 @@
 import React from "react";
 
-import './Legal.scss';
+import './RichText.scss';
 
 export default function Basic({data}) {
 
