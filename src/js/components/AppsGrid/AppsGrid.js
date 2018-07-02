@@ -19,31 +19,31 @@ const cards = [
 	{
 		title : 'Graphite',
 		icon : GraphiteIcon,
-		link : '#',
+		link : 'https://github.com/jehunter5811/graphite-blockstack',
 		description : 'Collaborative decentralized docs'
 	},
 	{
 		title : 'Hermes',
 		icon : HermesIcon,
-		link : '#',
+		link : 'https://github.com/dhealy05/Hermes',
 		description : 'Encrypted peer-to-peer chat'
 	},
 	{
 		title : 'Dotpodcast',
 		icon : DotpodcastIcon,
-		link : 'https://github.com/DotPodcast/dotpodcast-player',
+		link : 'https://github.com/DotPodcast',
 		description : 'Discover and listen to podcasts'
 	},
 	{
 		title : 'Kanstack',
 		icon : KanstackIcon,
-		link : '#',
+		link : 'https://github.com/hstove/kanstack',
 		description : 'Decentralized Kanban sprint board'
 	},
 	{
 		title : 'Coinfort',
 		icon : CoinfortIcon,
-		link : '#',
+		link : 'https://github.com/twg/coinfort-web',
 		description : 'Encrypted crypto tracker'
 	}
 ];

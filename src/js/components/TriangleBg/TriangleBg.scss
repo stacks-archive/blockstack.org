@@ -37,6 +37,12 @@
 			fill: $bg-color;
 		}
 	}
+	.triangle {
+		> div {
+			width: 100%;
+			height: 100%;
+		}
+	}
 	.triangle-top-right {
 		position: absolute;
 		top: -1px;

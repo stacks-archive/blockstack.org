@@ -10,7 +10,14 @@
 	h4 {
 		margin-top: 0;
 	}
-	img {
+	.img-wrap {
+		height: 200px;
+		img {
+			width: 80%;
+		}
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		@include respond($md) {
 			float: left;
 			width: 250px;
@@ -21,6 +28,18 @@
 			width: 20rem;
 			padding: 0 $gutter $gutter 0;
 		}
+	}
+	img {
+		// @include respond($md) {
+		// 	float: left;
+		// 	width: 250px;
+		// 	padding: 0 $gutter $gutter 0;
+		// }
+		// @include respond($lg) {
+		// 	float: left;
+		// 	width: 20rem;
+		// 	padding: 0 $gutter $gutter 0;
+		// }
 	}
 	p {
 		margin-bottom: .5rem;

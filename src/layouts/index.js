@@ -13,6 +13,7 @@ export const bslinks = graphql`
 	      meetup
 	      blog
 	      youtube
+	      videos
 	      twitter
 	      branding
 	      install

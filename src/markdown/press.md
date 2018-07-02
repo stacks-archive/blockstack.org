@@ -6,9 +6,9 @@ template: "Press"
 
 
 ------------------------------------------------------------
-
-![](images/press/coindesk-logo.svg)
-
+<div class="img-wrap">
+	<img src="images/press/nyt.svg" alt="">
+</div>
 Jan 16, 2018
 
 #### Beyond the Bitcoin Bubble
@@ -16,6 +16,10 @@ Jan 16, 2018
 <a href="https://www.nytimes.com/2018/01/16/magazine/beyond-the-bitcoin-bubble.html" target="_blank" class="button secondary">Read More</a>
 
 ------------------------------------------------------------
+
+<div class="img-wrap">
+	<img src="images/press/venturebeat-logo.svg" alt="">
+</div>
 
 Dec 4, 2017
 
@@ -25,7 +29,9 @@ Dec 4, 2017
 
 ------------------------------------------------------------
 
-<img src="http://placehold.it/600x400">
+<div class="img-wrap">
+	<img src="images/press/scmp-logo.svg" alt="">
+</div>
 
 Oct 1, 2017
 
@@ -35,7 +41,9 @@ Oct 1, 2017
 
 ------------------------------------------------------------
 
-<img src="http://placehold.it/600">
+<div class="img-wrap">
+	<img src="images/press/forbes-logo.svg" alt="">
+</div>
 
 Sep 5, 2017
 
@@ -45,7 +53,9 @@ Sep 5, 2017
 
 ------------------------------------------------------------
 
-<img src="http://placehold.it/600x400">
+<div class="img-wrap">
+	<img src="images/press/wsj-logo-BW.svg" alt="">
+</div>
 
 Aug 16, 2017
 
@@ -55,6 +65,10 @@ Aug 16, 2017
 
 ------------------------------------------------------------
 
+<div class="img-wrap">
+	<img src="images/press/coindesk-logo.svg" alt="">
+</div>
+
 Aug 16, 2017
 
 #### Investor Naval Ravikant Wants to Disrupt Twitter With Blockchain 'XPRIZE'
@@ -63,7 +77,9 @@ Aug 16, 2017
 
 ------------------------------------------------------------
 
-<img src="http://placehold.it/600x400">
+<div class="img-wrap">
+	<img src="images/press/observer-logo-BW.svg" alt="">
+</div>
 
 May 24, 2017
 
@@ -73,7 +89,9 @@ May 24, 2017
 
 ------------------------------------------------------------
 
-<img src="http://placehold.it/600x400">
+<div class="img-wrap">
+	<img src="images/press/vice-logo-bw.svg" alt="">
+</div>
 
 May 23, 2017
 
@@ -83,7 +101,9 @@ May 23, 2017
 
 ------------------------------------------------------------
 
-<img src="http://placehold.it/600x400">
+<div class="img-wrap">
+	<img src="images/press/mit-logo-BW.svg" alt="">
+</div>
 
 Jan 13, 2017
 

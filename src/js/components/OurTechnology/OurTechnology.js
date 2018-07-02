@@ -15,42 +15,42 @@ import './OurTechnology.scss';
 const cards = [
 	{
 		title : 'SDKs',
-		link : '#',
+		link : 'https://github.com/blockstack/blockstack.js',
 		description : 'Dev tools: Web, iOS, Android'
 	},
 	{
 		title : 'Browser',
-		link : '#',
+		link : 'https://github.com/blockstack/blockstack-browser',
 		description : 'Auth and identity mgmt apps'
 	},
 	{
 		title : 'Blockstack Naming Sys. ',
-		link : '#',
+		link : 'https://github.com/blockstack/blockstack-core/blob/master/docs/blockstack_naming_service.md',
 		description : 'Discover apps and people'
 	},
 	{
 		title : 'Gaia',
-		link : '#',
+		link : 'https://github.com/blockstack/gaia',
 		description : 'Decentralized storage hubs'
 	},
 	{
-		title : 'Stacks',
+		title : 'Stacks (NEED LINK)',
 		link : '#',
 		description : 'Token to register IDs and apps'
 	},
 	{
 		title : 'Virtual Chain',
-		link : '#',
+		link : 'https://github.com/blockstack/virtualchain',
 		description : 'State engine pegged to blockchain'
 	},
 	{
 		title : 'Atlas',
-		link : '#',
+		link : 'https://github.com/blockstack/atlas',
 		description : 'Peer-to-peer network'
 	},
 	{
 		title : 'Stacks Blockchain',
-		link : '#',
+		link : 'https://testnet.blockstack.org/',
 		description : 'Proof of burn blockchain'
 	},
 ];
@@ -85,7 +85,7 @@ class OurTechnology extends Component {
 											if (index < 4) {
 												return (
 													<div key={"tech-card-" + index} className="col-6 pb-tight-gutter">
-														<Card className="card stretch-height" href="#">
+														<Card className="card stretch-height" href={card.link}>
 															<div className="p-2">
 																<div className="grid-flex tight-gutter no-break pb-1 middle">
 																	<div className="col grow">
@@ -112,7 +112,7 @@ class OurTechnology extends Component {
 									if (index > 3 && index != length) {
 										return (
 											<div key={"tech-card-" + index} className="col-4 pb-tight-gutter">
-												<Card className="card stretch-height" href="#">
+												<Card className="card stretch-height" href={card.link}>
 													<div className="p-2">
 														<div className="grid-flex tight-gutter no-break pb-1 middle">
 															<div className="col grow">
@@ -132,7 +132,7 @@ class OurTechnology extends Component {
 									} else if (index == length) {
 										return(
 											<div key={"tech-card-" + index} className="col-12">
-												<Card className="card tech-long-card" href="#">
+												<Card className="card tech-long-card" href={card.link}>
 													<div className="p-2">
 														<div className="grid-flex no-break middle">
 															<div className="col no-grow">

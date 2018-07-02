@@ -86,9 +86,11 @@ body {
 .bs-outline-arrow {
 	width: 30px;
 	height: 100%;
-	display: inline-block;
 	display: flex;
 	align-items: center;
+	&.inline {
+		display: inline-block;
+	}
 	svg {
 		display: inline-block;
 		vertical-align: top;

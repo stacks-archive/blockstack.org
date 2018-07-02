@@ -79,7 +79,7 @@ class OurCommunity extends Component {
 														</div>
 														<div className="col no-grow">
 															<div className="p-2 pr-gutter">
-																<div className="p sm medium-weight underline-hover main-color">Fri, March 2, 2018 <span className="bs-outline-arrow">{Arrow()}</span></div>
+																<div className="p sm medium-weight underline-hover main-color">Fri, March 2, 2018 <span className="bs-outline-arrow inline">{Arrow()}</span></div>
 															</div>
 														</div>
 													</div>
