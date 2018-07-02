@@ -3,11 +3,19 @@
 
 html {
 	background-color: $main-color !important;
+	// overflow: hidden;
+	// height: 100%;
+	&.overflow-hidden {
+		overflow: hidden;
+	}
 }
 
 body {
 	background-color: $white;
-	overflow: hidden;
+	height: 100%;
+	&.overflow-hidden {
+		overflow: hidden;
+	}
 }
 
 .landing-page {

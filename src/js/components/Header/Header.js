@@ -22,7 +22,7 @@ class Header extends Component {
 		this.collapseHeader();
 	}
 
-	collapseHeader = () => {
+	collapseHeader = (nextProps) => {
 		var Header = document.getElementById("StickyHeader");
 		var elementWatcher = scrollMonitor.create( Header, { top: 1 } );
 
@@ -40,8 +40,10 @@ class Header extends Component {
 	toggleMenu = () => {
 		if(this.state.menuOpen) {
 			this.setState({ menuOpen : false });
+			document.querySelector('html').classList.remove('overflow-hidden');
 		} else {
 			this.setState({ menuOpen : true });
+			document.querySelector('html').classList.add('overflow-hidden');
 		}
 	}
 
