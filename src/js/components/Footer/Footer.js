@@ -53,6 +53,7 @@ class Header extends Component {
 							<h5 className="p sm medium-weight pb-1">Blockstack</h5>
 							<ul>
 								<li><a href={this.props.links.about} className="p sm">About</a></li>
+								<li><a href={this.props.links.whatIsBs} className="p sm">What is Blockstack</a></li>
 								<li><a href={this.props.links.faq} className="p sm">FAQ</a></li>
 								<li><a href={this.props.links.careers} className="p sm">Careers</a></li>
 								<li><a href={this.props.links.press} className="p sm">Press</a></li>

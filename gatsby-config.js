@@ -21,9 +21,10 @@ module.exports = {
       twitter: 'https://www.twitter.com/blockstack/',
       branding: 'https://projects.invisionapp.com/boards/HE2VVROFSGB27/',
       install: '/install',
-      liveApps: 'https://app.co/',
+      liveApps: 'https://app.co/platform/blockstack',
       whitePapers: '/papers',
       about: '/about',
+      whatIsBs: '/what-is-blockstack',
       faq: '/faq',
       careers: '/careers',
       press: '/press',
@@ -31,7 +32,7 @@ module.exports = {
       disclaimers: '/legal/disclaimers',
       tos: '/legal/terms-of-use',
       privacy: '/legal/privacy-policy',
-      appCo: 'https://app.co/',
+      appCo: 'https://app.co/platform/blockstack',
       signatureFund: '/funding',
       events: 'https://www.eventbrite.com/o/blockstack-10843482742'
     }

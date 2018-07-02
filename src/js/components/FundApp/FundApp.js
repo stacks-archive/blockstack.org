@@ -11,7 +11,7 @@ class Header extends Component {
 			<section className="fund-app py-4">
 				<div className="container align-center">
 					<h3 className="p main-color pb-3">Fund your dapp</h3>
-					<p className="h2 main-color">We have $25M ready to support teams via our <a href="#">Signature Fund</a>, <a href="#">Community Rewards Program</a>, and <a href="#">Active Bounties</a>.</p>
+					<p className="h2 main-color">We have $25M ready to support teams via our <a href={this.props.links.signatureFund}>Signature Fund</a>, <a href="https://contribute.blockstack.org/">Community Rewards Program</a>, and <a href="#">Active Bounties</a>.</p>
 				</div>
 			</section>
 		);

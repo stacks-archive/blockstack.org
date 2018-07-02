@@ -124,12 +124,16 @@ header.header {
 		margin-right: -.75rem;
 		cursor: pointer;
 		transition: margin $md-speed $ease;
+		position: relative;
+		z-index: 2;
 		.menu-text {
 			transition: opacity $md-speed $ease;
 		}
 		&:hover {
 			border: none;
-			background: $text-color;
+			@include respond($lg) {
+				background: $text-color;
+			}
 		}
 	}
 	
@@ -151,8 +155,8 @@ header.header {
 		}
 		&.center {
 			position: absolute;
-			left: 100px;
-			right: 100px;
+			left: 135px;
+			right: 135px;
 			@include respond-smaller-than($lg) {
 				left: 45px;
 				right: 45px;

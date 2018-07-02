@@ -71,7 +71,9 @@ class Header extends Component {
 									</div>
 
 									<div className="col right side-col align-right">
-										<a onClick={this.toggleMenu} className="p menu-toggle"><span className="material-icons md-24 menu-icon">{this.state.menuOpen ? ('close') : ('menu')}</span><span className="menu-text"> Menu</span></a>
+										<a onClick={this.toggleMenu} className="p menu-toggle">
+											<span className="material-icons md-24 menu-icon">{this.state.menuOpen ? ('close') : ('menu')}</span><span className="menu-text"> Menu</span>
+										</a>
 									</div>
 
 								</div>

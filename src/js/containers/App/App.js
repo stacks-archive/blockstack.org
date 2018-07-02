@@ -23,7 +23,7 @@ class App extends Component {
 				<WhyBS/>
 				<OurTechnology/>
 				<OurCommunity links={data.site.siteMetadata.bslinks} />
-				<FundApp/>
+				<FundApp links={data.site.siteMetadata.bslinks}/>
 				<Mission/>
 			</div>
 		);

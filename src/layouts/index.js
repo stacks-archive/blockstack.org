@@ -20,6 +20,7 @@ export const bslinks = graphql`
 	      liveApps
 	      whitePapers
 	      about
+	      whatIsBs
 	      faq
 	      careers
 	      press

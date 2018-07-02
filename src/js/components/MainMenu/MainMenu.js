@@ -47,6 +47,7 @@ class MainMenu extends Component {
 							<p className="md py-1 list-divider">---</p>
 							<ul>
 								<li><a href={this.props.links.about} className="p md">About</a></li>
+								<li><a href={this.props.links.whatIsBs} className="p md">What is Blockstack</a></li>
 								<li><a href={this.props.links.faq} className="p md">FAQ</a></li>
 								<li><a href={this.props.links.careers} className="p md">Careers</a></li>
 								<li><a href={this.props.links.press} className="p md">Press</a></li>
