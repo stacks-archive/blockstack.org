@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_cheveron_down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ICONS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_cheveron_down" fill-rule="nonzero" fill="#817F97">
+            <path d="M7.68818978,13.3498657 C7.28749023,12.9697889 6.654546,12.9865071 6.27446928,13.3872066 C5.89439256,13.7879062 5.91111067,14.4208504 6.31181022,14.8009271 L19.1724101,26.9996297 C19.8503636,27.6426909 20.9197383,27.6245845 21.5702952,26.9496375 L33.383082,14.6939782 C33.7663555,14.2963353 33.7547069,13.6632775 33.3570641,13.2800039 C32.9594213,12.8967304 32.3263634,12.908379 31.9430899,13.3060218 L20.3367766,25.3474669 L7.68818978,13.3498657 Z" id="Path-4"></path>
+        </g>
+    </g>
+</svg>

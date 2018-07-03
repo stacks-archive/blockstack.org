@@ -1,0 +1,364 @@
+$col: 100% / 12;
+
+@mixin grid-setup() {
+	display: block;
+	margin-left: calc(#{$gutter} * -.5);
+	margin-right: calc(#{$gutter} * -.5);
+}
+
+@mixin wide-gutter-grid-setup() {
+	display: block;
+	margin-left: calc(#{$gutter-wide} * -.5);
+	margin-right: calc(#{$gutter-wide} * -.5);
+}
+
+@mixin tight-gutter-grid-setup() {
+	display: block;
+	margin-left: calc(#{$gutter-tight} * -.5);
+	margin-right: calc(#{$gutter-tight} * -.5);
+}
+
+@mixin slim-gutter-grid-setup() {
+	display: block;
+	margin-left: calc(#{$gutter-tight} * -.25);
+	margin-right: calc(#{$gutter-tight} * -.25);
+}
+
+@mixin no-gutter-grid-setup() {
+	display: block;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+@mixin col-setup() {
+	// Column Rules
+	> *[class^="col"],
+	> .col {
+		font-size: inherit;
+		flex-grow: 0;
+		padding-left: calc(#{$gutter} / 2);
+		padding-right: calc(#{$gutter} / 2);
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		&.order-1 {
+			order: 1;
+		}
+		&.order-2 {
+			order: 2;
+		}
+		&.order-3 {
+			order: 3;
+		}
+		&.order-4 {
+			order: 4;
+		}
+		&.grow {
+			width: 1px;
+			flex-grow: 1;
+		}
+		&.grow-2 {
+			width: 1px;
+			flex-grow: 2;
+		}
+		&.grow-3 {
+			width: 1px;
+			flex-grow: 3;
+		}
+		&.no-grow {
+			flex-grow: 0;
+		}
+	}
+
+	@for $col-count from 1 through 12 {
+    > .col-#{$col-count} {
+      width: calc(#{$col} * #{$col-count});
+    }
+  }
+
+  /* 
+  Use .push classes to move columns over
+  Gernerally better to do this manually at breakpoints
+  */
+
+  @for $push-count from 1 through 12 {
+    .push-right-#{$push-count} {
+      margin-right: calc(#{$col} * #{$push-count});
+    }
+    .push-left-#{$push-count} {
+      margin-left: calc(#{$col} * #{$push-count});
+    }
+  }
+}
+
+@mixin flex-grid() {
+	display: flex !important;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	&.center {
+		justify-content: center;
+	}
+	&.left {
+		justify-content: flex-start;
+	}
+	&.right {
+		justify-content: flex-end;
+	}
+	&.middle {
+		align-items: center;
+	}
+	&.bottom {
+		align-items: flex-end;
+	}
+	&.baseline {
+		align-items: baseline;
+	}
+}
+
+@mixin float-grid() {
+  *zoom:1;
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+  > *[class^="col-"]:not(.right),
+  > .col:not(.right) {
+    float: left;
+  }
+  > *[class^="col-"].right,
+  > .col.right {
+    float: right;
+  }
+}
+
+@mixin wide-gutter() {
+	&.wide-gutter {
+		@include wide-gutter-grid-setup();
+		> *[class^="col"],
+		> .col {
+			padding-left: calc(#{$gutter-wide} / 2);
+			padding-right: calc(#{$gutter-wide} / 2);
+		}
+	}
+}
+
+@mixin tight-gutter() {
+	&.tight-gutter {
+		@include tight-gutter-grid-setup();
+		> *[class^="col"],
+		> .col {
+			padding-left: calc(#{$gutter-tight} / 2) !important;
+			padding-right: calc(#{$gutter-tight} / 2) !important;
+		}
+	}
+}
+
+@mixin slim-gutter() {
+	&.slim-gutter {
+		@include slim-gutter-grid-setup();
+		> *[class^="col"],
+		> .col {
+			padding-left: calc(#{$gutter-tight} / 4) !important;
+			padding-right: calc(#{$gutter-tight} / 4) !important;
+		}
+	}
+}
+
+@mixin slim-gutter() {
+	&.slim-gutter {
+		@include slim-gutter-grid-setup();
+		> *[class^="col"],
+		> .col {
+			padding-left: calc(#{$gutter-tight} / 4) !important;
+			padding-right: calc(#{$gutter-tight} / 4) !important;
+		}
+	}
+}
+
+@mixin no-gutter() {
+	&.no-gutter {
+		@include no-gutter-grid-setup();
+		> *[class^="col"],
+		> .col {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+.grid-flex,
+.grid-float {
+	// Turn grid on at different breakpoints
+	&:not(.no-break):not(.break-lg):not(.break-xlg):not(.break-sm) {
+	  @include respond($md) {
+	    @include grid-setup();
+	    @include col-setup();
+	    @include tight-gutter();
+	    @include no-gutter();
+	    @include slim-gutter();
+	  }
+	  @include respond($lg) {
+	  	@include wide-gutter();
+	  }
+	}
+	&.no-break {
+	  @include grid-setup();
+	  @include col-setup();
+	  @include wide-gutter();
+	  @include tight-gutter();
+	  @include no-gutter();
+	  @include slim-gutter();
+	}
+	&.break-sm {
+	  @include respond($sm) {
+	    @include grid-setup();
+	    @include col-setup();
+	    @include wide-gutter();
+	    @include tight-gutter();
+	    @include no-gutter();
+	    @include slim-gutter();
+	  }
+	}
+	&.break-lg {
+	  @include respond($lg) {
+	    @include grid-setup();
+	    @include col-setup();
+	    @include wide-gutter();
+	    @include tight-gutter();
+	    @include no-gutter();
+	    @include slim-gutter();
+	  }
+	}
+	&.break-xlg {
+	  @include respond($xlg) {
+	    @include grid-setup();
+	    @include col-setup();
+	    @include wide-gutter();
+	    @include tight-gutter();
+	    @include no-gutter();
+	    @include slim-gutter();
+	  }
+	}
+	&.v-spaced {
+		> *[class^="col"],
+		> .col {
+			margin-bottom: $mobile-margin;
+			@include respond($lg) {
+				margin-bottom: $gutter;
+			}
+		}
+		margin-bottom: -$mobile-margin;
+		@include respond($lg) {
+			margin-bottom: -$gutter;
+		}
+	}
+	&.v-wide-spaced {
+		> *[class^="col"],
+		> .col {
+			margin-bottom: $mobile-margin;
+			@include respond($lg) {
+				margin-bottom: $gutter-wide;
+			}
+		}
+		margin-bottom: -$mobile-margin;
+		@include respond($lg) {
+			margin-bottom: -$margin;
+		}
+	}
+	&.v-md-spaced {
+		> *[class^="col"],
+		> .col {
+			margin-bottom: $mobile-margin;
+			@include respond($lg) {
+				margin-bottom: $margin * .65;
+			}
+		}
+		margin-bottom: -$mobile-margin;
+		@include respond($lg) {
+			margin-bottom: -$margin * .65;
+		}
+	}
+}
+
+.grid-float {
+  // Turn grid on at different breakpoints
+  &:not(.no-break):not(.break-lg):not(.break-xlg):not(.break-sm) {
+    @include respond($md) {
+      @include float-grid();
+    }
+  }
+  &.no-break {
+    @include float-grid();
+  }
+  &.break-sm {
+    @include respond($sm) {
+      @include float-grid();
+    }
+  }
+  &.break-lg {
+    @include respond($lg) {
+      @include float-grid();
+    }
+  }
+  &.break-xlg {
+    @include respond($xlg) {
+      @include float-grid();
+    }
+  }
+}
+
+.grid-flex {
+	// Turn grid on at different breakpoints
+	&:not(.no-break):not(.break-lg):not(.break-xlg):not(.break-sm) {
+	  @include respond($md) {
+	    @include flex-grid();
+	  }
+	}
+	&.no-break {
+	  @include flex-grid();
+	}
+	&.break-sm {
+	  @include respond($sm) {
+	    @include flex-grid();
+	  }
+	}
+	&.break-lg {
+	  @include respond($lg) {
+	    @include flex-grid();
+	  }
+	}
+	&.break-xlg {
+	  @include respond($xlg) {
+	    @include flex-grid();
+	  }
+	}
+}
+
+.collapse-3-2-1 {
+	> .col {
+		@include respond($md) {
+			width: 50%;
+		}
+		@include respond($xlg) {
+			width: 33.333%;
+		}
+	}
+}
+
+.collapse-4-3-2-1 {
+	> .col {
+		@include respond($sm) {
+			width: 50%;
+		}
+		@include respond($lg) {
+			width: 33.333%;
+		}
+		@include respond($xlg) {
+			width: 25%;
+		}
+	}
+}

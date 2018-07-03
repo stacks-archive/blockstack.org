@@ -1,0 +1,137 @@
+.rich-text {
+  // max-width: $max-text-width;
+
+  > *:first-child {
+    margin-top: 0;
+  }
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  &.sm,
+  &.small {
+    p, ul, ol, li {
+      font-size: $sm-p-font-size;
+    }
+  }
+
+  h1, 
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 3rem;
+    max-width: 100% !important;
+  }
+
+  p,
+  ul,
+  ol,
+  blockquote,
+  pre {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: $p-line-height;
+  }
+
+  a {
+    border-bottom: 1px solid rgba($text-color, .3);
+  }
+
+  li {
+    font-size: $p-font-size;
+    line-height: $base-line-height;
+    letter-spacing: $p-letter-spacing;
+    font-weight: $p-font-weight;
+    text-transform: none;
+  }
+
+  &.sm li {
+    font-size: $sm-p-font-size;
+    @include respond($huge) {
+      font-size: 16px;
+    }
+  }
+
+  blockquote {
+    font-size: 1.75rem;
+    line-height: $short-line-height;
+    position: relative;
+    padding-left: .75em;
+    margin-left: -.75em;
+    margin-bottom: calc($base-line-height * 1.25);
+    & p {
+      font-size: 1.75rem;
+      line-height: $short-line-height;
+    }
+    &:before {
+      content: '“';
+      position: absolute;
+      left: 0;
+    }
+    &:after {
+      // content: '”';
+    }
+  }
+
+  ul {
+    list-style: disc;
+    margin-bottom: 1rem;
+    padding-left: 3rem;
+  }
+
+  ol {
+    list-style: decimal;
+    margin-bottom: 1rem;
+    padding-left: 3rem;
+  }
+
+  li,
+  dd {
+    // margin-bottom: 1rem;
+  }
+
+  dl {
+    list-style: disc;
+  }
+
+  dt {
+    font-weight: $medium;
+  }
+
+  dd {
+    color: $light-text-color;
+  }
+
+  pre {
+    background: rgba($text-color, .05);
+    border-radius: 3px;
+    overflow-x: auto;
+    padding: .5rem .85rem .85rem;
+  }
+
+  code {
+    background: #eee;
+    padding: .075em .4em .25em;
+    border-radius: 3px;
+  }
+
+  hr.tiny {
+    width: 50px;
+    height: 2px;
+    border: none;
+    outline: none;
+    margin: $base-line-height 0;
+    background: $main-color;
+    display: block;
+    &.centered {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+}
