@@ -1,0 +1,299 @@
+// Margin Spacing
+
+.m-0  { margin:        0 }
+.mt-0 { margin-top:    0 }
+.mr-0 { margin-right:  0 }
+.mb-0 { margin-bottom: 0 }
+.ml-0 { margin-left:   0 }
+.mx-0 { margin-left:   0; margin-right:  0 }
+.my-0 { margin-top:    0; margin-bottom: 0 }
+
+.m-1  { margin:        $space-1 }
+.mn-1  { margin:       -$space-1 }
+.mt-1 { margin-top:    $space-1 }
+.mtn-1 { margin-top:   -$space-1 }
+.mr-1 { margin-right:  $space-1 }
+.mrn-1 { margin-right: -$space-1 }
+.mb-1 { margin-bottom: $space-1 }
+.mbn-1 { margin-bottom:-$space-1 }
+.ml-1 { margin-left:   $space-1 }
+.mln-1 { margin-left:  -$space-1 }
+.mx-1 { margin-left:   $space-1; margin-right:  $space-1 }
+.mxn-1 { margin-left:  -$space-1; margin-right:  -$space-1 }
+.my-1 { margin-top:    $space-1; margin-bottom: $space-1 }
+.myn-1 { margin-top:   -$space-1; margin-bottom: -$space-1 }
+
+.m-2  { margin:        $space-2 }
+.mn-2  { margin:       -$space-2 }
+.mt-2 { margin-top:    $space-2 }
+.mtn-2 { margin-top:   -$space-2 }
+.mr-2 { margin-right:  $space-2 }
+.mrn-2 { margin-right: -$space-2 }
+.mb-2 { margin-bottom: $space-2 }
+.mbn-2 { margin-bottom:-$space-2 }
+.ml-2 { margin-left:   $space-2 }
+.mln-2 { margin-left:  -$space-2 }
+.mx-2 { margin-left:   $space-2; margin-right:  $space-2 }
+.mxn-2 { margin-left:  -$space-2; margin-right:  -$space-2 }
+.my-2 { margin-top:    $space-2; margin-bottom: $space-2 }
+.myn-2 { margin-top:   -$space-2; margin-bottom: -$space-2 }
+
+.m-3  { margin:        $space-3 }
+.mn-3  { margin:       -$space-3 }
+.mt-3 { margin-top:    $space-3 }
+.mtn-3 { margin-top:   -$space-3 }
+.mr-3 { margin-right:  $space-3 }
+.mrn-3 { margin-right: -$space-3 }
+.mb-3 { margin-bottom: $space-3 }
+.mbn-3 { margin-bottom:-$space-3 }
+.ml-3 { margin-left:   $space-3 }
+.mln-3 { margin-left:  -$space-3 }
+.mx-3 { margin-left:   $space-3; margin-right:  $space-3 }
+.mxn-3 { margin-left:  -$space-3; margin-right:  -$space-3 }
+.my-3 { margin-top:    $space-3; margin-bottom: $space-3 }
+.myn-3 { margin-top:   -$space-3; margin-bottom: -$space-3 }
+
+.m-4  { margin:        $space-4 }
+.mn-4  { margin:        -$space-4 }
+.mt-4 { margin-top:    $space-4 }
+.mtn-4 { margin-top:    -$space-4 }
+.mr-4 { margin-right:  $space-4 }
+.mrn-4 { margin-right:  -$space-4 }
+.mb-4 { margin-bottom: $space-4 }
+.mbn-4 { margin-bottom: -$space-4 }
+.ml-4 { margin-left:   $space-4 }
+.mln-4 { margin-left:   -$space-4 }
+.mx-4 { margin-left:   $space-4; margin-right:  $space-4 }
+.mxn-4 { margin-left:   -$space-4; margin-right:  -$space-4 }
+.my-4 { margin-top:    $space-4; margin-bottom: $space-4 }
+.myn-4 { margin-top:    -$space-4; margin-bottom: -$space-4 }
+
+.mxn-1 { margin-left: -$space-1; margin-right: -$space-1; }
+.mxn-2 { margin-left: -$space-2; margin-right: -$space-2; }
+.mxn-3 { margin-left: -$space-3; margin-right: -$space-3; }
+.mxn-4 { margin-left: -$space-4; margin-right: -$space-4; }
+.mxn-gutter { margin-left: -$gutter; margin-right: -$gutter; }
+.mxn-tight-gutter { margin-left: -$gutter-tight; margin-right: -$gutter-tight; }
+.mxn-wide-gutter { margin-left: -$gutter-wide; margin-right: -$gutter-wide; }
+
+.myn-1 { margin-top: -$space-1; margin-bottom: -$space-1; }
+.myn-2 { margin-top: -$space-2; margin-bottom: -$space-2; }
+.myn-3 { margin-top: -$space-3; margin-bottom: -$space-3; }
+.myn-4 { margin-top: -$space-4; margin-bottom: -$space-4; }
+.myn-gutter { margin-top: -$gutter; margin-bottom: -$gutter; }
+.myn-tight-gutter { margin-top: -$gutter-tight; margin-bottom: -$gutter-tight; }
+.myn-wide-gutter { margin-top: -$gutter-wide; margin-bottom: -$gutter-wide; }
+
+.ml-auto { margin-left: auto }
+.mr-auto { margin-right: auto }
+.mx-auto { margin-left: auto; margin-right: auto; }
+
+// Gutter Margin Spacing
+.m-tight-gutter  { margin:        $gutter-tight }
+.mn-tight-gutter  { margin:        -$gutter-tight }
+.mt-tight-gutter { margin-top:    $gutter-tight }
+.mtn-tight-gutter { margin-top:    -$gutter-tight }
+.mr-tight-gutter { margin-right:  $gutter-tight }
+.mrn-tight-gutter { margin-right:  -$gutter-tight }
+.mb-tight-gutter { margin-bottom: $gutter-tight }
+.mbn-tight-gutter { margin-bottom: -$gutter-tight }
+.ml-tight-gutter { margin-left:   $gutter-tight }
+.mln-tight-gutter { margin-left:   -$gutter-tight }
+.mx-tight-gutter { margin-left:   $gutter-tight; margin-right:  $gutter-tight }
+.mxn-tight-gutter { margin-left:   -$gutter-tight; margin-right:  -$gutter-tight }
+.my-tight-gutter { margin-top:    $gutter-tight; margin-bottom: $gutter-tight }
+.myn-tight-gutter { margin-top:    -$gutter-tight; margin-bottom: -$gutter-tight }
+
+.m-gutter  { margin:        $gutter }
+.mn-gutter  { margin:        -$gutter }
+.mt-gutter { margin-top:    $gutter }
+.mtn-gutter { margin-top:    -$gutter }
+.mr-gutter { margin-right:  $gutter }
+.mrn-gutter { margin-right:  -$gutter }
+.mb-gutter { margin-bottom: $gutter }
+.mbn-gutter { margin-bottom: -$gutter }
+.ml-gutter { margin-left:   $gutter }
+.mln-gutter { margin-left:   -$gutter }
+.mx-gutter { margin-left:   $gutter; margin-right:  $gutter }
+.mxn-gutter { margin-left:   -$gutter; margin-right:  -$gutter }
+.my-gutter { margin-top:    $gutter; margin-bottom: $gutter }
+.myn-gutter { margin-top:    -$gutter; margin-bottom: -$gutter }
+
+.m-wide-gutter  { margin:        $gutter-wide; }
+.mn-wide-gutter  { margin:        -$gutter-wide; }
+.mt-wide-gutter { margin-top:    $gutter-wide; }
+.mtn-wide-gutter { margin-top:    -$gutter-wide; }
+.mr-wide-gutter { margin-right:  $gutter-wide; }
+.mrn-wide-gutter { margin-right:  -$gutter-wide; }
+.mb-wide-gutter { margin-bottom: $gutter-wide; }
+.mbn-wide-gutter { margin-bottom: -$gutter-wide; }
+.ml-wide-gutter { margin-left:   $gutter-wide; }
+.mln-wide-gutter { margin-left:   -$gutter-wide; }
+.mx-wide-gutter { margin-left:   $gutter-wide; margin-right:  $gutter-wide }
+.mxn-wide-gutter { margin-left:   -$gutter-wide; margin-right:  -$gutter-wide }
+.my-wide-gutter { margin-top:    $gutter-wide; margin-bottom: $gutter-wide }
+.myn-wide-gutter { margin-top:    -$gutter-wide; margin-bottom: -$gutter-wide }
+
+.m-margin  {
+	margin: $mobile-margin;
+	@include respond($lg) {
+		margin: $margin;
+	}
+}
+.mt-margin {
+	margin-top: $mobile-margin;
+	@include respond($lg) {
+		margin-top: $margin;
+	}
+}
+.mr-margin {
+	margin-right: $mobile-margin;
+	@include respond($lg) {
+		margin-right: $margin;
+	}
+}
+.mb-margin {
+	margin-bottom: $mobile-margin;
+	@include respond($lg) {
+		margin-bottom: $margin;
+	}
+}
+.ml-margin {
+	margin-left: $mobile-margin;
+	@include respond($lg) {
+		margin-left: $margin;
+	}
+}
+.mx-margin {
+	margin-left: $mobile-margin;
+	margin-right: $mobile-margin;
+	@include respond($lg) {
+		margin-left: $margin;
+		margin-right: $margin;
+	}
+}
+.my-margin {
+	margin-top: $mobile-margin;
+	margin-bottom: $mobile-margin;
+	@include respond($lg) {
+		margin-top: $margin;
+		margin-bottom: $margin;
+	}
+}
+
+// Padding Spacing
+
+.p-0  { padding: 0 }
+.pt-0 { padding-top: 0 }
+.pr-0 { padding-right: 0 }
+.pb-0 { padding-bottom: 0 }
+.pl-0 { padding-left: 0 }
+.px-0 { padding-left: 0; padding-right:  0 }
+.py-0 { padding-top: 0;  padding-bottom: 0 }
+
+.pt-1px  { padding-top:        1px }
+.pb-1px  { padding-bottom:        1px }
+
+.p-1  { padding:        $space-1 }
+.pt-1 { padding-top:    $space-1 }
+.pr-1 { padding-right:  $space-1 }
+.pb-1 { padding-bottom: $space-1 }
+.pl-1 { padding-left:   $space-1 }
+.py-1 { padding-top:    $space-1; padding-bottom: $space-1 }
+.px-1 { padding-left:   $space-1; padding-right:  $space-1 }
+
+.p-2  { padding:        $space-2 }
+.pt-2 { padding-top:    $space-2 }
+.pr-2 { padding-right:  $space-2 }
+.pb-2 { padding-bottom: $space-2 }
+.pl-2 { padding-left:   $space-2 }
+.py-2 { padding-top:    $space-2; padding-bottom: $space-2 }
+.px-2 { padding-left:   $space-2; padding-right:  $space-2 }
+
+.p-3  { padding:        $space-3 }
+.pt-3 { padding-top:    $space-3 }
+.pr-3 { padding-right:  $space-3 }
+.pb-3 { padding-bottom: $space-3 }
+.pl-3 { padding-left:   $space-3 }
+.py-3 { padding-top:    $space-3; padding-bottom: $space-3 }
+.px-3 { padding-left:   $space-3; padding-right:  $space-3 }
+
+.p-4  { padding:        $space-4 }
+.pt-4 { padding-top:    $space-4 }
+.pr-4 { padding-right:  $space-4 }
+.pb-4 { padding-bottom: $space-4 }
+.pl-4 { padding-left:   $space-4 }
+.py-4 { padding-top:    $space-4; padding-bottom: $space-4 }
+.px-4 { padding-left:   $space-4; padding-right:  $space-4 }
+
+// Gutter Padding Spacing
+.p-tight-gutter  { padding:        $gutter-tight; }
+.pt-tight-gutter { padding-top:    $gutter-tight; }
+.pr-tight-gutter { padding-right:  $gutter-tight; }
+.pb-tight-gutter { padding-bottom: $gutter-tight; }
+.pl-tight-gutter { padding-left:   $gutter-tight; }
+.px-tight-gutter { padding-left:   $gutter-tight; padding-right:  $gutter-tight }
+.py-tight-gutter { padding-top:    $gutter-tight; padding-bottom: $gutter-tight }
+
+.p-gutter  { padding:        $gutter }
+.pt-gutter { padding-top:    $gutter }
+.pr-gutter { padding-right:  $gutter }
+.pb-gutter { padding-bottom: $gutter }
+.pl-gutter { padding-left:   $gutter }
+.px-gutter { padding-left:   $gutter; padding-right:  $gutter }
+.py-gutter { padding-top:    $gutter; padding-bottom: $gutter }
+
+.p-wide-gutter  { padding:        $gutter-wide }
+.pt-wide-gutter { padding-top:    $gutter-wide }
+.pr-wide-gutter { padding-right:  $gutter-wide }
+.pb-wide-gutter { padding-bottom: $gutter-wide }
+.pl-wide-gutter { padding-left:   $gutter-wide }
+.px-wide-gutter { padding-left:   $gutter-wide; padding-right:  $gutter-wide }
+.py-wide-gutter { padding-top:    $gutter-wide; padding-bottom: $gutter-wide }
+
+.p-margin  {
+	padding: $mobile-margin;
+	@include respond($lg) {
+		padding: $margin;
+	}
+}
+.pt-margin {
+	padding-top: $mobile-margin;
+	@include respond($lg) {
+		padding-top: $margin;
+	}
+}
+.pr-margin {
+	padding-right: $mobile-margin;
+	@include respond($lg) {
+		padding-right: $margin;
+	}
+}
+.pb-margin {
+	padding-bottom: $mobile-margin;
+	@include respond($lg) {
+		padding-bottom: $margin;
+	}
+}
+.pl-margin {
+	padding-left: $mobile-margin;
+	@include respond($lg) {
+		padding-left: $margin;
+	}
+}
+.px-margin {
+	padding-left: $mobile-margin;
+	padding-right: $mobile-margin;
+	@include respond($lg) {
+		padding-left: $margin;
+		padding-right: $margin;
+	}
+}
+.py-margin {
+	padding-top: $mobile-margin;
+	padding-bottom: $mobile-margin;
+	@include respond($lg) {
+		padding-top: $margin;
+		padding-bottom: $margin;
+	}
+}

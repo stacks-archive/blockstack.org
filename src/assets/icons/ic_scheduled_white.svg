@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_scheduled_white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ICONS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_scheduled_white" fill-rule="nonzero" fill="#FFFFFF">
+            <polygon id="Shape" points="20.5 9 19.5 9 19.5 20.950288 25.669832 26.3754852 26.330168 25.6245148 20.5 20.4979878"></polygon>
+            <polygon id="Shape" points="2.63174427 21 5.47962472 21 5.47962472 19 2.63174427 19"></polygon>
+            <polygon id="Shape" points="35.1858367 21 38.0337172 21 38.0337172 19 35.1858367 19"></polygon>
+            <polygon id="Shape" points="20 38 20 34 18 34 18 38"></polygon>
+            <polygon id="Shape" points="20 5.73109244 20 1 18 1 18 5.73109244"></polygon>
+            <path d="M20,40 C31.0399205,40 40,31.2757121 40,20.5 C40,9.72428789 31.0399205,1 20,1 L20,3 C29.9471117,3 38,10.8409702 38,20.5 C38,30.1590298 29.9471117,38 20,38 L20,40 Z" id="Shape"></path>
+            <path d="M9.20142141,7.07251203 L7.81258336,5.63337032 L4.33661693,8.98783806 L4.22736114,9.11234019 C1.79744173,12.3940872 0.469098108,16.3258536 0.469098108,20.4493444 C0.469098108,31.2271592 9.50880867,39.9493444 20.6425784,39.9493444 L20.6425784,37.9493444 C10.5976929,37.9493444 2.46909811,30.1062715 2.46909811,20.4493444 C2.46909811,16.7870498 3.63921388,13.296273 5.78608581,10.3684682 L9.20142141,7.07251203 Z" id="Shape"></path>
+            <polygon id="Shape" points="7 14 9 14 9 7 8 6 1 6 1 8 7 8"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,55 @@
+{
+  "name": "blockstack-landing",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "description": "A Static React App. Landing Pages for Block Stack",
+  "main": "index.js",
+  "scripts": {
+    "start": "gatsby serve --port 5000",
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "postinstall": "./node_modules/.bin/gatsby build",
+    "test": "eslint ./src/js/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gordils-willis/blockstack-landing.git"
+  },
+  "author": "@robincwillis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gordils-willis/blockstack-landing/issues"
+  },
+  "homepage": "https://github.com/gordils-willis/blockstack-landing#readme",
+  "devDependencies": {
+    "eslint": "^5.0.1"
+  },
+  "dependencies": {
+    "babel-preset-es2017": "^6.24.1",
+    "debounce": "^1.1.0",
+    "gatsby": "^1.9.247",
+    "gatsby-link": "^1.6.40",
+    "gatsby-plugin-postcss-sass": "^1.0.22",
+    "gatsby-plugin-react-helmet": "^2.0.10",
+    "gatsby-plugin-react-next": "^1.0.11",
+    "gatsby-plugin-react-svg": "^1.1.1",
+    "gatsby-plugin-resolve-src": "^1.1.3",
+    "gatsby-plugin-sass": "^1.0.26",
+    "gatsby-remark-copy-images": "^0.2.1",
+    "gatsby-source-filesystem": "^1.5.39",
+    "gatsby-transformer-remark": "^1.7.44",
+    "jsonp": "^0.2.1",
+    "react-helmet": "^5.2.0",
+    "react-highlight": "^0.12.0",
+    "react-highlight-js": "^0.15.0",
+    "react-highlight.js": "^1.0.7",
+    "react-player": "^1.5.0",
+    "react-router-dom": "^4.3.1",
+    "react-select": "^1.2.1",
+    "scrollmonitor": "^1.2.4",
+    "svg-inline-react": "^3.1.0",
+    "to-querystring": "^1.0.4"
+  }
+}

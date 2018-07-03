@@ -1,0 +1,34 @@
+* {
+	::-webkit-scrollbar {
+		width: 18px; 
+		background: $light-grey;
+	}
+	::-webkit-scrollbar-button {
+		border-radius: 30px;
+		background: $light-grey;
+		display: none;
+	}
+	::-webkit-scrollbar-track {
+		background: #ccc;
+	}
+	::-webkit-scrollbar-track-piece {
+		background: $light-grey;
+	}
+	::-webkit-scrollbar-thumb {
+		background: lighten($light-text-color, 40%);
+		border: 5px solid $light-grey;
+		border-radius: 20px;
+		opacity: .5;
+		transition: opacity .5s ease-in-out;
+		&:hover {
+			opacity: 1;
+			background: lighten($light-text-color, 20%);
+		}
+	}
+	::-webkit-scrollbar-corner {
+		background: $light-grey;
+	}
+	::-webkit-resizer {
+		background: $light-grey;
+	}
+}
