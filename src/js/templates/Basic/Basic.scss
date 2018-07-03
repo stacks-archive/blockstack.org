@@ -118,4 +118,45 @@
 			margin: $margin 0;
 		}
 	}
+	.rich-text .team-grid,
+	.team-grid {
+		padding-top: $space-4;
+		ul {
+			list-style: none;
+			display: flex;
+			justify-content: center;
+			margin: 0 -$gutter/2;
+			min-width: calc(100% + #{$gutter});
+			flex-wrap: wrap;
+			li {
+				width: 100%;
+				padding: 0 $gutter/2 $gutter;
+				img {
+					max-width: 100px;
+					margin: 0 auto;
+				}
+				h6 {
+					margin-top: .3em;
+					color: $main-color;
+				}
+				h5 {
+					margin-top: 1rem;
+					font-size: 1rem;
+				}
+				p {
+					font-size: $sm-p-font-size;
+				}
+				&:before {
+					display: none;
+					content: '';
+				}
+				@include respond($sm) {
+					width: 50%;
+				}
+				@include respond($lg) {
+					width: 33.333%;
+				}
+			}
+		}
+	}
 }
