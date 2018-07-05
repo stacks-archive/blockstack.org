@@ -12,31 +12,31 @@ import touchIcon from 'assets/images/touch-icon.png';
 
 const Layout = ({ children, data, location }) => {
 
-  console.log(data);
-  console.log(location);
-
   let title = '';
   let description = 'Blockstack is a new internet for decentralized apps where users own their data. A browser is all that’s needed to get started.';
 
-  if(location.pathname !== '/') {
-    let item = data.allMarkdownRemark.edges.find( (item) => {
-      return item.node.frontmatter.path.includes(location.pathname.replace(/\//g, ""));
+  if (location.pathname.includes('blog')) {
+    let item = data.allRssFeedItem.edges.find( (item) => {
+      return item.node.link.includes(location.pathname)
     });
 
-    if(item) {
-      title = item.node.frontmatter.title;
+    if (item) {
+      title = item.node.title;
+      description = item.node.content;
     } else {
-      console.log('No item for', location.pathname);
+      console.log('No post for', location.pathname);
     }
-  }
 
-  if(location.pathname !== '/') {
+  } else if (location.pathname !== '/') {
     let item = data.allMarkdownRemark.edges.find( (item) => {
       return item.node.frontmatter.path.includes(location.pathname.replace(/\//g, ""));
     });
 
     if (item) {
+      title = item.node.frontmatter.title;
       description = item.node.frontmatter.description;
+    } else {
+      console.log('No page for', location.pathname);
     }
   }
 
@@ -61,10 +61,5 @@ const Layout = ({ children, data, location }) => {
     </div>
   )
 }
-
-// const Layout = (props) => {
-//   console.log(props)
-//   return(<div></div>);
-// }
 
 export default Layout;
