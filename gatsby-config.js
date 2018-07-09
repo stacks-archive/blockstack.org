@@ -38,7 +38,6 @@ module.exports = {
     }
   },
   plugins: [
-    'gatsby-plugin-preact',
     'gatsby-plugin-resolve-src',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-react-next',
