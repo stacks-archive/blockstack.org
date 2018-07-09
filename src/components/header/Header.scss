@@ -1,5 +1,5 @@
-@import '~sass/setup/variables';
-@import '~sass/setup/mixins';
+@import '~scss/setup/variables';
+@import '~scss/setup/mixins';
 
 header.header {
 	padding-top: $mobile-margin * .75;
@@ -68,7 +68,7 @@ header.header {
 					&.invalid {
 						input {
 							border-color: $alert;
-						}	
+						}
 					}
 				}
 			}
@@ -116,7 +116,7 @@ header.header {
 			border-bottom : 1px solid $white;
 		}
 	}
-	
+
 	.menu-toggle {
 		border-radius: $base-border-radius;
 		border: none;
@@ -136,7 +136,7 @@ header.header {
 			}
 		}
 	}
-	
+
 	.menu-icon {
 		margin-top: -3px;
 	}

@@ -1,4 +1,4 @@
-import 'sass/main.scss'
+import '@scss/main.scss'
 
 export default from '@containers/app'
 

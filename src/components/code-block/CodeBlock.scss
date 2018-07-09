@@ -1,5 +1,5 @@
-@import '~sass/setup/variables';
-@import '~sass/setup/mixins';
+@import '~scss/setup/variables';
+@import '~scss/setup/mixins';
 
 $cb-base:    $light-grey;
 $cb-code-color:  $text-color;
@@ -38,7 +38,7 @@ $cb-dark-attr-2: #6FD4FF;
 			background: transparent;
 		}
 	}
-	
+
 	&.dark {
 		// On Dark BG
 		&.minimal {

@@ -1,5 +1,5 @@
-@import '~sass/setup/variables';
-@import '~sass/setup/mixins';
+@import '~scss/setup/variables';
+@import '~scss/setup/mixins';
 
 .g-card {
 	display: block;
@@ -39,7 +39,7 @@
 			}
 		}
 		&:active {
-			transform: scale(.98);	
+			transform: scale(.98);
 		}
 	}
 }

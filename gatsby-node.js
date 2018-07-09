@@ -1,16 +1,9 @@
 const path = require('path')
+const {resolve} = require('./webpack.config.js')
 
 exports.modifyWebpackConfig = function({ config, env }) {
   config.merge({
-    resolve: {
-      root: path.resolve(__dirname, './src'),
-      extensions: ['', '.js', '.jsx', '.json'],
-      alias: {
-        '@components': path.resolve(__dirname, './src/components'),
-        '@containers': path.resolve(__dirname, './src/containers'),
-        '@common': path.resolve(__dirname, './src/common')
-      }
-    }
+    resolve
   })
   return config
 }
@@ -38,7 +31,9 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       const component = node.frontmatter.template
-        ? path.resolve(`src/common/templates/${node.frontmatter.template}/index.js`)
+        ? path.resolve(
+            `src/common/templates/${node.frontmatter.template}/index.js`
+          )
         : Basic
 
       createPage({
