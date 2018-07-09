@@ -1,4 +1,4 @@
-const autoprefixer = require('autoprefixer');
+const autoprefixer = require('autoprefixer')
 
 module.exports = {
   siteMetadata: {
@@ -38,8 +38,9 @@ module.exports = {
     }
   },
   plugins: [
+    'gatsby-plugin-preact',
     'gatsby-plugin-resolve-src',
-  	'gatsby-plugin-react-helmet',
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-react-next',
     'gatsby-plugin-react-svg',
     {
@@ -53,21 +54,19 @@ module.exports = {
         precision: 8
       }
     },
-  	{
-    	resolve: 'gatsby-source-filesystem',
-    	options: {
-      	path: `${__dirname}/src/markdown`,
-      	name: "markdown-pages",
-    	},
-  	},
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/markdown`,
+        name: 'markdown-pages'
+      }
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
-          `gatsby-remark-copy-images`,
-        ]
+        plugins: [`gatsby-remark-copy-images`]
       }
     },
     'gatsby-plugin-netlify'
-  ],
+  ]
 }
