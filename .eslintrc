@@ -8,6 +8,7 @@
     "react"
   ],
   "extends": [
+    "prettier",
     "plugin:react/recommended"
   ],
   "rules": {

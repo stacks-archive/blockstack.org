@@ -1,7 +1,7 @@
 ---
 path: "/papers"
 title: "Papers"
-template: "ButtonList"
+template: "button-list"
 ---
 
 #### Blockstack: A New Decentralized Internet

@@ -1,0 +1,45 @@
+@import '~scss/setup/variables';
+@import '~scss/setup/mixins';
+
+.g-card {
+	display: block;
+	border-radius: $base-border-radius;
+	background: $white;
+	box-shadow: 0 3px 12px rgba(37, 0, 105, 0.32);
+	color: $text-color;
+	transition: transform $md-speed $ease, box-shadow $md-speed $ease;
+	&.stretch-height {
+		height: 100%;
+	}
+	&.min-height {
+		min-height: 9rem;
+	}
+	&.dark {
+		border-radius: $base-border-radius;
+		background: #211F6D;
+		color: $white;
+	}
+	&.link {
+		cursor: pointer;
+		.underline-hover {
+			display: inline;
+			vertical-align: top;
+			border-bottom: 1px solid transparent;
+			transition: border $md-speed $ease;
+		}
+		&:hover {
+			color: $text-color;
+			box-shadow: 0 6px 18px rgba(37, 0, 105, 0.32);
+			transform: translate3d(0, -4px, 0);
+			.underline-hover {
+				border-color: currentcolor;
+			}
+			&.dark {
+				color: $white;
+			}
+		}
+		&:active {
+			transform: scale(.98);
+		}
+	}
+}

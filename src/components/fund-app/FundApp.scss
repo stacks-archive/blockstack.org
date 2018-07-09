@@ -1,0 +1,21 @@
+@import '~scss/setup/variables';
+@import '~scss/setup/mixins';
+
+.fund-app {
+	.container {
+		.h2 {
+			display: inline-block;
+			vertical-align: top;
+			max-width: 25em;
+		}
+		p {
+			a {
+				border-bottom-color: $main-color;
+				padding-bottom: 0;
+				&:hover {
+					background: rgba($main-color, .1);
+				}
+			}
+		}
+	}
+}

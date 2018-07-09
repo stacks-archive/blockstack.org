@@ -64,8 +64,13 @@ typings/
 .cache
 node_modules
 yarn-error.log
+yarn.lock
+package-lock.json
 
 # Build directory
 /public
+/build
+
 .DS_Store
 .idea
+

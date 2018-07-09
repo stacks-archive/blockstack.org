@@ -1,7 +1,7 @@
 ---
 path: "/press"
 title: "Press"
-template: "Press"
+template: "press"
 ---
 
 
