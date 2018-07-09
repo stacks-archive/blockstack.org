@@ -11,7 +11,7 @@
     "build": "gatsby build",
     "dev": "gatsby develop",
     "format": "prettier --write \"src/**/*.js\" && echo -e '\\033[0;32m'💅 Just use prettier'\\033[0m'",
-    "test": "eslint ./src/js/"
+    "test": "eslint src/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,10 @@
   },
   "homepage": "https://github.com/gordils-willis/blockstack-landing#readme",
   "devDependencies": {
+    "babel-eslint": "^8.2.5",
     "eslint": "^5.0.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-react": "^7.10.0",
     "prettier": "^1.13.7"
   },
   "dependencies": {
