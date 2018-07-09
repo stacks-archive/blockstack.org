@@ -67,6 +67,7 @@ module.exports = {
           `gatsby-remark-copy-images`,
         ]
       }
-    }
+    },
+    'gatsby-plugin-netlify'
   ],
 }

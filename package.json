@@ -1,41 +1,16 @@
 {
   "name": "blockstack-landing",
-  "version": "1.0.0",
   "description": "A Static React App. Landing Pages for Block Stack",
-  "main": "index.js",
-  "scripts": {
-    "start": "gatsby serve --port 5000",
-    "build": "gatsby build",
-    "postbuild": "rimraf build && mv public build",
-    "prod": "npm run build",
-    "dev": "gatsby develop",
-    "format": "prettier --write \"src/**/*.js\" && echo -e '\\033[0;32m'💅 Just use prettier'\\033[0m'",
-    "test": "eslint src/**/*.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gordils-willis/blockstack-landing.git"
-  },
-  "author": "@robincwillis",
-  "license": "ISC",
+  "version": "1.0.0",
+  "author": "Blockstack Team",
   "bugs": {
-    "url": "https://github.com/gordils-willis/blockstack-landing/issues"
-  },
-  "homepage": "https://github.com/gordils-willis/blockstack-landing#readme",
-  "devDependencies": {
-    "babel-eslint": "^8.2.5",
-    "babel-plugin-styled-components": "^1.5.1",
-    "eslint": "^5.0.1",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-react": "^7.10.0",
-    "prettier": "^1.13.7",
-    "rimraf": "^2.6.2"
+    "url": "https://github.com/blockstack/blockstack.org/issues"
   },
   "dependencies": {
-    "babel-preset-es2017": "^6.24.1",
     "debounce": "^1.1.0",
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
+    "gatsby-plugin-netlify": "^1.0.21",
     "gatsby-plugin-postcss-sass": "^1.0.22",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-react-next": "^1.0.11",
@@ -57,5 +32,31 @@
     "styled-components": "^3.3.3",
     "svg-inline-react": "^3.1.0",
     "to-querystring": "^1.0.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.5",
+    "babel-plugin-styled-components": "^1.5.1",
+    "babel-preset-es2017": "^6.24.1",
+    "eslint": "^5.0.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-react": "^7.10.0",
+    "prettier": "^1.13.7",
+    "rimraf": "^2.6.2"
+  },
+  "homepage": "https://github.com/blockstack/blockstack.org#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blockstack/blockstack.org"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "format": "prettier --write \"src/**/*.js\" && echo -e '\\033[0;32m'💅 Just use prettier'\\033[0m'",
+    "postbuild": "rimraf build && mv public build",
+    "prod": "npm run build",
+    "start": "gatsby serve --port 5000",
+    "test": "eslint src/**/*.js"
   }
 }
