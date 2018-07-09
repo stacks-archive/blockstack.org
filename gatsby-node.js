@@ -16,7 +16,7 @@ exports.modifyWebpackConfig = function({ config, env }) {
 }
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators
-  const Basic = path.resolve(`src/templates/basic/index.js`)
+  const Basic = path.resolve(`src/common/templates/basic/index.js`)
 
   return graphql(`
     {
@@ -38,7 +38,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       const component = node.frontmatter.template
-        ? path.resolve(`src/templates/${node.frontmatter.template}/index.js`)
+        ? path.resolve(`src/common/templates/${node.frontmatter.template}/index.js`)
         : Basic
 
       createPage({
