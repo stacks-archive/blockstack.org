@@ -159,64 +159,88 @@ export const teamMembers = [
     name: 'Ariella Steinhorn',
     avatar: '/images/avatars/ariella-steinhorn.jpg',
     bio:
-     "Ariella is Blockstack’s Communications Partner. She previously led communications and public policy efforts at Managed by Q. Before that, she held several communications positions at Uber, and was a speechwriter in Washington, DC."
+     'Ariella is Blockstack’s Communications Partner. She previously led communications and public policy efforts at Managed by Q. Before that, she held several communications positions at Uber, and was a speechwriter in Washington, DC.'
   },
   { 
     blockstackId: 'jesse',
     name: 'Jesse Soslow',
     avatar: '/images/avatars/jesse-soslow.jpg',
     bio:
-     "Jesse is Blockstack’s Operations Partner.  Prior to Blockstack, he led operations at Everwise, a Sequoia-backed SaaS startup, and worked as a technology transactions attorney for a large, international law firm.  Jesse received his J.D. and B.A., in math, both from the University of Pennsylvania."
+     'Jesse is Blockstack’s Operations Partner.  Prior to Blockstack, he led operations at Everwise, a Sequoia-backed SaaS startup, and worked as a technology transactions attorney for a large, international law firm.  Jesse received his J.D. and B.A., in math, both from the University of Pennsylvania.'
   },
   { 
     blockstackId: 'mitchell',
     name: 'Mitchell Cuevas',
     avatar: '/images/avatars/mitchell-cuevas.jpg',
     bio:
-     "Mitchell is Blockstack’s Marketing Partner. He previously led Marketing at UP Global (Startup Weekend, Startup Digest, Startup Week) before joining the Product team at Techstars. He curates the Martech Digest, advises at Cove Group, and runs ScreenChecker."
+     'Mitchell is Blockstack’s Marketing Partner. He previously led Marketing at UP Global (Startup Weekend, Startup Digest, Startup Week) before joining the Product team at Techstars. He curates the Martech Digest, advises at Cove Group, and runs ScreenChecker.'
   },
   { 
     blockstackId: 'jeffdomke',
     name: 'Jeff Domke',
     avatar: '/images/avatars/jeff-domke.jpg',
     bio:
-     "Jeff leads product at Blockstack. Previously he was CPO and the first hire at CompStak (real estate analytics) where he helped grow the user base 125x, hire 50 team members, and raise 22M in funding. He also previously cofounded Signal (CX analytics) and Capsule.me (consumer messaging)."
+     'Jeff leads product at Blockstack. Previously he was CPO and the first hire at CompStak (real estate analytics) where he helped grow the user base 125x, hire 50 team members, and raise 22M in funding. He also previously cofounded Signal (CX analytics) and Capsule.me (consumer messaging).'
   },
   { 
     blockstackId: 'hankstoever',
     name: 'Hank Stoever',
     avatar: '/images/avatars/hank-stoever.jpg',
-    bio: "Hank is an engineer at Blockstack, working on developer tools and consumer-facing products. He previously worked as an engineer for a variety of startups, including as lead developer for Startup Digest.",
+    bio: 'Hank is an engineer at Blockstack, working on developer tools and consumer-facing products. He previously worked as an engineer for a variety of startups, including as lead developer for Startup Digest.',
   },
   { 
     blockstackId: 'thaonguyenle',
     name: 'Thao-Nguyen Le',
     avatar: '/images/avatars/thao-nguyen-le.jpg',
-    bio: "Thao-Nguyen is People and Operations partner at Blockstack, assisting the co-founders and team with organizational prioritization, project management, team collaboration and internal communication. Prior to joining, she led operations in mission driven organizations such as Farmshelf (indoor hydro agri-tech), AntiGravity Fitness and Vietnam Heritage Center. ",
+    bio: 'Thao-Nguyen is People and Operations partner at Blockstack, assisting the co-founders and team with organizational prioritization, project management, team collaboration and internal communication. Prior to joining, she led operations in mission driven organizations such as Farmshelf (indoor hydro agri-tech), AntiGravity Fitness and Vietnam Heritage Center. ',
   },
   { 
     blockstackId: 'ginxh.id.blockstack',
     name: 'Virginia Hickox',
     avatar: '/images/avatars/virginia-hickox.jpg',
-    bio: "Virginia is a Blockstack Engineering Partner, focusing on DevOps, developing microservices and infrastructure for the decentralized web. She has a degree in Electrical Engineering from RPI, and previously worked as an Engineer in Operations for open market access for electrical power. She is interested in information privacy and democracy in the digital world.",
+    bio: 'Virginia is a Blockstack Engineering Partner, focusing on DevOps, developing microservices and infrastructure for the decentralized web. She has a degree in Electrical Engineering from RPI, and previously worked as an Engineer in Operations for open market access for electrical power. She is interested in information privacy and democracy in the digital world.',
   },
   { 
     blockstackId: 'lizblockstack.blockstack',
     name: 'Elizabeth Thys',
     avatar: '/images/avatars/elizabeth-thys.jpg',
-    bio: "Liz is a Blockstack Operations Partner. Prior to Blockstack, she co-founded limeSHIFT, a creative agency that that aligns people, place and purpose, which emerged from a collaboration between MIT Sloan School of Management and MIT Department of Urban Studies and Planning. She received a BS in Mechanical Engineering from Tufts University and an MBA from MIT Sloan School of Management. ",
+    bio: 'Liz is a Blockstack Operations Partner. Prior to Blockstack, she co-founded limeSHIFT, a creative agency that that aligns people, place and purpose, which emerged from a collaboration between MIT Sloan School of Management and MIT Department of Urban Studies and Planning. She received a BS in Mechanical Engineering from Tufts University and an MBA from MIT Sloan School of Management. ',
   },
   { 
     blockstackId: 'shrey',
     name: 'Shreyas Thiagaraj',
     avatar: '/images/avatars/shreyas-thiagaraj.jpg',
-    bio: "Shreyas is a Blockstack Engineering Partner, working on developer tools and mobile efforts. He comes from a background in product development for various social apps, and before that built developer tools for mobile apps as an engineer at Microsoft. When not at work, you can find him on the hunt for the world’s best hot chocolate.",
+    bio: 'Shreyas is a Blockstack Engineering Partner, working on developer tools and mobile efforts. He comes from a background in product development for various social apps, and before that built developer tools for mobile apps as an engineer at Microsoft. When not at work, you can find him on the hunt for the world’s best hot chocolate.',
   },
   { 
     blockstackId: 'mmanthony.id.blockstack',
     name: 'Mary Anthony',
     avatar: '/images/avatars/mary-anthony.jpg',
-    bio: "Mary joined Blockstack as a Documentation Engineer. She has co-founded a CRO, managed teams, developed documentation deployment infrastructure, and designed user interfaces. Her experience includes developing content for open source, clinical research, container technologies, security software, business intelligence software, remote source control software, and system administration. She spends her non-work time studying figurative art, hiking, and trail running.",
+    bio: 'Mary joined Blockstack as a Documentation Engineer. She has co-founded a CRO, managed teams, developed documentation deployment infrastructure, and designed user interfaces. Her experience includes developing content for open source, clinical research, container technologies, security software, business intelligence software, remote source control software, and system administration. She spends her non-work time studying figurative art, hiking, and trail running.',
+  },
+  {
+    blockstackId: 'jwiley.id.blockstack',
+    name: 'Jesse Wiley',
+    avatar: '/images/avatars/jesse-wiley.png',
+    bio: "Jesse is an Engineering Partner, focusing on DevOps, automating micro-services and infrastructure-as-code for the decentralized web. After spending too much time at large companies, he's bringing the automation and innovation to Blockstack, working to make everyone's job just a little bit easier.",
+  },
+  {
+    blockstackId: 'aulneau.id',
+    name: 'Thomas Osmonson',
+    avatar: '/images/avatars/thomas-osmonson.jpg',
+    bio: 'Thomas Osmonson is a product engineer working at the boundary of design and development. He likes wearing many hats ranging from visual design to building performant web/native applications. Previously as an independent, he has helped agencies, startups, and founders build and design useful, beautiful products. He has an affinity for the wilderness, street photography, and traveling.',
+  },
+  {
+    blockstackId: 'wbobeirne.id',
+    name: "Will O'Beirne",
+    avatar: '/images/avatars/will-obeirne.jpeg',
+    bio: 'Will is an Engineering Partner at Blockstack, despite their best efforts. Before joining the team, he could be found hooking people up with ICOs and hot dates at MyCrypto and OkCupid respectively. These days he spends his free time translating ancient Etruscan texts into Typescript.',
+  },
+  {
+    blockstackId: 'markmhendrickson.id',
+    name: 'Mark Hendrickson',
+    avatar: '/images/avatars/mark-hendrickson.jpg',
+    bio: 'Mark is a product manager from San Francisco with over a decade designing, developing and marketing Web and mobile applications for startups. He now lives in Barcelona in self-imposed exile having launched a number of products in Silicon Valley such as Plancast, KITE, Lift and CrunchBase.',
   },
   {
     blockstackId: 'mfreed',
