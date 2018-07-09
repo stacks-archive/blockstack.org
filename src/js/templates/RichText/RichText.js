@@ -1,11 +1,10 @@
-import React from "react";
+import React from 'react'
 
-import './RichText.scss';
+import './RichText.scss'
 
-export default function Basic({data}) {
-
-  const { markdownRemark } = data;
-  const { frontmatter, html } = markdownRemark;
+export default function Basic({ data }) {
+  const { markdownRemark } = data
+  const { frontmatter, html } = markdownRemark
 
   return (
     <div className="md-basic-template">
@@ -17,10 +16,16 @@ export default function Basic({data}) {
               <div className="h4 py-2">---</div>
               <h2 className="h4">{frontmatter.description}</h2>
             </div>
-          ) : false}
+          ) : (
+            false
+          )}
           {frontmatter.buttonText && frontmatter.buttonLink ? (
-            <a href={frontmatter.buttonLink} className="button white mt-3">{frontmatter.buttonText}</a>
-          ) : false}
+            <a href={frontmatter.buttonLink} className="button white mt-3">
+              {frontmatter.buttonText}
+            </a>
+          ) : (
+            false
+          )}
         </div>
       </section>
       <section>
@@ -32,6 +37,5 @@ export default function Basic({data}) {
         </div>
       </section>
     </div>
-  );
+  )
 }
-

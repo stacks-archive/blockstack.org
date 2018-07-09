@@ -1,7 +1,6 @@
-import 'sass/main.scss';
+import 'sass/main.scss'
 
-export default from 'js/containers/App';
-
+export default from 'js/containers/App'
 
 export const pageQuery = graphql`
   query IndexQuery {
@@ -22,4 +21,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

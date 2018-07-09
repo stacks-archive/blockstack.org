@@ -1,22 +1,27 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-import './loader.scss';
+import './loader.scss'
 
 class Loader extends Component {
-
-  shouldComponentUpdate (nextProps, nextState) {
+  shouldComponentUpdate(nextProps, nextState) {
     return this.props.className !== nextProps.className
   }
 
-	render () {
-		return (
-			<div className={this.props.className ? ('linear-loader ' + this.props.className) : ('linear-loader')}>
-				<span className="first" />
-				<span className="second" />
-				<span className="third" />
-			</div>
-		);
-	}
+  render() {
+    return (
+      <div
+        className={
+          this.props.className
+            ? 'linear-loader ' + this.props.className
+            : 'linear-loader'
+        }
+      >
+        <span className="first" />
+        <span className="second" />
+        <span className="third" />
+      </div>
+    )
+  }
 }
 
-export default Loader;
+export default Loader

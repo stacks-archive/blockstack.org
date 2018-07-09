@@ -1,1 +1,1 @@
-export default from './CodeBlock.js';
+export default from './CodeBlock.js'

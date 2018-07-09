@@ -1,2 +1,2 @@
-export default from './OurTechnology.js';
+export default from './OurTechnology.js'
 // export * from './OurTechnology';

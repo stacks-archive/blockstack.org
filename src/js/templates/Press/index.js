@@ -1,9 +1,9 @@
-export default from './Press';
-export * from './Press';
+export default from './Press'
+export * from './Press'
 
 export const PressQuery = graphql`
-  query PressFromPathQuery( $path: String! ) {
-    markdownRemark ( frontmatter: { path: { eq: $path } }) {
+  query PressFromPathQuery($path: String!) {
+    markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
         path
@@ -14,4 +14,4 @@ export const PressQuery = graphql`
       }
     }
   }
-`;
+`

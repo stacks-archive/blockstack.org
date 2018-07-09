@@ -1,2 +1,2 @@
-export default from './MainMenu';
-export * from './MainMenu';
+export default from './MainMenu'
+export * from './MainMenu'

@@ -1,2 +1,2 @@
-export default from './AppsGrid';
-export * from './AppsGrid';
+export default from './AppsGrid'
+export * from './AppsGrid'

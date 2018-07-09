@@ -1,2 +1,2 @@
-export default from './WhyBS.js';
-export * from './WhyBS';
+export default from './WhyBS.js'
+export * from './WhyBS'

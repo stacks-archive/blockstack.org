@@ -1,2 +1,2 @@
-export default from './FundApp';
-export * from './FundApp';
+export default from './FundApp'
+export * from './FundApp'

@@ -1,2 +1,2 @@
-export default from './Mission';
-export * from './Mission';
+export default from './Mission'
+export * from './Mission'

@@ -1,2 +1,2 @@
-export default from './Html';
-export * from './Html';
+export default from './Html'
+export * from './Html'

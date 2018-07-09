@@ -1,2 +1,2 @@
-export default from './OurCommunity.js';
-export * from './OurCommunity';
+export default from './OurCommunity.js'
+export * from './OurCommunity'

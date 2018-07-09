@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react'
 
-import './ButtonList.scss';
+import './ButtonList.scss'
 
 export default function ButtonList({ data }) {
-  const { markdownRemark } = data;
-  const { frontmatter, html } = markdownRemark;
+  const { markdownRemark } = data
+  const { frontmatter, html } = markdownRemark
   return (
     <div className="md-button-list-template">
       <section className="blue-bg top-section top-area">
@@ -15,10 +15,16 @@ export default function ButtonList({ data }) {
               <div className="h4 py-2">---</div>
               <h2 className="h4">{frontmatter.description}</h2>
             </div>
-          ) : false}
+          ) : (
+            false
+          )}
           {frontmatter.buttonText && frontmatter.buttonLink ? (
-            <a href={frontmatter.buttonLink} className="button white mt-3">{frontmatter.buttonText}</a>
-          ) : false}
+            <a href={frontmatter.buttonLink} className="button white mt-3">
+              {frontmatter.buttonText}
+            </a>
+          ) : (
+            false
+          )}
         </div>
       </section>
       <section>
@@ -30,5 +36,5 @@ export default function ButtonList({ data }) {
         </div>
       </section>
     </div>
-  );
+  )
 }

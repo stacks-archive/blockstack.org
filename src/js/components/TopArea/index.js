@@ -1,2 +1,2 @@
-export default from './TopArea';
-export * from './TopArea';
+export default from './TopArea'
+export * from './TopArea'
