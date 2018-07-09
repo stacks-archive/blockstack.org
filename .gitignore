@@ -69,7 +69,7 @@ package-lock.json
 
 # Build directory
 /public
-
+/build
 
 .DS_Store
 .idea
