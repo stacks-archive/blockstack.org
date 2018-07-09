@@ -1,10 +1,10 @@
-var path = require('path');
-var express = require('express');
+const path = require('path');
+const express = require('express');
 
 
-var app = express();
+const app = express();
 
-var PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
 app.use(express.static(path.join(__dirname, 'build')));
 
@@ -14,6 +14,6 @@ app.get('*', function(req, res) {
 });
 
 
-var server = app.listen(PORT, function() {
+const server = app.listen(PORT, function() {
 	console.log('Listening at https://localhost:%s', PORT);
 });

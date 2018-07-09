@@ -3,8 +3,8 @@ import InlineSVG from 'svg-inline-react'
 import toQueryString from 'to-querystring'
 import jsonp from 'jsonp'
 
-import Input from 'js/components/Input'
-import Button from 'js/components/Button'
+import Input from '@components/Input'
+import Button from '@components/Button'
 
 import Arrow from 'assets/images/outline-arrow.svg'
 

@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import InlineSVG from 'svg-inline-react'
 import AppCard from './components/AppCard.js'
-import Card from 'js/components/Card'
-import TriangleBg from 'js/components/TriangleBg'
+import Card from '@components/Card'
+import TriangleBg from '@components/TriangleBg'
 import Arrow from 'assets/images/outline-arrow.svg'
 
 // App Icons

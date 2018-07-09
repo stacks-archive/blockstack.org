@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import InlineSVG from 'svg-inline-react'
 
-import Loader from 'js/components/Loader'
+import Loader from '@components/Loader'
 
 import './button.scss'
 

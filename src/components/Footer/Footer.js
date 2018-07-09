@@ -4,7 +4,7 @@ import InlineSVG from 'svg-inline-react'
 import Logo from 'assets/images/Logo.svg'
 import LogoType from 'assets/images/logotype.svg'
 
-import NewsletterSignup from 'js/components/NewsletterSignup'
+import NewsletterSignup from '@components/NewsletterSignup'
 
 import './Footer.scss'
 

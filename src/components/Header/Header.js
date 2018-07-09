@@ -3,9 +3,9 @@ import InlineSVG from 'svg-inline-react'
 
 import Logo from 'assets/images/Logo.svg'
 import LogoType from 'assets/images/logotype.svg'
-import Button from 'js/components/Button'
-import NewsletterSignup from 'js/components/NewsletterSignup'
-import MainMenu from 'js/components/MainMenu'
+import Button from '@components/Button'
+import NewsletterSignup from '@components/NewsletterSignup'
+import MainMenu from '@components/MainMenu'
 
 import scrollMonitor from 'scrollmonitor'
 

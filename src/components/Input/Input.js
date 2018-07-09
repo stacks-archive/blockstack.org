@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import InlineSVG from 'svg-inline-react'
 
-import Typeahead from 'js/components/Typeahead'
-import Loader from 'js/components/Loader'
+import Typeahead from '@components/Typeahead'
+import Loader from '@components/Loader'
 
 import './inputs.scss'
 

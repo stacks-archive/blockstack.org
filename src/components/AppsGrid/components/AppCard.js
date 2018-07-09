@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import InlineSVG from 'svg-inline-react'
-import Card from 'js/components/Card'
+import Card from '@components/Card'
 import Arrow from 'assets/images/outline-arrow.svg'
 
 class AppsGrid extends Component {
