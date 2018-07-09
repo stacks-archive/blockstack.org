@@ -1,6 +1,6 @@
 import 'sass/main.scss'
 
-export default from '@containers/App'
+export default from '@containers/../containers/app'
 
 export const pageQuery = graphql`
   query IndexQuery {

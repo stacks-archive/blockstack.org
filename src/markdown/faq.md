@@ -2,7 +2,7 @@
 path: "/faq"
 title: "Frequently Asked Questions"
 description: Review the questions most frequently asked about Blockstack.
-template: RichText
+template: "rich-text"
 ---
 
 ### What is Blockstack?

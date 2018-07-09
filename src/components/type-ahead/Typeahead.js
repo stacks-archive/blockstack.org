@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 //https://github.com/JedWatson/react-select/issues/1661
 import Select from 'react-select'
-import Button from '@components/Button'
+import Button from '@components/button'
 import 'react-select'
 
 export default class Typeahead extends Component {

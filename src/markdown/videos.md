@@ -2,7 +2,7 @@
 path: "/videos"
 title: "Videos"
 description: 
-template: RichText
+template: "rich-text"
 ---
 
 ### A New Internet Where You're In Control

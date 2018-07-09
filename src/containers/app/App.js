@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-import Card from '@components/Card'
-import TopArea from '@components/TopArea'
-import AppsGrid from '@components/AppsGrid'
-import WhyBS from '@components/WhyBS'
-import OurTechnology from '@components/OurTechnology'
-import OurCommunity from '@components/OurCommunity'
-import FundApp from '@components/FundApp'
-import Mission from '@components/Mission'
+import Card from '@components//card'
+import TopArea from '@components/top-area'
+import AppsGrid from '@components/apps-grid'
+import WhyBS from '@components/why-bs'
+import OurTechnology from '@components/our-technology'
+import OurCommunity from '@components/our-community'
+import FundApp from '@components/fund-app'
+import Mission from '@components//mission'
 
 import './App.scss'
 

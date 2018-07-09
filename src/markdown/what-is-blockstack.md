@@ -2,7 +2,7 @@
 path: "/what-is-blockstack"
 title: "What is Blockstack?"
 description : "Blockstack is a new internet for decentralized apps where users own their data. Blockstack's platform helps entrepreneurs and engineers build these apps and deliver better end-user experiences."
-template: "WhatIsBlockstack"
+template: "what-is-blockstack"
 buttonText: "Download Blockstack"
 buttonLink: "/install"
 ---

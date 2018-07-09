@@ -1,7 +1,7 @@
 ---
 path: "/legal/privacy-policy"
 title: "Privacy Policy"
-template: "RichText"
+template: "rich-text"
 ---
 
 **Effective Date: October 12, 2017**

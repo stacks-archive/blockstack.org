@@ -16,7 +16,7 @@ exports.modifyWebpackConfig = function({ config, env }) {
 }
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators
-  const Basic = path.resolve(`src/templates/Basic/index.js`)
+  const Basic = path.resolve(`src/templates/basic/index.js`)
 
   return graphql(`
     {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import InlineSVG from 'svg-inline-react'
-import Card from '@components/Card'
-import TriangleBg from '@components/TriangleBg'
+import Card from '@components/card'
+import TriangleBg from '@components/triangle-bg'
 import Arrow from 'assets/images/outline-arrow.svg'
 
 import GraphiteIcon from 'assets/images/app-graphite.png'

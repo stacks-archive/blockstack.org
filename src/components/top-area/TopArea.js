@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import InlineSVG from 'svg-inline-react'
-import Card from '@components/Card'
+import Card from '@components/card'
 import Arrow from 'assets/images/outline-arrow.svg'
-import TriangleBg from '@components/TriangleBg'
-import CodeBlock from '@components/CodeBlock'
+import TriangleBg from '@components/triangle-bg'
+import CodeBlock from '@components/code-block'
 
 import './TopArea.scss'
 

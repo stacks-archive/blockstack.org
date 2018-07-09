@@ -1,4 +1,4 @@
-export default from '../containers/Layout'
+export default from '../containers/layout'
 
 export const bslinks = graphql`
   fragment siteMetadata on Site {
