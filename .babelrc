@@ -1,7 +1,10 @@
 {
-	"presets":[
-		"es2017",
-		"stage-1",
-		"react"
-	]
+  "presets": [
+    "es2017",
+    "stage-1",
+    "react"
+  ],
+  "plugins": [
+    "styled-components"
+  ]
 }
