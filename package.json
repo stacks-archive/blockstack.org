@@ -1,14 +1,13 @@
 {
   "name": "blockstack-landing",
   "version": "1.0.0",
-  "engines": {
-    "node": ">=0.8.0"
-  },
   "description": "A Static React App. Landing Pages for Block Stack",
   "main": "index.js",
   "scripts": {
     "start": "gatsby serve --port 5000",
     "build": "gatsby build",
+    "postbuild": "rimraf build && mv public build",
+    "prod": "npm run build",
     "dev": "gatsby develop",
     "format": "prettier --write \"src/**/*.js\" && echo -e '\\033[0;32m'💅 Just use prettier'\\033[0m'",
     "test": "eslint src/**/*.js"
@@ -29,7 +28,8 @@
     "eslint": "^5.0.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-react": "^7.10.0",
-    "prettier": "^1.13.7"
+    "prettier": "^1.13.7",
+    "rimraf": "^2.6.2"
   },
   "dependencies": {
     "babel-preset-es2017": "^6.24.1",
