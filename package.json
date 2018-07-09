@@ -10,7 +10,7 @@
     "start": "gatsby serve --port 5000",
     "build": "gatsby build",
     "dev": "gatsby develop",
-    "postinstall": "./node_modules/.bin/gatsby build",
+    "format": "prettier --write \"src/**/*.js\" && echo -e '\\033[0;32m'💅 Just use prettier'\\033[0m'",
     "test": "eslint ./src/js/"
   },
   "repository": {
@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/gordils-willis/blockstack-landing#readme",
   "devDependencies": {
-    "eslint": "^5.0.1"
+    "eslint": "^5.0.1",
+    "prettier": "^1.13.7"
   },
   "dependencies": {
     "babel-preset-es2017": "^6.24.1",
