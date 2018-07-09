@@ -225,19 +225,19 @@ export const teamMembers = [
     bio: "Jesse is an Engineering Partner, focusing on DevOps, automating micro-services and infrastructure-as-code for the decentralized web. After spending too much time at large companies, he's bringing the automation and innovation to Blockstack, working to make everyone's job just a little bit easier.",
   },
   {
-    blockstackId: 'aulneau.id',
+    blockstackId: 'aulneau',
     name: 'Thomas Osmonson',
     avatar: '/images/avatars/thomas-osmonson.jpg',
     bio: 'Thomas Osmonson is a product engineer working at the boundary of design and development. He likes wearing many hats ranging from visual design to building performant web/native applications. Previously as an independent, he has helped agencies, startups, and founders build and design useful, beautiful products. He has an affinity for the wilderness, street photography, and traveling.',
   },
   {
-    blockstackId: 'wbobeirne.id',
+    blockstackId: 'wbobeirne',
     name: "Will O'Beirne",
     avatar: '/images/avatars/will-obeirne.jpeg',
     bio: 'Will is an Engineering Partner at Blockstack, despite their best efforts. Before joining the team, he could be found hooking people up with ICOs and hot dates at MyCrypto and OkCupid respectively. These days he spends his free time translating ancient Etruscan texts into Typescript.',
   },
   {
-    blockstackId: 'markmhendrickson.id',
+    blockstackId: 'markmhendrickson',
     name: 'Mark Hendrickson',
     avatar: '/images/avatars/mark-hendrickson.jpg',
     bio: 'Mark is a product manager from San Francisco with over a decade designing, developing and marketing Web and mobile applications for startups. He now lives in Barcelona in self-imposed exile having launched a number of products in Silicon Valley such as Plancast, KITE, Lift and CrunchBase.',
