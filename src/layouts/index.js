@@ -41,6 +41,17 @@ export const query = graphql`
     site {
       ...siteMetadata
     }
+		allRssFeedItem {
+			edges {
+				node {
+					id
+					title
+					link
+					pubDate
+					content
+				}
+			}
+		}
     allMarkdownRemark {
       edges {
         node {

@@ -42,6 +42,13 @@ module.exports = {
     'gatsby-plugin-react-next',
     'gatsby-plugin-react-svg',
     {
+      resolve: 'gatsby-source-rss',
+      options: {
+        rssURL: 'https://blockstack-site-api.herokuapp.com/v1/blog-rss'
+      }
+    },
+
+    {
       resolve: `gatsby-plugin-postcss-sass`,
       options: {
         postCssPlugins: [
