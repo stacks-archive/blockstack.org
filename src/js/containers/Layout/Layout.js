@@ -2,19 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Header from '@components//header'
-import Footer from '@components//footer'
+import Header from 'js/components/Header';
+import Footer from 'js/components/Footer';
 
-import './Layout.scss'
+import './Layout.scss';
 
-import favicon from 'assets/images/favicon.png'
-import touchIcon from 'assets/images/touch-icon.png'
+import favicon from 'assets/images/favicon.png';
+import touchIcon from 'assets/images/touch-icon.png';
 
 const Layout = ({ children, data, location }) => {
-
-  let title = ''
-  let description =
-    'Blockstack is a new internet for decentralized apps where users own their data. A browser is all that’s needed to get started.'
 
   let title = '';
   let description = 'Blockstack is a new internet for decentralized apps where users own their data. A browser is all that’s needed to get started.';
@@ -44,22 +40,14 @@ const Layout = ({ children, data, location }) => {
     }
   }
 
-  return (
+  return(
     <div className="landing-page">
       <Helmet
-        title={
-          title
-            ? data.site.siteMetadata.title + ' | ' + title
-            : data.site.siteMetadata.title
-        }
+        title={title ? data.site.siteMetadata.title + ' | ' + title : data.site.siteMetadata.title}
         meta={[
           { name: 'description', content: description },
           { name: 'keywords', content: 'sample, something' },
-          {
-            name: 'viewport',
-            content:
-              'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'
-          }
+          { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' },
         ]}
         link={[
           { rel: 'icon', type: 'image/png', href: favicon },
@@ -67,11 +55,11 @@ const Layout = ({ children, data, location }) => {
         ]}
       />
 
-      <Header links={data.site.siteMetadata.bslinks} />
+      <Header links={data.site.siteMetadata.bslinks}/>
       {children()}
-      <Footer links={data.site.siteMetadata.bslinks} />
+      <Footer links={data.site.siteMetadata.bslinks}/>
     </div>
   )
 }
 
-export default Layout
+export default Layout;
