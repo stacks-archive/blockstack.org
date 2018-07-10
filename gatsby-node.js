@@ -58,7 +58,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
 		result.data.allMarkdownRemark.edges.forEach(({ node }) => {
 
-			const component = node.frontmatter.template ? path.resolve(`src/js/templates/${node.frontmatter.template}/index.js`) : Basic;
+			const component = node.frontmatter.template ? path.resolve(`src/common/templates/${node.frontmatter.template}/index.js`) : Basic;
 
 			createPage({
 				path: node.frontmatter.path,

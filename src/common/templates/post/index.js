@@ -3,7 +3,7 @@ export * from './Post';
 
 
 
-export const test = graphql`
+export const postQuery = graphql`
   query PostFromId( $id: String! ) {
     rssFeedItem ( id : { eq : $id }) {
     	id
