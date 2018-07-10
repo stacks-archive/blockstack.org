@@ -1,8 +1,6 @@
-import { Component } from 'react'
+import React, { Component } from 'react'
 import axios from 'axios'
-import JobListing from './JobListing'
-
-import './LeverJobs.scss';
+import JobListing from 'components/job-listing'
 
 class LeverJobs extends Component {
   constructor(props) {
