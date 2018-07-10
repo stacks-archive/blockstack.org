@@ -20,7 +20,6 @@
     "gatsby-remark-copy-images": "^0.2.1",
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.44",
-    "graphql": "^0.13.2",
     "jsonp": "^0.2.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
@@ -46,8 +45,7 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-react": "^7.10.0",
     "prettier": "^1.13.7",
-    "rimraf": "^2.6.2",
-    "webpack": "^4.15.1"
+    "rimraf": "^2.6.2"
   },
   "homepage": "https://github.com/blockstack/blockstack.org#readme",
   "license": "ISC",
