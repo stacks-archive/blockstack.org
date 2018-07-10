@@ -1,10 +1,46 @@
 {
   "presets": [
-    "es2017",
-    "stage-1",
-    "react"
+    [
+      "@babel/preset-env",
+      {
+        targets: {
+          browsers: [
+            '>1%',
+            'last 4 versions',
+            'Firefox ESR',
+            'not ie < 9'
+          ]
+        },
+        modules: 'false',
+        useBuiltIns: 'entry',
+        debug: true
+      }
+    ],
+    "next/babel"
   ],
   "plugins": [
-    "styled-components"
-  ]
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./"
+        ],
+        "alias": {
+          "@components": "./components",
+          "@containers": "./containers",
+          "@scss": "./scss",
+          "@assets": "./assets",
+          "@common": "./common"
+        }
+      }
+    ],
+    "@babel/plugin-proposal-export-default-from",
+    [
+      "styled-components",
+      {
+        "ssr": true
+      }
+    ]
+  ],
+  "ignore": []
 }

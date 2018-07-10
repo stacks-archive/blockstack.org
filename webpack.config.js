@@ -5,15 +5,13 @@
 const path = require('path')
 
 module.exports = {
-    resolve: {
-      root: path.resolve(__dirname, './src'),
-      extensions: ['', '.js', '.jsx', '.json'],
-      alias: {
-        '@components': path.resolve(__dirname, './src/components'),
-        '@containers': path.resolve(__dirname, './src/containers'),
-        '@scss': path.resolve(__dirname, './src/scss'),
-        '@common': path.resolve(__dirname, './src/common')
-      }
+  resolve: {
+    alias: {
+      '@components': path.resolve(__dirname, './components'),
+      '@containers': path.resolve(__dirname, './containers'),
+      '@scss': path.resolve(__dirname, './scss'),
+      '@assets': path.resolve(__dirname, './assets'),
+      '@common': path.resolve(__dirname, './common')
     }
+  }
 }
-
