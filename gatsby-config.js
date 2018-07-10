@@ -4,9 +4,8 @@ module.exports = {
   siteMetadata: {
     title: 'Blockstack',
     social: {
-      facebook_link: 'https://facebook.com',
-      twitter_link: 'https://twitter.com',
-      instagram_link: 'https://instagram.com'
+      facebook_link: 'https://www.facebook.com/blockstack/',
+      twitter_link: 'https://twitter.com/blockstack'
     },
     bslinks: {
       tutorials: '/tutorials',
@@ -15,7 +14,7 @@ module.exports = {
       forum: 'https://forum.blockstack.org/',
       slack: 'http://chat.blockstack.org/',
       meetup: 'https://www.meetup.com/topics/blockstack/',
-      blog: 'https://blockstack.org/blog',
+      blog: '/blog',
       youtube: 'https://www.youtube.com/channel/UC3J2iHnyt2JtOvtGVf_jpHQ',
       videos: '/videos',
       twitter: 'https://www.twitter.com/blockstack/',

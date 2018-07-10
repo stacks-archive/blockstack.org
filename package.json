@@ -20,6 +20,7 @@
     "gatsby-remark-copy-images": "^0.2.1",
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.44",
+    "graphql": "^0.13.2",
     "jsonp": "^0.2.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
@@ -40,11 +41,13 @@
     "babel-eslint": "^8.2.5",
     "babel-plugin-styled-components": "^1.5.1",
     "babel-preset-es2017": "^6.24.1",
+    "caniuse-db": "^1.0.30000864",
     "eslint": "^5.0.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-react": "^7.10.0",
     "prettier": "^1.13.7",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "webpack": "^4.15.1"
   },
   "homepage": "https://github.com/blockstack/blockstack.org#readme",
   "license": "ISC",
