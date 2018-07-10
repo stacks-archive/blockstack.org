@@ -29,7 +29,6 @@ class NewsletterSignup extends Component {
   }
 
   signup = (event) => {
-    console.log('sign me up please')
 
     const options = {
       method: 'POST',
@@ -37,8 +36,6 @@ class NewsletterSignup extends Component {
     }
 
     const data = { EMAIL: this.state.email }
-
-    console.log(process.env)
 
     // TODO : GET this from mail chimp
     const url = process.env.MAILCHIMP_URL.replace('/post?', '/post-json?')
@@ -50,7 +47,6 @@ class NewsletterSignup extends Component {
         console.log(err)
         this.setState({ error: err })
       } else {
-        console.log(res)
         this.setState({ success: true })
       }
     })
