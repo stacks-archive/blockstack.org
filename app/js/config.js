@@ -12,6 +12,7 @@ export const socialLinks = {
   blog: 'http://blog.blockstack.org',
   github: 'https://github.com/blockstack',
   branding: 'https://projects.invisionapp.com/boards/HE2VVROFSGB27/',
+  community: 'https://community.blockstack.org/',
 }
 
 export const installationLinks = {
