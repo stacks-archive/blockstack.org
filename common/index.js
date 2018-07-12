@@ -1,3 +1,29 @@
+export const colors = {
+  canvas: '#fff',
+  blueMain: '#3700FF',
+  black: '#000',
+  white: '#fff',
+  alert: '#EF4F4F',
+  notify: '#FFD780',
+  success: '#41CD5F',
+  text: Object.assign(String('#211F6D'), {
+    headings: '#b4b4b4',
+    body: '#f7f7f7',
+    link: Object.assign(String('rgba(33, 31, 109, 0.5)'), {
+      hover: '#3700FF'
+    })
+  }),
+  grey: Object.assign(String('#b4b4b4'), {
+    base: '#b4b4b4',
+    xLight: '#f7f7f7',
+    light: '#f0f0f0',
+    midLight: '#d2d2d2',
+    midDark: '#767676',
+    dark: '#1d1d1d',
+    xDark: '#1d1d1d'
+  })
+}
+
 export const bslinks = {
   tutorials: '/tutorials',
   documentation: 'http://blockstack.github.io/blockstack.js/',

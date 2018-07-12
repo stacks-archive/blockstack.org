@@ -3,9 +3,8 @@ body,
 input,
 textarea,
 button {
-	font-family: $main-font;
+	font-family: $body-font;
 	line-height: $base-line-height;
-	// font-size: calc(#{$base-font-size} - 2px);
 	font-size: $base-font-size;
 	color: $text-color;
 	letter-spacing: $base-letter-spacing;
@@ -19,8 +18,7 @@ button {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-	// margin-top: .5rem;
-	// margin-bottom: .5rem;
+
 	@include font-smooth();
 }
 
@@ -93,9 +91,9 @@ h6,
 
 p,
 .p {
-	font-family: $main-font;
+	font-family: $body-font;
 	font-size: $p-font-size;
-	line-height: $base-line-height;
+	line-height: $base-line-height * 1.25;
 	letter-spacing: $p-letter-spacing;
 	font-weight: $p-font-weight;
 	text-transform: none;

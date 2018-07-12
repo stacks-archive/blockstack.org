@@ -11,6 +11,7 @@
     "@mdx-js/mdx": "^0.13.1-1",
     "@zeit/next-mdx": "^1.1.0",
     "@zeit/next-sass": "^0.2.0",
+    "cross-fetch": "^2.2.2",
     "debounce": "^1.1.0",
     "fast-async": "^6.3.7",
     "jsonp": "^0.2.1",
@@ -27,14 +28,18 @@
     "react-player": "^1.5.0",
     "react-router-dom": "^4.3.1",
     "react-select": "^1.2.1",
+    "react-tunnels": "^1.0.2",
     "scrollmonitor": "^1.2.4",
     "styled-components": "^3.3.3",
     "svg-inline-react": "^3.1.0",
-    "to-querystring": "^1.0.4"
+    "textversionjs": "^1.1.2",
+    "to-querystring": "^1.0.4",
+    "xml2js": "^0.4.19"
   },
   "devDependencies": {
     "@babel/plugin-proposal-export-default-from": "^7.0.0-beta.52",
     "@babel/polyfill": "^7.0.0-beta.52",
+    "babel-eslint": "^8.2.5",
     "babel-plugin-inline-react-svg": "^0.5.3",
     "babel-plugin-module-resolver": "^3.1.1",
     "babel-plugin-styled-components": "^1.5.1",
@@ -65,9 +70,8 @@
     "dev": "next dev",
     "export": "next export",
     "format": "prettier --write \"src/**/*.js\" && echo -e '\\033[0;32m'💅 Just use prettier'\\033[0m'",
-    "postbuild": "rimraf build && mv public build",
     "prod": "npm run build && npm run export && npm run start",
-    "start": "serve dist",
+    "start": "next start",
     "test": "eslint src/**/*.js"
   }
 }

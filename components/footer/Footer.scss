@@ -1,4 +1,10 @@
 footer {
+  position: relative;
+  z-index: 9999;
+  transform: translate3d(0, 0, 0);
+  margin: 0 !important;
+  padding-top: 40px;
+
   .container {
     padding-top: 1px;
   }

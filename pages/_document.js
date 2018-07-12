@@ -2,7 +2,6 @@ import '@babel/polyfill'
 import React from 'react'
 import Document, { Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
-import '@scss/main.scss'
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
@@ -18,6 +17,8 @@ export default class MyDocument extends Document {
       <html>
         <Head>
           <link rel="stylesheet" href="/_next/static/style.css" />
+          {this.props.styleTags}
+          <title>Blockstack</title>
         </Head>
         <body>
           <Main />

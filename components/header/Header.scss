@@ -1,7 +1,7 @@
 header.header {
   padding-top: $mobile-margin * 0.75;
   @include respond($lg) {
-    padding-top: 2rem;
+    padding-top: 1px;
   }
   .header-container {
     @include respond($lg) {
@@ -34,6 +34,11 @@ header.header {
     overflow: hidden;
     .bs-logo,
     .bs-logotype {
+      svg {
+        * {
+          fill: white;
+        }
+      }
       transform-origin: left center;
       transition: opacity $md-speed $ease, visibility $md-speed $ease,
         transform $md-speed $ease;

@@ -4,11 +4,7 @@
 .icon {
   svg:not(.logo) {
     display: block;
-    color: currentcolor;
-    * {
-      fill: currentcolor;
-    }
-	}
+  }
   display: inline-block;
   vertical-align: middle;
   &.cc-icon {
@@ -20,34 +16,40 @@
       height: 1.5rem !important;
     }
   }
-  &.md-12 { 
+  &.md-12 {
     svg {
-      width: 12px !important; height: 12px !important; 
+      width: 12px !important;
+      height: 12px !important;
     }
   }
-  &.md-14 { 
+  &.md-14 {
     svg {
-      width: 14px !important; height: 14px !important; 
+      width: 14px !important;
+      height: 14px !important;
     }
   }
-  &.md-18 { 
+  &.md-18 {
     svg {
-      width: 18px !important; height: 18px !important; 
+      width: 18px !important;
+      height: 18px !important;
     }
   }
-  &.md-24 { 
+  &.md-24 {
     svg {
-      width: 24px !important; height: 24px !important; 
+      width: 24px !important;
+      height: 24px !important;
     }
   }
-  &.md-36 { 
+  &.md-36 {
     svg {
-      width: 36px !important; height: 36px !important; 
+      width: 36px !important;
+      height: 36px !important;
     }
   }
-  &.md-48 { 
+  &.md-48 {
     svg {
-      width: 48px !important; height: 48px !important; 
+      width: 48px !important;
+      height: 48px !important;
     }
   }
 }
@@ -57,7 +59,7 @@
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 18px;  /* Preferred icon size */
+  font-size: 18px; /* Preferred icon size */
   line-height: 18px;
   display: inline-block;
   vertical-align: middle;
@@ -70,12 +72,30 @@
   @include font-smooth();
   text-rendering: optimizeLegibility;
   font-feature-settings: 'liga';
-  &.md-12 { font-size: 12px; line-height: 12px; }
-  &.md-14 { font-size: 14px; line-height: 14px; }
-  &.md-18 { font-size: 18px; line-height: 18px; }
-	&.md-24 { font-size: 24px; line-height: 24px; }
-	&.md-36 { font-size: 36px; line-height: 36px; }
-	&.md-48 { font-size: 48px; line-height: 48px; }
+  &.md-12 {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  &.md-14 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  &.md-18 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  &.md-24 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  &.md-36 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  &.md-48 {
+    font-size: 48px;
+    line-height: 48px;
+  }
 }
 
 .material-icons {

@@ -95,4 +95,100 @@ const LogoType = () => (
   </svg>
 )
 
-export { Logo, LogoType }
+const TriangleDotsHalf = (props) => (
+  <svg {...props} width="309" height="154" viewBox="0 0 309 154" fill="none">
+    <g
+      style={{ mixBlendMode: 'multiply' }}
+      fill="transparent"
+      transform="translate(308.256 153.116) rotate(180)"
+    >
+      <path
+        d="M155.573 153.116L308.256 0L150.256 3.05176e-05L0 0L155.573 153.116Z"
+        fill="url(#pattern0)"
+        style={{
+          fill: 'url(#pattern0) !important'
+        }}
+      />
+    </g>
+    <defs>
+      <pattern
+        id="pattern0"
+        patternContentUnits="objectBoundingBox"
+        width="0.0973216"
+        height="0.19593"
+      >
+        <use href="#image0" transform="scale(0.00324405 0.006531)" />
+      </pattern>
+      <image
+        id="image0"
+        width="30"
+        height="30"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAU0lEQVRIie2SsQ3AMAzDlNxQ5L9e1v+C/pAcEHir1IUcaQNc1MZ1L0lNJ5/5+T6H78Wz3L4Xz3YIR8OruFk9qyZsDbPqCISjYVYdgXA0/MuqAWxsE5UcMpLY4ZEAAAAASUVORK5CYII="
+      />
+    </defs>
+  </svg>
+)
+const TriangleDotsFull = (props) => (
+  <svg width="309" height="305" viewBox="0 0 309 305" fill="none" {...props}>
+    <g
+      style={{ mixBlendMode: 'multiply' }}
+      transform="translate(308.256 305) rotate(180)"
+      fill="transparent"
+    >
+      <path
+        d="M155.573 305L308.256 151.884L150.842 0L0 151.884L155.573 305Z"
+        fill="url(#pattern1)"
+        style={{
+          fill: 'url(#pattern1) !important'
+        }}
+      />
+    </g>
+    <defs>
+      <pattern
+        id="pattern1"
+        patternContentUnits="objectBoundingBox"
+        width="0.0973216"
+        height="0.0983607"
+      >
+        <use href="#image1" transform="scale(0.00324405)" />
+      </pattern>
+      <image
+        id="image1"
+        width="30"
+        height="30"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAU0lEQVRIie2SsQ3AMAzDlNxQ5L9e1v+C/pAcEHir1IUcaQNc1MZ1L0lNJ5/5+T6H78Wz3L4Xz3YIR8OruFk9qyZsDbPqCISjYVYdgXA0/MuqAWxsE5UcMpLY4ZEAAAAASUVORK5CYII="
+      />
+    </defs>
+  </svg>
+)
+
+const TriangleDotsLarge = (props) => (
+  <svg width="742" height="300" viewBox="0 0 742 300" fill="none" {...props}>
+    <path
+      opacity="0.5"
+      d="M0 0H742L371 300L0 0Z"
+      fill="url(#TriangleDotsLargePattern)"
+    />
+    <defs>
+      <pattern
+        id="TriangleDotsLargePattern"
+        patternContentUnits="objectBoundingBox"
+        width="0.0404313"
+        height="0.1"
+      >
+        <use
+          href="#TriangleDotsLarge"
+          transform="scale(0.00134771 0.00333333)"
+        />
+      </pattern>
+      <image
+        id="TriangleDotsLarge"
+        width="30"
+        height="30"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAUUlEQVRIie2SsQ3AMAzD5JzU63pCr+tLzgGBt0pdyJE2wEV1v92SSief+eeqw6/hWW6/hmc7hKPhHm5Wz6oJW8OsOgLhaJhVRyAcDf+yagAbG8A9HDLZ0P/+AAAAAElFTkSuQmCC"
+      />
+    </defs>
+  </svg>
+)
+
+export { Logo, LogoType, TriangleDotsHalf, TriangleDotsFull, TriangleDotsLarge }

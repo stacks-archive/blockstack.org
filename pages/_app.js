@@ -4,9 +4,15 @@ import Header from '@components/header'
 import Footer from '@components/footer'
 import DefaultTemplate from '@common/templates/basic'
 import NoTemplate from '@common/templates/none'
+import SecondaryPageTemplate from '@common/templates/secondary'
 import Head from 'next/head'
+import { TunnelProvider } from 'react-tunnels'
+import '@scss/main.scss'
+
 const renderTemplate = (template) => {
   switch (template) {
+    case 'secondary':
+      return SecondaryPageTemplate
     case 'NONE':
       return NoTemplate
     default:
@@ -43,6 +49,7 @@ export default class MyApp extends App {
         <Head>
           <title>{title}</title>
         </Head>
+
         <div className="landing-page">
           <Header />
           <PageComponent {...pageProps} />
