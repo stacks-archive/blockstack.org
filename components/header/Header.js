@@ -66,7 +66,7 @@ class Header extends Component {
       >
         {this.state.menuOpen ? (
           <Head>
-            <meta name="theme-color" content="#3700ff" />{' '}
+            <meta name="theme-color" content="rgb(15, 14, 49)" />{' '}
           </Head>
         ) : null}
         <div id="StickyHeader">

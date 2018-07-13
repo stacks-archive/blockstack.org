@@ -11,25 +11,6 @@ const meta = {
     'Blockstack is a new internet for decentralized apps that you access through the Blockstack Browser. With Blockstack, there is a new world of apps that let you own your data and maintain your privacy, security and freedom.'
 }
 
-const renderSingle = (slug, posts) => {
-  const post = posts.find((blogPost) => blogPost.urlSlug === slug)
-
-  return (
-    <>
-      <div>
-        <Link href="/blog" prefetch>
-          <a>Blog</a>
-        </Link>
-        {' / '}
-        {post.title}
-      </div>
-      <br />
-      <br />
-      <img src={post.image} alt={post.title} />
-      <div dangerouslySetInnerHTML={{ __html: post.markup }} />
-    </>
-  )
-}
 class CareersPage extends React.PureComponent {
   static async getInitialProps(ctx) {
     const blogData = await fetchBlogPosts()
