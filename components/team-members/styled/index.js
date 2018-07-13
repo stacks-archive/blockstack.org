@@ -6,11 +6,14 @@ const StyledTeamMembers = styled.div`
   flex-wrap: wrap;
 `
 
-const Avatar = styled.img`
+const Avatar = styled.div`
+img, picture{
   max-width: 100px;
   display: block;
   overflow: hidden;
   border-radius: 100%;
+}
+
 `
 
 const StyledTeamMember = styled.div`

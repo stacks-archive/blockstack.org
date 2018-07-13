@@ -2,21 +2,18 @@ import App, { Container } from 'next/app'
 import React from 'react'
 import Header from '@components/header'
 import Footer from '@components/footer'
-import DefaultTemplate from '@common/templates/basic'
-import NoTemplate from '@common/templates/none'
-import SecondaryPageTemplate from '@common/templates/secondary'
+
+import NoTemplate from '@components/templates/none'
+import DefaultPageTemplate from '@components/templates/default'
 import Head from 'next/head'
-import { TunnelProvider } from 'react-tunnels'
 import '@scss/main.scss'
 
 const renderTemplate = (template) => {
   switch (template) {
-    case 'secondary':
-      return SecondaryPageTemplate
     case 'NONE':
       return NoTemplate
     default:
-      return DefaultTemplate
+      return DefaultPageTemplate
   }
 }
 export default class MyApp extends App {
@@ -48,6 +45,11 @@ export default class MyApp extends App {
       <Container>
         <Head>
           <title>{title}</title>
+          <meta charSet="UTF-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+          />
         </Head>
 
         <div className="landing-page">

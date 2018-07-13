@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Content from './tutorials.md'
 
 export const meta = {
   path: '/tutorials',
@@ -18,7 +18,7 @@ class TutorialsPage extends React.PureComponent {
   render() {
     return (
       <>
-        TutorialsPage
+        <Content />
       </>
     )
   }

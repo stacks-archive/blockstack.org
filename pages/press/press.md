@@ -1,8 +1,8 @@
 <div class="img-wrap">
-	<img src={require('../../assets/images/press/nyt.svg')} alt="" style={{maxWidth: '200px', display: 'block', margin: '0 auto'}} />
+	<img src={require('../../assets/images/press/nyt.svg')} alt="" style={{maxWidth: '200px', display: 'block', margin: '0'}} />
 </div>
-Jan 16, 2018
 
+###### Jan 16, 2018
 #### Beyond the Bitcoin Bubble
 
 <a href="https://www.nytimes.com/2018/01/16/magazine/beyond-the-bitcoin-bubble.html" target="_blank" class="button secondary">Read More</a>
@@ -10,10 +10,10 @@ Jan 16, 2018
 ------------------------------------------------------------
 
 <div class="img-wrap">
-	<img src={require('../../assets/images/press/venturebeat-logo.svg')} alt="" style={{maxWidth: '200px', display: 'block', margin: '0 auto'}} />
+	<img src={require('../../assets/images/press/venturebeat-logo.svg')} alt="" style={{maxWidth: '200px', display: 'block', margin: '0'}} />
 </div>
 
-Dec 4, 2017
+###### Dec 4, 2017
 
 #### Blockstack raises $52 million to build a parallel internet where you own all your data
 
@@ -22,10 +22,10 @@ Dec 4, 2017
 ------------------------------------------------------------
 
 <div class="img-wrap">
-	<img src={require('../../assets/images/press/scmp-logo.svg')} alt="" style={{maxWidth: '200px', display: 'block', margin: '0 auto'}} />
+	<img src={require('../../assets/images/press/scmp-logo.svg')} alt="" style={{maxWidth: '200px', display: 'block', margin: '0'}} />
 </div>
 
-Oct 1, 2017
+###### Oct 1, 2017
 
 #### ‘New internet’ looks to keep user data away from tech giants and bypass China censorship
 
@@ -34,10 +34,10 @@ Oct 1, 2017
 ------------------------------------------------------------
 
 <div class="img-wrap">
-	<img src={require('../../assets/images/press/forbes-logo.svg')} alt="" style={{maxWidth: '200px', display: 'block', margin: '0 auto'}} />
+	<img src={require('../../assets/images/press/forbes-logo.svg')} alt="" style={{maxWidth: '200px', display: 'block', margin: '0'}} />
 </div>
 
-Sep 5, 2017
+###### Sep 5, 2017
 
 #### Blockstack On Getting Independence From Google, Facebook And Amazon
 
@@ -46,10 +46,10 @@ Sep 5, 2017
 ------------------------------------------------------------
 
 <div class="img-wrap">
-	<img src={require('../../assets/images/press/wsj-logo-BW.svg')} alt="" style={{maxWidth: '200px', display: 'block', margin: '0 auto'}} />
+	<img src={require('../../assets/images/press/wsj-logo-BW.svg')} alt="" style={{maxWidth: '200px', display: 'block', margin: '0'}} />
 </div>
 
-Aug 16, 2017
+###### Aug 16, 2017
 
 #### Blockstack Launches $25 Million Fund for Blockchain Startups
 
@@ -58,10 +58,10 @@ Aug 16, 2017
 ------------------------------------------------------------
 
 <div class="img-wrap">
-	<img src={require('../../assets/images/press/coindesk-logo.svg')} alt="" style={{maxWidth: '200px', display: 'block', margin: '0 auto'}} />
+	<img src={require('../../assets/images/press/coindesk-logo.svg')} alt="" style={{maxWidth: '200px', display: 'block', margin: '0'}} />
 </div>
 
-Aug 16, 2017
+###### Aug 16, 2017
 
 #### Investor Naval Ravikant Wants to Disrupt Twitter With Blockchain 'XPRIZE'
 
@@ -70,10 +70,10 @@ Aug 16, 2017
 ------------------------------------------------------------
 
 <div class="img-wrap">
-	<img src={require('../../assets/images/press/observer-logo-BW.svg')} alt="" style={{maxWidth: '200px', display: 'block', margin: '0 auto'}} />
+	<img src={require('../../assets/images/press/observer-logo-BW.svg')} alt="" style={{maxWidth: '200px', display: 'block', margin: '0'}} />
 </div>
 
-May 24, 2017
+###### May 24, 2017
 
 #### Meet the Team Making This Season’s Pied Piper Product on ‘Silicon Valley’ Real
 
@@ -82,10 +82,10 @@ May 24, 2017
 ------------------------------------------------------------
 
 <div class="img-wrap">
-	<img src={require('../../assets/images/press/vice-logo-bw.svg')} alt="" style={{maxWidth: '200px', display: 'block', margin: '0 auto'}} />
+	<img src={require('../../assets/images/press/vice-logo-bw.svg')} alt="" style={{maxWidth: '200px', display: 'block', margin: '0'}} />
 </div>
 
-May 23, 2017
+###### May 23, 2017
 
 #### This Blockchain Startup Wants to End Corporate Dominance of the Internet
 
@@ -94,10 +94,10 @@ May 23, 2017
 ------------------------------------------------------------
 
 <div class="img-wrap">
-	<img src={require('../../assets/images/press/mit-logo-BW.svg')} alt="" style={{maxWidth: '200px', display: 'block', margin: '0 auto'}} />
+	<img src={require('../../assets/images/press/mit-logo-BW.svg')} alt="" style={{maxWidth: '200px', display: 'block', margin: '0'}} />
 </div>
 
-Jan 13, 2017
+###### Jan 13, 2017
 
 #### One Startup’s Vision to Reinvent the Web for Better Privacy
 

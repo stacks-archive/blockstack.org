@@ -2,7 +2,8 @@ import React from 'react'
 import Content from './privacy.md'
 export const meta = {
   path: '/legal/privacy-policy',
-  title: 'Privacy Policy'
+  title: 'Privacy Policy',
+
 }
 
 class PrivacyPolicyPage extends React.PureComponent {

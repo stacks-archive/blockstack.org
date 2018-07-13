@@ -15,7 +15,7 @@
     }
   }
 
-  h1, 
+  h1,
   h2,
   h3,
   h4,
@@ -63,7 +63,7 @@
     position: relative;
     padding-left: .75em;
     margin-left: -.75em;
-    margin-bottom: calc($base-line-height * 1.25);
+    margin-bottom: calc(#{$base-line-height} * 1.25);
     & p {
       font-size: 1.75rem;
       line-height: $short-line-height;

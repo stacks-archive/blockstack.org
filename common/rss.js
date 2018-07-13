@@ -1,23 +1,23 @@
-import createTextVersion from 'textversionjs'
-import { parseString } from 'xml2js'
-import { blogAuthors } from './'
+const createTextVersion = require('textversionjs')
+const { parseString } = require('xml2js')
+const { blogAuthors } = require('./')
 
-export const getSlugFromRSS = (rssPost) => {
+const getSlugFromRSS = (url) => {
   // Handle URL
-  const url = rssPost.link[0]
   let urlSlug = null
   if (url) {
+    console.log(url)
     urlSlug = url.replace('https://blockstack.org/blog/', '').replace(/\/$/, '')
   }
   return urlSlug
 }
 
-export const getPostFromRSS = (rssPost) => {
+const getPostFromRSS = (rssPost) => {
   const post = rssPost
 
   // Handle URL
-  const url = post.link[0]
-  const urlSlug = getSlugFromRSS(rssPost)
+  const url = post.link[0].replace('https://blockstack.org/', '')
+  const urlSlug = getSlugFromRSS(post.link[0])
 
   // Handle title, description and creator
   const title = post.title[0]
@@ -58,7 +58,7 @@ export const getPostFromRSS = (rssPost) => {
   }
 }
 
-export const getAllPostsFromRSS = (rssXML) => {
+const getAllPostsFromRSS = (rssXML) => {
   let posts = []
   let postObject = {}
 
@@ -83,4 +83,10 @@ export const getAllPostsFromRSS = (rssXML) => {
     posts,
     postObject: postObject
   }
+}
+
+module.exports = {
+  getSlugFromRSS,
+  getPostFromRSS,
+  getAllPostsFromRSS
 }

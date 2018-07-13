@@ -8,7 +8,6 @@ import OurCommunity from '@components/our-community'
 import FundApp from '@components/fund-app'
 import Mission from '@components/mission'
 
-import './home.scss'
 
 export const meta = {
   path: '/',

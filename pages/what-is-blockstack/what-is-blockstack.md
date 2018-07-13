@@ -1,6 +1,5 @@
-## How it works
+#### Blockstack is a new internet for decentralized apps that you access through the Blockstack Browser. With Blockstack, there is a new world of apps that let you own your data and maintain your privacy, security and freedom.
 
-###### 1
 ### Explore a new world of decentralized apps
 Join our community as we re-envision apps for social, gaming, finance, and everything in between.
 
@@ -10,7 +9,6 @@ Discover the latest decentralized apps on the Blockstack platform. | Join an act
 Use your trusted ID across all your apps. | Distribute apps quickly with our development platform.
 Share and manage your data how you want. | Get in early on building with Web 3.0 technology.
 
-###### 2
 ### Truly own your data
 Web corporations today assume complete ownership over your data and abuse it for their benefit. With Blockstack, we simplify data ownership and give you back control.
 
@@ -20,7 +18,6 @@ Choose where to store your data, whether on a cloud provider or your own persona
 Decide who has access to your data and when. | Streamline your application code by using Blockstack auth and storage services.
 Relax knowing your data is end-to-end encrypted with keys that only you hold. | Don't worry about data liability since users provide their encrypted data.
 
-###### 3
 ### Access infinite apps with a single account
 Your Blockstack ID is your login for Blockstack apps. By verifying identities on other social platforms, users can be confident they're interacting with trusted people in their network. Under the hood, Blockstack creates a unique blockchain record for each user identity created.
 
@@ -29,7 +26,6 @@ For users | For developers
 Log in to every app safely with the same account. | Take the pain out of managing user accounts.
 Quickly check that people you interact with are trustworthy. | Access meta information like social URLs, email addresses, and more.
 Add verifications to your profile to increase your trust rating. | Leverage an easy to use account search API to connect users to one another.
-
 
 ## Join the new internet
 We envision a decentralized internet where users take control of their own identity and data, without having to rely on intermediaries.

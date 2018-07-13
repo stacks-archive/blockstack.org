@@ -1,13 +1,14 @@
 import React from 'react'
+import Content from './about.md'
 
-import Content from './about.mdx'
-
+const ogImage = require('@assets/images/photos/blockstackteam-1.jpg')
 export const meta = {
   path: '/about',
-  file: 'about',
-  title: 'About',
+  title: 'About Blockstack',
   description:
-    'Blockstack is a new internet for decentralized apps that you access through the Blockstack Browser. With Blockstack, there is a new world of apps that let you own your data and maintain your privacy, security and freedom.'
+    'Blockstack is an open-source project with core developers and contributors located around the world, from New York City to Hong Kong.',
+
+  ogImage
 }
 
 class AboutPage extends React.PureComponent {

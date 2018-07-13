@@ -11,9 +11,7 @@
             'not ie < 9'
           ]
         },
-        modules: 'false',
-        useBuiltIns: 'entry',
-        debug: true
+        useBuiltIns: 'entry'
       }
     ],
     "next/babel"

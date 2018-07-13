@@ -1,7 +1,7 @@
 import React from 'react'
-import { teamMembers, founders, advisors } from '@common'
+import { teamMembers, founders, advisors } from './data'
 import { slugify } from '@common/lib'
-
+import { Image } from '@components/image'
 import {
   StyledTeamMember,
   StyledTeamMembers
@@ -9,11 +9,13 @@ import {
 
 const TeamMember = ({ name, avatar, title, bio, blockstackId, ...rest }) => {
   const photoName = slugify(name)
-  const photo = require(`../../assets/images/team/${photoName}.jpg`)
+  const photo = `images/team/${photoName}.jpg`
 
   return (
     <StyledTeamMember>
-      <StyledTeamMember.Avatar src={photo} alt={name} />
+      <StyledTeamMember.Avatar>
+        <Image src={photo} alt={name} />
+      </StyledTeamMember.Avatar>
       <h3>{name}</h3>
       {title ? <h5>{title}</h5> : null}
       <h6>
