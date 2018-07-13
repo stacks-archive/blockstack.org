@@ -45,6 +45,7 @@ export default class MyApp extends App {
       <Container>
         <Head>
           <title>{title}</title>
+          <meta name="theme-color" content="#3700ff" />
           <meta charSet="UTF-8" />
           <meta
             name="viewport"

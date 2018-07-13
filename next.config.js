@@ -34,7 +34,28 @@ const config = {
 
     // combine the map of post pages with the home
     return Object.assign({}, pages, {
-      '/': { page: '/' }
+      '/': { page: '/' },
+      '/about': { page: '/about' },
+      '/faq': { page: '/faq' },
+      '/careers': { page: '/careers' },
+      '/funding': { page: '/funding' },
+      '/install': { page: '/install' },
+      '/papers': { page: '/papers' },
+      '/press': { page: '/press' },
+      '/videos': { page: '/videos' },
+      '/what-is-blockstack': { page: '/what-is-blockstack' },
+      '/legal/disclaimers': { page: '/legal/disclaimers' },
+      '/legal/privacy-policy': { page: '/legal/privacy-policy' },
+      '/legal/terms-of-use': { page: '/legal/terms-of-use' },
+      '/tutorials': { page: '/tutorials' },
+      '/tutorials/hello-blockstack': { page: '/tutorials/hello-blockstack' },
+      '/tutorials/managing-data-with-gaia': {
+        page: '/tutorials/managing-data-with-gaia'
+      },
+      '/tutorials/multi-player-storage': {
+        page: '/tutorials/multi-player-storage'
+      },
+      '/tutorials/todo-list': { page: '/tutorials/todo-list' }
     })
   },
   sassLoaderOptions: {

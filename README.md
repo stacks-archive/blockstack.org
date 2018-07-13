@@ -33,7 +33,7 @@ A live version of this site can be found online at https://blockstack.org.
 - [careers](https://blockstackorgv2.netlify.com/careers)
 - [funding](https://blockstackorgv2.netlify.com/funding)
 - [install](https://blockstackorgv2.netlify.com/install)
-- [legal](https://blockstackorgv2.netlify.com/legal)
+- [faq](https://blockstackorgv2.netlify.com/faq)
 - [papers](https://blockstackorgv2.netlify.com/papers)
 - [press](https://blockstackorgv2.netlify.com/press)
 - [videos](https://blockstackorgv2.netlify.com/videos)
