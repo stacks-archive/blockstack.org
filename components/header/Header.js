@@ -6,6 +6,7 @@ import NewsletterSignup from '@components/newsletter-signup'
 import MainMenu from '@components/main-menu'
 import { InternalLink } from '@components/internal-link'
 import scrollMonitor from 'scrollmonitor'
+import Head from 'next/head'
 
 import './Header.scss'
 
@@ -63,6 +64,11 @@ class Header extends Component {
           this.state.menuOpen ? 'header blue-bg menu-open' : 'header blue-bg'
         }
       >
+        {this.state.menuOpen ? (
+          <Head>
+            <meta name="theme-color" content="#3700ff" />{' '}
+          </Head>
+        ) : null}
         <div id="StickyHeader">
           <div
             className={

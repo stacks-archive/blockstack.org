@@ -11,7 +11,9 @@ const withMDX = require('@zeit/next-mdx')({
 const withImages = require('next-optimized-images')
 
 const prod = process.env.NODE_ENV === 'production'
-
+const imgix = prod
+  ? 'https://blockstackorgv2.netlify.com/_next/static/images/'
+  : false
 /**
  * Next/Webpack config
  */
@@ -36,6 +38,7 @@ const config = {
     return Object.assign({}, pages, {
       '/': { page: '/' },
       '/about': { page: '/about' },
+      '/blog': { page: '/blog' },
       '/faq': { page: '/faq' },
       '/careers': { page: '/careers' },
       '/funding': { page: '/funding' },
@@ -88,7 +91,6 @@ const plugins = [
       inlineImageLimit: 8192,
       imagesFolder: 'images',
       imagesName: '[name]-[hash].[ext]',
-      imagesPublicPath: prod ? 'https://blockstackorg.imgix.net' : false,
       optimizeImagesInDev: false,
       mozjpeg: {
         quality: 65
