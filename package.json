@@ -60,7 +60,8 @@
     "serve": "^9.2.0",
     "svg-inline-loader": "^0.8.0",
     "svg-loader": "^0.0.2",
-    "url-loader": "^1.0.1"
+    "url-loader": "^1.0.1",
+    "webpack": "3.10.0"
   },
   "homepage": "https://github.com/blockstack/blockstack.org#readme",
   "license": "ISC",
@@ -75,6 +76,7 @@
     "export": "NODE_ENV=production next export",
     "format": "prettier --write \"src/**/*.js\" && echo -e '\\033[0;32m'💅 Just use prettier'\\033[0m'",
     "prod": "npm run build && npm run export && npm run start",
+    "netlify": "npm run build && npm run export",
     "start": "NODE_ENV=production node server.js",
     "test": "eslint src/**/*.js"
   }
