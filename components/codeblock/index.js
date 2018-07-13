@@ -48,6 +48,9 @@ class Codeblock extends React.PureComponent {
   }
 
   render() {
+    if (!this.props.children) {
+      return null
+    }
     const language = this.props.className && this.props.className.split('-')[1]
     console.log('language', language)
     return (
