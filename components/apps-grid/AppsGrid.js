@@ -97,7 +97,9 @@ class AppsGrid extends Component {
                     </div>
                   </div>
                   <div className="ml-1 view-arrow">
-                    <div className="bs-outline-arrow"><Arrow /></div>
+                    <div className="bs-outline-arrow">
+                      <Arrow />
+                    </div>
                   </div>
                 </Card>
               </div>

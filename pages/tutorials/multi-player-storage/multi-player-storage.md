@@ -21,7 +21,7 @@ For experienced Blockstack developers, the TL;DR:
 - Use `getFile('filename.json', { username: 'username.id', decrypt: false })` to read a file from another user.
 - Use `lookupProfile('username.id')` to lookup user profiles
 - Use `putFile('filename.json', file, options)` as before where `options` is set to `{ encrypt: false }` so
-that encryption is disabled and others can read your file.
+  that encryption is disabled and others can read your file.
 
 ### Installation & Generation
 
@@ -78,7 +78,7 @@ handleSignIn(e) {
 }
 ```
 
-*Note that by default, authentication requests include the `store_write` scope which enables storage.*
+_Note that by default, authentication requests include the `store_write` scope which enables storage._
 
 If you log out and sign in again, the authentication request will now prompt the user for permission to publish data stored for our app.
 
@@ -98,7 +98,7 @@ import {
   getFile,
   putFile,
   lookupProfile
-} from 'blockstack';
+} from 'blockstack'
 ```
 
 Then, we'll need to add a few properties to the the initial state in `constructor()`. Your constructor should look like this:
@@ -120,11 +120,10 @@ constructor(props) {
     newStatus: "",
     statuses: [],
     statusIndex: 0,
-    isLoading: false    
+    isLoading: false
   };
 }
 ```
-
 
 Now let's modify the `render()` method to add a text input and submit button so that we can post statuses. Replace the `render()` method with the following:
 
@@ -187,7 +186,6 @@ render() {
 
 In the `render()` method above, we're also displaying the Blockstack ID of the user. We'll need to extract this from the user profile data. Locate the `componentWillMount()` method and add the username property below the person property:
 
-
 ```javascript
 componentWillMount() {
   this.setState({
@@ -247,18 +245,16 @@ Go back to the `render()` method and add the following block right below the `di
 <div className="col-md-12 statuses">
   {this.state.isLoading && <span>Loading...</span>}
   {this.state.statuses.map((status) => (
-      <div className="status" key={status.id}>
-        {status.text}
-      </div>
-    )
-  )}
+    <div className="status" key={status.id}>
+      {status.text}
+    </div>
+  ))}
 </div>
 ```
 
 We also need to fetch statuses on page load, so let's add a new method called `fetchData()` and call it from the `componentDidMount()` method
 
 ```javascript
-
 componentDidMount() {
   this.fetchData()
 }
@@ -286,43 +282,147 @@ At this point we have a basic micro-blogging app that we can use to post and vie
 
 Open `src/styles/style.css` and replace the existing styles with the following:
 
-
 ```css
 /* Globals */
-a,a:focus,a:hover{color:#fff;}
-html,body{height:100%;text-align:center;background-color:#191b22;}
-body{color:#fff}
-.hide{display:none;}
-.landing-heading{font-family:'Lato',Sans-Serif;font-weight:400;}
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+html,
+body {
+  height: 100%;
+  text-align: center;
+  background-color: #191b22;
+}
+body {
+  color: #fff;
+}
+.hide {
+  display: none;
+}
+.landing-heading {
+  font-family: 'Lato', Sans-Serif;
+  font-weight: 400;
+}
 
 /* Buttons */
-.btn{font-family:'Lato',Sans-Serif;padding:0.5625rem 2.5rem;font-size:0.8125rem;font-weight:400;line-height:1.75rem;border-radius:0!important;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
-.btn-lg{font-size:1.5rem;padding:0.6875rem 3.4375rem;line-height:2.5rem;}
-.btn:focus,.btn:active:focus,.btn.active:focus{outline:none;}
-.btn-primary{color:#fff;border:1px solid #2C96FF;background-color:#2C96FF;}
-.btn-primary:hover,.btn-primary:focus,.btn-primary:active{color:#fff;border:1px solid #1a6ec0;background-color:#1a6ec0;}
+.btn {
+  font-family: 'Lato', Sans-Serif;
+  padding: 0.5625rem 2.5rem;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  border-radius: 0 !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.btn-lg {
+  font-size: 1.5rem;
+  padding: 0.6875rem 3.4375rem;
+  line-height: 2.5rem;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+  outline: none;
+}
+.btn-primary {
+  color: #fff;
+  border: 1px solid #2c96ff;
+  background-color: #2c96ff;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  color: #fff;
+  border: 1px solid #1a6ec0;
+  background-color: #1a6ec0;
+}
 
 /* Avatar */
-.avatar{width:100px;height:100px;}
-.avatar-section{margin-bottom:25px;display:flex;text-align:left;}
-.username{margin-left:20px;}
+.avatar {
+  width: 100px;
+  height: 100px;
+}
+.avatar-section {
+  margin-bottom: 25px;
+  display: flex;
+  text-align: left;
+}
+.username {
+  margin-left: 20px;
+}
 
 /* Scaffolding */
-.site-wrapper{display:table;width:100%;height:100vh;min-height:100%;}
-.site-wrapper-inner{display:flex;flex-direction:column;justify-content:center;margin-right:auto;margin-left:auto;width:100%;height:100vh;}
-.panel-authed{padding:0 0 0 0;}
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  min-height: 100%;
+}
+.site-wrapper-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  height: 100vh;
+}
+.panel-authed {
+  padding: 0 0 0 0;
+}
 
 /* Home button */
-.btn-home-hello{position:absolute;font-family:'Source Code Pro',monospace;font-size:11px;font-weight:400;color:rgba(255,255,255,0.85);top:15px;left:15px;padding:3px 20px;background-color:rgba(255,255,255,0.15);border-radius:6px;-webkit-box-shadow:0px 0px 20px 0px rgba(0,0,0,0.15);-moz-box-shadow:0px 0px 20px 0px rgba(0,0,0,0.15);box-shadow:0px 0px 20px 0px rgba(0,0,0,0.15);}
+.btn-home-hello {
+  position: absolute;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 11px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+  top: 15px;
+  left: 15px;
+  padding: 3px 20px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+}
 
 /* Input */
-input, textarea{color:#000;padding:10px;}
-.input-status{width:100%;height:70px;border-radius:6px;}
-.new-status{text-align:right;}
+input,
+textarea {
+  color: #000;
+  padding: 10px;
+}
+.input-status {
+  width: 100%;
+  height: 70px;
+  border-radius: 6px;
+}
+.new-status {
+  text-align: right;
+}
 
 /* Statuses */
-.statuses{padding-top:30px;}
-.status{margin:15px 0px;padding:20px;background-color:#2e2e2e;border-radius:6px}
+.statuses {
+  padding-top: 30px;
+}
+.status {
+  margin: 15px 0px;
+  padding: 20px;
+  background-color: #2e2e2e;
+  border-radius: 6px;
+}
 ```
 
 If everything went well, we should end up with something like this:
@@ -342,18 +442,20 @@ npm install --save react-router-dom
 ```
 
 Open `src/index.js` and add to the top of the file:
+
 ```javascript
 import { BrowserRouter } from 'react-router-dom'
 ```
 
 Next, change the `ReactDOM.render()` method in `src/index.js` to:
+
 ```javascript
-ReactDOM.render((
+ReactDOM.render(
   <BrowserRouter>
     <App />
-  </BrowserRouter>
-), document.getElementById('root'));
-
+  </BrowserRouter>,
+  document.getElementById('root')
+)
 ```
 
 Then we'll need to go back to `src/components/App.jsx` and add the new route.
@@ -364,6 +466,7 @@ import { Switch, Route } from 'react-router-dom'
 ```
 
 Next, locate the line below in the `render()` method:
+
 ```javascript
 : <Profile handleSignOut={ this.handleSignOut } />
 ```
@@ -384,20 +487,23 @@ And replace it with the following:
 
 This sets up a route and captures the route parameter to be used as the profile lookup username.
 
-We'll also need to add a rule to our webpack config so that we can properly process URL paths that contain the `.` character. e.g. `http://localhost:8080/other_user.id` *Note: In a production app, the web server needs to be configured to handle this.*
+We'll also need to add a rule to our webpack config so that we can properly process URL paths that contain the `.` character. e.g. `http://localhost:8080/other_user.id` _Note: In a production app, the web server needs to be configured to handle this._
 
 Open `webpack.config.js` in the root project directory and locate the following line:
+
 ```javascript
 historyApiFallback: true,
 ```
 
 Change it to this:
+
 ```javascript
 historyApiFallback: {
   disableDotRule: true
 },
 ```
-*Note: We'll need to run `npm start` again for this to take effect.*
+
+_Note: We'll need to run `npm start` again for this to take effect._
 
 Now we jump back to `src/components/Profile.jsx` and add a single method that will let us determine if we're viewing the local user's profile or another user's profile.
 
@@ -443,12 +549,12 @@ fetchData() {
   }
 }
 ```
+
 We first use `isLocal()` to check if we're viewing the local user profile or another user's profile. If it's the local user profile, we will run the `getFile()` function we added earlier. Otherwise, we lookup the profile belonging to the username using the `lookupProfile()` method.
 
-*Note: For `https` deployments, the default Blockstack Core API endpoint for name lookups should be changed to point to a core API served over `https`. Otherwise name lookups will fail due to browsers blocking mixed content. Refer to the [Blockstack.js documention](http://blockstack.github.io/blockstack.js/#getfile) for details. *
+_Note: For `https` deployments, the default Blockstack Core API endpoint for name lookups should be changed to point to a core API served over `https`. Otherwise name lookups will fail due to browsers blocking mixed content. Refer to the [Blockstack.js documention](http://blockstack.github.io/blockstack.js/#getfile) for details. _
 
 In order to fetch the user's statuses, we add the following block to `fetchData()` right after the call to `lookupProfile(username)... catch((error)=>{..}` block:
-
 
 ```javascript
 const options = { username: username, decrypt: false }
@@ -471,33 +577,38 @@ getFile('statuses.json', options)
 And lastly, we need to conditionally render the logout button, status input textbox and submit button so they don't show up when viewing another user's profile. In the `render()` method, check to ensure that you are viewing your own profile, by wrapping the Logout button and inputs with the `{isLocal() && ...}` condition:
 
 ```javascript
-{this.isLocal() &&
-  <span>
-    &nbsp;|&nbsp;
-    <a onClick={ handleSignOut.bind(this) }>(Logout)</a>
-  </span>
+{
+  this.isLocal() && (
+    <span>
+      &nbsp;|&nbsp;
+      <a onClick={handleSignOut.bind(this)}>(Logout)</a>
+    </span>
+  )
 }
 
 //...
 
-{this.isLocal() &&
-  <div className="new-status">
-    <div className="col-md-12">
-      <textarea className="input-status"
-        value={this.state.newStatus}
-        onChange={this.handleNewStatusChange}
-        placeholder="What's on your mind?"
-      />
+{
+  this.isLocal() && (
+    <div className="new-status">
+      <div className="col-md-12">
+        <textarea
+          className="input-status"
+          value={this.state.newStatus}
+          onChange={this.handleNewStatusChange}
+          placeholder="What's on your mind?"
+        />
+      </div>
+      <div className="col-md-12 text-right">
+        <button
+          className="btn btn-primary btn-lg"
+          onClick={this.handleNewStatusSubmit}
+        >
+          Submit
+        </button>
+      </div>
     </div>
-    <div className="col-md-12 text-right">
-      <button
-        className="btn btn-primary btn-lg"
-        onClick={this.handleNewStatusSubmit}
-      >
-        Submit
-      </button>
-    </div>
-  </div>
+  )
 }
 ```
 

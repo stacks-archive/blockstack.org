@@ -38,7 +38,6 @@
 - **date**: July 27, 2017
 - **youtubeURL**: https://www.youtube.com/watch?v=IrSn3zx2GbM
 
-
 ### "A New Decentralized App Ecosystem on Blockstack" | Blockstack Summit 2017
 
 - **event**: Blockstack Summit 2017
@@ -70,7 +69,6 @@
 - **location**: New York, NY
 - **date**: May 23, 2017
 - **youtubeURL**: https://www.youtube.com/watch?v=VZGyS5JobkY
-
 
 ### Building a Foundation for Decentralized Identity
 

@@ -4,13 +4,11 @@ Build a decentralized micro-blogging app using multi-player Gaia storage.
 
 [Get Started](/tutorials/multi-player-storage)
 
-
 ### Managing Data with Gaia
 
 This series will focus on teaching you to think like a Blockstack developer working with Gaia.
 
 [Get Started](/tutorials/managing-data-with-gaia)
-
 
 ### Blockstack Todo
 

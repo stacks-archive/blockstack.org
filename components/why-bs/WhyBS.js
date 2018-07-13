@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import InlineSVG from 'svg-inline-react'
-import {DividerOne} from '@components/divider'
+import { DividerOne } from '@components/divider'
 
 import debounce from 'debounce'
 

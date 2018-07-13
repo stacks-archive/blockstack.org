@@ -2,7 +2,8 @@ import App, { Container } from 'next/app'
 import React from 'react'
 import Header from '@components/header'
 import Footer from '@components/footer'
-
+import { MDXProvider } from '@mdx-js/tag'
+import { Codeblock } from '@components/codeblock'
 import NoTemplate from '@components/templates/none'
 import DefaultPageTemplate from '@components/templates/default'
 import Head from 'next/head'
@@ -42,23 +43,29 @@ export default class MyApp extends App {
 
     const PageComponent = withPageTemplate(Component, pageProps.meta)
     return (
-      <Container>
-        <Head>
-          <title>{title}</title>
-          <meta name="theme-color" content="#3700ff" />
-          <meta charSet="UTF-8" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-          />
-        </Head>
+      <MDXProvider
+        components={{
+          code: Codeblock
+        }}
+      >
+        <Container>
+          <Head>
+            <title>{title}</title>
+            <meta name="theme-color" content="#3700ff" />
+            <meta charSet="UTF-8" />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+            />
+          </Head>
 
-        <div className="landing-page">
-          <Header />
-          <PageComponent {...pageProps} />
-          <Footer />
-        </div>
-      </Container>
+          <div className="landing-page">
+            <Header />
+            <PageComponent {...pageProps} />
+            <Footer />
+          </div>
+        </Container>
+      </MDXProvider>
     )
   }
 }

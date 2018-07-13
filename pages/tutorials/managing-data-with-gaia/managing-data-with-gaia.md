@@ -19,7 +19,7 @@ Let’s think in terms of JSON since it’s easy and familiar.
 
 Here’s a Single-File Collection approach to modeling our data:
 
-```
+```json
 // grocerylists.json
 {
   "3255": {
@@ -40,7 +40,7 @@ There is one caveat to this approach that you should seriously consider: Every t
 
 That’s actually kind of scary, especially considering this code is running on the client where anything can go wrong. Imagine your client-side code encounters a parsing error with a user-input value and you overwrite two years worth of a user’s grocery lists with:
 
-```
+```bash
 "line 6: Parsing Error: Unexpected token ."
 ```
 

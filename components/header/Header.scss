@@ -1,5 +1,8 @@
 header.header {
-  padding-top: $mobile-margin * 0.75;
+  * {
+    user-select: none;
+  }
+  padding-top: 1px !important;
   @include respond($lg) {
     padding-top: 1px;
   }
@@ -22,7 +25,7 @@ header.header {
     position: relative;
   }
   .inner-header {
-    height: 70px;
+    height: 80px;
     display: flex;
     align-items: center;
     transition: background $md-speed $ease;
@@ -51,6 +54,7 @@ header.header {
     &.collapsed {
       position: fixed;
       background: darken($main-color, 0%);
+      height: 60px;
       .menu-toggle {
         @include respond-smaller-than($lg) {
           margin-right: -60px;

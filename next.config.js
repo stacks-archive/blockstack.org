@@ -1,10 +1,10 @@
 const { fetchBlogPosts } = require('./common/lib')
-
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const path = require('path')
 const glob = require('glob')
 const { resolve } = require('./webpack.config.js')
 const withPlugins = require('next-compose-plugins')
-const withSass = require('@zeit/next-sass')
+const withStyles = require('./next-css-sass')
 const withMDX = require('@zeit/next-mdx')({
   extension: /\.mdx?$/
 })
@@ -84,7 +84,7 @@ const config = {
 }
 
 const plugins = [
-  withSass,
+  withStyles,
   [
     withImages,
     {

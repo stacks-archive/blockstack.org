@@ -1,5 +1,5 @@
 const path = require('path')
-const {resolve} = require('./webpack.config.js')
+const { resolve } = require('./webpack.config.js')
 
 exports.modifyWebpackConfig = function({ config, env }) {
   config.merge({

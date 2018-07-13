@@ -50,14 +50,14 @@ The main file of our app is called `app.js` (in the `/public` folder). This is w
 
 As you can see, all of the code in the file is wrapped in an event listener that waits until the DOM content has been loaded:
 
-```js
+```javascript
 document.addEventListener("DOMContentLoaded", function(event) {
 })
 ```
 
 Inside of this, we have a sign in button handler that creates an auth request and redirects the user to sign in:
 
-```js
+```javascript
 document.getElementById('signin-button').addEventListener('click', function() {
   blockstack.redirectUserToSignIn()
 })
@@ -65,7 +65,7 @@ document.getElementById('signin-button').addEventListener('click', function() {
 
 We also have a sign out button handler that deletes the local user data and signs the user out:
 
-```js
+```javascript
 document.getElementById('signout-button').addEventListener('click', function() {
   blockstack.signUserOut(window.location.origin)
 })
@@ -73,9 +73,9 @@ document.getElementById('signout-button').addEventListener('click', function() {
 
 Next, we have a function for showing the user's profile:
 
-```js
+```javascript
 function showProfile(profile) {
-  var person = new blockstack.Person(profile)
+  const person = new blockstack.Person(profile)
   document.getElementById('heading-name').innerHTML = person.name()
   document.getElementById('avatar-image').setAttribute('src', person.avatarUrl())
   document.getElementById('section-1').style.display = 'none'
@@ -93,7 +93,7 @@ Note that there are 3 main states the user can be in:
 
 We express that as follows:
 
-```js
+```javascript
 if (blockstack.isUserSignedIn()) {
   // Show the user's profile
 } else if (blockstack.isSignInPending()) {
@@ -105,9 +105,9 @@ if (blockstack.isUserSignedIn()) {
 
 With the first condition (when the user is signed in), we load the user data from local storage and then display the profile. With the second condition (when the user has a pending sign in request), we sign the user in and redirect the user back to the home page.
 
-```js
+```javascript
 if (blockstack.isUserSignedIn()) {
-  var profile = blockstack.loadUserData().profile
+   const profile = blockstack.loadUserData().profile
   showProfile(profile)
 } else if (blockstack.isSignInPending()) {
   blockstack.handlePendingSignIn().then(function(userData) {
@@ -165,7 +165,7 @@ git remote add origin git@github.com:YOUR_USERNAME_HERE/hello-blockstack.git
 
 Last, push all of the code to the master branch of the remote repo:
 
-```
+```bash
 git push origin master
 ```
 

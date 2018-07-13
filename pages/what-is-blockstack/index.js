@@ -10,7 +10,7 @@ export const meta = {
     href: '/install',
     internal: true,
     label: 'Create your Blockstack ID'
-  },
+  }
 }
 
 class WhatIsBlockstackPage extends React.PureComponent {

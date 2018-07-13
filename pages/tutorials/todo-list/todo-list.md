@@ -11,7 +11,7 @@
 
 #### Getting Started - Install Dependancies & run server
 
-```
+```bash
 $ git clone git@github.com:blockstack/blockstack-todos.git
 $ cd blockstack-todos
 $ yarn install
@@ -133,7 +133,7 @@ Now that you have seen the application in action, lets dig into how it works. Op
 
 Because this is a [Vue.js](https://vuejs.org/) application the Sign In code is in two locations. The first is a call in `src/components/Landing.vue`:
 
-```js
+```javascript
 signIn () {
   const blockstack = this.blockstack
   blockstack.redirectToSignIn()
@@ -141,7 +141,7 @@ signIn () {
 ```
 When this button is clicked the authentication request described above is generated and the user is redirected to their `blockstack-browser` to approve the login. Once the user approves the login the application must handle the `authResponse`. This happens in `src/App.vue` which is the page at the application root, `/`:
 
-```js
+```javascript
 if (blockstack.isUserSignedIn()) {
   this.user = blockstack.loadUserData().profile
 } else if (blockstack.isSignInPending()) {
@@ -158,7 +158,7 @@ If we aren't signed in we then need to check `blockstack.isSignInPending()`. Thi
 
 Signout is handled in `src/components/Dashboard.js`. The method allows the application creator to decide where to redirect the user upon Sign Out:
 
-```js
+```javascript
 signOut () {
   this.blockstack.signUserOut(window.location.href)
 }
@@ -168,7 +168,7 @@ signOut () {
 
 Next we are going to see how the application interacts with your Gaia Hub. This code lives in the `src/components/Dashboard.vue` file. First lets see where the changes to the Todos are processed:
 
-```js
+```javascript
 todos: {
   handler: function (todos) {
     const blockstack = this.blockstack
@@ -182,7 +182,7 @@ You can see that the `todos` JSON object is passed in. Then we use the `blocksta
 
 The other operation we need to perform is to read the Todos from the storage. This is accomplished with the `blockstack.getFile()` method which returns a promise:
 
-```js
+```javascript
 fetchData () {
   const blockstack = this.blockstack
   blockstack.getFile(STORAGE_FILE, { decrypt: true })

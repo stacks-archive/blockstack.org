@@ -15,11 +15,12 @@ Along with many Gulp libraries (these can be seen in either `package.json`, or a
 
 ### Running tests
 
-1. If you haven't already, follow steps 1 & 2 above
-2. If you haven't already run `gulp dev` or `gulp prod` at least once, run `gulp prod`
-3. Run all tests in the `tests/` directory with the `gulp test` command
-  * A single file can be run by specifing an `-f` flag: `gulp test -f <PATH_TO_TEST_FILE>`
-    * In the `PATH_TO_TEST_FILE`, it is possible to omit the `tests/` prefix, as well as the `.test.js` suffix. They will be automatically added if not detected.
+1.  If you haven't already, follow steps 1 & 2 above
+2.  If you haven't already run `gulp dev` or `gulp prod` at least once, run `gulp prod`
+3.  Run all tests in the `tests/` directory with the `gulp test` command
+
+- A single file can be run by specifing an `-f` flag: `gulp test -f <PATH_TO_TEST_FILE>`
+  - In the `PATH_TO_TEST_FILE`, it is possible to omit the `tests/` prefix, as well as the `.test.js` suffix. They will be automatically added if not detected.
 
 ##### Code coverage
 
@@ -128,7 +129,7 @@ The resulting file (`main.js`) is placed inside the directory `/build/js/`.
 
 Just one task is necessary for processing our SASS files, and that is `gulp-sass`. This will read the `main.scss` file, processing and importing any dependencies and then minifying the result. This file (`main.css`) is placed inside the directory `/build/css/`.
 
-- **gulp-autoprefixer:** Gulp is currently configured to run autoprefixer after compiling the scss.  Autoprefixer will use the data based on current browser popularity and property support to apply prefixes for you. Autoprefixer is recommended by Google and used in Twitter, WordPress, Bootstrap and CodePen.
+- **gulp-autoprefixer:** Gulp is currently configured to run autoprefixer after compiling the scss. Autoprefixer will use the data based on current browser popularity and property support to apply prefixes for you. Autoprefixer is recommended by Google and used in Twitter, WordPress, Bootstrap and CodePen.
 
 ##### Images
 

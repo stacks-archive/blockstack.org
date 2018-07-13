@@ -304,6 +304,7 @@ table {
   margin-left: 20px;
   display: inline-block;
 }
+
 .button {
   .button + .button {
     margin-left: 20px;
@@ -327,5 +328,27 @@ th {
   h5,
   h6 {
     margin: 0 !important;
+  }
+}
+
+div.centered-table {
+  * {
+    text-align: center;
+  }
+}
+
+.react-codemirror2 {
+  &.no-line-numbers {
+    .CodeMirror-scroll {
+      padding-left: 10px;
+    }
+  }
+  .CodeMirror {
+    padding-top: 14px;
+    padding-bottom: 20px;
+  }
+  @include respond-smaller-than($md) {
+    width: calc(100% + 80px);
+    transform: translateX(-40px);
   }
 }

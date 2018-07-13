@@ -10,7 +10,10 @@
 
   &.sm,
   &.small {
-    p, ul, ol, li {
+    p,
+    ul,
+    ol,
+    li {
       font-size: $sm-p-font-size;
     }
   }
@@ -28,8 +31,7 @@
   p,
   ul,
   ol,
-  blockquote,
-  pre {
+  blockquote {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
@@ -39,7 +41,7 @@
   }
 
   a {
-    border-bottom: 1px solid rgba($text-color, .3);
+    border-bottom: 1px solid rgba($text-color, 0.3);
   }
 
   li {
@@ -61,8 +63,8 @@
     font-size: 1.75rem;
     line-height: $short-line-height;
     position: relative;
-    padding-left: .75em;
-    margin-left: -.75em;
+    padding-left: 0.75em;
+    margin-left: -0.75em;
     margin-bottom: calc(#{$base-line-height} * 1.25);
     & p {
       font-size: 1.75rem;
@@ -108,15 +110,15 @@
   }
 
   pre {
-    background: rgba($text-color, .05);
-    border-radius: 3px;
-    overflow-x: auto;
-    padding: .5rem .85rem .85rem;
+    //background: rgba($text-color, 0.05);
+    //border-radius: 3px;
+    //overflow-x: auto;
+    //padding: 0.5rem 0.85rem 0.85rem;
   }
 
   code {
     background: #eee;
-    padding: .075em .4em .25em;
+    padding: 0.075em 0.4em 0.25em;
     border-radius: 3px;
   }
 
@@ -133,5 +135,7 @@
       margin-right: auto;
     }
   }
-
+}
+.CodeMirror {
+  height: auto !important;
 }

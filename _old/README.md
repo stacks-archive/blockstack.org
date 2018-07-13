@@ -99,7 +99,7 @@ npm install bootstrap
 
 If you'd like to update the UI framework for Blockstack, you can do so by visiting the [Blockstack Bootstrap](https://github.com/blockstack/blockstack-bootstrap) repo and submitting pull requests there.
 
-*Note: when you submit pull requests from your fork, make sure you select `blockstack/blockstack-bootstrap` as the base fork.*
+_Note: when you submit pull requests from your fork, make sure you select `blockstack/blockstack-bootstrap` as the base fork._
 
 ### Deployment
 
@@ -110,7 +110,7 @@ firebase deploy
 
 To prepare assets for production, run `gulp prod`. This will fill the `/build` directory with the full site.
 
-*Note: the production task does not fire up the browser-sync server and won't provide you with browser-sync's live reloading. Simply use `gulp dev` during development to utilize this functionality.*
+_Note: the production task does not fire up the browser-sync server and won't provide you with browser-sync's live reloading. Simply use `gulp dev` during development to utilize this functionality._
 
 Once the build has been produced, deploy the site to firebase by running `firebase deploy`.
 

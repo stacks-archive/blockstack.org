@@ -111,7 +111,9 @@ class Header extends Component {
                       <span className="material-icons md-24 menu-icon">
                         {this.state.menuOpen ? 'close' : 'menu'}
                       </span>
-                      <span className="menu-text"> Menu</span>
+                      <span className="menu-text">
+                        {this.state.menuOpen ? ' Close' : ' Menu'}
+                      </span>
                     </a>
                   </div>
                 </div>

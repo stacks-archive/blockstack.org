@@ -1,6 +1,6 @@
 import React from 'react'
 import Content from './press.md'
-import {pressData} from './data'
+import { pressData } from './data'
 
 export const meta = {
   path: '/press',
@@ -21,7 +21,6 @@ class PressPage extends React.PureComponent {
     return (
       <>
         <Content />
-
       </>
     )
   }

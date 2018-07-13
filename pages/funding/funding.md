@@ -1,9 +1,13 @@
 #### The Signature Fund is aimed at growing an ecosystem of decentralized applications on Blockstack.
 
-| <h4>App Creators</h4>                                                                                                                                     | <h4>App Funders</h4>                                                                                                                                       |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Get funded to build applications on the decentralized internet.                                                                                           | Accelerate the next generation of apps as an investor by qualifying yourself here.                                                                         |
-| <a href="https://docs.google.com/forms/d/e/1FAIpQLScXVYTZSD9GIiI2fMPbs9Gpa-3CXZSHaMmUXrioaHlkqcDoJQ/viewform" class="button center">Apply for Funding</a> | <a href="https://docs.google.com/forms/d/e/1FAIpQLSfgUVpBEIeFdxXGVZFm6ma6_Luvmnq2mchXp5UQ61bctT5hTQ/viewform?usp=sf_link" class="button">Apply to Fund</a> |
+<div className="centered-table">
+
+| <h4>App Creators</h4>                                                                                                                         | <h4>App Funders</h4>                                                                                                                               |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Get funded to build applications on the decentralized internet.                                                                               | Accelerate the next generation of apps as an investor by qualifying yourself here.                                                                 |
+| <a href="https://docs.google.com/forms/d/e/1FAIpQLScXVYTZSD9GIiI2fMPbs9Gpa-3CXZSHaMmUXrioaHlkqcDoJQ/viewform" class="button center">Apply</a> | <a href="https://docs.google.com/forms/d/e/1FAIpQLSfgUVpBEIeFdxXGVZFm6ma6_Luvmnq2mchXp5UQ61bctT5hTQ/viewform?usp=sf_link" class="button">Apply</a> |
+
+</div>
 
 #### Terms & Conditions
 

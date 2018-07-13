@@ -28,15 +28,15 @@ A decentralized internet is one where users don't need to trust any intermediari
 
 Developers can now build Web applications where:
 
-* you own your data, not the application
-* you control where your data is stored
-* you control who can access your data
+- you own your data, not the application
+- you control where your data is stored
+- you control who can access your data
 
 Developers can now build Web applications where:
 
-* you don't have to deal with passwords
-* you don't have to host everyone's data
-* you don't have to run app-specific servers
+- you don't have to deal with passwords
+- you don't have to host everyone's data
+- you don't have to run app-specific servers
 
 Right now, Web application users are "digital serfs" and applications are the "digital landlords". Users don't own their data; the app owns it. Users don't control where data gets stored; they can only store it on the application. Users don't control access to it; they only advise the application on how to control access (which the application can ignore).
 
@@ -102,19 +102,19 @@ The model we're currently exploring is where Blockstack can process multiple blo
 
 <HashedTitle value={`Does Blockstack use a DHT (Distributed Hash Table)?`} component={'h3'} />
 
-It does not, as of November 2016.  It uses a much more reliable system called the Atlas Network.  Details here: https://blog.blockstack.org/blockstack-core-v0-14-0-release-aad748f46d#.30gzlthdw
+It does not, as of November 2016. It uses a much more reliable system called the Atlas Network. Details here: https://blog.blockstack.org/blockstack-core-v0-14-0-release-aad748f46d#.30gzlthdw
 
 <HashedTitle value={`Can the Blockstack network fork?`} component={'h3'} />
 
-Yes, the Blockstack network can fork if the underlying blockchain encounters a deep fork.  In this case, blockstack nodes on either side of the fork will diverge from one another.
+Yes, the Blockstack network can fork if the underlying blockchain encounters a deep fork. In this case, blockstack nodes on either side of the fork will diverge from one another.
 
-We have yet to encounter a deep fork.  If this does happen, then Blockstack will use the virtualchain state on the majority fork once the fork resolves.
+We have yet to encounter a deep fork. If this does happen, then Blockstack will use the virtualchain state on the majority fork once the fork resolves.
 
 We also hard fork the network once a year to make protocol breaking changes and upgrade the network. The last one of these happened on block `488500` on the bitcoin blockchain. There are more details about the fork in this forum post: https://forum.blockstack.org/t/blockstack-annual-hard-fork-2017/1618
 
 <HashedTitle value={`How is the Blockstack network upgraded over time? What parties need to agree on an upgrade?`} component={'h3'} />
 
-We're working on an on-chain voting strategy similar to how mining works, where anyone can cast a vote proportional to the amount of Bitcoin burned.  Similar to how Bitcoin upgrades, a new feature will activate if a certain threshold (e.g. 80%) of votes consistently request its adoption over a given time interval (e.g. a couple weeks).
+We're working on an on-chain voting strategy similar to how mining works, where anyone can cast a vote proportional to the amount of Bitcoin burned. Similar to how Bitcoin upgrades, a new feature will activate if a certain threshold (e.g. 80%) of votes consistently request its adoption over a given time interval (e.g. a couple weeks).
 
 Until then, we will publicly announce the availability of new software, with the promise that each release will bring highly-desired features to make upgrading worth the users' whiles.
 
@@ -152,11 +152,11 @@ You own your name for ~2 years. You have to renew every 2 years or it expires, a
 
 <HashedTitle value={`Where is my data stored and how do I control who access it?`} component={'h3'} />
 
-You control where your data is stored (you could run your own server, or use your own cloud storage - Dropbox, Amazon S3, and keep backups across all). You then use those places as locations pointed to by the URLs in your Blockstack ID's zone file. You can get the zone file with `blockstack lookup` in the CLI  (Check out the install video in our [CLI video tutorial series](https://www.youtube.com/playlist?list=PLXS8JJHIn4nGCU2uW85dHXpkQJ7QA5JkX). *need help on how users control who accesses the data*
+You control where your data is stored (you could run your own server, or use your own cloud storage - Dropbox, Amazon S3, and keep backups across all). You then use those places as locations pointed to by the URLs in your Blockstack ID's zone file. You can get the zone file with `blockstack lookup` in the CLI (Check out the install video in our [CLI video tutorial series](https://www.youtube.com/playlist?list=PLXS8JJHIn4nGCU2uW85dHXpkQJ7QA5JkX). _need help on how users control who accesses the data_
 
 <HashedTitle value={`Why should I trust the information, like name ownership or public key mappings, read from Blockstack?`} component={'h3'} />
 
-Blockstack records are extremely hard to tamper with. This is because the bindings for name ownership (names on Blockstack are owned by public keys) are announced in a proof-of-work blockchain (Bitcoin) and to change these binding an attacker will need to come up with a blockchain with more proof-of-work than the current Bitcoin blockchain but with a different history. Bitcoin's [current hash rate](https://blockchain.info/charts/hash-rate) makes this task almost impossible for non-state actors.  
+Blockstack records are extremely hard to tamper with. This is because the bindings for name ownership (names on Blockstack are owned by public keys) are announced in a proof-of-work blockchain (Bitcoin) and to change these binding an attacker will need to come up with a blockchain with more proof-of-work than the current Bitcoin blockchain but with a different history. Bitcoin's [current hash rate](https://blockchain.info/charts/hash-rate) makes this task almost impossible for non-state actors.
 
 <HashedTitle value={`Can anyone register a TLD?`} component={'h3'} />
 
@@ -198,11 +198,11 @@ Python 2 and Node.js
 
 <HashedTitle value={`What incentives are there to run a Blockstack node?`} component={'h3'} />
 
-Running a Blockstack node keeps you secure by ensuring that your app gets the right names and public keys.  It's not expensive; it takes as much resources as a Chrome tab.
+Running a Blockstack node keeps you secure by ensuring that your app gets the right names and public keys. It's not expensive; it takes as much resources as a Chrome tab.
 
 <HashedTitle value={`Can Blockstack apps scale, given that Blockstack uses blockchains which don't scale that well?`} component={'h3'} />
 
-Yes.  Blockstack only uses the blockchain for name registration.  Everything else happens off-chain, so apps work just as fast as they do on the Web.
+Yes. Blockstack only uses the blockchain for name registration. Everything else happens off-chain, so apps work just as fast as they do on the Web.
 
 <HashedTitle value={`What if the current companies and developers working on Blockstack disappear, would the network keep running?`} component={'h3'} />
 

@@ -1,5 +1,5 @@
-'use strict';
+'use strict'
 
-global.isProd = false;
+global.isProd = false
 
-import './gulp';
+import './gulp'

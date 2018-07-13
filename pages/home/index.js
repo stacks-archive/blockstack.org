@@ -8,7 +8,6 @@ import OurCommunity from '@components/our-community'
 import FundApp from '@components/fund-app'
 import Mission from '@components/mission'
 
-
 export const meta = {
   path: '/',
   title: 'Blockstack',
@@ -18,7 +17,7 @@ export const meta = {
 }
 
 class HomePage extends React.PureComponent {
-    static async getInitialProps(ctx) {
+  static async getInitialProps(ctx) {
     return {
       meta
     }

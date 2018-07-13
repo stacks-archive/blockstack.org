@@ -1,6 +1,9 @@
 import TeamMembers from '@components/team-members'
+import {Codeblock} from '@components/codeblock'
 
 #### Blockstack is a new internet for decentralized apps that you access through the [Blockstack Browser](/install). With Blockstack, there is a new world of apps that let you own your data and maintain your privacy, security and freedom.
+
+<Codeblock />
 
 ### How It Works
 
