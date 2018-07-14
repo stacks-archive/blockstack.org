@@ -11,7 +11,8 @@ module.exports = {
       '@containers': path.resolve(__dirname, './containers'),
       '@scss': path.resolve(__dirname, './scss'),
       '@assets': path.resolve(__dirname, './assets'),
-      '@common': path.resolve(__dirname, './common')
+      '@common': path.resolve(__dirname, './common'),
+      '@bundles': path.resolve(__dirname, './bundles')
     }
   }
 }

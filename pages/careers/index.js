@@ -20,12 +20,10 @@ const meta = {
 
 class CareersPage extends React.PureComponent {
   static async getInitialProps(ctx) {
-    const jobs = await fetchJobs()
     const stats = await fetchStats()
 
     return {
       meta,
-      jobs,
       stats
     }
   }
@@ -43,7 +41,7 @@ class CareersPage extends React.PureComponent {
         <Intro />
         <Mission />
         <Values />
-        <Jobs list={this.props.jobs} />
+        <Jobs />
       </div>
     )
   }

@@ -13,7 +13,7 @@ const meta = {
 
 class CareersPage extends React.PureComponent {
   static async getInitialProps(ctx) {
-    const blogData = await fetchBlogPosts()
+    const posts = await ctx.reduxStore.selectBlogPosts()
 
     let propsMeta = meta
     let post = null
@@ -23,7 +23,7 @@ class CareersPage extends React.PureComponent {
     } = ctx
 
     if (slug) {
-      post = blogData.posts.find((blogPost) => blogPost.urlSlug === slug)
+      post = posts.find((blogPost) => blogPost.urlSlug === slug)
       propsMeta = {
         ...meta,
         title: post.title,
@@ -34,7 +34,7 @@ class CareersPage extends React.PureComponent {
     return {
       meta: propsMeta,
       post,
-      ...blogData,
+      posts,
       slug
     }
   }

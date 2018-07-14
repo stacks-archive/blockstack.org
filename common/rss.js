@@ -81,7 +81,7 @@ const getAllPostsFromRSS = (rssXML) => {
 
   return {
     posts,
-    postObject: postObject
+    postObject
   }
 }
 

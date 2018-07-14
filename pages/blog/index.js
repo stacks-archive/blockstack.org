@@ -1,8 +1,6 @@
 import React from 'react'
 const { fetchBlogPosts } = require('@common/lib')
 import { BlogList } from '@components/blog/list'
-import { BlogPost } from '@components/blog/post'
-import Link from 'next/link'
 const meta = {
   path: '/blog',
   title: 'Blockstack Blog',
@@ -13,8 +11,6 @@ const meta = {
 
 class CareersPage extends React.PureComponent {
   static async getInitialProps(ctx) {
-    const blogData = await fetchBlogPosts()
-
     let propsMeta = meta
     let post = null
 
@@ -25,15 +21,17 @@ class CareersPage extends React.PureComponent {
     return {
       meta: propsMeta,
       post,
-      ...blogData,
       slug
     }
+  }
+  shouldComponentUpdate() {
+    return false
   }
 
   render() {
     return (
       <>
-        <BlogList posts={this.props.posts} />
+        <BlogList />
       </>
     )
   }

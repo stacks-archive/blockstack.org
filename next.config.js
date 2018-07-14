@@ -1,5 +1,4 @@
 const { fetchBlogPosts } = require('./common/lib')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const path = require('path')
 const glob = require('glob')
 const { resolve } = require('./webpack.config.js')

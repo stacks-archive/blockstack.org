@@ -1,8 +1,18 @@
 import React from 'react'
 import Link from 'next/link'
+import { connect } from 'redux-bundler-react'
+import ReactMarkdown from 'react-markdown'
 
-const ListItem = ({ title, url, urlSlug, markup, preview, image, date }) =>
-  preview ? (
+const ListItem = ({
+  title,
+  url,
+  urlSlug,
+  markup,
+  description,
+  image,
+  date
+}) => {
+  return description ? (
     <div style={{ maxWidth: '700px', paddingBottom: '80px' }}>
       <h6 style={{ margin: 0 }}>{date}</h6>
       <Link
@@ -14,9 +24,7 @@ const ListItem = ({ title, url, urlSlug, markup, preview, image, date }) =>
           <h3 style={{ margin: '20px 0 0 0' }}>{title}</h3>
         </a>
       </Link>
-      <div>
-        <p dangerouslySetInnerHTML={{ __html: preview }} />
-      </div>
+      <ReactMarkdown source={description} />
       <Link
         prefetch
         as={`/blog/${urlSlug}`}
@@ -26,9 +34,11 @@ const ListItem = ({ title, url, urlSlug, markup, preview, image, date }) =>
       </Link>
     </div>
   ) : null
+}
 
-const BlogList = ({ posts }) => (
-  <div>{posts.map((post, i) => <ListItem {...post} key={i} />)}</div>
+const BlogList = connect(
+  'selectBlogPosts',
+  ({ blogPosts }) => blogPosts.map((post, i) => <ListItem {...post} key={i} />)
 )
 
 export { BlogList }
