@@ -97,7 +97,7 @@ class Header extends Component {
                         <Button
                           className="secondary main-action"
                           href={bslinks && bslinks.tutorials}
-                          label="Docs & Tutorials"
+                          label="Tutorials"
                         />
                       </div>
                       <div className="col newsletter-col">

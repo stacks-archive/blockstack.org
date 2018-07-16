@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import InlineSVG from 'svg-inline-react'
 import toQueryString from 'to-querystring'
 import jsonp from 'jsonp'
 
@@ -9,6 +8,9 @@ import Button from '@components/button'
 import Arrow from '@components/outline-arrow'
 
 import './NewsletterSignup.scss'
+
+const subscribeURL =
+  'https://blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=0e5478ae86'
 
 class NewsletterSignup extends Component {
   state = {
@@ -22,26 +24,17 @@ class NewsletterSignup extends Component {
     const email = event.target.value
     this.setState({ email })
 
-    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    const regEx = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     if (email.length > 4) {
-      this.setState({ validEmail: re.test(this.state.email) })
+      this.setState({ validEmail: regEx.test(this.state.email) })
     }
   }
 
   signup = (event) => {
     console.log('sign me up please')
 
-    const options = {
-      method: 'POST',
-      headers: { 'Content-type': 'application/json; charset=UTF-8' }
-    }
-
     const data = { EMAIL: this.state.email }
-
-    console.log(process.env)
-
-    // TODO : GET this from mail chimp
-    const url = process.env.MAILCHIMP_URL.replace('/post?', '/post-json?')
+    const url = subscribeURL.replace('/post?', '/post-json?')
 
     const params = toQueryString(data)
 
