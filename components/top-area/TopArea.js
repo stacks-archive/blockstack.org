@@ -8,16 +8,20 @@ import CodeBlock from '@components/code-block'
 import './TopArea.scss'
 
 const UserCode = `if (blockstack.isUserSignedIn()) {
-  var profile = blockstack.loadUserData().profile
-  showProfile(profile)`
+  const { profile } = blockstack.loadUserData()
+}`
 
-const AuthCode = `signIn () {
-  const blockstack = this.blockstack
-  blockstack.redirectToSignIn()`
+const AuthCode = `function signIn() {
+  blockstack.redirectToSignIn()
+}`
 
-const StorageCode = `this.setState({
-  person: new Person(loadUserData().profile),
-  username: loadUserData().username`
+const StorageCode = `function uploadFile(file) {
+  blockstack.putFile(file, { encrypt: true })
+}`
+
+function uploadFile(file) {
+  blockstack.putFile(file, { encrypt: true })
+}
 
 const TopArea = (props) => {
   return (
