@@ -351,8 +351,11 @@ div.centered-table {
 
 .react-codemirror2 {
   * {
-    &::-webkit-scrollbar-track {
+    &::-webkit-scrollbar {
       background: #0f0e31 !important;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: lighten(#0f0e31, 30%) !important;
     }
   }
   &.no-line-numbers {
@@ -361,6 +364,9 @@ div.centered-table {
     }
   }
   .CodeMirror {
+    .CodeMirror-hscrollbar {
+      left: 0 !important;
+    }
     padding-top: 14px;
     padding-bottom: 20px;
     padding-left: 5px;
