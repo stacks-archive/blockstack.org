@@ -56,7 +56,7 @@ const items = videoData.map(
       alt: title
     },
     ...rest,
-    url: youtubeURL,
+    link: youtubeURL,
     children: (
       <>
         <h6 style={{ margin: '0 0 10px 0' }}>

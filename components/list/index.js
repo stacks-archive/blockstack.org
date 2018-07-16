@@ -4,9 +4,11 @@ import { StyledList } from './styled'
 const ListItem = ({ image, link, children, ...rest }) => (
   <StyledList.Item {...rest}>
     <StyledList.Image>
-      <img src={image.src} alt={image.alt} />
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        <img src={image.src} alt={image.alt} />
+      </a>
     </StyledList.Image>
-    <div>{children}</div>
+    <StyledList.Content>{children}</StyledList.Content>
   </StyledList.Item>
 )
 
