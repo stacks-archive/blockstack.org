@@ -350,6 +350,11 @@ div.centered-table {
 }
 
 .react-codemirror2 {
+  * {
+    &::-webkit-scrollbar-track {
+      background: #0f0e31 !important;
+    }
+  }
   &.no-line-numbers {
     .CodeMirror-scroll {
       padding-left: 10px;
@@ -359,6 +364,10 @@ div.centered-table {
     padding-top: 14px;
     padding-bottom: 20px;
     padding-left: 5px;
+    background: #0f0e31 !important;
+    &-gutters {
+      background: #0f0e31 !important;
+    }
   }
   @include respond-smaller-than($md) {
     width: calc(100% + 40px);

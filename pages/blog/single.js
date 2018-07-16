@@ -1,8 +1,7 @@
 import React from 'react'
-const { fetchBlogPosts } = require('@common/lib')
-import { BlogList } from '@components/blog/list'
 import { BlogPost } from '@components/blog/post'
-import Link from 'next/link'
+import { BadConnection } from '@components/blog/list'
+
 const meta = {
   path: '/blog',
   title: 'Blockstack Blog',
@@ -42,7 +41,7 @@ class CareersPage extends React.PureComponent {
   render() {
     return (
       <>
-        <BlogPost post={this.props.post} />
+        {this.props.post ? <BlogPost post={this.props.post} /> : BadConnection}
       </>
     )
   }

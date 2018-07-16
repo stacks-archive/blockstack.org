@@ -4,7 +4,7 @@ import Intro from './intro.md'
 import Values from './values.md'
 import { Jobs } from '@components/jobs'
 
-import { fetchJobs, fetchStats } from '@common/lib'
+import { fetchStats } from '@common/lib'
 
 const meta = {
   path: '/careers',
@@ -29,13 +29,16 @@ class CareersPage extends React.PureComponent {
   }
 
   render() {
+    const users =
+      this.props.stats && this.props.stats.meetup_users
+        ? this.props.stats.meetup_users
+        : '13769'
     return (
       <div>
         <h4>
           Blockstack is a new internet for decentralized apps. Our open-source
-          community of {this.props.stats.meetup_users} members globally is
-          building protocols & tools that make it easy to build scalable
-          decentralized apps.
+          community of {users} members globally is building protocols & tools
+          that make it easy to build scalable decentralized apps.
         </h4>
         <br />
         <Intro />

@@ -3,6 +3,22 @@ import Link from 'next/link'
 import { connect } from 'redux-bundler-react'
 import ReactMarkdown from 'react-markdown'
 
+const BadConnection = (
+  <div
+    style={{
+      minHeight: '350px',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center'
+    }}
+  >
+    <h1>Connection Error</h1>
+    <p>
+      We ran into some issues fetching our blog. Feel free to refresh the page.
+    </p>
+  </div>
+)
+
 const ListItem = ({
   title,
   url,
@@ -38,7 +54,10 @@ const ListItem = ({
 
 const BlogList = connect(
   'selectBlogPosts',
-  ({ blogPosts }) => blogPosts.map((post, i) => <ListItem {...post} key={i} />)
+  ({ blogPosts }) =>
+    blogPosts && blogPosts.length
+      ? blogPosts.map((post, i) => <ListItem {...post} key={i} />)
+      : BadConnection
 )
 
-export { BlogList }
+export { BlogList, BadConnection }
