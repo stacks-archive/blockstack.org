@@ -238,7 +238,7 @@ ol {
 }
 main {
   li {
-    line-height: $base-line-height * 1.25 !important;
+    //line-height: $base-line-height * 1.1 !important;
     padding-bottom: 14px;
   }
 }
@@ -412,8 +412,9 @@ code,
 .code {
   letter-spacing: 0;
   font-family: $code-font;
-  font-size: $sm-font-size;
+  //font-size: $sm-font-size;
   line-height: $base-line-height;
+
 }
 
 .medium-weight {

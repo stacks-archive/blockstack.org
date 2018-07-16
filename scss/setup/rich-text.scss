@@ -117,9 +117,11 @@
   }
 
   code {
-    background: #eee;
+    background: rgba($main-color, 0.15);
     padding: 0.075em 0.4em 0.25em;
+    //color: white;
     border-radius: 3px;
+    font-size: 0.875rem;
   }
 
   hr.tiny {

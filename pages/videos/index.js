@@ -1,6 +1,7 @@
 import React from 'react'
 import Content from './videos.md'
 import { videoData } from './data'
+import { List } from '@components/list'
 
 export const meta = {
   path: '/videos',
@@ -36,7 +37,28 @@ const VideoItem = ({
           />
         </a>
       </div>
-      <div>
+      <div />
+    </div>
+    <hr />
+  </>
+)
+
+const items = videoData.map(
+  ({ date, title, location, speaker, event, youtubeURL, ...rest }) => ({
+    date,
+    title,
+    location,
+    speaker,
+    event,
+    youtubeURL,
+    image: {
+      src: rest.image,
+      alt: title
+    },
+    ...rest,
+    url: youtubeURL,
+    children: (
+      <>
         <h6 style={{ margin: '0 0 10px 0' }}>
           {date} | {location}
         </h6>
@@ -47,14 +69,14 @@ const VideoItem = ({
         <a
           href={youtubeURL}
           target="_blank"
+          rel="noopener noreferrer"
           style={{ margin: '20px 0 0 0', display: 'inline-block' }}
         >
           Watch
         </a>
-      </div>
-    </div>
-    <hr />
-  </>
+      </>
+    )
+  })
 )
 
 class VideosPage extends React.PureComponent {
@@ -65,7 +87,11 @@ class VideosPage extends React.PureComponent {
   }
 
   render() {
-    return <>{videoData.map((video, i) => <VideoItem {...video} key={i} />)}</>
+    return (
+      <>
+        <List items={items} />
+      </>
+    )
   }
 }
 

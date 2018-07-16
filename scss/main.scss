@@ -288,6 +288,9 @@ table {
     th {
       border-bottom: 1px solid $main-color;
       padding: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
   td,
@@ -297,6 +300,15 @@ table {
   td {
     padding: 1.5rem 2rem;
     text-align: left;
+    @include respond-smaller-than($md) {
+      padding: 20px;
+      &:first-of-type {
+        padding-right: 10px;
+      }
+      &:last-of-type {
+        padding-left: 10px;
+      }
+    }
   }
 }
 
@@ -346,9 +358,10 @@ div.centered-table {
   .CodeMirror {
     padding-top: 14px;
     padding-bottom: 20px;
+    padding-left: 5px;
   }
   @include respond-smaller-than($md) {
-    width: calc(100% + 80px);
-    transform: translateX(-40px);
+    width: calc(100% + 40px);
+    transform: translateX(-20px);
   }
 }
