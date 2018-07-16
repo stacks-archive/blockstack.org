@@ -1,9 +1,8 @@
 import React from 'react'
 import Content from './disclaimers.md'
-export const meta = {
+const meta = {
   path: '/legal/disclaimers',
-  title: 'Disclaimers',
-  richText: true
+  title: 'Disclaimers'
 }
 
 class DisclaimersPage extends React.PureComponent {

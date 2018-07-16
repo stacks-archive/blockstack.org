@@ -8,12 +8,10 @@ import OurCommunity from '@components/our-community'
 import FundApp from '@components/fund-app'
 import Mission from '@components/mission'
 
-export const meta = {
+const meta = {
   path: '/',
   title: 'Blockstack',
-  template: 'NONE',
-  description:
-    'Blockstack is a new internet for decentralized apps that you access through the Blockstack Browser. With Blockstack, there is a new world of apps that let you own your data and maintain your privacy, security and freedom.'
+  template: 'NONE'
 }
 
 class HomePage extends React.PureComponent {

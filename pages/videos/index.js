@@ -1,50 +1,15 @@
 import React from 'react'
-import Content from './videos.md'
 import { videoData } from './data'
 import { List } from '@components/list'
 
-export const meta = {
+const meta = {
   path: '/videos',
   title: 'Videos',
   description: ''
 }
 
-const VideoItem = ({
-  title,
-  event,
-  speaker,
-  location,
-  date,
-  youtubeURL,
-  urlSlug,
-  image
-}) => (
-  <>
-    <div
-      style={{ display: 'flex', alignItems: 'center', paddingBottom: '20px' }}
-    >
-      <div
-        style={{
-          flexShrink: 0,
-          paddingRight: '20px'
-        }}
-      >
-        <a href={youtubeURL}>
-          <img
-            src={image}
-            alt={title}
-            style={{ width: '300px', display: 'block' }}
-          />
-        </a>
-      </div>
-      <div />
-    </div>
-    <hr />
-  </>
-)
-
 const items = videoData.map(
-  ({ date, title, location, speaker, event, youtubeURL, ...rest }) => ({
+  ({ date, title, location, speaker, event, youtubeURL, image, ...rest }) => ({
     date,
     title,
     location,
@@ -52,7 +17,7 @@ const items = videoData.map(
     event,
     youtubeURL,
     image: {
-      src: rest.image,
+      src: image,
       alt: title
     },
     ...rest,
@@ -62,7 +27,19 @@ const items = videoData.map(
         <h6 style={{ margin: '0 0 10px 0' }}>
           {date} | {location}
         </h6>
-        <h4 style={{ margin: 0 }}>{title}</h4>
+
+        <a
+          href={youtubeURL}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            margin: '20px 0 0 0',
+            display: 'inline-block',
+            border: 'none'
+          }}
+        >
+          <h4 style={{ margin: 0 }}>{title}</h4>
+        </a>
         <p style={{ margin: '10px 0 0 0' }}>
           {speaker}, {event}
         </p>

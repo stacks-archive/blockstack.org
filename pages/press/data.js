@@ -1,7 +1,7 @@
 export const pressData = [
   {
     date: 'Feb 1, 2018',
-    publication: 'The Gaurdian',
+    publication: 'The Guardian',
     title:
       'The punk rock internet – how DIY ​​rebels ​are working to ​replace the tech giants',
     url:

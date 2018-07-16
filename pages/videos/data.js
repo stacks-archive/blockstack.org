@@ -5,7 +5,7 @@ export const videoData = [
     speaker: 'Ryan Shea',
     location: 'New York, NY',
     date: 'December 12, 2017',
-    youtubeURL: 'https://www.youtube.com/embed/iBIcQaBoslM',
+    youtubeURL: 'https://www.youtube.com/watch?v=iBIcQaBoslM',
     urlSlug: 'thenextweb-2017-a-new-internet-where-youre-in-control',
     image: 'https://i.ytimg.com/vi/iBIcQaBoslM/maxresdefault.jpg'
   },
@@ -15,7 +15,7 @@ export const videoData = [
     speaker: 'Muneeb Ali',
     location: 'Malmo, Sweden',
     date: 'September 1, 2017',
-    youtubeURL: 'https://www.youtube.com/embed/q2gy0ZRkABY',
+    youtubeURL: 'https://www.youtube.com/watch?v=q2gy0ZRkABY',
     urlSlug: 'the-conference-the-future-of-the-internet-is-decentralized',
     image: 'https://i.ytimg.com/vi/q2gy0ZRkABY/hqdefault.jpg'
   },
@@ -25,7 +25,7 @@ export const videoData = [
     speaker: 'Ryan Shea',
     location: 'Mountain View, CA',
     date: 'July 27, 2017',
-    youtubeURL: 'https://www.youtube.com/embed/YzlyEuRfXxo',
+    youtubeURL: 'https://www.youtube.com/watch?v=YzlyEuRfXxo',
     urlSlug: 'blockstack-summit-2017-a-new-blockstack-internet',
     image: 'https://i.ytimg.com/vi/YzlyEuRfXxo/maxresdefault.jpg'
   },
@@ -35,7 +35,7 @@ export const videoData = [
     speaker: 'Muneeb Ali',
     location: 'Mountain View, CA',
     date: 'July 27, 2017',
-    youtubeURL: 'https://www.youtube.com/embed/IfONVXL6tnk',
+    youtubeURL: 'https://www.youtube.com/watch?v=IfONVXL6tnk',
     urlSlug: 'blockstack-summit-2017-the-next-wave-of-computing',
     image: 'https://i.ytimg.com/vi/IfONVXL6tnk/maxresdefault.jpg'
   },
@@ -45,7 +45,7 @@ export const videoData = [
     speaker: 'Ryan Shea & Naval Ravikant',
     location: 'Mountain View, CA',
     date: 'July 27, 2017',
-    youtubeURL: 'https://www.youtube.com/embed/IrSn3zx2GbM',
+    youtubeURL: 'https://www.youtube.com/watch?v=IrSn3zx2GbM',
     urlSlug:
       'blockstack-summit-2017-a-conversation-with-naval-ravikant-and-ryan-shea',
     image: 'https://i.ytimg.com/vi/IrSn3zx2GbM/maxresdefault.jpg'
@@ -57,7 +57,7 @@ export const videoData = [
     speaker: 'Patrick Stanley',
     location: 'Mountain View, CA',
     date: 'July 27, 2017',
-    youtubeURL: 'https://www.youtube.com/embed/m3pwRj68zQ0',
+    youtubeURL: 'https://www.youtube.com/watch?v=m3pwRj68zQ0',
     urlSlug:
       'blockstack-summit-2017-a-new-decentralized-app-ecosystem-on-blockstack-blockstack-summit-2017',
     image: 'https://i.ytimg.com/vi/m3pwRj68zQ0/maxresdefault.jpg'
@@ -69,7 +69,7 @@ export const videoData = [
     speaker: 'Muneeb Ali, Ryan Shea, Alice Lloyd George',
     location: 'Mountain View, CA',
     date: 'July 27, 2017',
-    youtubeURL: 'https://www.youtube.com/embed/JY5EMjHe4-Y',
+    youtubeURL: 'https://www.youtube.com/watch?v=JY5EMjHe4-Y',
     urlSlug:
       'blockstack-summit-2017-qa-w-blockstacks-muneeb-ali-ryan-shea-moderated-by-alice-lloyd-george',
     image: 'https://i.ytimg.com/vi/JY5EMjHe4-Y/maxresdefault.jpg'
@@ -81,7 +81,7 @@ export const videoData = [
     speaker: 'Ryan Shea + Muneeb Ali',
     location: 'New York, NY',
     date: 'June 22, 2017',
-    youtubeURL: 'https://www.youtube.com/embed/Z4bMFKBRg_k',
+    youtubeURL: 'https://www.youtube.com/watch?v=Z4bMFKBRg_k',
     urlSlug:
       'reason-tv-blockstack-a-new-internet-that-brings-privacy-property-rights-to-cyberspace',
     image: 'https://i.ytimg.com/vi/Z4bMFKBRg_k/maxresdefault.jpg'
@@ -92,7 +92,7 @@ export const videoData = [
     speaker: 'Muneeb Ali + Ryan Shea',
     location: 'New York, NY',
     date: 'May 23, 2017',
-    youtubeURL: 'https://www.youtube.com/embed/VZGyS5JobkY',
+    youtubeURL: 'https://www.youtube.com/watch?v=VZGyS5JobkY',
     urlSlug: 'consensus-2017-building-a-new-decentralized-internet',
     image: 'https://i.ytimg.com/vi/VZGyS5JobkY/maxresdefault.jpg'
   },
@@ -102,7 +102,7 @@ export const videoData = [
     speaker: 'Ryan Shea',
     location: 'New York, NY',
     date: 'May 22, 2017',
-    youtubeURL: 'https://www.youtube.com/embed/tsPXWixkrFk',
+    youtubeURL: 'https://www.youtube.com/watch?v=tsPXWixkrFk',
     urlSlug: 'consensus-2017-building-a-foundation-for-decentralized-identity',
     image: 'https://i.ytimg.com/vi/tsPXWixkrFk/maxresdefault.jpg'
   },
@@ -112,7 +112,7 @@ export const videoData = [
     speaker: 'Larry Salibra',
     location: 'New York, NY',
     date: 'May 17, 2017',
-    youtubeURL: 'https://www.youtube.com/embed/uG06irysjHg',
+    youtubeURL: 'https://www.youtube.com/watch?v=uG06irysjHg',
     urlSlug:
       'nycnode-blockchain-powered-decentralized-applications-with-blockstack',
     image: 'https://i.ytimg.com/vi/uG06irysjHg/maxresdefault.jpg'
@@ -123,7 +123,7 @@ export const videoData = [
     speaker: 'Ryan Shea',
     location: 'New York, NY',
     date: 'April 17, 2017',
-    youtubeURL: 'https://www.youtube.com/embed/i1fThdPbAEA',
+    youtubeURL: 'https://www.youtube.com/watch?v=i1fThdPbAEA',
     urlSlug: 'the-lunduke-hour',
     image: 'https://i.ytimg.com/vi/i1fThdPbAEA/maxresdefault.jpg'
   },
@@ -133,7 +133,7 @@ export const videoData = [
     speaker: 'Ryan Shea',
     location: 'Barcelona, Spain',
     date: 'February 9, 2017',
-    youtubeURL: 'https://www.youtube.com/embed/dCNC2SjqYHc',
+    youtubeURL: 'https://www.youtube.com/watch?v=dCNC2SjqYHc',
     urlSlug: 'decentralized-apps-and-sovereign-identity',
     image: 'https://i.ytimg.com/vi/dCNC2SjqYHc/maxresdefault.jpg'
   },
@@ -143,7 +143,7 @@ export const videoData = [
     speaker: 'Muneeb Ali',
     location: 'New York, NY',
     date: 'September 10, 2016',
-    youtubeURL: 'https://www.youtube.com/embed/qtOIh93Hvuw',
+    youtubeURL: 'https://www.youtube.com/watch?v=qtOIh93Hvuw',
     speakerDeckID: '15d4861b7c1842bfbd7add80c99e1cf6',
     urlSlug: 'welcome-to-the-new-internet',
     image: 'https://i.ytimg.com/vi/qtOIh93Hvuw/maxresdefault.jpg'

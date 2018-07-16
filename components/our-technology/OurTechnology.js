@@ -35,8 +35,8 @@ const cards = [
     description: 'Decentralized storage hubs'
   },
   {
-    title: 'Stacks (NEED LINK)',
-    link: '#',
+    title: 'Stacks',
+    link: 'https://forum.blockstack.org/t/new-features-enabled-by-a-layer-2-token/1327',
     description: 'Token to register IDs and apps'
   },
   {

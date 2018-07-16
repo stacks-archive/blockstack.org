@@ -5,6 +5,14 @@ footer {
   margin: 0 !important;
   padding-top: 40px;
 
+  .es-logo {
+    svg {
+      * {
+        fill: white;
+      }
+    }
+  }
+
   .container {
     padding-top: 1px;
   }

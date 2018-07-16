@@ -1,13 +1,14 @@
 import React from 'react'
 import { BlogPost } from '@components/blog/post'
 import { BadConnection } from '@components/blog/list'
+import striptags from 'striptags'
+
+const removeMarkdown = async (string) => striptags(string)
 
 const meta = {
   path: '/blog',
   title: 'Blockstack Blog',
-  template: 'secondary',
-  description:
-    'Blockstack is a new internet for decentralized apps that you access through the Blockstack Browser. With Blockstack, there is a new world of apps that let you own your data and maintain your privacy, security and freedom.'
+  template: 'secondary'
 }
 
 class CareersPage extends React.PureComponent {
@@ -25,8 +26,10 @@ class CareersPage extends React.PureComponent {
       post = posts.find((blogPost) => blogPost.urlSlug === slug)
       propsMeta = {
         ...meta,
+        ogImage: post.image,
         title: post.title,
-        subtitle: post.date
+        subtitle: post.date,
+        description: await removeMarkdown(post.preview)
       }
     }
 

@@ -78,16 +78,6 @@ class Header extends Component {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="p sm">
-                    Request an app
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="p sm">
-                    Get updates
-                  </a>
-                </li>
-                <li>
                   <a href={bslinks.blog} className="p sm">
                     Blog
                   </a>

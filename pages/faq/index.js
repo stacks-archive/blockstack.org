@@ -1,7 +1,7 @@
 import React from 'react'
 import Content from './faq.md'
 
-export const meta = {
+const meta = {
   path: '/tutorials',
   title: 'Frequently Asked Questions',
 

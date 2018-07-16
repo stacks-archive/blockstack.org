@@ -1,11 +1,9 @@
 import React from 'react'
 import Content from './tutorials.md'
 
-export const meta = {
+const meta = {
   path: '/tutorials',
-  title: 'Tutorials',
-  description:
-    'Blockstack is a new internet for decentralized apps that you access through the Blockstack Browser. With Blockstack, there is a new world of apps that let you own your data and maintain your privacy, security and freedom.'
+  title: 'Tutorials'
 }
 
 class TutorialsPage extends React.PureComponent {

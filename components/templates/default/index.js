@@ -5,9 +5,12 @@ import {
   TriangleDotsFull,
   TriangleDotsLarge
 } from '@components/svgs'
-function getDisplayName(WrappedComponent) {
-  return WrappedComponent.displayName || WrappedComponent.name || 'Component'
-}
+
+import { Meta } from '@components/meta'
+
+const getDisplayName = (WrappedComponent) =>
+  WrappedComponent.displayName || WrappedComponent.name || 'Component'
+
 const Title = ({ children }) => (
   <StyledPageTop.Title>
     <h1 className="h1">{children}</h1>
@@ -60,7 +63,7 @@ const PageTemplate = (Component, meta) => {
       return (
         <>
           <TopArea {...meta} />
-
+          <Meta {...meta} />
           <StyledPageContainer>
             <Button {...meta} />
             <StyledPageContent className="md-basic-template">
