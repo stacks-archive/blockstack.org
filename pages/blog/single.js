@@ -2,6 +2,7 @@ import React from 'react'
 import { BlogPost } from '@components/blog/post'
 import { BadConnection } from '@components/blog/list'
 import striptags from 'striptags'
+import { BlogPostUser } from '@components/blog/post/styled/user'
 
 const removeMarkdown = async (string) => striptags(string)
 
@@ -44,7 +45,21 @@ class CareersPage extends React.PureComponent {
   render() {
     return (
       <>
-        {this.props.post ? <BlogPost post={this.props.post} /> : BadConnection}
+        {this.props.post ? (
+          <>
+            <BlogPost post={this.props.post} />
+            <BlogPostUser>
+              <img
+                src={require(this.props.post.creator.avatar.replace(
+                  'https://blockstack.org/images/',
+                  '@assets/images/'
+                ))}
+              />
+            </BlogPostUser>
+          </>
+        ) : (
+          BadConnection
+        )}
       </>
     )
   }

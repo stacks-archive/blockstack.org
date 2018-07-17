@@ -82,7 +82,7 @@ _Note that by default, authentication requests include the `store_write` scope w
 
 If you log out and sign in again, the authentication request will now prompt the user for permission to publish data stored for our app.
 
-![Multi-reader storage authentication](/images/tutorials/multi-player-storage-auth.png)
+![Multi-reader storage authentication](../../../assets/images/tutorials/multi-player-storage-auth.png)
 
 ### Posting Statuses
 
@@ -427,7 +427,7 @@ textarea {
 
 If everything went well, we should end up with something like this:
 
-![Multi-reader storage authentication](/images/tutorials/multi-player-storage-status.png)
+![Multi-reader storage authentication](../../../assets/images/tutorials/multi-player-storage-status.png)
 
 ### User Profile Lookup
 

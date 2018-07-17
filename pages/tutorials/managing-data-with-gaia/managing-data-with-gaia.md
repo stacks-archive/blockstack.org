@@ -23,11 +23,8 @@ Here’s a Single-File Collection approach to modeling our data:
 // grocerylists.json
 {
   "3255": {
-    "items": [
-      "1 Head of Lettuce",
-      "Haralson apples"
-    ]
-  },
+    "items": ["1 Head of Lettuce", "Haralson apples"]
+  }
   // ...more lists with items
 }
 ```
@@ -63,7 +60,7 @@ It would be great if we could split out grocery lists into their own files to mi
 
 Here’s a diagram of a Multi-File Collection approach:
 
-<img src={require("@assets/images/tutorials/grocery-lists.png")} />
+![Grocery Lists](../../../assets/images/tutorials/grocery-lists.png)
 
 With this approach, we maintain an index file that stores an array of list IDs. Each list ID is predictably the name of a file under a `grocerylists` folder.
 
@@ -92,12 +89,11 @@ Note that we’ve included an interstitial “driver” layer for a few reasons:
 4.  You can DRY up your code by declaring the Gaia config once per collection.
 
 Click the button below to spin up a sandbox environment:
+<div class="image-size-default">
 
-<a href="https://codesandbox.io/s/8kzmjjr9nj" target="_blank">
-    <div>
-        <img src={require("@assets/images/tutorials/edit-sandbox.png")} style={{width: 'auto !important'}} />
-    </div>
-</a>
+[![Code sandbox](../../../assets/images/tutorials/edit-sandbox.png)](https://codesandbox.io/s/8kzmjjr9nj)
+
+</div>
 
 ## Summary
 

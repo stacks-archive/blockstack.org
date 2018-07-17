@@ -93,7 +93,6 @@ const StyledPageContent = styled.main`
     padding: 20px 20px;
   }
   img {
-    width: 100%;
     & + small {
       padding-top: 10px;
       opacity: 0.5;

@@ -380,3 +380,12 @@ div.centered-table {
     transform: translateX(-20px);
   }
 }
+
+.image-size-default {
+  a {
+    border: none !important;
+  }
+  img {
+    width: auto !important;
+  }
+}

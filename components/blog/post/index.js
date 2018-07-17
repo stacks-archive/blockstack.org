@@ -17,4 +17,4 @@ const BlogPost = ({ post }) => (
   </>
 )
 
-export {BlogPost}
+export { BlogPost }

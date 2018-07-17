@@ -2,11 +2,11 @@ import App, { Container } from 'next/app'
 import React from 'react'
 import Header from '@components/header'
 import Footer from '@components/footer'
-import { MDXProvider } from '@mdx-js/tag'
 import { Codeblock } from '@components/codeblock'
 import NoTemplate from '@components/templates/none'
 import DefaultPageTemplate from '@components/templates/default'
 import Head from 'next/head'
+import { Mdx } from '@components/mdx'
 import withReduxStore from '@common/withReduxStore'
 import { Provider as ReduxProvider } from 'redux-bundler-react'
 import { Type } from '@components/typography'
@@ -64,22 +64,7 @@ class MyApp extends App {
     const PageComponent = withPageTemplate(Component, pageProps.meta)
     return (
       <ReduxProvider store={this.props.store}>
-        <MDXProvider
-          components={{
-            h1: Type.h1,
-            h2: Type.h2,
-            h3: Type.h3,
-            h4: Type.h4,
-            h5: Type.h5,
-            h6: Type.h6,
-            p: Type.p,
-            pre: Type.pre,
-            ol: Type.ol,
-            ul: Type.ul,
-            li: Type.li,
-            code: Codeblock
-          }}
-        >
+        <Mdx>
           <Container>
             <Head>
               <title>{title}</title>
@@ -97,7 +82,7 @@ class MyApp extends App {
               <Footer />
             </div>
           </Container>
-        </MDXProvider>
+        </Mdx>
       </ReduxProvider>
     )
   }

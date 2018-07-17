@@ -4,9 +4,8 @@ const featuredPress = [
       src: require('@assets/images/press/nyt.svg')
     },
     date: 'Jan 16, 2018',
-    title: `Beyond the Bitcoin Bubble`,
-    link:
-      'https://www.nytimes.com/2018/01/16/magazine/beyond-the-bitcoin-bubble.html'
+    title: `Tech Thinks It Has a Fix for the Problems It Created: Blockchain`,
+    link: 'https://www.nytimes.com/2018/04/01/technology/blockchain-uses.html'
   },
   {
     image: {
