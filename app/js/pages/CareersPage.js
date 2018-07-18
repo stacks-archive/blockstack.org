@@ -53,6 +53,13 @@ class CareersPage extends Component {
               <div className="container">
                 <h1>Careers</h1>
                 <div className="row">
+                  <div className="col-md-12 mb-4">
+                    <img 
+                      src="/images/photos/stratton.jpg" 
+                      alt="Blockstack Stratton Team Retreat" 
+                      style={{ width: '100%' }}
+                    />
+                  </div>
                   <div className="col-md-7">
                     <div className="mb-4">
                       <p>
