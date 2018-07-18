@@ -59,6 +59,7 @@ const Button = ({ button }) => {
 }
 const PageTemplate = (Component, meta) => {
   class PageTemplateWrapper extends React.PureComponent {
+
     render() {
       return (
         <>

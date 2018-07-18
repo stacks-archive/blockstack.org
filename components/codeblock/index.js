@@ -52,7 +52,7 @@ class Codeblock extends React.PureComponent {
       return null
     }
     const language = this.props.className && this.props.className.split('-')[1]
-    console.log('language', language)
+
     return (
       <>
         {this.state.mounted ? (

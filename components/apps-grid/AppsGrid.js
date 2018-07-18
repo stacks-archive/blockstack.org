@@ -5,44 +5,37 @@ import Card from '@components/card'
 import TriangleBg from '@components/triangle-bg'
 import Arrow from '@components/outline-arrow'
 
-// App Icons
-import GraphiteIcon from '@assets/images/app-graphite.png'
-import HermesIcon from '@assets/images/app-hermes.png'
-import DotpodcastIcon from '@assets/images/app-dotpodcast.png'
-import KanstackIcon from '@assets/images/app-kanstack.png'
-import CoinfortIcon from '@assets/images/app-coinfort.png'
-import AppCoIcon from '@assets/images/app-co-icon.png'
-
 import './AppsGrid.scss'
+import { Image } from '@components/image'
 
 const cards = [
   {
     title: 'Graphite',
-    icon: GraphiteIcon,
+    icon: 'images/app-graphite.png',
     link: 'https://github.com/jehunter5811/graphite-blockstack',
     description: 'Collaborative decentralized docs'
   },
   {
     title: 'Hermes',
-    icon: HermesIcon,
+    icon: 'images/app-hermes.png',
     link: 'https://github.com/dhealy05/Hermes',
     description: 'Encrypted peer-to-peer chat'
   },
   {
     title: 'Dotpodcast',
-    icon: DotpodcastIcon,
+    icon: 'images/app-dotpodcast.png',
     link: 'https://github.com/DotPodcast',
     description: 'Discover and listen to podcasts'
   },
   {
     title: 'Kanstack',
-    icon: KanstackIcon,
+    icon: 'images/app-kanstack.png',
     link: 'https://github.com/hstove/kanstack',
     description: 'Decentralized Kanban sprint board'
   },
   {
     title: 'Coinfort',
-    icon: CoinfortIcon,
+    icon: 'images/app-coinfort.png',
     link: 'https://github.com/twg/coinfort-web',
     description: 'Encrypted crypto tracker'
   }
@@ -84,7 +77,11 @@ class AppsGrid extends Component {
                     <div className="grid-flex no-break middle">
                       <div className="col no-grow">
                         <div className="icon-wrap">
-                          <img className="icon" src={AppCoIcon} />
+                          <Image
+                            className="icon"
+                            noBlur
+                            src="images/app-co-icon.png"
+                          />
                         </div>
                       </div>
                       <div className="col grow align-left">

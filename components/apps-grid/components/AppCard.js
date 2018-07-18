@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Card from '@components/card'
 import Arrow from '@components/outline-arrow'
+import { Image } from '@components/image'
 
 class AppsGrid extends Component {
   render() {
@@ -13,7 +14,8 @@ class AppsGrid extends Component {
         <div className="grid-flex no-break tight-gutter top">
           <div className="col no-grow">
             <div className="icon-wrap">
-              <img
+              <Image
+                noBlur
                 className="icon"
                 src={this.props.appIcon}
                 alt={this.props.appName}
@@ -43,7 +45,9 @@ class AppsGrid extends Component {
               </div>
               <div className="col">
                 <div className="ml-1 view-arrow">
-                  <div className="bs-outline-arrow"><Arrow /></div>
+                  <div className="bs-outline-arrow">
+                    <Arrow />
+                  </div>
                 </div>
               </div>
             </div>

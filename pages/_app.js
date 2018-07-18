@@ -9,7 +9,6 @@ import Head from 'next/head'
 import { Mdx } from '@components/mdx'
 import withReduxStore from '@common/withReduxStore'
 import { Provider as ReduxProvider } from 'redux-bundler-react'
-import { Type } from '@components/typography'
 import '@scss/main.scss'
 
 const fetchOurData = async (ctx) => {

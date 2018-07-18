@@ -6,7 +6,6 @@ const getSlugFromRSS = (url) => {
   // Handle URL
   let urlSlug = null
   if (url) {
-    console.log(url)
     urlSlug = url.replace('https://blockstack.org/blog/', '').replace(/\/$/, '')
   }
   return urlSlug

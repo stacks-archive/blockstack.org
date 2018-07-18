@@ -79,6 +79,16 @@ const config = {
       loader: 'url-loader?limit=100000',
       include: [path.resolve(__dirname, 'assets/fonts')]
     })
+    config.module.rules.push({
+      test: /\.(jpe?g|png)$/i,
+      loader: 'responsive-loader',
+      options: {
+        quality: 60,
+        adapter: require('responsive-loader/sharp'),
+        placeholder: true,
+        placeholderSize: 80
+      }
+    })
     return config
   }
 }
@@ -92,12 +102,8 @@ const plugins = [
       imagesFolder: 'images',
       imagesName: '[name]-[hash].[ext]',
       optimizeImagesInDev: false,
-      mozjpeg: {
-        quality: 65
-      },
-      optipng: {
-        optimizationLevel: 3
-      },
+      mozjpeg: false,
+      optipng: false,
       pngquant: false,
       gifsicle: {
         interlaced: true,

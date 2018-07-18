@@ -1,11 +1,12 @@
 import React from 'react'
 import { StyledList } from './styled'
+import {Image} from '@components/image'
 
 const ListItem = ({ image, link, children, ...rest }) => (
   <StyledList.Item {...rest}>
     <StyledList.Image>
       <a href={link} target="_blank" rel="noopener noreferrer">
-        <img src={image.src} alt={image.alt} />
+        <Image src={image.src} alt={image.alt} />
       </a>
     </StyledList.Image>
     <StyledList.Content>{children}</StyledList.Content>

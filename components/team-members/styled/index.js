@@ -7,12 +7,17 @@ const StyledTeamMembers = styled.div`
 `
 
 const Avatar = styled.div`
+  max-width: 100px;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  border-radius: 100%;
   img,
   picture {
-    max-width: 100px;
-    display: block;
-    overflow: hidden;
-    border-radius: 100%;
+    //max-width: 100px;
+    //display: block;
+    //overflow: hidden;
+    //border-radius: 100%;
   }
 `
 

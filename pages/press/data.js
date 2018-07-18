@@ -1,5 +1,13 @@
 export const pressData = [
   {
+    date: 'Jul 17, 2018',
+    publication: 'Data Makes Possible',
+    title:
+      'The Internet of the Future Might Run on Blockchain',
+    url:
+      'https://www.datamakespossible.com/internet-future-might-run-blockchain/'
+  },
+  {
     date: 'Feb 1, 2018',
     publication: 'The Guardian',
     title:
