@@ -9,13 +9,13 @@ import './WhyBS.scss'
 const compareRows = [
   {
     title: 'Storage',
-    leftItem: 'Google servers',
-    rightItem: 'Personal data lockers built on Google, AWS, and Azure'
+    leftItem: 'Google servers.',
+    rightItem: 'Personal data lockers built on Google, AWS, and Azure.'
   },
   {
     title: 'Authentication',
-    leftItem: 'Google authentication',
-    rightItem: 'Universal, user owned ID'
+    leftItem: 'Uses Google authentication.',
+    rightItem: 'Universal, user-owned ID.'
   },
   {
     title: 'Scaling',
@@ -24,13 +24,13 @@ const compareRows = [
   },
   {
     title: 'Community',
-    leftItem: 'Owned by Google',
-    rightItem: 'Open source. 7000+ devs.'
+    leftItem: 'Owned by Google.',
+    rightItem: 'Open source. 7,000+ developers.'
   },
   {
     title: 'Decentralization',
     leftItem: 'None. Highly centralized.',
-    rightItem: 'Stacks blockchain'
+    rightItem: 'Fast and scalable blockchain for decentralized apps.'
   }
 ]
 
@@ -68,14 +68,15 @@ class WhyBS extends Component {
           </div>
           <ol className="dashlist main-color">
             <li>
-              <p>Get paid mining rewards if you build a popular app</p>
+              <p>Get paid mining rewards if you build a popular app.</p>
             </li>
             <li>
-              <p>Scale your app without limitations of the blockchain</p>
+              <p>Scale your app without limitations of the blockchain.</p>
             </li>
             <li>
               <p>
-                Gain a competitive advantage by giving your users data ownership
+                Gain a competitive advantage by giving your users data
+                ownership.
               </p>
             </li>
           </ol>

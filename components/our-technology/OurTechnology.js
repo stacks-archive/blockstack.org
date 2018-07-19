@@ -1,14 +1,8 @@
 import React, { Component } from 'react'
-import InlineSVG from 'svg-inline-react'
 import Card from '@components/card'
 import TriangleBg from '@components/triangle-bg'
 import Arrow from '@components/outline-arrow'
-
-import GraphiteIcon from '@assets/images/app-graphite.png'
-import HermesIcon from '@assets/images/app-hermes.png'
-import DotpodcastIcon from '@assets/images/app-dotpodcast.png'
-import KanstackIcon from '@assets/images/app-kanstack.png'
-import CoinfortIcon from '@assets/images/app-coinfort.png'
+import { Image } from '@components/image'
 
 import './OurTechnology.scss'
 
@@ -71,16 +65,32 @@ class OurTechnology extends Component {
             <div className="g-card dark px-2 pb-2 align-center mb-tight-gutter pt-1px">
               <div className="grid-flex no-break no-gutter center">
                 <div className="col">
-                  <img className="example-app-icon" src={GraphiteIcon} />
+                  <Image
+                    noBlur
+                    className="example-app-icon"
+                    src="images/app-graphite.png"
+                  />
                 </div>
                 <div className="col">
-                  <img className="example-app-icon" src={CoinfortIcon} />
+                  <Image
+                    noBlur
+                    className="example-app-icon"
+                    src="images/app-hermes.png"
+                  />
                 </div>
                 <div className="col">
-                  <img className="example-app-icon" src={HermesIcon} />
+                  <Image
+                    noBlur
+                    className="example-app-icon"
+                    src="images/app-kanstack.png"
+                  />
                 </div>
                 <div className="col">
-                  <img className="example-app-icon" src={KanstackIcon} />
+                  <Image
+                    noBlur
+                    className="example-app-icon"
+                    src="images/app-coinfort.png"
+                  />
                 </div>
               </div>
               <p className="sm pt-2">Amazing dapps built by you!</p>
