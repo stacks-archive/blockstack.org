@@ -29,7 +29,7 @@ const TopArea = (props) => {
       <div className="intro-text align-center">
         <div className="container">
           <h1>
-            The easiest way to start building decentralized blockchain apps
+            The easiest way to start building decentralized blockchain apps
           </h1>
         </div>
       </div>

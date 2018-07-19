@@ -10,7 +10,7 @@ const compareRows = [
   {
     title: 'Storage',
     leftItem: 'Google servers',
-    rightItem: 'No servers. Encrypted piggyback on Google, AWS, and Azure'
+    rightItem: 'Personal data lockers built on Google, AWS, and Azure'
   },
   {
     title: 'Authentication',
@@ -71,9 +71,7 @@ class WhyBS extends Component {
               <p>Get paid mining rewards if you build a popular app</p>
             </li>
             <li>
-              <p>
-                Scale your app orders of magnitude greater than blockchain alone
-              </p>
+              <p>Scale your app without limitations of the blockchain</p>
             </li>
             <li>
               <p>
