@@ -1,35 +1,29 @@
-## Browser
+The Blockstack Browser allows you to create and manage Blockstack IDs, manage storage of your data, and explore decentralized apps. 
 
-### Web App
+### Blockstack Browser (Web App)
 
-Don't want to download and install the Blockstack Browser? Use the web app for the quickest way to start owning your data.
+No install required (recommended for most users)
 
-Requires Sierra 10.12+
-
-<a href="https://browser.blockstack.org/" class="button">Visit</a>
-
-### macOS
-
-Requires Sierra 10.12+
-
-<a href="https://github.com/blockstack/blockstack-browser/releases/download/v0.29.2/Blockstack-for-macOS-v0.29.2.dmg" class="button">Download</a>
-
-### Windows
-
-Requires Windows 10
-
-<a href="https://github.com/blockstack/blockstack-browser/releases/download/v0.29.2/Blockstack-for-win10-v0.29.2.msi" class="button">Download</a>
-
-### Linux
-
-Advanced Install
-
-<a href="https://github.com/blockstack/blockstack-browser/releases/download/v0.29.2/Blockstack-for-Linux-v0.29.2.sh" class="button">Download</a>
+<a href="https://browser.blockstack.org/" class="button">Visit Blockstack Browser</a>
 
 ---
 
-### Run a Full Node
+### Blockstack Browser (MacOS)
 
 Requires Sierra 10.12+
 
-<a href="https://github.com/blockstack/blockstack-core" target="_blank" class="button">Instructions on GitHub</a>
+<a href="https://github.com/blockstack/blockstack-browser/releases/download/v0.29.2/Blockstack-for-macOS-v0.29.2.dmg" class="button">MacOS Download</a>
+
+### Blockstack Browser (Windows)
+
+Requires Windows 10
+
+<a href="https://github.com/blockstack/blockstack-browser/releases/download/v0.29.2/Blockstack-for-win10-v0.29.2.msi" class="button">Windows Download</a>
+
+### Blockstack Browser (Linux)
+
+Advanced Install
+
+<a href="https://github.com/blockstack/blockstack-browser/releases/download/v0.29.2/Blockstack-for-Linux-v0.29.2.sh" class="button">Linux Download</a>
+
+Developers can also run a full node by [following instructions on GitHub](https://github.com/blockstack/blockstack-core).
