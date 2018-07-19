@@ -60,6 +60,7 @@
     "babel-plugin-module-resolver": "^3.1.1",
     "babel-plugin-styled-components": "^1.5.1",
     "caniuse-db": "^1.0.30000864",
+    "cpx": "^1.5.0",
     "desvg": "^1.0.2",
     "desvg-loader": "^0.1.0",
     "eslint": "^5.0.1",
@@ -92,7 +93,8 @@
   "scripts": {
     "build": "NODE_ENV=production next build",
     "dev": "NODE_ENV=development node server.js",
-    "export": "NODE_ENV=production next export",
+    "copyImages": "cpx \".next/*.{png,jpg}\" out/_next/static/images",
+    "export": "NODE_ENV=production next export && npm run copyImages",
     "format": "prettier --write ./**/**/*.{js,md} && echo -e '\\033[0;32m'💅 Just use prettier'\\033[0m'",
     "prod": "npm run build && npm run export && npm run start",
     "netlify": "npm run build && npm run export",
