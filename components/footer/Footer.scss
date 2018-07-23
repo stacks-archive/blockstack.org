@@ -5,6 +5,10 @@ footer {
   margin: 0 !important;
   padding-top: 40px;
 
+  * {
+    font-family: $main-font !important;
+  }
+
   .es-logo {
     svg {
       * {
@@ -92,6 +96,9 @@ footer {
     // 		}
     // 	}
     // }
+  }
+  h5 {
+    color: white;
   }
   .tiny,
   .tiny a {

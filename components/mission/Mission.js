@@ -11,7 +11,7 @@ class Header extends Component {
       <div className="md-basic-template">
         <section className="mission py-4">
           <div className="container align-center">
-            <h3 className="main-color pb-3">Our mission</h3>
+            <p className="main-color pb-3">Our mission</p>
             <p className="main-color">
               Build an ecosystem that gives your users control over their
               fundamental digital rights: Identity, data-ownership, privacy, and
