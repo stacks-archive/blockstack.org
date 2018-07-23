@@ -1,8 +1,8 @@
-### [Multi-player Storage](/tutorials/multi-player-storage)
+### [Hello Blockstack](/tutorials/hello-blockstack)
 
-Build a decentralized micro-blogging app using multi-player Gaia storage.
+Build a simple single-page JavaScript application that runs completely client-side without any servers.
 
-[Get Started](/tutorials/multi-player-storage)
+[Get Started](/tutorials/hello-blockstack)
 
 ### [Managing Data with Gaia](/tutorials/managing-data-with-gaia)
 
@@ -16,8 +16,8 @@ Walk through creating a basic Todo application with Blockstack. Learn about Sign
 
 [Get Started](/tutorials/todo-list)
 
-### [Hello Blockstack](/tutorials/hello-blockstack)
+### [Multi-player Storage](/tutorials/multi-player-storage)
 
-Build a simple single-page JavaScript application that runs completely client-side without any servers.
+Build a decentralized micro-blogging app using multi-player Gaia storage.
 
-[Get Started](/tutorials/hello-blockstack)
+[Get Started](/tutorials/multi-player-storage)
