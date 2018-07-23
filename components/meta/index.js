@@ -17,7 +17,6 @@ const Meta = ({
   return (
     <Head>
       <meta name="description" content={description} />
-      <meta name="keywords" content="..." />
 
       <link rel="shorticon icon" href={favicon.src} />
       <link rel="apple-touch-icon-precomposed" href={appleTouchIcon.src} />
