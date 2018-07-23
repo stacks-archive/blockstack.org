@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { colors } from '@common'
 
-const topHeight = '300px'
+const topHeight = '381px'
 const Wrapper = styled.div`
   max-width: 44rem;
   display: flex;
@@ -39,6 +39,8 @@ const StyledPageTop = styled.div`
   padding: 140px 0 100px 0;
   text-align: center;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: ${topHeight};
   h1,

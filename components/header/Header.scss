@@ -2,6 +2,7 @@ header.header {
   * {
     user-select: none;
   }
+
   padding-top: 1px !important;
   @include respond($lg) {
     padding-top: 1px;
@@ -33,11 +34,8 @@ header.header {
     display: flex;
     align-items: center;
     transition: background $md-speed $ease;
-    z-index: 90000000000;
-    top: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
+    position: relative;
+    z-index: 9999999999999999;
     overflow: hidden;
     .bs-logo,
     .bs-logotype {
@@ -56,9 +54,6 @@ header.header {
       }
     }
     &.collapsed {
-      position: fixed;
-      background: darken($main-color, 0%);
-      height: 60px;
       .menu-toggle {
         @include respond-smaller-than($lg) {
           margin-right: -60px;
@@ -75,6 +70,12 @@ header.header {
           opacity: 1;
           visibility: visible;
           transform: none;
+          svg {
+            * {
+              mix-blend-mode: screen;
+              fill: white !important;
+            }
+          }
           &.invalid {
             input {
               border-color: $alert;
@@ -205,4 +206,12 @@ header.header {
       transition-delay: 0.1s;
     }
   }
+}
+
+.headroom {
+  z-index: 9999 !important;
+}
+.headroom-wrapper{
+  position: relative;
+  z-index: 9999999999999;
 }

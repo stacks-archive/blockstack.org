@@ -96,16 +96,16 @@ class NewsletterSignup extends Component {
             position: 'absolute',
             right: 0,
             top: 0,
-            height: '60px',
-            width: '60px',
+            height: '100%',
+            width: '44px',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            opacity: disabled ? 0.25 : 1,
+            opacity: disabled ? 0 : 1,
             pointerEvents: disabled ? 'none' : null
           }}
         >
-          <ChevronRightIcon color="#3700ff !important" size={32} />
+          <ChevronRightIcon color="currentColor !important" size={32} />
         </div>
         {/*<Button*/}
         {/*onClick={ this.signup }*/}

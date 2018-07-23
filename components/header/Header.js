@@ -7,7 +7,7 @@ import MainMenu from '@components/main-menu'
 import { InternalLink } from '@components/internal-link'
 import scrollMonitor from 'scrollmonitor'
 import Head from 'next/head'
-
+import Headroom from 'react-headroom'
 import './Header.scss'
 
 class Header extends Component {
@@ -59,74 +59,76 @@ class Header extends Component {
 
   render() {
     return (
-      <header
-        className={
-          this.state.menuOpen ? 'header blue-bg menu-open' : 'header blue-bg'
-        }
-      >
-        {this.state.menuOpen ? (
-          <Head>
-            <meta name="theme-color" content="rgb(15, 14, 49)" />{' '}
-          </Head>
-        ) : null}
-        <div id="StickyHeader">
-          <div
-            className={
-              this.state.collapsed ? 'inner-header collapsed' : 'inner-header'
-            }
-          >
-            <div>
-              <div className="container header-container">
-                <div className="grid-flex no-break middle no-gutter">
-                  <div className="col left">
-                    <InternalLink
-                      closeMenu={this.closeMenu}
-                      className="es-logo"
-                      href={{ pathname: '/', asPath: '/home' }}
-                    >
-                      <div className="grid-flex no-break no-gutter middle left">
-                        <div className="bs-logo">{Logo()}</div>
-                        <div className="bs-logotype ml-2">{LogoType()}</div>
-                      </div>
-                    </InternalLink>
-                  </div>
+      <Headroom>
+        <header
+          className={
+            this.state.menuOpen ? 'header blue-bg menu-open' : 'header blue-bg'
+          }
+        >
+          {this.state.menuOpen ? (
+            <Head>
+              <meta name="theme-color" content="rgb(15, 14, 49)" />{' '}
+            </Head>
+          ) : null}
+          <div id="StickyHeader">
+            <div
+              className={
+                this.state.collapsed ? 'inner-header collapsed' : 'inner-header'
+              }
+            >
+              <div>
+                <div className="container header-container">
+                  <div className="grid-flex no-break middle no-gutter">
+                    <div className="col left">
+                      <InternalLink
+                        onClick={this.closeMenu}
+                        className="es-logo"
+                        href={{ pathname: '/', asPath: '/home' }}
+                      >
+                        <div className="grid-flex no-break no-gutter middle left">
+                          <div className="bs-logo">{Logo()}</div>
+                          <div className="bs-logotype ml-2">{LogoType()}</div>
+                        </div>
+                      </InternalLink>
+                    </div>
 
-                  <div className="col center align-center">
-                    <div className="grid-flex tight-gutter center-actions center">
-                      <div className="col">
-                        <Button
-                          className="secondary main-action"
-                          href={bslinks && bslinks.tutorials}
-                          label="Tutorials"
-                        />
-                      </div>
-                      <div className="col newsletter-col">
-                        <NewsletterSignup id="headerNewsletterSignup" />
+                    <div className="col center align-center">
+                      <div className="grid-flex tight-gutter center-actions center">
+                        <div className="col">
+                          <Button
+                            className="secondary main-action"
+                            href={bslinks && bslinks.tutorials}
+                            label="Tutorials"
+                          />
+                        </div>
+                        <div className="col newsletter-col">
+                          <NewsletterSignup id="headerNewsletterSignup" />
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div className="col right side-col align-right">
-                    <a onClick={this.toggleMenu} className="p menu-toggle">
-                      <span className="material-icons md-24 menu-icon">
-                        {this.state.menuOpen ? 'close' : 'menu'}
-                      </span>
-                      <span className="menu-text">
-                        {this.state.menuOpen ? ' Close' : ' Menu'}
-                      </span>
-                    </a>
+                    <div className="col right side-col align-right">
+                      <a onClick={this.toggleMenu} className="p menu-toggle">
+                        <span className="material-icons md-24 menu-icon">
+                          {this.state.menuOpen ? 'close' : 'menu'}
+                        </span>
+                        <span className="menu-text">
+                          {this.state.menuOpen ? ' Close' : ' Menu'}
+                        </span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        {this.state.menuOpen ? (
-          <MainMenu links={bslinks} closeMenu={() => this.closeMenu()} />
-        ) : (
-          false
-        )}
-      </header>
+          {this.state.menuOpen ? (
+            <MainMenu links={bslinks} closeMenu={() => this.closeMenu()} />
+          ) : (
+            false
+          )}
+        </header>
+      </Headroom>
     )
   }
 }
