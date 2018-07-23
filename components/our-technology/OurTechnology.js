@@ -47,21 +47,6 @@ const cards = [
     link:
       'https://forum.blockstack.org/t/new-features-enabled-by-a-layer-2-token/1327',
     description: 'Token to register IDs and apps'
-  },
-  {
-    title: 'Virtual Chain',
-    link: 'https://github.com/blockstack/virtualchain',
-    description: 'State engine pegged to blockchain'
-  },
-  {
-    title: 'Atlas',
-    link: 'https://github.com/blockstack/atlas',
-    description: 'Peer-to-peer network'
-  },
-  {
-    title: 'Stacks Blockchain',
-    link: 'https://testnet.blockstack.org/',
-    description: 'Fast and scalable blockchain for decentralized apps'
   }
 ]
 
@@ -75,7 +60,7 @@ class OurTechnology extends Component {
               <p>Our technology (Block)stack</p>
             </div>
           </div>
-          <div className="container very-narrow pt-3">
+          <div className="container narrow pt-3">
             <div className="g-card dark px-2 pb-2 align-center mb-tight-gutter pt-1px">
               <div className="grid-flex no-break no-gutter center">
                 <div className="col">
@@ -107,7 +92,23 @@ class OurTechnology extends Component {
                   />
                 </div>
               </div>
-              <p className="sm pt-2">Amazing dapps built by you!</p>
+              <a href="https://app.co" target="_blank">
+                <p
+                  className="sm pt-2"
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}
+                >
+                  <Image
+                    noBlur
+                    style={{ width: '28px', paddingRight: '4px' }}
+                    src="images/app-co-icon.png"
+                    alt="App.co"
+                  /> App.co: Share your app with the world!
+                </p>
+              </a>
             </div>
           </div>
           <div className="container">
@@ -116,7 +117,7 @@ class OurTechnology extends Component {
                 <div className="col-8">
                   <div className="grid-flex tight-gutter center">
                     {cards.map((card, index) => {
-                      if (index < 4) {
+                      if (index < 2) {
                         return (
                           <div
                             key={'tech-card-' + index}
@@ -150,12 +151,12 @@ class OurTechnology extends Component {
                 </div>
                 <div className="col-12" />
                 {cards.map((card, index) => {
-                  var length = cards.length - 1
-                  if (index > 3 && index != length) {
+                  const length = cards.length - 1
+                  if (index > 1 && index !== length) {
                     return (
                       <div
                         key={'tech-card-' + index}
-                        className="col-4 pb-tight-gutter"
+                        className="col-5 pb-tight-gutter"
                       >
                         <Card className="card stretch-height" href={card.link}>
                           <div className="p-2">
@@ -176,7 +177,7 @@ class OurTechnology extends Component {
                         </Card>
                       </div>
                     )
-                  } else if (index == length) {
+                  } else if (index === length) {
                     return (
                       <div key={'tech-card-' + index} className="col-12">
                         <Card className="card tech-long-card" href={card.link}>
