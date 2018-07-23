@@ -89,6 +89,7 @@ const StyledPageContent = styled.main`
   margin-left: auto;
   position: relative;
   z-index: 20;
+  padding-bottom: 100px;
   @media (max-width: 600px) {
     padding: 20px 20px;
   }
