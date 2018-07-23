@@ -40,13 +40,13 @@ const cards = [
   {
     title: 'Gaia',
     link: 'https://github.com/blockstack/gaia',
-    description: 'Decentralized storage hubs'
+    description: 'Decentralized, encrypted storage'
   },
   {
     title: 'Stacks',
     link:
       'https://forum.blockstack.org/t/new-features-enabled-by-a-layer-2-token/1327',
-    description: 'Token to register IDs and apps'
+    description: 'Fast and scalable blockchain for decentralized apps'
   }
 ]
 
@@ -106,7 +106,8 @@ class OurTechnology extends Component {
                     style={{ width: '28px', paddingRight: '4px' }}
                     src="images/app-co-icon.png"
                     alt="App.co"
-                  /> App.co: Share your app with the world!
+                  />{' '}
+                  App.co: Share your app with the world!
                 </p>
               </a>
             </div>
