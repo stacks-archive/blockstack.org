@@ -3,11 +3,39 @@ import toQueryString from 'to-querystring'
 import jsonp from 'jsonp'
 import { ChevronRightIcon } from 'mdi-react'
 import Input from '@components/input'
+import { string, object } from 'yup'
+
+const schema = object().shape({
+  email: string()
+    .email()
+    .required()
+})
 
 import './NewsletterSignup.scss'
 
 const subscribeURL =
   'https://blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=0e5478ae86'
+
+const InputMessage = ({ children }) => (
+  <div
+    style={{
+      position: 'absolute',
+      right: 0,
+      top: 0,
+      height: '100%',
+      width: '100%',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      background: 'white',
+      borderRadius: '60px',
+      zIndex: 10,
+      color: '#3700ff'
+    }}
+  >
+    {children}
+  </div>
+)
 
 class NewsletterSignup extends Component {
   state = {
@@ -17,18 +45,41 @@ class NewsletterSignup extends Component {
     submitting: false,
     error: null
   }
-
-  updateEmailAddress = (event) => {
+  validate = async (email) => {
+    return schema.isValid({ email })
+  }
+  updateEmailAddress = async (event) => {
     const email = event.target.value
     this.setState({ email })
+    console.log('validation', await this.validate(email))
 
-    const regEx = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     if (email.length > 4) {
-      this.setState({ validEmail: regEx.test(this.state.email) })
+      const validEmail = await this.validate(email)
+      this.setState({
+        validEmail
+      })
     }
   }
 
-  signup = (event) => {
+  setError = (error) => {
+    this.setState(
+      {
+        submitting: false,
+        error
+      },
+      () =>
+        setTimeout(
+          () =>
+            this.setState({
+              error: null,
+              email: ''
+            }),
+          1200
+        )
+    )
+  }
+
+  signup = () => {
     console.log('sign me up please')
 
     const data = { EMAIL: this.state.email }
@@ -40,11 +91,12 @@ class NewsletterSignup extends Component {
     const params = toQueryString(data)
 
     jsonp(url + '&' + params, { param: 'c' }, (err, res) => {
-      if (err || res.result !== 'success') {
-        console.log('err', err)
-        this.setState({ error: err, submitting: false })
+      console.log('res', res)
+      if (err) {
+        this.setError(err)
+      } else if (res.result === 'error') {
+        this.setError(res.msg)
       } else {
-        console.log('res', res)
         this.setState({ success: true, submitting: false })
       }
     })
@@ -55,6 +107,17 @@ class NewsletterSignup extends Component {
       this.state.email.length < 4 ||
       !this.state.validEmail ||
       this.state.success
+
+    const errorMessage = () => {
+      if (this.state.error.includes('already')) {
+        return 'Already subscribed, try another.'
+      }
+      if (this.state.error.includes('too many')) {
+        return 'Too many attempts, try another.'
+      }
+      return 'Sorry, try another email.'
+    }
+
     return (
       <div
         className={
@@ -70,25 +133,14 @@ class NewsletterSignup extends Component {
           value={this.state.email}
           onChange={this.updateEmailAddress}
         />
+        {this.state.error ? (
+          <InputMessage>{errorMessage()}</InputMessage>
+        ) : null}
         {this.state.success ? (
-          <div
-            style={{
-              position: 'absolute',
-              right: 0,
-              top: 0,
-              height: '100%',
-              width: '100%',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              background: 'white',
-              borderRadius: '60px',
-              zIndex: 10,
-              color: '#3700ff'
-            }}
-          >
-            You've been added!
-          </div>
+          <InputMessage>Thanks for subscribing!</InputMessage>
+        ) : null}
+        {this.state.submitting ? (
+          <InputMessage>Processing...</InputMessage>
         ) : null}
         <div
           onClick={!this.state.success || !disabled ? this.signup : null}
