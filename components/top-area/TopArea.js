@@ -2,9 +2,21 @@ import React, { Component } from 'react'
 import Link from 'next/link'
 import Card from '@components/card'
 import Arrow from '@components/outline-arrow'
-import TriangleBg from '@components/triangle-bg'
+import { BigTriangle } from '@components/svgs'
 import CodeBlock from '@components/code-block'
+import styled from 'styled-components'
 
+const FloatingTriangle = styled.div`
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  svg {
+    display: block;
+  }
+`
 import './TopArea.scss'
 
 const UserCode = `if (blockstack.isUserSignedIn()) {
@@ -157,7 +169,9 @@ const TopArea = (props) => {
             </ul>
           </nav>
         </div>
-        <TriangleBg />
+        <FloatingTriangle>
+          <BigTriangle />
+        </FloatingTriangle>
       </div>
     </section>
   )

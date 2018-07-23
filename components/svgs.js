@@ -191,4 +191,70 @@ const TriangleDotsLarge = (props) => (
   </svg>
 )
 
-export { Logo, LogoType, TriangleDotsHalf, TriangleDotsFull, TriangleDotsLarge }
+const MediumTriangle = ({ ...rest }) => (
+  <svg width="1278" height="300" viewBox="0 0 1278 300" fill="none">
+    <path
+      opacity="0.5"
+      d="M0 0H1278L639 300L0 0Z"
+      fill="url(#mediumTrianglePattern)"
+    />
+    <defs>
+      <pattern
+        id="mediumTrianglePattern"
+        patternContentUnits="objectBoundingBox"
+        width="0.0234742"
+        height="0.1"
+      >
+        <use
+          href="#mediumTriangleImage"
+          transform="scale(0.000782473 0.00333333)"
+        />
+      </pattern>
+      <image
+        id="mediumTriangleImage"
+        width="30"
+        height="30"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAUUlEQVRIie2SsQ3AMAzD5JzU63pCr+tLzgGBt0pdyJE2wEV1v92SSief+eeqw6/hWW6/hmc7hKPhHm5Wz6oJW8OsOgLhaJhVRyAcDf+yagAbG8A9HDLZ0P/+AAAAAElFTkSuQmCC"
+      />
+    </defs>
+  </svg>
+)
+const BigTriangle = ({ ...rest }) => (
+  <svg width="1278" height="634" viewBox="0 0 1278 634" fill="none">
+    <g
+      style={{ mixBlendMode: 'darken' }}
+      transform="translate(1280 634) rotate(180)"
+    >
+      <path d="M1280 0H0L646 634L1280 0Z" fill="url(#bigTrianglePattern)" />
+    </g>
+    <defs>
+      <pattern
+        id="bigTrianglePattern"
+        patternContentUnits="objectBoundingBox"
+        width="0.0234375"
+        height="0.0473186"
+      >
+        <use
+          href="#bigTriangleImage"
+          transform="scale(0.00078125 0.00157729)"
+        />
+      </pattern>
+      <image
+        id="bigTriangleImage"
+        width="30"
+        height="30"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAU0lEQVRIie2SsQ3AMAzDlNxQ5L9e1v+C/pAcEHir1IUcaQNc1MZ1L0lNJ5/5+T6H78Wz3L4Xz3YIR8OruFk9qyZsDbPqCISjYVYdgXA0/MuqAWxsE5UcMpLY4ZEAAAAASUVORK5CYII="
+      />
+    </defs>
+  </svg>
+)
+
+export {
+  Logo,
+  LogoType,
+  TriangleDotsHalf,
+  TriangleDotsFull,
+  TriangleDotsLarge,
+  BigTriangle,
+  MediumTriangle
+}

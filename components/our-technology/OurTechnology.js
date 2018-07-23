@@ -1,9 +1,23 @@
 import React, { Component } from 'react'
 import Card from '@components/card'
-import TriangleBg from '@components/triangle-bg'
 import Arrow from '@components/outline-arrow'
 import { Image } from '@components/image'
+import styled from 'styled-components'
+import { BigTriangle } from '@components/svgs'
 
+const FloatingTriangle = styled.div`
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  svg {
+    display: block;
+    transform: rotate(180deg);
+  }
+`
 import './OurTechnology.scss'
 
 const cards = [
@@ -191,7 +205,9 @@ class OurTechnology extends Component {
               </div>
             </div>
           </div>
-          <TriangleBg direction="down" />
+          <FloatingTriangle>
+            <BigTriangle />
+          </FloatingTriangle>
         </div>
       </section>
     )

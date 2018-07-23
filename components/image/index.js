@@ -4,7 +4,7 @@ const requireImage = require.context('@assets', true, /\.(png|jpg|jpeg|svg)$/)
 const path = '/_next/webpack/'
 const prodPath = '/_next/static/images/'
 const addPath = (src) => {
-  if (src.includes('_next') && src.includes(path)) {
+  if (src && src.includes('_next') && src.includes(path)) {
     if (process.env.NODE_ENV === 'production') {
       return src.replace(path, '/_next/static/images/')
     } else {
@@ -34,7 +34,7 @@ class Image extends React.Component {
 
   render() {
     const { src, alt, noBlur, ...rest } = this.props
-    const internalLink = !src.includes('http')
+    const internalLink = src && !src.includes('http')
     const localImage = internalLink
       ? requireImage(`./images${src.split('images')[1]}`)
       : null

@@ -1,5 +1,5 @@
 {
-  "name": "blockstack-landing",
+  "name": "blockstack-www",
   "description": "A Static React App. Landing Pages for Block Stack",
   "version": "1.0.0",
   "author": "Blockstack Team",
@@ -92,12 +92,15 @@
   },
   "scripts": {
     "build": "NODE_ENV=production next build",
+    "postbuild": "npm run copyImages:dynamic",
     "dev": "NODE_ENV=development node server.js",
-    "copyImages": "cpx \".next/*.{png,jpg}\" out/_next/static/images",
-    "export": "NODE_ENV=production next export && npm run copyImages",
+    "copyImages:static": "cpx \".next/*.{png,jpg}\" out/_next/static/images",
+    "copyImages:dynamic": "cpx \".next/*.{png,jpg}\" .next/static/images",
+    "export": "NODE_ENV=production next export",
     "format": "prettier --write ./**/**/*.{js,md} && echo -e '\\033[0;32m'💅 Just use prettier'\\033[0m'",
-    "prod": "npm run build && npm run export && npm run start",
+    "prod": "npm run build && npm run export",
     "netlify": "npm run build && npm run export",
+    "prestart": "npm run copyImages:dynamic",
     "start": "NODE_ENV=production node server.js",
     "test": "eslint src/**/*.js"
   }

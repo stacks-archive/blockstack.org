@@ -1,11 +1,26 @@
 import React, { Component } from 'react'
-import InlineSVG from 'svg-inline-react'
 import Card from '@components/card'
-import TriangleBg from '@components/triangle-bg'
 import Arrow from '@components/outline-arrow'
 import { DividerTwo } from '@components/divider'
 
-import BsBerlin from '@assets/images/bs-berlin.png'
+import { Image } from '@components/image'
+import styled from 'styled-components'
+import { BigTriangle } from '@components/svgs'
+
+const FloatingTriangle = styled.div`
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  opacity: 0.35;
+  overflow: hidden;
+  svg {
+    display: block;
+    transform: rotate(180deg) translateY(200px);
+  }
+`
 
 import './OurCommunity.scss'
 
@@ -84,8 +99,9 @@ class OurCommunity extends Component {
                   >
                     <div className="grid-flex tight-gutter middle break-xlg">
                       <div className="col-4 logo-col">
-                        <img
-                          src={BsBerlin}
+                        <Image
+                          noBlur
+                          src="images/bs-berlin.png"
                           alt="Blockstack Berlin"
                           className="mx-auto"
                         />
@@ -141,7 +157,9 @@ class OurCommunity extends Component {
               </ul>
             </nav>
           </div>
-          <TriangleBg className="bs-mt-card" direction="down" />
+          <FloatingTriangle>
+            <BigTriangle />
+          </FloatingTriangle>
         </div>
       </section>
     )

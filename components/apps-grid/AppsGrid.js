@@ -1,13 +1,26 @@
 import React, { Component } from 'react'
-import InlineSVG from 'svg-inline-react'
 import AppCard from './components/AppCard.js'
 import Card from '@components/card'
-import TriangleBg from '@components/triangle-bg'
 import Arrow from '@components/outline-arrow'
-
 import './AppsGrid.scss'
 import { Image } from '@components/image'
+import styled from 'styled-components'
+import { BigTriangle } from '@components/svgs'
 
+const FloatingTriangle = styled.div`
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  opacity: 0.35;
+  overflow: hidden;
+  svg {
+    display: block;
+    transform: rotate(180deg) translateY(200px);
+  }
+`
 const cards = [
   {
     title: 'Graphite',
@@ -102,7 +115,9 @@ class AppsGrid extends Component {
               </div>
             </div>
           </div>
-          <TriangleBg className="bs-mt-card" direction="down" />
+          <FloatingTriangle>
+            <BigTriangle />
+          </FloatingTriangle>
         </div>
       </section>
     )
