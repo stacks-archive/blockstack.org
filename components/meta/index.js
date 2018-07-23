@@ -1,9 +1,12 @@
 import Head from 'next/head'
 import React from 'react'
+const favicon = require('@assets/images/favicon.png')
+const appleTouchIcon = require('@assets/images/touch-icon.png')
+const ogImage = require('@assets/images/blockstack_og.png')
 
 const DEFAULT = {
   desc: `Blockstack is building an ecosystem that gives your users control over their fundamental digital rights: Identity, data-ownership, privacy, and security. Join us and help build the new internet.`,
-  ogImage: null
+  ogImage: ogImage.src
 }
 
 const Meta = ({
@@ -12,8 +15,6 @@ const Meta = ({
   ogImage = DEFAULT.ogImage,
   ...rest
 }) => {
-  const favicon = require('@assets/images/favicon.png')
-  const appleTouchIcon = require('@assets/images/touch-icon.png')
   return (
     <Head>
       <meta name="description" content={description} />
