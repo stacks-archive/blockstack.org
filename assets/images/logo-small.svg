@@ -1,11 +1,1 @@
-
-<svg width="74px" height="37px" viewBox="0 0 74 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-5" fill="#FFFFFF">
-            <path d="M0,9 L35,9 L35,0 L0,0 L0,9 Z M64.6666667,14 L39,14 C39,18.97025 43.179,23 48.3333333,23 L74,23 C74,18.02975 69.821,14 64.6666667,14 Z M48.3193333,37 L64.6666667,37 C69.821,37 74,32.97025 74,28 L39,28 C39,32.96575 43.172,36.991 48.3193333,37 Z M64.6666667,0 L48.3193333,0 C43.172,0.00675 39,4.03425 39,9 L74,9 C74,4.02975 69.821,0 64.6666667,0 Z M0,23 L35,23 L35,14 L0,14 L0,23 Z M0,37 L35,37 L35,28 L0,28 L0,37 Z" id="Page-1"></path>
-        </g>
-    </g>
-</svg>
+<svg width="74" height="37" viewBox="0 0 74 37" xmlns="http://www.w3.org/2000/svg"><path d="M0 9h35V0H0v9zm64.667 5H39c0 4.97 4.179 9 9.333 9H74c0-4.97-4.179-9-9.333-9zM48.319 37h16.348C69.82 37 74 32.97 74 28H39c0 4.966 4.172 8.991 9.32 9zM64.667 0H48.319C43.172.007 39 4.034 39 9h35c0-4.97-4.179-9-9.333-9zM0 23h35v-9H0v9zm0 14h35v-9H0v9z" fill="#FFF" fill-rule="evenodd"/></svg>
