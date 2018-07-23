@@ -74,7 +74,7 @@ const StyledPageContainer = styled.div`
   justify-content: center;
   z-index: 5;
   position: relative;
-  margin-top: ${topHeight};
+  margin-top: calc(${topHeight} - 81px);
 `
 const Sidebar = styled.aside`
   max-width: 200px;

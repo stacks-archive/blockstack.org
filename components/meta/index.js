@@ -12,16 +12,15 @@ const Meta = ({
   ogImage = DEFAULT.ogImage,
   ...rest
 }) => {
+  const favicon = require('@assets/images/favicon.png')
+  const appleTouchIcon = require('@assets/images/touch-icon.png')
   return (
     <Head>
       <meta name="description" content={description} />
       <meta name="keywords" content="..." />
 
-      <link rel="shorticon icon" href={require('@assets/images/favicon.png')} />
-      <link
-        rel="apple-touch-icon-precomposed"
-        href={require('@assets/images/touch-icon.png')}
-      />
+      <link rel="shorticon icon" href={favicon.src} />
+      <link rel="apple-touch-icon-precomposed" href={appleTouchIcon.src} />
       <link rel="canonical" href="https://blockstack.org" />
 
       <meta property="og:image" content={ogImage} />
