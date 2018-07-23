@@ -1,15 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Meta } from '@components/meta'
+
 const MonoFont = styled.div`
   * {
     font-family: 'Plex', monospace !important;
   }
 `
-const NoTemplate = (Component) => {
+const NoTemplate = (Component, meta) => {
   return class extends React.PureComponent {
     render() {
       return (
         <MonoFont>
+          <Meta {...meta} />
           <Component />
         </MonoFont>
       )
