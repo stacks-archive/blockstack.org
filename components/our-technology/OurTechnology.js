@@ -183,21 +183,19 @@ class OurTechnology extends Component {
                       <div key={'tech-card-' + index} className="col-12">
                         <Card className="card tech-long-card" href={card.link}>
                           <div className="p-2">
-                            <div className="grid-flex no-break middle">
-                              <div className="col no-grow">
+                            <div className="grid-flex tight-gutter no-break pb-1 middle">
+                              <div className="col grow">
                                 <p className="main-color underline-hover">
                                   {card.title}
                                 </p>
                               </div>
-                              <div className="col arrow-col no-grow">
+                              <div className="col no-grow">
                                 <div className="bs-outline-arrow">
                                   <Arrow />
                                 </div>
                               </div>
-                              <div className="col desc-col">
-                                <p className="sm">{card.description}</p>
-                              </div>
                             </div>
+                            <p className="sm">{card.description}</p>
                           </div>
                         </Card>
                       </div>
