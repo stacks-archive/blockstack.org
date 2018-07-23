@@ -54,8 +54,8 @@ class MyApp extends App {
       pageProps && pageProps.meta ? pageProps.meta.template : null
 
     const title =
-      pageProps && pageProps.meta
-        ? `${pageProps.meta.title} -- Blockstack`
+      pageProps && pageProps.meta && pageProps.meta.title !== 'Blockstack'
+        ? `${pageProps.meta.title} — Blockstack`
         : 'Blockstack'
 
     const withPageTemplate = renderTemplate(template)

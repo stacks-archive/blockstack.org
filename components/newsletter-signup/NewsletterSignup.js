@@ -1,11 +1,8 @@
 import React, { Component } from 'react'
 import toQueryString from 'to-querystring'
 import jsonp from 'jsonp'
-
+import { ChevronRightIcon } from 'mdi-react'
 import Input from '@components/input'
-import Button from '@components/button'
-
-import Arrow from '@components/outline-arrow'
 
 import './NewsletterSignup.scss'
 
@@ -17,6 +14,7 @@ class NewsletterSignup extends Component {
     email: '',
     validEmail: true,
     success: false,
+    submitting: false,
     error: null
   }
 
@@ -36,24 +34,31 @@ class NewsletterSignup extends Component {
     const data = { EMAIL: this.state.email }
     const url = subscribeURL.replace('/post?', '/post-json?')
 
+    this.setState({
+      submitting: true
+    })
     const params = toQueryString(data)
 
     jsonp(url + '&' + params, { param: 'c' }, (err, res) => {
       if (err || res.result !== 'success') {
-        console.log(err)
-        this.setState({ error: err })
+        console.log('err', err)
+        this.setState({ error: err, submitting: false })
       } else {
-        console.log(res)
-        this.setState({ success: true })
+        console.log('res', res)
+        this.setState({ success: true, submitting: false })
       }
     })
   }
 
   render() {
+    const disabled =
+      this.state.email.length < 4 ||
+      !this.state.validEmail ||
+      this.state.success
     return (
       <div
         className={
-          !this.state.validEmail && this.state.email != ''
+          !this.state.validEmail && this.state.email !== ''
             ? 'newsletter-form invalid'
             : 'newsletter-form'
         }
@@ -65,19 +70,52 @@ class NewsletterSignup extends Component {
           value={this.state.email}
           onChange={this.updateEmailAddress}
         />
-        <Button
-          onClick={this.signup}
-          icon={() => <Arrow />}
-          className={'transparent circle ' + this.props.inputClass}
-          htmlFor={this.props.id}
-          disabled={
-            this.state.email.length < 4 ||
-            !this.state.validEmail ||
-            this.state.success
-              ? true
-              : false
-          }
-        />
+        {this.state.success ? (
+          <div
+            style={{
+              position: 'absolute',
+              right: 0,
+              top: 0,
+              height: '100%',
+              width: '100%',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              background: 'white',
+              borderRadius: '60px',
+              zIndex: 10,
+              color: '#3700ff'
+            }}
+          >
+            You've been added!
+          </div>
+        ) : null}
+        <div
+          onClick={!this.state.success || !disabled ? this.signup : null}
+          style={{
+            position: 'absolute',
+            right: 0,
+            top: 0,
+            height: '60px',
+            width: '60px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            opacity: disabled ? 0.25 : 1,
+            pointerEvents: disabled ? 'none' : null
+          }}
+        >
+          <ChevronRightIcon color="#3700ff !important" size={32} />
+        </div>
+        {/*<Button*/}
+        {/*onClick={ this.signup }*/}
+        {/*icon={ () => <Arrow/> }*/}
+        {/*className={ 'transparent circle ' + this.props.inputClass }*/}
+        {/*htmlFor={ this.props.id }*/}
+        {/*disabled={*/}
+
+        {/*}*/}
+        {/*/>*/}
       </div>
     )
   }

@@ -38,7 +38,7 @@ class Image extends React.Component {
     const localImage = internalLink
       ? requireImage(`./images${src.split('images')[1]}`)
       : null
-    const source = internalLink ? localImage.src : src
+    const source = internalLink ? addPath(localImage.src) : src
     const placeholder = internalLink ? localImage.placeholder : null
 
     const Placeholder = () =>
@@ -53,7 +53,7 @@ class Image extends React.Component {
       <StyledImage {...localImage} noBlur={noBlur}>
         <StyledImage.Picture.Wrapper>
           <StyledImage.Picture {...rest}>
-            <img data-src={addPath(source)} alt={alt} className="lazyload" />
+            <img data-src={source} alt={alt} className="lazyload" />
           </StyledImage.Picture>
           <Placeholder />
         </StyledImage.Picture.Wrapper>

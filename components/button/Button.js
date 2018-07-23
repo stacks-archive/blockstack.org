@@ -53,33 +53,33 @@ export class Button extends Component {
   buttonIcon(showIcon) {
     var icon = ''
     if (this.props.icon) {
-      if (this.props.icon == 'loader' || this.props.state == 'loading') {
+      if (this.props.icon === 'loader' || this.props.state === 'loading') {
         icon = <Loader className="normal icon" />
-      } else if (this.props.state == 'success') {
+      } else if (this.props.state === 'success') {
         icon = <i className="material-icons icon">check</i>
-      } else if (this.props.state == 'error') {
+      } else if (this.props.state === 'error') {
         icon = <i className="material-icons icon">error_outline</i>
       } else {
         icon = <i className="material-icons icon">{this.props.icon}</i>
       }
-      if (this.props.state == 'loading' && this.props.icon) {
+      if (this.props.state === 'loading' && this.props.icon) {
         icon = <Loader className="normal icon" />
       }
-      if (this.props.state == 'error') {
+      if (this.props.state === 'error') {
         icon = <i className="material-icons icon">error_outline</i>
       }
-      if (this.props.state == 'success') {
+      if (this.props.state === 'success') {
         icon = <i className="material-icons icon">check</i>
       }
     }
     if (showIcon) {
-      if (this.props.state == 'loading') {
+      if (this.props.state === 'loading') {
         icon = <Loader className="normal icon" />
       }
-      if (this.props.state == 'error') {
+      if (this.props.state === 'error') {
         icon = <i className="material-icons icon">error_outline</i>
       }
-      if (this.props.state == 'success') {
+      if (this.props.state === 'success') {
         icon = <i className="material-icons icon">check</i>
       }
     }
@@ -89,7 +89,7 @@ export class Button extends Component {
   buttonRightIcon() {
     var icon = ''
     if (this.props.rightIcon) {
-      if (this.props.rightIcon == 'loader' || this.props.state == 'loading') {
+      if (this.props.rightIcon === 'loader' || this.props.state === 'loading') {
         icon = <Loader className="normal icon" />
       } else if (this.props.rightIcon.startsWith('<svg')) {
         icon = <InlineSVG src={this.props.rightIcon} className="icon" />
