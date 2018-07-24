@@ -22,6 +22,12 @@ const PressLogo = styled.div`
   margin-bottom: 80px;
   margin-top: 30px;
   height: 150px;
+  @media (max-width: 800px) {
+    width: 50%;
+  }
+    @media (max-width: 600px) {
+    width: 100%;
+  }
   img {
     display: block;
     width: 150px;
