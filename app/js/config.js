@@ -19,11 +19,11 @@ export const installationLinks = {
     'https://github.com/blockstack/blockstack-browser/releases/download/v0.9.0/Blockstack-v0.9.app.zip',
   portalDevelopers: 'https://github.com/blockstack/blockstack-browser/releases',
   portalDevelopersMacOS:
-    'https://github.com/blockstack/blockstack-browser/releases/download/v0.30.0/Blockstack-for-macOS-v0.30.0.dmg',
+    'https://github.com/blockstack/blockstack-browser/releases/download/v0.30.1/Blockstack-for-macOS-v0.30.1.dmg',
   portalDevelopersWindows:
-    'https://github.com/blockstack/blockstack-browser/releases/download/v0.30.0/Blockstack-for-win10-v0.30.0.msi',
+    'https://github.com/blockstack/blockstack-browser/releases/download/v0.30.1/Blockstack-for-win10-v0.30.1.msi',
   portalDevelopersLinux:
-    'https://github.com/blockstack/blockstack-browser/releases/download/v0.30.0/Blockstack-for-Linux-v0.30.0.sh',
+    'https://github.com/blockstack/blockstack-browser/releases/download/v0.30.1/Blockstack-for-Linux-v0.30.1.sh',
   portalDevelopersWeb: 'https://browser.blockstack.org',
   cliDevelopers: 'https://github.com/blockstack/blockstack-core',
 }
