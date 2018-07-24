@@ -3,6 +3,7 @@ import { BlogPost } from '@components/blog/post'
 import { BadConnection } from '@components/blog/list'
 import striptags from 'striptags'
 import { BlogPostUser } from '@components/blog/post/styled/user'
+import { Image } from '@components/image'
 
 const removeMarkdown = async (string) => striptags(string)
 
@@ -12,7 +13,7 @@ const meta = {
   template: 'secondary'
 }
 
-class CareersPage extends React.PureComponent {
+class BlogSinglePage extends React.PureComponent {
   static async getInitialProps(ctx) {
     const posts = await ctx.reduxStore.selectBlogPosts()
 
@@ -48,14 +49,6 @@ class CareersPage extends React.PureComponent {
         {this.props.post ? (
           <>
             <BlogPost post={this.props.post} />
-            <BlogPostUser>
-              <img
-                src={require(this.props.post.creator.avatar.replace(
-                  'https://blockstack.org/images/',
-                  '@assets/images/'
-                ))}
-              />
-            </BlogPostUser>
           </>
         ) : (
           BadConnection
@@ -65,4 +58,4 @@ class CareersPage extends React.PureComponent {
   }
 }
 
-export default CareersPage
+export default BlogSinglePage
