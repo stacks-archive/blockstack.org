@@ -3,14 +3,15 @@ import React from 'react'
 const favicon = require('@assets/images/favicon.png')
 const appleTouchIcon = require('@assets/images/touch-icon.png')
 const ogImage = require('@assets/images/blockstack_og.png')
-const url =
-  typeof window !== 'undefined'
-    ? window.location.href
-    : 'https://blockstack.org'
 const DEFAULT = {
   desc: `Blockstack is building an ecosystem that gives your users control over their fundamental digital rights: Identity, data-ownership, privacy, and security. Join us and help build the new internet.`,
   ogImage: ogImage.src
 }
+
+/**
+ * TODO: change this to blockstack.org when released for prod
+ */
+const url = 'https://blockstackorgv2.netlify.com/'
 
 const Meta = ({
   title,
@@ -21,12 +22,12 @@ const Meta = ({
   return (
     <Head>
       <meta name="description" content={description} />
-
-      <link rel="shorticon icon" href={favicon.src} />
+      <link rel="shorticon icon" href={favicon.src} type="image/x-icon" />
+      <link rel="icon" href={favicon.src} type="image/x-icon" />
       <link rel="apple-touch-icon-precomposed" href={appleTouchIcon.src} />
       <link rel="canonical" href={url} />
 
-      <meta property="og:image" content={ogImage} />
+      <meta property="og:image" content={url + ogImage} />
       <meta property="og:site_name" content="Blockstack.org" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
