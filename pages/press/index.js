@@ -1,6 +1,7 @@
 import React from 'react'
 import { featuredPress } from './featured'
 import { pressData } from './data'
+import { Image } from '@components/image'
 import styled from 'styled-components'
 const PressContainer = styled.div`
   display: flex;
@@ -18,14 +19,23 @@ const PressLogo = styled.div`
   flex-grow: 0;
   flex-shrink: 0;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
   margin-top: 30px;
+  height: 150px;
   img {
     display: block;
     width: 150px;
-    max-height: 50px;
+    mix-blend-mode: multiply !important;
     margin-bottom: 20px;
   }
+`
+
+const PressLogoImg = styled.div`
+  height: 150px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
 const meta = {
   path: '/press',
@@ -45,6 +55,29 @@ const featured = featuredPress.map((item) => ({
     </>
   )
 }))
+
+const AdditionalPress = () => (
+  <div>
+    <h5
+      style={{
+        paddingBottom: '40px'
+      }}
+    >
+      Additional Press
+    </h5>
+    {pressData.map((item, i) => (
+      <div key={i}>
+        <a href={item.url} target="_blank" rel="noopener noreferrer">
+          <p>{item.title}</p>
+          <h6>
+            {item.publication} - {item.date}
+          </h6>
+        </a>
+        <br />
+      </div>
+    ))}
+  </div>
+)
 class PressPage extends React.PureComponent {
   static async getInitialProps(ctx) {
     return {
@@ -56,35 +89,19 @@ class PressPage extends React.PureComponent {
     return (
       <>
         <PressContainer>
-          {featured.map((item) => (
-            <PressLogo>
-              <img src={item.image.src} alt={item.image.alt} />
+          {featured.map((item, i) => (
+            <PressLogo key={i}>
+              {item.image.src && (
+                <PressLogoImg>
+                  <Image src={item.image.src} alt={item.image.alt} noBlur />
+                </PressLogoImg>
+              )}
               <p className={'rich-text'}>
                 <a href={item.link}>{item.title}</a>
               </p>
             </PressLogo>
           ))}
         </PressContainer>
-        <div>
-          <h5
-            style={{
-              paddingBottom: '40px'
-            }}
-          >
-            Additional Press
-          </h5>
-          {pressData.map((item, i) => (
-            <div key={i}>
-              <a href={item.url} target="_blank" rel="noopener noreferrer">
-                <p>{item.title}</p>
-                <h6>
-                  {item.publication} - {item.date}
-                </h6>
-              </a>
-              <br />
-            </div>
-          ))}
-        </div>
       </>
     )
   }
