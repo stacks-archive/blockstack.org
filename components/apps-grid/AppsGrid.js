@@ -38,7 +38,7 @@ const cards = [
     title: 'Fupio',
     icon: 'images/app-fupio.png',
     link: 'https://github.com/fupio/fupio',
-    description: 'Social microblogging app with tags'
+    description: 'Social micro-blogging app with tags'
   },
   {
     title: 'Kanstack',
@@ -50,7 +50,7 @@ const cards = [
     title: 'Dappy Wallet',
     icon: 'images/app-dappy.png',
     link: 'https://github.com/BCNetio/BlockStackWallet',
-    description: 'Non-custodial wallet with decentralised storage'
+    description: 'Non-custodial decentralised wallet'
   }
 ]
 
