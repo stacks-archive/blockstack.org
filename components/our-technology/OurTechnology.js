@@ -89,7 +89,7 @@ class OurTechnology extends Component {
                     <Image
                       noBlur
                       className="example-app-icon"
-                      src="images/app-coinfort.png"
+                      src="images/app-dappy.png"
                     />
                   </div>
                 </div>
