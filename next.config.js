@@ -36,6 +36,7 @@ const config = {
     // combine the map of post pages with the home
     return Object.assign({}, pages, {
       '/': { page: '/' },
+      '/404': { page: '/_error' },
       '/about': { page: '/about' },
       '/blog': { page: '/blog' },
       '/faq': { page: '/faq' },
