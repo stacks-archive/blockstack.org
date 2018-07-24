@@ -62,4 +62,4 @@ class Image extends React.Component {
   }
 }
 
-export { Image }
+export { Image, addPath }
