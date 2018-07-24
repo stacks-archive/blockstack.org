@@ -60,56 +60,58 @@ class OurTechnology extends Component {
               <p>Our technology (Block)stack</p>
             </div>
           </div>
-          <div className="container narrow pt-3">
-            <div className="g-card dark px-2 pb-2 align-center mb-tight-gutter pt-1px">
-              <div className="grid-flex no-break no-gutter center">
-                <div className="col">
-                  <Image
-                    noBlur
-                    className="example-app-icon"
-                    src="images/app-graphite.png"
-                  />
+          <div className="container pt-3">
+            <div className="grid-flex tight-gutter center">
+              <div className="g-card dark px-2 pb-2 align-center mb-tight-gutter pt-1px col-6">
+                <div className="grid-flex no-break no-gutter center">
+                  <div className="col">
+                    <Image
+                      noBlur
+                      className="example-app-icon"
+                      src="images/app-graphite.png"
+                    />
+                  </div>
+                  <div className="col">
+                    <Image
+                      noBlur
+                      className="example-app-icon"
+                      src="images/app-hermes.png"
+                    />
+                  </div>
+                  <div className="col">
+                    <Image
+                      noBlur
+                      className="example-app-icon"
+                      src="images/app-kanstack.png"
+                    />
+                  </div>
+                  <div className="col">
+                    <Image
+                      noBlur
+                      className="example-app-icon"
+                      src="images/app-coinfort.png"
+                    />
+                  </div>
                 </div>
-                <div className="col">
-                  <Image
-                    noBlur
-                    className="example-app-icon"
-                    src="images/app-hermes.png"
-                  />
-                </div>
-                <div className="col">
-                  <Image
-                    noBlur
-                    className="example-app-icon"
-                    src="images/app-kanstack.png"
-                  />
-                </div>
-                <div className="col">
-                  <Image
-                    noBlur
-                    className="example-app-icon"
-                    src="images/app-coinfort.png"
-                  />
-                </div>
+                <a href="https://app.co" target="_blank">
+                  <p
+                    className="sm pt-2"
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    }}
+                  >
+                    <Image
+                      noBlur
+                      style={{ width: '28px', paddingRight: '4px' }}
+                      src="images/app-co-icon.png"
+                      alt="App.co"
+                    />{' '}
+                    App.co: Share your app with the world!
+                  </p>
+                </a>
               </div>
-              <a href="https://app.co" target="_blank">
-                <p
-                  className="sm pt-2"
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center'
-                  }}
-                >
-                  <Image
-                    noBlur
-                    style={{ width: '28px', paddingRight: '4px' }}
-                    src="images/app-co-icon.png"
-                    alt="App.co"
-                  />{' '}
-                  App.co: Share your app with the world!
-                </p>
-              </a>
             </div>
           </div>
           <div className="container">
