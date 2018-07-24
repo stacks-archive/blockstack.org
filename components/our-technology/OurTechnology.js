@@ -32,7 +32,7 @@ const cards = [
     description: 'Auth and identity mgmt apps'
   },
   {
-    title: 'Blockstack Naming Sys. ',
+    title: 'Blockstack Naming System',
     link:
       'https://github.com/blockstack/blockstack-core/blob/master/docs/blockstack_naming_service.md',
     description: 'Discover apps and people'
@@ -43,7 +43,7 @@ const cards = [
     description: 'Decentralized, encrypted storage'
   },
   {
-    title: 'Stacks',
+    title: 'Stacks Blockchain',
     link:
       'https://forum.blockstack.org/t/new-features-enabled-by-a-layer-2-token/1327',
     description: 'Fast and scalable blockchain for decentralized apps'
