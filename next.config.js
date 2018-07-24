@@ -19,8 +19,7 @@ const imgix = prod
 const config = {
   async exportPathMap() {
     // we fetch our list of posts, this allow us to dynamically generate the exported pages
-    // const { posts } = await fetchBlogPosts()
-    const posts = []
+    const { posts } = await fetchBlogPosts()
 
     // transform the list of posts into a map of pages with the pathname `/post/:id`
     const pages = posts.reduce(

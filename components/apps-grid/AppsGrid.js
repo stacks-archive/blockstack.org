@@ -25,7 +25,7 @@ const cards = [
   {
     title: 'Graphite',
     icon: 'images/app-graphite.png',
-    link: 'https://github.com/jehunter5811/graphite-blockstack',
+    link: 'https://github.com/Graphite-Docs/graphite',
     description: 'Collaborative decentralized docs'
   },
   {
@@ -35,10 +35,10 @@ const cards = [
     description: 'Encrypted peer-to-peer chat'
   },
   {
-    title: 'Dotpodcast',
-    icon: 'images/app-dotpodcast.png',
-    link: 'https://github.com/DotPodcast',
-    description: 'Discover and listen to podcasts'
+    title: 'Fupio',
+    icon: 'images/app-fupio.png',
+    link: 'https://github.com/fupio/fupio',
+    description: 'Social microblogging app with tags'
   },
   {
     title: 'Kanstack',
@@ -47,10 +47,10 @@ const cards = [
     description: 'Decentralized Kanban sprint board'
   },
   {
-    title: 'Coinfort',
-    icon: 'images/app-coinfort.png',
-    link: 'https://github.com/twg/coinfort-web',
-    description: 'Encrypted crypto tracker'
+    title: 'Dappy Wallet',
+    icon: 'images/app-dappy.png',
+    link: 'https://github.com/BCNetio/BlockStackWallet',
+    description: 'Non-custodial wallet with decentralised storage'
   }
 ]
 
