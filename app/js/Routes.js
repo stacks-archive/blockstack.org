@@ -56,7 +56,9 @@ function hashLinkScroll() {
 export default (
   <Router history={browserHistory} onUpdate={() => hashLinkScroll()}>
     <Route path="/" component={App}>
+      <Route path="/legal/:docSection" component={ArticlePage} />
       <Route path="/auth" component={AuthPage} />
+      <Route path="/signup" component={SignUpPage} />
       <Route path="/summit2017" component={Summit2017Page} />
       <Route path="/berlin2018" component={Berlin2018Page} />
     </Route>
