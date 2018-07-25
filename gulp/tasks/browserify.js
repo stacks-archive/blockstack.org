@@ -41,7 +41,7 @@ function buildScript(file, watch) {
 
     return stream.on('error', handleErrors)
     .pipe(source(file))
-    .pipe(gulpif(global.isProd, streamify(uglify())))
+//    .pipe(gulpif(global.isProd, streamify(uglify())))
     .pipe(streamify(rename({
       basename: 'main'
     })))
