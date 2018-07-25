@@ -84,7 +84,7 @@ class AuthPage extends Component {
                     and you don't have the Blockstack app installed.
                   </h5>
                   <p>
-                    <Link to="/install" className="btn btn-secondary">
+                    <Link target="_self" to="/install" className="btn btn-secondary">
                       Install Blockstack
                     </Link>
                   </p>

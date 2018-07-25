@@ -56,52 +56,9 @@ function hashLinkScroll() {
 export default (
   <Router history={browserHistory} onUpdate={() => hashLinkScroll()}>
     <Route path="/" component={App}>
-      <IndexRoute component={HomePage} />
-      <Route path="/" component={HomePage} />
-
-      <Route path="/signup" component={SignUpPage} />
-      <Route path="/developers" component={DevSignUpPage} />
-      <Route path="/install" component={DownloadPage} />
-
-      <Route path="/intro" component={IntroPage} />
-
-      <Route path="/what-is-blockstack" component={WhatIsBlockstack} />
-
-      <Route path="/tutorials" component={TutorialsPage} />
-      <Route path="/tutorials/:docSection" component={TutorialPage} />
-
-      <Route path="/blog" component={BlogPage} />
-      <Route path="/blog/:docSection" component={BlogPostPage} />
-
-      <Route path="/papers" component={PapersPage} />
-
-      <Route path="/videos" component={TalksPage} />
-      <Route path="/videos/:slug" component={TalkPage} />
-
-      <Route path="/about" component={AboutPage} />
-      <Route path="/faq" component={FAQPage} />
-      <Route path="/careers" component={CareersPage} />
-
-      <Route path="/docs" component={DocsPage} />
-      <Route path="/summit" component={SummitPage} />
-      <Route path="/browser" component={BrowserPage} />
-
-      <Route path="/posts/:docSection" component={ArticlePage} />
-      <Route path="/docs/:docSection" component={ArticlePage} />
-      <Route path="/legal/:docSection" component={ArticlePage} />
-
       <Route path="/auth" component={AuthPage} />
-
-      <Route path="/roadmap" component={RoadmapPage} />
-      <Route path="/token" component={TokenSalePage} />
       <Route path="/summit2017" component={Summit2017Page} />
       <Route path="/berlin2018" component={Berlin2018Page} />
-      <Route path="/funding" component={FundingPage} />
-      <Route path="/fund" component={FundPage} />
-
-      <Route path="/press" component={PressPage} />
-
-      <Route path="*" component={NotFoundPage} />
     </Route>
   </Router>
 )

@@ -18,7 +18,7 @@ class Footer extends Component {
           <div className="row">
             <div className="d-none d-lg-inline">
               <div className="foot-logo">
-                <Link to="/">
+                <Link target="_self" to="/">
                   <img src="/images/logos/blockstack-logo-landscape-rev.svg" />
                 </Link>
               </div>
@@ -29,28 +29,28 @@ class Footer extends Component {
                   <div className="foot-menu">
                     <div className="foot-item text-white">Pages</div>
                     <div className="foot-item">
-                      <Link to="/install">Install</Link>
+                      <Link target="_self" to="/install">Install</Link>
                     </div>
                     <div className="foot-item">
-                      <Link to="/about">About</Link>
+                      <Link target="_self" to="/about">About</Link>
                     </div>
                     <div className="foot-item">
-                      <Link to="/tutorials">Tutorials</Link>
+                      <Link target="_self" to="/tutorials">Tutorials</Link>
                     </div>
                     <div className="foot-item">
-                      <Link to="/papers">Papers</Link>
+                      <Link target="_self" to="/papers">Papers</Link>
                     </div>
                     <div className="foot-item">
-                      <Link to="/videos">Videos</Link>
+                      <Link target="_self" to="/videos">Videos</Link>
                     </div>
                     <div className="foot-item">
-                      <Link to="/blog">Blog</Link>
+                      <Link target="_self" to="/blog">Blog</Link>
                     </div>
                     <div className="foot-item">
-                      <Link to="/faq">FAQ</Link>
+                      <Link target="_self" to="/faq">FAQ</Link>
                     </div>
                     <div className="foot-item">
-                      <Link to="/careers">Careers</Link>
+                      <Link target="_self" to="/careers">Careers</Link>
                     </div>
                   </div>
                 </div>
@@ -83,13 +83,13 @@ class Footer extends Component {
                       </Link>
                     </div>
                     <div className="foot-item">
-                      <Link to="/berlin2018">Berlin 2018</Link>
+                      <Link target="_self" to="/berlin2018">Berlin 2018</Link>
                     </div>
                     <div className="foot-item">
-                      <Link to="/summit2017">Summit 2017</Link>
+                      <Link target="_self" to="/summit2017">Summit 2017</Link>
                     </div>
                     <div className="foot-item">
-                      <Link to="/funding">Funding</Link>
+                      <Link target="_self" to="/funding">Funding</Link>
                     </div>
                     <div className="foot-item">
                       <a href="http://blockstack.com" target="_blank">
@@ -97,7 +97,7 @@ class Footer extends Component {
                       </a>
                     </div>
                     <div className="foot-item">
-                      <Link to="/press">Press</Link>
+                      <Link target="_self" to="/press">Press</Link>
                     </div>
                     <div className="foot-item">
                       <a
@@ -136,13 +136,13 @@ class Footer extends Component {
                       </Link>
                     </div>
                     <div className="foot-item">
-                      <Link to="/legal/privacy-policy">Privacy Policy</Link>
+                      <Link target="_self" to="/legal/privacy-policy">Privacy Policy</Link>
                     </div>
                     <div className="foot-item">
-                      <Link to="/legal/terms-of-use">Terms of Use</Link>
+                      <Link target="_self" to="/legal/terms-of-use">Terms of Use</Link>
                     </div>
                     <div className="foot-item">
-                      <Link to="/legal/disclaimers">Disclaimers</Link>
+                      <Link target="_self" to="/legal/disclaimers">Disclaimers</Link>
                     </div>
                   </div>
                 </div>
