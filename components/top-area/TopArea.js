@@ -84,7 +84,7 @@ const TopArea = (props) => {
                 </Link>
               </div>
               <div className="col-4">
-                <Link prefetch href="/tutorials/multi-player-storage">
+                <Link prefetch href="/tutorials/todo-list">
                   <a className="g-card code-card dark align-left link">
                     <div className="p-2">
                       <CodeBlock className="sm minimal dark">
@@ -115,7 +115,7 @@ const TopArea = (props) => {
                 </Link>
               </div>
               <div className="col-4">
-                <Link href="/tutorials/managing-data-with-gaia">
+                <Link href="/tutorials/multi-player-storage">
                   <a className="g-card code-card dark align-left link">
                     <div className="p-2">
                       <CodeBlock className="sm minimal dark">

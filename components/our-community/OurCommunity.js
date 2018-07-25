@@ -95,7 +95,7 @@ class OurCommunity extends Component {
                 <div className="col-12">
                   <Card
                     className="card"
-                    href="http://www.meetup.com/Blockstack-Berlin/"
+                    href="/berlin2018/"
                   >
                     <div className="grid-flex tight-gutter middle break-xlg">
                       <div className="col-4 logo-col">
