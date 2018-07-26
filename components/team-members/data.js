@@ -129,11 +129,11 @@ export const teamMembers = [
       'Virginia is a Blockstack Engineering Partner, focusing on DevOps, developing microservices and infrastructure for the decentralized web. She has a degree in Electrical Engineering from RPI, and previously worked as an Engineer in Operations for open market access for electrical power. She is interested in information privacy and democracy in the digital world.'
   },
   {
-    blockstackId: 'lizblockstack.blockstack',
+    blockstackId: 'liz.id.blockstack',
     name: 'Elizabeth Thys',
     avatar: 'https://blockstack.org/images/avatars/elizabeth-thys.jpg',
     bio:
-      'Liz is a Blockstack Operations Partner. Prior to Blockstack, she co-founded limeSHIFT, a creative agency that that aligns people, place and purpose, which emerged from a collaboration between MIT Sloan School of Management and MIT Department of Urban Studies and Planning. She received a BS in Mechanical Engineering from Tufts University and an MBA from MIT Sloan School of Management. '
+      'Liz is a Blockstack Operations Partner. Prior to Blockstack, she co-founded limeSHIFT, a creative agency that aligns people, place and purpose, which emerged from a collaboration between MIT Sloan School of Management and MIT Department of Urban Studies and Planning. She received a BS in Mechanical Engineering from Tufts University and an MBA from MIT Sloan School of Management. '
   },
   {
     blockstackId: 'shrey',
