@@ -31,19 +31,21 @@ const Title = ({ children }) => (
   </StyledPageTop.Title>
 )
 
-const divider = <div
-  style={{ width: '2px', height: '20px', margin: '0 20px', background: '#fff', opacity: 0.3 }}
-/>
+const SubtitleDivider = () => (
+  <div
+    style={{ width: '2px', height: '20px', margin: '0 20px', background: '#fff', opacity: 0.3 }}
+  />
+)
 const Subtitle = ({ children }) =>
   children ? (
     <h2 className="h4 grid-flex middle">
       {Array.isArray(children) ?
         children.reduce((prev, item, index) => {
-          const itemEl = <div>{item}</div>
+          const itemEl = <div key={item}>{item}</div>
           if (index === children.length - 1) {
             return prev.concat([itemEl])
           }
-          return prev.concat([itemEl, divider])
+          return prev.concat([itemEl, <SubtitleDivider key={`divider-${index}`}/>])
         }, []) :
         children
       }
