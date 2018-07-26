@@ -76,7 +76,7 @@ $col: 100% / 12;
     }
   }
 
-  /* 
+  /*
   Use .push classes to move columns over
   Gernerally better to do this manually at breakpoints
   */
@@ -112,6 +112,9 @@ $col: 100% / 12;
 	}
 	&.baseline {
 		align-items: baseline;
+	}
+	&.no-wrap {
+		flex-wrap: nowrap;
 	}
 }
 

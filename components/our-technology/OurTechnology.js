@@ -63,7 +63,7 @@ class OurTechnology extends Component {
           <div className="container pt-3">
             <div className="grid-flex tight-gutter center">
               <div className="g-card dark px-2 pb-2 align-center mb-tight-gutter pt-1px col-6">
-                <div className="grid-flex no-break no-gutter center">
+                <div className="grid-flex no-break no-gutter no-wrap center">
                   <div className="col">
                     <Image
                       noBlur
