@@ -21,18 +21,11 @@ class Header extends Component {
   }
 
   collapseHeader = (nextProps) => {
-    const Header = document.getElementById('StickyHeader')
-    const elementWatcher = scrollMonitor.create(Header, { top: 1 })
+    const siteTitle = document.getElementById('SiteTitle')
+    const elementWatcher = scrollMonitor.create(siteTitle, { top: 1 })
 
-    elementWatcher.fullyEnterViewport(() => {
-      this.setState({ collapsed: false })
-    })
-    elementWatcher.partiallyExitViewport(() => {
-      this.setState({ collapsed: true })
-    })
-    if (elementWatcher.isAboveViewport) {
-      this.setState({ collapsed: true })
-    }
+    elementWatcher.enterViewport(() => this.setState({ collapsed: false }))
+    elementWatcher.exitViewport(() => this.setState({ collapsed: true }))
   }
 
   closeMenu = () => {

@@ -40,7 +40,7 @@ const TopArea = (props) => {
     <section className="blue-bg top-section top-area">
       <div className="intro-text align-center">
         <div className="container">
-          <h1>
+          <h1 id="SiteTitle">
             The easiest way to start building decentralized blockchain apps
           </h1>
         </div>
