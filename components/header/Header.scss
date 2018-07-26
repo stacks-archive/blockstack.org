@@ -39,14 +39,12 @@ header.header {
     overflow: hidden;
     .bs-logo,
     .bs-logotype {
-      svg {
-        * {
-          fill: white;
-        }
-      }
       transform-origin: left center;
       transition: opacity $md-speed $ease, visibility $md-speed $ease,
         transform $md-speed $ease;
+    }
+    .bs-logo {
+      transform: scale(1.2) transformY(1px);
     }
     @include respond-smaller-than(330) {
       .bs-logotype {
@@ -84,7 +82,7 @@ header.header {
         }
       }
       .bs-logo {
-        transform: scale(0.75);
+        transform: scale(1) transformY(1px);
       }
       .bs-logotype {
         opacity: 0;

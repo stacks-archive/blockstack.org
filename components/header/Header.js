@@ -62,7 +62,7 @@ class Header extends Component {
       <Headroom>
         <header
           className={
-            this.state.menuOpen ? 'header blue-bg menu-open' : 'header blue-bg'
+            this.state.menuOpen ? 'header classic-bg menu-open' : 'header classic-bg'
           }
         >
           {this.state.menuOpen ? (
@@ -87,7 +87,7 @@ class Header extends Component {
                       >
                         <div className="grid-flex no-break no-gutter middle left">
                           <div className="bs-logo">{Logo()}</div>
-                          <div className="bs-logotype ml-2">{LogoType()}</div>
+                          <div className="bs-logotype ml-1">{LogoType()}</div>
                         </div>
                       </InternalLink>
                     </div>
@@ -96,7 +96,7 @@ class Header extends Component {
                       <div className="grid-flex tight-gutter center-actions center">
                         <div className="col">
                           <Button
-                            className="secondary main-action"
+                            className="main-action"
                             href={bslinks && bslinks.tutorials}
                             label="Tutorials"
                           />
