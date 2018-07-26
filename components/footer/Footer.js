@@ -161,11 +161,11 @@ class Header extends Component {
             </div>
           </div>
           <p className="tiny text-color medium-weight pt-4">
-            The Blockstack Tokens are a crypto asset that is currently being
-            developed by Blockstack Token LLC, a Delaware limited liability
-            company, whose website can be found at www.blockstack.com. The
-            website you are currently visiting (www.blockstack.org) is sponsored
-            by Blockstack PBC, an affiliate of Blockstack Token LLC, and should
+            The Blockstack Tokens are a crypto asset that is currently being developed by
+            Blockstack Token LLC, a Delaware limited liability company, whose website can be
+            found at <a href="https://www.blockstack.com">www.blockstack.com</a>. The website
+            you are currently visiting <a href="https://www.blockstack.com">www.blockstack.org</a>
+            {' '}is sponsored by Blockstack PBC, an affiliate of Blockstack Token LLC, and should
             not be viewed as an offer or sale of securities.
           </p>
 
