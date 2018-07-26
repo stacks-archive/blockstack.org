@@ -26,11 +26,11 @@ const ListItem = ({
   markup,
   description,
   image,
-  date
+  date,
+  creator
 }) => {
   return description ? (
     <div style={{ maxWidth: '700px', paddingBottom: '80px' }}>
-      <h6 style={{ margin: 0 }}>{date}</h6>
       <Link
         prefetch
         as={`/blog/${urlSlug}`}
@@ -46,7 +46,11 @@ const ListItem = ({
         as={`/blog/${urlSlug}`}
         href={`/blog/single?slug=${urlSlug}`}
       >
-        <a>Read more</a>
+        <a style={{ display: 'flex', border: 'none' }}>
+          <h6 style={{ margin: 0 }}>{date}</h6>
+          <div style={{ width: '1px', background: '#211f6d', margin: '0 15px' }}/>
+          <h6 style={{ margin: 0 }}>{creator.name}</h6>
+        </a>
       </Link>
     </div>
   ) : null
