@@ -13,7 +13,7 @@ const getDisplayName = (WrappedComponent) =>
 
 const Title = ({ children }) => (
   <StyledPageTop.Title>
-    <h1 className="h1">{children}</h1>
+    <h1 className="h1 mb-3">{children}</h1>
     <TriangleDotsHalf
       style={{
         position: 'absolute',
@@ -30,13 +30,26 @@ const Title = ({ children }) => (
     />
   </StyledPageTop.Title>
 )
+
+const divider = <div
+  style={{ width: '2px', height: '20px', margin: '0 20px', background: '#fff', opacity: 0.3 }}
+/>
 const Subtitle = ({ children }) =>
   children ? (
-    <>
-      <div className="h4 py-2">---</div>
-      <h2 className="h4">{children}</h2>
-    </>
+    <h2 className="h4 grid-flex middle">
+      {Array.isArray(children) ?
+        children.reduce((prev, item, index) => {
+          const itemEl = <div>{item}</div>
+          if (index === children.length - 1) {
+            return prev.concat([itemEl])
+          }
+          return prev.concat([itemEl, divider])
+        }, []) :
+        children
+      }
+    </h2>
   ) : null
+
 const TopArea = ({ title, subtitle, button }) => (
   <StyledPageTop>
     <>

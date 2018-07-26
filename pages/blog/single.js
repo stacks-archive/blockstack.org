@@ -30,7 +30,7 @@ class BlogSinglePage extends React.PureComponent {
         ...meta,
         ogImage: post.image,
         title: post.title,
-        subtitle: post.date,
+        subtitle: [post.date, post.creator.name],
         description: await removeMarkdown(post.preview)
       }
     }
