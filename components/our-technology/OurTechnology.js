@@ -94,7 +94,7 @@ class OurTechnology extends Component {
                   </div>
                 </div>
                 <a href="https://app.co" target="_blank">
-                  <p
+                  <div
                     className="sm pt-2"
                     style={{
                       display: 'flex',
@@ -109,7 +109,7 @@ class OurTechnology extends Component {
                       alt="App.co"
                     />{' '}
                     App.co: Share your app with the world!
-                  </p>
+                  </div>
                 </a>
               </div>
             </div>

@@ -6,7 +6,7 @@ const meta = {
   title: 'Blockstack Blog'
 }
 
-class BlogPage extends React.PureComponent {
+class BlogPage extends React.Component {
   static async getInitialProps(ctx) {
     let propsMeta = meta
     let post = null
