@@ -1,4 +1,4 @@
-### The Blockstack Browser allows you to create and manage Blockstack IDs, manage storage of your data, and explore decentralized apps. 
+### The Blockstack Browser allows you to create and manage Blockstack IDs, manage storage of your data, and explore decentralized apps.
 
 
 
@@ -14,18 +14,18 @@ No install required (recommended for most users)
 
 Requires Sierra 10.12+
 
-<a href="https://github.com/blockstack/blockstack-browser/releases/download/v0.29.2/Blockstack-for-macOS-v0.29.2.dmg" class="button">MacOS Download</a>
+<a href="https://github.com/blockstack/blockstack-browser/releases/download/v0.30.1/Blockstack-for-macOS-v0.30.1.dmg" class="button">MacOS Download</a>
 
 #### Blockstack Browser (Windows)
 
 Requires Windows 10
 
-<a href="https://github.com/blockstack/blockstack-browser/releases/download/v0.29.2/Blockstack-for-win10-v0.29.2.msi" class="button">Windows Download</a>
+<a href="https://github.com/blockstack/blockstack-browser/releases/download/v0.30.1/Blockstack-for-win10-v0.30.1.msi" class="button">Windows Download</a>
 
 #### Blockstack Browser (Linux)
 
 Advanced Install
 
-<a href="https://github.com/blockstack/blockstack-browser/releases/download/v0.29.2/Blockstack-for-Linux-v0.29.2.sh" class="button">Linux Download</a>
+<a href="https://github.com/blockstack/blockstack-browser/releases/download/v0.30.1/Blockstack-for-Linux-v0.30.1.sh" class="button">Linux Download</a>
 
 Developers can also run a full node by [following instructions on GitHub](https://github.com/blockstack/blockstack-core).
