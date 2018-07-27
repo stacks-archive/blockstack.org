@@ -37,7 +37,6 @@ const Meta = ({
         rel="apple-touch-icon-precomposed"
         href={addPath(appleTouchIcon.src)}
       />
-      <link rel="canonical" href={url} />
 
       <meta property="og:image" content={metaOgImage} />
       <meta property="og:site_name" content="Blockstack.org" />
