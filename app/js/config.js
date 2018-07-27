@@ -356,5 +356,12 @@ export const blogAuthors = {
     avatar: 'https://blockstack.org/images/avatars/mitchell-cuevas.jpg',
     twitter: 'mcuevasm',
     github: 'cuevasm',
+  },
+  'Jeff Domke': {
+    blockstackId: 'jeffdomke',
+    name: 'Jeff Domke',
+    avatar: 'https://blockstack.org/images/avatars/jeff-domke.jpg',
+    twitter: 'jeffdomke',
+    github: 'jeffdomke',
   }
 }
