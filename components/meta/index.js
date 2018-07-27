@@ -10,10 +10,7 @@ const DEFAULT = {
   ogImage: addPath(ogImage.src)
 }
 
-/**
- * TODO: change this to blockstack.org when released for prod
- */
-const url = 'https://blockstackorgv2.netlify.com/'
+const url = 'https://blockstack.org/'
 
 const Meta = ({
   title,
