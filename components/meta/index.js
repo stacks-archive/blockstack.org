@@ -1,4 +1,3 @@
-import Router from 'next/router'
 import Head from 'next/head'
 import React from 'react'
 import { addPath } from '@components/image'
@@ -38,7 +37,7 @@ const Meta = ({
         rel="apple-touch-icon-precomposed"
         href={addPath(appleTouchIcon.src)}
       />
-      <link rel="canonical" href={Router.route} />
+      <link rel="canonical" href={url} />
 
       <meta property="og:image" content={metaOgImage} />
       <meta property="og:site_name" content="Blockstack.org" />
