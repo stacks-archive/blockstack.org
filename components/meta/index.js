@@ -18,6 +18,10 @@ const Meta = ({
   ogImage = DEFAULT.ogImage,
   ...rest
 }) => {
+  let metaOgImage = url + ogImage
+  if (ogImage && ogImage.indexOf && (ogImage.indexOf('https://') >= 0)) {
+    metaOgImage = ogImage
+  }
   return (
     <Head>
       <meta name="description" content={description} />
@@ -33,7 +37,7 @@ const Meta = ({
       />
       <link rel="canonical" href={url} />
 
-      <meta property="og:image" content={url + ogImage} />
+      <meta property="og:image" content={metaOgImage} />
       <meta property="og:site_name" content="Blockstack.org" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
