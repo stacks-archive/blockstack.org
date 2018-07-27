@@ -21,6 +21,8 @@ const Meta = ({
   let metaOgImage = url + ogImage
   if (ogImage && ogImage.indexOf && (ogImage.indexOf('https://') >= 0)) {
     metaOgImage = ogImage
+  } else if (ogImage && ogImage[0] === '/') {
+    metaOgImage = url + ogImage.slice(1)
   }
   return (
     <Head>
