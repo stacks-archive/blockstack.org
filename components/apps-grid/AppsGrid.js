@@ -29,10 +29,10 @@ const cards = [
     description: 'Collaborative decentralized docs'
   },
   {
-    title: 'Hermes',
-    icon: 'images/app-hermes.png',
-    link: 'https://github.com/dhealy05/Hermes',
-    description: 'Encrypted peer-to-peer chat'
+    title: 'Stealthy',
+    icon: 'images/app-stealthy.png',
+    link: 'https://github.com/stealthyim/webapp',
+    description: 'Decentralized Communication Protocol'
   },
   {
     title: 'Fupio',
