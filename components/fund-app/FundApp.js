@@ -16,7 +16,7 @@ class Header extends Component {
             <a href={this.props.links.signatureFund}>Signature Fund</a>,{' '}
             <a href="https://contribute.blockstack.org/">
               Community Rewards Program
-            </a>, and <a href="/blog">Active Bounties</a>.
+            </a>, and <a href="/blog">Active Bounties</a>.
           </p>
         </div>
       </section>
