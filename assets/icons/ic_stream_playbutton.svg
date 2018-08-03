@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_stream_playbutton</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="SYMBOLS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_stream_playbutton">
+            <ellipse id="Oval" fill="#FFFFFF" opacity="0.2" cx="50" cy="50.5" rx="50" ry="49.5"></ellipse>
+            <path d="M40.509664,27.0455085 C39.1236149,26.1437125 38,26.7564978 38,28.4112814 L38,71.2324176 C38,72.8885092 39.115458,73.4824425 40.4951993,72.5564855 L72.4399378,51.1180776 C73.8179983,50.1932485 73.8095745,48.7112091 72.425473,47.8106803 L40.509664,27.0455085 Z" id="Path-10" stroke="#E1D9F2" stroke-width="3" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>

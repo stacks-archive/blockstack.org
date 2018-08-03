@@ -1,0 +1,14 @@
+<svg style="width:16px; height:16px;" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" fill="#000000">
+            <polygon id="Shape" fill-rule="nonzero" points="9.01497901 5.5028349 9.01497901 4 8 4 8 5.5028349"></polygon>
+            <polygon id="Shape-Copy" fill-rule="nonzero" transform="translate(8.500000, 11.526545) scale(-1, 1) translate(-8.500000, -11.526545) " points="9 15.0530907 9 8 8 8 8 15.0530907"></polygon>
+            <rect id="Rectangle" x="6" y="15" width="5" height="1"></rect>
+            <path d="M1,6 L1,8 L8.5543666,8 L9.5543666,7 L8.5543666,6 L1,6 Z M0,5 L8.96858016,5 L10.9685802,7 L8.96858016,9 L0,9 L0,5 Z" id="Path-2-Copy" fill-rule="nonzero" transform="translate(5.484290, 7.000000) rotate(-180.000000) translate(-5.484290, -7.000000) "></path>
+            <path d="M6,1 L6,3 L13.5543666,3 L14.5543666,2 L13.5543666,1 L6,1 Z M5,2.22044605e-16 L13.9685802,2.22044605e-16 L15.9685802,2 L13.9685802,4 L5,4 L5,2.22044605e-16 Z" id="Path-2" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

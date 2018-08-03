@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_pencil</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ICONS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_pencil" fill-rule="nonzero" fill="#817F97">
+            <path d="M40.4142136,6.18181818 L8.42034045,38.1756913 L-0.374368542,40.3743685 L1.82430871,31.5796595 L33.8181818,-0.414213562 L40.4142136,6.18181818 Z M33.8181818,2.41421356 L3.63023675,32.6021586 L2.37436854,37.6256315 L7.39784137,36.3697633 L37.5857864,6.18181818 L33.8181818,2.41421356 Z" id="Shape"></path>
+            <polygon id="Shape" points="28.2928932 6.70710678 33.2928932 11.7071068 34.7071068 10.2928932 29.7071068 5.29289322"></polygon>
+        </g>
+    </g>
+</svg>

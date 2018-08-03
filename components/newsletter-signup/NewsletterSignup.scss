@@ -1,0 +1,39 @@
+
+
+
+.newsletter-form {
+		position: relative;
+		max-width: 26rem;
+		margin-left: auto;
+		margin-right: auto;
+		input[type='text'],
+		input[type='email'] {
+			// border-radius: 60px;
+			padding: 0 ($btn-large-height + 5px) 0 24px;
+			&:hover,
+			&:active,
+			&:focus {
+			}
+			&:hover {
+			}
+			&:focus {
+			}
+		}
+		.button {
+			position: absolute;
+			top: 0;
+			right: 0;
+			.icon {
+				width: 39px !important;
+				padding-right: 10px;
+				height: 13px !important;
+				svg {
+					width: 29px;
+					* {
+						fill: transparent;
+						stroke: currentcolor;
+					}
+				}
+			}
+		}
+	}

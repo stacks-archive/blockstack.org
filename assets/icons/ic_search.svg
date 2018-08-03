@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_search</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ICONS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_search" fill-rule="nonzero" fill="#817F97">
+            <polygon id="Path-2" points="22.6916934 24.8052011 38.2209903 40.3227792 40.3415097 38.2006583 24.8122129 22.6830802"></polygon>
+            <path d="M15,29.25 C7.12994232,29.25 0.75,22.8700577 0.75,15 C0.75,7.12994232 7.12994232,0.75 15,0.75 C22.8700577,0.75 29.25,7.12994232 29.25,15 C29.25,22.8700577 22.8700577,29.25 15,29.25 Z M15,26.75 C21.4893458,26.75 26.75,21.4893458 26.75,15 C26.75,8.51065419 21.4893458,3.25 15,3.25 C8.51065419,3.25 3.25,8.51065419 3.25,15 C3.25,21.4893458 8.51065419,26.75 15,26.75 Z" id="Oval-2"></path>
+        </g>
+    </g>
+</svg>

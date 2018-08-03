@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_liveads_norm</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ICONS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_liveads_norm" fill-rule="nonzero" fill="#E1D9F2">
+            <path d="M36.7994142,4.5 L33.3619142,1.75 L13.75,1.75 L13.75,7.25 L33.3619142,7.25 L36.7994142,4.5 Z M12.25,8.75 L12.25,0.25 L33.8880858,0.25 L39.2005858,4.5 L33.8880858,8.75 L12.25,8.75 Z" id="Shape" stroke="#E1D9F2" stroke-width="0.5"></path>
+            <path d="M3.20058579,16.5 L6.63808579,19.25 L26.25,19.25 L26.25,13.75 L6.63808579,13.75 L3.20058579,16.5 Z M27.75,12.25 L27.75,20.75 L6.11191421,20.75 L0.799414205,16.5 L6.11191421,12.25 L27.75,12.25 Z" id="Shape" stroke="#E1D9F2" stroke-width="0.5"></path>
+            <polygon id="Shape" points="20 12.5 20 8.70923984 19 8.70923984 19 12.5"></polygon>
+            <polygon id="Shape-Copy" points="20 38.5 20 20.7092398 19 20.7092398 19 38.5"></polygon>
+            <polygon id="Shape" points="13.490004 39.5 26 39.5 26 38.5 13.490004 38.5"></polygon>
+        </g>
+    </g>
+</svg>

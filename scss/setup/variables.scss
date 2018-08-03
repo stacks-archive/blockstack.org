@@ -1,0 +1,229 @@
+$margin: 7.5rem;
+$mobile-margin: 6.5%;
+$max-site-width: 1500px;
+$site-width: 87%;
+
+$max-text-width: 34rem;
+
+// Global Spacing
+$space-1: 0.5rem;
+$space-2: 1rem;
+$space-3: 2rem;
+$space-4: 4rem;
+
+// Grid Settings
+$columns: 12;
+$gutter: 1.75rem;
+$gutter-tight: $space-2;
+$gutter-wide: $gutter * 2;
+$grid-gutter: $gutter;
+
+// General UI Varibales
+$base-border-radius: 3px;
+
+// Colors
+$bg-color: #ffffff;
+$main-color: #3700ff;
+$classic-color: #270F34;
+$black: #000000;
+$white: #ffffff;
+$alert: #ef4f4f;
+$notify: #ffd780;
+$success: #41cd5f;
+$text-color: #211f6d; //#333;
+$light-grey: #f2f9ff;
+$light-text-color: rgba($text-color, 0.5);
+$hr-color: rgba($text-color, 0.15);
+$hr-styles: 1px solid $hr-color;
+
+// Links
+$link-color: $light-text-color;
+$link-hover-color: $main-color;
+
+// Typography
+$main-font: 'Plex', monospace;
+$body-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans,
+Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+$secondary-font: 'Plex', monospace;
+$code-font: 'Plex', monospace;
+$base-line-height: 1.5em;
+$base-letter-spacing: 0;
+$short-line-height: 1.4em;
+$tight-line-height: 1.1em;
+$tracked-out: 0.125em;
+// General Text Sizes
+$base-font-size: 16px;
+$sm-font-size: 11px;
+$md-font-size: 0.875rem;
+$tiny-font-size: 10px;
+// Font Weights
+$normal: normal;
+$thin: 300;
+$light: 300;
+$medium: 700;
+$bold: 700;
+// h1
+$h1-font-family: $main-font;
+$h1-text-transform: none;
+$h1-font-size: 2.5rem;
+$h1-font-weight: $light;
+$h1-line-height: $short-line-height;
+$h1-letter-spacing: -0.03em;
+// h2
+$h2-font-family: $main-font;
+$h2-text-transform: none;
+$h2-font-size: 2.25rem;
+$h2-font-weight: $light;
+$h2-line-height: $base-line-height;
+$h2-letter-spacing: -0.03em;
+// h3
+$h3-font-family: $main-font;
+$h3-text-transform: none;
+$h3-font-size: 1.75rem;
+$h3-font-weight: $normal;
+$h3-line-height: $short-line-height;
+$h3-letter-spacing: -0.03em;
+// h4
+$h4-font-family: $main-font;
+$h4-text-transform: none;
+$h4-font-size: 1.25rem;
+$h4-font-weight: $normal;
+$h4-line-height: $base-line-height;
+$h4-letter-spacing: 0;
+// h5
+$h5-font-family: $secondary-font;
+$h5-text-transform: none;
+$h5-font-size: 1.25rem;
+$h5-font-weight: $bold;
+$h5-line-height: $base-line-height;
+$h5-letter-spacing: inherit;
+// h6 is tracked out all caps by default
+$h6-font-family: $secondary-font;
+// p
+$sm-p-font-size: 0.875rem; //13px;
+$p-font-size: 1rem;
+$md-p-font-size: 1.125rem;
+$lg-p-font-size: 1.25rem;
+$p-font-weight: $normal;
+$p-line-height: $base-line-height;
+$p-letter-spacing: -0.025em;
+
+// Text Highlights
+$highlight-bg: $light-text-color;
+$highlight-color: $bg-color;
+
+// Button Variables
+$btn-radius: 60px;
+$btn-padding: 0 2em 0;
+$btn-text-transform: none;
+$btn-letter-spacing: 0;
+$btn-weight: $bold;
+$btn-font-style: normal;
+$btn-vertical-offset: 1px;
+
+// Button Sizes
+$btn-height: 44px;
+$btn-small-height: 30px;
+$btn-tiny-height: 24px;
+$btn-large-height: 60px;
+$btn-micro-height: 20px;
+$btn-font-size: $sm-p-font-size;
+$btn-small-font-size: $btn-font-size;
+$btn-tiny-font-size: 9px;
+$btn-large-font-size: $btn-font-size;
+
+// Default
+$btn-font: $main-font;
+$btn-bg: $main-color;
+$btn-border-weight: 1px;
+$btn-border-color: $main-color;
+$btn-color: $white;
+$btn-shadow: none;
+$btn-hover-bg: darken($btn-bg, 7%);
+$btn-hover-border-color: $btn-hover-bg;
+$btn-hover-color: $white;
+$btn-hover-shadow: none;
+
+// Secondary
+$btn-secondary-bg: $text-color;
+$btn-secondary-border-color: $btn-secondary-bg;
+$btn-secondary-color: $bg-color;
+$btn-secondary-hover-bg: darken($btn-secondary-bg, 10%);
+$btn-secondary-hover-border-color: $btn-secondary-hover-bg;
+$btn-secondary-hover-color: $white;
+
+// Tertiary
+$btn-tertiary-bg: $black;
+$btn-tertiary-border-color: $btn-tertiary-bg;
+$btn-tertiary-color: $main-color;
+$btn-tertiary-hover-bg: $text-color;
+$btn-tertiary-hover-border-color: $btn-tertiary-hover-bg;
+$btn-tertiary-hover-color: $white;
+
+// Alert
+$btn-alert-color: $bg-color;
+// Notify
+$btn-notify-color: $text-color;
+// success
+$btn-success-color: $white;
+
+// Text Inputs
+$input-font: $main-font;
+$input-font-size: $p-font-size;
+$input-letter-spaceing: $p-letter-spacing;
+$input-label-weight: $normal;
+$input-font-weight: $normal;
+$input-bg: transparent;
+$input-color: $text-color;
+$input-border: 1px solid darken($hr-color, 10%);
+$input-border-radius: $btn-radius;
+$input-hover-bg: transparent;
+$input-hover-color: $text-color;
+$input-hover-border: 1px solid darken($main-color, 10%);
+$input-focus-bg: transparent;
+$input-focus-color: $text-color;
+$input-focus-border: 1px solid darken($main-color, 5%);
+$placeholder-color: rgba($text-color, 0.3);
+$placeholder-hover-color: rgba($text-color, 0.4);
+$placeholder-focus-color: rgba($text-color, 0.4);
+$input-padding: 0px 1.25em 1px;
+$input-text-offset: 3px;
+$input-height: $btn-height;
+$input-large-height: $btn-large-height;
+$input-large-font-size: $p-font-size;
+$input-small-height: $btn-small-height;
+$input-small-font-size: 0.75rem;
+$input-tiny-height: $btn-tiny-height;
+$input-tiny-font-size: $input-small-font-size;
+
+// Select Fields
+$select-border: $input-border;
+$select-bg: transparent;
+$select-color: $light-text-color;
+
+// Tables
+$vertical-cell-padding: 0.75rem;
+$horizontal-cell-padding: 0.75rem;
+
+// Tooltips
+$nipple-size: 4px;
+$tooltip-offset: 6px;
+$tooltip-text-transform: none;
+$tooltip-letter-spacing: 0.02em;
+$tooltip-font-size: 0.75rem;
+$tooltip-font-weight: $normal;
+$tooltip-padding: 5px 8px;
+$tooltip-height: 26px;
+
+// Breakpoints
+$sm: 450;
+$md: 600;
+$lg: 850;
+$xlg: 1050;
+$huge: 1500;
+
+// Transitions
+$fast-speed: 0.1s;
+$slow-speed: 0.5s;
+$md-speed: 0.2s;
+$ease: ease-in-out;
