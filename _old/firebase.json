@@ -108,6 +108,10 @@
         "destination": "/docs-tutorials-todo-list.html"
       },
       {
+        "source": "/blog/universal-wallet-bounty-recap",
+        "destination": "/blog-universal-wallet-bounty-recap.html"
+      },
+      {
         "source": "/blog/announcing-a-universal-dapp-store",
         "destination": "/blog-announcing-a-universal-dapp-store.html"
       },
@@ -162,10 +166,6 @@
       {
         "source": "/blog/browser-public-alpha",
         "destination": "/blog-browser-public-alpha.html"
-      },
-      {
-        "source": "/blog/blockstack-token-sale",
-        "destination": "/blog-blockstack-token-sale.html"
       },
       {
         "source": "**",

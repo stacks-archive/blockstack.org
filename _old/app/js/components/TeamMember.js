@@ -13,12 +13,17 @@ class TeamMember extends Component {
   }
 
   render() {
-    const profile = this.props.profile
+    const profile = this.props.profile;
+
+    let blockstackId = profile.blockstackId;
+    if (profile.blockstackId.indexOf('.id.blockstack') === -1) {
+      blockstackId += '.id';
+    }
 
     return (
       <div className="col-md-6 m-b-50 text-center">
         <Link
-          to={`https://explorer.blockstack.org/name/${profile.blockstackId}.id`}
+          to={`https://explorer.blockstack.org/name/${blockstackId}`}
           target="_blank"
         >
           <Image
