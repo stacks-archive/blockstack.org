@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_twitch_white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ICONS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_twitch_white" fill-rule="nonzero" fill="#FFFFFF">
+            <path d="M28.8571429,34.6666667 L20.5,34.6666667 L16.3214286,40 L10.75,40 L10.75,34.6666667 L1,34.6666667 L1,6.8 L3.78571429,0 L40,0 L40,24 L28.8571429,34.6666667 Z M35.8214286,22.6666667 L35.8214286,4 L6.57142857,4 L6.57142857,29.3333333 L14.9285714,29.3333333 L14.9285714,34.6666667 L20.5,29.3333333 L28.8571429,29.3333333 L35.8214286,22.6666667 Z" id="Dialog-Copy"></path>
+            <rect id="_x7C_-Copy" x="24" y="11" width="3" height="11"></rect>
+            <rect id="_x7C__2_-Copy" x="15" y="11" width="3" height="11"></rect>
+        </g>
+    </g>
+</svg>

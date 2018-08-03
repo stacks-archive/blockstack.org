@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_folders_white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ICONS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_folders_white" fill-rule="nonzero" fill="#FFFFFF">
+            <path d="M21.4862624,8.10129696 L19.4545733,10.7888605 L1.5757096,10.7888605 L1.5757096,34.1975036 L38.4838867,34.1975036 L38.4838867,8.10129696 L37.3410567,8.10129696 L21.4862624,8.10129696 L21.4862624,8.10129696 Z M22.636712,10.3461288 L36.1982333,10.3461288 L36.1982333,31.9514203 L3.86136305,31.9514203 L3.86136305,13.0336987 L20.605023,13.0336987 L22.636712,10.3461288 L22.636712,10.3461288 Z" id="Shape"></path>
+            <polygon id="Shape" points="1.57698387 5.78412598 1.57568359 11.9112764 3.86133704 11.9112764 3.86263732 8.03020932 19.4050586 8.03020932 21.2170717 9.98072312 22.9059157 8.46670263 20.4132835 5.78412598 1.57699038 5.78412598"></polygon>
+        </g>
+    </g>
+</svg>

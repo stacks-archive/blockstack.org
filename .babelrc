@@ -1,0 +1,49 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": [
+            ">1%",
+            "last 4 versions",
+            "Firefox ESR",
+            "Explorer 11",
+            "last 4 Edge versions",
+            "not ie < 9"
+          ]
+        },
+        "debug": true,
+        "useBuiltIns": "usage"
+      }
+    ],
+    "next/babel"
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./"
+        ],
+        "alias": {
+          "@components": "./components",
+          "@containers": "./containers",
+          "@scss": "./scss",
+          "@assets": "./assets",
+          "@common": "./common"
+        }
+      }
+    ],
+    "@babel/plugin-proposal-export-default-from",
+    [
+      "styled-components",
+      {
+        "ssr": true,
+        "displayName": true,
+        "preprocess": false
+      }
+    ]
+  ],
+  "ignore": []
+}

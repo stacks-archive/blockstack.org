@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_search_unexpanded</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ICONS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_search_unexpanded">
+            <rect id="Rectangle-3" fill="#EDEDED" x="0" y="5" width="40" height="30" rx="15"></rect>
+            <g id="Group-2" transform="translate(9.000000, 9.000000)" fill-rule="nonzero" fill="#817F97">
+                <polygon id="Path-2" points="12 13.2030369 20.79856 22 22 20.7969631 13.20144 12"></polygon>
+                <path d="M8,16 C3.581722,16 0,12.418278 0,8 C0,3.581722 3.581722,0 8,0 C12.418278,0 16,3.581722 16,8 C16,12.418278 12.418278,16 8,16 Z M8,14.5964912 C11.6431415,14.5964912 14.5964912,11.6431415 14.5964912,8 C14.5964912,4.35685849 11.6431415,1.40350877 8,1.40350877 C4.35685849,1.40350877 1.40350877,4.35685849 1.40350877,8 C1.40350877,11.6431415 4.35685849,14.5964912 8,14.5964912 Z" id="Oval-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>
