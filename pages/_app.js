@@ -10,6 +10,9 @@ import withReduxStore from '@common/withReduxStore'
 import { Provider as ReduxProvider } from 'redux-bundler-react'
 import '@scss/main.scss'
 
+import Router from "next/router";
+import withGA from "next-ga";
+
 const fetchOurData = async (ctx) => {
   if (!ctx.reduxStore.selectBlogPosts()) {
     await ctx.reduxStore.doFetchBlogData()
@@ -86,4 +89,4 @@ class MyApp extends App {
   }
 }
 
-export default withReduxStore(MyApp)
+export default withGA("UA-74646510-1", Router)(withReduxStore(MyApp))
