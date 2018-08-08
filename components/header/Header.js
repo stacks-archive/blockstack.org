@@ -56,7 +56,7 @@ class Header extends Component {
       <Headroom>
         <header
           className={
-            this.state.menuOpen ? 'header classic-bg menu-open' : 'header classic-bg'
+            this.state.menuOpen ? 'header blue-bg menu-open' : 'header blue-bg'
           }
         >
           {this.state.menuOpen ? (
