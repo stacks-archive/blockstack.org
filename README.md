@@ -27,6 +27,37 @@
 
 A live version of this site can be found online at https://blockstack.org.
 
+## Technology
+This is a react application built using [next.js](https://github.com/zeit/next.js/). It is statically exported to markup + javascript. It is using [redux-bundler]() (an abstraction on top of redux + reselect) for state management. _Most_ of the content is written in Markdown, parsed using [`MDX`]().
+
+## Contributing
+Be sure to have node + npm/yarn installed before getting started.
+
+Fork the repo and pull it down to your machine, and then in the directory run:
+
+```
+npm install
+npm run dev
+```
+OR
+```
+yarn install
+yarn dev
+```
+
+Running the `dev` task will launch a local instance of the site with all the modern advantages of front end work (hot module reloading, etc).
+
+### Updating Content
+
+
+### Adding pages / routes
+Next.js is first and foremost a directory/file based framework. If you look in the `pages` directory, you should get a pretty good idea of the routes contained within this project. To add a new route, simply create a file or folder with the route you want to add, and start coding! Files can be `*.js` or `*.mdx`
+
+The blog gets its data from an external source (Ghost) and is parsed via `/blog` and `/blog/single`. Even though the data is external, you can still get some insight into how the routes work via the directory structure.
+
+#### Exporting new pages
+Because we are exporting the react application to run in places only static sites can, we have to define our routes in the `next.config.js` file. Next.js has a function called `exportPathMap` which allows the export to know what to export! You can also fetch data at this point to generate dynamic pages. Take a look at [next.config.js]() to see an example.
+
 #### Sitemap
 
 - [about](https://blockstackorgv2.netlify.com/about)
