@@ -2,7 +2,6 @@ import App, { Container } from 'next/app'
 import React from 'react'
 import Header from '@components/header'
 import Footer from '@components/footer'
-import { Codeblock } from '@components/codeblock'
 import NoTemplate from '@components/templates/none'
 import DefaultPageTemplate from '@components/templates/default'
 import Head from 'next/head'
@@ -10,6 +9,9 @@ import { Mdx } from '@components/mdx'
 import withReduxStore from '@common/withReduxStore'
 import { Provider as ReduxProvider } from 'redux-bundler-react'
 import '@scss/main.scss'
+
+import Router from "next/router";
+import withGA from "next-ga";
 
 const fetchOurData = async (ctx) => {
   if (!ctx.reduxStore.selectBlogPosts()) {
@@ -87,4 +89,4 @@ class MyApp extends App {
   }
 }
 
-export default withReduxStore(MyApp)
+export default withGA("UA-74646510-1", Router)(withReduxStore(MyApp))
