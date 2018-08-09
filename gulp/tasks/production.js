@@ -24,6 +24,7 @@ gulp.task('prod', ['clean'], function(cb) {
       'copyIcons',
       'copyFiles',
       'buildDocs',
+      'buildBerlinPage',
       'buildBlog',
       'buildConstants',
       'configFirebase',

@@ -74,6 +74,17 @@ gulp.task('buildBlog', () => {
   })
 })
 
+gulp.task('buildBerlinPage', () => {
+  const indexHtml = fs.readFileSync('app/index.html', 'utf8')
+  const metatagMarkup = createMetatagMarkup(
+    'https://blockstack.org/berlin2018/', 
+    'Blockstack Berlin - A Signature Fund Event', 
+    'The Blockstack Signature Fund and the folks who brought you Blockstack Summit 2017 are excited to bring you Blockstack Berlin, the first in a series of worldwide events and demo days around Blockstack. The event took place on March 2, 2018 in Berlin at the Frank Gehry designed Axica Convention Center.', 
+    'https://blockstack.imgix.net/9f001bca-23bb-4510-9f0b-4e166514f60c__3020273.jpg')
+  const modifiedIndex = indexHtml.replace('<meta charset="utf-8" />', metatagMarkup)
+  fs.writeFileSync('build/berlin-2018.html', modifiedIndex)  
+})
+
 function buildDocFile(indexHtml, folderName, docFilename) {
   let key = docFilename.split('.')[0].toLowerCase()
   let docProperties = {}
