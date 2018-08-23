@@ -131,6 +131,7 @@ class NewsletterSignup extends Component {
           placeholder="Get email updates"
           className={this.props.inputClass}
           value={this.state.email}
+          type="email"
           onChange={this.updateEmailAddress}
         />
         {this.state.error ? (
@@ -159,15 +160,6 @@ class NewsletterSignup extends Component {
         >
           <ChevronRightIcon color="currentColor !important" size={32} />
         </div>
-        {/*<Button*/}
-        {/*onClick={ this.signup }*/}
-        {/*icon={ () => <Arrow/> }*/}
-        {/*className={ 'transparent circle ' + this.props.inputClass }*/}
-        {/*htmlFor={ this.props.id }*/}
-        {/*disabled={*/}
-
-        {/*}*/}
-        {/*/>*/}
       </div>
     )
   }
