@@ -69,10 +69,11 @@ const fetchBlogPosts = async () => {
       postObject = { ...postObject, ...data.postObject }
     })
   )
+  const sortedByDatePosts = posts.sort(
+    (a, b) => new Date(b.datetime) - new Date(a.datetime)
+  )
   return {
-    posts: posts.sort(function(a, b) {
-      return new Date(b.datetime) - new Date(a.datetime)
-    }),
+    posts: sortedByDatePosts,
     postObject
   }
 }
