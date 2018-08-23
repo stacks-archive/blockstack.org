@@ -73,11 +73,18 @@ class Header extends Component {
               <div>
                 <div className="container header-container">
                   <div className="grid-flex no-break middle no-gutter">
-                    <div className="col left">
+                    <div
+                      className="col left"
+                      style={{ position: 'relative', zIndex: 600 }}
+                    >
                       <InternalLink
                         onClick={this.closeMenu}
                         className="es-logo"
                         href={{ pathname: '/', asPath: '/home' }}
+                        style={{
+                          display: 'block',
+                          borderBottom: '0 !important'
+                        }}
                       >
                         <div className="grid-flex no-break no-gutter middle left">
                           <div className="bs-logo">{Logo()}</div>
