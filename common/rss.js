@@ -73,6 +73,12 @@ const getAllPostsFromRSS = (rssXML) => {
       } else {
         post.creator = blogAuthors['blockstack.id']
       }
+      if (post.markup && post.markup.includes('http://mun')) {
+        post.markup = post.markup.replace('http://mun', 'https://mun')
+      }
+      if (post.markupFull && post.markupFull.includes('http://mun')) {
+        post.markupFull = post.markupFull.replace('http://mun', 'https://mun')
+      }
       posts.push(post)
       postObject[post.urlSlug] = post
     })
