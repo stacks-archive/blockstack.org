@@ -27,10 +27,11 @@ const InputMessage = ({ children }) => (
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      background: 'white',
+      background: '#3700ff',
+      border: '1px solid #fff',
       borderRadius: '60px',
       zIndex: 10,
-      color: '#3700ff'
+      color: 'white'
     }}
   >
     {children}
@@ -51,7 +52,7 @@ class NewsletterSignup extends Component {
   updateEmailAddress = async (event) => {
     const email = event.target.value
     this.setState({ email })
-    console.log('validation', await this.validate(email))
+    // console.log('validation', await this.validate(email))
 
     if (email.length > 4) {
       const validEmail = await this.validate(email)
@@ -74,14 +75,18 @@ class NewsletterSignup extends Component {
               error: null,
               email: ''
             }),
-          1200
+          6500
         )
     )
   }
 
-  signup = () => {
-    console.log('sign me up please')
+  success = () =>
+    this.setState({
+      success: true,
+      submitting: false
+    })
 
+  signup = () => {
     const data = { EMAIL: this.state.email }
     const url = subscribeURL.replace('/post?', '/post-json?')
 
@@ -91,13 +96,12 @@ class NewsletterSignup extends Component {
     const params = toQueryString(data)
 
     jsonp(url + '&' + params, { param: 'c' }, (err, res) => {
-      console.log('res', res)
       if (err) {
         this.setError(err)
       } else if (res.result === 'error') {
         this.setError(res.msg)
       } else {
-        this.setState({ success: true, submitting: false })
+        this.success()
       }
     })
   }
