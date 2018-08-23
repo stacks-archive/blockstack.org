@@ -109,13 +109,15 @@ class NewsletterSignup extends Component {
       this.state.success
 
     const errorMessage = () => {
-      if (this.state.error.includes('already')) {
-        return 'Thanks for subscribing!'
+      if (this.state.error && typeof this.state.error === 'string') {
+        if (this.state.error.includes('already')) {
+          return 'Thanks for subscribing!'
+        }
+        if (this.state.error.includes('too many')) {
+          return 'Too many attempts, try another.'
+        }
+        return 'Sorry, try another email.'
       }
-      if (this.state.error.includes('too many')) {
-        return 'Too many attempts, try another.'
-      }
-      return 'Sorry, try another email.'
     }
 
     return (
