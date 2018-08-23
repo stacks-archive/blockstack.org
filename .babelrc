@@ -1,5 +1,6 @@
 {
   "presets": [
+    "next/babel",
     [
       "@babel/preset-env",
       {
@@ -13,12 +14,13 @@
             "not ie < 9"
           ]
         },
-        "useBuiltIns": "entry"
+        "useBuiltIns": "usage",
+        "modules": false
       }
-    ],
-    "next/babel"
+    ]
   ],
   "plugins": [
+    "@babel/plugin-transform-runtime",
     [
       "module-resolver",
       {
