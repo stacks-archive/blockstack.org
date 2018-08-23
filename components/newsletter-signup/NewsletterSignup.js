@@ -132,40 +132,42 @@ class NewsletterSignup extends Component {
             : 'newsletter-form'
         }
       >
-        <Input
-          id={this.props.id || 'newsletter_input'}
-          placeholder="Get email updates"
-          className={this.props.inputClass}
-          value={this.state.email}
-          type="email"
-          onChange={this.updateEmailAddress}
-        />
-        {this.state.error ? (
-          <InputMessage>{errorMessage()}</InputMessage>
-        ) : null}
-        {this.state.success ? (
-          <InputMessage>Thanks for subscribing!</InputMessage>
-        ) : null}
-        {this.state.submitting ? (
-          <InputMessage>Processing...</InputMessage>
-        ) : null}
-        <div
-          onClick={!this.state.success || !disabled ? this.signup : null}
-          style={{
-            position: 'absolute',
-            right: 0,
-            top: 0,
-            height: '100%',
-            width: '44px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            opacity: disabled ? 0 : 1,
-            pointerEvents: disabled ? 'none' : null
-          }}
-        >
-          <ChevronRightIcon color="currentColor !important" size={32} />
-        </div>
+        <form onSubmit={!disabled ? this.signup : () => null}>
+          <Input
+            id={this.props.id || 'newsletter_input'}
+            placeholder="Get email updates"
+            className={this.props.inputClass}
+            value={this.state.email}
+            type="email"
+            onChange={this.updateEmailAddress}
+          />
+          {this.state.error ? (
+            <InputMessage>{errorMessage()}</InputMessage>
+          ) : null}
+          {this.state.success ? (
+            <InputMessage>Thanks for subscribing!</InputMessage>
+          ) : null}
+          {this.state.submitting ? (
+            <InputMessage>Processing...</InputMessage>
+          ) : null}
+          <div
+            onClick={!this.state.success || !disabled ? this.signup : null}
+            style={{
+              position: 'absolute',
+              right: 0,
+              top: 0,
+              height: '100%',
+              width: '44px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              opacity: disabled ? 0 : 1,
+              pointerEvents: disabled ? 'none' : null
+            }}
+          >
+            <ChevronRightIcon color="currentColor !important" size={32} />
+          </div>
+        </form>
       </div>
     )
   }
