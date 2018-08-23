@@ -13,8 +13,7 @@
             "not ie < 9"
           ]
         },
-        "debug": true,
-        "useBuiltIns": "usage"
+        "useBuiltIns": "entry"
       }
     ],
     "next/babel"
@@ -23,9 +22,7 @@
     [
       "module-resolver",
       {
-        "root": [
-          "./"
-        ],
+        "root": ["./"],
         "alias": {
           "@components": "./components",
           "@containers": "./containers",

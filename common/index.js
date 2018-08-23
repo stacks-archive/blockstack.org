@@ -50,7 +50,9 @@ const bslinks = {
   privacy: '/legal/privacy-policy',
   appCo: 'https://app.co/platform/blockstack',
   signatureFund: '/funding',
-  events: 'http://community.blockstack.org/events'
+  events: 'http://community.blockstack.org/events',
+  telegramEnglish: 'https://t.me/BlockstackChat',
+  telegramChinese: 'https://t.me/BlockstackChinese'
 }
 
 const blogAuthors = {
@@ -150,7 +152,7 @@ const blogAuthors = {
     name: 'Jeff Domke',
     avatar: 'https://blockstack.org/images/avatars/jeff-domke.jpg',
     twitter: 'jeffdomke',
-    github: 'jeffdomke',
+    github: 'jeffdomke'
   }
 }
 

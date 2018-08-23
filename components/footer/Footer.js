@@ -97,6 +97,16 @@ class Header extends Component {
                     Signature fund
                   </a>
                 </li>
+                <li>
+                  <a href={bslinks.telegramEnglish} className="p sm">
+                    Telegram (English)
+                  </a>
+                </li>
+                <li>
+                  <a href={bslinks.telegramChinese} className="p sm">
+                    Telegram (Chinese)
+                  </a>
+                </li>
               </ul>
             </div>
             <div className="col pb-2">
@@ -161,12 +171,14 @@ class Header extends Component {
             </div>
           </div>
           <p className="tiny text-color medium-weight pt-4">
-            The Blockstack Tokens are a crypto asset that is currently being developed by
-            Blockstack Token LLC, a Delaware limited liability company, whose website can be
-            found at <a href="https://www.blockstack.com">www.blockstack.com</a>. The website
-            you are currently visiting <a href="https://www.blockstack.com">www.blockstack.org</a>
-            {' '}is sponsored by Blockstack PBC, an affiliate of Blockstack Token LLC, and should
-            not be viewed as an offer or sale of securities.
+            The Blockstack Tokens are a crypto asset that is currently being
+            developed by Blockstack Token LLC, a Delaware limited liability
+            company, whose website can be found at{' '}
+            <a href="https://www.blockstack.com">www.blockstack.com</a>. The
+            website you are currently visiting{' '}
+            <a href="https://www.blockstack.com">www.blockstack.org</a> is
+            sponsored by Blockstack PBC, an affiliate of Blockstack Token LLC,
+            and should not be viewed as an offer or sale of securities.
           </p>
 
           <div className="es-logo mt-4">
