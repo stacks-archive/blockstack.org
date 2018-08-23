@@ -49,10 +49,10 @@ class NewsletterSignup extends Component {
   validate = async (email) => {
     return schema.isValid({ email })
   }
+
   updateEmailAddress = async (event) => {
     const email = event.target.value
     this.setState({ email })
-    // console.log('validation', await this.validate(email))
 
     if (email.length > 4) {
       const validEmail = await this.validate(email)
@@ -133,7 +133,7 @@ class NewsletterSignup extends Component {
         }
       >
         <Input
-          id={this.props.id}
+          id={this.props.id || 'newsletter_input'}
           placeholder="Get email updates"
           className={this.props.inputClass}
           value={this.state.email}
