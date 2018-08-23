@@ -103,8 +103,10 @@
     "format": "prettier --write ./**/**/*.{js,md} && echo -e '\\033[0;32m'💅 Just use prettier'\\033[0m'",
     "prod": "npm run build && npm run export",
     "netlify": "npm run build && npm run export",
+    "postexport": "npm run sitemap",
     "prestart": "npm run copyImages:dynamic",
     "start": "NODE_ENV=production node server.js",
+    "sitemap": "node build-sitemap.js",
     "test": "eslint src/**/*.js"
   }
 }
