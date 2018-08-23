@@ -1,6 +1,6 @@
 import React from 'react'
 import { InternalLink as InternalLinkComponent } from '@components/internal-link'
-import './MainMenu.scss'
+
 
 class MainMenu extends React.PureComponent {
   render() {

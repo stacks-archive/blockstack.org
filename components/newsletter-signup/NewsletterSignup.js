@@ -11,7 +11,6 @@ const schema = object().shape({
     .required()
 })
 
-import './NewsletterSignup.scss'
 
 const subscribeURL =
   'https://blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=0e5478ae86'

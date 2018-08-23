@@ -4,7 +4,6 @@ import InlineSVG from 'svg-inline-react'
 import Typeahead from '@components/type-ahead'
 import Loader from '@components/loader'
 
-import './inputs.scss'
 
 export default class Input extends Component {
   constructor(props) {

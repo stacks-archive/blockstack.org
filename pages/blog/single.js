@@ -2,9 +2,6 @@ import React from 'react'
 import { BlogPost } from '@components/blog/post'
 import { BadConnection } from '@components/blog/list'
 import striptags from 'striptags'
-import { BlogPostUser } from '@components/blog/post/styled/user'
-import { Image } from '@components/image'
-
 const removeMarkdown = async (string) => striptags(string)
 
 const meta = {

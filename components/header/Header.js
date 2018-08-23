@@ -8,7 +8,7 @@ import { InternalLink } from '@components/internal-link'
 import scrollMonitor from 'scrollmonitor'
 import Head from 'next/head'
 import Headroom from 'react-headroom'
-import './Header.scss'
+
 
 class Header extends Component {
   state = {
