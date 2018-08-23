@@ -10,7 +10,5 @@ Blockstack Team Values: (voted and decided collaboratively by the team)
 - Possibilist
 - Mission-driven
 
-We get a lot of applicants, and have historically hired people who are proactively involved in our work and mission of decentralizing the internet. Even a simple pull request goes a long way in signaling interest in the project. We hope you explore our Github, Whitepaper, Browser, and Slack prior to submitting your resume.
+Read more about our engineering team on [Key Values](https://www.keyvalues.com/blockstack).<span id="openings">&nbsp;</span>
 
-Read more about our engineering team on Key Values.<span id="openings">&nbsp;</span>
-<br />
