@@ -39,7 +39,7 @@
 - Improvement of authentication & on-boarding for Blockstack apps.
 ## 2018 Q4
 - Launch of the Stacks Blockchain genesis block.
-- Ability for Stacks voucher holders to redeem vouchers for Stacks (pending legal approval).
+- Ability for Stacks voucher holders to redeem vouchers for Stacks.*
 - Launch of web extensions as an additional form factor for the Blockstack app/browser.
 - Release of the ability for apps to send Stacks transactions with the SDKs.
 - Extension of Gaia storage with real-time notifications of user activity.
@@ -48,4 +48,6 @@
 - Launch of iOS and Android apps for Blockstack authentication.
 - Initiation of mining on the stacks blockchain and a hardfork to a new consensus algorithm.
 - Start first community-powered election for App Reviewers.
-- Initiation of the distribution of tokens to all new verified users of Blockstack.
+- Initiation of the distribution of tokens to all new verified users of Blockstack.*
+
+*Pending legal approval
