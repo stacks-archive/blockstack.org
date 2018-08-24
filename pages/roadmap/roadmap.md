@@ -23,29 +23,29 @@
 - Released the Token Whitepaper and token sale details.
 - Released the Public Alpha of the Blockstack Browser.
 - Conducted a token sale which resulted in ~$50 million total raised, and over 800 accredited investors, qualified purchasers, and institutions participating.
-- Announced a $50,000 bounty to Decentralize Communication
+- Announced a $50,000 bounty to Decentralize Communication.
 ## 2018 Q1
 - Released Multiplayer Storage, a major upgrade to the Gaia storage network.
 - Held Blockstack Berlin, with Edward Snowden as the keynote speaker.
 ## 2018 Q2
-- Released the Stacks blockchain testnet
+- Released the Stacks blockchain testnet.
 - Announced the $50,000 Universal Wallet Bounty in partnership with ShapeShift.
-- Launched App.co, the Universal Store for decentralized applications
+- Launched App.co, the Universal Store for decentralized applications.
 - Released the developer Alpha of Blockstack iOS and Android SDKs.
 - Released a new mobile-friendly onboarding flow for mobile and desktop apps. 
 ## 2018 Q3
-- Launch of the App Mining program to pay app development teams
-- Release of the Stacks blockchain paper and start of the Rust implementation
-- Improvement of authentication & on-boarding for Blockstack apps
+- Launch of the App Mining program to pay app development teams.
+- Release of the Stacks blockchain paper and start of the Rust implementation.
+- Improvement of authentication & on-boarding for Blockstack apps.
 ## 2018 Q4
-- Launch of the Stacks Blockchain genesis block
-- Ability for Stacks voucher holders to redeem vouchers for Stacks (pending legal approval) 
-- Launch of web extensions as an additional form factor for the Blockstack app/browser
-- Release of the ability for apps to send Stacks transactions with the SDKs
-- Extension of Gaia storage with real-time notifications of user activity
-- Extension of Gaia storage with data collections (like photos) that are sharable across apps
+- Launch of the Stacks Blockchain genesis block.
+- Ability for Stacks voucher holders to redeem vouchers for Stacks (pending legal approval).
+- Launch of web extensions as an additional form factor for the Blockstack app/browser.
+- Release of the ability for apps to send Stacks transactions with the SDKs.
+- Extension of Gaia storage with real-time notifications of user activity.
+- Extension of Gaia storage with data collections (like photos) that are sharable across apps.
 ## 2019
-- Launch of iOS and Android apps for Blockstack authentication
-- Initiation of mining on the stacks blockchain and a hardfork to a new consensus algorithm
-- Start first community-powered election for App Reviewers
-- Initiation of the distribution of tokens to all new verified users of Blockstack
+- Launch of iOS and Android apps for Blockstack authentication.
+- Initiation of mining on the stacks blockchain and a hardfork to a new consensus algorithm.
+- Start first community-powered election for App Reviewers.
+- Initiation of the distribution of tokens to all new verified users of Blockstack.
