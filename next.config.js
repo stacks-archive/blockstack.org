@@ -81,7 +81,8 @@ const config = {
         quality: 60,
         adapter: require('responsive-loader/sharp'),
         placeholder: true,
-        placeholderSize: 80
+        placeholderSize: 80,
+        name: 'static/images/[name]-[hash]-[width].[ext]'
       }
     })
     return config

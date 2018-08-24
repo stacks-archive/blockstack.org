@@ -1,22 +1,9 @@
 import React from 'react'
 import { StyledImage } from './styled'
 const requireImage = require.context('@assets', true, /\.(png|jpg|jpeg|svg)$/)
-const path = '/_next/webpack/'
-const prodPath = '/_next/static/images/'
+const path = '/_next/'
 const addPath = (src) => {
-  if (src && src.includes('_next') && src.includes(path)) {
-    if (process.env.NODE_ENV === 'production') {
-      return src.replace(path, '/_next/static/images/')
-    } else {
-      return src
-    }
-  } else {
-    if (process.env.NODE_ENV === 'production') {
-      return prodPath + src
-    } else {
-      return path + src
-    }
-  }
+  return path + src
 }
 class Image extends React.Component {
   constructor(props) {

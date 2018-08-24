@@ -1,4 +1,3 @@
-
 import App, { Container } from 'next/app'
 import React from 'react'
 import Header from '@components/header'
@@ -9,7 +8,9 @@ import DefaultPageTemplate from '@components/templates/default'
 import Head from 'next/head'
 import { Mdx } from '@components/mdx'
 import withReduxStore from '@common/withReduxStore'
+
 import { Provider as ReduxProvider } from 'redux-bundler-react'
+import { styles } from '@common/legacy-styles'
 
 const fetchOurData = async (ctx) => {
   if (!ctx.reduxStore.selectBlogPosts()) {
@@ -28,6 +29,7 @@ const renderTemplate = (template) => {
       return DefaultPageTemplate
   }
 }
+
 class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
     let pageProps = {}
@@ -66,6 +68,7 @@ class MyApp extends App {
         <Mdx>
           <Container>
             <Head>
+              <style dangerouslySetInnerHTML={{ __html: styles }} />
               <title>{title}</title>
               <meta name="theme-color" content="#3700ff" />
               <meta charSet="UTF-8" />
