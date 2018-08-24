@@ -66,7 +66,7 @@ export const teamMembers = [
       'Sebastian received his MA in Linguistics and Communications from the University of Heidelberg, Germany, and the University of Brighton, UK. Before joining the Blockstack team, he worked in localization and product support for Apple, Vimeo, and Master & Dynamic.'
   },
   {
-    blockstackId: 'svoight',
+    blockstackId: 'shannon.id.blockstack',
     name: 'Shannon Voight',
     avatar: 'https://blockstack.org/images/avatars/shannon-voight.jpg',
     bio:
