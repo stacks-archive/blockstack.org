@@ -1,6 +1,6 @@
 import React from 'react'
 import { teamMembers, founders, advisors } from './data'
-import { slugify } from '@common/lib'
+import { slugify } from '@common/es6'
 import { Image } from '@components/image'
 import {
   StyledTeamMember,
