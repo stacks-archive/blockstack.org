@@ -6,11 +6,7 @@ const fs = require('fs')
 const DESTINATION =
   process.env.DESTINATION || path.join(__dirname, '.', 'out', 'sitemap.xml')
 
-let xml = ''
-xml += `
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-`
+let xml = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`
 
 const staticPaths = [
   '/',
@@ -30,7 +26,7 @@ const staticPaths = [
   '/tutorials',
   '/tutorials/hello-blockstack',
   '/tutorials/multi-player-storage',
-  '/tutorials/todo-list'
+  '/tutorials/todo-list',
 ]
 
 fetchBlogPosts().then((data) => {
