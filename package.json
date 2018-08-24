@@ -43,7 +43,7 @@
     "textversionjs": "^1.1.2",
     "to-querystring": "^1.0.4",
     "xml2js": "^0.4.19",
-    "yup": "^0.26.0"
+    "yup": "^0.26.2"
   },
   "devDependencies": {
     "@babel/core": "7.0.0-rc.2",
