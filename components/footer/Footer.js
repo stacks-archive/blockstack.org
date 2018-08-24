@@ -103,7 +103,7 @@ class Header extends Component {
                 </li>
                 <li>
                   <a href={bslinks.telegramChinese} className="p sm">
-                    Telegram (Chinese)
+                    Telegram (中文群)
                   </a>
                 </li>
               </ul>
