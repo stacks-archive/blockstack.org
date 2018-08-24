@@ -49,7 +49,7 @@ export const teamMembers = [
     name: 'Patrick Stanley',
     avatar: 'https://blockstack.org/images/avatars/patrick-stanley.jpg',
     bio:
-      'Patrick Stanley studied Economics and Psychology at Johns Hopkins, and was the first employee at data-driven lending startup Earnest which sold to Navient for $155m in 2017. In a growth role there, he helped it scale from from 1 to 200 employees and go from $0 to $2B in originations within 3 years.'
+      'Patrick Stanley is the head of growth at Blockstack. He studied Economics and Psychology at Johns Hopkins, and was the first employee at data-driven lending startup Earnest which sold to Navient for $155m in 2017. In a growth role there, he helped it scale from from 1 to 200 employees and go from $0 to $2B in originations within 3 years.'
   },
   {
     blockstackId: 'yukan',
@@ -80,18 +80,11 @@ export const teamMembers = [
       'Xan came to Blockstack with backgrounds in private equity, investment banking, and the military. He is passionate about driving the creation, growth, and expansion of application ecosystems through his growth role and with the Signature Fund.'
   },
   {
-    blockstackId: 'ariella',
-    name: 'Ariella Steinhorn',
-    avatar: 'https://blockstack.org/images/avatars/ariella-steinhorn.jpg',
-    bio:
-      'Ariella is Blockstack’s Communications Partner. She previously led communications and public policy efforts at Managed by Q. Before that, she held several communications positions at Uber, and was a speechwriter in Washington, DC.'
-  },
-  {
     blockstackId: 'jesse',
     name: 'Jesse Soslow',
     avatar: 'https://blockstack.org/images/avatars/jesse-soslow.jpg',
     bio:
-      'Jesse is Blockstack’s Operations Partner.  Prior to Blockstack, he led operations at Everwise, a Sequoia-backed SaaS startup, and worked as a technology transactions attorney for a large, international law firm.  Jesse received his J.D. and B.A., in math, both from the University of Pennsylvania.'
+      'Jesse is Blockstack’s head of legal and finance. Prior to Blockstack, he led operations at Everwise, a Sequoia-backed SaaS startup, and worked as a technology transactions attorney for a large, international law firm.  Jesse received his J.D. and B.A., in math, both from the University of Pennsylvania.'
   },
   {
     blockstackId: 'mitchell',
