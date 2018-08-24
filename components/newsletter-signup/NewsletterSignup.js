@@ -4,7 +4,6 @@ import jsonp from 'jsonp'
 import { ChevronRightIcon } from 'mdi-react'
 import Input from '@components/input'
 
-
 function validateEmail(email) {
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
   return re.test(String(email).toLowerCase())
@@ -81,7 +80,8 @@ class NewsletterSignup extends Component {
       submitting: false
     })
 
-  signup = () => {
+  signup = (e) => {
+    e.preventDefault()
     const data = { EMAIL: this.state.email }
     const url = subscribeURL.replace('/post?', '/post-json?')
 
@@ -127,7 +127,7 @@ class NewsletterSignup extends Component {
             : 'newsletter-form'
         }
       >
-        <form onSubmit={!disabled ? this.signup : () => null}>
+        <form onSubmit={!disabled ? this.signup : () => false}>
           <Input
             id={this.props.id || 'newsletter_input'}
             placeholder="Get email updates"
