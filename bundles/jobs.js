@@ -1,4 +1,4 @@
-const { fetchJobs } = require('@common/lib')
+import { fetchJobs } from '@common/es6'
 
 const FETCH_JOBS_STARTED = 'jobs/FETCH_JOBS_STARTED'
 const FETCH_JOBS_FINISHED = 'jobs/FETCH_JOBS_FINISHED'

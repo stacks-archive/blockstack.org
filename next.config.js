@@ -3,16 +3,11 @@ const path = require('path')
 const glob = require('glob')
 const { resolve } = require('./webpack.config.js')
 const withPlugins = require('next-compose-plugins')
-const withStyles = require('./next-css-sass')
 const withMDX = require('@zeit/next-mdx')({
   extension: /\.mdx?$/
 })
 const withImages = require('next-optimized-images')
 
-const prod = process.env.NODE_ENV === 'production'
-const imgix = prod
-  ? 'https://blockstackorgv2.netlify.com/_next/static/images/'
-  : false
 /**
  * Next/Webpack config
  */
@@ -86,7 +81,8 @@ const config = {
         quality: 60,
         adapter: require('responsive-loader/sharp'),
         placeholder: true,
-        placeholderSize: 80
+        placeholderSize: 80,
+        name: 'static/images/[name]-[hash]-[width].[ext]'
       }
     })
     return config
@@ -94,7 +90,6 @@ const config = {
 }
 
 const plugins = [
-  withStyles,
   [
     withImages,
     {

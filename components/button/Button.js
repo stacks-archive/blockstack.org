@@ -4,7 +4,6 @@ import InlineSVG from 'svg-inline-react'
 
 import Loader from '@components/loader'
 
-import './button.scss'
 
 export class Button extends Component {
   constructor(props) {

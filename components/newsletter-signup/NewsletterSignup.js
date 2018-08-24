@@ -3,15 +3,12 @@ import toQueryString from 'to-querystring'
 import jsonp from 'jsonp'
 import { ChevronRightIcon } from 'mdi-react'
 import Input from '@components/input'
-import { string, object } from 'yup'
 
-const schema = object().shape({
-  email: string()
-    .email()
-    .required()
-})
 
-import './NewsletterSignup.scss'
+function validateEmail(email) {
+  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  return re.test(String(email).toLowerCase())
+}
 
 const subscribeURL =
   'https://blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=0e5478ae86'
@@ -46,16 +43,14 @@ class NewsletterSignup extends Component {
     submitting: false,
     error: null
   }
-  validate = async (email) => {
-    return schema.isValid({ email })
-  }
+  validate = (email) => validateEmail(email)
 
   updateEmailAddress = async (event) => {
     const email = event.target.value
     this.setState({ email })
 
     if (email.length > 4) {
-      const validEmail = await this.validate(email)
+      const validEmail = this.validate(email)
       this.setState({
         validEmail
       })

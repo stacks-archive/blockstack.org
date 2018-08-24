@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { LogoWhite, LogoType } from '@components/svgs'
 import NewsletterSignup from '@components/newsletter-signup'
 import { bslinks } from '@common'
-import './Footer.scss'
 
 class Header extends Component {
   render() {
@@ -104,7 +103,7 @@ class Header extends Component {
                 </li>
                 <li>
                   <a href={bslinks.telegramChinese} className="p sm">
-                    Telegram (Chinese)
+                    Telegram (中文群)
                   </a>
                 </li>
               </ul>

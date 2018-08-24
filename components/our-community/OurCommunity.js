@@ -22,7 +22,7 @@ const FloatingTriangle = styled.div`
   }
 `
 
-import './OurCommunity.scss'
+
 
 class OurCommunity extends Component {
   render() {
