@@ -1,32 +1,10 @@
 {
-  "presets": [
-    [
-      "next/babel",
-      {
-        "preset_env": {
-          "targets": {
-            "browsers": [
-              ">1%",
-              "last 4 versions",
-              "Firefox ESR",
-              "Explorer 11",
-              "last 4 Edge versions",
-              "not ie < 9"
-            ]
-          },
-          "useBuiltIns": "usage",
-          "modules": false
-        }
-      }
-    ]
-  ],
+  "presets": ["next/babel"],
   "plugins": [
     [
       "module-resolver",
       {
-        "root": [
-          "./"
-        ],
+        "root": ["./"],
         "alias": {
           "@components": "./components",
           "@containers": "./containers",

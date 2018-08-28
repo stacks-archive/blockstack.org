@@ -67,6 +67,7 @@ class MyApp extends App {
         <Mdx>
           <Container>
             <Head>
+              <script src="https://cdn.polyfill.io/v2/polyfill.min.js" />
               <style dangerouslySetInnerHTML={{ __html: styles }} />
               <title>{title}</title>
               <meta name="theme-color" content="#3700ff" />
