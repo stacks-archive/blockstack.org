@@ -2,7 +2,6 @@ import App, { Container } from 'next/app'
 import React from 'react'
 import Header from '@components/header'
 import Footer from '@components/footer'
-
 import NoTemplate from '@components/templates/none'
 import DefaultPageTemplate from '@components/templates/default'
 import Head from 'next/head'
