@@ -3,7 +3,10 @@ import { StyledImage } from './styled'
 const requireImage = require.context('@assets', true, /\.(png|jpg|jpeg|svg)$/)
 const path = '/_next/'
 const addPath = (src) => {
-  return path + src
+  if(!src.includes(path)){
+      return path + src
+  }
+  return src
 }
 class Image extends React.Component {
   constructor(props) {
