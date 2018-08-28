@@ -40,6 +40,7 @@ const config = {
       '/papers': { page: '/papers' },
       '/press': { page: '/press' },
       '/videos': { page: '/videos' },
+      '/roadmap': { page: '/roadmap' },
       '/what-is-blockstack': { page: '/what-is-blockstack' },
       '/legal/disclaimers': { page: '/legal/disclaimers' },
       '/legal/privacy-policy': { page: '/legal/privacy-policy' },

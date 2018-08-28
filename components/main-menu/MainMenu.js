@@ -136,6 +136,11 @@ class MainMenu extends React.PureComponent {
                   </InternalLink>
                 </li>
                 <li>
+                  <InternalLink href="/roadmap" className="p md">
+                    Roadmap
+                  </InternalLink>
+                </li>
+                <li>
                   <InternalLink
                     href={this.props.links.careers}
                     className="p md"

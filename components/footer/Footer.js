@@ -127,6 +127,11 @@ class Header extends Component {
                   </a>
                 </li>
                 <li>
+                  <a href="/roadmap" className="p sm">
+                    Roadmap
+                  </a>
+                </li>
+                <li>
                   <a href={bslinks.careers} className="p sm">
                     Careers
                   </a>
