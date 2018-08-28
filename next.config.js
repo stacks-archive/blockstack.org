@@ -1,6 +1,5 @@
 const { fetchBlogPosts } = require('./common/lib')
 const path = require('path')
-const glob = require('glob')
 const { resolve } = require('./webpack.config.js')
 const withPlugins = require('next-compose-plugins')
 const withMDX = require('@zeit/next-mdx')({
@@ -55,15 +54,6 @@ const config = {
       },
       '/tutorials/todo-list': { page: '/tutorials/todo-list' }
     })
-  },
-  sassLoaderOptions: {
-    data: [
-      '@import "setup/variables"; @import "setup/mixins"; @import "setup/icons"; @import "setup/animations";'
-    ],
-    includePaths: ['./', 'scss', 'assets', 'node_modules']
-      .map((d) => path.join(__dirname, d))
-      .map((g) => glob.sync(g))
-      .reduce((a, c) => a.concat(c), [])
   },
   pageExtensions: ['js', 'jsx', 'mdx'],
   webpack(config, options) {
