@@ -1,5 +1,4 @@
-const { fetchBlogPosts } = require('./common/lib')
-
+const generateRoutes = require('./routes')
 const path = require('path')
 const fs = require('fs')
 
@@ -8,45 +7,17 @@ const DESTINATION =
 
 let xml = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`
 
-const staticPaths = [
-  '/',
-  '/about',
-  '/blog',
-  '/faq',
-  '/careers',
-  '/funding',
-  '/install',
-  '/papers',
-  '/press',
-  '/videos',
-  '/what-is-blockstack',
-  '/legal/disclaimers',
-  '/legal/privacy-policy',
-  '/legal/terms-of-use',
-  '/tutorials',
-  '/tutorials/hello-blockstack',
-  '/tutorials/multi-player-storage',
-  '/tutorials/todo-list',
-]
+generateRoutes().then((r) => {
+  const routes = Object.keys(r)
 
-fetchBlogPosts().then((data) => {
-  const { posts } = data
-
-  staticPaths.forEach((path) => {
+  routes.forEach((route) => {
     xml += '<url>'
-    xml += `<loc>https://blockstack.org${path}</loc>`
+    xml += `<loc>https://blockstack.org${route}</loc>`
     xml += `<changefreq>always</changefreq>`
     xml += `<priority>0.5</priority>`
     xml += '</url>'
   })
 
-  posts.forEach((post) => {
-    xml += '<url>'
-    xml += `<loc>https://blockstack.org/blog/${post.urlSlug}</loc>`
-    xml += `<changefreq>always</changefreq>`
-    xml += `<priority>0.5</priority>`
-    xml += '</url>'
-  })
   xml += '</urlset>'
 
   fs.writeFileSync(DESTINATION, xml)
