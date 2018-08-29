@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { LogoWhite, LogoType } from '@components/svgs'
+import { Logo, LogoType } from '@components/svgs'
 import NewsletterSignup from '@components/newsletter-signup'
 import { bslinks } from '@common'
 
@@ -185,9 +185,9 @@ class Header extends Component {
             and should not be viewed as an offer or sale of securities.
           </p>
 
-          <div className="es-logo mt-4">
+          <div className=" mt-4">
             <div className="grid-flex no-break no-gutter middle center">
-              <div className="bs-logo">{LogoWhite()}</div>
+              <div className="bs-logo"><Logo /></div>
               <div className="bs-logotype ml-2">{LogoType()}</div>
             </div>
           </div>
