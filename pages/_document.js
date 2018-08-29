@@ -4,6 +4,11 @@ import { ServerStyleSheet, injectGlobal } from 'styled-components'
 
 import { GA_TRACKING_ID } from '@common/lib/gtag'
 
+injectGlobal`
+.headroom.headroom--scrolled{
+box-shadow: 0 3px 12px rgba(37,0,105,.32);
+}`
+
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
     const sheet = new ServerStyleSheet()
