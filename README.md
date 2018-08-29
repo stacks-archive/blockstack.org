@@ -47,50 +47,36 @@ yarn dev
 
 Running the `dev` task will launch a local instance of the site with all the modern advantages of front end work (hot module reloading, etc).
 
-### Updating Content
-
-
 ### Adding pages / routes
 Next.js is first and foremost a directory/file based framework. If you look in the `pages` directory, you should get a pretty good idea of the routes contained within this project. To add a new route, simply create a file or folder with the route you want to add, and start coding! Files can be `*.js` or `*.mdx`
 
 The blog gets its data from an external source (Ghost) and is parsed via `/blog` and `/blog/single`. Even though the data is external, you can still get some insight into how the routes work via the directory structure.
 
 #### Exporting new pages
-Because we are exporting the react application to run in places only static sites can, we have to define our routes in the `next.config.js` file. Next.js has a function called `exportPathMap` which allows the export to know what to export! You can also fetch data at this point to generate dynamic pages. Take a look at [next.config.js]() to see an example.
+Because we are exporting the react application to run in places only static sites can, we have to pass our routes to the `next.config.js` file. We have a [`routes.js`](https://github.com/blockstack/blockstack.org/blob/master/routes.js) file that contains our static and dynamic routes. When adding a new page, make sure to add the path to this file. 
+
+Next.js has a function called `exportPathMap` in the `next.config.js` which allows the export to know what to export! You can also fetch data at this point to generate dynamic pages. Take a look at [`next.config.js`](https://github.com/blockstack/blockstack.org/blob/master/next.config.js) to see an example.
 
 #### Sitemap
 
-- [about](https://blockstackorgv2.netlify.com/about)
-- [careers](https://blockstackorgv2.netlify.com/careers)
-- [funding](https://blockstackorgv2.netlify.com/funding)
-- [install](https://blockstackorgv2.netlify.com/install)
-- [faq](https://blockstackorgv2.netlify.com/faq)
-- [papers](https://blockstackorgv2.netlify.com/papers)
-- [press](https://blockstackorgv2.netlify.com/press)
-- [videos](https://blockstackorgv2.netlify.com/videos)
-- [what-is-blockstack](https://blockstackorgv2.netlify.com/what-is-blockstack)
+- [about](https://blockstack.org/about)
+- [careers](https://blockstack.org/careers)
+- [funding](https://blockstack.org/funding)
+- [install](https://blockstack.org/install)
+- [faq](https://blockstack.org/faq)
+- [papers](https://blockstack.org/papers)
+- [press](https://blockstack.org/press)
+- [videos](https://blockstack.org/videos)
+- [roadmap](https://blockstack.org/roadmap)
+- [what-is-blockstack](https://blockstack.org/what-is-blockstack)
 - legal
-  - [disclaimers](https://blockstackorgv2.netlify.com/legal/disclaimers)
-  - [privacy-policy](https://blockstackorgv2.netlify.com/legal/privacy-policy)
-  - [terms-of-use](https://blockstackorgv2.netlify.com/legal/terms-of-use)
-- [blog](https://blockstackorgv2.netlify.com/blog)
-  - [universal-wallet-bounty-recap](https://blockstackorgv2.netlify.com/blog/universal-wallet-bounty-recap)
-  - [announcing-a-universal-dapp-store](https://blockstackorgv2.netlify.com/blog/announcing-a-universal-dapp-store)
-  - [a-1m-request-for-social-networks](https://blockstackorgv2.netlify.com/blog/a-1m-request-for-social-networks)
-  - [blockstack-shapeshift-50-000-for-a-universal-wallet-app](https://blockstackorgv2.netlify.com/blog/blockstack-shapeshift-50-000-for-a-universal-wallet-app)
-  - [blockstack-community-rewards-program](https://blockstackorgv2.netlify.com/blog/blockstack-community-rewards-program)
-  - [gaining-ownership-of-our-digital-lives](https://blockstackorgv2.netlify.com/blog/gaining-ownership-of-our-digital-lives)
-  - [blockstack-berlin-videos-now-live](https://blockstackorgv2.netlify.com/blog/blockstack-berlin-videos-now-live)
-  - [connecting-users-and-their-data-on-the-decentralized-internet](https://blockstackorgv2.netlify.com/blog/connecting-users-and-their-data-on-the-decentralized-internet)
-  - [50-000-signature-bounty-to-decentralize-communication](https://blockstackorgv2.netlify.com/blog/50-000-signature-bounty-to-decentralize-communication)
-  - [encrypted-token-portfolio-bounty-recap](https://blockstackorgv2.netlify.com/blog/encrypted-token-portfolio-bounty-recap)
-  - [blockstack-token-sale-recap](https://blockstackorgv2.netlify.com/blog/blockstack-token-sale-recap)
-  - [registration-extension](https://blockstackorgv2.netlify.com/blog/registration-extension)
-  - [blockstack-berlin](https://blockstackorgv2.netlify.com/blog/blockstack-berlin)
-  - [blockstack-token-sale-registration](https://blockstackorgv2.netlify.com/blog/blockstack-token-sale-registration)
-  - [browser-public-alpha](https://blockstackorgv2.netlify.com/blog/browser-public-alpha)
-- [tutorials](https://blockstackorgv2.netlify.com/tutorials)
-  - [hello-blockstack](https://blockstackorgv2.netlify.com/tutorials/hello-blockstack)
-  - [managing-data-with-gaia](https://blockstackorgv2.netlify.com/tutorials/managing-data-with-gaia)
-  - [multi-player-storage](https://blockstackorgv2.netlify.com/tutorials/multi-player-storage)
-  - [todo-list](https://blockstackorgv2.netlify.com/tutorials/todo-list)
+  - [disclaimers](https://blockstack.org/legal/disclaimers)
+  - [privacy-policy](https://blockstack.org/legal/privacy-policy)
+  - [terms-of-use](https://blockstack.org/legal/terms-of-use)
+- [blog](https://blockstack.org/blog)
+  - Many blog posts (dynamic pages)
+- [tutorials](https://blockstack.org/tutorials)
+  - [hello-blockstack](https://blockstack.org/tutorials/hello-blockstack)
+  - [managing-data-with-gaia](https://blockstack.org/tutorials/managing-data-with-gaia)
+  - [multi-player-storage](https://blockstack.org/tutorials/multi-player-storage)
+  - [todo-list](https://blockstack.org/tutorials/todo-list)
