@@ -89,6 +89,7 @@ Note that we’ve included an interstitial “driver” layer for a few reasons:
 4.  You can DRY up your code by declaring the Gaia config once per collection.
 
 Click the button below to spin up a sandbox environment:
+
 <div class="image-size-default">
 
 [![Code sandbox](../../../assets/images/tutorials/edit-sandbox.png)](https://codesandbox.io/s/8kzmjjr9nj)

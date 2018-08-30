@@ -1,4 +1,4 @@
-import {fetchBlogPosts} from '@common/es6'
+import { fetchBlogPosts } from '@common/es6'
 
 const FETCH_BLOG_STARTED = 'blog/FETCH_BLOG_STARTED'
 const FETCH_BLOG_FINISHED = 'blog/FETCH_BLOG_FINISHED'

@@ -1,7 +1,5 @@
 ### The Blockstack Browser allows you to create and manage Blockstack IDs, manage storage of your data, and explore decentralized apps.
 
-
-
 #### Blockstack Browser (Web App)
 
 No install required (recommended for most users)

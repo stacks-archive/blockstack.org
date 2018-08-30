@@ -1,4 +1,4 @@
-<!-- 
+<!--
 Example bug report:
 
 
@@ -21,6 +21,7 @@ merits).
 FILL OUT THE FORM BELOW OR THE ISSUE WILL BE CLOSED
 
 --->
+
 **Issue Type (check one)**
 
 - [ ] Bug Report

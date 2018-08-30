@@ -11,4 +11,3 @@ Blockstack Team Values: (voted and decided collaboratively by the team)
 - Mission-driven
 
 Read more about our engineering team on [Key Values](https://www.keyvalues.com/blockstack).<span id="openings">&nbsp;</span>
-
