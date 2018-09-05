@@ -50,7 +50,8 @@ const bslinks = {
   privacy: '/legal/privacy-policy',
   appCo: 'https://app.co/platform/blockstack',
   signatureFund: '/funding',
-  events: 'https://www.eventbrite.com/o/blockstack-10843482742'
+  events: 'https://www.eventbrite.com/o/blockstack-10843482742',
+  emailArchive: 'https://us14.campaign-archive.com/home/?u=394a2b5cfee9c4b0f7525b009&id=0e5478ae86'
 }
 
 const blogAuthors = {
