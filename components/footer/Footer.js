@@ -97,6 +97,11 @@ class Header extends Component {
                     Signature fund
                   </a>
                 </li>
+                <li>
+                  <a href={bslinks.emailArchive} className="p sm">
+                    Newsletter archive
+                  </a>
+                </li>
               </ul>
             </div>
             <div className="col pb-2">
