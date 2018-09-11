@@ -157,13 +157,6 @@ export const teamMembers = [
       'Thomas Osmonson is a product engineer working at the boundary of design and development. He likes wearing many hats ranging from visual design to building performant web/native applications. Previously as an independent, he has helped agencies, startups, and founders build and design useful, beautiful products. He has an affinity for the wilderness, street photography, and traveling.'
   },
   {
-    blockstackId: 'wbobeirne',
-    name: "Will O'Beirne",
-    avatar: 'https://blockstack.org/images/avatars/will-obeirne.jpeg',
-    bio:
-      'Will is an Engineering Partner at Blockstack, despite their best efforts. Before joining the team, he could be found hooking people up with ICOs and hot dates at MyCrypto and OkCupid respectively. These days he spends his free time translating ancient Etruscan texts into Typescript.'
-  },
-  {
     blockstackId: 'markmhendrickson',
     name: 'Mark Hendrickson',
     avatar: 'https://blockstack.org/images/avatars/mark-hendrickson.jpg',
