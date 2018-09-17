@@ -10,4 +10,5 @@ Blockstack Team Values: (voted and decided collaboratively by the team)
 - Possibilist
 - Mission-driven
 
-Read more about our engineering team on [Key Values](https://www.keyvalues.com/blockstack).<span id="openings">&nbsp;</span>
+Read more about our engineering team on [Key Values](https://www.keyvalues.com/blockstack) and [PowerToFly](https://powertofly.com/companies/blockstack).
+<span id="openings">&nbsp;</span>
