@@ -13,12 +13,10 @@ const withBundleAnalyzer = require('./config/bundle-analyzer')
  */
 const config = {
   async exportPathMap() {
-    // we fetch our list of posts, this allow us to dynamically generate the exported pages
     return routes()
   },
   pageExtensions: ['js', 'jsx', 'mdx'],
   webpack(config, options) {
-    // Further custom configuration here
     config.resolve = resolve
     config.module.rules.push({
       test: /\.(woff|woff2|eot|ttf|svg)$/,
@@ -36,30 +34,6 @@ const config = {
         name: 'static/images/[name]-[hash]-[width].[ext]'
       }
     })
-    config.optimization.splitChunks = {
-      chunks: 'all',
-      minSize: 30000,
-      minChunks: 1,
-      maxAsyncRequests: 5,
-      maxInitialRequests: 3,
-      automaticNameDelimiter: '~',
-      name: true,
-      cacheGroups: {
-        commons: {
-          chunks: 'initial',
-          minChunks: 2,
-          enforce: true,
-          reuseExistingChunk: true
-        },
-        vendors: {
-          name: 'vendors',
-          chunks: 'initial',
-          enforce: true,
-          test: /[\\/]node_modules[\\/]/,
-          reuseExistingChunk: true
-        }
-      }
-    }
     return config
   }
 }

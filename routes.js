@@ -2,8 +2,8 @@ const { fetchBlogPosts } = require('./common/lib')
 const routes = async () => {
   const { posts } = await fetchBlogPosts()
 
-  // transform the list of posts into a map of pages with the pathname `/post/:id`
-  const pages = posts.reduce(
+  // transform the list of posts into a map of pages with the pathname `/blog/:slug`
+  const blogPosts = posts.reduce(
     (pages, post) =>
       Object.assign({}, pages, {
         [`/blog/${post.urlSlug}`]: {
@@ -15,7 +15,7 @@ const routes = async () => {
   )
 
   // combine the map of post pages with our static pages
-  return Object.assign({}, pages, {
+  return Object.assign({}, blogPosts, {
     '/': { page: '/' },
     '/404': { page: '/_error' },
     '/about': { page: '/about' },
