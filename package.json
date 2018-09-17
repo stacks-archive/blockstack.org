@@ -81,7 +81,8 @@
     "sharp": "^0.20.5",
     "svg-inline-loader": "^0.8.0",
     "svg-loader": "^0.0.2",
-    "url-loader": "^1.0.1"
+    "url-loader": "^1.0.1",
+    "webpack-bundle-analyzer": "^3.0.2"
   },
   "homepage": "https://github.com/blockstack/blockstack.org#readme",
   "license": "ISC",
@@ -92,6 +93,7 @@
   },
   "scripts": {
     "build": "NODE_ENV=production next build",
+    "build:analyze": "BUNDLE_ANALYZE=both yarn build",
     "copyImages:dynamic": "cpx \".next/*.{png,jpg}\" .next/static/images",
     "copyImages:static": "cpx \".next/*.{png,jpg}\" out/_next/static/images",
     "copyStyles": "cpx \"assets/*.{css}\" .next/static",

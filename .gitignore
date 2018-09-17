@@ -79,3 +79,7 @@ _gatsby-legacy
 _old
 
 out
+
+# webpack bundle analyzer
+bundles/client.html
+bundles/server.html
