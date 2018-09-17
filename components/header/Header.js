@@ -8,7 +8,13 @@ import { InternalLink } from '@components/internal-link'
 import scrollMonitor from 'scrollmonitor'
 import Head from 'next/head'
 import Headroom from 'react-headroom'
+import styled from 'styled-components'
 
+const StyledHeaderWrapper = styled.div`
+  a {
+    text-decoration: none !important;
+  }
+`
 
 class Header extends Component {
   state = {
@@ -64,7 +70,7 @@ class Header extends Component {
               <meta name="theme-color" content="rgb(15, 14, 49)" />{' '}
             </Head>
           ) : null}
-          <div id="StickyHeader">
+          <StyledHeaderWrapper id="StickyHeader">
             <div
               className={
                 this.state.collapsed ? 'inner-header collapsed' : 'inner-header'
@@ -122,7 +128,7 @@ class Header extends Component {
                 </div>
               </div>
             </div>
-          </div>
+          </StyledHeaderWrapper>
           {this.state.menuOpen ? (
             <MainMenu links={bslinks} closeMenu={() => this.closeMenu()} />
           ) : (
