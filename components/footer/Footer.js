@@ -105,6 +105,8 @@ class Footer extends Component {
                   <a href={bslinks.telegramChinese} className="p sm">
                     Telegram (中文群)
                   </a>
+                </li>
+                <li>
                   <a href={bslinks.emailArchive} className="p sm">
                     Newsletter archive
                   </a>
