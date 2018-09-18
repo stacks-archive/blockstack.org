@@ -34,7 +34,7 @@
 - Released the Token Whitepaper and token sale details.
 - Released the Public Alpha of the Blockstack Browser.
 - Conducted a token sale which resulted in ~$50 million total raised, and over 800 accredited investors, qualified purchasers, and institutions participating.
-- Announced a $50,000 bounty to Decentralize Communication
+- Announced a $50,000 bounty to Decentralize Communication.
 
 ## 2018 Q1
 
@@ -43,7 +43,7 @@
 
 ## 2018 Q2
 
-- Released the Stacks blockchain testnet
+- Released the Stacks blockchain testnet.
 - Announced the $50,000 Universal Wallet Bounty in partnership with ShapeShift.
 - Launched App.co, the Universal Store for decentralized applications
 - Released the developer Alpha of Blockstack iOS and Android SDKs.
