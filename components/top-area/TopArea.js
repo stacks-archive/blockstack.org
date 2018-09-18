@@ -17,7 +17,6 @@ const FloatingTriangle = styled.div`
     display: block;
   }
 `
-import './TopArea.scss'
 
 const UserCode = `if (blockstack.isUserSignedIn()) {
   const { profile } = blockstack.loadUserData()

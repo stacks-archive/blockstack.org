@@ -18,7 +18,6 @@ const FloatingTriangle = styled.div`
     transform: rotate(180deg);
   }
 `
-import './OurTechnology.scss'
 
 const cards = [
   {

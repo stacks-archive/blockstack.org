@@ -3,15 +3,17 @@ import toQueryString from 'to-querystring'
 import jsonp from 'jsonp'
 import { ChevronRightIcon } from 'mdi-react'
 import Input from '@components/input'
-import { string, object } from 'yup'
+import styled from 'styled-components'
 
-const schema = object().shape({
-  email: string()
-    .email()
-    .required()
-})
-
-import './NewsletterSignup.scss'
+const StyledInputWrapper = styled.div`
+  * {
+    font-family: 'Plex', monospace !important;
+  }
+`
+function validateEmail(email) {
+  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  return re.test(String(email).toLowerCase())
+}
 
 const subscribeURL =
   'https://blockstack.us14.list-manage.com/subscribe/post?u=394a2b5cfee9c4b0f7525b009&amp;id=0e5478ae86'
@@ -27,10 +29,11 @@ const InputMessage = ({ children }) => (
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      background: 'white',
+      background: '#3700ff',
+      border: '1px solid #fff',
       borderRadius: '60px',
       zIndex: 10,
-      color: '#3700ff'
+      color: 'white'
     }}
   >
     {children}
@@ -45,16 +48,14 @@ class NewsletterSignup extends Component {
     submitting: false,
     error: null
   }
-  validate = async (email) => {
-    return schema.isValid({ email })
-  }
+  validate = (email) => validateEmail(email)
+
   updateEmailAddress = async (event) => {
     const email = event.target.value
     this.setState({ email })
-    console.log('validation', await this.validate(email))
 
     if (email.length > 4) {
-      const validEmail = await this.validate(email)
+      const validEmail = this.validate(email)
       this.setState({
         validEmail
       })
@@ -74,14 +75,19 @@ class NewsletterSignup extends Component {
               error: null,
               email: ''
             }),
-          1200
+          6500
         )
     )
   }
 
-  signup = () => {
-    console.log('sign me up please')
+  success = () =>
+    this.setState({
+      success: true,
+      submitting: false
+    })
 
+  signup = (e) => {
+    e.preventDefault()
     const data = { EMAIL: this.state.email }
     const url = subscribeURL.replace('/post?', '/post-json?')
 
@@ -91,13 +97,12 @@ class NewsletterSignup extends Component {
     const params = toQueryString(data)
 
     jsonp(url + '&' + params, { param: 'c' }, (err, res) => {
-      console.log('res', res)
       if (err) {
         this.setError(err)
       } else if (res.result === 'error') {
         this.setError(res.msg)
       } else {
-        this.setState({ success: true, submitting: false })
+        this.success()
       }
     })
   }
@@ -109,66 +114,62 @@ class NewsletterSignup extends Component {
       this.state.success
 
     const errorMessage = () => {
-      if (this.state.error.includes('already')) {
-        return 'Already subscribed, try another.'
+      if (this.state.error && typeof this.state.error === 'string') {
+        if (this.state.error.includes('already')) {
+          return 'Thanks for subscribing!'
+        }
+        if (this.state.error.includes('too many')) {
+          return 'Too many attempts, try another.'
+        }
+        return 'Sorry, try another email.'
       }
-      if (this.state.error.includes('too many')) {
-        return 'Too many attempts, try another.'
-      }
-      return 'Sorry, try another email.'
     }
 
     return (
-      <div
+      <StyledInputWrapper
         className={
           !this.state.validEmail && this.state.email !== ''
             ? 'newsletter-form invalid'
             : 'newsletter-form'
         }
       >
-        <Input
-          id={this.props.id}
-          placeholder="Get email updates"
-          className={this.props.inputClass}
-          value={this.state.email}
-          onChange={this.updateEmailAddress}
-        />
-        {this.state.error ? (
-          <InputMessage>{errorMessage()}</InputMessage>
-        ) : null}
-        {this.state.success ? (
-          <InputMessage>Thanks for subscribing!</InputMessage>
-        ) : null}
-        {this.state.submitting ? (
-          <InputMessage>Processing...</InputMessage>
-        ) : null}
-        <div
-          onClick={!this.state.success || !disabled ? this.signup : null}
-          style={{
-            position: 'absolute',
-            right: 0,
-            top: 0,
-            height: '100%',
-            width: '44px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            opacity: disabled ? 0 : 1,
-            pointerEvents: disabled ? 'none' : null
-          }}
-        >
-          <ChevronRightIcon color="currentColor !important" size={32} />
-        </div>
-        {/*<Button*/}
-        {/*onClick={ this.signup }*/}
-        {/*icon={ () => <Arrow/> }*/}
-        {/*className={ 'transparent circle ' + this.props.inputClass }*/}
-        {/*htmlFor={ this.props.id }*/}
-        {/*disabled={*/}
-
-        {/*}*/}
-        {/*/>*/}
-      </div>
+        <form onSubmit={!disabled ? this.signup : () => false}>
+          <Input
+            id={this.props.id || 'newsletter_input'}
+            placeholder="Get email updates"
+            className={this.props.inputClass}
+            value={this.state.email}
+            type="email"
+            onChange={this.updateEmailAddress}
+          />
+          {this.state.error ? (
+            <InputMessage>{errorMessage()}</InputMessage>
+          ) : null}
+          {this.state.success ? (
+            <InputMessage>Thanks for subscribing!</InputMessage>
+          ) : null}
+          {this.state.submitting ? (
+            <InputMessage>Processing...</InputMessage>
+          ) : null}
+          <div
+            onClick={!this.state.success || !disabled ? this.signup : null}
+            style={{
+              position: 'absolute',
+              right: 0,
+              top: 0,
+              height: '100%',
+              width: '44px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              opacity: disabled ? 0 : 1,
+              pointerEvents: disabled ? 'none' : null
+            }}
+          >
+            <ChevronRightIcon color="currentColor !important" size={32} />
+          </div>
+        </form>
+      </StyledInputWrapper>
     )
   }
 }

@@ -52,11 +52,34 @@ const fetchStats = async () => {
   }
 }
 
+const urls = [
+  'https://blockstack-site-api.herokuapp.com/v1/blog-rss?page=1',
+  'https://blockstack-site-api.herokuapp.com/v1/blog-rss?page=2',
+  'https://blockstack-site-api.herokuapp.com/v1/blog-rss?page=3'
+]
+
 const fetchBlogPosts = async () => {
+  let posts = []
+  let postObject = {}
+
+  await Promise.all(
+    urls.map(async (url) => {
+      const data = await fetchBlogPostsFromServer(url)
+      posts = [...posts, ...data.posts]
+      postObject = { ...postObject, ...data.postObject }
+    })
+  )
+  const sortedByDatePosts = posts.sort(
+    (a, b) => new Date(b.datetime) - new Date(a.datetime)
+  )
+  return {
+    posts: sortedByDatePosts,
+    postObject
+  }
+}
+const fetchBlogPostsFromServer = async (url) => {
   try {
-    const res = await fetch(
-      'https://blockstack-site-api.herokuapp.com/v1/blog-rss'
-    )
+    const res = await fetch(url)
     if (res.status >= 400) {
       console.log('Bad response from server')
     }
