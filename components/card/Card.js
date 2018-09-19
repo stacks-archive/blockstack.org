@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './Card.scss'
 import Link from 'next/link'
 class Header extends Component {
   render() {

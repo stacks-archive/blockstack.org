@@ -26,19 +26,15 @@ To decode the token and see what information it holds you can navigate to [jwt.i
 
 ```json
 {
-  "jti":"bbf82977-cc3e-4593-bacc-33ff3b749790",
-  "iat":1501784293,
-  "exp":1501787893,
-  "iss":"did:btc-addr:1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa",
-  "public_keys":[
-    "a09932dx081273xmreDII8yhjd0m8ioawfokljISHhejrnHG"
-  ],
-  "domain_name":"http://localhost:8080/",
-  "manifest_uri":"http://localhost:8080/manifest.json",
-  "redirect_uri":"http://localhost:8080/",
-  "scopes":[
-    "store-write"
-  ]
+  "jti": "bbf82977-cc3e-4593-bacc-33ff3b749790",
+  "iat": 1501784293,
+  "exp": 1501787893,
+  "iss": "did:btc-addr:1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa",
+  "public_keys": ["a09932dx081273xmreDII8yhjd0m8ioawfokljISHhejrnHG"],
+  "domain_name": "http://localhost:8080/",
+  "manifest_uri": "http://localhost:8080/manifest.json",
+  "redirect_uri": "http://localhost:8080/",
+  "scopes": ["store-write"]
 }
 ```
 
@@ -77,22 +73,23 @@ You should see the todos that were recently added. The todos created above gener
 ```json
 [
   {
-    "id":2,
-    "text":"Software package manager secured by the blockchain",
-    "completed":false
+    "id": 2,
+    "text": "Software package manager secured by the blockchain",
+    "completed": false
   },
   {
-    "id":1,
-    "text":"Mutable torrents with human readable names",
-    "completed":false
+    "id": 1,
+    "text": "Mutable torrents with human readable names",
+    "completed": false
   },
   {
-    "id":0,
-    "text":"Decentralized twitter",
-    "completed":false
+    "id": 0,
+    "text": "Decentralized twitter",
+    "completed": false
   }
 ]
 ```
+
 Now add another todo and mark it completed:
 
 - [x] Blockstack Todo
@@ -105,24 +102,24 @@ When you fetch the newly generated file using the Javascript console it will ref
 ```json
 [
   {
-    "id":3,
-    "text":"Blockstack Todo",
-    "completed":true
+    "id": 3,
+    "text": "Blockstack Todo",
+    "completed": true
   },
   {
-    "id":2,
-    "text":"Software package manager secured by the blockchain",
-    "completed":false
+    "id": 2,
+    "text": "Software package manager secured by the blockchain",
+    "completed": false
   },
   {
-    "id":1,
-    "text":"Mutable torrents with human readable names",
-    "completed":false
+    "id": 1,
+    "text": "Mutable torrents with human readable names",
+    "completed": false
   },
   {
-    "id":0,
-    "text":"Decentralized twitter",
-    "completed":false
+    "id": 0,
+    "text": "Decentralized twitter",
+    "completed": false
   }
 ]
 ```
@@ -139,14 +136,14 @@ signIn () {
   blockstack.redirectToSignIn()
 }
 ```
+
 When this button is clicked the authentication request described above is generated and the user is redirected to their `blockstack-browser` to approve the login. Once the user approves the login the application must handle the `authResponse`. This happens in `src/App.vue` which is the page at the application root, `/`:
 
 ```javascript
 if (blockstack.isUserSignedIn()) {
   this.user = blockstack.loadUserData().profile
 } else if (blockstack.isSignInPending()) {
-  blockstack.handlePendingSignIn()
-  .then((userData) => {
+  blockstack.handlePendingSignIn().then((userData) => {
     window.location = window.location.origin
   })
 }

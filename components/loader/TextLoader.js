@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 
-import './loader.scss'
 
 class TextLoader extends Component {
   shouldComponentUpdate(nextProps, nextState) {

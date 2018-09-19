@@ -4,7 +4,6 @@ import { DividerOne } from '@components/divider'
 
 import debounce from 'debounce'
 
-import './WhyBS.scss'
 
 const compareRows = [
   {

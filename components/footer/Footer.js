@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
-import { LogoWhite, LogoType } from '@components/svgs'
+import { Logo, LogoType } from '@components/svgs'
 import NewsletterSignup from '@components/newsletter-signup'
 import { bslinks } from '@common'
-import './Footer.scss'
 
-class Header extends Component {
+class Footer extends Component {
   render() {
     return (
       <footer className="pb-4 blue-bg mt-4">
@@ -98,6 +97,16 @@ class Header extends Component {
                   </a>
                 </li>
                 <li>
+                  <a href={bslinks.telegramEnglish} className="p sm">
+                    Telegram (English)
+                  </a>
+                </li>
+                <li>
+                  <a href={bslinks.telegramChinese} className="p sm">
+                    Telegram (中文群)
+                  </a>
+                </li>
+                <li>
                   <a href={bslinks.emailArchive} className="p sm">
                     Newsletter archive
                   </a>
@@ -181,9 +190,11 @@ class Header extends Component {
             and should not be viewed as an offer or sale of securities.
           </p>
 
-          <div className="es-logo mt-4">
+          <div className=" mt-4">
             <div className="grid-flex no-break no-gutter middle center">
-              <div className="bs-logo">{LogoWhite()}</div>
+              <div className="bs-logo">
+                <Logo />
+              </div>
               <div className="bs-logotype ml-2">{LogoType()}</div>
             </div>
           </div>
@@ -193,6 +204,4 @@ class Header extends Component {
   }
 }
 
-export default Header
-
-//<a className="menu-icon" onClick={this.props.openMenu}>Menu</a>
+export default Footer

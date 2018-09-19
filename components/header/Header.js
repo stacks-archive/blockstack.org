@@ -8,7 +8,13 @@ import { InternalLink } from '@components/internal-link'
 import scrollMonitor from 'scrollmonitor'
 import Head from 'next/head'
 import Headroom from 'react-headroom'
-import './Header.scss'
+import styled from 'styled-components'
+
+const StyledHeaderWrapper = styled.div`
+  a {
+    text-decoration: none !important;
+  }
+`
 
 class Header extends Component {
   state = {
@@ -56,7 +62,7 @@ class Header extends Component {
       <Headroom>
         <header
           className={
-            this.state.menuOpen ? 'header classic-bg menu-open' : 'header classic-bg'
+            this.state.menuOpen ? 'header blue-bg menu-open' : 'header blue-bg'
           }
         >
           {this.state.menuOpen ? (
@@ -64,7 +70,7 @@ class Header extends Component {
               <meta name="theme-color" content="rgb(15, 14, 49)" />{' '}
             </Head>
           ) : null}
-          <div id="StickyHeader">
+          <StyledHeaderWrapper id="StickyHeader">
             <div
               className={
                 this.state.collapsed ? 'inner-header collapsed' : 'inner-header'
@@ -73,11 +79,18 @@ class Header extends Component {
               <div>
                 <div className="container header-container">
                   <div className="grid-flex no-break middle no-gutter">
-                    <div className="col left">
+                    <div
+                      className="col left"
+                      style={{ position: 'relative', zIndex: 600 }}
+                    >
                       <InternalLink
                         onClick={this.closeMenu}
                         className="es-logo"
                         href={{ pathname: '/', asPath: '/home' }}
+                        style={{
+                          display: 'block',
+                          borderBottom: '0 !important'
+                        }}
                       >
                         <div className="grid-flex no-break no-gutter middle left">
                           <div className="bs-logo">{Logo()}</div>
@@ -115,7 +128,7 @@ class Header extends Component {
                 </div>
               </div>
             </div>
-          </div>
+          </StyledHeaderWrapper>
           {this.state.menuOpen ? (
             <MainMenu links={bslinks} closeMenu={() => this.closeMenu()} />
           ) : (

@@ -70,6 +70,7 @@ package-lock.json
 # Build directory
 /public
 /build
+/out
 
 .DS_Store
 .idea
@@ -78,4 +79,7 @@ package-lock.json
 _gatsby-legacy
 _old
 
-out
+
+# webpack bundle analyzer
+bundles/client.html
+bundles/server.html

@@ -1,9 +1,5 @@
 import React, { Component } from 'react'
-import InlineSVG from 'svg-inline-react'
 
-import Logo from '@assets/images/logo.svg'
-
-import './FundApp.scss'
 
 class Header extends Component {
   render() {
