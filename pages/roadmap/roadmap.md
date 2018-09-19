@@ -45,30 +45,36 @@
 
 - Released the Stacks blockchain testnet.
 - Announced the $50,000 Universal Wallet Bounty in partnership with ShapeShift.
-- Launched App.co, the Universal Store for decentralized applications.
+- Launched App.co, the Universal Store for decentralized applications
 - Released the developer Alpha of Blockstack iOS and Android SDKs.
 - Released a new mobile-friendly onboarding flow for mobile and desktop apps.
 
 ## 2018 Q3
 
 - Launch of the App Mining program to pay app development teams.
-- Release of the Stacks blockchain paper and start of the Rust implementation.
 - Improvement of authentication & on-boarding for Blockstack apps.
+- Security reviews of Stacks blockchain and release of Stacks wallet.
+- Decentralizing the World Tour announced with 31 global meetups.
+- Launch of developer documentation portal: docs.blockstack.org.
 
 ## 2018 Q4
 
 - Launch of the Stacks Blockchain genesis block.
+- Release of the updated blockchain paper and start Rust implementation.
 - Ability for Stacks voucher holders to redeem vouchers for Stacks.\*
-- Launch of web extensions as an additional form factor for the Blockstack app/browser.
-- Release of the ability for apps to send Stacks transactions with the SDKs.
-- Extension of Gaia storage with real-time notifications of user activity.
-- Extension of Gaia storage with data collections (like photos) that are sharable across apps.
+- Ability to use Stacks across our SDKs and Blockstack Browser.
+- Launch of Gaia as independent project with improved developer resources.
+- Addition of social and cross-app data sharing functionality to Gaia.
 
 ## 2019
 
+- Launch of web extensions as an additional form factor for the Blockstack app/browser.
 - Launch of iOS and Android apps for Blockstack authentication.
 - Initiation of mining on the stacks blockchain and a hardfork to a new consensus algorithm.
 - Start first community-powered election for App Reviewers.
 - Initiation of the distribution of tokens to all new verified users of Blockstack.\*
+- Ability to create app-specific economies through app coins.
 
 \*Pending legal approval
+
+_Last updated: September 18, 2018_
