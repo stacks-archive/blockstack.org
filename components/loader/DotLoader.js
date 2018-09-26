@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 
-import './loader.scss'
 
 class DotLoader extends Component {
   render() {

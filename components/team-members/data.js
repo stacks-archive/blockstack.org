@@ -49,7 +49,7 @@ export const teamMembers = [
     name: 'Patrick Stanley',
     avatar: 'https://blockstack.org/images/avatars/patrick-stanley.jpg',
     bio:
-      'Patrick Stanley studied Economics and Psychology at Johns Hopkins, and was the first employee at data-driven lending startup Earnest which sold to Navient for $155m in 2017. In a growth role there, he helped it scale from from 1 to 200 employees and go from $0 to $2B in originations within 3 years.'
+      'Patrick Stanley is the head of growth at Blockstack. He studied Economics and Psychology at Johns Hopkins, and was the first employee at data-driven lending startup Earnest which sold to Navient for $155m in 2017. In a growth role there, he helped it scale from from 1 to 200 employees and go from $0 to $2B in originations within 3 years.'
   },
   {
     blockstackId: 'yukan',
@@ -66,7 +66,7 @@ export const teamMembers = [
       'Sebastian received his MA in Linguistics and Communications from the University of Heidelberg, Germany, and the University of Brighton, UK. Before joining the Blockstack team, he worked in localization and product support for Apple, Vimeo, and Master & Dynamic.'
   },
   {
-    blockstackId: '',
+    blockstackId: 'shannon.id.blockstack',
     name: 'Shannon Voight',
     avatar: 'https://blockstack.org/images/avatars/shannon-voight.jpg',
     bio:
@@ -80,18 +80,11 @@ export const teamMembers = [
       'Xan came to Blockstack with backgrounds in private equity, investment banking, and the military. He is passionate about driving the creation, growth, and expansion of application ecosystems through his growth role and with the Signature Fund.'
   },
   {
-    blockstackId: 'ariella',
-    name: 'Ariella Steinhorn',
-    avatar: 'https://blockstack.org/images/avatars/ariella-steinhorn.jpg',
-    bio:
-      'Ariella is Blockstack’s Communications Partner. She previously led communications and public policy efforts at Managed by Q. Before that, she held several communications positions at Uber, and was a speechwriter in Washington, DC.'
-  },
-  {
     blockstackId: 'jesse',
     name: 'Jesse Soslow',
     avatar: 'https://blockstack.org/images/avatars/jesse-soslow.jpg',
     bio:
-      'Jesse is Blockstack’s Operations Partner.  Prior to Blockstack, he led operations at Everwise, a Sequoia-backed SaaS startup, and worked as a technology transactions attorney for a large, international law firm.  Jesse received his J.D. and B.A., in math, both from the University of Pennsylvania.'
+      'Jesse is Blockstack’s head of legal and finance. Prior to Blockstack, he led operations at Everwise, a Sequoia-backed SaaS startup, and worked as a technology transactions attorney for a large, international law firm.  Jesse received his J.D. and B.A., in math, both from the University of Pennsylvania.'
   },
   {
     blockstackId: 'mitchell',
@@ -162,13 +155,6 @@ export const teamMembers = [
     avatar: 'https://blockstack.org/images/avatars/thomas-osmonson.jpg',
     bio:
       'Thomas Osmonson is a product engineer working at the boundary of design and development. He likes wearing many hats ranging from visual design to building performant web/native applications. Previously as an independent, he has helped agencies, startups, and founders build and design useful, beautiful products. He has an affinity for the wilderness, street photography, and traveling.'
-  },
-  {
-    blockstackId: 'wbobeirne',
-    name: "Will O'Beirne",
-    avatar: 'https://blockstack.org/images/avatars/will-obeirne.jpeg',
-    bio:
-      'Will is an Engineering Partner at Blockstack, despite their best efforts. Before joining the team, he could be found hooking people up with ICOs and hot dates at MyCrypto and OkCupid respectively. These days he spends his free time translating ancient Etruscan texts into Typescript.'
   },
   {
     blockstackId: 'markmhendrickson',

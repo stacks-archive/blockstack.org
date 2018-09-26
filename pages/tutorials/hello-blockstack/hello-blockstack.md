@@ -51,8 +51,7 @@ The main file of our app is called `app.js` (in the `/public` folder). This is w
 As you can see, all of the code in the file is wrapped in an event listener that waits until the DOM content has been loaded:
 
 ```javascript
-document.addEventListener("DOMContentLoaded", function(event) {
-})
+document.addEventListener('DOMContentLoaded', function(event) {})
 ```
 
 Inside of this, we have a sign in button handler that creates an auth request and redirects the user to sign in:
@@ -77,7 +76,9 @@ Next, we have a function for showing the user's profile:
 function showProfile(profile) {
   const person = new blockstack.Person(profile)
   document.getElementById('heading-name').innerHTML = person.name()
-  document.getElementById('avatar-image').setAttribute('src', person.avatarUrl())
+  document
+    .getElementById('avatar-image')
+    .setAttribute('src', person.avatarUrl())
   document.getElementById('section-1').style.display = 'none'
   document.getElementById('section-2').style.display = 'block'
 }
@@ -107,7 +108,7 @@ With the first condition (when the user is signed in), we load the user data fro
 
 ```javascript
 if (blockstack.isUserSignedIn()) {
-   const profile = blockstack.loadUserData().profile
+  const profile = blockstack.loadUserData().profile
   showProfile(profile)
 } else if (blockstack.isSignInPending()) {
   blockstack.handlePendingSignIn().then(function(userData) {
@@ -127,11 +128,13 @@ The `manifest.json` file should look like this:
   "name": "Hello, Blockstack",
   "start_url": "localhost:5000",
   "description": "A simple demo of Blockstack Auth",
-  "icons": [{
-    "src": "https://helloblockstack.com/icon-192x192.png",
-    "sizes": "192x192",
-    "type": "image/png"
-  }]
+  "icons": [
+    {
+      "src": "https://helloblockstack.com/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
 }
 ```
 

@@ -7,7 +7,6 @@ import Highlight from 'react-highlight.js'
 // import 'highlight.js/styles/github-gist.css';
 // https://highlightjs.org/static/demo/ for style choices. Above are some favorites
 
-import './CodeBlock.scss'
 
 export class CodeBlock extends Component {
   render() {

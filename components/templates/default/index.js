@@ -8,6 +8,13 @@ import {
 
 import { Meta } from '@components/meta'
 
+import * as gtag from '@common/lib/gtag'
+import Router from 'next/router'
+
+Router.onRouteChangeComplete = (url) => {
+  gtag.pageview(url)
+}
+
 const getDisplayName = (WrappedComponent) =>
   WrappedComponent.displayName || WrappedComponent.name || 'Component'
 
@@ -33,22 +40,30 @@ const Title = ({ children }) => (
 
 const SubtitleDivider = () => (
   <div
-    style={{ width: '2px', height: '20px', margin: '0 20px', background: '#fff', opacity: 0.3 }}
+    style={{
+      width: '2px',
+      height: '20px',
+      margin: '0 20px',
+      background: '#fff',
+      opacity: 0.3
+    }}
   />
 )
 const Subtitle = ({ children }) =>
   children ? (
     <h2 className="h4 grid-flex middle">
-      {Array.isArray(children) ?
-        children.reduce((prev, item, index) => {
-          const itemEl = <div key={item}>{item}</div>
-          if (index === children.length - 1) {
-            return prev.concat([itemEl])
-          }
-          return prev.concat([itemEl, <SubtitleDivider key={`divider-${index}`}/>])
-        }, []) :
-        children
-      }
+      {Array.isArray(children)
+        ? children.reduce((prev, item, index) => {
+            const itemEl = <div key={item}>{item}</div>
+            if (index === children.length - 1) {
+              return prev.concat([itemEl])
+            }
+            return prev.concat([
+              itemEl,
+              <SubtitleDivider key={`divider-${index}`} />
+            ])
+          }, [])
+        : children}
     </h2>
   ) : null
 
@@ -74,7 +89,6 @@ const Button = ({ button }) => {
 }
 const PageTemplate = (Component, meta) => {
   class PageTemplateWrapper extends React.PureComponent {
-
     render() {
       return (
         <>

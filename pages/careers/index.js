@@ -3,8 +3,20 @@ import Mission from './mission.md'
 import Intro from './intro.md'
 import Values from './values.md'
 import { Jobs } from '@components/jobs'
-
-import { fetchStats } from '@common/lib'
+import fetch from 'cross-fetch'
+const fetchStats = async () => {
+  try {
+    const res = await fetch(
+      'https://blockstack-site-api.herokuapp.com/v1/stats'
+    )
+    if (res.status >= 400) {
+      console.log('Bad response from server')
+    }
+    return res.json()
+  } catch (error) {
+    console.log('error', error)
+  }
+}
 
 const meta = {
   path: '/careers',

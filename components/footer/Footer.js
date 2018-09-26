@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
-import { LogoWhite, LogoType } from '@components/svgs'
+import { Logo, LogoType } from '@components/svgs'
 import NewsletterSignup from '@components/newsletter-signup'
 import { bslinks } from '@common'
-import './Footer.scss'
 
-class Header extends Component {
+class Footer extends Component {
   render() {
     return (
       <footer className="pb-4 blue-bg mt-4">
@@ -97,6 +96,21 @@ class Header extends Component {
                     Signature fund
                   </a>
                 </li>
+                <li>
+                  <a href={bslinks.telegramEnglish} className="p sm">
+                    Telegram (English)
+                  </a>
+                </li>
+                <li>
+                  <a href={bslinks.telegramChinese} className="p sm">
+                    Telegram (中文群)
+                  </a>
+                </li>
+                <li>
+                  <a href={bslinks.emailArchive} className="p sm">
+                    Newsletter archive
+                  </a>
+                </li>
               </ul>
             </div>
             <div className="col pb-2">
@@ -115,6 +129,11 @@ class Header extends Component {
                 <li>
                   <a href={bslinks.faq} className="p sm">
                     FAQ
+                  </a>
+                </li>
+                <li>
+                  <a href="/roadmap" className="p sm">
+                    Roadmap
                   </a>
                 </li>
                 <li>
@@ -161,17 +180,21 @@ class Header extends Component {
             </div>
           </div>
           <p className="tiny text-color medium-weight pt-4">
-            The Blockstack Tokens are a crypto asset that is currently being developed by
-            Blockstack Token LLC, a Delaware limited liability company, whose website can be
-            found at <a href="https://www.blockstack.com">www.blockstack.com</a>. The website
-            you are currently visiting <a href="https://www.blockstack.com">www.blockstack.org</a>
-            {' '}is sponsored by Blockstack PBC, an affiliate of Blockstack Token LLC, and should
-            not be viewed as an offer or sale of securities.
+            The Blockstack Tokens are a crypto asset that is currently being
+            developed by Blockstack Token LLC, a Delaware limited liability
+            company, whose website can be found at{' '}
+            <a href="https://www.blockstack.com">www.blockstack.com</a>. The
+            website you are currently visiting{' '}
+            <a href="https://www.blockstack.com">www.blockstack.org</a> is
+            sponsored by Blockstack PBC, an affiliate of Blockstack Token LLC,
+            and should not be viewed as an offer or sale of securities.
           </p>
 
-          <div className="es-logo mt-4">
+          <div className=" mt-4">
             <div className="grid-flex no-break no-gutter middle center">
-              <div className="bs-logo">{LogoWhite()}</div>
+              <div className="bs-logo">
+                <Logo />
+              </div>
               <div className="bs-logotype ml-2">{LogoType()}</div>
             </div>
           </div>
@@ -181,6 +204,4 @@ class Header extends Component {
   }
 }
 
-export default Header
-
-//<a className="menu-icon" onClick={this.props.openMenu}>Menu</a>
+export default Footer

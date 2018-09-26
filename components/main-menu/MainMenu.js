@@ -1,6 +1,5 @@
 import React from 'react'
 import { InternalLink as InternalLinkComponent } from '@components/internal-link'
-import './MainMenu.scss'
 
 class MainMenu extends React.PureComponent {
   render() {
@@ -111,6 +110,21 @@ class MainMenu extends React.PureComponent {
                     Signature fund
                   </a>
                 </li>
+                <li>
+                  <a href={this.props.links.telegramEnglish} className="p md">
+                    Telegram (English)
+                  </a>
+                </li>
+                <li>
+                  <a href={this.props.links.telegramChinese} className="p md">
+                    Telegram (中文群)
+                  </a>
+                </li>
+                <li>
+                  <a href={this.props.links.emailArchive} className="p md">
+                    Newsletter archive
+                  </a>
+                </li>
               </ul>
             </div>
             <div className="col pb-2">
@@ -133,6 +147,11 @@ class MainMenu extends React.PureComponent {
                 <li>
                   <InternalLink href={this.props.links.faq} className="p md">
                     FAQ
+                  </InternalLink>
+                </li>
+                <li>
+                  <InternalLink href="/roadmap" className="p md">
+                    Roadmap
                   </InternalLink>
                 </li>
                 <li>
