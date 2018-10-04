@@ -22,11 +22,24 @@ const fetchOurData = async (ctx) => {
 
 const Global = createGlobalStyle`
 .header{
+  a:link{
+    text-decoration: none !important;
+  }
   div.col.center.align-center{
     z-index: 999999;
+    max-width: calc(100% - 120px)
   }
   .es-logo{
     display: inline-block !important;
+    text-decoration: none !important;
+    &:hover{
+    text-decoration: none !important;    
+    border-bottom-color: transparent !important;
+    }
+  }
+  .menu-toggle{
+    position: relative;
+    z-index: 9999999;
   }
   transition: 0.25s all ease-in-out;
   svg .logo-bg{
@@ -35,6 +48,14 @@ const Global = createGlobalStyle`
 }
 .headroom.headroom--scrolled{
   box-shadow: 0 3px 12px rgba(37,0,105,.32);
+    .bs-logo {
+      transform: scale(1) transformY(1px);
+    }
+    .bs-logotype {
+      opacity: 0;
+      visibility: hidden;
+      transform: translate3d(-16px, 0, 0);
+    }
   .center-actions {
     .button.main-action,
     .newsletter-form {
