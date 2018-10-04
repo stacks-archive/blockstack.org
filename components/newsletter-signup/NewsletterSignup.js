@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
-import toQueryString from 'to-querystring'
-import jsonp from 'jsonp'
 import { ChevronRightIcon } from 'mdi-react'
 import Input from '@components/input'
 import styled from 'styled-components'
-import Mailigen from './renderprops'
+import Wrapper from './wrapper'
 
 const StyledInputWrapper = styled.div`
   * {
@@ -110,12 +108,7 @@ class NewsletterSignup extends Component {
             : 'newsletter-form'
         }
       >
-        <Mailigen
-          id="aa0c14b2"
-          email={this.state.email}
-          options={{ u: '4638804c050c420ba53d077442d9f27b' }}
-          from="blockstack.org"
-        >
+        <Wrapper email={this.state.email}>
           {({ error, loading: submitting, success, doSubscribe }) => (
             <form onSubmit={!disabled ? doSubscribe : () => false}>
               <Input
@@ -152,7 +145,7 @@ class NewsletterSignup extends Component {
               </div>
             </form>
           )}
-        </Mailigen>
+        </Wrapper>
       </StyledInputWrapper>
     )
   }
