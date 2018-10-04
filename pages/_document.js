@@ -1,39 +1,9 @@
 import React from 'react'
 import Document, { Head, Main, NextScript } from 'next/document'
-import { ServerStyleSheet, injectGlobal } from 'styled-components'
+import { ServerStyleSheet } from 'styled-components'
 
 import { GA_TRACKING_ID } from '@common/lib/gtag'
 
-injectGlobal`
-.header{
-  transition: 0.25s all ease-in-out;
-  svg .logo-bg{
-    transition: 0.25s all ease-in-out;
-  }
-}
-.headroom.headroom--scrolled{
-  box-shadow: 0 3px 12px rgba(37,0,105,.32);
-  .center-actions {
-    .button.main-action,
-    .newsletter-form {
-      opacity: 1;
-      visibility: visible;
-      transform: none;
-      svg {
-        * {
-          mix-blend-mode: screen;
-          fill: white !important;
-        }
-      }
-    }
-  }
-  .header{
-    background:#211f6d;
-    svg .logo-bg{
-      fill: transparent!important;
-    }   
-  }
-}`
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
