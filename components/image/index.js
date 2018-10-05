@@ -40,7 +40,7 @@ class Image extends React.Component {
       ) : null
 
     return (
-      <StyledImage {...localImage} noBlur={noBlur}>
+      <StyledImage noBlur={noBlur}>
         <StyledImage.Picture.Wrapper>
           <StyledImage.Picture {...rest}>
             <img data-src={source} alt={alt} className="lazyload" />

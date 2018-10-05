@@ -23,6 +23,12 @@ const config = {
       loader: 'url-loader?limit=100000',
       include: [path.resolve(__dirname, 'assets/fonts')]
     })
+    config.node = {
+      ...config.node,
+      fs: 'empty',
+      net: 'empty',
+      tls: 'empty'
+    }
     config.module.rules.push({
       test: /\.(jpe?g|png)$/i,
       loader: 'responsive-loader',

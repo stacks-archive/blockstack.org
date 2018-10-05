@@ -9,11 +9,12 @@ import scrollMonitor from 'scrollmonitor'
 import Head from 'next/head'
 import Headroom from 'react-headroom'
 import styled from 'styled-components'
-
 const StyledHeaderWrapper = styled.div`
   a {
     text-decoration: none !important;
   }
+
+
 `
 
 class Header extends Component {
@@ -71,11 +72,7 @@ class Header extends Component {
             </Head>
           ) : null}
           <StyledHeaderWrapper id="StickyHeader">
-            <div
-              className={
-                this.state.collapsed ? 'inner-header collapsed' : 'inner-header'
-              }
-            >
+            <div className="inner-header">
               <div>
                 <div className="container header-container">
                   <div className="grid-flex no-break middle no-gutter">
