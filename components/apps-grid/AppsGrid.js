@@ -49,7 +49,7 @@ const cards = [
     title: 'Dappy Wallet',
     icon: 'images/app-dappy.png',
     link: 'https://github.com/BCNetio/BlockStackWallet',
-    description: 'Non-custodial decentralized wallet'
+    description: 'Multicurrency decentralized wallet'
   }
 ]
 
