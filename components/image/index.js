@@ -3,8 +3,8 @@ import { StyledImage } from './styled'
 const requireImage = require.context('@assets', true, /\.(png|jpg|jpeg|svg)$/)
 const path = '/_next/'
 const addPath = (src) => {
-  if(!src.includes(path)){
-      return path + src
+  if (!src.includes(path)) {
+    return path + src
   }
   return src
 }
@@ -30,7 +30,6 @@ class Image extends React.Component {
       : null
     const source = internalLink ? addPath(localImage.src) : src
     const placeholder = internalLink ? localImage.placeholder : null
-
     const Placeholder = () =>
       !noBlur || !internalLink ? (
         <StyledImage.Placeholder>
@@ -39,8 +38,16 @@ class Image extends React.Component {
         </StyledImage.Placeholder>
       ) : null
 
+    // If it's a local image, pass down the height and width to our image styled component
+    const imageProps = localImage
+      ? {
+          width: localImage.width,
+          height: localImage.height
+        }
+      : {}
+
     return (
-      <StyledImage noBlur={noBlur}>
+      <StyledImage noBlur={noBlur} {...imageProps}>
         <StyledImage.Picture.Wrapper>
           <StyledImage.Picture {...rest}>
             <img data-src={source} alt={alt} className="lazyload" />
