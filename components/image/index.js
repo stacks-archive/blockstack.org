@@ -30,7 +30,6 @@ class Image extends React.Component {
       : null
     const source = internalLink ? addPath(localImage.src) : src
     const placeholder = internalLink ? localImage.placeholder : null
-    console.log(localImage)
     const Placeholder = () =>
       !noBlur || !internalLink ? (
         <StyledImage.Placeholder>
