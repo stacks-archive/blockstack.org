@@ -102,7 +102,7 @@ The model we're currently exploring is where Blockstack can process multiple blo
 
 <HashedTitle value={`Does Blockstack use a DHT (Distributed Hash Table)?`} component={'h3'} />
 
-It does not, as of November 2016. It uses a much more reliable system called the Atlas Network. Details here: https://blog.blockstack.org/blockstack-core-v0-14-0-release-aad748f46d#.30gzlthdw
+It does not, as of November 2016. It uses a much more reliable system called the Atlas Network. Details here: https://blockstack.org/blog/blockstack-core-v0-14-release/
 
 <HashedTitle value={`Can the Blockstack network fork?`} component={'h3'} />
 
