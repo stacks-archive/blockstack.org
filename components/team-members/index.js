@@ -7,7 +7,7 @@ import {
   StyledTeamMembers
 } from '@components/team-members/styled'
 
-const TeamMember = ({ name, avatar, title, bio, blockstackId, ...rest }) => {
+const TeamMember = ({ name, avatar, title, bio, blockstackId }) => {
   const photoName = slugify(name)
   const photo = `images/team/${photoName}.jpg`
 
@@ -26,15 +26,17 @@ const TeamMember = ({ name, avatar, title, bio, blockstackId, ...rest }) => {
   )
 }
 
-const renderTeamMembers = (list) =>
-  list.map((member, i) => <TeamMember {...member} key={i} />)
-
-const TeamMembers = (props) => (
-  <>
-    <StyledTeamMembers>{renderTeamMembers(founders)}</StyledTeamMembers>
-    <StyledTeamMembers>{renderTeamMembers(teamMembers)}</StyledTeamMembers>
-    <StyledTeamMembers>{renderTeamMembers(advisors)}</StyledTeamMembers>
-  </>
+const TeamMemberList = ({ list }) => (
+  <StyledTeamMembers>
+    {list.map((member, i) => (
+      <TeamMember {...member} key={i} />
+    ))}
+  </StyledTeamMembers>
 )
+
+const lists = [founders, teamMembers, advisors]
+
+const TeamMembers = () =>
+  lists.map((list, i) => <TeamMemberList list={list} key={i} />)
 
 export default TeamMembers

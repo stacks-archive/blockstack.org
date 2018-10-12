@@ -1,3 +1,4 @@
+import React from 'react'
 export const founders = [
   {
     blockstackId: 'muneeb',
@@ -5,13 +6,6 @@ export const founders = [
     avatar: 'https://s3.amazonaws.com/kd4/muneeb',
     bio:
       'Muneeb Ali is a distributed systems PhD from Princeton and gives guest lectures on cloud computing there. He went through Y Combinator and was awarded a J. William Fulbright Fellowship.'
-  },
-  {
-    blockstackId: 'ryan',
-    name: 'Ryan Shea',
-    avatar: 'https://s3.amazonaws.com/kd4/ryan',
-    bio:
-      'Ryan Shea studied engineering at Princeton, went through Y Combinator, and was inducted into the Forbes 30 Under 30. He has authored several popular open source libraries in cryptography and blockchains.'
   }
 ]
 
@@ -162,6 +156,22 @@ export const teamMembers = [
     avatar: 'https://blockstack.org/images/avatars/mark-hendrickson.jpg',
     bio:
       'Mark is a product manager from San Francisco with over a decade designing, developing and marketing Web and mobile applications for startups. He now lives in Barcelona in self-imposed exile having launched a number of products in Silicon Valley such as Plancast, KITE, Lift and CrunchBase.'
+  },
+  {
+    blockstackId: 'fredericklee',
+    name: 'Frederick Lee',
+    avatar: 'https://blockstack.org/images/avatars/frederick-lee.jpg',
+    bio: (
+      <>
+        Freddie is Associate General Counsel at Blockstack. Prior to Blockstack,
+        Freddie was a senior trial attorney at Boies Schiller Flexner LLP and a
+        law clerk on the U.S. Court of Appeals for the Second Circuit and the
+        U.S. District Court for the Southern District of New York. Freddie
+        received his B.A. in philosophy from Yale University and his J.D. from
+        NYU School of Law, where he was Managing Editor of the{' '}
+        <em>Law Review</em>.
+      </>
+    )
   }
 ]
 
@@ -181,13 +191,5 @@ export const advisors = [
     avatar: 'https://blockstack.org/images/avatars/jp-singh.jpg',
     bio:
       'JP Singh received his PhD from from Stanford University and is a leading authority on scalable infrastructure and applications. He is the director of the Princeton CTO Program, serves on the board of 8x8, Inc., and has been a consultant to Intel, Microsoft, and the U.S. Government.'
-  },
-  {
-    blockstackId: 'to',
-    name: 'Trevor Owens',
-    title: 'Technical Advisor',
-    avatar: 'https://blockstack.org/images/avatars/trevor-owens.jpg',
-    bio:
-      'Trevor Owens is an author and entrepreneur. He’s the CEO & Founder of Javelin.com, author of The Lean Enterprise: How Corporations Can Innovate Like Startups, and the creator of the global Lean Startup Machine workshop series that has trained tens of thousands of startup founders and innovators from Google, GE, News Corp, Intuit, and others, start new businesses around the world.'
   }
 ]
