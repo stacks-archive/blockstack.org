@@ -174,13 +174,5 @@ export const advisors = [
     avatar: 'https://blockstack.org/images/avatars/jp-singh.jpg',
     bio:
       'JP Singh received his PhD from from Stanford University and is a leading authority on scalable infrastructure and applications. He is the director of the Princeton CTO Program, serves on the board of 8x8, Inc., and has been a consultant to Intel, Microsoft, and the U.S. Government.'
-  },
-  {
-    blockstackId: 'to',
-    name: 'Trevor Owens',
-    title: 'Technical Advisor',
-    avatar: 'https://blockstack.org/images/avatars/trevor-owens.jpg',
-    bio:
-      'Trevor Owens is an author and entrepreneur. He’s the CEO & Founder of Javelin.com, author of The Lean Enterprise: How Corporations Can Innovate Like Startups, and the creator of the global Lean Startup Machine workshop series that has trained tens of thousands of startup founders and innovators from Google, GE, News Corp, Intuit, and others, start new businesses around the world.'
   }
 ]
