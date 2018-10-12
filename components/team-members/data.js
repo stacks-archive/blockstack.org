@@ -1,3 +1,4 @@
+import React from 'react'
 export const founders = [
   {
     blockstackId: 'muneeb',
@@ -155,6 +156,22 @@ export const teamMembers = [
     avatar: 'https://blockstack.org/images/avatars/mark-hendrickson.jpg',
     bio:
       'Mark is a product manager from San Francisco with over a decade designing, developing and marketing Web and mobile applications for startups. He now lives in Barcelona in self-imposed exile having launched a number of products in Silicon Valley such as Plancast, KITE, Lift and CrunchBase.'
+  },
+  {
+    blockstackId: 'fredericklee',
+    name: 'Frederick Lee',
+    avatar: 'https://blockstack.org/images/avatars/frederick-lee.jpg',
+    bio: (
+      <>
+        Freddie is Associate General Counsel at Blockstack. Prior to Blockstack,
+        Freddie was a senior trial attorney at Boies Schiller Flexner LLP and a
+        law clerk on the U.S. Court of Appeals for the Second Circuit and the
+        U.S. District Court for the Southern District of New York. Freddie
+        received his B.A. in philosophy from Yale University and his J.D. from
+        NYU School of Law, where he was Managing Editor of the{' '}
+        <em>Law Review</em>.
+      </>
+    )
   }
 ]
 
