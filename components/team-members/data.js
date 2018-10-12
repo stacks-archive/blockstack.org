@@ -5,13 +5,6 @@ export const founders = [
     avatar: 'https://s3.amazonaws.com/kd4/muneeb',
     bio:
       'Muneeb Ali is a distributed systems PhD from Princeton and gives guest lectures on cloud computing there. He went through Y Combinator and was awarded a J. William Fulbright Fellowship.'
-  },
-  {
-    blockstackId: 'ryan',
-    name: 'Ryan Shea',
-    avatar: 'https://s3.amazonaws.com/kd4/ryan',
-    bio:
-      'Ryan Shea studied engineering at Princeton, went through Y Combinator, and was inducted into the Forbes 30 Under 30. He has authored several popular open source libraries in cryptography and blockchains.'
   }
 ]
 
