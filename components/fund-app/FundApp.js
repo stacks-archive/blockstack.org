@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import Link from 'next/link'
 class Header extends Component {
   render() {
     return (
@@ -13,7 +13,11 @@ class Header extends Component {
             <a href="https://contribute.blockstack.org/">
               Community Rewards Program
             </a>
-            , and <a href="/blog">Active Bounties</a>.
+            , and{' '}
+            <Link href="/blog">
+              <a>Active Bounties</a>
+            </Link>
+            .
           </p>
         </div>
       </section>
