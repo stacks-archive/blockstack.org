@@ -71,6 +71,7 @@ class WhyBS extends Component {
                 <a
                   href="https://app.co/mining"
                   rel="noopener noreferrer"
+                  style={{ textDecoration: 'underline' }}
                   target="_blank"
                 >
                   App Mining
