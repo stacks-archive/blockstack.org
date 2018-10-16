@@ -106,6 +106,11 @@ class MainMenu extends React.PureComponent {
                   </InternalLink>
                 </li>
                 <li>
+                  <a href={this.props.links.appMining} className="p md">
+                    App Mining
+                  </a>
+                </li>
+                <li>
                   <a href={this.props.links.signatureFund} className="p md">
                     Signature fund
                   </a>
