@@ -92,6 +92,11 @@ class Footer extends Component {
                   </a>
                 </li>
                 <li>
+                  <a href={bslinks.appMining} className="p sm">
+                    App Mining
+                  </a>
+                </li>
+                <li>
                   <a href={bslinks.signatureFund} className="p sm">
                     Signature fund
                   </a>

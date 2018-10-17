@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
-import InlineSVG from 'svg-inline-react'
 import { DividerOne } from '@components/divider'
 
 import debounce from 'debounce'
-
 
 const compareRows = [
   {
@@ -67,7 +65,18 @@ class WhyBS extends Component {
           </div>
           <ol className="dashlist main-color">
             <li>
-              <p>Get paid mining rewards if you build a popular app.</p>
+              <p>
+                Earn{' '}
+                <a
+                  href="https://app.co/mining"
+                  rel="noopener noreferrer"
+                  style={{ borderColor: '#3700ff !important' }}
+                  target="_blank"
+                >
+                  App Mining
+                </a>{' '}
+                payouts if you build a popular app.
+              </p>
             </li>
             <li>
               <p>Scale your app without limitations of the blockchain.</p>
