@@ -53,6 +53,7 @@ const bslinks = {
   events: 'http://community.blockstack.org/events',
   telegramEnglish: 'https://t.me/BlockstackChat',
   telegramChinese: 'https://t.me/BlockstackChinese',
+  appMining: 'https://app.co/mining',
   emailArchive: 'https://us14.campaign-archive.com/home/?u=394a2b5cfee9c4b0f7525b009&id=0e5478ae86'
 }
 
