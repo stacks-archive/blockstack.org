@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import InlineSVG from 'svg-inline-react'
 import { DividerOne } from '@components/divider'
 
 import debounce from 'debounce'
@@ -71,7 +70,7 @@ class WhyBS extends Component {
                 <a
                   href="https://app.co/mining"
                   rel="noopener noreferrer"
-                  style={{ textDecoration: 'underline' }}
+                  style={{ borderColor: '#3700ff !important' }}
                   target="_blank"
                 >
                   App Mining
