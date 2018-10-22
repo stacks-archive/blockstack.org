@@ -32,15 +32,15 @@ const routes = async () => {
     '/legal/disclaimers': { page: '/legal/disclaimers' },
     '/legal/privacy-policy': { page: '/legal/privacy-policy' },
     '/legal/terms-of-use': { page: '/legal/terms-of-use' },
-    '/tutorials': { page: '/tutorials' },
-    '/tutorials/hello-blockstack': { page: '/tutorials/hello-blockstack' },
+    '/tutorials': { page: 'https://docs.blockstack.org/browser/hello-blockstack.html' },
+    '/tutorials/hello-blockstack': { page: 'https://docs.blockstack.org/browser/hello-blockstack.html' },
     '/tutorials/managing-data-with-gaia': {
-      page: '/tutorials/managing-data-with-gaia'
+      page: 'https://docs.blockstack.org/browser/blockstack_storage.html'
     },
     '/tutorials/multi-player-storage': {
-      page: '/tutorials/multi-player-storage'
+      page: 'https://docs.blockstack.org/browser/blockstack_storage.html'
     },
-    '/tutorials/todo-list': { page: '/tutorials/todo-list' }
+    '/tutorials/todo-list': { page: 'https://docs.blockstack.org/browser/todo-list.html' }
   })
 }
 

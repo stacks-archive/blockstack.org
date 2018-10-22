@@ -25,7 +25,7 @@ const colors = {
 }
 
 const bslinks = {
-  tutorials: '/tutorials',
+  tutorials: 'https://docs.blockstack.org/browser/hello-blockstack.html',
   documentation: 'https://docs.blockstack.org',
   github: 'https://github.com/blockstack',
   forum: 'https://forum.blockstack.org/',

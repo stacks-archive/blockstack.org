@@ -49,7 +49,7 @@ const TopArea = (props) => {
           <div>
             <div className="grid-flex v-spaced break-xlg">
               <div className="col-4">
-                <Link prefetch href="/tutorials/hello-blockstack">
+                <Link prefetch href="https://docs.blockstack.org/browser/hello-blockstack.html">
                   <a className="g-card code-card dark align-left link">
                     <div className="p-2">
                       <CodeBlock
@@ -83,7 +83,7 @@ const TopArea = (props) => {
                 </Link>
               </div>
               <div className="col-4">
-                <Link prefetch href="/tutorials/todo-list">
+                <Link prefetch href="https://docs.blockstack.org/browser/todo-list.html">
                   <a className="g-card code-card dark align-left link">
                     <div className="p-2">
                       <CodeBlock className="sm minimal dark">
@@ -114,7 +114,7 @@ const TopArea = (props) => {
                 </Link>
               </div>
               <div className="col-4">
-                <Link href="/tutorials/multi-player-storage">
+                <Link href="https://docs.blockstack.org/browser/blockstack_storage.html">
                   <a className="g-card code-card dark align-left link">
                     <div className="p-2">
                       <CodeBlock className="sm minimal dark">
