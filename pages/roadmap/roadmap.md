@@ -45,36 +45,41 @@
 
 - Released the Stacks blockchain testnet.
 - Announced the $50,000 Universal Wallet Bounty in partnership with ShapeShift.
-- Launched App.co, the Universal Store for decentralized applications
+- Launched App.co, the Universal Store for decentralized applications.
 - Released the developer Alpha of Blockstack iOS and Android SDKs.
 - Released a new mobile-friendly onboarding flow for mobile and desktop apps.
 
 ## 2018 Q3
 
-- Launch of the App Mining program to pay app development teams.
+- Release of the Stacks wallet and security reviews of the Stacks blockchain.
 - Improvement of authentication & on-boarding for Blockstack apps.
-- Security reviews of Stacks blockchain and release of Stacks wallet.
 - Decentralizing the World Tour announced with 31 global meetups.
 - Launch of developer documentation portal: docs.blockstack.org.
 
 ## 2018 Q4
 
-- Launch of the Stacks Blockchain genesis block.
-- Release of the updated blockchain paper and start Rust implementation.
-- Ability for Stacks voucher holders to redeem vouchers for Stacks.\*
-- Ability to use Stacks across our SDKs and Blockstack Browser.
-- Launch of Gaia as independent project with improved developer resources.
+- Launch of the Stacks Blockchain genesis block and Stacks Token.
+- Release of the new Stacks blockchain design and start of Rust implementation.
+- Release new Stacks Explorer and Wallet.
+- Payments made to first cohort of app development teams registered for App Mining.
+
+## 2019 Q1
+
 - Addition of social and cross-app data sharing functionality to Gaia.
-
-## 2019
-
 - Launch of web extensions as an additional form factor for the Blockstack app/browser.
+- Launch of Gaia as independent project with improved developer resources.
+
+## 2019 Q2
+
 - Launch of iOS and Android apps for Blockstack authentication.
-- Initiation of mining on the stacks blockchain and a hardfork to a new consensus algorithm.
+- Ability to publish/authenticate apps and storage via Blockstack Naming System vs. DNS.
+- Release specification for smart contracting language and virtual machine.
+
+## 2019 Q3–Q4
+
+- Hardfork to new consensus algorithm: Simple client verification, higher throughput with lower latency, and smart contracts.
 - Start first community-powered election for App Reviewers.
-- Initiation of the distribution of tokens to all new verified users of Blockstack.\*
 - Ability to create app-specific economies through app coins.
+- Full launch of App Mining after Pilot Run and Beta periods.
 
-\*Pending legal approval
-
-_Last updated: September 18, 2018_
+_Last updated: October 29, 2018_
