@@ -81,8 +81,3 @@ Next.js has a function called `exportPathMap` in the `next.config.js` which allo
   - [terms-of-use](https://blockstack.org/legal/terms-of-use)
 - [blog](https://blockstack.org/blog)
   - Many blog posts (dynamic pages)
-- [tutorials](https://blockstack.org/tutorials)
-  - [hello-blockstack](https://blockstack.org/tutorials/hello-blockstack)
-  - [managing-data-with-gaia](https://blockstack.org/tutorials/managing-data-with-gaia)
-  - [multi-player-storage](https://blockstack.org/tutorials/multi-player-storage)
-  - [todo-list](https://blockstack.org/tutorials/todo-list)

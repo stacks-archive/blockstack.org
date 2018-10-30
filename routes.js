@@ -31,16 +31,7 @@ const routes = async () => {
     '/what-is-blockstack': { page: '/what-is-blockstack' },
     '/legal/disclaimers': { page: '/legal/disclaimers' },
     '/legal/privacy-policy': { page: '/legal/privacy-policy' },
-    '/legal/terms-of-use': { page: '/legal/terms-of-use' },
-    '/tutorials': { page: '/tutorials' },
-    '/tutorials/hello-blockstack': { page: '/tutorials/hello-blockstack' },
-    '/tutorials/managing-data-with-gaia': {
-      page: '/tutorials/managing-data-with-gaia'
-    },
-    '/tutorials/multi-player-storage': {
-      page: '/tutorials/multi-player-storage'
-    },
-    '/tutorials/todo-list': { page: '/tutorials/todo-list' }
+    '/legal/terms-of-use': { page: '/legal/terms-of-use' }
   })
 }
 

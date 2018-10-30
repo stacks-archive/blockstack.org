@@ -168,8 +168,7 @@ Yes! Apps using Blockstack run in the web browsers you know and love. You will n
 
 <HashedTitle value={`Where can I discover apps using Blockstack?`} component={'h3'} />
 
-Using the Blockstack Browser! Check our install page for more information: https://blockstack.org/install
-
+You can see a list on [the App.co site](https://app.co/blockstack). Or, you can use the [Blockstack Browser](https://blockstack.org/install) web or local install.
 <HashedTitle value={`What programming language can I use to build these apps?`} component={'h3'} />
 
 To make apps that run in the web browser using Blockstack, you can use JavaScript and any of the same web frameworks or libraries you use today such as React, AngularJs, Vue.js or jQuery. The Blockstack Core is implementated in Python, but you can use any language you like for native apps as long as you are able to consume a JSON REST API.
@@ -180,7 +179,7 @@ This is a developer-facing term used for the application users use to create and
 
 <HashedTitle value={`How do I get started using Blockstack to build decentralized applications?`} component={'h3'} />
 
-We have a great tutorial on getting started building Blockstack applications: https://blockstack.org/tutorials/todo-list
+We have [several tutorials to help you](https://docs.blockstack.org/browser/hello-blockstack.html) get building Blockstack applications.
 
 <HashedTitle value={`Do I need to run a full Blockstack node to use Blockstack?`} component={'h3'} />
 
