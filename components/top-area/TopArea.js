@@ -49,8 +49,7 @@ const TopArea = (props) => {
           <div>
             <div className="grid-flex v-spaced break-xlg">
               <div className="col-4">
-                <Link prefetch href="/tutorials/hello-blockstack">
-                  <a className="g-card code-card dark align-left link">
+                  <a className="g-card code-card dark align-left link" href="https://docs.blockstack.org/browser/hello-blockstack.html" target="_blank">
                     <div className="p-2">
                       <CodeBlock
                         className="sm minimal dark"
@@ -80,11 +79,9 @@ const TopArea = (props) => {
                       </div>
                     </Card>
                   </a>
-                </Link>
               </div>
               <div className="col-4">
-                <Link prefetch href="/tutorials/todo-list">
-                  <a className="g-card code-card dark align-left link">
+                  <a className="g-card code-card dark align-left link" href="https://docs.blockstack.org/browser/todo-list.html" target="_blank">
                     <div className="p-2">
                       <CodeBlock className="sm minimal dark">
                         {AuthCode}
@@ -111,11 +108,9 @@ const TopArea = (props) => {
                       </div>
                     </Card>
                   </a>
-                </Link>
               </div>
               <div className="col-4">
-                <Link href="/tutorials/multi-player-storage">
-                  <a className="g-card code-card dark align-left link">
+                  <a className="g-card code-card dark align-left link" href="https://docs.blockstack.org/browser/blockstack_storage.html" target="_blank">
                     <div className="p-2">
                       <CodeBlock className="sm minimal dark">
                         {StorageCode}
@@ -142,7 +137,6 @@ const TopArea = (props) => {
                       </div>
                     </Card>
                   </a>
-                </Link>
               </div>
             </div>
           </div>
