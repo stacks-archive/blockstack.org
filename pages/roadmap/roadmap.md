@@ -1,7 +1,7 @@
 ## 2013–2014
 
 - Muneeb Ali and Ryan Shea met at Princeton University’s Computer Science department in 2013 and decided to start a long journey of solving critical problems of today’s internet.
-- Went through Y Combinator in summer 2014, and raised a round of seed investment led by Union Square Ventures, with participation from Naval Ravikant, SV Angels, and others.
+- Went through Y Combinator in summer 2014, and raised a round of seed investment led by Union Square Ventures, with participation from Naval Ravikant, SV Angel, and others.
 - Launched a decentralized identity system, one of the first non-financial applications utilizing blockchain technology that allowed users to own an identity without any trusted third party.
 
 ## 2015-2016
