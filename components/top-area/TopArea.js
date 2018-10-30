@@ -49,7 +49,7 @@ const TopArea = (props) => {
           <div>
             <div className="grid-flex v-spaced break-xlg">
               <div className="col-4">
-                  <a className="g-card code-card dark align-left link" href="https://docs.blockstack.org/browser/hello-blockstack.html">
+                  <a className="g-card code-card dark align-left link" href="https://docs.blockstack.org/browser/hello-blockstack.html" target="_blank">
                     <div className="p-2">
                       <CodeBlock
                         className="sm minimal dark"
@@ -81,7 +81,7 @@ const TopArea = (props) => {
                   </a>
               </div>
               <div className="col-4">
-                  <a className="g-card code-card dark align-left link" href="https://docs.blockstack.org/browser/todo-list.html">
+                  <a className="g-card code-card dark align-left link" href="https://docs.blockstack.org/browser/todo-list.html" target="_blank">
                     <div className="p-2">
                       <CodeBlock className="sm minimal dark">
                         {AuthCode}
@@ -110,7 +110,7 @@ const TopArea = (props) => {
                   </a>
               </div>
               <div className="col-4">
-                  <a className="g-card code-card dark align-left link" href="https://docs.blockstack.org/browser/blockstack_storage.html">
+                  <a className="g-card code-card dark align-left link" href="https://docs.blockstack.org/browser/blockstack_storage.html" target="_blank">
                     <div className="p-2">
                       <CodeBlock className="sm minimal dark">
                         {StorageCode}
