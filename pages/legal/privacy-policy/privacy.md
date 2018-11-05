@@ -14,6 +14,8 @@ When you visit the Site, we and our third party service providers receive and re
 
 By using the Site, you are authorizing us to gather, parse, and retain data related to the provision of the Site.
 
+Information from third party services. We may receive information about you, such as name and email address, from third party partners such as investment platforms that you use to invest in our services.
+
 ##### How Blockstack Uses Your Information
 
 Internal and Site-Related Usage. We may use and retain any information that we collect on the Site to provide, maintain and improve the Site and our products and services, and to otherwise conduct our business. One of the service providers that we use for data analytics is Google Analytics. If you do not want Google Analytics to collect and use information about your use of the Site, then you can install an opt-out in your web browser (https://tools.google.com/dlpage/gaoptout/).
