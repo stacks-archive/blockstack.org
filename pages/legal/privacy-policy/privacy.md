@@ -14,7 +14,7 @@ When you visit the Site, we and our third party service providers receive and re
 
 By using the Site, you are authorizing us to gather, parse, and retain data related to the provision of the Site.
 
-Information from third party services. We may receive information about you, such as name and email address, from third party partners such as investment platforms that you use to invest in our services.
+Information from Third Party Services. We may receive information about you, such as name and email address, from third party partners such as investment platforms that you use to invest in our services.
 
 ##### How Blockstack Uses Your Information
 
