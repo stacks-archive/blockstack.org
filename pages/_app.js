@@ -106,6 +106,8 @@ class MyApp extends App {
     }
   }
 
+  componentDidMount() {}
+
   render() {
     const { Component, pageProps } = this.props
 
@@ -121,16 +123,16 @@ class MyApp extends App {
 
     const PageComponent = withPageTemplate(Component, pageProps.meta)
     return (
-      <ReduxProvider store={ this.props.store }>
+      <ReduxProvider store={this.props.store}>
         <Mdx>
           <Container>
-            <Global/>
+            <Global />
             <Head>
-              <script src="https://cdn.polyfill.io/v2/polyfill.min.js"/>
-              <style dangerouslySetInnerHTML={ { __html: styles } }/>
-              <title>{ title }</title>
-              <meta name="theme-color" content="#3700ff"/>
-              <meta charSet="UTF-8"/>
+              <script src="https://cdn.polyfill.io/v2/polyfill.min.js" />
+              <style dangerouslySetInnerHTML={{ __html: styles }} />
+              <title>{title}</title>
+              <meta name="theme-color" content="#3700ff" />
+              <meta charSet="UTF-8" />
               <meta
                 name="viewport"
                 content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
@@ -138,9 +140,14 @@ class MyApp extends App {
             </Head>
 
             <div className="landing-page">
-              <Header/>
-              <PageComponent { ...pageProps } />
-              <Footer/>
+              <Header />
+              <PageComponent {...pageProps} />
+              <Footer />
+              <script
+                type="text/javascript"
+                src="https://my.hellobar.com/5782236799c23fe13e1cd8418582245ed81294f4.js"
+                async="async"
+              />
             </div>
           </Container>
         </Mdx>
