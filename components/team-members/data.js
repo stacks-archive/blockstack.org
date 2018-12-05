@@ -1,4 +1,56 @@
 import React from 'react'
+
+export const board = [
+  {
+    blockstackId: 'muneeb',
+    name: 'Muneeb Ali',
+    avatar: 'https://s3.amazonaws.com/kd4/muneeb',
+    bio:
+      'Muneeb Ali is a distributed systems PhD from Princeton and gives guest lectures on cloud computing there. He went through Y Combinator and was awarded a J. William Fulbright Fellowship.'
+  },
+  {
+    name: 'Arvind Narayanan',
+    avatar: 'https://s3.amazonaws.com/kd4/muneeb',
+    bio:
+      'Arvind Narayanan is an Associate Professor at Princeton University and an Affiliate Scholar at the Stanford Law School. He researches information privacy, internet security, and has written a textbook on Bitcoin and cryptocurrency technologies. His work on internet privacy received the 2008 Privacy Enhancing Technologies Award.'
+  },
+  {
+    name: 'Arianna Simpson',
+    avatar: 'https://s3.amazonaws.com/kd4/muneeb',
+    bio:
+      'Arianna Simpson is an early stage investor and Managing Director at Autonomous Partners, an investment fund focused on cryptocurrencies and digital assets. Before she started investing, Arianna was at BitGo, a blockchain security company, where she was the third employee.'
+  },
+  {
+    name: 'Catherine Tucker',
+    avatar: 'https://s3.amazonaws.com/kd4/muneeb',
+    bio:
+      'Catherine Tucker is the Sloan Distinguished Professor of Management at MIT Sloan and Chair of the MIT Sloan PhD Program. She researches how technology can improve operations and marketing at firms, and associated challenges for regulations. She is associate editor at Management Science and a research associate at the National Bureau of Economic Research.'
+  },
+  {
+    name: 'Charlie Saravia',
+    avatar: 'https://s3.amazonaws.com/kd4/muneeb',
+    bio:
+      'Charlie Saravia is a Managing Director of HMC. Previously, Mr. Saravia was a Managing Director at CIMC, where he sourced, evaluated and managed investments across asset classes and regions for nine years. Mr. Saravia is a Chartered Financial Analyst.'
+  },
+  {
+    name: 'Koen Langendoen',
+    avatar: 'https://s3.amazonaws.com/kd4/muneeb',
+    bio:
+      'Koen Langendoen is a Professor of Computer Science at Delft University of Technology, the Netherlands. He holds the Chair on Embedded Software and has rich experience in systems research, in particular, networking protocols and distributed systems.'
+  },
+  {
+    name: 'Rodolfo Gonzalez',
+    avatar: 'https://s3.amazonaws.com/kd4/muneeb',
+    bio:
+      'Rodolfo Gonzalez is a Partner at Foundation Capital. He is fascinated by financial disintermediation, peer-to-peer funding, and bringing transparency and simplicity to the consumer experience. He holds a MBA from MIT Sloan’s School of Management.'
+  },
+  {
+    name: 'Zavain Dar',
+    avatar: 'https://s3.amazonaws.com/kd4/muneeb',
+    bio:
+      'Zavain Dar is a Principal at Lux Capital focusing on smart software, machine intelligence, and decentralized computing. Previously Zavain was an investor at Eric Schmidt’s Innovation Endeavors. He studied at Stanford and is currently a Lecturer at Stanford where he has taught quarter long seminars in cryptocurrencies, AI, and venture capital.'
+  }
+]
 export const founders = [
   {
     blockstackId: 'muneeb',

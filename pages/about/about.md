@@ -41,6 +41,4 @@ Blockstack Team Values: (voted and decided collaboratively by the team)
 - Possibilist
 - Mission-driven
 
-### Team
-
 <TeamMembers />
