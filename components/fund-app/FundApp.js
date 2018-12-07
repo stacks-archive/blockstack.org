@@ -14,9 +14,12 @@ class Header extends Component {
               Community Rewards Program
             </a>
             , and{' '}
-            <Link href="/blog">
-              <a>Active Bounties</a>
-            </Link>
+            <a
+              href="https://blog.blockstack.org/category/blockstack-news/bounties/"
+              target="_blank"
+            >
+              Active Bounties
+            </a>
             .
           </p>
         </div>
