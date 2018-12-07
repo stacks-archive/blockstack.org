@@ -24,10 +24,14 @@ class BlogPage extends React.Component {
     return false
   }
 
+  componentDidMount() {
+    window.location.replace('https://blog.blockstack.org')
+  }
+
   render() {
     return (
       <>
-        <BlogList />
+        <h4>Redirecting...</h4>
       </>
     )
   }
