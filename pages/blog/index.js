@@ -1,5 +1,4 @@
 import React from 'react'
-import { BlogList } from '@components/blog/list'
 const meta = {
   path: '/blog',
   title: 'Blockstack Blog'
