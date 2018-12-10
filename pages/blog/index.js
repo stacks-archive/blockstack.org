@@ -1,5 +1,4 @@
 import React from 'react'
-import { BlogList } from '@components/blog/list'
 const meta = {
   path: '/blog',
   title: 'Blockstack Blog'
@@ -24,10 +23,14 @@ class BlogPage extends React.Component {
     return false
   }
 
+  componentDidMount() {
+    window.location.replace('https://blog.blockstack.org')
+  }
+
   render() {
     return (
       <>
-        <BlogList />
+        <h4>Redirecting...</h4>
       </>
     )
   }
