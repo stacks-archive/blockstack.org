@@ -1,7 +1,7 @@
 import React from 'react'
-const ogImage = require('@assets/images/photos/blockstackteam-1.jpg')
 import Content from './about.md'
 
+const ogImage = require('@assets/images/photos/blockstackteam-1.jpg')
 const meta = {
   path: '/about',
   title: 'About Blockstack',
