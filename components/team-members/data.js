@@ -9,6 +9,7 @@ export const board = [
   },
   {
     name: 'Albert Wenger',
+    blockstackId: 'albertwenger',
     bio:
       'Albert Wenger has served as a member of the board of directors since December 2016. Mr. Wenger is a managing partner at Union Square Ventures (USV), where he has led a variety of investments including USV’s investments in Etsy (IPO), MongoDB (IPO), Twilio (IPO),  Behance (acquired by Adobe), and Firebase (acquired by Google).'
   },

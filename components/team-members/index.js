@@ -3,6 +3,7 @@ import { teamMembers, advisors } from './data'
 import { Box } from 'blockstack-ui'
 import { slugify } from '@common/es6'
 import { Image } from '@components/image'
+
 import {
   StyledTeamMember,
   StyledTeamMembers
