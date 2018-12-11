@@ -1,24 +1,10 @@
-const { fetchBlogPosts } = require('./common/lib')
 const routes = async () => {
-  const { posts } = await fetchBlogPosts()
-
-  // transform the list of posts into a map of pages with the pathname `/blog/:slug`
-  const blogPosts = posts.reduce(
-    (pages, post) =>
-      Object.assign({}, pages, {
-        [`/blog/${post.urlSlug}`]: {
-          page: '/blog/single',
-          query: { slug: post.urlSlug }
-        }
-      }),
-    {}
-  )
-
   // combine the map of post pages with our static pages
-  return Object.assign({}, blogPosts, {
+  return {
     '/': { page: '/' },
     '/404': { page: '/_error' },
     '/about': { page: '/about' },
+    '/pbc': { page: '/pbc' },
     '/blog': { page: '/blog' },
     '/faq': { page: '/faq' },
     '/careers': { page: '/careers' },
@@ -32,7 +18,7 @@ const routes = async () => {
     '/legal/disclaimers': { page: '/legal/disclaimers' },
     '/legal/privacy-policy': { page: '/legal/privacy-policy' },
     '/legal/terms-of-use': { page: '/legal/terms-of-use' }
-  })
+  }
 }
 
 module.exports = routes
