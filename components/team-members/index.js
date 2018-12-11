@@ -1,6 +1,5 @@
 import React from 'react'
-import { teamMembers, board, founders, advisors } from './data'
-import { Type } from '@components/typography'
+import { teamMembers, advisors } from './data'
 import { Box } from 'blockstack-ui'
 import { slugify } from '@common/es6'
 import { Image } from '@components/image'
@@ -15,10 +14,12 @@ const TeamMember = ({ name, avatar, title, bio, blockstackId }) => {
 
   return (
     <StyledTeamMember>
-      <StyledTeamMember.Avatar>
-        <Image src={photo} alt={name} />
-      </StyledTeamMember.Avatar>
-      <h3>{name}</h3>
+      {photo ? (
+        <StyledTeamMember.Avatar>
+          <Image src={photo} alt={name} />
+        </StyledTeamMember.Avatar>
+      ) : null}
+      {name ? <h3>{name}</h3> : null}
       {title ? <h5>{title}</h5> : null}
       {blockstackId ? (
         <h6>
@@ -45,10 +46,6 @@ const TeamMemberList = ({ list }) => (
 
 const lists = [
   {
-    title: 'Advisory Board',
-    items: board
-  },
-  {
     title: 'Team Members',
     items: teamMembers
   },
@@ -62,3 +59,5 @@ const TeamMembers = () =>
   lists.map((list, i) => <TeamMemberList list={list} key={i} />)
 
 export default TeamMembers
+
+export { TeamMemberList }
