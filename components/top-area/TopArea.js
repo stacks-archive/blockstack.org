@@ -102,7 +102,7 @@ const TopArea = (props) => {
                           </div>
                         </div>
                         <p className="sm">
-                          Build a DApp to learn about the Blockstack platform and how to join Application Mining.
+                        Build a DApp to learn about the Blockstack platform and how to join App Mining.
                         </p>
                       </div>
                     </Card>
