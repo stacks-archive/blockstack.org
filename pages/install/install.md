@@ -18,7 +18,7 @@ Requires Sierra 10.12+
 
 Requires Windows 10
 
-<a href="https://github.com/blockstack/blockstack-browser/releases/download/v0.35.0/Blockstack-for-win10-v0.35.0.dmg.msi" class="button">Windows Download</a>
+<a href="https://github.com/blockstack/blockstack-browser/releases/download/v0.35.0/Blockstack-for-win10-v0.35.0.msi" class="button">Windows Download</a>
 
 #### Blockstack Browser (Linux)
 
