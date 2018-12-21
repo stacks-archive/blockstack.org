@@ -12,9 +12,6 @@ import { Provider as ReduxProvider } from 'redux-bundler-react'
 import { styles } from '@common/legacy-styles'
 
 const fetchOurData = async (ctx) => {
-  if (!ctx.reduxStore.selectBlogPosts()) {
-    await ctx.reduxStore.doFetchBlogData()
-  }
   if (!ctx.reduxStore.selectJobs()) {
     await ctx.reduxStore.doFetchJobsData()
   }
