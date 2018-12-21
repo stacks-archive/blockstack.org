@@ -81,7 +81,7 @@ const TopArea = (props) => {
                   </a>
               </div>
               <div className="col-4">
-                  <a className="g-card code-card dark align-left link" href="https://docs.blockstack.org/browser/todo-list.html" target="_blank">
+                  <a className="g-card code-card dark align-left link" href="https://docs.blockstack.org/develop/zero_to_dapp_1.html" target="_blank">
                     <div className="p-2">
                       <CodeBlock className="sm minimal dark">
                         {AuthCode}
@@ -92,7 +92,7 @@ const TopArea = (props) => {
                         <div className="grid-flex tight-gutter no-break pb-2">
                           <div className="col grow">
                             <h4 className="main-color underline-hover">
-                              Authentication
+                              Zero-to-DApp
                             </h4>
                           </div>
                           <div className="col no-grow">
@@ -102,8 +102,7 @@ const TopArea = (props) => {
                           </div>
                         </div>
                         <p className="sm">
-                          Build a basic Todo application and learn about
-                          Authentication and Gaia storage.
+                        Build a DApp to learn about the Blockstack platform and how to join App Mining.
                         </p>
                       </div>
                     </Card>
