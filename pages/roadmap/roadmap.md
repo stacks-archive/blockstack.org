@@ -1,7 +1,7 @@
 ## 2013–2014
 
 - Muneeb Ali and Ryan Shea met at Princeton University’s Computer Science department in 2013 and decided to start a long journey of solving critical problems of today’s internet.
-- Went through Y Combinator in summer 2014, and raised a round of seed investment led by Union Square Ventures, with participation from Naval Ravikant, SV Angels, and others.
+- Went through Y Combinator in summer 2014, and raised a round of seed investment led by Union Square Ventures, with participation from Naval Ravikant, SV Angel, and others.
 - Launched a decentralized identity system, one of the first non-financial applications utilizing blockchain technology that allowed users to own an identity without any trusted third party.
 
 ## 2015-2016
@@ -34,7 +34,7 @@
 - Released the Token Whitepaper and token sale details.
 - Released the Public Alpha of the Blockstack Browser.
 - Conducted a token sale which resulted in ~$50 million total raised, and over 800 accredited investors, qualified purchasers, and institutions participating.
-- Announced a $50,000 bounty to Decentralize Communication
+- Announced a $50,000 bounty to Decentralize Communication.
 
 ## 2018 Q1
 
@@ -63,22 +63,22 @@
 - Released the Stacks blockchain v2 design proposals and start of Rust implementation.
 - Released new Stacks Explorer and Wallet.
 - Published smart contracting language spec as a Stacks Improvement Proposal (SIP-002).
-- Released support for custom Gaia hub configuration during user onboarding
+- Released support for custom Gaia hub configuration during user onboarding.
 - Launched App Mining pilot in December with 38 registered apps.
 
 ## 2019 Q1
 
 - Addition of social notifications and cross-app data sharing functionality to Gaia.
-- Release plan for App Mining reviewer elections
-- Release of prototype virtual machine (VM) for Stacks smart contracting language
-- Release of new consensus algorithm for Stacks blockchain v2 (SIP-001)
+- Release plan for App Mining reviewer elections.
+- Release of prototype virtual machine (VM) for Stacks smart contracting language.
+- Release of new consensus algorithm for Stacks blockchain v2 (SIP-001).
 - Ability to publish/authenticate apps and storage via Blockstack Naming System vs. DNS.
 
 ## 2019 Q2
 
 - Launch of iOS and Android apps for Blockstack authentication.
 - Release of testnet for Stacks blockchain v2.
-- Host Blockstack Summit 2019, the annual flagship event
+- Host Blockstack Summit 2019, the annual flagship event.
 
 ## 2019 Q3–Q4
 
