@@ -51,37 +51,44 @@
 
 ## 2018 Q3
 
-- Release of the Stacks wallet and security reviews of the Stacks blockchain.
+- Released the Stacks wallet and security reviews of the Stacks blockchain.
 - Improvement of authentication & on-boarding for Blockstack apps.
-- Decentralizing the World Tour announced with 31 global meetups.
-- Launch of developer documentation portal: docs.blockstack.org.
+- Held decentralizing the World Tour announced with 31 global meetups.
+- Launched of developer documentation portal: docs.blockstack.org.
 
 ## 2018 Q4
 
-- Launch of the Stacks Blockchain genesis block and Stacks Token.
-- Release of the new Stacks blockchain design and start of Rust implementation.
-- Release new Stacks Explorer and Wallet.
-- Payments made to first cohort of app development teams registered for App Mining.
+- Launched the Stacks Blockchain v1, distributed tokens, and sent first Stacks transaction.
+- Achieved Milestone 1 and unlocked $25M in capital.
+- Released the Stacks blockchain v2 design proposals and start of Rust implementation.
+- Released new Stacks Explorer and Wallet.
+- Published smart contracting language spec as a Stacks Improvement Proposal (SIP-002).
+- Released support for custom Gaia hub configuration during user onboarding.
+- Launched App Mining pilot in December with 38 registered apps.
 
 ## 2019 Q1
 
-- Addition of social and cross-app data sharing functionality to Gaia.
-- Launch of web extensions as an additional form factor for the Blockstack app/browser.
-- Launch of Gaia as independent project with improved developer resources.
+- Addition of social notifications and cross-app data sharing functionality to Gaia.
+- Release plan for App Mining reviewer elections.
+- Release of prototype virtual machine (VM) for Stacks smart contracting language.
+- Release of new consensus algorithm for Stacks blockchain v2 (SIP-001).
+- Ability to publish/authenticate apps and storage via Blockstack Naming System vs. DNS.
 
 ## 2019 Q2
 
 - Launch of iOS and Android apps for Blockstack authentication.
-- Ability to publish/authenticate apps and storage via Blockstack Naming System vs. DNS.
-- Release specification for smart contracting language and virtual machine.
+- Release of testnet for Stacks blockchain v2.
+- Host Blockstack Summit 2019, the annual flagship event.
 
 ## 2019 Q3–Q4
 
-- Hardfork to new consensus algorithm: Simple client verification, higher throughput with lower latency, and smart contracts.
+- Hardfork to new consensus algorithm: Simple client verification, higher throughput, and smart contracts.
 - Start first community-powered election for App Reviewers.
 - Ability to create app-specific economies through app coins.
 - Full launch of App Mining after Pilot Run and Beta periods.
 
-_Last updated: October 29, 2018_
+---
+
+_Last updated: January 3, 2019_
 
 _This webpage contains forward-looking statements, including statements regarding Blockstack PBC’s plans for the Stacks token and blockchain. Forward-looking statements are subject to risks and uncertainties that could cause actual results to differ materially, and reported results should not be considered as an indication of future performance. Potential risks and uncertainties that could change our actual results include, but are not limited to, risks associated with: the failure of Blockstack to successfully launch the genesis block; technical obstacles in further developing the Stacks blockchain and potential failure of its underlying technology; the failure of Blockstack to successfully launch web extensions; technical obstacles in further developing and launching the iOS and Android apps for Blockstack authentication; the ability to begin the first community-powered election for App Reviewers; risks associated with attacks designed to influence App Reviewers or game their methodologies; and the ability to create and the effectiveness of establishing app-specific economies through app coins. These forward-looking statements speak only as of the date hereof. Blockstack PBC disclaims any obligation to update these forward-looking statements._
