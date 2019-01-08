@@ -60,7 +60,7 @@ Everyone! But more seriously, if you are building an application in JavaScript t
 
 <HashedTitle value={`How are Blockstack domains different from normal DNS domains?`} component={'h3'} />
 
-Blockstack domains are not registered on the traditional DNS run by an organized called ICANN. Instead they're registered on a blockchain in a fully decentralized way. This means that Blockstack domains are truly owned by their owners and cannot be taken away. All Blockstack domains have public keys by default (public keys are required to own the domains), unlike the traditional DNS where a small fraction of domains get the (optional) public key certificates.
+Blockstack domains are not registered on the traditional DNS run by an organization called ICANN. Instead they're registered on a blockchain in a fully decentralized way. This means that Blockstack domains are truly owned by their owners and cannot be taken away. All Blockstack domains have public keys by default (public keys are required to own the domains), unlike the traditional DNS where a small fraction of domains get the (optional) public key certificates.
 
 <HashedTitle value={`What is a virtual chain?`} component={'h3'} />
 
