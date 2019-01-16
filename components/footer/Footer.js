@@ -132,6 +132,11 @@ class Footer extends Component {
                   </a>
                 </li>
                 <li>
+                  <a href="/pbc" className="p sm">
+                    Blockstack PBC
+                  </a>
+                </li>
+                <li>
                   <a href={bslinks.faq} className="p sm">
                     FAQ
                   </a>

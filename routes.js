@@ -1,10 +1,10 @@
-const { fetchBlogPosts } = require('./common/lib')
 const routes = async () => {
   // combine the map of post pages with our static pages
   return {
     '/': { page: '/' },
     '/404': { page: '/_error' },
     '/about': { page: '/about' },
+    '/pbc': { page: '/pbc' },
     '/blog': { page: '/blog' },
     '/faq': { page: '/faq' },
     '/careers': { page: '/careers' },
