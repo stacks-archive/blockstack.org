@@ -5,19 +5,19 @@ export const board = [
     blockstackId: 'muneeb',
     name: 'Muneeb Ali',
     bio:
-      'Muneeb Ali is a distributed systems PhD from Princeton and gives guest lectures on cloud computing there. He went through Y Combinator and was awarded a J. William Fulbright Fellowship.'
+      'Muneeb Ali is the co-founder of Blockstack and serves as the CEO of Blockstack PBC. He received his PhD in distributed systems from Princeton University and gives guest lectures on cloud computing there. He was awarded a J. William Fulbright Fellowship and his PhD dissertation was nominated by Princeton for the ACM SIGCOMM dissertation award.'
   },
   {
     name: 'Albert Wenger',
     blockstackId: 'albertwenger',
     bio:
-      'Albert Wenger has served as a member of the board of directors since December 2016. Mr. Wenger is a managing partner at Union Square Ventures (USV), where he has led a variety of investments including USV’s investments in Etsy (IPO), MongoDB (IPO), Twilio (IPO),  Behance (acquired by Adobe), and Firebase (acquired by Google).'
+      'Albert Wenger is a managing partner at Union Square Ventures (USV), where he has led a variety of investments including USV’s investments in Etsy (IPO), MongoDB (IPO), Twilio (IPO), Behance (acquired by Adobe), and Firebase (acquired by Google). Albert graduated from Harvard College in economics and computer science and holds a Ph.D. in Information Technology from MIT.'
   },
   {
     blockstackId: 'jpsingh',
     name: 'JP Singh',
     bio:
-      'JP Singh received his PhD from from Stanford University and is a leading authority on scalable infrastructure and applications. He is the director of the Princeton CTO Program, serves on the board of 8x8, Inc., and has been a consultant to Intel, Microsoft, and the U.S. Government.'
+      'JP Singh has been a computer science faculty member at Princeton University since 1995. He received his PhD from from Stanford University and is a leading authority on scalable infrastructure and applications. He is the director of the Princeton CTO Program, serves on the board of 8x8, Inc., and has been a consultant to Intel, Microsoft, and the U.S. Government.'
   }
 ]
 
@@ -36,7 +36,7 @@ export const teamMembers = [
     blockstackId: 'muneeb',
     name: 'Muneeb Ali',
     bio:
-      'Muneeb Ali is a distributed systems PhD from Princeton and gives guest lectures on cloud computing there. He went through Y Combinator and was awarded a J. William Fulbright Fellowship.'
+      'Muneeb Ali is the co-founder of Blockstack and serves as the CEO of Blockstack PBC. He received his PhD in distributed systems from Princeton University and gives guest lectures on cloud computing there. He was awarded a J. William Fulbright Fellowship and his PhD dissertation was nominated by Princeton for the ACM SIGCOMM dissertation award.'
   },
   {
     blockstackId: 'judecn',
