@@ -33,6 +33,12 @@ export const advisors = [
 
 export const teamMembers = [
   {
+    blockstackId: 'muneeb',
+    name: 'Muneeb Ali',
+    bio:
+      'Muneeb Ali is a distributed systems PhD from Princeton and gives guest lectures on cloud computing there. He went through Y Combinator and was awarded a J. William Fulbright Fellowship.'
+  },
+  {
     blockstackId: 'judecn',
     name: 'Jude Nelson',
     bio:
