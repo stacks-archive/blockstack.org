@@ -150,6 +150,11 @@ class MainMenu extends React.PureComponent {
                   </InternalLink>
                 </li>
                 <li>
+                  <InternalLink href="/pbc" className="p md">
+                    Blockstack PBC
+                  </InternalLink>
+                </li>
+                <li>
                   <InternalLink href={this.props.links.faq} className="p md">
                     FAQ
                   </InternalLink>
