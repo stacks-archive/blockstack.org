@@ -4,6 +4,7 @@ const ogImage = require('@assets/images/photos/blockstackteam-1.jpg')
 const meta = {
   path: '/pbc',
   title: 'About Blockstack PBC',
+  desc: 'Blockstack PBC, a Public Benefit Corp, upholds specific commitments to the greater public good in addition to stockholder interests. The mission of Blockstack PBC is to enable an open, decentralized internet.',
   ogImage
 }
 

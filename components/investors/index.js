@@ -14,19 +14,9 @@ const list = [
     slug: 'ycombinator'
   },
   {
-    name: 'SV Angel',
-    href: 'https://svangel.com/',
-    slug: 'sva'
-  },
-  {
     name: 'Lux Capital',
     href: 'https://www.luxcapital.com/',
     slug: 'lux'
-  },
-  {
-    name: 'Version One',
-    href: 'https://versionone.vc/',
-    slug: 'version-one'
   },
   {
     name: 'Digital Currency Group',
@@ -34,15 +24,26 @@ const list = [
     slug: 'dcg'
   },
   {
-    name: 'Shana Fisher',
-    href: 'https://angel.co/shana-fisher',
-    slug: 'shana-fisher'
+    name: 'SV Angel',
+    href: 'https://svangel.com/',
+    slug: 'sva'
+  },
+  {
+    name: 'Version One',
+    href: 'https://versionone.vc/',
+    slug: 'version-one'
   },
   {
     name: 'Naval Ravikant',
     href: 'https://angel.co/naval',
     slug: 'naval-ravikant'
   },
+  {
+    name: 'Shana Fisher',
+    href: 'https://angel.co/shana-fisher',
+    slug: 'shana-fisher'
+  },
+
   {
     name: 'Kal Vepuri',
     href: 'https://angel.co/kal',
