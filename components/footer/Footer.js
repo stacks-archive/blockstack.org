@@ -48,7 +48,7 @@ class Footer extends Component {
                 </li>
                 <li>
                   <a href={bslinks.github} className="p sm">
-                    Github
+                    GitHub
                   </a>
                 </li>
                 <li>

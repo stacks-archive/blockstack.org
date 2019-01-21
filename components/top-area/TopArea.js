@@ -155,7 +155,7 @@ const TopArea = (props) => {
               </li>
               <li>
                 <a href={props.links.github} target="blank">
-                  Github
+                  GitHub
                 </a>
               </li>
             </ul>
