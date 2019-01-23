@@ -58,7 +58,7 @@ class MainMenu extends React.PureComponent {
                 </li>
                 <li>
                   <a href={this.props.links.github} className="p md">
-                    Github
+                    GitHub
                   </a>
                 </li>
                 <li>
