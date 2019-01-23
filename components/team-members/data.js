@@ -178,5 +178,17 @@ export const teamMembers = [
         <em>Law Review</em>.
       </>
     )
+  },
+  {
+    blockstackId: 'zone117x',
+    name: 'Matthew Little',
+    bio:
+      'Matt is a Full stack engineer, involved in blockchain related development for over 5 years. He worked as a lead developer at several startups, shipping both developer and consumer facing products. Prior to Blockstack, Matt was a senior engineer at Hosho and lead development on an Ethereum smart contract development and testing tool suite.'
+  },
+  {
+    blockstackId: 'saurabhp1',
+    name: 'Saurabh Pathak',
+    bio:
+      'Prior to Blockstack, Saurabh Pathak worked at BlackRock for 10 years, where he was the Controller for the Americas region and CFO of Canada and BlackRock’s broker-dealers. Saurabh’s experience includes M&A (due diligence/valuations/integrations), finance and accounting, taxation and regulatory reporting. His previous work experience includes Ernst & Young and Deloitte & Touche. Saurabh is a Chartered Accountant and a Certified Public Accountant and holds a Series 27 license. He obtained his Bachelors in Accounting from Mumbai University.'
   }
 ]
