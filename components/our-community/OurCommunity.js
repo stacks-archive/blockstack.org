@@ -140,7 +140,7 @@ class OurCommunity extends Component {
                 </li>
                 <li>
                   <a href={this.props.links.github} target="_blank">
-                    Github
+                    GitHub
                   </a>
                 </li>
                 <li>
