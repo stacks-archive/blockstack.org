@@ -51,12 +51,6 @@ export const teamMembers = [
       'Aaron joined the Blockstack engineering team from an academic background, finishing his PhD in 2017. His doctoral research spanned a range of topics, mostly focusing on web application performance and security. He’s worked in information flow tracking systems, caching algorithms, compilers, and applied cryptography. 10+ years of Emacs usage.'
   },
   {
-    blockstackId: 'larry',
-    name: 'Larry Salibra',
-    bio:
-      'Larry Salibra co-founded Pay4Bugs, a crowdsourced security analysis and software testing platform, and is a founding member of the Bitcoin Association of Hong Kong. His work exposed private data leakage in Chinese Tinder clone Tantan, and how Apple censors apps in China.'
-  },
-  {
     blockstackId: 'abramsgina',
     name: 'Gina Abrams',
     bio:
@@ -129,12 +123,6 @@ export const teamMembers = [
       'Virginia is a Blockstack Engineering Partner, focusing on DevOps, developing microservices and infrastructure for the decentralized web. She has a degree in Electrical Engineering from RPI, and previously worked as an Engineer in Operations for open market access for electrical power. She is interested in information privacy and democracy in the digital world.'
   },
   {
-    blockstackId: 'liz.id.blockstack',
-    name: 'Elizabeth Thys',
-    bio:
-      'Liz is a Blockstack Operations Partner. Prior to Blockstack, she co-founded limeSHIFT, a creative agency that aligns people, place and purpose, which emerged from a collaboration between MIT Sloan School of Management and MIT Department of Urban Studies and Planning. She received a BS in Mechanical Engineering from Tufts University and an MBA from MIT Sloan School of Management. '
-  },
-  {
     blockstackId: 'shrey',
     name: 'Shreyas Thiagaraj',
     bio:
@@ -189,6 +177,6 @@ export const teamMembers = [
     blockstackId: 'saurabhp1',
     name: 'Saurabh Pathak',
     bio:
-      'Prior to Blockstack, Saurabh Pathak worked at BlackRock for 10 years, where he was the Controller for the Americas region and CFO of Canada and BlackRock’s broker-dealers. Saurabh’s experience includes M&A (due diligence/valuations/integrations), finance and accounting, taxation and regulatory reporting. His previous work experience includes Ernst & Young and Deloitte & Touche. Saurabh is a Chartered Accountant and a Certified Public Accountant and holds a Series 27 license. He obtained his Bachelors in Accounting from Mumbai University.'
+      'Prior to Blockstack, Saurabh Pathak worked at BlackRock for 10 years, where he was the Controller for the Americas region, overseeing $4 trillion of assets, and CFO of Canada and BlackRock’s broker-dealers. Saurabh’s experience includes M&A (due diligence/valuations/integrations), finance and accounting, taxation and regulatory reporting. His previous work experience includes Ernst & Young and Deloitte & Touche. Saurabh is a Chartered Accountant and a Certified Public Accountant and holds a Series 27 license. He obtained his Bachelors in Accounting from Mumbai University.'
   }
 ]
