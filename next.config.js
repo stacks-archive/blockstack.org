@@ -17,7 +17,14 @@ const config = {
   },
   pageExtensions: ['js', 'jsx', 'mdx'],
   webpack(config, options) {
-    config.resolve = resolve
+    config.resolve = {
+      ...config.resolve,
+      ...resolve,
+      alias: {
+        ...config.resolve.alias,
+        ...resolve.alias
+      }
+    }
     config.module.rules.push({
       test: /\.(woff|woff2|eot|ttf|svg)$/,
       loader: 'url-loader?limit=100000',
