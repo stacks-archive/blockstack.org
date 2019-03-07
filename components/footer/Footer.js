@@ -205,7 +205,6 @@ class Footer extends Component {
               <div className="bs-logo">
                 <Logo />
               </div>
-              <div className="bs-logotype ml-2">{LogoType()}</div>
             </div>
           </div>
         </div>

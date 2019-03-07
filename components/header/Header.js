@@ -13,8 +13,6 @@ const StyledHeaderWrapper = styled.div`
   a {
     text-decoration: none !important;
   }
-
-
 `
 
 class Header extends Component {
@@ -90,8 +88,9 @@ class Header extends Component {
                         }}
                       >
                         <div className="grid-flex no-break no-gutter middle left">
-                          <div className="bs-logo">{Logo()}</div>
-                          <div className="bs-logotype ml-1">{LogoType()}</div>
+                          <div className="bs-logo">
+                            <Logo />
+                          </div>
                         </div>
                       </InternalLink>
                     </div>

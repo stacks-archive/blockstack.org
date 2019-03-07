@@ -35,7 +35,7 @@ const bslinks = {
   youtube: 'https://www.youtube.com/channel/UC3J2iHnyt2JtOvtGVf_jpHQ',
   videos: '/videos',
   twitter: 'https://www.twitter.com/blockstack/',
-  branding: 'https://projects.invisionapp.com/boards/HE2VVROFSGB27/',
+  branding: 'https://branding.blockstack.design/',
   install: '/install',
   liveApps: 'https://app.co/platform/blockstack',
   whitePapers: '/papers',
