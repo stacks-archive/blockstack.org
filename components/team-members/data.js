@@ -177,6 +177,6 @@ export const teamMembers = [
     blockstackId: 'saurabhp1',
     name: 'Saurabh Pathak',
     bio:
-      'Prior to Blockstack, Saurabh Pathak worked at BlackRock for 10 years, where he was the Controller for the Americas region, overseeing $4 trillion of assets, and CFO of Canada and BlackRock’s broker-dealers. Saurabh’s experience includes M&A (due diligence/valuations/integrations), finance and accounting, taxation and regulatory reporting. His previous work experience includes Ernst & Young and Deloitte & Touche. Saurabh is a Chartered Accountant and a Certified Public Accountant and holds a Series 27 license. He obtained his Bachelors in Accounting from Mumbai University.'
+      'Prior to Blockstack, Saurabh Pathak worked at BlackRock for 10 years, where he was the Controller for the Americas region, overseeing $4 trillion of assets under management, and CFO of Canada and BlackRock’s broker-dealers. Saurabh’s experience includes M&A (due diligence/valuations/integrations), finance and accounting, taxation and regulatory reporting. His previous work experience includes Ernst & Young and Deloitte & Touche. Saurabh is a Chartered Accountant and a Certified Public Accountant and holds a Series 27 license. He obtained his Bachelors in Accounting from Mumbai University.'
   }
 ]
