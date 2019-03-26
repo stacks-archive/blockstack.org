@@ -17,5 +17,11 @@
 - Up to 16 weeks of 100% paid parental leave.
 - Pre-tax commuter benefits.
 - Daily lunch (even if you’re remote!)
-- Unlimited sick days and three weeks (15 days) paid-time-off where your team will proactively encourage to actually use the time off.
+- Unlimited sick days and three weeks (15 days) paid-time-off where your team will proactively encourage you to actually use the time off. <span id="openings"></span>
 - Your choice of technical set up and equipment. Remote workers can expense co-working spaces.
+
+
+
+
+
+
