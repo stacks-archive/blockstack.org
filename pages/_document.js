@@ -1,7 +1,6 @@
 import React from 'react'
 import Document, { Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
-
 import { GA_TRACKING_ID } from '@common/lib/gtag'
 
 
