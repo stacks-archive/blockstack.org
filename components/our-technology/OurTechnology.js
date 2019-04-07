@@ -33,7 +33,7 @@ const cards = [
   {
     title: 'Blockstack Naming System',
     link:
-      'https://github.com/blockstack/blockstack-core/blob/master/docs/blockstack_naming_service.md',
+      'https://docs.blockstack.org/core/naming/introduction.html',
     description: 'Discover apps and people'
   },
   {
