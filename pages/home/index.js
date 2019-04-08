@@ -1,12 +1,7 @@
 import React, { Component } from 'react'
-import { bslinks } from '@common'
-import TopArea from '@components/top-area'
-import AppsGrid from '@components/apps-grid'
-import WhyBS from '@components/why-bs'
-import OurTechnology from '@components/our-technology'
-import OurCommunity from '@components/our-community'
-import FundApp from '@components/fund-app'
-import Mission from '@components/mission'
+import { headerHeight } from '@common/constants'
+import { Section } from '@components/v2/section'
+import { Box, Flex } from 'blockstack-ui'
 
 const meta = {
   path: '/',
@@ -24,15 +19,30 @@ class HomePage extends React.PureComponent {
     const { data } = this.props
 
     return (
-      <div>
-        <TopArea links={bslinks} />
-        <AppsGrid links={bslinks} />
-        <WhyBS />
-        <OurTechnology />
-        <OurCommunity links={bslinks} />
-        <FundApp links={bslinks} />
-        <Mission />
-      </div>
+      <Box bg="white" minHeight="100vh" pt={headerHeight}>
+        <Section minHeight={'60vh'} variant="white">
+          <Section.Pane>
+            <Section.Title>
+              Easily build blockchain apps that scale
+            </Section.Title>
+            <Section.Text>
+              Get started with our{' '}
+              <Section.Text is="a" href="">
+                Zero-to-Dapp tutorial
+              </Section.Text>
+              ,{' '}
+              <Section.Text is="a" href="">
+                view our documentation
+              </Section.Text>
+              , or{' '}
+              <Section.Text is="a" href="">
+                visit our Github
+              </Section.Text>
+              .
+            </Section.Text>
+          </Section.Pane>
+        </Section>
+      </Box>
     )
   }
 }

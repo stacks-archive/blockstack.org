@@ -1,15 +1,16 @@
 import App, { Container } from 'next/app'
 import React from 'react'
 import Header from '@components/header'
-import Footer from '@components/footer'
+import { Box } from 'blockstack-ui'
 import NoTemplate from '@components/templates/none'
-import DefaultPageTemplate from '@components/templates/default'
 import Head from 'next/head'
 import { Mdx } from '@components/mdx'
 import withReduxStore from '@common/withReduxStore'
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle, ThemeProvider, css } from 'styled-components'
+
 import { Provider as ReduxProvider } from 'redux-bundler-react'
-import { styles } from '@common/legacy-styles'
+import { normalize } from 'polished'
+import { theme } from '@common/theme'
 
 const fetchOurData = async (ctx) => {
   if (!ctx.reduxStore.selectJobs()) {
@@ -17,72 +18,25 @@ const fetchOurData = async (ctx) => {
   }
 }
 
-const Global = createGlobalStyle`
-.header{
-  a:link{
-    text-decoration: none !important;
+const styles = css`
+  ${normalize};
+  html,
+  body {
+    font-family: ${theme.fonts.default};
+    font-size: 16px;
+    line-height: 1.25rem;
   }
-  div.col.center.align-center{
-    z-index: 999999;
-    max-width: calc(100% - 120px)
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
   }
-  .es-logo{
-    display: inline-block !important;
-    text-decoration: none !important;
-    &:hover{
-    text-decoration: none !important;    
-    border-bottom-color: transparent !important;
-    }
-  }
-  .menu-toggle{
-    position: relative;
-    z-index: 9999999;
-  }
-  transition: 0.25s all ease-in-out;
-  svg .logo-bg{
-    transition: 0.25s all ease-in-out;
-  }
-}
-.headroom.headroom--scrolled{
-  box-shadow: 0 3px 12px rgba(37,0,105,.32);
-    .bs-logo {
-      transform: scale(1) transformY(1px);
-    }
-    .bs-logotype {
-      opacity: 0;
-      visibility: hidden;
-      transform: translate3d(-16px, 0, 0);
-    }
-  .center-actions {
-    .button.main-action,
-    .newsletter-form {
-      opacity: 1;
-      visibility: visible;
-      transform: none;
-      svg {
-        * {
-          mix-blend-mode: screen;
-          fill: white !important;
-        }
-      }
-    }
-  }
-  .header{
-    background:#211f6d;
-    svg .logo-bg{
-      fill: transparent!important;
-    }   
-  }
-}`
+`
+const renderTemplate = (template) => NoTemplate
 
-const renderTemplate = (template) => {
-  switch (template) {
-    case 'NONE':
-      return NoTemplate
-    default:
-      return DefaultPageTemplate
-  }
-}
+const GlobalStyles = createGlobalStyle`
+${styles}
+`
 
 class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
@@ -123,10 +77,8 @@ class MyApp extends App {
       <ReduxProvider store={this.props.store}>
         <Mdx>
           <Container>
-            <Global />
             <Head>
               <script src="https://cdn.polyfill.io/v2/polyfill.min.js" />
-              <style dangerouslySetInnerHTML={{ __html: styles }} />
               <title>{title}</title>
               <meta name="theme-color" content="#3700ff" />
               <meta charSet="UTF-8" />
@@ -135,17 +87,13 @@ class MyApp extends App {
                 content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
               />
             </Head>
-
-            <div className="landing-page">
-              <Header />
-              <PageComponent {...pageProps} />
-              <Footer />
-              <script
-                type="text/javascript"
-                src="https://my.hellobar.com/5782236799c23fe13e1cd8418582245ed81294f4.js"
-                async="async"
-              />
-            </div>
+            <GlobalStyles />
+            <ThemeProvider theme={theme}>
+              <Box>
+                <Header />
+                <PageComponent {...pageProps} />
+              </Box>
+            </ThemeProvider>
           </Container>
         </Mdx>
       </ReduxProvider>
