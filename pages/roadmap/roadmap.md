@@ -68,7 +68,7 @@
 - Announced the \$1M request for social networks program.
 - Deployed Signature fund capital to app development teams.
 
-## Exit R&D Phase
+### Exit R&D Phase
 
 ---
 
