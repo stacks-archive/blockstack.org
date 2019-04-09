@@ -70,6 +70,8 @@
 
 ## Exit R&D Phase
 
+---
+
 ### 2017 Q4
 
 - Conducted a token sale which resulted in ~\$50 million total raised, and over 800 accredited investors, qualified purchasers, and institutions participating.
