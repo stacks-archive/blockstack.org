@@ -54,7 +54,7 @@ export const teamMembers = [
     blockstackId: 'abramsgina',
     name: 'Gina Abrams',
     bio:
-      'Gina Abrams studied Psychology and Social Sciences at Binghamton University. Previously she spent two years in agency technical recruiting, during which time she assisted numerous NYC start-ups in mission critical DevOps, SRE and Security hires.'
+      'Gina is Growth and People Operations Partner at Blockstack. Previously she spent two years in technical recruiting, during which time she assisted numerous NYC start-ups in DevOps, SRE and Security hires.'
   },
   {
     blockstackId: 'pstanley',
@@ -144,13 +144,13 @@ export const teamMembers = [
     blockstackId: 'aulneau',
     name: 'Thomas Osmonson',
     bio:
-      'Thomas Osmonson is a product engineer working at the boundary of design and development. He likes wearing many hats ranging from visual design to building performant web/native applications. Previously as an independent, he has helped agencies, startups, and founders build and design useful, beautiful products. He has an affinity for the wilderness, street photography, and traveling.'
+      'Thomas Osmonson is a Product Engineering Partner at Blockstack. He likes wearing many hats ranging from visual design to building performant web/native applications. Previously as an independent, he has helped agencies, startups, and founders build and design useful, beautiful products. He has an affinity for the wilderness, street photography, and traveling.'
   },
   {
     blockstackId: 'markmhendrickson',
     name: 'Mark Hendrickson',
     bio:
-      'Mark is a product manager from San Francisco with over a decade designing, developing and marketing Web and mobile applications for startups. He now lives in Barcelona in self-imposed exile having launched a number of products in Silicon Valley such as Plancast, KITE, Lift and CrunchBase.'
+      'Mark is a Product Manager from San Francisco with over a decade designing, developing and marketing Web and mobile applications for startups. He now lives in Barcelona in self-imposed exile having launched a number of products in Silicon Valley such as Plancast, KITE, Lift and CrunchBase.'
   },
   {
     blockstackId: 'fredericklee',
@@ -171,12 +171,30 @@ export const teamMembers = [
     blockstackId: 'zone117x',
     name: 'Matthew Little',
     bio:
-      'Matt is a Full stack engineer, involved in blockchain related development for over 5 years. He worked as a lead developer at several startups, shipping both developer and consumer facing products. Prior to Blockstack, Matt was a senior engineer at Hosho and lead development on an Ethereum smart contract development and testing tool suite.'
+      'Matt is a Full Stack Engineer, involved in blockchain related development for over 5 years. He worked as a lead developer at several startups, shipping both developer and consumer facing products. Prior to Blockstack, Matt was a senior engineer at Hosho and lead development on an Ethereum smart contract development and testing tool suite.'
   },
   {
     blockstackId: 'saurabhp1',
     name: 'Saurabh Pathak',
     bio:
-      'Prior to Blockstack, Saurabh Pathak worked at BlackRock for 10 years, where he was the Controller for the Americas region, overseeing $4 trillion of assets under management, and CFO of Canada and BlackRock’s broker-dealers. Saurabh’s experience includes M&A (due diligence/valuations/integrations), finance and accounting, taxation and regulatory reporting. His previous work experience includes Ernst & Young and Deloitte & Touche. Saurabh is a Chartered Accountant and a Certified Public Accountant and holds a Series 27 license. He obtained his Bachelors in Accounting from Mumbai University.'
+      'Prior to Blockstack, Saurabh Pathak worked at BlackRock for 10 years, where he was the Controller for the Americas region, overseeing $4 trillion of assets, and CFO of Canada and BlackRock’s broker-dealers. Saurabh’s experience includes M&A (due diligence/valuations/integrations), finance and accounting, taxation and regulatory reporting. His previous work experience includes Ernst & Young and Deloitte & Touche. Saurabh is a Chartered Accountant and a Certified Public Accountant and holds a Series 27 license. He obtained his Bachelors in Accounting from Mumbai University.'
+  },
+  {
+    blockstackId: 'jjansz',
+    name: 'Jasper Jansz',
+    bio:
+      'Jasper works as a Product Designer at Blockstack. Previously, he was the first hire and led the design efforts of Blockport. As an independent, he designed products for one of the largest shoe retailers in Europe, terror-prevention software for the Ministry of Defence, and multiple cryptocurrency products.'
+  },
+  {
+    blockstackId: 'timtest10.id.blockstack',
+    name: 'Tim Wells',
+    bio:
+      'Tim is Engineering Partner, focusing on QA at Blockstack. Prior to joining Blockstack he helped several startups improve quality including as Engineering Manager of the Engineering Effectiveness team at GitHub, Headed mobile Automation Testing at livingsocial.com and as Manager of QA for urbanoutfitters.com. Tim received his B.S. in Computer Science from Hampton University in Virginia and did his graduate studies at Widener University.'
+  },
+  {
+    blockstackId: 'brittany',
+    name: 'Brittany Laughlin',
+    bio:
+      "Brittany is Blockstack's Growth Partner. She’s spent 6 years investing in blockchain and network effect businesses through her own firm, Lattice Ventures, and on the investment team at Union Square Ventures. A serial entrepreneur, she's built 3 companies, including gtrot which sold to Groupon. Her work focuses on the intersection of community and technology."
   }
 ]
