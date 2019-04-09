@@ -9,7 +9,7 @@
   "dependencies": {
     "@mdx-js/mdx": "^0.15.5",
     "@mdx-js/tag": "^0.15.0",
-    "blockstack-ui": "^0.0.72",
+    "blockstack-ui": "^0.0.78",
     "codemirror": "^5.40.2",
     "cross-fetch": "^2.2.2",
     "debounce": "^1.2.0",

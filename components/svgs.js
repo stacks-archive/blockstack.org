@@ -1,7 +1,16 @@
 import React from 'react'
-import { BlockstackLogo } from 'blockstack-ui'
+import { BlockstackLogo, BlockLogo, Box } from 'blockstack-ui'
 
-const Logo = (props) => <BlockstackLogo typeSize={22} {...props} />
+const Logo = (props) => (
+  <>
+    <Box display={['block', 'block', 'none']}>
+      <BlockLogo size={28} />
+    </Box>
+    <Box display={['none', 'none', 'block']}>
+      <BlockstackLogo typeSize={22} {...props} />
+    </Box>
+  </>
+)
 
 const LogoWhite = () => (
   <svg width="35.409px" height="36px" viewBox="0 0 35.409 36">
