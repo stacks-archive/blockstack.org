@@ -38,7 +38,7 @@ const bslinks = {
   twitter: 'https://www.twitter.com/blockstack/',
   branding: 'https://branding.blockstack.design/',
   install: '/install',
-  liveApps: 'https://app.co/platform/blockstack',
+  liveApps: 'https://app.co/mining/march-2019',
   whitePapers: '/papers',
   about: '/about',
   whatIsBs: '/what-is-blockstack',
@@ -55,7 +55,8 @@ const bslinks = {
   telegramEnglish: 'https://t.me/BlockstackChat',
   telegramChinese: 'https://t.me/BlockstackChinese',
   appMining: 'https://app.co/mining',
-  emailArchive: 'https://us14.campaign-archive.com/home/?u=394a2b5cfee9c4b0f7525b009&id=0e5478ae86'
+  emailArchive:
+    'https://us14.campaign-archive.com/home/?u=394a2b5cfee9c4b0f7525b009&id=0e5478ae86'
 }
 
 const blogAuthors = {
