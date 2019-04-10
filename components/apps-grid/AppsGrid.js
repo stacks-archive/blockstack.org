@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import AppCard from './components/AppCard.js'
 import Card from '@components/card'
-import { Box } from 'blockstack-ui'
+import { Box, Flex } from 'blockstack-ui'
 import { Image } from '@components/image'
 
 const cards = [
@@ -64,34 +64,38 @@ class AppsGrid extends Component {
                 )
               })}
               <div className="col">
-                <Card
-                  className="p-gutter app-card dark large-icon flex-center"
+                <Box
                   href={this.props.links.liveApps}
+                  is={Card}
+                  display="flex"
+                  alignItems="center"
+                  className={
+                    'p-2 app-card dark large-icon ' + this.props.className
+                  }
+                  target="_blank"
+                  style={{ display: 'flex !important', alignItems: 'center' }}
                 >
-                  <div>
-                    <div className="grid-flex no-break middle">
-                      <div className="col no-grow">
-                        <div className="icon-wrap">
-                          <Image
-                            className="icon"
-                            noBlur
-                            src="images/app-co-icon.png"
-                          />
-                        </div>
-                      </div>
+                  <Box pr={3}>
+                    <Box size={70}>
+                      <Image
+                        style={{
+                          maxWidth: '100%'
+                        }}
+                        className="icon"
+                        noBlur
+                        src="images/app-co-icon.png"
+                      />
+                    </Box>
+                  </Box>
 
-                      <div className="col grow align-left">
-                        <div className="app-desc">
-                          <p className="underline-hover">
-                            View all live{' '}
-                            <Box display={['none', 'none', 'unset']} is="br" />
-                            Blockstack dapps
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Card>
+                  <Box>
+                    <p className="underline-hover">
+                      View all live{' '}
+                      <Box display={['none', 'none', 'unset']} is="br" />
+                      Blockstack dapps
+                    </p>
+                  </Box>
+                </Box>
               </div>
             </div>
           </div>
