@@ -32,6 +32,7 @@ const bslinks = {
   slack: 'http://chat.blockstack.org/',
   meetup: 'https://www.meetup.com/topics/blockstack/',
   blog: '/blog',
+  roadmap: '/roadmap',
   youtube: 'https://www.youtube.com/channel/UC3J2iHnyt2JtOvtGVf_jpHQ',
   videos: '/videos',
   twitter: 'https://www.twitter.com/blockstack/',
