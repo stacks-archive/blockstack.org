@@ -6,7 +6,7 @@ export const videoData = [
     date: 'Jan 30, 2019',
     speaker: 'Muneeb Ali',
     youtubeURL: 'https://www.youtube.com/watch?v=hHFcDjeugYc',
-    urlSlug: 'what-will-replace-facebook',
+    urlSlug: 'welcome-to-decentralized-computing',
     image: 'images/videos/muneeb-kuwait.png'
   },
   {
