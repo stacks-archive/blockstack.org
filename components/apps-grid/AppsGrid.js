@@ -1,8 +1,56 @@
 import React, { Component } from 'react'
 import AppCard from './components/AppCard.js'
-import Card from '@components/card'
 import { Box, Flex } from 'blockstack-ui'
 import { Image } from '@components/image'
+import { Hover } from 'react-powerplug'
+
+const AppCoLink = ({ href, ...rest }) => (
+  <Hover>
+    {({ hovered, bind }) => (
+      <Box
+        is={'a'}
+        width={1}
+        href={href}
+        display="flex"
+        alignItems="center"
+        target="_blank"
+        bg={'#211f6d'}
+        p="1rem"
+        flexGrow={1}
+        borderRadius="3px"
+        boxShadow={
+          hovered
+            ? '0 6px 18px rgba(37,0,105,.32)'
+            : '0 3px 12px rgba(37,0,105,.32)'
+        }
+        cursor={hovered ? 'pointer' : 'unset'}
+        style={{ display: 'flex !important', alignItems: 'center' }}
+        transition="all .2s ease-in-out"
+        transform={hovered ? 'translateY(-5px)' : 'none'}
+        {...rest}
+        {...bind}
+      >
+        <Box pr={3}>
+          <Box size={70}>
+            <Image
+              style={{
+                maxWidth: '100%'
+              }}
+              className="icon"
+              noBlur
+              src="images/app-co-icon.png"
+            />
+          </Box>
+        </Box>
+
+        <Box lineHeight="25px">
+          View all live <Box display={['none', 'none', 'unset']} is="br" />
+          Blockstack dapps
+        </Box>
+      </Box>
+    )}
+  </Hover>
+)
 
 const cards = [
   {
@@ -63,39 +111,8 @@ class AppsGrid extends Component {
                   </div>
                 )
               })}
-              <div className="col">
-                <Box
-                  href={this.props.links.liveApps}
-                  is={Card}
-                  display="flex"
-                  alignItems="center"
-                  className={
-                    'p-2 app-card dark large-icon ' + this.props.className
-                  }
-                  target="_blank"
-                  style={{ display: 'flex !important', alignItems: 'center' }}
-                >
-                  <Box pr={3}>
-                    <Box size={70}>
-                      <Image
-                        style={{
-                          maxWidth: '100%'
-                        }}
-                        className="icon"
-                        noBlur
-                        src="images/app-co-icon.png"
-                      />
-                    </Box>
-                  </Box>
-
-                  <Box>
-                    <p className="underline-hover">
-                      View all live{' '}
-                      <Box display={['none', 'none', 'unset']} is="br" />
-                      Blockstack dapps
-                    </p>
-                  </Box>
-                </Box>
+              <div className="col" style={{ display: 'flex' }}>
+                <AppCoLink href={this.props.links.liveApps} />
               </div>
             </div>
           </div>
