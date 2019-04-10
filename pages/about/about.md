@@ -39,19 +39,4 @@ Blockstack PBC is building core protocols and developer tools for the Blockstack
 
 Blockstack was started by Muneeb Ali and Ryan Shea in 2013. The first public launch of a registrar service (called the Onename App) was in March 2014 and the company went through Y Combinator in summer 2014. After YC, the company raised a Seed round led by Union Square Ventures. The company closed a Series A in January 2017, again led by Union Square Ventures, with investors including Lux Capital, Naval Ravikant, and Shana Fisher. Blockstack became a Public Benefit Corp in September 2017.
 
-### The Blockstack Manifesto
-
-Blockstack believes that every individual is empowered with the following rights:
-
-1. The right to own digital property, including data created by a user in-app
-2. The right to choose how you interact with your digital property
-3. Freedom of speech, which include words, code & money, and no 3rd party should have veto power over the words a user wants to say, the code a user wants to run or a transfer of value the user wants to make
-4. The right to Privacy: Users’ private information should remain private unless they choose otherwise
-5. Freedom of assembly: Users should be able to interact with whomever they desire without a middleman who can track, prevent, or influence the interaction
-6. Freedom of choice: Users should have the right to switch or exit services and applications without loss of their personal data
-7. The right not to be a ‘hostage’ to powers in a given network
-8. The right to be forgotten
-9. The right to access your information
-10. The right to “win” when a user instruction on a device and a remote instruction are in conflict.
-
 <TeamMembers />
