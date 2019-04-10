@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import AppCard from './components/AppCard.js'
 import Card from '@components/card'
-import Arrow from '@components/outline-arrow'
+import { Box } from 'blockstack-ui'
 import { Image } from '@components/image'
-
 
 const cards = [
   {
@@ -80,18 +79,16 @@ class AppsGrid extends Component {
                           />
                         </div>
                       </div>
+
                       <div className="col grow align-left">
                         <div className="app-desc">
                           <p className="underline-hover">
-                            View all live Blockstack dapps
+                            View all live{' '}
+                            <Box display={['none', 'none', 'unset']} is="br" />
+                            Blockstack dapps
                           </p>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="ml-1 view-arrow">
-                    <div className="bs-outline-arrow">
-                      <Arrow />
                     </div>
                   </div>
                 </Card>
