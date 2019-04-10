@@ -196,11 +196,5 @@ export const teamMembers = [
     name: 'Brittany Laughlin',
     bio:
       "Brittany is Blockstack's Growth Partner. She’s spent 6 years investing in blockchain and network effect businesses through her own firm, Lattice Ventures, and on the investment team at Union Square Ventures. A serial entrepreneur, she's built 3 companies, including gtrot which sold to Groupon. Her work focuses on the intersection of community and technology."
-  },
-  {
-    blockstackId: 'diwaker',
-    name: 'Diwaker Gupta',
-    bio:
-      'Diwaker is our Head of Engineering. He is an engineering leader with a decade of diverse experiences: Early-stage startups, acquisitions, late-stage company going through IPO. Shipped enterprise software, appliances; managed large-scale infra services for SaaS; managed search quality and machine learning teams. Built and managed multiple remote teams.'
   }
 ]
