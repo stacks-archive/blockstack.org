@@ -56,8 +56,7 @@ const cards = [
 class AppsGrid extends Component {
   render() {
     return (
-      <section className="app-grid mb-2">
-        <div className="div triangle up" />
+      <section className="app-grid blue-bg">
         <div className="hang-section-title">
           <div className="container">
             <div className="align-center pb-3 mb-1">
@@ -114,9 +113,6 @@ class AppsGrid extends Component {
               </div>
             </div>
           </div>
-          <FloatingTriangle>
-            <BigTriangle />
-          </FloatingTriangle>
         </div>
       </section>
     )
