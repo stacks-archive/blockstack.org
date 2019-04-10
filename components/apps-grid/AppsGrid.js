@@ -3,53 +3,38 @@ import AppCard from './components/AppCard.js'
 import Card from '@components/card'
 import Arrow from '@components/outline-arrow'
 import { Image } from '@components/image'
-import styled from 'styled-components'
-import { BigTriangle } from '@components/svgs'
 
-const FloatingTriangle = styled.div`
-  position: absolute;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  opacity: 0.35;
-  overflow: hidden;
-  svg {
-    display: block;
-    transform: rotate(180deg) translateY(200px);
-  }
-`
+
 const cards = [
   {
     title: 'Graphite',
-    icon: 'images/app-graphite.png',
-    link: 'https://github.com/Graphite-Docs/graphite',
+    icon: 'images/apps/graphite.png',
+    link: 'https://www.graphitedocs.com/',
     description: 'Collaborative decentralized docs'
   },
   {
-    title: 'Stealthy',
-    icon: 'images/app-stealthy.png',
-    link: 'https://github.com/stealthyim/webapp',
-    description: 'Decentralized Communication Protocol'
+    title: 'Blockusign',
+    icon: 'images/apps/blockusign.jpg',
+    link: 'https://blockusign.co',
+    description: 'Encrypted document signing and digital notary.'
   },
   {
-    title: 'Fupio',
-    icon: 'images/app-fupio.png',
-    link: 'https://github.com/fupio/fupio',
-    description: 'Social micro-blogging app with tags'
+    title: 'Recall',
+    icon: 'images/apps/recall.jpg',
+    link: 'https://app.recall.photos/',
+    description: 'Your end-to-end encrypted and open-source photo vault app.'
   },
   {
-    title: 'Kanstack',
-    icon: 'images/app-kanstack.png',
-    link: 'https://github.com/hstove/kanstack',
-    description: 'Decentralized Kanban sprint board'
+    title: 'BlockVault',
+    icon: 'images/apps/blockvault.png',
+    link: 'https://blockvault.site/',
+    description: 'Decentralized password manager for teams.'
   },
   {
-    title: 'Dappy Wallet',
-    icon: 'images/app-dappy.png',
-    link: 'https://github.com/BCNetio/BlockStackWallet',
-    description: 'Multicurrency decentralized wallet'
+    title: 'Sigle',
+    icon: 'images/apps/sigle.png',
+    link: 'https://www.sigle.io/',
+    description: 'A beautiful decentralised and open source blog maker.'
   }
 ]
 
