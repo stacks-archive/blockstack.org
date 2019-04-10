@@ -107,10 +107,9 @@ const News = ({ items, limit = 5, users, ...rest }) =>
         </Flex>
       </Flex>
       <Box flexShrink={0} width={[1, 1, 1, 2 / 3]}>
-        {console.log(getNewsItems(items).map(({ id }) => id)) ||
-          getNewsItems(items).map((item, i) => (
-            <NewsItem key={i} isLast={i === limit} data={item} users={users} />
-          ))}
+        {getNewsItems(items).map((item, i) => (
+          <NewsItem key={i} isLast={i === limit} data={item} users={users} />
+        ))}
       </Box>
     </Flex>
   ) : null
