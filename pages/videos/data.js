@@ -1,5 +1,15 @@
 export const videoData = [
   {
+    title: 'Welcome to Decentralized Computing',
+    event: 'ECOH Conference',
+    location: 'Kuwait',
+    date: 'Jan 30, 2019',
+    speaker: 'Muneeb Ali',
+    youtubeURL: 'https://www.youtube.com/watch?v=hHFcDjeugYc',
+    urlSlug: 'what-will-replace-facebook',
+    image: 'images/videos/muneeb-kuwait.png'
+  },
+  {
     title: 'What will replace Facebook?',
     event: 'The Economist',
     date: 'February 4, 2019',
