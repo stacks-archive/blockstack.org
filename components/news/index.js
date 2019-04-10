@@ -2,6 +2,20 @@ import React from 'react'
 import dayjs from 'dayjs'
 import { Box, Flex } from 'blockstack-ui'
 
+const slugs = [
+  'developer-success-commitment-highlights-q1-2019',
+  'introducing-radiks',
+  'video-reusing-bitcoins-hashpower-to-launch-the-stacks-blockchain',
+  'saurabh-pathak-joins-blockstack-as-financial-controller',
+  'jp-singh-joins-blockstack-pbc-board-of-directors',
+  'blockstack-unlocks-25-million-in-funding'
+]
+
+const ids = [1169, 1118, 1099, 1059, 518, 417]
+
+const getNewsItems = (items) =>
+  items.filter((item) => ids.find((id) => item.id === id))
+
 const Subtitle = ({ ...rest }) => (
   <Box
     style={{
@@ -93,11 +107,10 @@ const News = ({ items, limit = 5, users, ...rest }) =>
         </Flex>
       </Flex>
       <Box flexShrink={0} width={[1, 1, 1, 2 / 3]}>
-        {items.map((item, i) =>
-          i <= limit ? (
+        {console.log(getNewsItems(items).map(({ id }) => id)) ||
+          getNewsItems(items).map((item, i) => (
             <NewsItem key={i} isLast={i === limit} data={item} users={users} />
-          ) : null
-        )}
+          ))}
       </Box>
     </Flex>
   ) : null

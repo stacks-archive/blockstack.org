@@ -16,7 +16,7 @@ const meta = {
 class HomePage extends React.Component {
   static async getInitialProps(ctx) {
     const feedData = await fetch(
-      'https://blog.blockstack.org/wp-json/wp/v2/posts'
+      'https://blog.blockstack.org/wp-json/wp/v2/posts?per_page=100'
     )
     const usersData = await fetch(
       'https://blog.blockstack.org/wp-json/wp/v2/users?per_page=30'
