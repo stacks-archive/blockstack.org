@@ -39,7 +39,7 @@
 ### 2018 Q4
 
 - Launched the Stacks Blockchain v1, distributed tokens, and sent first Stacks transaction.
-- Achieved Milestone 1 and unlocked \$25M in capital.
+- Achieved Milestone 1 and unlocked $25M in capital.
 - Released new Stacks Explorer and Wallet.
 - Published smart contracting language spec as a Stacks Improvement Proposal (SIP-002) and started Rust implementation.
 - Released support for custom Gaia hub configuration during user onboarding
@@ -56,7 +56,7 @@
 ### 2018 Q2
 
 - Released the Stacks blockchain testnet.
-- Announced the \$50,000 Universal Wallet Bounty in partnership with ShapeShift.
+- Announced the $50,000 Universal Wallet Bounty in partnership with ShapeShift.
 - Launched App.co, the Universal Store for decentralized applications.
 - Released the developer Alpha of Blockstack iOS and Android SDKs.
 - Released a new mobile-friendly onboarding flow for mobile and desktop apps.
@@ -65,7 +65,7 @@
 
 - Held Blockstack Berlin, with Edward Snowden as the keynote speaker.
 - Released Multiplayer Storage, a major upgrade to the Gaia storage network.
-- Announced the \$1M request for social networks program.
+- Announced the $1M request for social networks program.
 - Deployed Signature fund capital to app development teams.
 
 ### Exit R&D Phase
@@ -74,10 +74,10 @@
 
 ### 2017 Q4
 
-- Conducted a token sale which resulted in ~\$50 million total raised, and over 800 accredited investors, qualified purchasers, and institutions participating.
+- Conducted a token sale which resulted in ~$50 million total raised, and over 800 accredited investors, qualified purchasers, and institutions participating.
 - Released the Token Whitepaper and token sale details.
 - Released the Public Alpha of the Blockstack Browser.
-- Announced a \$50,000 bounty to Decentralize Communication.
+- Announced a $50,000 bounty to Decentralize Communication.
 
 ### 2017 Q3
 
@@ -95,7 +95,7 @@
 
 ### 2017 Q1
 
-- R&D work on the core infrastructure finished and Blockstack raised a \$4 million Series A funding round led by USV, with participation from Lux Capital, Digital Currency Group and others to fuel growth of the developer ecosystem.
+- R&D work on the core infrastructure finished and Blockstack raised a $4 million Series A funding round led by USV, with participation from Lux Capital, Digital Currency Group and others to fuel growth of the developer ecosystem.
 
 ### 2015-2016
 
