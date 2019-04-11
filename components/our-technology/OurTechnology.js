@@ -44,7 +44,7 @@ const cards = [
   {
     title: 'Stacks Blockchain',
     link:
-      'https://forum.blockstack.org/t/new-features-enabled-by-a-layer-2-token/1327',
+      'https://blog.blockstack.org/video-reusing-bitcoins-hashpower-to-launch-the-stacks-blockchain/',
     description: 'Fast and scalable blockchain for decentralized apps'
   }
 ]

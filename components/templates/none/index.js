@@ -13,13 +13,13 @@ const MonoFont = styled.div`
     font-family: 'Plex', monospace !important;
   }
 `
-const NoTemplate = (Component, meta) => {
+const NoTemplate = (Component, meta, pageProps) => {
   return class extends React.PureComponent {
     render() {
       return (
         <MonoFont>
           <Meta {...meta} />
-          <Component />
+          <Component {...pageProps} />
         </MonoFont>
       )
     }

@@ -87,7 +87,7 @@ const Button = ({ button }) => {
     <StyledPageTop.Button href={href}>{label}</StyledPageTop.Button>
   ) : null
 }
-const PageTemplate = (Component, meta) => {
+const PageTemplate = (Component, meta, pageProps) => {
   class PageTemplateWrapper extends React.PureComponent {
     render() {
       return (
@@ -102,7 +102,7 @@ const PageTemplate = (Component, meta) => {
                   !meta.notRichText ? 'md-content rich-text' : 'md-content'
                 }`}
               >
-                <Component {...this.props} />
+                <Component {...pageProps} {...this.props} />
               </div>
             </StyledPageContent>
             <TriangleDotsLarge

@@ -23,9 +23,9 @@ const TeamMember = ({ name, avatar, title, bio, blockstackId }) => {
       {name ? <h3>{name}</h3> : null}
       {title ? <h5>{title}</h5> : null}
       {blockstackId ? (
-        <h6>
+        <Box is="h6" mt="0px !important">
           {blockstackId.includes('.') ? blockstackId : `${blockstackId}.id`}
-        </h6>
+        </Box>
       ) : null}
       <p>{bio}</p>
     </StyledTeamMember>

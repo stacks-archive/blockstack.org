@@ -25,7 +25,8 @@ const items = videoData.map(
     children: (
       <>
         <h6 style={{ margin: '0 0 10px 0' }}>
-          {date} | {location}
+          {date}
+          {location ? ' | ' + location : null}
         </h6>
 
         <a
@@ -41,7 +42,8 @@ const items = videoData.map(
           <h4 style={{ margin: 0 }}>{title}</h4>
         </a>
         <p style={{ margin: '10px 0 0 0' }}>
-          {speaker}, {event}
+          {speaker ? speaker + ', ' : null}
+          {event}
         </p>
         <a
           href={youtubeURL}

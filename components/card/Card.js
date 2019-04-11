@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
-class Header extends Component {
+
+class Card extends Component {
   render() {
     if (this.props.href && !this.props.internal) {
       return (
@@ -8,6 +9,7 @@ class Header extends Component {
           href={this.props.href}
           target={this.props.target}
           className={'g-card link ' + this.props.className}
+          style={this.props.style}
         >
           {this.props.children}
         </a>
@@ -19,6 +21,7 @@ class Header extends Component {
           <a
             target={this.props.target}
             className={'g-card link ' + this.props.className}
+            style={this.props.style}
           >
             {this.props.children}
           </a>
@@ -27,13 +30,16 @@ class Header extends Component {
     }
 
     return (
-      <div className={'g-card ' + this.props.className}>
+      <div
+        className={'g-card ' + this.props.className}
+        style={this.props.style}
+      >
         {this.props.children}
       </div>
     )
   }
 }
 
-export default Header
+export default Card
 
 //<a className="menu-icon" onClick={this.props.openMenu}>Menu</a>

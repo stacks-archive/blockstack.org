@@ -22,26 +22,24 @@ const FloatingTriangle = styled.div`
   }
 `
 
-
-
 class OurCommunity extends Component {
   render() {
     const cards = [
       {
-        title: 'Meetups',
+        title: 'Developer Meetups',
         link: this.props.links.meetup,
-        description: '7000+ developers across 23 countries'
+        description: '16,000+ members in more than 40 groups on 6 continents'
       },
       {
-        title: 'Events',
+        title: 'Events and Hackathons',
         link: this.props.links.events,
-        description: 'Bi-annual Global Summit and hackathons'
+        description: '100+ global events with 10,000+ attendees each year'
       },
       {
-        title: 'Forum',
+        title: 'Developer Forum',
         link: this.props.links.forum,
         description:
-          'Latest news and instant answers from our developer community'
+          'Latest news & instant answers from our 7000+ member open-source community'
       }
     ]
 
@@ -92,43 +90,6 @@ class OurCommunity extends Component {
                     </div>
                   )
                 })}
-                <div className="col-12">
-                  <Card
-                    className="card"
-                    href="/berlin2018/"
-                  >
-                    <div className="grid-flex tight-gutter middle break-xlg">
-                      <div className="col-4 logo-col">
-                        <Image
-                          noBlur
-                          src="images/bs-berlin.png"
-                          alt="Blockstack Berlin"
-                          className="mx-auto"
-                        />
-                      </div>
-                      <div className="col-8">
-                        <div className="grid-flex tight-gutter middle">
-                          <div className="col grow">
-                            <div className="p-2 max-text-width">
-                              <p className="sm">
-                                Fri, March 2, 2018: Experts on privacy,
-                                blockchain, information theory, and the
-                                decentralized community.
-                              </p>
-                            </div>
-                          </div>
-                          <div className="col no-grow">
-                            <div className="p-2 pr-gutter">
-                              <span className="bs-outline-arrow inline">
-                                <Arrow />
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </Card>
-                </div>
               </div>
             </div>
           </div>
