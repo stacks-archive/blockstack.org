@@ -118,7 +118,7 @@ class MyApp extends App {
 
     const withPageTemplate = renderTemplate(template)
 
-    const PageComponent = withPageTemplate(Component, pageProps.meta)
+    const PageComponent = withPageTemplate(Component, pageProps.meta, pageProps)
     return (
       <ReduxProvider store={this.props.store}>
         <Mdx>
