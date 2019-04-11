@@ -48,6 +48,14 @@ const featuredPress = [
       src: 'images/press/new/fortune-logo-2016-840x485.jpg'
     },
     date: 'June 8, 2018',
+    title: `Balancing The Ledger: Blockstack Cofounders Paint A Picture of A Decentralized Future`,
+    link: 'http://fortune.com/video/2018/06/08/balancing-the-ledger-blockstack/'
+  },
+  {
+    image: {
+      src: 'images/press/new/fortune-logo-2016-840x485.jpg'
+    },
+    date: 'June 8, 2018',
     title: `Meet the Blockchain Startup That Inspired HBO’s ‘Silicon Valley’ Season 5`,
     link:
       'http://fortune.com/2018/06/08/blockchain-silicon-valley-new-internet-blockstack/'
