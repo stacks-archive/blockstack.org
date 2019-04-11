@@ -14,6 +14,7 @@ const routes = async () => {
     '/press': { page: '/press' },
     '/videos': { page: '/videos' },
     '/roadmap': { page: '/roadmap' },
+    '/token-survey': { page: '/token-survey' },
     '/what-is-blockstack': { page: '/what-is-blockstack' },
     '/legal/disclaimers': { page: '/legal/disclaimers' },
     '/legal/privacy-policy': { page: '/legal/privacy-policy' },
