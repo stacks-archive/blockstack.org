@@ -86,6 +86,11 @@ class MainMenu extends React.PureComponent {
                   </a>
                 </li>
                 <li>
+                  <a href={this.props.links.events} className="p md">
+                    Events
+                  </a>
+                </li>
+                <li>
                   <a href={this.props.links.meetup} className="p md">
                     Meetup
                   </a>

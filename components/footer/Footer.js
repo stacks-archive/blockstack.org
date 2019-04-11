@@ -77,6 +77,11 @@ class Footer extends Component {
                   </a>
                 </li>
                 <li>
+                  <a href={bslinks.events} className="p sm">
+                    Events
+                  </a>
+                </li>
+                <li>
                   <a href={bslinks.blog} className="p sm">
                     Blog
                   </a>
