@@ -26,7 +26,7 @@ The Blockstack team rethought internet applications from first principles: You s
 
 Years have been spent building an architecture that would support these principles and provide a solid, scalable foundation. We use a dedicated Blockchain, designed for decentralized apps, to provision Blockstack IDs and execute smart-contracts. We use a purpose built decentralized storage network to hold encrypted data with performance comparable to the cloud. And we wrap all that infrastructure in simple javascript API that any developer can use.
 
-From there, developers are free to build high-quality apps with no middlemen, no passwords, and no massive data silos to breach. There are many [Blockstack apps already in production](https://app.co/mining) and more being built every day with the participation of the online open source community in [App Mining](https://app.co/mining) and in partnership with VC Bounties Programs. [Learn more about funding.](https://blockstack.org/funding)
+From there, developers are free to build high-quality apps with no middlemen, no passwords, and no massive data silos to breach. There are many [Blockstack apps already in production](https://app.co/mining/march-2019) and more being built every day with the participation of the online open source community in [App Mining](https://app.co/mining) and in partnership with VC Bounties Programs. [Learn more about funding.](https://blockstack.org/funding)
 
 Get started by setting up a [Blockstack ID](https://browser.blockstack.org)
 
