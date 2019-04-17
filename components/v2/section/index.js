@@ -8,6 +8,7 @@ import css from '@styled-system/css'
 const SectionWrapper = ({
   variant = defaultSectionTheme,
   children,
+  bg,
   ...rest
 }) => {
   const { fills } = useSectionTheme()
@@ -26,9 +27,16 @@ const SectionWrapper = ({
       })}
       flexGrow={1}
       width={1}
-      bg={fills.primary}
+      bg={bg ? bg : fills.primary}
     >
-      <Wrapper alignItems="center" flexGrow={1} {...rest}>
+      <Wrapper
+        alignItems="center"
+        flexGrow={1}
+        minHeight="60vh"
+        flexDirection={['column', 'column', 'row']}
+        flexWrap="wrap"
+        {...rest}
+      >
         {children}
       </Wrapper>
     </Flex>
@@ -43,12 +51,27 @@ const titleProps = {
   letterSpacing: '-0.02em'
 }
 
-const Title = ({ ...rest }) => {
+const Title = ({ is = 'h1', ...rest }) => {
   const { text } = useSectionTheme()
+  const styles = {
+    h1: {
+      fontSize: [6, 6, 8],
+      fontWeight: 500,
+      lineHeight: ['64px']
+    },
+    h2: {
+      fontSize: [5, 5, 6],
+      fontWeight: 400,
+      lineHeight: ['48px']
+    }
+  }
+
   return (
     <Box
-      is="h1"
-      fontSize={[6, 6, 8]}
+      is={is}
+      fontSize={styles[is].fontSize}
+      fontWeight={styles[is].fontWeight}
+      lineHeight={styles[is].lineHeight}
       css={css({
         '& + p': {
           mt: 5
@@ -94,7 +117,7 @@ const Pane = ({ ...rest }) => (
   <Flex flexDirection="column" width={[1, 1, 1 / 2]} {...rest} />
 )
 
-const Section = ({ variant, ...rest }) => {
+const Section = ({ alignment = 'default', variant, ...rest }) => {
   return (
     <SectionThemeProvider value={variant}>
       <SectionWrapper {...rest} />

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { useHover, useActive } from 'use-events'
 import { Box, Flex } from 'blockstack-ui'
 import MenuIcon from 'mdi-react/MenuIcon'
@@ -7,15 +7,32 @@ import { useMedia } from '@common/hooks'
 import { useHeaderTheme } from '@common/hooks'
 import { NavItem, SubNav } from '@components/v2/nav-item'
 import { Logo } from '@components/v2/logo'
-import { navigation, headerHeight } from '@common/constants'
+import { navigation } from '@common/constants'
 import { HeaderTheme, defaultHeaderTheme } from '@common/context'
 import { Wrapper } from '@components/v2/wrapper'
+import { useLockBodyScroll, useSize } from 'react-use'
+import { HeaderHeightContext } from '../../pages/_app'
+import { transition } from '@common/theme'
 
-const HelloBar = ({ ...rest }) => <Flex px={5}>
-  <Box>
-    Learn about the stackstoken.com Public Offering 2.0
-  </Box>
-</Flex>
+const HelloBar = ({ ...rest }) => {
+  const { borderColor, lightColor, secondaryBg } = useHeaderTheme()
+
+  return (
+    <Box
+      transition={transition}
+      bg={secondaryBg}
+      borderBottom="1px solid"
+      borderColor={borderColor}
+      {...rest}
+    >
+      <Wrapper py={2}>
+        <Box color={lightColor} fontSize={1} transition={transition}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </Box>
+      </Wrapper>
+    </Box>
+  )
+}
 
 const Navigation = ({
   notMobile,
@@ -46,13 +63,12 @@ const MobileMenuButton = ({ open, ...rest }) => {
 
   return (
     <Flex
-      height={headerHeight}
       alignItems="center"
       justifyContent="center"
       display={['flex', 'flex', 'none']}
       color={hovered ? hover : color}
       cursor={hovered ? 'pointer' : 'unset'}
-      transition="0.3s all cubic-bezier(.19,1,.22,1)"
+      transition={transition}
       transform={active ? 'translateY(2px)' : 'none'}
       ml="auto"
       {...rest}
@@ -65,17 +81,19 @@ const MobileMenuButton = ({ open, ...rest }) => {
 
 const MobileMenu = ({ open, setSubnavVisibility, subnavVisible, ...rest }) => {
   const { bg } = useHeaderTheme()
+  const headerHeight = useContext(HeaderHeightContext)
+
   return (
     <Box
       position="absolute"
-      top={headerHeight + 1}
+      top={headerHeight - 1}
       height={`calc(100vh - ${headerHeight + 1}px)`}
       maxHeight={`calc(100vh - ${headerHeight + 1}px)`}
       bg={bg}
       zIndex={9999}
       width={1}
       opacity={open ? 1 : 0}
-      transition="0.3s all cubic-bezier(.19,1,.22,1)"
+      transition={transition}
       display={['block', 'block', 'none']}
       p={5}
       style={{ pointerEvents: open ? 'unset' : 'none' }}
@@ -90,30 +108,35 @@ const MobileMenu = ({ open, setSubnavVisibility, subnavVisible, ...rest }) => {
   )
 }
 
-const HeaderBar = ({ ...rest }) => {
+const HeaderBar = ({ innerRef, children, ...rest }) => {
   const { bg, borderColor } = useHeaderTheme()
   return (
     <Box
-      position="absolute"
       width={1}
+      position="relative"
       top={0}
       zIndex={99999}
       borderBottom="1px solid"
       borderColor={borderColor}
-      transition="0.3s all cubic-bezier(.19,1,.22,1)"
+      transition={transition}
       bg={bg}
+      ref={innerRef}
       {...rest}
-    />
+    >
+      <div ref={innerRef}>{children}</div>
+    </Box>
   )
 }
 
-const Header = ({ theme = defaultHeaderTheme, ...rest }) => {
+const Header = ({ theme = defaultHeaderTheme, innerRef, ...rest }) => {
   const [hovered, bind] = useHover()
   const [subnavVisible, setSubnavVisibility] = useState(null)
   const [headerTheme, setTheme] = useState(theme)
   const [items, setItems] = useState([])
   const [mobileMenuOpen, setMobileMenuState] = useState(false)
   const isMobile = useMedia(1)
+
+  useLockBodyScroll(isMobile && mobileMenuOpen)
 
   const handleMenuToggle = () => {
     setMobileMenuState((s) => !s)
@@ -145,32 +168,39 @@ const Header = ({ theme = defaultHeaderTheme, ...rest }) => {
       setTheme('white')
     }
   }
+
   return (
     <HeaderTheme.Provider value={headerTheme}>
-      <Box {...bind}>
-        <HeaderBar>
-          <Wrapper height={headerHeight}>
-            <Logo onClick={handleThemeToggle} />
-            <Navigation
-              setSubnavVisibility={setSubnavVisibility}
-              subnavVisible={subnavVisible}
-              notMobile
-            />
-            <MobileMenuButton
-              open={mobileMenuOpen}
-              onClick={handleMenuToggle}
-            />
-          </Wrapper>
-        </HeaderBar>
-        <MobileMenu
-          setSubnavVisibility={setSubnavVisibility}
-          subnavVisible={subnavVisible}
-          open={mobileMenuOpen}
-        />
-        <SubNav items={items} visible={items && subnavVisible} />
-      </Box>
+      <>
+        <Box {...bind} {...rest}>
+          <HeaderBar innerRef={innerRef}>
+            <HelloBar />
+            <Wrapper py={5}>
+              <Logo onClick={handleThemeToggle} />
+              <Navigation
+                setSubnavVisibility={setSubnavVisibility}
+                subnavVisible={subnavVisible}
+                notMobile
+              />
+              <MobileMenuButton
+                open={mobileMenuOpen}
+                onClick={handleMenuToggle}
+              />
+            </Wrapper>
+          </HeaderBar>
+
+          <MobileMenu
+            setSubnavVisibility={setSubnavVisibility}
+            subnavVisible={subnavVisible}
+            open={mobileMenuOpen}
+          />
+          <SubNav items={items} visible={items && subnavVisible} />
+        </Box>
+      </>
     </HeaderTheme.Provider>
   )
 }
 
 export default Header
+
+export { HelloBar }

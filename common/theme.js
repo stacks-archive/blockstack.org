@@ -45,7 +45,7 @@ const fonts = {
 }
 const radii = [0, 2, 4, 8]
 const borders = [0, '1px solid', '2px solid']
-const transition = {
+const transitions = {
   default: '0.5s all cubic-bezier(.19,1,.22,1)'
 }
 const shadows = {
@@ -67,6 +67,8 @@ export const theme = {
   radii,
   borders,
   shadows,
-  transition,
+  transition: transitions,
   fonts
 }
+
+export const transition = '0.3s all cubic-bezier(.19,1,.22,1)'

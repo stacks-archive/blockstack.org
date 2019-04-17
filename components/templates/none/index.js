@@ -8,17 +8,17 @@ Router.onRouteChangeComplete = (url) => {
   gtag.pageview(url)
 }
 
-const NoTemplate = (Component, meta) => {
-  return class extends React.PureComponent {
+
+class NoTemplate extends React.Component {
     render() {
+      const {component: Component, meta, ...props} = this.props
       return (
         <>
           <Meta {...meta} />
-          <Component />
+          <Component {...props} />
         </>
       )
     }
   }
-}
 
 export default NoTemplate

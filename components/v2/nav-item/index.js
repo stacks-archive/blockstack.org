@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useContext } from 'react'
 import { useHover, useActive } from 'use-events'
 import { Box, Flex } from 'blockstack-ui'
 import ChevronDownIcon from 'mdi-react/ChevronDownIcon'
 import { useMedia, useHeaderTheme } from '@common/hooks'
-import { headerHeight } from '@common/constants'
 import { Wrapper } from '@components/v2/wrapper'
+import { HeaderHeightContext } from '../../../pages/_app'
 
 const MobileSubNavItem = ({ ...rest }) => {
   const [hovered, bind] = useHover()
@@ -172,11 +172,12 @@ const Spacer = ({ ...rest }) => (
 
 const SubNav = ({ items = [], transitions, visible, ...rest }) => {
   const { bg, borderColor } = useHeaderTheme()
+  const headerHeight = useContext(HeaderHeightContext)
   return (
     <Box
       zIndex={9999}
       position="absolute"
-      top={headerHeight + 1}
+      top={headerHeight + 1 + 'px'}
       width={1}
       left={0}
       bg={bg}

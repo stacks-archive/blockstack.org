@@ -12,7 +12,12 @@ module.exports = {
       '@scss': path.resolve(__dirname, './scss'),
       '@assets': path.resolve(__dirname, './assets'),
       '@common': path.resolve(__dirname, './common'),
-      '@bundles': path.resolve(__dirname, './bundles')
+      '@bundles': path.resolve(__dirname, './bundles'),
+      'styled-components': path.resolve(
+        __dirname,
+        'node_modules',
+        'styled-components'
+      )
     }
   }
 }

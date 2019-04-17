@@ -1,6 +1,9 @@
 import App, { Container } from 'next/app'
-import React from 'react'
+import React, { useRef } from 'react'
+import useComponentSize from '@rehooks/component-size'
+
 import Header from '@components/header'
+import { Footer } from '@components/footer'
 import { Box } from 'blockstack-ui'
 import NoTemplate from '@components/templates/none'
 import Head from 'next/head'
@@ -12,10 +15,32 @@ import { Provider as ReduxProvider } from 'redux-bundler-react'
 import { normalize } from 'polished'
 import { theme } from '@common/theme'
 
+export const HeaderHeightContext = React.createContext(null)
+
 const fetchOurData = async (ctx) => {
   if (!ctx.reduxStore.selectJobs()) {
     await ctx.reduxStore.doFetchJobsData()
   }
+}
+
+const WrappedComponent = ({
+  pageComponent: PageComponent,
+  pageProps,
+  ...rest
+}) => {
+  const ref = useRef(null)
+  const size = useComponentSize(ref)
+  const height = size && size.height
+
+  return (
+    <HeaderHeightContext.Provider value={height}>
+      <Box position="relative" {...rest}>
+        <Header innerRef={ref} />
+        <PageComponent headerHeight={height} {...pageProps} />
+        <Footer />
+      </Box>
+    </HeaderHeightContext.Provider>
+  )
 }
 
 const styles = css`
@@ -32,7 +57,6 @@ const styles = css`
     box-sizing: border-box;
   }
 `
-const renderTemplate = (template) => NoTemplate
 
 const GlobalStyles = createGlobalStyle`
 ${styles}
@@ -62,17 +86,20 @@ class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props
 
-    const template =
-      pageProps && pageProps.meta ? pageProps.meta.template : null
-
     const title =
       pageProps && pageProps.meta && pageProps.meta.title !== 'Blockstack'
         ? `${pageProps.meta.title} — Blockstack`
         : 'Blockstack'
 
-    const withPageTemplate = renderTemplate(template)
+    const PageComponent = (props) => (
+      <NoTemplate
+        component={Component}
+        meta={pageProps.meta}
+        {...props}
+        {...pageProps}
+      />
+    )
 
-    const PageComponent = withPageTemplate(Component, pageProps.meta)
     return (
       <ReduxProvider store={this.props.store}>
         <Mdx>
@@ -89,10 +116,10 @@ class MyApp extends App {
             </Head>
             <GlobalStyles />
             <ThemeProvider theme={theme}>
-              <Box>
-                <Header />
-                <PageComponent {...pageProps} />
-              </Box>
+              <WrappedComponent
+                pageComponent={PageComponent}
+                pageProps={pageProps}
+              />
             </ThemeProvider>
           </Container>
         </Mdx>
