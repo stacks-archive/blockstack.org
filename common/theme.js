@@ -71,4 +71,40 @@ export const theme = {
   fonts
 }
 
-export const transition = '0.3s all cubic-bezier(.19,1,.22,1)'
+const titleProps = {
+  fontFamily: 'IBM Plex Mono',
+  fontStyle: 'normal',
+  fontWeight: '500',
+  lineHeight: 3,
+  letterSpacing: '-0.02em'
+}
+const titleStyles = {
+  h1: {
+    fontSize: [6, 6, 8],
+    fontWeight: 500,
+    fontFamily: 'brand',
+    lineHeight: ['64px']
+  },
+  h2: {
+    fontSize: [5, 5, 6],
+    fontWeight: 400,
+    fontFamily: 'brand',
+    lineHeight: ['48px']
+  },
+  h3: {
+    fontSize: [5, 5, 6],
+    fontWeight: 400,
+    fontFamily: 'brand',
+    lineHeight: ['48px']
+  },
+  h4: {
+    fontSize: [3],
+    fontFamily: 'default',
+    fontWeight: 600,
+    lineHeight: ['28px']
+  }
+}
+
+const transition = '0.3s all cubic-bezier(.19,1,.22,1)'
+
+export { transition, titleProps, titleStyles }

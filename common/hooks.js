@@ -28,17 +28,21 @@ const useSectionTheme = () => {
     buttons: {
       primary: {
         bg: 'blue',
+        borderColor: 'blue',
         color: 'white',
         hovered: {
           bg: 'ink',
+          borderColor: 'ink',
           color: 'white'
         }
       },
       secondary: {
         bg: 'blue.10',
+        borderColor: 'blue.10',
         color: 'blue',
         hovered: {
           bg: 'blue.25',
+          borderColor: 'blue.25',
           color: 'blue'
         }
       }
@@ -58,17 +62,21 @@ const useSectionTheme = () => {
     buttons: {
       primary: {
         bg: 'blue',
+        borderColor: 'blue',
         color: 'white',
         hovered: {
           bg: 'white',
+          borderColor: 'white',
           color: 'ink'
         }
       },
       secondary: {
         bg: 'ink.50',
+        borderColor: 'ink.50',
         color: 'sky',
         hovered: {
           bg: 'sky',
+          borderColor: 'sky',
           color: 'ink'
         }
       }
@@ -89,18 +97,24 @@ const useSectionTheme = () => {
     buttons: {
       primary: {
         bg: 'white',
+        borderColor: 'white',
         color: 'blue',
         hovered: {
           bg: 'cyan',
+          borderColor: 'cyan',
           color: 'indigo'
         }
       },
       secondary: {
-        bg: 'blue.25',
-        color: 'blue',
+        bg: 'transparent',
+        borderColor: 'white',
+        color: 'white',
+        fontWeight: 600,
         hovered: {
-          bg: 'white',
-          color: 'blue'
+          bg: 'transparent',
+          borderColor: 'white',
+          color: 'white',
+          fontWeight: 600
         }
       }
     }

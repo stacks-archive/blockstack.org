@@ -4,7 +4,6 @@ import React from 'react'
 import { Box, Flex } from 'blockstack-ui'
 import { transition } from '@common/theme'
 import { useHover } from 'use-events'
-import css from '@styled-system/css'
 import { useSectionTheme } from '@common/hooks'
 
 const getVariant = (variant, hovered) => {
@@ -21,21 +20,13 @@ const Button = ({ label, children, variant = 'primary', ...rest }) => {
     px: 5,
     fontWeight: 500,
     letterSpacing: '-0.02em',
+    border: '2px solid',
     transition,
     cursor: hovered ? 'pointer' : 'unset'
   }
 
   return (
-    <Flex
-      {...defaultProps}
-      {...buttonStyles}
-      {...bind}
-      css={css({
-        '& + &': {
-          ml: 4
-        }
-      })}
-    >
+    <Flex role="button" {...defaultProps} {...buttonStyles} {...bind} {...rest}>
       <Box>{children ? children : label}</Box>
     </Flex>
   )

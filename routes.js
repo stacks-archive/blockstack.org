@@ -1,7 +1,7 @@
 const routes = async () => {
   // combine the map of post pages with our static pages
   return {
-    '/': { page: '/' },
+    '/': { page: '/about' },
     // '/404': { page: '/_error' },
     // '/about': { page: '/about' },
     // '/pbc': { page: '/pbc' },

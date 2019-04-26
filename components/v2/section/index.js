@@ -1,9 +1,23 @@
 import React from 'react'
-import { SectionThemeProvider, defaultSectionTheme } from '@common/context'
+import css from '@styled-system/css'
+import { Flex, Box } from 'blockstack-ui'
 import { useSectionTheme } from '@common/hooks'
 import { Wrapper } from '@components/v2/wrapper'
-import { Flex, Box } from 'blockstack-ui'
-import css from '@styled-system/css'
+import { titleProps, titleStyles } from '@common/theme'
+import { SectionThemeProvider, defaultSectionTheme } from '@common/context'
+
+/**
+ * SectionWrapper
+ *
+ * This is our wrapper component for our sections. It's connected to our sectionTheme context.
+ * It can take a `variant` prop (white, ink, blue), and there are various other connected components
+ * that if contained within this section, will automatically adjust their colors (Text, Title).
+ *
+ * @prop {String} variant - The theme variant of this section: white, ink, blue
+ * @prop {ReactNode|ReactNodeArray} children - the children of the component
+ * @prop {String} bg - to override the bg of a given variant
+ * @prop {Object} rest - any additional props for the Wrapper component
+ */
 
 const SectionWrapper = ({
   variant = defaultSectionTheme,
@@ -33,6 +47,7 @@ const SectionWrapper = ({
         alignItems="center"
         flexGrow={1}
         minHeight="60vh"
+        py={[7, 7, 9]}
         flexDirection={['column', 'column', 'row']}
         flexWrap="wrap"
         {...rest}
@@ -43,40 +58,29 @@ const SectionWrapper = ({
   )
 }
 
-const titleProps = {
-  fontFamily: 'IBM Plex Mono',
-  fontStyle: 'normal',
-  fontWeight: '500',
-  lineHeight: 3,
-  letterSpacing: '-0.02em'
-}
-
+/**
+ * Title
+ *
+ * This is a smart component. This is connected to our sectionTheme context.
+ * It will change colors based off of the theme that the section parent is set to.
+ *
+ * @prop {String|ReactNode} is - the dom element passed, or a component
+ * @prop {Object} rest - all additional props to be passed to the component
+ */
 const Title = ({ is = 'h1', ...rest }) => {
   const { text } = useSectionTheme()
-  const styles = {
-    h1: {
-      fontSize: [6, 6, 8],
-      fontWeight: 500,
-      lineHeight: ['64px']
-    },
-    h2: {
-      fontSize: [5, 5, 6],
-      fontWeight: 400,
-      lineHeight: ['48px']
-    }
-  }
+
+  const fontStyles = titleStyles[is] || {}
 
   return (
     <Box
       is={is}
-      fontSize={styles[is].fontSize}
-      fontWeight={styles[is].fontWeight}
-      lineHeight={styles[is].lineHeight}
+      {...titleProps}
+      {...fontStyles}
       css={css({
         '& + p': {
-          mt: 5
-        },
-        ...titleProps
+          mt: is.toString() === 'h1' || is.toString() === 'h2' ? 5 : 0 // this will give any <Text> or <p> a padding set to 5 if following this component
+        }
       })}
       color={text.title}
       m={0}
@@ -86,6 +90,15 @@ const Title = ({ is = 'h1', ...rest }) => {
   )
 }
 
+/**
+ * Text
+ *
+ * This is a smart component. This is connected to our sectionTheme context.
+ * It will change colors based off of the theme that the section parent is set to.
+ *
+ * @prop {String|ReactNode} is - the dom element passed, or a component, default is `p`
+ * @prop {Object} rest - all additional props to be passed to the component
+ */
 const Text = ({ is = 'p', ...rest }) => {
   const { text } = useSectionTheme()
   const isLink = is.toString() === 'a'
@@ -113,10 +126,29 @@ const Text = ({ is = 'p', ...rest }) => {
   )
 }
 
+/**
+ * Pane
+ *
+ * This component is what our sections are made of, think of it as a section of a section.
+ * The width is default to be half on larger screens, and then bump up to full width on smaller screens.
+ *
+ * @prop {Object} rest - all additional props to be passed to the component
+ */
 const Pane = ({ ...rest }) => (
   <Flex flexDirection="column" width={[1, 1, 1 / 2]} {...rest} />
 )
 
+/**
+ * Section
+ *
+ * This is our main section component. It is wrapped in the sectionTheme context.
+ * Contained within it is the SectionWrapper component which give bounds to our
+ * content, among other things.
+ *
+ * @prop {String} alignment - to determine visual alignment of content. accepted values: default, centered
+ * @prop {String} variant - the variant of the section: white, ink, blue
+ * @prop {Object} rest - all additional props to be passed to the component
+ */
 const Section = ({ alignment = 'default', variant, ...rest }) => {
   return (
     <SectionThemeProvider value={variant}>
@@ -129,4 +161,4 @@ Section.Title = Title
 Section.Text = Text
 Section.Pane = Pane
 
-export { Section }
+export { Section, Title, Text }
