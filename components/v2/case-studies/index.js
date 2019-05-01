@@ -48,7 +48,6 @@ const CaseStudyItem = ({ title, publication, src, app, ...rest }) => {
               crop: 'faces'
             }}
             borderRadius="8px"
-            overflow="hidden"
           />
         </Box>
       </Flex>

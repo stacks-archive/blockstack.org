@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import css from '@styled-system/css'
 import { Flex, Box } from 'blockstack-ui'
-import { useSectionTheme } from '@common/hooks'
+import { useSectionVariant } from '@common/hooks'
 import { Wrapper } from '@components/v2/wrapper'
 import { titleProps, titleStyles } from '@common/theme'
-import { SectionThemeProvider, defaultSectionTheme } from '@common/context'
+import { SectionContextProvider, defaultSectionTheme } from '@common/context'
+import useIsInViewport from 'use-is-in-viewport'
 
 /**
  * SectionWrapper
@@ -19,13 +20,8 @@ import { SectionThemeProvider, defaultSectionTheme } from '@common/context'
  * @prop {Object} rest - any additional props for the Wrapper component
  */
 
-const SectionWrapper = ({
-  variant = defaultSectionTheme,
-  children,
-  bg,
-  ...rest
-}) => {
-  const { fills } = useSectionTheme()
+const SectionWrapper = ({ children, bg, ...rest }) => {
+  const { fills } = useSectionVariant()
 
   return (
     <Flex
@@ -68,7 +64,7 @@ const SectionWrapper = ({
  * @prop {Object} rest - all additional props to be passed to the component
  */
 const Title = ({ is = 'h1', ...rest }) => {
-  const { text } = useSectionTheme()
+  const { text } = useSectionVariant()
 
   const fontStyles = titleStyles[is] || {}
 
@@ -100,7 +96,7 @@ const Title = ({ is = 'h1', ...rest }) => {
  * @prop {Object} rest - all additional props to be passed to the component
  */
 const Text = ({ is = 'p', ...rest }) => {
-  const { text } = useSectionTheme()
+  const { text } = useSectionVariant()
   const isLink = is.toString() === 'a'
   return (
     <Box
@@ -149,11 +145,25 @@ const Pane = ({ ...rest }) => (
  * @prop {String} variant - the variant of the section: white, ink, blue
  * @prop {Object} rest - all additional props to be passed to the component
  */
-const Section = ({ alignment = 'default', variant, ...rest }) => {
+const Section = ({
+  alignment = 'default',
+  variant = defaultSectionTheme,
+  noWrapper,
+  ...rest
+}) => {
+  const [isInViewport, targetRef] = useIsInViewport({ threshold: 150 })
+  const [isInView, setInView] = useState(isInViewport)
+  useEffect(() => {
+    if (isInViewport && !isInView) {
+      setInView(true)
+    }
+  }, [isInViewport])
   return (
-    <SectionThemeProvider value={variant}>
-      <SectionWrapper {...rest} />
-    </SectionThemeProvider>
+    <div ref={targetRef}>
+      <SectionContextProvider value={{ variant, isInViewport: isInView }}>
+        {noWrapper ? rest.children : <SectionWrapper {...rest} />}
+      </SectionContextProvider>
+    </div>
   )
 }
 

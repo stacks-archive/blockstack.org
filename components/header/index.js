@@ -13,7 +13,7 @@ import { Wrapper } from '@components/v2/wrapper'
 import { useLockBodyScroll, useSize } from 'react-use'
 import { HeaderHeightContext } from '../../pages/_app'
 import { transition } from '@common/theme'
-
+import Headroom from 'react-headroom'
 const HelloBar = ({ ...rest }) => {
   const { borderColor, lightColor, secondaryBg } = useHeaderTheme()
 
@@ -170,34 +170,36 @@ const Header = ({ theme = defaultHeaderTheme, innerRef, ...rest }) => {
   }
 
   return (
-    <HeaderTheme.Provider value={headerTheme}>
-      <>
-        <Box {...bind} {...rest}>
-          <HeaderBar innerRef={innerRef}>
-            <HelloBar />
-            <Wrapper py={5}>
-              <Logo onClick={handleThemeToggle} />
-              <Navigation
-                setSubnavVisibility={setSubnavVisibility}
-                subnavVisible={subnavVisible}
-                notMobile
-              />
-              <MobileMenuButton
-                open={mobileMenuOpen}
-                onClick={handleMenuToggle}
-              />
-            </Wrapper>
-          </HeaderBar>
+    <Headroom>
+      <HeaderTheme.Provider value={headerTheme}>
+        <>
+          <Box {...bind} {...rest}>
+            <HeaderBar innerRef={innerRef}>
+              <HelloBar />
+              <Wrapper py={5}>
+                <Logo onClick={handleThemeToggle} />
+                <Navigation
+                  setSubnavVisibility={setSubnavVisibility}
+                  subnavVisible={subnavVisible}
+                  notMobile
+                />
+                <MobileMenuButton
+                  open={mobileMenuOpen}
+                  onClick={handleMenuToggle}
+                />
+              </Wrapper>
+            </HeaderBar>
 
-          <MobileMenu
-            setSubnavVisibility={setSubnavVisibility}
-            subnavVisible={subnavVisible}
-            open={mobileMenuOpen}
-          />
-          <SubNav items={items} visible={items && subnavVisible} />
-        </Box>
-      </>
-    </HeaderTheme.Provider>
+            <MobileMenu
+              setSubnavVisibility={setSubnavVisibility}
+              subnavVisible={subnavVisible}
+              open={mobileMenuOpen}
+            />
+            <SubNav items={items} visible={items && subnavVisible} />
+          </Box>
+        </>
+      </HeaderTheme.Provider>
+    </Headroom>
   )
 }
 

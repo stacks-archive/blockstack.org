@@ -3,16 +3,17 @@ import { Box, Flex } from 'blockstack-ui'
 import PlayIcon from 'mdi-react/PlayCircleIcon'
 import { useHover, useActive } from 'use-events'
 import { transition } from '@common/theme'
+import { Image } from '@components/v2/image'
 
 const Gradient = ({ hovered, ...rest }) => (
   <Box
     size="100%"
     background="linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%)"
-    opacity={hovered ? 0.2 : '0.5'}
+    opacity={hovered ? 0.4 : '0.5'}
     position="absolute"
     left="0"
     right="0"
-    zIndex={1}
+    zIndex={2}
     transition={transition}
     {...rest}
   />
@@ -25,7 +26,7 @@ const Solid = ({ hovered, ...rest }) => (
     position="absolute"
     left="0"
     right="0"
-    zIndex={1}
+    zIndex={2}
     transition={transition}
     {...rest}
   />
@@ -47,7 +48,7 @@ const BottomDetails = ({ primary, subtitle, duration, ...rest }) => (
     justifyContent="space-between"
     position={primary ? 'absolute' : 'relative'}
     bottom={0}
-    zIndex={2}
+    zIndex={3}
     {...rest}
   >
     <Box opacity={0.6}>{subtitle}</Box>
@@ -65,7 +66,7 @@ const MainDetails = ({ primary, title, ...rest }) => {
       textAlign={primary ? 'center' : 'left'}
       color="white"
       position="relative"
-      zIndex={2}
+      zIndex={3}
       width="100%"
       px={6}
       transition={transition}
@@ -98,6 +99,7 @@ const VideoItemWrapper = ({ primary, image, ...rest }) => {
       position="relative"
       flexDirection="column"
       overflow="hidden"
+      flexShrink={1}
       transition="1s all cubic-bezier(.19,1,.22,1)"
       style={{
         willChange: 'transform'
@@ -107,21 +109,21 @@ const VideoItemWrapper = ({ primary, image, ...rest }) => {
   )
 }
 
-const Image = ({ image, hovered, ...rest }) => (
-  <Box
-    position="absolute"
-    size="100%"
-    backgroundImage={`url(${image})`}
-    backgroundSize="cover"
-    backgroundPosition="center center"
-    transition="1s all cubic-bezier(.19,1,.22,1)"
-    transform={hovered ? 'scale(1.03)' : 'scale(1)'}
-    style={{
-      willChange: 'transform'
-    }}
-    {...rest}
-  />
-)
+// const Image = ({ image, hovered, ...rest }) => (
+//   <Box
+//     position="absolute"
+//     size="100%"
+//     backgroundImage={`url(${image})`}
+//     backgroundSize="cover"
+//     backgroundPosition="center center"
+//     transition="1s all cubic-bezier(.19,1,.22,1)"
+//     transform={hovered ? 'scale(1.03)' : 'scale(1)'}
+//     style={{
+//       willChange: 'transform'
+//     }}
+//     {...rest}
+//   />
+// )
 const VideoItem = ({
   hovered,
   active,
@@ -146,15 +148,32 @@ const VideoItem = ({
         subtitle={subtitle}
       />
       <Overlay hovered={hovered} />
-      <Image hovered={hovered} image={image} primary={primary} />
+      <Box
+        zIndex={1}
+        position="absolute"
+        left={0}
+        top={0}
+        width={1}
+        height="100%"
+        transform={hovered ? 'scale(1.03)' : 'scale(1)'}
+        transition={transition}
+      >
+        <Image minHeight={primary ? 720 : 480} width="100%" bgImg={image} />
+      </Box>
     </VideoItemWrapper>
   )
 }
 
 const Videos = ({ items, ...rest }) => {
   return (
-    <Flex py={8} width="100%" flexWrap="wrap" {...rest}>
-      {items.map((item, key) => {
+    <Flex
+      py={8}
+      width="100%"
+      flexWrap="wrap"
+      justifyContent="space-between"
+      {...rest}
+    >
+      {items.map(({ title, subtitle, image, width, ...itemProps }, key) => {
         const [hovered, hoverBind] = useHover()
         const [active, activeBind] = useActive()
         const bind = {
@@ -163,16 +182,16 @@ const Videos = ({ items, ...rest }) => {
         }
         return (
           <VideoItem
-            title={item.title}
-            subtitle={item.subtitle}
-            image={item.image}
-            duration={item.duration}
-            width={item.width}
+            title={title}
+            subtitle={subtitle}
+            image={image}
+            width={width}
             primary={key === 0}
             key={key}
             hovered={hovered}
             active={active}
             {...bind}
+            {...itemProps}
           />
         )
       })}

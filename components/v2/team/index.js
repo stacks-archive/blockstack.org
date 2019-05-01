@@ -65,7 +65,9 @@ const TeamItem = ({ item, ...rest }) => {
   const filename = slugify(item.name)
   const photo = `https://blockstack-www.imgix.net/team/${filename}.jpg`
 
-  const [hovered, bind] = useHover()
+  // const [hovered, bind] = useHover()
+  const hovered = false
+  const bind = {}
   return (
     <Flex position="relative" alignItems="center" justifyContent="center">
       <Box
@@ -98,7 +100,7 @@ const TeamItem = ({ item, ...rest }) => {
           />
         </Flex>
       </Box>
-      <BioCard bio={item.bio} showing={hovered} name={item.name} />
+      {/*<BioCard bio={item.bio} showing={hovered} name={item.name} />*/}
     </Flex>
   )
 }
@@ -124,6 +126,9 @@ const Team = ({ items = teamMembers, ...rest }) => {
         'repeat(3, 1fr)',
         'repeat(6, 1fr)'
       ]}
+      width={1}
+      position="relative"
+      zIndex={99}
       {...rest}
     >
       {items.map((item, key) => (

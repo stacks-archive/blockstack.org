@@ -5,7 +5,7 @@ import { Title, Text } from '@components/v2/section'
 const GridItem = ({ item }) => {
   const { title, text } = item
   return (
-    <Box pb={7} width="calc(33.333% - 16px)">
+    <Box pb={7} width={['100%', 'calc(50% - 16px)', 'calc(33.333% - 16px)']}>
       <Box mb={3} size={40} borderRadius="8px" bg="blue.10" />
       <Title {...title} fontSize={2} pb={3} />
       <Text {...text} fontSize={2} />

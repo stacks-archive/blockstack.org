@@ -2,7 +2,7 @@ import React, { useCallback } from 'react'
 import { Section, Text, Title } from '@components/v2/section'
 import { Box, Flex } from 'blockstack-ui'
 import { Sections } from '@components/v2/sections'
-import { useSpring, animated as a, interpolate } from 'react-spring'
+import { useSpring, animated as a } from 'react-spring'
 import { Image } from '@components/v2/image'
 import { useInView } from 'react-intersection-observer'
 import { PersonsList } from '@components/v2/advisors'
@@ -12,6 +12,7 @@ import { transition } from '@common/theme'
 import ArrowTopRightIcon from 'mdi-react/ArrowTopRightIcon'
 import { Investors } from '@components/v2/investors'
 import { NIL, AppCo } from '@components/v2/vectors'
+import CheckIcon from 'mdi-react/CheckIcon'
 
 const ecosystemPartners = [
   {
@@ -248,7 +249,6 @@ const HeroGrid = ({ ...rest }) => {
         mr={5}
         width={400}
         height={480}
-        bg="blue"
       />
       <Box flexShrink={0} width={488} mr={5}>
         <HeroCard
@@ -259,7 +259,6 @@ const HeroGrid = ({ ...rest }) => {
           color="white"
           width={488}
           height={296}
-          bg="blue"
           mb={5}
         />
         <HeroCard width={488} height={336} bg="sky" />
@@ -273,7 +272,6 @@ const HeroGrid = ({ ...rest }) => {
             url="#"
             width={380}
             height={400}
-            bg="blue"
             mr={5}
           />
           <HeroCard width={536} height={400} bg="sky" />
@@ -367,9 +365,10 @@ const Hero = ({ ...rest }) => {
 const sections = [
   {
     variant: 'white',
+
     panes: [
       {
-        alignItems: 'flex-start',
+        justifyContent: 'flex-start',
         title: {
           is: 'h2',
           children: (
@@ -422,25 +421,24 @@ const sections = [
           }
         }
       ],
-      [
-        {
-          title: {
-            is: 'h4',
-            children: `Highlights`
-          }
+      {
+        justifyContent: 'flex-start',
+        title: {
+          is: 'h4',
+          children: `Highlights`
         },
-        {
-          list: {
-            items: [
-              'Founded in 2013 at Princeton',
-              '$50M in funding',
-              '4 years of research & development',
-              '7,000+ active developers',
-              '65 apps launched on Blockstack'
-            ]
-          }
+        list: {
+          icon: CheckIcon,
+          pt: 5,
+          items: [
+            'Founded in 2013 at Princeton',
+            '$50M in funding',
+            '4 years of research & development',
+            '7,000+ active developers',
+            '65 apps launched on Blockstack'
+          ]
         }
-      ]
+      }
     ]
   },
   {

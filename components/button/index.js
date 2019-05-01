@@ -4,10 +4,10 @@ import React from 'react'
 import { Box, Flex } from 'blockstack-ui'
 import { transition } from '@common/theme'
 import { useHover } from 'use-events'
-import { useSectionTheme } from '@common/hooks'
+import { useSectionVariant } from '@common/hooks'
 
 const getVariant = (variant, hovered) => {
-  const variants = useSectionTheme().buttons
+  const variants = useSectionVariant().buttons
   return !hovered ? variants[variant] : variants[variant].hovered
 }
 

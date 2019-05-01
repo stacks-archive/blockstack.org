@@ -24,24 +24,37 @@ const videos = [
     title: 'The Blockstack Decentralized Computing Network',
     subtitle: 'Muneeb Ali at the Japan Society',
     duration: '26:15',
-    image: 'https://file-koqkkeitml.now.sh',
+    image: 'https://blockstack-www.imgix.net/video-still-japan-society.png',
     width: 1
   },
   {
     title: 'A conversation with Ryan Shea & Naval Ravikant',
-    subtitle: 'Muneeb Ali at the Japan Society',
+    subtitle: 'Blockstack Summit',
     duration: '26:15',
-    image:
-      'https://blockstack.org/_next/static/images/convo_naval_ryan-34eb6fd926e50cdce5e924a1d582b0e1-1280.jpg',
-    width: [1, 1, 2 / 3]
+    image: 'https://blockstack-www.imgix.net/video-still-ryan-naval.png',
+    width: [1, 1, `calc(66.6666666% - 12px)`]
   },
   {
     title: 'Welcome to the New Internet',
-    subtitle: 'Muneeb Ali at the Japan Society',
+    subtitle: 'Muneeb Ali, TEDx New York',
     duration: '26:15',
     image:
-      'https://blockstack.org/_next/static/images/economist-video-thumb-66385c896b0191c913333ec0b50a1545-1278.png',
-    width: [1, 1, 1 / 3]
+      'https://blockstack-www.imgix.net/video-still-welcome-to-the-new-internet.png',
+    width: [1, 1, `calc(33.3333333% - 12px)`]
+  },
+  {
+    title: 'Life After Google',
+    subtitle: 'George Gilder, Blockstack Summit',
+    duration: '26:15',
+    image: 'https://blockstack-www.imgix.net/video-still-life-after-google.png',
+    width: [1, 1, `calc(33.3333333% - 12px)`]
+  },
+  {
+    title: 'Welcome to Decentralized Computing',
+    subtitle: 'Muneeb Ali, ECOH Conference',
+    duration: '26:15',
+    image: 'https://blockstack-www.imgix.net/video-still-muneeb-kuwait.png',
+    width: [1, 1, `calc(66.6666666% - 12px)`]
   }
 ]
 
@@ -51,19 +64,6 @@ const meta = {
 }
 
 const press = [
-  {
-    title: 'Tech Thinks It Has a Fix for the Problems It Created: Blockchain',
-    publication: 'The New York Times'
-  },
-  {
-    title:
-      'Blockchain technology may offer a way to re-decentralise the internet',
-    publication: 'The Economist'
-  },
-  {
-    title: 'The new technology that aspires to #DeleteFacebook for good',
-    publication: 'The Washington Post'
-  },
   {
     title: 'Tech Thinks It Has a Fix for the Problems It Created: Blockchain',
     publication: 'The New York Times'

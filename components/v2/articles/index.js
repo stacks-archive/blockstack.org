@@ -13,7 +13,8 @@ const slugs = [
   'blockstack-unlocks-25-million-in-funding'
 ]
 
-const ids = [1169, 1118, 1099, 1059, 518, 417]
+// const ids = [1169, 1118, 1099, 1059, 518, 417]
+const ids = [1169, 1118, 1099, 1059]
 
 const getNewsItems = (items) =>
   items.filter((item) => ids.find((id) => item.id === id))

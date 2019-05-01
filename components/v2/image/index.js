@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Box } from 'blockstack-ui'
 import css from '@styled-system/css'
 
 const ImageWrapper = ({ ...rest }) => (
   <Box
     css={css({
-      'img.lazyloaded': {
+      '.lazyloaded': {
         opacity: '1 !important',
         '& + div': {
           opacity: '0 !important'
@@ -16,42 +16,58 @@ const ImageWrapper = ({ ...rest }) => (
   />
 )
 
-const PreviewImage = ({ borderRadius, ...rest }) => (
-  <Box
-    overflow="hidden"
-    transition="0.5s all ease-in-out 0.3s"
-    borderRadius={borderRadius}
-  >
+const PreviewImage = ({ borderRadius, bgImg, src, ...rest }) => {
+  const srcProps = bgImg
+    ? {
+        backgroundImage: `url(${src})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center'
+      }
+    : {
+        src
+      }
+
+  return (
     <Box
+      overflow="hidden"
       transition="0.5s all ease-in-out 0.3s"
-      width={1}
-      is="img"
-      display="block"
-      maxWidth="100%"
-      position="relative"
-      zIndex={2}
-      style={{
-        filter: 'blur(10px)'
-      }}
       borderRadius={borderRadius}
-      {...rest}
-    />
-    <Box
-      transition="0.5s all ease-in-out 0.3s"
-      width={1}
-      is="img"
-      display="block"
-      maxWidth="100%"
-      position="absolute"
-      zIndex={1}
-      top={0}
-      left={0}
-      borderRadius={borderRadius}
-      {...rest}
-    />
-  </Box>
-)
-const HighResImage = ({ ...rest }) => (
+    >
+      <Box
+        transition="0.5s all ease-in-out 0.3s"
+        width={1}
+        is={bgImg ? 'div' : 'img'}
+        display="block"
+        maxWidth="100%"
+        position="relative"
+        height={bgImg ? '100%' : 'unset'}
+        zIndex={2}
+        style={{
+          filter: 'blur(10px)'
+        }}
+        borderRadius={borderRadius}
+        {...rest}
+        {...srcProps}
+      />
+      <Box
+        transition="0.5s all ease-in-out 0.3s"
+        width={1}
+        is={bgImg ? 'div' : 'img'}
+        display="block"
+        maxWidth="100%"
+        height={bgImg ? '100%' : 'unset'}
+        position="absolute"
+        zIndex={1}
+        top={0}
+        left={0}
+        borderRadius={borderRadius}
+        {...srcProps}
+        {...rest}
+      />
+    </Box>
+  )
+}
+const HighResImage = ({ bgImg, ...rest }) => (
   <Box
     transition="0.5s all ease-in-out"
     opacity={0}
@@ -59,7 +75,10 @@ const HighResImage = ({ ...rest }) => (
     left={0}
     top={0}
     width={1}
-    is="img"
+    height={bgImg ? '100%' : 'unset'}
+    backgroundSize={bgImg ? 'cover' : 'unset'}
+    backgroundPosition="center center"
+    is={bgImg ? 'div' : 'img'}
     display="block"
     maxWidth="100%"
     zIndex={3}
@@ -67,13 +86,27 @@ const HighResImage = ({ ...rest }) => (
   />
 )
 
-const Image = ({ src, imgix = {}, wrapper = {}, ...rest }) => {
-  if (!src) return null
-  let url = src
-  if (src.url) {
-    ;({ url } = src)
+const Image = ({
+  src,
+  bgImg,
+  imgix = {},
+  wrapper = {},
+  backgroundSize = 'cover',
+  backgroundPosition = 'center center',
+  ...rest
+}) => {
+  if (!src && !bgImg) return null
+
+  let url = src || bgImg
+
+  if (src && src.url) {
+    url = src.url
+  } else if (bgImg && bgImg.url) {
+    url = bgImg.url
   }
+
   const isImgix = url.includes('imgix')
+
   if (!isImgix) {
     return (
       <Box width={1} {...wrapper}>
@@ -81,6 +114,9 @@ const Image = ({ src, imgix = {}, wrapper = {}, ...rest }) => {
       </Box>
     )
   }
+
+  useEffect(() => {}, [])
+
   const { w = 800, h, fit = 'max', auto = 'format', ...imgixProps } = imgix
 
   const reductionAmount = 4
@@ -100,15 +136,32 @@ const Image = ({ src, imgix = {}, wrapper = {}, ...rest }) => {
     h ? `&h=${parseInt(h) / reductionAmount}` : ''
   }${query ? `&${query}` : ''}`
 
+  const srcProps = bgImg
+    ? {
+        ['data-bg']: highRes
+      }
+    : {
+        ['data-src']: highRes
+      }
+
   return (
     <ImageWrapper width={1} position="relative" {...rest}>
       <HighResImage
         className="lazyload"
         data-expand="-100"
-        data-src={highRes}
+        {...srcProps}
         borderRadius={rest.borderRadius}
+        backgroundSize={backgroundSize}
+        backgroundPosition={backgroundPosition}
+        bgImg={bgImg}
       />
-      <PreviewImage src={preview} borderRadius={rest.borderRadius} />
+      <PreviewImage
+        src={preview}
+        borderRadius={rest.borderRadius}
+        backgroundPosition={backgroundPosition}
+        backgroundSize={backgroundSize}
+        bgImg={bgImg}
+      />
     </ImageWrapper>
   )
 }

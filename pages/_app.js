@@ -35,7 +35,7 @@ const WrappedComponent = ({
   return (
     <HeaderHeightContext.Provider value={height}>
       <Box position="relative" {...rest}>
-        <Header innerRef={ref} />
+        <Header theme={pageProps.meta.theme} innerRef={ref} />
         <PageComponent headerHeight={height} {...pageProps} />
         <Footer />
       </Box>
@@ -81,7 +81,21 @@ class MyApp extends App {
     }
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+    const handleBgImageLoaded = (e) => {
+      const bg = e.target.getAttribute('data-bg')
+      if (bg) {
+        e.target.style.backgroundImage = 'url(' + bg + ')'
+      }
+    }
+    if (typeof document !== 'undefined') {
+      document.addEventListener('lazybeforeunveil', handleBgImageLoaded)
+    }
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('lazybeforeunveil', handleBgImageLoaded)
+  }
 
   render() {
     const { Component, pageProps } = this.props

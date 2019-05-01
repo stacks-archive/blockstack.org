@@ -7,11 +7,26 @@ import { Sections } from '@components/v2/sections'
 import { Press } from '@components/v2/press'
 import { Videos } from '@components/v2/videos'
 import { CaseStudies } from '@components/v2/case-studies'
-import { Image } from '@components/v2/image'
 import { meta, caseStudies, videos, press } from './data'
 import fetch from 'cross-fetch'
 import { News } from '@components/v2/articles'
+import { PhotoGrid } from '@components/v2/photos-grid'
 
+const photos = [
+  { src: 'https://blockstack-www.imgix.net/photos/photo-conference-001.jpg' },
+  {
+    src: 'https://blockstack-www.imgix.net/photos/photo-conference-004.jpg',
+    width: 1 / 4,
+    backgroundPosition: 'left center'
+  },
+  {
+    src: 'https://blockstack-www.imgix.net/photos/photo-conference-003.jpg',
+    flexGrow: 1
+  },
+  { src: 'https://blockstack-www.imgix.net/photos/photo-conference-002.jpg' },
+  { src: 'https://blockstack-www.imgix.net/photos/photo-conference-005.jpg' },
+  { src: 'https://blockstack-www.imgix.net/photos/photo-hackathon-001.jpg' }
+]
 const Hero = ({ ...rest }) => (
   <>
     <Section
@@ -33,7 +48,7 @@ const Hero = ({ ...rest }) => (
         </Section.Text>
         <Flex pt={5}>
           <Button>Create ID</Button>
-          <Button ml={5} variant="secondary">
+          <Button ml={3} variant="secondary">
             Build Apps
           </Button>
         </Flex>
@@ -160,12 +175,9 @@ class HomePage extends React.Component {
       {
         variant: 'white',
         children: (
-          <Image
-            src="https://blockstack-www.imgix.net/photos/homepage-photos.png"
-            imgix={{
-              w: 1600
-            }}
-          />
+          <Box width="100%" maxWidth="100%">
+            <PhotoGrid items={photos} />
+          </Box>
         )
       },
 
@@ -213,6 +225,7 @@ class HomePage extends React.Component {
       {
         variant: 'white',
         py: 8,
+        minHeight: 0,
         alignItems: 'flex-start',
         panes: [
           {

@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { useMedia as useBaseMedia } from 'use-media'
 import { theme } from '@common/theme'
-import { HeaderTheme, SectionTheme } from '@common/context'
+import { HeaderTheme, SectionContext } from '@common/context'
 
 const useMedia = (index) => {
   if (index < 6) {
@@ -12,8 +12,13 @@ const useMedia = (index) => {
   }
 }
 
-const useSectionTheme = () => {
-  const theme = useContext(SectionTheme)
+const useSectionIsInViewport = () => {
+  const { isInViewport } = useContext(SectionContext)
+  return isInViewport
+}
+
+const useSectionVariant = () => {
+  const { variant } = useContext(SectionContext)
   const light = {
     text: {
       title: 'ink',
@@ -120,7 +125,7 @@ const useSectionTheme = () => {
     }
   }
 
-  switch (theme) {
+  switch (variant) {
     case 'white':
       return light
     case 'blue':
@@ -160,4 +165,4 @@ const useHeaderTheme = () => {
   }
 }
 
-export { useMedia, useHeaderTheme, useSectionTheme }
+export { useMedia, useHeaderTheme, useSectionVariant, useSectionIsInViewport }
