@@ -57,7 +57,7 @@ const Hero = ({ ...rest }) => (
     <Box
       mb={8}
       is="img"
-      src="https://file-tefsjfdvfr.now.sh"
+      src="https://blockstack-www.imgix.net/home-hero-temp.png?auto=format&w=1800"
       width="100%"
       maxWidth="100%"
       display="block"
@@ -134,13 +134,7 @@ class HomePage extends React.Component {
                 href: '#'
               }
             ]
-          }
-        ]
-      },
-      {
-        variant: 'white',
-        py: 7,
-        panes: [
+          },
           {
             width: 1,
             children: <CaseStudies items={caseStudies} />
@@ -257,6 +251,39 @@ class HomePage extends React.Component {
           {
             width: 1,
             children: <Press items={press} />
+          }
+        ]
+      },
+      {
+        variant: 'blue',
+        minHeight: '400px',
+        py: 8,
+        panes: [
+          {
+            title: {
+              is: 'h2',
+              children: 'Ready to start building on Blockstack?'
+            },
+            text: {
+              children:
+                'Try over 100 apps built on Blockstack or build yours in less than an hour.'
+            }
+          },
+          {
+            actions: {
+              justifyContent: 'center',
+              items: [
+                {
+                  type: 'button',
+                  label: 'Create ID'
+                },
+                {
+                  type: 'button',
+                  label: 'Build apps',
+                  variant: 'secondary'
+                }
+              ]
+            }
           }
         ]
       }

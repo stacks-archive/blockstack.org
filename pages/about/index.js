@@ -13,6 +13,32 @@ import ArrowTopRightIcon from 'mdi-react/ArrowTopRightIcon'
 import { Investors } from '@components/v2/investors'
 import { NIL, AppCo } from '@components/v2/vectors'
 import CheckIcon from 'mdi-react/CheckIcon'
+import { PhotoGrid } from '@components/v2/photos-grid'
+import { useInViewAnimationStyles } from '@common/hooks'
+
+const photos1 = [
+  {
+    src:
+      'https://blockstack-www.imgix.net/photos/blockstack-team-winter-2018.png',
+    width: 1 / 2
+  },
+  {
+    src: 'https://blockstack-www.imgix.net/photos/blockstack-team-couch.png',
+    width: 1 / 2
+  }
+]
+const photos2 = [
+  {
+    src:
+      'https://blockstack-www.imgix.net/photos/nyt-blockstack-team-photo.png',
+    width: 1 / 2
+  },
+  {
+    src:
+      'https://blockstack-www.imgix.net/photos/blockstack-team-summer-2018-retreat.jpg',
+    width: 1 / 2
+  }
+]
 
 const ecosystemPartners = [
   {
@@ -74,6 +100,7 @@ const EcosystemPartner = ({ item, ...rest }) => {
           willChange="transform"
           transition={transition}
           transform={`scale(${hovered ? 1.1 : 1})`}
+          width="60px"
         >
           <Logo />
         </Box>
@@ -300,6 +327,40 @@ const HeroGrid = ({ ...rest }) => {
   )
 }
 
+const HeroTitle = ({ ...rest }) => {
+  const inViewAnimationStyles = useInViewAnimationStyles()
+
+  return (
+    <Section.Pane width={1} justifyContent="center" alignItems="center">
+      <Section.Title maxWidth="80%" {...inViewAnimationStyles}>
+        Blockstack is leading the&nbsp;way to a blockchain computing era
+      </Section.Title>
+    </Section.Pane>
+  )
+}
+
+const HeroFeature = ({ transform, innerRef, ...rest }) => {
+  const inViewAnimationStyles = useInViewAnimationStyles()
+
+  return (
+    <Box {...inViewAnimationStyles}>
+      <div ref={innerRef}>
+        <Box
+          style={{
+            overflowY: 'visible',
+            overflowX: 'hidden'
+          }}
+          pt={5}
+        >
+          <Box is={a.div} style={{ transform }}>
+            <HeroGrid />
+          </Box>
+        </Box>
+      </div>
+    </Box>
+  )
+}
+
 const Hero = ({ ...rest }) => {
   const [props, set] = useSpring(() => ({
     xy: [0, 0],
@@ -339,25 +400,11 @@ const Hero = ({ ...rest }) => {
         alignItems="center"
         justifyContent="center"
       >
-        <Section.Pane width={1} justifyContent="center" alignItems="center">
-          <Section.Title maxWidth="80%">
-            Blockstack is leading the&nbsp;way to a blockchain computing era
-          </Section.Title>
-        </Section.Pane>
+        <HeroTitle />
       </Section>
-      <div ref={ref}>
-        <Box
-          style={{
-            overflowY: 'visible',
-            overflowX: 'hidden'
-          }}
-          pt={5}
-        >
-          <Box is={a.div} style={{ transform: props.xy.interpolate(trans1) }}>
-            <HeroGrid />
-          </Box>
-        </Box>
-      </div>
+      <Section noWrapper>
+        <HeroFeature transform={props.xy.interpolate(trans1)} innerRef={ref} />
+      </Section>
     </>
   )
 }
@@ -396,14 +443,7 @@ const sections = [
   },
   {
     variant: 'white',
-    children: (
-      <Image
-        src="https://blockstack-www.imgix.net/team-photos-1.png"
-        imgix={{
-          w: 1600
-        }}
-      />
-    )
+    children: <PhotoGrid height={[300, 400, 640]} items={photos1} />
   },
   {
     variant: 'white',
@@ -443,14 +483,7 @@ const sections = [
   },
   {
     variant: 'white',
-    children: (
-      <Image
-        src="https://blockstack-www.imgix.net/team-photos-2.png"
-        imgix={{
-          w: 1600
-        }}
-      />
-    )
+    children: <PhotoGrid height={[300, 400, 640]} items={photos2} />
   },
   {
     variant: 'white',

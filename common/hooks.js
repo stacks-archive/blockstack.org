@@ -2,7 +2,7 @@ import { useContext } from 'react'
 import { useMedia as useBaseMedia } from 'use-media'
 import { theme } from '@common/theme'
 import { HeaderTheme, SectionContext } from '@common/context'
-
+import { themeGet } from 'styled-system'
 const useMedia = (index) => {
   if (index < 6) {
     const size = theme.breakpoints[index]
@@ -18,12 +18,13 @@ const useSectionIsInViewport = () => {
 }
 
 const useSectionVariant = () => {
-  const { variant } = useContext(SectionContext)
+  const { variant, bg } = useContext(SectionContext)
   const light = {
     text: {
       title: 'ink',
       body: 'ink.50',
-      hover: 'blue'
+      hover: 'blue',
+      light: 'ink.25'
     },
     fills: {
       primary: 'white',
@@ -57,7 +58,8 @@ const useSectionVariant = () => {
     text: {
       title: 'white',
       body: 'sky',
-      hover: 'cyan'
+      hover: 'cyan',
+      light: 'sky.25'
     },
     fills: {
       primary: 'ink',
@@ -92,7 +94,8 @@ const useSectionVariant = () => {
     text: {
       title: 'white',
       body: 'blue.10',
-      hover: 'white'
+      hover: 'white',
+      light: 'sky.25'
     },
     fills: {
       primary: 'blue',
@@ -127,11 +130,14 @@ const useSectionVariant = () => {
 
   switch (variant) {
     case 'white':
-      return light
+      /**
+       * TODO: fix bg color
+       */
+      return { ...light, variant, bg: theme.colors[bg] }
     case 'blue':
-      return blue
+      return { ...blue, variant, bg: theme.colors[bg] }
     case 'ink':
-      return dark
+      return { ...dark, variant, bg: theme.colors[bg] }
   }
 }
 
@@ -165,4 +171,24 @@ const useHeaderTheme = () => {
   }
 }
 
-export { useMedia, useHeaderTheme, useSectionVariant, useSectionIsInViewport }
+const useInViewAnimationStyles = () => {
+  const isInViewport = useSectionIsInViewport()
+
+  const trans = `1s all cubic-bezier(.19,1,.22,1) 0.25s`
+
+  const inViewAnimationStyles = {
+    opacity: isInViewport ? 1 : 0,
+    transition: trans,
+    transform: `translateY(${isInViewport ? 0 : -10}px)`
+  }
+
+  return inViewAnimationStyles
+}
+
+export {
+  useMedia,
+  useHeaderTheme,
+  useSectionVariant,
+  useSectionIsInViewport,
+  useInViewAnimationStyles
+}

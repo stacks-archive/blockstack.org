@@ -131,6 +131,7 @@ const TriangleDotsHalf = (props) => (
     </defs>
   </svg>
 )
+
 const TriangleDotsFull = (props) => (
   <svg width="309" height="305" viewBox="0 0 309 305" fill="none" {...props}>
     <g

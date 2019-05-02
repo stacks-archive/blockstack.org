@@ -4,21 +4,8 @@ import { Box, Flex } from 'blockstack-ui'
 import { transition } from '@common/theme'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import { useHover } from 'use-events'
-import { useSectionIsInViewport } from '@common/hooks'
-
-const useInViewAnimationStyles = () => {
-  const isInViewport = useSectionIsInViewport()
-
-  const trans = `1s all cubic-bezier(.19,1,.22,1) 0.25s`
-
-  const inViewAnimationStyles = {
-    opacity: isInViewport ? 1 : 0,
-    transition: trans,
-    transform: `translateY(${isInViewport ? 0 : -10}px)`
-  }
-
-  return inViewAnimationStyles
-}
+import { useInViewAnimationStyles } from '@common/hooks'
+import { Button } from '@components/button'
 
 const TextLink = ({ action, ...rest }) => {
   const [hovered, bind] = useHover()
@@ -50,14 +37,23 @@ const TextLink = ({ action, ...rest }) => {
   )
 }
 
-const Actions = ({ actions, ...rest }) => (
-  <Box {...rest}>
-    {actions.map((action, key) => {
-      if (action.type === 'link') {
+const Actions = ({ items, ...rest }) => (
+  <Flex {...rest}>
+    {items.map(({ type, ...action }, key, arr) => {
+      if (type === 'link') {
         return <TextLink action={action} key={key} />
       }
+      if (type === 'button') {
+        return (
+          <Button
+            key={key}
+            ml={key > 0 && arr.length > 1 ? 3 : 0}
+            {...action}
+          />
+        )
+      }
     })}
-  </Box>
+  </Flex>
 )
 const Icon = ({ component: Component, size, ...rest }) =>
   Component ? (
@@ -102,14 +98,16 @@ const Content = ({ pane, isFirst, inViewAnimationStyles, ...rest }) => {
       )}
       {pane.text && <Section.Text {...pane.text} {...inViewAnimationStyles} />}
       {pane.list && <List {...pane.list} {...inViewAnimationStyles} />}
-      {pane.actions && pane.actions.length ? (
-        <Actions actions={pane.actions} {...inViewAnimationStyles} />
+      {pane.actions && pane.actions.items ? (
+        <Actions {...pane.actions} {...inViewAnimationStyles} />
+      ) : pane.actions && pane.actions.length ? (
+        <Actions items={pane.actions} {...inViewAnimationStyles} />
       ) : null}
       {pane.type === 'graphic' && (
         <Box
           py={8}
-          pl={isFirst ? 0 : [0, 0, 8]}
-          pr={isFirst ? [0, 0, 8] : 0}
+          pl={isFirst ? 0 : [0, 0, 4, 5]}
+          pr={isFirst ? [0, 0, 4, 5] : 0}
           {...inViewAnimationStyles}
         >
           <Box is="img" display="block" maxWidth="100%" src={pane.src} />
@@ -167,12 +165,12 @@ const renderPane = (pane, key, isRecursive) => {
       isRecursive={isRecursive}
       pl={
         !isRecursive && pane.width !== 1 && pane.width !== '100%' && isSecond
-          ? [0, 0, 6]
+          ? [0, 0, 4, 5]
           : 0
       }
       pr={
         !isRecursive && pane.width !== 1 && pane.width !== '100%' && isFirst
-          ? [0, 0, 6]
+          ? [0, 0, 4, 5]
           : 0
       }
       {...paneProps}

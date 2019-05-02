@@ -11,7 +11,12 @@ const getVariant = (variant, hovered) => {
   return !hovered ? variants[variant] : variants[variant].hovered
 }
 
-const Button = ({ label, children, variant = 'primary', ...rest }) => {
+const Button = ({
+  label,
+  children,
+  variant = 'primary', // primary || secondary
+  ...rest
+}) => {
   const [hovered, bind] = useHover()
   const buttonStyles = getVariant(variant, hovered)
   const defaultProps = {

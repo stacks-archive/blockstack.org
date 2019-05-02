@@ -56,11 +56,21 @@ const styles = css`
     -moz-osx-font-smoothing: grayscale;
     box-sizing: border-box;
   }
+  .headroom.headroom--unpinned.headroom--scrolled {
+    pointer-events: none;
+  }
 `
 
 const GlobalStyles = createGlobalStyle`
 ${styles}
 `
+
+const handleBgImageLoaded = (e) => {
+  const bg = e.target.getAttribute('data-bg')
+  if (bg) {
+    e.target.style.backgroundImage = 'url(' + bg + ')'
+  }
+}
 
 class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
@@ -82,19 +92,15 @@ class MyApp extends App {
   }
 
   componentDidMount() {
-    const handleBgImageLoaded = (e) => {
-      const bg = e.target.getAttribute('data-bg')
-      if (bg) {
-        e.target.style.backgroundImage = 'url(' + bg + ')'
-      }
-    }
     if (typeof document !== 'undefined') {
       document.addEventListener('lazybeforeunveil', handleBgImageLoaded)
     }
   }
 
   componentWillUnmount() {
-    document.removeEventListener('lazybeforeunveil', handleBgImageLoaded)
+    if (typeof document !== 'undefined') {
+      document.removeEventListener('lazybeforeunveil', handleBgImageLoaded)
+    }
   }
 
   render() {

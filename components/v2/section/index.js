@@ -149,9 +149,16 @@ const Section = ({
   alignment = 'default',
   variant = defaultSectionTheme,
   noWrapper,
+  bg,
   ...rest
 }) => {
-  const [isInViewport, targetRef] = useIsInViewport({ threshold: 150 })
+  const [isInViewport, targetRef] = useIsInViewport({
+    threshold: 25,
+    modTop: '250px',
+    modRight: '0px',
+    modBottom: '0px',
+    modLeft: '0px'
+  })
   const [isInView, setInView] = useState(isInViewport)
   useEffect(() => {
     if (isInViewport && !isInView) {
@@ -160,8 +167,8 @@ const Section = ({
   }, [isInViewport])
   return (
     <div ref={targetRef}>
-      <SectionContextProvider value={{ variant, isInViewport: isInView }}>
-        {noWrapper ? rest.children : <SectionWrapper {...rest} />}
+      <SectionContextProvider value={{ variant, isInViewport: isInView, bg }}>
+        {noWrapper ? rest.children : <SectionWrapper bg={bg} {...rest} />}
       </SectionContextProvider>
     </div>
   )

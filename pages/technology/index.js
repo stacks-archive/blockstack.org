@@ -509,6 +509,18 @@ const sections = [
         title: {
           is: 'h2',
           children: 'Ready to start building on Blockstack?'
+        },
+        actions: {
+          mx: 'auto',
+          pt: 5,
+          items: [
+            {
+              type: 'button',
+              label: 'Zero-to-dapp tutorial',
+              href: 'https://angel.co/blockstack',
+              target: '_blank'
+            }
+          ]
         }
       }
     ]

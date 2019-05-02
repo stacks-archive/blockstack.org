@@ -78,17 +78,18 @@ const press = [
     publication: 'The Washington Post'
   },
   {
-    title: 'Tech Thinks It Has a Fix for the Problems It Created: Blockchain',
-    publication: 'The New York Times'
+    title: 'The decentralized internet is here',
+    publication: 'Wired'
   },
   {
     title:
-      'Blockchain technology may offer a way to re-decentralise the internet',
-    publication: 'The Economist'
+      'New Blockchain Fund with Winklevoss Backing Targets Facebook’s Business Model',
+    publication: 'Forbes'
   },
   {
-    title: 'The new technology that aspires to #DeleteFacebook for good',
-    publication: 'The Washington Post'
+    title:
+      'Meet the Blockchain Startup That Inspired HBO’s ‘Silicon Valley’ season five. ',
+    publication: 'Fortune'
   }
 ]
 
