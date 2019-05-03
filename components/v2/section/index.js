@@ -6,6 +6,9 @@ import { Wrapper } from '@components/v2/wrapper'
 import { titleProps, titleStyles } from '@common/theme'
 import { SectionContextProvider, defaultSectionTheme } from '@common/context'
 import useIsInViewport from 'use-is-in-viewport'
+import { transition } from '@common/theme'
+import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
+import { useHover } from 'use-events'
 
 /**
  * SectionWrapper
@@ -131,7 +134,11 @@ const Text = ({ is = 'p', ...rest }) => {
  * @prop {Object} rest - all additional props to be passed to the component
  */
 const Pane = ({ type, ...rest }) => (
-  <Flex flexDirection="column" width={[1, 1, type === 'graphic' ? `calc(50% - 64px)` : `calc(50% - 12px)`]} {...rest} />
+  <Flex
+    flexDirection="column"
+    width={[1, 1, type === 'graphic' ? `calc(50% - 64px)` : `calc(50% - 12px)`]}
+    {...rest}
+  />
 )
 
 /**
@@ -174,8 +181,50 @@ const Section = ({
   )
 }
 
+/**
+ * TextLink
+ *
+ * This is a link with an animated chevron the moves to the right on hover. Typically used in sections for a cta that is a text link.
+ *
+ * @prop {Object} action - action object with at least a 'label' key.
+ * @prop {Boolean} hideArrow - by default there is a chevron showing, this hides it
+ * @prop {Object} rest - all additional props to be passed to the component
+ */
+const TextLink = ({ action, hideArrow, ...rest }) => {
+  const { label, ...actionProps } = action
+  const [hovered, bind] = useHover()
+  return (
+    <Text
+      is="a"
+      display="inline-flex"
+      alignSelf="flex-start"
+      style={{ textDecoration: 'none' }}
+      color="blue"
+      alignItems="center"
+      pt={4}
+      fontSize={2}
+      {...rest}
+      {...bind}
+      {...actionProps}
+    >
+      <Box is="span" style={{ textDecoration: hovered ? 'underline' : 'none' }}>
+        {label}
+      </Box>
+      {!hideArrow ? (
+        <Box
+          transition={transition}
+          transform={`translate3d(${hovered ? '2px' : '-1px'}, 1px, 0px)`}
+          size="18px"
+        >
+          <ChevronRightIcon size="18px" />
+        </Box>
+      ) : null}
+    </Text>
+  )
+}
+
 Section.Title = Title
 Section.Text = Text
 Section.Pane = Pane
 
-export { Section, Title, Text }
+export { Section, Title, Text, TextLink }

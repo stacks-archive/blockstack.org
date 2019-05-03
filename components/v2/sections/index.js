@@ -1,43 +1,13 @@
 import React from 'react'
 import { Section } from '@components/v2/section'
 import { Box, Flex } from 'blockstack-ui'
-import { transition } from '@common/theme'
-import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
-import { useHover } from 'use-events'
+import {TextLink} from '@components/v2/section'
 import { useInViewAnimationStyles } from '@common/hooks'
 import { Button } from '@components/button'
 
 const padding = [0, 0, 5]
 
-const TextLink = ({ action, ...rest }) => {
-  const [hovered, bind] = useHover()
-  return (
-    <Section.Text
-      is="a"
-      display="inline-flex"
-      alignSelf="flex-start"
-      style={{ textDecoration: 'none' }}
-      color="blue"
-      alignItems="center"
-      href={action.href}
-      pt={4}
-      fontSize={2}
-      {...rest}
-      {...bind}
-    >
-      <Box is="span" style={{ textDecoration: hovered ? 'underline' : 'none' }}>
-        {action.label}
-      </Box>
-      <Box
-        transition={transition}
-        transform={`translate3d(${hovered ? '2px' : '-1px'}, 1px, 0px)`}
-        size="18px"
-      >
-        <ChevronRightIcon size="18px" />
-      </Box>
-    </Section.Text>
-  )
-}
+
 
 const Actions = ({ items, ...rest }) => (
   <Flex {...rest}>
@@ -262,4 +232,4 @@ const Sections = ({ sections }) => {
   })
 }
 
-export { Sections, Panes, Content, TextLink }
+export { Sections, Panes, Content }

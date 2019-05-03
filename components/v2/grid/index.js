@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Flex } from 'blockstack-ui'
 import { Title, Text } from '@components/v2/section'
-import { TextLink } from '@components/v2/sections'
+import { TextLink } from '@components/v2/section'
 
 const GridItem = ({ item }) => {
   const { title, text } = item
