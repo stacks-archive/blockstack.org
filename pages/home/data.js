@@ -2,20 +2,20 @@ const caseStudies = [
   {
     title: `Justin Hunter Wanted His Privacy Back, Now He’s Giving Yours Back Too`,
     publication: 'Indie Hackers',
-    src: 'http://blockstack-www.imgix.net/justin-hu.png',
-    app: 'http://blockstack-www.imgix.net/graphite-app.png'
+    src: 'https://blockstack-www.imgix.net/justin-hu.png',
+    app: 'https://blockstack-www.imgix.net/graphite-app.png'
   },
   {
     title: `Santi Siri Is Using Blockstack To End Political Corruption`,
     publication: 'Wired',
-    src: 'http://blockstack-www.imgix.net/santi.png',
-    app: 'http://blockstack-www.imgix.net/demo-earth-app.png'
+    src: 'https://blockstack-www.imgix.net/santi.png',
+    app: 'https://blockstack-www.imgix.net/demo-earth-app.png'
   },
   {
     title: `How this Maker quit his job and made his side projects profitable in 1 year`,
     publication: 'Product Hunt',
-    src: 'http://blockstack-www.imgix.net/product-hunt-maker.png',
-    app: 'http://blockstack-www.imgix.net/photo-app.png'
+    src: 'https://blockstack-www.imgix.net/product-hunt-maker.png',
+    app: 'https://blockstack-www.imgix.net/photo-app.png'
   }
 ]
 
