@@ -1,3 +1,6 @@
+import React from 'react'
+import { NIL, AppCo } from '@components/v2/vectors'
+
 const photos1 = [
   {
     src:
