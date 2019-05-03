@@ -1,7 +1,6 @@
 import App, { Container } from 'next/app'
 import React, { useRef } from 'react'
 import useComponentSize from '@rehooks/component-size'
-
 import Header from '@components/header'
 import { Footer } from '@components/footer'
 import { Box } from 'blockstack-ui'
@@ -93,6 +92,7 @@ class MyApp extends App {
 
   componentDidMount() {
     if (typeof document !== 'undefined') {
+      require('intersection-observer')
       document.addEventListener('lazybeforeunveil', handleBgImageLoaded)
     }
   }

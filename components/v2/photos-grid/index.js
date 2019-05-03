@@ -15,6 +15,9 @@ const PhotoItem = ({
         <Image
           bgImg={src}
           height={height}
+          imgix={{
+            w: 1800
+          }}
           backgroundPosition={backgroundPosition}
           backgroundSize={backgroundSize}
         />

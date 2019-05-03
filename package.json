@@ -16,6 +16,7 @@
     "cross-fetch": "^3.0.2",
     "dayjs": "^1.8.13",
     "debounce": "^1.2.0",
+    "intersection-observer": "^0.6.0",
     "jsonp": "^0.2.1",
     "keyboardjs": "^2.5.1",
     "ky": "^0.9.0",

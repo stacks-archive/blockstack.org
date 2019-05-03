@@ -7,6 +7,8 @@ import { useHover } from 'use-events'
 import { useInViewAnimationStyles } from '@common/hooks'
 import { Button } from '@components/button'
 
+const padding = [0, 0, 5]
+
 const TextLink = ({ action, ...rest }) => {
   const [hovered, bind] = useHover()
   return (
@@ -106,8 +108,8 @@ const Content = ({ pane, isFirst, inViewAnimationStyles, ...rest }) => {
       {pane.type === 'graphic' && (
         <Box
           py={8}
-          pl={isFirst ? 0 : [0, 0, 4, 5]}
-          pr={isFirst ? [0, 0, 4, 5] : 0}
+          pl={isFirst ? 0 : padding}
+          pr={isFirst ? padding : 0}
           {...inViewAnimationStyles}
         >
           <Box is="img" display="block" maxWidth="100%" src={pane.src} />
@@ -138,7 +140,12 @@ const PaneTemplate = ({
     : {}
 
   return (
-    <Section.Pane justifyContent="center" {...conditionalStyles} {...rest}>
+    <Section.Pane
+      type={pane && pane.type}
+      justifyContent="center"
+      {...conditionalStyles}
+      {...rest}
+    >
       {paneChildren ? (
         paneChildren
       ) : (
@@ -165,12 +172,12 @@ const renderPane = (pane, key, isRecursive) => {
       isRecursive={isRecursive}
       pl={
         !isRecursive && pane.width !== 1 && pane.width !== '100%' && isSecond
-          ? [0, 0, 4, 5]
+          ? padding
           : 0
       }
       pr={
         !isRecursive && pane.width !== 1 && pane.width !== '100%' && isFirst
-          ? [0, 0, 4, 5]
+          ? padding
           : 0
       }
       {...paneProps}
@@ -190,9 +197,10 @@ const Panes = ({ panes, ...panesWrapperProps }) => {
 
           return (
             <PaneTemplate
+              type={pane.type}
               pl={
                 pane.width !== 1 && pane.width !== '100%' && isSecond
-                  ? [0, 0, 6]
+                  ? padding
                   : 0
               }
               pr={
@@ -200,7 +208,7 @@ const Panes = ({ panes, ...panesWrapperProps }) => {
                 pane.width !== '100%' &&
                 isFirst &&
                 !pane.children
-                  ? [0, 0, 6]
+                  ? padding
                   : 0
               }
               {...rest}
@@ -254,4 +262,4 @@ const Sections = ({ sections }) => {
   })
 }
 
-export { Sections, Panes, Content }
+export { Sections, Panes, Content, TextLink }

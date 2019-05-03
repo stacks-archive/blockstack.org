@@ -85,13 +85,15 @@ const titleStyles = {
     fontSize: [6, 6, 8],
     fontWeight: 500,
     fontFamily: 'brand',
-    lineHeight: ['64px']
+    lineHeight: ['64px'],
+    letterSpacing: '-0.04em'
   },
   h2: {
     fontSize: [5, 5, 6],
     fontWeight: 400,
     fontFamily: 'brand',
-    lineHeight: ['48px']
+    lineHeight: ['48px'],
+    letterSpacing: '-0.07em'
   },
   h3: {
     fontSize: [5, 5, 6],
@@ -103,7 +105,22 @@ const titleStyles = {
     fontSize: [3],
     fontFamily: 'default',
     fontWeight: 600,
-    lineHeight: ['28px']
+    lineHeight: ['28px'],
+    letterSpacing: '-0.02em'
+  },
+  h5: {
+    fontSize: [2],
+    fontFamily: 'default',
+    fontWeight: 600,
+    lineHeight: ['24px'],
+    letterSpacing: '-0.02em'
+  },
+  h6: {
+    fontSize: [1],
+    fontFamily: 'default',
+    fontWeight: 500,
+    lineHeight: ['18px'],
+    letterSpacing: '-0.02em'
   }
 }
 

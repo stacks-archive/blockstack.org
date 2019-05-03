@@ -515,6 +515,7 @@ const sections = [
         width: 1,
         flexDirection: ['column', 'column', 'row'],
         justifyContent: 'space-between',
+        alignItems: 'flex-start',
         panes: [
           {
             width: [1, 1, 'calc(33.33333% - 24px)'],

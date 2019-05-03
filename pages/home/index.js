@@ -178,7 +178,6 @@ class HomePage extends React.Component {
       {
         variant: 'white',
         py: 8,
-        alignItems: 'flex-start',
         panes: [
           {
             title: {

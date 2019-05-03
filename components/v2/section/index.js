@@ -130,8 +130,8 @@ const Text = ({ is = 'p', ...rest }) => {
  *
  * @prop {Object} rest - all additional props to be passed to the component
  */
-const Pane = ({ ...rest }) => (
-  <Flex flexDirection="column" width={[1, 1, 1 / 2]} {...rest} />
+const Pane = ({ type, ...rest }) => (
+  <Flex flexDirection="column" width={[1, 1, type === 'graphic' ? `calc(50% - 64px)` : `calc(50% - 12px)`]} {...rest} />
 )
 
 /**
