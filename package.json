@@ -40,7 +40,7 @@
     "react-select": "^1.2.1",
     "react-spring": "^8.0.19",
     "react-tunnels": "^1.1.0",
-    "react-use": "^8.1.2",
+    "react-use": "^8.3.1",
     "rebound": "^0.1.0",
     "redux-bundler": "^23.1.1",
     "redux-bundler-react": "^1.1.1",
