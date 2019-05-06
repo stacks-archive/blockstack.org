@@ -1,7 +1,7 @@
 import React from 'react'
 import { AboutHero } from '@components/v2/heros/about'
 import { CardList } from '@components/v2/card-list'
-import { CheckIcon } from 'mdi-react'
+import CheckIcon from 'mdi-react/CheckIcon'
 import { Investors } from '@components/v2/investors'
 import { PersonsList } from '@components/v2/advisors'
 import { PhotoGrid } from '@components/v2/photos-grid'
