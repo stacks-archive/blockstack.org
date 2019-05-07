@@ -55,10 +55,12 @@ const plugins = [
   [
     withImages,
     {
-      inlineImageLimit: 8192,
+      handleImages: ['svg', 'webp', 'gif'],
+      inlineImageLimit: -1,
       imagesFolder: 'images',
       imagesName: '[name]-[hash].[ext]',
       optimizeImagesInDev: false,
+      url: true,
       mozjpeg: false,
       optipng: false,
       pngquant: false,

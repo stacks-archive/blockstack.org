@@ -96,10 +96,10 @@ const titleStyles = {
     letterSpacing: '-0.07em'
   },
   h3: {
-    fontSize: [5, 5, 6],
+    fontSize: [4, 4, 5],
     fontWeight: 400,
     fontFamily: 'brand',
-    lineHeight: ['42px', '42px', '48px']
+    lineHeight: ['36px', '36px', '42px']
   },
   h4: {
     fontSize: [3],

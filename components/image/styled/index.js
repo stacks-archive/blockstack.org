@@ -70,6 +70,9 @@ const Placeholder = styled.div`
 
 const StyledImage = styled.div`
   position: relative;
+  img {
+    max-width: 100%;
+  }
 
   .lazyloaded {
     & ~ ${Placeholder} {

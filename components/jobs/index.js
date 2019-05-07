@@ -1,4 +1,6 @@
 import React from 'react'
+import { Box, Flex } from 'blockstack-ui'
+import { Title, Text } from '@components/v2/section'
 import { StyledJobs } from '@components/jobs/styled'
 import { connect } from 'redux-bundler-react'
 
@@ -6,32 +8,48 @@ const Jobs = connect(
   'selectJobs',
   ({ jobs, ...rest }) =>
     jobs && jobs.length ? (
-      <StyledJobs {...rest}>
+      <Box {...rest}>
         <h3>Open Positions</h3>
-        <StyledJobs.Wrapper>
+        <Flex flexWrap="wrap" pt={5}>
           {jobs.map(({ text, hostedUrl, categories }, i) => {
             if (!categories) return null
             const { commitment, location, team } = categories
             return (
-              <StyledJobs.Job key={i}>
-                {team ? <h6 style={{ margin: 0 }}>{team}</h6> : null}
-                {text ? <StyledJobs.Title>{text}</StyledJobs.Title> : null}
+              <Box pr={5} pb={5} width={[1, 1 / 2, 1 / 3]} key={i}>
+                {team ? (
+                  <Title opacity={0.75} is="h6" color="ink.50">
+                    {team}
+                  </Title>
+                ) : null}
+                {text ? (
+                  <Title is="h4" pt={1}>
+                    {text}
+                  </Title>
+                ) : null}
                 {location ? (
-                  <h6 style={{ margin: 0, opacity: 0.5 }}>{location}</h6>
+                  <Box pt={3}>
+                    <Title is="h6" color="ink.50">
+                      {location}
+                    </Title>
+                  </Box>
                 ) : null}
                 {commitment ? (
-                  <h6 style={{ margin: 0, opacity: 0.5 }}>{commitment}</h6>
+                  <Box pt={1}>
+                    <Title is="h6" color="ink.50">
+                      {commitment}
+                    </Title>
+                  </Box>
                 ) : null}
-                <div>
+                <Box pt={5}>
                   <a href={hostedUrl} target="_blank" rel="noopener noreferrer">
                     Learn More
                   </a>
-                </div>
-              </StyledJobs.Job>
+                </Box>
+              </Box>
             )
           })}
-        </StyledJobs.Wrapper>
-      </StyledJobs>
+        </Flex>
+      </Box>
     ) : null
 )
 

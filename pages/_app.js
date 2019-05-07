@@ -59,6 +59,9 @@ const styles = css`
   .headroom.headroom--unpinned.headroom--scrolled {
     pointer-events: none;
   }
+  .headroom {
+    z-index: 99999999 !important;
+  }
 `
 
 const GlobalStyles = createGlobalStyle`

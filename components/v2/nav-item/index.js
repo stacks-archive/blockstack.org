@@ -116,14 +116,15 @@ const NavItem = ({
   )
 }
 
-const SubNavItem = ({ label, style = {}, ...rest }) => {
+const SubNavItem = ({ label, style = {}, visible, ...rest }) => {
   const { color, hover } = useHeaderTheme()
-  const [hovered, hoverBind] = useHover()
+  const [hoverState, hoverBind] = useHover()
   const [active, activeBind] = useActive()
   const bind = {
     ...hoverBind,
     ...activeBind
   }
+  const hovered = visible && hoverState
   return (
     <Flex
       px={4}
@@ -185,6 +186,9 @@ const SubNav = ({ items = [], transitions, visible, ...rest }) => {
       transition="0.3s all cubic-bezier(.19,1,.22,1)"
       boxShadow="0px 2px 12px rgba(0, 0, 0, 0.03), 0px 1px 2px rgba(0, 0, 0, 0.06)"
       opacity={visible ? 1 : 0}
+      style={{
+        userSelect: !visible ? 'none' : 'unset'
+      }}
       transform={visible ? 'none' : 'translateY(-5px)'}
       borderBottom="1px solid"
       borderColor={borderColor}
@@ -199,7 +203,9 @@ const SubNav = ({ items = [], transitions, visible, ...rest }) => {
       >
         <Spacer />
         {items && items.length
-          ? items.map((item, i) => <SubNavItem key={i} label={item.label} />)
+          ? items.map((item, i) => (
+              <SubNavItem visible={visible} key={i} label={item.label} />
+            ))
           : null}
         <Spacer />
       </Wrapper>
