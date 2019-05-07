@@ -108,7 +108,12 @@ const Text = ({ is = 'p', ...rest }) => {
       css={
         isLink
           ? css({
+              '&': {
+                fontWeight: '500',
+                color: text.hover
+              },
               '&:hover': {
+                textDecoration: 'none !important',
                 color: text.hover
               }
             })
@@ -156,10 +161,9 @@ const Section = ({
   ...rest
 }) => {
   const [isInViewport, targetRef] = useIsInViewport({
-    threshold: 25,
-    modTop: '250px',
+    modTop: '0px',
     modRight: '0px',
-    modBottom: '0px',
+    modBottom: '-300px',
     modLeft: '0px'
   })
   const [isInView, setInView] = useState(isInViewport)

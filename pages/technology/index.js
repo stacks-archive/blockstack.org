@@ -8,6 +8,7 @@ import { Button } from '@components/button'
 import { AppsList } from '@components/v2/apps-list'
 import { PhotoGrid } from '@components/v2/photos-grid'
 import { photos, apps, appBuildersGrid, usersGrid } from './data'
+import { AuthGraphic } from '@components/v2/graphics/auth'
 
 const sections = [
   {
@@ -24,6 +25,7 @@ const sections = [
       [
         {
           title: {
+            pb: 0,
             is: 'h4',
             children: '65 teams'
           },
@@ -33,6 +35,7 @@ const sections = [
         },
         {
           title: {
+            pb: 0,
             is: 'h4',
             children: '2,000 developers'
           },
@@ -60,7 +63,7 @@ const sections = [
     panes: [
       {
         width: 1,
-        maxWidth: '60%',
+        maxWidth: ['100%', '100%', '60%'],
         mx: 'auto',
         title: {
           is: 'h2',
@@ -129,7 +132,7 @@ const sections = [
       },
       {
         type: 'graphic',
-        src: 'https://blockstack-www.imgix.net/auth-graphic.png'
+        children: <AuthGraphic />
       }
     ]
   },
@@ -277,10 +280,12 @@ const sections = [
         title: {
           is: 'h2',
           pr: 5,
+          pb: [0, 0, 5],
           children: 'Upcoming events'
         },
         actions: [
           {
+            pt: 0,
             type: 'link',
             label: 'View all upcoming events',
             href: '#'
@@ -296,6 +301,7 @@ const sections = [
   {
     variant: 'blue',
     align: 'center',
+    justifyContent: 'center',
     minHeight: '400px',
     py: 8,
     panes: [
@@ -336,15 +342,15 @@ const Hero = ({ ...rest }) => (
       bg="black"
     >
       <Section.Pane width={1} justifyContent="center" alignItems="center">
-        <Section.Title maxWidth="80%">
+        <Section.Title pb={5} maxWidth={['100%', '100%', '80%']}>
           Easily build blockchain apps that scale
         </Section.Title>
-        <Section.Text maxWidth="50%">
+        <Section.Text maxWidth={['100%', '100%', '50%']}>
           Get started with our Zero-to-Dapp tutorial, view our documentation, or
           visit our Github.
         </Section.Text>
         <Flex pt={5}>
-          <Button>Tutorials</Button>
+          <Button width={[1, 1, 'unset']}>Tutorials</Button>
         </Flex>
       </Section.Pane>
       <Section.Pane

@@ -12,7 +12,6 @@ import { photos1, photos2, ecosystemPartners, advisors } from './data'
 const sections = [
   {
     variant: 'white',
-
     panes: [
       {
         justifyContent: 'flex-start',
@@ -69,7 +68,6 @@ const sections = [
         },
         list: {
           icon: CheckIcon,
-          pt: 5,
           items: [
             'Founded in 2013 at Princeton',
             '$50M in funding',
@@ -103,7 +101,7 @@ const sections = [
           {
             type: 'link',
             label: 'Careers',
-            href: '#'
+            href: '/careers'
           }
         ]
       },

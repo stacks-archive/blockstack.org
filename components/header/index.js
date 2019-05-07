@@ -10,7 +10,7 @@ import { Logo } from '@components/v2/logo'
 import { navigation } from '@common/constants'
 import { HeaderTheme, defaultHeaderTheme } from '@common/context'
 import { Wrapper } from '@components/v2/wrapper'
-import { useLockBodyScroll, useSize } from 'react-use'
+import { useLockBodyScroll } from 'react-use'
 import { HeaderHeightContext } from '../../pages/_app'
 import { transition } from '@common/theme'
 import Headroom from 'react-headroom'
@@ -175,7 +175,6 @@ const Header = ({ theme = defaultHeaderTheme, innerRef, ...rest }) => {
         <>
           <Box {...bind} {...rest}>
             <HeaderBar innerRef={innerRef}>
-              <HelloBar />
               <Wrapper py={5}>
                 <Logo onClick={handleThemeToggle} />
                 <Navigation

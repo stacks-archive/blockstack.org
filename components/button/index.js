@@ -27,11 +27,20 @@ const Button = ({
     letterSpacing: '-0.02em',
     border: '2px solid',
     transition,
+    textAlign: ['center', 'center', 'unset'],
     cursor: hovered ? 'pointer' : 'unset'
   }
 
   return (
-    <Flex role="button" {...defaultProps} {...buttonStyles} {...bind} {...rest}>
+    <Flex
+      role="button"
+      {...defaultProps}
+      alignItems="center"
+      justifyContent="center"
+      {...buttonStyles}
+      {...bind}
+      {...rest}
+    >
       <Box>{children ? children : label}</Box>
     </Flex>
   )

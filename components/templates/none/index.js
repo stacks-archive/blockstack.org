@@ -9,15 +9,17 @@ Router.onRouteChangeComplete = (url) => {
 }
 
 const TemplateWrapper = ({ meta, children, ...rest }) => {
-  return meta.path !== ('/about' || '/' || '/technology') ? (
+  const customTemplate =
+    meta.path === '/' || meta.path === '/about' || meta.path === '/technology'
+  return customTemplate ? (
+    children
+  ) : (
     <>
       <Section variant="ink" minHeight="0px">
         <Section.Title>{meta.title}</Section.Title>
       </Section>
       {children}
     </>
-  ) : (
-    children
   )
 }
 

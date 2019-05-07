@@ -11,61 +11,8 @@ import { meta, caseStudies, videos, press } from './data'
 import fetch from 'cross-fetch'
 import { News } from '@components/v2/articles'
 import { PhotoGrid } from '@components/v2/photos-grid'
-import { Codeblock } from '@components/v2/code'
+import { AuthGraphic } from '@components/v2/graphics/auth'
 
-const code = `if (isUserSignedIn()) {
-  const user = loadUserData()
-  showProfile(user.profile)
-} else if (isSignInPending()) {
-  handlePendingSignIn().then((user => {
-    showProfile(user.profile)
-  })
-}`
-
-const CodeGraphic = () => {
-  return (
-    <Box pb="125px">
-      <Box position="relative">
-        <Box width={3 / 4}>
-          <Codeblock hideNumbers language="javascript" value={code} />
-        </Box>
-        <Box
-          p={5}
-          position="absolute"
-          bottom="-25px"
-          right={0}
-          bg="white"
-          borderRadius="8px"
-          width="60%"
-          zIndex={5}
-          transform="translateY(20%)"
-          boxShadow={
-            '0px 2px 12px rgba(0, 0, 0, 0.04), 0px 1px 2px rgba(0, 0, 0, 0.08)'
-          }
-        >
-          <Box>
-            <Title is="h4">Sign In</Title>
-          </Box>
-          <Box mt={4}>
-            <Text fontSize={1}>
-              “Stealthy” (stealthy.im) wants to read your basic info and publish
-              data stored for this app.
-            </Text>
-          </Box>
-          <Box mt={4}>
-            <Text fontSize={1}>Select an ID to use: </Text>
-          </Box>
-          <Flex mt={4} borderRadius="48px" bg="blue" p={2} alignItems="center">
-            <Box mr={2} size="32px" borderRadius="32px" bg="white" />
-            <Title is="h5" color="white">
-              Samantha.id
-            </Title>
-          </Flex>
-        </Box>
-      </Box>
-    </Box>
-  )
-}
 const photos = [
   { src: 'https://blockstack-www.imgix.net/photos/photo-conference-001.jpg' },
   {
@@ -93,16 +40,21 @@ const Hero = ({ ...rest }) => (
       justifyContent="center"
     >
       <Section.Pane width={1} justifyContent="center" alignItems="center">
-        <Section.Title maxWidth="80%">
+        <Section.Title pb={[5, 5, 5]} maxWidth={['100%', '100%', '80%']}>
           Blockchain computing platform and app ecosystem
         </Section.Title>
-        <Section.Text maxWidth="50%">
+        <Section.Text maxWidth={['100%', '100%', '50%']}>
           Blockstack apps protect your digital rights and are powered by the
           Stacks blockchain.
         </Section.Text>
-        <Flex pt={5}>
-          <Button>Create ID</Button>
-          <Button ml={3} variant="secondary">
+        <Flex width={1} flexDirection={['column', 'column', 'row']} pt={5}>
+          <Button width={[1, 1, 'unset']}>Create ID</Button>
+          <Button
+            width={[1, 1, 'unset']}
+            mt={[3, 3, 0]}
+            ml={[0, 0, 3]}
+            variant="secondary"
+          >
             Build Apps
           </Button>
         </Flex>
@@ -169,7 +121,7 @@ class HomePage extends React.Component {
         bg: 'sky.10',
         panes: [
           {
-            children: <CodeGraphic />
+            children: <AuthGraphic />
           },
           {
             title: {

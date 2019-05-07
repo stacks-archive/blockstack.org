@@ -18,6 +18,7 @@ const Mdx = ({ children }) => (
       ol: (p) => <Text fontSize={2} is="ol" {...p} />,
       ul: (p) => <Text fontSize={2} pb={3} pl={5} is="ul" {...p} />,
       li: (p) => <Text fontSize={2} pb={2} is="li" {...p} />,
+      a: (p) => <Text is="a" fontSize={2} {...p} />,
       img: Image,
       code: Codeblock
     }}

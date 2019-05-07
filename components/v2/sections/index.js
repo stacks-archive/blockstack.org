@@ -8,7 +8,7 @@ import { Button } from '@components/button'
 const padding = [0, 0, 5]
 
 const Actions = ({ items, ...rest }) => (
-  <Flex {...rest}>
+  <Flex pt={[5, 5, 0]} flexDirection={['column', 'column', 'row']} {...rest}>
     {items.map(({ type, ...action }, key, arr) => {
       if (type === 'link') {
         return <TextLink action={action} key={key} />
@@ -17,7 +17,12 @@ const Actions = ({ items, ...rest }) => (
         return (
           <Button
             key={key}
-            ml={key > 0 && arr.length > 1 ? 3 : 0}
+            ml={[0, 0, key > 0 && arr.length > 1 ? 3 : 0]}
+            mt={[
+              key > 0 && arr.length > 1 ? 3 : 0,
+              key > 0 && arr.length > 1 ? 3 : 0,
+              0
+            ]}
             {...action}
           />
         )
@@ -64,7 +69,7 @@ const Content = ({ pane, isFirst, inViewAnimationStyles, ...rest }) => {
         />
       )}
       {pane.title && (
-        <Section.Title {...pane.title} pb={[5]} {...inViewAnimationStyles} />
+        <Section.Title pb={[5]} {...pane.title} {...inViewAnimationStyles} />
       )}
       {pane.text && <Section.Text {...pane.text} {...inViewAnimationStyles} />}
       {pane.list && (
@@ -207,7 +212,6 @@ const SectionTemplate = ({ variant, panes, panesWrapperProps, ...rest }) => (
   <Section
     variant={variant}
     width={1}
-    py={'120px'}
     maxWidth={['500px', '500px', '1064px']}
     {...rest}
   >

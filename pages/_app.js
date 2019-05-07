@@ -31,8 +31,12 @@ const WrappedComponent = ({
   const size = useComponentSize(ref)
   const height = size && size.height
 
-  const defaultTheme =
-    pageProps.meta.path !== ('/about' || '/' || '/technology') ? 'ink' : 'white'
+  const defaultTemplate =
+    pageProps.meta.path === '/' ||
+    pageProps.meta.path === '/about' ||
+    pageProps.meta.path === '/technology'
+
+  const defaultTheme = !defaultTemplate ? 'ink' : 'white'
 
   return (
     <HeaderHeightContext.Provider value={height}>
