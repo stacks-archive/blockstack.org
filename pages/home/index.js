@@ -1,5 +1,5 @@
 import React from 'react'
-import { Section } from '@components/v2/section'
+import { Section, Text, Title } from '@components/v2/section'
 import { Box, Flex } from 'blockstack-ui'
 import { Button } from '@components/button'
 import { Events } from '@components/v2/events'
@@ -11,7 +11,61 @@ import { meta, caseStudies, videos, press } from './data'
 import fetch from 'cross-fetch'
 import { News } from '@components/v2/articles'
 import { PhotoGrid } from '@components/v2/photos-grid'
+import { Codeblock } from '@components/v2/code'
 
+const code = `if (isUserSignedIn()) {
+  const user = loadUserData()
+  showProfile(user.profile)
+} else if (isSignInPending()) {
+  handlePendingSignIn().then((user => {
+    showProfile(user.profile)
+  })
+}`
+
+const CodeGraphic = () => {
+  return (
+    <Box pb="125px">
+      <Box position="relative">
+        <Box width={3 / 4}>
+          <Codeblock hideNumbers language="javascript" value={code} />
+        </Box>
+        <Box
+          p={5}
+          position="absolute"
+          bottom="-25px"
+          right={0}
+          bg="white"
+          borderRadius="8px"
+          width="60%"
+          zIndex={5}
+          transform="translateY(20%)"
+          boxShadow={
+            '0px 2px 12px rgba(0, 0, 0, 0.04), 0px 1px 2px rgba(0, 0, 0, 0.08)'
+          }
+        >
+          <Box>
+            <Title is="h4">Sign In</Title>
+          </Box>
+          <Box mt={4}>
+            <Text fontSize={1}>
+              “Stealthy” (stealthy.im) wants to read your basic info and publish
+              data stored for this app.
+            </Text>
+          </Box>
+          <Box mt={4}>
+            <Text fontSize={1}>Select an ID to use: </Text>
+          </Box>
+          <Flex mt={4} borderRadius="48px" bg="blue" p={2} alignItems="center">
+            <Box mr={2} size="32px" borderRadius="32px" bg="white" />
+            <Title is="h5" color="white">
+              Samantha.id
+            </Title>
+          </Flex>
+        </Box>
+      </Box>
+    </Box>
+  )
+}
 const photos = [
   { src: 'https://blockstack-www.imgix.net/photos/photo-conference-001.jpg' },
   {
@@ -115,8 +169,7 @@ class HomePage extends React.Component {
         bg: 'sky.10',
         panes: [
           {
-            type: 'graphic',
-            src: 'https://file-mmywyvbqys.now.sh/'
+            children: <CodeGraphic />
           },
           {
             title: {
@@ -137,7 +190,7 @@ class HomePage extends React.Component {
           },
           {
             width: 1,
-            children: <CaseStudies items={caseStudies} />
+            children: <CaseStudies pt={[8, 8, 0]} items={caseStudies} />
           }
         ]
       },

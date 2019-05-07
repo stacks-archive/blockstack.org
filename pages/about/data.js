@@ -51,7 +51,7 @@ const ecosystemPartners = [
 
 const advisors = [
   {
-    photo: 'https://blockstack-www.imgix.net/muneeb-ali.jpg',
+    photo: 'https://blockstack-www.imgix.net/team/muneeb-ali.jpg',
     name: 'Muneeb Ali',
     title: 'CEO and Co-founder',
     bio:

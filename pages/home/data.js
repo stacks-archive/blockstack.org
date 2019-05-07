@@ -32,7 +32,7 @@ const videos = [
     subtitle: 'Blockstack Summit',
     duration: '26:15',
     image: 'https://blockstack-www.imgix.net/video-still-ryan-naval.png',
-    width: [1, 1, `calc(66.6666666% - 12px)`]
+    width: [1, `calc(50% - 12px)`, `calc(66.6666666% - 12px)`]
   },
   {
     title: 'Welcome to the New Internet',
@@ -40,21 +40,21 @@ const videos = [
     duration: '26:15',
     image:
       'https://blockstack-www.imgix.net/video-still-welcome-to-the-new-internet.png',
-    width: [1, 1, `calc(33.3333333% - 12px)`]
+    width: [1, `calc(50% - 12px)`, `calc(33.3333333% - 12px)`]
   },
   {
     title: 'Life After Google',
     subtitle: 'George Gilder, Blockstack Summit',
     duration: '26:15',
     image: 'https://blockstack-www.imgix.net/video-still-life-after-google.png',
-    width: [1, 1, `calc(33.3333333% - 12px)`]
+    width: [1, `calc(50% - 12px)`, `calc(33.3333333% - 12px)`]
   },
   {
     title: 'Welcome to Decentralized Computing',
     subtitle: 'Muneeb Ali, ECOH Conference',
     duration: '26:15',
     image: 'https://blockstack-www.imgix.net/video-still-muneeb-kuwait.png',
-    width: [1, 1, `calc(66.6666666% - 12px)`]
+    width: [1, `calc(50% - 12px)`, `calc(66.6666666% - 12px)`]
   }
 ]
 

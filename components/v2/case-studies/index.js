@@ -4,7 +4,12 @@ import { useHover } from 'use-events'
 import { transition } from '@common/theme'
 import { Title } from '@components/v2/section'
 import { Image } from '@components/v2/image'
-import { WiredLogo, ProductHuntLogo, IndiehackersLogo } from '@components/v2/vectors'
+import {
+  WiredLogo,
+  ProductHuntLogo,
+  IndiehackersLogo
+} from '@components/v2/vectors'
+import { useMedia } from '@common/hooks'
 
 const PublicationLogo = ({ publication }) => {
   if (publication === 'Indie Hackers') {
@@ -33,18 +38,26 @@ const PublicationLogo = ({ publication }) => {
 
 const CaseStudyItem = ({ title, publication, src, app, ...rest }) => {
   const [hovered, bind] = useHover()
+  const isMobile = useMedia(1)
   return (
     <Flex
-      flexDirection="column"
+      flexDirection={['row', 'row', 'column']}
       cursor={hovered ? 'pointer' : 'unset'}
       px={[0, 0, 5]}
-      py={5}
+      pt={[5]}
+      pb={[7, 7, 5]}
       transition={transition}
       transform={`translate3d(0,${hovered ? -8 : 0}px,0)`}
       {...rest}
       {...bind}
     >
-      <Flex width={1} position="relative" alignItems="flex-end">
+      <Flex
+        width={['40%', '25%', '100%']}
+        position="relative"
+        flexShrink={0}
+        mr={[5, 5, 0]}
+        alignItems="flex-end"
+      >
         <Box
           size={80}
           right={[-15, -15, -30]}
@@ -54,7 +67,8 @@ const CaseStudyItem = ({ title, publication, src, app, ...rest }) => {
           is="img"
           src={app}
         />
-        <Box
+        <Flex
+          alignItems="center"
           overflow="hidden"
           width={1}
           boxShadow={
@@ -65,6 +79,7 @@ const CaseStudyItem = ({ title, publication, src, app, ...rest }) => {
           t
           transition={transition}
           borderRadius="8px"
+          maxHeight={['300px', '190px', 'unset']}
         >
           <Box
             transform={`scale(${hovered ? 1.08 : 1})`}
@@ -83,20 +98,21 @@ const CaseStudyItem = ({ title, publication, src, app, ...rest }) => {
               borderRadius="8px"
             />
           </Box>
-        </Box>
+        </Flex>
       </Flex>
-      <Flex flexDirection="column" flexGrow={1} pt={7}>
+      <Flex flexDirection="column" flexGrow={1} pt={[6, 6, 7]}>
         <Title
           is="h4"
           transition={transition}
           color={hovered ? 'blue' : 'ink'}
-          pb={4}
+          fontSize={[3, 3, 3]}
+          pb={[1, 1, 4]}
         >
           {title}
         </Title>
         <Flex
           opacity={hovered ? 1 : 0.75}
-          pt={5}
+          pt={[3, 3, 5]}
           alignItems="flex-end"
           flexGrow={1}
         >
@@ -107,10 +123,12 @@ const CaseStudyItem = ({ title, publication, src, app, ...rest }) => {
   )
 }
 
-const CaseStudies = ({ items }) => (
+const CaseStudies = ({ items, ...rest }) => (
   <Flex
-    flexDirection={['column', 'column', 'row']}
+    flexDirection={['column', 'row', 'row']}
+    flexWrap="wrap"
     justifyContent="space-between"
+    {...rest}
   >
     {items.map((item, key) => {
       return (

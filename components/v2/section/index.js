@@ -76,11 +76,6 @@ const Title = ({ is = 'h1', ...rest }) => {
       is={is}
       {...titleProps}
       {...fontStyles}
-      css={css({
-        '& + p': {
-          mt: is.toString() === 'h1' || is.toString() === 'h2' ? 5 : 0 // this will give any <Text> or <p> a padding set to 5 if following this component
-        }
-      })}
       color={text.title}
       m={0}
       p={0}
@@ -137,6 +132,7 @@ const Pane = ({ type, ...rest }) => (
   <Flex
     flexDirection="column"
     width={[1, 1, type === 'graphic' ? `calc(50% - 64px)` : `calc(50% - 12px)`]}
+    order={type === 'graphic' ? [-1, -1, 'unset'] : 'unset'}
     {...rest}
   />
 )

@@ -43,6 +43,7 @@ const WrappedComponent = ({
 }
 
 const styles = css`
+  @import url('https://fonts.googleapis.com/css?family=Fira+Mono');
   ${normalize};
   html,
   body {

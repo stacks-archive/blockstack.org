@@ -1,17 +1,20 @@
 import React from 'react'
-import { Controlled as CodeMirror } from 'react-codemirror2'
 import styled from 'styled-components'
-
-const Parent = styled.div`
+import { Box, Flex } from 'blockstack-ui'
+const CodeWapper = styled(Box)`
   /* BASICS */
 
   .CodeMirror {
     /* Set height, width, borders, and global font properties here */
     font-family: monospace;
-    line-height: 1.8 !important;
-    height: 300px;
-    color: black;
-    direction: ltr;
+    background: transparent !important;
+    \direction: ltr;
+    line-height: 1.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    user-select: none;
   }
 
   /* PADDING */
@@ -258,16 +261,18 @@ const Parent = styled.div`
     position: relative;
     overflow: hidden;
     background: white;
+    padding-right: 30px;
   }
 
   .CodeMirror-scroll {
-    overflow: scroll !important; /* Things will break if this is overridden */
+    overflow: hidden !important; /* Things will break if this is overridden */
     /* 30px is the magic margin used to hide the element's real scrollbars */
     /* See overflow: hidden in .CodeMirror */
     margin-bottom: -30px;
     margin-right: -30px;
     padding-bottom: 30px;
     height: 100%;
+    width: 100%;
     outline: none; /* Prevent dragging from highlighting the element */
     position: relative;
   }
@@ -297,7 +302,7 @@ const Parent = styled.div`
     bottom: 0;
     left: 0;
     overflow-y: hidden;
-    overflow-x: scroll;
+    overflow-x: hidden;
   }
   .CodeMirror-scrollbar-filler {
     right: 0;
@@ -604,77 +609,6 @@ const Parent = styled.div`
   }
 `
 
-const StyledCode = styled.code`
-  padding: 18px 15px 20px
-    ${({ lineNumbers }) => (lineNumbers ? '32px' : '14px')} !important;
-  background-color: #263238 !important;
-  color: rgba(233, 237, 237, 1);
-  font-size: 16px !important;
-  line-height: 24px !important;
-  margin: 20px 0;
-  border-radius: 0 !important;
-  display: block !important;
-  font-family: monospace !important;
-`
+const CodeMirrorStyled = styled(Box).attrs({ is: 'code' })``
 
-const returnLanguage = (lang) => {
-  switch (lang) {
-    case 'bash':
-      return 'shell'
-    case 'json':
-      return 'javascript'
-    default:
-      return lang
-  }
-}
-
-class Codeblock extends React.PureComponent {
-  instance = null
-  state = {
-    mounted: false
-  }
-
-  componentDidMount() {
-    if (!this.state.mounted) {
-      this.setState({
-        mounted: true
-      })
-    }
-    require('codemirror')
-    require('codemirror/mode/css/css')
-    require('codemirror/mode/shell/shell')
-    require('codemirror/mode/javascript/javascript')
-  }
-
-  render() {
-    if (!this.props.children) {
-      return null
-    }
-    const language = this.props.className && this.props.className.split('-')[1]
-
-    return (
-      <Parent>
-        {this.state.mounted ? (
-          <CodeMirror
-            editorDidMount={(editor) => {
-              this.instance = editor
-            }}
-            value={this.props.children.trimRight()}
-            className={language === 'bash' ? 'no-line-numbers' : null}
-            options={{
-              mode: returnLanguage(language),
-              theme: 'material',
-              lineNumbers: language !== 'bash'
-            }}
-          />
-        ) : (
-          <StyledCode lineNumbers={language !== 'bash'}>
-            {this.props.children.trimRight()}
-          </StyledCode>
-        )}
-      </Parent>
-    )
-  }
-}
-
-export { Codeblock }
+export { CodeMirrorStyled, CodeWapper }

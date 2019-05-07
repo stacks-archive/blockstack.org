@@ -1,13 +1,11 @@
 import React from 'react'
 import { Section } from '@components/v2/section'
 import { Box, Flex } from 'blockstack-ui'
-import {TextLink} from '@components/v2/section'
+import { TextLink } from '@components/v2/section'
 import { useInViewAnimationStyles } from '@common/hooks'
 import { Button } from '@components/button'
 
 const padding = [0, 0, 5]
-
-
 
 const Actions = ({ items, ...rest }) => (
   <Flex {...rest}>
@@ -59,17 +57,23 @@ const Content = ({ pane, isFirst, inViewAnimationStyles, ...rest }) => {
     <>
       {pane.pretitle && (
         <Section.Title
-          pb={3}
+          pb={[5, 5, 3]}
           is="h4"
           {...pane.pretitle}
           {...inViewAnimationStyles}
         />
       )}
       {pane.title && (
-        <Section.Title {...pane.title} {...inViewAnimationStyles} />
+        <Section.Title {...pane.title} pb={[5]} {...inViewAnimationStyles} />
       )}
       {pane.text && <Section.Text {...pane.text} {...inViewAnimationStyles} />}
-      {pane.list && <List {...pane.list} {...inViewAnimationStyles} />}
+      {pane.list && (
+        <List
+          pt={pane.text ? [5, 5, 3] : undefined}
+          {...pane.list}
+          {...inViewAnimationStyles}
+        />
+      )}
       {pane.actions && pane.actions.items ? (
         <Actions {...pane.actions} {...inViewAnimationStyles} />
       ) : pane.actions && pane.actions.length ? (
@@ -157,7 +161,12 @@ const renderPane = (pane, key, isRecursive) => {
 
 const Panes = ({ panes, ...panesWrapperProps }) => {
   return (
-    <Flex flexWrap="wrap" width={1} {...panesWrapperProps}>
+    <Flex
+      flexWrap="wrap"
+      justifyContent="space-between"
+      width={1}
+      {...panesWrapperProps}
+    >
       {panes.map((pane, paneKey) => {
         const isFirst = paneKey === 0
         const isSecond = paneKey === 1
@@ -195,7 +204,13 @@ const Panes = ({ panes, ...panesWrapperProps }) => {
 }
 
 const SectionTemplate = ({ variant, panes, panesWrapperProps, ...rest }) => (
-  <Section variant={variant} width={1} {...rest}>
+  <Section
+    variant={variant}
+    width={1}
+    py={'120px'}
+    maxWidth={['500px', '500px', '1064px']}
+    {...rest}
+  >
     <Panes panes={panes} {...panesWrapperProps} />
   </Section>
 )

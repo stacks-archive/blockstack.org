@@ -2,8 +2,10 @@ import React from 'react'
 import { Box, Flex } from 'blockstack-ui'
 import PlayIcon from 'mdi-react/PlayCircleIcon'
 import { useHover, useActive } from 'use-events'
+import { Title } from '@components/v2/section'
 import { transition } from '@common/theme'
 import { Image } from '@components/v2/image'
+import { useMedia } from '@common/hooks'
 
 const Gradient = ({ hovered, ...rest }) => (
   <Box
@@ -80,9 +82,16 @@ const MainDetails = ({ primary, title, ...rest }) => {
       >
         <PlayIcon size={primary ? 96 : 40} />
       </Box>
-      <Box userSelect="none" pt={primary ? 5 : 3} fontSize={4} fontWeight="500">
+      <Title
+        is="h4"
+        color="white"
+        userSelect="none"
+        pt={primary ? 5 : 3}
+        fontSize={4}
+        fontWeight="500"
+      >
         {title}
-      </Box>
+      </Title>
     </Flex>
   )
 }
@@ -90,7 +99,7 @@ const MainDetails = ({ primary, title, ...rest }) => {
 const VideoItemWrapper = ({ primary, image, ...rest }) => {
   return (
     <Flex
-      minHeight={primary ? 720 : 480}
+      minHeight={[300, primary ? 720 : 480, primary ? 720 : 480]}
       width="100%"
       alignItems={primary ? 'center' : 'flex-start'}
       justifyContent={primary ? 'center' : 'flex-end'}
@@ -109,21 +118,6 @@ const VideoItemWrapper = ({ primary, image, ...rest }) => {
   )
 }
 
-// const Image = ({ image, hovered, ...rest }) => (
-//   <Box
-//     position="absolute"
-//     size="100%"
-//     backgroundImage={`url(${image})`}
-//     backgroundSize="cover"
-//     backgroundPosition="center center"
-//     transition="1s all cubic-bezier(.19,1,.22,1)"
-//     transform={hovered ? 'scale(1.03)' : 'scale(1)'}
-//     style={{
-//       willChange: 'transform'
-//     }}
-//     {...rest}
-//   />
-// )
 const VideoItem = ({
   hovered,
   active,
@@ -158,21 +152,16 @@ const VideoItem = ({
         transform={hovered ? 'scale(1.03)' : 'scale(1)'}
         transition={transition}
       >
-        <Image minHeight={primary ? 720 : 480} width="100%" bgImg={image} />
+        <Image height="100%" width="100%" bgImg={image} />
       </Box>
     </VideoItemWrapper>
   )
 }
 
 const Videos = ({ items, ...rest }) => {
+  const isMobile = useMedia(2)
   return (
-    <Flex
-      py={8}
-      width="100%"
-      flexWrap="wrap"
-      justifyContent="space-between"
-      {...rest}
-    >
+    <Flex width="100%" flexWrap="wrap" justifyContent="space-between" {...rest}>
       {items.map(({ title, subtitle, image, width, ...itemProps }, key) => {
         const [hovered, hoverBind] = useHover()
         const [active, activeBind] = useActive()
@@ -186,7 +175,7 @@ const Videos = ({ items, ...rest }) => {
             subtitle={subtitle}
             image={image}
             width={width}
-            primary={key === 0}
+            primary={key === 0 && !isMobile}
             key={key}
             hovered={hovered}
             active={active}

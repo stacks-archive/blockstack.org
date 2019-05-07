@@ -31,7 +31,7 @@ const colors = {
   cyan: '#00D4FF'
 }
 
-const breakpoints = ['640px', '832px', '1024px', '1152px', '1360px']
+const breakpoints = ['600px', '748px', '1024px', '1152px']
 const fontSizes = [12, 14, 16, 20, 24, 28, 32, 36, 48, 64, 96, 128]
 const space = [0, 4, 8, 12, 16, 24, 32, 48, 64, 96]
 const lineHeights = [0.85, 1, 1.125, 1.3, 1.5, 1.6, 1.75]
@@ -85,21 +85,21 @@ const titleStyles = {
     fontSize: [6, 6, 8],
     fontWeight: 500,
     fontFamily: 'brand',
-    lineHeight: ['64px'],
+    lineHeight: ['42px', '42px', '64px'],
     letterSpacing: '-0.04em'
   },
   h2: {
     fontSize: [5, 5, 6],
     fontWeight: 400,
     fontFamily: 'brand',
-    lineHeight: ['48px'],
+    lineHeight: ['42px', '42px', '48px'],
     letterSpacing: '-0.07em'
   },
   h3: {
     fontSize: [5, 5, 6],
     fontWeight: 400,
     fontFamily: 'brand',
-    lineHeight: ['48px']
+    lineHeight: ['42px', '42px', '48px']
   },
   h4: {
     fontSize: [3],

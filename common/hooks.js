@@ -2,7 +2,7 @@ import { useContext } from 'react'
 import { useMedia as useBaseMedia } from 'use-media'
 import { theme } from '@common/theme'
 import { HeaderTheme, SectionContext } from '@common/context'
-import { themeGet } from 'styled-system'
+
 const useMedia = (index) => {
   if (index < 6) {
     const size = theme.breakpoints[index]

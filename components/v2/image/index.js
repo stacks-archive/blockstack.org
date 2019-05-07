@@ -115,8 +115,6 @@ const Image = ({
     )
   }
 
-  useEffect(() => {}, [])
-
   const { w = 800, h, fit = 'max', auto = 'format', ...imgixProps } = imgix
 
   const reductionAmount = 4
