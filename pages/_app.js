@@ -31,10 +31,13 @@ const WrappedComponent = ({
   const size = useComponentSize(ref)
   const height = size && size.height
 
+  const defaultTheme =
+    pageProps.meta.path !== ('/about' || '/' || '/technology') ? 'ink' : 'white'
+
   return (
     <HeaderHeightContext.Provider value={height}>
       <Box position="relative" {...rest}>
-        <Header theme={pageProps.meta.theme} innerRef={ref} />
+        <Header theme={pageProps.meta.theme || defaultTheme} innerRef={ref} />
         <PageComponent headerHeight={height} {...pageProps} />
         <Footer />
       </Box>

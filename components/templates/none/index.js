@@ -1,5 +1,4 @@
 import React from 'react'
-import { Wrapper } from '@components/v2/wrapper'
 import { Section } from '@components/v2/section'
 import { Meta } from '@components/meta'
 import * as gtag from '@common/lib/gtag'
@@ -15,9 +14,7 @@ const TemplateWrapper = ({ meta, children, ...rest }) => {
       <Section variant="ink" minHeight="0px">
         <Section.Title>{meta.title}</Section.Title>
       </Section>
-      <Section>
-        <Section.Pane width="100%">{children}</Section.Pane>
-      </Section>
+      {children}
     </>
   ) : (
     children
