@@ -79,6 +79,7 @@
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-optipng": "^6.0.0",
     "imagemin-svgo": "^7.0.0",
+    "img-loader": "^3.0.1",
     "jimp": "^0.6.4",
     "merge-files-webpack-plugin": "^1.1.2",
     "next-compose-plugins": "^2.2.0",
