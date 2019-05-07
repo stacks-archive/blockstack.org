@@ -47,7 +47,12 @@ const Hero = ({ ...rest }) => (
           Blockstack apps protect your digital rights and are powered by the
           Stacks blockchain.
         </Section.Text>
-        <Flex width={1} flexDirection={['column', 'column', 'row']} pt={5}>
+        <Flex
+          width={1}
+          justifyContent={['flex-start', 'flex-start', 'center']}
+          flexDirection={['column', 'column', 'row']}
+          pt={5}
+        >
           <Button width={[1, 1, 'unset']}>Create ID</Button>
           <Button
             width={[1, 1, 'unset']}

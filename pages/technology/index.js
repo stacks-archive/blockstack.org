@@ -349,7 +349,11 @@ const Hero = ({ ...rest }) => (
           Get started with our Zero-to-Dapp tutorial, view our documentation, or
           visit our Github.
         </Section.Text>
-        <Flex pt={5}>
+        <Flex
+          pt={5}
+          width={1}
+          justifyContent={['flex-start', 'flex-start', 'center']}
+        >
           <Button width={[1, 1, 'unset']}>Tutorials</Button>
         </Flex>
       </Section.Pane>
