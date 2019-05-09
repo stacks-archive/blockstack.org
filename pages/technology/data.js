@@ -1,3 +1,15 @@
+import React from 'react'
+
+import KeyIcon from 'mdi-react/KeyIcon'
+import FolderIcon from 'mdi-react/FolderIcon'
+
+import DollarIcon from 'mdi-react/DollarIcon'
+import AccountSupervisorCircleIcon from 'mdi-react/AccountSupervisorCircleIcon'
+import ForumIcon from 'mdi-react/ForumIcon'
+import AccountCardDetailsIcon from 'mdi-react/AccountCardDetailsIcon'
+import LockIcon from 'mdi-react/LockIcon'
+import AppsIcon from 'mdi-react/AppsIcon'
+
 const photos = [
   { src: 'https://blockstack-www.imgix.net/photos/photo-conference-001.jpg' },
   { src: 'https://blockstack-www.imgix.net/photos/photo-conference-002.jpg' },
@@ -63,6 +75,7 @@ const apps = [
 
 const appBuildersGrid = [
   {
+    icon: KeyIcon,
     title: {
       is: 'h4',
       children: 'Authentication'
@@ -70,9 +83,11 @@ const appBuildersGrid = [
     text: {
       children:
         'Blockstack provides authentication that is created and managed independently from your app; completely avoid liability for user identity and activity.'
-    }
+    },
+    link: '/technology#authentication'
   },
   {
+    icon: FolderIcon,
     title: {
       is: 'h4',
       children: 'Data storage'
@@ -80,9 +95,11 @@ const appBuildersGrid = [
     text: {
       children:
         'Blockstack provides flexible, free, encrypted storage for each user. Never mess with servers, scaling costs, or personal data liability again.'
-    }
+    },
+    link: '/technology#data-storage'
   },
   {
+    icon: DollarIcon,
     title: {
       is: 'h4',
       children: 'App funding'
@@ -90,9 +107,11 @@ const appBuildersGrid = [
     text: {
       children:
         'Get paid the month you launch with App Mining. Bootstrap your app development without compromising your users digital rights. '
-    }
+    },
+    link: 'https://app.co/mining'
   },
   {
+    icon: AccountSupervisorCircleIcon,
     title: {
       is: 'h4',
       children: 'Users'
@@ -100,9 +119,11 @@ const appBuildersGrid = [
     text: {
       children:
         'Reach new users who are seeking privacy and data ownership — and are abandoning platforms such as Facebook and Google.'
-    }
+    },
+    link: '/try-blockstack'
   },
   {
+    icon: ForumIcon,
     title: {
       is: 'h4',
       children: 'Community'
@@ -110,7 +131,8 @@ const appBuildersGrid = [
     text: {
       children:
         'Join thousands of open-source developers and app builders dedicated to building a better, decentralized internet.'
-    }
+    },
+    link: 'https://community.blockstack.org/'
   },
   {}
 ]
@@ -123,7 +145,9 @@ const usersGrid = [
     text: {
       children:
         'With the old internet, big companies own your login. With Blockstack, you own your login. Under the hood, Blockstack uses blockchain to keep everything secure and private.'
-    }
+    },
+    icon: AccountCardDetailsIcon,
+    invert: true
   },
   {
     title: {
@@ -133,7 +157,9 @@ const usersGrid = [
     text: {
       children:
         'With the old internet, big companies own your data. With Blockstack, relax knowing your data is 100% private, and only you can grant access to apps or other users. Never worry about privacy breaches again.'
-    }
+    },
+    icon: LockIcon,
+    invert: true
   },
   {
     title: {
@@ -143,7 +169,9 @@ const usersGrid = [
     text: {
       children:
         'Discover a universe of new apps where your digital rights are respected. Share, swap, and connect data between apps however you want.'
-    }
+    },
+    icon: AppsIcon,
+    invert: true
   }
 ]
 

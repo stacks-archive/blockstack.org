@@ -232,9 +232,13 @@ const sections = [
           is: 'h2',
           children: 'Blockstack is better for your users'
         },
-        text: {
-          children: 'Learn more about using Blockstack'
-        }
+        actions: [
+          {
+            type: 'link',
+            label: 'Learn more about using Blockstack',
+            href: '#'
+          }
+        ]
       },
       {
         width: 1,
