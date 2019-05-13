@@ -174,7 +174,7 @@ const useHeaderTheme = () => {
 const useInViewAnimationStyles = () => {
   const isInViewport = useSectionIsInViewport()
 
-  const trans = `opacity .5s cubic-bezier(0.4, 0, 0.2, 1) .2s,transform .75s cubic-bezier(0.4, 0, 0.2, 1) .2s`
+  const trans = `opacity .3s cubic-bezier(0.4, 0, 0.2, 1) .1s,transform .5s cubic-bezier(0.4, 0, 0.2, 1) .1s`
 
   const inViewAnimationStyles = {
     opacity: isInViewport ? 1 : 0,
