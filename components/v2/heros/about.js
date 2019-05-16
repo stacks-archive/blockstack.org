@@ -161,11 +161,9 @@ const HeroGrid = ({ ...rest }) => {
 }
 
 const HeroTitle = ({ ...rest }) => {
-  const inViewAnimationStyles = useInViewAnimationStyles()
-
   return (
     <Section.Pane width={1} justifyContent="center" alignItems="center">
-      <Section.Title maxWidth="80%" {...inViewAnimationStyles}>
+      <Section.Title maxWidth="80%">
         Blockstack is leading the&nbsp;way to a blockchain computing era
       </Section.Title>
     </Section.Pane>

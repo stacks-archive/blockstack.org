@@ -14,8 +14,7 @@ const photos1 = [
 ]
 const photos2 = [
   {
-    src:
-      'https://blockstack-www.imgix.net/photos/blockstack-team.png',
+    src: 'https://blockstack-www.imgix.net/photos/blockstack-team.png',
     width: 1 / 2
   },
   {
@@ -37,7 +36,7 @@ const ecosystemPartners = [
     name: 'Signature Fund',
     desc: 'Venture capital for decentralized apps',
     url: 'https://signature.vc',
-    logo: NIL,
+    src: 'https://blockstack-www.imgix.net/logos/signature-vc-logo.png',
     color: '#0014D9'
   },
   {

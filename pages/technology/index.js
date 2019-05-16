@@ -34,6 +34,7 @@ const code = `const App = props => {
   );
 };`
 const HeroGraphic = ({ ...rest }) => {
+  const styles = useInViewAnimationStyles()
   const [inView, setInView] = useState('phone')
   const handleCodeInView = () => {
     if (inView === 'phone') {
@@ -48,7 +49,7 @@ const HeroGraphic = ({ ...rest }) => {
 
   const phoneIsInView = inView === 'phone'
   const codeIsInView = inView === 'code'
-  const styles = useInViewAnimationStyles()
+
   return (
     <Box {...rest} flexGrow={1} width={1} position="relative">
       <Box
@@ -110,15 +111,13 @@ const HeroGraphic = ({ ...rest }) => {
 }
 
 const HeroContent = ({ ...rest }) => {
-  const styles = useInViewAnimationStyles()
-
   return (
     <>
       <Section.Pane justifyContent="center">
-        <Section.Title pb={5} {...styles}>
+        <Section.Title pb={5}>
           Easily build blockchain apps that scale
         </Section.Title>
-        <Section.Text {...styles}>
+        <Section.Text>
           Get started with our{' '}
           <Section.Text
             is="a"
@@ -145,7 +144,7 @@ const HeroContent = ({ ...rest }) => {
           </Section.Text>
           .
         </Section.Text>
-        <Flex pt={5} width={1} {...styles}>
+        <Flex pt={5} width={1}>
           <Button width={[1, 1, 'unset']}>Tutorials</Button>
         </Flex>
       </Section.Pane>
@@ -345,7 +344,7 @@ const sections = [
     panes: [
       {
         type: 'graphic',
-        src: 'https://blockstack-www.imgix.net/no-graphic.png'
+        src: 'https://blockstack-www.imgix.net/graphic-data-storage.png'
       },
       {
         title: {

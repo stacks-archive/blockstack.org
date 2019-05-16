@@ -1,7 +1,7 @@
 import React from 'react'
 import { Controlled as CodeMirror } from 'react-codemirror2'
 import { CodeMirrorStyled, CodeWapper } from '@components/v2/code/styles'
-import { Box, Flex } from 'blockstack-ui'
+
 const returnLanguage = (lang) => {
   switch (lang) {
     case 'bash':
@@ -63,3 +63,5 @@ class Codeblock extends React.PureComponent {
 }
 
 export { Codeblock }
+
+export default Codeblock

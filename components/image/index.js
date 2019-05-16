@@ -3,7 +3,6 @@ import { StyledImage } from './styled'
 const requireImage = require.context('@assets', true, /\.(png|jpg|jpeg|svg)$/)
 const path = '/_next/'
 const addPath = (src = '') => {
-  console.log(src)
   if (!src.includes(path)) {
     return path + src
   }
@@ -26,7 +25,6 @@ class Image extends React.Component {
   render() {
     const { src, alt, noBlur, ...rest } = this.props
     const internalLink = src && !src.includes('http')
-    console.log('SRC', src)
     const localImage = internalLink
       ? requireImage(`./images${src.split('images')[1]}`)
       : null

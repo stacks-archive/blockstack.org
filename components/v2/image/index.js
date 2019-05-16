@@ -67,11 +67,11 @@ const PreviewImage = ({ borderRadius, bgImg, src, ...rest }) => {
     </Box>
   )
 }
-const HighResImage = ({ bgImg, ...rest }) => (
+const HighResImage = ({ bgImg, noBlur, ...rest }) => (
   <Box
     transition="0.5s all ease-in-out"
-    opacity={0}
-    position="absolute"
+    opacity={noBlur ? 1 : 0}
+    position={noBlur ? 'relative' : 'absolute'}
     left={0}
     top={0}
     width={1}
@@ -89,6 +89,7 @@ const HighResImage = ({ bgImg, ...rest }) => (
 const Image = ({
   src,
   bgImg,
+  noBlur,
   imgix = {},
   wrapper = {},
   backgroundSize = 'cover',
@@ -138,6 +139,8 @@ const Image = ({
     ? {
         ['data-bg']: highRes
       }
+    : noBlur
+    ? { src: highRes }
     : {
         ['data-src']: highRes
       }
@@ -145,21 +148,24 @@ const Image = ({
   return (
     <ImageWrapper width={1} position="relative" {...rest}>
       <HighResImage
-        className="lazyload"
+        className={!noBlur ? 'lazyload' : 'no-blur'}
         data-expand="-100"
         {...srcProps}
         borderRadius={rest.borderRadius}
         backgroundSize={backgroundSize}
         backgroundPosition={backgroundPosition}
         bgImg={bgImg}
+        noBlur={noBlur}
       />
-      <PreviewImage
-        src={preview}
-        borderRadius={rest.borderRadius}
-        backgroundPosition={backgroundPosition}
-        backgroundSize={backgroundSize}
-        bgImg={bgImg}
-      />
+      {!noBlur ? (
+        <PreviewImage
+          src={preview}
+          borderRadius={rest.borderRadius}
+          backgroundPosition={backgroundPosition}
+          backgroundSize={backgroundSize}
+          bgImg={bgImg}
+        />
+      ) : null}
     </ImageWrapper>
   )
 }

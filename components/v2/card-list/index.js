@@ -5,9 +5,16 @@ import { useHover } from 'use-events'
 import { transition } from '@common/theme'
 import ArrowTopRightIcon from 'mdi-react/ArrowTopRightIcon'
 
+const Logo = ({ logo: Logo, src, ...rest }) =>
+  src ? (
+    <Box width="100%" display="block" is="img" src={src} {...rest} />
+  ) : (
+    <Logo {...rest} />
+  )
+
 const Card = ({ item, ...rest }) => {
   const [hovered, bind] = useHover()
-  const Logo = item.logo
+
   return (
     <Box
       transition={transition}
@@ -41,9 +48,9 @@ const Card = ({ item, ...rest }) => {
           willChange="transform"
           transition={transition}
           transform={`scale(${hovered ? 1.1 : 1})`}
-          width="60px"
+          width={item.src ? '130px' : '72px'}
         >
-          <Logo />
+          <Logo src={item.src} logo={item.logo} />
         </Box>
       </Flex>
 

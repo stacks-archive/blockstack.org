@@ -8,42 +8,48 @@ const locations = [
     date: 'June 1',
     time: '06:00PM',
     event: 'Learn how SpringRole earned $50K MRR',
-    href: 'https://community.blockstack.org/events#event=30167304'
+    href: 'https://community.blockstack.org/events#event=30167304',
+    flag: 'in'
   },
   {
     city: 'Brighton',
     date: 'June 4',
     time: '06:30PM',
     event: 'Radicle @ Brighton Blockchain and Crypto Meetup',
-    href: 'https://community.blockstack.org/events#event=30184724'
+    href: 'https://community.blockstack.org/events#event=30184724',
+    flag: 'gb'
   },
   {
     city: 'New York City',
-    date: 'June 6th',
+    date: 'June 6',
     time: '06:00PM',
     event: 'ReactNYC + Blockstack',
-    href: 'https://community.blockstack.org/events#event=26560585'
+    href: 'https://community.blockstack.org/events#event=26560585',
+    flag: 'us'
   },
   {
     city: 'London',
     date: <>June 10&ndash;12</>,
     time: 'All day',
     event: 'CogX - The Festival of AI and Emerging Technology',
-    href: 'https://community.blockstack.org/events#event=25317782'
+    href: 'https://community.blockstack.org/events#event=25317782',
+    flag: 'gb'
   },
   {
     city: 'San Fransisco',
     date: 'July 18',
     time: 'All day',
     event: 'Blockstack Summit',
-    href: 'https://community.blockstack.org/events#event=25317871'
+    href: 'https://community.blockstack.org/events#event=25317871',
+    flag: 'us'
   },
   {
     city: 'Princeton',
     date: <>November 8&ndash;10</>,
     time: 'All day',
     event: 'HackPrinceton Hackathon',
-    href: 'https://community.blockstack.org/events#event=24956314'
+    href: 'https://community.blockstack.org/events#event=24956314',
+    flag: 'us'
   }
 ]
 
@@ -104,13 +110,26 @@ const Events = ({ ...rest }) => {
                   color={hovered ? 'blue' : 'ink'}
                 >
                   {location.city}
-                  <Box
+                  <Flex
                     ml={2}
                     borderRadius="100%"
                     opacity={hovered ? 1 : 0.5}
                     size={18}
                     bg="sky"
-                  />
+                    overflow="hidden"
+                    alignItems="center"
+                    justifyContent="center"
+                  >
+                    <Box
+                      is="span"
+                      style={{
+                        backgroundSize: '120%',
+                        backgroundPosition: 'center center',
+                        backgroundRepeat: 'no-repeat'
+                      }}
+                      className={`flag-icon flag-icon-${location.flag}`}
+                    />
+                  </Flex>
                 </Flex>
                 <Box {...subtitle}>{location.event}</Box>
               </Box>

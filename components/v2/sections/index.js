@@ -58,7 +58,6 @@ const List = ({ items, icon, ...rest }) => {
 }
 
 const Content = ({ pane, isFirst, inViewAnimationStyles, ...rest }) => {
-
   return (
     <>
       {pane.pretitle && (
@@ -70,7 +69,11 @@ const Content = ({ pane, isFirst, inViewAnimationStyles, ...rest }) => {
         />
       )}
       {pane.title && (
-        <Section.Title pb={[5]} {...pane.title} {...inViewAnimationStyles} />
+        <Section.Title
+          pb={pane.text || pane.list || pane.actions ? [3] : undefined}
+          {...pane.title}
+          {...inViewAnimationStyles}
+        />
       )}
       {pane.text && <Section.Text {...pane.text} {...inViewAnimationStyles} />}
       {pane.list && (

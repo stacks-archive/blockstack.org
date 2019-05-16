@@ -71,7 +71,7 @@ const NewsItem = ({ isLast, users, data }) => {
     </Box>
   )
 }
-const News = ({ items, limit = 5, users, ...rest }) =>
+const News = ({ items, limit = 3, users, ...rest }) =>
   items && items.length
     ? getNewsItems(items).map((item, i) => (
         <NewsItem key={i} isLast={i === limit} data={item} users={users} />

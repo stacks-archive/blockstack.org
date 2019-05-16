@@ -12,7 +12,6 @@ import fetch from 'cross-fetch'
 import { News } from '@components/v2/articles'
 import { PhotoGrid } from '@components/v2/photos-grid'
 import { AuthGraphic } from '@components/v2/graphics/auth'
-import { useInViewAnimationStyles } from '@common/hooks'
 import { useTrail, animated } from 'react-spring'
 import { useHover } from 'use-events'
 import { transition } from '@common/theme'
@@ -148,8 +147,6 @@ const photos = [
 ]
 
 const HeroContent = ({ apps, ...rest }) => {
-  const inViewAnimationStyles = useInViewAnimationStyles()
-
   return (
     <>
       <Section.Pane
@@ -157,17 +154,10 @@ const HeroContent = ({ apps, ...rest }) => {
         alignSelf="center"
         position="relative"
       >
-        <Section.Title
-          pb={[5, 5, 5]}
-          maxWidth={['100%', '100%', '80%']}
-          {...inViewAnimationStyles}
-        >
+        <Section.Title pb={[5, 5, 5]} maxWidth={['100%', '100%', '80%']}>
           Blockchain computing platform and app ecosystem
         </Section.Title>
-        <Section.Text
-          maxWidth={['100%', '100%', '80%']}
-          {...inViewAnimationStyles}
-        >
+        <Section.Text maxWidth={['100%', '100%', '80%']}>
           Blockstack apps protect your digital rights and are powered by the
           Stacks blockchain.
         </Section.Text>
@@ -176,7 +166,6 @@ const HeroContent = ({ apps, ...rest }) => {
           justifyContent={['flex-start']}
           flexDirection={['column', 'column', 'row']}
           pt={5}
-          {...inViewAnimationStyles}
         >
           <Button width={[1, 1, 'unset']} path="/try-blockstack">
             Create ID
@@ -245,7 +234,7 @@ class HomePage extends React.Component {
       meta,
       feed,
       users,
-      apps: apps.apps
+      apps: transformApps(apps.apps)
     }
   }
   render() {
@@ -387,10 +376,13 @@ class HomePage extends React.Component {
         alignItems: 'flex-start',
         panes: [
           {
-            justifyContent: 'flex-start',
+            justifyContent: ['space-between', 'space-between', 'flex-start'],
+            flexDirection: ['row', 'row', 'column'],
+            alignItems: ['flex-end', 'flex-end', 'flex-start'],
             title: {
               is: 'h2',
               pr: 5,
+              pb: 0,
               children: 'Latest news'
             },
             actions: [
@@ -401,20 +393,16 @@ class HomePage extends React.Component {
               }
             ]
           },
-
           {
             children: (
-              <News items={this.props.feed} users={this.props.users} pt={8} />
+              <Box pt={[5, 5, 0]}>
+                <News items={this.props.feed} users={this.props.users} />
+              </Box>
             )
-          }
-        ]
-      },
-      {
-        variant: 'white',
-        panes: [
+          },
           {
             width: 1,
-            children: <Press items={press} />
+            children: <Press pt={8} items={press} />
           }
         ]
       },
@@ -457,7 +445,7 @@ class HomePage extends React.Component {
 
     return (
       <>
-        {this.props.apps && <Hero apps={transformApps(this.props.apps)} />}
+        <Hero apps={this.props.apps} />
         <Sections sections={sections} />
       </>
     )

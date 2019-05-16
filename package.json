@@ -16,6 +16,7 @@
     "cross-fetch": "^3.0.2",
     "dayjs": "^1.8.13",
     "debounce": "^1.2.0",
+    "flag-icon-css": "^3.3.0",
     "highlight.js": "^9.15.6",
     "intersection-observer": "^0.6.0",
     "keyboardjs": "^2.5.1",

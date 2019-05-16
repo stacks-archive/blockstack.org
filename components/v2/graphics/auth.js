@@ -1,9 +1,11 @@
 import React from 'react'
 import { Text, Title } from '@components/v2/section'
 import { Box, Flex } from 'blockstack-ui'
-import { Codeblock } from '@components/v2/code'
 import { Image } from '@components/v2/image'
-
+import dynamic from 'next/dynamic'
+const Codeblock = dynamic(() => import('@components/v2/code'), {
+  ssr: false
+})
 const code = `if (isUserSignedIn()) {
   const user = loadUserData()
   showProfile(user.profile)

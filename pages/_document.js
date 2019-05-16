@@ -32,6 +32,11 @@ export default class MyDocument extends Document {
           `
             }}
           />
+          <link
+            rel="stylesheet"
+            type="text/css"
+            href="/static/css-flags/css/flag-icon.min.css"
+          />
         </Head>
         <body>
           <Main />
