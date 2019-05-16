@@ -37,21 +37,33 @@ const Icon = ({ component: Component, size, ...rest }) =>
     </Box>
   ) : null
 
-const List = ({ items, icon, ...rest }) => {
+const ListItem = ({ isComponent, icon, item, isLast, ...rest }) =>
+  isComponent ? (
+    item
+  ) : (
+    <Flex
+      pb={!isLast ? 2 : 0}
+      alignItems="center"
+      m={0}
+      p={0}
+      is="li"
+      {...rest}
+    >
+      <Icon component={icon} />
+      <Section.Text>{item}</Section.Text>
+    </Flex>
+  )
+const List = ({ items, icon, isComponent, ...rest }) => {
   return (
     <Box is="ul" m={0} p={0} pl={0} {...rest}>
       {items.map((item, key, arr) => (
-        <Flex
-          pb={key + 1 !== arr.length ? 2 : 0}
-          alignItems="center"
-          m={0}
-          p={0}
-          is="li"
+        <ListItem
+          icon={icon}
+          item={item}
           key={key}
-        >
-          <Icon component={icon} />
-          <Section.Text>{item}</Section.Text>
-        </Flex>
+          isComponent={isComponent}
+          isLast={key + 1 === arr.length}
+        />
       ))}
     </Box>
   )

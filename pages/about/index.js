@@ -262,7 +262,8 @@ class AboutPage extends React.Component {
     return {
       meta: {
         title: 'About',
-        path: '/about'
+        path: '/about',
+        custom: true,
       }
     }
   }

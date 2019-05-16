@@ -71,7 +71,8 @@ const videos = [
 
 const meta = {
   path: '/',
-  title: 'Blockstack'
+  title: 'Blockstack',
+  custom: true,
 }
 
 const press = [

@@ -31,11 +31,7 @@ const WrappedComponent = ({
   const size = useComponentSize(ref)
   const height = size && size.height
 
-  const defaultTemplate =
-    pageProps.meta.path === '/' ||
-    pageProps.meta.path === '/about' ||
-    pageProps.meta.path === '/technology'
-
+  const defaultTemplate = !pageProps.meta.custom
   const defaultTheme = !defaultTemplate ? 'ink' : 'white'
 
   return (

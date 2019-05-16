@@ -554,7 +554,8 @@ const Hero = ({ ...rest }) => (
 const meta = {
   title: 'Technology',
   path: '/technology',
-  theme: 'ink'
+  theme: 'ink',
+  custom: true,
 }
 
 class TechnologyPage extends React.Component {

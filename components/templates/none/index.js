@@ -9,8 +9,7 @@ Router.onRouteChangeComplete = (url) => {
 }
 
 const TemplateWrapper = ({ meta, children, ...rest }) => {
-  const customTemplate =
-    meta.path === '/' || meta.path === '/about' || meta.path === '/technology'
+  const customTemplate = meta.custom
   return customTemplate ? (
     children
   ) : (
