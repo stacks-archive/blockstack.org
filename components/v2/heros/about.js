@@ -17,7 +17,16 @@ const Gradient = ({ hovered, ...rest }) => (
   />
 )
 
-const HeroCard = ({ logo, title, url, bgPhoto, color = 'white', ...rest }) => {
+const HeroCard = ({
+  logo,
+  title,
+  url,
+  bgPhoto,
+  color = 'white',
+  width,
+  height,
+  ...rest
+}) => {
   const [isHovering, bind] = useHover()
   const hovered = url && isHovering
   return (
@@ -36,6 +45,8 @@ const HeroCard = ({ logo, title, url, bgPhoto, color = 'white', ...rest }) => {
           ? '0px 16px 24px rgba(0, 0, 0, 0.04), 0px 1px 2px rgba(0, 0, 0, 0.08)'
           : '0px 2px 12px rgba(0, 0, 0, 0.04), 0px 1px 2px rgba(0, 0, 0, 0.08)'
       }
+      height={height}
+      width={width}
       {...rest}
     >
       {title && (
@@ -71,10 +82,11 @@ const HeroCard = ({ logo, title, url, bgPhoto, color = 'white', ...rest }) => {
       )}
       {bgPhoto && (
         <Image
-          src={bgPhoto}
+          height="100%"
+          bgImg={bgPhoto}
           imgix={{
-            w: rest.width,
-            h: rest.height,
+            w: width,
+            h: height,
             fit: 'crop',
             crop: 'faces'
           }}
@@ -92,7 +104,7 @@ const HeroCard = ({ logo, title, url, bgPhoto, color = 'white', ...rest }) => {
 }
 const HeroGrid = ({ ...rest }) => {
   return (
-    <Flex ml="30%" {...rest}>
+    <Flex flexDirection={['column', 'column', 'row']} ml="30%" {...rest}>
       <HeroCard
         logo="https://blockstack-www.imgix.net/logos/tedx-logo.png"
         bgPhoto="https://blockstack-www.imgix.net/photos/muneeb-video-still.png"
@@ -103,7 +115,13 @@ const HeroGrid = ({ ...rest }) => {
         width={400}
         height={480}
       />
-      <Box flexShrink={0} width={488} mr={5}>
+      <Box
+        flexShrink={0}
+        width={['calc(100vw - 32px)', 'calc(100vw - 32px)', 488]}
+        mr={[0, 0, 5]}
+        my={[5, 5, 0]}
+        ml={['calc(35vw - 32px)', 'calc(35vw - 32px)', 0]}
+      >
         <HeroCard
           logo="https://blockstack-www.imgix.net/logos/nyt-logo.png"
           bgPhoto="https://blockstack-www.imgix.net/photos/nyt-blockstack-team-photo.png"
@@ -112,15 +130,21 @@ const HeroGrid = ({ ...rest }) => {
           color="white"
           width={488}
           height={296}
+          maxWidth={['calc(100vw - 32px)', 'calc(100vw - 32px)', 488]}
           mb={5}
         />
         <HeroCard
           width={488}
           height={336}
+          maxWidth={['calc(100vw - 32px)', 'calc(100vw - 32px)', 488]}
           bgPhoto="https://blockstack-www.imgix.net/about-grid-conference.png"
         />
       </Box>
-      <Box flexShrink={0} mr={5}>
+      <Box
+        flexShrink={0}
+        mr={5}
+        ml={['calc(75vw - 32px)', 'calc(75vw - 32px)', 0]}
+      >
         <Flex mb={5}>
           <HeroCard
             logo="https://blockstack-www.imgix.net/wired-logo-full.png"
@@ -137,7 +161,7 @@ const HeroGrid = ({ ...rest }) => {
             bgPhoto="https://blockstack-www.imgix.net/photos/photo-conference-001.jpg"
           />
         </Flex>
-        <Flex>
+        <Flex ml={['calc(35vw - 32px)', 'calc(35vw - 32px)', 0]}>
           <HeroCard
             logo="https://blockstack-www.imgix.net/forbes-logo.png"
             bgPhoto="https://blockstack-www.imgix.net/forbes-image.png"
@@ -146,6 +170,7 @@ const HeroGrid = ({ ...rest }) => {
             width={532}
             height={400}
             mr={5}
+            maxWidth={['calc(100vw - 32px)', 'calc(100vw - 32px)', 532]}
           />
           <HeroCard
             bgPhoto="https://blockstack-www.imgix.net/photos/blockstack-team-couch.png"
@@ -155,7 +180,7 @@ const HeroGrid = ({ ...rest }) => {
           />
         </Flex>
       </Box>
-      <HeroCard width={400} height={300} bg="blue" />
+      {/*<HeroCard width={400} height={300} bg="blue" />*/}
     </Flex>
   )
 }
