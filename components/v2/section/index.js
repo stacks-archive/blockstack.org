@@ -9,7 +9,7 @@ import useIsInViewport from 'use-is-in-viewport'
 import { transition } from '@common/theme'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import { useHover } from 'use-events'
-
+import Link from 'next/link'
 /**
  * SectionWrapper
  *
@@ -23,7 +23,7 @@ import { useHover } from 'use-events'
  * @prop {Object} rest - any additional props for the Wrapper component
  */
 
-const SectionWrapper = ({ children, bg, ...rest }) => {
+const SectionWrapper = ({ children, bg, parentOverflow, ...rest }) => {
   const { fills } = useSectionVariant()
 
   return (
@@ -41,6 +41,7 @@ const SectionWrapper = ({ children, bg, ...rest }) => {
       flexGrow={1}
       width={1}
       bg={bg ? bg : fills.primary}
+      overflow={parentOverflow}
     >
       <Wrapper
         alignItems="center"
@@ -94,8 +95,9 @@ const Title = ({ is = 'h1', ...rest }) => {
  * @prop {Object} rest - all additional props to be passed to the component
  */
 const Text = ({ is = 'p', ...rest }) => {
-  const { text } = useSectionVariant()
+  const { text, bg } = useSectionVariant()
   const isLink = is.toString() === 'a'
+  const shadow = 1
   return (
     <Box
       fontFamily="default"
@@ -110,11 +112,20 @@ const Text = ({ is = 'p', ...rest }) => {
           ? css({
               '&': {
                 fontWeight: '500',
-                color: text.hover
+                color: text.hover,
+                textDecoration: 'none !important',
+                textShadow: `-${shadow}px -${shadow}px 0 ${bg}, ${shadow}px -${shadow}px 0 ${bg}, -${shadow}px ${shadow}px 0 ${bg}, ${shadow}px ${shadow}px 0 ${bg}`,
+                backgroundRepeat: 'repeat-x',
+                backgroundImage: `url('data:image/svg+xml;utf8,<svg preserveAspectRatio="none" viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="0" x2="1" y2="1" stroke="${
+                  text.hover
+                }" /></svg>')`,
+                backgroundSize: `1px 0.9px`,
+                backgroundPosition: `0 calc(1em + 1px)`
               },
               '&:hover': {
                 textDecoration: 'none !important',
-                color: text.hover
+                color: text.hover,
+                backgroundImage: `url('data:image/svg+xml;utf8,<svg preserveAspectRatio="none" viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="0" x2="1" y2="1" stroke="transparent" /></svg>')`
               }
             })
           : undefined
@@ -181,6 +192,15 @@ const Section = ({
   )
 }
 
+const TextLinkComponent = ({ path, children }) =>
+  path ? (
+    <Link href={path} prefetch>
+      {children}
+    </Link>
+  ) : (
+    children
+  )
+
 /**
  * TextLink
  *
@@ -191,35 +211,52 @@ const Section = ({
  * @prop {Object} rest - all additional props to be passed to the component
  */
 const TextLink = ({ action, hideArrow, ...rest }) => {
-  const { label, ...actionProps } = action
+  const { label, href, path, ...actionProps } = action
+  if (href && path) {
+    console.error(
+      'TextLink `action` object should only contain href or path, not both.'
+    )
+  }
+
   const [hovered, bind] = useHover()
   return (
-    <Text
-      is="a"
-      display="inline-flex"
-      alignSelf="flex-start"
-      style={{ textDecoration: 'none' }}
-      color="blue"
-      alignItems="center"
-      pt={4}
-      fontSize={2}
-      {...rest}
-      {...bind}
-      {...actionProps}
-    >
-      <Box is="span" style={{ textDecoration: hovered ? 'underline' : 'none' }}>
-        {label}
-      </Box>
-      {!hideArrow ? (
+    <TextLinkComponent path={path}>
+      <Text
+        is="a"
+        display="inline-flex"
+        alignSelf="flex-start"
+        style={{ textDecoration: 'none' }}
+        color="blue"
+        alignItems="center"
+        pt={4}
+        fontSize={2}
+        target={href ? '_blank' : undefined}
+        href={path || href}
+        backgroundImage="unset !important"
+        {...rest}
+        {...bind}
+        {...actionProps}
+      >
         <Box
-          transition={transition}
-          transform={`translate3d(${hovered ? '2px' : '-1px'}, 1px, 0px)`}
-          size="18px"
+          is="span"
+          style={{ textDecoration: hovered ? 'underline' : 'none' }}
         >
-          <ChevronRightIcon size="18px" />
+          {label}
         </Box>
-      ) : null}
-    </Text>
+        {!hideArrow ? (
+          <Box size="18px">
+            <ChevronRightIcon
+              style={{
+                display: 'block',
+                transition,
+                transform: `translate3d(${hovered ? '2px' : '-1px'}, 1px, 0px)`
+              }}
+              size="18px"
+            />
+          </Box>
+        ) : null}
+      </Text>
+    </TextLinkComponent>
   )
 }
 

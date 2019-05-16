@@ -73,6 +73,12 @@ const Press = ({ items, ...rest }) => {
                 ? 'ink.95'
                 : 'blue'
             }
+            is="a"
+            href={item.href}
+            target="_blank"
+            style={{
+              textDecoration: 'none'
+            }}
             px={5}
             pb={6}
             pt={6}

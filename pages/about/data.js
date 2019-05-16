@@ -15,7 +15,7 @@ const photos1 = [
 const photos2 = [
   {
     src:
-      'https://blockstack-www.imgix.net/photos/nyt-blockstack-team-photo.png',
+      'https://blockstack-www.imgix.net/photos/blockstack-team.png',
     width: 1 / 2
   },
   {

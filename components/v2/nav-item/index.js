@@ -187,7 +187,8 @@ const SubNav = ({ items = [], transitions, visible, ...rest }) => {
       boxShadow="0px 2px 12px rgba(0, 0, 0, 0.03), 0px 1px 2px rgba(0, 0, 0, 0.06)"
       opacity={visible ? 1 : 0}
       style={{
-        userSelect: !visible ? 'none' : 'unset'
+        userSelect: !visible ? 'none' : 'unset',
+        pointerEvents: !visible ? 'none' : 'unset'
       }}
       transform={visible ? 'none' : 'translateY(-5px)'}
       borderBottom="1px solid"

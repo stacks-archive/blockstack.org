@@ -26,9 +26,7 @@ class Codeblock extends React.PureComponent {
       })
     }
     require('codemirror')
-    require('codemirror/mode/css/css')
-    require('codemirror/mode/shell/shell')
-    require('codemirror/mode/javascript/javascript')
+    require('codemirror/mode/jsx/jsx')
   }
 
   render() {

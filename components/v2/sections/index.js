@@ -58,6 +58,7 @@ const List = ({ items, icon, ...rest }) => {
 }
 
 const Content = ({ pane, isFirst, inViewAnimationStyles, ...rest }) => {
+
   return (
     <>
       {pane.pretitle && (

@@ -5,19 +5,17 @@ import { Title, Text } from '@components/v2/section'
 import { useHover } from 'use-events'
 
 const slugs = [
+  'introducing-awario-app-reviewer',
+  'bolt-a-thon-worlds-first-online-lightning-network-conference-and-hackathon',
   'developer-success-commitment-highlights-q1-2019',
-  'introducing-radiks',
-  'video-reusing-bitcoins-hashpower-to-launch-the-stacks-blockchain',
-  'saurabh-pathak-joins-blockstack-as-financial-controller',
-  'jp-singh-joins-blockstack-pbc-board-of-directors',
-  'blockstack-unlocks-25-million-in-funding'
+  'introducing-new-internet-labs-the-digital-rights-reviewer-for-app-mining'
 ]
 
 // const ids = [1169, 1118, 1099, 1059, 518, 417]
 const ids = [1169, 1118, 1099, 1059]
 
 const getNewsItems = (items) =>
-  items.filter((item) => ids.find((id) => item.id === id))
+  items.filter((item) => slugs.find((slug) => item.slug === slug))
 
 const Subtitle = ({ ...rest }) => (
   <Text

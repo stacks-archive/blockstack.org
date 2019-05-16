@@ -105,13 +105,16 @@ const VideoItemWrapper = ({ primary, image, ...rest }) => {
       justifyContent={primary ? 'center' : 'flex-end'}
       borderRadius="8px"
       mb={5}
+      is="a"
+      target="_blank"
       position="relative"
       flexDirection="column"
       overflow="hidden"
       flexShrink={1}
       transition="1s all cubic-bezier(.19,1,.22,1)"
       style={{
-        willChange: 'transform'
+        willChange: 'transform',
+        textDecoration: 'none'
       }}
       {...rest}
     />
@@ -162,28 +165,31 @@ const Videos = ({ items, ...rest }) => {
   const isMobile = useMedia(2)
   return (
     <Flex width="100%" flexWrap="wrap" justifyContent="space-between" {...rest}>
-      {items.map(({ title, subtitle, image, width, ...itemProps }, key) => {
-        const [hovered, hoverBind] = useHover()
-        const [active, activeBind] = useActive()
-        const bind = {
-          ...hoverBind,
-          ...activeBind
+      {items.map(
+        ({ title, subtitle, image, width, href, ...itemProps }, key) => {
+          const [hovered, hoverBind] = useHover()
+          const [active, activeBind] = useActive()
+          const bind = {
+            ...hoverBind,
+            ...activeBind
+          }
+          return (
+            <VideoItem
+              title={title}
+              subtitle={subtitle}
+              image={image}
+              width={width}
+              href={href}
+              primary={key === 0 && !isMobile}
+              key={key}
+              hovered={hovered}
+              active={active}
+              {...bind}
+              {...itemProps}
+            />
+          )
         }
-        return (
-          <VideoItem
-            title={title}
-            subtitle={subtitle}
-            image={image}
-            width={width}
-            primary={key === 0 && !isMobile}
-            key={key}
-            hovered={hovered}
-            active={active}
-            {...bind}
-            {...itemProps}
-          />
-        )
-      })}
+      )}
     </Flex>
   )
 }

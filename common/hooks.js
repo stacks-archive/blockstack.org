@@ -133,11 +133,11 @@ const useSectionVariant = () => {
       /**
        * TODO: fix bg color
        */
-      return { ...light, variant, bg: theme.colors[bg] }
+      return { ...light, variant, bg: 'white' }
     case 'blue':
-      return { ...blue, variant, bg: theme.colors[bg] }
+      return { ...blue, variant, bg: theme.colors.blue }
     case 'ink':
-      return { ...dark, variant, bg: theme.colors[bg] }
+      return { ...dark, variant, bg: theme.colors.ink }
   }
 }
 

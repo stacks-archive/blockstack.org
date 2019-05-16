@@ -2,6 +2,7 @@ import React from 'react'
 import { AboutHero } from '@components/v2/heros/about'
 import { CardList } from '@components/v2/card-list'
 import CheckIcon from 'mdi-react/CheckIcon'
+import { Text } from '@components/v2/section'
 import { Investors } from '@components/v2/investors'
 import { PersonsList } from '@components/v2/advisors'
 import { PhotoGrid } from '@components/v2/photos-grid'
@@ -33,7 +34,45 @@ const sections = [
           },
           {
             text: {
-              children: `Over 65 independent developer teams have built apps on our platform. Open-source software is at the heart of everything we do; we’re active on Slack, GitHub, Twitter, and the Blockstack Forum.  `
+              children: (
+                <>
+                  Over 65 independent developer teams have built apps on our
+                  platform. Open-source software is at the heart of everything
+                  we do; we’re active on{' '}
+                  <Text
+                    is="a"
+                    href="http://chat.blockstack.org/"
+                    target="_blank"
+                  >
+                    Slack
+                  </Text>
+                  ,{' '}
+                  <Text
+                    is="a"
+                    href="https://github.com/blockstack"
+                    target="_blank"
+                  >
+                    GitHub
+                  </Text>
+                  ,{' '}
+                  <Text
+                    is="a"
+                    href="https://twitter.com/blockstack"
+                    target="_blank"
+                  >
+                    Twitter
+                  </Text>
+                  , and the{' '}
+                  <Text
+                    is="a"
+                    href="https://forum.blockstack.org/"
+                    target="_blank"
+                  >
+                    Blockstack Forum
+                  </Text>
+                  .
+                </>
+              )
             }
           }
         ]
@@ -101,7 +140,7 @@ const sections = [
           {
             type: 'link',
             label: 'Careers',
-            href: '/careers'
+            path: '/careers'
           }
         ]
       },

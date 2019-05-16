@@ -2,6 +2,7 @@ import React from 'react'
 import { Text, Title } from '@components/v2/section'
 import { Box, Flex } from 'blockstack-ui'
 import { Codeblock } from '@components/v2/code'
+import { Image } from '@components/v2/image'
 
 const code = `if (isUserSignedIn()) {
   const user = loadUserData()
@@ -17,7 +18,7 @@ const AuthGraphic = () => {
     <Box pb="125px">
       <Box position="relative">
         <Box width={3 / 4}>
-          <Codeblock hideNumbers language="javascript" value={code} />
+          <Codeblock hideNumbers language="jsx" value={code} />
         </Box>
         <Box
           p={5}
@@ -26,7 +27,7 @@ const AuthGraphic = () => {
           right={0}
           bg="white"
           borderRadius="8px"
-          width="60%"
+          width={['75%', '75%', '65%']}
           zIndex={5}
           transform="translateY(20%)"
           boxShadow={
@@ -38,7 +39,7 @@ const AuthGraphic = () => {
           </Box>
           <Box mt={4}>
             <Text fontSize={1}>
-              “Stealthy” (stealthy.im) wants to read your basic info and publish
+              “Photos” (photos.app) wants to read your basic info and publish
               data stored for this app.
             </Text>
           </Box>
@@ -46,9 +47,15 @@ const AuthGraphic = () => {
             <Text fontSize={1}>Select an ID to use: </Text>
           </Box>
           <Flex mt={4} borderRadius="48px" bg="blue" p={2} alignItems="center">
-            <Box mr={2} size="32px" borderRadius="32px" bg="white" />
+            <Box mr={2} size="32px" borderRadius="32px">
+              <Image
+                src="https://blockstack-www.imgix.net/user-avatar.png"
+                borderRadius="32px"
+                size={32}
+              />
+            </Box>
             <Title is="h5" color="white">
-              Samantha.id
+              michelle.id
             </Title>
           </Flex>
         </Box>
@@ -57,4 +64,4 @@ const AuthGraphic = () => {
   )
 }
 
-export {AuthGraphic}
+export { AuthGraphic }

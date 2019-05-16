@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Sections } from '@components/v2/sections'
-import { Section } from '@components/v2/section'
+import { Section, Text } from '@components/v2/section'
 import { Grid } from '@components/v2/grid'
 import { Box, Flex } from 'blockstack-ui'
 import { Events } from '@components/v2/events'
@@ -9,6 +9,152 @@ import { AppsList } from '@components/v2/apps-list'
 import { PhotoGrid } from '@components/v2/photos-grid'
 import { photos, apps, appBuildersGrid, usersGrid } from './data'
 import { AuthGraphic } from '@components/v2/graphics/auth'
+import { Codeblock } from '@components/v2/code'
+import { useInViewAnimationStyles } from '@common/hooks'
+
+const code = `const App = props => {
+  const session = new UserSession();
+  const isUserSignedIn = session.isUserSignedIn();
+  const isSignInPending = session.isSignInPending();
+
+  useEffect(async () => {
+    if (!isUserSignedIn && isSignInPending) {
+      const { username } = await session.handlePendingSignIn();
+      if (!username) {
+        throw new Error("This app requires a username.");
+      }
+      window.location = "/kingdom/" + username;
+    }
+  }, [isUserSignedIn, isSignInPending]);
+
+  return (
+    <main role="main">
+      {isUserSignedIn ? <SignedIn /> : <Landing />}
+    </main>
+  );
+};`
+const HeroGraphic = ({ ...rest }) => {
+  const [inView, setInView] = useState('phone')
+  const handleCodeInView = () => {
+    if (inView === 'phone') {
+      setInView('code')
+    }
+  }
+  const handlePhoneInView = () => {
+    if (inView === 'code') {
+      setInView('phone')
+    }
+  }
+
+  const phoneIsInView = inView === 'phone'
+  const codeIsInView = inView === 'code'
+  const styles = useInViewAnimationStyles()
+  return (
+    <Box {...rest} flexGrow={1} width={1} position="relative">
+      <Box
+        width={['320px', '320px', '388px']}
+        position="relative"
+        zIndex={phoneIsInView ? 2 : 1}
+        pt={9}
+        mt={[8, 8, 0]}
+        {...styles}
+      >
+        <Box
+          is="img"
+          display="block"
+          maxWidth="100%"
+          src="https://blockstack-www.imgix.net/auth-phone-graphic.png"
+        />
+      </Box>
+      <Box
+        transform={[
+          'translate3d(150px,12px,0)',
+          'translate3d(150px,12px,0)',
+          'translate3d(200px,12px,0)'
+        ]}
+        position="absolute"
+        left={0}
+        top={0}
+        pt={[8, 8, 0]}
+        zIndex={codeIsInView ? 2 : 1}
+      >
+        <Box
+          bg="#111111"
+          borderRadius="12px"
+          border="1px solid"
+          borderColor="ink.75"
+          {...styles}
+        >
+          <Flex
+            justifyContent="flex-start"
+            px={7}
+            borderBottom="1px solid"
+            borderColor="ink.75"
+          >
+            <Box
+              py={5}
+              color="white"
+              borderBottom="1px solid"
+              borderColor="blue.50"
+            >
+              Zero-To-Dapp
+            </Box>
+          </Flex>
+          <Box bg="ink" pb={9} pt={5} pl={8}>
+            <Codeblock hideNumbers language="jsx" value={code} />
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  )
+}
+
+const HeroContent = ({ ...rest }) => {
+  const styles = useInViewAnimationStyles()
+
+  return (
+    <>
+      <Section.Pane justifyContent="center">
+        <Section.Title pb={5} {...styles}>
+          Easily build blockchain apps that scale
+        </Section.Title>
+        <Section.Text {...styles}>
+          Get started with our{' '}
+          <Section.Text
+            is="a"
+            href={'https://docs.blockstack.org/develop/zero_to_dapp_1.html'}
+            target="_blank"
+          >
+            Zero-to-Dapp tutorial
+          </Section.Text>
+          , view our{' '}
+          <Section.Text
+            is="a"
+            href={'https://docs.blockstack.org'}
+            target="_blank"
+          >
+            documentation
+          </Section.Text>
+          , or visit our{' '}
+          <Section.Text
+            is="a"
+            href={'https://github.com/blockstack'}
+            target="_blank"
+          >
+            Github
+          </Section.Text>
+          .
+        </Section.Text>
+        <Flex pt={5} width={1} {...styles}>
+          <Button width={[1, 1, 'unset']}>Tutorials</Button>
+        </Flex>
+      </Section.Pane>
+      <Section.Pane>
+        <HeroGraphic />
+      </Section.Pane>
+    </>
+  )
+}
 
 const sections = [
   {
@@ -63,8 +209,13 @@ const sections = [
     panes: [
       {
         width: 1,
-        maxWidth: ['100%', '100%', '60%'],
+        maxWidth: ['100%', '100%', '100%'],
         mx: 'auto',
+        pb: 8,
+        mb: 8,
+        px: [0, 0, '20%'],
+        borderBottom: '1px solid',
+        borderColor: 'sky.25',
         title: {
           is: 'h2',
           children:
@@ -73,6 +224,59 @@ const sections = [
         text: {
           children:
             'We abstract the blockchain complexity so you can focus on building great apps. Our design principles: Keep auth and smart contracts on-chain, keep application user data off-chain, and wrap everything in an easy JavaScript API.'
+        }
+      },
+      {
+        alignSelf: 'flex-start',
+        textAlign: 'left',
+        maxWidth: ['100%', '100%', '42%'],
+        title: {
+          is: 'h4',
+          children: 'Building your app on Blockstack'
+        },
+        list: {
+          items: [
+            <>
+              <Text is="a" href="https://docs.blockstack.org" target="_blank">
+                Visit our documentation
+              </Text>{' '}
+              to learn more or get in touch on{' '}
+              <Text is="a" href="https://forum.blockstack.org" target="_blank">
+                our forum
+              </Text>
+              .
+            </>,
+            <>Join our weekly engineering calls, every Wednesday at 3PM UTC.</>
+          ]
+        }
+      },
+      {
+        alignSelf: 'flex-start',
+        textAlign: 'left',
+        pt: [5, 5, 0],
+        title: {
+          is: 'h4',
+          children: 'Dive deeper'
+        },
+        list: {
+          items: [
+            <Text is="a" href="https://blog.blockstack.org" target="_blank">
+              Ecosystem news
+            </Text>,
+            <Text is="a" href="/roadmap" target="_blank">
+              Ecosystem roadmap
+            </Text>,
+            <Text
+              is="a"
+              href="https://github.com/blockstack/blockstack-core/tree/develop/sip"
+              target="_blank"
+            >
+              Stacks Improvement Proposals
+            </Text>,
+            <Text is="a" href="/papers" target="_blank">
+              Whitepapers
+            </Text>
+          ]
         }
       }
     ]
@@ -170,7 +374,7 @@ const sections = [
       },
       {
         type: 'graphic',
-        src: 'https://blockstack-www.imgix.net/no-graphic.png'
+        src: 'https://blockstack-www.imgix.net/smart-contract-graphic.png'
       }
     ]
   },
@@ -236,7 +440,7 @@ const sections = [
           {
             type: 'link',
             label: 'Learn more about using Blockstack',
-            href: '#'
+            path: '/try-blockstack'
           }
         ]
       },
@@ -292,7 +496,7 @@ const sections = [
             pt: 0,
             type: 'link',
             label: 'View all upcoming events',
-            href: '#'
+            href: 'https://community.blockstack.org/events'
           }
         ]
       },
@@ -322,7 +526,7 @@ const sections = [
             {
               type: 'button',
               label: 'Zero-to-dapp tutorial',
-              href: 'https://angel.co/blockstack',
+              href: 'https://docs.blockstack.org/develop/zero_to_dapp_1.html',
               target: '_blank'
             }
           ]
@@ -335,47 +539,15 @@ const sections = [
 const Hero = ({ ...rest }) => (
   <>
     <Section
-      flexDirection="column"
-      textAlign="center"
       minHeight={`calc(70vh - 112px)`}
       variant="ink"
       width={1}
-      alignItems="center"
-      justifyContent="center"
       pt="180px"
       bg="black"
+      alignItems="stretch"
+      parentOverflow="hidden"
     >
-      <Section.Pane width={1} justifyContent="center" alignItems="center">
-        <Section.Title pb={5} maxWidth={['100%', '100%', '80%']}>
-          Easily build blockchain apps that scale
-        </Section.Title>
-        <Section.Text maxWidth={['100%', '100%', '50%']}>
-          Get started with our Zero-to-Dapp tutorial, view our documentation, or
-          visit our Github.
-        </Section.Text>
-        <Flex
-          pt={5}
-          width={1}
-          justifyContent={['flex-start', 'flex-start', 'center']}
-        >
-          <Button width={[1, 1, 'unset']}>Tutorials</Button>
-        </Flex>
-      </Section.Pane>
-      <Section.Pane
-        pt={9}
-        width={1}
-        justifyContent="center"
-        alignItems="center"
-      >
-        <Box
-          mb={8}
-          is="img"
-          src="https://blockstack-www.imgix.net/tech-hero-graphic.png"
-          width="100%"
-          maxWidth="100%"
-          display="block"
-        />
-      </Section.Pane>
+      <HeroContent />
     </Section>
   </>
 )

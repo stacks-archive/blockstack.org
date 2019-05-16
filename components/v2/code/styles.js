@@ -6,6 +6,9 @@ const CodeWapper = styled(Box)`
 
   .CodeMirror {
     /* Set height, width, borders, and global font properties here */
+    .cm-invalidchar {
+      display: none;
+    }
     font-family: monospace;
     background: transparent !important;
     \direction: ltr;

@@ -3,6 +3,7 @@ import { Title, Text } from '@components/v2/section'
 import { Box, Flex } from 'blockstack-ui'
 import { transition } from '@common/theme'
 import { useHover } from 'use-events'
+import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 
 const AppIcon = ({ ...rest }) => (
   <Box pr="4">
@@ -20,6 +21,12 @@ const AppItem = ({ item }) => {
       transition={transition}
       transform={`translate3d(0,${hovered ? '-5px' : 0}, 0)`}
       cursor={hovered ? 'pointer' : 'unset'}
+      is="a"
+      href={item.href}
+      style={{
+        textDecoration: 'none'
+      }}
+      target="_blank"
       {...bind}
     >
       <Flex
@@ -27,6 +34,7 @@ const AppItem = ({ item }) => {
         py={4}
         bg="ink.75"
         alignItems="center"
+        justifyContent={item.arrow ? 'center' : 'unset'}
         borderRadius="12px"
         flexGrow={1}
       >
@@ -45,6 +53,11 @@ const AppItem = ({ item }) => {
             </Text>
           )}
         </Box>
+        {item.arrow ? (
+          <Text>
+            <ChevronRightIcon size={19} style={{ display: 'block' }} />
+          </Text>
+        ) : null}
       </Flex>
     </Flex>
   )

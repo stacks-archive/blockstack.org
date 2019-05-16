@@ -114,36 +114,43 @@ const HeroGrid = ({ ...rest }) => {
           height={296}
           mb={5}
         />
-        <HeroCard width={488} height={336} bg="sky" />
+        <HeroCard
+          width={488}
+          height={336}
+          bgPhoto="https://blockstack-www.imgix.net/about-grid-conference.png"
+        />
       </Box>
       <Box flexShrink={0} mr={5}>
         <Flex mb={5}>
           <HeroCard
-            logo="https://blockstack-www.imgix.net/logos/wired-logo.png"
+            logo="https://blockstack-www.imgix.net/wired-logo-full.png"
             title="The decentralized internet is here, with some glitches"
             bgPhoto="https://blockstack-www.imgix.net/wired-bg.png"
-            url="#"
+            url="https://www.wired.com/story/the-decentralized-internet-is-here-with-some-glitches/"
             width={380}
             height={400}
             mr={5}
           />
-          <HeroCard width={536} height={400} bg="sky" />
+          <HeroCard
+            width={536}
+            height={400}
+            bgPhoto="https://blockstack-www.imgix.net/photos/photo-conference-001.jpg"
+          />
         </Flex>
         <Flex>
           <HeroCard
-            bgPhoto="https://blockstack-www.imgix.net/dave-morin.png"
-            title="Dave Morin Joins Blockstack PBC as an Advisor to Shape the Future of Decentralized Apps"
-            url="#"
+            logo="https://blockstack-www.imgix.net/forbes-logo.png"
+            bgPhoto="https://blockstack-www.imgix.net/forbes-image.png"
+            title="New Blockchain Fund With Winklevoss Backing Targets Facebook's Business Model"
+            url="https://www.forbes.com/sites/michaeldelcastillo/2018/05/10/new-blockchain-fund-with-winklevoss-backing-targets-facebooks-business-model/#2be7a061541b"
             width={532}
             height={400}
-            bg="sky"
             mr={5}
           />
           <HeroCard
-            bgPhoto="https://blockstack-www.imgix.net/photos/blockstack-team-summer-retreat-2018.jpg"
+            bgPhoto="https://blockstack-www.imgix.net/photos/blockstack-team-couch.png"
             width={364}
             height={232}
-            bg="sky"
             flexGrow={1}
           />
         </Flex>
@@ -235,4 +242,4 @@ const AboutHero = ({ ...rest }) => {
   )
 }
 
-export {AboutHero}
+export { AboutHero }

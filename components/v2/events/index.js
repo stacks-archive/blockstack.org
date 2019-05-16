@@ -4,40 +4,46 @@ import { Box, Flex } from 'blockstack-ui'
 
 const locations = [
   {
-    city: 'Amsterdam',
-    date: 'March 29th',
-    time: '07:30PM',
-    event: 'Lightning Hack Day'
+    city: 'Bangalore',
+    date: 'June 1',
+    time: '06:00PM',
+    event: 'Learn how SpringRole earned $50K MRR',
+    href: 'https://community.blockstack.org/events#event=30167304'
+  },
+  {
+    city: 'Brighton',
+    date: 'June 4',
+    time: '06:30PM',
+    event: 'Radicle @ Brighton Blockchain and Crypto Meetup',
+    href: 'https://community.blockstack.org/events#event=30184724'
   },
   {
     city: 'New York City',
-    date: 'March 29th',
-    time: '07:30PM',
-    event: 'Lightning Hack Day'
-  },
-  {
-    city: 'Remote',
-    date: 'March 29th',
-    time: '07:30PM',
-    event: 'Bolt-A-Thon Hackathon'
+    date: 'June 6th',
+    time: '06:00PM',
+    event: 'ReactNYC + Blockstack',
+    href: 'https://community.blockstack.org/events#event=26560585'
   },
   {
     city: 'London',
-    date: 'March 29th',
-    time: '07:30PM',
-    event: 'COMPLIANCE Q&A WITH FENWICK'
+    date: <>June 10&ndash;12</>,
+    time: 'All day',
+    event: 'CogX - The Festival of AI and Emerging Technology',
+    href: 'https://community.blockstack.org/events#event=25317782'
   },
   {
-    city: 'Düsseldorf',
-    date: 'March 29th',
-    time: '07:30PM',
-    event: 'Blockstack in Protocol NYC'
+    city: 'San Fransisco',
+    date: 'July 18',
+    time: 'All day',
+    event: 'Blockstack Summit',
+    href: 'https://community.blockstack.org/events#event=25317871'
   },
   {
-    city: 'Beijing',
-    date: 'March 29th',
-    time: '07:30PM',
-    event: 'Introducing Blockstack and Serverless Applications'
+    city: 'Princeton',
+    date: <>November 8&ndash;10</>,
+    time: 'All day',
+    event: 'HackPrinceton Hackathon',
+    href: 'https://community.blockstack.org/events#event=24956314'
   }
 ]
 
@@ -72,6 +78,12 @@ const Events = ({ ...rest }) => {
             pr={[0, 0, isOdd ? 5 : 0]}
             pl={[0, 0, !isOdd ? 5 : 0]}
             {...bind}
+            is="a"
+            href={location.href}
+            target="_blank"
+            style={{
+              textDecoration: 'none'
+            }}
           >
             <Flex
               justifyContent="space-between"

@@ -4,7 +4,7 @@ import { Title, Text } from '@components/v2/section'
 import { TextLink } from '@components/v2/section'
 
 const GridItem = ({ item }) => {
-  const { title, text, icon: Icon, invert, link } = item
+  const { title, text, icon: Icon, invert, href, path } = item
 
   return (
     <Flex
@@ -27,7 +27,7 @@ const GridItem = ({ item }) => {
       )}
       {title && <Title {...title} fontSize={2} pb={3} />}
       {text && <Text {...text} fontSize={2} />}
-      {link && (
+      {(href || path) && (
         <Flex flexGrow={1} alignItems="flex-end">
           <TextLink
             alignSelf="flex-end"
@@ -35,7 +35,7 @@ const GridItem = ({ item }) => {
             mt={4}
             color="blue"
             fontSize={1}
-            action={{ label: 'Learn more', href: link }}
+            action={{ label: 'Learn more', href, path }}
           />
         </Flex>
       )}

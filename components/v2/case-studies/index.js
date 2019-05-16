@@ -36,7 +36,7 @@ const PublicationLogo = ({ publication }) => {
   return null
 }
 
-const CaseStudyItem = ({ title, publication, src, app, ...rest }) => {
+const CaseStudyItem = ({ title, publication, src, app, href, ...rest }) => {
   const [hovered, bind] = useHover()
   const isMobile = useMedia(1)
   return (
@@ -48,6 +48,10 @@ const CaseStudyItem = ({ title, publication, src, app, ...rest }) => {
       pb={[7, 7, 5]}
       transition={transition}
       transform={`translate3d(0,${hovered ? -8 : 0}px,0)`}
+      is="a"
+      style={{ textDecoration: 'none' }}
+      href={href}
+      target="_blank"
       {...rest}
       {...bind}
     >

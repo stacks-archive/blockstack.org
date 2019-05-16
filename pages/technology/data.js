@@ -24,13 +24,15 @@ const apps = [
     name: 'Recall',
     desc: 'Safely store and access your photos',
     icon:
-      'https://appco.imgix.net/apps/ae938da5-bb0c-4496-8720-2493f7b2e9a0?fit=clip&h=144&w=144'
+      'https://appco.imgix.net/apps/ae938da5-bb0c-4496-8720-2493f7b2e9a0?fit=clip&h=144&w=144',
+    href: 'https://recall.photos/'
   },
   {
     name: 'Sigle',
     desc: 'A beautiful decentralized & open source blog maker',
     icon:
-      'https://appco.imgix.net/apps/43dc2f39-c790-4b58-9e67-927c2aafcae8?fit=clip&h=144&w=144'
+      'https://appco.imgix.net/apps/43dc2f39-c790-4b58-9e67-927c2aafcae8?fit=clip&h=144&w=144',
+    href: 'https://www.sigle.io/'
   },
   {
     name: 'BitPatron',
@@ -42,34 +44,41 @@ const apps = [
     name: 'Zinc',
     desc: 'Work based identity & reputation system',
     icon:
-      'https://appco.imgix.net/apps/41f87fea-083e-4adf-b9b1-d6b7b1d6a8c8?fit=clip&h=144&w=144'
+      'https://appco.imgix.net/apps/41f87fea-083e-4adf-b9b1-d6b7b1d6a8c8?fit=clip&h=144&w=144',
+    href: 'https://zinc.work/'
   },
   {
     name: 'Gladys',
     desc: 'Your open-source Home Automation Assistant',
     icon:
-      'https://appco.imgix.net/apps/ec6a36e3-36d1-421c-861b-2b1f848da435?fit=clip&h=144&w=144'
+      'https://appco.imgix.net/apps/ec6a36e3-36d1-421c-861b-2b1f848da435?fit=clip&h=144&w=144',
+    href: 'https://gladysproject.com/'
   },
   {
     name: 'Blockusign',
     desc: 'Encrypted document signing and Digital Notary',
     icon:
-      'https://appco.imgix.net/apps/2c06bf32-c8f1-47f4-8d14-e7f70a662961?fit=clip&h=144&w=144'
+      'https://appco.imgix.net/apps/2c06bf32-c8f1-47f4-8d14-e7f70a662961?fit=clip&h=144&w=144',
+    href: 'https://blockusign.co/'
   },
   {
     name: 'Graphite',
     desc: 'Encrypted, shareable, decentralized personal data.',
     icon:
-      'https://appco.imgix.net/apps/0ede3b38-c747-4613-bc8e-7c3a12689ba3?fit=clip&h=144&w=144'
+      'https://appco.imgix.net/apps/0ede3b38-c747-4613-bc8e-7c3a12689ba3?fit=clip&h=144&w=144',
+    href: 'https://www.graphitedocs.com/'
   },
   {
     name: 'Debut',
     desc: 'Introduce yourself to the Blockstack community!',
     icon:
-      'https://appco.imgix.net/apps/1ea81ed6-2526-4c59-b4b4-83305755def2?fit=clip&h=144&w=144'
+      'https://appco.imgix.net/apps/1ea81ed6-2526-4c59-b4b4-83305755def2?fit=clip&h=144&w=144',
+    href: 'https://landing.debutapp.social/'
   },
   {
-    desc: 'View all Blockstack apps'
+    desc: 'View all Blockstack apps',
+    arrow: true,
+    href: 'https://app.co/blockstack'
   }
 ]
 
@@ -84,7 +93,7 @@ const appBuildersGrid = [
       children:
         'Blockstack provides authentication that is created and managed independently from your app; completely avoid liability for user identity and activity.'
     },
-    link: '/technology#authentication'
+    href: 'https://docs.blockstack.org/develop/overview_auth.html'
   },
   {
     icon: FolderIcon,
@@ -96,7 +105,7 @@ const appBuildersGrid = [
       children:
         'Blockstack provides flexible, free, encrypted storage for each user. Never mess with servers, scaling costs, or personal data liability again.'
     },
-    link: '/technology#data-storage'
+    href: 'https://docs.blockstack.org/storage/overview.html'
   },
   {
     icon: DollarIcon,
@@ -108,7 +117,7 @@ const appBuildersGrid = [
       children:
         'Get paid the month you launch with App Mining. Bootstrap your app development without compromising your users digital rights. '
     },
-    link: 'https://app.co/mining'
+    href: 'https://app.co/mining'
   },
   {
     icon: AccountSupervisorCircleIcon,
@@ -120,7 +129,7 @@ const appBuildersGrid = [
       children:
         'Reach new users who are seeking privacy and data ownership — and are abandoning platforms such as Facebook and Google.'
     },
-    link: '/try-blockstack'
+    path: '/try-blockstack'
   },
   {
     icon: ForumIcon,
@@ -132,7 +141,7 @@ const appBuildersGrid = [
       children:
         'Join thousands of open-source developers and app builders dedicated to building a better, decentralized internet.'
     },
-    link: 'https://community.blockstack.org/'
+    href: 'https://community.blockstack.org/'
   },
   {}
 ]

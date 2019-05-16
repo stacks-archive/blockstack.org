@@ -1,5 +1,5 @@
 import React from 'react'
-import { Section, Text, Title } from '@components/v2/section'
+import { Section } from '@components/v2/section'
 import { Box, Flex } from 'blockstack-ui'
 import { Button } from '@components/button'
 import { Events } from '@components/v2/events'
@@ -12,6 +12,124 @@ import fetch from 'cross-fetch'
 import { News } from '@components/v2/articles'
 import { PhotoGrid } from '@components/v2/photos-grid'
 import { AuthGraphic } from '@components/v2/graphics/auth'
+import { useInViewAnimationStyles } from '@common/hooks'
+import { useTrail, animated } from 'react-spring'
+import { useHover } from 'use-events'
+import { transition } from '@common/theme'
+
+const columns = 7
+const array = Array.from(Array(columns))
+
+const appIconSize = [52, 52, 84]
+const config = { mass: 18, tension: 3500, friction: 300 }
+const AppIcon = ({ data: { website, name, imgixImageUrl }, ...rest }) => {
+  const [hovered, bind] = useHover()
+  return (
+    <Box
+      position="relative"
+      mb={['80px', '80px', '180px']}
+      cursor={hovered ? 'pointer' : 'unset'}
+      {...bind}
+      {...rest}
+    >
+      <Flex
+        style={{ textDecoration: 'none' }}
+        is="a"
+        color="ink"
+        href={website}
+        flexDirection="column"
+        alignItems="center"
+      >
+        <Box
+          transition={transition}
+          transform={`translate3d(0,${hovered ? -10 : 0}px,0)`}
+          size={appIconSize}
+        >
+          <Box
+            display="block"
+            maxWidth="100%"
+            width={1}
+            borderRadius={['5px', '5px', '20px']}
+            boxShadow="0px 2px 12px rgba(0, 0, 0, 0.04), 0px 1px 2px rgba(0, 0, 0, 0.08)"
+            is="img"
+            alt={`App Icon for ${name}`}
+            src={imgixImageUrl + '?auto=format&w=96&h=96'}
+          />
+        </Box>
+        <Box
+          opacity={hovered ? 1 : 0}
+          mt={4}
+          bg="sky.25"
+          px={3}
+          py={1}
+          borderRadius="20px"
+          fontSize={1}
+          transition={transition}
+          transform={`translate3d(0,${hovered ? -10 : 10}px,0)`}
+        >
+          {name}
+        </Box>
+      </Flex>
+    </Box>
+  )
+}
+
+const AppColumn = ({ items, index, ...rest }) => {
+  const transitions = useTrail(items.length, {
+    config,
+    from: { opacity: 0, transform: `translate3d(0, ${80}px,0)` },
+    transform: 'translate3d(0,0px,0)',
+    opacity: 1
+  })
+  return transitions.map((props, key) => (
+    <AppIcon
+      key={key}
+      data={{
+        name: items[key].name,
+        website: items[key].website,
+        imgixImageUrl: items[key].imgixImageUrl
+      }}
+      is={animated.div}
+      style={props}
+    />
+  ))
+}
+
+const GraphicForHero = ({ apps, ...rest }) => {
+  return (
+    <Flex
+      flexWrap="wrap"
+      position={['relative', 'relative', 'absolute']}
+      width={['100vw', '100vw', '50vw']}
+      minWidth={['600px', '600px', '1000px']}
+      height={['50vh', '50vh', '100vh']}
+      top={[0, 0, '-150px']}
+      overflow="hidden"
+      left={[-80, -80, 0]}
+      pt={['120px', '120px', '80px']}
+      {...rest}
+    >
+      {array.map((column, key) => (
+        <Flex
+          flexShrink={0}
+          transform={
+            key % 2
+              ? ['translateY(-6vh)', 'translateY(-6vh)', 'translateY(-120px)']
+              : 'none'
+          }
+          flexGrow={1}
+          justifyContent="flex-start"
+          flexDirection="column"
+          height={['100vh', '100vh', '140vh']}
+          alignItems="center"
+          key={key}
+        >
+          <AppColumn index={key + 1} items={apps[key]} />
+        </Flex>
+      ))}
+    </Flex>
+  )
+}
 
 const photos = [
   { src: 'https://blockstack-www.imgix.net/photos/photo-conference-001.jpg' },
@@ -28,53 +146,86 @@ const photos = [
   { src: 'https://blockstack-www.imgix.net/photos/photo-conference-005.jpg' },
   { src: 'https://blockstack-www.imgix.net/photos/photo-hackathon-001.jpg' }
 ]
-const Hero = ({ ...rest }) => (
-  <>
-    <Section
-      flexDirection="column"
-      textAlign="center"
-      minHeight={`calc(70vh - 112px)`}
-      variant="white"
-      width={1}
-      alignItems="center"
-      justifyContent="center"
-    >
-      <Section.Pane width={1} justifyContent="center" alignItems="center">
-        <Section.Title pb={[5, 5, 5]} maxWidth={['100%', '100%', '80%']}>
+
+const HeroContent = ({ apps, ...rest }) => {
+  const inViewAnimationStyles = useInViewAnimationStyles()
+
+  return (
+    <>
+      <Section.Pane
+        width={['100%', '100%', '60%']}
+        alignSelf="center"
+        position="relative"
+      >
+        <Section.Title
+          pb={[5, 5, 5]}
+          maxWidth={['100%', '100%', '80%']}
+          {...inViewAnimationStyles}
+        >
           Blockchain computing platform and app ecosystem
         </Section.Title>
-        <Section.Text maxWidth={['100%', '100%', '50%']}>
+        <Section.Text
+          maxWidth={['100%', '100%', '80%']}
+          {...inViewAnimationStyles}
+        >
           Blockstack apps protect your digital rights and are powered by the
           Stacks blockchain.
         </Section.Text>
         <Flex
           width={1}
-          justifyContent={['flex-start', 'flex-start', 'center']}
+          justifyContent={['flex-start']}
           flexDirection={['column', 'column', 'row']}
           pt={5}
+          {...inViewAnimationStyles}
         >
-          <Button width={[1, 1, 'unset']}>Create ID</Button>
+          <Button width={[1, 1, 'unset']} path="/try-blockstack">
+            Create ID
+          </Button>
           <Button
             width={[1, 1, 'unset']}
             mt={[3, 3, 0]}
             ml={[0, 0, 3]}
             variant="secondary"
+            path="/technology"
           >
             Build Apps
           </Button>
         </Flex>
       </Section.Pane>
-    </Section>
-    <Box
-      mb={8}
-      is="img"
-      src="https://blockstack-www.imgix.net/home-hero-temp.png?auto=format&w=1800"
-      width="100%"
-      maxWidth="100%"
-      display="block"
-    />
-  </>
-)
+      <Section.Pane position="relative" width={['100%', '100%', '40%']}>
+        <GraphicForHero apps={apps} />
+      </Section.Pane>
+    </>
+  )
+}
+
+const transformApps = (apps) => {
+  const limit = columns
+  return [
+    apps.filter((a, i) => i < limit),
+    apps.filter((a, i) => i > limit && i <= limit * 2),
+    apps.filter((a, i) => i > limit * 2 && i <= limit * 3),
+    apps.filter((a, i) => i > limit * 3 && i <= limit * 4),
+    apps.filter((a, i) => i > limit * 4 && i <= limit * 5),
+    apps.filter((a, i) => i > limit * 5 && i <= limit * 6),
+    apps.filter((a, i) => i > limit * 6 && i <= limit * 7)
+  ]
+}
+
+const Hero = ({ apps = [], ...rest }) => {
+  return (
+    <>
+      <Section
+        parentOverflow="hidden"
+        alignItems="flex-start"
+        minHeight={`calc(100vh - 78px)`}
+        variant="white"
+      >
+        <HeroContent apps={apps} />
+      </Section>
+    </>
+  )
+}
 
 class HomePage extends React.Component {
   static async getInitialProps(ctx) {
@@ -87,10 +238,14 @@ class HomePage extends React.Component {
     const feed = await feedData.json()
     const users = await usersData.json()
 
+    const appsData = await fetch('https://api.app.co/api/app-mining-apps')
+    const apps = await appsData.json()
+
     return {
       meta,
       feed,
-      users
+      users,
+      apps: apps.apps
     }
   }
   render() {
@@ -111,7 +266,7 @@ class HomePage extends React.Component {
               {
                 type: 'link',
                 label: 'Learn more',
-                href: '#'
+                path: '/try-blockstack' // is internal, use path instead of href
               }
             ]
           },
@@ -141,7 +296,7 @@ class HomePage extends React.Component {
               {
                 type: 'link',
                 label: 'Learn more',
-                href: '#'
+                path: '/technology' // is internal, use path instead of href
               }
             ]
           },
@@ -166,7 +321,7 @@ class HomePage extends React.Component {
               {
                 type: 'link',
                 label: 'Learn more',
-                href: '#'
+                href: 'https://app.co/mining' // external: href
               }
             ]
           },
@@ -204,7 +359,7 @@ class HomePage extends React.Component {
               {
                 type: 'link',
                 label: 'View all upcoming events',
-                href: '#'
+                href: 'https://community.blockstack.org/'
               }
             ]
           },
@@ -242,7 +397,7 @@ class HomePage extends React.Component {
               {
                 type: 'link',
                 label: 'View all news',
-                href: '#'
+                href: 'https://blog.blockstack.org'
               }
             ]
           },
@@ -284,12 +439,14 @@ class HomePage extends React.Component {
               items: [
                 {
                   type: 'button',
-                  label: 'Create ID'
+                  label: 'Create ID',
+                  path: '/try-blockstack'
                 },
                 {
                   type: 'button',
                   label: 'Build apps',
-                  variant: 'secondary'
+                  variant: 'secondary',
+                  path: '/technology'
                 }
               ]
             }
@@ -300,7 +457,7 @@ class HomePage extends React.Component {
 
     return (
       <>
-        <Hero />
+        {this.props.apps && <Hero apps={transformApps(this.props.apps)} />}
         <Sections sections={sections} />
       </>
     )
