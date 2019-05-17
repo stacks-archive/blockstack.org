@@ -134,7 +134,7 @@ class MyApp extends App {
             <Head>
               <script src="https://cdn.polyfill.io/v2/polyfill.min.js" />
               <title>{title}</title>
-              <meta name="theme-color" content="#3700ff" />
+              <meta name="theme-color" content={pageProps.meta.theme === 'ink' ? theme.colors.ink : '#ffffff'} />
               <meta charSet="UTF-8" />
               <meta
                 name="viewport"
