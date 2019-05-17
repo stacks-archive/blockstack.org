@@ -1,60 +1,16 @@
 import React from 'react'
 import { videoData } from './data'
 import { List } from '@components/list'
+import { Videos } from '@components/v2/videos'
+import { videos } from '../home/data'
+import { Section } from '@components/v2/section'
 
 const meta = {
   path: '/videos',
   title: 'Videos',
-  description: ''
+  description: '',
+  theme: 'ink'
 }
-
-const items = videoData.map(
-  ({ date, title, location, speaker, event, youtubeURL, image, ...rest }) => ({
-    date,
-    title,
-    location,
-    speaker,
-    event,
-    youtubeURL,
-    image: {
-      src: image,
-      alt: title
-    },
-    ...rest,
-    link: youtubeURL,
-    children: (
-      <>
-        <h6 style={{ margin: '0 0 10px 0' }}>
-          {date} | {location}
-        </h6>
-
-        <a
-          href={youtubeURL}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            margin: '20px 0 0 0',
-            display: 'inline-block',
-            border: 'none'
-          }}
-        >
-          <h4 style={{ margin: 0 }}>{title}</h4>
-        </a>
-        <p style={{ margin: '10px 0 0 0' }}>
-          {speaker}, {event}
-        </p>
-        <a
-          href={youtubeURL}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ margin: '20px 0 0 0', display: 'inline-block' }}
-        >
-          Watch
-        </a>
-      </>
-    )
-  })
-)
 
 class VideosPage extends React.PureComponent {
   static async getInitialProps(ctx) {
@@ -65,9 +21,14 @@ class VideosPage extends React.PureComponent {
 
   render() {
     return (
-      <>
-        <List items={items} />
-      </>
+      <Section variant="ink">
+        <Section.Pane width={1}>
+          <Section.Title is="h2" pb={5}>
+            {meta.title}
+          </Section.Title>
+          <Videos items={videos} />
+        </Section.Pane>
+      </Section>
     )
   }
 }

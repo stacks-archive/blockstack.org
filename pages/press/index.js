@@ -1,89 +1,14 @@
 import React from 'react'
-import { featuredPress } from './featured'
-import { pressData } from './data'
-import { Image } from '@components/image'
-import styled from 'styled-components'
-const PressContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-`
-const PressLogo = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: center;
-  width: 33%;
-  padding: 20px;
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-direction: column;
-  margin-bottom: 80px;
-  margin-top: 30px;
-  height: 150px;
-  @media (max-width: 800px) {
-    width: 50%;
-  }
-    @media (max-width: 600px) {
-    width: 100%;
-  }
-  img {
-    display: block;
-    width: 150px;
-    mix-blend-mode: multiply !important;
-    margin-bottom: 20px;
-  }
-`
+import { Press } from '@components/v2/press'
+import { Section } from '@components/v2/section'
+import { press } from '../home/data'
 
-const PressLogoImg = styled.div`
-  height: 150px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`
 const meta = {
   path: '/press',
   title: 'Press',
   notRichText: true
 }
 
-const featured = featuredPress.map((item) => ({
-  ...item,
-  image: {
-    ...item.image,
-    alt: item.title
-  },
-  children: (
-    <>
-      <h4>{item.title}</h4>
-    </>
-  )
-}))
-
-const AdditionalPress = () => (
-  <div>
-    <h5
-      style={{
-        paddingBottom: '40px'
-      }}
-    >
-      Additional Press
-    </h5>
-    {pressData.map((item, i) => (
-      <div key={i}>
-        <a href={item.url} target="_blank" rel="noopener noreferrer">
-          <p>{item.title}</p>
-          <h6>
-            {item.publication} - {item.date}
-          </h6>
-        </a>
-        <br />
-      </div>
-    ))}
-  </div>
-)
 class PressPage extends React.PureComponent {
   static async getInitialProps(ctx) {
     return {
@@ -93,22 +18,14 @@ class PressPage extends React.PureComponent {
 
   render() {
     return (
-      <>
-        <PressContainer>
-          {featured.map((item, i) => (
-            <PressLogo key={i}>
-              {item.image.src && (
-                <PressLogoImg>
-                  <Image src={item.image.src} alt={item.image.alt} noBlur />
-                </PressLogoImg>
-              )}
-              <p className={'rich-text'}>
-                <a href={item.link}>{item.title}</a>
-              </p>
-            </PressLogo>
-          ))}
-        </PressContainer>
-      </>
+      <Section>
+        <Section.Pane width={1}>
+          <Section.Title is="h2" pb={5}>
+            {meta.title}
+          </Section.Title>
+          <Press items={press} />
+        </Section.Pane>
+      </Section>
     )
   }
 }

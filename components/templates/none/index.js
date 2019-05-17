@@ -14,9 +14,6 @@ const TemplateWrapper = ({ meta, children, ...rest }) => {
     children
   ) : (
     <>
-      <Section minHeight="0px">
-        <Section.Title>{meta.title}</Section.Title>
-      </Section>
       {children}
     </>
   )

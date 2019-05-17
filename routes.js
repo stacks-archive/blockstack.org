@@ -5,17 +5,17 @@ const routes = async () => {
     '/about': { page: '/about' },
     '/technology': { page: '/technology' },
     '/404': { page: '/_error' },
-    // '/pbc': { page: '/pbc' },
+    '/pbc': { page: '/about' },
     // '/blog': { page: '/blog' },
-    // '/faq': { page: '/faq' },
+    // '/faq': { page: '/faq' }, // redirect to docs.blockstack.org
     '/careers': { page: '/careers' },
-    // '/funding': { page: '/funding' },
+    // '/funding': { page: '/funding' },// redirect to signature.vc
     '/install': { page: '/install' },
     '/papers': { page: '/papers' },
     '/press': { page: '/press' },
     '/videos': { page: '/videos' },
     '/roadmap': { page: '/roadmap' },
-    // '/what-is-blockstack': { page: '/what-is-blockstack' },
+    '/what-is-blockstack': { page: '/try-blockstack' },
     '/legal/disclaimers': { page: '/legal/disclaimers' },
     '/legal/privacy-policy': { page: '/legal/privacy-policy' },
     '/legal/terms-of-use': { page: '/legal/terms-of-use' }

@@ -3,43 +3,14 @@ import { Section, Text, Title } from '@components/v2/section'
 import { Box, Flex } from 'blockstack-ui'
 import { Button } from '@components/button'
 import { Sections } from '@components/v2/sections'
-import ArrowUpRightIcon from 'mdi-react/ArrowUpRightIcon'
+import { installSection } from '@components/v2/install'
+
 const meta = {
   path: '/try-blockstack',
   title: 'Try Blockstack',
   custom: true
 }
 
-const items = [
-  { platform: 'Web', description: 'No install. Recommended for most users' },
-  { platform: 'MacOs', description: 'Requires Sierra 10.12+' },
-  { platform: 'Windows', description: 'Requires Windows 10' },
-  { platform: 'Linux', description: 'Advanced install' }
-]
-
-const InstallItem = ({ platform, description }) => {
-  return (
-    <Flex
-      width={1}
-      pb={3}
-      mb={3}
-      borderBottom="1px solid"
-      borderColor="sky.50"
-      alignItems="center"
-      justifyContent="flex-start"
-    >
-      <Box pr={2} pt={1}>
-        <ArrowUpRightIcon size={18} style={{ display: 'block' }} />
-      </Box>
-      <Box width="50%" pr={5} flexShink={0}>
-        <Section.Title is="h3">Browser {platform}</Section.Title>
-      </Box>
-      <Box width="50%" flexShink={0}>
-        <Section.Text fontSize={1}>{description}</Section.Text>
-      </Box>
-    </Flex>
-  )
-}
 const Hero = ({ ...rest }) => (
   <>
     <Section
@@ -245,34 +216,7 @@ class HomePage extends React.Component {
           ]
         ]
       },
-      {
-        variant: 'white',
-        minHeight: '400px',
-        py: 8,
-        panes: [
-          [
-            {
-              text: {
-                children:
-                  'The Blockstack Browser allows you to create and manage Blockstack IDs and explore decentralized apps.'
-              }
-            },
-            {
-              text: {
-                children: `Developers can also run a full node by following instructions on GitHub.`
-              }
-            }
-          ],
-          {
-            list: {
-              isComponent: true,
-              items: items.map((item, key) => (
-                <InstallItem key={key} {...item} />
-              ))
-            }
-          }
-        ]
-      }
+      { ...installSection }
     ]
 
     return (

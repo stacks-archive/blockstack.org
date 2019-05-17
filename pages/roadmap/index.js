@@ -1,5 +1,7 @@
 import React from 'react'
 import Content from './roadmap.md'
+import { Section } from '@components/v2/section'
+
 const meta = {
   path: '/roadmap',
   title: 'Blockstack Roadmap'
@@ -14,9 +16,14 @@ class DisclaimersPage extends React.PureComponent {
 
   render() {
     return (
-      <>
-        <Content />
-      </>
+      <Section>
+        <Section.Pane width={1}>
+          <Section.Title is="h2" pb={5}>
+            {meta.title}
+          </Section.Title>
+          <Content />
+        </Section.Pane>
+      </Section>
     )
   }
 }

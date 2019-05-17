@@ -1,5 +1,7 @@
 import React from 'react'
 import Content from './privacy.md'
+import { Section } from '@components/v2/section'
+
 const meta = {
   path: '/legal/privacy-policy',
   title: 'Privacy Policy',
@@ -14,9 +16,14 @@ class PrivacyPolicyPage extends React.PureComponent {
 
   render() {
     return (
-      <>
-        <Content />
-      </>
+      <Section>
+        <Section.Pane width={1}>
+          <Section.Title is="h2" pb={5}>
+            {meta.title}
+          </Section.Title>
+          <Content />
+        </Section.Pane>
+      </Section>
     )
   }
 }
