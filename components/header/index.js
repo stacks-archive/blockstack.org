@@ -129,10 +129,14 @@ const HeaderBar = ({ innerRef, children, ...rest }) => {
   )
 }
 
-const Header = ({ theme = defaultHeaderTheme, innerRef, ...rest }) => {
+const Header = ({
+  theme: headerTheme = defaultHeaderTheme,
+  innerRef,
+  ...rest
+}) => {
   const [hovered, bind] = useHover()
   const [subnavVisible, setSubnavVisibility] = useState(null)
-  const [headerTheme, setTheme] = useState(theme)
+
   const [items, setItems] = useState([])
   const [mobileMenuOpen, setMobileMenuState] = useState(false)
   const isMobile = useMedia(1)
@@ -161,14 +165,6 @@ const Header = ({ theme = defaultHeaderTheme, innerRef, ...rest }) => {
       }
     }
   }, [subnavVisible, hovered])
-
-  const handleThemeToggle = () => {
-    if (headerTheme === 'white') {
-      setTheme('ink')
-    } else {
-      setTheme('white')
-    }
-  }
 
   return (
     <Headroom>

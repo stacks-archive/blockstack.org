@@ -37,7 +37,7 @@ const WrappedComponent = ({
   return (
     <HeaderHeightContext.Provider value={height}>
       <Box position="relative" {...rest}>
-        <Header theme={pageProps.meta.theme} innerRef={ref} />
+        <Header theme={pageProps.meta.theme || 'white'} innerRef={ref} />
         <PageComponent headerHeight={height} {...pageProps} />
         <Footer />
       </Box>
