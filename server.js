@@ -17,9 +17,6 @@ const ssrCache = new LRUCache({
 
 app.prepare().then(() => {
   const server = express()
-  server.get('/blog/:slug', (req, res) => {
-    return app.render(req, res, '/blog/single', { slug: req.params.slug })
-  })
 
   server.get('*', (req, res) => {
     return handle(req, res)
