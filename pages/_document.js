@@ -42,6 +42,7 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
           <script src="/static/lazysizes.js" async defer />
+          <script src="/static/ls.unveilhooks.min.js" async defer />
         </body>
       </html>
     )
