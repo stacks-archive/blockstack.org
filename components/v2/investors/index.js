@@ -77,28 +77,28 @@ const list = [
     src: 'https://blockstack-www.imgix.net/logos/zhenfund-logo.png',
     width: 118
   },
-  {
-    name: 'Naval Ravikant',
-    href: 'https://angel.co/naval',
-    slug: 'naval-ravikant',
-    borderRadius: '100%',
-    width: 72
-  },
-  {
-    name: 'Shana Fisher',
-    href: 'https://angel.co/shana-fisher',
-    slug: 'shana-fisher',
-    borderRadius: '100%',
-    width: 72
-  },
-
-  {
-    name: 'Kal Vepuri',
-    href: 'https://angel.co/kal',
-    slug: 'kal',
-    borderRadius: '100%',
-    width: 72
-  }
+  // {
+  //   name: 'Naval Ravikant',
+  //   href: 'https://angel.co/naval',
+  //   slug: 'naval-ravikant',
+  //   borderRadius: '100%',
+  //   width: 72
+  // },
+  // {
+  //   name: 'Shana Fisher',
+  //   href: 'https://angel.co/shana-fisher',
+  //   slug: 'shana-fisher',
+  //   borderRadius: '100%',
+  //   width: 72
+  // },
+  //
+  // {
+  //   name: 'Kal Vepuri',
+  //   href: 'https://angel.co/kal',
+  //   slug: 'kal',
+  //   borderRadius: '100%',
+  //   width: 72
+  // }
 ]
 
 const Item = ({ name, slug, href, src, width, ...rest }) => {
