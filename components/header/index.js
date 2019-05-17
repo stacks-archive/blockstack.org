@@ -14,6 +14,7 @@ import { useLockBodyScroll } from 'react-use'
 import { HeaderHeightContext } from '../../pages/_app'
 import { transition } from '@common/theme'
 import Headroom from 'react-headroom'
+import Link from 'next/link'
 const HelloBar = ({ ...rest }) => {
   const { borderColor, lightColor, secondaryBg } = useHeaderTheme()
 
@@ -176,7 +177,11 @@ const Header = ({ theme = defaultHeaderTheme, innerRef, ...rest }) => {
           <Box {...bind} {...rest}>
             <HeaderBar innerRef={innerRef}>
               <Wrapper py={5}>
-                <Logo onClick={handleThemeToggle} />
+                <Link href={'/'} prefetch>
+                  <Box is="a" href={'/'}>
+                    <Logo />
+                  </Box>
+                </Link>
                 <Navigation
                   setSubnavVisibility={setSubnavVisibility}
                   subnavVisible={subnavVisible}

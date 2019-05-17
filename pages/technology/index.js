@@ -101,7 +101,7 @@ const HeroGraphic = ({ ...rest }) => {
               Zero-To-Dapp
             </Box>
           </Flex>
-          <Box bg="ink" pb={9} pt={5} pl={8}>
+          <Box bg="ink" pb={6} pt={5} pl={8}>
             <Codeblock hideNumbers language="jsx" value={code} />
           </Box>
         </Box>

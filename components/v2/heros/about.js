@@ -17,6 +17,19 @@ const Gradient = ({ hovered, ...rest }) => (
   />
 )
 
+const LinkElement = ({ url, ...rest }) => (
+  <Box
+    is="a"
+    width={'100%'}
+    height={'100%'}
+    position="absolute"
+    zIndex={99}
+    href={url}
+    target={url ? '_blank' : undefined}
+    {...rest}
+  />
+)
+
 const HeroCard = ({
   logo,
   title,
@@ -49,6 +62,7 @@ const HeroCard = ({
       width={width}
       {...rest}
     >
+      {url && <LinkElement url={url} />}
       {title && (
         <>
           <Gradient
@@ -109,7 +123,7 @@ const HeroGrid = ({ ...rest }) => {
         logo="https://blockstack-www.imgix.net/logos/tedx-logo.png"
         bgPhoto="https://blockstack-www.imgix.net/photos/muneeb-video-still.png"
         title="Welcome to the Decentralized Internet"
-        url="#"
+        url="https://www.youtube.com/watch?v=qtOIh93Hvuw"
         color="white"
         mr={5}
         width={400}
@@ -126,7 +140,7 @@ const HeroGrid = ({ ...rest }) => {
           logo="https://blockstack-www.imgix.net/logos/nyt-logo.png"
           bgPhoto="https://blockstack-www.imgix.net/photos/nyt-blockstack-team-photo.png"
           title="Tech Thinks It Has a Fix for the Problems It Created: Blockchain"
-          url="#"
+          url="https://www.nytimes.com/2018/04/01/technology/blockchain-uses.html"
           color="white"
           width={488}
           height={296}

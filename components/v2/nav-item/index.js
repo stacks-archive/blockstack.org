@@ -5,6 +5,16 @@ import ChevronDownIcon from 'mdi-react/ChevronDownIcon'
 import { useMedia, useHeaderTheme } from '@common/hooks'
 import { Wrapper } from '@components/v2/wrapper'
 import { HeaderHeightContext } from '../../../pages/_app'
+import Link from 'next/link'
+
+const WrappedLink = ({ path, children }) =>
+  path ? (
+    <Link href={path} prefetch>
+      {children}
+    </Link>
+  ) : (
+    children
+  )
 
 const MobileSubNavItem = ({ ...rest }) => {
   const [hovered, bind] = useHover()
@@ -31,6 +41,7 @@ const NavItem = ({
   subnavVisible,
   display,
   variant,
+  path,
   ...rest
 }) => {
   const { borderColor, color, hover, secondary } = useHeaderTheme()
@@ -65,24 +76,24 @@ const NavItem = ({
 
   const isCTA = variant === 'call-to-action'
   return (
-    <>
-      <Flex
-        fontWeight={[600, 600, 500]}
-        color={
-          hovered || subnavVisible === slug ? hover : isCTA ? secondary : color
-        }
-        cursor={hovered ? 'pointer' : 'default'}
-        flexGrow={1}
-        alignItems={['flex-start', 'flex-start', 'center']}
-        justifyContent="center"
-        flexDirection={['column', 'column', 'row']}
-        transition="0.3s color cubic-bezier(.19,1,.22,1), 0.3s border-color cubic-bezier(.19,1,.22,1)"
-        borderBottom={'1px solid'}
-        borderColor={[borderColor, borderColor, 'transparent']}
-        {...rest}
-        style={{ userSelect: 'none', willChange: 'transform', ...style }}
-        display={display}
-      >
+    <Flex
+      fontWeight={[600, 600, 500]}
+      color={
+        hovered || subnavVisible === slug ? hover : isCTA ? secondary : color
+      }
+      cursor={hovered ? 'pointer' : 'default'}
+      flexGrow={1}
+      alignItems={['flex-start', 'flex-start', 'center']}
+      justifyContent="center"
+      flexDirection={['column', 'column', 'row']}
+      transition="0.3s color cubic-bezier(.19,1,.22,1), 0.3s border-color cubic-bezier(.19,1,.22,1)"
+      borderBottom={'1px solid'}
+      borderColor={[borderColor, borderColor, 'transparent']}
+      {...rest}
+      style={{ userSelect: 'none', willChange: 'transform', ...style }}
+      display={display}
+    >
+      <WrappedLink path={path}>
         <Flex
           alignItems="center"
           width={1}
@@ -95,6 +106,13 @@ const NavItem = ({
           py={[4, 4, 0]}
           fontWeight={isCTA ? 500 : 400}
           letterSpacing="0.25px"
+          is="a"
+          href={path || href}
+          target={href ? '_blank' : undefined}
+          color="currentColor !important"
+          style={{
+            textDecoration: 'none'
+          }}
           {...bind}
         >
           {label}
@@ -104,19 +122,20 @@ const NavItem = ({
             </Box>
           )}
         </Flex>
-        {isMobile && subnavVisible === slug ? (
-          <Box pb={4} display={display}>
-            {items.map((item, i) => (
-              <MobileSubNavItem key={i}>{item.label}</MobileSubNavItem>
-            ))}
-          </Box>
-        ) : null}
-      </Flex>
-    </>
+      </WrappedLink>
+
+      {isMobile && subnavVisible === slug ? (
+        <Box pb={4} display={display}>
+          {items.map((item, i) => (
+            <MobileSubNavItem key={i}>{item.label}</MobileSubNavItem>
+          ))}
+        </Box>
+      ) : null}
+    </Flex>
   )
 }
 
-const SubNavItem = ({ label, style = {}, visible, ...rest }) => {
+const SubNavItem = ({ label, style = {}, visible, href, path, ...rest }) => {
   const { color, hover } = useHeaderTheme()
   const [hoverState, hoverBind] = useHover()
   const [active, activeBind] = useActive()
@@ -126,44 +145,51 @@ const SubNavItem = ({ label, style = {}, visible, ...rest }) => {
   }
   const hovered = visible && hoverState
   return (
-    <Flex
-      px={4}
-      flexDirection="column"
-      alignItems="center"
-      textAlign="center"
-      cursor={hovered ? 'pointer' : 'unset'}
-      transition="0.3s all cubic-bezier(.19,1,.22,1)"
-      transform={
-        active
-          ? 'translateY(1px)'
-          : hovered
-          ? 'translateY(-2px)'
-          : 'translateY(0px)'
-      }
-      {...rest}
-      {...bind}
-      style={{
-        willChange: 'transform',
-        userSelect: 'none',
-        ...style
-      }}
-    >
-      {label && (
-        <Box bg={hovered ? hover : color} size={24} borderRadius="6px" />
-      )}
-      {label && (
-        <Box
-          color={hovered ? hover : color}
-          style={{
-            willChange: 'color'
-          }}
-          fontWeight={400}
-          pt={3}
-        >
-          {label}
-        </Box>
-      )}
-    </Flex>
+    <WrappedLink path={path}>
+      <Flex
+        px={4}
+        flexDirection="column"
+        alignItems="center"
+        textAlign="center"
+        cursor={hovered ? 'pointer' : 'unset'}
+        transition="0.3s all cubic-bezier(.19,1,.22,1)"
+        transform={
+          active
+            ? 'translateY(1px)'
+            : hovered
+            ? 'translateY(-2px)'
+            : 'translateY(0px)'
+        }
+        {...rest}
+        {...bind}
+        style={{
+          willChange: 'transform',
+          userSelect: 'none',
+          textDecoration: 'none',
+          ...style
+        }}
+        is="a"
+        href={path || href}
+        target={href ? '_blank' : undefined}
+        color="currentColor !important"
+      >
+        {label && (
+          <Box bg={hovered ? hover : color} size={24} borderRadius="6px" />
+        )}
+        {label && (
+          <Box
+            color={hovered ? hover : color}
+            style={{
+              willChange: 'color'
+            }}
+            fontWeight={400}
+            pt={3}
+          >
+            {label}
+          </Box>
+        )}
+      </Flex>
+    </WrappedLink>
   )
 }
 
@@ -205,7 +231,7 @@ const SubNav = ({ items = [], transitions, visible, ...rest }) => {
         <Spacer />
         {items && items.length
           ? items.map((item, i) => (
-              <SubNavItem visible={visible} key={i} label={item.label} />
+              <SubNavItem visible={visible} key={i} {...item} />
             ))
           : null}
         <Spacer />

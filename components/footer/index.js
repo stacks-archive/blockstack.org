@@ -4,17 +4,34 @@ import { Box, Flex } from 'blockstack-ui'
 import { footerNavigation } from '@common/constants'
 import { Wrapper } from '@components/v2/wrapper'
 import ChevronDownIcon from 'mdi-react/ChevronDownIcon'
+import Link from 'next/link'
 
-const FooterLink = ({ ...rest }) => {
+const WrappedLink = ({ path, children }) =>
+  path ? (
+    <Link href={path} prefetch>
+      {children}
+    </Link>
+  ) : (
+    children
+  )
+const FooterLink = ({ path, href, ...rest }) => {
   const [hovered, bind] = useHover()
   return (
-    <Box
-      fontSize={1}
-      cursor={hovered ? 'pointer' : 'unset'}
-      color={hovered ? 'blue' : 'ink.25'}
-      {...bind}
-      {...rest}
-    />
+    <WrappedLink path={path}>
+      <Box
+        display="block"
+        fontSize={1}
+        cursor={hovered ? 'pointer' : 'unset'}
+        color={hovered ? 'blue' : 'ink.25'}
+        is="a"
+        href={path || href}
+        style={{
+          textDecoration: 'none'
+        }}
+        {...bind}
+        {...rest}
+      />
+    </WrappedLink>
   )
 }
 
@@ -57,7 +74,9 @@ const SectionItems = ({ items, open, ...rest }) => (
   >
     {items.map((item) =>
       item.label ? (
-        <FooterLink py={1}>{item.label}</FooterLink>
+        <FooterLink path={item.path} href={item.href} py={1}>
+          {item.label}
+        </FooterLink>
       ) : item.children ? (
         item.children
       ) : null
@@ -110,9 +129,13 @@ const FooterBottom = ({ ...rest }) => (
       Copyright © 2019 Blockstack PBC. All rights reserved.
     </Box>
     <Flex mt={[5, 5, 0]}>
-      <FooterLink mr={5}>Terms of Use</FooterLink>
-      <FooterLink mr={5}>Privacy Policy</FooterLink>
-      <FooterLink>Disclaimers</FooterLink>
+      <FooterLink path="/legal/terms-of-use" mr={5}>
+        Terms of Use
+      </FooterLink>
+      <FooterLink path="/legal/privacy-policy" mr={5}>
+        Privacy Policy
+      </FooterLink>
+      <FooterLink path="/legal/disclaimers">Disclaimers</FooterLink>
     </Flex>
   </Wrapper>
 )
