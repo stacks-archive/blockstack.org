@@ -195,7 +195,8 @@ const Header = ({
               subnavVisible={subnavVisible}
               open={mobileMenuOpen}
             />
-            <SubNav items={items} visible={items && subnavVisible} />
+            <SubNav                   setSubnavVisibility={setSubnavVisibility}
+ items={items} visible={items && subnavVisible} />
           </Box>
         </>
       </HeaderTheme.Provider>

@@ -1,6 +1,4 @@
 import React from 'react'
-import { videoData } from './data'
-import { List } from '@components/list'
 import { Videos } from '@components/v2/videos'
 import { videos } from '../home/data'
 import { Section } from '@components/v2/section'

@@ -135,7 +135,15 @@ const NavItem = ({
   )
 }
 
-const SubNavItem = ({ label, style = {}, visible, href, path, ...rest }) => {
+const SubNavItem = ({
+  label,
+  style = {},
+  visible,
+  href,
+  path,
+  setSubnavVisibility,
+  ...rest
+}) => {
   const { color, hover } = useHeaderTheme()
   const [hoverState, hoverBind] = useHover()
   const [active, activeBind] = useActive()
@@ -172,6 +180,7 @@ const SubNavItem = ({ label, style = {}, visible, href, path, ...rest }) => {
         href={path || href}
         target={href ? '_blank' : undefined}
         color="currentColor !important"
+        onClick={() => setSubnavVisibility(false)}
       >
         {label && (
           <Box bg={hovered ? hover : color} size={24} borderRadius="6px" />
@@ -197,7 +206,13 @@ const Spacer = ({ ...rest }) => (
   <SubNavItem display={['none', 'none', 'flex']} />
 )
 
-const SubNav = ({ items = [], transitions, visible, ...rest }) => {
+const SubNav = ({
+  items = [],
+  transitions,
+  visible,
+  setSubnavVisibility,
+  ...rest
+}) => {
   const { bg, borderColor } = useHeaderTheme()
   const headerHeight = useContext(HeaderHeightContext)
   return (
@@ -231,7 +246,12 @@ const SubNav = ({ items = [], transitions, visible, ...rest }) => {
         <Spacer />
         {items && items.length
           ? items.map((item, i) => (
-              <SubNavItem visible={visible} key={i} {...item} />
+              <SubNavItem
+                setSubnavVisibility={setSubnavVisibility}
+                visible={visible}
+                key={i}
+                {...item}
+              />
             ))
           : null}
         <Spacer />
