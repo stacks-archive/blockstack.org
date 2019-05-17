@@ -15,6 +15,7 @@ import { AuthGraphic } from '@components/v2/graphics/auth'
 import { useTrail, animated } from 'react-spring'
 import { useHover } from 'use-events'
 import { transition } from '@common/theme'
+import { apps } from './apps'
 
 const columns = 7
 const array = Array.from(Array(columns))
@@ -219,22 +220,22 @@ const Hero = ({ apps = [], ...rest }) => {
 class HomePage extends React.Component {
   static async getInitialProps(ctx) {
     const feedData = await fetch(
-      'https://blog.blockstack.org/wp-json/wp/v2/posts?per_page=100'
+      'https://blog.blockstack.org/wp-json/wp/v2/posts?per_page=20'
     )
     const usersData = await fetch(
-      'https://blog.blockstack.org/wp-json/wp/v2/users?per_page=30'
+      'https://blog.blockstack.org/wp-json/wp/v2/users?per_page=20'
     )
     const feed = await feedData.json()
     const users = await usersData.json()
-
-    const appsData = await fetch('https://api.app.co/api/app-mining-apps')
-    const apps = await appsData.json()
+    //
+    // const appsData = await fetch('https://api.app.co/api/app-mining-apps')
+    // const apps = await appsData.json()
 
     return {
       meta,
       feed,
       users,
-      apps: transformApps(apps.apps)
+      apps: transformApps(apps)
     }
   }
   render() {
