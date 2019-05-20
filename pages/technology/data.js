@@ -38,7 +38,8 @@ const apps = [
     name: 'BitPatron',
     desc: 'The decentralized Patreon alternative',
     icon:
-      'https://appco.imgix.net/apps/97e47302-26d9-4483-b015-aa47ebc6c6a4?fit=clip&h=144&w=144'
+      'https://appco.imgix.net/apps/97e47302-26d9-4483-b015-aa47ebc6c6a4?fit=clip&h=144&w=144',
+    href: 'https://bitpatron.co/'
   },
   {
     name: 'Zinc',

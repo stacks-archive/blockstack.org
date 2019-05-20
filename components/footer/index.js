@@ -4,7 +4,20 @@ import { Box, Flex } from 'blockstack-ui'
 import { footerNavigation } from '@common/constants'
 import { Wrapper } from '@components/v2/wrapper'
 import ChevronDownIcon from 'mdi-react/ChevronDownIcon'
+import TwitterIcon from 'mdi-react/TwitterIcon'
+import GithubCircleIcon from 'mdi-react/GithubCircleIcon'
 import Link from 'next/link'
+
+const Icon = ({ component: Component, ...rest }) => (
+  <Box color="currentColor" pr={1} opacity={0.5} {...rest}>
+    <Component
+      style={{
+        display: 'block'
+      }}
+      size={16}
+    />
+  </Box>
+)
 
 const WrappedLink = ({ path, children }) =>
   path ? (
@@ -128,7 +141,26 @@ const FooterBottom = ({ ...rest }) => (
     <Box fontSize={1} color="ink.25">
       Copyright © 2019 Blockstack PBC. All rights reserved.
     </Box>
-    <Flex mt={[5, 5, 0]}>
+    <Flex flexDirection={['column', 'column', 'row']} mt={[5, 5, 0]}>
+      <FooterLink
+        display="flex"
+        alignItems="center"
+        href="https://twitter.com/blockstack"
+        mr={5}
+        ml={[0, 0, 5]}
+      >
+        <Icon component={TwitterIcon} />
+        Twitter
+      </FooterLink>{' '}
+      <FooterLink
+        display="flex"
+        alignItems="center"
+        href="https://github.com/blockstack"
+        mr={5}
+      >
+        <Icon component={GithubCircleIcon} />
+        GitHub
+      </FooterLink>
       <FooterLink path="/legal/terms-of-use" mr={5}>
         Terms of Use
       </FooterLink>

@@ -70,6 +70,7 @@ const List = ({ items, icon, isComponent, ...rest }) => {
 }
 
 const Content = ({ pane, isFirst, inViewAnimationStyles, ...rest }) => {
+  const { type, ...paneProps } = pane
   return (
     <>
       {pane.pretitle && (
@@ -102,10 +103,12 @@ const Content = ({ pane, isFirst, inViewAnimationStyles, ...rest }) => {
       ) : null}
       {pane.type === 'graphic' && (
         <Box
-          py={8}
+          pt={8}
+          pb={8}
           pl={isFirst ? 0 : padding}
           pr={isFirst ? padding : 0}
           {...inViewAnimationStyles}
+          {...paneProps}
         >
           <Box is="img" display="block" maxWidth="100%" src={pane.src} />
         </Box>

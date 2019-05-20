@@ -20,30 +20,45 @@ const footerNavigation = [
   {
     label: 'Blockstack',
     items: [
+      { label: 'Create an ID', href: 'https://browser.blockstack.org/sign-up' },
+      { label: 'Sign In', href: 'https://browser.blockstack.org/sign-in' },
       { label: 'Technology', path: '/technology' },
       { label: 'Try Blockstack', path: '/try-blockstack' },
       { label: 'App Mining', href: 'https://app.co/mining' },
-      { label: 'Create an ID', href: 'https://browser.blockstack.org/sign-up' },
-      { label: 'Sign In', href: 'https://browser.blockstack.org/sign-in' }
+      { label: 'Explorer', href: 'https://explorer.blockstack.org' },
+      { label: 'Stacks Wallet', href: 'https://wallet.blockstack.org' }
     ]
   },
   {
     label: 'Resources',
     items: [
-      { label: 'Docs', path: '/technology' },
-      { label: 'Tutorials', path: '/try-blockstack' },
-      { label: 'Whitepapers', path: '/papers' },
-      { label: 'FAQ', href: 'https://docs.blockstack.org/faqs/allfaqs' }
+      { label: 'FAQs', href: 'https://docs.blockstack.org/faqs/allfaqs' },
+      {
+        label: 'App user guides',
+        href: 'https://docs.blockstack.org/browser/browser-introduction.html'
+      },
+      {
+        label: 'Developer guides',
+        href: 'https://docs.blockstack.org/develop/dapp_principles.html'
+      },
+      {
+        label: 'App mining guide',
+        href: 'https://docs.blockstack.org/community/app-miners-guide.html'
+      },
+      { label: 'Documentation', href: 'https://docs.blockstack.org/' },
+      { label: 'Support', href: 'https://blockstack.zendesk.com/hc/en-us' }
     ]
   },
   {
     label: 'Community',
     items: [
       { label: 'Forum', href: 'https://forum.blockstack.org' },
-      { label: 'GitHub', href: 'https://github.com/blockstack' },
       { label: 'Slack', href: 'https://chat.blockstack.org' },
-      { label: 'Meetup', href: 'https://community.blockstack.org/events' },
+      { label: 'GitHub', href: 'https://github.com/blockstack' },
+      { label: 'Community guide', href: 'https://github.com/blockstack' },
+      { label: 'Events', href: 'https://community.blockstack.org/events' },
       { label: 'Telegram', href: 'https://t.me/BlockstackChat' },
+      { label: 'Telegram (中文群)', href: 'https://t.me/BlockstackChinese' },
       { label: 'Newsletters', href: 'https://blockstack.org/updates' }
     ]
   },
@@ -53,7 +68,6 @@ const footerNavigation = [
       { label: 'Company', path: '/about' },
       { label: 'Careers', path: '/careers' },
       { label: 'Stacks Tokens', href: 'https://stackstoken.com' },
-      { label: 'Events', href: 'https://community.blockstack.org/events' },
       { label: 'Roadmap', path: '/roadmap' },
       { label: 'News', href: 'https://blog.blockstack.org' },
       { label: 'Contact', href: '#' }

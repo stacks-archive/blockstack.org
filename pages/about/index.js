@@ -112,7 +112,7 @@ const sections = [
             '$50M in funding',
             '4 years of research & development',
             '7,000+ active developers',
-            '65 apps launched on Blockstack'
+            '100+ apps launched on Blockstack'
           ]
         }
       }

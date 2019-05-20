@@ -46,7 +46,6 @@ const SectionWrapper = ({ children, bg, parentOverflow, ...rest }) => {
       <Wrapper
         alignItems="center"
         flexGrow={1}
-        minHeight="60vh"
         py={[7, 7, 9]}
         flexDirection={['column', 'column', 'row']}
         flexWrap="wrap"

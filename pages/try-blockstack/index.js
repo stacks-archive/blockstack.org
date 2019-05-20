@@ -1,9 +1,15 @@
-import React from 'react'
-import { Section, Text, Title } from '@components/v2/section'
+import React, { useEffect, useCallback } from 'react'
+import { Section, Title, Text } from '@components/v2/section'
 import { Box, Flex } from 'blockstack-ui'
 import { Button } from '@components/button'
 import { Sections } from '@components/v2/sections'
 import { installSection } from '@components/v2/install'
+import { Image } from '@components/v2/image'
+import { useHover } from 'use-events'
+import { transition } from '@common/theme'
+import { useSpring, animated as a } from 'react-spring'
+import { useInView } from 'react-intersection-observer'
+import { useInViewAnimationStyles } from '@common/hooks'
 
 const meta = {
   path: '/try-blockstack',
@@ -11,12 +17,225 @@ const meta = {
   custom: true
 }
 
+const appCards = [
+  [
+    {
+      src: 'https://blockstack-www.imgix.net/apps/app-card-bitpatron.png',
+      icon: 'https://blockstack-www.imgix.net/apps/bitpatron-app-icon.png',
+      name: 'BitPatron',
+      description: 'Bitcoin-based Patreon alternative',
+      href: 'https://bitpatron.co/'
+    },
+    {
+      src: 'https://blockstack-www.imgix.net/apps/app-card-blockvault.png',
+      icon: 'https://blockstack-www.imgix.net/apps/blockvault-app-icon.png',
+      name: 'Blockvault',
+      description: 'Decentralized password manager for teams',
+      href: 'https://blockvault.site/'
+    },
+    {
+      src: 'https://blockstack-www.imgix.net/apps/app-card-graphite.png',
+      icon: 'https://blockstack-www.imgix.net/apps/graphitedocs-app-icon.png',
+      name: 'Graphite',
+      description: 'Create documents and share files',
+      href: 'https://www.graphitedocs.com/'
+    },
+    {
+      src: 'https://blockstack-www.imgix.net/apps/app-card-formsid.png',
+      icon: 'https://blockstack-www.imgix.net/apps/formsid-app-icon.png',
+      name: 'Forms.id',
+      description: 'Private alternative to Google Forms',
+      href: 'https://forms.id/'
+    },
+    {
+      src: 'https://blockstack-www.imgix.net/apps/app-card-local-lightning.png',
+      icon:
+        'https://blockstack-www.imgix.net/apps/local-lightning-app-icon.png',
+      name: 'Local Lightning',
+      description: 'Buy and sell Bitcoin locally via the Lightning Network',
+      href: 'https://www.locallightning.net/#/home'
+    },
+    {
+      src: 'https://blockstack-www.imgix.net/apps/app-card-zinc.png',
+      icon: 'https://blockstack-www.imgix.net/apps/zinc-app-icon.png',
+      name: 'Zinc',
+      description: 'Automated referencing software',
+      href: 'https://zinc.work/'
+    }
+  ],
+  [
+    {
+      src: 'https://blockstack-www.imgix.net/apps/app-card-noteriot.png',
+      icon: 'https://blockstack-www.imgix.net/apps/noteriot-app-icon.png',
+      name: 'Note Riot',
+      description: 'Private and secure note keeping tool',
+      href: 'https://note.riot.ai/'
+    },
+    {
+      src: 'https://blockstack-www.imgix.net/apps/app-card-recall.png',
+      icon: 'https://blockstack-www.imgix.net/apps/recall-app-icon.png',
+      name: 'Recall',
+      description: 'Open-source photo vault app',
+      href: 'https://recall.photos/',
+      color: 'ink'
+    },
+    {
+      src: 'https://blockstack-www.imgix.net/apps/app-card-scannie.png',
+      icon: 'https://blockstack-www.imgix.net/apps/scannie-app-icon.png',
+      name: 'Scannie',
+      description: 'Scan your documents and keep them secure forever',
+      href: 'https://www.scannieapp.com/'
+    },
+    {
+      src: 'https://blockstack-www.imgix.net/apps/app-card-sigle.png',
+      icon: 'https://blockstack-www.imgix.net/apps/sigle-app-icon.png',
+      name: 'Sigle',
+      description: 'Decentralized & open source blog maker',
+      href: 'https://www.sigle.io/',
+      color: 'ink'
+    },
+    {
+      src: 'https://blockstack-www.imgix.net/apps/app-card-xor.png',
+      icon: 'https://blockstack-www.imgix.net/apps/xor-app-icon.png',
+      name: 'Xor Drive',
+      description: 'Encrypted, decentralized file manager',
+      href: 'https://xordrive.io/'
+    }
+  ]
+]
+
+const AppCardItem = ({
+  src,
+  name,
+  description,
+  icon,
+  color,
+  href,
+  ...rest
+}) => {
+  const [hovered, bind] = useHover()
+  return (
+    <Flex
+      alignItems="flex-end"
+      width={'570px'}
+      flexShrink={0}
+      flexGrow={1}
+      position="relative"
+      m={4}
+      borderRadius="8px"
+      boxShadow={
+        hovered
+          ? '0px 16px 24px rgba(0, 0, 0, 0.04), 0px 1px 2px rgba(0, 0, 0, 0.08)'
+          : '0px 2px 12px rgba(0, 0, 0, 0.04), 0px 1px 2px rgba(0, 0, 0, 0.08)'
+      }
+      cursor={hovered ? 'pointer' : 'unset'}
+      transition={transition}
+      transform={`translate3d(0,${hovered ? -8 : 0}px,0)`}
+      willChange="transform"
+      {...bind}
+      {...rest}
+    >
+      <Box
+        is="a"
+        href={href}
+        target="_blank"
+        position="absolute"
+        width={'100%'}
+        height={'100%'}
+        left={0}
+        top={0}
+        zIndex={999}
+      />
+      <Flex alignItems="center" p={5} position="absolute" zIndex={99}>
+        <Box size={56} mr={3}>
+          <Image noBlur src={icon} />
+        </Box>
+        <Box>
+          <Box>
+            <Title color={color || 'white'} is="h4">
+              {name}
+            </Title>
+          </Box>
+          <Box>
+            <Text fontSize={1} color={color || 'white'}>
+              {description}
+            </Text>
+          </Box>
+        </Box>
+      </Flex>
+      <Image borderRadius="8px" src={src} />
+    </Flex>
+  )
+}
+
+const AppCards = ({ items: rows, ...rest }) => {
+  const [props, set] = useSpring(() => ({
+    xy: [0, 0],
+    config: { mass: 5, tension: 350, friction: 120 }
+  }))
+  const trans1 = (x, y) => `translate3d(${y / -6}%,0,0)`
+  const trans2 = (x, y) => `translate3d(${y / -5}%,0,0)`
+
+  const [ref, inView, entry] = useInView({
+    threshold: 0
+  })
+
+  const handleScroll = useCallback(
+    (e) => {
+      if (inView && typeof window !== 'undefined') {
+        set({ xy: [window.scrollX, window.scrollY] })
+      }
+    },
+    [inView]
+  )
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [inView])
+  return (
+    <div ref={ref}>
+      <Box
+        px={4}
+        position="relative"
+        {...useInViewAnimationStyles()}
+        {...rest}
+        width={1}
+      >
+        {rows.map((items, key) => (
+          <Box
+            is={a.div}
+            key={key}
+            style={
+              key === 0
+                ? {
+                    transform: props.xy.interpolate(trans2)
+                  }
+                : {
+                    transform: props.xy.interpolate(trans1)
+                  }
+            }
+          >
+            <Flex width={1} ml={key === 0 ? '470px' : '640px'}>
+              {items.map((item, appKey) => (
+                <AppCardItem {...item} key={appKey} />
+              ))}
+            </Flex>
+          </Box>
+        ))}
+      </Box>
+    </div>
+  )
+}
+
 const Hero = ({ ...rest }) => (
   <>
     <Section
       flexDirection="column"
       textAlign="center"
-      minHeight={`calc(70vh - 112px)`}
+      minHeight={`calc(60vh - 112px)`}
       variant="white"
       width={1}
       alignItems="center"
@@ -41,14 +260,11 @@ const Hero = ({ ...rest }) => (
         </Flex>
       </Section.Pane>
     </Section>
-    <Box
-      mb={8}
-      is="img"
-      src="https://blockstack-www.imgix.net/home-hero-temp.png?auto=format&w=1800"
-      width="100%"
-      maxWidth="100%"
-      display="block"
-    />
+    <Box overflow="hidden">
+      <Section noWrapper minHeight={0} py={0}>
+        <AppCards items={appCards} />
+      </Section>
+    </Box>
   </>
 )
 
@@ -60,33 +276,34 @@ class HomePage extends React.Component {
   }
   render() {
     const sections = [
-      {
-        variant: 'white',
-        align: 'center',
-        panes: [
-          {
-            width: 0.6,
-            mx: 'auto',
-            justifyContent: 'center',
-            alignItems: 'center',
-            title: {
-              is: 'h2',
-              pb: 5,
-              children: 'Secure your data'
-            },
-            text: {
-              children: `Online security and privacy are your basic rights. We provide an online identity with blockchain-based security and encryption protecting your data from big internet companies.`,
-              pb: 5
-            },
-            actions: [
-              {
-                type: 'button',
-                label: 'Create ID'
-              }
-            ]
-          }
-        ]
-      },
+      // {
+      //   variant: 'white',
+      //   align: 'center',
+      //   panes: [
+      //     {
+      //       width: [1, 1, 0.6],
+      //       mx: 'auto',
+      //       justifyContent: 'center',
+      //       alignItems: 'center',
+      //       title: {
+      //         is: 'h2',
+      //         pb: 5,
+      //         children: 'Secure your data'
+      //       },
+      //       text: {
+      //         children: `Online security and privacy are your basic rights. We provide an online identity with blockchain-based security and encryption protecting your data from big internet companies.`,
+      //         pb: 5
+      //       },
+      //       actions: [
+      //         {
+      //           type: 'button',
+      //           label: 'Create ID',
+      //           href: 'https://browser.blockstack.org/'
+      //         }
+      //       ]
+      //     }
+      //   ]
+      // },
       {
         variant: 'white',
         minHeight: '400px',
@@ -115,7 +332,8 @@ class HomePage extends React.Component {
           ],
           {
             type: 'graphic',
-            src: 'https://blockstack-www.imgix.net/online-identity-graphic.png'
+            src:
+              'https://blockstack-www.imgix.net/online-identity-graphic.png'
           }
         ]
       },
@@ -138,7 +356,8 @@ class HomePage extends React.Component {
             {
               title: {
                 is: 'h4',
-                children: 'With the old internet, big companies own your data. '
+                children:
+                  'With the old internet, big companies own your data. '
               }
             },
             {
@@ -178,6 +397,7 @@ class HomePage extends React.Component {
           ],
           {
             type: 'graphic',
+            pt: 0,
             src: 'https://blockstack-www.imgix.net/share-data-graphic.png'
           }
         ]
@@ -203,13 +423,13 @@ class HomePage extends React.Component {
                 {
                   type: 'button',
                   label: 'Create ID',
-                  href: '#'
+                  href: 'https://browser.blockstack.org/sign-up'
                 },
                 {
                   type: 'button',
                   label: 'Sign in',
                   variant: 'secondary',
-                  href: '#'
+                  href: 'https://browser.blockstack.org/sign-in'
                 }
               ]
             }
