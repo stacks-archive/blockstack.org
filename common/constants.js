@@ -1,20 +1,8 @@
 import React from 'react'
 import { Box } from 'blockstack-ui'
-
-const EmailInput = ({ ...rest }) => {
-  return (
-    <Box
-      is="input"
-      border="1px solid"
-      borderColor="sky.50"
-      borderRadius="3px"
-      width="100%"
-      height="48px"
-      px={4}
-      my={1}
-    />
-  )
-}
+import { Newsletter } from '@components/v2/newsletter'
+import NewsletterSignup from '@components/newsletter-signup'
+const EmailInput = Newsletter
 
 const footerNavigation = [
   {

@@ -1,17 +1,38 @@
 import React from 'react'
-import { Section, Text, Title } from '@components/v2/section'
+import { Section } from '@components/v2/section'
 import { Box, Flex } from 'blockstack-ui'
+import { useHover } from 'use-events'
 
 import ArrowUpRightIcon from 'mdi-react/ArrowUpRightIcon'
 
 const items = [
-  { platform: 'Web', description: 'No install. Recommended for most users' },
-  { platform: 'MacOs', description: 'Requires Sierra 10.12+' },
-  { platform: 'Windows', description: 'Requires Windows 10' },
-  { platform: 'Linux', description: 'Advanced install' }
+  {
+    platform: 'Web',
+    description: 'No install. Recommended for most users',
+    href: 'https://browser.blockstack.org/'
+  },
+  {
+    platform: 'MacOS',
+    description: 'Requires Sierra 10.12+',
+    href:
+      'https://github.com/blockstack/blockstack-browser/releases/download/v0.36.1/Blockstack-for-macOS-v0.36.1.dmg'
+  },
+  {
+    platform: 'Windows',
+    description: 'Requires Windows 10',
+    href:
+      'https://github.com/blockstack/blockstack-browser/releases/download/v0.36.1/Blockstack-for-win10-v0.36.1.msi'
+  },
+  {
+    platform: 'Linux',
+    description: 'Advanced install',
+    href:
+      'https://github.com/blockstack/blockstack-browser/releases/download/v0.36.1/Blockstack-for-Linux-v0.36.1.sh'
+  }
 ]
 
-const InstallItem = ({ platform, description }) => {
+const InstallItem = ({ platform, description, href }) => {
+  const [hovered, bind] = useHover()
   return (
     <Flex
       width={1}
@@ -21,12 +42,21 @@ const InstallItem = ({ platform, description }) => {
       borderColor="sky.50"
       alignItems="center"
       justifyContent="flex-start"
+      is="a"
+      style={{
+        textDecoration: 'none'
+      }}
+      href={href}
+      target="_blank"
+      {...bind}
     >
-      <Box pr={2} pt={1}>
+      <Box color={hovered ? 'blue' : 'ink'} pr={2} pt={1}>
         <ArrowUpRightIcon size={18} style={{ display: 'block' }} />
       </Box>
       <Box width="50%" pr={5} flexShink={0}>
-        <Section.Title is="h3">Browser {platform}</Section.Title>
+        <Section.Title color={hovered ? 'blue' : 'ink'} is="h3">
+          Browser {platform}
+        </Section.Title>
       </Box>
       <Box width="50%" flexShink={0}>
         <Section.Text fontSize={1}>{description}</Section.Text>
@@ -55,7 +85,21 @@ const installSection = {
         },
         {
           text: {
-            children: `Developers can also run a full node by following instructions on GitHub.`
+            fontSize: 2,
+            children: (
+              <>
+                Developers can also run a full node by{' '}
+                <Section.Text
+                  fontSize={2}
+                  is="a"
+                  href="https://github.com/blockstack/blockstack-core"
+                  target="_blank"
+                >
+                  following instructions on GitHub
+                </Section.Text>
+                .
+              </>
+            )
           }
         }
       ]

@@ -256,7 +256,13 @@ const Hero = ({ ...rest }) => (
           flexDirection={['column', 'column', 'row']}
           pt={5}
         >
-          <Button width={[1, 1, 'unset']}>Create ID</Button>
+          <Button
+            width={[1, 1, 'unset']}
+            href="https://browser.blockstack.org/sign-up"
+            target="_blank"
+          >
+            Create ID
+          </Button>
         </Flex>
       </Section.Pane>
     </Section>
@@ -332,8 +338,7 @@ class HomePage extends React.Component {
           ],
           {
             type: 'graphic',
-            src:
-              'https://blockstack-www.imgix.net/online-identity-graphic.png'
+            src: 'https://blockstack-www.imgix.net/online-identity-graphic.png'
           }
         ]
       },
@@ -356,8 +361,7 @@ class HomePage extends React.Component {
             {
               title: {
                 is: 'h4',
-                children:
-                  'With the old internet, big companies own your data. '
+                children: 'With the old internet, big companies own your data. '
               }
             },
             {

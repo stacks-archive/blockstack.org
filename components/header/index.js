@@ -15,19 +15,31 @@ import { HeaderHeightContext } from '../../pages/_app'
 import { transition } from '@common/theme'
 import Headroom from 'react-headroom'
 import Link from 'next/link'
-const HelloBar = ({ ...rest }) => {
+const HelloBar = ({ theme, ...rest }) => {
   const { borderColor, lightColor, secondaryBg } = useHeaderTheme()
 
   return (
     <Box
       transition={transition}
-      bg={secondaryBg}
-      borderBottom="1px solid"
-      borderColor={borderColor}
+      bg={theme === 'ink' ? 'ink.75' : 'blue'}
+      position="relative"
       {...rest}
     >
-      <Wrapper py={2}>
-        <Box color={lightColor} fontSize={1} transition={transition}>
+      <Box
+        is="a"
+        href="https://stackstoken.com"
+        target="_blank"
+        size="100%"
+        zIndex={9}
+        position="absolute"
+      />
+      <Wrapper py={2} justifyContent="center">
+        <Box
+          textAlign="center"
+          color="white"
+          fontSize={1}
+          transition={transition}
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </Box>
       </Wrapper>
@@ -167,40 +179,46 @@ const Header = ({
   }, [subnavVisible, hovered])
 
   return (
-    <Headroom>
-      <HeaderTheme.Provider value={headerTheme}>
-        <>
-          <Box {...bind} {...rest}>
-            <HeaderBar innerRef={innerRef}>
-              <Wrapper py={5}>
-                <Link href={'/'} prefetch>
-                  <Box is="a" href={'/'}>
-                    <Logo />
-                  </Box>
-                </Link>
-                <Navigation
-                  setSubnavVisibility={setSubnavVisibility}
-                  subnavVisible={subnavVisible}
-                  notMobile
-                />
-                <MobileMenuButton
-                  open={mobileMenuOpen}
-                  onClick={handleMenuToggle}
-                />
-              </Wrapper>
-            </HeaderBar>
+    <>
+      <HelloBar theme={headerTheme} />
+      <Headroom>
+        <HeaderTheme.Provider value={headerTheme}>
+          <>
+            <Box {...bind} {...rest}>
+              <HeaderBar innerRef={innerRef}>
+                <Wrapper py={5}>
+                  <Link href={'/'} prefetch>
+                    <Box is="a" href={'/'}>
+                      <Logo />
+                    </Box>
+                  </Link>
+                  <Navigation
+                    setSubnavVisibility={setSubnavVisibility}
+                    subnavVisible={subnavVisible}
+                    notMobile
+                  />
+                  <MobileMenuButton
+                    open={mobileMenuOpen}
+                    onClick={handleMenuToggle}
+                  />
+                </Wrapper>
+              </HeaderBar>
 
-            <MobileMenu
-              setSubnavVisibility={setSubnavVisibility}
-              subnavVisible={subnavVisible}
-              open={mobileMenuOpen}
-            />
-            <SubNav                   setSubnavVisibility={setSubnavVisibility}
- items={items} visible={items && subnavVisible} />
-          </Box>
-        </>
-      </HeaderTheme.Provider>
-    </Headroom>
+              <MobileMenu
+                setSubnavVisibility={setSubnavVisibility}
+                subnavVisible={subnavVisible}
+                open={mobileMenuOpen}
+              />
+              <SubNav
+                setSubnavVisibility={setSubnavVisibility}
+                items={items}
+                visible={items && subnavVisible}
+              />
+            </Box>
+          </>
+        </HeaderTheme.Provider>
+      </Headroom>
+    </>
   )
 }
 

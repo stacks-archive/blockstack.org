@@ -1,6 +1,73 @@
-import React from 'react'
+import React, { useState } from 'react'
 import fetch from 'cross-fetch'
 import PropTypes from 'prop-types'
+
+const initialState = {
+  loading: false,
+  success: false,
+  error: null,
+  email: null
+}
+
+const useNewsletterState = () => {
+  const [state, setState] = useState(initialState)
+
+  const { loading, success, error, email } = state
+
+  const doSetEmail = (e) => {
+    console.log(e, 'set')
+    setState((s) => ({ ...s, email: e }))
+  }
+
+  const doSubscribe = async (e) => {
+    e.preventDefault()
+    if (email) {
+      setState((s) => ({
+        ...s,
+        loading: true
+      }))
+    } else {
+      return
+    }
+
+    try {
+      const res = await fetch(
+        'https://app-co-api.herokuapp.com/api/blockstack-subscribe',
+        {
+          method: 'POST',
+          body: JSON.stringify({
+            email
+          }),
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        }
+      )
+      const data = await res.json()
+      if (data.success) {
+        setState((s) => ({
+          ...s,
+          success: true,
+          loading: false
+        }))
+      } else {
+        setState((s) => ({
+          ...s,
+          loading: false,
+          error: data.error
+        }))
+      }
+    } catch (error) {
+      setState((s) => ({
+        ...s,
+        loading: false,
+        error: error.message
+      }))
+    }
+  }
+
+  return { ...state, doSubscribe, doSetEmail }
+}
 
 class NewsletterWrapper extends React.Component {
   static propTypes = {
@@ -62,5 +129,5 @@ class NewsletterWrapper extends React.Component {
     return this.props.children(props)
   }
 }
-
+export { useNewsletterState }
 export default NewsletterWrapper

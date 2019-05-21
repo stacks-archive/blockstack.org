@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
-import { ChevronRightIcon } from 'mdi-react'
+import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Input from '@components/input'
 import styled from 'styled-components'
 import Wrapper from './wrapper'
+import { Box } from 'blockstack-ui'
 
 const StyledInputWrapper = styled.div`
   * {
     font-family: 'Plex', monospace !important;
+  }
   }
 `
 function validateEmail(email) {
@@ -100,14 +102,10 @@ class NewsletterSignup extends Component {
       }
     }
 
+    const notValid = !this.state.validEmail && this.state.email !== ''
+
     return (
-      <StyledInputWrapper
-        className={
-          !this.state.validEmail && this.state.email !== ''
-            ? 'newsletter-form invalid'
-            : 'newsletter-form'
-        }
-      >
+      <Box>
         <Wrapper email={this.state.email}>
           {({ error, loading: submitting, success, doSubscribe }) => (
             <form onSubmit={!disabled ? doSubscribe : () => false}>
@@ -146,7 +144,7 @@ class NewsletterSignup extends Component {
             </form>
           )}
         </Wrapper>
-      </StyledInputWrapper>
+      </Box>
     )
   }
 }

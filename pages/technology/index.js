@@ -113,7 +113,7 @@ const HeroGraphic = ({ ...rest }) => {
 const HeroContent = ({ ...rest }) => {
   return (
     <>
-      <Section.Pane justifyContent="center">
+      <Section.Pane justifyContent="center" maxHeight="70vh">
         <Section.Title pb={5}>
           Easily build blockchain apps that scale
         </Section.Title>
@@ -140,7 +140,7 @@ const HeroContent = ({ ...rest }) => {
             href={'https://github.com/blockstack'}
             target="_blank"
           >
-            Github
+            GitHub
           </Section.Text>
           .
         </Section.Text>
@@ -543,13 +543,14 @@ const sections = [
 const Hero = ({ ...rest }) => (
   <>
     <Section
-      minHeight={`calc(70vh - 112px)`}
+      minHeight={0}
       variant="ink"
       width={1}
       pt="180px"
       bg="black"
       alignItems="stretch"
       parentOverflow="hidden"
+      justifyContent="flex-start"
     >
       <HeroContent />
     </Section>
