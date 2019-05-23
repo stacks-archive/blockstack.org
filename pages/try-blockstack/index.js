@@ -173,8 +173,8 @@ const AppCards = ({ items: rows, ...rest }) => {
     xy: [0, 0],
     config: { mass: 5, tension: 350, friction: 120 }
   }))
-  const trans1 = (x, y) => `translate3d(${y / -6}%,0,0)`
-  const trans2 = (x, y) => `translate3d(${y / -5}%,0,0)`
+  const trans1 = (x, y) => `translate3d(${y / -12}%,0,0)`
+  const trans2 = (x, y) => `translate3d(${y / -10}%,0,0)`
 
   const [ref, inView, entry] = useInView({
     threshold: 0
