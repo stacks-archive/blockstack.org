@@ -396,7 +396,8 @@ class HomePage extends React.Component {
               text: {
                 children:
                   'With Blockstack, you own the data, so you decide how data is used between apps. Simply give access to a new, or better, Blockstack app and your data will auto-magically be there.'
-              }
+              },
+              comingSoon: true
             }
           ],
           {

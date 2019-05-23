@@ -4,7 +4,11 @@ import { Box, Flex } from 'blockstack-ui'
 import { TextLink } from '@components/v2/section'
 import { useInViewAnimationStyles } from '@common/hooks'
 import { Button } from '@components/button'
-
+const Pill = ({ children, ...rest }) => (
+  <Box borderRadius="25px" px={2} py={1} fontSize={1} bg="blue.10" color="blue">
+    {children}
+  </Box>
+)
 const padding = [0, 0, 5]
 
 const Actions = ({ items, ...rest }) => (
@@ -96,6 +100,16 @@ const Content = ({ pane, isFirst, inViewAnimationStyles, ...rest }) => {
           {...inViewAnimationStyles}
         />
       )}
+      {pane.comingSoon ? (
+        <Flex
+          pt={5}
+          alignItems="center"
+          justifyContent="flex-start"
+          {...inViewAnimationStyles}
+        >
+          <Pill>Coming soon 2019</Pill>
+        </Flex>
+      ) : null}
       {pane.actions && pane.actions.items ? (
         <Actions {...pane.actions} {...inViewAnimationStyles} />
       ) : pane.actions && pane.actions.length ? (

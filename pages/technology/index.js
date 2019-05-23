@@ -13,6 +13,8 @@ import { AppMiningGraphic } from '@components/v2/graphics/app-mining'
 import { Codeblock } from '@components/v2/code'
 import { useInViewAnimationStyles } from '@common/hooks'
 
+
+
 const code = `const App = props => {
   const session = new UserSession();
   const isUserSignedIn = session.isUserSignedIn();
@@ -375,7 +377,8 @@ const sections = [
         text: {
           children:
             'We’ve created a non-turing complete, Lisp smart contracting language; Allowing you to write and execute free from unexpected side effects, security issues, or fees. App builders can create side chains and app-specific tokens atop Blockstack’s platform.  '
-        }
+        },
+        comingSoon: true
       },
       {
         type: 'graphic',
