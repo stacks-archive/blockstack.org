@@ -9,6 +9,7 @@ import { AppsList } from '@components/v2/apps-list'
 import { PhotoGrid } from '@components/v2/photos-grid'
 import { photos, apps, appBuildersGrid, usersGrid } from './data'
 import { AuthGraphic } from '@components/v2/graphics/auth'
+import { AppMiningGraphic } from '@components/v2/graphics/app-mining'
 import { Codeblock } from '@components/v2/code'
 import { useInViewAnimationStyles } from '@common/hooks'
 
@@ -384,25 +385,31 @@ const sections = [
   },
   {
     variant: 'white',
-    bg: 'sky.10', // remove if changing variant
     panes: [
       {
+        width: [1, 1, 0.45, 0.5],
         pretitle: {
           children: 'App Mining'
         },
         title: {
           is: 'h2',
-          children:
-            'Every 30 days, we pay out $100K to the best Blockstack apps'
+          children: 'Build an app and get paid instantly with App Mining'
         },
         text: {
-          children:
-            'We’re honored to fund decentralized app pioneers with our App Mining program. Get paid the moment you launch your app — the better your app, the more you earn.'
-        }
+          children: `Every month we pay out $100,000 to the best apps built on Blockstack. The better your app, the more you earn.`
+        },
+        actions: [
+          {
+            type: 'link',
+            label: 'Learn more',
+            href: 'https://app.co/mining' // external: href
+          }
+        ]
       },
       {
+        width: [1, 1, 0.55, 0.5],
         type: 'graphic',
-        src: 'https://blockstack-www.imgix.net/app-mining-graphic.png'
+        children: <AppMiningGraphic />
       }
     ]
   },

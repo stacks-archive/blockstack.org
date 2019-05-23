@@ -1,7 +1,19 @@
 import React from 'react'
-import { Box } from 'blockstack-ui'
+import {
+  NavIconTechWhitepapers,
+  NavIconTechOverview,
+  NavIconTechGithub,
+  NavIconTechDocs,
+  NavIconCommunitySlack,
+  NavIconCommunityForum,
+  NavIconCommunityEvents,
+  NavIconAboutTokenOffering,
+  NavIconAboutRoadmap,
+  NavIconAboutCompany,
+  NavIconAboutCareers
+} from '@components/v2/vectors'
 import { Newsletter } from '@components/v2/newsletter'
-import NewsletterSignup from '@components/newsletter-signup'
+
 const EmailInput = Newsletter
 
 const footerNavigation = [
@@ -79,10 +91,18 @@ const navigation = [
     slug: 'technology',
     path: '/technology',
     items: [
-      { label: 'Overview', path: '/technology' },
-      { label: 'Whitepapers', path: '/papers' },
-      { label: 'Documentation', href: 'https://docs.blockstack.org' },
-      { label: 'GitHub', href: 'https://github.com/blockstack' }
+      { label: 'Overview', path: '/technology', icon: NavIconTechOverview },
+      { label: 'Whitepapers', path: '/papers', icon: NavIconTechWhitepapers },
+      {
+        label: 'Documentation',
+        href: 'https://docs.blockstack.org',
+        icon: NavIconTechDocs
+      },
+      {
+        label: 'GitHub',
+        href: 'https://github.com/blockstack',
+        icon: NavIconTechGithub
+      }
     ]
   },
   {
@@ -90,10 +110,14 @@ const navigation = [
     slug: 'about',
     path: '/about',
     items: [
-      { label: 'Overview', path: '/about' },
-      { label: 'Token Offering', href: 'https://stackstoken.com' },
-      { label: 'Roadmap', path: '/roadmap' },
-      { label: 'Careers', path: '/careers' }
+      { label: 'Company', path: '/about', icon: NavIconAboutCompany },
+      {
+        label: 'Token Offering',
+        href: 'https://stackstoken.com',
+        icon: NavIconAboutTokenOffering
+      },
+      { label: 'Roadmap', path: '/roadmap', icon: NavIconAboutRoadmap },
+      { label: 'Careers', path: '/careers', icon: NavIconAboutCareers }
     ]
   },
   {
@@ -101,10 +125,26 @@ const navigation = [
     slug: 'community',
     href: 'https://community.blockstack.org/',
     items: [
-      { label: 'Forum', href: 'https://forum.blockstack.org' },
-      { label: 'Slack', href: 'https://chat.blockstack.org' },
-      { label: 'Events', href: 'https://community.blockstack.org/events' },
-      { label: 'GitHub', href: 'https://github.com/blockstack' }
+      {
+        label: 'Forum',
+        href: 'https://forum.blockstack.org',
+        icon: NavIconCommunityForum
+      },
+      {
+        label: 'Slack',
+        href: 'https://chat.blockstack.org',
+        icon: NavIconCommunitySlack
+      },
+      {
+        label: 'Events',
+        href: 'https://community.blockstack.org/events',
+        icon: NavIconCommunityEvents
+      },
+      {
+        label: 'GitHub',
+        href: 'https://github.com/blockstack',
+        icon: NavIconTechGithub
+      }
     ]
   },
   { label: 'Sign In', href: 'https://browser.blockstack.org/sign-in' },

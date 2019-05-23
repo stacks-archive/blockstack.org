@@ -13,17 +13,27 @@ import { Wrapper } from '@components/v2/wrapper'
 import { useLockBodyScroll } from 'react-use'
 import { HeaderHeightContext } from '../../pages/_app'
 import { transition } from '@common/theme'
+import ArrowUpRightIcon from 'mdi-react/ArrowUpRightIcon'
 import Headroom from 'react-headroom'
 import Link from 'next/link'
 const HelloBar = ({ theme, ...rest }) => {
   const { borderColor, lightColor, secondaryBg } = useHeaderTheme()
-
+  const [hovered, bind] = useHover()
   return (
     <Box
       transition={transition}
-      bg={theme === 'ink' ? 'ink.75' : 'blue'}
+      bg={
+        theme === 'ink'
+          ? hovered
+            ? 'ink.50'
+            : 'ink.75'
+          : hovered
+          ? 'indigo'
+          : 'blue'
+      }
       position="relative"
       {...rest}
+      {...bind}
     >
       <Box
         is="a"
@@ -33,14 +43,18 @@ const HelloBar = ({ theme, ...rest }) => {
         zIndex={9}
         position="absolute"
       />
-      <Wrapper py={2} justifyContent="center">
+      <Wrapper alignItems="center" py={2} justifyContent="center">
         <Box
           textAlign="center"
           color="white"
           fontSize={1}
           transition={transition}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Learn more about the anticipated public offering of Stacks Tokens at
+          stackstoken.com
+        </Box>
+        <Box color="white" transform="translateY(1px)" pl={1}>
+          <ArrowUpRightIcon size={14} />
         </Box>
       </Wrapper>
     </Box>

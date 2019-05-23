@@ -141,6 +141,7 @@ const SubNavItem = ({
   visible,
   href,
   path,
+  icon: Icon,
   setSubnavVisibility,
   ...rest
 }) => {
@@ -182,8 +183,10 @@ const SubNavItem = ({
         color="currentColor !important"
         onClick={() => setSubnavVisibility(false)}
       >
-        {label && (
-          <Box bg={hovered ? hover : color} size={24} borderRadius="6px" />
+        {Icon && (
+          <Box size={24}>
+            <Icon color={hovered ? hover : 'sky'} />
+          </Box>
         )}
         {label && (
           <Box

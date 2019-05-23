@@ -16,12 +16,14 @@ import { useTrail, animated } from 'react-spring'
 import { useHover } from 'use-events'
 import { transition } from '@common/theme'
 import { apps } from './apps'
+import { AppMiningGraphic } from '@components/v2/graphics/app-mining'
 
 const columns = 7
 const array = Array.from(Array(columns))
 
 const appIconSize = [52, 52, 84]
 const config = { mass: 18, tension: 3500, friction: 300 }
+
 const AppIcon = ({ data: { website, name, imgixImageUrl }, ...rest }) => {
   const [hovered, bind] = useHover()
   return (
@@ -182,9 +184,7 @@ const HeroContent = ({ apps, ...rest }) => {
           </Button>
         </Flex>
       </Section.Pane>
-      <Section.Pane position="relative" width={['100%', '100%', '40%']}>
-        <GraphicForHero apps={apps} />
-      </Section.Pane>
+      <Section.Pane position="relative" width={['100%', '100%', '40%']} />
     </>
   )
 }
@@ -206,13 +206,24 @@ const Hero = ({ apps = [], ...rest }) => {
   return (
     <>
       <Section
+        bg="#F4F4FC"
+        minHeight="calc(100vh - 112px - 325px)"
         parentOverflow="hidden"
         alignItems="flex-start"
-        minHeight={`calc(100vh - 78px)`}
         variant="white"
       >
         <HeroContent apps={apps} />
       </Section>
+      <Box bg="#F4F4FC">
+        <Box
+          maxWidth="100%"
+          minHeight={[225, 225, 325]}
+          backgroundImage="url(https://blockstack-www.imgix.net/apps-pattern-high.png?auto=format&w=1800)"
+          backgroundRepeat="repeat-x"
+          backgroundPosition="top center"
+          backgroundSize={['1300px', '1300px', '1500px']}
+        />
+      </Box>
     </>
   )
 }
@@ -292,6 +303,7 @@ class HomePage extends React.Component {
           },
           {
             width: 1,
+            pt: 8,
             children: <CaseStudies pt={[8, 8, 0]} items={caseStudies} />
           }
         ]
@@ -300,6 +312,10 @@ class HomePage extends React.Component {
         variant: 'white',
         panes: [
           {
+            width: [1, 1, 0.45, 0.5],
+            pretitle: {
+              children: 'App Mining'
+            },
             title: {
               is: 'h2',
               children: 'Build an app and get paid instantly with App Mining'
@@ -316,8 +332,9 @@ class HomePage extends React.Component {
             ]
           },
           {
+            width: [1, 1, 0.55, 0.5],
             type: 'graphic',
-            src: 'https://file-tjijlhuiuk.now.sh/'
+            children: <AppMiningGraphic />
           }
         ]
       },
