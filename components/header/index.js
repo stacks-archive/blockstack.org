@@ -65,10 +65,14 @@ const Navigation = ({
   notMobile,
   subnavVisible,
   setSubnavVisibility,
-  data = navigation
+  data = navigation,
+  setMobileMenuState,
+  isMobileMenu
 }) =>
   data.map((item, i) => (
     <NavItem
+      isMobileMenu={isMobileMenu}
+      setMobileMenuState={setMobileMenuState}
       subnavVisible={subnavVisible}
       setSubnavVisibility={setSubnavVisibility}
       key={i}
@@ -106,7 +110,13 @@ const MobileMenuButton = ({ open, ...rest }) => {
   )
 }
 
-const MobileMenu = ({ open, setSubnavVisibility, subnavVisible, ...rest }) => {
+const MobileMenu = ({
+  open,
+  setSubnavVisibility,
+  setMobileMenuState,
+  subnavVisible,
+  ...rest
+}) => {
   const { bg } = useHeaderTheme()
   const headerHeight = useContext(HeaderHeightContext)
 
@@ -128,8 +138,10 @@ const MobileMenu = ({ open, setSubnavVisibility, subnavVisible, ...rest }) => {
       {...rest}
     >
       <Navigation
+        setMobileMenuState={setMobileMenuState}
         setSubnavVisibility={setSubnavVisibility}
         subnavVisible={subnavVisible}
+        isMobileMenu
       />
     </Box>
   )
@@ -209,6 +221,7 @@ const Header = ({
                   <Navigation
                     setSubnavVisibility={setSubnavVisibility}
                     subnavVisible={subnavVisible}
+                    setMobileMenuState={setMobileMenuState}
                     notMobile
                   />
                   <MobileMenuButton
@@ -222,6 +235,7 @@ const Header = ({
                 setSubnavVisibility={setSubnavVisibility}
                 subnavVisible={subnavVisible}
                 open={mobileMenuOpen}
+                setMobileMenuState={setMobileMenuState}
               />
               <SubNav
                 setSubnavVisibility={setSubnavVisibility}

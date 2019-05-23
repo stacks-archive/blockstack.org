@@ -16,18 +16,26 @@ const WrappedLink = ({ path, children }) =>
     children
   )
 
-const MobileSubNavItem = ({ ...rest }) => {
+const MobileSubNavItem = ({ handleMenuItemClick, href, path, ...rest }) => {
   const [hovered, bind] = useHover()
   const { color, hover } = useHeaderTheme()
   return (
-    <Box
-      color={hovered ? hover : color}
-      cursor={hovered ? 'pointer' : 'unset'}
-      fontWeight={400}
-      py={1}
-      {...rest}
-      {...bind}
-    />
+    <WrappedLink path={path}>
+      <Box
+        is="a"
+        style={{ textDecoration: 'none' }}
+        display="block"
+        href={path || href}
+        target={href ? '_blank' : undefined}
+        onClick={handleMenuItemClick}
+        color={hovered ? hover : color}
+        cursor={hovered ? 'pointer' : 'unset'}
+        fontWeight={400}
+        py={1}
+        {...rest}
+        {...bind}
+      />
+    </WrappedLink>
   )
 }
 
@@ -39,9 +47,11 @@ const NavItem = ({
   items,
   setSubnavVisibility,
   subnavVisible,
+  setMobileMenuState,
   display,
   variant,
   path,
+  isMobileMenu,
   ...rest
 }) => {
   const { borderColor, color, hover, secondary } = useHeaderTheme()
@@ -51,6 +61,11 @@ const NavItem = ({
   const bind = {
     ...hoverBind,
     ...activeBind
+  }
+
+  const handleMenuItemClick = () => {
+    setMobileMenuState(false)
+    setSubnavVisibility(null)
   }
 
   useEffect(() => {
@@ -93,7 +108,7 @@ const NavItem = ({
       style={{ userSelect: 'none', willChange: 'transform', ...style }}
       display={display}
     >
-      <WrappedLink path={path}>
+      <WrappedLink path={!isMobileMenu && items && path}>
         <Flex
           alignItems="center"
           width={1}
@@ -106,8 +121,8 @@ const NavItem = ({
           py={[4, 4, 0]}
           fontWeight={isCTA ? 500 : 400}
           letterSpacing="0.25px"
-          is="a"
-          href={path || href}
+          is={!isMobileMenu ? 'a' : 'div'}
+          href={!isMobileMenu ? path || href : undefined}
           target={href ? '_blank' : undefined}
           color="currentColor !important"
           style={{
@@ -127,7 +142,14 @@ const NavItem = ({
       {isMobile && subnavVisible === slug ? (
         <Box pb={4} display={display}>
           {items.map((item, i) => (
-            <MobileSubNavItem key={i}>{item.label}</MobileSubNavItem>
+            <MobileSubNavItem
+              handleMenuItemClick={handleMenuItemClick}
+              href={item.href}
+              path={item.path}
+              key={i}
+            >
+              {item.label}
+            </MobileSubNavItem>
           ))}
         </Box>
       ) : null}
