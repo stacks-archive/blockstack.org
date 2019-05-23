@@ -246,6 +246,7 @@ const sections = [
       {
         width: 1,
         title: {
+          is: 'h2',
           children: 'Ecosystem partners'
         }
       },
@@ -263,7 +264,7 @@ class AboutPage extends React.Component {
       meta: {
         title: 'About',
         path: '/about',
-        custom: true,
+        custom: true
       }
     }
   }
