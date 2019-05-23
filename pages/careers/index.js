@@ -1,11 +1,11 @@
 import React from 'react'
-import Photos from './photos.md'
-import Intro from './intro.md'
-import Working from './working.md'
+import fetch from 'cross-fetch'
 import { PhotoGrid } from '@components/v2/photos-grid'
 import { Jobs } from '@components/jobs'
-import fetch from 'cross-fetch'
 import { Section } from '@components/v2/section'
+import Intro from './intro.md'
+import Working from './working.md'
+
 const photos1 = [
   {
     src:

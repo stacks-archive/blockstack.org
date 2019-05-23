@@ -153,7 +153,12 @@ const AppMiningGraphic = ({ data, ...rest }) => {
         <Items items={apps} />
         <Flex px={5} py={4} alignItems="center" justifyContent="center">
           <Box>
-            <Section.Text fontSize={2} is="a" href="https://app.co/mining">
+            <Section.Text
+              fontSize={2}
+              is="a"
+              href="https://app.co/mining"
+              target="_blank"
+            >
               View full ranking
             </Section.Text>
           </Box>

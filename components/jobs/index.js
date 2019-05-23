@@ -5,7 +5,7 @@ import { transition } from '@common/theme'
 import { useHover } from 'use-events'
 import { connect } from 'redux-bundler-react'
 
-const CardItem = ({ variant = 'white', ...rest }) => {
+const CardItem = ({ variant = 'white', href, ...rest }) => {
   const [hovered, bind] = useHover()
 
   return (
@@ -33,6 +33,12 @@ const CardItem = ({ variant = 'white', ...rest }) => {
       width={[1, 'calc(50% - 16px)', 'calc(33.3333% - 16px)']}
       mb={5}
       transition={transition}
+      is="a"
+      href={href}
+      target="_blank"
+      style={{
+        textDecoration: 'none'
+      }}
       {...bind}
       {...rest}
     />
@@ -55,6 +61,7 @@ const Jobs = connect(
                 pb={5}
                 width={[1, `calc(50% - 16px)`, `calc(33.33333% - 16px)`]}
                 key={i}
+                href={hostedUrl}
               >
                 {team ? (
                   <Title opacity={0.75} is="h6" color="ink.50">
