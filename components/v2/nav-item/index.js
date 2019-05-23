@@ -120,6 +120,7 @@ const NavItem = ({
           }}
           py={[4, 4, 0]}
           fontWeight={isCTA ? 500 : 400}
+          fontSize="14px"
           letterSpacing="0.25px"
           is={!isMobileMenu ? 'a' : 'div'}
           href={!isMobileMenu ? path || href : undefined}
@@ -217,6 +218,7 @@ const SubNavItem = ({
               willChange: 'color'
             }}
             fontWeight={400}
+            fontSize="14px"
             pt={3}
           >
             {label}

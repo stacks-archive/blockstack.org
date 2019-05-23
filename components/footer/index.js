@@ -174,7 +174,7 @@ const FooterBottom = ({ ...rest }) => (
 
 const Footer = ({ ...rest }) => {
   return (
-    <Box py={7} width={1} {...rest}>
+    <Box py={9} width={1} {...rest}>
       <Sections />
       <FooterBottom />
     </Box>

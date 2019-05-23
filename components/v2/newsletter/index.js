@@ -89,7 +89,7 @@ const Newsletter = ({ ...rest }) => {
           pl={3}
           pr={email ? '52px' : 3}
           height="48px"
-          placeholder="Get email updates"
+          placeholder="Enter your email address"
           is="input"
           fontSize={1}
           borderColor={

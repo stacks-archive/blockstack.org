@@ -43,7 +43,7 @@ const HelloBar = ({ theme, ...rest }) => {
         zIndex={9}
         position="absolute"
       />
-      <Wrapper alignItems="center" py={2} justifyContent="center">
+      <Wrapper alignItems="center" py={3} justifyContent="center">
         <Box
           textAlign="center"
           color="white"
@@ -212,7 +212,7 @@ const Header = ({
           <>
             <Box {...bind} {...rest}>
               <HeaderBar innerRef={innerRef}>
-                <Wrapper py={5}>
+                <Wrapper py={4}>
                   <Link href={'/'} prefetch>
                     <Box is="a" href={'/'}>
                       <Logo />
