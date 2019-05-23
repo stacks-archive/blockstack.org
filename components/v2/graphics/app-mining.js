@@ -3,6 +3,8 @@ import { Box, Flex } from 'blockstack-ui'
 import { Section } from '@components/v2/section'
 import { Dots } from '@components/v2/vectors/dots'
 import { Image } from '@components/v2/image'
+import { useHover } from 'use-events'
+import { transition } from '@common/theme'
 
 const CardHeader = ({ month, ...rest }) => {
   return (
@@ -18,17 +20,20 @@ const apps = [
   {
     name: 'BitPatron',
     icon: 'https://appco.imgix.net/apps/97e47302-26d9-4483-b015-aa47ebc6c6a4',
-    amount: '20,000'
+    amount: '20,000',
+    href: 'https://bitpatron.co'
   },
   {
     name: 'Graphite',
     icon: 'https://appco.imgix.net/apps/0ede3b38-c747-4613-bc8e-7c3a12689ba3',
-    amount: '16,000'
+    amount: '16,000',
+    href: 'https://www.graphitedocs.com/'
   },
   {
     name: 'Recall',
     icon: 'https://appco.imgix.net/apps/ae938da5-bb0c-4496-8720-2493f7b2e9a0',
-    amount: '12,800'
+    amount: '12,800',
+    href: 'https://app.recall.photos/'
   }
 ]
 
@@ -65,22 +70,63 @@ const Details = ({ name, amount }) => (
     </Section.Text>
   </Box>
 )
+
+const Item = ({ icon, name, amount, href, index, ...rest }) => {
+  const [hovered, bind] = useHover()
+  return (
+    <Flex
+      borderBottom="1px solid"
+      borderColor="sky.25"
+      py={[4]}
+      px={5}
+      position="relative"
+      cursor={hovered ? 'pointer' : 'unset'}
+      {...bind}
+      {...rest}
+    >
+      <Box
+        height="100%"
+        width={'100%'}
+        left={0}
+        top={0}
+        position="absolute"
+        is="a"
+        zIndex={99}
+        href={href}
+        target="_blank"
+      />
+      <Box
+        height="100%"
+        width={hovered ? '5px' : 0}
+        bg="blue"
+        left={0}
+        top={0}
+        position="absolute"
+        transition="0.1s all ease-in-out"
+      />
+      <Flex
+        alignItems="center"
+        transition={transition}
+        transform={hovered ? 'translateX(5px)' : 'none'}
+      >
+        <Rank index={index} />
+        <AppIcon src={icon} />
+        <Details name={name} amount={amount} />
+      </Flex>
+    </Flex>
+  )
+}
 const Items = ({ items, ...rest }) => (
   <Box {...rest}>
     {items.map((item, key) => (
-      <Flex
-        borderBottom="1px solid"
-        borderColor="sky.25"
-        alignItems="center"
-        py={[4]}
-        px={5}
+      <Item
         key={key}
-      >
-        <Rank index={key} />
-        <AppIcon src={item.icon} />
-
-        <Details name={item.name} amount={item.amount} />
-      </Flex>
+        href={item.href}
+        index={key}
+        icon={item.icon}
+        name={item.name}
+        amount={item.amount}
+      />
     ))}
   </Box>
 )

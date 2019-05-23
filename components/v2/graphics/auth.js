@@ -51,8 +51,14 @@ const AuthGraphic = () => {
           <Flex mt={4} borderRadius="48px" bg="blue" p={2} alignItems="center">
             <Box mr={2} size="32px" borderRadius="32px">
               <Image
-                src="https://blockstack-www.imgix.net/user-avatar.png"
+                src="https://blockstack-www.imgix.net/default-id-avatar.jpg"
                 borderRadius="32px"
+                imgix={{
+                  fit: 'crop',
+                  crop: 'faces',
+                  w: '128',
+                  h: '128'
+                }}
                 size={32}
               />
             </Box>
