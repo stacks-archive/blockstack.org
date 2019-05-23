@@ -4,12 +4,14 @@ import { Box, Flex } from 'blockstack-ui'
 import { useHover } from 'use-events'
 
 import ArrowUpRightIcon from 'mdi-react/ArrowUpRightIcon'
+import DownloadIcon from 'mdi-react/DownloadIcon'
 
 const items = [
   {
     platform: 'Web',
     description: 'No install. Recommended for most users',
-    href: 'https://browser.blockstack.org/'
+    href: 'https://browser.blockstack.org/',
+    icon: ArrowUpRightIcon
   },
   {
     platform: 'MacOS',
@@ -31,7 +33,12 @@ const items = [
   }
 ]
 
-const InstallItem = ({ platform, description, href }) => {
+const InstallItem = ({
+  platform,
+  description,
+  icon: Icon = DownloadIcon,
+  href
+}) => {
   const [hovered, bind] = useHover()
   return (
     <Flex
@@ -48,17 +55,29 @@ const InstallItem = ({ platform, description, href }) => {
       }}
       href={href}
       target="_blank"
+      flexDirection={['column', 'row', 'column', 'row']}
       {...bind}
     >
-      <Box color={hovered ? 'blue' : 'ink'} pr={2} pt={1}>
-        <ArrowUpRightIcon size={18} style={{ display: 'block' }} />
-      </Box>
-      <Box width="50%" pr={5} flexShink={0}>
-        <Section.Title color={hovered ? 'blue' : 'ink'} is="h3">
-          Browser {platform}
-        </Section.Title>
-      </Box>
-      <Box width="50%" flexShink={0}>
+      <Flex alignItems="center" minWidth={['100%', '50%', '100%', '50%']}>
+        <Box
+          opacity={hovered ? 1 : 0.5}
+          color={hovered ? 'blue' : 'ink'}
+          pr={2}
+          pt={1}
+        >
+          <Icon size={18} style={{ display: 'block' }} />
+        </Box>
+        <Box pr={5} flexShink={0}>
+          <Section.Title
+            style={{ whiteSpace: 'nowrap' }}
+            color={hovered ? 'blue' : 'ink'}
+            is="h3"
+          >
+            Browser {platform}
+          </Section.Title>
+        </Box>
+      </Flex>
+      <Box minWidth={['100%', '50%', '100%', '50%']} flexShink={0} flexGrow={1}>
         <Section.Text fontSize={1}>{description}</Section.Text>
       </Box>
     </Flex>
