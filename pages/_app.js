@@ -34,15 +34,12 @@ const WrappedComponent = ({
   const defaultTemplate = !pageProps.meta.custom
   const defaultTheme = !defaultTemplate ? 'ink' : 'white'
 
-  const ogImageUrl = `https://og.blockstack.sh/${encodeURI(
-    pageProps.meta.title
-  )}.png?theme=dark&md=1&fontSize=150px`
+
 
   return (
     <HeaderHeightContext.Provider value={height}>
       <Head>
-        <meta property="og:image" content={ogImageUrl} />
-        <meta name="twitter:image" content={ogImageUrl} />
+
       </Head>
       <Box position="relative" {...rest}>
         <Header theme={pageProps.meta.theme || 'white'} innerRef={ref} />
