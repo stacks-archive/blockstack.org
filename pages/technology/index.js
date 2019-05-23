@@ -424,7 +424,7 @@ const sections = [
         pb: 8,
         title: {
           is: 'h2',
-          children: 'Blockstack is better for app builder'
+          children: 'Blockstack is better for app builders'
         }
       },
       {
