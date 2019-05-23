@@ -273,7 +273,7 @@ class HomePage extends React.Component {
           },
           {
             type: 'graphic',
-            src: 'https://file-qgpqpsyvye.now.sh/'
+            src: 'https://blockstack-www.imgix.net/blockstack-id-graphic.png'
           }
         ]
       },

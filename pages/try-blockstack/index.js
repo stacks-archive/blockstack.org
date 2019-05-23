@@ -338,7 +338,7 @@ class HomePage extends React.Component {
           ],
           {
             type: 'graphic',
-            src: 'https://blockstack-www.imgix.net/online-identity-graphic.png'
+            src: 'https://blockstack-www.imgix.net/online-id-graphic.png'
           }
         ]
       },

@@ -31,6 +31,7 @@ const MobileSubNavItem = ({ handleMenuItemClick, href, path, ...rest }) => {
         color={hovered ? hover : color}
         cursor={hovered ? 'pointer' : 'unset'}
         fontWeight={400}
+        fontSize="14px"
         py={1}
         {...rest}
         {...bind}
@@ -122,8 +123,10 @@ const NavItem = ({
           fontWeight={isCTA ? 500 : 400}
           fontSize="14px"
           letterSpacing="0.25px"
-          is={!isMobileMenu ? 'a' : 'div'}
-          href={!isMobileMenu ? path || href : undefined}
+          is={isMobileMenu ? (!items ? 'a' : 'div') : 'a'}
+          href={
+            isMobileMenu ? (!items ? path || href : undefined) : path || href
+          }
           target={href ? '_blank' : undefined}
           color="currentColor !important"
           style={{

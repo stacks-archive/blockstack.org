@@ -54,7 +54,7 @@ const HeroGraphic = ({ ...rest }) => {
   return (
     <Box {...rest} flexGrow={1} width={1} position="relative">
       <Box
-        width={['320px', '320px', '388px']}
+        width={['320px', '320px', '415px']}
         position="relative"
         zIndex={phoneIsInView ? 2 : 1}
         pt={9}
@@ -65,7 +65,7 @@ const HeroGraphic = ({ ...rest }) => {
           is="img"
           display="block"
           maxWidth="100%"
-          src="https://blockstack-www.imgix.net/auth-phone-graphic.png"
+          src="https://blockstack-www.imgix.net/auth-phone-graphic-2.png"
         />
       </Box>
       <Box
@@ -350,7 +350,7 @@ const sections = [
     panes: [
       {
         type: 'graphic',
-        src: 'https://blockstack-www.imgix.net/graphic-data-storage.png'
+        src: 'https://blockstack-www.imgix.net/data-storage-graphic-2.png'
       },
       {
         title: {

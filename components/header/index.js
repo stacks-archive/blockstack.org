@@ -50,8 +50,7 @@ const HelloBar = ({ theme, ...rest }) => {
           fontSize={1}
           transition={transition}
         >
-          Learn more about the anticipated public offering of Stacks Tokens at
-          stackstoken.com
+          Learn about the anticipated Stacks Token sale
         </Box>
         <Box color="white" transform="translateY(1px)" pl={1}>
           <ArrowUpRightIcon size={14} />
