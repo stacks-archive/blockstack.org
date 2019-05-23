@@ -76,7 +76,7 @@ const list = [
     slug: 'dcg',
     src: 'https://blockstack-www.imgix.net/logos/zhenfund-logo.png',
     width: 118
-  },
+  }
   // {
   //   name: 'Naval Ravikant',
   //   href: 'https://angel.co/naval',
@@ -104,14 +104,19 @@ const list = [
 const Item = ({ name, slug, href, src, width, ...rest }) => {
   const image = src || `https://blockstack-www.imgix.net/investors/${slug}.png`
   return (
-    <Flex alignItems="center">
+    <Flex
+      alignItems="center"
+      justifyContent="center"
+      pb={[6, 6, 0]}
+      width={['50%', '50%', '33.33%', 'unset']}
+    >
       <Box
         is="a"
         display="block"
         href={href}
         target="_blank"
         mx={5}
-        mb={7}
+        mb={[4, 4, 7]}
         border="none !important"
         maxWidth={width || '60px'}
         overflow="hidden"
@@ -126,7 +131,12 @@ const Item = ({ name, slug, href, src, width, ...rest }) => {
 }
 
 const Investors = ({ ...rest }) => (
-  <Flex flexWrap="wrap" justifyContent="center" pt={9} {...rest}>
+  <Flex
+    flexWrap="wrap"
+    justifyContent={['flex-start', 'flex-start', 'center']}
+    pt={9}
+    {...rest}
+  >
     {list.map((item, i) => (
       <Item key={i} {...item} />
     ))}
