@@ -144,9 +144,9 @@ const photos = [
     src: 'https://blockstack-www.imgix.net/photos/photo-conference-003.jpg',
     flexGrow: 1
   },
+  { src: 'https://blockstack-www.imgix.net/photos/photo-hackathon-001.jpg' },
   { src: 'https://blockstack-www.imgix.net/photos/photo-conference-002.jpg' },
-  { src: 'https://blockstack-www.imgix.net/photos/photo-conference-005.jpg' },
-  { src: 'https://blockstack-www.imgix.net/photos/photo-hackathon-001.jpg' }
+  { src: 'https://blockstack-www.imgix.net/photos/photo-conference-006.png' }
 ]
 
 const HeroContent = ({ apps, ...rest }) => {
