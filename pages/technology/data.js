@@ -38,7 +38,7 @@ const apps = [
     name: 'Sigle',
     desc: 'A beautiful decentralized & open source blog maker',
     icon:
-      'https://appco.imgix.net/apps/43dc2f39-c790-4b58-9e67-927c2aafcae8?fit=clip&h=144&w=144',
+      'https://blockstack-www.imgix.net/apps/sigle-app-icon.png?fit=clip&h=144&w=144',
     href: 'https://www.sigle.io/'
   },
   {
@@ -56,18 +56,18 @@ const apps = [
     href: 'https://zinc.work/'
   },
   {
-    name: 'Gladys',
-    desc: 'Your open-source Home Automation Assistant',
+    name: 'Scannie',
+    desc: 'Scan your documents and keep them secure forever',
     icon:
-      'https://appco.imgix.net/apps/ec6a36e3-36d1-421c-861b-2b1f848da435?fit=clip&h=144&w=144',
-    href: 'https://gladysproject.com/'
+      'https://blockstack-www.imgix.net/apps/scannie-app-icon.png?fit=clip&h=144&w=144',
+    href: 'https://www.scannieapp.com/'
   },
   {
-    name: 'Blockusign',
-    desc: 'Encrypted document signing and Digital Notary',
-    icon:
-      'https://appco.imgix.net/apps/2c06bf32-c8f1-47f4-8d14-e7f70a662961?fit=clip&h=144&w=144',
-    href: 'https://blockusign.co/'
+    src: 'https://blockstack-www.imgix.net/apps/app-card-xor.png',
+    icon: 'https://blockstack-www.imgix.net/apps/xor-app-icon.png',
+    name: 'Xor Drive',
+    desc: 'Encrypted, decentralized file manager',
+    href: 'https://xordrive.io/'
   },
   {
     name: 'Graphite',
