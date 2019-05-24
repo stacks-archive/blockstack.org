@@ -71,7 +71,7 @@ const InstallItem = ({
           <Section.Title
             style={{ whiteSpace: 'nowrap' }}
             color={hovered ? 'blue' : 'ink'}
-            is="h3"
+            is="h4"
           >
             Browser {platform}
           </Section.Title>
