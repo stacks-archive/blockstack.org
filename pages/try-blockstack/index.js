@@ -117,7 +117,7 @@ const AppCardItem = ({
   return (
     <Flex
       alignItems="flex-end"
-      width={'570px'}
+      width={['360px', '360px', '570px']}
       flexShrink={0}
       flexGrow={1}
       position="relative"
@@ -146,13 +146,13 @@ const AppCardItem = ({
         top={0}
         zIndex={999}
       />
-      <Flex alignItems="center" p={5} position="absolute" zIndex={99}>
+      <Flex alignItems="center" p={[3, 3, 5]} position="absolute" zIndex={99}>
         <Box size={56} mr={3}>
           <Image noBlur src={icon} />
         </Box>
         <Box>
           <Box>
-            <Title color={color || 'white'} is="h4">
+            <Title color={color || 'white'} is="h4" fontSize={[2, 2, 3]}>
               {name}
             </Title>
           </Box>
@@ -218,7 +218,14 @@ const AppCards = ({ items: rows, ...rest }) => {
                   }
             }
           >
-            <Flex width={1} ml={key === 0 ? '470px' : '640px'}>
+            <Flex
+              width={1}
+              ml={
+                key === 0
+                  ? ['70px', '90px', '120px', '470px']
+                  : ['40px', '90px', '90px', '640px']
+              }
+            >
               {items.map((item, appKey) => (
                 <AppCardItem {...item} key={appKey} />
               ))}
