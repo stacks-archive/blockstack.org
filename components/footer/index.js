@@ -138,36 +138,44 @@ const FooterBottom = ({ ...rest }) => (
     justifyContent="space-between"
     {...rest}
   >
-    <Box fontSize={1} color="ink.25">
+    <Box
+      fontSize={1}
+      maxWidth={['100%', '100%', '25%', 'unset']}
+      color="ink.25"
+    >
       Copyright © 2019 Blockstack PBC. All rights reserved.
     </Box>
     <Flex flexDirection={['column', 'column', 'row']} mt={[5, 5, 0]}>
-      <FooterLink
-        display="flex"
-        alignItems="center"
-        href="https://twitter.com/blockstack"
-        mr={5}
-        ml={[0, 0, 5]}
-      >
-        <Icon component={TwitterIcon} />
-        Twitter
-      </FooterLink>{' '}
-      <FooterLink
-        display="flex"
-        alignItems="center"
-        href="https://github.com/blockstack"
-        mr={5}
-      >
-        <Icon component={GithubCircleIcon} />
-        GitHub
-      </FooterLink>
-      <FooterLink path="/legal/terms-of-use" mr={5}>
-        Terms of Use
-      </FooterLink>
-      <FooterLink path="/legal/privacy-policy" mr={5}>
-        Privacy Policy
-      </FooterLink>
-      <FooterLink path="/legal/disclaimers">Disclaimers</FooterLink>
+      <Flex alignItems="center">
+        <FooterLink
+          display="flex"
+          alignItems="center"
+          href="https://twitter.com/blockstack"
+          mr={5}
+          ml={[0, 0, 5]}
+        >
+          <Icon component={TwitterIcon} />
+          Twitter
+        </FooterLink>{' '}
+        <FooterLink
+          display="flex"
+          alignItems="center"
+          href="https://github.com/blockstack"
+          mr={5}
+        >
+          <Icon component={GithubCircleIcon} />
+          GitHub
+        </FooterLink>
+      </Flex>
+      <Flex alignItems="center" pt={[3, 3, 0]}>
+        <FooterLink path="/legal/terms-of-use" mr={5}>
+          Terms of Use
+        </FooterLink>
+        <FooterLink path="/legal/privacy-policy" mr={5}>
+          Privacy Policy
+        </FooterLink>
+        <FooterLink path="/legal/disclaimers">Disclaimers</FooterLink>
+      </Flex>
     </Flex>
   </Wrapper>
 )
