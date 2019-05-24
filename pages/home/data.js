@@ -35,12 +35,12 @@ const videos = [
     href: 'https://www.youtube.com/watch?v=jbeqBCOWMIg'
   },
   {
-    title: 'A conversation with Ryan Shea & Naval Ravikant',
-    subtitle: 'Blockstack Summit',
-    duration: '26:15',
-    image: 'https://blockstack-www.imgix.net/video-still-ryan-naval.png',
+    title: 'Ari Paul and Muneeb Ali on Scalability, Custody, and Security',
+    subtitle: 'The Stacks Podcast',
+    duration: '52:18',
+    image: 'https://blockstack-www.imgix.net/ari-podcast.png',
     width: [1, `calc(50% - 12px)`, `calc(66.6666666% - 12px)`],
-    href: 'https://www.youtube.com/watch?v=IrSn3zx2GbM'
+    href: 'https://stacks.co/podcast/episodes/2'
   },
   {
     title: 'Welcome to the New Internet',
@@ -72,7 +72,7 @@ const videos = [
 const meta = {
   path: '/',
   title: 'Blockstack',
-  custom: true,
+  custom: true
 }
 
 const press = [
