@@ -19,7 +19,7 @@ const Logo = ({ ...rest }) => {
           style={{
             transition: '0.3s all cubic-bezier(.19,1,.22,1)'
           }}
-          typeSize="18"
+          typeSize="16"
         />
       </Box>
     </Flex>
