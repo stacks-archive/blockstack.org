@@ -40,6 +40,8 @@ const MobileSubNavItem = ({ handleMenuItemClick, href, path, ...rest }) => {
   )
 }
 
+
+
 const NavItem = ({
   label,
   slug,
@@ -253,7 +255,7 @@ const SubNav = ({
       width={1}
       left={0}
       bg={bg}
-      py={4}
+      py={2}
       transition="0.3s all cubic-bezier(.19,1,.22,1)"
       boxShadow="0px 2px 12px rgba(0, 0, 0, 0.03), 0px 1px 2px rgba(0, 0, 0, 0.06)"
       opacity={visible ? 1 : 0}

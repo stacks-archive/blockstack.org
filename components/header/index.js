@@ -209,7 +209,7 @@ const Header = ({
       <Headroom>
         <HeaderTheme.Provider value={headerTheme}>
           <>
-            <Box {...bind} {...rest}>
+            <Box letterSpacing="-0.02em" {...bind} {...rest}>
               <HeaderBar innerRef={innerRef}>
                 <Wrapper py={4}>
                   <Link href={'/'} prefetch>
