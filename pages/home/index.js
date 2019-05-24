@@ -257,7 +257,7 @@ class HomePage extends React.Component {
           {
             title: {
               is: 'h2',
-              children: 'Secure your identity and data with Blockstack ID'
+              children: 'Secure your data with Blockstack and get a universal login'
             },
             text: {
               children: `We provide an online identity with blockchain-based security and
