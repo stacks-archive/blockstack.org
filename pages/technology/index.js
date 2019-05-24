@@ -13,8 +13,6 @@ import { AppMiningGraphic } from '@components/v2/graphics/app-mining'
 import { Codeblock } from '@components/v2/code'
 import { useInViewAnimationStyles } from '@common/hooks'
 
-
-
 const code = `const App = props => {
   const session = new UserSession();
   const isUserSignedIn = session.isUserSignedIn();
@@ -420,13 +418,14 @@ const sections = [
     variant: 'white',
     flexDirection: 'column',
     justifyContent: 'center',
-    py: 9,
+    py: [9],
     panes: [
       {
         width: 1,
-        pb: 8,
+        pb: [5],
         title: {
           is: 'h2',
+          pb: 5,
           children: 'Blockstack is better for app builders'
         }
       },
@@ -441,22 +440,27 @@ const sections = [
     bg: 'sky.10', // remove if changing variant
     flexDirection: 'column',
     justifyContent: 'center',
-    py: 8,
+    py: [9],
     panes: [
       {
-        pb: 8,
         width: 1,
+        pb: 5,
         title: {
           is: 'h2',
+          pb: 0,
           children: 'Blockstack is better for your users'
         },
-        actions: [
-          {
-            type: 'link',
-            label: 'Learn more about using Blockstack',
-            path: '/try-blockstack'
-          }
-        ]
+        actions: {
+          pt: 0,
+          pb: [5],
+          items: [
+            {
+              type: 'link',
+              label: 'Learn more about using Blockstack',
+              path: '/try-blockstack'
+            }
+          ]
+        }
       },
       {
         width: 1,

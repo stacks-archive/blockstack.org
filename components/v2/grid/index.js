@@ -3,13 +3,13 @@ import { Box, Flex } from 'blockstack-ui'
 import { Title, Text } from '@components/v2/section'
 import { TextLink } from '@components/v2/section'
 
-const GridItem = ({ item }) => {
+const GridItem = ({ item, isLast }) => {
   const { title, text, icon: Icon, invert, href, path } = item
 
   return (
     <Flex
       flexDirection="column"
-      pb={7}
+      pb={!isLast ? 7 : 0}
       width={['100%', 'calc(50% - 16px)', 'calc(33.333% - 16px)']}
     >
       {Icon && (
@@ -48,7 +48,9 @@ const Grid = ({ items, ...rest }) => {
   return (
     <Flex flexWrap="wrap" justifyContent="space-between" {...rest}>
       {items.map((item, key) => {
-        return <GridItem key={key} item={item} />
+        return (
+          <GridItem key={key} isLast={key === items.length - 1} item={item} />
+        )
       })}
     </Flex>
   )

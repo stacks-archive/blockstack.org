@@ -182,7 +182,13 @@ const FooterBottom = ({ ...rest }) => (
 
 const Footer = ({ ...rest }) => {
   return (
-    <Box py={9} width={1} {...rest}>
+    <Box
+      py={[7, 7, 9]}
+      borderTop="1px solid"
+      borderColor="sky.25"
+      width={1}
+      {...rest}
+    >
       <Sections />
       <FooterBottom />
     </Box>

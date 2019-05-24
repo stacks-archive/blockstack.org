@@ -136,7 +136,9 @@ const AppMiningGraphic = ({ data, ...rest }) => {
 
   return (
     <Box
-      maxWidth="392px"
+      ml="auto"
+      mr={['auto', 'auto', 'unset']}
+      minWidth="392px"
       pb={6}
       mb={[7, 7, 0, 0]}
       position="relative"

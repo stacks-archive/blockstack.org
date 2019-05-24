@@ -27,7 +27,7 @@ const Card = ({ item, ...rest }) => {
       style={{
         textDecoration: 'none'
       }}
-      pb={4}
+      pb={[7, 7, 0]}
       {...rest}
       {...bind}
     >
@@ -54,7 +54,7 @@ const Card = ({ item, ...rest }) => {
         </Box>
       </Flex>
 
-      <Title is="h4" display="flex" alignItems="center" pt={3}>
+      <Title is="h4" display="flex" alignItems="center" pt={4}>
         {item.name}
 
         <Box pl={2} opacity={hovered ? 1 : 0.5}>
@@ -76,7 +76,7 @@ const Card = ({ item, ...rest }) => {
 const CardList = ({ items, ...rest }) => {
   return (
     <Flex
-      py={8}
+      py={[5, 5, 7]}
       flexWrap="wrap"
       flexDirection={['column', 'column', 'row']}
       justifyContent="space-between"

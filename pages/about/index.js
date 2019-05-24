@@ -18,6 +18,7 @@ const sections = [
         justifyContent: 'flex-start',
         title: {
           is: 'h2',
+          pb: [5, 5, 0],
           children: (
             <>
               Blockstack is pioneering&nbsp;the next evolution of&nbsp;computing
@@ -215,6 +216,7 @@ const sections = [
       {
         title: {
           is: 'h2',
+          pb: [5, 5, 0],
           children: (
             <>Supported by the&nbsp;pioneers&nbsp; of decentralized computing</>
           )
