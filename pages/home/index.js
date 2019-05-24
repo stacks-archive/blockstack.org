@@ -432,7 +432,7 @@ class HomePage extends React.Component {
           {
             title: {
               is: 'h2',
-              children: 'Join the blockchain computing revolution'
+              children: 'Join the decentralized computing revolution'
             },
             text: {
               children:
