@@ -432,19 +432,25 @@ class HomePage extends React.Component {
             {
               justifyContent: 'center',
               alignItems: 'center',
-              actions: [
-                {
-                  type: 'button',
-                  label: 'Create ID',
-                  href: 'https://browser.blockstack.org/sign-up'
-                },
-                {
-                  type: 'button',
-                  label: 'Sign in',
-                  variant: 'secondary',
-                  href: 'https://browser.blockstack.org/sign-in'
-                }
-              ]
+              actions: {
+                width: ['100%', '100%', 'unset'],
+
+                items: [
+                  {
+                    width: ['100%', '100%', 'unset'],
+                    type: 'button',
+                    label: 'Create ID',
+                    href: 'https://browser.blockstack.org/sign-up'
+                  },
+                  {
+                    width: ['100%', '100%', 'unset'],
+                    type: 'button',
+                    label: 'Sign in',
+                    variant: 'secondary',
+                    href: 'https://browser.blockstack.org/sign-in'
+                  }
+                ]
+              }
             }
           ]
         ]
