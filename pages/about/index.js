@@ -218,7 +218,7 @@ const sections = [
           is: 'h2',
           pb: [5, 5, 0],
           children: (
-            <>Supported by the&nbsp;pioneers&nbsp; of decentralized computing</>
+            <>Supported by the&nbsp;pioneers&nbsp;of decentralized computing</>
           )
         }
       },
