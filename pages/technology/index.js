@@ -366,6 +366,7 @@ const sections = [
   },
   {
     variant: 'white',
+    bg: 'sky.10',
     panes: [
       {
         title: {
