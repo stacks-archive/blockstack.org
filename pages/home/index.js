@@ -158,7 +158,7 @@ const HeroContent = ({ apps, ...rest }) => {
         position="relative"
       >
         <Section.Title pb={[5, 5, 5]} maxWidth={['100%', '100%', '80%']}>
-          Blockchain computing platform and app ecosystem
+          Decentralized computing network and app ecosystem
         </Section.Title>
         <Section.Text maxWidth={['100%', '100%', '80%']}>
           Blockstack apps protect your digital rights and are powered by the
