@@ -289,34 +289,6 @@ class HomePage extends React.Component {
   }
   render() {
     const sections = [
-      // {
-      //   variant: 'white',
-      //   align: 'center',
-      //   panes: [
-      //     {
-      //       width: [1, 1, 0.6],
-      //       mx: 'auto',
-      //       justifyContent: 'center',
-      //       alignItems: 'center',
-      //       title: {
-      //         is: 'h2',
-      //         pb: 5,
-      //         children: 'Secure your data'
-      //       },
-      //       text: {
-      //         children: `Online security and privacy are your basic rights. We provide an online identity with blockchain-based security and encryption protecting your data from big internet companies.`,
-      //         pb: 5
-      //       },
-      //       actions: [
-      //         {
-      //           type: 'button',
-      //           label: 'Create ID',
-      //           href: 'https://browser.blockstack.org/'
-      //         }
-      //       ]
-      //     }
-      //   ]
-      // },
       {
         variant: 'white',
         minHeight: '400px',
