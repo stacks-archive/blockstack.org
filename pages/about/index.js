@@ -184,11 +184,11 @@ const sections = [
             title: {
               is: 'h4',
               pb: 3,
-              children: 'Legal and finance experts for a compliant token'
+              children: 'Attorneys and accounting professionals'
             },
             text: {
               children:
-                'Experience structuring compliant token sales, auditing financials and structuring funds to allow large endowments to participate.'
+                'Deep legal and finance experience to ensure compliance in a new and rapidly changing regulatory environment.'
             }
           }
         ]
