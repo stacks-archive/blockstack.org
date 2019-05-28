@@ -72,7 +72,8 @@ const videos = [
 const meta = {
   path: '/',
   title: 'Blockstack',
-  custom: true
+  custom: true,
+  ogTitle: 'Decentralized computing network and app ecosystem'
 }
 
 const press = [

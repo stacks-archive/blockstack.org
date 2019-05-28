@@ -622,6 +622,7 @@ const meta = {
   title: 'Technology',
   path: '/technology',
   theme: 'ink',
+  ogTitle: 'Easily build blockchain apps that scale',
   custom: true
 }
 

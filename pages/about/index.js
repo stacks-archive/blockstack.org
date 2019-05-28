@@ -266,7 +266,8 @@ class AboutPage extends React.Component {
       meta: {
         title: 'About',
         path: '/about',
-        custom: true
+        custom: true,
+        ogTitle: 'Leading the way to a blockchain computing era'
       }
     }
   }

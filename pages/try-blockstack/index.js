@@ -14,7 +14,8 @@ import { useInViewAnimationStyles } from '@common/hooks'
 const meta = {
   path: '/try-blockstack',
   title: 'Try Blockstack',
-  custom: true
+  custom: true,
+  ogTitle: 'Apps that protect your digital rights'
 }
 
 const appCards = [
