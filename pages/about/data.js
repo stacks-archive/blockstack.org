@@ -75,7 +75,7 @@ const advisors = [
     name: 'Michael Freedman',
     title: 'Advisor, Technical',
     bio:
-      'Michael Freedman is a distributed systems Professor at Princeton. He was awarded the Presidential Early Career Award (PECASE) and the Sloan Fellowship. '
+      'Michael Freedman is a distributed systems Professor at Princeton. He was awarded the Presidential Early Career Award (PECASE), the Sloan Fellowship, and the 2018 ACM Grace Murray Hopper Award for scalable, performant distributed systems.'
   },
   {
     photo: 'https://blockstack-www.imgix.net/dave-morin.png',
