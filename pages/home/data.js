@@ -32,7 +32,7 @@ const videos = [
     duration: '26:15',
     image: 'https://blockstack-www.imgix.net/video-still-japan-society.png',
     width: 1,
-    href: 'https://www.youtube.com/watch?v=jbeqBCOWMIg'
+    href: 'https://www.youtube.com/watch?v=u9RIFJD3M5c'
   },
   {
     title: 'Ari Paul and Muneeb Ali on Scalability, Custody, and Security',
