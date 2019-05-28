@@ -176,7 +176,7 @@ const sections = [
             },
             text: {
               children:
-                'Distributed systems and server virtualization, building and testing smart contracts, cryptocurrency mining, developer education and community building.'
+                'Expertise in distributed systems, building and testing smart contracts, cryptocurrency mining, developer education, and community building.'
             }
           },
           {
