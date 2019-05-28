@@ -31,7 +31,7 @@ const resources = [
       },
       {
         label: 'Weekly engineering calls',
-        href: 'https://forum.blockstack.org/c/community/meetings'
+        href: 'https://community.blockstack.org/engineering-weekly'
       }
     ]
   },
