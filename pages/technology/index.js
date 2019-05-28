@@ -420,8 +420,7 @@ const sections = [
           children: 'Smart contracts'
         },
         text: {
-          children:
-            'We’ve created a non-turing complete, Lisp smart contracting language; Allowing you to write and execute free from unexpected side effects, security issues, or fees. App builders can create side chains and app-specific tokens atop Blockstack’s platform.  '
+          children: `We've created a statically-analyzable Lisp-based smart contract language; Allowing you to write and execute smart contracts without unexpected fees, side effects, or security issues. App builders can create side-chains and app-specific tokens atop Blockstack's platform.`
         },
         comingSoon: true
       },
