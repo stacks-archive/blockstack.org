@@ -257,7 +257,8 @@ class HomePage extends React.Component {
           {
             title: {
               is: 'h2',
-              children: 'Secure your data with Blockstack and get a universal login'
+              children:
+                'Secure your data with Blockstack and get a universal login'
             },
             text: {
               children: `We give users their private data lockers and a universal login with blockchain-based security and encryption — protecting your data from big internet companies.`
@@ -354,6 +355,7 @@ class HomePage extends React.Component {
             title: {
               is: 'h2',
               pr: 5,
+              pb: [5, 5, 0],
               children: 'Attend summits, hackathons, and workshops'
             }
           },
