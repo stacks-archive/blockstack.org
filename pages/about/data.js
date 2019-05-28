@@ -54,7 +54,7 @@ const advisors = [
     name: 'Muneeb Ali',
     title: 'CEO and Co-founder',
     bio:
-      'Muneeb Ali is the co-founder of Blockstack and serves as the CEO of Blockstack PBC. He received his PhD in distributed systems from Princeton University and gives guest lectures on cloud computing there.'
+      'Muneeb Ali is the co-founder of Blockstack and serves as the CEO of Blockstack PBC. He received his PhD in distributed systems from Princeton University and gives guest lectures on cloud computing there. He was a visiting researcher at Stanford University and SICS.'
   },
   {
     photo: 'https://blockstack-www.imgix.net/albert-wenger.jpg',
