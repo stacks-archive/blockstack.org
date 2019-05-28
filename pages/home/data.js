@@ -83,11 +83,10 @@ const press = [
     href: 'https://www.nytimes.com/2018/04/01/technology/blockchain-uses.html'
   },
   {
-    title:
-      'Blockchain technology may offer a way to re-decentralise the internet',
-    publication: 'The Economist',
+    title: 'This startup could sell you crypto tokens—with SEC backing',
+    publication: 'Wired',
     href:
-      'https://www.economist.com/special-report/2018/06/28/blockchain-technology-may-offer-a-way-to-re-decentralise-the-internet'
+      'https://www.wired.com/story/startup-sell-you-crypto-tokens-with-sec-backing/'
   },
   {
     title: 'The new technology that aspires to #DeleteFacebook for good',
