@@ -6,7 +6,7 @@ import { Wrapper } from '@components/v2/wrapper'
 import ChevronDownIcon from 'mdi-react/ChevronDownIcon'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 import GithubCircleIcon from 'mdi-react/GithubCircleIcon'
-import Link from 'next/link'
+import { WrappedLink } from '@components/v2/link'
 
 const Icon = ({ component: Component, ...rest }) => (
   <Box color="currentColor" pr={1} opacity={0.5} {...rest}>
@@ -19,14 +19,6 @@ const Icon = ({ component: Component, ...rest }) => (
   </Box>
 )
 
-const WrappedLink = ({ path, children }) =>
-  path ? (
-    <Link href={path} prefetch>
-      {children}
-    </Link>
-  ) : (
-    children
-  )
 const FooterLink = ({ path, href, ...rest }) => {
   const [hovered, bind] = useHover()
   return (

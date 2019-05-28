@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Sections } from '@components/v2/sections'
 import { Section, Text } from '@components/v2/section'
 import { Grid } from '@components/v2/grid'
+import { transition } from '@common/theme'
 import { Box, Flex } from 'blockstack-ui'
 import { Events } from '@components/v2/events'
 import { Button } from '@components/button'
@@ -11,7 +12,109 @@ import { photos, apps, appBuildersGrid, usersGrid } from './data'
 import { AuthGraphic } from '@components/v2/graphics/auth'
 import { AppMiningGraphic } from '@components/v2/graphics/app-mining'
 import { Codeblock } from '@components/v2/code'
+import { useHover } from 'use-events'
 import { useInViewAnimationStyles } from '@common/hooks'
+import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
+import { WrappedLink } from '@components/v2/link'
+
+const resources = [
+  {
+    title: 'Build your app',
+    items: [
+      {
+        label: 'Documentation',
+        href: 'https://docs.blockstack.org'
+      },
+      {
+        label: 'Forum',
+        href: 'https://forum.blockstack.org'
+      },
+      {
+        label: 'Weekly engineering calls',
+        href: 'https://forum.blockstack.org/c/community/meetings'
+      }
+    ]
+  },
+  {
+    title: 'Learn about Blockstack',
+    items: [
+      {
+        label: 'Whitepapers',
+        path: '/papers'
+      },
+      {
+        label: 'Ecosystem news',
+        href: 'https://blog.blockstack.org'
+      },
+      {
+        label: 'Ecosystem roadmap',
+        path: '/roadmap'
+      },
+      {
+        label: 'Stacks Improvement Proposals',
+        href: 'https://github.com/blockstack/blockstack-core/tree/develop/sip'
+      }
+    ]
+  }
+]
+
+const ResourceItem = ({ label, href, path, ...rest }) => {
+  const [hovered, bind] = useHover()
+  return (
+    <WrappedLink path={path}>
+      <Flex
+        py={4}
+        borderBottom="1px solid"
+        borderColor="sky"
+        alignItems="center"
+        justifyContent="space-between"
+        cursor={hovered ? 'pointer' : 'unset'}
+        is={path || href ? 'a' : 'div'}
+        href={path || href}
+        target={href ? '_blank' : undefined}
+        style={{ textDecoration: 'none' }}
+        {...rest}
+        {...bind}
+      >
+        <Box
+          transition={transition}
+          transform={hovered ? 'translateX(10px)' : 'none'}
+        >
+          <Section.Title is="h4">{label}</Section.Title>
+        </Box>
+        <Box transition={transition} opacity={hovered ? 1 : 0} color="white">
+          <ArrowRightIcon />
+        </Box>
+      </Flex>
+    </WrappedLink>
+  )
+}
+
+const Resources = ({ data, ...rest }) => {
+  return (
+    <Flex
+      flexDirection={['column', 'column', 'row']}
+      justifyContent="space-between"
+    >
+      {data.map((section, sectionKey) => (
+        <Box
+          pb={[sectionKey === 0 ? 8 : 0, sectionKey === 0 ? 8 : 0, 0]}
+          width={[1, 1, 'calc(50% - 12px)']}
+          key={sectionKey}
+        >
+          <Box borderBottom="1px solid" borderColor="sky">
+            <Section.Title is="h5" fontFamily="brand" fontWeight={400} pb={5}>
+              {section.title}
+            </Section.Title>
+          </Box>
+          {section.items.map((item, itemKey) => (
+            <ResourceItem {...item} key={itemKey} />
+          ))}
+        </Box>
+      ))}
+    </Flex>
+  )
+}
 
 const code = `const App = props => {
   const session = new UserSession();
@@ -209,80 +312,23 @@ const sections = [
     ]
   },
   {
-    variant: 'white',
-    align: 'center',
+    variant: 'ink',
     panes: [
       {
-        width: 1,
-        maxWidth: ['100%', '100%', '100%'],
-        mx: 'auto',
-        pb: 8,
-        mb: 8,
-        px: [0, 0, '20%'],
-        borderBottom: '1px solid',
-        borderColor: 'sky.25',
+        pb: [7, 7, 9],
+        width: [1, 1, 0.6],
+        pretitle: {
+          children: 'Resources'
+        },
         title: {
           is: 'h2',
           children:
             'Everything you need, from authentication to data storage, ready and in production.'
-        },
-        text: {
-          children:
-            'We abstract the blockchain complexity so you can focus on building great apps. Our design principles: Keep auth and smart contracts on-chain, keep application user data off-chain, and wrap everything in an easy JavaScript API.'
         }
       },
       {
-        alignSelf: 'flex-start',
-        textAlign: 'left',
-        maxWidth: ['100%', '100%', '42%'],
-        title: {
-          is: 'h4',
-          children: 'Building your app on Blockstack'
-        },
-        list: {
-          items: [
-            <>
-              <Text is="a" href="https://docs.blockstack.org" target="_blank">
-                Visit our documentation
-              </Text>{' '}
-              to learn more or get in touch on{' '}
-              <Text is="a" href="https://forum.blockstack.org" target="_blank">
-                our forum
-              </Text>
-              .
-            </>,
-            <>Join our weekly engineering calls, every Wednesday at 3PM UTC.</>
-          ]
-        }
-      },
-      {
-        alignSelf: 'flex-start',
-        textAlign: 'left',
-        pt: [5, 5, 0],
-        title: {
-          is: 'h4',
-          children: 'Dive deeper'
-        },
-        list: {
-          items: [
-            <Text is="a" href="https://blog.blockstack.org" target="_blank">
-              Ecosystem news
-            </Text>,
-            <Text is="a" href="/roadmap" target="_blank">
-              Ecosystem roadmap
-            </Text>,
-            <Text
-              is="a"
-              href="https://github.com/blockstack/blockstack-core/tree/develop/sip"
-              target="_blank"
-            >
-              Stacks Improvement Proposals
-            </Text>,
-            <Text is="a" href="/papers" target="_blank">
-              Whitepapers
-            </Text>
-          ]
-        }
+        width: 1,
+        children: <Resources data={resources} />
       }
     ]
   },
