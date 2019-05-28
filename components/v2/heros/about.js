@@ -116,44 +116,113 @@ const HeroCard = ({
     </Box>
   )
 }
-const HeroGrid = ({ ...rest }) => {
+
+const FirstRow = (props) => {
   return (
-    <Flex flexDirection={['column', 'column', 'row']} ml="30%" {...rest}>
+    <Box
+      flexShrink={0}
+      width={['calc(100vw - 32px)', 'calc(100vw - 32px)', 488]}
+      mr={[0, 0, 5]}
+      ml={['calc(35vw - 32px)', 'calc(35vw - 32px)', 0]}
+    >
       <HeroCard
-        logo="https://blockstack-www.imgix.net/logos/tedx-logo.png"
-        bgPhoto="https://blockstack-www.imgix.net/photos/muneeb-video-still.png"
-        title="Welcome to the Decentralized Internet"
-        url="https://www.youtube.com/watch?v=qtOIh93Hvuw"
+        logo="https://blockstack-www.imgix.net/logos/nyt-logo.png"
+        bgPhoto="https://blockstack-www.imgix.net/photos/nyt-blockstack-team-photo.png"
+        title="Tech Thinks It Has a Fix for the Problems It Created: Blockchain"
+        url="https://www.nytimes.com/2018/04/01/technology/blockchain-uses.html"
         color="white"
-        mr={5}
-        width={400}
-        height={480}
+        width={488}
+        height={296}
+        maxWidth={['calc(100vw - 32px)', 'calc(100vw - 32px)', 488]}
+        mb={5}
       />
-      <Box
-        flexShrink={0}
-        width={['calc(100vw - 32px)', 'calc(100vw - 32px)', 488]}
-        mr={[0, 0, 5]}
-        my={[5, 5, 0]}
-        ml={['calc(35vw - 32px)', 'calc(35vw - 32px)', 0]}
-      >
+      <HeroCard
+        width={488}
+        height={336}
+        maxWidth={['calc(100vw - 32px)', 'calc(100vw - 32px)', 488]}
+        bgPhoto="https://blockstack-www.imgix.net/about-grid-conference.png"
+      />
+    </Box>
+  )
+}
+
+const MainCard = (props) => (
+  <HeroCard
+    logo="https://blockstack-www.imgix.net/logos/tedx-logo.png"
+    bgPhoto="https://blockstack-www.imgix.net/photos/muneeb-video-still.png"
+    title="Welcome to the Decentralized Internet"
+    url="https://www.youtube.com/watch?v=qtOIh93Hvuw"
+    color="white"
+    mr={5}
+    width={400}
+    height={480}
+  />
+)
+
+const MobileHeroGrid = ({ ...rest }) => {
+  return (
+    <Box ml={['38%']} {...rest}>
+      <Flex mb={5}>
+        <HeroCard
+          logo="https://blockstack-www.imgix.net/logos/tedx-logo.png"
+          bgPhoto="https://blockstack-www.imgix.net/photos/muneeb-video-still.png"
+          // title="Welcome to the Decentralized Internet"
+          url="https://www.youtube.com/watch?v=qtOIh93Hvuw"
+          color="white"
+          width={220}
+          height={260}
+          mr={5}
+        />
+        <HeroCard
+          logo="https://blockstack-www.imgix.net/wired-logo-full.png"
+          // title="The decentralized internet is here, with some glitches"
+          bgPhoto="https://blockstack-www.imgix.net/wired-bg.png"
+          url="https://www.wired.com/story/the-decentralized-internet-is-here-with-some-glitches/"
+          color="white"
+          width={250}
+          height={260}
+          mr={5}
+        />
+        <HeroCard
+          bgPhoto="https://blockstack-www.imgix.net/about-grid-conference.png"
+          color="white"
+          width={350}
+          height={260}
+        />
+      </Flex>
+      <Flex>
+        <HeroCard
+          bgPhoto="https://blockstack-www.imgix.net/photos/blockstack-team-couch.png"
+          color="white"
+          width={300}
+          height={260}
+          mr={5}
+        />
         <HeroCard
           logo="https://blockstack-www.imgix.net/logos/nyt-logo.png"
           bgPhoto="https://blockstack-www.imgix.net/photos/nyt-blockstack-team-photo.png"
-          title="Tech Thinks It Has a Fix for the Problems It Created: Blockchain"
+          // title="Tech Thinks It Has a Fix for the Problems It Created: Blockchain"
           url="https://www.nytimes.com/2018/04/01/technology/blockchain-uses.html"
           color="white"
-          width={488}
-          height={296}
-          maxWidth={['calc(100vw - 32px)', 'calc(100vw - 32px)', 488]}
-          mb={5}
+          width={320}
+          height={260}
+          mr={5}
         />
         <HeroCard
-          width={488}
-          height={336}
-          maxWidth={['calc(100vw - 32px)', 'calc(100vw - 32px)', 488]}
-          bgPhoto="https://blockstack-www.imgix.net/about-grid-conference.png"
+          bgPhoto="https://blockstack-www.imgix.net/photos/photo-conference-001.jpg"
+          color="white"
+          width={350}
+          height={260}
         />
-      </Box>
+      </Flex>
+    </Box>
+  )
+}
+const HeroGrid = ({ ...rest }) => {
+  return (
+    <Flex ml={['30%']} {...rest}>
+      <MainCard />
+      <FirstRow />
       <Box
         flexShrink={0}
         mr={5}
@@ -209,7 +278,7 @@ const HeroTitle = ({ ...rest }) => {
   )
 }
 
-const HeroFeature = ({ transform, innerRef, ...rest }) => {
+const HeroFeature = ({ transform, mobileTrans, innerRef, ...rest }) => {
   const inViewAnimationStyles = useInViewAnimationStyles()
 
   return (
@@ -222,8 +291,19 @@ const HeroFeature = ({ transform, innerRef, ...rest }) => {
           }}
           pt={5}
         >
-          <Box is={a.div} style={{ transform }}>
+          <Box
+            display={['none', 'none', 'block']}
+            is={a.div}
+            style={{ transform }}
+          >
             <HeroGrid />
+          </Box>
+          <Box
+            is={a.div}
+            display={['block', 'block', 'none']}
+            style={{ transform: mobileTrans }}
+          >
+            <MobileHeroGrid />
           </Box>
         </Box>
       </div>
@@ -237,6 +317,7 @@ const AboutHero = ({ ...rest }) => {
     config: { mass: 5, tension: 350, friction: 120 }
   }))
   const trans1 = (x, y) => `translate3d(${y / -15}%,0,0)`
+  const trans2 = (x, y) => `translate3d(${y / -5}%,0,0)`
 
   const [ref, inView, entry] = useInView({
     threshold: 0
@@ -273,7 +354,11 @@ const AboutHero = ({ ...rest }) => {
         <HeroTitle />
       </Section>
       <Section noWrapper>
-        <HeroFeature transform={props.xy.interpolate(trans1)} innerRef={ref} />
+        <HeroFeature
+          mobileTrans={props.xy.interpolate(trans2)}
+          transform={props.xy.interpolate(trans1)}
+          innerRef={ref}
+        />
       </Section>
     </>
   )
