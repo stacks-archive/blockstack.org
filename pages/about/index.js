@@ -37,7 +37,7 @@ const sections = [
             text: {
               children: (
                 <>
-                  Over 65 independent developer teams have built apps on our
+                  Over 100 independent developer teams have built apps on our
                   platform. Open-source software is at the heart of everything
                   we do; we’re active on{' '}
                   <Text
