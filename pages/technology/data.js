@@ -22,7 +22,7 @@ const photos = [
     flexGrow: 1
   },
   { src: 'https://blockstack-www.imgix.net/photos/photo-hackathon-001.jpg' },
-  { src: 'https://blockstack-www.imgix.net/photos/photo-conference-002.jpg' },
+  { src: 'https://blockstack-www.imgix.net/conference_audience.png' },
   { src: 'https://blockstack-www.imgix.net/photos/photo-conference-006.png' }
 ]
 
