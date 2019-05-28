@@ -133,11 +133,17 @@ const Events = ({ ...rest }) => {
                 </Flex>
                 <Box {...subtitle}>{location.event}</Box>
               </Box>
-              <Box textAlign="right">
+              <Box pl={[5, 5, 0]} flexShrink={0} textAlign="right">
                 <Box fontWeight={500} color="ink">
                   {location.date}
                 </Box>
-                <Box {...subtitle} pt={1}>
+                <Box
+                  style={{
+                    whiteSpace: 'nowrap'
+                  }}
+                  {...subtitle}
+                  pt={1}
+                >
                   {location.time}
                 </Box>
               </Box>
