@@ -261,7 +261,7 @@ class HomePage extends React.Component {
                 'Secure your data with Blockstack and get a universal login'
             },
             text: {
-              children: `We give users their private data lockers and a universal login with blockchain-based security and encryption — protecting your data from big internet companies.`
+              children: `We provide private data lockers and a universal login with blockchain-based security and encryption — protecting your data from big internet companies.`
             },
             actions: [
               {
