@@ -4,18 +4,8 @@ import { Box, Flex } from 'blockstack-ui'
 import { Title, Text } from '@components/v2/section'
 import { useHover } from 'use-events'
 
-const slugs = [
-  'introducing-awario-app-reviewer',
-  'bolt-a-thon-worlds-first-online-lightning-network-conference-and-hackathon',
-  'developer-success-commitment-highlights-q1-2019',
-  'introducing-new-internet-labs-the-digital-rights-reviewer-for-app-mining'
-]
-
-// const ids = [1169, 1118, 1099, 1059, 518, 417]
-const ids = [1169, 1118, 1099, 1059]
-
-const getNewsItems = (items) =>
-  items.filter((item) => slugs.find((slug) => item.slug === slug))
+const getNewsItems = (items, limit) =>
+  items.filter((item, index) => index + 1 <= limit)
 
 const Subtitle = ({ ...rest }) => (
   <Text
@@ -71,10 +61,10 @@ const NewsItem = ({ isLast, users, data }) => {
     </Box>
   )
 }
-const News = ({ items, limit = 3, users, ...rest }) =>
+const News = ({ items, limit = 4, users, ...rest }) =>
   items && items.length
-    ? getNewsItems(items).map((item, i) => (
-        <NewsItem key={i} isLast={i === limit} data={item} users={users} />
+    ? getNewsItems(items, limit).map((item, i) => (
+        <NewsItem key={i} isLast={i + 1 === limit} data={item} users={users} />
       ))
     : null
 
