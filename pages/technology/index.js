@@ -282,7 +282,7 @@ const sections = [
           title: {
             pb: 0,
             is: 'h4',
-            children: '65 teams'
+            children: '100 teams'
           },
           text: {
             children: `have built production apps on our infrastructure the past five months.`
@@ -292,7 +292,7 @@ const sections = [
           title: {
             pb: 0,
             is: 'h4',
-            children: '2,000 developers'
+            children: '3,000 developers'
           },
           text: {
             children: `have attended our global hackathons and meetups in the past two months.`
