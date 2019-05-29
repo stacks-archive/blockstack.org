@@ -271,8 +271,8 @@ const HeroGrid = ({ ...rest }) => {
 const HeroTitle = ({ ...rest }) => {
   return (
     <Section.Pane width={1} justifyContent="center" alignItems="center">
-      <Section.Title maxWidth="80%">
-        Blockstack is leading the&nbsp;way to a decentralized computing era
+      <Section.Title maxWidth={['80%','100%','75%',]}>
+        Blockstack is leading the way to a decentralized computing&nbsp;era
       </Section.Title>
     </Section.Pane>
   )

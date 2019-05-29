@@ -91,7 +91,7 @@ const sections = [
         {
           alignItems: 'flex-start',
           text: {
-            children: `Blockstack PBC, a public benefit corporation at the heart of the Blockstack ecosystem, has raised $55M+ in capital to develop the core protocols and developer tools for the platform. We’re headquartered in New York City, with a globally distributed team that includes computer scientists from Princeton, Stanford, MIT and other top universities. `
+            children: `Blockstack PBC, a public benefit corporation at the heart of the Blockstack ecosystem, has raised $50M+ in capital to develop the core protocols and developer tools for the platform. We’re headquartered in New York City, with a globally distributed team that includes computer scientists from Princeton, Stanford, MIT and other top universities. `
           }
         },
         {
@@ -112,7 +112,7 @@ const sections = [
             'Founded in 2013 at Princeton',
             '$50M in funding',
             '4 years of research & development',
-            '7,000+ active developers',
+            '7,000+ active developers and enthusiasts',
             '100+ apps launched on Blockstack'
           ]
         }
@@ -231,7 +231,7 @@ const sections = [
           {
             type: 'link',
             label: 'Invest',
-            href: 'https://angel.co/blockstack',
+            href: 'https://stackstoken.com/',
             target: '_blank'
           }
         ]
