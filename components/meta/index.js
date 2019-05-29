@@ -16,9 +16,9 @@ const Meta = ({
   ogTitle = title,
   ...rest
 }) => {
-  const ogImageUrl = `https://og-image.blockstack.sh/${encodeURI(
+  const ogImageUrl = `https://meta.blockstack.sh/${encodeURI(
     ogTitle
-  )}.png?theme=dark&md=1&fontSize=125px`
+  )}.png?theme=dark&md=1&fontSize=115px`
   return (
     <Head>
       <meta name="description" content={description} />
