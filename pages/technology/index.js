@@ -633,7 +633,7 @@ const sections = [
 const Hero = ({ ...rest }) => (
   <>
     <Section
-      minHeight={0}
+      minHeight="calc(100vh - 164px)"
       variant="ink"
       width={1}
       pt="180px"
