@@ -272,6 +272,7 @@ const sections = [
       {
         title: {
           is: 'h2',
+          pb: [5,5,0],
           children:
             'Blockstack is a blockchain computing platform and app ecosystem that puts users in control of their identity and data.'
         }
