@@ -52,8 +52,13 @@ const Jobs = connect(
       <Box {...rest}>
         <Title is="h2">Open Positions</Title>
         <Flex flexWrap="wrap" pt={5} justifyContent="space-between">
-          {jobs.map(({ text, hostedUrl, categories }, i) => {
-            if (!categories) return null
+          {[...jobs, {}].map(({ text, hostedUrl, categories }, i) => {
+            if (!categories)
+              return (
+                <Box
+                  width={[1, `calc(50% - 16px)`, `calc(33.33333% - 16px)`]}
+                />
+              )
             const { commitment, location, team } = categories
             return (
               <CardItem
@@ -62,6 +67,7 @@ const Jobs = connect(
                 width={[1, `calc(50% - 16px)`, `calc(33.33333% - 16px)`]}
                 key={i}
                 href={hostedUrl}
+                spacer={!text}
               >
                 {team ? (
                   <Title opacity={0.75} is="h6" color="ink.50">
