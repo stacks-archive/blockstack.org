@@ -230,7 +230,7 @@ const Hero = ({ apps = [], ...rest }) => {
 
 class HomePage extends React.Component {
   static async getInitialProps(ctx) {
-    const dataRes = await fetch('https://api-test.blockstack.sh/')
+    const dataRes = await fetch('https://www-api.blockstack.sh/')
     const { feed, users, apps } = await dataRes.json()
     return {
       meta,
