@@ -230,23 +230,13 @@ const Hero = ({ apps = [], ...rest }) => {
 
 class HomePage extends React.Component {
   static async getInitialProps(ctx) {
-    const feedData = await fetch(
-      'https://blog.blockstack.org/wp-json/wp/v2/posts?per_page=20'
-    )
-    const usersData = await fetch(
-      'https://blog.blockstack.org/wp-json/wp/v2/users?per_page=20'
-    )
-    const feed = await feedData.json()
-    const users = await usersData.json()
-    //
-    // const appsData = await fetch('https://api.app.co/api/app-mining-apps')
-    // const apps = await appsData.json()
-
+    const dataRes = await fetch('https://api-test.blockstack.sh/')
+    const { feed, users, apps } = await dataRes.json()
     return {
       meta,
       feed,
       users,
-      apps: transformApps(apps)
+      apps: transformApps(apps.apps)
     }
   }
   render() {
