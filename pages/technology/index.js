@@ -275,7 +275,7 @@ const sections = [
           is: 'h2',
           pb: [5, 5, 0],
           children:
-            'Blockstack is a blockchain computing platform and app ecosystem that puts users in control of their identity and data.'
+            'Blockstack is a decentralized computing network and app ecosystem that puts users in control of their identity and data.'
         }
       },
       [
@@ -396,7 +396,7 @@ const sections = [
         },
         text: {
           children:
-            'Designed with security, scaleability, and speed in mind. We use tunable proof-of-work to allow developers to strike the right balance between speed and reliability. For app builders, we abstract all blockchain complexity into simple Javascript APIs.'
+            'Designed with security, scalability, and speed in mind. We use tunable proof-of-work to allow developers to strike the right balance between speed and reliability. For app builders, we abstract all blockchain complexity into simple Javascript APIs.'
         }
       }
     ]
