@@ -37,7 +37,7 @@ const locations = [
   },
   {
     city: 'San Francisco',
-    date: 'July 23',
+    date: 'October 23',
     time: 'All day',
     event: 'Blockstack Summit',
     href: 'https://community.blockstack.org/events#event=25317871',
