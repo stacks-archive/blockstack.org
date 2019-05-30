@@ -68,7 +68,7 @@ const advisors = [
     name: 'JP Singh',
     title: 'Professor, Princeton',
     bio:
-      'JP Singh has been a computer science faculty member at Princeton University since 1995. He received his PhD from from Stanford University and is a leading authority on scalable infrastructure and applications. '
+      'JP Singh has been a computer science faculty member at Princeton University since 1995. He received his PhD from Stanford University and is a leading authority on scalable infrastructure and applications.'
   },
   {
     photo: 'https://blockstack-www.imgix.net/michael-freedman.jpg',
