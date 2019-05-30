@@ -4,7 +4,8 @@ import { Documents } from '@components/v2/documents'
 
 const meta = {
   path: '/papers',
-  title: 'Papers'
+  title: 'Papers',
+  ogTitle: 'Technical Whitepapers and SIPs'
 }
 
 const documents = [
@@ -53,35 +54,25 @@ class PapersPage extends React.PureComponent {
   render() {
     return (
       <>
-        <Section minHeight={0}>
+        <Section py={undefined} pt={[7, 7, 9]} pb={7} minHeight={0}>
           <Section.Pane width={1}>
             <Section.Title is="h2" pb={5}>
               {meta.title}
             </Section.Title>
             <Section.Text>
-              Stacks Improvement Proposals (SIPs) for the new consensus
-              algorithm and smart contract language are respectively available
-              as{' '}
+              Latest Stacks Improvement Proposals (SIPs) are available on{' '}
               <Section.Text
                 is="a"
-                href="hhttps://github.com/blockstack/blockstack-core/blob/develop/sip/sip-001-burn-election.md"
+                href="https://github.com/blockstack/blockstack-core/tree/develop/sip"
                 target="_blank"
               >
-                SIP-001
-              </Section.Text>{' '}
-              and{' '}
-              <Section.Text
-                is="a"
-                href="https://github.com/blockstack/blockstack-core/blob/develop/sip/sip-002-smart-contract-language.md"
-                target="_blank"
-              >
-                SIP-002
+                GitHub
               </Section.Text>
               .
             </Section.Text>
           </Section.Pane>
         </Section>
-        <Section minHeight={0} bg="#C3DBEE">
+        <Section py={7} minHeight={0} bg="#C3DBEE">
           <Section.Pane width={1}>
             <Documents items={documents} />
           </Section.Pane>
