@@ -9,15 +9,26 @@ const meta = {
 
 const documents = [
   {
-    name: 'Blockstack: A New Decentralized Internet',
+    name: 'The Blockstack Decentralized Computing Network',
     description: (
       <>
-        Whitepaper Version 1.1
+        Whitepaper Version 2.0
         <br />
-        Oct 2017
+        May 2019
       </>
     ),
-    href: 'https://blockstack.org/whitepaper.pdf'
+    href: '/whitepaper.pdf'
+  },
+  {
+    name: 'Blockstack 去中心化计算网络',
+    description: (
+      <>
+        Blockstack技术白皮书 v2.0
+        <br />
+        May 2019
+      </>
+    ),
+    href: '/whitepaper-ch.pdf'
   },
   {
     name: 'Blockstack Token Whitepaper',
@@ -28,7 +39,7 @@ const documents = [
         Oct 2017
       </>
     ),
-    href: 'https://blockstack.org/tokenpaper.pdf'
+    href: '/tokenpaper.pdf'
   }
 ]
 
@@ -48,10 +59,9 @@ class PapersPage extends React.PureComponent {
               {meta.title}
             </Section.Title>
             <Section.Text>
-              Blockstack PBC has a draft of whitepaper 2.0 that is currently
-              being reviewed by relevant experts. Stacks Improvement Proposals
-              (SIPs) for the new consensus algorithm and smart contract language
-              are respectively available as{' '}
+              Stacks Improvement Proposals (SIPs) for the new consensus
+              algorithm and smart contract language are respectively available
+              as{' '}
               <Section.Text
                 is="a"
                 href="hhttps://github.com/blockstack/blockstack-core/blob/develop/sip/sip-001-burn-election.md"
