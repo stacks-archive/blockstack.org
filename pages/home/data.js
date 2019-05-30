@@ -30,7 +30,7 @@ const videos = [
     title: 'The Blockstack Decentralized Computing Network',
     subtitle: 'Muneeb Ali at the Japan Society',
     duration: '26:15',
-    image: 'https://blockstack-www.imgix.net/video-still-japan-society.png',
+    image: 'https://blockstack-www.imgix.net/japan-video-still.png',
     width: 1,
     href: 'https://www.youtube.com/watch?v=u9RIFJD3M5c'
   },

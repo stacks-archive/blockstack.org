@@ -20,12 +20,12 @@ const locations = [
     flag: 'gb'
   },
   {
-    city: 'New York City',
-    date: 'June 6',
-    time: '06:00PM',
-    event: 'ReactNYC + Blockstack',
-    href: 'https://community.blockstack.org/events#event=26560585',
-    flag: 'us'
+    city: 'Tokyo',
+    date: 'June 9',
+    time: 'All day',
+    event: 'Decrypt Hackathon',
+    href: 'https://community.blockstack.org/events#event=30626035',
+    flag: 'jp'
   },
   {
     city: 'London',
@@ -36,8 +36,8 @@ const locations = [
     flag: 'gb'
   },
   {
-    city: 'San Fransisco',
-    date: 'July 18',
+    city: 'San Francisco',
+    date: 'July 23',
     time: 'All day',
     event: 'Blockstack Summit',
     href: 'https://community.blockstack.org/events#event=25317871',

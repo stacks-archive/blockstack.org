@@ -15,6 +15,7 @@ import { Codeblock } from '@components/v2/code'
 import { useHover } from 'use-events'
 import { useInViewAnimationStyles } from '@common/hooks'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
+import CheckIcon from 'mdi-react/CheckIcon'
 import { WrappedLink } from '@components/v2/link'
 
 const resources = [
@@ -272,8 +273,9 @@ const sections = [
       {
         title: {
           is: 'h2',
+          pb: [5, 5, 0],
           children:
-            'Blockstack is a blockchain computing platform and app ecosystem that puts users in control of their identity and data.'
+            'Blockstack is a decentralized computing network and app ecosystem that puts users in control of their identity and data.'
         }
       },
       [
@@ -281,7 +283,7 @@ const sections = [
           title: {
             pb: 0,
             is: 'h4',
-            children: '65 teams'
+            children: '100 teams'
           },
           text: {
             children: `have built production apps on our infrastructure the past five months.`
@@ -291,7 +293,7 @@ const sections = [
           title: {
             pb: 0,
             is: 'h4',
-            children: '2,000 developers'
+            children: '3,000 developers'
           },
           text: {
             children: `have attended our global hackathons and meetups in the past two months.`
@@ -334,6 +336,34 @@ const sections = [
   },
   {
     variant: 'white',
+    panes: [
+      [
+        {
+          title: {
+            is: 'h2',
+            pb: [5, 5, 0],
+            children: `We abstract the blockchain complexity so you can focus on building great apps.`
+          }
+        }
+      ],
+      {
+        title: {
+          is: 'h4',
+          children: `Our design principles`
+        },
+        list: {
+          icon: CheckIcon,
+          items: [
+            'Keep auth and smart contracts on-chain',
+            'Keep application user data off-chain',
+            'Access everything with an easy JavaScript API'
+          ]
+        }
+      }
+    ]
+  },
+  {
+    variant: 'white',
     bg: 'sky.10', // remove if changing variant
     panes: [
       {
@@ -366,7 +396,7 @@ const sections = [
         },
         text: {
           children:
-            'Designed with security, scaleability, and speed in mind. We use tunable proof-of-work to allow developers to strike the right balance between speed and reliability. For app builders, we abstract all blockchain complexity into simple Javascript APIs.'
+            'Designed with security, scalability, and speed in mind. We use tunable proof-of-work to allow developers to strike the right balance between speed and reliability. For app builders, we abstract all blockchain complexity into simple Javascript APIs.'
         }
       }
     ]
@@ -603,7 +633,7 @@ const sections = [
 const Hero = ({ ...rest }) => (
   <>
     <Section
-      minHeight={0}
+      minHeight="calc(100vh - 164px)"
       variant="ink"
       width={1}
       pt="180px"

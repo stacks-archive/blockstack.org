@@ -16,6 +16,8 @@ import { transition } from '@common/theme'
 import ArrowUpRightIcon from 'mdi-react/ArrowUpRightIcon'
 import Headroom from 'react-headroom'
 import Link from 'next/link'
+
+
 const HelloBar = ({ theme, ...rest }) => {
   const { borderColor, lightColor, secondaryBg } = useHeaderTheme()
   const [hovered, bind] = useHover()

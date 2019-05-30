@@ -66,8 +66,17 @@ class CareersPage extends React.PureComponent {
     return (
       <div>
         <br />
-        <Section>
-          <Section.Pane width="100%">
+        <Section alignItems="flex-start">
+          <Section.Pane pr={[0, 0, 7]} alignItems="flex-start">
+            <Section.Title is="h2" pb={5}>
+              {meta.title}
+            </Section.Title>
+            <Section.Title is="h3">
+              Blockstack enables a new generation of apps that empower users by
+              putting them in control.
+            </Section.Title>
+          </Section.Pane>
+          <Section.Pane>
             <Intro />
           </Section.Pane>
         </Section>

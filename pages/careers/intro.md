@@ -1,5 +1,3 @@
-## Blockstack enables a new generation of apps that empower users by putting them in control.
-
 Our team is headquartered in New York City and includes computer scientists from Princeton, Stanford, MIT and other top universities. We are recognized as one of the most well-respected decentralized computing projects for engineering excellence, application quality, and regulatory compliance. Blockstack is, quite simply, the best learning-lab on earth for those who want to level-up their experience and impact in blockchain and decentralized tech.
 
 Our open-source community is at the heart of everything we do, and our team constantly engages with external experts, users, and builders via [Slack](https://docs.google.com/a/blockstack.com/forms/d/e/1FAIpQLSed5Mnu0G5ZMJdWs6cTO_8sTJfUVfe1sYL6WFDcD51_XuQkZw/viewform), [GitHub](https://github.com/blockstack), [Twitter](https://twitter.com/blockstack), and the Blockstack [Forum](https://forum.blockstack.org/).
