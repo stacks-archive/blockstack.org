@@ -65,14 +65,14 @@ const MainDetails = ({ primary, title, ...rest }) => {
       alignItems={primary ? 'center' : 'flex-start'}
       justifyContent="center"
       flexDirection="column"
-      textAlign={primary ? 'center' : 'left'}
+      textAlign={'left'}
       color="white"
       position="relative"
       zIndex={3}
       width="100%"
       px={6}
       transition={transition}
-      pb={!primary ? 4 : 0}
+      pb={4}
       {...rest}
     >
       <Box
@@ -86,7 +86,7 @@ const MainDetails = ({ primary, title, ...rest }) => {
         is="h4"
         color="white"
         userSelect="none"
-        pt={primary ? 5 : 3}
+        pt={3}
         fontSize={4}
         fontWeight="500"
       >
@@ -101,8 +101,8 @@ const VideoItemWrapper = ({ primary, image, ...rest }) => {
     <Flex
       minHeight={[300, primary ? 720 : 480, primary ? 720 : 480]}
       width="100%"
-      alignItems={primary ? 'center' : 'flex-start'}
-      justifyContent={primary ? 'center' : 'flex-end'}
+      alignItems={'flex-start'}
+      justifyContent={'flex-end'}
       borderRadius="8px"
       mb={5}
       is="a"
@@ -138,12 +138,8 @@ const VideoItem = ({
       primary={primary}
       {...rest}
     >
-      <MainDetails title={title} primary={primary} />
-      <BottomDetails
-        duration={duration}
-        primary={primary}
-        subtitle={subtitle}
-      />
+      <MainDetails title={title} />
+      <BottomDetails duration={duration} subtitle={subtitle} />
       <Overlay hovered={hovered} />
       <Box
         zIndex={1}
