@@ -3,27 +3,30 @@
 - Launch of full-scale Stacks mining.
 - Launch of App Mining registration and voting directly on Stacks blockchain.
 - Launch of community elections for App Mining App Reviewers.
-- Release of Gaia storage upgrade, making Gaia more decentralized and censorship-resistant.
+- Release of Gaia storage upgrade, making Gaia even more decentralized and censorship-resistant.
 - Release of anonymous analytics API to report on app usage, growth, and retention.
-- Release of core consumer utility apps for Blockstack ID such as ID management, address book, and file explorer.
+- Release of core consumer utility apps for Blockstack ID such as profile management, address book, and file explorer.
 
 ### 2019 Q3–Q4
 
 - Hardfork to new consensus algorithm: Simple client verification, higher throughput, and smart contracts.
 - Release ability to create app-specific economies through app tokens.
 - Launch of fully-featured smart contracting support in the Stacks blockchain, allowing for financial services functionality in apps.
-- Launch of full-featured App Mining after Pilot and Beta periods.
+- Begin paying STX to Blockstack app ecosystem developers via App Mining
 - Launch ability to publish apps via Blockstack Naming System vs. DNS.
 - Launch of iOS and Android apps for Blockstack authentication.
 - Host Blockstack Summit 2019, the annual flagship event.
 
 ### 2019 Q2
 
-- Release of testnet for Stacks blockchain v2.
-- Release of simplified auth flow and profile management.
+- Blockstack Token LLC files publicly for Reg A qualification for proposed $50M token sale.
+- Announce plan to pay $1,000,000 each month to Blockstack app ecosystem developers.
+- 100 Blockstack apps built on Blockstack.
+- Release of Clarity smart contract SDK and tutorials.
 - Form dedicated QA team, automated testing, pre-release process for core libraries.
-- Release of Stacks blockchain and (new) Blockstack architecture papers.
+- Release of technical whitepaper 2.0 covering latest full-stack architecture of Blockstack.
 - Release of in-depth report on the future of Stacks token economics.
+- Addition of cross-app data sharing Collections functionality to Gaia.
 
 ---
 
@@ -32,7 +35,6 @@
 - Release of prototype virtual machine (VM) for Stacks smart contracting language.
 - Release of new consensus algorithm for Stacks blockchain v2 (SIP-001).
 - Release of Radiks which provides data indexing on top of Gaia.
-- Addition of cross-app data sharing Collections functionality to Gaia.
 - Feb App Mining results included 57 user-ready apps.
 - TryMyUI added as App Reviewer to App Mining.
 
@@ -112,6 +114,6 @@
 
 ---
 
-_Last updated: April 8, 2019_
+_Last updated: May 31, 2019_
 
 _This webpage contains forward-looking statements, including statements regarding Blockstack PBC’s plans for the Stacks token and blockchain. Forward-looking statements are subject to risks and uncertainties that could cause actual results to differ materially, and reported results should not be considered as an indication of future performance. Potential risks and uncertainties that could change our actual results include, but are not limited to, risks associated with: the failure of Blockstack to successfully launch the genesis block; technical obstacles in further developing the Stacks blockchain and potential failure of its underlying technology; the failure of Blockstack to successfully launch web extensions; technical obstacles in further developing and launching the iOS and Android apps for Blockstack authentication; the ability to begin the first community-powered election for App Reviewers; risks associated with attacks designed to influence App Reviewers or game their methodologies; and the ability to create and the effectiveness of establishing app-specific economies through app coins. These forward-looking statements speak only as of the date hereof. Blockstack PBC disclaims any obligation to update these forward-looking statements._
