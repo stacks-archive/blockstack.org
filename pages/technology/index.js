@@ -435,7 +435,7 @@ const sections = [
         },
         text: {
           children:
-            'Users assume responsibility of their data — it’s stored in a location of their choice and not on your servers. Zero database costs or server maintenance means you can focus on what you do best: improving the functionality of your app. '
+            'Users assume responsibility of their data — it’s stored in a location of their choice and not on your servers. As a developer, you do not need to pay for database maintenance costs, so you can focus on what you do best: improving the functionality of your app. '
         }
       }
     ]
