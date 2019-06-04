@@ -652,6 +652,8 @@ const meta = {
   path: '/technology',
   theme: 'ink',
   ogTitle: 'Easily build blockchain apps that scale',
+  description:
+    'Blockstack is a decentralized computing network and app ecosystem that puts users in control of their identity and data.',
   custom: true
 }
 

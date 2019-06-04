@@ -5,10 +5,8 @@ import { addPath } from '@components/image'
 const favicon = require('@assets/images/favicon.png')
 const appleTouchIcon = require('@assets/images/touch-icon.png')
 const DEFAULT = {
-  desc: `Blockstack is building an ecosystem that gives your users control over their fundamental digital rights: Identity, data-ownership, privacy, and security. Join us and help build the new internet.`
+  desc: `Blockstack is a decentralized computing network and app ecosystem that puts users in control of their identity and data.`
 }
-
-const url = 'https://blockstack.org/'
 
 const Meta = ({
   title,

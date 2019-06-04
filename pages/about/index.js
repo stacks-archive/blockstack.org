@@ -267,6 +267,8 @@ class AboutPage extends React.Component {
         title: 'About',
         path: '/about',
         custom: true,
+        description:
+          'Blockstack PBC, a public benefit corporation at the heart of the Blockstack ecosystem, has raised $50M+ in capital to develop the core protocols and developer tools for the platform.',
         ogTitle: 'Leading the way to a blockchain computing era'
       }
     }

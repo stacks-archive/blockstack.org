@@ -15,7 +15,8 @@ const meta = {
   path: '/try-blockstack',
   title: 'Try Blockstack',
   custom: true,
-  ogTitle: 'Apps that protect your digital rights'
+  ogTitle: 'Apps that protect your digital rights',
+  description: `Blockstack ID provides user-controlled login and storage that enable you to take back control of your identity and data. Creating a Blockstack ID is easy, free, and secure.`
 }
 
 const appCards = [
@@ -318,7 +319,8 @@ class HomePage extends React.Component {
           ],
           {
             type: 'graphic',
-            src: 'https://blockstack-www.imgix.net/blockstack-id-words-graphic.png'
+            src:
+              'https://blockstack-www.imgix.net/blockstack-id-words-graphic.png'
           }
         ]
       },
