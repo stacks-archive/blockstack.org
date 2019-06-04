@@ -126,6 +126,11 @@ const navigation = [
     href: 'https://community.blockstack.org/',
     items: [
       {
+        label: 'Blog',
+        href: 'https://blog.blockstack.org',
+        icon: NavIconCommunityForum
+      },
+      {
         label: 'Forum',
         href: 'https://forum.blockstack.org',
         icon: NavIconCommunityForum
