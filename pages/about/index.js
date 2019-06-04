@@ -201,6 +201,7 @@ const sections = [
       {
         width: 1,
         title: {
+          is: 'h2',
           children: 'Blockstack PBC board and advisors'
         }
       },
