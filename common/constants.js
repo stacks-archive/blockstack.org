@@ -75,6 +75,7 @@ const footerNavigation = [
   },
   {
     label: 'Stay up to date',
+    open: true,
     items: [
       { children: <EmailInput /> },
       { label: 'Blog', href: 'https://blog.blockstack.org/' },

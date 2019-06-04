@@ -4,7 +4,7 @@ import { Section } from '@components/v2/section'
 import { Dots } from '@components/v2/vectors/dots'
 import { Image } from '@components/v2/image'
 import { useHover } from 'use-events'
-import { transition } from '@common/theme'
+import { transition, doubleShadow } from '@common/theme'
 
 const CardHeader = ({ month, ...rest }) => {
   return (
@@ -46,7 +46,7 @@ const Rank = ({ index }) => (
 const AppIcon = ({ src }) => (
   <Box
     borderRadius="12px"
-    boxShadow="0px 0px 3px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.05), 0px 0px 0.5px rgba(0, 0, 0, 0.12)"
+    boxShadow={doubleShadow}
     flexShrink={0}
     size={[56, 48, 48, 56]}
   >
