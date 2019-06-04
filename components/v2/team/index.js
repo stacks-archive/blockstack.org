@@ -15,38 +15,39 @@ import { transition } from '@common/theme'
  *
  * @param {string} name - the name of the person
  * @param {string} bio - the bio of the person
+ * @param {string} title - the job title of the person
  * @param {boolean} showing - if the card should be visible
  * @param {object} rest - any additional props for wrapper
  */
-const BioCard = ({ name, bio, showing, ...rest }) => {
+const BioCard = ({ name, bio, title, showing, ...rest }) => {
   return (
     <Box
       top="90px"
       pt={5}
       left={[-50, -50, 'unset']}
       position="absolute"
+      zIndex={99}
       style={{ pointerEvents: 'none' }}
-      zIndex={5}
       display={['none', 'none', 'block']}
+      willChange="transform"
       {...rest}
     >
       <Box
         bg="white"
         boxShadow="0px 1px 2px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.04);"
         textAlign="center"
-        width={[200, 200, 300]}
         borderRadius="4px"
         p={5}
         transition={transition}
         transform={`translate3d(0,${showing ? -10 : -20}px,0)`}
         opacity={showing ? 1 : 0}
       >
-        <Title pb={3} is="h4">
+        <Title pb={0} is="h4">
           {name}
         </Title>
-        <Text fontSize={2} textAlign="left">
-          {bio}
-        </Text>
+        {/*<Text fontSize={2} textAlign="left">*/}
+        {/*{bio}*/}
+        {/*</Text>*/}
       </Box>
     </Box>
   )
@@ -88,7 +89,7 @@ const TeamItem = ({ item, ...rest }) => {
         >
           <Image
             transition={transition}
-            transform={`scale(${hovered ? 1.15 : 1})`}
+            transform={`scale(${hovered ? 1.08 : 1})`}
             imgix={{
               fit: 'crop',
               crop: 'faces',
@@ -100,7 +101,12 @@ const TeamItem = ({ item, ...rest }) => {
           />
         </Flex>
       </Box>
-      {/*<BioCard bio={item.bio} showing={hovered} name={item.name} />*/}
+      <BioCard
+        bio={item.bio}
+        title={item.title}
+        showing={hovered}
+        name={item.name}
+      />
     </Flex>
   )
 }

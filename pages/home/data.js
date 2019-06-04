@@ -34,7 +34,7 @@ const videos = [
     width: 1,
     href: 'https://www.youtube.com/watch?v=u9RIFJD3M5c',
     video:
-      'https://00e9e64bacebca05d602990eeab71b4f2b3393755a127c970c-apidata.googleusercontent.com/download/storage/v1/b/blockstack-imgix/o/blockstack.org%2Fvideos%2Fmuneeb-talk-clip.mp4?qk=AD5uMEuFFL-M1g1gCgGD1BkAFCFK7gs_Xps1rPHM5ewnIoRR-gXGd9960phgsOxkTeU3GRj3fuNFL7-wSFaFEehsDYhDes9vCuLFQHJZ4z7LbkGlvbweOO5XlAGmGGdeUfq69kPo3vc1lrPksOcMD9NyqTw1npB1q3QfmSWXbgmZGhRrBX7BqfGkrxTDZSvMueMoBzNFvZX7lnASjM8Q-P3XBJdM6FK3dcq3CqMZlmsQr4v3w6ukL_CBKqGvtdG4eDMe5etQoqy2iu3xtUifFesDKfGiQUe3gSw82rgbLMKlx-ry5-J4aJx7VzfeY5P9D23XvCC2nQouq3kIf-SqTKlXo6GjIGtplCBacCtgIZqxZgDcY5IMQgOWJ6-sIInWvC3AUJ1HQCx2rtGukH1WoZRlmflpeaJSnWkTF70pt4M9_UGPMJr1TVo061Ct3aDyAkU9Ljl4SznETYyWkMpg3DkivRiI9pUv2y6KlpbmGPmaeJ9-H9CT1zZdj4sPSVsQsUcSW8h1lYsh46Tu2HH3TfW0icXmaYMfEHXwn2rWm4KDD8eNVNm26Gjse6NwSYB5ZqX4Ny30T29vl7KJhuRnEZUqMR22qLLQ9JR-QLP6Il9gQUpEkLiz1_UZAW2E5veEM6udPbsND5RfLdLvmJJ2C4-_sC5RpbtSYyw2iJfqJV0bPFzXpXWOAW-xEHx9H73X8_7adYMeWUNp3ARTSO-xN5nux6tfleXqo0uCt2o9QH4KMkuK97rucMEKoKk8fSbeO1-zKREQi_Zu-UfOqQ2laJ1vFCsC9ZO6mS209r-PbrhQgXJlH3MjF9mUDjqi7Lvskugj0ZsftjWf'
+      '/static/muneeb-talk-loop.mp4'
   },
   {
     title: 'Ari Paul and Muneeb Ali on Scalability, Custody, and Security',
