@@ -129,6 +129,7 @@ const VideoItem = ({
   primary,
   subtitle,
   duration,
+  video,
   ...rest
 }) => {
   return (
@@ -153,11 +154,29 @@ const VideoItem = ({
       >
         <Image height="100%" width="100%" bgImg={image} />
       </Box>
+      {video ? (
+        <Box
+          position="absolute"
+          left={0}
+          top={0}
+          minWidth={['125%', '125%', '100%']}
+          zIndex={1}
+          maxWidth="120%"
+          display="block"
+          is="video"
+          src={video}
+          poster={image}
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+      ) : null}
     </VideoItemWrapper>
   )
 }
 
-const Videos = ({ items, ...rest }) => {
+const Videos = ({ items, video, ...rest }) => {
   const isMobile = useMedia(2)
   return (
     <Flex width="100%" flexWrap="wrap" justifyContent="space-between" {...rest}>
@@ -180,6 +199,7 @@ const Videos = ({ items, ...rest }) => {
               key={key}
               hovered={hovered}
               active={active}
+              video={video}
               {...bind}
               {...itemProps}
             />
