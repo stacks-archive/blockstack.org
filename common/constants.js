@@ -10,7 +10,8 @@ import {
   NavIconAboutTokenOffering,
   NavIconAboutRoadmap,
   NavIconAboutCompany,
-  NavIconAboutCareers
+  NavIconAboutCareers,
+  NavIconCommunityBlog
 } from '@components/v2/vectors'
 import { Newsletter } from '@components/v2/newsletter'
 
@@ -129,7 +130,7 @@ const navigation = [
       {
         label: 'Blog',
         href: 'https://blog.blockstack.org',
-        icon: NavIconCommunityForum
+        icon: NavIconCommunityBlog
       },
       {
         label: 'Forum',
@@ -145,11 +146,6 @@ const navigation = [
         label: 'Events',
         href: 'https://community.blockstack.org/events',
         icon: NavIconCommunityEvents
-      },
-      {
-        label: 'GitHub',
-        href: 'https://github.com/blockstack',
-        icon: NavIconTechGithub
       }
     ]
   },
