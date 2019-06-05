@@ -158,7 +158,7 @@ const AppMiningGraphic = ({ data, ...rest }) => {
             <Section.Text
               fontSize={2}
               is="a"
-              href="https://app.co/mining"
+              href="https://app.co/mining/latest"
               target="_blank"
             >
               View full ranking
