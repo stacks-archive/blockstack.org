@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Box, Flex } from 'blockstack-ui'
 import PlayIcon from 'mdi-react/PlayCircleIcon'
 import { useHover, useActive } from 'use-events'
@@ -6,6 +6,7 @@ import { Title } from '@components/v2/section'
 import { transition } from '@common/theme'
 import { Image } from '@components/v2/image'
 import { useMedia } from '@common/hooks'
+import { ModalContext } from '@components/v2/modal'
 
 const Gradient = ({ hovered, ...rest }) => (
   <Box
@@ -105,8 +106,6 @@ const VideoItemWrapper = ({ primary, image, ...rest }) => {
       justifyContent={'flex-end'}
       borderRadius="8px"
       mb={5}
-      is="a"
-      target="_blank"
       position="relative"
       flexDirection="column"
       overflow="hidden"
@@ -130,13 +129,25 @@ const VideoItem = ({
   subtitle,
   duration,
   video,
+  href,
   ...rest
 }) => {
+  const { handleOpen } = useContext(ModalContext)
+  const isYouTube = href && href.toString().includes('youtube')
+  const linkProps = !isYouTube
+    ? {
+        href,
+        is: 'a',
+        target: '_href'
+      }
+    : {}
   return (
     <VideoItemWrapper
       cursor={hovered ? 'pointer' : 'unset'}
       transform={active ? 'scale(0.98)' : 'none'}
       primary={primary}
+      onClick={isYouTube ? () => handleOpen(href) : undefined}
+      {...linkProps}
       {...rest}
     >
       <MainDetails title={title} />
@@ -179,34 +190,41 @@ const VideoItem = ({
 const Videos = ({ items, video, ...rest }) => {
   const isMobile = useMedia(2)
   return (
-    <Flex width="100%" flexWrap="wrap" justifyContent="space-between" {...rest}>
-      {items.map(
-        ({ title, subtitle, image, width, href, ...itemProps }, key) => {
-          const [hovered, hoverBind] = useHover()
-          const [active, activeBind] = useActive()
-          const bind = {
-            ...hoverBind,
-            ...activeBind
+    <>
+      <Flex
+        width="100%"
+        flexWrap="wrap"
+        justifyContent="space-between"
+        {...rest}
+      >
+        {items.map(
+          ({ title, subtitle, image, width, href, ...itemProps }, key) => {
+            const [hovered, hoverBind] = useHover()
+            const [active, activeBind] = useActive()
+            const bind = {
+              ...hoverBind,
+              ...activeBind
+            }
+            return (
+              <VideoItem
+                title={title}
+                subtitle={subtitle}
+                image={image}
+                width={width}
+                href={href}
+                primary={key === 0 && !isMobile}
+                key={key}
+                hovered={hovered}
+                active={active}
+                video={video}
+                {...bind}
+                {...itemProps}
+              />
+            )
           }
-          return (
-            <VideoItem
-              title={title}
-              subtitle={subtitle}
-              image={image}
-              width={width}
-              href={href}
-              primary={key === 0 && !isMobile}
-              key={key}
-              hovered={hovered}
-              active={active}
-              video={video}
-              {...bind}
-              {...itemProps}
-            />
-          )
-        }
-      )}
-    </Flex>
+        )}
+      </Flex>
+    </>
   )
 }
 
