@@ -70,8 +70,10 @@ const TeamItem = ({ item, ...rest }) => {
   const hovered = false
   const bind = {}
   return (
-    <Flex position="relative" alignItems="center" justifyContent="center">
-      <Box
+    <Flex position="relative" alignItems="flex-start" justifyContent="center">
+      <Flex
+        flexDirection="column"
+        alignItems="center"
         transition={transition}
         transform={`translate3d(0,${hovered ? -10 : 0}px,0)`}
       >
@@ -79,7 +81,7 @@ const TeamItem = ({ item, ...rest }) => {
           alignItems="center"
           justifyContent="center"
           overflow="hidden"
-          size={[70, 70, 100]}
+          size={[100, 70, 70, 100]}
           borderRadius="100%"
           bg="sky.10"
           transition={transition}
@@ -100,7 +102,12 @@ const TeamItem = ({ item, ...rest }) => {
             position="relative"
           />
         </Flex>
-      </Box>
+        <Box px={2} pt={3} textAlign="center">
+          <Title is="h5" fontSize={1} color="ink.50">
+            {item.name}
+          </Title>
+        </Box>
+      </Flex>
       <BioCard
         bio={item.bio}
         title={item.title}
@@ -128,8 +135,9 @@ const Team = ({ items = teamMembers, ...rest }) => {
       flexWrap="wrap"
       gridRowGap={8}
       gridTemplateColumns={[
+        'repeat(2, 1fr)',
         'repeat(3, 1fr)',
-        'repeat(3, 1fr)',
+        'repeat(5, 1fr)',
         'repeat(6, 1fr)'
       ]}
       width={1}
