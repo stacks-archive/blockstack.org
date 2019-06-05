@@ -215,7 +215,7 @@ const Header = ({
               <HeaderBar innerRef={innerRef}>
                 <Wrapper py={4}>
                   <Link href={'/'} prefetch>
-                    <Box is="a" href={'/'}>
+                    <Box is="a" href={'/'} transform="translateY(-1px)">
                       <Logo />
                     </Box>
                   </Link>
