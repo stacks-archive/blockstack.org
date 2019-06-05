@@ -426,7 +426,7 @@ const sections = [
     panes: [
       {
         type: 'graphic',
-        src: 'https://blockstack-www.imgix.net/data-storage-graphic-2.png'
+        src: 'https://blockstack-www.imgix.net/data-storage-graphic-3.png'
       },
       {
         title: {
