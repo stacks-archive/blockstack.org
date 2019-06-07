@@ -47,6 +47,7 @@ const footerNavigation = [
         href: 'https://docs.blockstack.org/community/app-miners-guide.html'
       },
       { label: 'Documentation', href: 'https://docs.blockstack.org/' },
+      { label: 'Whitepapers', path: 'papers' },
       { label: 'Support', href: 'https://blockstack.zendesk.com/hc/en-us' }
     ]
   },
