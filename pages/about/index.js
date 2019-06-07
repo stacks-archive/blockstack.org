@@ -218,7 +218,7 @@ const sections = [
     panes: [
       {
         width: 1,
-        maxWidth: '60%',
+        maxWidth: ['100%', '100%', '60%'],
         mx: 'auto',
         title: {
           is: 'h2',
@@ -230,7 +230,7 @@ const sections = [
       },
       {
         width: 1,
-        maxWidth: '60%',
+        maxWidth: ['100%', '100%', '60%'],
         mx: 'auto',
         pt: 5,
         text: {
