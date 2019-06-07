@@ -197,6 +197,7 @@ const sections = [
   },
   {
     variant: 'white',
+    bg: 'sky.10',
     panes: [
       {
         width: 1,
@@ -213,8 +214,12 @@ const sections = [
   },
   {
     variant: 'white',
+    align: 'center',
     panes: [
       {
+        width: 1,
+        maxWidth: '60%',
+        mx: 'auto',
         title: {
           is: 'h2',
           pb: [5, 5, 0],
@@ -224,18 +229,26 @@ const sections = [
         }
       },
       {
+        width: 1,
+        maxWidth: '60%',
+        mx: 'auto',
+        pt: 5,
         text: {
           children:
             'We’ve raised $50M from industry leading advisors and investors'
         },
-        actions: [
-          {
-            type: 'link',
-            label: 'Invest',
-            href: 'https://stackstoken.com/',
-            target: '_blank'
-          }
-        ]
+        actions: {
+          pt: 3,
+          mx: 'auto',
+          items: [
+            {
+              type: 'link',
+              label: 'Invest in Blockstack',
+              href: 'https://stackstoken.com/',
+              target: '_blank'
+            }
+          ]
+        }
       },
       {
         width: 1,

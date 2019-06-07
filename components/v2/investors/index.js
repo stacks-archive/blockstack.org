@@ -1,6 +1,19 @@
 import React from 'react'
 import { Flex, Box, Type } from 'blockstack-ui'
 import { Image } from '@components/v2/image'
+const FloatingLinkElement = ({ href }) => (
+  <Box
+    is="a"
+    href={href}
+    target="_blank"
+    position="absolute"
+    width={'100%'}
+    height={'100%'}
+    left={0}
+    top={0}
+    zIndex={999}
+  />
+)
 
 const list = [
   {
@@ -77,28 +90,6 @@ const list = [
     src: 'https://blockstack-www.imgix.net/logos/zhenfund-logo.png',
     width: 118
   }
-  // {
-  //   name: 'Naval Ravikant',
-  //   href: 'https://angel.co/naval',
-  //   slug: 'naval-ravikant',
-  //   borderRadius: '100%',
-  //   width: 72
-  // },
-  // {
-  //   name: 'Shana Fisher',
-  //   href: 'https://angel.co/shana-fisher',
-  //   slug: 'shana-fisher',
-  //   borderRadius: '100%',
-  //   width: 72
-  // },
-  //
-  // {
-  //   name: 'Kal Vepuri',
-  //   href: 'https://angel.co/kal',
-  //   slug: 'kal',
-  //   borderRadius: '100%',
-  //   width: 72
-  // }
 ]
 
 const Item = ({ name, slug, href, src, width, ...rest }) => {
@@ -107,21 +98,15 @@ const Item = ({ name, slug, href, src, width, ...rest }) => {
     <Flex
       alignItems="center"
       justifyContent="center"
-      pb={[6, 6, 0]}
-      width={['50%', '50%', '33.33%', 'unset']}
+      py={5}
+      borderBottom="1px solid"
+      borderColor="sky.25"
+      minHeight={184}
+      width={['50%', '50%', '33.33%']}
+      position="relative"
     >
-      <Box
-        is="a"
-        display="block"
-        href={href}
-        target="_blank"
-        mx={5}
-        mb={[4, 4, 7]}
-        border="none !important"
-        maxWidth={width || '60px'}
-        overflow="hidden"
-        {...rest}
-      >
+      <FloatingLinkElement href={href} />
+      <Box maxWidth={width || '60px'} overflow="hidden" {...rest}>
         <Box>
           <Image noBlur src={image} alt={name} />
         </Box>
@@ -133,7 +118,7 @@ const Item = ({ name, slug, href, src, width, ...rest }) => {
 const Investors = ({ ...rest }) => (
   <Flex
     flexWrap="wrap"
-    justifyContent={['flex-start', 'flex-start', 'center']}
+    justifyContent={['flex-start', 'flex-start', 'flex-start']}
     pt={9}
     {...rest}
   >
