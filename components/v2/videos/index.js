@@ -7,6 +7,7 @@ import { transition } from '@common/theme'
 import { Image } from '@components/v2/image'
 import { useMedia } from '@common/hooks'
 import { ModalContext } from '@components/v2/modal'
+import { Video } from '@components/v2/video'
 
 const Gradient = ({ hovered, ...rest }) => (
   <Box
@@ -132,7 +133,7 @@ const VideoItem = ({
   href,
   ...rest
 }) => {
-  const { handleOpen } = useContext(ModalContext)
+  const { handleOpen, open } = useContext(ModalContext)
   const isYouTube = href && href.toString().includes('youtube')
   const linkProps = !isYouTube
     ? {
@@ -166,21 +167,16 @@ const VideoItem = ({
         <Image height="100%" width="100%" bgImg={image} />
       </Box>
       {video ? (
-        <Box
+        <Video
+          playing={open}
           position="absolute"
           left={0}
           top={0}
           minWidth={['125%', '125%', '100%']}
           zIndex={1}
           maxWidth="120%"
-          display="block"
-          is="video"
           src={video}
           poster={image}
-          autoPlay
-          muted
-          loop
-          playsInline
         />
       ) : null}
     </VideoItemWrapper>
