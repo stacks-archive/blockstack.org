@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useEffect, useRef, useContext } from 'react'
 import { Box, Flex } from 'blockstack-ui'
 import { transition } from '@common/theme'
 import ReactPlayer from 'react-player'
@@ -6,6 +6,19 @@ import CloseIcon from 'mdi-react/CloseIcon'
 import { useLockBodyScroll } from 'react-use'
 import { useClickOutside } from 'use-events'
 export const ModalContext = React.createContext()
+
+const useModalHooks = () => {
+  const { open, handleClose, ...rest } = useContext(ModalContext)
+  const ref = useRef(null)
+  const [isActive] = useClickOutside([ref], () => null)
+  useEffect(() => {
+    if (isActive && open) {
+      handleClose()
+    }
+  }, [isActive])
+
+  return { ref, open, handleClose, ...rest }
+}
 
 export const ModalContextProvider = ({ children }) => {
   const [state, setState] = useState({
@@ -31,15 +44,8 @@ export const ModalContextProvider = ({ children }) => {
 }
 
 const Modal = ({ ...rest }) => {
-  const { src, open, handleClose } = useContext(ModalContext)
+  const { src, open, ref, handleClose } = useModalHooks()
   useLockBodyScroll(open)
-  const ref = React.useRef(null)
-  const [isActive] = useClickOutside([ref], () => null)
-  React.useEffect(() => {
-    if (isActive && open) {
-      handleClose()
-    }
-  }, [isActive])
   return (
     <Flex
       flexDirection="column"
