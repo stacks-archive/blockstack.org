@@ -10,7 +10,8 @@ import {
   NavIconAboutTokenOffering,
   NavIconAboutRoadmap,
   NavIconAboutCompany,
-  NavIconAboutCareers
+  NavIconAboutCareers,
+  NavIconCommunityBlog
 } from '@components/v2/vectors'
 import { Newsletter } from '@components/v2/newsletter'
 
@@ -46,6 +47,7 @@ const footerNavigation = [
         href: 'https://docs.blockstack.org/community/app-miners-guide.html'
       },
       { label: 'Documentation', href: 'https://docs.blockstack.org/' },
+      { label: 'Whitepapers', path: 'papers' },
       { label: 'Support', href: 'https://blockstack.zendesk.com/hc/en-us' }
     ]
   },
@@ -75,6 +77,7 @@ const footerNavigation = [
   },
   {
     label: 'Stay up to date',
+    open: true,
     items: [
       { children: <EmailInput /> },
       { label: 'Blog', href: 'https://blog.blockstack.org/' },
@@ -126,6 +129,11 @@ const navigation = [
     href: 'https://community.blockstack.org/',
     items: [
       {
+        label: 'Blog',
+        href: 'https://blog.blockstack.org',
+        icon: NavIconCommunityBlog
+      },
+      {
         label: 'Forum',
         href: 'https://forum.blockstack.org',
         icon: NavIconCommunityForum
@@ -139,11 +147,6 @@ const navigation = [
         label: 'Events',
         href: 'https://community.blockstack.org/events',
         icon: NavIconCommunityEvents
-      },
-      {
-        label: 'GitHub',
-        href: 'https://github.com/blockstack',
-        icon: NavIconTechGithub
       }
     ]
   },

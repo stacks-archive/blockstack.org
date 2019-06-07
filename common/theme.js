@@ -126,4 +126,6 @@ const titleStyles = {
 
 const transition = '0.3s all cubic-bezier(.19,1,.22,1)'
 
-export { transition, titleProps, titleStyles }
+const doubleShadow = `0px 16px 40px rgba(0, 0, 0, 0.04), 0px 1px 2px rgba(0, 0, 0, 0.06)`
+
+export { transition, titleProps, titleStyles, doubleShadow }

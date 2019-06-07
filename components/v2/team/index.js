@@ -15,38 +15,39 @@ import { transition } from '@common/theme'
  *
  * @param {string} name - the name of the person
  * @param {string} bio - the bio of the person
+ * @param {string} title - the job title of the person
  * @param {boolean} showing - if the card should be visible
  * @param {object} rest - any additional props for wrapper
  */
-const BioCard = ({ name, bio, showing, ...rest }) => {
+const BioCard = ({ name, bio, title, showing, ...rest }) => {
   return (
     <Box
       top="90px"
       pt={5}
       left={[-50, -50, 'unset']}
       position="absolute"
+      zIndex={99}
       style={{ pointerEvents: 'none' }}
-      zIndex={5}
       display={['none', 'none', 'block']}
+      willChange="transform"
       {...rest}
     >
       <Box
         bg="white"
         boxShadow="0px 1px 2px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.04);"
         textAlign="center"
-        width={[200, 200, 300]}
         borderRadius="4px"
         p={5}
         transition={transition}
         transform={`translate3d(0,${showing ? -10 : -20}px,0)`}
         opacity={showing ? 1 : 0}
       >
-        <Title pb={3} is="h4">
+        <Title pb={0} is="h4">
           {name}
         </Title>
-        <Text fontSize={2} textAlign="left">
-          {bio}
-        </Text>
+        {/*<Text fontSize={2} textAlign="left">*/}
+        {/*{bio}*/}
+        {/*</Text>*/}
       </Box>
     </Box>
   )
@@ -69,8 +70,10 @@ const TeamItem = ({ item, ...rest }) => {
   const hovered = false
   const bind = {}
   return (
-    <Flex position="relative" alignItems="center" justifyContent="center">
-      <Box
+    <Flex position="relative" alignItems="flex-start" justifyContent="center">
+      <Flex
+        flexDirection="column"
+        alignItems="center"
         transition={transition}
         transform={`translate3d(0,${hovered ? -10 : 0}px,0)`}
       >
@@ -78,7 +81,7 @@ const TeamItem = ({ item, ...rest }) => {
           alignItems="center"
           justifyContent="center"
           overflow="hidden"
-          size={[70, 70, 100]}
+          size={[100, 70, 70, 100]}
           borderRadius="100%"
           bg="sky.10"
           transition={transition}
@@ -88,7 +91,7 @@ const TeamItem = ({ item, ...rest }) => {
         >
           <Image
             transition={transition}
-            transform={`scale(${hovered ? 1.15 : 1})`}
+            transform={`scale(${hovered ? 1.08 : 1})`}
             imgix={{
               fit: 'crop',
               crop: 'faces',
@@ -99,8 +102,18 @@ const TeamItem = ({ item, ...rest }) => {
             position="relative"
           />
         </Flex>
-      </Box>
-      {/*<BioCard bio={item.bio} showing={hovered} name={item.name} />*/}
+        <Box px={2} pt={3} textAlign="center">
+          <Title is="h5" fontSize={1} color="ink.50">
+            {item.name}
+          </Title>
+        </Box>
+      </Flex>
+      <BioCard
+        bio={item.bio}
+        title={item.title}
+        showing={hovered}
+        name={item.name}
+      />
     </Flex>
   )
 }
@@ -122,8 +135,9 @@ const Team = ({ items = teamMembers, ...rest }) => {
       flexWrap="wrap"
       gridRowGap={8}
       gridTemplateColumns={[
+        'repeat(2, 1fr)',
         'repeat(3, 1fr)',
-        'repeat(3, 1fr)',
+        'repeat(5, 1fr)',
         'repeat(6, 1fr)'
       ]}
       width={1}

@@ -9,6 +9,7 @@ import Head from 'next/head'
 import { Mdx } from '@components/mdx'
 import withReduxStore from '@common/withReduxStore'
 import { createGlobalStyle, ThemeProvider, css } from 'styled-components'
+import { Modal, ModalContextProvider } from '@components/v2/modal'
 
 import { Provider as ReduxProvider } from 'redux-bundler-react'
 import { normalize } from 'polished'
@@ -34,13 +35,8 @@ const WrappedComponent = ({
   const defaultTemplate = !pageProps.meta.custom
   const defaultTheme = !defaultTemplate ? 'ink' : 'white'
 
-
-
   return (
     <HeaderHeightContext.Provider value={height}>
-      <Head>
-
-      </Head>
       <Box position="relative" {...rest}>
         <Header theme={pageProps.meta.theme || 'white'} innerRef={ref} />
         <PageComponent headerHeight={height} {...pageProps} />
@@ -134,32 +130,39 @@ class MyApp extends App {
 
     return (
       <ReduxProvider store={this.props.store}>
-        <Mdx>
-          <Container>
-            <Head>
-              <script src="https://cdn.polyfill.io/v2/polyfill.min.js" />
-              <title>{title}</title>
-              <meta
-                name="theme-color"
-                content={
-                  pageProps.meta.theme === 'ink' ? theme.colors.ink : '#ffffff'
-                }
-              />
-              <meta charSet="UTF-8" />
-              <meta
-                name="viewport"
-                content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-              />
-            </Head>
-            <GlobalStyles />
-            <ThemeProvider theme={theme}>
-              <WrappedComponent
-                pageComponent={PageComponent}
-                pageProps={pageProps}
-              />
-            </ThemeProvider>
-          </Container>
-        </Mdx>
+        <ModalContextProvider>
+          <Mdx>
+            <Container>
+              <Head>
+                <script src="https://cdn.polyfill.io/v2/polyfill.min.js" />
+                <title>{title}</title>
+                <meta
+                  name="theme-color"
+                  content={
+                    pageProps.meta.theme === 'ink'
+                      ? theme.colors.ink
+                      : '#ffffff'
+                  }
+                />
+                <meta charSet="UTF-8" />
+                <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+                />
+              </Head>
+              <GlobalStyles />
+              <ThemeProvider theme={theme}>
+                <>
+                  <Modal />
+                  <WrappedComponent
+                    pageComponent={PageComponent}
+                    pageProps={pageProps}
+                  />
+                </>
+              </ThemeProvider>
+            </Container>
+          </Mdx>
+        </ModalContextProvider>
       </ReduxProvider>
     )
   }

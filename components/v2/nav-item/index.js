@@ -115,7 +115,7 @@ const NavItem = ({
         <Flex
           alignItems="center"
           width={1}
-          justifyContent={['flex-start', 'flex-start', 'center']}
+          justifyContent={['flex-start', 'flex-start', 'flex-end']}
           transition="0.3s transform cubic-bezier(.19,1,.22,1)"
           transform={active ? 'translateY(2px)' : 'none'}
           onClick={() => {

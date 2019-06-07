@@ -40,14 +40,15 @@ const FooterLink = ({ path, href, ...rest }) => {
   )
 }
 
-const SectionLabel = ({ label, open, style = {}, ...rest }) => {
+const SectionLabel = ({ label, hideArrow, open, style = {}, ...rest }) => {
   const ArrowIcon = ChevronDownIcon
   return (
     <Flex
       alignItems="center"
       borderColor={['sky.25', 'sky.25', 'transparent']}
-      borderBottom={['1px solid', '1px solid', '0']}
-      py={[3, 3, 0]}
+      borderBottom={hideArrow ? 'none' : ['1px solid', '1px solid', '0']}
+      pt={[3, 3, 0]}
+      pb={hideArrow ? 0 : [3, 3, 0]}
       justifyContent="space-between"
       {...rest}
       style={{
@@ -58,15 +59,17 @@ const SectionLabel = ({ label, open, style = {}, ...rest }) => {
       <Box pb={[0, 0, 2]} fontWeight={600} color="ink" fontSize={1}>
         {label}
       </Box>
-      <Box
-        size={24}
-        transition="0.15s all ease-in-out"
-        transform={open ? 'rotate(-180deg)' : 'none'}
-        color="sky"
-        display={['block', 'block', 'none']}
-      >
-        <ArrowIcon />
-      </Box>
+      {!hideArrow && (
+        <Box
+          size={24}
+          transition="0.15s all ease-in-out"
+          transform={open ? 'rotate(-180deg)' : 'none'}
+          color="sky"
+          display={['block', 'block', 'none']}
+        >
+          <ArrowIcon />
+        </Box>
+      )}
     </Flex>
   )
 }
@@ -109,16 +112,20 @@ const Sections = ({ ...rest }) => {
 
   return (
     <Wrapper flexDirection={['column', 'column', 'row']} pb={5}>
-      {footerNavigation.map((section, i) => (
-        <Section key={i}>
-          <SectionLabel
-            onClick={() => handleSectionOpen(section.label)}
-            open={section.label === open}
-            label={section.label}
-          />
-          <SectionItems open={section.label === open} items={section.items} />
-        </Section>
-      ))}
+      {footerNavigation.map((section, i) => {
+        const isOpen = section.open || section.label === open
+        return (
+          <Section key={i}>
+            <SectionLabel
+              onClick={() => handleSectionOpen(section.label)}
+              open={isOpen}
+              hideArrow={section.open}
+              label={section.label}
+            />
+            <SectionItems open={isOpen} items={section.items} />
+          </Section>
+        )
+      })}
     </Wrapper>
   )
 }
