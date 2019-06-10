@@ -49,13 +49,14 @@ const AppIcon = ({ src }) => (
     boxShadow={doubleShadow}
     flexShrink={0}
     size={[56, 48, 48, 56]}
+    transform="translate3d(0,0,0)"
   >
     <Image
       src={src}
       borderRadius="12px"
       imgix={{
-        w: 56,
-        h: 56,
+        w: 256,
+        h: 256,
         fit: 'clip',
         q: 100
       }}
