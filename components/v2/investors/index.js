@@ -3,6 +3,7 @@ import { Flex, Box, Type } from 'blockstack-ui'
 import { useHover } from 'use-events'
 import { Image } from '@components/v2/image'
 import { transition } from '@common/theme'
+import { TextLink } from '@components/v2/section'
 const FloatingLinkElement = ({ href }) => (
   <Box
     is="a"
@@ -97,6 +98,11 @@ const list = [
     slug: 'dcg',
     src: 'https://blockstack-www.imgix.net/logos/zhenfund-logo.png',
     width: handleSize(131)
+  },
+  {
+    name: 'See all',
+    href: 'http://angel.co/blockstack/',
+    slug: 'angel'
   }
 ]
 
@@ -143,17 +149,29 @@ const Item = ({
       {...bind}
     >
       <FloatingLinkElement href={href} />
-      <Box
-        transform={hovered ? 'translateY(-8px)' : 'none'}
-        transition={transition}
-        maxWidth={width || '60px'}
-        overflow="hidden"
-        {...rest}
-      >
-        <Box>
-          <Image noBlur src={image} alt={name} />
+      {src ? (
+        <Box
+          transform={hovered ? 'translateY(-8px)' : 'none'}
+          transition={transition}
+          maxWidth={width || '60px'}
+          overflow="hidden"
+          {...rest}
+        >
+          <Box>
+            <Image noBlur src={image} alt={name} />
+          </Box>
         </Box>
-      </Box>
+      ) : (
+        <Flex alignItems="center" justifyContent="center">
+          <TextLink
+            hovered={hovered}
+            action={{
+              label: name,
+              href
+            }}
+          />
+        </Flex>
+      )}
     </Flex>
   )
 }
