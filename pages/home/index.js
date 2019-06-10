@@ -218,7 +218,7 @@ const Hero = ({ apps = [], ...rest }) => {
         <Box
           maxWidth="100%"
           minHeight={[225, 225, 325]}
-          backgroundImage="url(https://blockstack-www.imgix.net/apps-pattern-high.png?auto=format&w=1800)"
+          backgroundImage="url(https://blockstack-www.imgix.net/apps-pattern-high.png?auto=format)"
           backgroundRepeat="repeat-x"
           backgroundPosition="top center"
           backgroundSize={['1300px', '1300px', '1500px']}
