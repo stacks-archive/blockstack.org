@@ -15,8 +15,14 @@ const useNewsletterState = () => {
   const { loading, success, error, email } = state
 
   const doSetEmail = (e) => {
-    console.log(e, 'set')
     setState((s) => ({ ...s, email: e }))
+  }
+
+  const doResetError = () => {
+    setState((s) => ({
+      ...s,
+      error: null
+    }))
   }
 
   const doSubscribe = async (e) => {
@@ -66,7 +72,7 @@ const useNewsletterState = () => {
     }
   }
 
-  return { ...state, doSubscribe, doSetEmail }
+  return { ...state, doSubscribe, doSetEmail, doResetError }
 }
 
 class NewsletterWrapper extends React.Component {
