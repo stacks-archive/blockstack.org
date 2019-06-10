@@ -26,7 +26,8 @@ const colors = {
   }),
   green: Object.assign('#2CB312', {
     '50': '#95D988',
-    '25': '#CAECC4'
+    '25': '#CAECC4',
+    '10': '#EAF7E7'
   }),
   cyan: '#00D4FF'
 }

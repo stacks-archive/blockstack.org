@@ -33,8 +33,9 @@ function validateEmail(email) {
 
 const OverlayElement = ({
   message = 'Thank you!',
-  icon: Icon = SmileyCoolIcon,
+  icon: Icon,
   color = 'green',
+  bg = 'green.10',
   show,
   ...rest
 }) => {
@@ -47,23 +48,25 @@ const OverlayElement = ({
       position="absolute"
       width="calc(100% - 2px)"
       height="calc(100% - 2px)"
-      bg="white"
       left="1px"
       top="1px"
       borderRadius="8px"
       transition={transition}
       opacity={show ? 1 : 0}
+      bg={bg}
       style={{
         pointerEvents: show ? 'unset' : 'none'
       }}
       {...rest}
     >
-      <Box fontSize={1} fontWeight={500} color="ink.50" pr={2}>
+      <Box fontSize={1} fontWeight={500} color={color} pr={2}>
         {message}
       </Box>
-      <Box transform="translateY(2px)" color={color}>
-        <Icon size={18} />
-      </Box>
+      {Icon && (
+        <Box transform="translateY(2px)" color={color}>
+          <Icon size={18} />
+        </Box>
+      )}
     </Flex>
   )
 }
@@ -117,12 +120,14 @@ const Newsletter = ({ ...rest }) => {
         icon={Loading}
         message="Processing..."
         color="blue"
+        bg="blue.10"
       />
       <OverlayElement
         show={error}
         icon={ErrorIcon}
         message="Whoops, try again."
         color="red"
+        bg="red.25"
       />
       <Flex
         alignItems="center"
@@ -153,11 +158,9 @@ const Newsletter = ({ ...rest }) => {
           is="input"
           fontSize={1}
           borderColor={
-            success
-              ? 'green'
-              : error
-              ? 'red'
-              : loading || focused
+            success || error || loading
+              ? 'transparent'
+              : focused
               ? 'blue'
               : 'sky.50'
           }
