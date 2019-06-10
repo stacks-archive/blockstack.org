@@ -251,7 +251,8 @@ const HeroContent = ({ ...rest }) => {
         </Section.Text>
         <Flex pt={5} width={1}>
           <Button
-            href="https://docs.blockstack.org/browser/hello-blockstack.html"
+            href="https://docs.blockstack.org/develop/zero_to_dapp_1.html"
+            target="_blank"
             width={[1, 1, 'unset']}
           >
             Tutorials
