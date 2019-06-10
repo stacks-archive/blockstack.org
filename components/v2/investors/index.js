@@ -101,8 +101,7 @@ const list = [
   },
   {
     name: 'See all',
-    href: 'http://angel.co/blockstack/',
-    slug: 'angel'
+    href: 'http://angel.co/blockstack/'
   }
 ]
 
@@ -149,7 +148,7 @@ const Item = ({
       {...bind}
     >
       <FloatingLinkElement href={href} />
-      {src ? (
+      {src || slug ? (
         <Box
           transform={hovered ? 'translateY(-8px)' : 'none'}
           transition={transition}
@@ -189,7 +188,7 @@ const Investors = ({ ...rest }) => (
       const isThirdColumn = i % 3 === 2
       const isLast = i === list.length - 1
       const isEven = i % 2
-      const isBottomRow = isLast || i === list.length - 2
+      const isBottomRow = isLast || i === list.length - 2 || i === list.length - 3
       return (
         <Item
           isBottomRow={isBottomRow}
