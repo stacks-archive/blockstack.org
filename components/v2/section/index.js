@@ -173,7 +173,7 @@ const Section = ({
   const [isInViewport, targetRef] = useIsInViewport({
     modTop: '0px',
     modRight: '0px',
-    modBottom: '-200px',
+    modBottom: '-150px',
     modLeft: '0px'
   })
   const [isInView, setInView] = useState(isInViewport)
