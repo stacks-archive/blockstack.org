@@ -149,6 +149,20 @@ const Newsletter = ({ ...rest }) => {
       </Flex>
       <Box is="form" width={1} onSubmit={doSubscribe}>
         <Box
+          is="label"
+          htmlFor="newsletter"
+          height={'0px'}
+          display="block"
+          opacity={0}
+          p={0}
+          m={0}
+          maxHeight={0}
+          overflow="hidden"
+        >
+          Subscribe for updates
+        </Box>
+        <Box
+          aria-label="Subscribe for email updates"
           width={1}
           borderRadius="8px"
           pl={3}
@@ -156,6 +170,7 @@ const Newsletter = ({ ...rest }) => {
           height="48px"
           placeholder="Enter your email address"
           is="input"
+          name="newsletter"
           fontSize={1}
           borderColor={
             success || error || loading

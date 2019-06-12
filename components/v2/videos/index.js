@@ -164,7 +164,12 @@ const VideoItem = ({
         transform={hovered ? 'scale(1.03)' : 'scale(1)'}
         transition={transition}
       >
-        <Image height="100%" width="100%" bgImg={image} />
+        <Image
+          height="100%"
+          width="100%"
+          bgImg={image}
+          alt={`A preview image for "${title}"`}
+        />
       </Box>
       {video ? (
         <Video

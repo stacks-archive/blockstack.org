@@ -4,6 +4,7 @@ const caseStudies = [
     publication: 'Indie Hackers',
     src: 'https://blockstack-www.imgix.net/justin-hu.png',
     app: 'https://blockstack-www.imgix.net/graphite-app.png',
+    appName: 'Graphite Docs',
     href:
       'https://www.indiehackers.com/interview/how-taking-back-my-privacy-inspired-a-product-that-became-a-business-bd931dfc1d'
   },
@@ -12,6 +13,7 @@ const caseStudies = [
     publication: 'Wired',
     src: 'https://blockstack-www.imgix.net/santi.png',
     app: 'https://blockstack-www.imgix.net/demo-earth-app.png',
+    appName: 'Democracy Earth',
     href:
       'https://www.wired.com/story/santiago-siri-radical-plan-for-blockchain-voting/'
   },
@@ -20,6 +22,7 @@ const caseStudies = [
     publication: 'Product Hunt',
     src: 'https://blockstack-www.imgix.net/product-hunt-maker.png',
     app: 'https://blockstack-www.imgix.net/photo-app.png',
+    appName: 'Encrypt my Photos',
     href:
       'https://blog.producthunt.com/how-this-maker-quit-his-job-and-made-his-side-projects-profitable-in-1-year-9c24ece56133'
   }
@@ -33,8 +36,7 @@ const videos = [
     image: 'https://blockstack-www.imgix.net/japan-video-still.png?auto=format',
     width: 1,
     href: 'https://www.youtube.com/watch?v=u9RIFJD3M5c',
-    video:
-      '/static/muneeb-talk-loop.mp4'
+    video: '/static/muneeb-talk-loop.mp4'
   },
   {
     title: 'Ari Paul and Muneeb Ali on Scalability, Custody, and Security',

@@ -17,7 +17,6 @@ import ArrowUpRightIcon from 'mdi-react/ArrowUpRightIcon'
 import Headroom from 'react-headroom'
 import Link from 'next/link'
 
-
 const HelloBar = ({ theme, ...rest }) => {
   const { borderColor, lightColor, secondaryBg } = useHeaderTheme()
   const [hovered, bind] = useHover()
@@ -44,6 +43,8 @@ const HelloBar = ({ theme, ...rest }) => {
         size="100%"
         zIndex={9}
         position="absolute"
+        aria-label="Learn about the anticipated Stacks Token sale at stackstoken.com"
+        title="Learn about the anticipated Stacks Token sale at stackstoken.com"
       />
       <Wrapper alignItems="center" py={3} justifyContent="center">
         <Box
@@ -215,7 +216,7 @@ const Header = ({
               <HeaderBar innerRef={innerRef}>
                 <Wrapper py={4}>
                   <Link href={'/'} prefetch>
-                    <Box is="a" href={'/'} transform="translateY(-1px)">
+                    <Box is="a" href={'/'} aria-label="Link to homepage" transform="translateY(-1px)">
                       <Logo />
                     </Box>
                   </Link>

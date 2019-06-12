@@ -152,7 +152,7 @@ const AppCardItem = ({
       />
       <Flex alignItems="center" p={[3, 3, 5]} position="absolute" zIndex={99}>
         <Box size={56} mr={3}>
-          <Image noBlur src={icon} />
+          <Image alt={`Application Icon for ${name}`} noBlur src={icon} />
         </Box>
         <Box>
           <Box>
@@ -167,7 +167,7 @@ const AppCardItem = ({
           </Box>
         </Box>
       </Flex>
-      <Image borderRadius="8px" src={src} />
+      <Image borderRadius="8px" alt={`Background for ${name}`} src={src} />
     </Flex>
   )
 }

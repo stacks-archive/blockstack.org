@@ -4,6 +4,7 @@ import { Box, Flex } from 'blockstack-ui'
 import { TextLink } from '@components/v2/section'
 import { useInViewAnimationStyles } from '@common/hooks'
 import { Button } from '@components/button'
+import { titleStyles } from '@common/theme'
 const Pill = ({ children, ...rest }) => (
   <Box borderRadius="25px" px={2} py={1} fontSize={1} bg="blue.10" color="blue">
     {children}
@@ -79,8 +80,9 @@ const Content = ({ pane, isFirst, inViewAnimationStyles, ...rest }) => {
     <>
       {pane.pretitle && (
         <Section.Title
+          {...titleStyles.h4}
           pb={[5, 5, 3]}
-          is="h4"
+          is="h2"
           {...pane.pretitle}
           {...inViewAnimationStyles}
         />
@@ -124,7 +126,13 @@ const Content = ({ pane, isFirst, inViewAnimationStyles, ...rest }) => {
           {...inViewAnimationStyles}
           {...paneProps}
         >
-          <Box is="img" display="block" maxWidth="100%" src={pane.src} />
+          <Box
+            is="img"
+            display="block"
+            maxWidth="100%"
+            src={pane.src + '?auto=format'}
+            alt={pane.alt}
+          />
         </Box>
       )}
     </>

@@ -11,19 +11,33 @@ import LockIcon from 'mdi-react/LockIcon'
 import AppsIcon from 'mdi-react/AppsIcon'
 
 const photos = [
-  { src: 'https://blockstack-www.imgix.net/photos/photo-conference-001.jpg' },
+  {
+    src: 'https://blockstack-www.imgix.net/photos/photo-conference-001.jpg',
+    alt: 'Photo of Edward Snowden at Blockstack Berlin.'
+  },
   {
     src: 'https://blockstack-www.imgix.net/photos/photo-conference-004.jpg',
     width: 1 / 4,
-    backgroundPosition: 'left center'
+    backgroundPosition: 'left center',
+    alt: 'Fireside chat at a Blockstack event.'
   },
   {
     src: 'https://blockstack-www.imgix.net/photos/photo-conference-003.jpg',
-    flexGrow: 1
+    flexGrow: 1,
+    alt: 'A photo of a panel discussion at a Blockstack event.'
   },
-  { src: 'https://blockstack-www.imgix.net/photos/photo-hackathon-001.jpg' },
-  { src: 'https://blockstack-www.imgix.net/photo-conference-people.png' },
-  { src: 'https://blockstack-www.imgix.net/photos/photo-conference-006.png' }
+  {
+    src: 'https://blockstack-www.imgix.net/photos/photo-hackathon-001.jpg',
+    alt: 'A photo of people coding at a Blockstack hackathon.'
+  },
+  {
+    src: 'https://blockstack-www.imgix.net/photo-conference-people.png',
+    alt: 'A photo of a crowd attending a talk at a Blockstack conference.'
+  },
+  {
+    src: 'https://blockstack-www.imgix.net/photos/photo-conference-006.png',
+    alt: 'A photo of people networking at an event put on by Blockstack.'
+  }
 ]
 
 const apps = [

@@ -36,7 +36,15 @@ const PublicationLogo = ({ publication }) => {
   return null
 }
 
-const CaseStudyItem = ({ title, publication, src, app, href, ...rest }) => {
+const CaseStudyItem = ({
+  title,
+  publication,
+  src,
+  app,
+  href,
+  appName,
+  ...rest
+}) => {
   const [hovered, bind] = useHover()
   const isMobile = useMedia(1)
   return (
@@ -61,14 +69,19 @@ const CaseStudyItem = ({ title, publication, src, app, href, ...rest }) => {
         mr={[5, 5, 0]}
         alignItems="flex-end"
       >
-        <Box
+        <Image
           size={80}
+          imgix={{
+            w: 160,
+            h: 160
+          }}
           right={[5]}
           bottom={5}
           position="absolute"
           zIndex={10}
-          is="img"
           src={app}
+          noBlur
+          alt={`App icon for ${appName}`}
         />
         <Flex
           alignItems="center"
@@ -93,6 +106,7 @@ const CaseStudyItem = ({ title, publication, src, app, href, ...rest }) => {
                 fit: 'crop',
                 crop: 'faces'
               }}
+              alt={`Photo for case study, ${title}`}
               borderRadius="8px"
             />
           </Box>

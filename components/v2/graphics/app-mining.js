@@ -43,7 +43,7 @@ const Rank = ({ index }) => (
   </Box>
 )
 
-const AppIcon = ({ src }) => (
+const AppIcon = ({ src, name }) => (
   <Box
     borderRadius="12px"
     boxShadow={doubleShadow}
@@ -54,6 +54,7 @@ const AppIcon = ({ src }) => (
     <Image
       src={src}
       borderRadius="12px"
+      alt={`App icon for ${name}`}
       imgix={{
         w: 256,
         h: 256,
@@ -95,6 +96,8 @@ const Item = ({ icon, name, amount, href, index, ...rest }) => {
         zIndex={99}
         href={href}
         target="_blank"
+        title={`Link to the app ${name}.`}
+        aria-label={`Link to the app ${name}.`}
       />
       <Box
         height="100%"
@@ -111,7 +114,7 @@ const Item = ({ icon, name, amount, href, index, ...rest }) => {
         transform={hovered ? 'translateX(5px)' : 'none'}
       >
         <Rank index={index} />
-        <AppIcon src={icon} />
+        <AppIcon name={name} src={icon} />
         <Details name={name} amount={amount} />
       </Flex>
     </Flex>
