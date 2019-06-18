@@ -278,7 +278,7 @@ class HomePage extends React.Component {
           },
           {
             type: 'graphic',
-            src: 'https://blockstack-www.imgix.net/blockstack-id-graphic.png',
+            src: 'https://blockstack-www.imgix.net/home-try-blockstack-graphic.png',
             alt:
               'An example interface showing a user of Blockstack and their apps.'
           }

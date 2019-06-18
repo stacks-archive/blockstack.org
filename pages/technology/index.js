@@ -379,7 +379,8 @@ const sections = [
       },
       {
         type: 'graphic',
-        src: 'https://blockstack-www.imgix.net/dev-tools-graphic.png'
+        src: 'https://blockstack-www.imgix.net/tech-dev-tools-graphic.png',
+        alt: 'A list of our various developer libraries: blockstack.js, blockstack-ios, blockstack-android, blockstack-react-native.'
       }
     ]
   },
@@ -388,7 +389,9 @@ const sections = [
     panes: [
       {
         type: 'graphic',
-        src: 'https://blockstack-www.imgix.net/id-graphic.png'
+        src: 'https://blockstack-www.imgix.net/tech-stx-blockchain-graphic.png',
+        alt:
+          'A card showing name registrations on the Blockstack network.'
       },
       {
         title: {
@@ -427,7 +430,9 @@ const sections = [
     panes: [
       {
         type: 'graphic',
-        src: 'https://blockstack-www.imgix.net/data-storage-graphic-3.png'
+        src: 'https://blockstack-www.imgix.net/tech-data-storage-graphic.png',
+        alt:
+          'An example of how data is stored within the users own data locker.'
       },
       {
         title: {
@@ -457,7 +462,8 @@ const sections = [
       },
       {
         type: 'graphic',
-        src: 'https://blockstack-www.imgix.net/smart-contract-graphic.png'
+        src: 'https://blockstack-www.imgix.net/smart-contract-graphic.png',
+        alt: 'Graphic for Blockstack smart contracts.'
       }
     ]
   },
