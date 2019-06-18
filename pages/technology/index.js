@@ -626,7 +626,7 @@ const sections = [
           items: [
             {
               type: 'button',
-              label: 'Zero-to-dapp tutorial',
+              label: 'Tutorials',
               href: 'https://docs.blockstack.org/develop/zero_to_dapp_1.html',
               target: '_blank'
             }
