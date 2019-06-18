@@ -20,7 +20,14 @@ const Subtitle = ({ ...rest }) => (
 
 const User = ({ avatar, name, ...rest }) => (
   <Flex pt={2}>
-    <Box display="block" size={24} borderRadius="100%" is="img" src={avatar} />
+    <Box
+      display="block"
+      size={24}
+      borderRadius="100%"
+      is="img"
+      alt={`Avatar of ${name}`}
+      src={avatar}
+    />
     <Subtitle>{name}</Subtitle>
   </Flex>
 )

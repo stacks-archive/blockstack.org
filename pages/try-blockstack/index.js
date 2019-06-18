@@ -22,35 +22,37 @@ const meta = {
 const appCards = [
   [
     {
-      src: 'https://blockstack-www.imgix.net/apps/app-card-bitpatron.png',
+      src: 'https://blockstack-www.imgix.net/app-cards/app-card-bitpatron.png',
       icon: 'https://blockstack-www.imgix.net/apps/bitpatron-app-icon.png',
       name: 'BitPatron',
       description: 'Bitcoin-based Patreon alternative',
       href: 'https://bitpatron.co/'
     },
     {
-      src: 'https://blockstack-www.imgix.net/apps/app-card-blockvault.png',
+      src: 'https://blockstack-www.imgix.net/app-cards/app-card-blockvault.png',
       icon: 'https://blockstack-www.imgix.net/apps/blockvault-app-icon.png',
       name: 'Blockvault',
       description: 'Decentralized password manager for teams',
       href: 'https://blockvault.site/'
     },
     {
-      src: 'https://blockstack-www.imgix.net/apps/app-card-graphite.png',
+      src: 'https://blockstack-www.imgix.net/app-cards/app-card-graphite.png',
       icon: 'https://blockstack-www.imgix.net/apps/graphitedocs-app-icon.png',
       name: 'Graphite',
       description: 'Create documents and share files',
-      href: 'https://www.graphitedocs.com/'
+      href: 'https://www.graphitedocs.com/',
+      color: 'ink'
     },
     {
-      src: 'https://blockstack-www.imgix.net/apps/app-card-formsid.png',
+      src: 'https://blockstack-www.imgix.net/app-cards/app-card-formsid.png',
       icon: 'https://blockstack-www.imgix.net/apps/formsid-app-icon.png',
       name: 'Forms.id',
       description: 'Private alternative to Google Forms',
       href: 'https://forms.id/'
     },
     {
-      src: 'https://blockstack-www.imgix.net/apps/app-card-local-lightning.png',
+      src:
+        'https://blockstack-www.imgix.net/app-cards/app-card-local-lightning.png',
       icon:
         'https://blockstack-www.imgix.net/apps/local-lightning-app-icon.png',
       name: 'Local Lightning',
@@ -58,7 +60,7 @@ const appCards = [
       href: 'https://www.locallightning.net/#/home'
     },
     {
-      src: 'https://blockstack-www.imgix.net/apps/app-card-zinc.png',
+      src: 'https://blockstack-www.imgix.net/app-cards/app-card-zinc.png',
       icon: 'https://blockstack-www.imgix.net/apps/zinc-app-icon.png',
       name: 'Zinc',
       description: 'Automated referencing software',
@@ -67,14 +69,14 @@ const appCards = [
   ],
   [
     {
-      src: 'https://blockstack-www.imgix.net/apps/app-card-noteriot.png',
+      src: 'https://blockstack-www.imgix.net/app-cards/app-card-noteriot.png',
       icon: 'https://blockstack-www.imgix.net/apps/noteriot-app-icon.png',
       name: 'Note Riot',
       description: 'Private and secure note keeping tool',
       href: 'https://note.riot.ai/'
     },
     {
-      src: 'https://blockstack-www.imgix.net/apps/app-card-recall.png',
+      src: 'https://blockstack-www.imgix.net/app-cards/app-card-recall.png',
       icon: 'https://blockstack-www.imgix.net/apps/recall-app-icon.png',
       name: 'Recall',
       description: 'Open-source photo vault app',
@@ -82,14 +84,14 @@ const appCards = [
       color: 'ink'
     },
     {
-      src: 'https://blockstack-www.imgix.net/apps/app-card-scannie.png',
+      src: 'https://blockstack-www.imgix.net/app-cards/app-card-scannie.png',
       icon: 'https://blockstack-www.imgix.net/apps/scannie-app-icon.png',
       name: 'Scannie',
       description: 'Scan your documents and keep them secure forever',
       href: 'https://www.scannieapp.com/'
     },
     {
-      src: 'https://blockstack-www.imgix.net/apps/app-card-sigle.png',
+      src: 'https://blockstack-www.imgix.net/app-cards/app-card-sigle.png',
       icon: 'https://blockstack-www.imgix.net/apps/sigle-app-icon.png',
       name: 'Sigle',
       description: 'Decentralized & open source blog maker',
@@ -97,7 +99,7 @@ const appCards = [
       color: 'ink'
     },
     {
-      src: 'https://blockstack-www.imgix.net/apps/app-card-xor.png',
+      src: 'https://blockstack-www.imgix.net/app-cards/app-card-xor.png',
       icon: 'https://blockstack-www.imgix.net/apps/xor-app-icon.png',
       name: 'Xor Drive',
       description: 'Encrypted, decentralized file manager',
@@ -150,7 +152,7 @@ const AppCardItem = ({
       />
       <Flex alignItems="center" p={[3, 3, 5]} position="absolute" zIndex={99}>
         <Box size={56} mr={3}>
-          <Image noBlur src={icon} />
+          <Image alt={`Application Icon for ${name}`} noBlur src={icon} />
         </Box>
         <Box>
           <Box>
@@ -165,7 +167,7 @@ const AppCardItem = ({
           </Box>
         </Box>
       </Flex>
-      <Image borderRadius="8px" src={src} />
+      <Image borderRadius="8px" alt={`Background for ${name}`} src={src} />
     </Flex>
   )
 }
@@ -320,7 +322,7 @@ class HomePage extends React.Component {
           {
             type: 'graphic',
             src:
-              'https://blockstack-www.imgix.net/blockstack-id-words-graphic.png'
+              'https://blockstack-www.imgix.net/try-id-graphic.png'
           }
         ]
       },

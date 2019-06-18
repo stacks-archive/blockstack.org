@@ -16,7 +16,7 @@ const ImageWrapper = ({ ...rest }) => (
   />
 )
 
-const PreviewImage = ({ borderRadius, bgImg, src, ...rest }) => {
+const PreviewImage = ({ borderRadius, bgImg, src, alt, ...rest }) => {
   const srcProps = bgImg
     ? {
         backgroundImage: `url(${src})`,
@@ -37,6 +37,8 @@ const PreviewImage = ({ borderRadius, bgImg, src, ...rest }) => {
         transition="0.5s all ease-in-out 0.3s"
         width={1}
         is={bgImg ? 'div' : 'img'}
+        title={bgImg ? alt : undefined}
+        alt={!bgImg ? alt : undefined}
         display="block"
         maxWidth="100%"
         position="relative"
@@ -53,6 +55,8 @@ const PreviewImage = ({ borderRadius, bgImg, src, ...rest }) => {
         transition="0.5s all ease-in-out 0.3s"
         width={1}
         is={bgImg ? 'div' : 'img'}
+        title={bgImg ? alt : undefined}
+        alt={!bgImg ? alt : undefined}
         display="block"
         maxWidth="100%"
         height={bgImg ? '100%' : 'unset'}
@@ -67,7 +71,7 @@ const PreviewImage = ({ borderRadius, bgImg, src, ...rest }) => {
     </Box>
   )
 }
-const HighResImage = ({ bgImg, noBlur, ...rest }) => (
+const HighResImage = ({ bgImg, noBlur, alt, ...rest }) => (
   <Box
     transition="0.5s all ease-in-out"
     opacity={noBlur ? 1 : 0}
@@ -79,6 +83,8 @@ const HighResImage = ({ bgImg, noBlur, ...rest }) => (
     backgroundSize={bgImg ? 'cover' : 'unset'}
     backgroundPosition="center center"
     is={bgImg ? 'div' : 'img'}
+    title={bgImg ? alt : undefined}
+    alt={!bgImg ? alt : undefined}
     display="block"
     maxWidth="100%"
     zIndex={3}
@@ -92,6 +98,7 @@ const Image = ({
   noBlur,
   imgix = {},
   wrapper = {},
+  alt,
   backgroundSize = 'cover',
   backgroundPosition = 'center center',
   ...rest
@@ -111,7 +118,7 @@ const Image = ({
   if (!isImgix) {
     return (
       <Box width={1} {...wrapper}>
-        <Box is="img" width={1} display="block" src={url} {...rest} />
+        <Box is="img" width={1} display="block" src={url} alt={alt} {...rest} />
       </Box>
     )
   }
@@ -156,6 +163,7 @@ const Image = ({
         backgroundPosition={backgroundPosition}
         bgImg={bgImg}
         noBlur={noBlur}
+        alt={alt}
       />
       {!noBlur ? (
         <PreviewImage
@@ -164,6 +172,7 @@ const Image = ({
           backgroundPosition={backgroundPosition}
           backgroundSize={backgroundSize}
           bgImg={bgImg}
+          alt={alt}
         />
       ) : null}
     </ImageWrapper>

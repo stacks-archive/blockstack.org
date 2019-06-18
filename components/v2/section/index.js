@@ -115,9 +115,7 @@ const Text = ({ is = 'p', ...rest }) => {
                 textDecoration: 'none !important',
                 textShadow: `-${shadow}px -${shadow}px 0 ${bg}, ${shadow}px -${shadow}px 0 ${bg}, -${shadow}px ${shadow}px 0 ${bg}, ${shadow}px ${shadow}px 0 ${bg}`,
                 backgroundRepeat: 'repeat-x',
-                backgroundImage: `url('data:image/svg+xml;utf8,<svg preserveAspectRatio="none" viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="0" x2="1" y2="1" stroke="${
-                  text.hover
-                }" /></svg>')`,
+                backgroundImage: `url('data:image/svg+xml;utf8,<svg preserveAspectRatio="none" viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="0" x2="1" y2="1" stroke="${text.hover}" /></svg>')`,
                 backgroundSize: `1px 0.9px`,
                 backgroundPosition: `0 calc(1em + 1px)`
               },
@@ -173,7 +171,7 @@ const Section = ({
   const [isInViewport, targetRef] = useIsInViewport({
     modTop: '0px',
     modRight: '0px',
-    modBottom: '-200px',
+    modBottom: '-150px',
     modLeft: '0px'
   })
   const [isInView, setInView] = useState(isInViewport)
@@ -209,7 +207,7 @@ const TextLinkComponent = ({ path, children }) =>
  * @prop {Boolean} hideArrow - by default there is a chevron showing, this hides it
  * @prop {Object} rest - all additional props to be passed to the component
  */
-const TextLink = ({ action, hideArrow, ...rest }) => {
+const TextLink = ({ action, hideArrow, hovered: hoverProp, ...rest }) => {
   const { label, href, path, ...actionProps } = action
   if (href && path) {
     console.error(
@@ -217,7 +215,8 @@ const TextLink = ({ action, hideArrow, ...rest }) => {
     )
   }
 
-  const [hovered, bind] = useHover()
+  const [isHovered, bind] = useHover()
+  const hovered = hoverProp || isHovered
   return (
     <TextLinkComponent path={path}>
       <Text

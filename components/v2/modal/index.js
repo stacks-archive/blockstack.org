@@ -83,6 +83,7 @@ const Modal = ({ ...rest }) => {
                   height="100%"
                   playsinline
                   url={src}
+                  playing={open}
                 />
               ) : null}
             </Box>

@@ -50,6 +50,7 @@ const MobileVersion = ({ items, ...rest }) => {
 
 const PhotoItem = ({
   src,
+  alt,
   backgroundPosition,
   backgroundSize,
   height = 400,
@@ -60,6 +61,7 @@ const PhotoItem = ({
       <Box p={1} position="relative" width={1}>
         <Image
           bgImg={src}
+          alt={alt}
           height={height}
           imgix={{
             w: 1800
@@ -85,11 +87,12 @@ const PhotoGrid = ({ items, height = 400, ...rest }) => {
         width="100%"
         {...rest}
       >
-        {items.map(({ src, width = 1 / 3, ...photoProps }, key, arr) => (
+        {items.map(({ src, alt, width = 1 / 3, ...photoProps }, key, arr) => (
           <PhotoItem
             width={[1, 1 / 2, 1 / 2, width]}
             src={src}
             key={key}
+            alt={alt}
             height={height}
             {...photoProps}
           />

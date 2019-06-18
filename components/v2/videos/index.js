@@ -101,7 +101,7 @@ const MainDetails = ({ primary, title, ...rest }) => {
 const VideoItemWrapper = ({ primary, image, ...rest }) => {
   return (
     <Flex
-      minHeight={[300, primary ? 720 : 480, primary ? 720 : 480]}
+      minHeight={[300, primary ? 600 : 480, primary ? 600 : 480]}
       width="100%"
       alignItems={'flex-start'}
       justifyContent={'flex-end'}
@@ -164,7 +164,12 @@ const VideoItem = ({
         transform={hovered ? 'scale(1.03)' : 'scale(1)'}
         transition={transition}
       >
-        <Image height="100%" width="100%" bgImg={image} />
+        <Image
+          height="100%"
+          width="100%"
+          bgImg={image}
+          alt={`A preview image for "${title}"`}
+        />
       </Box>
       {video ? (
         <Video

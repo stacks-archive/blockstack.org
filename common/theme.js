@@ -13,7 +13,7 @@ const colors = {
     '90': '#252525',
     '75': '#222222',
     '50': '#33333E',
-    '25': '#767686'
+    '25': '#70707C'
   }),
   sky: Object.assign('#BFBFC3', {
     '50': '#E5E5EC',
@@ -26,7 +26,8 @@ const colors = {
   }),
   green: Object.assign('#2CB312', {
     '50': '#95D988',
-    '25': '#CAECC4'
+    '25': '#CAECC4',
+    '10': '#EAF7E7'
   }),
   cyan: '#00D4FF'
 }

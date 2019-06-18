@@ -59,6 +59,7 @@ const AuthGraphic = () => {
                   w: '128',
                   h: '128'
                 }}
+                alt="An example of a user avatar on Blockstack."
                 size={32}
               />
             </Box>

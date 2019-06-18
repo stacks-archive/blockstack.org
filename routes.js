@@ -7,10 +7,7 @@ const routes = async () => {
     '/try-blockstack': { page: '/try-blockstack' },
     '/404': { page: '/_error' },
     '/pbc': { page: '/about' },
-    // '/blog': { page: '/blog' },
-    // '/faq': { page: '/faq' }, // redirect to docs.blockstack.org
     '/careers': { page: '/careers' },
-    // '/funding': { page: '/funding' },// redirect to signature.vc
     '/install': { page: '/install' },
     '/papers': { page: '/papers' },
     '/press': { page: '/press' },
