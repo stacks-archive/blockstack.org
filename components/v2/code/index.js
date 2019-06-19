@@ -49,7 +49,8 @@ class Codeblock extends React.PureComponent {
             options={{
               mode: returnLanguage(language),
               theme: 'material',
-              lineNumbers: !noLineNumbers
+              lineNumbers: !noLineNumbers,
+              readOnly: 'nocursor'
             }}
           />
         ) : (
