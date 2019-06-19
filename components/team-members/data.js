@@ -196,5 +196,15 @@ export const teamMembers = [
     name: 'Diwaker Gupta',
     bio:
       'Diwaker is our Head of Engineering. He is an engineering leader with a decade of diverse experiences: Early-stage startups, acquisitions, late-stage company going through IPO. Shipped enterprise software, appliances; managed large-scale infra services for SaaS; managed search quality and machine learning teams. Built and managed multiple remote teams.'
+  },
+  {
+    blockstackId: 'lgalabru.blockstack.id',
+    name: 'Ludovic Galabru'
+  },
+  {
+    blockstackId: 'jennymith',
+    name: 'Jenny Mith',
+    bio:
+      'Jenny is Blockstack’s Digital Community Partner. Prior to joining Blockstack, she worked with Codesmith to build a thriving Women in Software Engineering community and pilot several technical training programs, including Codesmith’s machine learning immersive. Jenny received her B.A. in philosophy from Grinnell College and her MSc in philosophy and public policy from the London School of Economics.'
   }
 ]

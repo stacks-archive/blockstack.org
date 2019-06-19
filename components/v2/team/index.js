@@ -145,9 +145,11 @@ const Team = ({ items = teamMembers, ...rest }) => {
       zIndex={99}
       {...rest}
     >
-      {items.map((item, key) => (
-        <TeamItem item={item} key={key} />
-      ))}
+      {items
+        .sort((a, b) => (a.name.split(' ')[1] < b.name.split(' ')[1] ? -1 : 1)) // alph by last name
+        .map((item, key) => (
+          <TeamItem item={item} key={key} />
+        ))}
     </Flex>
   )
 }
