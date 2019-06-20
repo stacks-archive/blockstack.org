@@ -3,7 +3,6 @@ import { Box, Flex } from 'blockstack-ui'
 import { Title, TextLink } from '@components/section'
 import { transition } from '@common/theme'
 import { useHover } from 'use-events'
-import { connect } from 'redux-bundler-react'
 
 const CardItem = ({ variant = 'white', href, ...rest }) => {
   const [hovered, bind] = useHover()
@@ -45,70 +44,65 @@ const CardItem = ({ variant = 'white', href, ...rest }) => {
   )
 }
 
-const Jobs = connect(
-  'selectJobs',
-  ({ jobs, ...rest }) =>
-    jobs && jobs.length ? (
-      <Box {...rest}>
-        <Title is="h2">Open Positions</Title>
-        <Flex flexWrap="wrap" pt={5} justifyContent="space-between">
-          {[...jobs, {}].map(({ text, hostedUrl, categories }, i) => {
-            if (!categories)
-              return (
-                <Box
-                  width={[1, `calc(50% - 16px)`, `calc(33.33333% - 16px)`]}
-                />
-              )
-            const { commitment, location, team } = categories
+const Jobs = ({ jobs, ...rest }) =>
+  jobs && jobs.length ? (
+    <Box {...rest}>
+      <Title is="h2">Open Positions</Title>
+      <Flex flexWrap="wrap" pt={5} justifyContent="space-between">
+        {[...jobs, {}].map(({ text, hostedUrl, categories }, i) => {
+          if (!categories)
             return (
-              <CardItem
-                pr={5}
-                pb={5}
-                width={[1, `calc(50% - 16px)`, `calc(33.33333% - 16px)`]}
-                key={i}
-                href={hostedUrl}
-                spacer={!text}
-              >
-                {team ? (
-                  <Title opacity={0.75} is="h6" color="ink.50">
-                    {team}
-                  </Title>
-                ) : null}
-                {text ? (
-                  <Title is="h4" pt={1}>
-                    {text}
-                  </Title>
-                ) : null}
-                {location ? (
-                  <Box pt={3}>
-                    <Title is="h6" color="ink.50">
-                      {location}
-                    </Title>
-                  </Box>
-                ) : null}
-                {commitment ? (
-                  <Box pt={1}>
-                    <Title is="h6" color="ink.50">
-                      {commitment}
-                    </Title>
-                  </Box>
-                ) : null}
-                <Box pt={5}>
-                  <TextLink
-                    action={{
-                      href: hostedUrl,
-                      label: 'Learn more'
-                    }}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  />
-                </Box>
-              </CardItem>
+              <Box width={[1, `calc(50% - 16px)`, `calc(33.33333% - 16px)`]} />
             )
-          })}
-        </Flex>
-      </Box>
-    ) : null
-)
+          const { commitment, location, team } = categories
+          return (
+            <CardItem
+              pr={5}
+              pb={5}
+              width={[1, `calc(50% - 16px)`, `calc(33.33333% - 16px)`]}
+              key={i}
+              href={hostedUrl}
+              spacer={!text}
+            >
+              {team ? (
+                <Title opacity={0.75} is="h6" color="ink.50">
+                  {team}
+                </Title>
+              ) : null}
+              {text ? (
+                <Title is="h4" pt={1}>
+                  {text}
+                </Title>
+              ) : null}
+              {location ? (
+                <Box pt={3}>
+                  <Title is="h6" color="ink.50">
+                    {location}
+                  </Title>
+                </Box>
+              ) : null}
+              {commitment ? (
+                <Box pt={1}>
+                  <Title is="h6" color="ink.50">
+                    {commitment}
+                  </Title>
+                </Box>
+              ) : null}
+              <Box pt={5}>
+                <TextLink
+                  action={{
+                    href: hostedUrl,
+                    label: 'Learn more'
+                  }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                />
+              </Box>
+            </CardItem>
+          )
+        })}
+      </Flex>
+    </Box>
+  ) : null
 
 export { Jobs }

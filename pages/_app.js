@@ -11,7 +11,7 @@ import withReduxStore from '@common/withReduxStore'
 import { createGlobalStyle, ThemeProvider, css } from 'styled-components'
 import { Modal, ModalContextProvider } from '@components/modal'
 
-import { Provider as ReduxProvider } from 'redux-bundler-react'
+
 import { normalize } from 'polished'
 import { theme } from '@common/theme'
 
@@ -129,7 +129,7 @@ class MyApp extends App {
     )
 
     return (
-      <ReduxProvider store={this.props.store}>
+
         <ModalContextProvider>
           <Mdx>
             <Container>
@@ -163,7 +163,6 @@ class MyApp extends App {
             </Container>
           </Mdx>
         </ModalContextProvider>
-      </ReduxProvider>
     )
   }
 }
