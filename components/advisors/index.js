@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, Title } from '@components/section/index'
 import { Box, Flex } from 'blockstack-ui'
-import { Image } from '@components/v2/image/index'
+import { Image } from '@components/image/index'
 
 const Name = ({ name, ...rest }) => (
   <Box {...rest}>

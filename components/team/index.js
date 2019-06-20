@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Flex } from 'blockstack-ui'
 import { teamMembers } from './data'
 import { slugify } from '@common/es6/index'
-import { Image } from '@components/v2/image/index'
+import { Image } from '@components/image/index'
 import { Title } from '@components/section/index'
 import { transition } from '@common/theme'
 

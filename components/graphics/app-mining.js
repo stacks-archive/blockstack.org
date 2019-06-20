@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Flex } from 'blockstack-ui'
 import { Section } from '@components/section/index'
 import { Dots } from '@components/vectors/dots'
-import { Image } from '@components/v2/image/index'
+import { Image } from '@components/image/index'
 import { useHover } from 'use-events'
 import { transition, doubleShadow } from '@common/theme'
 

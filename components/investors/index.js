@@ -1,7 +1,7 @@
 import React from 'react'
 import { Flex, Box, Type } from 'blockstack-ui'
 import { useHover } from 'use-events'
-import { Image } from '@components/v2/image/index'
+import { Image } from '@components/image/index'
 import { transition } from '@common/theme'
 import { TextLink } from '@components/section/index'
 const FloatingLinkElement = ({ href }) => (

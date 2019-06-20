@@ -3,7 +3,7 @@ import { Box, Flex } from 'blockstack-ui'
 import { useHover } from 'use-events'
 import { transition } from '@common/theme'
 import { Title } from '@components/section/index'
-import { Image } from '@components/v2/image/index'
+import { Image } from '@components/image/index'
 import {
   WiredLogo,
   ProductHuntLogo,

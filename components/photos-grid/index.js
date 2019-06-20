@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Box, Flex } from 'blockstack-ui'
 import { useTransition, animated, config } from 'react-spring'
-import { Image } from '@components/v2/image/index'
+import { Image } from '@components/image/index'
 
 const MobileVersion = ({ items, ...rest }) => {
   const [index, set] = useState(0)
