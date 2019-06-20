@@ -17,11 +17,6 @@ import { theme } from '@common/theme'
 
 export const HeaderHeightContext = React.createContext(null)
 
-const fetchOurData = async (ctx) => {
-  if (!ctx.reduxStore.selectJobs()) {
-    await ctx.reduxStore.doFetchJobsData()
-  }
-}
 
 const WrappedComponent = ({
   pageComponent: PageComponent,
@@ -47,7 +42,7 @@ const WrappedComponent = ({
 }
 
 const styles = css`
-  @import url('https://fonts.googleapis.com/css?family=Fira+Mono');
+  @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,600,700&display=swap');
   ${normalize};
   html,
   body {
@@ -83,19 +78,11 @@ class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
     let pageProps = {}
 
-    await fetchOurData(ctx)
-
     if (Component.getInitialProps) {
       pageProps = await Component.getInitialProps(ctx)
     }
 
-    return { pageProps, store: ctx.reduxStore }
-  }
-
-  componentWillMount() {
-    if (!this.props.store.selectIsDebug()) {
-      this.props.store.doEnableDebug()
-    }
+    return { pageProps }
   }
 
   componentDidMount() {

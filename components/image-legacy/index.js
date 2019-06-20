@@ -17,11 +17,6 @@ class Image extends React.Component {
     ref: this.ref,
     loaded: false
   }
-  componentDidMount() {
-    require('lazysizes')
-    window.lazySizesConfig.expand = 100
-  }
-
   render() {
     const { src, alt, noBlur, ...rest } = this.props
     const internalLink = src && !src.includes('http')
