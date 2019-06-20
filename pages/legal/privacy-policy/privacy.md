@@ -1,4 +1,4 @@
-Effective Date: June 6, 2019
+Effective Date: June 17, 2019
 
 Blockstack respects and protects the privacy of its users. This Privacy Policy explains how we collect, use, and share information gathered through our websites (www.blockstack.org, app.co, www.stackstoken.com, and any other site that links to this Privacy Policy), and downloadable software applications (the “Platform”) (collectively, including the website and the Platform, the “Services”). It also describes your rights and choices with respect to your information, and how you can contact us if you have any questions or concerns. The terms “Blockstack,” “we,” and “us” include Blockstack PBC, Blockstack Token LLC, our affiliates, and subsidiaries.
 
@@ -80,9 +80,13 @@ If you are located in the European Economic Area, we only process your Personal 
 
 We and third-party service providers may use the following cookies to collect Personal Information:
 
-- Functional cookies. Some cookies are strictly necessary to make our Services available to you. For example, to provide login and mailing list signup functionality. We cannot provide you with the Services without this type of cookie.
+- **Functional cookies.** Some cookies are strictly necessary to make our Services available to you. For example, to provide login and mailing list signup functionality. We cannot provide you with the Services without this type of cookie.
 
-* Analytical cookies. We also use cookies for website analytics purposes in order to operate, maintain, and improve our Services. We may use our own analytics cookies or use third-party analytics providers such as Google Analytics to collect and process certain analytics data on our behalf. These providers may also collect information about your use of other websites, apps, and online resources.
+- **Analytical cookies.** We also use cookies for website analytics purposes in order to operate, maintain, and improve our Services. We may use our own analytics cookies or use third-party analytics providers such as Google Analytics to collect and process certain analytics data on our behalf. These providers may also collect information about your use of other websites, apps, and online resources.
+
+- **Advertising.** We allow third-party advertising partners to use cookies on the Services to collect information about your browsing activities over time and across websites. We also work with these third-party advertising partners to market our services to you on other websites, apps, and online services. For example, we use advertising services provided by Google and Facebook. Through a process called “retargeting,” these services place a cookie on your browser when you visit our website so that they can identify you and serve you ads on other websites around the web based on your browsing activity.
+
+- **Third-party content.** The Services contain links to websites operated by third parties and contain social media features and other content provided by third parties, such as YouTube videos. These third parties may collect information about you if you visit their websites, or if you visit a website that contains social media features or other content provided by them. This Privacy Policy does not address, and we do not control, what Personal Information these third parties collect. We encourage you review these third parties’ privacy policies and related privacy settings before using these features.
 
 You can find more information about your rights and choices, and how to opt out of the use of certain cookies in the section _Your Rights and Choices_ below.
 
