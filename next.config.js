@@ -47,6 +47,9 @@ const config = {
         name: 'static/images/[name]-[hash]-[width].[ext]'
       }
     })
+     if (config.mode === 'production' && config.name === 'client') {
+      config.optimization.splitChunks.cacheGroups.commons.minChunks = 2;
+    }
     return config
   }
 }

@@ -7,16 +7,12 @@ import { Box } from 'blockstack-ui'
 import NoTemplate from '@components/templates/none'
 import Head from 'next/head'
 import { Mdx } from '@components/mdx'
-import withReduxStore from '@common/withReduxStore'
 import { createGlobalStyle, ThemeProvider, css } from 'styled-components'
 import { Modal, ModalContextProvider } from '@components/modal'
-
-
 import { normalize } from 'polished'
 import { theme } from '@common/theme'
 
 export const HeaderHeightContext = React.createContext(null)
-
 
 const WrappedComponent = ({
   pageComponent: PageComponent,
@@ -28,7 +24,6 @@ const WrappedComponent = ({
   const height = size && size.height
 
   const defaultTemplate = !pageProps.meta.custom
-  const defaultTheme = !defaultTemplate ? 'ink' : 'white'
 
   return (
     <HeaderHeightContext.Provider value={height}>
@@ -154,4 +149,4 @@ class MyApp extends App {
   }
 }
 
-export default withReduxStore(MyApp)
+export default MyApp
