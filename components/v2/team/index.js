@@ -1,10 +1,9 @@
 import React from 'react'
 import { Box, Flex } from 'blockstack-ui'
-import { teamMembers } from '@components/team-members/data'
+import { teamMembers } from './data'
 import { slugify } from '@common/es6'
 import { Image } from '@components/v2/image'
-import { useHover } from 'use-events'
-import { Text, Title } from '@components/v2/section'
+import { Title } from '@components/v2/section'
 import { transition } from '@common/theme'
 
 /**

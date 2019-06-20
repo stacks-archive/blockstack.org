@@ -1,5 +1,4 @@
 import React from 'react'
-import { Section } from '@components/v2/section'
 import { Meta } from '@components/meta'
 import * as gtag from '@common/lib/gtag'
 import Router from 'next/router'
