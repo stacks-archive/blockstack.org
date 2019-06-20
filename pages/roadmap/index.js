@@ -1,6 +1,6 @@
 import React from 'react'
 import Content from './roadmap.md'
-import { Section } from '@components/v2/section'
+import { Section } from '@components/section'
 
 const meta = {
   path: '/roadmap',

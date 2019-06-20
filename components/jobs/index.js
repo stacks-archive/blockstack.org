@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Flex } from 'blockstack-ui'
-import { Title, TextLink } from '@components/v2/section'
+import { Title, TextLink } from '@components/section'
 import { transition } from '@common/theme'
 import { useHover } from 'use-events'
 import { connect } from 'redux-bundler-react'

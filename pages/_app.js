@@ -9,7 +9,7 @@ import Head from 'next/head'
 import { Mdx } from '@components/mdx'
 import withReduxStore from '@common/withReduxStore'
 import { createGlobalStyle, ThemeProvider, css } from 'styled-components'
-import { Modal, ModalContextProvider } from '@components/v2/modal'
+import { Modal, ModalContextProvider } from '@components/modal'
 
 import { Provider as ReduxProvider } from 'redux-bundler-react'
 import { normalize } from 'polished'

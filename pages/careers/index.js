@@ -1,8 +1,8 @@
 import React from 'react'
 import fetch from 'cross-fetch'
-import { PhotoGrid } from '@components/v2/photos-grid'
+import { PhotoGrid } from '@components/photos-grid'
 import { Jobs } from '@components/jobs'
-import { Section } from '@components/v2/section'
+import { Section } from '@components/section'
 import Intro from './intro.md'
 import Working from './working.md'
 

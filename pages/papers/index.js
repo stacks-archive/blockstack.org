@@ -1,6 +1,6 @@
 import React from 'react'
-import { Section } from '@components/v2/section'
-import { Documents } from '@components/v2/documents'
+import { Section } from '@components/section'
+import { Documents } from '@components/documents'
 
 const meta = {
   path: '/papers',

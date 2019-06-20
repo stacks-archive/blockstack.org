@@ -1,6 +1,6 @@
 import React from 'react'
-import { Press } from '@components/v2/press'
-import { Section } from '@components/v2/section'
+import { Press } from '@components/press'
+import { Section } from '@components/section'
 import { press } from '../home/data'
 
 const meta = {

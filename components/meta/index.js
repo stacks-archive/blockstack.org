@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
-import { addPath } from '@components/image'
+import { addPath } from '@components/image-legacy'
 
 const favicon = require('@assets/images/favicon.png')
 const appleTouchIcon = require('@assets/images/touch-icon.png')

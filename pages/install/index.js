@@ -1,7 +1,7 @@
 import React from 'react'
-import { Sections } from '@components/v2/sections'
-import { installSection } from '@components/v2/install'
-import { Section } from '@components/v2/section'
+import { Sections } from '@components/sections'
+import { installSection } from '@components/install'
+import { Section } from '@components/section'
 import { Box } from 'blockstack-ui'
 const meta = {
   path: '/install',

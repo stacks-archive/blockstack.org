@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import { useHover } from 'use-events'
 import { Box, Flex } from 'blockstack-ui'
 import { footerNavigation } from '@common/constants'
-import { Wrapper } from '@components/v2/wrapper'
+import { Wrapper } from '@components/wrapper'
 import ChevronDownIcon from 'mdi-react/ChevronDownIcon'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 import GithubCircleIcon from 'mdi-react/GithubCircleIcon'
-import { WrappedLink } from '@components/v2/link'
+import { WrappedLink } from '@components/link'
 
 const Icon = ({ component: Component, ...rest }) => (
   <Box color="currentColor" pr={1} opacity={0.5} {...rest}>

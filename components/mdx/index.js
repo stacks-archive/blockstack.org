@@ -1,8 +1,8 @@
 import React from 'react'
 import { MDXProvider } from '@mdx-js/tag'
-import { Section } from '@components/v2/section'
-import { Image } from '@components/image'
-import { Codeblock } from '@components/v2/code'
+import { Section } from '@components/section'
+import { Image } from '@components/image-legacy'
+import { Codeblock } from '@components/code'
 
 const Mdx = ({ children }) => (
   <MDXProvider
