@@ -1,10 +1,19 @@
 import React from 'react'
 import fetch from 'cross-fetch'
-import { PhotoGrid } from '@components/v2/photos-grid'
+import { PhotoGrid } from '@components/photos-grid'
 import { Jobs } from '@components/jobs'
-import { Section } from '@components/v2/section'
+import { Section } from '@components/section'
 import Intro from './intro.md'
 import Working from './working.md'
+import { fetchJobs } from '@common/es6'
+
+const doFetchJobs = async () => {
+  try {
+    return fetchJobs()
+  } catch (error) {
+    console.log(error)
+  }
+}
 
 const photos1 = [
   {
@@ -55,10 +64,12 @@ const meta = {
 class CareersPage extends React.PureComponent {
   static async getInitialProps(ctx) {
     const stats = await fetchStats()
+    const jobs = await doFetchJobs()
 
     return {
       meta,
-      stats
+      stats,
+      jobs
     }
   }
 
@@ -71,7 +82,7 @@ class CareersPage extends React.PureComponent {
             <Section.Title is="h2" pb={5}>
               {meta.title}
             </Section.Title>
-            <Section.Title is="h3">
+            <Section.Title is="h3" pb={[5, 5, 0]}>
               Blockstack enables a new generation of apps that empower users by
               putting them in control.
             </Section.Title>
@@ -89,7 +100,7 @@ class CareersPage extends React.PureComponent {
         <PhotoGrid items={photos2} />
         <Section>
           <Section.Pane width="100%">
-            <Jobs />
+            <Jobs jobs={this.props.jobs} />
           </Section.Pane>
         </Section>
       </div>

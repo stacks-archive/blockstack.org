@@ -1,5 +1,4 @@
 import { useContext, useState, useEffect } from 'react'
-import { addGlobalListener } from 'redux-bundler'
 import { useMedia as useBaseMedia } from 'use-media'
 import { theme } from '@common/theme'
 import { HeaderTheme, SectionContext } from '@common/context'
@@ -25,7 +24,7 @@ function getVisibility() {
 const useVisibility = () => {
   const [vis, setVis] = useState(true)
   useEffect(() => {
-    addGlobalListener('visibilitychange', () => {
+    document && document.addEventListener('visibilitychange', () => {
       const visible = getVisibility()
       if (visible) {
         setVis(true)

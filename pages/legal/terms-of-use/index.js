@@ -1,6 +1,6 @@
 import React from 'react'
 import Content from './terms-of-service.md'
-import { Section } from '@components/v2/section'
+import { Section } from '@components/section'
 
 const meta = {
   path: '/legal/terms-of-use',

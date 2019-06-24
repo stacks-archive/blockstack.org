@@ -12,8 +12,8 @@ import {
   NavIconAboutCompany,
   NavIconAboutCareers,
   NavIconCommunityBlog
-} from '@components/v2/vectors'
-import { Newsletter } from '@components/v2/newsletter'
+} from '@components/vectors'
+import { Newsletter } from '@components/newsletter'
 
 const EmailInput = Newsletter
 

@@ -7,21 +7,12 @@ import { Box } from 'blockstack-ui'
 import NoTemplate from '@components/templates/none'
 import Head from 'next/head'
 import { Mdx } from '@components/mdx'
-import withReduxStore from '@common/withReduxStore'
 import { createGlobalStyle, ThemeProvider, css } from 'styled-components'
-import { Modal, ModalContextProvider } from '@components/v2/modal'
-
-import { Provider as ReduxProvider } from 'redux-bundler-react'
+import { Modal, ModalContextProvider } from '@components/modal'
 import { normalize } from 'polished'
 import { theme } from '@common/theme'
 
 export const HeaderHeightContext = React.createContext(null)
-
-const fetchOurData = async (ctx) => {
-  if (!ctx.reduxStore.selectJobs()) {
-    await ctx.reduxStore.doFetchJobsData()
-  }
-}
 
 const WrappedComponent = ({
   pageComponent: PageComponent,
@@ -33,7 +24,6 @@ const WrappedComponent = ({
   const height = size && size.height
 
   const defaultTemplate = !pageProps.meta.custom
-  const defaultTheme = !defaultTemplate ? 'ink' : 'white'
 
   return (
     <HeaderHeightContext.Provider value={height}>
@@ -47,7 +37,7 @@ const WrappedComponent = ({
 }
 
 const styles = css`
-  @import url('https://fonts.googleapis.com/css?family=Fira+Mono');
+  @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,600,700&display=swap');
   ${normalize};
   html,
   body {
@@ -83,19 +73,11 @@ class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
     let pageProps = {}
 
-    await fetchOurData(ctx)
-
     if (Component.getInitialProps) {
       pageProps = await Component.getInitialProps(ctx)
     }
 
-    return { pageProps, store: ctx.reduxStore }
-  }
-
-  componentWillMount() {
-    if (!this.props.store.selectIsDebug()) {
-      this.props.store.doEnableDebug()
-    }
+    return { pageProps }
   }
 
   componentDidMount() {
@@ -129,7 +111,7 @@ class MyApp extends App {
     )
 
     return (
-      <ReduxProvider store={this.props.store}>
+
         <ModalContextProvider>
           <Mdx>
             <Container>
@@ -163,9 +145,8 @@ class MyApp extends App {
             </Container>
           </Mdx>
         </ModalContextProvider>
-      </ReduxProvider>
     )
   }
 }
 
-export default withReduxStore(MyApp)
+export default MyApp

@@ -1,91 +1,206 @@
 import React from 'react'
 import { Flex, Box, Type } from 'blockstack-ui'
-import { Image } from '@components/image'
+import { useHover } from 'use-events'
+import { Image } from '@components/image/index'
+import { transition } from '@common/theme'
+import { TextLink } from '@components/section/index'
+const FloatingLinkElement = ({ href }) => (
+  <Box
+    is="a"
+    href={href}
+    target="_blank"
+    position="absolute"
+    width={'100%'}
+    height={'100%'}
+    left={0}
+    top={0}
+    zIndex={999}
+  />
+)
+
+const handleSize = (size) => [size * 0.6, size * 0.8, size]
 
 const list = [
   {
     name: 'Union Square Ventures',
     href: 'https://www.usv.com/',
-    slug: 'usv'
+    slug: 'usv',
+    width: handleSize(72)
   },
   {
     name: 'Y Combinator',
     href: 'https://www.ycombinator.com/',
-    slug: 'ycombinator'
+    slug: 'ycombinator',
+    src: 'https://blockstack-www.imgix.net/logos/y-combinator-logo.png',
+    width: handleSize(185)
   },
   {
     name: 'Lux Capital',
     href: 'https://www.luxcapital.com/',
-    slug: 'lux'
+    slug: 'lux',
+    src: 'https://blockstack-www.imgix.net/logos/lux-logo.png',
+    width: handleSize(80)
   },
+  {
+    name: 'Winklevoss Capital',
+    href: 'https://winklevosscapital.com/',
+    slug: 'dcg',
+    src: 'https://blockstack-www.imgix.net/logos/winklevoss-logo.png',
+    width: handleSize(159)
+  },
+
+  {
+    name: 'Foundation Capital',
+    href: 'https://foundationcapital.com/',
+    slug: 'foundation-capital',
+    src: 'https://blockstack-www.imgix.net/logos/foundation-capital-logo.png',
+    width: handleSize(150)
+  },
+
   {
     name: 'Digital Currency Group',
     href: 'https://dcg.co/',
-    slug: 'dcg'
+    slug: 'dcg',
+    src: 'https://blockstack-www.imgix.net/logos/dcg-logo.png',
+    width: handleSize(105)
+  },
+  {
+    name: 'Huobi Capital',
+    href: 'https://www.hbg.com/en-us/topic/capital/',
+    slug: 'dcg',
+    src: 'https://blockstack-www.imgix.net/logos/huobi-capital-logo.png',
+    width: handleSize(166)
   },
   {
     name: 'SV Angel',
     href: 'https://svangel.com/',
-    slug: 'sva'
+    slug: 'sva',
+    width: handleSize(133)
   },
   {
-    name: 'Version One',
+    name: 'Version one',
     href: 'https://versionone.vc/',
-    slug: 'version-one'
-  },
-  {
-    name: 'Naval Ravikant',
-    href: 'https://angel.co/naval',
-    slug: 'naval-ravikant'
-  },
-  {
-    name: 'Shana Fisher',
-    href: 'https://angel.co/shana-fisher',
-    slug: 'shana-fisher'
+    slug: 'versionone',
+    src: 'https://blockstack-www.imgix.net/logos/versionone-logo.png',
+    width: handleSize(165)
   },
 
   {
-    name: 'Kal Vepuri',
-    href: 'https://angel.co/kal',
-    slug: 'kal'
+    name: 'FBG Capital',
+    href: 'https://www.fbg.capital/',
+    slug: 'dcg',
+    src: 'https://blockstack-www.imgix.net/logos/fbg-capital-logo.png',
+    width: handleSize(155)
+  },
+  {
+    name: 'ZhenFund',
+    href: 'http://en.zhenfund.com/',
+    slug: 'dcg',
+    src: 'https://blockstack-www.imgix.net/logos/zhenfund-logo.png',
+    width: handleSize(131)
+  },
+  {
+    name: 'See all',
+    href: 'http://angel.co/blockstack/'
   }
 ]
 
-const Item = ({ name, slug, href, ...rest }) => {
-  const image = `images/investors/${slug}.png`
+const Item = ({
+  isBottomRow,
+  isSecondColumn,
+  isEven,
+  isLast,
+  name,
+  slug,
+  href,
+  src,
+  width,
+  ...rest
+}) => {
+  const [hovered, bind] = useHover()
+  const image = src || `https://blockstack-www.imgix.net/investors/${slug}.png`
   return (
-    <Box
-      is="a"
-      display="block"
-      href={href}
-      target="_blank"
-      pb={4}
-      border="none !important"
-      width={[1 / 2, 1 / 3]}
+    <Flex
+      alignItems="center"
+      justifyContent="center"
+      py={5}
+      minHeight={[142, 142, 184]}
+      width={['50%', '50%', '33.33%']}
+      position="relative"
+      borderBottom={[
+        !isLast ? '1px solid' : 'none',
+        !isLast ? '1px solid' : 'none',
+        !isBottomRow ? '1px solid' : 'none'
+      ]}
+      borderLeft={[
+        'none',
+        'none',
+        isSecondColumn ? '1px solid' : 'none',
+        isSecondColumn ? '1px solid' : 'none'
+      ]}
+      borderRight={[
+        !isEven ? '1px solid' : 'none',
+        !isEven ? '1px solid' : 'none',
+        isSecondColumn ? '1px solid' : 'none',
+        isSecondColumn ? '1px solid' : 'none'
+      ]}
+      borderColor={['sky.25', 'sky.25', 'sky.25', 'sky.25']}
+      {...bind}
     >
-      <Box maxWidth="130px" mx="auto">
-        <Image src={image} alt={name} />
-      </Box>
-      <Box pt={3} textAlign="center" mx="auto">
-        <Type>{name}</Type>
-      </Box>
-    </Box>
+      <FloatingLinkElement href={href} />
+      {src || slug ? (
+        <Box
+          transform={hovered ? 'translateY(-8px)' : 'none'}
+          transition={transition}
+          maxWidth={width || '60px'}
+          overflow="hidden"
+          {...rest}
+        >
+          <Box>
+            <Image noBlur src={image} alt={name} />
+          </Box>
+        </Box>
+      ) : (
+        <Flex alignItems="center" justifyContent="center">
+          <TextLink
+            hovered={hovered}
+            action={{
+              label: name,
+              href
+            }}
+          />
+        </Flex>
+      )}
+    </Flex>
   )
 }
 
 const Investors = ({ ...rest }) => (
-  <Box>
-    <Flex pt={5} justifyContent="space-evenly" flexWrap="wrap">
-      {list.map((item, i) => (
-        <Item key={i} {...item} />
-      ))}
-    </Flex>
-    <Box textAlign="center">
-      <Type is="a" href="https://angel.co/blockstack" target="_blank">
-        See full list
-      </Type>
-    </Box>
-  </Box>
+  <Flex
+    flexWrap="wrap"
+    justifyContent={['flex-start', 'flex-start', 'flex-start']}
+    pt={[5, 5, 8]}
+    {...rest}
+  >
+    {list.map((item, i) => {
+      const isFirstColumn = i % 3 === 0
+      const isSecondColumn = i % 3 === 1
+      const isThirdColumn = i % 3 === 2
+      const isLast = i === list.length - 1
+      const isEven = i % 2
+      const isBottomRow = isLast || i === list.length - 2 || i === list.length - 3
+      return (
+        <Item
+          isBottomRow={isBottomRow}
+          isEven={isEven}
+          isLast={isLast}
+          isSecondColumn={isSecondColumn}
+          key={i}
+          {...item}
+        />
+      )
+    })}
+  </Flex>
 )
 
 export { Investors }

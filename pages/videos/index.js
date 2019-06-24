@@ -1,7 +1,7 @@
 import React from 'react'
-import { Videos } from '@components/v2/videos'
+import { Videos } from '@components/videos'
 import { videos } from '../home/data'
-import { Section } from '@components/v2/section'
+import { Section } from '@components/section'
 
 const meta = {
   path: '/videos',

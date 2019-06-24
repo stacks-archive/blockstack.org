@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import React from 'react'
-import { addPath } from '@components/image'
 
 const favicon = require('@assets/images/favicon.png')
 const appleTouchIcon = require('@assets/images/touch-icon.png')
@@ -20,16 +19,9 @@ const Meta = ({
   return (
     <Head>
       <meta name="description" content={description} />
-      <link
-        rel="shorticon icon"
-        href={addPath(favicon.src)}
-        type="image/x-icon"
-      />
-      <link rel="icon" href={addPath(favicon.src)} type="image/x-icon" />
-      <link
-        rel="apple-touch-icon-precomposed"
-        href={addPath(appleTouchIcon.src)}
-      />
+      <link rel="shorticon icon" href={favicon.src} type="image/x-icon" />
+      <link rel="icon" href={favicon.src} type="image/x-icon" />
+      <link rel="apple-touch-icon-precomposed" href={appleTouchIcon.src} />
       <meta property="og:image" content={ogImageUrl} />
       <meta name="twitter:image" content={ogImageUrl} />
       <meta property="og:site_name" content="Blockstack.org" />
