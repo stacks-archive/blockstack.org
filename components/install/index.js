@@ -6,6 +6,8 @@ import { useHover } from 'use-events'
 import ArrowUpRightIcon from 'mdi-react/ArrowUpRightIcon'
 import DownloadIcon from 'mdi-react/DownloadIcon'
 
+const version = '0.36.3'
+
 const items = [
   {
     platform: 'Web',
@@ -16,20 +18,17 @@ const items = [
   {
     platform: 'MacOS',
     description: 'Requires Sierra 10.12+',
-    href:
-      'https://github.com/blockstack/blockstack-browser/releases/download/v0.36.1/Blockstack-for-macOS-v0.36.1.dmg'
+    href: `https://github.com/blockstack/blockstack-browser/releases/download/v${version}/Blockstack-for-macOS-v${version}.dmg`
   },
   {
     platform: 'Windows',
     description: 'Requires Windows 10',
-    href:
-      'https://github.com/blockstack/blockstack-browser/releases/download/v0.36.1/Blockstack-for-win10-v0.36.1.msi'
+    href: `https://github.com/blockstack/blockstack-browser/releases/download/v${version}/Blockstack-for-win10-v${version}.msi`
   },
   {
     platform: 'Linux',
     description: 'Advanced install',
-    href:
-      'https://github.com/blockstack/blockstack-browser/releases/download/v0.36.1/Blockstack-for-Linux-v0.36.1.sh'
+    href: `https://github.com/blockstack/blockstack-browser/releases/download/v${version}/Blockstack-for-Linux-v${version}.sh`
   }
 ]
 
