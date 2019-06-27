@@ -380,7 +380,8 @@ const sections = [
       {
         type: 'graphic',
         src: 'https://blockstack-www.imgix.net/tech-dev-tools-graphic.png',
-        alt: 'A list of our various developer libraries: blockstack.js, blockstack-ios, blockstack-android, blockstack-react-native.'
+        alt:
+          'A list of our various developer libraries: blockstack.js, blockstack-ios, blockstack-android, blockstack-react-native.'
       }
     ]
   },
@@ -390,8 +391,7 @@ const sections = [
       {
         type: 'graphic',
         src: 'https://blockstack-www.imgix.net/tech-stx-blockchain-graphic.png',
-        alt:
-          'A card showing name registrations on the Blockstack network.'
+        alt: 'A card showing name registrations on the Blockstack network.'
       },
       {
         title: {
@@ -453,12 +453,19 @@ const sections = [
       {
         title: {
           is: 'h2',
-          children: 'Smart contracts'
+          children: 'Clarity Smart contracts'
         },
         text: {
-          children: `We've created a statically-analyzable Lisp-based smart contract language; Allowing you to write and execute smart contracts without unexpected fees, side effects, or security issues. App builders can create side-chains and app-specific tokens atop Blockstack's platform.`
+          children: `Clarity is a decidable, interpreted smart contract language that optimizes for predictability and security. It empowers you to be certain of how your code behaves prior to pushing it into production, so you don’t have to worry about security issues, side effects, or unexpected fees.`
         },
-        comingSoon: true
+        actions: [
+          {
+            type: 'link',
+            label: 'Learn more',
+            href:
+              'https://blog.blockstack.org/introducing-clarity-the-language-for-predictable-smart-contracts/' // external: href
+          }
+        ]
       },
       {
         type: 'graphic',
