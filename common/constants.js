@@ -72,7 +72,7 @@ const footerNavigation = [
       { label: 'Stacks Tokens', href: 'https://stackstoken.com' },
       { label: 'Roadmap', path: '/roadmap' },
       { label: 'News', href: 'https://blog.blockstack.org' },
-      { label: 'Contact', href: '#' }
+      { label: 'Contact', href: 'mailto:support@blockstack.org' }
     ]
   },
   {
