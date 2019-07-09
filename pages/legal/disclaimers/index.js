@@ -1,5 +1,5 @@
 import React from 'react'
-import Content from './disclaimers.md'
+import Content from '../../../common/markdown/disclaimers.md'
 import { Section } from '@components/section'
 
 const meta = {

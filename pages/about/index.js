@@ -8,7 +8,7 @@ import { PersonsList } from '@components/advisors'
 import { PhotoGrid } from '@components/photos-grid'
 import { Sections } from '@components/sections'
 import { Team } from '@components/team'
-import { photos1, photos2, ecosystemPartners, advisors } from './data'
+import { photos1, photos2, ecosystemPartners, advisors } from '../../common/data/about'
 
 const sections = [
   {

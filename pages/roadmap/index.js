@@ -1,5 +1,5 @@
 import React from 'react'
-import Content from './roadmap.md'
+import Content from '../../common/markdown/roadmap.md'
 import { Section } from '@components/section'
 
 const meta = {

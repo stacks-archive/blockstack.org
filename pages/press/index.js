@@ -1,7 +1,7 @@
 import React from 'react'
 import { Press } from '@components/press'
 import { Section } from '@components/section'
-import { press } from '../home/data'
+import { press } from '../../common/data/home'
 
 const meta = {
   path: '/press',
