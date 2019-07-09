@@ -31,7 +31,7 @@ const CookieBanner = ({ ...rest }) => {
         <Text fontSize={1}>
           We use cookies and similar technologies to analyze traffic and enhance
           your experience. For more information or to opt out, visit our{' '}
-          <Text fontSize={1} is="a" href="/privacy">
+          <Text fontSize={1} is="a" href="/legal/privacy-policy">
             Privacy Policy
           </Text>
           .
@@ -41,7 +41,7 @@ const CookieBanner = ({ ...rest }) => {
         <Button onClick={handleClick} noIcon py={2} mr={4} fontSize={1} px={3}>
           I agree
         </Button>
-        <Text lineHeight={1} fontSize={1} is="a" href="/privacy">
+        <Text lineHeight={1} fontSize={1} is="a" href="/legal/privacy-policy">
           Learn more
         </Text>
       </Flex>
