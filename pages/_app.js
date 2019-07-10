@@ -11,6 +11,14 @@ import { createGlobalStyle, ThemeProvider, css } from 'styled-components'
 import { Modal, ModalContextProvider } from '@components/modal'
 import { normalize } from 'polished'
 import { theme } from '@common/theme'
+import dynamic from 'next/dynamic'
+
+const CookieBanner = dynamic(() => import('@components/cookie-banner'), {
+  ssr: false
+})
+const Tracking = dynamic(() => import('@components/tracking'), {
+  ssr: false
+})
 
 export const HeaderHeightContext = React.createContext(null)
 
@@ -22,8 +30,6 @@ const WrappedComponent = ({
   const ref = useRef(null)
   const size = useComponentSize(ref)
   const height = size && size.height
-
-  const defaultTemplate = !pageProps.meta.custom
 
   return (
     <HeaderHeightContext.Provider value={height}>
@@ -111,40 +117,39 @@ class MyApp extends App {
     )
 
     return (
-
-        <ModalContextProvider>
-          <Mdx>
-            <Container>
-              <Head>
-                <script src="https://cdn.polyfill.io/v2/polyfill.min.js" />
-                <title>{title}</title>
-                <meta
-                  name="theme-color"
-                  content={
-                    pageProps.meta.theme === 'ink'
-                      ? theme.colors.ink
-                      : '#ffffff'
-                  }
+      <ModalContextProvider>
+        <Mdx>
+          <Container>
+            <Head>
+              <script src="https://cdn.polyfill.io/v2/polyfill.min.js" />
+              <title>{title}</title>
+              <meta
+                name="theme-color"
+                content={
+                  pageProps.meta.theme === 'ink' ? theme.colors.ink : '#ffffff'
+                }
+              />
+              <meta charSet="UTF-8" />
+              <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1, maximum-scale=5"
+              />
+            </Head>
+            <GlobalStyles />
+            <ThemeProvider theme={theme}>
+              <>
+                <Tracking />
+                <Modal />
+                <CookieBanner />
+                <WrappedComponent
+                  pageComponent={PageComponent}
+                  pageProps={pageProps}
                 />
-                <meta charSet="UTF-8" />
-                <meta
-                  name="viewport"
-                  content="width=device-width, initial-scale=1, maximum-scale=5"
-                />
-              </Head>
-              <GlobalStyles />
-              <ThemeProvider theme={theme}>
-                <>
-                  <Modal />
-                  <WrappedComponent
-                    pageComponent={PageComponent}
-                    pageProps={pageProps}
-                  />
-                </>
-              </ThemeProvider>
-            </Container>
-          </Mdx>
-        </ModalContextProvider>
+              </>
+            </ThemeProvider>
+          </Container>
+        </Mdx>
+      </ModalContextProvider>
     )
   }
 }

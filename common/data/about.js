@@ -1,5 +1,5 @@
 import React from 'react'
-import { NIL, AppCo } from '@components/vectors'
+import { NIL, AppCo } from '@components/vectors/index'
 
 const photos1 = [
   {

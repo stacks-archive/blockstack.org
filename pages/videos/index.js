@@ -1,6 +1,6 @@
 import React from 'react'
 import { Videos } from '@components/videos'
-import { videos } from '../home/data'
+import { videos } from '../../common/data/home'
 import { Section } from '@components/section'
 
 const meta = {

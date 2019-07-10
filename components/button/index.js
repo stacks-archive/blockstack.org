@@ -27,6 +27,7 @@ const Button = ({
   variant = 'primary', // primary || secondary
   path,
   href,
+  noIcon,
   ...rest
 }) => {
   const [hovered, bind] = useHover()
@@ -60,7 +61,7 @@ const Button = ({
         {...rest}
       >
         <Box>{children ? children : label}</Box>
-        {variant === 'primary' ? (
+        {variant === 'primary' && !noIcon ? (
           <Box
             pl={2}
             transition="0.3s transform cubic-bezier(.19,1,.22,1)"

@@ -3,8 +3,8 @@ import fetch from 'cross-fetch'
 import { PhotoGrid } from '@components/photos-grid'
 import { Jobs } from '@components/jobs'
 import { Section } from '@components/section'
-import Intro from './intro.md'
-import Working from './working.md'
+import Intro from '../../common/markdown/intro.md'
+import Working from '../../common/markdown/working.md'
 import { fetchJobs } from '@common/es6'
 
 const doFetchJobs = async () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import Content from './privacy.md'
+import Content from '../../../common/markdown/privacy.md'
 import { Section } from '@components/section'
 
 const meta = {

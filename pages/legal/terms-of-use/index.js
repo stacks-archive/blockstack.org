@@ -1,5 +1,5 @@
 import React from 'react'
-import Content from './terms-of-service.md'
+import Content from '../../../common/markdown/terms-of-service.md'
 import { Section } from '@components/section'
 
 const meta = {

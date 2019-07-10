@@ -30,17 +30,6 @@ const documents = [
       </>
     ),
     href: '/whitepaper-ch.pdf'
-  },
-  {
-    name: 'Blockstack Token Whitepaper',
-    description: (
-      <>
-        Token Whitepaper Version 1.2
-        <br />
-        Oct 2017
-      </>
-    ),
-    href: '/tokenpaper.pdf'
   }
 ]
 
