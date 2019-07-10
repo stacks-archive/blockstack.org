@@ -16,7 +16,6 @@ import dynamic from 'next/dynamic'
 const CookieBanner = dynamic(() => import('@components/cookie-banner'), {
   ssr: false
 })
-
 const Tracking = dynamic(() => import('@components/tracking'), {
   ssr: false
 })
@@ -31,8 +30,6 @@ const WrappedComponent = ({
   const ref = useRef(null)
   const size = useComponentSize(ref)
   const height = size && size.height
-
-  const defaultTemplate = !pageProps.meta.custom
 
   return (
     <HeaderHeightContext.Provider value={height}>
