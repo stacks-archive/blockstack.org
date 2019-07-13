@@ -30,7 +30,18 @@ const documents = [
       </>
     ),
     href: '/whitepaper-ch.pdf'
-  }
+  },
+    {
+    name: 'An Aggregation Algorithm for Blockstack',
+    description: (
+      <>
+        App Mining paper
+        <br />
+        December 2018
+      </>
+    ),
+    href: 'https://blog.blockstack.org/app-mining-game-theory-algorithm-design/'
+  },
 ]
 
 class PapersPage extends React.PureComponent {
