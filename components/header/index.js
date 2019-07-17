@@ -18,7 +18,6 @@ import Headroom from 'react-headroom'
 import Link from 'next/link'
 
 const HelloBar = ({ theme, ...rest }) => {
-  const { borderColor, lightColor, secondaryBg } = useHeaderTheme()
   const [hovered, bind] = useHover()
   return (
     <Box
@@ -43,8 +42,8 @@ const HelloBar = ({ theme, ...rest }) => {
         size="100%"
         zIndex={9}
         position="absolute"
-        aria-label="Learn about the anticipated Stacks Token sale at stackstoken.com"
-        title="Learn about the anticipated Stacks Token sale at stackstoken.com"
+        aria-label="Learn about the Stacks Token sale at stackstoken.com"
+        title="Learn about the Stacks Token sale at stackstoken.com"
       />
       <Wrapper alignItems="center" py={3} justifyContent="center">
         <Box
@@ -53,7 +52,7 @@ const HelloBar = ({ theme, ...rest }) => {
           fontSize={1}
           transition={transition}
         >
-          Learn about the anticipated Stacks Token sale
+          Learn about the Stacks Token sale
         </Box>
         <Box color="white" transform="translateY(1px)" pl={1}>
           <ArrowUpRightIcon size={14} />
@@ -216,7 +215,12 @@ const Header = ({
               <HeaderBar innerRef={innerRef}>
                 <Wrapper py={4}>
                   <Link href={'/'} prefetch>
-                    <Box is="a" href={'/'} aria-label="Link to homepage" transform="translateY(-1px)">
+                    <Box
+                      is="a"
+                      href={'/'}
+                      aria-label="Link to homepage"
+                      transform="translateY(-1px)"
+                    >
                       <Logo />
                     </Box>
                   </Link>

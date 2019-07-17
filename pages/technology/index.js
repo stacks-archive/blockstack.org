@@ -487,7 +487,7 @@ const sections = [
           children: 'Build an app and get paid instantly with App Mining'
         },
         text: {
-          children: `Every month we pay out $100,000 to the best apps built on Blockstack. The better your app, the more you earn.`
+          children: `Every month we pay out $200,000 to the best apps built on Blockstack. The better your app, the more you earn.`
         },
         actions: [
           {
