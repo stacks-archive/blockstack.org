@@ -5,6 +5,7 @@ import { useHover } from 'use-events'
 
 import ArrowUpRightIcon from 'mdi-react/ArrowUpRightIcon'
 import DownloadIcon from 'mdi-react/DownloadIcon'
+import Button from '@components/button'
 
 const version = '0.36.3'
 
@@ -48,37 +49,60 @@ const InstallItem = ({
       borderBottom="1px solid"
       borderColor="sky.50"
       alignItems="center"
-      justifyContent="flex-start"
+      justifyContent={['space-between', 'flex-start', 'flex-start']}
       is="a"
       style={{
         textDecoration: 'none'
       }}
       href={href}
       target="_blank"
-      flexDirection={['column', 'row', 'column', 'row']}
+      flexDirection="row"
       {...bind}
       {...rest}
     >
-      <Flex alignItems="center" minWidth={['100%', '50%', '100%', '20%']}>
-        <Box pr={5} flexShink={0}>
-          <Section.Title
-            style={{ whiteSpace: 'nowrap' }}
-            color={hovered ? 'blue' : 'ink'}
-            is="h5"
-          >
-            Browser {platform}
-          </Section.Title>
+      <Flex
+        alignItems={['flex-start', 'flex-start', 'center']}
+        flexDirection={['column', 'column', 'row']}
+        flexGrow={1}
+      >
+        <Flex is="span" alignItems="center" minWidth={['20%']}>
+          <Box pr={5} flexShink={0}>
+            <Section.Title
+              style={{ whiteSpace: 'nowrap' }}
+              color={hovered ? 'blue' : 'ink'}
+              is="h5"
+            >
+              Browser {platform}
+            </Section.Title>
+          </Box>
+        </Flex>
+        <Box is="span" flexShink={0} flexGrow={1}>
+          <Section.Text fontSize={1}>{description}</Section.Text>
         </Box>
       </Flex>
-      <Box minWidth={['100%', '50%', '100%', '80%']} flexShink={0} flexGrow={1}>
-        <Section.Text fontSize={1}>{description}</Section.Text>
+      <Box is="span">
+        <Button
+          minWidth="120px"
+          hovered={hovered}
+          fontSize={1}
+          py={1}
+          px={3}
+          variant="secondary"
+        >
+          {platform === 'Web' ? 'Open' : 'Download'}
+        </Button>
       </Box>
     </Flex>
   )
 }
 
-const Install = (props) =>
-  items.map((item, key) => <InstallItem {...props} key={key} {...item} />)
+const Install = (props) => (
+  <Box pt={3} borderTop="1px solid" borderColor="sky.50">
+    {items.map((item, key) => (
+      <InstallItem {...props} key={key} {...item} />
+    ))}
+  </Box>
+)
 
 const installSection = {
   variant: 'white',
@@ -103,9 +127,25 @@ const installSection = {
             children:
               'The Blockstack Browser allows you to create and manage Blockstack IDs and explore decentralized apps.'
           }
-        },
+        }
+      ]
+    },
+    {
+      width: 1,
+      pt: 5,
+      children: <Install width={1} />
+    },
+    {
+      justifyContent: 'flex-start',
+      width: 1,
+      panes: [
         {
           width: 1,
+          pt: [5, 5, 7],
+          title: {
+            is: 'h4',
+            children: 'Running a full node'
+          },
           text: {
             fontSize: 2,
             pt: 4,
@@ -127,11 +167,6 @@ const installSection = {
           }
         }
       ]
-    },
-
-    {
-      width: 1,
-      children: <Install width={1} />
     }
   ]
 }
