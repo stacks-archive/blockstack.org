@@ -8,7 +8,12 @@ import { Events } from '@components/events'
 import { Button } from '@components/button'
 import { AppsList } from '@components/apps-list'
 import { PhotoGrid } from '@components/photos-grid'
-import { photos, apps, appBuildersGrid, usersGrid } from '../../common/data/technology'
+import {
+  photos,
+  apps,
+  appBuildersGrid,
+  usersGrid
+} from '../../common/data/technology'
 import { AuthGraphic } from '@components/graphics/auth'
 import { AppMiningGraphic } from '@components/graphics/app-mining'
 import { Codeblock } from '@components/code'
@@ -81,7 +86,9 @@ const ResourceItem = ({ label, href, path, ...rest }) => {
           transition={transition}
           transform={hovered ? 'translateX(10px)' : 'none'}
         >
-          <Section.Title is="h4">{label}</Section.Title>
+          <Section.Title letterSpacing={'0.01rem'} is="h5" fontWeight={400}>
+            {label}
+          </Section.Title>
         </Box>
         <Box transition={transition} opacity={hovered ? 1 : 0} color="white">
           <ArrowRightIcon />
@@ -104,7 +111,7 @@ const Resources = ({ data, ...rest }) => {
           key={sectionKey}
         >
           <Box borderBottom="1px solid" borderColor="sky">
-            <Section.Title is="h5" fontFamily="brand" fontWeight={400} pb={5}>
+            <Section.Title is="h4" pb={5}>
               {section.title}
             </Section.Title>
           </Box>
