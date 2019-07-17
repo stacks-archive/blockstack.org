@@ -443,6 +443,7 @@ class HomePage extends React.Component {
             justifyContent: ['space-between', 'space-between', 'flex-start'],
             flexDirection: ['row', 'row', 'column'],
             alignItems: ['flex-end', 'flex-end', 'flex-start'],
+            width: ['100%', '100%', '30%'],
             title: {
               is: 'h2',
               pr: 5,
@@ -458,6 +459,7 @@ class HomePage extends React.Component {
             ]
           },
           {
+            width: ['100%', '100%', '70%'],
             children: (
               <Box pt={[5, 5, 0]}>
                 <News items={this.props.feed} users={this.props.users} />
