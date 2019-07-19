@@ -88,7 +88,7 @@ const AppColumn = ({ items, index, ...rest }) => {
     <AppIcon
       key={key}
       data={{
-        name: items[key].name,
+        name: items[key] && items[key].name,
         website: items[key].website,
         imgixImageUrl: items[key].imgixImageUrl
       }}
