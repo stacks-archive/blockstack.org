@@ -59,7 +59,10 @@ const NewsItem = ({ isLast, users, data }) => {
         dangerouslySetInnerHTML={{ __html: title }}
       />
       <Flex alignItems="center">
-        <User name={user.name} avatar={user.avatar_urls['24']} />
+        <User
+          name={user && user.name}
+          avatar={user && user.avatar_urls['24']}
+        />
         <Subtitle pt={1}> &bull; </Subtitle>
         <Subtitle pt={2} pl={2}>
           {dayjs(data.date).format('MMMM DD YYYY')}

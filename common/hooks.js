@@ -24,14 +24,15 @@ function getVisibility() {
 const useVisibility = () => {
   const [vis, setVis] = useState(true)
   useEffect(() => {
-    document && document.addEventListener('visibilitychange', () => {
-      const visible = getVisibility()
-      if (visible) {
-        setVis(true)
-      } else {
-        setVis(false)
-      }
-    })
+    document &&
+      document.addEventListener('visibilitychange', () => {
+        const visible = getVisibility()
+        if (visible) {
+          setVis(true)
+        } else {
+          setVis(false)
+        }
+      })
   }, [])
   return vis
 }
@@ -76,13 +77,15 @@ const useSectionVariant = () => {
         }
       },
       secondary: {
-        bg: 'blue.10',
-        borderColor: 'blue.10',
+        bg: 'white',
+        borderColor: 'sky.50',
         color: 'blue',
+        border: '1px solid',
         hovered: {
-          bg: 'blue.25',
-          borderColor: 'blue.25',
-          color: 'blue'
+          bg: 'blue',
+          borderColor: 'blue',
+          color: 'white',
+          border: '1px solid'
         }
       }
     }
