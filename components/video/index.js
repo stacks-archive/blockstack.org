@@ -4,34 +4,40 @@ import useIsInViewport from 'use-is-in-viewport'
 import { useVisibility } from '@common/hooks'
 import { useHover } from 'use-events'
 
-const Video = ({
-  playing,
-  src,
-  poster,
-  hideOverlay,
-  ratio = ['65%', '80%', '75%', '75%', `61.25%`],
-  videoWidth = ['120%', '160%', '140%', '150%', '110%'],
-  noHover,
-  ...rest
-}) => {
+const Video = ({ playing, src, poster, ...rest }) => {
   const [inView, targetRef] = useIsInViewport({
     modTop: '0px',
     modRight: '0px',
     modBottom: '-200px',
     modLeft: '0px'
   })
-  const [isHovering, bind] = useHover()
+  const [hovered, bind] = useHover()
   const isTabInView = useVisibility()
   const ref = React.useRef()
-  const hovered = !noHover && isHovering
+
   React.useEffect(() => {
-    if (inView && isTabInView && !playing) {
+    if (inView && !playing) {
       ref.current.play()
     } else {
       ref.current.pause()
     }
-  }, [inView, isTabInView, playing])
+  }, [inView])
 
+  React.useEffect(() => {
+    if (inView && isTabInView) {
+      ref.current.play()
+    } else {
+      ref.current.pause()
+    }
+  }, [isTabInView])
+
+  React.useEffect(() => {
+    if (inView && !playing) {
+      ref.current.play()
+    } else {
+      ref.current.pause()
+    }
+  }, [playing])
   return (
     <Box {...rest}>
       <div ref={targetRef}>
@@ -46,7 +52,7 @@ const Video = ({
           <Box
             width={1}
             height={'0px'}
-            pb={ratio}
+            pb={['65%', '80%', '75%', '75%', `61.25%`]}
             top={0}
             left={0}
             zIndex={98}
@@ -55,7 +61,10 @@ const Video = ({
             backgroundSize="cover"
             backgroundPosition="center center"
           />
-          <Box position="absolute" width={videoWidth}>
+          <Box
+            position="absolute"
+            width={['120%', '160%', '140%', '150%', '110%']}
+          >
             <video
               ref={ref}
               style={{
@@ -75,18 +84,16 @@ const Video = ({
               playsInline
             />
           </Box>
-          {!hideOverlay && (
-            <Box
-              position="absolute"
-              left={0}
-              top={0}
-              zIndex={100}
-              size="100%"
-              display="block"
-              bg="ink"
-              opacity={0.3}
-            />
-          )}
+          <Box
+            position="absolute"
+            left={0}
+            top={0}
+            zIndex={100}
+            size="100%"
+            display="block"
+            bg="ink"
+            opacity={0.3}
+          />
         </Flex>
       </div>
     </Box>

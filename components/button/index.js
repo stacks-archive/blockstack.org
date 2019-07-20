@@ -28,11 +28,9 @@ const Button = ({
   path,
   href,
   noIcon,
-  hovered: hoverProp,
   ...rest
 }) => {
-  const [isHovered, bind] = useHover()
-  const hovered = isHovered || hoverProp
+  const [hovered, bind] = useHover()
   const buttonStyles = getVariant(variant, hovered)
   const defaultProps = {
     borderRadius: '48px',

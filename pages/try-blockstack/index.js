@@ -321,7 +321,8 @@ class HomePage extends React.Component {
           ],
           {
             type: 'graphic',
-            src: 'https://blockstack-www.imgix.net/try-id-graphic.png'
+            src:
+              'https://blockstack-www.imgix.net/try-id-graphic.png'
           }
         ]
       },
@@ -393,46 +394,42 @@ class HomePage extends React.Component {
       },
       {
         variant: 'blue',
-        justifyContent: 'center',
-        alignItems: 'center',
-        flexDirection: 'column',
         panes: [
           {
             pr: 0,
-            width: 1,
-            textAlign: 'center',
             title: {
               is: 'h2',
-              mx: 'auto',
-              width: ['100%', '100%', '55%'],
               children: 'Take back your digital rights'
             },
             text: {
-              mx: 'auto',
-              width: ['100%', '100%', '55%'],
               children: `Say goodbye to: Data breaches and leaks, internet companies selling your data, AI manipulating your social feeds, and ad targeting following you around.`
-            },
-            actions: {
-              width: ['100%', '100%', 'unset'],
-              pt: 5,
-              mx: 'auto',
-              items: [
-                {
-                  width: ['100%', '100%', 'unset'],
-                  type: 'button',
-                  label: 'Create ID',
-                  href: 'https://browser.blockstack.org/sign-up'
-                },
-                {
-                  width: ['100%', '100%', 'unset'],
-                  type: 'button',
-                  label: 'Sign in',
-                  variant: 'secondary',
-                  href: 'https://browser.blockstack.org/sign-in'
-                }
-              ]
             }
-          }
+          },
+          [
+            {
+              justifyContent: 'center',
+              alignItems: 'center',
+              actions: {
+                width: ['100%', '100%', 'unset'],
+
+                items: [
+                  {
+                    width: ['100%', '100%', 'unset'],
+                    type: 'button',
+                    label: 'Create ID',
+                    href: 'https://browser.blockstack.org/sign-up'
+                  },
+                  {
+                    width: ['100%', '100%', 'unset'],
+                    type: 'button',
+                    label: 'Sign in',
+                    variant: 'secondary',
+                    href: 'https://browser.blockstack.org/sign-in'
+                  }
+                ]
+              }
+            }
+          ]
         ]
       },
       { ...installSection }
