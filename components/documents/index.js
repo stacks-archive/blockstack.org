@@ -13,8 +13,13 @@ const DocumentItem = ({
   label = 'View',
   isLast,
   style,
+  selectedLanguage,
+  language,
   ...rest
 }) => {
+  if (language && selectedLanguage && language !== selectedLanguage) {
+    return null
+  }
   let Icon = ArrowUpRightIcon
   const isPdf = href && href.toString().includes('pdf')
   if (isPdf) {
@@ -98,12 +103,76 @@ const DocumentItem = ({
   )
 }
 
-const Documents = ({ items, ...rest }) => (
-  <Flex flexWrap="wrap" {...rest}>
-    {items.map((item, key, arr) => (
-      <DocumentItem {...item} key={key} isLast={key + 1 === arr.length} />
-    ))}
-  </Flex>
-)
+const LanguageItem = ({ label, active, flag, code, isLast, ...rest }) => {
+  const [hovered, bind] = useHover()
+  return (
+    <Flex
+      alignItems="center"
+      height={28}
+      borderRadius={28}
+      px={3}
+      py={1}
+      mr={!isLast ? 3 : 0}
+      bg={active ? '#72A1CF' : hovered ? 'white' : 'sky.25'}
+      cursor={!active && hovered ? 'pointer' : 'unset'}
+      {...bind}
+      {...rest}
+    >
+      <Box
+        is="span"
+        style={{
+          backgroundSize: 'cover',
+          backgroundPosition: 'center center',
+          backgroundRepeat: 'no-repeat'
+        }}
+        transform="translateX(-3px)"
+        size={16}
+        mr={1}
+        borderRadius="16px"
+        className={`flag-icon flag-icon-${flag || code}`}
+      />
+
+      <Section.Text color={active ? 'white' : 'ink'} fontSize={1}>
+        {label}
+      </Section.Text>
+    </Flex>
+  )
+}
+
+const Documents = ({ items, languages, ...rest }) => {
+  const [selectedLanguage, setLanguage] = React.useState('en')
+  const handleLanguageSelect = (code) => setLanguage(code)
+  return (
+    <Box>
+      {languages && (
+        <Flex flexWrap="wrap" pb={4}>
+          {languages.map((lang, key) => (
+            <LanguageItem
+              active={lang.code === selectedLanguage}
+              key={key}
+              mb={3}
+              onClick={
+                lang.code !== selectedLanguage
+                  ? () => handleLanguageSelect(lang.code)
+                  : undefined
+              }
+              {...lang}
+            />
+          ))}
+        </Flex>
+      )}
+      <Flex flexWrap="wrap" {...rest}>
+        {items.map((item, key, arr) => (
+          <DocumentItem
+            selectedLanguage={languages && selectedLanguage}
+            {...item}
+            key={key}
+            isLast={key + 1 === arr.length}
+          />
+        ))}
+      </Flex>
+    </Box>
+  )
+}
 
 export { Documents, DocumentItem }
