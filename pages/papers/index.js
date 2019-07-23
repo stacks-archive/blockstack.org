@@ -8,17 +8,38 @@ const meta = {
   ogTitle: 'Technical Whitepapers and SIPs'
 }
 
+const languages = [
+  { code: 'en', label: 'English', flag: 'gb' },
+  { code: 'es', label: 'Español' },
+  { code: 'ch', label: '中文', flag: 'cn' },
+  { code: 'jp', label: '日本人', flag: 'jp' },
+  { code: 'ko', label: '한국어', flag: 'kr' }
+]
+
 const documents = [
   {
     name: 'The Blockstack Decentralized Computing Network',
     description: (
       <>
-        Whitepaper Version 2.0
+        Whitepaper v2.0
         <br />
         May 2019
       </>
     ),
-    href: '/whitepaper.pdf'
+    href: '/whitepaper.pdf',
+    language: 'en'
+  },
+  {
+    name: 'La Red Computacional Descentralizada de Blockstack',
+    description: (
+      <>
+        Whitepaper Técnico de Blockstack&nbsp;v2.0
+        <br />
+        Mayo 2019
+      </>
+    ),
+    href: '/whitepaper-es.pdf',
+    language: 'es'
   },
   {
     name: 'Blockstack 去中心化计算网络',
@@ -29,9 +50,34 @@ const documents = [
         May 2019
       </>
     ),
-    href: '/whitepaper-ch.pdf'
+    href: '/whitepaper-ch.pdf',
+    language: 'ch'
   },
-    {
+  {
+    name: 'ブロックスタック分散コンピューティングネットワーク',
+    description: (
+      <>
+        テクニカルホワイトペーパー2.0
+        <br />
+        2019年 5月
+      </>
+    ),
+    href: '/whitepaper-jp.pdf',
+    language: 'jp'
+  },
+  {
+    name: '블록스택 탈중앙 컴퓨팅 네트워크',
+    description: (
+      <>
+        기술 백서 2.0
+        <br />
+        2019년 5월
+      </>
+    ),
+    href: '/whitepaper-ko.pdf',
+    language: 'ko'
+  },
+  {
     name: 'An Aggregation Algorithm for Blockstack',
     description: (
       <>
@@ -40,8 +86,10 @@ const documents = [
         December 2018
       </>
     ),
-    href: 'https://blog.blockstack.org/app-mining-game-theory-algorithm-design/'
-  },
+    href:
+      'https://blog.blockstack.org/app-mining-game-theory-algorithm-design/',
+    language: 'en'
+  }
 ]
 
 class PapersPage extends React.PureComponent {
@@ -74,7 +122,7 @@ class PapersPage extends React.PureComponent {
         </Section>
         <Section py={7} minHeight={0} bg="#C3DBEE">
           <Section.Pane width={1}>
-            <Documents items={documents} />
+            <Documents languages={languages} items={documents} />
           </Section.Pane>
         </Section>
       </>
