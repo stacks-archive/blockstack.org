@@ -42,7 +42,7 @@ const videos = [
     title: 'Ari Paul and Muneeb Ali on Scalability, Custody, and Security',
     subtitle: 'The Stacks Podcast',
     duration: '52:18',
-    image: 'https://blockstack-www.imgix.net/ari-podcast.png',
+    image: 'https://blockstack-www.imgix.net/videos/ari-paul-thumb.png',
     width: [1, `calc(50% - 12px)`, `calc(66.6666666% - 12px)`],
     href: 'https://stacks.co/podcast/episodes/2'
   },
@@ -50,8 +50,7 @@ const videos = [
     title: 'Welcome to the New Internet',
     subtitle: 'Muneeb Ali, TEDx New York',
     duration: '26:15',
-    image:
-      'https://blockstack-www.imgix.net/video-still-welcome-to-the-new-internet.png',
+    image: 'https://blockstack-www.imgix.net/videos/muneeb-1-thumb.png',
     width: [1, `calc(50% - 12px)`, `calc(33.3333333% - 12px)`],
     href: 'https://www.youtube.com/watch?v=qtOIh93Hvuw'
   },
@@ -59,7 +58,7 @@ const videos = [
     title: 'Life After Google',
     subtitle: 'George Gilder, Blockstack Summit',
     duration: '26:15',
-    image: 'https://blockstack-www.imgix.net/video-still-life-after-google.png',
+    image: 'https://blockstack-www.imgix.net/videos/george-thumb.png',
     width: [1, `calc(50% - 12px)`, `calc(33.3333333% - 12px)`],
     href: 'https://www.youtube.com/watch?v=M3Nn8nfXuB0'
   },
@@ -67,7 +66,7 @@ const videos = [
     title: 'Welcome to Decentralized Computing',
     subtitle: 'Muneeb Ali, ECOH Conference',
     duration: '26:15',
-    image: 'https://blockstack-www.imgix.net/video-still-muneeb-kuwait.png',
+    image: 'https://blockstack-www.imgix.net/videos/muneeb-2-thumb.png',
     width: [1, `calc(50% - 12px)`, `calc(66.6666666% - 12px)`],
     href: 'https://www.youtube.com/watch?v=hHFcDjeugYc'
   }
