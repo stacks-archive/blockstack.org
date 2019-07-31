@@ -163,12 +163,17 @@ const HeroGraphic = ({ ...rest }) => {
   const codeIsInView = inView === 'code'
 
   return (
-    <Box {...rest} flexGrow={1} width={1} position="relative">
+    <Box
+      {...rest}
+      flexGrow={1}
+      position={['absolute', 'absolute', 'relative']}
+      width={1}
+    >
       <Box
         width={['320px', '320px', '415px']}
         position="relative"
         zIndex={phoneIsInView ? 2 : 1}
-        pt={9}
+        pt={[9]}
         mt={[8, 8, 0]}
         {...styles}
       >
@@ -266,7 +271,7 @@ const HeroContent = ({ ...rest }) => {
           </Button>
         </Flex>
       </Section.Pane>
-      <Section.Pane>
+      <Section.Pane minHeight={['460px']}>
         <HeroGraphic />
       </Section.Pane>
     </>
@@ -654,7 +659,7 @@ const sections = [
 const Hero = ({ ...rest }) => (
   <>
     <Section
-      minHeight="calc(100vh - 164px)"
+      minHeight={['unset', 'unset', 'calc(100vh - 164px)']}
       variant="ink"
       width={1}
       pt="180px"
@@ -690,7 +695,9 @@ class TechnologyPage extends React.Component {
         <Box borderBottom="1px solid #1A1A1A">
           <Hero />
         </Box>
-        <Sections sections={sections} />
+        <Box position="relative" zIndex={99}>
+          <Sections sections={sections} />
+        </Box>
       </>
     )
   }
