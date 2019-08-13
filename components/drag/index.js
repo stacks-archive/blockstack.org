@@ -40,7 +40,7 @@ const items = [
     ratio: '56.25%'
   },
   {
-    src: 'https://blockstack-www.imgix.net/about-hero/02.png',
+    src: 'https://blockstack-www.imgix.net/about-hero/02-hr.png',
     width: ['200px', '300px', '300px', '576px'],
     type: 'image'
   }
