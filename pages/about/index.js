@@ -8,7 +8,13 @@ import { PersonsList } from '@components/advisors'
 import { PhotoGrid } from '@components/photos-grid'
 import { Sections } from '@components/sections'
 import { Team } from '@components/team'
-import { photos1, photos2, ecosystemPartners, advisors } from '../../common/data/about'
+import {
+  photos1,
+  photos2,
+  ecosystemPartners,
+  advisors
+} from '../../common/data/about'
+import { Drag } from '@components/drag'
 
 const sections = [
   {
@@ -290,7 +296,8 @@ class AboutPage extends React.Component {
   render() {
     return (
       <>
-        <AboutHero />
+        {/*<AboutHero />*/}
+        <Drag />
         <Sections sections={sections} />
       </>
     )

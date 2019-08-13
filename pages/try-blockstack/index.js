@@ -332,8 +332,11 @@ class HomePage extends React.Component {
         py: 8,
         panes: [
           {
-            type: 'graphic',
-            src: 'https://blockstack-www.imgix.net/blurred-items.png'
+            type: 'video',
+            src: '/static/videos/graphic-data-ownership.mp4',
+            videoProps: {
+              ratio: '74.5%'
+            }
           },
           [
             {
@@ -385,9 +388,12 @@ class HomePage extends React.Component {
             }
           ],
           {
-            type: 'graphic',
+            type: 'video',
             pt: 0,
-            src: 'https://blockstack-www.imgix.net/share-data-graphic.png'
+            src: '/static/videos/graphic-share-connect.mp4',
+            videoProps: {
+              ratio: '125.409%'
+            }
           }
         ]
       },

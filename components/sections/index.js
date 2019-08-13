@@ -5,6 +5,7 @@ import { TextLink } from '@components/section/index'
 import { useInViewAnimationStyles } from '@common/hooks'
 import { Button } from '@components/button/index'
 import { titleStyles } from '@common/theme'
+import { Video } from '@components/video'
 const Pill = ({ children, ...rest }) => (
   <Box borderRadius="25px" px={2} py={1} fontSize={1} bg="blue.10" color="blue">
     {children}
@@ -117,7 +118,7 @@ const Content = ({ pane, isFirst, inViewAnimationStyles, ...rest }) => {
       ) : pane.actions && pane.actions.length ? (
         <Actions items={pane.actions} {...inViewAnimationStyles} />
       ) : null}
-      {pane.type === 'graphic' && (
+      {pane.type === 'graphic' || pane.type === 'video' ? (
         <Box
           pt={8}
           pb={8}
@@ -126,15 +127,25 @@ const Content = ({ pane, isFirst, inViewAnimationStyles, ...rest }) => {
           {...inViewAnimationStyles}
           {...paneProps}
         >
-          <Box
-            is="img"
-            display="block"
-            maxWidth="100%"
-            src={pane.src + '?auto=format'}
-            alt={pane.alt}
-          />
+          {pane.type === 'graphic' ? (
+            <Box
+              is="img"
+              display="block"
+              maxWidth="100%"
+              src={pane.src + '?auto=format'}
+              alt={pane.alt}
+            />
+          ) : (
+            <Video
+              noHover
+              videoWidth="100%"
+              {...pane.videoProps}
+              hideOverlay
+              src={pane.src}
+            />
+          )}
         </Box>
-      )}
+      ) : null}
     </>
   )
 }
