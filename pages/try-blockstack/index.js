@@ -328,7 +328,7 @@ class HomePage extends React.Component {
       {
         variant: 'white',
         minHeight: '400px',
-        bg: 'sky.10',
+        bg: '#FDFCFF',
         py: 8,
         panes: [
           {

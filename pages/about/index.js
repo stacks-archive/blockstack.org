@@ -296,8 +296,8 @@ class AboutPage extends React.Component {
   render() {
     return (
       <>
-        {/*<AboutHero />*/}
-        <Drag />
+        <AboutHero feature={() => <Drag />} />
+
         <Sections sections={sections} />
       </>
     )

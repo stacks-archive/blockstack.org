@@ -270,8 +270,14 @@ const HeroGrid = ({ ...rest }) => {
 
 const HeroTitle = ({ ...rest }) => {
   return (
-    <Section.Pane width={1} justifyContent="center" alignItems="center">
-      <Section.Title maxWidth={['80%','100%','75%',]}>
+    <Section.Pane
+      pt={[80, 100, 184]}
+      pb={80}
+      width={1}
+      justifyContent="center"
+      alignItems="center"
+    >
+      <Section.Title maxWidth={['80%', '100%', '90%']}>
         Blockstack is leading the way to a decentralized computing&nbsp;era
       </Section.Title>
     </Section.Pane>
@@ -311,7 +317,7 @@ const HeroFeature = ({ transform, mobileTrans, innerRef, ...rest }) => {
   )
 }
 
-const AboutHero = ({ ...rest }) => {
+const AboutHero = ({ feature: Feature, ...rest }) => {
   const [props, set] = useSpring(() => ({
     xy: [0, 0],
     config: { mass: 5, tension: 350, friction: 120 }
@@ -345,7 +351,6 @@ const AboutHero = ({ ...rest }) => {
       <Section
         flexDirection="column"
         textAlign="center"
-        minHeight={`calc(70vh - 112px)`}
         variant="white"
         width={1}
         alignItems="center"
@@ -354,11 +359,7 @@ const AboutHero = ({ ...rest }) => {
         <HeroTitle />
       </Section>
       <Section noWrapper>
-        <HeroFeature
-          mobileTrans={props.xy.interpolate(trans2)}
-          transform={props.xy.interpolate(trans1)}
-          innerRef={ref}
-        />
+        <Feature />
       </Section>
     </>
   )
