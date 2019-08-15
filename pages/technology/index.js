@@ -463,6 +463,7 @@ const sections = [
     bg: 'sky.10',
     panes: [
       {
+        width: '40%',
         title: {
           is: 'h2',
           children: 'Clarity Smart contracts'
@@ -480,8 +481,9 @@ const sections = [
         ]
       },
       {
+        width: '60%',
         type: 'graphic',
-        src: 'https://blockstack-www.imgix.net/smart-contract-graphic.png',
+        src: 'https://blockstack-www.imgix.net/graphic-smart-contracts.png',
         alt: 'Graphic for Blockstack smart contracts.'
       }
     ]

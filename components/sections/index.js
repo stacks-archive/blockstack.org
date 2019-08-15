@@ -125,13 +125,14 @@ const Content = ({ pane, isFirst, inViewAnimationStyles, ...rest }) => {
           pl={isFirst ? 0 : padding}
           pr={isFirst ? padding : 0}
           {...inViewAnimationStyles}
-          {...paneProps}
+
         >
           {pane.type === 'graphic' ? (
             <Box
               is="img"
               display="block"
               maxWidth="100%"
+              width="100%"
               src={pane.src + '?auto=format'}
               alt={pane.alt}
             />
