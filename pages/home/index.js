@@ -263,7 +263,8 @@ const Hero = ({ apps = [], ...rest }) => {
   return (
     <>
       <Section
-        minHeight="0"
+        bg="#F4F4FC"
+        minHeight="calc(100vh - 221px - 325px)"
         py={undefined}
         mt={'120px'}
         parentOverflow="hidden"
@@ -275,7 +276,17 @@ const Hero = ({ apps = [], ...rest }) => {
       >
         <HeroContent apps={apps} />
       </Section>
-      <HeroVideo />
+      <Box bg="#F4F4FC">
+        <Box
+          maxWidth="100%"
+          minHeight={[225, 225, 325]}
+          backgroundImage="url(https://blockstack-www.imgix.net/apps-pattern-high.png?auto=format)"
+          backgroundRepeat="repeat-x"
+          backgroundPosition="top center"
+          backgroundSize={['1300px', '1300px', '1500px']}
+          title="A display of Blockstack apps."
+        />
+      </Box>
     </>
   )
 }
@@ -435,7 +446,7 @@ class HomePage extends React.Component {
       },
       {
         variant: 'white',
-        py: 8,
+        py: 128,
         minHeight: 0,
         alignItems: 'flex-start',
         panes: [
@@ -452,6 +463,7 @@ class HomePage extends React.Component {
             },
             actions: [
               {
+                pt: 3,
                 type: 'link',
                 label: 'View all news',
                 href: 'https://blog.blockstack.org'

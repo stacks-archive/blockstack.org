@@ -12,7 +12,7 @@ const version = '0.36.3'
 const items = [
   {
     platform: 'Web',
-    description: 'No install. Recommended for most users',
+    description: 'No installation, recommended for most users',
     href: 'https://browser.blockstack.org/',
     icon: ArrowUpRightIcon
   },
@@ -44,8 +44,8 @@ const InstallItem = ({
   return (
     <Flex
       width={1}
-      pb={3}
-      mb={3}
+      pb={5}
+      mb={5}
       borderBottom="1px solid"
       borderColor="sky.50"
       alignItems="center"
@@ -97,7 +97,7 @@ const InstallItem = ({
 }
 
 const Install = (props) => (
-  <Box pt={3} borderTop="1px solid" borderColor="sky.50">
+  <Box pt={5} borderTop="1px solid" borderColor="sky.50">
     {items.map((item, key) => (
       <InstallItem {...props} key={key} {...item} />
     ))}
@@ -116,7 +116,7 @@ const installSection = {
       panes: [
         {
           width: 1,
-          pb: 0,
+          pb: 4,
           justifyContent: 'flex-start',
           title: {
             is: 'h4',
@@ -124,6 +124,8 @@ const installSection = {
           },
           text: {
             pb: 0,
+            pt: 2,
+            fontSize: 16,
             children:
               'The Blockstack Browser allows you to create and manage Blockstack IDs and explore decentralized apps.'
           }
@@ -148,7 +150,7 @@ const installSection = {
           },
           text: {
             fontSize: 2,
-            pt: 4,
+            pt: 3,
             pb: 5,
             children: (
               <>

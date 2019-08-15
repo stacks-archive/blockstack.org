@@ -74,12 +74,12 @@ const AuthGraphic = () => {
           }
         >
           <Box>
-            <Title is="h4">Sign In</Title>
+            <Title is="h4" fontSize={21} fontWeight={400}>Sign In</Title>
           </Box>
           <Box mt={4}>
             <Text fontSize={1}>
-              “Photos” (photos.app) wants to read your basic info and publish
-              data stored for this app.
+              “Stealthy” (stealthy.im) wants to <b>read your basic info</b> and{' '}
+              <b>publish data stored for this app</b>.
             </Text>
           </Box>
           <Box mt={4}>
