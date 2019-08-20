@@ -32,9 +32,11 @@ const UserID = ({ ...rest }) => {
           size={32}
         />
       </Box>
-      <Title is="h5">michelle.id</Title>
+      <Title is="h5" fontSize="14px">
+        michelle.id
+      </Title>
       <Box pt={1} ml="auto" color="sky">
-        <ChevronRightIcon />
+        <ChevronRightIcon size={18} />
       </Box>
     </Flex>
   )
@@ -60,7 +62,7 @@ const AuthGraphic = () => {
           <Codeblock hideNumbers language="jsx" value={code} />
         </Box>
         <Box
-          p={5}
+          p={6}
           position="absolute"
           bottom="-25px"
           right={0}
@@ -74,16 +76,20 @@ const AuthGraphic = () => {
           }
         >
           <Box>
-            <Title is="h4" fontSize={21} fontWeight={400}>Sign In</Title>
+            <Title is="h4" fontSize={21} fontWeight={400} color="ink.50">
+              Sign In
+            </Title>
           </Box>
           <Box mt={4}>
-            <Text fontSize={1}>
+            <Text fontSize={1} color="ink.50">
               “Stealthy” (stealthy.im) wants to <b>read your basic info</b> and{' '}
               <b>publish data stored for this app</b>.
             </Text>
           </Box>
           <Box mt={4}>
-            <Text fontSize={1}>Select an ID to use: </Text>
+            <Text fontSize={1} color="ink.50">
+              Select an ID to use:{' '}
+            </Text>
           </Box>
           <UserID />
         </Box>
