@@ -207,7 +207,13 @@ const TextLinkComponent = ({ path, children }) =>
  * @prop {Boolean} hideArrow - by default there is a chevron showing, this hides it
  * @prop {Object} rest - all additional props to be passed to the component
  */
-const TextLink = ({ action, hideArrow, hovered: hoverProp, ...rest }) => {
+const TextLink = ({
+  action,
+  hideArrow,
+  hovered: hoverProp,
+  pt = 4,
+  ...rest
+}) => {
   const { label, href, path, ...actionProps } = action
   if (href && path) {
     console.error(
@@ -226,7 +232,7 @@ const TextLink = ({ action, hideArrow, hovered: hoverProp, ...rest }) => {
         style={{ textDecoration: 'none' }}
         color="blue"
         alignItems="center"
-        pt={4}
+        pt={pt}
         fontSize={2}
         target={href ? '_blank' : undefined}
         href={path || href}

@@ -451,9 +451,9 @@ class HomePage extends React.Component {
         alignItems: 'flex-start',
         panes: [
           {
-            justifyContent: ['space-between', 'space-between', 'flex-start'],
-            flexDirection: ['row', 'row', 'column'],
-            alignItems: ['flex-end', 'flex-end', 'flex-start'],
+            justifyContent: 'flex-start',
+            flexDirection: 'column',
+            alignItems: 'flex-start',
             width: ['100%', '100%', '30%'],
             title: {
               is: 'h2',
@@ -461,14 +461,16 @@ class HomePage extends React.Component {
               pb: 0,
               children: 'Latest news'
             },
-            actions: [
-              {
-                pt: 3,
-                type: 'link',
-                label: 'View all news',
-                href: 'https://blog.blockstack.org'
-              }
-            ]
+            actions: {
+              pt: [0],
+              items: [
+                {
+                  type: 'link',
+                  label: 'View all news',
+                  href: 'https://blog.blockstack.org'
+                }
+              ]
+            }
           },
           {
             width: ['100%', '100%', '70%'],
