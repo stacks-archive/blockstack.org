@@ -264,7 +264,7 @@ const Hero = ({ apps = [], ...rest }) => {
     <>
       <Section
         bg="#F4F4FC"
-        minHeight="calc(100vh - 221px - 325px)"
+
         py={undefined}
         mt={'120px'}
         parentOverflow="hidden"
@@ -276,7 +276,7 @@ const Hero = ({ apps = [], ...rest }) => {
       >
         <HeroContent apps={apps} />
       </Section>
-      <Box bg="#F4F4FC">
+      <Box bg="#F4F4FC" pt={7}>
         <Box
           maxWidth="100%"
           minHeight={[225, 225, 325]}
