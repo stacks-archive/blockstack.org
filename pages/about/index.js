@@ -8,13 +8,48 @@ import { PersonsList } from '@components/advisors'
 import { PhotoGrid } from '@components/photos-grid'
 import { Sections } from '@components/sections'
 import { Team } from '@components/team'
+import { Drag } from '@components/drag'
 import {
   photos1,
   photos2,
   ecosystemPartners,
   advisors
 } from '../../common/data/about'
-import { Drag } from '@components/drag'
+
+const dragItems = [
+  {
+    src: '/static/videos/about-hero-muneeb-tedx.mp4',
+    width: ['200px', '300px', '300px', '600px'],
+    ratio: '68.44%',
+    type: 'video'
+  },
+  {
+    src: 'https://blockstack-www.imgix.net/about-hero/04.png',
+    width: ['200px', '300px', '300px', '600px'],
+    type: 'image'
+  },
+  {
+    src: 'https://blockstack-www.imgix.net/about-hero/03.png',
+    width: ['200px', '300px', '300px', '720px'],
+    type: 'image'
+  },
+  {
+    src: 'https://blockstack-www.imgix.net/about-hero/01.png',
+    width: ['200px', '300px', '300px', '622px'],
+    type: 'image'
+  },
+  {
+    src: '/static/videos/about-hero-snowden.mp4',
+    width: ['200px', '300px', '300px', '622px'],
+    type: 'video',
+    ratio: '56.25%'
+  },
+  {
+    src: 'https://blockstack-www.imgix.net/about-hero/02-hr.png',
+    width: ['200px', '300px', '300px', '576px'],
+    type: 'image'
+  }
+]
 
 const sections = [
   {
@@ -296,8 +331,7 @@ class AboutPage extends React.Component {
   render() {
     return (
       <>
-        <AboutHero feature={() => <Drag />} />
-
+        <AboutHero feature={() => <Drag items={dragItems} />} />
         <Sections sections={sections} />
       </>
     )

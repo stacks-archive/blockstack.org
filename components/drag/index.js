@@ -7,46 +7,9 @@ import { Video } from '@components/video'
 import useComponentSize from '@rehooks/component-size'
 import { useWindowSize } from 'react-use'
 
-const Item = ({ ...rest }) => {
-  return <Box>Item</Box>
-}
 
-const items = [
-  {
-    src: '/static/videos/about-hero-muneeb-tedx.mp4',
-    width: ['200px', '300px', '300px', '600px'],
-    ratio: '68.44%',
-    type: 'video'
-  },
-  {
-    src: 'https://blockstack-www.imgix.net/about-hero/04.png',
-    width: ['200px', '300px', '300px', '600px'],
-    type: 'image'
-  },
-  {
-    src: 'https://blockstack-www.imgix.net/about-hero/03.png',
-    width: ['200px', '300px', '300px', '720px'],
-    type: 'image'
-  },
-  {
-    src: 'https://blockstack-www.imgix.net/about-hero/01.png',
-    width: ['200px', '300px', '300px', '622px'],
-    type: 'image'
-  },
-  {
-    src: '/static/videos/about-hero-snowden.mp4',
-    width: ['200px', '300px', '300px', '622px'],
-    type: 'video',
-    ratio: '56.25%'
-  },
-  {
-    src: 'https://blockstack-www.imgix.net/about-hero/02-hr.png',
-    width: ['200px', '300px', '300px', '576px'],
-    type: 'image'
-  }
-]
 
-const Drag = ({ ...rest }) => {
+const Drag = ({ items, ...rest }) => {
   const [{ x }, set] = useSpring(() => ({
     x: 0,
     config: { ...config.default, tension: 200, friction: 30 }
@@ -72,12 +35,13 @@ const Drag = ({ ...rest }) => {
   return (
     <Box
       width={1}
-      my={8}
+      my={[5, 5, 8]}
       overflow="hidden"
       cursor="grab"
       maxWidth="100vw"
       pl={[5, 5, 9]}
       {...bind()}
+      {...rest}
     >
       <Flex
         is={animated.div}
