@@ -44,8 +44,8 @@ const InstallItem = ({
   return (
     <Flex
       width={1}
-      pb={5}
-      mb={5}
+      pb={4}
+      mb={4}
       borderBottom="1px solid"
       borderColor="sky.50"
       alignItems="center"
@@ -77,12 +77,13 @@ const InstallItem = ({
           </Box>
         </Flex>
         <Box is="span" flexShink={0} flexGrow={1}>
-          <Section.Text fontSize={1}>{description}</Section.Text>
+          <Section.Text fontSize={1} color="#637282">{description}</Section.Text>
         </Box>
       </Flex>
       <Box is="span">
         <Button
-          minWidth="120px"
+          minWidth="97px"
+          minHeight={32}
           hovered={hovered}
           fontSize={1}
           py={1}
@@ -97,7 +98,7 @@ const InstallItem = ({
 }
 
 const Install = (props) => (
-  <Box pt={5} borderTop="1px solid" borderColor="sky.50">
+  <Box pt={4} borderTop="1px solid" borderColor="sky.50">
     {items.map((item, key) => (
       <InstallItem {...props} key={key} {...item} />
     ))}
