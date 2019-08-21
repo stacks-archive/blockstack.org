@@ -163,12 +163,7 @@ const HeroGraphic = ({ ...rest }) => {
   const codeIsInView = inView === 'code'
 
   return (
-    <Box
-      {...rest}
-      flexGrow={1}
-      position={['absolute', 'absolute', 'relative']}
-      width={1}
-    >
+    <Box {...rest} flexGrow={1} width={[1,1,720]} position={['absolute', 'absolute', 'relative']}>
       <Box
         width={['320px', '320px', '415px']}
         position="relative"
@@ -190,6 +185,7 @@ const HeroGraphic = ({ ...rest }) => {
           'translate3d(150px,12px,0)',
           'translate3d(200px,12px,0)'
         ]}
+        width={1}
         position="absolute"
         left={0}
         top={0}
@@ -271,7 +267,7 @@ const HeroContent = ({ ...rest }) => {
           </Button>
         </Flex>
       </Section.Pane>
-      <Section.Pane minHeight={['460px']}>
+      <Section.Pane position="relative" minHeight={['460px']}>
         <HeroGraphic />
       </Section.Pane>
     </>
@@ -463,7 +459,7 @@ const sections = [
     bg: 'sky.10',
     panes: [
       {
-        width: '40%',
+        width: [1, 1, '50%'],
         title: {
           is: 'h2',
           children: 'Clarity Smart contracts'
@@ -481,9 +477,11 @@ const sections = [
         ]
       },
       {
-        width: '60%',
+        width: [1, 1, '50%'],
+        pl: 0,
+        pr: 0,
         type: 'graphic',
-        src: 'https://blockstack-www.imgix.net/graphic-smart-contracts.png',
+        src: 'https://blockstack-www.imgix.net/graphic-smart-contract.png',
         alt: 'Graphic for Blockstack smart contracts.'
       }
     ]
@@ -694,10 +692,14 @@ class TechnologyPage extends React.Component {
   render() {
     return (
       <>
-        <Box borderBottom="1px solid #1A1A1A">
+        <Box
+          maxWidth="100vw"
+          overflow="hidden"
+          borderBottom="1px solid #1A1A1A"
+        >
           <Hero />
         </Box>
-        <Box position="relative" zIndex={99}>
+        <Box overflow="hidden" position="relative" zIndex={99}>
           <Sections sections={sections} />
         </Box>
       </>

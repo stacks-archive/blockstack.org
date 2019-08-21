@@ -65,10 +65,10 @@ const AuthGraphic = () => {
           p={6}
           position="absolute"
           bottom="-25px"
-          right={0}
+          right={[0, 0, '-15px', 0]}
           bg="white"
           borderRadius="8px"
-          width={['75%', '75%', '65%']}
+          width={['75%', '75%', '85%', '65%']}
           zIndex={5}
           transform="translateY(20%)"
           boxShadow={
