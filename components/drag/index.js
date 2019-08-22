@@ -7,8 +7,6 @@ import { Video } from '@components/video'
 import useComponentSize from '@rehooks/component-size'
 import { useWindowSize } from 'react-use'
 
-
-
 const Drag = ({ items, ...rest }) => {
   const [{ x }, set] = useSpring(() => ({
     x: 0,
@@ -65,7 +63,13 @@ const Drag = ({ items, ...rest }) => {
               {item.type === 'image' ? (
                 <Image src={item.src} />
               ) : (
-                <Video noHover hideOverlay src={item.src} ratio={item.ratio} />
+                <Video
+                  noHover
+                  hideOverlay
+                  src={item.src}
+                  ratio={item.ratio}
+                  poster={item.poster}
+                />
               )}
             </Box>
           ))}

@@ -19,6 +19,7 @@ import {
 const dragItems = [
   {
     src: '/static/videos/about-hero-muneeb-tedx.mp4',
+    poster: 'https://blockstack-www.imgix.net/muneeb-video-poster.png',
     width: ['200px', '300px', '300px', '600px'],
     ratio: '68.44%',
     type: 'video'
@@ -40,6 +41,7 @@ const dragItems = [
   },
   {
     src: '/static/videos/about-hero-snowden.mp4',
+    poster: 'https://blockstack-www.imgix.net/summit-video-poster.png',
     width: ['200px', '300px', '300px', '622px'],
     type: 'video',
     ratio: '56.25%'
