@@ -270,82 +270,27 @@ const HeroGrid = ({ ...rest }) => {
 
 const HeroTitle = ({ ...rest }) => {
   return (
-    <Section.Pane width={1} justifyContent="center" alignItems="center">
-      <Section.Title maxWidth={['80%','100%','75%',]}>
+    <Section.Pane
+      minHeight="25vh"
+      pt={5}
+      width={1}
+      justifyContent="center"
+      alignItems="center"
+    >
+      <Section.Title maxWidth={['80%', '100%', '90%']}>
         Blockstack is leading the way to a decentralized computing&nbsp;era
       </Section.Title>
     </Section.Pane>
   )
 }
 
-const HeroFeature = ({ transform, mobileTrans, innerRef, ...rest }) => {
-  const inViewAnimationStyles = useInViewAnimationStyles()
-
-  return (
-    <Box {...inViewAnimationStyles}>
-      <div ref={innerRef}>
-        <Box
-          style={{
-            overflowY: 'visible',
-            overflowX: 'hidden'
-          }}
-          pt={5}
-        >
-          <Box
-            display={['none', 'none', 'block']}
-            is={a.div}
-            style={{ transform }}
-          >
-            <HeroGrid />
-          </Box>
-          <Box
-            is={a.div}
-            display={['block', 'block', 'none']}
-            style={{ transform: mobileTrans }}
-          >
-            <MobileHeroGrid />
-          </Box>
-        </Box>
-      </div>
-    </Box>
-  )
-}
-
-const AboutHero = ({ ...rest }) => {
-  const [props, set] = useSpring(() => ({
-    xy: [0, 0],
-    config: { mass: 5, tension: 350, friction: 120 }
-  }))
-  const trans1 = (x, y) => `translate3d(${y / -15}%,0,0)`
-  const trans2 = (x, y) => `translate3d(${y / -5}%,0,0)`
-
-  const [ref, inView, entry] = useInView({
-    threshold: 0
-  })
-
-  const handleScroll = useCallback(
-    (e) => {
-      if (inView && typeof window !== 'undefined') {
-        set({ xy: [window.scrollX, window.scrollY] })
-      }
-    },
-    [inView]
-  )
-
-  React.useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [inView])
-
+const AboutHero = ({ feature: Feature, ...rest }) => {
   return (
     <>
       <Box position="fixed" bg="ink" color="white" />
       <Section
         flexDirection="column"
         textAlign="center"
-        minHeight={`calc(70vh - 112px)`}
         variant="white"
         width={1}
         alignItems="center"
@@ -354,11 +299,7 @@ const AboutHero = ({ ...rest }) => {
         <HeroTitle />
       </Section>
       <Section noWrapper>
-        <HeroFeature
-          mobileTrans={props.xy.interpolate(trans2)}
-          transform={props.xy.interpolate(trans1)}
-          innerRef={ref}
-        />
+        <Feature />
       </Section>
     </>
   )

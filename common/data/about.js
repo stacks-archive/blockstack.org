@@ -19,7 +19,7 @@ const photos2 = [
   },
   {
     src:
-      'https://blockstack-www.imgix.net/photos/blockstack-team-summer-2018-retreat.jpg',
+      'https://blockstack-www.imgix.net/photos/vail-003.jpg',
     width: 1 / 2
   }
 ]

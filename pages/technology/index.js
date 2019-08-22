@@ -8,7 +8,12 @@ import { Events } from '@components/events'
 import { Button } from '@components/button'
 import { AppsList } from '@components/apps-list'
 import { PhotoGrid } from '@components/photos-grid'
-import { photos, apps, appBuildersGrid, usersGrid } from '../../common/data/technology'
+import {
+  photos,
+  apps,
+  appBuildersGrid,
+  usersGrid
+} from '../../common/data/technology'
 import { AuthGraphic } from '@components/graphics/auth'
 import { AppMiningGraphic } from '@components/graphics/app-mining'
 import { Codeblock } from '@components/code'
@@ -81,7 +86,9 @@ const ResourceItem = ({ label, href, path, ...rest }) => {
           transition={transition}
           transform={hovered ? 'translateX(10px)' : 'none'}
         >
-          <Section.Title is="h4">{label}</Section.Title>
+          <Section.Title letterSpacing={'0.01rem'} is="h5" fontWeight={400}>
+            {label}
+          </Section.Title>
         </Box>
         <Box transition={transition} opacity={hovered ? 1 : 0} color="white">
           <ArrowRightIcon />
@@ -104,7 +111,7 @@ const Resources = ({ data, ...rest }) => {
           key={sectionKey}
         >
           <Box borderBottom="1px solid" borderColor="sky">
-            <Section.Title is="h5" fontFamily="brand" fontWeight={400} pb={5}>
+            <Section.Title is="h4" pb={5}>
               {section.title}
             </Section.Title>
           </Box>
@@ -156,12 +163,12 @@ const HeroGraphic = ({ ...rest }) => {
   const codeIsInView = inView === 'code'
 
   return (
-    <Box {...rest} flexGrow={1} width={1} position="relative">
+    <Box {...rest} flexGrow={1} width={[1,1,720]} position={['absolute', 'absolute', 'relative']}>
       <Box
         width={['320px', '320px', '415px']}
         position="relative"
         zIndex={phoneIsInView ? 2 : 1}
-        pt={9}
+        pt={[9]}
         mt={[8, 8, 0]}
         {...styles}
       >
@@ -178,6 +185,7 @@ const HeroGraphic = ({ ...rest }) => {
           'translate3d(150px,12px,0)',
           'translate3d(200px,12px,0)'
         ]}
+        width={1}
         position="absolute"
         left={0}
         top={0}
@@ -259,7 +267,7 @@ const HeroContent = ({ ...rest }) => {
           </Button>
         </Flex>
       </Section.Pane>
-      <Section.Pane>
+      <Section.Pane position="relative" minHeight={['460px']}>
         <HeroGraphic />
       </Section.Pane>
     </>
@@ -451,6 +459,7 @@ const sections = [
     bg: 'sky.10',
     panes: [
       {
+        width: [1, 1, '50%'],
         title: {
           is: 'h2',
           children: 'Clarity Smart contracts'
@@ -468,8 +477,11 @@ const sections = [
         ]
       },
       {
+        width: [1, 1, '50%'],
+        pl: 0,
+        pr: 0,
         type: 'graphic',
-        src: 'https://blockstack-www.imgix.net/smart-contract-graphic.png',
+        src: 'https://blockstack-www.imgix.net/graphic-smart-contract.png',
         alt: 'Graphic for Blockstack smart contracts.'
       }
     ]
@@ -647,7 +659,7 @@ const sections = [
 const Hero = ({ ...rest }) => (
   <>
     <Section
-      minHeight="calc(100vh - 164px)"
+      minHeight={['unset', 'unset', 'calc(100vh - 164px)']}
       variant="ink"
       width={1}
       pt="180px"
@@ -680,10 +692,16 @@ class TechnologyPage extends React.Component {
   render() {
     return (
       <>
-        <Box borderBottom="1px solid #1A1A1A">
+        <Box
+          maxWidth="100vw"
+          overflow="hidden"
+          borderBottom="1px solid #1A1A1A"
+        >
           <Hero />
         </Box>
-        <Sections sections={sections} />
+        <Box overflow="hidden" position="relative" zIndex={99}>
+          <Sections sections={sections} />
+        </Box>
       </>
     )
   }

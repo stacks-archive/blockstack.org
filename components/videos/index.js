@@ -153,7 +153,6 @@ const VideoItem = ({
     >
       <MainDetails title={title} />
       <BottomDetails duration={duration} subtitle={subtitle} />
-      <Overlay hovered={hovered} />
       <Box
         zIndex={1}
         position="absolute"

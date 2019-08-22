@@ -69,12 +69,6 @@ export const teamMembers = [
       'Ken Liao studied Computer Engineering at the University of Waterloo and co-founded the fashion brand marketplace, PR-A-PO. He designed and built mobile apps which were featured as Best New App on the Apple App Store.'
   },
   {
-    blockstackId: 'sebastiandunkel',
-    name: 'Sebastian Dunkel',
-    bio:
-      'Sebastian received his MA in Linguistics and Communications from the University of Heidelberg, Germany, and the University of Brighton, UK. Before joining the Blockstack team, he worked in localization and product support for Apple, Vimeo, and Master & Dynamic.'
-  },
-  {
     blockstackId: 'shannon.id.blockstack',
     name: 'Shannon Voight',
     bio:

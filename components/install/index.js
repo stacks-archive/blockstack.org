@@ -5,13 +5,14 @@ import { useHover } from 'use-events'
 
 import ArrowUpRightIcon from 'mdi-react/ArrowUpRightIcon'
 import DownloadIcon from 'mdi-react/DownloadIcon'
+import Button from '@components/button'
 
 const version = '0.36.3'
 
 const items = [
   {
     platform: 'Web',
-    description: 'No install. Recommended for most users',
+    description: 'No installation, recommended for most users',
     href: 'https://browser.blockstack.org/',
     icon: ArrowUpRightIcon
   },
@@ -36,74 +37,122 @@ const InstallItem = ({
   platform,
   description,
   icon: Icon = DownloadIcon,
-  href
+  href,
+  ...rest
 }) => {
   const [hovered, bind] = useHover()
   return (
     <Flex
       width={1}
-      pb={3}
-      mb={3}
+      pb={4}
+      mb={4}
       borderBottom="1px solid"
       borderColor="sky.50"
       alignItems="center"
-      justifyContent="flex-start"
+      justifyContent={['space-between', 'flex-start', 'flex-start']}
       is="a"
       style={{
         textDecoration: 'none'
       }}
       href={href}
       target="_blank"
-      flexDirection={['column', 'row', 'column', 'row']}
+      flexDirection="row"
       {...bind}
+      {...rest}
     >
-      <Flex alignItems="center" minWidth={['100%', '50%', '100%', '50%']}>
-        <Box
-          opacity={hovered ? 1 : 0.5}
-          color={hovered ? 'blue' : 'ink'}
-          pr={2}
-          pt={1}
-        >
-          <Icon size={18} style={{ display: 'block' }} />
-        </Box>
-        <Box pr={5} flexShink={0}>
-          <Section.Title
-            style={{ whiteSpace: 'nowrap' }}
-            color={hovered ? 'blue' : 'ink'}
-            is="h4"
-          >
-            Browser {platform}
-          </Section.Title>
+      <Flex
+        alignItems={['flex-start', 'flex-start', 'center']}
+        flexDirection={['column', 'column', 'row']}
+        flexGrow={1}
+      >
+        <Flex is="span" alignItems="center" minWidth={['20%']}>
+          <Box pr={5} flexShink={0}>
+            <Section.Title
+              style={{ whiteSpace: 'nowrap' }}
+              color={hovered ? 'blue' : 'ink'}
+              is="h5"
+            >
+              Browser {platform}
+            </Section.Title>
+          </Box>
+        </Flex>
+        <Box is="span" flexShink={0} flexGrow={1}>
+          <Section.Text fontSize={1} color="#637282">{description}</Section.Text>
         </Box>
       </Flex>
-      <Box minWidth={['100%', '50%', '100%', '50%']} flexShink={0} flexGrow={1}>
-        <Section.Text fontSize={1}>{description}</Section.Text>
+      <Box is="span">
+        <Button
+          minWidth="97px"
+          minHeight={32}
+          hovered={hovered}
+          fontSize={1}
+          py={1}
+          px={3}
+          variant="secondary"
+        >
+          {platform === 'Web' ? 'Open' : 'Download'}
+        </Button>
       </Box>
     </Flex>
   )
 }
 
-const Install = (props) =>
-  items.map((item, key) => <InstallItem key={key} {...item} />)
+const Install = (props) => (
+  <Box pt={4} borderTop="1px solid" borderColor="sky.50">
+    {items.map((item, key) => (
+      <InstallItem {...props} key={key} {...item} />
+    ))}
+  </Box>
+)
 
 const installSection = {
   variant: 'white',
   minHeight: '400px',
   py: 8,
+  width: 1,
   panes: [
     {
       justifyContent: 'flex-start',
+      width: 1,
       panes: [
         {
+          width: 1,
+          pb: 4,
           justifyContent: 'flex-start',
+          title: {
+            is: 'h4',
+            children: 'Blockstack Browser'
+          },
           text: {
+            pb: 0,
+            pt: 2,
+            fontSize: 16,
             children:
               'The Blockstack Browser allows you to create and manage Blockstack IDs and explore decentralized apps.'
           }
-        },
+        }
+      ]
+    },
+    {
+      width: 1,
+      pt: 5,
+      children: <Install width={1} />
+    },
+    {
+      justifyContent: 'flex-start',
+      width: 1,
+      panes: [
         {
+          width: 1,
+          pt: [5, 5, 7],
+          title: {
+            is: 'h4',
+            children: 'Running a full node'
+          },
           text: {
             fontSize: 2,
+            pt: 3,
+            pb: 5,
             children: (
               <>
                 Developers can also run a full node by{' '}
@@ -121,9 +170,6 @@ const installSection = {
           }
         }
       ]
-    },
-    {
-      children: <Install />
     }
   ]
 }

@@ -6,6 +6,7 @@ import { Events } from '@components/events'
 import { Sections } from '@components/sections'
 import { Press } from '@components/press'
 import { Videos } from '@components/videos'
+import { Video } from '@components/video'
 import { CaseStudies } from '@components/case-studies'
 import { meta, caseStudies, videos, press } from '../../common/data/home'
 import fetch from 'cross-fetch'
@@ -87,7 +88,7 @@ const AppColumn = ({ items, index, ...rest }) => {
     <AppIcon
       key={key}
       data={{
-        name: items[key].name,
+        name: items[key] && items[key].name,
         website: items[key].website,
         imgixImageUrl: items[key].imgixImageUrl
       }}
@@ -167,22 +168,30 @@ const HeroContent = ({ apps, ...rest }) => {
   return (
     <>
       <Section.Pane
-        width={['100%', '100%', '60%']}
+        width={['100%']}
         alignSelf="center"
         position="relative"
+        textAlign="center"
+        justifyContent="center"
+        alignItems="center"
       >
-        <Section.Title pb={[5, 5, 5]} maxWidth={['100%', '100%', '80%']}>
+        <Section.Title
+          pb={[5, 5, 5]}
+          mx="auto"
+          maxWidth={['100%', '100%', '80%']}
+        >
           Decentralized computing network and app ecosystem
         </Section.Title>
-        <Section.Text maxWidth={['100%', '100%', '80%']}>
+        <Section.Text maxWidth={['100%', '100%', '50%']}>
           Blockstack apps protect your digital rights and are powered by the
           Stacks blockchain.
         </Section.Text>
         <Flex
           width={1}
-          justifyContent={['flex-start']}
+          justifyContent={['center']}
           flexDirection={['column', 'column', 'row']}
           pt={5}
+          mx="auto"
         >
           <Button width={[1, 1, 'unset']} path="/try-blockstack">
             Create ID
@@ -216,19 +225,58 @@ const transformApps = (apps) => {
   ]
 }
 
+const HeroVideo = () => {
+  return (
+    <>
+      <Box display={['none', 'none', 'block']} position="relative">
+        <Video
+          ratio="48.74857792%"
+          videoWidth="100%"
+          hideOverlay
+          src="/static/videos/home.mp4"
+          noHover
+        />
+        <Box
+          position="absolute"
+          width={1}
+          bottom={0}
+          height="10px"
+          bg="white"
+          left={0}
+          zIndex={99999}
+        />
+      </Box>
+      <Box display={['block', 'block', 'none']}>
+        <Video
+          ratio="139.28485757%"
+          videoWidth="100%"
+          hideOverlay
+          src="/static/videos/home-mobile.mp4"
+          noHover
+        />
+      </Box>
+    </>
+  )
+}
+
 const Hero = ({ apps = [], ...rest }) => {
   return (
     <>
       <Section
         bg="#F4F4FC"
-        minHeight="calc(100vh - 112px - 325px)"
+
+        py={undefined}
+        mt={'120px'}
         parentOverflow="hidden"
-        alignItems="flex-start"
+        justifyContent="center"
+        alignItems="center"
         variant="white"
+        position="relative"
+        zIndex={99}
       >
         <HeroContent apps={apps} />
       </Section>
-      <Box bg="#F4F4FC">
+      <Box bg="#F4F4FC" pt={7}>
         <Box
           maxWidth="100%"
           minHeight={[225, 225, 325]}
@@ -278,7 +326,8 @@ class HomePage extends React.Component {
           },
           {
             type: 'graphic',
-            src: 'https://blockstack-www.imgix.net/home-try-blockstack-graphic.png',
+            src:
+              'https://blockstack-www.imgix.net/home-try-blockstack-graphic.png',
             alt:
               'An example interface showing a user of Blockstack and their apps.'
           }
@@ -397,29 +446,34 @@ class HomePage extends React.Component {
       },
       {
         variant: 'white',
-        py: 8,
+        py: 128,
         minHeight: 0,
         alignItems: 'flex-start',
         panes: [
           {
-            justifyContent: ['space-between', 'space-between', 'flex-start'],
-            flexDirection: ['row', 'row', 'column'],
-            alignItems: ['flex-end', 'flex-end', 'flex-start'],
+            justifyContent: 'flex-start',
+            flexDirection: 'column',
+            alignItems: 'flex-start',
+            width: ['100%', '100%', '30%'],
             title: {
               is: 'h2',
               pr: 5,
               pb: 0,
               children: 'Latest news'
             },
-            actions: [
-              {
-                type: 'link',
-                label: 'View all news',
-                href: 'https://blog.blockstack.org'
-              }
-            ]
+            actions: {
+              pt: [0],
+              items: [
+                {
+                  type: 'link',
+                  label: 'View all news',
+                  href: 'https://blog.blockstack.org'
+                }
+              ]
+            }
           },
           {
+            width: ['100%', '100%', '70%'],
             children: (
               <Box pt={[5, 5, 0]}>
                 <News items={this.props.feed} users={this.props.users} />

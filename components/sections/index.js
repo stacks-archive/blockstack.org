@@ -5,6 +5,7 @@ import { TextLink } from '@components/section/index'
 import { useInViewAnimationStyles } from '@common/hooks'
 import { Button } from '@components/button/index'
 import { titleStyles } from '@common/theme'
+import { Video } from '@components/video'
 const Pill = ({ children, ...rest }) => (
   <Box borderRadius="25px" px={2} py={1} fontSize={1} bg="blue.10" color="blue">
     {children}
@@ -12,11 +13,15 @@ const Pill = ({ children, ...rest }) => (
 )
 const padding = [0, 0, 5]
 
-const Actions = ({ items, ...rest }) => (
-  <Flex pt={[5, 5, 0]} flexDirection={['column', 'column', 'row']} {...rest}>
-    {items.map(({ type, ...action }, key, arr) => {
+const Actions = ({ items, pt, ...rest }) => (
+  <Flex
+    pt={pt || [5, 5, 0]}
+    flexDirection={['column', 'column', 'row']}
+    {...rest}
+  >
+    {items.map(({ type, textLinkProps, ...action }, key, arr) => {
       if (type === 'link') {
-        return <TextLink action={action} key={key} />
+        return <TextLink action={action} key={key} {...textLinkProps} />
       }
       if (type === 'button') {
         return (
@@ -117,24 +122,34 @@ const Content = ({ pane, isFirst, inViewAnimationStyles, ...rest }) => {
       ) : pane.actions && pane.actions.length ? (
         <Actions items={pane.actions} {...inViewAnimationStyles} />
       ) : null}
-      {pane.type === 'graphic' && (
+      {pane.type === 'graphic' || pane.type === 'video' ? (
         <Box
           pt={8}
           pb={8}
           pl={isFirst ? 0 : padding}
           pr={isFirst ? padding : 0}
           {...inViewAnimationStyles}
-          {...paneProps}
         >
-          <Box
-            is="img"
-            display="block"
-            maxWidth="100%"
-            src={pane.src + '?auto=format'}
-            alt={pane.alt}
-          />
+          {pane.type === 'graphic' ? (
+            <Box
+              is="img"
+              display="block"
+              maxWidth="100%"
+              width="100%"
+              src={pane.src + '?auto=format'}
+              alt={pane.alt}
+            />
+          ) : (
+            <Video
+              noHover
+              videoWidth="100%"
+              {...pane.videoProps}
+              hideOverlay
+              src={pane.src}
+            />
+          )}
         </Box>
-      )}
+      ) : null}
     </>
   )
 }

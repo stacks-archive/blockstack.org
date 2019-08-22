@@ -321,20 +321,22 @@ class HomePage extends React.Component {
           ],
           {
             type: 'graphic',
-            src:
-              'https://blockstack-www.imgix.net/try-id-graphic.png'
+            src: 'https://blockstack-www.imgix.net/try-id-graphic.png'
           }
         ]
       },
       {
         variant: 'white',
         minHeight: '400px',
-        bg: 'sky.10',
+        bg: '#FDFCFF',
         py: 8,
         panes: [
           {
-            type: 'graphic',
-            src: 'https://blockstack-www.imgix.net/blurred-items.png'
+            type: 'video',
+            src: '/static/videos/graphic-data-ownership.mp4',
+            videoProps: {
+              ratio: '74.5%'
+            }
           },
           [
             {
@@ -386,50 +388,57 @@ class HomePage extends React.Component {
             }
           ],
           {
-            type: 'graphic',
+            type: 'video',
             pt: 0,
-            src: 'https://blockstack-www.imgix.net/share-data-graphic.png'
+            src: '/static/videos/graphic-share-connect.mp4',
+            videoProps: {
+              ratio: '125.409%'
+            }
           }
         ]
       },
       {
         variant: 'blue',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
         panes: [
           {
             pr: 0,
+            width: 1,
+            textAlign: 'center',
             title: {
               is: 'h2',
+              mx: 'auto',
+              width: ['100%', '100%', '55%'],
               children: 'Take back your digital rights'
             },
             text: {
+              mx: 'auto',
+              width: ['100%', '100%', '55%'],
               children: `Say goodbye to: Data breaches and leaks, internet companies selling your data, AI manipulating your social feeds, and ad targeting following you around.`
+            },
+            actions: {
+              width: ['100%', '100%', 'unset'],
+              pt: 5,
+              mx: 'auto',
+              items: [
+                {
+                  width: ['100%', '100%', 'unset'],
+                  type: 'button',
+                  label: 'Create ID',
+                  href: 'https://browser.blockstack.org/sign-up'
+                },
+                {
+                  width: ['100%', '100%', 'unset'],
+                  type: 'button',
+                  label: 'Sign in',
+                  variant: 'secondary',
+                  href: 'https://browser.blockstack.org/sign-in'
+                }
+              ]
             }
-          },
-          [
-            {
-              justifyContent: 'center',
-              alignItems: 'center',
-              actions: {
-                width: ['100%', '100%', 'unset'],
-
-                items: [
-                  {
-                    width: ['100%', '100%', 'unset'],
-                    type: 'button',
-                    label: 'Create ID',
-                    href: 'https://browser.blockstack.org/sign-up'
-                  },
-                  {
-                    width: ['100%', '100%', 'unset'],
-                    type: 'button',
-                    label: 'Sign in',
-                    variant: 'secondary',
-                    href: 'https://browser.blockstack.org/sign-in'
-                  }
-                ]
-              }
-            }
-          ]
+          }
         ]
       },
       { ...installSection }
