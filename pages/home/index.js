@@ -6,77 +6,88 @@ import { Events } from '@components/events'
 import { Sections } from '@components/sections'
 import { Press } from '@components/press'
 import { Videos } from '@components/videos'
-import { Video } from '@components/video'
 import { CaseStudies } from '@components/case-studies'
 import { meta, caseStudies, videos, press } from '../../common/data/home'
 import fetch from 'cross-fetch'
 import { News } from '@components/articles'
 import { PhotoGrid } from '@components/photos-grid'
 import { AuthGraphic } from '@components/graphics/auth'
-import { useTrail, animated } from 'react-spring'
-import { useHover } from 'use-events'
-import { transition } from '@common/theme'
 import { apps } from '../../common/data/apps'
 import { AppMiningGraphic } from '@components/graphics/app-mining'
 import { Image } from '@components/image'
+import { useHover } from 'use-events'
 
-const columns = 7
-const array = Array.from(Array(columns))
-
-const appIconSize = [52, 52, 84]
-const config = { mass: 18, tension: 3500, friction: 300 }
-
-const AppIcon = ({ data: { website, name, imgixImageUrl }, ...rest }) => {
+const SummitCard = ({ ...rest }) => {
   const [hovered, bind] = useHover()
   return (
     <Box
+      width={[1, 1, '50%']}
+      order={[1, 1, 2]}
+      pb={[6, 6, 0]}
+      pl={[0, 0, 6]}
       position="relative"
-      mb={['80px', '80px', '180px']}
-      cursor={hovered ? 'pointer' : 'unset'}
       {...bind}
-      {...rest}
     >
-      <Flex
-        style={{ textDecoration: 'none' }}
-        is="a"
-        color="ink"
-        href={website}
-        flexDirection="column"
-        alignItems="center"
+      <LinkElement href="https://summit.blockstack.org" />
+      <Box
+        p={6}
+        boxShadow="0px 16px 40px rgba(0, 0, 0, 0.04), 0px 1px 2px rgba(0, 0, 0, 0.06)"
+        borderRadius="8px"
       >
-        <Box
-          transition={transition}
-          transform={`translate3d(0,${hovered ? -10 : 0}px,0)`}
-          size={appIconSize}
-        >
-          <Box
-            display="block"
-            maxWidth="100%"
-            width={1}
-            borderRadius={['5px', '5px', '20px']}
-            boxShadow="0px 2px 12px rgba(0, 0, 0, 0.04), 0px 1px 2px rgba(0, 0, 0, 0.08)"
-            is="img"
-            alt={`App Icon for ${name}`}
-            src={imgixImageUrl + '?auto=format&w=96&h=96'}
-          />
+        <Image
+          borderRadius="8px"
+          src="https://blockstack-www.imgix.net/graphic-blockstack-summit.png"
+        />
+        <Box pt={6}>
+          <Section.Title is="h3">4th annual Blockstack Summit</Section.Title>
+          <Flex pb={4} mt={2} alignItems="center">
+            <Box
+              size={20}
+              bg="ink"
+              borderRadius="100%"
+              mr={2}
+              overflow="hidden"
+            >
+              <Box
+                is="span"
+                width="100%"
+                height="100%"
+                style={{
+                  backgroundSize: '150%',
+                  backgroundPosition: 'center center',
+                  backgroundRepeat: 'no-repeat'
+                }}
+                className={`flag-icon flag-icon-us`}
+              />
+            </Box>
+            <Section.Text opacity={0.8} color="#33333E" fontSize="14px">
+              San Francisco, October 23rd
+            </Section.Text>
+          </Flex>
+          <Box>
+            <Section.Text color="#33333E" fontSize="14px">
+              One full day in San Francisco featuring Neal Stephenson, Naval
+              Ravikant, Elizabeth Stark, Dave Morin, Muneeb Ali, Preethi
+              Kasireddy, Daniela Perdomo, Balaji Srinivasan, and more.
+            </Section.Text>
+          </Box>
+          <Flex justifyContent="flex-start" pt={6}>
+            <Button
+              hovered={hovered}
+              href="https://summit.blockstack.org"
+              target="_blank"
+              variant="secondary"
+            >
+              Learn more
+            </Button>
+          </Flex>
         </Box>
-        <Box
-          opacity={hovered ? 1 : 0}
-          mt={4}
-          bg="sky.25"
-          px={3}
-          py={1}
-          borderRadius="20px"
-          fontSize={1}
-          transition={transition}
-          transform={`translate3d(0,${hovered ? -10 : 10}px,0)`}
-        >
-          {name}
-        </Box>
-      </Flex>
+      </Box>
     </Box>
   )
 }
+
+const columns = 7
 
 const photos = [
   {
@@ -199,6 +210,19 @@ const Hero = ({ apps = [], ...rest }) => {
     </>
   )
 }
+
+const LinkElement = ({ url, ...rest }) => (
+  <Box
+    is="a"
+    width={'100%'}
+    height={'100%'}
+    position="absolute"
+    zIndex={99}
+    href={url}
+    target={url ? '_blank' : undefined}
+    {...rest}
+  />
+)
 
 class HomePage extends React.Component {
   static async getInitialProps(ctx) {
@@ -351,73 +375,7 @@ class HomePage extends React.Component {
                     />
                   </Box>
                 </Box>
-                <Box
-                  width={[1, 1, '50%']}
-                  order={[1, 1, 2]}
-                  pb={[6, 6, 0]}
-                  pl={[0, 0, 6]}
-                >
-                  <Box
-                    p={6}
-                    boxShadow="0px 16px 40px rgba(0, 0, 0, 0.04), 0px 1px 2px rgba(0, 0, 0, 0.06)"
-                    borderRadius="8px"
-                  >
-                    <Image
-                      borderRadius="8px"
-                      src="https://blockstack-www.imgix.net/graphic-blockstack-summit.png"
-                    />
-                    <Box pt={6}>
-                      <Section.Title is="h3">
-                        4th annual Blockstack Summit
-                      </Section.Title>
-                      <Flex pb={4} mt={2} alignItems="center">
-                        <Box
-                          size={20}
-                          bg="ink"
-                          borderRadius="100%"
-                          mr={2}
-                          overflow="hidden"
-                        >
-                          <Box
-                            is="span"
-                            width="100%"
-                            height="100%"
-                            style={{
-                              backgroundSize: '150%',
-                              backgroundPosition: 'center center',
-                              backgroundRepeat: 'no-repeat'
-                            }}
-                            className={`flag-icon flag-icon-us`}
-                          />
-                        </Box>
-                        <Section.Text
-                          opacity={0.8}
-                          color="#33333E"
-                          fontSize="14px"
-                        >
-                          San Francisco, October 23rd
-                        </Section.Text>
-                      </Flex>
-                      <Box>
-                        <Section.Text color="#33333E" fontSize="14px">
-                          One full day in San Francisco featuring Neal
-                          Stephenson, Naval Ravikant, Elizabeth Stark, Dave
-                          Morin, Muneeb Ali, Preethi Kasireddy, Daniela Perdomo,
-                          Balaji Srinivasan, and more.
-                        </Section.Text>
-                      </Box>
-                      <Flex justifyContent="flex-start" pt={6}>
-                        <Button
-                          href="https://summit.blockstack.org"
-                          target="_blank"
-                          variant="secondary"
-                        >
-                          Learn more
-                        </Button>
-                      </Flex>
-                    </Box>
-                  </Box>
-                </Box>
+                <SummitCard />
               </Flex>
             )
           }
