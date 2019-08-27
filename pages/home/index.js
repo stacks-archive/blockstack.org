@@ -18,6 +18,7 @@ import { useHover } from 'use-events'
 import { transition } from '@common/theme'
 import { apps } from '../../common/data/apps'
 import { AppMiningGraphic } from '@components/graphics/app-mining'
+import { Image } from '@components/image'
 
 const columns = 7
 const array = Array.from(Array(columns))
@@ -264,7 +265,6 @@ const Hero = ({ apps = [], ...rest }) => {
     <>
       <Section
         bg="#F4F4FC"
-
         py={undefined}
         mt={'120px'}
         parentOverflow="hidden"
@@ -408,14 +408,17 @@ class HomePage extends React.Component {
         py: 8,
         panes: [
           {
+            width: '55%',
+            justifyContent: 'center',
+            alignItems: 'center',
+            mx: 'auto',
+            textAlign: 'center',
             title: {
               is: 'h2',
               pr: 5,
-              pb: [5, 5, 0],
-              children: 'Attend summits, hackathons, and workshops'
-            }
-          },
-          {
+              pb: [5, 5, 4],
+              children: 'Learn more at summits, hackathons, and workshops'
+            },
             text: {
               children: `We host over 100 global events with 10,000+ developers, scientists and entrepreneurs each year.`
             },
@@ -429,7 +432,80 @@ class HomePage extends React.Component {
           },
           {
             width: '100%',
-            children: <Events pt={8} />
+            children: (
+              <Flex flexDirection={['column', 'column', 'row']} pt={8}>
+                <Box width={[1, 1, '50%']} order={[2, 2, 1]} pr={[0, 0, 6]}>
+                  <Events />
+                </Box>
+                <Box
+                  width={[1, 1, '50%']}
+                  order={[1, 1, 2]}
+                  pb={[6, 6, 0]}
+                  pl={[0, 0, 6]}
+                >
+                  <Box
+                    p={6}
+                    boxShadow="0px 16px 40px rgba(0, 0, 0, 0.04), 0px 1px 2px rgba(0, 0, 0, 0.06)"
+                    borderRadius="8px"
+                  >
+                    <Image
+                      borderRadius="8px"
+                      src="https://blockstack-www.imgix.net/graphic-blockstack-summit.png"
+                    />
+                    <Box pt={6}>
+                      <Section.Title is="h3">
+                        4th annual Blockstack Summit
+                      </Section.Title>
+                      <Flex pb={4} mt={2} alignItems="center">
+                        <Box
+                          size={20}
+                          bg="ink"
+                          borderRadius="100%"
+                          mr={2}
+                          overflow="hidden"
+                        >
+                          <Box
+                            is="span"
+                            width="100%"
+                            height="100%"
+                            style={{
+                              backgroundSize: '150%',
+                              backgroundPosition: 'center center',
+                              backgroundRepeat: 'no-repeat'
+                            }}
+                            className={`flag-icon flag-icon-us`}
+                          />
+                        </Box>
+                        <Section.Text
+                          opacity={0.8}
+                          color="#33333E"
+                          fontSize="14px"
+                        >
+                          San Francisco, October 23rd
+                        </Section.Text>
+                      </Flex>
+                      <Box>
+                        <Section.Text color="#33333E" fontSize="14px">
+                          One full day in San Francisco featuring Neal
+                          Stephenson, Naval Ravikant, Elizabeth Stark, Dave
+                          Morin, Muneeb Ali, Preethi Kasireddy, Daniela Perdomo,
+                          Balaji Srinivasan, and more.
+                        </Section.Text>
+                      </Box>
+                      <Flex justifyContent="flex-start" pt={6}>
+                        <Button
+                          href="https://summit.blockstack.org"
+                          target="_blank"
+                          variant="secondary"
+                        >
+                          Learn more
+                        </Button>
+                      </Flex>
+                    </Box>
+                  </Box>
+                </Box>
+              </Flex>
+            )
           }
         ]
       },

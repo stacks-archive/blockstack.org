@@ -4,43 +4,43 @@ import { Box, Flex } from 'blockstack-ui'
 
 const locations = [
   {
-    city: 'Bangalore',
-    date: 'June 1',
-    time: '06:00PM',
-    event: 'Learn how SpringRole earned $50K MRR',
-    href: 'https://community.blockstack.org/events#event=30167304',
-    flag: 'in'
+    city: 'Seoul',
+    date: 'September 3',
+    time: 'All day',
+    event: 'JSConf',
+    href: 'https://community.blockstack.org/events#event=32500343',
+    flag: 'sk'
   },
   {
-    city: 'Brighton',
-    date: 'June 4',
+    city: 'Austria',
+    date: 'September 4',
     time: '06:30PM',
-    event: 'Radicle @ Brighton Blockchain and Crypto Meetup',
-    href: 'https://community.blockstack.org/events#event=30184724',
-    flag: 'gb'
+    event: 'Blockstack Austria',
+    href: 'https://community.blockstack.org/events#event=32485508',
+    flag: 'at'
   },
   {
-    city: 'Tokyo',
-    date: 'June 9',
-    time: 'All day',
-    event: 'Decrypt Hackathon',
-    href: 'https://community.blockstack.org/events#event=30626035',
-    flag: 'jp'
+    city: 'Madrid',
+    date: 'September 17',
+    time: '07:00PM',
+    event: 'Blockstack, un ecosistema para un Internet mejor.',
+    href: 'https://community.blockstack.org/events#event=32068045',
+    flag: 'es'
   },
   {
-    city: 'London',
-    date: <>June 10&ndash;12</>,
+    city: 'Amsterdam',
+    date: <>October 9&ndash;10</>,
     time: 'All day',
-    event: 'CogX - The Festival of AI and Emerging Technology',
-    href: 'https://community.blockstack.org/events#event=25317782',
-    flag: 'gb'
+    event: `Blockstack's Head of Engineering @ World Summit AI`,
+    href: 'https://community.blockstack.org/events#event=30698879',
+    flag: 'nl'
   },
   {
     city: 'San Francisco',
     date: 'October 23',
     time: 'All day',
     event: 'Blockstack Summit',
-    href: 'https://community.blockstack.org/events#event=25317871',
+    href: 'https://summit.blockstack.org/',
     flag: 'us'
   },
   {
@@ -78,11 +78,9 @@ const Events = ({ ...rest }) => {
 
         return (
           <Box
-            width={['100%', '100%', '50%']}
+            width={['100%']}
             key={key}
             cursor={hovered ? 'pointer' : 'unset'}
-            pr={[0, 0, isOdd ? 5 : 0]}
-            pl={[0, 0, !isOdd ? 5 : 0]}
             {...bind}
             is="a"
             href={location.href}
@@ -94,11 +92,6 @@ const Events = ({ ...rest }) => {
             <Flex
               justifyContent="space-between"
               alignItems="center"
-              borderTop={[
-                'none',
-                'none',
-                key === 0 || key === 1 ? '1px solid' : undefined
-              ]}
               borderBottom="1px solid"
               borderColor={['sky.25', 'sky.25', 'sky.25']}
               py={5}
