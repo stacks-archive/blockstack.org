@@ -99,7 +99,6 @@ const Events = ({ ...rest }) => {
                   <Flex
                     ml={2}
                     borderRadius="100%"
-                    opacity={hovered ? 1 : 0.5}
                     size={18}
                     bg="sky"
                     overflow="hidden"
