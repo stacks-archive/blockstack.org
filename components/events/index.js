@@ -83,7 +83,7 @@ const Events = ({ ...rest }) => {
           >
             <Flex
               justifyContent="space-between"
-              alignItems="center"
+              alignItems="baseline"
               borderBottom="1px solid"
               borderTop={key === 0 ? '1px solid' : undefined}
               borderColor={['sky.25', 'sky.25', 'sky.25']}
@@ -118,20 +118,27 @@ const Events = ({ ...rest }) => {
                 </Flex>
                 <Box {...subtitle}>{location.event}</Box>
               </Box>
-              <Box pl={[5, 5, 0]} flexShrink={0} textAlign="right">
+              <Flex
+                flexDirection="column"
+                pl={[5, 5, 0]}
+                flexShrink={0}
+                flexGrow={1}
+                textAlign="right"
+              >
                 <Box fontWeight={500} color="ink">
                   {location.date}
                 </Box>
                 <Box
+                  alignSelf="flex-end"
                   style={{
                     whiteSpace: 'nowrap'
                   }}
                   {...subtitle}
-                  pt={1}
+                  pt={'6px'}
                 >
                   {location.time}
                 </Box>
-              </Box>
+              </Flex>
             </Flex>
           </Box>
         )
