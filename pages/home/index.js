@@ -408,7 +408,6 @@ class HomePage extends React.Component {
         py: 8,
         panes: [
           {
-            width: '55%',
             justifyContent: 'center',
             alignItems: 'center',
             mx: 'auto',
@@ -421,21 +420,24 @@ class HomePage extends React.Component {
             },
             text: {
               children: `We host over 100 global events with 10,000+ developers, scientists and entrepreneurs each year.`
-            },
-            actions: [
-              {
-                type: 'link',
-                label: 'View all upcoming events',
-                href: 'https://community.blockstack.org/'
-              }
-            ]
+            }
           },
           {
             width: '100%',
             children: (
-              <Flex flexDirection={['column', 'column', 'row']} pt={8}>
+              <Flex flexDirection={['column', 'column', 'row']} pt={[0, 0, 8]}>
                 <Box width={[1, 1, '50%']} order={[2, 2, 1]} pr={[0, 0, 6]}>
                   <Events />
+                  <Box pt={4}>
+                    <Section.Text
+                      is="a"
+                      href="https://community.blockstack.org/events"
+                      target="_blank"
+                      fontSize="14px"
+                    >
+                      View all events
+                    </Section.Text>
+                  </Box>
                 </Box>
                 <Box
                   width={[1, 1, '50%']}
