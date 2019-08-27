@@ -428,7 +428,7 @@ class HomePage extends React.Component {
           {
             width: '100%',
             children: (
-              <Flex flexDirection={['column', 'column', 'row']} pt={[0, 0, 8]}>
+              <Flex flexDirection={['column', 'column', 'row']} pt={[7, 7, 8]}>
                 <Box width={[1, 1, '50%']} order={[2, 2, 1]} pr={[0, 0, 6]}>
                   <Events />
                   <Box pt={4}>
