@@ -28,7 +28,7 @@ const SummitCard = ({ ...rest }) => {
       position="relative"
       {...bind}
     >
-      <LinkElement href="https://summit.blockstack.org" />
+      <LinkElement target="_blank" href="https://summit.blockstack.org" />
       <Box
         p={6}
         boxShadow="0px 16px 40px rgba(0, 0, 0, 0.04), 0px 1px 2px rgba(0, 0, 0, 0.06)"
@@ -349,7 +349,6 @@ class HomePage extends React.Component {
             textAlign: 'center',
             title: {
               is: 'h2',
-              pr: 5,
               pb: [5, 5, 4],
               children: 'Learn more at summits, hackathons, and workshops'
             },
@@ -366,7 +365,6 @@ class HomePage extends React.Component {
                   <Events />
                   <Box pt={2}>
                     <TextLink
-                      target="_blank"
                       fontSize="14px"
                       action={{
                         label: 'View all events',
