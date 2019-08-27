@@ -61,7 +61,7 @@ const SummitCard = ({ ...rest }) => {
               />
             </Box>
             <Section.Text opacity={0.8} color="#33333E" fontSize="14px">
-              San Francisco, October 23rd
+              San Francisco, October 23
             </Section.Text>
           </Flex>
           <Box>
