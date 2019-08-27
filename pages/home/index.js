@@ -408,6 +408,8 @@ class HomePage extends React.Component {
         py: 8,
         panes: [
           {
+            width: 1,
+            maxWidth: 544,
             justifyContent: 'center',
             alignItems: 'center',
             mx: 'auto',
@@ -419,6 +421,7 @@ class HomePage extends React.Component {
               children: 'Learn more at summits, hackathons, and workshops'
             },
             text: {
+              maxWidth: 544,
               children: `We host over 100 global events with 10,000+ developers, scientists and entrepreneurs each year.`
             }
           },
