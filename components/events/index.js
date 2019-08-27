@@ -42,14 +42,6 @@ const locations = [
     event: 'Blockstack Summit',
     href: 'https://summit.blockstack.org/',
     flag: 'us'
-  },
-  {
-    city: 'Princeton',
-    date: <>November 8&ndash;10</>,
-    time: 'All day',
-    event: 'HackPrinceton Hackathon',
-    href: 'https://community.blockstack.org/events#event=24956314',
-    flag: 'us'
   }
 ]
 
@@ -93,6 +85,7 @@ const Events = ({ ...rest }) => {
               justifyContent="space-between"
               alignItems="center"
               borderBottom="1px solid"
+              borderTop={key === 0 ? '1px solid' : undefined}
               borderColor={['sky.25', 'sky.25', 'sky.25']}
               py={5}
             >

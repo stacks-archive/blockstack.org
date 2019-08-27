@@ -1,5 +1,5 @@
 import React from 'react'
-import { Section } from '@components/section'
+import { Section, TextLink } from '@components/section'
 import { Box, Flex } from 'blockstack-ui'
 import { Button } from '@components/button'
 import { Events } from '@components/events'
@@ -75,63 +75,6 @@ const AppIcon = ({ data: { website, name, imgixImageUrl }, ...rest }) => {
         </Box>
       </Flex>
     </Box>
-  )
-}
-
-const AppColumn = ({ items, index, ...rest }) => {
-  const transitions = useTrail(items.length, {
-    config,
-    from: { opacity: 0, transform: `translate3d(0, ${80}px,0)` },
-    transform: 'translate3d(0,0px,0)',
-    opacity: 1
-  })
-  return transitions.map((props, key) => (
-    <AppIcon
-      key={key}
-      data={{
-        name: items[key] && items[key].name,
-        website: items[key].website,
-        imgixImageUrl: items[key].imgixImageUrl
-      }}
-      is={animated.div}
-      style={props}
-    />
-  ))
-}
-
-const GraphicForHero = ({ apps, ...rest }) => {
-  return (
-    <Flex
-      flexWrap="wrap"
-      position={['relative', 'relative', 'absolute']}
-      width={['100vw', '100vw', '50vw']}
-      minWidth={['600px', '600px', '1000px']}
-      height={['50vh', '50vh', '100vh']}
-      top={[0, 0, '-150px']}
-      overflow="hidden"
-      left={[-80, -80, 0]}
-      pt={['120px', '120px', '80px']}
-      {...rest}
-    >
-      {array.map((column, key) => (
-        <Flex
-          flexShrink={0}
-          transform={
-            key % 2
-              ? ['translateY(-6vh)', 'translateY(-6vh)', 'translateY(-120px)']
-              : 'none'
-          }
-          flexGrow={1}
-          justifyContent="flex-start"
-          flexDirection="column"
-          height={['100vh', '100vh', '140vh']}
-          alignItems="center"
-          key={key}
-        >
-          <AppColumn index={key + 1} items={apps[key]} />
-        </Flex>
-      ))}
-    </Flex>
   )
 }
 
@@ -224,40 +167,6 @@ const transformApps = (apps) => {
     apps.filter((a, i) => i > limit * 5 && i <= limit * 6),
     apps.filter((a, i) => i > limit * 6 && i <= limit * 7)
   ]
-}
-
-const HeroVideo = () => {
-  return (
-    <>
-      <Box display={['none', 'none', 'block']} position="relative">
-        <Video
-          ratio="48.74857792%"
-          videoWidth="100%"
-          hideOverlay
-          src="/static/videos/home.mp4"
-          noHover
-        />
-        <Box
-          position="absolute"
-          width={1}
-          bottom={0}
-          height="10px"
-          bg="white"
-          left={0}
-          zIndex={99999}
-        />
-      </Box>
-      <Box display={['block', 'block', 'none']}>
-        <Video
-          ratio="139.28485757%"
-          videoWidth="100%"
-          hideOverlay
-          src="/static/videos/home-mobile.mp4"
-          noHover
-        />
-      </Box>
-    </>
-  )
 }
 
 const Hero = ({ apps = [], ...rest }) => {
@@ -405,7 +314,7 @@ class HomePage extends React.Component {
 
       {
         variant: 'white',
-        py: 8,
+        py: '128px',
         panes: [
           {
             width: 1,
@@ -428,18 +337,18 @@ class HomePage extends React.Component {
           {
             width: '100%',
             children: (
-              <Flex flexDirection={['column', 'column', 'row']} pt={[7, 7, 8]}>
+              <Flex flexDirection={['column', 'column', 'row']} pt="96px">
                 <Box width={[1, 1, '50%']} order={[2, 2, 1]} pr={[0, 0, 6]}>
                   <Events />
-                  <Box pt={4}>
-                    <Section.Text
-                      is="a"
-                      href="https://community.blockstack.org/events"
+                  <Box pt={2}>
+                    <TextLink
                       target="_blank"
                       fontSize="14px"
-                    >
-                      View all events
-                    </Section.Text>
+                      action={{
+                        label: 'View all events',
+                        href: 'https://community.blockstack.org/events'
+                      }}
+                    />
                   </Box>
                 </Box>
                 <Box
