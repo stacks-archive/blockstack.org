@@ -23,7 +23,7 @@ const locations = [
     city: 'Madrid',
     date: 'September 17',
     time: '07:00PM',
-    event: 'Blockstack, un ecosistema para un Internet mejor.',
+    event: 'Blockstack, un ecosistema para un Internet mejor',
     href: 'https://community.blockstack.org/events#event=32068045',
     flag: 'es'
   },
