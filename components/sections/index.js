@@ -6,7 +6,8 @@ import { useInViewAnimationStyles } from '@common/hooks'
 import { Button } from '@components/button/index'
 import { titleStyles } from '@common/theme'
 import { Video } from '@components/video'
-const Pill = ({ children, ...rest }) => (
+
+const Pill = ({ children }) => (
   <Box borderRadius="25px" px={2} py={1} fontSize={1} bg="blue.10" color="blue">
     {children}
   </Box>

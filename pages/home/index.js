@@ -12,10 +12,12 @@ import fetch from 'cross-fetch'
 import { News } from '@components/articles'
 import { PhotoGrid } from '@components/photos-grid'
 import { AuthGraphic } from '@components/graphics/auth'
-import { apps } from '../../common/data/apps'
 import { AppMiningGraphic } from '@components/graphics/app-mining'
 import { Image } from '@components/image'
 import { useHover } from 'use-events'
+import { Chrome } from '@components/device-chrome'
+import { useSectionIsInViewport } from '@common/hooks'
+import { transition } from '@common/theme'
 
 const SummitCard = ({ ...rest }) => {
   const [hovered, bind] = useHover()
@@ -87,8 +89,6 @@ const SummitCard = ({ ...rest }) => {
   )
 }
 
-const columns = 7
-
 const photos = [
   {
     src: 'https://blockstack-www.imgix.net/photos/photo-conference-001.jpg',
@@ -129,15 +129,16 @@ const HeroContent = ({ apps, ...rest }) => {
         textAlign="center"
         justifyContent="center"
         alignItems="center"
+        px={[5, 5, 0]}
       >
         <Section.Title
           pb={[5, 5, 5]}
           mx="auto"
-          maxWidth={['100%', '100%', '80%']}
+          maxWidth={['100%', '100%', '768px']}
         >
           Decentralized computing network and app ecosystem
         </Section.Title>
-        <Section.Text maxWidth={['100%', '100%', '50%']}>
+        <Section.Text maxWidth={['100%', '100%', '544px']}>
           Blockstack apps protect your digital rights and are powered by the
           Stacks blockchain.
         </Section.Text>
@@ -167,46 +168,124 @@ const HeroContent = ({ apps, ...rest }) => {
   )
 }
 
-const transformApps = (apps) => {
-  const limit = columns
-  return [
-    apps.filter((a, i) => i < limit),
-    apps.filter((a, i) => i > limit && i <= limit * 2),
-    apps.filter((a, i) => i > limit * 2 && i <= limit * 3),
-    apps.filter((a, i) => i > limit * 3 && i <= limit * 4),
-    apps.filter((a, i) => i > limit * 4 && i <= limit * 5),
-    apps.filter((a, i) => i > limit * 5 && i <= limit * 6),
-    apps.filter((a, i) => i > limit * 6 && i <= limit * 7)
-  ]
+const renderApps = (items) =>
+  items.map(({ y, apps }, sectionKey) => (
+    <Box
+      key={sectionKey}
+      transform={['none', 'none', `translateY(${y}px)`, `translateY(${y}px)`]}
+    >
+      {apps.map(({ slug, name, width, ...rest }, appKey) => (
+        <Chrome inner={slug} key={appKey} width={width} name={name} {...rest} />
+      ))}
+    </Box>
+  ))
+
+const heroItems = [
+  {
+    y: 220,
+    apps: [{ slug: 'dmail', name: 'dMail', width: 464, type: 'browser' }]
+  },
+  {
+    y: 120,
+    apps: [
+      { slug: 'recall', name: 'Recall', width: 264 },
+      { slug: 'nomie', name: 'Nomie', width: 264, mt: 6 }
+    ]
+  },
+  {
+    y: 25,
+    apps: [
+      { slug: 'afari', name: 'Afari', width: 264 },
+      { slug: 'scannie', name: 'Scannie', width: 264, mt: 6 }
+    ]
+  },
+  {
+    y: 0,
+    apps: [
+      { slug: 'sigle', name: 'Sigle', width: 490, type: 'browser' },
+      { slug: 'forms-id', name: 'Forms.id', width: 490, type: 'browser', mt: 6 }
+    ]
+  },
+  {
+    y: 115,
+    apps: [
+      { slug: 'arcane-sheets', name: 'Arcane Sheets', width: 488 },
+      { slug: 'graphite', name: 'Graphite', width: 488, mt: 6 }
+    ]
+  },
+  {
+    y: 180,
+    apps: [{ slug: 'nomie', name: 'Nomie', width: 264 }]
+  }
+]
+
+const HeroGraphicWrapper = ({ ...rest }) => {
+  const isInViewport = useSectionIsInViewport()
+
+  return (
+    <Flex
+      alignItems="center"
+      justifyContent="center"
+      width="100%"
+      height={['392px', '492px', '592px', '792px']}
+      maxWidth="100vw"
+      px={5}
+      overflow="hidden"
+      bg="white"
+      mt={64}
+      borderBottom="1px solid #F0F0F5"
+      position="relative"
+    >
+      <Box
+        transition="1s opacity cubic-bezier(.19,1,.22,1) 0.5s"
+        position="absolute"
+        top={0}
+        pt={64}
+        opacity={isInViewport ? 1 : 0}
+        transform={[
+          `scale(0.5) translateX(-3.8%)`,
+          `scale(0.7) translateX(-3.8%)`,
+          `scale(0.8) translateX(-3.8%)`,
+          `scale(1) translateX(-3.8%)`
+        ]}
+        style={{
+          transformOrigin: 'top center'
+        }}
+      >
+        <Flex
+          alignItems="flex-start"
+          justifyContent="center"
+          transition="1s transform cubic-bezier(.19,1,.22,1) 0.5s"
+          transform={`translateY(${isInViewport ? 0 : -10}px)`}
+          {...rest}
+        />
+      </Box>
+    </Flex>
+  )
+}
+const HeroGraphic = ({ items, ...rest }) => {
+  return <HeroGraphicWrapper>{renderApps(items)}</HeroGraphicWrapper>
 }
 
-const Hero = ({ apps = [], ...rest }) => {
+const Hero = ({ ...rest }) => {
   return (
     <>
       <Section
-        bg="#F4F4FC"
+        bg="white"
         py={undefined}
+        px={0}
         mt={'120px'}
         parentOverflow="hidden"
+        maxWidth="100%"
         justifyContent="center"
         alignItems="center"
         variant="white"
         position="relative"
         zIndex={99}
       >
-        <HeroContent apps={apps} />
+        <HeroContent />
+        <HeroGraphic items={heroItems} />
       </Section>
-      <Box bg="#F4F4FC" pt={7}>
-        <Box
-          maxWidth="100%"
-          minHeight={[225, 225, 325]}
-          backgroundImage="url(https://blockstack-www.imgix.net/apps-pattern-high.png?auto=format)"
-          backgroundRepeat="repeat-x"
-          backgroundPosition="top center"
-          backgroundSize={['1300px', '1300px', '1500px']}
-          title="A display of Blockstack apps."
-        />
-      </Box>
     </>
   )
 }
@@ -231,10 +310,10 @@ class HomePage extends React.Component {
     return {
       meta,
       feed,
-      users,
-      apps: transformApps(apps.apps)
+      users
     }
   }
+
   render() {
     const sections = [
       {
