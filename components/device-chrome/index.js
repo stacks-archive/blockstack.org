@@ -69,13 +69,14 @@ const HoverTooltip = ({ isClicked, name, ...rest }) => {
   )
 }
 
-const Viewport = ({ isClicked, name, src, ...rest }) => {
+const Viewport = ({ isClicked, isMobile, name, src, ...rest }) => {
   return (
     <Box borderRadius="8px" position="relative">
       <HoverTooltip isClicked={isClicked} name={name} />
       <Image
         display="block"
         noBlur
+        imgix={{ w: isMobile ? 450 : 800, q: isMobile ? 45 : 65 }}
         src={`https://blockstack-www.imgix.net/home-hero/png/${src}-inner.png`}
         borderRadius="8px"
         {...rest}
@@ -97,7 +98,14 @@ const Footer = ({ ...rest }) => {
   )
 }
 
-const Chrome = ({ inner: src, type = 'mobile', width, name, ...rest }) => {
+const Chrome = ({
+  inner: src,
+  type = 'mobile',
+  isMobile,
+  width,
+  name,
+  ...rest
+}) => {
   // const [hovered, bind] = useHover()
   const hovered = false
   const bind = {}
@@ -128,7 +136,13 @@ const Chrome = ({ inner: src, type = 'mobile', width, name, ...rest }) => {
       {...bind}
     >
       <Header type={type} />
-      <Viewport isClicked={isClicked} width={width} src={src} name={name} />
+      <Viewport
+        isMobile={isMobile}
+        isClicked={isClicked}
+        width={width}
+        src={src}
+        name={name}
+      />
       {type === 'mobile' ? <Footer /> : null}
     </Box>
   )

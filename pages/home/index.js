@@ -178,14 +178,21 @@ const HeroContent = ({ apps, ...rest }) => {
   )
 }
 
-const renderApps = (items) =>
+const renderApps = (items, isMobile) =>
   items.map(({ y, apps }, sectionKey) => (
     <Box
       key={sectionKey}
       transform={['none', 'none', `translateY(${y}px)`, `translateY(${y}px)`]}
     >
       {apps.map(({ slug, name, width, ...rest }, appKey) => (
-        <Chrome inner={slug} key={appKey} width={width} name={name} {...rest} />
+        <Chrome
+          isMobile={isMobile}
+          inner={slug}
+          key={appKey}
+          width={width}
+          name={name}
+          {...rest}
+        />
       ))}
     </Box>
   ))
@@ -338,8 +345,8 @@ const HeroGraphic = ({ items, mobile, ...rest }) => {
   return (
     <HeroGraphicWrapper mobile={mobile} {...rest}>
       {renderApps(items)}
-      {mobile ? renderApps(items) : null}
-      {mobile ? renderApps(items) : null}
+      {mobile ? renderApps(items, mobile) : null}
+      {mobile ? renderApps(items, mobile) : null}
     </HeroGraphicWrapper>
   )
 }
@@ -372,7 +379,7 @@ const Hero = ({ ...rest }) => {
         >
           <Box width={1} pb={3}>
             <HeroGraphic
-              animatedWrapper={AnimatedDiv}
+              animatedWrapper={(p) => <AnimatedDiv {...p} speed={20} />}
               display={['flex', 'flex', 'none']}
               items={mobileHeroItems1}
               mobile
@@ -380,7 +387,7 @@ const Hero = ({ ...rest }) => {
           </Box>
           <Box width={1}>
             <HeroGraphic
-              animatedWrapper={(p) => <AnimatedDiv {...p} speed={10} />}
+              animatedWrapper={(p) => <AnimatedDiv {...p} speed={15} />}
               display={['flex', 'flex', 'none']}
               items={mobileHeroItems2}
               mobile
