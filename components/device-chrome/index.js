@@ -76,7 +76,7 @@ const Viewport = ({ isClicked, name, src, ...rest }) => {
       <Image
         display="block"
         noBlur
-        src={`https://blockstack-www.imgix.net/home-hero/${src}-inner.png`}
+        src={`https://blockstack-www.imgix.net/home-hero/png/${src}-inner.png`}
         borderRadius="8px"
         {...rest}
       />
@@ -98,7 +98,9 @@ const Footer = ({ ...rest }) => {
 }
 
 const Chrome = ({ inner: src, type = 'mobile', width, name, ...rest }) => {
-  const [hovered, bind] = useHover()
+  // const [hovered, bind] = useHover()
+  const hovered = false
+  const bind = {}
   const [isClicked, setClick] = React.useState(false)
   // const handleClick = () => (isClicked ? setClick(false) : setClick(true))
   const handleClick = () => console.log('not complete yet, do not display')

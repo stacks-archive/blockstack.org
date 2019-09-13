@@ -209,8 +209,13 @@ const heroItems = [
   {
     y: 115,
     apps: [
-      { slug: 'arcane-sheets', name: 'Arcane Sheets', width: 488 },
-      { slug: 'graphite', name: 'Graphite', width: 488, mt: 6 }
+      {
+        slug: 'arcane-sheets',
+        name: 'Arcane Sheets',
+        type: 'browser',
+        width: 488
+      },
+      { slug: 'graphite', name: 'Graphite', type: 'browser', width: 488, mt: 6 }
     ]
   },
   {
@@ -246,7 +251,7 @@ const HeroGraphicWrapper = ({ ...rest }) => {
           `scale(0.5) translateX(-3.8%)`,
           `scale(0.7) translateX(-3.8%)`,
           `scale(0.8) translateX(-3.8%)`,
-          `scale(1) translateX(-3.8%)`
+          `translateX(-3.8%)`
         ]}
         style={{
           transformOrigin: 'top center'

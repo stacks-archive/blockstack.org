@@ -65,6 +65,9 @@ const styles = css`
   #__next {
     overflow: hidden;
   }
+  img {
+    transform: translateZ(0);
+  }
 `
 
 const GlobalStyles = createGlobalStyle`
