@@ -62,6 +62,12 @@ const styles = css`
   .headroom {
     z-index: 99999999 !important;
   }
+  #__next {
+    overflow: hidden;
+  }
+  img {
+    transform: translateZ(0);
+  }
 `
 
 const GlobalStyles = createGlobalStyle`
