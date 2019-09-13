@@ -37,7 +37,6 @@ const PreviewImage = ({ borderRadius, bgImg, src, alt, ...rest }) => {
         transition="0.5s all ease-in-out 0.3s"
         width={1}
         is={bgImg ? 'div' : 'img'}
-        loading="lazy"
         title={bgImg ? alt : undefined}
         alt={!bgImg ? alt : undefined}
         display="block"
@@ -56,7 +55,6 @@ const PreviewImage = ({ borderRadius, bgImg, src, alt, ...rest }) => {
         transition="0.5s all ease-in-out 0.3s"
         width={1}
         is={bgImg ? 'div' : 'img'}
-        loading="lazy"
         title={bgImg ? alt : undefined}
         alt={!bgImg ? alt : undefined}
         display="block"
@@ -85,7 +83,6 @@ const HighResImage = ({ bgImg, noBlur, alt, ...rest }) => (
     backgroundSize={bgImg ? 'cover' : 'unset'}
     backgroundPosition="center center"
     is={bgImg ? 'div' : 'img'}
-    loading="lazy"
     title={bgImg ? alt : undefined}
     alt={!bgImg ? alt : undefined}
     display="block"
@@ -121,15 +118,7 @@ const Image = ({
   if (!isImgix) {
     return (
       <Box width={1} {...wrapper}>
-        <Box
-          is="img"
-          loading="lazy"
-          width={1}
-          display="block"
-          src={url}
-          alt={alt}
-          {...rest}
-        />
+        <Box is="img" width={1} display="block" src={url} alt={alt} {...rest} />
       </Box>
     )
   }

@@ -17,7 +17,17 @@ import { Image } from '@components/image'
 import { useHover } from 'use-events'
 import { Chrome } from '@components/device-chrome'
 import { useSectionIsInViewport } from '@common/hooks'
-import { transition } from '@common/theme'
+import styled, { keyframes } from 'styled-components'
+
+const moveHorizontally = keyframes`
+  100% { 
+    transform: translateX(-33.333333%);  
+  }
+`
+
+const AnimatedDiv = styled(Flex)`
+  animation: ${moveHorizontally} ${({ speed = 8 }) => speed}s linear infinite;
+`
 
 const SummitCard = ({ ...rest }) => {
   const [hovered, bind] = useHover()
@@ -180,6 +190,49 @@ const renderApps = (items) =>
     </Box>
   ))
 
+const mobileHeroItems1 = [
+  {
+    y: 0,
+    apps: [{ slug: 'dmail', name: 'dMail', width: 490, type: 'browser' }]
+  },
+  {
+    y: 0,
+    apps: [{ slug: 'recall', name: 'Recall', width: 264 }]
+  },
+  {
+    y: 0,
+    apps: [{ slug: 'sigle', name: 'Sigle', width: 530, type: 'browser' }]
+  },
+  {
+    y: 0,
+    apps: [{ slug: 'nomie', name: 'Nomie', width: 264 }]
+  }
+]
+const mobileHeroItems2 = [
+  {
+    y: 0,
+    apps: [{ slug: 'scannie', name: 'Scannie', width: 264 }]
+  },
+  {
+    y: 0,
+    apps: [{ slug: 'forms-id', name: 'Forms.id', width: 490, type: 'browser' }]
+  },
+  {
+    y: 0,
+    apps: [{ slug: 'afari', name: 'Afari', width: 264 }]
+  },
+  {
+    y: 0,
+    apps: [
+      {
+        slug: 'arcane-sheets',
+        name: 'Arcane Sheets',
+        type: 'browser',
+        width: 488
+      }
+    ]
+  }
+]
 const heroItems = [
   {
     y: 220,
@@ -224,7 +277,14 @@ const heroItems = [
   }
 ]
 
-const HeroGraphicWrapper = ({ ...rest }) => {
+const AnimatedWrapperPlaceholer = ({ children }) => <>{children}</>
+const HeroGraphicWrapper = ({
+  mobile,
+  display,
+  animatedWrapper: AnimatedWrapper = AnimatedWrapperPlaceholer,
+
+  ...rest
+}) => {
   const isInViewport = useSectionIsInViewport()
 
   return (
@@ -232,24 +292,25 @@ const HeroGraphicWrapper = ({ ...rest }) => {
       alignItems="center"
       justifyContent="center"
       width="100%"
-      height={['392px', '492px', '592px', '792px']}
+      height={!mobile ? ['392px', '492px', '592px', '792px'] : '294px'}
       maxWidth="100vw"
       px={5}
       overflow="hidden"
       bg="white"
-      mt={64}
-      borderBottom="1px solid #F0F0F5"
+      mt={!mobile ? 64 : undefined}
+      borderBottom={!mobile ? '1px solid #F0F0F5' : undefined}
       position="relative"
+      display={display}
     >
       <Box
         transition="1s opacity cubic-bezier(.19,1,.22,1) 0.5s"
         position="absolute"
         top={0}
-        pt={64}
+        pt={!mobile ? 64 : undefined}
         opacity={isInViewport ? 1 : 0}
         transform={[
           `scale(0.5) translateX(-3.8%)`,
-          `scale(0.7) translateX(-3.8%)`,
+          `scale(0.5) translateX(-3.8%)`,
           `scale(0.8) translateX(-3.8%)`,
           `translateX(-3.8%)`
         ]}
@@ -262,14 +323,25 @@ const HeroGraphicWrapper = ({ ...rest }) => {
           justifyContent="center"
           transition="1s transform cubic-bezier(.19,1,.22,1) 0.5s"
           transform={`translateY(${isInViewport ? 0 : -10}px)`}
-          {...rest}
-        />
+        >
+          <AnimatedWrapper
+            {...rest}
+            alignItems="flex-start"
+            justifyContent="center"
+          />
+        </Flex>
       </Box>
     </Flex>
   )
 }
-const HeroGraphic = ({ items, ...rest }) => {
-  return <HeroGraphicWrapper>{renderApps(items)}</HeroGraphicWrapper>
+const HeroGraphic = ({ items, mobile, ...rest }) => {
+  return (
+    <HeroGraphicWrapper mobile={mobile} {...rest}>
+      {renderApps(items)}
+      {mobile ? renderApps(items) : null}
+      {mobile ? renderApps(items) : null}
+    </HeroGraphicWrapper>
+  )
 }
 
 const Hero = ({ ...rest }) => {
@@ -279,7 +351,7 @@ const Hero = ({ ...rest }) => {
         bg="white"
         py={undefined}
         px={0}
-        mt={'120px'}
+        mt={[64, 64, '120px']}
         parentOverflow="hidden"
         maxWidth="100%"
         justifyContent="center"
@@ -289,7 +361,32 @@ const Hero = ({ ...rest }) => {
         zIndex={99}
       >
         <HeroContent />
-        <HeroGraphic items={heroItems} />
+        <HeroGraphic display={['none', 'none', 'flex']} items={heroItems} />
+        <Box
+          maxHeight="560px"
+          overflow="hidden"
+          display={['block', 'block', 'none']}
+          pt={6}
+          width={1}
+          borderBottom={'1px solid #F0F0F5'}
+        >
+          <Box width={1} pb={3}>
+            <HeroGraphic
+              animatedWrapper={AnimatedDiv}
+              display={['flex', 'flex', 'none']}
+              items={mobileHeroItems1}
+              mobile
+            />
+          </Box>
+          <Box width={1}>
+            <HeroGraphic
+              animatedWrapper={(p) => <AnimatedDiv {...p} speed={10} />}
+              display={['flex', 'flex', 'none']}
+              items={mobileHeroItems2}
+              mobile
+            />
+          </Box>
+        </Box>
       </Section>
     </>
   )

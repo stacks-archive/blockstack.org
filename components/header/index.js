@@ -207,7 +207,6 @@ const Header = ({
 
   return (
     <>
-      <HelloBar theme={headerTheme} />
       <Headroom>
         <HeaderTheme.Provider value={headerTheme}>
           <>
