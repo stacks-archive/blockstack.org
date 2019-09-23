@@ -27,7 +27,7 @@ export default class Error extends React.Component {
           Sorry, looks like this page doesn't exist or we ran into an error!{' '}
         </p>
         <p>
-          <Link href="/" prefetch>
+          <Link href="/" >
             <a href="/">Head back home.</a>
           </Link>
         </p>

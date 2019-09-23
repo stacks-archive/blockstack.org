@@ -191,7 +191,7 @@ const Section = ({
 
 const TextLinkComponent = ({ path, children }) =>
   path ? (
-    <Link href={path} prefetch>
+    <Link href={path} >
       {children}
     </Link>
   ) : (
