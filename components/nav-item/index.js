@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 const WrappedLink = ({ path, children }) =>
   path ? (
-    <Link href={path} prefetch>
+    <Link href={path} >
       {children}
     </Link>
   ) : (

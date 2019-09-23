@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { forwardRef, useState, useEffect, useContext } from 'react'
 import { useHover, useActive } from 'use-events'
 import { Box, Flex } from 'blockstack-ui'
 import MenuIcon from 'mdi-react/MenuIcon'
@@ -111,44 +111,44 @@ const MobileMenuButton = ({ open, ...rest }) => {
   )
 }
 
-const MobileMenu = ({
-  open,
-  setSubnavVisibility,
-  setMobileMenuState,
-  subnavVisible,
-  ...rest
-}) => {
-  const { bg } = useHeaderTheme()
-  const headerHeight = useContext(HeaderHeightContext)
+const MobileMenu = forwardRef(
+  (
+    { open, setSubnavVisibility, setMobileMenuState, subnavVisible, ...rest },
+    ref
+  ) => {
+    const { bg } = useHeaderTheme()
+    const headerHeight = useContext(HeaderHeightContext)
 
-  return (
-    <Box
-      position="absolute"
-      top={headerHeight - 1}
-      height={`calc(100vh - ${headerHeight + 1}px)`}
-      maxHeight={`calc(100vh - ${headerHeight + 1}px)`}
-      bg={bg}
-      zIndex={9999}
-      width={1}
-      opacity={open ? 1 : 0}
-      transition={transition}
-      display={['block', 'block', 'none']}
-      p={5}
-      style={{ pointerEvents: open ? 'unset' : 'none' }}
-      overflow="auto"
-      {...rest}
-    >
-      <Navigation
-        setMobileMenuState={setMobileMenuState}
-        setSubnavVisibility={setSubnavVisibility}
-        subnavVisible={subnavVisible}
-        isMobileMenu
-      />
-    </Box>
-  )
-}
+    return (
+      <Box
+        position="absolute"
+        top={headerHeight - 1}
+        height={`calc(100vh - ${headerHeight + 1}px)`}
+        maxHeight={`calc(100vh - ${headerHeight + 1}px)`}
+        bg={bg}
+        zIndex={9999}
+        width={1}
+        opacity={open ? 1 : 0}
+        transition={transition}
+        display={['block', 'block', 'none']}
+        p={5}
+        style={{ pointerEvents: open ? 'unset' : 'none' }}
+        overflow="auto"
+        ref={ref}
+        {...rest}
+      >
+        <Navigation
+          setMobileMenuState={setMobileMenuState}
+          setSubnavVisibility={setSubnavVisibility}
+          subnavVisible={subnavVisible}
+          isMobileMenu
+        />
+      </Box>
+    )
+  }
+)
 
-const HeaderBar = ({ innerRef, children, ...rest }) => {
+const HeaderBar = forwardRef(({ innerRef, children, ...rest }, ref) => {
   const { bg, borderColor } = useHeaderTheme()
   return (
     <Box
@@ -160,13 +160,12 @@ const HeaderBar = ({ innerRef, children, ...rest }) => {
       borderColor={borderColor}
       transition={transition}
       bg={bg}
-      ref={innerRef}
       {...rest}
     >
-      <div ref={innerRef}>{children}</div>
+      <div ref={innerRef || ref}>{children}</div>
     </Box>
   )
-}
+})
 
 const Header = ({
   theme: headerTheme = defaultHeaderTheme,
@@ -213,7 +212,7 @@ const Header = ({
             <Box letterSpacing="-0.02em" {...bind} {...rest}>
               <HeaderBar innerRef={innerRef}>
                 <Wrapper py={4}>
-                  <Link href={'/'} prefetch>
+                  <Link href={'/'}>
                     <Box
                       is="a"
                       href={'/'}

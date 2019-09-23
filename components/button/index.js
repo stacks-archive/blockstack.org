@@ -15,7 +15,7 @@ const getVariant = (variant, hovered) => {
 
 const WrapperComponent = ({ path, children }) =>
   path ? (
-    <Link href={path} prefetch>
+    <Link href={path} >
       {children}
     </Link>
   ) : (
