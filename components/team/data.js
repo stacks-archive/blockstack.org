@@ -200,5 +200,17 @@ export const teamMembers = [
     name: 'Jenny Mith',
     bio:
       'Jenny is Blockstack’s Digital Community Partner. Prior to joining Blockstack, she worked with Codesmith to build a thriving Women in Software Engineering community and pilot several technical training programs, including Codesmith’s machine learning immersive. Jenny received her B.A. in philosophy from Grinnell College and her MSc in philosophy and public policy from the London School of Economics.'
+  },
+  {
+    blockstackId: 'kyranjamie',
+    name: 'Kyran Burraston',
+    bio:
+      'Kyran is a User Interface Engineer working at Blockstack. Originally from Bristol, UK, he now lives in The Netherlands. Previously, he worked for a number of fintech startups building cryptocurrency and precious metal trading platforms.'
+  },
+  {
+    blockstackId: 'amyliu', // confirm if accurate
+    name: 'Amy Liu',
+    bio:
+      'Amy is Blockstack’s Accounting Manager. Prior to Blockstack, she was a Fund Accounting Manager at Lindsay Goldberg, a Private Equity firm, managing the accounting functions for multiple funds. She has also worked at Ernst & Young LLP and Anchin, Block & Anchin LLP where she helped execute audits of hedge funds. She is a Certified Public Accountant and a Chartered Alternative Investment Analyst. She obtained her bachelor’s degree in Economics from University of California at Berkeley.'
   }
 ]
