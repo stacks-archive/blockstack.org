@@ -1,8 +1,24 @@
-FROM node:8
-WORKDIR /src/blockstack.org
+FROM node:10.15.3-alpine as base
+# FROM blockstack/node:latest as base
+WORKDIR /usr/src
+COPY ./package.json ./yarn.lock /usr/src/
+RUN apk update
+RUN apk add --repository https://dl-3.alpinelinux.org/alpine/edge/community/ --update-cache \
+  python \
+  py-pip \
+  make \
+  g++ \
+  vips-dev
+RUN yarn install
 COPY . .
-RUN npm install
-RUN npm run prod
+RUN yarn build && \
+  apk del \
+    python \
+    py-pip \
+    make \
+    g++ && \
+  yarn --production
+RUN yarn prod
 
 FROM nginx
 RUN apt-get update && apt-get install ssl-cert -y
