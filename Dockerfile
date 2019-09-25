@@ -9,16 +9,14 @@ RUN apk add --repository https://dl-3.alpinelinux.org/alpine/edge/community/ --u
   make \
   g++ \
   vips-dev
-RUN yarn install
+RUN yarn
 COPY . .
-RUN yarn build && \
+RUN yarn build && yarn export && \
   apk del \
     python \
     py-pip \
     make \
-    g++ && \
-  yarn --production
-RUN yarn prod
+    g++
 
 FROM nginx
 RUN apt-get update && apt-get install ssl-cert -y
