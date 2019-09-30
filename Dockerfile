@@ -1,4 +1,4 @@
-FROM node:11
+FROM node:12
 WORKDIR /src/blockstack.org
 RUN npm i -g yarn
 COPY yarn.lock package.json /src/blockstack.org/
