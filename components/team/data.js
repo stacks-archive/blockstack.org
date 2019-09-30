@@ -212,5 +212,11 @@ export const teamMembers = [
     name: 'Amy Liu',
     bio:
       'Amy is Blockstack’s Accounting Manager. Prior to Blockstack, she was a Fund Accounting Manager at Lindsay Goldberg, a Private Equity firm, managing the accounting functions for multiple funds. She has also worked at Ernst & Young LLP and Anchin, Block & Anchin LLP where she helped execute audits of hedge funds. She is a Certified Public Accountant and a Chartered Alternative Investment Analyst. She obtained her bachelor’s degree in Economics from University of California at Berkeley.'
+  },
+  {
+    blockstackId: 'reed.id',
+    name: 'Reed Rosenbluth',
+    bio:
+      'Reed is a Full Stack Engineer at Blockstack. Prior to starting at Blockstack, Reed spent two years as a software engineer at Ripple, and was one of Ripple’s first interns. He received a BSE in Computer Science from the University of Pennsylvania, where he started the university’s first Bitcoin club.'
   }
 ]
