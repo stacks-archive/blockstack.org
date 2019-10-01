@@ -14,11 +14,20 @@
 - Launch ability to publish apps via Blockstack Naming System vs. DNS.
 - Launch of Mining Pilot on Stacks V2 mainnet.
 
+### 2019 Q4
+
+- Alpha release of new Blockstack authenticator with improved UX and in-app transaction signing.
+- Host 4th Annual Blockstack Summit 2019, the annual flagship event.
+- Increase App Mining STX payouts to a target of $500,000 per month.
+- Distribute Stacks tokens to 2019 investors via hardfork.
+- Complete security audit on Stacks Blockchain V2.
+- Release beta for Clarity smart contract language.
+
 ### 2019 Q3
 
 - Raised ~$23M in SEC-qualified token offering and Asian strategic funding round.
 - Announced [Asian strategic funding round](https://blog.blockstack.org/strategic-asian-investors-blockstack/) led by Hashkey and SNZ.
-- Reached 250 independent apps built on Blockstack
+- Reached 250 independent apps built on Blockstack.
 - Began paying STX to ecosystem developers participating in App Mining.
 - Launched Stacks V2 testnet with transaction and smart contract support.
 - Announced partnership with Lambda School with the goal of teaching Blockstack to thousands of student developers.
