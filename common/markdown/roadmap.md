@@ -1,42 +1,48 @@
-### 2020
+### 2020 Q3-Q4
 
-- Launch of full-scale Stacks mining.
 - Launch of App Mining registration and voting directly on Stacks blockchain.
-- Launch of community elections for App Mining App Reviewers.
-- Release of Gaia storage upgrade, making Gaia even more decentralized and censorship-resistant.
+- Release of Stacks Wallet V4 with faster, cheaper transactions.
+
+### 2020 Q1-Q2
+
+- Increase App Mining STX payouts to a target of $1,000,000 per month.
+- Complete Stacks V2 hardfork with new consensus algorithm, simple client verification, higher throughput, smart contracts, and app specific tokens.
+- Release of Clarity on mainnet allowing fully-featured smart contracts and in-app financial services.
+- Grow to first million users on the Blockstack network (Milestone 2).
 - Release of anonymous analytics API to report on app usage, growth, and retention.
-- Release of core consumer utility apps for Blockstack ID such as profile management, address book, and file explorer.
-
-### 2019 Q3–Q4
-
-- Hardfork to new consensus algorithm: Simple client verification, higher throughput, and smart contracts.
-- Release ability to create app-specific economies through app tokens.
-- Launch of fully-featured smart contracting support in the Stacks blockchain, allowing for financial services functionality in apps.
-- Begin paying STX to Blockstack app ecosystem developers via App Mining
-- Launch ability to publish apps via Blockstack Naming System vs. DNS.
 - Launch of iOS and Android apps for Blockstack authentication.
-- Host Blockstack Summit 2019, the annual flagship event.
+- Launch ability to publish apps via Blockstack Naming System vs. DNS.
+- Launch of Mining Pilot on Stacks V2 mainnet.
 
-### 2019 Q2
+### 2019 Q3
 
-- Blockstack Token LLC files publicly for Reg A qualification for proposed $50M token sale.
-- Announce plan to pay $1,000,000 each month to Blockstack app ecosystem developers.
-- 100 Blockstack apps built on Blockstack.
-- Release of Clarity smart contract SDK and tutorials.
-- Form dedicated QA team, automated testing, pre-release process for core libraries.
-- Release of technical whitepaper 2.0 covering latest full-stack architecture of Blockstack.
-- Release of in-depth report on the future of Stacks token economics.
-- Addition of cross-app data sharing Collections functionality to Gaia.
+- Raised ~$23M in SEC-qualified token offering and Asian strategic funding round.
+- Announced [Asian strategic funding round](https://blog.blockstack.org/strategic-asian-investors-blockstack/) led by Hashkey and SNZ.
+- Reached 250 independent apps built on Blockstack
+- Began paying STX to ecosystem developers participating in App Mining.
+- Launched Stacks V2 testnet with transaction and smart contract support.
+- Announced partnership with Lambda School with the goal of teaching Blockstack to thousands of student developers.
+- Released developer preview of Collections, a protocol for cross-app data sharing on Gaia.
+- Released Stackit tutorial, covering all aspects of Blockstack app development.
 
 ---
 
+### 2019 Q2
+
+- Opened the first SEC qualified token sale in US history.
+- Announced $1M STX/month target for ecosystem developers participating in App Mining.
+- Reached 176 independent apps built on Blockstack.
+- Announced developer preview of Clarity smart contract language, including SDK, documentation, and tutorials.
+- Published the [Blockstack Whitepaper 2.0](https://blog.blockstack.org/announcing-the-blockstack-whitepaper-2-0/), building on two years of R&D and peer-reviewed research. Available in English, Korean, Chinese, Japanese, and Spanish.
+- Launched first Can’t Be Evil contest hosted with Product Hunt, Lightning Network, DevPost, and Dapp.com.
+
 ### 2019 Q1
 
-- Release of prototype virtual machine (VM) for Stacks smart contracting language.
-- Release of new consensus algorithm for Stacks blockchain v2 (SIP-001).
-- Release of Radiks which provides data indexing on top of Gaia.
 - Feb App Mining results included 57 user-ready apps.
 - TryMyUI added as App Reviewer to App Mining.
+- Released prototype virtual machine (VM) for Stacks smart contracting language.
+- Released new consensus algorithm for Stacks blockchain v2 (SIP-001).
+- Released Radiks which provides data indexing on top of Gaia.
 
 ### 2018 Q4
 
@@ -106,7 +112,7 @@
 - Released three peer-reviewed papers being accepted and published by venues like USENIX, The Advanced Computing Systems Association.
 - Started meetups for Blockstack’s technology in various cities around the world and the developer community grew to over 1000.
 
-### 2013–2014
+### 2013-2014
 
 - Muneeb Ali and Ryan Shea met at Princeton University’s Computer Science department in 2013 and decided to start a long journey of solving critical problems of today’s internet.
 - Went through Y Combinator in summer 2014, and raised a round of seed investment led by Union Square Ventures, with participation from Naval Ravikant, SV Angel, and others.
@@ -114,6 +120,6 @@
 
 ---
 
-_Last updated: May 31, 2019_
+_Last updated: October 1, 2019_
 
 _This webpage contains forward-looking statements, including statements regarding Blockstack PBC’s plans for the Stacks token and blockchain. Forward-looking statements are subject to risks and uncertainties that could cause actual results to differ materially, and reported results should not be considered as an indication of future performance. Potential risks and uncertainties that could change our actual results include, but are not limited to, risks associated with: the failure of Blockstack to successfully launch the genesis block; technical obstacles in further developing the Stacks blockchain and potential failure of its underlying technology; the failure of Blockstack to successfully launch web extensions; technical obstacles in further developing and launching the iOS and Android apps for Blockstack authentication; the ability to begin the first community-powered election for App Reviewers; risks associated with attacks designed to influence App Reviewers or game their methodologies; and the ability to create and the effectiveness of establishing app-specific economies through app coins. These forward-looking statements speak only as of the date hereof. Blockstack PBC disclaims any obligation to update these forward-looking statements._
