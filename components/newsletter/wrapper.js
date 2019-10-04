@@ -38,7 +38,7 @@ const useNewsletterState = () => {
 
     try {
       const res = await fetch(
-        'https://app-co-api.herokuapp.com/api/blockstack-subscribe',
+        'https://api.app.co/api/blockstack-subscribe',
         {
           method: 'POST',
           body: JSON.stringify({
@@ -94,7 +94,7 @@ class NewsletterWrapper extends React.Component {
 
     try {
       const res = await fetch(
-        'https://app-co-api.herokuapp.com/api/blockstack-subscribe',
+        'https://api.app.co/api/blockstack-subscribe',
         {
           method: 'POST',
           body: JSON.stringify({
