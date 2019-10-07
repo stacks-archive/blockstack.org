@@ -80,13 +80,13 @@ const SectionItems = ({ items, open, ...rest }) => (
     pt={[4, 4, 0]}
     {...rest}
   >
-    {items.map((item) =>
+    {items.map((item, key) =>
       item.label ? (
-        <FooterLink path={item.path} href={item.href} py={1}>
+        <FooterLink path={item.path} href={item.href} py={1} key={key}>
           {item.label}
         </FooterLink>
       ) : item.children ? (
-        item.children
+        <React.Fragment key={key}>{item.children}</React.Fragment>
       ) : null
     )}
   </Box>

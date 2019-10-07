@@ -29,7 +29,7 @@ const WrappedComponent = ({
 }) => {
   const ref = useRef(null)
   const size = useComponentSize(ref)
-  const height = size && size.height
+  const height = size && size.height + 44
 
   return (
     <HeaderHeightContext.Provider value={height}>

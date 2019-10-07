@@ -37,13 +37,13 @@ const HelloBar = ({ theme, ...rest }) => {
     >
       <Box
         is="a"
-        href="https://stackstoken.com"
+        href="https://summit.blockstack.org"
         target="_blank"
         size="100%"
         zIndex={9}
         position="absolute"
-        aria-label="Learn about the Stacks Token sale at stackstoken.com"
-        title="Learn about the Stacks Token sale at stackstoken.com"
+        aria-label="Buy tickets for the Blockstack Summit on October 23, in San Fransisco, CA, USA."
+        title="Buy tickets for the Blockstack Summit on October 23, in San Fransisco, CA, USA."
       />
       <Wrapper alignItems="center" py={3} justifyContent="center">
         <Box
@@ -52,7 +52,11 @@ const HelloBar = ({ theme, ...rest }) => {
           fontSize={1}
           transition={transition}
         >
-          Learn about the Stacks Token sale
+          Buy tickets for the Blockstack Summit
+          <Box is="span" display={['none', 'inline', 'inline']}>
+            {' '}
+            | Oct 23 | San Fransisco
+          </Box>
         </Box>
         <Box color="white" transform="translateY(1px)" pl={1}>
           <ArrowUpRightIcon size={14} />
@@ -209,6 +213,7 @@ const Header = ({
       <Headroom>
         <HeaderTheme.Provider value={headerTheme}>
           <>
+            <HelloBar />
             <Box letterSpacing="-0.02em" {...bind} {...rest}>
               <HeaderBar innerRef={innerRef}>
                 <Wrapper py={4}>
