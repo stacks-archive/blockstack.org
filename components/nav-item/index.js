@@ -251,7 +251,7 @@ const SubNav = ({
     <Box
       zIndex={9999}
       position="absolute"
-      top={headerHeight + 1 + 44 + 'px'}
+      top={headerHeight + 1 + 'px'}
       width={1}
       left={0}
       bg={bg}
