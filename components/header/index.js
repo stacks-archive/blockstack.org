@@ -52,7 +52,11 @@ const HelloBar = ({ theme, ...rest }) => {
           fontSize={1}
           transition={transition}
         >
-          Buy tickets for the Blockstack Summit | Oct 23 | San Fransisco
+          Buy tickets for the Blockstack Summit
+          <Box is="span" display={['none', 'inline', 'inline']}>
+            {' '}
+            | Oct 23 | San Fransisco
+          </Box>
         </Box>
         <Box color="white" transform="translateY(1px)" pl={1}>
           <ArrowUpRightIcon size={14} />
