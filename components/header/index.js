@@ -42,8 +42,8 @@ const HelloBar = ({ theme, ...rest }) => {
         size="100%"
         zIndex={9}
         position="absolute"
-        aria-label="Buy tickets for the Blockstack Summit on October 23, in San Fransisco, CA, USA."
-        title="Buy tickets for the Blockstack Summit on October 23, in San Fransisco, CA, USA."
+        aria-label="Buy tickets for the Blockstack Summit on October 23, in San Francisco, CA, USA."
+        title="Buy tickets for the Blockstack Summit on October 23, in San Francisco, CA, USA."
       />
       <Wrapper alignItems="center" py={3} justifyContent="center">
         <Box
@@ -55,7 +55,7 @@ const HelloBar = ({ theme, ...rest }) => {
           Buy tickets for the Blockstack Summit
           <Box is="span" display={['none', 'inline', 'inline']}>
             {' '}
-            | Oct 23 | San Fransisco
+            | Oct 23 | San Francisco
           </Box>
         </Box>
         <Box color="white" transform="translateY(1px)" pl={1}>
