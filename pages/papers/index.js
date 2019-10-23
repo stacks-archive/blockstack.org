@@ -30,6 +30,18 @@ const documents = [
     language: 'en'
   },
   {
+    name: 'Stacks Token Economics',
+    description: (
+      <>
+        Whitepaper v2.0
+        <br />
+        Oct 2019
+      </>
+    ),
+    href: '/tokenpaper.pdf',
+    language: 'en'
+  },
+  {
     name: 'La Red Computacional Descentralizada de Blockstack',
     description: (
       <>
