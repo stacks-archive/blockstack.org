@@ -134,7 +134,7 @@ const sections = [
         {
           alignItems: 'flex-start',
           text: {
-            children: `Blockstack PBC, a public benefit corporation at the heart of the Blockstack ecosystem, has raised $50M+ in capital to develop the core protocols and developer tools for the platform. We’re headquartered in New York City, with a globally distributed team that includes computer scientists from Princeton, Stanford, MIT and other top universities. `
+            children: `Blockstack PBC, a public benefit corporation at the heart of the Blockstack ecosystem, has raised $75M+ in capital to develop the core protocols and developer tools for the platform. We’re headquartered in New York City, with a globally distributed team that includes computer scientists from Princeton, Stanford, MIT and other top universities. `
           }
         },
         {
@@ -153,10 +153,10 @@ const sections = [
           icon: CheckIcon,
           items: [
             'Founded in 2013 at Princeton',
-            '$50M in funding',
+            '$75M+ in funding',
             '4 years of research & development',
-            '7,000+ active developers and enthusiasts',
-            '100+ apps launched on Blockstack'
+            '8,000+ active developers and enthusiasts',
+            '270+ apps launched on Blockstack'
           ]
         }
       }
