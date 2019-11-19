@@ -218,5 +218,15 @@ export const teamMembers = [
     name: 'Reed Rosenbluth',
     bio:
       'Reed is a Full Stack Engineer at Blockstack. Prior to starting at Blockstack, Reed spent two years as a software engineer at Ripple, and was one of Ripple’s first interns. He received a BSE in Computer Science from the University of Pennsylvania, where he started the university’s first Bitcoin club.'
+  },
+  {
+    blockstackId: 'ryanarndt.id',
+    name: 'Ryan Arndt',
+    bio: ''
+  },
+  {
+    blockstackId: '',
+    name: 'Tom Gerrity',
+    bio: ''
   }
 ]
