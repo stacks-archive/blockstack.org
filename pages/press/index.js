@@ -20,9 +20,12 @@ class PressPage extends React.PureComponent {
     return (
       <Section>
         <Section.Pane width={1}>
-          <Section.Title is="h2" pb={5}>
+          <Section.Title is="h2" pb={4}>
             {meta.title}
           </Section.Title>
+          <Section.Text is="h3" pb={7}>
+            For media and press inquiries, please contact <a href="mailto:press@blockstack.com">press@blockstack.com</a>
+          </Section.Text>
           <Press items={press} />
         </Section.Pane>
       </Section>
