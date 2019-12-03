@@ -6,10 +6,7 @@ const ImageWrapper = ({ ...rest }) => (
   <Box
     css={css({
       '.lazyloaded': {
-        opacity: '1 !important',
-        '& + div': {
-          opacity: '0 !important'
-        }
+        opacity: '1 !important'
       }
     })}
     {...rest}
@@ -28,49 +25,48 @@ const PreviewImage = ({ borderRadius, bgImg, src, alt, ...rest }) => {
       }
 
   return (
-    <Box
-      overflow="hidden"
-      transition="0.5s all ease-in-out 0.3s"
-      borderRadius={borderRadius}
-    >
+    <div style={{ overFlow: 'hidden', borderRadius }}>
       <Box
+        overflow="hidden"
         transition="0.5s all ease-in-out 0.3s"
-        width={1}
-        is={bgImg ? 'div' : 'img'}
-        loading="lazy"
-        title={bgImg ? alt : undefined}
-        alt={!bgImg ? alt : undefined}
-        display="block"
-        maxWidth="100%"
-        position="relative"
-        height={bgImg ? '100%' : 'unset'}
-        zIndex={2}
-        style={{
-          filter: 'blur(10px)'
-        }}
         borderRadius={borderRadius}
-        {...rest}
-        {...srcProps}
-      />
-      <Box
-        transition="0.5s all ease-in-out 0.3s"
-        width={1}
-        is={bgImg ? 'div' : 'img'}
-        loading="lazy"
-        title={bgImg ? alt : undefined}
-        alt={!bgImg ? alt : undefined}
-        display="block"
-        maxWidth="100%"
-        height={bgImg ? '100%' : 'unset'}
-        position="absolute"
-        zIndex={1}
-        top={0}
-        left={0}
-        borderRadius={borderRadius}
-        {...srcProps}
-        {...rest}
-      />
-    </Box>
+      >
+        <Box
+          transition="0.5s all ease-in-out 0.3s"
+          width={1}
+          is={bgImg ? 'div' : 'img'}
+          loading="lazy"
+          title={bgImg ? alt : undefined}
+          alt={!bgImg ? alt : undefined}
+          display="block"
+          maxWidth="100%"
+          position="relative"
+          height={bgImg ? '100%' : 'unset'}
+          zIndex={2}
+          borderRadius={borderRadius}
+          {...rest}
+          {...srcProps}
+        />
+        <Box
+          transition="0.5s all ease-in-out 0.3s"
+          width={1}
+          is={bgImg ? 'div' : 'img'}
+          loading="lazy"
+          title={bgImg ? alt : undefined}
+          alt={!bgImg ? alt : undefined}
+          display="block"
+          maxWidth="100%"
+          height={bgImg ? '100%' : 'unset'}
+          position="absolute"
+          zIndex={1}
+          top={0}
+          left={0}
+          borderRadius={borderRadius}
+          {...srcProps}
+          {...rest}
+        />
+      </Box>
+    </div>
   )
 }
 const HighResImage = ({ bgImg, noBlur, alt, ...rest }) => (
