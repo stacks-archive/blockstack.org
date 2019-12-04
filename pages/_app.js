@@ -83,13 +83,20 @@ const handleBgImageLoaded = (e) => {
 
 class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
+    const countryCode = ctx.req ? ctx.req.headers['cf-ipcountry'] : undefined
+
     let pageProps = {}
 
     if (Component.getInitialProps) {
       pageProps = await Component.getInitialProps(ctx)
     }
 
-    return { pageProps }
+    return {
+      pageProps: {
+        countryCode,
+        ...pageProps
+      }
+    }
   }
 
   componentDidMount() {
@@ -146,7 +153,7 @@ class MyApp extends App {
               <>
                 <Tracking />
                 <Modal />
-                <CookieBanner />
+                <CookieBanner countryCode={this.props.countryCode} />
                 <WrappedComponent
                   pageComponent={PageComponent}
                   pageProps={pageProps}

@@ -93,16 +93,17 @@ const Title = ({ is = 'h1', ...rest }) => {
  * @prop {String|ReactNode} is - the dom element passed, or a component, default is `p`
  * @prop {Object} rest - all additional props to be passed to the component
  */
-const Text = ({ is = 'p', ...rest }) => {
+const Text = ({ is = 'p', color, fontWeight, hover, ...rest }) => {
   const { text, bg } = useSectionVariant()
   const isLink = is.toString() === 'a'
   const shadow = 1
+  const textColor = color || text.hover
   return (
     <Box
       fontFamily="default"
       lineHeight={5}
       fontSize={3}
-      fontWeight={400}
+      fontWeight={fontWeight || 400}
       is={is}
       m={0}
       p={0}
@@ -110,24 +111,24 @@ const Text = ({ is = 'p', ...rest }) => {
         isLink
           ? css({
               '&': {
-                fontWeight: '500',
-                color: text.hover,
+                fontWeight: fontWeight || '500',
+                color: textColor,
                 textDecoration: 'none !important',
                 textShadow: `-${shadow}px -${shadow}px 0 ${bg}, ${shadow}px -${shadow}px 0 ${bg}, -${shadow}px ${shadow}px 0 ${bg}, ${shadow}px ${shadow}px 0 ${bg}`,
                 backgroundRepeat: 'repeat-x',
-                backgroundImage: `url('data:image/svg+xml;utf8,<svg preserveAspectRatio="none" viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="0" x2="1" y2="1" stroke="${text.hover}" /></svg>')`,
+                backgroundImage: `url('data:image/svg+xml;utf8,<svg preserveAspectRatio="none" viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="0" x2="1" y2="1" stroke="${textColor}" /></svg>')`,
                 backgroundSize: `1px 0.9px`,
                 backgroundPosition: `0 calc(1em + 1px)`
               },
               '&:hover': {
                 textDecoration: 'none !important',
-                color: text.hover,
+                color: hover || textColor,
                 backgroundImage: `url('data:image/svg+xml;utf8,<svg preserveAspectRatio="none" viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="0" x2="1" y2="1" stroke="transparent" /></svg>')`
               }
             })
           : undefined
       }
-      color={text.body}
+      color={color || text.body}
       {...rest}
     />
   )
@@ -190,13 +191,7 @@ const Section = ({
 }
 
 const TextLinkComponent = ({ path, children }) =>
-  path ? (
-    <Link href={path} >
-      {children}
-    </Link>
-  ) : (
-    children
-  )
+  path ? <Link href={path}>{children}</Link> : children
 
 /**
  * TextLink
