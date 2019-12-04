@@ -122,6 +122,7 @@ const AppCardItem = ({
     <Flex
       alignItems="flex-end"
       width={['360px', '360px', '570px']}
+      height={[218, 218, 346, 346]}
       flexShrink={0}
       flexGrow={1}
       position="relative"
