@@ -4,43 +4,43 @@ import { Box, Flex } from 'blockstack-ui'
 
 const locations = [
   {
-    city: 'Seoul',
-    date: 'September 3',
+    city: 'Los Angeles',
+    date: <>Jan 31&ndash;Feb 2</>,
     time: 'All day',
-    event: 'JSConf',
-    href: 'https://community.blockstack.org/events#event=32500343',
-    flag: 'sk'
+    event: 'HackSC Hackathon',
+    href: 'https://community.blockstack.org/events#event=35856411',
+    flag: 'us'
   },
   {
-    city: 'Austria',
+    city: 'Stanford',
     date: 'September 4',
-    time: '06:30PM',
-    event: 'Blockstack Austria',
-    href: 'https://community.blockstack.org/events#event=32485508',
-    flag: 'at'
-  },
-  {
-    city: 'Madrid',
-    date: 'September 17',
-    time: '07:00PM',
-    event: 'Blockstack, un ecosistema para un Internet mejor',
-    href: 'https://community.blockstack.org/events#event=32068045',
-    flag: 'es'
-  },
-  {
-    city: 'Amsterdam',
-    date: <>October 9&ndash;10</>,
     time: 'All day',
-    event: `Blockstack's Head of Engineering @ World Summit AI`,
-    href: 'https://community.blockstack.org/events#event=30698879',
-    flag: 'nl'
+    event: 'Stanford Blockchain Conference',
+    href: 'https://cbr.stanford.edu/sbc20/',
+    flag: 'us'
   },
   {
-    city: 'San Francisco',
-    date: 'October 23',
+    city: 'Hong Kong',
+    date: <>March 2&ndash;6</>,
     time: 'All day',
-    event: 'Blockstack Summit',
-    href: 'https://summit.blockstack.org/',
+    event: 'Hong Kong Blockchain Week',
+    href: 'https://www.hkblockchainweek.net/',
+    flag: 'hk'
+  },
+  {
+    city: 'Las Vegas',
+    date: <>April 5&ndash;8</>,
+    time: 'All day',
+    event: `Know Identity Conference`,
+    href: 'https://www.knowidentity.com/',
+    flag: 'us'
+  },
+  {
+    city: 'New York',
+    date: <>May 11&ndash;13</>,
+    time: 'All day',
+    event: 'Consensus',
+    href: 'https://www.coindesk.com/events/consensus-2020',
     flag: 'us'
   }
 ]
@@ -63,8 +63,8 @@ const Events = ({ ...rest }) => {
   return (
     <Flex flexWrap="wrap" {...rest}>
       {locations.map((location, key) => {
-        const [hovered, bind] = useHover()
-
+        const [isHovering, bind] = useHover()
+        const hovered = isHovering && location.href
         const number = key + 1
         const isOdd = number % 2
 

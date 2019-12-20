@@ -35,7 +35,7 @@ const ecosystemPartners = [
   {
     name: 'Signature Fund',
     desc: 'Venture capital for decentralized apps',
-    url: 'https://signature.vc',
+    url: 'https://signaturefund.org',
     src: 'https://blockstack-www.imgix.net/logos/signature-vc-logo.png',
     color: '#0014D9'
   },

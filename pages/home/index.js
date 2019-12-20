@@ -548,8 +548,13 @@ class HomePage extends React.Component {
           {
             width: '100%',
             children: (
-              <Flex flexDirection={['column', 'column', 'row']} pt="96px">
-                <Box width={[1, 1, '50%']} order={[2, 2, 1]} pr={[0, 0, 6]}>
+              <Flex
+                maxWidth="700px"
+                mx="auto"
+                flexDirection={['column', 'column', 'row']}
+                pt="96px"
+              >
+                <Box width={1}>
                   <Events />
                   <Box pt={2}>
                     <TextLink
@@ -561,7 +566,6 @@ class HomePage extends React.Component {
                     />
                   </Box>
                 </Box>
-                <SummitCard />
               </Flex>
             )
           }
