@@ -12,8 +12,7 @@
 - Remote workers can expense coworking spaces.
 - An annual $1,200 budget for learning and education.
 - Daily lunch (even if you’re remote!)
-- 14 days paid time off.
-- Unlimited sick days.
+- Flexible vacation policy.
 - 100% paid gold level health benefits, including vision and dental with no deductible.
 - Free life and disability insurance.
 - Health and dependent care FSAs.
