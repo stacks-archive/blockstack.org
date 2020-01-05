@@ -12,7 +12,7 @@ const languages = [
   { code: 'en', label: 'English', flag: 'gb' },
   { code: 'es', label: 'Español' },
   { code: 'ch', label: '中文', flag: 'cn' },
-  { code: 'jp', label: '日本人', flag: 'jp' },
+  { code: 'jp', label: '日本語', flag: 'jp' },
   { code: 'ko', label: '한국어', flag: 'kr' }
 ]
 
