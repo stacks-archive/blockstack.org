@@ -57,7 +57,7 @@ const footerNavigation = [
       { label: 'Forum', href: 'https://forum.blockstack.org' },
       { label: 'Slack', href: 'https://chat.blockstack.org' },
       { label: 'GitHub', href: 'https://github.com/blockstack' },
-      { label: 'Community guide', href: 'https://github.com/blockstack' },
+      { label: 'Community guide', href: 'https://community.blockstack.org/guide' },
       { label: 'Events', href: 'https://community.blockstack.org/events' },
       { label: 'Telegram', href: 'https://t.me/BlockstackChat' },
       { label: 'Telegram (中文群)', href: 'https://t.me/BlockstackChinese' },

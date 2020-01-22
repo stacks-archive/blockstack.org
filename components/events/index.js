@@ -13,7 +13,7 @@ const locations = [
   },
   {
     city: 'Stanford',
-    date: 'September 4',
+    date: <>Feb 19&ndash;21</>,
     time: 'All day',
     event: 'Stanford Blockchain Conference',
     href: 'https://cbr.stanford.edu/sbc20/',
