@@ -24,7 +24,7 @@ const items = [
   {
     platform: 'Windows',
     description: 'Requires Windows 10',
-    href: `https://github.com/blockstack/blockstack-browser/releases/download/v${version}/Blockstack-for-win10-v${version}.msi`
+    href: `https://github.com/blockstack/blockstack-browser/releases/download/v${version}/Blockstack-for-Windows-v${version}.msi`
   },
   {
     platform: 'Linux',
