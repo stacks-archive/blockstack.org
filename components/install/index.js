@@ -7,7 +7,7 @@ import ArrowUpRightIcon from 'mdi-react/ArrowUpRightIcon'
 import DownloadIcon from 'mdi-react/DownloadIcon'
 import Button from '@components/button'
 
-const version = '0.36.3'
+const version = '0.37.0'
 
 const items = [
   {
@@ -77,7 +77,9 @@ const InstallItem = ({
           </Box>
         </Flex>
         <Box is="span" flexShink={0} flexGrow={1}>
-          <Section.Text fontSize={1} color="#637282">{description}</Section.Text>
+          <Section.Text fontSize={1} color="#637282">
+            {description}
+          </Section.Text>
         </Box>
       </Flex>
       <Box is="span">
