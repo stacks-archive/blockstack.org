@@ -29,7 +29,7 @@ const bslinks = {
   documentation: 'https://docs.blockstack.org',
   github: 'https://github.com/blockstack',
   forum: 'https://forum.blockstack.org/',
-  slack: 'http://chat.blockstack.org/',
+  discord: 'http://chat.blockstack.org/',
   meetup: 'https://www.meetup.com/topics/blockstack/',
   blog: '/blog',
   youtube: 'https://www.youtube.com/channel/UC3J2iHnyt2JtOvtGVf_jpHQ',

@@ -88,7 +88,7 @@ const sections = [
                     href="http://chat.blockstack.org/"
                     target="_blank"
                   >
-                    Slack
+                    Discord
                   </Text>
                   ,{' '}
                   <Text
