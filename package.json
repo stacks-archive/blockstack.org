@@ -39,6 +39,7 @@
     "react-use-gesture": "^5.2.4",
     "rebound": "^0.1.0",
     "scrollmonitor": "^1.2.4",
+    "serialize-javascript": "^2.1.2",
     "set-value": "^3.0.1",
     "styled-components": "^4.3.2",
     "textversionjs": "^1.1.3",
