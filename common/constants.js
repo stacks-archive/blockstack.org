@@ -56,6 +56,7 @@ const footerNavigation = [
     items: [
       { label: 'Forum', href: 'https://forum.blockstack.org' },
       { label: 'Discord', href: 'https://chat.blockstack.org' },
+      { label: 'Reddit', href: 'https://www.reddit.com/r/blockstack/' },
       { label: 'GitHub', href: 'https://github.com/blockstack' },
       { label: 'Community guide', href: 'https://community.blockstack.org/guide' },
       { label: 'Events', href: 'https://community.blockstack.org/events' },
