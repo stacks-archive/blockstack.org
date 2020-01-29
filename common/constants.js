@@ -4,7 +4,7 @@ import {
   NavIconTechOverview,
   NavIconTechGithub,
   NavIconTechDocs,
-  NavIconCommunitySlack,
+  NavIconCommunityDiscord,
   NavIconCommunityForum,
   NavIconCommunityEvents,
   NavIconAboutTokenOffering,
@@ -55,7 +55,7 @@ const footerNavigation = [
     label: 'Community',
     items: [
       { label: 'Forum', href: 'https://forum.blockstack.org' },
-      { label: 'Slack', href: 'https://chat.blockstack.org' },
+      { label: 'Discord', href: 'https://chat.blockstack.org' },
       { label: 'GitHub', href: 'https://github.com/blockstack' },
       { label: 'Community guide', href: 'https://community.blockstack.org/guide' },
       { label: 'Events', href: 'https://community.blockstack.org/events' },
@@ -139,9 +139,9 @@ const navigation = [
         icon: NavIconCommunityForum
       },
       {
-        label: 'Slack',
+        label: 'Discord',
         href: 'https://chat.blockstack.org',
-        icon: NavIconCommunitySlack
+        icon: NavIconCommunityDiscord
       },
       {
         label: 'Events',
