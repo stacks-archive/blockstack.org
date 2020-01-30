@@ -11,14 +11,7 @@ import { createGlobalStyle, ThemeProvider, css } from 'styled-components'
 import { Modal, ModalContextProvider } from '@components/modal'
 import { normalize } from 'polished'
 import { theme } from '@common/theme'
-import dynamic from 'next/dynamic'
-
-const CookieBanner = dynamic(() => import('@components/cookie-banner'), {
-  ssr: false
-})
-const Tracking = dynamic(() => import('@components/tracking'), {
-  ssr: false
-})
+import { Tracking } from '@components/tracking'
 
 export const HeaderHeightContext = React.createContext(null)
 
@@ -146,7 +139,6 @@ class MyApp extends App {
               <>
                 <Tracking />
                 <Modal />
-                <CookieBanner />
                 <WrappedComponent
                   pageComponent={PageComponent}
                   pageProps={pageProps}
