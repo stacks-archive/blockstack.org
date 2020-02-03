@@ -418,7 +418,7 @@ class HomePage extends React.Component {
     const { feed, users, apps } = await dataRes.json()
     return {
       meta,
-      feed: feed.filter((item) => !item.categories.find(127)),
+      feed: feed.filter((item) => !item.categories.find((cat) => cat === 127)),
       users
     }
   }
