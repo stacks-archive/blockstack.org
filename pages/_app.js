@@ -11,12 +11,10 @@ import { createGlobalStyle, ThemeProvider, css } from 'styled-components'
 import { Modal, ModalContextProvider } from '@components/modal'
 import { normalize } from 'polished'
 import { theme } from '@common/theme'
+import { Tracking } from '@components/tracking'
 import dynamic from 'next/dynamic'
 
-const CookieBanner = dynamic(() => import('@components/cookie-banner'), {
-  ssr: false
-})
-const Tracking = dynamic(() => import('@components/tracking'), {
+const Cookiesbanner = dynamic(() => import('../components/cookie-banner'), {
   ssr: false
 })
 
@@ -145,8 +143,8 @@ class MyApp extends App {
             <ThemeProvider theme={theme}>
               <>
                 <Tracking />
+                <Cookiesbanner />
                 <Modal />
-                <CookieBanner />
                 <WrappedComponent
                   pageComponent={PageComponent}
                   pageProps={pageProps}

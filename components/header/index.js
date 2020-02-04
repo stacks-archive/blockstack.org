@@ -37,13 +37,13 @@ const HelloBar = ({ theme, ...rest }) => {
     >
       <Box
         is="a"
-        href="https://stackstoken.com"
+        href="https://forum.blockstack.org/t/stacking-a-new-consensus-algorithm-for-blockchains/10162"
         target="_blank"
         size="100%"
         zIndex={9}
         position="absolute"
-        aria-label="Stacks Tokens Available This Week on Binance, Hashkey Pro"
-        title="Stacks Tokens Available This Week on Binance, Hashkey Pro"
+        aria-label="Stacking, our proposed consensus algorithm that allows Stacks holders to earn Bitcoin"
+        title="Stacking, our proposed consensus algorithm that allows Stacks holders to earn Bitcoin"
       />
       <Wrapper alignItems="center" py={3} justifyContent="center">
         <Box
@@ -52,7 +52,7 @@ const HelloBar = ({ theme, ...rest }) => {
           fontSize={1}
           transition={transition}
         >
-          Stacks Tokens Available This Week on Binance, Hashkey Pro
+          Stacking, our proposed consensus algorithm that allows Stacks holders to earn Bitcoin
         </Box>
         <Box color="white" transform="translateY(1px)" pl={1}>
           <ArrowUpRightIcon size={14} />

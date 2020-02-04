@@ -1,21 +1,16 @@
 import React from 'react'
 import { Meta } from '@components/meta'
-import * as gtag from '@common/lib/gtag'
 import Router from 'next/router'
 
-Router.onRouteChangeComplete = (url) => {
-  gtag.pageview(url)
+const trackPageView = ({ url }) => {
+  typeof window !== 'undefined' && window.fathom('trackPageview', { url })
 }
+
+Router.onRouteChangeComplete = (url) => trackPageView({ url })
 
 const TemplateWrapper = ({ meta, children, ...rest }) => {
   const customTemplate = meta.custom
-  return customTemplate ? (
-    children
-  ) : (
-    <>
-      {children}
-    </>
-  )
+  return customTemplate ? children : <>{children}</>
 }
 
 class NoTemplate extends React.Component {
