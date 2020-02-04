@@ -12,6 +12,11 @@ import { Modal, ModalContextProvider } from '@components/modal'
 import { normalize } from 'polished'
 import { theme } from '@common/theme'
 import { Tracking } from '@components/tracking'
+import dynamic from 'next/dynamic'
+
+const Cookiesbanner = dynamic(() => import('../components/cookie-banner'), {
+  ssr: false
+})
 
 export const HeaderHeightContext = React.createContext(null)
 
@@ -138,6 +143,7 @@ class MyApp extends App {
             <ThemeProvider theme={theme}>
               <>
                 <Tracking />
+                <Cookiesbanner />
                 <Modal />
                 <WrappedComponent
                   pageComponent={PageComponent}
