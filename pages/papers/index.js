@@ -30,10 +30,22 @@ const documents = [
     language: 'en'
   },
   {
+    name: 'PoX: Proof of Transfer Mining with Bitcoin',
+    description: (
+      <>
+        PoX
+        <br />
+        Feb 2020
+      </>
+    ),
+    href: '/pox.pdf',
+    language: 'en'
+  },
+  {
     name: 'Stacks Token Economics',
     description: (
       <>
-        Whitepaper v2.0
+        Token Economics
         <br />
         Oct 2019
       </>
