@@ -1,18 +1,15 @@
-### 2020 Q3-Q4
+### 2020 Q2
 
-- Launch of App Mining registration and voting directly on Stacks blockchain.
-- Release of Stacks Wallet V4 with faster, cheaper transactions.
+- Community-initiated hardfork upgrading network to Stacks 2.0 with new proposed proof-of-transfer mining mechanism, simple client verification, higher throughput, smart contracts, app specific tokens, and app chains.
+- Clarity smart contracting language on mainnet, allowing fully featured smart contracts and in-app financial services.
+- Launch open-source wallet to accompany potential proof-of-transfer rewards.
+- Release updated version of user authenticator with major UX improvements.
 
-### 2020 Q1-Q2
+### 2020 Q1
 
-- Increase App Mining STX payouts to a target of $1,000,000 per month.
-- Complete Stacks V2 hardfork with new consensus algorithm, simple client verification, higher throughput, smart contracts, and app specific tokens.
-- Release of Clarity on mainnet allowing fully-featured smart contracts and in-app financial services.
-- Grow to first million users on the Blockstack network (Milestone 2).
-- Release of anonymous analytics API to report on app usage, growth, and retention.
-- Launch of iOS and Android apps for Blockstack authentication.
-- Launch ability to publish apps via Blockstack Naming System vs. DNS.
-- Launch of Mining Pilot on Stacks V2 mainnet.
+- Release draft whitepaper that proposes a new proof-of-transfer mining mechanism with Bitcoin. Proof-of-transfer uses the security of proof-of-work and improves upon the economic rewards of proof-of-stake.
+- Increase App Mining STX payouts.
+- Grow to first million verified users on the Blockstack network (Milestone 2).
 
 ### 2019 Q4
 
@@ -27,7 +24,7 @@
 
 - Raised ~$23M in SEC-qualified token offering and Asian strategic funding round.
 - Announced [Asian strategic funding round](https://blog.blockstack.org/strategic-asian-investors-blockstack/) led by Hashkey and SNZ.
-- Reached 250 independent apps built on Blockstack.
+- Reached 250 independent apps built on Blockstack
 - Began paying STX to ecosystem developers participating in App Mining.
 - Launched Stacks V2 testnet with transaction and smart contract support.
 - Announced partnership with Lambda School with the goal of teaching Blockstack to thousands of student developers.
@@ -121,7 +118,7 @@
 - Released three peer-reviewed papers being accepted and published by venues like USENIX, The Advanced Computing Systems Association.
 - Started meetups for Blockstack’s technology in various cities around the world and the developer community grew to over 1000.
 
-### 2013-2014
+### 2013–2014
 
 - Muneeb Ali and Ryan Shea met at Princeton University’s Computer Science department in 2013 and decided to start a long journey of solving critical problems of today’s internet.
 - Went through Y Combinator in summer 2014, and raised a round of seed investment led by Union Square Ventures, with participation from Naval Ravikant, SV Angel, and others.
@@ -129,6 +126,10 @@
 
 ---
 
-_Last updated: October 1, 2019_
+_Last updated: Feb 6, 2020_
+
+**Important disclaimer**
+The Securities and Exchange Commission (SEC) has qualified the offering statement that we have filed with the SEC. The information in that offering statement is more complete than the information we are providing now, and could differ in important ways. You must read the documents filed with the SEC before investing. The offering is being made only by means of its offering statement. This document shall not constitute an offer to sell or the solicitation of an offer to buy, nor shall there be any sale of these securities in any state or jurisdiction in which such offer, solicitation or sale would be unlawful prior to registration or qualification under the securities laws of any such state or jurisdiction.
+An indication of interest involves no obligation or commitment of any kind. Any person interested in investing in any offering of Stacks Tokens should review our disclosures and the publicly filed offering statement and the final offering circular that is part of that [offering statement here](https://stackstoken.com/circular). Blockstack is not registered, licensed or supervised as a broker dealer or investment adviser by the SEC, the Financial Industry Regulatory Authority (FINRA) or any other financial regulatory authority or licensed to provide any financial advice or services.
 
 _This webpage contains forward-looking statements, including statements regarding Blockstack PBC’s plans for the Stacks token and blockchain. Forward-looking statements are subject to risks and uncertainties that could cause actual results to differ materially, and reported results should not be considered as an indication of future performance. Potential risks and uncertainties that could change our actual results include, but are not limited to, risks associated with: the failure of Blockstack to successfully launch the genesis block; technical obstacles in further developing the Stacks blockchain and potential failure of its underlying technology; the failure of Blockstack to successfully launch web extensions; technical obstacles in further developing and launching the iOS and Android apps for Blockstack authentication; the ability to begin the first community-powered election for App Reviewers; risks associated with attacks designed to influence App Reviewers or game their methodologies; and the ability to create and the effectiveness of establishing app-specific economies through app coins. These forward-looking statements speak only as of the date hereof. Blockstack PBC disclaims any obligation to update these forward-looking statements._
