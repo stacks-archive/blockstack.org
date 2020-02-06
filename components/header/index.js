@@ -19,6 +19,7 @@ import Link from 'next/link'
 
 const HelloBar = ({ theme, ...rest }) => {
   const [hovered, bind] = useHover()
+  const text = 'Learn about New Proof of Transfer Mining with Bitcoin'
   return (
     <Box
       transition={transition}
@@ -37,13 +38,13 @@ const HelloBar = ({ theme, ...rest }) => {
     >
       <Box
         is="a"
-        href="https://forum.blockstack.org/t/stacking-a-new-consensus-algorithm-for-blockchains/10162"
+        href="https://blog.blockstack.org/realizing-web-3-proof-of-transfer-mining-with-bitcoin/"
         target="_blank"
         size="100%"
         zIndex={9}
         position="absolute"
-        aria-label="Stacking, our proposed consensus algorithm that allows Stacks holders to earn Bitcoin"
-        title="Stacking, our proposed consensus algorithm that allows Stacks holders to earn Bitcoin"
+        aria-label={text}
+        title={text}
       />
       <Wrapper alignItems="center" py={3} justifyContent="center">
         <Box
@@ -52,7 +53,7 @@ const HelloBar = ({ theme, ...rest }) => {
           fontSize={1}
           transition={transition}
         >
-          Stacking, our proposed consensus algorithm that allows Stacks holders to earn Bitcoin
+          {text}
         </Box>
         <Box color="white" transform="translateY(1px)" pl={1}>
           <ArrowUpRightIcon size={14} />
