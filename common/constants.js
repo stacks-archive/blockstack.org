@@ -25,7 +25,6 @@ const footerNavigation = [
       { label: 'Sign In', href: 'https://browser.blockstack.org/sign-in' },
       { label: 'Technology', path: '/technology' },
       { label: 'Try Blockstack', path: '/try-blockstack' },
-      { label: 'App Mining', href: 'https://app.co/mining' },
       { label: 'Explorer', href: 'https://explorer.blockstack.org' },
       { label: 'Stacks Wallet', href: 'https://wallet.blockstack.org' }
     ]
@@ -41,10 +40,6 @@ const footerNavigation = [
       {
         label: 'Developer guides',
         href: 'https://docs.blockstack.org/develop/dapp_principles.html'
-      },
-      {
-        label: 'App mining guide',
-        href: 'https://docs.blockstack.org/community/app-miners-guide.html'
       },
       { label: 'Documentation', href: 'https://docs.blockstack.org/' },
       { label: 'Whitepapers', path: 'papers' },
