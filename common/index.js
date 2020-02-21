@@ -44,7 +44,7 @@ const bslinks = {
   faq: '/faq',
   careers: '/careers',
   press: '/press',
-  swag: 'https://blockstack.myshopify.com/',
+  swag: 'http://blockstack.inkwellusa.com/',
   disclaimers: '/legal/disclaimers',
   tos: '/legal/terms-of-use',
   privacy: '/legal/privacy-policy',
@@ -54,7 +54,8 @@ const bslinks = {
   telegramEnglish: 'https://t.me/BlockstackChat',
   telegramChinese: 'https://t.me/BlockstackChinese',
   appMining: 'https://app.co/mining',
-  emailArchive: 'https://us14.campaign-archive.com/home/?u=394a2b5cfee9c4b0f7525b009&id=0e5478ae86'
+  emailArchive:
+    'https://us14.campaign-archive.com/home/?u=394a2b5cfee9c4b0f7525b009&id=0e5478ae86'
 }
 
 const blogAuthors = {
