@@ -167,7 +167,16 @@ We may make changes to this Privacy Policy. The “Effective Date” at the top 
 
 Unless otherwise indicated in this Privacy Policy, Blockstack is the entity responsible or “data controller” for the processing of Personal Information described in this Privacy Policy. If you have any questions about this Privacy Policy or our privacy practices in general, please contact via email at: [legal@blockstack.com](mailto:legal@blockstack.com), or via regular mail at:
 
-Blockstack PBC
-Attn: Legal
-101 West 23rd Street #224
-New York, NY 10011
+Blockstack PBC<br/>
+Attn: Legal<br/>
+101 West 23rd Street #224<br/>
+New York, NY 10011<br/>
+<br/>
+
+<strong>EU Representative</strong><br/>
+DPR Group<br/>
+The Cube<br/>
+Monahan Road<br/>
+Cork<br/>
+T12 H1XY<br/>
+Republic of Ireland
