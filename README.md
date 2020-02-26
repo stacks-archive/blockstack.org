@@ -22,7 +22,7 @@
 
 ## Blockstack.org
 
-[![Discord](https://img.shields.io/discord/621759717756370964](http://chat.blockstack.org)
+[![Discord](https://img.shields.io/discord/621759717756370964)](https://chat.blockstack.org)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
 
 A live version of this site can be found online at https://blockstack.org.
