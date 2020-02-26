@@ -142,7 +142,7 @@ const FooterBottom = ({ ...rest }) => (
       maxWidth={['100%', '100%', '25%', 'unset']}
       color="ink.25"
     >
-      Copyright © 2019 Blockstack PBC. All rights reserved.
+      Copyright © {new Date().getFullYear()} Blockstack PBC. All rights reserved.
     </Box>
     <Flex flexDirection={['column', 'column', 'row']} mt={[5, 5, 0]}>
       <Flex alignItems="center">

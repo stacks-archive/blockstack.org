@@ -25,7 +25,6 @@ const footerNavigation = [
       { label: 'Sign In', href: 'https://browser.blockstack.org/sign-in' },
       { label: 'Technology', path: '/technology' },
       { label: 'Try Blockstack', path: '/try-blockstack' },
-      { label: 'App Mining', href: 'https://app.co/mining' },
       { label: 'Explorer', href: 'https://explorer.blockstack.org' },
       { label: 'Stacks Wallet', href: 'https://wallet.blockstack.org' }
     ]
@@ -42,10 +41,6 @@ const footerNavigation = [
         label: 'Developer guides',
         href: 'https://docs.blockstack.org/develop/dapp_principles.html'
       },
-      {
-        label: 'App mining guide',
-        href: 'https://docs.blockstack.org/community/app-miners-guide.html'
-      },
       { label: 'Documentation', href: 'https://docs.blockstack.org/' },
       { label: 'Whitepapers', path: 'papers' },
       { label: 'Support', href: 'https://blockstack.zendesk.com/hc/en-us' }
@@ -58,7 +53,10 @@ const footerNavigation = [
       { label: 'Discord', href: 'https://chat.blockstack.org' },
       { label: 'Reddit', href: 'https://www.reddit.com/r/blockstack/' },
       { label: 'GitHub', href: 'https://github.com/blockstack' },
-      { label: 'Community guide', href: 'https://community.blockstack.org/guide' },
+      {
+        label: 'Community guide',
+        href: 'https://community.blockstack.org/guide'
+      },
       { label: 'Events', href: 'https://community.blockstack.org/events' },
       { label: 'Telegram', href: 'https://t.me/BlockstackChat' },
       { label: 'Telegram (中文群)', href: 'https://t.me/BlockstackChinese' },
@@ -84,7 +82,7 @@ const footerNavigation = [
       { label: 'Blog', href: 'https://blog.blockstack.org/' },
       { label: 'Press', path: '/press' },
       { label: 'Branding', href: 'https://branding.blockstack.design' },
-      { label: 'Swag', href: 'https://blockstack.myshopify.com/' }
+      { label: 'Swag', href: 'http://blockstack.inkwellusa.com/' }
     ]
   }
 ]
