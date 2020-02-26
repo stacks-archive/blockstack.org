@@ -637,7 +637,7 @@ class HomePage extends React.Component {
             },
             text: {
               children:
-                'Try over 100 apps built on Blockstack or build yours in less than an hour.'
+                'Try over 420 apps built on Blockstack or build yours in less than an hour.'
             }
           },
           {
