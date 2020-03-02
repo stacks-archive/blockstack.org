@@ -1,18 +1,19 @@
 const caseStudies = [
   {
-    title: `Justin Hunter Wanted His Privacy Back, Now He’s Giving Yours Back Too`,
-    publication: 'Indie Hackers',
-    src: 'https://blockstack-www.imgix.net/justin-hu.png',
-    app: 'https://blockstack-www.imgix.net/graphite-app.png',
-    appName: 'Graphite Docs',
+    title: `This Dapp Shows How Blockstack and Ethereum Are Different`,
+    publication: 'Coin Desk',
+    src: 'https://blockstack-www.imgix.net/envelop-team.webp',
+    app: 'https://appco.imgix.net/apps/dd4891d6-a555-4a9d-ad20-61dea95b70db',
+    appName: 'Envelop',
     href:
-      'https://www.indiehackers.com/interview/how-taking-back-my-privacy-inspired-a-product-that-became-a-business-bd931dfc1d'
+      'https://www.coindesk.com/this-file-sharing-dapp-shows-how-blockstack-and-ethereum-are-different'
   },
   {
-    title: `Santi Siri Is Using Blockstack To End Political Corruption`,
+    title: `Sérgio dos Santos is Giving You Control and Piece of Mind When Your Important Files`,
     publication: 'Wired',
     src: 'https://blockstack-www.imgix.net/santi.png',
-    app: 'https://blockstack-www.imgix.net/demo-earth-app.png',
+    app: 'https://appco.imgix.net/apps/b71df418-250b-429a-ac9c-e449c95558a5',
+
     appName: 'Democracy Earth',
     href:
       'https://www.wired.com/story/santiago-siri-radical-plan-for-blockchain-voting/'
@@ -21,7 +22,10 @@ const caseStudies = [
     title: `How this Maker quit his job and made his side projects profitable in 1 year`,
     publication: 'Product Hunt',
     src: 'https://blockstack-www.imgix.net/product-hunt-maker.png',
-    app: 'https://blockstack-www.imgix.net/photo-app.png',
+    app: 'https://appco.imgix.net/apps/7e98a6e3-614c-48b3-8733-dce83a6092d3',
+    appIconProps: {
+      p: 2
+    },
     appName: 'Encrypt my Photos',
     href:
       'https://blog.producthunt.com/how-this-maker-quit-his-job-and-made-his-side-projects-profitable-in-1-year-9c24ece56133'

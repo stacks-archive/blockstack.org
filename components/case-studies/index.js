@@ -7,11 +7,19 @@ import { Image } from '@components/image/index'
 import {
   WiredLogo,
   ProductHuntLogo,
-  IndiehackersLogo
+  IndiehackersLogo,
+  CoindeskLogo
 } from '@components/vectors/index'
 import { useMedia } from '@common/hooks'
 
 const PublicationLogo = ({ publication }) => {
+  if (publication === 'Coin Desk') {
+    return (
+      <Box flexGrow={0} width={1} maxWidth="135px">
+        <CoindeskLogo />
+      </Box>
+    )
+  }
   if (publication === 'Indie Hackers') {
     return (
       <Box flexGrow={0} width={1} maxWidth="135px">
@@ -43,6 +51,7 @@ const CaseStudyItem = ({
   app,
   href,
   appName,
+  appIconProps = {},
   ...rest
 }) => {
   const [hovered, bind] = useHover()
@@ -70,18 +79,21 @@ const CaseStudyItem = ({
         alignItems="flex-end"
       >
         <Image
-          size={80}
+          size={72}
           imgix={{
             w: 160,
             h: 160
           }}
-          right={[5]}
-          bottom={5}
+          right={10}
+          bottom={10}
           position="absolute"
           zIndex={10}
           src={app}
           noBlur
+          borderRadius="20px"
+          bg="white"
           alt={`App icon for ${appName}`}
+          {...appIconProps}
         />
         <Flex
           alignItems="center"

@@ -16,10 +16,11 @@ import { transition } from '@common/theme'
 import ArrowUpRightIcon from 'mdi-react/ArrowUpRightIcon'
 import Headroom from 'react-headroom'
 import Link from 'next/link'
+import { Newsletter } from '@components/pox-newsletter'
 
 const HelloBar = ({ theme, ...rest }) => {
-  const [hovered, bind] = useHover()
-  const text = 'Learn about New Proof of Transfer Mining with Bitcoin'
+  const hovered = false
+  const bind = {}
   return (
     <Box
       transition={transition}
@@ -32,32 +33,24 @@ const HelloBar = ({ theme, ...rest }) => {
           ? 'indigo'
           : 'blue'
       }
+      display={['none', 'none', 'block']}
       position="relative"
       {...rest}
       {...bind}
     >
-      <Box
-        is="a"
-        href="https://blog.blockstack.org/realizing-web-3-proof-of-transfer-mining-with-bitcoin/"
-        target="_blank"
-        size="100%"
-        zIndex={9}
-        position="absolute"
-        aria-label={text}
-        title={text}
-      />
       <Wrapper alignItems="center" py={3} justifyContent="center">
-        <Box
+        <Flex
           textAlign="center"
           color="white"
-          fontSize={1}
+          alignItems="center"
           transition={transition}
         >
-          {text}
-        </Box>
-        <Box color="white" transform="translateY(1px)" pl={1}>
-          <ArrowUpRightIcon size={14} />
-        </Box>
+          <Box pr={3} fontSize={1} textAlign="right">
+            Subscribe to stay in the loop on Proof of Transfer (PoX) and STX
+            Mining.
+          </Box>
+          <Newsletter />
+        </Flex>
       </Wrapper>
     </Box>
   )
@@ -112,6 +105,7 @@ const MobileMenuButton = ({ open, ...rest }) => {
   )
 }
 
+// eslint-disable-next-line react/display-name
 const MobileMenu = forwardRef(
   (
     { open, setSubnavVisibility, setMobileMenuState, subnavVisible, ...rest },
@@ -149,6 +143,7 @@ const MobileMenu = forwardRef(
   }
 )
 
+// eslint-disable-next-line react/display-name
 const HeaderBar = forwardRef(({ innerRef, children, ...rest }, ref) => {
   const { bg, borderColor } = useHeaderTheme()
   return (

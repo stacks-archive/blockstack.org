@@ -101,31 +101,32 @@ const SummitCard = ({ ...rest }) => {
 
 const photos = [
   {
+    src: 'https://blockstack-www.imgix.net/landing-page-004.jpeg',
+    alt: 'A photo of a Andreas Antonopoulos giving a talk at the Blockstack Summit 2019.'
+  },
+
+  {
+    src: 'https://blockstack-www.imgix.net/landing-page-001.jpeg',
+    width: 1 / 4,
+    backgroundPosition: 'center center',
+    alt: 'Fireside chat at a Blockstack event.'
+  },
+  {
+    src: 'https://blockstack-www.imgix.net/landing-page-002.jpeg',
+    flexGrow: 1,
+    alt: 'Naval Ravikant and Neal Stephenson at the Blockstack Summit 2019.'
+  },
+  {
+    src: 'https://blockstack-www.imgix.net/landing-page-003.jpeg',
+    alt: 'A photo of a speaker at the Blockstack Summit 2019.'
+  },
+  {
     src: 'https://blockstack-www.imgix.net/photos/photo-conference-001.jpg',
     alt: 'Photo of Edward Snowden at Blockstack Berlin.'
   },
   {
-    src: 'https://blockstack-www.imgix.net/photos/photo-conference-004.jpg',
-    width: 1 / 4,
-    backgroundPosition: 'left center',
-    alt: 'Fireside chat at a Blockstack event.'
-  },
-  {
-    src: 'https://blockstack-www.imgix.net/photos/photo-conference-003.jpg',
-    flexGrow: 1,
-    alt: 'A photo of a panel discussion at a Blockstack event.'
-  },
-  {
-    src: 'https://blockstack-www.imgix.net/photos/photo-hackathon-001.jpg',
-    alt: 'A photo of people coding at a Blockstack hackathon.'
-  },
-  {
-    src: 'https://blockstack-www.imgix.net/photo-conference-people.png',
-    alt: 'A photo of a crowd attending a talk at a Blockstack conference.'
-  },
-  {
-    src: 'https://blockstack-www.imgix.net/photos/photo-conference-006.png',
-    alt: 'A photo of people networking at an event put on by Blockstack.'
+    src: 'https://blockstack-www.imgix.net/landing-page-005.jpeg',
+    alt: 'A photo of people in the crowd at an event put on by Blockstack.'
   }
 ]
 
@@ -636,7 +637,7 @@ class HomePage extends React.Component {
             },
             text: {
               children:
-                'Try over 100 apps built on Blockstack or build yours in less than an hour.'
+                'Try over 420 apps built on Blockstack or build yours in less than an hour.'
             }
           },
           {
