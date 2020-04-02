@@ -32,7 +32,7 @@ const WrappedComponent = ({
   return (
     <HeaderHeightContext.Provider value={height}>
       <Box position="relative" {...rest}>
-        <Header theme={pageProps.meta.theme || 'white'} innerRef={ref} />
+        <Header theme={pageProps?.meta?.theme || 'white'} innerRef={ref} />
         <PageComponent headerHeight={height} {...pageProps} />
         <Footer />
       </Box>
@@ -130,7 +130,9 @@ class MyApp extends App {
               <meta
                 name="theme-color"
                 content={
-                  pageProps.meta.theme === 'ink' ? theme.colors.ink : '#ffffff'
+                  pageProps?.meta?.theme === 'ink'
+                    ? theme.colors.ink
+                    : '#ffffff'
                 }
               />
               <meta charSet="UTF-8" />

@@ -9,7 +9,7 @@ const trackPageView = ({ url }) => {
 Router.onRouteChangeComplete = (url) => trackPageView({ url })
 
 const TemplateWrapper = ({ meta, children, ...rest }) => {
-  const customTemplate = meta.custom
+  const customTemplate = meta?.custom
   return customTemplate ? children : <>{children}</>
 }
 
