@@ -362,43 +362,6 @@ class HomePage extends React.Component {
         ]
       },
       {
-        variant: 'white',
-        minHeight: '400px',
-        py: 8,
-        panes: [
-          [
-            {
-              title: {
-                is: 'h2',
-                children: 'Share, move, and connect data between apps'
-              }
-            },
-            {
-              title: {
-                is: 'h4',
-                children:
-                  'With the old internet, each platform was a data island.'
-              }
-            },
-            {
-              text: {
-                children:
-                  'With Blockstack, you own the data, so you decide how data is used between apps. Simply give access to a new, or better, Blockstack app and your data will auto-magically be there.'
-              },
-              comingSoon: true
-            }
-          ],
-          {
-            type: 'video',
-            pt: 0,
-            src: '/static/videos/graphic-share-connect.mp4',
-            videoProps: {
-              ratio: '125.409%'
-            }
-          }
-        ]
-      },
-      {
         variant: 'blue',
         justifyContent: 'center',
         alignItems: 'center',
