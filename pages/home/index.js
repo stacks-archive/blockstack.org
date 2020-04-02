@@ -423,10 +423,10 @@ const HomePage = ({ meta, feed, users, apps }) => {
           title: {
             is: 'h2',
             children:
-              'Secure your data with Blockstack and get a universal login'
+              'Secure your data with Blockstack apps and get a universal login'
           },
           text: {
-            children: `We provide private data lockers and a universal login with blockchain-based security and encryption — protecting your data from big internet companies.`
+            children: `Blockstack apps use private data lockers and a universal login with blockchain-based security and encryption—protecting your data from big internet companies.`
           },
           actions: [
             {
