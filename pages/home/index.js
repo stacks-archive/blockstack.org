@@ -478,36 +478,6 @@ const HomePage = ({ meta, feed, users, apps }) => {
     },
     {
       variant: 'white',
-      panes: [
-        {
-          width: [1, 1, 0.45, 0.5],
-          pretitle: {
-            children: 'App Mining'
-          },
-          title: {
-            is: 'h2',
-            children: 'Build an app and get paid monthly with App Mining'
-          },
-          text: {
-            children: `Every month we pay out $200,000 to the best apps built on Blockstack. The better your app, the more you earn.`
-          },
-          actions: [
-            {
-              type: 'link',
-              label: 'Learn more',
-              href: 'https://app.co/mining' // external: href
-            }
-          ]
-        },
-        {
-          width: [1, 1, 0.55, 0.5],
-          type: 'graphic',
-          children: <AppMiningGraphic />
-        }
-      ]
-    },
-    {
-      variant: 'white',
       children: (
         <Box width="100%" maxWidth="100%">
           <PhotoGrid items={photos} />
