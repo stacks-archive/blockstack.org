@@ -316,7 +316,7 @@ class HomePage extends React.Component {
             {
               text: {
                 children:
-                  'With Blockstack, you own your login. Under the hood, Blockstack uses blockchain to keep everything secure and private. We lock and encrypt your data with a secret key—you, and only you, have this key.'
+                  'With Blockstack, you own your login. Under the hood, the Stacks blockchain keeps everything secure and private. Your data is locked and encrypted and only you have the keys.'
               }
             }
           ],
@@ -355,7 +355,7 @@ class HomePage extends React.Component {
             {
               text: {
                 children:
-                  'With Blockstack, relax knowing your data is 100% your property. No terms. No conditions. No platform lock-in. All your photos, messages, health records, you name it—are stored stored in a private data locker that’s encrypted by default.'
+                  'With Blockstack, relax knowing your data is 100% your property. All your photos, messages, health records, you name it—are stored stored in a private data locker that’s encrypted by default.'
               }
             }
           ]
@@ -412,12 +412,12 @@ class HomePage extends React.Component {
               is: 'h2',
               mx: 'auto',
               width: ['100%', '100%', '55%'],
-              children: 'Take back your digital rights'
+              children: 'Own your internet'
             },
             text: {
               mx: 'auto',
               width: ['100%', '100%', '55%'],
-              children: `Say goodbye to: Data breaches and leaks, internet companies selling your data, AI manipulating your social feeds, and ad targeting following you around.`
+              children: `Take your first step into a user owned internet where you’re the one charge of your creations and connections, always.`
             },
             actions: {
               width: ['100%', '100%', 'unset'],
