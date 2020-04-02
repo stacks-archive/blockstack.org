@@ -46,8 +46,8 @@ const HelloBar = ({ theme, ...rest }) => {
           transition={transition}
         >
           <Box pr={3} fontSize={1} textAlign="right">
-            Subscribe to stay in the loop on Proof of Transfer (PoX) and STX
-            Mining.
+            Subscribe to stay in the loop on the anticipated launch of Stacks
+            2.0
           </Box>
           <Newsletter />
         </Flex>
