@@ -34,7 +34,7 @@ const User = ({ avatar, name, ...rest }) => (
 
 const NewsItem = ({ isLast, users, data }) => {
   const title = data.title.rendered
-  const user = users.find((user) => user.id === data.author)
+  const user = users && users.find((user) => user.id === data.author)
 
   const [hovered, bind] = useHover()
 

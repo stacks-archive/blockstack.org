@@ -102,7 +102,8 @@ const SummitCard = ({ ...rest }) => {
 const photos = [
   {
     src: 'https://blockstack-www.imgix.net/landing-page-004.jpeg',
-    alt: 'A photo of a Andreas Antonopoulos giving a talk at the Blockstack Summit 2019.'
+    alt:
+      'A photo of a Andreas Antonopoulos giving a talk at the Blockstack Summit 2019.'
   },
 
   {
@@ -413,261 +414,262 @@ const LinkElement = ({ url, ...rest }) => (
   />
 )
 
-class HomePage extends React.Component {
-  static async getInitialProps(ctx) {
-    const dataRes = await fetch('https://www-api.blockstack.sh/')
-    const { feed, users, apps } = await dataRes.json()
-    return {
+const HomePage = ({ meta, feed, users, apps }) => {
+  const sections = [
+    {
+      variant: 'white',
+      panes: [
+        {
+          title: {
+            is: 'h2',
+            children:
+              'Secure your data with Blockstack and get a universal login'
+          },
+          text: {
+            children: `We provide private data lockers and a universal login with blockchain-based security and encryption — protecting your data from big internet companies.`
+          },
+          actions: [
+            {
+              type: 'link',
+              label: 'Learn more',
+              path: '/try-blockstack' // is internal, use path instead of href
+            }
+          ]
+        },
+        {
+          type: 'graphic',
+          src:
+            'https://blockstack-www.imgix.net/home-try-blockstack-graphic.png',
+          alt:
+            'An example interface showing a user of Blockstack and their apps.'
+        }
+      ]
+    },
+    {
+      variant: 'white',
+      bg: 'sky.10',
+      panes: [
+        {
+          children: <AuthGraphic />
+        },
+        {
+          title: {
+            is: 'h2',
+            children: 'Build blockchain-powered apps in as little as an hour'
+          },
+          text: {
+            children: `Everything you need, from auth to data storage, ready and in
+          production. 100% Javascript — zero backend development.`
+          },
+          actions: [
+            {
+              type: 'link',
+              label: 'Learn more',
+              path: '/technology' // is internal, use path instead of href
+            }
+          ]
+        },
+        {
+          width: 1,
+          pt: 8,
+          children: <CaseStudies pt={[8, 8, 0]} items={caseStudies} />
+        }
+      ]
+    },
+    {
+      variant: 'white',
+      panes: [
+        {
+          width: [1, 1, 0.45, 0.5],
+          pretitle: {
+            children: 'App Mining'
+          },
+          title: {
+            is: 'h2',
+            children: 'Build an app and get paid monthly with App Mining'
+          },
+          text: {
+            children: `Every month we pay out $200,000 to the best apps built on Blockstack. The better your app, the more you earn.`
+          },
+          actions: [
+            {
+              type: 'link',
+              label: 'Learn more',
+              href: 'https://app.co/mining' // external: href
+            }
+          ]
+        },
+        {
+          width: [1, 1, 0.55, 0.5],
+          type: 'graphic',
+          children: <AppMiningGraphic />
+        }
+      ]
+    },
+    {
+      variant: 'white',
+      children: (
+        <Box width="100%" maxWidth="100%">
+          <PhotoGrid items={photos} />
+        </Box>
+      )
+    },
+
+    {
+      variant: 'white',
+      py: '128px',
+      panes: [
+        {
+          width: 1,
+          maxWidth: 544,
+          justifyContent: 'center',
+          alignItems: 'center',
+          mx: 'auto',
+          textAlign: 'center',
+          title: {
+            is: 'h2',
+            pb: [5, 5, 4],
+            children: 'Learn more at summits, hackathons, and workshops'
+          },
+          text: {
+            maxWidth: 544,
+            children: `We host over 100 global events with 10,000+ developers, scientists and entrepreneurs each year.`
+          }
+        },
+        {
+          width: '100%',
+          children: (
+            <Flex
+              maxWidth="700px"
+              mx="auto"
+              flexDirection={['column', 'column', 'row']}
+              pt="96px"
+            >
+              <Box width={1}>
+                <Events />
+                <Box pt={2}>
+                  <TextLink
+                    fontSize="14px"
+                    action={{
+                      label: 'View all events',
+                      href: 'https://community.blockstack.org/events'
+                    }}
+                  />
+                </Box>
+              </Box>
+            </Flex>
+          )
+        }
+      ]
+    },
+    {
+      variant: 'ink',
+      maxWidth: '1224px',
+      panes: [
+        {
+          width: '100%',
+          py: 8,
+          children: <Videos items={videos} />
+        }
+      ]
+    },
+    {
+      variant: 'white',
+      py: 128,
+      minHeight: 0,
+      alignItems: 'flex-start',
+      panes: [
+        {
+          justifyContent: 'flex-start',
+          flexDirection: 'column',
+          alignItems: 'flex-start',
+          width: ['100%', '100%', '30%'],
+          title: {
+            is: 'h2',
+            pr: 5,
+            pb: 0,
+            children: 'Latest news'
+          },
+          actions: {
+            pt: [0],
+            items: [
+              {
+                type: 'link',
+                label: 'View all news',
+                href: 'https://blog.blockstack.org'
+              }
+            ]
+          }
+        },
+        {
+          width: ['100%', '100%', '70%'],
+          children: (
+            <Box pt={[5, 5, 0]}>
+              <News items={feed} users={users} />
+            </Box>
+          )
+        },
+        {
+          width: 1,
+          children: <Press pt={8} items={press} />
+        }
+      ]
+    },
+    {
+      variant: 'blue',
+      minHeight: '400px',
+      py: 8,
+      panes: [
+        {
+          title: {
+            is: 'h2',
+            children: 'Join the decentralized computing revolution'
+          },
+          text: {
+            children:
+              'Try over 420 apps built on Blockstack or build yours in less than an hour.'
+          }
+        },
+        {
+          actions: {
+            justifyContent: 'center',
+            items: [
+              {
+                type: 'button',
+                label: 'Create ID',
+                path: '/try-blockstack'
+              },
+              {
+                type: 'button',
+                label: 'Build apps',
+                variant: 'secondary',
+                path: '/technology'
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+
+  return (
+    <>
+      <Hero apps={apps} />
+      <Sections sections={sections} />
+    </>
+  )
+}
+
+export async function getStaticProps(ctx) {
+  const dataRes = await fetch('https://www-api.blockstack.sh/')
+  const { feed, users, apps } = await dataRes.json()
+  return {
+    props: {
       meta,
       feed: feed.filter((item) => !item.categories.find((cat) => cat === 127)),
-      users
+      users,
+      apps
     }
-  }
-
-  render() {
-    const sections = [
-      {
-        variant: 'white',
-        panes: [
-          {
-            title: {
-              is: 'h2',
-              children:
-                'Secure your data with Blockstack and get a universal login'
-            },
-            text: {
-              children: `We provide private data lockers and a universal login with blockchain-based security and encryption — protecting your data from big internet companies.`
-            },
-            actions: [
-              {
-                type: 'link',
-                label: 'Learn more',
-                path: '/try-blockstack' // is internal, use path instead of href
-              }
-            ]
-          },
-          {
-            type: 'graphic',
-            src:
-              'https://blockstack-www.imgix.net/home-try-blockstack-graphic.png',
-            alt:
-              'An example interface showing a user of Blockstack and their apps.'
-          }
-        ]
-      },
-      {
-        variant: 'white',
-        bg: 'sky.10',
-        panes: [
-          {
-            children: <AuthGraphic />
-          },
-          {
-            title: {
-              is: 'h2',
-              children: 'Build blockchain-powered apps in as little as an hour'
-            },
-            text: {
-              children: `Everything you need, from auth to data storage, ready and in
-          production. 100% Javascript — zero backend development.`
-            },
-            actions: [
-              {
-                type: 'link',
-                label: 'Learn more',
-                path: '/technology' // is internal, use path instead of href
-              }
-            ]
-          },
-          {
-            width: 1,
-            pt: 8,
-            children: <CaseStudies pt={[8, 8, 0]} items={caseStudies} />
-          }
-        ]
-      },
-      {
-        variant: 'white',
-        panes: [
-          {
-            width: [1, 1, 0.45, 0.5],
-            pretitle: {
-              children: 'App Mining'
-            },
-            title: {
-              is: 'h2',
-              children: 'Build an app and get paid monthly with App Mining'
-            },
-            text: {
-              children: `Every month we pay out $200,000 to the best apps built on Blockstack. The better your app, the more you earn.`
-            },
-            actions: [
-              {
-                type: 'link',
-                label: 'Learn more',
-                href: 'https://app.co/mining' // external: href
-              }
-            ]
-          },
-          {
-            width: [1, 1, 0.55, 0.5],
-            type: 'graphic',
-            children: <AppMiningGraphic />
-          }
-        ]
-      },
-      {
-        variant: 'white',
-        children: (
-          <Box width="100%" maxWidth="100%">
-            <PhotoGrid items={photos} />
-          </Box>
-        )
-      },
-
-      {
-        variant: 'white',
-        py: '128px',
-        panes: [
-          {
-            width: 1,
-            maxWidth: 544,
-            justifyContent: 'center',
-            alignItems: 'center',
-            mx: 'auto',
-            textAlign: 'center',
-            title: {
-              is: 'h2',
-              pb: [5, 5, 4],
-              children: 'Learn more at summits, hackathons, and workshops'
-            },
-            text: {
-              maxWidth: 544,
-              children: `We host over 100 global events with 10,000+ developers, scientists and entrepreneurs each year.`
-            }
-          },
-          {
-            width: '100%',
-            children: (
-              <Flex
-                maxWidth="700px"
-                mx="auto"
-                flexDirection={['column', 'column', 'row']}
-                pt="96px"
-              >
-                <Box width={1}>
-                  <Events />
-                  <Box pt={2}>
-                    <TextLink
-                      fontSize="14px"
-                      action={{
-                        label: 'View all events',
-                        href: 'https://community.blockstack.org/events'
-                      }}
-                    />
-                  </Box>
-                </Box>
-              </Flex>
-            )
-          }
-        ]
-      },
-      {
-        variant: 'ink',
-        maxWidth: '1224px',
-        panes: [
-          {
-            width: '100%',
-            py: 8,
-            children: <Videos items={videos} />
-          }
-        ]
-      },
-      {
-        variant: 'white',
-        py: 128,
-        minHeight: 0,
-        alignItems: 'flex-start',
-        panes: [
-          {
-            justifyContent: 'flex-start',
-            flexDirection: 'column',
-            alignItems: 'flex-start',
-            width: ['100%', '100%', '30%'],
-            title: {
-              is: 'h2',
-              pr: 5,
-              pb: 0,
-              children: 'Latest news'
-            },
-            actions: {
-              pt: [0],
-              items: [
-                {
-                  type: 'link',
-                  label: 'View all news',
-                  href: 'https://blog.blockstack.org'
-                }
-              ]
-            }
-          },
-          {
-            width: ['100%', '100%', '70%'],
-            children: (
-              <Box pt={[5, 5, 0]}>
-                <News items={this.props.feed} users={this.props.users} />
-              </Box>
-            )
-          },
-          {
-            width: 1,
-            children: <Press pt={8} items={press} />
-          }
-        ]
-      },
-      {
-        variant: 'blue',
-        minHeight: '400px',
-        py: 8,
-        panes: [
-          {
-            title: {
-              is: 'h2',
-              children: 'Join the decentralized computing revolution'
-            },
-            text: {
-              children:
-                'Try over 420 apps built on Blockstack or build yours in less than an hour.'
-            }
-          },
-          {
-            actions: {
-              justifyContent: 'center',
-              items: [
-                {
-                  type: 'button',
-                  label: 'Create ID',
-                  path: '/try-blockstack'
-                },
-                {
-                  type: 'button',
-                  label: 'Build apps',
-                  variant: 'secondary',
-                  path: '/technology'
-                }
-              ]
-            }
-          }
-        ]
-      }
-    ]
-
-    return (
-      <>
-        <Hero apps={this.props.apps} />
-        <Sections sections={sections} />
-      </>
-    )
   }
 }
 
