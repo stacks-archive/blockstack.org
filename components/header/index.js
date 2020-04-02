@@ -49,7 +49,7 @@ const HelloBar = ({ theme, ...rest }) => {
             Subscribe to stay in the loop on the anticipated launch of Stacks
             2.0
           </Box>
-          <Newsletter />
+          <Newsletter merge={{ SOURCE: 'widget-orgribbon' }} />
         </Flex>
       </Wrapper>
     </Box>
