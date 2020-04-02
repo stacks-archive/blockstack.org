@@ -162,7 +162,7 @@ const HeroContent = ({ apps, ...rest }) => {
           mx="auto"
         >
           <Button width={[1, 1, 'unset']} path="/try-blockstack">
-            Create ID
+            Try apps
           </Button>
           <Button
             width={[1, 1, 'unset']}
@@ -171,7 +171,7 @@ const HeroContent = ({ apps, ...rest }) => {
             variant="secondary"
             path="/technology"
           >
-            Build Apps
+            Build apps
           </Button>
         </Flex>
       </Section.Pane>
@@ -636,7 +636,7 @@ const HomePage = ({ meta, feed, users, apps }) => {
             items: [
               {
                 type: 'button',
-                label: 'Create ID',
+                label: 'Try apps',
                 path: '/try-blockstack'
               },
               {
