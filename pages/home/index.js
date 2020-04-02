@@ -148,11 +148,11 @@ const HeroContent = ({ apps, ...rest }) => {
           mx="auto"
           maxWidth={['100%', '100%', '768px']}
         >
-          Decentralized computing network and app ecosystem
+          Software for a user owned internet
         </Section.Title>
         <Section.Text maxWidth={['100%', '100%', '544px']}>
-          Blockstack apps protect your digital rights and are powered by the
-          Stacks blockchain.
+          Blockstack apps give users direct ownership of their internet assets
+          and protect user privacy.
         </Section.Text>
         <Flex
           width={1}
