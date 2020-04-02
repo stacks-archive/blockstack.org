@@ -134,39 +134,6 @@ const installSection = {
       width: 1,
       pt: 5,
       children: <Install width={1} />
-    },
-    {
-      justifyContent: 'flex-start',
-      width: 1,
-      panes: [
-        {
-          width: 1,
-          pt: [5, 5, 7],
-          title: {
-            is: 'h4',
-            children: 'Running a full node'
-          },
-          text: {
-            fontSize: 2,
-            pt: 3,
-            pb: 5,
-            children: (
-              <>
-                Developers can also run a full node by{' '}
-                <Section.Text
-                  fontSize={2}
-                  is="a"
-                  href="https://github.com/blockstack/blockstack-core"
-                  target="_blank"
-                >
-                  following instructions on GitHub
-                </Section.Text>
-                .
-              </>
-            )
-          }
-        }
-      ]
     }
   ]
 }

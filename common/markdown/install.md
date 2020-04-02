@@ -20,10 +20,3 @@ Requires Windows 10
 
 <a href="https://github.com/blockstack/blockstack-browser/releases/download/v0.35.4/Blockstack-for-win10-v0.35.4.msi" class="button">Windows Download</a>
 
-#### Blockstack Browser (Linux)
-
-Advanced Install
-
-<a href="https://github.com/blockstack/blockstack-browser/releases/download/v0.35.4/Blockstack-for-Linux-v0.35.4.sh" class="button">Linux Download</a>
-
-Developers can also run a full node by [following instructions on GitHub](https://github.com/blockstack/blockstack-core).
