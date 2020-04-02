@@ -209,15 +209,17 @@ const Header = ({
             <Box letterSpacing="-0.02em" {...bind} {...rest}>
               <HeaderBar innerRef={innerRef}>
                 <Wrapper py={4}>
-                  <Link href={'/'}>
-                    <Box
+                  <Link href="/" passHref>
+                    <a
                       is="a"
-                      href={'/'}
                       aria-label="Link to homepage"
-                      transform="translateY(-1px)"
+                      style={{
+                        display: 'block',
+                        transform: 'translateY(-1px)'
+                      }}
                     >
                       <Logo />
-                    </Box>
+                    </a>
                   </Link>
                   <Navigation
                     setSubnavVisibility={setSubnavVisibility}
