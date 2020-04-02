@@ -623,7 +623,7 @@ const HomePage = ({ meta, feed, users, apps }) => {
         {
           title: {
             is: 'h2',
-            children: 'Join the decentralized computing revolution'
+            children: 'Join the user owned internet'
           },
           text: {
             children:
