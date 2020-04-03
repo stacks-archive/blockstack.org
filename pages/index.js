@@ -145,7 +145,7 @@ const HeroContent = ({ apps, ...rest }) => {
         <Section.Title
           pb={[5, 5, 5]}
           mx="auto"
-          maxWidth={['100%', '100%', '768px']}
+          maxWidth={['100%', '100%', '600px']}
         >
           Software for a user owned internet
         </Section.Title>
