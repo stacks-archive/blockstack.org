@@ -46,10 +46,10 @@ const HelloBar = ({ theme, ...rest }) => {
           transition={transition}
         >
           <Box pr={3} fontSize={1} textAlign="right">
-            Subscribe to stay in the loop on Proof of Transfer (PoX) and STX
-            Mining.
+            Subscribe to stay in the loop on the anticipated launch of Stacks
+            2.0
           </Box>
-          <Newsletter />
+          <Newsletter merge={{ SOURCE: 'widget-orgribbon' }} />
         </Flex>
       </Wrapper>
     </Box>
@@ -209,15 +209,17 @@ const Header = ({
             <Box letterSpacing="-0.02em" {...bind} {...rest}>
               <HeaderBar innerRef={innerRef}>
                 <Wrapper py={4}>
-                  <Link href={'/'}>
-                    <Box
+                  <Link href="/" passHref>
+                    <a
                       is="a"
-                      href={'/'}
                       aria-label="Link to homepage"
-                      transform="translateY(-1px)"
+                      style={{
+                        display: 'block',
+                        transform: 'translateY(-1px)'
+                      }}
                     >
                       <Logo />
-                    </Box>
+                    </a>
                   </Link>
                   <Navigation
                     setSubnavVisibility={setSubnavVisibility}

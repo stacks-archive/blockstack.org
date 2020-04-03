@@ -1,4 +1,4 @@
-import App, { Container } from 'next/app'
+import App from 'next/app'
 import React, { useRef } from 'react'
 import useComponentSize from '@rehooks/component-size'
 import Header from '@components/header'
@@ -32,7 +32,7 @@ const WrappedComponent = ({
   return (
     <HeaderHeightContext.Provider value={height}>
       <Box position="relative" {...rest}>
-        <Header theme={pageProps.meta.theme || 'white'} innerRef={ref} />
+        <Header theme={pageProps?.meta?.theme || 'white'} innerRef={ref} />
         <PageComponent headerHeight={height} {...pageProps} />
         <Footer />
       </Box>
@@ -123,14 +123,16 @@ class MyApp extends App {
     return (
       <ModalContextProvider>
         <Mdx>
-          <Container>
+          <>
             <Head>
               <script src="https://cdn.polyfill.io/v2/polyfill.min.js" />
               <title>{title}</title>
               <meta
                 name="theme-color"
                 content={
-                  pageProps.meta.theme === 'ink' ? theme.colors.ink : '#ffffff'
+                  pageProps?.meta?.theme === 'ink'
+                    ? theme.colors.ink
+                    : '#ffffff'
                 }
               />
               <meta charSet="UTF-8" />
@@ -151,7 +153,7 @@ class MyApp extends App {
                 />
               </>
             </ThemeProvider>
-          </Container>
+          </>
         </Mdx>
       </ModalContextProvider>
     )

@@ -316,7 +316,7 @@ class HomePage extends React.Component {
             {
               text: {
                 children:
-                  'With Blockstack, you own your login. Under the hood, Blockstack uses blockchain to keep everything secure and private. We lock and encrypt your data with a secret key—you, and only you, have this key.'
+                  'With Blockstack, you own your login. Under the hood, the Stacks blockchain keeps everything secure and private. Your data is locked and encrypted and only you have the keys.'
               }
             }
           ],
@@ -355,47 +355,10 @@ class HomePage extends React.Component {
             {
               text: {
                 children:
-                  'With Blockstack, relax knowing your data is 100% your property. No terms. No conditions. No platform lock-in. All your photos, messages, health records, you name it—are stored stored in a private data locker that’s encrypted by default.'
+                  'With Blockstack, relax knowing your data is 100% your property. All your photos, messages, health records, you name it—are stored stored in a private data locker that’s encrypted by default.'
               }
             }
           ]
-        ]
-      },
-      {
-        variant: 'white',
-        minHeight: '400px',
-        py: 8,
-        panes: [
-          [
-            {
-              title: {
-                is: 'h2',
-                children: 'Share, move, and connect data between apps'
-              }
-            },
-            {
-              title: {
-                is: 'h4',
-                children:
-                  'With the old internet, each platform was a data island.'
-              }
-            },
-            {
-              text: {
-                children:
-                  'With Blockstack, you own the data, so you decide how data is used between apps. Simply give access to a new, or better, Blockstack app and your data will auto-magically be there.'
-              },
-              comingSoon: true
-            }
-          ],
-          {
-            type: 'video',
-            pt: 0,
-            src: '/static/videos/graphic-share-connect.mp4',
-            videoProps: {
-              ratio: '125.409%'
-            }
-          }
         ]
       },
       {
@@ -412,12 +375,12 @@ class HomePage extends React.Component {
               is: 'h2',
               mx: 'auto',
               width: ['100%', '100%', '55%'],
-              children: 'Take back your digital rights'
+              children: 'Own your internet'
             },
             text: {
               mx: 'auto',
               width: ['100%', '100%', '55%'],
-              children: `Say goodbye to: Data breaches and leaks, internet companies selling your data, AI manipulating your social feeds, and ad targeting following you around.`
+              children: `Take your first step into a user owned internet where you’re the one charge of your creations and connections, always.`
             },
             actions: {
               width: ['100%', '100%', 'unset'],

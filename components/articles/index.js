@@ -12,7 +12,6 @@ const Subtitle = ({ ...rest }) => (
     is="span"
     fontSize={1}
     fontWeight="500"
-    pl={2}
     opacity={0.8}
     {...rest}
   />
@@ -20,21 +19,21 @@ const Subtitle = ({ ...rest }) => (
 
 const User = ({ avatar, name, ...rest }) => (
   <Flex pt={2}>
-    <Box
-      display="block"
-      size={20}
-      borderRadius="100%"
-      is="img"
-      alt={`Avatar of ${name}`}
-      src={avatar}
-    />
+    {/*<Box*/}
+    {/*  display="block"*/}
+    {/*  size={20}*/}
+    {/*  borderRadius="100%"*/}
+    {/*  is="img"*/}
+    {/*  alt={`Avatar of ${name}`}*/}
+    {/*  src={avatar}*/}
+    {/*/>*/}
     <Subtitle transform="translateY(-1px)">{name}</Subtitle>
   </Flex>
 )
 
 const NewsItem = ({ isLast, users, data }) => {
   const title = data.title.rendered
-  const user = users.find((user) => user.id === data.author)
+  const user = users && users.find((user) => user.id === data.author)
 
   const [hovered, bind] = useHover()
 
@@ -75,11 +74,10 @@ const NewsItem = ({ isLast, users, data }) => {
     </Box>
   )
 }
+
 const News = ({ items, limit = 4, users, ...rest }) =>
-  items && items.length
-    ? getNewsItems(items, limit).map((item, i) => (
-        <NewsItem key={i} isLast={i + 1 === limit} data={item} users={users} />
-      ))
-    : null
+  getNewsItems(items, limit).map((item, i) => (
+    <NewsItem key={i} isLast={i + 1 === limit} data={item} users={users} />
+  ))
 
 export { News, NewsItem }

@@ -8,11 +8,19 @@ import {
   WiredLogo,
   ProductHuntLogo,
   IndiehackersLogo,
-  CoindeskLogo
+  CoindeskLogo,
+  DecryptLogo
 } from '@components/vectors/index'
 import { useMedia } from '@common/hooks'
 
 const PublicationLogo = ({ publication }) => {
+  if (publication === 'Decrypt') {
+    return (
+      <Box flexGrow={0} width={1} maxWidth="135px">
+        <DecryptLogo />
+      </Box>
+    )
+  }
   if (publication === 'Coin Desk') {
     return (
       <Box flexGrow={0} width={1} maxWidth="135px">

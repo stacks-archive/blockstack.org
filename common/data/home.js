@@ -9,6 +9,13 @@ const caseStudies = [
       'https://www.coindesk.com/this-file-sharing-dapp-shows-how-blockstack-and-ethereum-are-different'
   },
   {
+    title: `Blockstack apps are giving remote workers secure, private alternatives amid Coronavirus`,
+    publication: 'Decrypt',
+    src: 'https://blockstack-www.imgix.net/decrypt.jpg',
+    href:
+      'https://decrypt.co/23345/working-remotely-8-essential-software-tools-and-their-web3-cousins'
+  },
+  {
     title: `Sérgio dos Santos is Giving You Control and Piece of Mind When Your Important Files`,
     publication: 'Wired',
     src: 'https://blockstack-www.imgix.net/santi.png',
@@ -17,18 +24,6 @@ const caseStudies = [
     appName: 'Democracy Earth',
     href:
       'https://www.wired.com/story/santiago-siri-radical-plan-for-blockchain-voting/'
-  },
-  {
-    title: `How this Maker quit his job and made his side projects profitable in 1 year`,
-    publication: 'Product Hunt',
-    src: 'https://blockstack-www.imgix.net/product-hunt-maker.png',
-    app: 'https://appco.imgix.net/apps/7e98a6e3-614c-48b3-8733-dce83a6092d3',
-    appIconProps: {
-      p: 2
-    },
-    appName: 'Encrypt my Photos',
-    href:
-      'https://blog.producthunt.com/how-this-maker-quit-his-job-and-made-his-side-projects-profitable-in-1-year-9c24ece56133'
   }
 ]
 
