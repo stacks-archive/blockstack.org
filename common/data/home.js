@@ -11,7 +11,7 @@ const caseStudies = [
   {
     title: `Blockstack apps are giving remote workers secure, private alternatives amid Coronavirus`,
     publication: 'Decrypt',
-    src: 'https://blockstack-www.imgix.net/product-hunt-maker.png',
+    src: 'https://blockstack-www.imgix.net/decrypt.jpg',
     href:
       'https://decrypt.co/23345/working-remotely-8-essential-software-tools-and-their-web3-cousins'
   },

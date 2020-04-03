@@ -1,4 +1,4 @@
-import App, { Container } from 'next/app'
+import App from 'next/app'
 import React, { useRef } from 'react'
 import useComponentSize from '@rehooks/component-size'
 import Header from '@components/header'
@@ -123,7 +123,7 @@ class MyApp extends App {
     return (
       <ModalContextProvider>
         <Mdx>
-          <Container>
+          <>
             <Head>
               <script src="https://cdn.polyfill.io/v2/polyfill.min.js" />
               <title>{title}</title>
@@ -153,7 +153,7 @@ class MyApp extends App {
                 />
               </>
             </ThemeProvider>
-          </Container>
+          </>
         </Mdx>
       </ModalContextProvider>
     )
