@@ -216,7 +216,7 @@ const HeroGraphic = ({ ...rest }) => {
               borderBottom="1px solid"
               borderColor="blue.50"
             >
-              Zero-To-Dapp
+              Hello, Blockstack
             </Box>
           </Flex>
           <Box bg="ink" pb={6} pt={5} pl={8}>
@@ -239,10 +239,10 @@ const HeroContent = ({ ...rest }) => {
           Get started with our{' '}
           <Section.Text
             is="a"
-            href={'https://docs.blockstack.org/develop/zero_to_dapp_1.html'}
+            href={'https://docs.blockstack.org/browser/hello-blockstack.html'}
             target="_blank"
           >
-            Zero-to-Dapp tutorial
+            Hello, Blockstack tutorial
           </Section.Text>
           , view our{' '}
           <Section.Text
@@ -264,7 +264,7 @@ const HeroContent = ({ ...rest }) => {
         </Section.Text>
         <Flex pt={5} width={1}>
           <Button
-            href="https://docs.blockstack.org/develop/zero_to_dapp_1.html"
+            href="https://docs.blockstack.org/browser/hello-blockstack.html"
             target="_blank"
             width={[1, 1, 'unset']}
           >
@@ -621,7 +621,7 @@ const sections = [
             {
               type: 'button',
               label: 'Tutorials',
-              href: 'https://docs.blockstack.org/develop/zero_to_dapp_1.html',
+              href: 'https://docs.blockstack.org/browser/hello-blockstack.html',
               target: '_blank'
             }
           ]
