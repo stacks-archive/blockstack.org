@@ -118,7 +118,11 @@ const navigation = [
         href: 'https://stackstoken.com',
         icon: NavIconAboutTokenOffering
       },
-      { label: 'Roadmap', path: '/roadmap', icon: NavIconAboutRoadmap },
+      {
+        label: 'Roadmap',
+        href: 'https://www2.blockstack.org/roadmap',
+        icon: NavIconAboutRoadmap
+      },
       { label: 'Careers', path: '/careers', icon: NavIconAboutCareers }
     ]
   },
