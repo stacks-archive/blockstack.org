@@ -54,7 +54,7 @@ const resources = [
       },
       {
         label: 'Ecosystem roadmap',
-        path: '/roadmap'
+        href: 'https://www2.blockstack.org/roadmap'
       },
       {
         label: 'Stacks Improvement Proposals',
