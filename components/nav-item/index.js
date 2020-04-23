@@ -8,13 +8,7 @@ import { HeaderHeightContext } from '../../pages/_app'
 import Link from 'next/link'
 
 const WrappedLink = ({ path, children }) =>
-  path ? (
-    <Link href={path} >
-      {children}
-    </Link>
-  ) : (
-    children
-  )
+  path ? <Link href={path}>{children}</Link> : children
 
 const MobileSubNavItem = ({ handleMenuItemClick, href, path, ...rest }) => {
   const [hovered, bind] = useHover()
@@ -39,8 +33,6 @@ const MobileSubNavItem = ({ handleMenuItemClick, href, path, ...rest }) => {
     </WrappedLink>
   )
 }
-
-
 
 const NavItem = ({
   label,
@@ -274,6 +266,7 @@ const SubNav = ({
         alignItems="center"
         justifyContent="center"
         minHeight={100}
+        pt={[0, 0, 24]}
       >
         <Spacer />
         {items && items.length
