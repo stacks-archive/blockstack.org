@@ -11,7 +11,8 @@ import {
   NavIconAboutRoadmap,
   NavIconAboutCompany,
   NavIconAboutCareers,
-  NavIconCommunityBlog
+  NavIconCommunityBlog,
+  NavTestnet
 } from '@components/vectors'
 import { Newsletter } from '@components/newsletter'
 
@@ -94,6 +95,11 @@ const navigation = [
     path: '/technology',
     items: [
       { label: 'Overview', path: '/technology', icon: NavIconTechOverview },
+      {
+        label: 'Testnet',
+        href: 'https://testnet.blockstack.org',
+        icon: NavTestnet
+      },
       { label: 'Whitepapers', path: '/papers', icon: NavIconTechWhitepapers },
       {
         label: 'Documentation',
