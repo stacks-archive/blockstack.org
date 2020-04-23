@@ -25,7 +25,7 @@ const footerNavigation = [
       { label: 'Create an ID', href: 'https://browser.blockstack.org/sign-up' },
       { label: 'Sign In', href: 'https://browser.blockstack.org/sign-in' },
       { label: 'Technology', path: '/technology' },
-      { label: 'Try Blockstack', path: '/try-blockstack' },
+      { label: 'Try Blockstack', href: 'https://www2.blockstack.org/apps' },
       { label: 'Explorer', href: 'https://explorer.blockstack.org' },
       { label: 'Stacks Wallet', href: 'https://wallet.blockstack.org' }
     ]
@@ -88,7 +88,11 @@ const footerNavigation = [
   }
 ]
 const navigation = [
-  { label: 'Try Blockstack', slug: 'try', path: '/try-blockstack' },
+  {
+    label: 'Try Blockstack',
+    slug: 'try',
+    href: 'https://www2.blockstack.org/apps'
+  },
   {
     label: 'Technology',
     slug: 'technology',

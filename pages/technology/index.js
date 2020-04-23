@@ -534,7 +534,7 @@ const sections = [
             {
               type: 'link',
               label: 'Learn more about using Blockstack',
-              path: '/try-blockstack'
+              href: 'https://www2.blockstack.org/apps'
             }
           ]
         }
