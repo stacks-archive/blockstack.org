@@ -151,7 +151,7 @@ const appBuildersGrid = [
       children:
         'Reach new users who are seeking privacy and data ownership — and are abandoning platforms such as Facebook and Google.'
     },
-    path: '/try-blockstack'
+    href: 'https://www2.blockstack.org/apps'
   },
   {
     icon: ForumIcon,
