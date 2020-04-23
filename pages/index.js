@@ -160,7 +160,10 @@ const HeroContent = ({ apps, ...rest }) => {
           pt={5}
           mx="auto"
         >
-          <Button width={[1, 1, 'unset']} path="/try-blockstack">
+          <Button
+            width={[1, 1, 'unset']}
+            href="https://www2.blockstack.org/apps"
+          >
             Try apps
           </Button>
           <Button
@@ -443,7 +446,7 @@ class HomePage extends React.Component {
               {
                 type: 'link',
                 label: 'Learn more',
-                path: '/try-blockstack' // is internal, use path instead of href
+                href: 'https://www2.blockstack.org/apps'
               }
             ]
           },
@@ -618,7 +621,7 @@ class HomePage extends React.Component {
                 {
                   type: 'button',
                   label: 'Try apps',
-                  path: '/try-blockstack'
+                  href: 'https://www2.blockstack.org/apps'
                 },
                 {
                   type: 'button',
