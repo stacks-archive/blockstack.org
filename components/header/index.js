@@ -13,28 +13,24 @@ import { Wrapper } from '@components/wrapper'
 import { useLockBodyScroll } from 'react-use'
 import { HeaderHeightContext } from '../../pages/_app'
 import { transition } from '@common/theme'
-import ArrowUpRightIcon from 'mdi-react/ArrowUpRightIcon'
+
 import Headroom from 'react-headroom'
 import Link from 'next/link'
-import { Newsletter } from '@components/pox-newsletter'
 
 const HelloBar = ({ theme, ...rest }) => {
-  const hovered = false
-  const bind = {}
+  const [hovered, bind] = useHover()
   return (
     <Box
       transition={transition}
-      bg={
-        theme === 'ink'
-          ? hovered
-            ? 'ink.50'
-            : 'ink.75'
-          : hovered
-          ? 'indigo'
-          : 'blue'
-      }
-      display={['none', 'none', 'block']}
+      bg={hovered ? 'ink.50' : 'ink.75'}
+      display="block"
       position="relative"
+      as="a"
+      href="https://blacklivesmatter.com/"
+      target="_blank"
+      style={{
+        textDecoration: 'none !important'
+      }}
       {...rest}
       {...bind}
     >
@@ -45,11 +41,17 @@ const HelloBar = ({ theme, ...rest }) => {
           alignItems="center"
           transition={transition}
         >
-          <Box pr={3} fontSize={1} textAlign="right">
-            Subscribe to stay in the loop on the anticipated launch of Stacks
-            2.0
+          <Box
+            pr={3}
+            fontSize={1}
+            textAlign="right"
+            fontWeight="600"
+            style={{
+              textDecoration: 'none !important'
+            }}
+          >
+            #BlackLivesMatter
           </Box>
-          <Newsletter merge={{ SOURCE: 'widget-orgribbon' }} />
         </Flex>
       </Wrapper>
     </Box>
