@@ -111,18 +111,6 @@ export const teamMembers = [
       'Thao-Nguyen is People and Operations partner at Blockstack, assisting the co-founders and team with organizational prioritization, project management, team collaboration and internal communication. Prior to joining, she led operations in mission driven organizations such as Farmshelf (indoor hydro agri-tech), AntiGravity Fitness and Vietnam Heritage Center. '
   },
   {
-    blockstackId: 'shrey',
-    name: 'Shreyas Thiagaraj',
-    bio:
-      'Shreyas is a Blockstack Engineering Partner, working on developer tools and mobile efforts. He comes from a background in product development for various social apps, and before that built developer tools for mobile apps as an engineer at Microsoft. When not at work, you can find him on the hunt for the world’s best hot chocolate.'
-  },
-  {
-    blockstackId: 'mmanthony.id.blockstack',
-    name: 'Mary Anthony',
-    bio:
-      'Mary joined Blockstack as a Documentation Engineer. She has co-founded a CRO, managed teams, developed documentation deployment infrastructure, and designed user interfaces. Her experience includes developing content for open source, clinical research, container technologies, security software, business intelligence software, remote source control software, and system administration. She spends her non-work time studying figurative art, hiking, and trail running.'
-  },
-  {
     blockstackId: 'jwiley.id.blockstack',
     name: 'Jesse Wiley',
     bio:
