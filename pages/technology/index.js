@@ -58,7 +58,7 @@ const resources = [
       },
       {
         label: 'Stacks Improvement Proposals',
-        href: 'https://github.com/blockstack/blockstack-core/tree/develop/sip'
+        href: 'https://github.com/blockstack/blockstack-core/tree/master/sip'
       }
     ]
   }

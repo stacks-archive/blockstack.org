@@ -135,7 +135,7 @@ class PapersPage extends React.PureComponent {
               Latest Stacks Improvement Proposals (SIPs) are available on{' '}
               <Section.Text
                 is="a"
-                href="https://github.com/blockstack/blockstack-core/tree/develop/sip"
+                href="https://github.com/blockstack/blockstack-core/tree/master/sip"
                 target="_blank"
               >
                 GitHub
